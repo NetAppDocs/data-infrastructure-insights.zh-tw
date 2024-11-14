@@ -1,0 +1,62 @@
+---
+sidebar: sidebar 
+permalink: task_dc_cohesity_smartfiles.html 
+keywords: data collector, cohesity 
+summary: 設定「Colesity SmartFiles資料收集器」。 
+---
+= Co猶豫不決 的SmartFiles資料收集器
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+此 REST API 型收集器將會取得 Coesity 叢集、探索「檢視」（即「 Data Infrastructure Insights Internal Volumes 」（資料基礎架構洞見內部磁碟區）、各種節點、並收集效能指標。
+
+
+
+== 組態
+
+[cols="2*"]
+|===
+| 欄位 | 說明 
+
+
+| Co猶豫不決 叢集IP | Co猶豫不決 叢集的IP位址 
+
+
+| 使用者名稱 | Cohesity叢集的使用者名稱 
+
+
+| 密碼 | 用於Co猶豫不決 叢集的密碼 
+|===
+
+
+== 進階組態
+
+[cols="2*"]
+|===
+| 欄位 | 說明 
+
+
+| TCP 連接埠 | 連接埠用於與Co猶豫不決 叢集進行TCP通訊 
+
+
+| 庫存輪詢時間間隔（分鐘） | 庫存輪詢之間的時間間隔。預設值為 60 分鐘。 
+
+
+| 效能意見調查時間間隔（分鐘） | 效能輪詢之間的時間間隔。預設值為 900 秒。 
+|===
+
+
+== 疑難排解
+
+您可以在頁面或中找到其他link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]資訊。

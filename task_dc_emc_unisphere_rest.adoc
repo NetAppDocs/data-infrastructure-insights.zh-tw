@@ -1,0 +1,102 @@
+---
+sidebar: sidebar 
+permalink: task_dc_emc_unisphere_rest.html 
+keywords: data collector, Unisphere, EMC 
+summary: 設定Dell EMC UnREST資料收集器。 
+---
+= 設定Dell EMC Unisphere資料收集器
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+此資料收集器會從適用於PowerMax / Vmax 3管理系統的Dell EMC Unaerserview取得庫存與效能資料。
+
+請注意、Dell/EMC直到Un推出 每個磁碟區統計資料、此資料收集器才支援9.2.0以上、但無法收集磁碟區統計資料、因為它們不存在。
+
+一個 Unlocal for Vmax/PowerMax 執行個體可能正在管理一個或多個 Symmetrix Vmax 3 或更高版本的儲存陣列、此收集器預設會嘗試探索該 Un主動 式執行個體的所有「本機」儲存陣列。如果 Unorome 執行個體看到「遠端」陣列（即透過 SRDF 複寫連線的陣列）、則會忽略這些陣列、並在 Data Infrastructure Insights 中建立額外的 Unorome 收集器、以找出該站台中任何 Unorome 執行個體將其視為本機的位置。
+
+對於組態、資料收集器需要Un禁 用伺服器的IP位址/FQDN、連接至連接埠8443的TCP連線、以及使用者名稱和密碼。
+
+
+
+== 需求
+
+* Un禁 用伺服器的IP位址/完整網域名稱
+* 使用者名稱和密碼
+* 連接埠8443.
+
+
+
+
+== 組態
+
+[cols="2*"]
+|===
+| 欄位 | 說明 
+
+
+| Un禁 用伺服器的IP位址 | Un禁 用伺服器的IP位址或完整網域名稱 
+
+
+| Un禁 用環境連接埠 | 預設值為843 
+
+
+| 使用者名稱 | Un禁 用伺服器的使用者名稱 
+
+
+| 密碼 | 用於Un禁 用伺服器的密碼 
+|===
+
+
+== 進階組態
+
+[cols="2*"]
+|===
+| 欄位 | 說明 
+
+
+| 庫存輪詢時間間隔（分鐘） | 預設值為 40 分鐘。 
+
+
+| 效能意見調查時間間隔（秒） | 效能輪詢之間的時間間隔。 
+
+
+| 選擇「排除」或「包含」以指定清單 | 指定是否要包含或排除VM 
+
+
+| 庫存篩選器裝置清單 | 要篩選的VM清單（以英文分隔、如果值中使用以英文分隔、則以分號分隔）以供篩選 
+
+
+| Un推出 效能意見調查時間間隔（秒） | 預設值為300秒 
+|===
+
+
+== 疑難排解
+
+如果您在使用此資料收集器時遇到問題、請嘗試下列事項：
+
+
+
+=== 庫存
+
+[cols="2*"]
+|===
+| 問題： | 試用： 
+
+
+| 錯誤：使用者驗證失敗。 | 請確定您的此裝置認證資料正確無誤。 
+
+
+| 庫存最近狀態：擷取非預期的資料 - 陣列報告的 0 磁碟區 | 通常表示授權（非驗證）問題。請確定您的認證正確無誤、而且使用者名稱有權列出所有磁碟區並查看其屬性。 
+|===
+您可以在頁面或中找到其他link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]資訊。

@@ -1,0 +1,516 @@
+---
+sidebar: sidebar 
+permalink: task_config_telegraf_agent_k8s.html 
+keywords: kubernetes, Kubernetes, k8s, telegraf, installation, install, agent, telegraf agent, eks, operator 
+summary: Kubernetes Monitoring Operator 會收集 Kubernetes 資料、以供 Data Infrastructure Insights 使用。 
+---
+= Kubernetes 監控營運商的安裝與組態
+:hardbreaks:
+:toclevels: 2
+:allow-uri-read: 
+:nofooter: 
+:toclevels: 2
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Data Infrastructure Insights 為 Kubernetes 集合提供 * Kubernetes Monitoring Operator* 。瀏覽至 * Kubernetes > Collectores > +Kubernetes Collector* 以部署新的運算子。
+
+
+toc::[]
+
+
+== 安裝 Kubernetes Monitoring Operator 之前
+
+安裝或升級 Kubernetes Monitoring Operator 之前，請先參閱link:pre-requisites_for_k8s_operator.html["先決條件"]文件。
+
+
+
+== 安裝 Kubernetes Monitoring Operator
+
+image:NKMO-Instructions-1.png["監控操作員指示"] image:NKMO-Instructions-2.png["監控操作員指示"]
+
+.在 Kubernetes 上安裝 Kubernetes Monitoring Operator Agent 的步驟：
+. 輸入唯一的叢集名稱和命名空間。如果您<<升級,升級>>來自先前的 Kubernetes 運算子，請使用相同的叢集名稱和命名空間。
+. 一旦輸入這些指令碼、您就可以將 Download Command 片段複製到剪貼簿。
+. 將程式碼片段貼到_bash_視窗中並執行。將下載操作員安裝檔案。請注意、程式碼片段具有獨特的金鑰、有效時間為24小時。
+. 如果您有自訂或私有儲存庫、請複製選用的「影像」抽取片段、將其貼入 _bash_ Shell 並加以執行。影像擷取完成後、請將其複製到您的私有儲存庫。請務必維持相同的標記和資料夾結構。更新 _operer-deployment.yaml_ 中的路徑、以及 _operer-config.yaml_ 中的泊塢視窗儲存庫設定。
+. 如有需要、請檢閱可用的組態選項、例如 Proxy 或私有儲存庫設定。您可以閱讀更多關於link:telegraf_agent_k8s_config_options.html["組態選項"]的資訊。
+. 準備好之後、請複製 KUBECtl 套用程式碼片段、下載並執行、以部署操作員。
+. 安裝會自動繼續進行。完成後、按一下 _ 下一步 _ 按鈕。
+. 安裝完成後、按一下 _ 下一步 _ 按鈕。請務必刪除或安全儲存 _operer-Secrets 。 yaml_ 檔案。
+
+
+如果您使用的是 Proxy ，請參閱關於<<configuring-proxy-support,設定 Proxy>>。
+
+如果您有自訂儲存庫，請閱讀關於<<using-a-custom-or-private-docker-repository,使用自訂 / 私有泊塢視窗儲存庫>>。
+
+
+
+== Kubernetes 監控元件
+
+資料基礎架構 Insights Kubernetes 監控由四個監控元件組成：
+
+* 叢集度量
+* 網路效能與地圖（選用）
+* 事件記錄（選用）
+* 變更分析（選用）
+
+
+根據預設、每個 Kubernetes 收集器都會啟用上述選用元件；如果您決定不需要特定收集器的元件、您可以瀏覽至 *Kubernetes > Collectors* 、然後從畫面右側的收集器「三點」功能表中選取「修改部署」、將其停用。
+
+image:KubernetesModifyDeploymentMenu.png["在 Kubernetes Collector 清單頁面上修改部署功能表"]
+
+畫面會顯示每個元件的目前狀態、並可讓您視需要停用或啟用該收集器的元件。
+
+image:KubernetesModifyDeploymentScreen.png["Mody 部署選項、 700"]
+
+
+
+== 升級
+
+
+
+=== 升級至最新的 Kubernetes Monitoring Operator
+
+判斷現有運算子是否存在 AgentConfiguration （如果您的命名空間不是預設的 _NetApp-monitoring 、請改用適當的命名空間）：
+
+ kubectl -n netapp-monitoring get agentconfiguration netapp-monitoring-configuration
+如果存在 AgentConfiguration ：
+
+* <<installing-the-kubernetes-monitoring-operator,安裝>>現有運算子的最新運算子。
++
+** 確保您使用的是<<using-a-custom-or-private-docker-repository,擷取最新的容器映像>>自訂儲存庫。
+
+
+
+
+如果 AgentConfiguration 不存在：
+
+* 請記下資料基礎架構洞見所識別的叢集名稱（如果您的命名空間不是預設的 NetApp 監控、請改用適當的命名空間）：
++
+ kubectl -n netapp-monitoring get agent -o jsonpath='{.items[0].spec.cluster-name}'
+* 建立現有運算子的備份（如果您的命名空間不是預設的 NetApp 監控功能、請改用適當的命名空間）：
++
+ kubectl -n netapp-monitoring get agent -o yaml > agent_backup.yaml
+* <<to-remove-the-kubernetes-monitoring-operator,解除安裝>>現有的運算子。
+* <<installing-the-kubernetes-monitoring-operator,安裝>>最新的運算子。
++
+** 請使用相同的叢集名稱。
+** 下載最新的 Operator YAML 檔案之後、請先將 agent_backup.yaml 中的任何自訂項目連接至下載的 operator-config.yaml 、然後再進行部署。
+** 確保您使用的是<<using-a-custom-or-private-docker-repository,擷取最新的容器映像>>自訂儲存庫。
+
+
+
+
+
+
+== 停止並啟動 Kubernetes 監控操作員
+
+若要停止 Kubernetes 監控操作員：
+
+ kubectl -n netapp-monitoring scale deploy monitoring-operator --replicas=0
+若要啟動 Kubernetes Monitoring 運算子：
+
+ kubectl -n netapp-monitoring scale deploy monitoring-operator --replicas=1
+
+
+== 正在解除安裝
+
+
+
+=== 移除 Kubernetes Monitoring Operator
+
+請注意、 Kubernetes Monitoring Operator 的預設命名空間是「 NetApp-Monitoring 」。如果您已設定自己的命名空間、請在這些名稱空間以及所有後續命令和檔案中取代該命名空間。
+
+可使用下列命令解除安裝較新版本的監控操作員：
+
+....
+kubectl -n <NAMESPACE> delete agent -l installed-by=nkmo-<NAMESPACE>
+kubectl -n <NAMESPACE> delete clusterrole,clusterrolebinding,crd,svc,deploy,role,rolebinding,secret,sa -l installed-by=nkmo-<NAMESPACE>
+....
+如果監控操作員部署在其專屬命名空間中、請刪除命名空間：
+
+ kubectl delete ns <NAMESPACE>
+如果第一個命令傳回「找不到資源」、請依照下列指示解除安裝舊版監控操作員。
+
+依序執行下列每個命令。視您目前的安裝情況而定、其中一些命令可能會傳回「找不到物件」訊息。這些訊息可能會被安全忽略。
+
+....
+kubectl -n <NAMESPACE> delete agent agent-monitoring-netapp
+kubectl delete crd agents.monitoring.netapp.com
+kubectl -n <NAMESPACE> delete role agent-leader-election-role
+kubectl delete clusterrole agent-manager-role agent-proxy-role agent-metrics-reader <NAMESPACE>-agent-manager-role <NAMESPACE>-agent-proxy-role <NAMESPACE>-cluster-role-privileged
+kubectl delete clusterrolebinding agent-manager-rolebinding agent-proxy-rolebinding agent-cluster-admin-rolebinding <NAMESPACE>-agent-manager-rolebinding <NAMESPACE>-agent-proxy-rolebinding <NAMESPACE>-cluster-role-binding-privileged
+kubectl delete <NAMESPACE>-psp-nkmo
+kubectl delete ns <NAMESPACE>
+....
+如果先前已建立安全性內容限制：
+
+ kubectl delete scc telegraf-hostaccess
+
+
+== 關於Kube-state指標
+
+NetApp Kubernetes監控操作員會安裝自己的Kube-態 指標、以避免與任何其他執行個體發生衝突。
+
+如需有關 Kube-State-Metrics 的資訊，請參閱link:task_config_telegraf_kubernetes.html["本頁"]。
+
+
+
+== 設定 / 自訂操作員
+
+這些區段包含自訂運算子組態、使用 Proxy 、使用自訂或私有泊塢視窗儲存庫或使用 OpenShift 的相關資訊。
+
+
+
+=== 組態選項
+
+最常修改的設定可在 _AgentConfiguration_ 自訂資源中進行設定。您可以編輯 _operer-config.yaml_ 檔案、在部署運算子之前編輯此資源。此檔案包含設定的註解範例。如需最新版的運算子，請參閱清單link:telegraf_agent_k8s_config_options.html["可用的設定"]。
+
+您也可以使用下列命令在部署運算子之後編輯此資源：
+
+ kubectl -n netapp-monitoring edit AgentConfiguration
+若要判斷您部署的營運者版本是否支援 AgentConfiguration 、請執行下列命令：
+
+ kubectl get crd agentconfigurations.monitoring.netapp.com
+如果您看到「錯誤來自伺服器（ NotFound ）」訊息、則必須先升級您的營運商、才能使用 AgentConfiguration 。
+
+
+
+=== 設定Proxy支援
+
+您可以在兩個地方使用環境中的 Proxy 來安裝 Kubernetes Monitoring Operator 。這些可能是相同或獨立的Proxy系統：
+
+* 執行安裝程式碼片段（使用「 cURL 」）時需要 Proxy 、以將執行程式碼片段的系統連線至您的 Data Infrastructure Insights 環境
+* 目標 Kubernetes 叢集與您的 Data Infrastructure Insights 環境通訊所需的 Proxy
+
+
+如果您使用上述任一種或兩者的 Proxy 、為了安裝 Kubernetes Operating Monitor 、您必須先確定您的 Proxy 已設定為允許與 Data Infrastructure Insights 環境進行良好的通訊。如果您有代理伺服器、而且可以從想要安裝運算子的伺服器 / VM 存取 Data Infrastructure Insights 、則您的 Proxy 可能已正確設定。
+
+對於用於安裝 Kubernetes 作業系統的 Proxy 、在安裝運算子之前、請先設定 _http 代理伺服器 /https 代理伺服器 _ 環境變數。在某些Proxy環境中、您可能也需要設定_no_proxyEnvironments _變數。
+
+若要設定變數、請在系統 * 上 * 安裝 Kubernetes Monitoring 運算子之前 * 執行下列步驟：
+
+. 為目前使用者設定_https_proxy_和/或_https_proxy_環境變數：
++
+.. 如果正在設定的Proxy沒有驗證（使用者名稱/密碼）、請執行下列命令：
++
+ export https_proxy=<proxy_server>:<proxy_port>
+.. 如果正在設定的Proxy具有驗證（使用者名稱/密碼）、請執行下列命令：
++
+ export http_proxy=<proxy_username>:<proxy_password>@<proxy_server>:<proxy_port>
+
+
+
+
+對於 Kubernetes 叢集用來與 Data Infrastructure Insights 環境通訊的 Proxy 、請在閱讀完所有指示之後、安裝 Kubernetes Monitoring Operator 。
+
+在部署 Kubernetes Monitoring Operator 之前、請先在 operator-config.yaml 中設定 AgentConfiguration 的 Proxy 區段。
+
+[listing]
+----
+agent:
+  ...
+  proxy:
+    server: <server for proxy>
+    port: <port for proxy>
+    username: <username for proxy>
+    password: <password for proxy>
+
+    # In the noproxy section, enter a comma-separated list of
+    # IP addresses and/or resolvable hostnames that should bypass
+    # the proxy
+    noproxy: <comma separated list>
+
+    isTelegrafProxyEnabled: true
+    isFluentbitProxyEnabled: <true or false> # true if Events Log enabled
+    isCollectorsProxyEnabled: <true or false> # true if Network Performance and Map enabled
+    isAuProxyEnabled: <true or false> # true if AU enabled
+  ...
+...
+----
+
+
+=== 使用自訂或私有泊塢視窗儲存庫
+
+根據預設、 Kubernetes Monitoring Operator 會從 Data Infrastructure Insights 儲存庫中擷取容器映像。如果您使用 Kubernetes 叢集做為監控目標、且該叢集設定為僅從自訂或私有 Docker 儲存庫或容器登錄中提取容器映像、則必須設定 Kubernetes Monitoring Operator 所需的容器存取權。
+
+從 NetApp Monitoring Operator 安裝方塊執行「影像提取片段」。此命令會登入 Data Infrastructure Insights 儲存庫、拉出操作員的所有影像相依性、然後登出 Data Infrastructure Insights 儲存庫。出現提示時、請輸入提供的儲存庫暫存密碼。此命令會下載操作員所使用的所有影像、包括選用功能。請參閱下方、瞭解這些影像的用途。
+
+核心營運者功能與 Kubernetes 監控
+
+* NetApp 監控
+* CI-KRBA-Proxy
+* CI-ksm
+* CI-Telegraf
+* 無 distrouse-root 使用者
+
+
+事件記錄
+
+* CI-Fluent 位元
+* CI-Kubernetes-event-Exporter
+
+
+網路效能與地圖
+
+* CI-net-觀察者
+
+
+根據您的企業原則、將「operator」泊塢視窗影像推送到您的「私有/本機/企業」泊塢視窗儲存庫。確保儲存庫中這些映像的映像標記和目錄路徑與 Data Infrastructure Insights 儲存庫中的映像標記和目錄路徑一致。
+
+在 operer-deployment.yaml 中編輯監控營運者部署、並修改所有映像參照以使用您的私有 Docker 儲存庫。
+
+....
+image: <docker repo of the enterprise/corp docker repo>/ci-kube-rbac-proxy:<ci-kube-rbac-proxy version>
+image: <docker repo of the enterprise/corp docker repo>/netapp-monitoring:<version>
+....
+在 operer-config.yaml 中編輯 AgentConfiguration 、以反映新的泊塢視窗 repo 位置。為您的私有儲存庫建立新的 imagePullSecret 、如需詳細資料、請參閱 _https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/_
+
+[listing]
+----
+agent:
+  ...
+  # An optional docker registry where you want docker images to be pulled from as compared to CI's docker registry
+  # Please see documentation link here: link:task_config_telegraf_agent_k8s.html#using-a-custom-or-private-docker-repository
+  dockerRepo: your.docker.repo/long/path/to/test
+  # Optional: A docker image pull secret that maybe needed for your private docker registry
+  dockerImagePullSecret: docker-secret-name
+----
+
+
+=== OpenShift指示
+
+如果您是在 OpenShift 4.6 或更新版本上執行、則必須在 _operer-config.yaml_ 中編輯 AgentConfiguration 、才能啟用 _runPrivileged_ 設定：
+
+....
+# Set runPrivileged to true SELinux is enabled on your kubernetes nodes
+runPrivileged: true
+....
+OpenShift可能會實作額外的安全層級、以封鎖對某些Kubernetes元件的存取。
+
+
+
+== 關於機密的備註
+
+若要移除 Kubernetes Monitoring Operator 檢視整個叢集機密的權限、請在安裝之前、從 _operer-setup.yaml_ 檔案中刪除下列資源：
+
+[listing]
+----
+ ClusterRole/netapp-ci-<namespace>-agent-secret-clusterrole
+ ClusterRoleBinding/netapp-ci-<namespace>-agent-secret-clusterrolebinding
+----
+如果是升級、也請從叢集中刪除資源：
+
+[listing]
+----
+ kubectl delete ClusterRole/netapp-ci-<namespace>-agent-secret-clusterrole
+ kubectl delete ClusterRoleBinding/netapp-ci-<namespace>-agent-secret-clusterrolebinding
+----
+如果啟用變更分析、請修改 _AgentConfiguration_ 或 _operer-config.yaml_ 以取消變更管理區段的註解、並在變更管理區段下包含 _kindsToIgnoreFromWatch ：「 Secrets 」。請注意此行中單引號和雙引號的存在和位置。
+
+....
+# change-management:
+  ...
+  # # A comma separated list of kinds to ignore from watching from the default set of kinds watched by the collector
+  # # Each kind will have to be prefixed by its apigroup
+  # # Example: '"networking.k8s.io.networkpolicies,batch.jobs", "authorization.k8s.io.subjectaccessreviews"'
+  kindsToIgnoreFromWatch: '"secrets"'
+  ...
+....
+
+
+== 正在驗證Kubernetes Checksum
+
+Data Infrastructure Insights 代理程式安裝程式會執行完整性檢查、但有些使用者可能會想要在安裝或套用下載的成品之前執行自己的驗證。若要執行純下載作業（而非預設的下載與安裝）、這些使用者可以編輯從UI取得的代理程式安裝命令、並移除後續的「install」選項。
+
+請遵循下列步驟：
+
+. 依照指示複製代理程式安裝程式程式片段。
+. 不要將程式碼片段貼到命令視窗中、而是貼到文字編輯器中。
+. 從命令中刪除後端"--install"。
+. 從文字編輯器複製整個命令。
+. 現在請將其貼到命令視窗（工作目錄）中、然後執行。
++
+** 下載並安裝（預設）：
++
+ installerName=cloudinsights-rhel_centos.sh … && sudo -E -H ./$installerName --download –-install
+** 僅限下載：
++
+ installerName=cloudinsights-rhel_centos.sh … && sudo -E -H ./$installerName --download
+
+
+
+
+下載專用命令會將 Data Infrastructure Insights 中所有必要的成品下載到工作目錄中。這些成品包括但不限於：
+
+* 安裝指令碼
+* 環境檔案
+* Y反 洗錢檔案
+* 簽署的Checksum檔案（sh256.signed）
+* 用於簽名驗證的一個PES檔案（NetApp_CERT.pem）
+
+
+安裝指令碼、環境檔案及Yaml檔案均可使用目視檢查進行驗證。
+
+您可以確認其指紋為下列項目、以驗證該PEM檔案：
+
+ 1A918038E8E127BB5C87A202DF173B97A05B4996
+更具體地說、
+
+ openssl x509 -fingerprint -sha1 -noout -inform pem -in netapp_cert.pem
+簽署的Checksum檔案可以使用PEM檔案進行驗證：
+
+ openssl smime -verify -in sha256.signed -CAfile netapp_cert.pem -purpose any
+一旦所有成品都已通過驗證、即可執行下列步驟來啟動代理程式安裝：
+
+ sudo -E -H ./<installation_script_name> --install
+
+
+=== 公差和污染
+
+_NetApp-CI-telegraf-DS_ 、 _NetApp-CI-Fluent-bit-DS_ 和 _NetApp-CI-net-觀察者 -L4-DS_ 示範必須在叢集中的每個節點上排程一個 Pod 、以便正確收集所有節點上的資料。已將操作員配置爲允許某些已知的 * 污點 * 。如果在節點上配置了任何自定義污點，從而阻止 Pod 在每個節點上運行，則可以爲這些污點創建 *公差 * link:telegraf_agent_k8s_config_options.html["在 _AgentConfiguration_ 中"]。如果您已將自訂污點套用至叢集中的所有節點、您也必須在操作員部署中新增必要的容錯功能、以便排程及執行操作員 Pod 。
+
+瞭解更多關於 Kubernetes link:https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/["污染與容許"]的資訊。
+
+返回link:task_config_telegraf_agent_k8s.html["* NetApp Kubernetes 監控操作員安裝 * 頁面"]
+
+
+
+== 疑難排解
+
+如果您在設定 Kubernetes 監控操作員時遇到問題、請嘗試下列事項：
+
+[cols="stretch"]
+|===
+| 問題： | 試用： 
+
+
+| 我看不到Kubernetes持續Volume與對應的後端儲存設備之間的超連結/連線。我的Kubernetes持續Volume是使用儲存伺服器的主機名稱來設定。 | 請依照步驟解除安裝現有的Telegraf代理程式、然後重新安裝最新的Telegraf代理程式。您必須使用 Telegraf 2.0 版或更新版本、且必須主動監控您的 Kubernetes 叢集儲存設備、以獲得 Data Infrastructure Insights 。 
+
+
+| 我在記錄中看到類似以下內容的訊息： E0901 15 ： 21 ： 39.962145 1 反射器。前往： 178 ） k8s.io/kube 狀態指標 / 內部 / 儲存 / 建置器。前往： 352 ：無法列出 * v1.MutatingWebhookbuilder 組態：伺服器找不到所要求的資源 E0901 ： 21 ： 43.16178 伺服器無法找到 IO 資源 v1.16178 v1/816v1.v1.v1.v1.v1.v1.v1.v2.1* | 如果您執行Kubernetes版本低於1.20的Kubernetes 2.0.0版或更新版本之Kube-state度量、則可能會出現這些訊息。若要取得Kubernetes版本：_kubeclt版本_若要取得Kube-st態 度量版本：_kubeclt Get Deploy / kube-state-metases -o jsonpath='{.image}'_若要避免發生這些訊息、使用者可以修改其kube-state-metases部署、以停用下列Les:_mutatingwebhookwebhookvalidkap_props_enefroup參數組態： resources=certicatesignquests、水平複製、組態、cronjobs、取消套用、部署、端點、橫向套用自動擴充、擷取、工作、限制範圍、命名空間、網路原則、節點、持續套用磁碟區、持續套用磁碟區、資源資源等、機密、服務、服務、網路套用原則、預設套用範圍、重複本、複本、複製、資源、套用、資源、限制、資源組、資源、資源組態、資源、儲存、預設值、資源、限制、資源、資源、儲存、組態設定、儲存、儲存、儲存、限制、資源、資源、資源、儲存區、限制、資源、資源、資源、資源、儲存區、資源、限制、資源、資源、資源、儲存區、限制、儲存區、資源組態設定、資源、儲存區、資源、資源、儲存區、資源、資源、資源、儲存區、儲存區、資源、資源、資源、資源、資源、資源、 驗證webhookconfigurations、volume附件" 
+
+
+| 我看到 Telegraf 的錯誤訊息與下列類似，但 Telegraf 確實啟動並執行： 10 月 11 日 14 ： 23 ： 41 IP-172-31-39-47 systemd[1] ：啟動外掛程式導向的伺服器代理程式，將計量報告給影響資料庫。10 月 11 日 14 ： 23 ： 41 IP-172-31-39-47 Telegraf[1827] ： Time="2021-10-11T14:23:41Z" Level=error msg="Failed to create cache directory./etc/telegraf/.cache/snowflake ， err ： mkdir /etc/telegraf/.ca Che ：權限遭拒。忽略 \n" func="govake.(*defaultLogger ） .Errorf " file="log.go:120" Oct11 14 ： 23 ： 41 IP-172-39-47 Telef=18211-20211-20z"已忽略。開啟 /etc/telegraf/.cache/cloflake/occ_restore_cache.json ：無此類檔案或目錄 \n" func="govake.(*defaultLogger ） .Errorf" file="log.go:120" 10 月 11 日 14 ： 23 ： 41 IP-172-39-47 teleraf[1821-2021:2012]啟動Telegraf 1.19.3 | 這是已知的問題。如link:https://github.com/influxdata/telegraf/issues/9407["這篇GitHub文章"]需詳細資訊、請參閱。只要Telegraf已啟動且正在執行、使用者就可以忽略這些錯誤訊息。 
+
+
+| 在Kubernetes上、我的Telegraf pod報告下列錯誤：「處理mountstats資訊時發生錯誤：無法開啟mountstats檔案：/hostfs/proc/1/mountstats、錯誤：開啟/hostfs/proc/1/mountstats：權限遭拒」 | 如果啟用並強制執行 SELinux 、則可能會阻止 Telegraf Pod 存取 Kubernetes 節點上的 /proc/1/mountstats 檔案。若要克服此限制、請編輯 agentconfiguration 、然後啟用 RunPrivileged 設定。如需詳細資訊、請link:task_config_telegraf_agent_k8s.html#openshift-instructions["OpenShift指示"]參閱。 
+
+
+| 在Kubernetes上、我的Telegraf ReplicaSet pod報告下列錯誤：[inputs.prometheus]錯誤in plugin：Could not load keypair /etc/Kubernetes /pi/etcd/server.crt：/etc/Kubernetes /pi/etcd/server.key：open /etc/Kubernetes /pi/etcd/server.crt目錄或這樣的檔案 | Telegraf ReplicaSet Pod可在指定為主節點或etcd節點上執行。如果ReplicaSet Pod未在其中一個節點上執行、您將會收到這些錯誤。檢查您的主節點/ etcd節點是否有問題。如果有、請將必要的容許值新增至Telegraf ReplicaSet、Telegraf-RS。例如、編輯ReplicaSet... kurbectl編輯RS Telefra-RS ...、並將適當的容許值新增至規格。然後重新啟動ReplicaSet Pod。 
+
+
+| 我有PSP/PSA.環境。這是否會影響我的監控操作員？ | 如果您的 Kubernetes 叢集正在執行 Pod 安全政策（ PSP ）或 Pod 安全許可（ PSA ）、則您必須升級至最新的 Kubernetes 監控營運者。請依照下列步驟升級至目前支援 PP/PSA 的營運商： 1.<<uninstalling,解除安裝>>先前的監控操作員： kebectl delete agents NetApp NetApp -n NetApp 監控 kebectl delete ns NetApp 監控 kebectl delete crd agents.monitoring.clusterrolebinding agent-manager-rolebinding agent-proxy-roleagent-rolebinding admin-rapproxy-rateagent-bindingleagent-bindingleadmin-rolecinglecinglecinglecinglecinglecingle.<<installing-the-kubernetes-monitoring-operator,安裝>>最新版本的監控業者。 
+
+
+| 我在嘗試部署操作員時遇到問題、而且我使用 PP/PSA 。 | 1.使用下列命令編輯代理程式： kubectl -n <name-space> 編輯代理程式 2.將「已啟用安全性原則」標示為「假」。這將會停用 Pod 安全政策和 Pod 安全許可、並允許營運者進行部署。使用下列命令進行確認：kubecll Get PSP（應顯示Pod安全性原則已移除）kbecll Get all -n <命名空間>| Grep -I pp（應顯示找不到任何項目） 
+
+
+| 出現「ImagePullBackOff」錯誤 | 如果您有自訂或私有泊塢視窗儲存庫、但尚未設定 Kubernetes Monitoring Operator 正確辨識、就可能會出現這些錯誤。<<using-a-custom-or-private-docker-repository,瞭解更多資訊>>關於設定自訂 / 私有報告。 
+
+
+| 我的監控操作員部署有問題、目前的文件無法協助我解決問題。  a| 
+擷取或記下下列命令的輸出、然後聯絡技術支援團隊。
+
+[listing]
+----
+ kubectl -n netapp-monitoring get all
+ kubectl -n netapp-monitoring describe all
+ kubectl -n netapp-monitoring logs <monitoring-operator-pod> --all-containers=true
+ kubectl -n netapp-monitoring logs <telegraf-pod> --all-containers=true
+----
+
+
+| Operator 命名空間中的 Net-Oborative （工作負載對應） Pod 位於 CrashLoopBackOff | 這些 Pod 對應於網路可觀察性的工作負載對應資料收集器。請嘗試下列方法：•檢查其中一個 Pod 的記錄、以確認最低核心版本。例如： --{"CI-租 戶 -id":" 您的租戶 -id" 、 "collector 叢集 " ： "Your -k8s-cluster 名稱 " 、 "Environment ： "prod" 、 "Level" ： "error" 、 "msg" ：驗證失敗。原因：核心版本 3.10.0 低於最低核心版本 4.18.0 、 "Time" ： "2022-11-09T08:23:08Z"} --- • Net 觀察者 Pod 要求 Linux 核心版本至少為 4.18.0 。使用命令 "uname -r " 檢查核心版本、並確定它們 >=4.18.0 
+
+
+| Pod 在 Operator 命名空間中執行（預設值： NetApp-Monitoring ）、但查詢中的工作負載對應或 Kubernetes 度量、 UI 中不會顯示任何資料 | 檢查 K8S 叢集節點上的時間設定。為了準確地進行稽核和資料報告、強烈建議您使用網路時間傳輸協定（ NTP ）或簡易網路時間傳輸協定（ SNTP ）、同步代理機器上的時間。 
+
+
+| 運算子命名空間中的某些網路觀察者 Pod 處於「擱置中」狀態 | Net-觀察者 是一組示範集、在 k8s 叢集的每個節點上執行 Pod 。•記下處於「擱置中」狀態的 Pod 、並檢查它是否發生 CPU 或記憶體資源問題。確保節點中有可用的必要記憶體和 CPU 。 
+
+
+| 安裝 Kubernetes 監控操作員之後，我會立即在記錄中看到下列內容： [ 外掛程式中出現 inputs.prometheus] 錯誤：向 \http://kube-state-metrics 提出 HTTP 要求時發生錯誤。 <namespace> 。 http://kube-state-metrics svc.cluster 。 <namespace> 本機： dial tcp: LOOKUP kube-state -indformations.data.svc.cluster <namespace> 。本機：無此類主機 | 此訊息通常只有在安裝新的營運者、且_Telefra-Rs_ pod在_ksm_ pod啟動之前就已啟動時才會出現。所有Pod都在執行時、這些訊息應該會停止。 
+
+
+| 我沒有看到叢集中存在的 Kubernetes CronJobs 正在收集任何度量。 | 驗證 Kubernetes 版本（即 `kubectl version`）。如果是 v1.2.x 或更低版本、這是預期的限制。Kubernetes Monitoring Operator 部署的 kube-state 度量版本僅支援 v1.cronjob 。使用 Kubernetes 1.2.x 及以下版本時、 cronjob 資源為 v1beta 。 cronjob.因此、 kube 狀態度量無法找到 cronjob 資源。 
+
+
+| 安裝操作員之後、 Telegraf-DS Pod 會進入 CrashLoopBackOff 、 Pod 記錄會顯示「 su ：驗證失敗」。 | 編輯 _AgentConfiguration_ 中的 Teledraf 區段、並將 _dockerMetricCollectionEnabled_ 設為 false 。有關詳細信息，請參閱操作員的link:telegraf_agent_k8s_config_options.html["組態選項"]。附註：如果您使用 Data Infrastructure Insights Federal Edition 、則限制使用 _su_ 的使用者將無法收集泊塢視窗度量、因為存取泊塢視窗套接字需要以 root 身分執行 telegraf 容器、或使用 _su_ 將 Telegraf 使用者新增至泊塢視窗群組。Docker 度量集合和使用 _su_ 預設為啟用；若要停用兩者、請移除 _AgentConfiguration_ 檔案中的 _telegraf.泊 塢視窗項目： ... 規格： ... Teledraf.. ...           - 名稱：泊塢視窗      執行模式：                     - 示範設定替代項目： - 索引鍵：泊塢視窗 _UNIX 襪子 _placeholder         值： UNIX ： ///run/泊 塢視窗 .sock ...... 
+
+
+| 我在 Telegraf 記錄檔中看到類似以下內容的重複錯誤訊息： e ！[ 代理程式 ] 寫入 outputs.http ： POST 「 \https ： //les/rest/v1/lake <tenant_url> / 擷取 / 影響 xdb 」時發生錯誤：內容已超過期限（用戶端。 等待標頭時超過逾時） | 編輯 _AgentConfiguration_ 中的 Telegraf 區段、並將 _outputTimeout_ 增加至 10s 。有關詳細信息，請參閱操作員的link:telegraf_agent_k8s_config_options.html["組態選項"]。 
+
+
+| 我遺失某些事件記錄的 _ 參與物件 _ 資料。 | 請務必遵循上述章節中的步驟link:pre-requisites_for_k8s_operator.html["權限"]。 
+
+
+| 為什麼我看到兩個監控營運商 Pod 正在執行、一個名為 NetApp-CI-monitoring 、 <pod> 、另一個名為 monitoring 、 <pod> ？ | 截至 2023 年 10 月 12 日、 Data Infrastructure Insights 已重新考慮營運商、以更好地為使用者提供服務；若要充分採用這些變更<<uninstalling,移除舊的運算子>><<installing-the-kubernetes-monitoring-operator,安裝新的>>、您必須和。 
+
+
+| 我的 Kubernetes 事件意外停止回報 Data Infrastructure Insights 。  a| 
+擷取事件導出者 Pod 的名稱：
+
+ `kubectl -n netapp-monitoring get pods |grep event-exporter |awk '{print $1}' |sed 's/event-exporter./event-exporter/'`
+應為「 NetApp-CI-EVENT - Exporter 」或「 EVENT - Exporter 」。接下來，編輯監控代理程式 `kubectl -n netapp-monitoring edit agent`，並設定 log_file 的值，以反映上一步中找到的適當事件導出器 Pod 名稱。更具體地說、 log_file 應該設定為「 /var/log/container/NetApp-CI-event-Exporter.log 」或「 /var/log/containers/event-Exporter.log 」
+
+....
+fluent-bit:
+...
+- name: event-exporter-ci
+  substitutions:
+  - key: LOG_FILE
+    values:
+    - /var/log/containers/netapp-ci-event-exporter*.log
+...
+....
+或者，您也可以<<uninstalling,解除安裝>>和<<installing-the-kubernetes-monitoring-operator,重新安裝>>值機員一起使用。
+
+
+
+| 我看到 Kubernetes Monitoring Operator 部署的 Pod 因為資源不足而當機。 | 請參閱 Kubernetes Monitoring Operator link:telegraf_agent_k8s_config_options.html["組態選項"] ，視需要增加 CPU 和 / 或記憶體限制。 
+
+
+| 遺失影像或組態無效、導致 NetApp-CI-kube 狀態指標 Pod 無法啟動或準備就緒。目前狀況集已停滯、組態變更並未套用至 NetApp-CI-kube 狀態指標群。 | StateSetSet 處於某種link:https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/#forced-rollback["毀損"]狀態。在修正任何組態問題之後、 NetApp-CI-kube 狀態指標 Pod 就會恢復運作。 
+
+
+| NetApp-CI-kube-state 指標 Pod 在執行 Kubernetes 操作員升級後無法啟動、造成勘誤影像資料（無法擷取影像）。 | 請嘗試手動重設 Pod 。 
+
+
+| 我的 Kubernetes 叢集在記錄分析下會觀察到「事件已捨棄為較舊、然後是 maxEventAgeSeconds 」的訊息。 | 修改運算子 _agentconfigurated_ 、並增加 _event-aler-maxEventAgeSeconds_ （即增加至 60s ）、 _event-kaler-kubeQPS_ （即增加至 100 ）、以及 _event-kaler-kubebBurst （即增加至 500 ）。如需這些組態選項的詳細資訊，請參閱link:telegraf_agent_k8s_config_options.html["組態選項"]頁面。 
+
+
+| Telegraf 會警告或因為可鎖定的記憶體不足而當機。 | 嘗試增加基礎作業系統 / 節點中 Telegraf 可鎖定記憶體的限制。如果增加限制並非選項，請修改 NKMO 代理組態，並將 _NOISS_ 設為 _true_ 。這將指示 Telegraf 不要嘗試保留鎖定的記憶體頁面。雖然這可能會造成安全風險、因為解密的機密資料可能會被換出到磁碟、但它允許在無法保留鎖定記憶體的環境中執行。如需 _inbizon_ 組態選項的詳細資訊，請參閱link:telegraf_agent_k8s_config_options.html["組態選項"]頁面。 
+
+
+| 我看到 Telegraf 發出的警告訊息類似以下內容： _W! [Inputs.DiskIO] 無法收集「 VDC 」的磁碟名稱：讀取 /dev/VDC 時發生錯誤：沒有此類檔案或目錄 _ | 對於 Kubernetes Monitoring 操作員而言、這些警告訊息是良性的、可以安全地忽略。  或者、在 AgentConfiguration 中編輯 Telegraf 區段、並將 _runDsPrivileged 設為 true 。如需詳細資訊、請link:telegraf_agent_k8s_config_options.html["駕駛員的組態選項"]參閱。 
+
+
+| 我的 Fluent 位元 Pod 發生故障，並出現下列錯誤： [2024/10/16 14 ： 16 ： 23 ] [ 錯誤 ] [/src/flue-bit/plugins/in_tail/fs_inos_inoseture.c:360 errno=24 ] 太多開啟的檔案 [2024/10/16 14 ： 16 ： 23 ] [ 錯誤 ] 無法初始化輸入 tail.0[2024/16 ： 10/16 ： 16 ： 16 錯誤 [ 錯誤  a| 
+嘗試變更叢集中的 _fsnotify_settings ：
+
+[listing]
+----
+ sudo sysctl fs.inotify.max_user_instances (take note of setting)
+
+ sudo sysctl fs.inotify.max_user_instances=<something larger than current setting>
+
+ sudo sysctl fs.inotify.max_user_watches (take note of setting)
+
+ sudo sysctl fs.inotify.max_user_watches=<something larger than current setting>
+----
+重新啟動 Fluent 位元。
+
+附註：若要在重新啟動節點時持續執行這些設定、您需要將下列行放入 /etc/sysctl.conf
+
+[listing]
+----
+ fs.inotify.max_user_instances=<something larger than current setting>
+ fs.inotify.max_user_watches=<something larger than current setting>
+----
+|===
+您可以在頁面或中找到其他link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]資訊。

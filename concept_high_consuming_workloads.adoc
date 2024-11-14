@@ -1,0 +1,76 @@
+---
+sidebar: sidebar 
+permalink: concept_high_consuming_workloads.html 
+keywords: insight, greedy, degraded, bully, victim, impacted, impacting, impactful, impact, resources, consuming, workload 
+summary: Insights可讓您深入瞭解資源如何影響環境中的其他資源。 
+---
+= 洞見：高消費的工作負載
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+高影響力的工作負載可能會降低共享資源中其他工作負載的效能。Data Infrastructure Insights 提供的工具可協助您調查環境中的資源飽和度和影響。
+
+
+
+=== 術語
+
+談到工作負載或資源影響時、下列定義非常實用。
+
+「有影響力」或「有影響力」資源會對其他資源造成負面影響。例如、IOPS極高的磁碟區可能會導致其他磁碟區延遲增加（例如 _受影響_或_降級_資源）。影響深遠且受影響的資源是使用相同共用資源的「同儕」、例如儲存資源池或Volume。
+
+*高耗用工作負載*是目前識別為影響共用儲存資源池中其他資源的工作負載。這些工作負載可提高IOPS、減少受影響工作負載的IOPS。在 Data Infrastructure Insights 中、這些工作負載被視為 * 嚴苛的工作負載 * 。
+
+*受影響的工作負載*是受共享儲存資源池中高消耗工作負載影響的工作負載。這些工作負載因為嚴苛的工作負載而面臨IOPS降低和/或更高的延遲。
+
+*共享資源飽和*是影響IOPS與_baselity_的比率。
+
+*基準*定義為每個工作負載在偵測到的飽和前一小時內所報告的最大資料點。
+
+當IOPS被判定影響共享儲存資源池中的其他資源或工作負載時、就會發生*爭用*。
+
+
+
+=== 高使用需求的工作負載
+
+Data Infrastructure Insights 偵測到的任何高耗用工作負載、都會顯示在 Stress （壓力） _ Insight 下的 _Shared Resources （共享資源）中。瀏覽至 * 可視性 > 基礎架構洞見 * 以檢視這些洞見。
+
+image:Impacts_Workloads_Menu.png["共享資源"]
+
+按一下工作負載即可檢視其詳細資料頁面。上圖顯示發生爭用的共用資源（例如儲存資源池）上的活動。
+
+image:Insights_Shared_Resource_Contention_Chart.png["顯示共用資源上活動的圖表"]
+
+以下兩張圖表顯示嚴苛的工作負載、以及受嚴苛工作負載影響的工作負載。
+
+image:Insights_Demanding_Workload_Chart.png["嚴苛的工作負載圖表"] image:Insights_Impacted_Workload_Chart.png["受影響的工作負載圖表"]
+
+
+
+=== 我該如何解決飽和問題？
+
+您可以採取許多步驟來降低或消除環境中的飽和機率。以下是您可以嘗試的幾項功能。
+
+* 移轉高IOPS使用者
++
+將「貪婪」的工作負載移至不飽和的儲存資源池。建議您在搬移工作負載之前、先評估這些資源池的層級和容量、以避免不必要的成本或額外的爭用。
+
+* 實作服務品質（QoS）原則
++
+針對每個工作負載實作QoS原則以確保有足夠可用的可用資源、將可降低儲存資源池的飽和程度。這是長期解決方案。
+
+* 新增其他資源
++
+如果共用資源（例如儲存資源池）達到IOPS飽和點、將更多或更快的磁碟新增至資源池將可確保有足夠的可用資源來降低飽和。
+
+

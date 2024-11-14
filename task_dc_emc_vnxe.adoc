@@ -1,0 +1,124 @@
+---
+sidebar: sidebar 
+permalink: task_dc_emc_vnxe.html 
+keywords: data collector, VNXe, EMC 
+summary: 設定VNXe資料收集器。 
+---
+= 設定EMC VNXe資料收集器
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Dell EMC VNXe資料收集器可為VNXe統一化儲存陣列提供庫存支援。Data Infrastructure Insights 目前支援 iSCSI 和 NAS 傳輸協定。
+
+
+
+== 需求
+
+* VNXe資料收集器是以CLI為基礎；您必須將Unaeris for VNXe CLI（uemcli．exe）安裝到VNXe資料收集器所在的擷取單元上。
+* uemcli.exe使用HTTPS作為傳輸傳輸傳輸傳輸協定、因此擷取單位必須能夠啟動HTTPS連線至VNXe。
+* VNXe裝置的IP位址或完整網域名稱
+* 您至少必須有唯讀使用者、才能供資料收集器使用。
+* 管理解決方案促成者伺服器的IP位址。
+* 連接埠443需要HTTPS
+* EMC VNXe 資料收集器可為庫存提供 NAS 和 iSCSI 支援；將會探索光纖通道磁碟區、但 Data Infrastructure Insights 並未報告 FC 對應、遮罩或儲存連接埠。
+
+
+
+
+== 術語
+
+Data Infrastructure Insights 會從 VNXe 資料收集器取得下列庫存資訊。對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+
+[cols="2*"]
+|===
+| 廠商/模型術語 | Data Infrastructure Insights 術語 
+
+
+| 磁碟 | 磁碟 
+
+
+| 儲存陣列 | 儲存設備 
+
+
+| 處理器 | 儲存節點 
+
+
+| 儲存資源池 | 儲存資源池 
+
+
+| 一般 iSCSI 區塊資訊、 VMware VMFS | 分享 
+
+
+| 複寫遠端系統 | 同步 
+
+
+| iSCSI節點 | iSCSI目標節點 
+
+
+| iSCSI啟動器 | iSCSI目標啟動器 
+|===
+附註：這些只是通用的術語對應、可能不代表此資料來源的每個案例。
+
+
+
+== 組態
+
+[cols="2*"]
+|===
+| 欄位 | 說明 
+
+
+| VNXe儲存設備 | VNXe裝置的IP位址或完整網域名稱 
+
+
+| 使用者名稱 | VNXe裝置的使用者名稱 
+
+
+| 密碼 | VNXe裝置的密碼 
+|===
+
+
+== 進階組態
+
+[cols="2*"]
+|===
+| 欄位 | 說明 
+
+
+| 庫存輪詢時間間隔（分鐘） | 庫存輪詢之間的時間間隔。預設值為40分鐘 
+
+
+| CLI 連接埠 | 用於VNXe CLI的連接埠 
+
+
+| 效能意見調查時間間隔（秒） | 預設值為 300 。 
+|===
+
+
+== 疑難排解
+
+如果您在使用此資料收集器時遇到問題、請嘗試下列事項：
+
+
+
+=== 庫存
+
+[cols="2*"]
+|===
+| 問題： | 試用： 
+
+
+| 「無法執行外部公用程式」、並顯示錯誤訊息「無法找到Unefactable uemcli」 | * 驗證正確的 IP 位址、使用者名稱和密碼 * 確認 Data Infrastructure Insights Acquisition Unit 上已安裝 Un主動 式介面卡 CLI * 確認資料來源組態中的 Un主動 式介面卡 CLI 安裝目錄正確 * 確認 VNXe 的 IP 在資料來源組態中是否正確。從 Data Infrastructure Insights 擷取單元中、開啟 CMD 並變更至設定的安裝目錄： $ ｛ INSTALLDIR 。輸入uemcli -d <your ip>-u <your ID>/sys/aproomed show、嘗試連線VNXe裝置 
+|===
+您可以在頁面或中找到其他link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]資訊。

@@ -1,0 +1,67 @@
+---
+sidebar: sidebar 
+permalink: task_dc_na_db_host.html 
+keywords: data collector, generic db 
+summary: 一般 DB 主機解析程式收集器 
+---
+= NetApp 通用 DB 主機解析程式
+:hardbreaks:
+:toclevels: 2
+:allow-uri-read: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+此資料收集器會取得庫存
+
+
+
+== 術語
+
+Data Infrastructure Insights 從這個收集器取得庫存。
+
+
+
+== 組態
+
+[cols="2*"]
+|===
+| 欄位 | 說明 
+
+
+| DB 伺服器 IP 位址 | DB 伺服器的 IP 位址 
+
+
+| DB 伺服器連接埠 | 預設值為 3306 
+
+
+| 合格的驅動程式類別名稱 | 驅動程式的類別名稱。 
+
+
+| JDBC 驅動程式 URL | 驅動程式的 URL 
+
+
+| SQL 查詢 | 用於從資料表傳回資料的查詢 
+|===
+
+
+== 進階組態
+
+[cols="2*"]
+|===
+| 欄位 | 說明 
+
+
+| 庫存輪詢時間間隔（分鐘） | 預設為60分鐘 
+
+
+| 啟用 SSL 連線 | 選取以啟用透過 SSL 連線 
+
+
+| 報告 WWN 別名 | 選取以報告 WWN 別名 
+|===
+您可以在頁面或中找到其他link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]資訊。

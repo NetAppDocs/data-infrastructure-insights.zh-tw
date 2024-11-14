@@ -1,0 +1,113 @@
+---
+sidebar: sidebar 
+permalink: reporting_user_roles.html 
+summary: 資料基礎架構洞見報告的功能取決於您的使用者角色。 
+keywords: reporting, cognos, data warehouse, dwh, users, roles, user roles 
+---
+= Data Infrastructure Insights 報告使用者角色
+:hardbreaks:
+:toclevels: 2
+:allow-uri-read: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果您有 Data Infrastructure Insights Premium Edition 搭配 Reporting 、則環境中的每位 Data Infrastructure Insights 使用者也都可以登入「報告」應用程式（即 Cognos ）、登入單一登入（ SSO ）。只要按一下功能表中的「*報告*」連結、您就會自動登入「報告」。
+
+您在 Data Infrastructure Insights 中的使用者角色決定了您的報告使用者角色：
+
+|===
+
+
+| Data Infrastructure Insights 角色 | 報告角色 | 報告權限 
+
+
+| 訪客 | 消費者 | 可檢視、排程及執行報告、並設定個人偏好設定、例如語言和時區的偏好設定。使用者無法建立報告或執行管理工作。 
+
+
+| 使用者 | 作者 | 可執行所有的「消費者」功能、以及建立及管理報告和儀表板。 
+
+
+| 系統管理員 | 系統管理員 | 可以執行所有的「作者」功能、以及所有管理工作、例如報告的組態、以及報告工作的關機和重新啟動。 
+|===
+下表顯示每個報告角色可用的功能。
+
+|===
+
+
+| 功能 | 消費者 | 作者 | 系統管理員 
+
+
+| 在「團隊內容」索引標籤中檢視報告 | 是的 | 是的 | 是的 
+
+
+| 執行報告 | 是的 | 是的 | 是的 
+
+
+| 排程報告 | 是的 | 是的 | 是的 
+
+
+| 上傳外部檔案 | 否 | 是的 | 是的 
+
+
+| 建立工作 | 否 | 是的 | 是的 
+
+
+| 創造故事 | 否 | 是的 | 是的 
+
+
+| 建立報告 | 否 | 是的 | 是的 
+
+
+| 建立套件與資料模組 | 否 | 是的 | 是的 
+
+
+| 執行管理工作 | 否 | 否 | 是的 
+
+
+| 新增 / 編輯 HTML 項目 | 否 | 否 | 是的 
+
+
+| 以 HTML 項目執行報告 | 是的 | 是的 | 是的 
+
+
+| 新增 / 編輯自訂 SQL | 否 | 否 | 是的 
+
+
+| 使用自訂 SQL 執行報告 | 是的 | 是的 | 是的 
+|===
+
+
+== 設定報告（Cognos）電子郵件偏好設定
+
+
+NOTE: 如果您在 Data Infrastructure Insights Reporting （即 Cognos 應用程式）中變更使用者電子郵件偏好設定、則這些偏好設定僅適用於目前的工作階段。登出Cognos後再重新登入、將會重設您的電子郵件偏好設定。
+
+
+
+=== 我應該採取哪些步驟來準備現有環境以啟用SSO？
+
+若要確保報告得以保留、請使用下列步驟、將所有報告從「我的內容」移轉至「團隊內容」。在您的環境中啟用SSO之前、您必須先執行此動作：
+
+. 瀏覽至 * 功能表 > 內容 *
+
+
+image:Reporting_Menu.png["Cognos 左上角選單"]
+
+. 在 *_Team Content_* 中建立新資料夾
++
+.. 如果已建立多位使用者、請為每位使用者建立個別的資料夾、以避免覆寫名稱重複的報告
+
+
+. 瀏覽至「我的內容」
+. 選取您要保留的所有報告。
+. 在功能表右上角、選取「複製或移動」
+. 瀏覽至_Team Content_中新建立的資料夾
+. 使用「複製到」或「移到」按鈕、將報告貼到新建立的資料夾
+. 一旦 Cognos 啟用 SSO 、請使用用來建立帳戶的電子郵件地址登入 Data Infrastructure Insights 。
+. 瀏覽至Cognos內的_Team Content_資料夾、然後將先前儲存的報告複製或移回「我的內容」。
+

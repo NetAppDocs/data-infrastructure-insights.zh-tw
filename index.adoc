@@ -1,0 +1,46 @@
+---
+sidebar: sidebar 
+permalink: index.html 
+summary: 歡迎使用 Data Infrastructure Insights 文件入口網站。 
+keywords:  
+---
+= Data Infrastructure Insights 文件
+:hardbreaks:
+:toclevels: 2
+:allow-uri-read: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp 資料基礎架構洞見（前身為 Cloud Insights ）是一種雲端基礎架構監控工具、可讓您清楚掌握完整的基礎架構。透過 Data Infrastructure Insights 、您可以監控、疑難排解及最佳化所有資源、包括公有雲和私有資料中心。
+
+
+
+== Data Infrastructure Insights 對我有何幫助？
+
+Data Infrastructure Insights 提供混合式多雲端監控功能、讓您能夠完整觀察基礎架構和工作負載。
+
+* 適用於異質基礎架構和工作負載的資料收集器、包括Kubernetes
+* 開放式Telegraf收集器和開放式API、可輕鬆整合
+* 全方位警示與通知
+* 機器學習、提供智慧型洞見
+* 最佳化資源使用率
+* 內建或可自訂的儀表板搭配進階篩選功能、可將回答問題的顯示雜訊降至最低
+* 探索ONTAP 您的不一樣儲存作業的健全狀況 
+* 保護您最寶貴的商業資產（資料）、防範勒索軟體或資料毀損攻擊
+
+
+'''
+
+
+== 快速入門
+
+* 如何link:task_cloud_insights_onboarding_1.html["*入門*"]運用 Data Infrastructure Insights ？
+* 我已註冊。現在該怎麼辦？link:task_getting_started_with_cloud_insights.html["取得資料"] link:concept_user_roles.html["設定使用者"]
+* 太棒了！接下來呢？link:task_defining_annotations.html["準備資產：註釋"] link:concept_querying_assets.html["尋找您想要的資產：查詢"] link:concept_dashboards_overview.html["查看您想要的資料：儀表板"] link:task_create_monitor.html["監控與警示"] link:task_cs_getting_started.html["保護資料安全"]
+* 這是一件很棒的事！我準備好了link:concept_subscribing_to_cloud_insights.html["*訂閱*"]。
+

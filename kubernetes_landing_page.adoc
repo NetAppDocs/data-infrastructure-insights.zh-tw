@@ -1,0 +1,56 @@
+---
+sidebar: sidebar 
+permalink: kubernetes_landing_page.html 
+keywords: telegraf, installation, install, kubernetes, pods, clusters, filters, filtering, k8s 
+summary: Kubernetes登陸頁面說明 
+---
+= Kubernetes叢集概觀
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+資料基礎架構 Insights Kubernetes Explorer 是一個強大的工具、可顯示 Kubernetes 叢集的整體健全狀況和使用情形、並可讓您輕鬆深入調查調查領域。
+
+按一下*儀表板> Kubernetes Explorer*即可開啟Kubernetes叢集清單頁面。本總覽頁面包含環境中Kubernetes叢集的表格。
+
+image:Kubernetes_List_Page_new.png["Kubernetes清單頁面"]
+
+
+
+=== 叢集清單
+
+叢集清單會針對您環境中的每個叢集顯示下列資訊：
+
+* 叢集*名稱*。按一下叢集名稱將會開啟該叢集link:kubernetes_cluster_detail.html["*詳細資料頁*"]的。
+* *飽和*百分比。整體飽和是CPU、記憶體或儲存飽和的最高值。
+* 叢集中*節點*的數目。按一下此編號將會開啟「節點」清單頁面。
+* 叢集中的* pod *數。按一下此號碼將會開啟Pod清單頁面。
+* 叢集中的*命名空間*數目。按一下此號碼將會開啟「命名空間」清單頁面。
+* 叢集中*工作負載*的數目。按一下此數字將會開啟工作負載清單頁面。
+
+
+
+
+== 精簡篩選條件
+
+當您開始篩選時、您會看到根據目前文字建立*萬用字元篩選器*的選項。選取此選項會傳回符合萬用字元運算式的所有結果。您也可以使用Not或and建立* Expressions *、或是選取「無」選項來篩選欄位中的null值。
+
+image:Filter_Kubernetes_Explorer.png["在K8S檔案總管中使用萬用字元進行篩選"]
+
+根據萬用字元或運算式（例如 不、和、「無」等）會在篩選欄位中以深藍色顯示。您直接從清單中選取的項目會以淺藍色顯示。
+
+image:Filter_Kubernetes_Explorer_2.png["顯示萬用字元和所選項目的篩選器"]
+
+Kubernetes篩選器是關聯式的、也就是說、如果您在特定節點頁面上、pod_name篩選器只會列出與該節點相關的Pod。此外、如果您套用特定命名空間的篩選器、則pod_name篩選器只會在該節點_and中列出該命名空間中的Pod。
+
+請注意、萬用字元與運算式篩選功能可搭配文字或清單使用、但不能搭配數值、日期或布爾值使用。

@@ -1,0 +1,227 @@
+---
+sidebar: sidebar 
+permalink: task_install_manual_au.html 
+keywords: Acquisition Unit, AU, install, configure, Linux, add, remove, uninstall, delete, deleting, move, moving, manual, AU, Patch 
+summary: 資料基礎架構 Insights 可設定為手動更新 AU 軟體、讓您更能掌控環境中安裝的軟體。 
+---
+= 手動安裝擷取單元軟體
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+根據預設、 Data Infrastructure Insights 會在部署更新時自動更新 Acquisition Unit （ AU ）軟體。不過、在安全的控制環境中、可能無法或不需要自動更新。在這些案例中、您可以設定 Data Infrastructure Insights 、讓 AU 軟體手動更新、讓您更能掌控環境中安裝的軟體。
+
+若要手動下載並安裝 AU 軟體、請執行下列步驟。Data Infrastructure Insights 提供實用的 Swagger 文件頁面、您可以在其中許多步驟中使用、也可以使用自己的 API 指令碼 / 命令。移至「管理」 > 「 API 存取」、然後按一下「 API 文件」連結。
+
+此程序與 Linux 和 Windows 類似。
+
+
+
+== 在 Linux 上執行新的 AU 安裝：
+
+. 在 Data Infrastructure Insights 中、建立 API Token 。
++
+.. 瀏覽至 * 管理 > API 存取 * 、然後選取 *+API 存取權杖 * 。
++
+... 設定容易識別的 * 名稱 * 和 * 描述 *
+... 類型：選擇 * 擷取單位 * 和 * 資料收集 *
+... 權限： * 讀取 / 寫入 *
+... 選擇所需的 * 到期 * 和 * 自動續訂 * 值
+
+
+.. 按一下「*儲存*」
+.. 複製產生的 API 存取權杖。您必須先執行此步驟、才能關閉視窗。
+
+
+
+
+image:Manual_AU_Create_API_Token.png["建立 API Token"]
+
+. 在 Swagger （ Admin > API Access > API Documentation ）中、使用 Token 授權 Data Infrastructure Insights API
++
+.. 按一下 Swagger 畫面右上角的 _Authority_
+.. 將上述複製的權杖貼到「客戶 APIKey 」欄位
+.. 按一下 * 授權 *
+.. 關閉視窗
+
+
+
+
+image:Manual_AU_Authorization.png["授權 API 權杖"]
+
+. 使用 //au/installer/｛ platform ｝ / latest 或 //au/installer/｛ platform ｝ / ｛ version ｝ _ API 下載 AU 安裝程式：
++
+.. 平台： * Linux *
+.. 版本： * <version> * （最新或指定）
+
+
+
+
+image:Manual_AU_API_Retrieve_latest.png["擷取最新 AU 版本的 API"]
+
+
+NOTE: 如果您未下載最新版本、請向 NetApp 確認要指定下載的 AU 版本。
+
+. 按一下 * 下載檔案 * 。如果您在 AU 系統以外的系統上執行這些步驟、請將下載的檔案複製到 AU 系統。
+. 或者、您也可以在 AU 系統上執行產生的 Curl Command ：
++
+ curl -X GET "<tenant>/rest/v1/au/installers/linux/<AU version>" -H "accept: application/octet-stream" -H "X-CloudInsights-ApiKey: <token>"
+. 此時、 AU 系統上應該會出現安裝程式檔案。
+
+
+
+IMPORTANT: 接下來的步驟需要使用暫存權杖。請勿使用您在上述建立的 API 存取權杖。
+
+. 在 Data Infrastructure Insights API Swagger 中、使用調出 / 調出 / 設定時間 Token _ API 建立一次性權杖。
++
+.. 複製產生的一次性權杖。
+
+
+
+
+image:Manual_AU_one_time_token.png["建立一次性使用 API 權杖"] image:Manual_AU_one_time_token_response.png["一次性使用 API 權杖範例的回應"]
+
+. 在要安裝 AU 的機器上、瀏覽至包含下載安裝程式檔案的資料夾。下列命令要求使用者擁有 root 權限。
++
+.. 解壓縮安裝程式檔案
+.. 將目錄變更為產生的安裝程式資料夾
+.. 執行下列步驟、將一次性權杖和安裝程式版本匯出至環境變數：
++
+ export TOKEN=<One-Time Token>
+.. 執行下列步驟、以自訂使用者和群組來安裝 CI ：
++
+ ./cloudinsights-install.sh <custom user> <custom group>
++
+注意：如果您不想使用自訂使用者和群組、可以使用預設的「 cisys 」使用者和群組。在這種情況下、請執行上述安裝命令、但不要指定使用者和群組。
+
+
+
+
+
+此時、 AU 軟體已安裝在系統上、可由自訂使用者和群組存取。不過、您無法新增資料收集器。若要手動執行此操作、請閱讀下列指示。如果您只想安裝修補程式，請參閱<<downloading-a-patch,修補程式>>以下章節。
+
+
+
+== 手動安裝資料收集器
+
+使用 /coller/patch/datasourceswar/latest API 下載最新的 datasources.war ：
+
+image:API_Manual_Download_datasources.png["擷取最新 datasources.war 的 API"]
+
+注意：如果您未下載最新版本，請向 NetApp 確認要指定的下載版本。
+
+按一下「下載檔案」。如果您在 AU 系統以外的系統上執行這些步驟、請將下載的 datasources.war zip 套件複製到 AU 系統。
+
+請確定 datasources.war zip 套件已複製到下列目錄： /var/lib/NetApp/cloudimses/acq/download
+
+瀏覽至 NetApp datasources.war 的 /var/lib/oracle/cloudimses/acq/download 目錄，並驗證該處的 zip 檔案：
+
+. 您必須切換至（或登出 root 並以登入）自訂使用者、才能執行後續步驟。
++
+ su <custom user>
++
+注意：如果您使用的是預設的「 cisys 」使用者和群組、則不需要執行此步驟。
+
++
+附註：自訂使用者可以是您在 AU 安裝期間提供給 cloudinsights-install.sh 的自訂群組成員、且可以與您在 AU 安裝期間提供的自訂使用者相同或不同。
+
+. 請執行下列步驟：
++
+....
+chmod 770 /var/lib/netapp/cloudinsights/acq/download/datasources-war-<version>.zip
+ls -al /var/lib/netapp/cloudinsights/acq/download
+…
+drwxrwx--- 2 test-user2 test-group-1  4096 Feb 16 10:10 datasources-war-<version>.zip
+…
+....
++
+附註：如果使用「 cisys 」使用者和群組、則這些項目會顯示在上述輸出中。
+
++
+附註：如果您打算使用不同的自訂使用者進行安裝、請確定已將擁有者和群組的群組權限設定為讀取和寫入（ chmod 660 …）
+
+. 重新啟動 AU 。在 Data Infrastructure Insights 中、瀏覽至「可服務性」 > 「收集器」、然後選取「擷取單元」索引標籤。從 AU 右側的「三點」功能表中選擇「重新啟動」。
+
+
+
+
+== 下載修補程式
+
+使用 /collector / 修補程式 / 檔案 / ｛ version ｝ API 下載修補程式：
+
+image:API_Manual_Download_patch.png["擷取修補程式的 API"]
+
+附註：向 NetApp 確認要指定的下載版本。
+
+按一下「下載檔案」。如果您在 AU 系統以外的系統上執行這些步驟、請將下載的修補程式 zip 套件複製到 AU 系統。
+
+請確定修補程式 zip 套件已複製到下列目錄： /var/lib/NetApp/cloudimses/acq/download
+
+瀏覽至修補程式的 /var/lib/NetApp/cloudimses/acq/download 目錄、並在該處驗證 .zip 檔案：
+
+. 您必須切換至（或登出 root 並以登入）自訂使用者、才能執行後續步驟。
++
+ su <custom user>
++
+注意：如果您使用的是預設的「 cisys 」使用者和群組、則不需要執行此步驟。
+
++
+附註：自訂使用者可以是您在 AU 安裝期間提供給 cloudinsights-install.sh 的自訂群組成員、且可以與您在 AU 安裝期間提供的自訂使用者相同或不同。
+
+. 請執行下列步驟：
++
+....
+chmod 770 /var/lib/netapp/cloudinsights/acq/download/<patch_file_name>.zip
+ls -al /var/lib/netapp/cloudinsights/acq/download
+…
+drwxrwx--- 2 test-user2 test-group-1  4096 Feb 16 10:10 <patch_file_name>.zip
+…
+....
++
+附註：如果使用「 cisys 」使用者和群組、則這些項目會顯示在上述輸出中。
+
++
+附註：如果您打算使用不同的自訂使用者進行安裝、請確定已將擁有者和群組的群組權限設定為讀取和寫入（ chmod 660 …）
+
+. 重新啟動 AU 。在 Data Infrastructure Insights 中、瀏覽至「可服務性」 > 「收集器」、然後選取「擷取單元」索引標籤。從 AU 右側的「三點」功能表中選擇「重新啟動」。
+
+
+
+
+== 外部金鑰擷取
+
+如果您提供 UNIX Shell 指令碼、擷取單元可以執行該指令碼、從金鑰管理系統擷取 * 私密金鑰 * 和 * 公開金鑰 * 。
+
+為了擷取關鍵資料、 Data Infrastructure Insights 將會執行指令碼、傳入兩個參數： _key id_ 和 _key type_ 。_Key ID_ 可用於識別金鑰管理系統中的金鑰。_Key 類型 _ 為「公開」或「私人」。當金鑰類型為「公開」時、指令碼必須傳回公開金鑰。當金鑰類型為「私密」時、必須傳回私密金鑰。
+
+若要將金鑰傳回擷取單元、指令碼必須將金鑰列印至標準輸出。指令碼必須列印 _ 僅 _ 標準輸出金鑰；不得將其他文字列印至標準輸出。一旦要求的金鑰列印至標準輸出、指令碼必須以 0 結束代碼結束、任何其他傳回代碼都會被視為錯誤。
+
+指令碼必須使用 securityadmin 工具在擷取單元中登錄、該工具會執行指令碼和擷取單元。指令碼必須具有 root 和「 cisys 」使用者的 _read_ 和 _executive_ 權限。如果在登錄後修改 Shell 指令碼、則必須重新在擷取單元中登錄修改後的 Shell 指令碼。
+
+|===
+
+
+| 輸入參數：金鑰 ID | 用於識別客戶金鑰管理系統中金鑰的金鑰識別碼。 
+
+
+| 輸入參數：金鑰類型 | 公有或私有。 
+
+
+| 輸出 | 要求的金鑰必須列印至標準輸出。目前支援 2048 位元 RSA 金鑰。金鑰必須以下列格式進行編碼及列印：私密金鑰格式 - PEM ， DER 編碼的 PKCS8 Private KeyInfo RFC 5958 公開金鑰格式 - PEM ， DER 編碼的 X.509 SubjectPublicKeyInfo RFC 5280 
+
+
+| 結束代碼 | 結束碼為零、以取得成功。所有其他跳出值都視為失敗。 
+
+
+| 指令碼權限 | 指令碼必須具有 root 和「 cisys 」使用者的讀取和執行權限。 
+
+
+| 記錄 | 記錄指令碼執行。記錄可在 - NetApp /var/log/oracle/cloudinses/securityadmin/securityadmin.log NetApp /var/log/oracle/cloudses/acq/acq.log 中找到 
+|===

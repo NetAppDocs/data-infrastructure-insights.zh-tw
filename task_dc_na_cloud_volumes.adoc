@@ -1,0 +1,65 @@
+---
+sidebar: sidebar 
+permalink: task_dc_na_cloud_volumes.html 
+summary: 設定適用於AWS資料收集器的NetApp Cloud Volumes Services 
+keywords: data collector, NetApp, Cloud, AWS 
+---
+= 適用於AWS資料收集器的NetApp Cloud Volumes服務
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+此資料收集器支援從NetApp Cloud Volumes Services收集AWS組態的庫存。
+
+
+
+== 組態
+
+[cols="2*"]
+|===
+| 欄位 | 說明 
+
+
+| 雲端Volume區域 | 適用於AWS的NetApp Cloud Volumes Services區域 
+
+
+| API金鑰 | Cloud Volumes API金鑰 
+
+
+| 秘密金鑰 | Cloud Volumes秘密金鑰 
+|===
+
+
+== 進階組態
+
+[cols="2*"]
+|===
+| 欄位 | 說明 
+
+
+| 庫存輪詢時間間隔（分鐘） | 預設為60分鐘 
+|===
+
+
+== 疑難排解
+
+如果您在使用此資料收集器時遇到問題、請嘗試下列事項：
+
+[cols="2*"]
+|===
+| 問題： | 試用： 
+
+
+| 我收到與此類似的錯誤：「無法執行要求：連線至 <AWS 區域端點 >:8080 [<AWS 區域端點 >/AWS 區域端點 IP>] 失敗：連線逾時：取得 \https://<AWS 區域端點 FQDN>:8080/v1/Storage/IPRanges HTTP/1.1 」 | link:task_configure_acquisition_unit.html#proxy-configuration-2["Proxy"]Data Infrastructure Insights 用來與擷取單元溝通、但無法在 Data Infrastructure Insights 和 Data Collector 本身之間進行通訊。以下是您可以嘗試的幾件事：確保取得設備能夠解析FQDN並到達所需的連接埠。確認不需要Proxy即可到達錯誤訊息中指定的端點。Curl可用來測試擷取裝置與端點之間的通訊。請確定您*未*使用Proxy進行此測試。範例： root@qualisitionunit# curl -s -H Accept:application/json -H "Content-type: application/json" -H API 金鑰： <API 金鑰用於資料收集器認證 - H 秘密金鑰： < 資料收集器認證中使用的秘密金鑰 > -X Get \https://<AWS 區域端點： 8080/v1/Storage/IPRanges 請參閱此link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Insights/Cloud_Insights_fails_discovery_for_Cloud_Volumes_Service_for_AWS["NetApp知識庫文章"]。 
+|===
+有關此資料收集器的其他資訊，請link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]參閱頁面或。

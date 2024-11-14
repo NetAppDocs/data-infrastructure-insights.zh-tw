@@ -1,0 +1,94 @@
+---
+sidebar: sidebar 
+permalink: nkmo_clusterrole_yaml.html 
+keywords: NKMO, yaml, 
+summary: NKMO Clusterrole的Yaml檔案範例 
+---
+= NKMO Clusterrole Yaml範例
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:allow-uri-read: 
+:toc: 
+:nofooter: 
+:toclevels: 2
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+NetApp Kubernetes監控操作員（NKMO）的_kubectl_元件必須至少設定下列Kubernetes物件的存取權限：代理程式、叢集角色、叢集角色繫結、customresourcetings、部署、 命名空間、角色、角色繫結、機密、服務帳戶、 和服務。以下是叢集角色的範例、具有這些最低權限。
+
+[listing]
+----
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: netapp-kubernetes-monitoring-operator-installer-role
+rules:
+- apiGroups:
+  - ""
+  resources:
+  - services
+  - serviceaccounts
+  - secrets
+  - namespaces
+  verbs:
+  - get
+  - list
+  - create
+  - patch
+  - update
+  - delete
+- apiGroups:
+  - rbac.authorization.k8s.io
+  resources:
+  - roles
+  - clusterroles
+  - rolebindings
+  - clusterrolebindings
+  verbs:
+  - get
+  - list
+  - create
+  - patch
+  - update
+  - delete
+  - escalate
+  - bind
+- apiGroups:
+  - apiextensions.k8s.io
+  resources:
+  - customresourcedefinitions
+  verbs:
+  - get
+  - list
+  - create
+  - patch
+  - update
+  - delete
+- apiGroups:
+  - apps
+  resources:
+  - deployments
+  verbs:
+  - get
+  - list
+  - create
+  - patch
+  - update
+  - delete
+- apiGroups:
+  - monitoring.netapp.com
+  resources:
+  - agents
+  verbs:
+  - get
+  - list
+  - create
+  - patch
+  - update
+  - delete
+----

@@ -1,0 +1,107 @@
+---
+sidebar: sidebar 
+permalink: task_dc_rubrik_cdm.html 
+keywords: data collector, Rubrik, 
+summary: 設定Rubrik CDM資料收集器。 
+---
+= Rubrik CDM資料收集器
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Data Infrastructure Insights 使用 Rubrik 資料收集器從 Rubrik 儲存設備取得庫存和效能資料。
+
+
+
+== 術語
+
+Data Infrastructure Insights 會從 Rubrik 資料收集器取得下列庫存資訊。對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+
+[cols="2*"]
+|===
+| 廠商/模型術語 | Data Infrastructure Insights 術語 
+
+
+| 叢集 | 儲存設備、儲存資源池 
+
+
+| 節點 | 儲存節點 
+
+
+| 磁碟 | 磁碟 
+|===
+附註：這些只是通用的術語對應、可能不代表此資料來源的每個案例。
+
+
+
+== 需求
+
+設定此資料收集器需要下列項目：
+
+* Data Infrastructure Insights 擷取單元將啟動 TCP 連接埠 443 與 Rubrik 叢集的連線。每個叢集一個收集器。
+* Rubrik叢集IP位址。
+* 叢集的使用者名稱和密碼。
+* Rubrik 叢集 IP 位址或主機名稱。
+* 對於「基本驗證」、為叢集的使用者名稱和密碼。如果您偏好使用服務帳戶型驗證、則需要服務帳戶、秘密和組織 ID
+* 連接埠需求：HTTPS 443
+
+
+
+
+== 組態
+
+[cols="2*"]
+|===
+| 欄位 | 說明 
+
+
+| IP | Rubrik叢集的IP位址 
+
+
+| 使用者名稱 | 叢集的使用者名稱 
+
+
+| 密碼 | 叢集的密碼 
+|===
+
+
+== 進階組態
+
+[cols="2*"]
+|===
+| 庫存輪詢時間間隔（分鐘） | 預設值為 60 
+
+
+| 效能意見調查時間間隔（秒） | 預設值為 300 
+|===
+
+
+== 疑難排解
+
+如果您在使用此資料收集器時遇到問題、請嘗試下列事項：
+
+
+
+=== 庫存
+
+[cols="2*"]
+|===
+| 問題： | 試用： 
+
+
+| 我收到一則訊息、表示已建立多個儲存設備。 | 檢查叢集設定是否正確、收集器是否指向單一叢集。 
+
+
+| 我收到磁碟API傳回更多資料的警告 | 請洽詢支援部門以取得額外資料。 
+|===
+您可以在頁面或中找到其他link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]資訊。

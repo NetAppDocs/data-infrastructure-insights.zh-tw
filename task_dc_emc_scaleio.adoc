@@ -1,0 +1,99 @@
+---
+sidebar: sidebar 
+permalink: task_dc_emc_scaleio.html 
+keywords: data collector, scaleIO, PowerFlex EMC, DELL 
+summary: 設定 Dell EMC ScaleIO/PowerFlex 資料收集器。 
+---
+= Dell EMC ScaleIO / PowerFlex 資料收集器
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+ScaleIO/PowerFlex 資料收集器會從 ScaleIO 與 PowerFlex 儲存設備收集庫存資訊。對於組態、此資料收集器需要 ScaleIO/PowerFlex 閘道位址、以及管理員使用者名稱和密碼。
+
+
+
+== 術語
+
+Data Infrastructure Insights 會從 ScaleIO/PowerFlex 資料收集器取得下列庫存資訊。對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+
+[cols="2*"]
+|===
+| 廠商/模型術語 | Data Infrastructure Insights 術語 
+
+
+| MDM（中繼資料管理程式）叢集 | 儲存設備 
+
+
+| SDS （ ScaleIO/PowerFlex Data Server ） | 儲存節點 
+
+
+| 儲存資源池 | 儲存資源池 
+
+
+| Volume | Volume 
+
+
+| 裝置 | 磁碟 
+|===
+附註：這些只是通用的術語對應、可能不代表此資料收集器的每個案例。
+
+
+
+== 需求
+
+* 管理使用者帳戶的唯讀存取權
+* 連接埠需求：HTTPS連接埠443
+
+
+
+
+== 組態
+
+[cols="2*"]
+|===
+| 欄位 | 說明 
+
+
+| ScaleIO/PowerFlex 閘道 | ScaleIO/PowerFlex 閘道的 IP 位址或 FQDN 、以逗號（、）或分號（；）分隔 
+
+
+| 使用者名稱 | 用於登入 ScaleIO/PowerFlex 裝置的管理員使用者名稱 
+
+
+| 密碼 | 用於登入 ScaleIO/PowerFlex 裝置的密碼 
+|===
+
+
+== 進階組態
+
+按一下「Inventory」（資源清冊）核取方塊以啟用資源清冊。
+
+[cols="2*"]
+|===
+| 欄位 | 說明 
+
+
+| HTTPS 連接埠 | 443 
+
+
+| 庫存輪詢時間間隔（分鐘） | 預設值為 60 。 
+
+
+| 連線逾時（秒） | 預設值為 60 。 
+|===
+
+
+== 疑難排解
+
+您可以在頁面或中找到其他link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]資訊。

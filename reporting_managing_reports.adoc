@@ -1,0 +1,111 @@
+---
+sidebar: sidebar 
+permalink: reporting_managing_reports.html 
+summary: 自訂報告輸出與交付、將報告複製到剪貼簿、開啟報告（XML）。 
+keywords: reporting, cognos, data warehouse, dwh, managing, customizing, copying 
+---
+= 管理報告
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+您可以自訂報告的輸出格式與交付、設定報告內容或排程、以及電子郵件報告。
+
+
+NOTE: 報告功能可在 Data Infrastructure Insights link:concept_subscribing_to_cloud_insights.html["Premium Edition"]中找到。
+
+
+IMPORTANT: 變更報告權限或安全性之前、您必須先將「我的內容」報告複製到「團隊內容」資料夾、以確保報告已儲存。
+
+
+
+== 自訂報告的輸出格式和交付
+
+您可以自訂報告的格式和交付方法。
+
+. 在 Data Infrastructure Insights Reporting Portal 中、前往 * 功能表 > 內容 > 我的內容 / 團隊內容 * 。將滑鼠移至您要自訂的報告上方、然後開啟「三點」功能表。
+
+
+image:Reporting_Output_and_Delivery.png["報告輸出與交付"]
+
+. 按一下*「內容」>「排程」*
+
+
+. 您可以設定下列選項：
++
+** *排程*您想要執行報告的時間。
+** 選擇 * 選項 * 作為報告格式和交付（儲存、列印、電子郵件）、以及報告的語言。
+
+
+. 按一下 * 儲存 * 以使用您所做的選擇來產生報告。
+
+
+
+
+== 將報告複製到剪貼簿
+
+使用此程序將報告複製到剪貼簿。
+
+. 選擇要複製的報告（ * 功能表 > 內容 > 我的內容或團隊內容 * ）
+. 從報告的下拉式功能表中選擇「編輯報告」
++
+image:Reporting_Edit_Report.png["編輯報告"]
+
+. 在畫面右上角、開啟「內容」旁的「三點」功能表。
+. 選取 * 複製報告至剪貼簿 * 。
++
+image:Reporting_Copy_To_Clipboard.png["將報告複製到剪貼簿"]
+
+
+
+
+
+== 從剪貼簿開啟報告
+
+您可以開啟先前複製到剪貼簿的報告規格。
+
+關於此工作、請先建立新報告、或開啟您想要以複製的報告取代的現有報告。以下步驟適用於新報告。
+
+. 選取 * 功能表 > + 新增 > 報告 * 、然後建立空白報告。
+. 在畫面右上角、開啟「內容」旁的「三點」功能表。
+. 選取 * 從剪貼簿開啟報告 * 。
+
+
+image:Reporting_Open_From_Clipboard.png["從剪貼簿開啟報告"]
+
+. 將複製的程式碼貼到視窗中、然後選取 * 確定 * 。
+. 選取磁片圖示以儲存報告。
+. 選擇要儲存報告的位置（ _ 我的內容 _ 、 _ 團隊內容 _ 、或建立新資料夾）。
+. 給新報告一個有意義的名稱、然後選取 * 儲存 * 。
+
+
+
+
+== 編輯現有報告
+
+請注意、在其預設位置編輯檔案時、這些報告可能會在下次報告目錄重新整理時遭到覆寫。建議您以新名稱儲存已編輯的報告、或將其儲存在非預設位置。
+
+
+
+== 疑難排解
+
+您可在此處找到解決「報告」問題的建議。
+
+|===
+
+
+| *問題：* | *試用：* 
+
+
+| 排程透過電子郵件傳送報告時、登入的使用者名稱會預先填入電子郵件的「收件者」欄位。不過、名稱的格式為「firstname lastname」（名字、空格、姓氏）。由於這不是有效的電子郵件地址、因此在執行排程報告時、電子郵件將無法傳送。 | 排程要透過電子郵件傳送的報告時、請清除預先填入的名稱、並在「收件人」欄位中輸入正確格式的有效電子郵件地址。 
+|===

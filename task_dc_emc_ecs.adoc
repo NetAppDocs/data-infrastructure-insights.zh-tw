@@ -1,0 +1,122 @@
+---
+sidebar: sidebar 
+permalink: task_dc_emc_ecs.html 
+keywords: data collector, ecs, EMC 
+summary: 設定ECS資料收集器。 
+---
+= 設定EMC ECS資料收集器
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+此資料收集器會從EMC ECS儲存系統取得庫存和效能資料。對於組態、資料收集器需要 ECS 叢集的 IP 位址或主機名稱、以及使用者名稱和密碼。
+
+
+NOTE: Dell EMC ECS會以不同的原始TB至託管單位速率進行計量。每 40 TB 的未格式化 ECS 容量就會以 1 計費link:concept_subscribing_to_cloud_insights.html#pricing["託管單位（MU）"]。
+
+
+
+== 術語
+
+Data Infrastructure Insights 會從 ECS 資料收集器取得下列庫存資訊。對於所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+
+[cols="2*"]
+|===
+| 廠商/模型術語 | Data Infrastructure Insights 術語 
+
+
+| 叢集 | 儲存設備 
+
+
+| 租戶 | 儲存資源池 
+
+
+| 鏟斗 | 內部Volume 
+
+
+| 磁碟 | 磁碟 
+|===
+附註：這些只是通用的術語對應、可能不代表此資料收集器的每個案例。
+
+
+
+== 需求
+
+* ECS 叢集的 IP 位址或主機名稱
+* ECS 系統的使用者名稱和密碼
+* 連接埠 4443 （ HTTPS ）。需要連線至 ECS 系統上的 TCP 連接埠 4443 的輸出連線。
+
+
+
+
+== 組態
+
+[cols="2*"]
+|===
+| 欄位 | 說明 
+
+
+| ECS主機 | ECS系統的IP位址或完整網域名稱 
+
+
+| ECS主機連接埠 | 用於與ECS主機通訊的連接埠 
+
+
+| ECS 使用者 ID | ECS 的使用者 ID 
+
+
+| 密碼 | 用於ECS的密碼 
+|===
+
+
+== 進階組態
+
+[cols="2*"]
+|===
+| 欄位 | 說明 
+
+
+| 庫存輪詢時間間隔（分鐘） | 預設值為 360 分鐘。 
+|===
+
+
+== 疑難排解
+
+如果您在使用此資料收集器時遇到問題、請嘗試下列事項：
+
+
+
+==== 庫存
+
+[cols="2*"]
+|===
+| 問題： | 試用： 
+
+
+| 錯誤：使用者驗證失敗。 | 請確定您的此裝置認證資料正確無誤。 
+|===
+
+
+==== 效能
+
+[cols="2*"]
+|===
+| 問題： | 試用： 
+
+
+| 錯誤：收集的資料不足。 | •檢查記錄檔中的收集時間戳記、並據此修改輪詢時間間隔•等待較長時間 
+
+
+| 錯誤：效能輪詢時間間隔過長。 | 檢查記錄檔$｛logfile｝中的收集時間戳記、並據此修改輪詢時間間隔 
+|===
+您可以在頁面或中找到其他link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]資訊。

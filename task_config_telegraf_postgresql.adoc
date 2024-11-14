@@ -1,0 +1,65 @@
+---
+sidebar: sidebar 
+permalink: task_config_telegraf_postgresql.html 
+keywords: telegraf, installation, install, postgresql 
+summary: PostgreSQL資料收集器組態 
+---
+= PostgreSQL資料收集器
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Data Infrastructure Insights 使用此資料收集器從 PostgreSQL 收集指標。
+
+
+
+== 安裝
+
+. 從 * 可伺服 > 收集器 * 、按一下 * + 資料收集器 * 。選擇 PostgreSQL 。
++
+選取安裝Telegraf代理程式的作業系統或平台。
+
+. 如果您尚未安裝 Agent 進行收集，或想要為不同的作業系統或平台安裝 Agent ，請按一下 _ 顯示指示 _ 以展開指示link:task_config_telegraf_agent.html["代理程式安裝"]。
+. 選取要搭配此資料收集器使用的代理程式存取金鑰。您可以按一下「*+代理程式存取金鑰*」按鈕來新增代理存取金鑰。最佳實務做法：只有當您想要將資料收集器分組時、才使用不同的代理程式存取金鑰、例如依作業系統/平台。
+. 請依照組態步驟設定資料收集器。這些指示會因您用來收集資料的作業系統或平台類型而有所不同。
+
+
+image:PostgreSQLDCConfigLinux.png["PostgreSQL組態"]
+
+
+
+== 設定
+
+如需詳細資訊link:https://www.postgresql.org/docs/["PostgreSQL文件"]，請參閱。
+
+
+
+== 物件與計數器
+
+收集下列物件及其計數器：
+
+[cols="<.<,<.<,<.<,<.<"]
+|===
+| 物件： | 識別碼： | 屬性： | 資料點： 
+
+
+| PostgreSQL伺服器 | 命名空間資料庫伺服器 | 節點名稱節點IP | 緩衝區分配的緩衝區後端緩衝區後端檔案同步緩衝區檢查點緩衝區清除檢查點同步時間檢查點寫入時間檢查點要求檢查點定時寫入清除上限 
+
+
+| PostgreSQL資料庫 | 命名空間資料庫伺服器 | 資料庫oID節點名稱節點IP | 區塊讀取時間區塊寫入時間區塊命中區塊讀取衝突取消鎖定用戶端編號暫存檔位元組暫存檔案數列刪除列擷取列插入列傳回列更新交易已提交交易已回復 
+|===
+
+
+== 疑難排解
+
+您可以在頁面中找到其他資訊link:concept_requesting_support.html["支援"]。

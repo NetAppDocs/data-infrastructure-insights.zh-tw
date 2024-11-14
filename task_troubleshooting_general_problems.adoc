@@ -1,0 +1,81 @@
+---
+sidebar: sidebar 
+permalink: task_troubleshooting_general_problems.html 
+summary: 一般資料基礎架構洞見疑難排解秘訣。 
+keywords: troubleshooting, problems, browser, login, log in, accessing, access to, Trident, qtree, quota 
+---
+= 疑難排解一般資料基礎架構洞見問題
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可在此找到疑難排解 Data Infrastructure Insights 的建議。
+
+另請參閱link:task_troubleshooting_linux_acquisition_unit_problems.html["疑難排解Linux擷取單元問題"]和link:task_troubleshooting_windows_acquisition_unit_problems.html["疑難排解Windows接收單元問題"]。
+
+
+
+== 登入問題
+
+|===
+| *問題：* | *試用：* 
+
+
+| Data Infrastructure Insights 會每 6 小時自動登出一次 | 這是因為瀏覽器的第三方 Cookie 已停用。使用者可以設定瀏覽器來啟用所有第三方 Cookie 、或使用較窄的例外清單來啟用 Data Infrastructure Insights 。範例：開啟瀏覽器的設定選取「允許所有 Cookie 」選項。* 或 * 選取「區塊協力廠商 Cookie 」、並新增例外情況至： __[\*.]auth0.com 和 NetApp .com_ 。Microsoft Edge 提供與 Chrome 相同的例外格式。在 Firefox 中、 Cookie 例外會指定為 Simply _auth0.com 和 _netapp.com 。 
+
+
+| 我有 BlueXP 帳戶、但無法登入 BlueXP 。 | 從開啟 Ticket https://mysupport.netapp.com/site/help[] 。選擇類別「 blueXP.netapp.com > 帳戶 / 登入問題」或「 bluexp.netapp.com > 聯盟問題」。這些是專為 BlueXP 問題所設計。如需瞭解所有其他 Data Infrastructure Insights 技術支援問題link:concept_requesting_support.html["NetApp支援"]、請聯絡。 
+
+
+| 我受邀參加 Data Infrastructure Insights 、但卻收到「未經授權」的訊息。 | 確認您已註冊 BlueXP 帳戶、或貴組織使用 SSO 登入 BlueXP 。驗證您的 BlueXP  設定檔電子郵件地址是否符合「資料基礎架構深入分析」歡迎電子郵件中顯示的電子郵件地址。如果電子郵件不符、請以正確的電子郵件地址申請新的邀請函。 
+
+
+| 我已從 BlueXP  登出、並自動從 Data Infrastructure Insights 登出。 | 跨 NetApp 雲端服務的單一登入（ SSO ）會登出所有資料基礎架構洞見課程。如果您可以存取多個 Data Infrastructure Insights 帳戶、請從任何一個帳戶登出、以登出所有作用中的工作階段。重新登入以存取您的帳戶。 
+
+
+| 我在數天後自動登出。 | NetApp Cloud 帳戶每隔幾天就需要重新驗證（目前的 BlueXP 設定是 7 天）。重新登入以存取您的帳戶。 
+
+
+| 我收到錯誤訊息「不再授權登入」。 | 請聯絡您的帳戶管理員、以驗證對 Data Infrastructure Insights 的存取權限。驗證您的 BlueXP  設定檔電子郵件地址是否符合「資料基礎架構深入分析」歡迎電子郵件中顯示的電子郵件地址 
+
+
+| 其他登入錯誤 | 請在Chrome中嘗試無痕式模式、或清除瀏覽器記錄、Cookie和快取。嘗試使用不同的瀏覽器設定檔（例如 Chrome -新增人員）。 
+|===
+
+
+== 其他問題
+
+|===
+
+
+| * 問題： * | * 答案： * 
+
+
+| 我的 Qtree 硬式配額在查詢中顯示正確、但我的軟式配額顯示為磁碟區的總容量。答對了嗎？ | 只有硬配額（手動設定或透過 Trident 設定）會顯示為設定配額；如果未指定硬配額、則 Qtree 容量會是內部 Volume 容量。 
+
+
+| 我在同一個 Qtree 中手動設定了軟配額和硬配額、但顯示的總容量是硬配額、對嗎？ | 是、如果指定硬配額、則會顯示為總容量。 
+
+
+| 輸入 Cognos 報告排程時間時、有時我會在排程時間加上額外的「 m 」。例如，如果我輸入時間為「 02 ： 15 PM 」，可能會新增額外的字元：「 02 ： 15 PMM 」（或 PMM ）。當我按一下外部時，它會變更為「上午 2 ： 15 」。我可以儲存報告、但當我重新開啟儲存的報告時、排程時間會顯示為 AM （即晨間）、無論我是在排程時間中輸入 AM 或 PM 。 | 請重新輸入排程時間、小心不要輸入完整的「 AM 」或「 PM 」字元、只要在「 AM 」或「 P 」輸入「 A 」即可。如果您沒有看到額外的字元、排程時間將會正確設定。 
+|===
+
+
+== 資源
+
+如需其他疑難排解秘訣，請參閱link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Insights["NetApp知識庫"]（需要支援登入）。
+
+如需其他支援資訊、請參閱 Data Infrastructure Insights link:concept_requesting_support.html["支援"] 頁面。
+
+如果您訂閱了有效的 Data Infrastructure Insights 、您可以使用下列支援選項：
+
+link:https://www.netapp.com/us/contact-us/support.aspx["電話"] link:https://mysupport.netapp.com/site/cases/mine/create?serialNumber=95001014387268156333["支援服務單"]
+
+如需詳細資訊，請參閱 https://docs.netapp.com/us-en/cloudinsights/concept_requesting_support.html["Data Infrastructure Insights 支援文件"]。

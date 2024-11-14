@@ -1,0 +1,182 @@
+---
+sidebar: sidebar 
+permalink: pre-requisites_for_k8s_operator.html 
+keywords: telegraf, installation, install, agent, telegraf agent, kubernetes, eks, operator, k8s 
+summary: Data Infrastructure Insights 支援 Telegraf 做為其代理程式、可在 Kubernetes 上收集整合資料。 
+---
+= 安裝或升級 NetApp Kubernetes 監控操作員之前
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:allow-uri-read: 
+:toc: 
+:nofooter: 
+:toclevels: 2
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+安裝或升級之前，請先閱讀此資訊link:task_config_telegraf_agent_k8s.html["Kubernetes 監控營運者"]。
+
+|===
+| 元件 | 需求 
+
+
+| Kubernetes版本 | Kubernetes v1.20 及更高版本。 
+
+
+| Kubernetes 配送 | AWS Elastic Kubernetes Service （ EKS ） Azure Kubernetes Service （ aks ） Google Kubernetes Engine （ GKE ） Red Hat OpenShift Rancher Kubernetes Engine （ RKE ） VMware Tanzu 
+
+
+| Linux 作業系統 | Data Infrastructure Insights 不支援以 Arm64 架構執行的節點。網路監控：必須執行 Linux 核心版本 4.18.0 或更新版本。不支援光子作業系統。 
+
+
+| 標籤 | Data Infrastructure Insights 可指定 Kubernetes 節點選取器、在這些平台上尋找下列 Kubernetes 標籤、以支援對執行 Linux 的 Kubernetes 節點進行監控： Kubernetes v1.20 及更高版本： Kubernetes.IO/OS = Linux Rancher + Cattle .IO 做為協調 / Kubernetes 平台： Cattle .IO/OS = Linux 
+
+
+| 命令 | curl 和 kubectl 命令必須可用；若要獲得最佳結果、請將這些命令新增至路徑。 
+
+
+| 連線能力 | Kubectl CLI 已設定為與目標 K8s 叢集通訊、並可與您的 Data Infrastructure Insights 環境進行網際網路連線。如果您在安裝期間位於 Proxy 後方、請依照「操作員安裝」一節中的指示link:task_config_telegraf_agent_k8s.html#configuring-proxy-support["設定Proxy支援"]進行。若要準確地進行稽核和資料報告、請使用網路時間傳輸協定（ NTP ）或簡易網路時間傳輸協定（ SNTP ）來同步代理機器上的時間。 
+
+
+| 其他 | 如果您是在 OpenShift 4.6 或更新版本上執行，則除了確保符合這些先決條件之外，還必須遵循link:task_config_telegraf_agent_k8s.html#openshift-instructions["OpenShift指示"]。 
+
+
+| API Token | 如果您要重新部署操作員（亦即您正在更新或取代它）、則不需要建立新的 API 權杖；您可以重新使用先前的權杖。 
+|===
+
+
+== 開始之前要注意的重要事項
+
+如果您是與一起執行<<configuring-proxy-support,Proxy>>，擁有<<using-a-custom-or-private-docker-repository,自訂儲存庫>>或正在使用<<openshift-instructions,OpenShift>>，請仔細閱讀下列各節。
+
+另請參閱<<權限,權限>>。
+
+
+
+=== 設定Proxy支援
+
+您可以在兩個地方使用Proxy來安裝NetApp Kubernetes監控操作員。這些可能是相同或獨立的Proxy系統：
+
+* 執行安裝程式碼片段（使用「 cURL 」）時需要 Proxy 、以將執行程式碼片段的系統連線至您的 Data Infrastructure Insights 環境
+* 目標 Kubernetes 叢集與您的 Data Infrastructure Insights 環境通訊所需的 Proxy
+
+
+如果您使用上述任一或兩者的 Proxy 、若要安裝 NetApp Kubernetes 作業系統、您必須先確定您的 Proxy 已設定為允許與您的 Data Infrastructure Insights 環境進行良好通訊。例如、從您想要安裝操作員的伺服器 / VM 、您必須能夠存取 Data Infrastructure Insights 、並從 Data Infrastructure Insights 下載二進位檔。
+
+對於用來安裝NetApp Kubernetes作業監視器的Proxy、請先設定_http代理伺服器/https代理伺服器環境變數、然後再安裝「運算子」。在某些Proxy環境中、您可能也需要設定_no_proxyEnvironments _變數。
+
+若要設定變數、請在系統*安裝NetApp Kubernetes監控操作員之前*執行下列步驟：
+
+. 為目前使用者設定_https_proxy_和/或_https_proxy_環境變數：
++
+.. 如果正在設定的Proxy沒有驗證（使用者名稱/密碼）、請執行下列命令：
++
+ export https_proxy=<proxy_server>:<proxy_port>
+.. 如果正在設定的Proxy具有驗證（使用者名稱/密碼）、請執行下列命令：
++
+ export http_proxy=<proxy_username>:<proxy_password>@<proxy_server>:<proxy_port>
+
+
+
+
+對於 Kubernetes 叢集用來與資料基礎架構 Insights 環境通訊的 Proxy 、請在閱讀完所有指示之後、安裝 NetApp Kubernetes Monitoring Operator 。
+
+在部署 NetApp Kubernetes Monitoring Operator 之前、請先在 operator-config.yaml 中設定 AgentConfiguration 的 Proxy 區段。
+
+[listing]
+----
+agent:
+  ...
+  proxy:
+    server: <server for proxy>
+    port: <port for proxy>
+    username: <username for proxy>
+    password: <password for proxy>
+
+    # In the noproxy section, enter a comma-separated list of
+    # IP addresses and/or resolvable hostnames that should bypass
+    # the proxy
+    noproxy: <comma separated list>
+
+    isTelegrafProxyEnabled: true
+    isFluentbitProxyEnabled: <true or false> # true if Events Log enabled
+    isCollectorsProxyEnabled: <true or false> # true if Network Performance and Map enabled
+    isAuProxyEnabled: <true or false> # true if AU enabled
+  ...
+...
+----
+
+
+=== 使用自訂或私有泊塢視窗儲存庫
+
+根據預設、 NetApp Kubernetes Monitoring Operator 會從 Data Infrastructure Insights 儲存庫擷取容器映像。如果您使用 Kubernetes 叢集做為監控目標、且該叢集設定為僅從自訂或私有 Docker 儲存庫或容器登錄中提取容器映像、則必須設定對 NetApp Kubernetes Monitoring Operator 所需容器的存取權。
+
+從 NetApp Monitoring Operator 安裝方塊執行「影像提取片段」。此命令會登入 Data Infrastructure Insights 儲存庫、拉出操作員的所有影像相依性、然後登出 Data Infrastructure Insights 儲存庫。出現提示時、請輸入提供的儲存庫暫存密碼。此命令會下載操作員所使用的所有影像、包括選用功能。請參閱下方、瞭解這些影像的用途。
+
+核心營運者功能與 Kubernetes 監控
+
+* NetApp 監控
+* Kube-RBAC 代理程式
+* Kube-state 指標
+* Telegraf
+* 無 distrouse-root 使用者
+
+
+事件記錄
+
+* Fluent 位元
+* Kubernetes-event-Exporter
+
+
+網路效能與地圖
+
+* CI-net-觀察者
+
+
+根據您的企業原則、將「operator」泊塢視窗影像推送到您的「私有/本機/企業」泊塢視窗儲存庫。確保儲存庫中這些映像的映像標記和目錄路徑與 Data Infrastructure Insights 儲存庫中的映像標記和目錄路徑一致。
+
+在 operer-deployment.yaml 中編輯監控營運者部署、並修改所有映像參照以使用您的私有 Docker 儲存庫。
+
+....
+image: <docker repo of the enterprise/corp docker repo>/kube-rbac-proxy:<kube-rbac-proxy version>
+image: <docker repo of the enterprise/corp docker repo>/netapp-monitoring:<version>
+....
+在 operer-config.yaml 中編輯 AgentConfiguration 、以反映新的泊塢視窗 repo 位置。為您的私有儲存庫建立新的 imagePullSecret 、如需詳細資料、請參閱 _https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/_
+
+[listing]
+----
+agent:
+  ...
+  # An optional docker registry where you want docker images to be pulled from as compared to CI's docker registry
+  # Please see documentation for link:task_config_telegraf_agent_k8s.html#using-a-custom-or-private-docker-repository[using a custom or private docker repository].
+  dockerRepo: your.docker.repo/long/path/to/test
+  # Optional: A docker image pull secret that maybe needed for your private docker registry
+  dockerImagePullSecret: docker-secret-name
+----
+
+
+=== OpenShift指示
+
+如果您是在 OpenShift 4.6 或更新版本上執行、則必須在 _operer-config.yaml_ 中編輯 AgentConfiguration 、才能啟用 _runPrivileged_ 設定：
+
+....
+# Set runPrivileged to true SELinux is enabled on your kubernetes nodes
+runPrivileged: true
+....
+OpenShift可能會實作額外的安全層級、以封鎖對某些Kubernetes元件的存取。
+
+
+
+=== 權限
+
+如果您所監控的叢集包含沒有 ClusterRole 的自訂資源link:https://kubernetes.io/docs/reference/access-authn-authz/rbac/#aggregated-clusterroles["要檢視的集合體"]，您需要手動授予操作員這些資源的存取權，以便使用事件記錄來監控這些資源。
+
+. 在安裝之前或安裝之後、請先編輯 _operer-adder-permissions.yaml_ 、然後編輯資源 <namespace> 附加權限 _
+. 使用動詞 ["Get" 、 "watch " 、 "list" 建立所需的組和資源的新規則。請參閱 \https://kubernetes.io/docs/reference/access-authn-authz/rbac/
+. 將變更套用至叢集
+

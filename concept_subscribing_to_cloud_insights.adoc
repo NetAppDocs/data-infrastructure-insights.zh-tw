@@ -1,0 +1,298 @@
+---
+sidebar: sidebar 
+permalink: concept_subscribing_to_cloud_insights.html 
+summary: 在免費試用期間的任何時間點、您都可以訂閱 Data Infrastructure Insights 。 
+keywords: subscribe, trial, subscription, contract, raw capacity, region, data retention, retention, MU, managed unit, managed units, units, managed, module, evaluation, pricing, meter, metering 
+---
+= 訂閱 Data Infrastructure Insights
+:hardbreaks:
+:toclevels: 2
+:allow-uri-read: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+開始使用 Data Infrastructure Insights 只需三個簡單步驟：
+
+* 註冊帳戶link:https://bluexp.netapp.com//["* NetApp BlueXP*"]即可存取所有 NetApp 雲端產品。
+* 註冊 link:https://cloud.netapp.com/cloud-insights["*免費試用*"]Data Infrastructure Insights 以探索可用的功能。
+* * 訂閱 * Data Infrastructure Insights 、透過link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["NetApp銷售"]直接或持續不中斷地存取您的資料link:https://aws.amazon.com/marketplace/pp/prodview-pbc3h2mkgaqxe["AWS 市場"]。
+
+
+在註冊過程中、您可以選擇全球區域來主控 Data Infrastructure Insights 環境。有關詳細信息，請參閱 Data Infrastructure Insights link:security_information_and_region.html["資訊與地區"]（關於 Data Infrastructure Insights ）。
+
+如需 Data Infrastructure Insights Basic 與 Premium Edition 中可用功能的完整比較link:https://www.netapp.com/cloud-services/cloud-insights/editions-pricing["Data Infrastructure Insights 定價"]、請參閱頁面。
+
+
+WARNING: 非使用中的 Data Infrastructure Insights Basic Edition 環境會被刪除、並回收其資源。如果連續30天沒有使用者活動、環境將視為非作用中、如果連續7天沒有擷取資料。Data Infrastructure Insights 會傳送通知、並在刪除環境之前提供四天的寬限期。
+
+使用 Data Infrastructure Insights 時、如果您看到掛鎖圖示image:padlock.png["掛鎖"]、表示目前的訂閱內容無法使用此功能、或是以有限的形式提供。訂閱該功能以取得完整存取權。部分功能可在訂閱前提供 <<module-evaluation,模組評估>> 。
+
+
+
+== 試用版
+
+當您註冊 Data Infrastructure Insights 、且您的環境處於活動狀態時、您可以免費試用 30 天的 Data Infrastructure Insights 。在此試用期間、您可以探索 Data Infrastructure Insights 在您自己的環境中提供的功能。
+
+您可以在試用期間隨時訂閱 Data Infrastructure Insights 。訂閱 Data Infrastructure Insights 可確保不中斷存取您的資料link:https://docs.netapp.com/us-en/cloudinsights/concept_requesting_support.html["*產品支援*"]、並提供更多選項。
+
+當免費試用即將結束時、 Data Infrastructure Insights 會顯示橫幅該橫幅中有一個 _View Subscription_ 連結、可開啟 * 管理 -> Subscription* 頁面。非管理員使用者會看到橫幅、但無法前往「訂閱」頁面。
+
+
+NOTE: 如果您需要更多時間來評估 Data Infrastructure Insights 、而且試用期已設定在 4 天或更短的時間內過期、您可以將試用期延長 30 天。您只能延長試用期一次。如果試用期已到期、您將無法延長試用期。
+
+
+
+=== 透過AWS Marketplace試用
+
+您也可以透過AWS Marketplace註冊免費試用。AWS Marketplace 免費試用版可讓您在 33 天試用期內存取 Data Infrastructure Insights 、並允許最多 499 <<observability-metering,託管單位>> （ MU ）。
+
+附註：如果您設定的MU超過499 MU、您將會進入「違反」狀態。當您的試用處於「遭入侵」狀態時、您將無法存取某些 Data Infrastructure Insights 功能、直到資料外洩問題解決為止、無論是減少已設定的 MU 數量、或是訂閱 Data Infrastructure Insights 。
+
+AWS Marketplace免費試用版無法延長。您可以在試用期間隨時降級至 Data Infrastructure Insights Basic Edition 訂閱、或造訪 * 管理 -> 訂閱 * 頁面、變更為付費的 Data Infrastructure Insights 訂閱。
+
+
+
+=== 如果我的試用期已到期、該怎麼辦？
+
+如果您的免費試用期已過期、但您尚未訂閱 Data Infrastructure Insights 、則在您訂閱之前、您的功能將有限。資料擷取可能會停止、幾週後、您的資料將會根據我們的資料保留政策刪除。
+
+
+
+== 如果我的訂閱已過期怎麼辦？
+
+如果您訂閱 Data Infrastructure Insights 、但該訂閱已過期、您將有五天的寬限期、以便續約。在這段寬限期內、所有 Data Infrastructure Insights 功能都會保持啟用狀態。
+
+寬限期結束後、資料基礎架構 Insights 功能會暫停、直到您續約為止。若要續約、請參閱 * 管理 > 訂閱 * 頁面、或聯絡 NetApp 銷售人員。
+
+
+NOTE: 您在寬限期結束前所收集的 Data Infrastructure Insights 資料、在寬限期結束後 30 天內仍保持不變。如果您在此期間內續約、則直到寬限期結束為止的所有資料都可供您使用。
+
+
+
+== 如果我的 * 訂閱 * 已過期怎麼辦？
+
+如果您訂閱 Data Infrastructure Insights 、但該訂閱已過期、您將有五天的寬限期、以便續約。在這段寬限期內、所有 Data Infrastructure Insights 功能都會保持啟用狀態。
+
+寬限期結束後、資料基礎架構 Insights 功能會暫停、直到您續約為止。若要續約、請參閱 * 管理 > 訂閱 * 頁面、或聯絡 NetApp 銷售人員。
+
+
+NOTE: 您的 Data Infrastructure Insights 資料會在寬限期後 30 天內保持不變。如果您在此期間內續約、則直到寬限期結束為止的所有資料都可供您使用。
+
+
+
+== 模組評估
+
+您也可以利用 * 模組評估 * 。例如、如果您已訂閱基礎架構可服務性、但正在將 Kubernetes 新增至您的環境、則從安裝 NetApp Kubernetes 監控操作員開始、您將自動進行 Kubernetes 可服務性的 30 天評估。在評估期間結束時、您的 Kubernetes Observ易 受管理單元使用量僅需支付費用。
+
+
+NOTE: 請記住、評估後、您將會被收取新的管理單元（ MU ）使用費用、因此請務必做好相應的規劃。當模組評估結束時、系統會通知您是否需要新增更多 MU 、以避免服務中斷。
+
+您可以在 *Usage* 標籤的 *Admin > Subscription* 頁面上監控受管理單元的使用情況。
+
+image:Module_Trials_UsageTab.png["MU 使用量畫面"]
+
+
+NOTE: _ 模組評估 _ 並非試用 _ - 我們提供客戶免費試用期、以使用 Data Infrastructure Insights 服務來確認是否適合並啟用購買。模組評估不同、這是我們允許付費客戶試用資料基礎架構 Insights 單元、而這些單元在最近幾個月的付費訂閱中並未使用。當評估生效時、只會免除新設定模組的費用。工作環境的客戶仍在訂閱中、尚未恢復免費試用。訂閱尚未變更。
+
+
+
+=== 評估者
+
+在模組評估期間、您不會為模組所使用的資源收取 MU 使用費、但您可以開啟 * 評估工具 * （位於 _ 摘要 _ 索引標籤）、查看評估後 MU 的收費方式、以及在未來可能需要多少 MU 的情況下、使用「假設」情境。請離開 Estimator 以重設數字。
+
+image:Module_Trials_Estimator.png["評估者"]
+
+選取模組旁的核取方塊、即可從預估成本中新增或移除整個模組的 MU 。
+
+您也可以使用 Estimator 來查看加載項目的編號堆疊方式、也就是保留目前訂閱期限並增加授權託管單位的數量、或是在目前訂閱時購買續約訂閱的續約選項 學期結束。
+
+請注意、每次訂閱只能進行一次模組評估。
+
+
+
+== 訂購選項
+
+若要訂閱、請前往 * 管理 -> 訂閱 * 。除了 * 訂閱 * 按鈕之外、您還可以查看已安裝的資料收集器、並計算預估的計量。對於典型環境、您可以按一下自助式 AWS Marketplace 按鈕。如果您的環境包含或預期包含1、000個以上的託管單位、您就有資格參加Volume Pricing。
+
+
+
+=== 可觀察的計量
+
+資料基礎架構 Insights 可觀察性的計量方式有兩種：
+
+* 容量計量
+* 託管單元計量（舊版）
+
+
+您的訂閱將根據您現有的訂閱或是啟動新的訂閱、以下列其中一種方式進行計量。
+
+
+
+==== 容量計量
+
+資料基礎架構 Insights 根據您環境中的儲存層來觀察計量使用量。您可能有屬於以下一或多個類別的儲存區：
+
+* 主要原始
+* 物件原始
+* 雲端已耗用
+
+
+每個層都以不同的速率計量、並一起計算整個層級、以提供 _ 有效的權利 _ 。計算有效使用量的公式如下：
+
+ Effective usage = Raw TiB + (0.1 x Object Tier Raw TiB) + (0.25 x Cloud Tier Provisioning TiB)
+
+NOTE: 受管理單元的總和可能與摘要區段中的資料收集器數略有不同。這是因為託管單元的數量會四捨五入到最近的託管單元。「資料收集器」清單中這些數字的總和、可能會略高於「狀態」區段中的「受管理單元總數」。摘要區段會反映您訂閱的實際託管單位數。為了協助達成此目標、 DII 會根據 _ 訂閱 _ 數量來計算單一 * 有效權利 * 編號；然後根據 _ 探索 _ 儲存設備來計算相同的編號、只有在有效探索到的容量大於有效權利時才會宣告違反。如此一來、您就能靈活地監控不同於每個層級訂閱數量的數量、只要發現的總儲存容量在訂閱的有效權利範圍內、 DII 就能提供此功能。
+
+
+
+==== 託管單元計量（舊版）
+
+資料基礎架構 Insights 基礎架構可服務性和 Kubernetes 可服務性計量表使用量（依 * 受管理單元 * ）。管理單元的使用量是根據基礎架構環境中*主機或虛擬機器*的數量、以及*未格式化容量*的管理量來計算。
+
+* 1個受管理單元= 2個主機（任何虛擬或實體機器）
+* 1受管理單元= 4 TiB的實體或虛擬磁碟未格式化容量
+* 1 託管單元 = 40 TiB 的非格式化容量、適用於特定次要儲存設備： AWS S3 、 Cohesity SmartFiles 、 Dell EMC Data Domain 、 Dell EMC ECS 、 Hitachi Content Platform 、 IBM Cleversafe 、 NetApp StorageGRID 、 Rukrik 。
+* 1 個託管單元 = 4 個 Kuberentes vCPU 。
++
+** 1 受管理單元 K8s 調整 = 2 個節點、或同時受基礎架構監控的主機。
+
+
+
+
+如果您的環境包含或預期包含1、000個以上的託管單位、您就有資格享有* Volume Pricing *、系統將會提示您聯絡NetApp銷售人員以訂閱。如需詳細資訊、請參閱<<how-do-i-subscribe,以下>>。
+
+
+
+=== 工作負載安全性計量
+
+工作負載安全性是透過叢集來計量、方法與「可觀察性」計量相同。
+
+您可以在 * 工作負載安全性 * 標籤的 * 管理 > 訂閱 * 頁面中檢視工作負載安全性使用情況。
+
+image:ws_metering_example_page.png["'Admin> Subscription > Workload Security 標籤顯示高階、中階和入門級節點數 '"]
+
+
+NOTE: 現有的 Workload Security 訂閱會調整其 MU 使用量、使節點使用率不會佔用託管單位。資料基礎架構 Insights 計量表的使用量、確保符合授權使用的法規要求。
+
+
+
+== 如何訂閱？
+
+如果託管單元數少於 1 ， 000 ，您可以透過 NetApp 銷售部門或 AWS Marketplace 訂閱<<self-subscribe-through-aws-marketplace,自行訂閱>>。
+
+
+
+=== 透過NetApp銷售直接訂閱
+
+如果您預期的託管單元數為 1 ， 000 或更高，請按一下link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["*聯絡銷售人員*"]按鈕，透過 NetApp 銷售團隊訂閱。
+
+您必須將資料基礎架構洞見 * 序號 * 提供給 NetApp 銷售代表、才能將付費訂閱套用至您的資料基礎架構洞見環境。序號可唯一識別您的 Data Infrastructure Insights 試用環境、並可在 * 管理 > 訂閱 * 頁面上找到。
+
+
+
+=== 透過AWS Marketplace自行訂閱
+
+
+NOTE: 您必須是帳戶擁有者或管理員、才能將 AWS Marketplace 訂閱套用至現有的 Data Infrastructure Insights 試用帳戶。此外、您必須擁有Amazon Web Services（AWS）帳戶。
+
+按一下 Amazon Marketplace 連結即可開啟 AWS https://aws.amazon.com/marketplace/pp/prodview-pbc3h2mkgaqxe["資料基礎架構洞見"] 訂閱頁面、您可以在其中完成訂閱。請注意、您在計算機中輸入的值不會填入AWS訂閱頁面；您需要在此頁面上輸入管理單元總數。
+
+在您輸入管理單元總數並選擇12個月或36個月的訂閱期限之後、請按一下*設定您的帳戶*以完成訂閱程序。
+
+AWS 訂購程序完成後、您將被帶回 Data Infrastructure Insights 環境。或者、如果環境不再處於作用中狀態（例如、您已登出）、您將會進入 NetApp BlueXP 登入頁面。當您再次登入 Data Infrastructure Insights 時、您的訂閱將會生效。
+
+
+NOTE: 在AWS Marketplace頁面上按一下*設定您的帳戶*之後、您必須在一小時內完成AWS訂購程序。如果您未在一小時內完成、則必須再次按*設定帳戶*以完成程序。
+
+如果發生問題且訂閱程序無法正確完成、您仍會在登入環境時看到「試用版」橫幅。在此情況下、您可以前往*管理>訂閱*、然後重複訂閱程序。
+
+
+
+== 檢視您的訂閱狀態
+
+一旦您的訂閱啟用、您就可以從*管理>訂閱*頁面檢視您的訂閱狀態和受管理單元使用量。
+
+Subscription * Summary* （訂閱 * 摘要 * ）選項卡顯示如下內容：
+
+* 目前版本
+* 訂閱序號
+* 目前的 MU 權益
+
+
+「 * 使用量 * 」標籤會顯示您目前的 MU 使用量、以及資料收集器如何分解使用量。
+
+image:SubscriptionUsageByModule.png["MU 使用量（依模組）"]
+
+「 * 歷史記錄 * 」標籤可讓您深入瞭解過去 7 至 90 天的 MU 使用情形。將游標移至圖表中的某一欄上方、即可依模組（即 Observc度 、 Kubernetes ）提供詳細資料。
+
+image:Subscription_Usage_History.png["MU 使用記錄"]
+
+
+
+== 檢視您的使用管理
+
+使用管理索引標籤會顯示受管理單元使用率的概觀、以及依收集器或 Kubernetes 叢集區分受管理單元使用量的索引標籤。
+
+
+NOTE: 「未格式化的容量管理單元」數會反映環境中總原始容量的總和、並四捨五入至最近的管理單元。
+
+
+NOTE: 受管理單元的總和可能與摘要區段中的資料收集器數略有不同。這是因為託管單元的數量會四捨五入到最近的託管單元。「資料收集器」清單中這些數字的總和、可能會略高於「狀態」區段中的「受管理單元總數」。摘要區段會反映您訂閱的實際託管單位數。
+
+如果您的使用量接近或超過您訂閱的數量、您可以刪除資料收集器或停止監控 Kubernetes 叢集、以減少使用量。按一下「三點」功能表並選取「刪除」、即可刪除此清單中的項目。
+
+
+
+=== 如果我超過訂閱使用量、會發生什麼情況？
+
+當您的託管設備使用量超過80%、90%及100%的訂購總金額時、系統會顯示警告：
+
+[cols="2*a"]
+|===
+| *使用量超過：* | *這種情況發生/建議採取的行動：* 
+
+
+ a| 
+* 80%*
+ a| 
+隨即顯示資訊橫幅。無需採取任何行動。
+
+
+
+ a| 
+* 90%*
+ a| 
+隨即顯示警告橫幅。您可能想要增加訂閱的託管單元數。
+
+
+
+ a| 
+* 100%*
+ a| 
+除非您執行下列其中一項操作、否則會顯示錯誤橫幅：
+
+* 移除資料收集器、讓您的受管理單元使用量等於或低於您的訂閱量
+* 修改您的訂閱以增加訂閱的託管單元數
+
+
+|===
+
+
+== 直接訂閱並跳過試用版
+
+您也可以直接從訂閱 Data Infrastructure Insights https://aws.amazon.com/marketplace/pp/prodview-pbc3h2mkgaqxe["AWS 市場"] 、而無需先建立試用環境。一旦您的訂閱完成並設定環境、您就會立即訂閱。
+
+
+
+== 新增權益ID
+
+如果您擁有與資料基礎架構洞見相關的有效 NetApp 產品、您可以將該產品序號新增至現有的資料基礎架構洞見訂閱。例如、如果您已購買 NetApp Astra Control Center 、則 Astra Control Center 授權序號可用於識別 Data Infrastructure Insights 中的訂閱。Data Infrastructure Insights 指的是這項權利 ID_ 。
+
+若要將授權 ID 新增至您的 Data Infrastructure Insights 訂閱、請在 * 管理 > 訂閱 * 頁面上、按一下 __Entitlement ID_ 。
+
+image:Subscription_AddEntitlementID.png["新增權利ID至您的訂閱"]

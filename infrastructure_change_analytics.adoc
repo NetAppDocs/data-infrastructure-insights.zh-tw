@@ -1,0 +1,101 @@
+---
+sidebar: sidebar 
+permalink: infrastructure_change_analytics.html 
+keywords: changes, management, analysis, infra, infrastructure 
+summary: Cloud Insights 會追蹤基礎架構的變更、以便輕鬆進行分析和疑難排解。 
+---
+= 基礎架構變更分析
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+基礎架構變更分析可讓您一體化檢視環境中基礎架構（儲存設備，交換器等）最近的變更。使用變更分析，您可以追蹤組態變更，並深入探討預期和非預期的問題。
+
+
+
+== 基礎架構變更分析有何幫助？
+
+在任何環境中，資源可能會因為設定不當，電力中斷等而發生變更。變更分析提供單一窗格來檢視資源的健全狀況，並將其與停機或計畫性變更建立關聯，因此有助於改善資源狀況。變更會隨每個庫存輪詢一起計算（在新收集器的第一次輪詢之後）。
+
+若要分析基礎架構變更、請瀏覽至 * 可服務性 > 變更分析 * 。會列出目前時間範圍的警示和組態變更。警示列會顯示目前警示狀態（作用中或已解決）。
+
+您也可以瀏覽至資源的登陸頁面。如果該資源或相關資源發生變更，這些變更將顯示在頁面的「專家檢視」區段中。放大以調查個別變更，或是將檢視範圍保持在較寬的範圍內，以查看所選時間範圍內的所有變更。將游標移至變更上方，即可獲得變更摘要。按一下該變更，專家就會將焦點放在該變更的時間上。
+
+image:change_analysis_on_a_landing_page.png["登陸頁面上的變更分析"]
+
+選取清單中的項目將會開啟滑出窗格、提供警示或變更的詳細資訊。
+
+
+
+== 篩選
+
+如同 Cloud Insights 的所有功能一樣、篩選變更清單是直覺式的：在頁面頂端、您可以根據特定資產類型（ _ 觸發於：類型 _ ）進行篩選、以及 / 或僅針對具有特定名稱的資產進行篩選（ _ 觸發於：名稱 _ ）、或是選取 ｛ + ）按鈕來新增您自己的篩選條件。
+
+image:infraChange_filter_dropdown.png["基礎架構變更篩選下拉式功能表"]
+
+您也可以直接前往「重要警示」或篩選設定下方的狀態區段變更、包括目前三大資源中警示最多的資源。
+
+image:Change_Analysis_filters_and_status.png["警示和變更的狀態和快速連結"]
+
+
+
+== 分析哪些物件以進行變更？
+
+下表列出基礎架構變更分析所包含的物件和屬性。
+
+|===
+
+
+| 物件類型 | 屬性 
+
+
+| 磁碟 | disksize.total isVirtual diskGroup 速度類型位置 serialNumber 角色狀態廠商模式 storage.name storagePools.name 名稱 isEncrypted 
+
+
+| 儲存設備 | Family IP IsActive microcodeVersion 模型名稱傳輸協定 serialNumber 廠商 
+
+
+| StorageNode | 名稱 storage.name nodeVersion model serialNumber OfProcessors 狀態為 partner.name 快取記憶體管理 IpAddresses parentSerialNumber SiteName 
+
+
+| StoragePool | 名稱類型 isAutoTiering isVirtual 備援廠商使用 FlashPools store.vendor store.ip store.model store.family storage.name storageNodes.name capable.total （動態屬性） isCompactionSavingsEnabled isEncrypted objectStoreName objectStoreProviderType objectStoreSizeLimit objectStoreTieringFullnessThreshold objectStoreS3Name objectStoreServer 
+
+
+| qtree | 鍵入 securityStyle isoplocksEnabled shares.name storage.name internalVolume.name storageVirtualMachine.name simpleName 狀態 Text 名稱 
+
+
+| StorageVirtualMachine | 名稱 storage.name 狀態類型 IPSpace 通訊協定 internalVolumeLimit 
+
+
+| Volume | 名稱 simpleName 標籤類型 storage.name storage.vendor storage.ip storage.model storage.family isAutoTiering isThinProvisioned diskGroup isMainframe Ismaeta isReplicaSource isReplicaTarget isSnapshot isVirtual internalVolume.name internalVolume.virtualStorage storageNodes.name storageNodes.partner.name storagePools.name storageVirtualMachine.name storageGroups isEncrypted iscomposts 啟用 qosBurstIOPS qoslimitIOPS qoslimitIOPS qoslimitMBoslimitMBqimplateps Minospos 營運策略 
+
+
+| 內部Volume | FlashPoolEligibility 名稱 simpleName spaceGuarantee 狀態類型 virtualStorage replicaSources.name storageNodes.name storageNodes.partner.name storage.name storage.vendor storage.IP storage.model storage.family storageVirtualMachine.name storagePool.name capacity.isThinProvisioned qosPolicy qosLimitRaw qosLimitIOPS qosLimitMBPS isEncrypted adaptiveQosPolicy issionPath objectStoreTieringPolicy TieringMinimumCoolingDays 
+
+
+| 虛擬機器 | 名稱 dnsName IP OS 記憶體處理器 guestState powernatehost.name host.clustername host.ip host.os datastore.name instanceType publicIps securityGroups virtualCenterIp 
+
+
+| 資料存放區 | 名稱 virtualCenterIp 類型 
+
+
+| 主機 | 名稱模式 IP IsActive OS 製造商 CPUCount 記憶體 isHypervisor 叢集名稱 virtualCenterIp 
+
+
+| VMDK （虛擬機器磁碟） | 名稱類型 datastore.name isRdm virtualMachine.host.name virtualMachine.name isSnapshot 
+
+
+| 連接埠 | 名稱 IsActive WWN 類型 portIndex 刀鋒速度 gbicType connectedPorts.device.name connectedPorts.device.type connectedPorts.name connectedPorts.nodeWwn connectedPorts.WWN 控制器 device.name device.type fabrics.name Fabrics.vsanId nodeWn 說明 
+|===
+「變更分析」會追蹤下列案例的警示：
+
+* 記錄監控的警示，記錄類型為 _logs.vmware.events _ 和 NetApp 。
+* 來自上述物件類型的度量監控器警示；必須在 _ 群組依據 _ 欄位中選取這些警示，變更分析才能追蹤這些警示。
+

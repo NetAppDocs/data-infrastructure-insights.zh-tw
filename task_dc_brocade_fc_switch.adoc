@@ -1,0 +1,173 @@
+---
+sidebar: sidebar 
+permalink: task_dc_brocade_fc_switch.html 
+keywords: data collector, Brocade, FC switch, 
+summary: 設定Brocade FC交換器資料收集器。 
+---
+= Brocade FC交換器資料收集器
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Data Infrastructure Insights 使用 Brocade FC 交換器（ SSH ）資料來源來探索 Brocade 或執行 Rebred 作業系統（ FOS ）韌體 4.2 及更新版本之交換器裝置的庫存。同時支援FC交換器和存取閘道模式的裝置。
+
+
+
+== 術語
+
+Data Infrastructure Insights 會從 Brocade FC 交換器資料收集器取得下列庫存資訊。對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+
+[cols="2*"]
+|===
+| 廠商/模型術語 | Data Infrastructure Insights 術語 
+
+
+| 交換器 | 交換器 
+
+
+| 連接埠 | 連接埠 
+
+
+| 虛擬架構、實體架構 | 網路 
+
+
+| 區域 | 區域 
+
+
+| 邏輯交換器 | 邏輯交換器 
+
+
+| 虛擬Volume | Volume 
+
+
+| LSAN區域 | IVR區域 
+|===
+附註：這些只是通用的術語對應、可能不代表此資料收集器的每個案例。
+
+
+
+== 需求
+
+* Data Infrastructure Insights Acquisition Unit （ AU ）將啟動連線至 Brocade 交換器上的 TCP 連接埠 22 、以收集庫存資料。AU也會啟動連接至udp連接埠161的連線、以收集效能資料。
+* 網路中的所有交換器都必須有 IP 連線。如果您選取「探索架構中的所有交換器」核取方塊、 Data Infrastructure Insights 會識別架構中的所有交換器；不過、它需要 IP 連線才能連線到這些額外的交換器來探索它們。
+* 網路中的所有交換器都需要相同的帳戶。您可以使用Putty（開放原始碼終端機模擬器）來確認存取。
+* 光纖網路中的所有交換器都必須開啟連接埠161和162、才能進行SNMP效能輪詢。
+* SNMP唯讀社群字串
+
+
+
+
+== 組態
+
+[cols="2*"]
+|===
+| 欄位 | 說明 
+
+
+| 交換器IP | EFC伺服器的IP位址或完整網域名稱 
+
+
+| 使用者名稱 | 交換器的使用者名稱 
+
+
+| 密碼 | 交換器的密碼 
+
+
+| SNMP | SNMP 版本 
+
+
+| SNMP社群字串 | 用於存取交換器的SNMP唯讀社群字串 
+
+
+| SNMP使用者名稱 | SNMP 使用者名稱 
+
+
+| SNMP 密碼 | SNMP 密碼 
+|===
+
+
+== 進階組態
+
+[cols="2*"]
+|===
+| 欄位 | 說明 
+
+
+| 網路名稱 | 要由資料收集器回報的網路名稱。保留空白以將網路名稱報告為WWN。 
+
+
+| 庫存輪詢時間間隔（分鐘） | 庫存輪詢之間的時間間隔。預設值為 15 。 
+
+
+| 排除的裝置 | 要從輪詢中排除的裝置ID清單、以逗號分隔 
+
+
+| 管理網域作用中 | 如果使用管理網域、請選取 
+
+
+| 擷取MPR-資料 | 選取以從多重傳輸協定路由器取得路由資料。 
+
+
+| 啟用資料綁定 | 選取以在從裝置接收SNMP設陷時啟用擷取。如果您選取「啟用補漏白」、也必須啟動SNMP。 
+
+
+| 設陷之間的最短時間（秒） | 擷取嘗試之間由陷阱觸發的最短時間。預設值為 10 。 
+
+
+| 探索網路中的所有交換器 | 選取以探索網路中的所有交換器 
+
+
+| 選擇偏好 HBA 與區域別名 | 選擇是否偏好HBA或區域別名 
+
+
+| 效能意見調查時間間隔（秒） | 效能輪詢之間的時間間隔。預設值為 300 。 
+
+
+| SNMP驗證傳輸協定 | SNMP驗證傳輸協定（僅限SNMP v3） 
+
+
+| SNMP隱私密碼 | SNMP隱私密碼（僅限SNMP v3） 
+
+
+| SNMP重試次數 | SNMP重試嘗試次數 
+|===
+
+
+== 疑難排解
+
+如果您在使用此資料收集器時遇到問題、請嘗試下列事項：
+
+
+
+=== 庫存
+
+[cols="2*"]
+|===
+| 問題： | 試用： 
+
+
+| Brocade資料來源的庫存擷取失敗、並顯示錯誤：<date><time>錯誤[com.onaro.sanscreen.acquisition.framework.datasource.BaseDataSource]錯誤2、共2：<資料來源名稱>[內部錯誤]-無法產生裝置<IP>的機型。偵測提示時發生錯誤（[Device name <name>：無法產生裝置<IP>的機型。偵測提示時發生錯誤） | 此問題可能是因為Brocade交換器需要太長時間才會以提示字元傳回、超過預設的逾時時間5秒。在 Data Infrastructure Insights 的資料收集器進階組態設定中、嘗試將 _SSH Banner Wait Timeout （ sec ） _ 提高至更高的值。 
+
+
+| 錯誤：「 Data Infrastructure Insights Received Invalid Chassis Role 」 | 檢查在此資料來源中設定的使用者是否已獲得機箱角色權限。 
+
+
+| 錯誤：「不相符的機箱IP位址」 | 變更資料來源組態以使用機箱IP位址。 
+
+
+| 收到一則訊息、指出有超過1個節點登入Access Gateway連接埠 | 請檢查NPV裝置是否正常運作、以及所有連接的WWN是否正常運作。請勿直接取得NPV裝置。相反地、取得核心Fabric交換器將會收集NPV裝置資料。 
+
+
+| 效能收集失敗、並顯示「傳送 SNMP 要求時逾時」。 | 視查詢變數和交換器組態而定、某些查詢可能會超過預設逾時。link:https://kb.netapp.com/Cloud/BlueXP/Cloud_Insights/Cloud_Insight_Brocade_data_source_fails_performance_collection_with_a_timeout_due_to_default_SNMP_configuration["深入瞭解"]。 
+|===
+您可以在頁面或中找到其他link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]資訊。

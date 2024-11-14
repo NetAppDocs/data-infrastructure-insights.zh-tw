@@ -1,0 +1,69 @@
+---
+sidebar: sidebar 
+permalink: kubernetes_change_analytics.html 
+keywords: changes, management, analysis 
+summary: 追蹤 Kubernetes 變更比以往更容易。 
+---
+= Kubernetes 變更分析
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Kubernetes Change Analytics 提供您 K8s 環境最近變更的全方位檢視。警示和部署狀態盡在您的掌握之中。利用 Change Analytics 、您可以追蹤每個部署和組態變更、並將其與 K8s 服務、基礎架構和叢集的健全狀況和效能建立關聯。
+
+變更分析有何幫助？
+
+* 在多租戶 Kubernetes 環境中、可能會因為設定不當而導致停機。變更分析可提供單一窗格來檢視及關聯工作負載和組態變更的健全狀況、藉此協助解決此問題。這有助於疑難排解動態 Kubernetes 環境。
+
+
+若要檢視 Kubernetes 變更分析、請瀏覽至 * Kubernetes > 變更分析 * 。
+
+image:ChangeAnalytitcs_Main_Screen.png["Kubernetes Change Analytics 主畫面顯示警告和關鍵警示、成功和失敗的部署、以及觸發警示的前 3 大工作負載"]。
+
+頁面會根據目前選取的 Data Infrastructure Insights 時間範圍自動重新整理。時間範圍越短、畫面更新就越頻繁。
+
+
+
+== 篩選
+
+與 Data Infrastructure Insights 的所有功能一樣、篩選變更清單是直覺式的：在頁面頂端、輸入或選取 Kubernetes 叢集、命名空間或工作負載的值、或是選取 ｛ + ）按鈕來新增自己的篩選器。
+
+當您篩選到特定叢集、命名空間和工作負載（以及您設定的任何其他篩選器）時、會在該叢集的該命名空間中顯示該工作負載的部署和警示時間表。在圖表中按一下並拖曳、即可進一步放大、以專注於更特定的時間範圍。
+
+image:ChangeAnalytitcs_Filtered_Timeline.png["工作負載時間表範例"]
+
+
+
+== 快速狀態
+
+篩選區域下方有許多高階指標。左側是警示數量（警告和嚴重）。這個數字包括 _Active_ 和 _Resolved 警示。若要僅查看 _Active_ 警示、請設定「狀態」篩選條件、然後選擇「作用中」。
+
+image:ChangeAnalytitcs_Alerts.png["變更分析警示"]
+
+此處也會顯示部署狀態。同樣地、預設值是顯示 _started_ 、 _Completed_ 和 _Failed_ 部署的計數。若要僅查看 _Failed_ 部署、請設定「狀態」篩選條件、然後選取「失敗」。
+
+image:ChangeAnalytitcs_Deploys.png["變更分析部署"]
+
+接下來是警示最多的前 3 大工作負載。每個工作負載旁的紅色數字代表與該工作負載相關的警示數量。按一下工作負載連結、瀏覽基礎架構（ Kubernetes Explorer ）、相依性（工作負載對應）或記錄分析（事件記錄）。
+
+image:ChangeAnalytitcs_ExploreWorkloadAlerts.png["變更分析工作負載探索選項"]
+
+
+
+== 詳細資料面板
+
+在清單中選取變更會開啟一個面板、以更詳細地說明變更。例如、選取失敗的部署會顯示部署摘要、包括開始和結束時間、持續時間、以及觸發部署的位置、以及探索這些資源的連結。它也會顯示故障原因、任何相關變更、以及任何相關事件。
+
+image:ChangeAnalytitcs_DeployDetailPanel.png["部署失敗詳細資料面板"]
+
+同樣地、選取警示也會提供警示的詳細資料、包括觸發警示的監視器、以及顯示警示視覺時間表的圖表。

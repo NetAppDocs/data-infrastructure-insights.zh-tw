@@ -1,0 +1,47 @@
+---
+sidebar: sidebar 
+permalink: cs_intro.html 
+keywords: CloudSecure, Cloud Secure 
+summary: 總覽 
+---
+= 關於儲存工作負載安全性
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+資料基礎架構洞見儲存工作負載安全性（前身為 Cloud Secure ）可針對內部威脅提供可據以行動的情報、協助保護您的資料。它可集中監控所有企業資料在混合雲環境中的存取、確保達成安全性與法規遵循目標。
+
+
+NOTE: Data Infrastructure Insights Federal Edition 不提供工作負載安全功能。
+
+
+
+== 可見度
+
+集中可見度並控制使用者對儲存在內部部署或雲端的重要企業資料的存取。
+
+取代無法提供即時且準確的資料存取與控制可見度的工具和手動程序。工作負載安全功能可在雲端和內部部署儲存系統上進行獨特作業、為您提供惡意使用者行為的即時警示。
+
+
+
+== 保護
+
+透過進階的機器學習和異常偵測功能、保護組織資料免遭惡意或遭入侵的使用者濫用。
+
+透過進階機器學習和異常偵測使用者行為、警示您任何異常的資料存取。
+
+
+
+== 法規遵循
+
+稽核使用者資料存取儲存在內部部署或雲端的關鍵企業資料、確保企業符合法規要求。

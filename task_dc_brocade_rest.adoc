@@ -1,0 +1,144 @@
+---
+sidebar: sidebar 
+permalink: task_dc_brocade_rest.html 
+keywords: data collector, Brocade, FC switch, FOS, Rest 
+summary: 設定 Brocade FOS REST 資料收集器。 
+---
+= Brocade FOS REST Data Collector
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Data Infrastructure Insights 使用 Brocade FOS REST 收集器來探索執行 FabricOS （ FOS ）韌體 8.2 及更新版本之 Brocade 交換器裝置的庫存與效能。
+
+請注意： FOS 的預設「使用者」層級對於 Data Infrastructure Insights 來說功能不夠強大、無法檢視裝置的所有邏輯層面、我們需要啟用「機箱角色」的使用者帳戶、以及在交換器上設定的所有虛擬架構上的權限。
+
+以下是一個範例、說明如何在 SSH 工作階段中建立「最低權限」使用者帳戶、以利資料基礎架構 Insights 使用 FOS 裝置：
+
+userconfig --add NetAppCIUser -r user -l 1-128 -c user -p qwide!
+
+這會建立使用者「 NetAppCIUser 」、密碼為「 Qwerty ！」。此使用者在所有 128 個可能的虛擬架構（ -l ）中都有「使用者」角色（ -r ）。此使用者還具有必要的「機箱」角色（ -c ）、並指派使用者層級存取權。
+
+根據預設、此收集器會嘗試探索屬於交換器所屬所有架構一部分的所有 FOS 裝置。
+
+
+
+== 術語
+
+Data Infrastructure Insights 會從 Brocade FOS REST 資料收集器取得下列庫存資訊。對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+
+[cols="2*"]
+|===
+| 廠商/模型術語 | Data Infrastructure Insights 術語 
+
+
+| 交換器 | 交換器 
+
+
+| 連接埠 | 連接埠 
+
+
+| 虛擬架構、實體架構 | 網路 
+
+
+| 區域 | 區域 
+
+
+| 邏輯交換器 | 邏輯交換器 
+
+
+| LSAN區域 | IVR區域 
+|===
+附註：這些只是通用的術語對應、可能不代表此資料收集器的每個案例。
+
+
+
+== 需求
+
+* 網路中的所有交換器都必須有 TCP 連線。這種資料收集器類型將無縫試用光纖網路中每個裝置的 HTTP 和 HTTPS 。如果您選取 _ 探索 Fabric 中的所有交換器 _ 核取方塊、 Data Infrastructure Insights 會識別 Fabric 中的所有交換器；不過、它需要 TCP 連線才能連線到這些額外的交換器來探索它們。
+* 網路中的所有交換器都需要相同的帳戶。您可以使用裝置的 Web 介面來確認存取。
+
+
+
+
+== 組態
+
+[cols="2*"]
+|===
+| 欄位 | 說明 
+
+
+| 交換器IP | FOS 交換器的 IP 位址或完整網域名稱 
+
+
+| 使用者名稱 | 交換器的使用者名稱 
+
+
+| 密碼 | 交換器的密碼 
+|===
+
+
+== 進階組態
+
+[cols="2*"]
+|===
+| 欄位 | 說明 
+
+
+| 排除的裝置 | 要從輪詢中排除的裝置 IPv4 位址清單、以逗號分隔。 
+
+
+| 庫存輪詢時間間隔（分鐘） | 庫存輪詢之間的時間間隔。預設值為 60 。 
+
+
+| 探索網路中的所有交換器 | 選取以探索 Fabric 中的所有交換器。 
+
+
+| 選擇偏好 HBA 與區域別名 | 選擇是否偏好 HBA 或區域別名。 
+
+
+| 連線類型 | HTTP 或 HTTPS 。 
+
+
+| 請注意、此設定僅會變更 CI 首先嘗試使用每個裝置的傳輸協定、如果預設失敗、 CI 會自動嘗試使用相反的傳輸協定 | 置換TCP連接埠 
+
+
+| 如果未使用預設值、請指定連接埠。 | 效能意見調查時間間隔（秒） 
+|===
+
+
+== 疑難排解
+
+如果您在使用此資料收集器時遇到問題、請嘗試下列事項：
+
+
+
+=== 庫存
+
+[cols="2*"]
+|===
+| 問題： | 試用： 
+
+
+| 測試功能會警告我無法存取通訊協定 | 指定的 Brocade FOS 8.2+ 裝置只想在 HTTP 或 HTTPS 上說話 - 如果交換器已安裝數位憑證、當交換器嘗試與未加密的 HTTP 與 HTTPS 進行通訊時、交換器就會拋出 HTTP 錯誤。測試功能會嘗試與 HTTP 和 HTTPS 進行通訊 - 如果測試告訴您某個傳輸協定通過、您可以安全地儲存收集器、而不必擔心另一個傳輸協定失敗 - 收集器會在收集期間嘗試這兩個傳輸協定、而且只有在兩者都無法運作時才會失敗。 
+
+
+| 錯誤：「 Data Infrastructure Insights Received Invalid Chassis Role 」 | 檢查在此資料來源中設定的使用者是否已獲得機箱角色權限。 
+
+
+| 錯誤：「不相符的機箱IP位址」 | 變更資料來源組態以使用機箱IP位址。 
+
+
+| 庫存失敗、並禁用 403 | 這可能只是不良認證、或是表示您嘗試使用功能不夠強大的角色、請記住、「使用者」層級的使用者沒有必要的「機箱角色」權限、或是無法檢視非預設虛擬架構的存取權限。 
+|===
+您可以在頁面或中找到其他link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]資訊。

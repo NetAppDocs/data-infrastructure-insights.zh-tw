@@ -1,0 +1,65 @@
+---
+sidebar: sidebar 
+permalink: reporting_create_example.html 
+summary: 使用此程序、使用預先定義的 Data Infrastructure Insights 報告建立報告。 
+keywords: reporting, cognos, data warehouse, dwh, create, report 
+---
+= 建立報告（範例）
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+請使用本範例中的步驟、針對多個資料中心的儲存設備和儲存資源池實體容量、產生簡單的報告。
+
+.步驟
+. 瀏覽至 * 功能表 > 內容 > 團隊內容 > 報告 *
+. 在畫面右上角、選取 *[ 新增 +]*
+. 選取 * 報告 *
++
+image:Reporting_New_Report.png["建立新報告"]
+
+. 在 * Templates] 索引標籤上、選取 _ 空白 _
++
+隨即顯示來源和資料索引標籤
+
+. 打開 * 選擇來源 +*
+. 在 * 團隊內容 * 下、開啟 * 封裝 *
++
+此時會顯示可用套件的清單。
+
+. 選擇 * 儲存與儲存池容量 *image:Reporting_Select_Source_For_Report.png["選取報告來源"]
+. 選取 * 開啟 *
++
+隨即顯示報告的可用樣式。
+
+. 選取 * 清單 *
++
+新增適當的清單和查詢名稱
+
+. 選擇*確定*
+. 展開_Physical Capacity
+. 擴充至_Data Center_的最低層級
+. 將_Data Center_拖曳至「報告」上標。
+. 展開_Capacity（MB）_
+. 將_Capacity（MB）_拖曳至「報告」上標。
+. 將_使用容量（MB）_拖曳至報告上標。
+. 從 *Run* 功能表中選取輸出類型來執行報告。
++
+image:Reporting_Running_A_Report.png["選取報告輸出"]
+
+
+
+.結果
+系統會建立類似下列內容的報告：
+
+image:Reporting-Example1.png["報告範例"]

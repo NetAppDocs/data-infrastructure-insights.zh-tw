@@ -1,0 +1,99 @@
+---
+sidebar: sidebar 
+permalink: task_dc_hds_hcp.html 
+keywords: data collector, Hitachi HDS, HCP 
+summary: 設定HDS資料收集器。 
+---
+= Hitachi保健資料收集器
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+此資料收集器使用保健專業人員管理API支援Hitachi內容平台（HCPs）。
+
+
+NOTE: Hitachi Content Platform的原始TB與託管單位速率不同。每 40 TB 未格式化的 HCP 容量就會計為 1 link:concept_subscribing_to_cloud_insights.html#pricing["託管單位（MU）"]。
+
+
+
+== 術語
+
+Data Infrastructure Insights 會從 Hitachi HCP 資料收集器取得下列庫存資訊。對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+
+[cols="2*"]
+|===
+| 廠商/模型術語 | Data Infrastructure Insights 術語 
+
+
+| 保健專業人員叢集 | 儲存設備 
+
+
+| 租戶 | 儲存資源池 
+
+
+|  | 命名空間 
+
+
+| 內部Volume | 節點 
+|===
+附註：這些只是通用的術語對應、可能不代表此資料收集器的每個案例。
+
+
+
+== 庫存需求
+
+您必須具備下列條件才能收集庫存資料：
+
+* hcp.伺服器的IP位址
+* 用於保健專業人員軟體和對等權限的唯讀使用者名稱和密碼
+
+
+
+
+== 組態
+
+[cols="2*"]
+|===
+| 欄位 | 說明 
+
+
+| HCP主機 | hcp.主機的IP位址或完整網域名稱 
+
+
+| hcp.連接埠 | 預設值為9090 
+
+
+| HCPs使用者ID | hcp.主機的使用者名稱。 
+
+
+| hcp.密碼 | 用於保健專業人員主機的密碼。 
+
+
+| HCP-驗證類型 | 選擇HCP_local或active_directory 
+|===
+
+
+== 進階組態
+
+|===
+
+
+| 欄位 | 說明 
+
+
+| 庫存輪詢時間間隔（分鐘） | 庫存輪詢之間的時間間隔。預設值為 60 。 
+
+
+| 效能意見調查時間間隔（秒） | 效能輪詢之間的時間間隔。預設值為 900 。 
+|===
+您可以在頁面或中找到其他link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]資訊。

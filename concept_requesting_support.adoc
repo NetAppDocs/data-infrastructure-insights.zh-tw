@@ -1,0 +1,145 @@
+---
+sidebar: sidebar 
+permalink: concept_requesting_support.html 
+summary: 您可以檢視知識庫文章、與NetApp社群連線、觀看影片、或開啟問題單以申請支援。 
+keywords: support, knowledgebase, documentation, community, chat, videos, help, contact, intercom 
+---
+= 正在申請支援
+:hardbreaks:
+:toclevels: 2
+:allow-uri-read: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+
+toc::[]
+您可以按一下 * 說明 > 支援 * 來存取 Data Infrastructure Insights 中的支援選項。您可用的支援選項取決於 Data Infrastructure Insights Edition 。
+
+image:SupportPageWithLearningCenter.png["支援頁面"]
+
+
+
+== 正在啟動支援權利
+
+在試用模式下執行時、 Data Infrastructure Insights 提供自助服務和電子郵件支援。訂閱服務後、強烈建議您啟動支援服務權利。啟用支援權利可讓您透過線上聊天室、網路票證系統和電話存取技術支援。在完成註冊之前、預設的支援模式為自助服務。請參閱<<obtaining-support-information,詳細資料>>下方。
+
+在初始訂閱程序期間、您的 Data Infrastructure Insights 執行個體將會產生一個 20 位數的 NetApp 序號、從「 950 」開始。此 NetApp 序號代表與您帳戶相關的資料基礎架構深入分析訂閱。您必須註冊NetApp序號、才能啟動支援權益。我們提供兩種支援登錄選項：
+
+. 使用原已存在的 NetApp 支援網站（NSS）SSO 帳戶的使用者（即目前的 NetApp 客戶）
+. 沒有原已存在的 NetApp 支援網站（NSS）SSO 帳戶的新 NetApp 客戶
+
+
+
+
+=== 選項 1：已有 NetApp 支援網站（NSS）SSO 帳戶的既有使用者操作步驟
+
+.步驟
+. 瀏覽至 NetApp 註冊網站 https://register.netapp.com[]
+. 選取「我已註冊為 NetApp 客戶」、然後選擇 _ 資料基礎架構洞見 _ 作為產品線。請選擇您的帳單供應商（ NetApp 或 AWS ）、並參考資料基礎架構 Insights 使用者介面中的「說明 > 支援」功能表、提供您的序號和 NetApp 訂閱名稱或 AWS 客戶 ID ：
++
+image:SupportPage_SN_Section-NA.png["SN_SCREEN"]
+
+. 填寫現有的客戶註冊表單、然後按一下*提交*。
++
+image:ExistingCustomerRegExample.png["現有客戶表單"]
+
+. 如果沒有錯誤發生、使用者將會被引導至「Registration Submitted Successfully（已成功提交登錄）」頁面。與用於註冊的NSSSSO使用者名稱相關的電子郵件地址、將會在幾分鐘內收到一封電子郵件、說明「您的產品現在已符合支援資格」。
+. 這是資料基礎架構 Insights NetApp 序號的一次性註冊。
+
+
+
+
+=== 選項 2：沒有 NetApp 支援網站（NSS）SSO 帳戶的新 NetApp 客戶操作步驟
+
+.步驟
+. 瀏覽至 NetApp 註冊網站 https://register.netapp.com[]
+. 選擇「我不是NetApp註冊客戶」、並以下列範例填寫所需資訊：
+
+
+image:NewCustomerRegExample.png["新客戶表單"]
+
+. 選擇 _ 資料基礎架構 Insights _ 做為產品系列。請選擇您的帳單供應商（ NetApp 或 AWS ）、並參考資料基礎架構 Insights 使用者介面中的「說明 > 支援」功能表、提供您的序號和 NetApp 訂閱名稱或 AWS 客戶 ID ：
++
+image:SupportPage_SN_Section-NA.png["SN_SCREEN"]
+
+. 如果沒有錯誤發生、使用者將會被引導至「Registration Submitted Successfully（已成功提交登錄）」頁面。與用於註冊的NSSSSO使用者名稱相關的電子郵件地址、會在幾小時內收到一封電子郵件、說明「您的產品現在符合支援資格」。
+. 身為 NetApp 新客戶，您也需要建立 NetApp 支援網站（NSS）使用者帳戶，以便日後登錄註冊，以及存取支援入口網站的技術支援聊天功能和網路提交問題單。此連結位於 https://mysupport.netapp.com/eservice/public/now.do[]。您可以提供最新註冊的 Data Infrastructure Insights 序號、以加速程序的執行。
+. 這是資料基礎架構 Insights NetApp 序號的一次性註冊。
+
+
+
+
+== 取得支援資訊
+
+NetApp 以多種方式提供資料基礎架構洞見支援。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章或NetApp社群。對於訂閱 * Data Infrastructure Insights 的使用者、可透過電話或網路票證取得技術支援。需有 NetApp 支援網站（NSS）SSO 帳戶，才能網路提交問題單及案例管理。
+
+*只要您的所有NetApp儲存系統均涵蓋在「優級支援」層級以上、「基本版」即提供支援。
+
+許多 NetApp 產品均包含資料基礎架構洞見基礎版、作為套件的一部分。如果您想要升級至 Premium Edition 、請聯絡您的銷售代表。
+
+
+
+=== 自助服務支援：
+
+這些支援選項以試用模式提供、全年無休免費提供：
+
+* * https://kb 。 NetApp 。 com/Special ： Search ？ query=Cloud + Insights [ 知識庫 ]*
+
+
++ 按一下本節中的連結、即可前往 NetApp 知識庫、在其中搜尋相關文章、操作方法等。
+
+* *link:https://docs.netapp.com/us-en/cloudinsights/["文件"]*
++
+按一下「說明文件」連結即可前往此說明文件中心。
+
+* *link:https://community.netapp.com/t5/Cloud-Insights/bd-p/CloudInsights["社群"]*
++
+按一下社群連結、即可前往 NetApp 資料基礎架構洞見社群、與同儕和專家交流。
+
+
+
+此外還有一個連結可link:mailto:ng-cloudinsights-customerfeedback@netapp.com["*意見反應*"]協助我們改善資料基礎架構洞見。
+
+
+
+=== 訂購支援
+
+除了上述的自我支援選項之外、如果您訂閱了資料基礎架構洞見、或是付費支援受監控的 NetApp 產品或服務、您還可以與 NetApp 支援工程師合作來解決您的問題。
+
+
+NOTE: 您必須註冊<<activating-support-entitlement,啟動支援>>才能取得 NetApp 雲端產品。要註冊，請轉至 NetApp 的link:https://register.netapp.com["雲端資料服務支援註冊"]。
+
+強烈建議您勾選此方塊、以便 NetApp 支援工程師在支援工作階段期間存取您的資料基礎架構洞見環境。這可讓工程師疑難排解問題、並協助您迅速解決問題。當問題解決或支援工作階段結束時、您可以取消核取方塊。
+
+您可以透過下列任一方法申請支援。您必須訂閱有效的 Data Infrastructure Insights 、才能使用下列支援選項：
+
+* link:https://www.netapp.com/us/contact-us/support.aspx["*電話*"]
+* link:https://mysupport.netapp.com/portal?_nfpb=true&_st=initialPage=true&_pageLabel=submitcase["*支援服務單*"]
+* * 交談 * ：您將與 NetApp 支援人員連線以取得協助（僅限工作日）。您可以在任何 Data Infrastructure Insights 畫面右上角的 * 說明 > 即時聊天 * 功能表選項中使用聊天功能。
+
+
+您也可以按一下連結來申請銷售支援link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["*聯絡銷售人員*"]。
+
+您的 Data Infrastructure Insights 序號可從 * 說明 > 支援 * 功能表的服務中看到。如果您在存取服務時遇到問題、且先前已向 NetApp 註冊序號、您也可以從 NetApp 支援網站檢視您的資料基礎架構 Insights 序號清單、如下所示：
+
+* 登入mysupport.netapp.com
+* 從「產品」 > 「我的產品」功能表索引標籤、使用「產品系列」「 SaaS Data Infrastructure Insights 」來找出您所有已註冊的序號：
+
+
+image:Support_View_SN.png["檢視支援SN"]
+
+
+
+== Data Infrastructure Insights 資料收集器支援對照表
+
+您可以在中檢視或下載有關支援的資料收集器link:reference_data_collector_support_matrix.html["* Data Infrastructure Insights Data Collector Support Matrix * 、 Role="External""]的資訊和詳細資料。
+
+
+
+=== 學習中心
+
+無論您訂閱的內容為何、 * 說明 > 支援 * 都能連結至多項 NetApp University 課程、協助您充分發揮資料基礎架構洞見的效益。歡迎查看！

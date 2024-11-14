@@ -1,0 +1,82 @@
+---
+sidebar: sidebar 
+permalink: concept_acquisition_unit_requirements.html 
+summary: 作為採購單位的伺服器或 VM 必須符合最低需求。 
+keywords: AU, acquisition unit, requirements, sizing 
+---
+= 採購單位需求
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+您必須安裝擷取單元（AU）、才能從基礎架構資料收集器（儲存設備、VM、連接埠、EC2等）取得資訊。安裝擷取單元之前、您應確保環境符合作業系統、CPU、記憶體及磁碟空間需求。
+
+
+
+== 需求
+
+|===
+
+
+| 元件 | Linux需求 | Windows需求 
+
+
+| 作業系統 | 執行下列其中一項授權版本的電腦： * CentOS （ 64 位元）： 7.2 到 7.9 ， 8.1 到 8.4 ， Stream 8 ， Stream 9 * AlmaLinux 9.3 和 9.4 * Debian （ 64 位元）： 9 和 10 * openSUSE Leap 15.1 到 15.5 * Oracle Enterprise Linux （ 64 位元）： 7.5 到 7.9 ， 8.1 到 8.8建議使用專屬伺服器。如果您是搭配 SELinux 執行，建議您在擷取單元系統上執行下列命令： Sudo semanage fcontext -a -t usr_t "/opt/oracle/cloudimses//.*)" NetApp Sudo restorecon -R /opt/dell/cloudimsights NetApp | 執行下列其中一種授權版本的電腦： * Microsoft Windows 10 64位元* Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022 * Microsoft Windows 11此電腦不應執行其他應用程式層級軟體。建議使用專屬伺服器。 
+
+
+| CPU | 2個CPU核心 | 相同 
+
+
+| 記憶體 | 8 GB RAM | 相同 
+
+
+| 可用磁碟空間 | 50 GB （建議使用 100 GB ）的 Linux 磁碟空間應以這種方式分配： NetApp 10 GB （大型環境為 20 GB ） NetApp 40 GB （大型環境為 80 GB ） /tmp 安裝期間至少 1 GB 可用空間 | 50GB 
+
+
+| 網路 | 需要 100 Mbps/1 Gbps 乙太網路連線、靜態 IP 位址、以及連接埠 80 或 443 （輸出）連線、從擷取單元連線至 * 。 NetApp .com 或您的資料基礎架構 Insights 環境（例如： https ： <environment_id> 。 C01 。 NetApp 。 com ）。如需擷取單元與每個資料收集器之間的需求、請參閱的說明link:data_collector_list.html["資料收集器"]。如果您的組織需要使用代理伺服器來存取網際網路、您可能需要瞭解組織的代理伺服器行為、並尋求特定例外情況、才能讓 Data Infrastructure Insights 運作。例如、貴組織是否預設會封鎖存取、而且例外情況下只允許存取特定網站/網域？如果是這樣，您將需要將以下域添加到例外列表中： *.cloudinsights ． NetApp ． com 有關詳細信息，請參閱關於代理link:task_troubleshooting_linux_acquisition_unit_problems.html#considerations-about-proxies-and-firewalls["這裡（ Linux ）"]或link:task_troubleshooting_windows_acquisition_unit_problems.html#considerations-about-proxies-and-firewalls["這裡（ Windows ）"]。 | 相同 
+
+
+| 權限 | 擷取單元伺服器上的Sudo權限。/tmp必須以執行功能掛載。 | 取得單位伺服器的系統管理員權限 
+
+
+| 掃毒 |  | 安裝期間、您必須完全停用所有的掃毒程式。安裝之後、擷取單元軟體所使用的路徑必須排除在掃毒範圍之外。 
+|===
+
+
+== 其他建議
+
+* 為確保稽核與資料報告的準確性、強烈建議您使用*網路時間傳輸協定（NTP）*或*簡易網路時間傳輸協定（SNTP）*來同步擷取裝置機器上的時間。
+
+
+
+
+== 關於規模調整
+
+您可以開始使用只有 8GB 記憶體和 50GB 磁碟空間的 Data Infrastructure Insights 擷取單元、但是對於較大型的環境、您應該自問下列問題：
+
+您是否期望：
+
+* 在ONTAP 這個擷取單元上探索超過2500部虛擬機器或10部大型（> 2個節點）的VMware叢集、Symmetrix或HDS/HPE VSP/XP陣列？
+* 在此擷取單元上部署總共75個以上的資料收集器？
+
+
+對於上述每個「是」答案、建議您在AU中新增8 GB記憶體和50 GB磁碟空間。舉例來說、如果您對這兩個項目都回答「是」、就應該部署一個24GB記憶體系統、其中有150GB或更多的磁碟空間。在Linux上、要新增至記錄位置的磁碟空間。
+
+如需其他規模調整問題、請聯絡NetApp支援部門。
+
+
+
+== 聯邦版的額外要求
+
+* 在 Data Infrastructure Insights Federal Edition 叢集中安裝擷取單元時、基礎作業系統必須具備良好的 Entropy 來源。在 Linux 系統上、這通常是透過安裝 _rng-tools_ 或使用硬體隨機號碼產生（ RNG ）來完成。客戶有責任確保擷取單元機器符合此要求。
+

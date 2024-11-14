@@ -1,0 +1,64 @@
+---
+sidebar: sidebar 
+permalink: concept_ws_integration_with_ontap_access_denied.html 
+summary: 工作負載安全性與 ONTAP 整合、可接收拒絕存取的事件、並提供額外的分析和自動回應層。 
+keywords: ransomware, ARP, Protection, Security, access 
+---
+= 與 ONTAP 存取整合遭拒
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+ONTAP 存取遭拒功能會在 NAS 環境（ NFS 和 SMB ）中使用工作負載分析、主動偵測並警告檔案作業失敗的情況（例如、使用者嘗試執行他們沒有權限的作業）。這些失敗的檔案作業通知（特別是在安全性相關失敗的情況下）將有助於在早期階段進一步封鎖內部攻擊。
+
+資料基礎架構洞見工作負載安全性與 ONTAP 整合、可接收拒絕存取的事件、並提供額外的分析和自動回應層。
+
+先決條件
+
+* 最低 ONTAP 版本： 9.13.0 。
+* 工作負載安全管理員在新增收集器或編輯現有收集器時、必須選取「進階組態」下的「監控存取遭拒事件」核取方塊、以啟用「拒絕存取」功能。
+
+
+image:WS_Access_Denied_Enable_in_Collector.png["在 ONTAP 收集器進階組態中啟用拒絕存取"]
+
+
+
+== 需要使用者權限
+
+如果使用叢集管理認證新增 Data Collector 、則不需要新的權限。
+
+如果是使用已授予使用者權限的自訂使用者（例如、 _CsUser_ ）來新增收集器、請依照下列步驟、將必要權限授予工作負載安全性、以便向 ONTAP 註冊存取遭拒事件。
+
+若為具有 _CLERY_ 認證的 CsUser 、請從 ONTAP 命令列執行下列命令。請注意、 _csrestrole_ 是自訂角色、而 _csUser_ 是 ONTAP 自訂使用者。
+
+[listing]
+----
+ security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <cluster_name>
+ security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole
+----
+對於具有 _SVM_ 認證的 CsUser 、請從 ONTAP 命令列執行下列命令：
+
+[listing]
+----
+ security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <svm_name>
+ security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole -vserver <svm_name>
+----
+瞭解有關配置其他link:task_add_collector_svm.html["權限ONTAP"]的更多信息。
+
+
+
+== 存取遭拒事件
+
+從 ONTAP 系統擷取事件後、工作負載安全性鑑識頁面會顯示存取遭拒事件。除了顯示的資訊外、您也可以從齒輪圖示將 _ 所需活動 _ 欄新增至表格、以檢視特定作業的遺失使用者權限。
+
+image:WS_Access_Denied_Example_Event_1.png["存取遭拒事件範例"]

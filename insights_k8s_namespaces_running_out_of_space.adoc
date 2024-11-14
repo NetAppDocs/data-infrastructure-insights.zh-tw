@@ -1,0 +1,49 @@
+---
+sidebar: sidebar 
+permalink: insights_k8s_namespaces_running_out_of_space.html 
+keywords: insight, pv, persistent volume, backend 
+summary: Insights可協助您預測Kubernetes空間何時會滿。 
+---
+= 洞見：Kubernetes命名空間不足
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+在您的環境中、空間不足的情況絕不是好現象。Data Infrastructure Insights 可協助您預測 Kubernetes 永續磁碟區何時會滿。
+
+_Kubernetes Namspaces Outout of space_ Insight可讓您檢視Kubernetes命名空間中可能會耗盡空間的工作負載、並預估每個持續磁碟區將滿之前的剩餘天數。
+
+您可以瀏覽*儀表板> Insights *來檢視此Insight。
+
+image:K8sRunningOutOfSpaceWorkloadList.png["K8s命名空間中有空間不足風險的工作負載清單"]
+
+按一下工作負載以開啟Insight的詳細資料頁面。在本頁面上、您會看到顯示工作負載容量趨勢的圖表、以及顯示下列項目的表格：
+
+* 工作負載名稱
+* 持續Volume受影響
+* 預測的完整時間（以天計）
+* 持續Volume容量
+* 受影響的後端儲存資源、目前的容量已用完總容量。按一下此連結即可開啟後端Volume的詳細登陸頁面。
+
+
+image:K8sRunningOutOfSpaceWorkloadTable.png["顯示詳細資料的工作負載表"]
+
+
+
+=== 如果空間不足、該怎麼辦？
+
+在Insight頁面上、按一下*+ Show建置建議*以檢視可能的解決方案。當空間不足時、最簡單的選擇就是永遠增加更多容量、而 Data Infrastructure Insights 則可為您提供最佳容量、以增加目標 60 天預測的完整時間。也會顯示其他建議。
+
+image:K8sRunningOutOfSpaceRecommendations.png["可增加至60天TFF的容量"]
+
+您也可以在此複製方便的Insight連結、將頁面加入書籤、或輕鬆與團隊分享。

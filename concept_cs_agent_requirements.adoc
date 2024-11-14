@@ -1,0 +1,127 @@
+---
+sidebar: sidebar 
+permalink: concept_cs_agent_requirements.html 
+summary: 您作為代理程式使用的伺服器或VM必須符合最低需求 
+keywords: agent, Linux, requirements, docker, browsers, permissions, Network, Cloud Secure 
+---
+= 工作負載安全代理程式需求
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+您必須link:task_cs_add_agent.html["安裝代理程式"]從資料收集器取得資訊。在安裝代理程式之前、您應確保環境符合作業系統、CPU、記憶體及磁碟空間的需求。
+
+[cols="36,60"]
+|===
+| 元件 | Linux需求 
+
+
+| 作業系統 | 執行下列其中一項授權版本的電腦： * CentOS 8 Stream （ 64 位元）， CentOS 9 Stream ， SELinux * openSUSE Leap15.3 至 15.5 （ 64 位元） * Oracle Linux 8.6 至 8.8 ， 9.1 至 9.4 （ 64 位元） * Red Hat Enterprise Linux 8.6 至 8.8 ， 9.1 至 9.4 （ 64 位元）， SELinux建議使用專屬伺服器。 
+
+
+| 命令 | 安裝時需要「解壓縮」。此外、安裝、執行指令碼及解除安裝時、還需要使用「su–」命令。 
+
+
+| CPU | 4個CPU核心 
+
+
+| 記憶體 | 16 GB RAM 
+
+
+| 可用磁碟空間 | 磁碟空間應以下列方式分配： NetApp 36 GB （檔案系統建立後至少有 35 GB 可用空間）注意：建議您分配額外的磁碟空間，以便建立檔案系統。確定檔案系統中至少有 35 GB 可用空間。如果 /opt 是 NAS 儲存設備的掛載資料夾、請確定本機使用者可以存取此資料夾。如果本機使用者沒有此資料夾的權限，則代理程式或資料收集器可能無法安裝。如需詳細資訊，請參閱link:task_cs_add_agent.html#troubleshooting-agent-errors["疑難排解"]一節。 
+
+
+| 網路 | 100 Mbps至1 Gbps乙太網路連線、靜態IP位址、所有裝置的IP連線、以及工作負載安全性執行個體（80或443）所需的連接埠。 
+|===
+請注意：工作負載安全代理程式可安裝在與 Data Infrastructure Insights 擷取單元和 / 或代理程式相同的機器上。不過、最好將這些安裝在不同的機器上。如果這些安裝在同一部機器上、請如下所示分配磁碟空間：
+
+|===
+
+
+| 可用磁碟空間 | 對於Linux、應以下列方式配置磁碟空間：/opp/netapp 25-30 GB /var/log/netapp 25 GB 
+|===
+
+
+== 其他建議
+
+* 強烈建議ONTAP 您使用*網路時間傳輸協定（NTP）*或*簡易網路時間傳輸協定（SNTP）*、同步化支援系統和代理機器上的時間。
+
+
+
+
+== 雲端網路存取規則
+
+對於*美國型*工作負載安全環境：
+
+[cols="5*"]
+|===
+| 傳輸協定 | 連接埠 | 來源 | 目的地 | 說明 
+
+
+| TCP | 443 | 工作負載安全代理程式 | <site_name>.cs01.cloudinsights.netapp.com <site_name>.c01.cloudinsights.netapp.com <site_name>.c02.cloudinsights.netapp.com | 存取 Data Infrastructure Insights 
+
+
+| TCP | 443 | 工作負載安全代理程式 | gateway.C01.cloudinses.com/cloudamse.com.comagentlogin.cs01.cloudinses.cloudinses.com NetApp NetApp | 存取驗證服務 
+|===
+對於*歐洲型*工作負載安全環境：
+
+[cols="5*"]
+|===
+| 傳輸協定 | 連接埠 | 來源 | 目的地 | 說明 
+
+
+| TCP | 443 | 工作負載安全代理程式 | <site_name>.cs01-eu-1.cloudinsights.netapp.com <site_name>.c01-eu-1.cloudinsights.netapp.com <site_name>.c02-eu-1.cloudinsights.netapp.com | 存取 Data Infrastructure Insights 
+
+
+| TCP | 443 | 工作負載安全代理程式 | gateway.c01.cloudinsights.netapp.com agentlogin.cs01-eu-1.cloudinsights.netapp.com | 存取驗證服務 
+|===
+對於* APAC型*工作負載安全環境：
+
+[cols="5*"]
+|===
+| 傳輸協定 | 連接埠 | 來源 | 目的地 | 說明 
+
+
+| TCP | 443 | 工作負載安全代理程式 | <site_name>.cs01-ap-1.cloudinsights.netapp.com <site_name>.c01-ap-1.cloudinsights.netapp.com <site_name>.c02-ap-1.cloudinsights.netapp.com | 存取 Data Infrastructure Insights 
+
+
+| TCP | 443 | 工作負載安全代理程式 | gateway.c01.cloudinsights.netapp.com agentlogin.cs01-ap-1.cloudinsights.netapp.com | 存取驗證服務 
+|===
+
+
+== 網路內規則
+
+[cols="5*"]
+|===
+| 傳輸協定 | 連接埠 | 來源 | 目的地 | 說明 
+
+
+| TCP | 389（LDAP）636（LDAPS / start-TLS） | 工作負載安全代理程式 | LDAP伺服器URL | 連線至LDAP 
+
+
+| TCP | 443 | 工作負載安全代理程式 | 叢集或SVM管理IP位址（視SVM收集器組態而定） | API與ONTAP NetApp通訊 
+
+
+| TCP | 35000 - 55000 | SVM資料LIF IP位址 | 工作負載安全代理程式 | 從 ONTAP 到工作負載安全代理程式的 Fpolicy 事件通訊。這些連接埠必須向工作負載安全性代理程式開啟、 ONTAP 才能傳送事件給它、包括工作負載安全性代理程式本身的任何防火牆（若有）。請注意、您不需要保留 * 所有 * 這些連接埠、但您為此保留的連接埠必須在此範圍內。建議您先保留約 100 個連接埠、必要時增加。 
+
+
+| TCP | 7 | 工作負載安全代理程式 | SVM資料LIF IP位址 | 從 Agent 回應至 SVM Data 生命 
+
+
+| SSH | 22 | 工作負載安全代理程式 | 叢集管理 | CIFS/SMB 使用者封鎖所需。 
+|===
+
+
+== 系統規模調整
+
+請參閱link:concept_cs_event_rate_checker.html["事件率檢查器"]文件以取得有關規模調整的資訊。

@@ -1,0 +1,191 @@
+---
+sidebar: sidebar 
+permalink: concept_ontap_essentials.html 
+summary: 「Essentials」是一組儀表板和工作流程、可提供您環境的詳細總覽。ONTAP 
+keywords: dashboard, widget, ontap, overview, insight 
+---
+= 精選資訊ONTAP
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+包含一組儀表板和工作流程、可提供有關您的各種庫存和工作負載的詳細總覽。ONTAP ONTAP您可能會看到ONTAP 下列使用於《不景點集：
+
+* 基礎架構/庫存：為使用者資料提供儲存/網路服務的物件
+* 工作負載：為使用者提供讀寫資料介面的物件。
+* 資料保護：可以使用NetApp資料保護技術來保護的物件
+
+
+如需與 ONTAP 相關的其他詞彙與定義，請參閱link:task_dc_na_cdot.html["ONTAP資料收集器"]文件。
+
+不需要使用過去七天內收集的資料來收集至少一部運作中的資料、即可獲得支援。ONTAP ONTAP
+
+
+
+== 總覽
+
+若要開始探索、請從主要的「資料基礎架構洞見」功能表中選取 * ONTAP Essentials * 。
+
+image:OE_Overview.png["適用於Essentials的概述儀表板ONTAP"]
+
+「*總覽*」儀表板會顯示有用的資訊、例如您環境中的叢集數量及其整體容量與效能百分比。您也會看到預測性資料、說明在儲存容量或效能容量用盡空間之前、預期的天數。此外、如果基礎架構中的任何控制器都以超過65%的CPU執行、則在發生容錯移轉時可能會使叢集承受風險、ONTAP Essentials會將這些控制器顯示為「Hot」（熱）控制器。
+
+資訊圖表可讓您瞭解一段時間後的效能、以及容量使用量的細分。每個圖表或資料點都可作為探索或調查的起點。
+
+附註：「從天到完整」的「0」（零）數表示、「從天到完整」的預估天數大於90天。換句話說、您的系統不可能隨時耗盡空間。
+
+
+
+== 資料保護
+
+「 * 資料保護 * 」頁面會顯示受 * Snapshot Copies * 或 * SnapMirror Policies * 保護的磁碟區狀態。
+
+在 _ 本機保護概觀 _ 區段中、這些圖表會針對受 Snapshot 複本保護的磁碟區提供下列資訊：
+
+* 受 Snapshot 複本保護的磁碟區數量、以及未受保護的磁碟區數量。
+* 使用或超過 Snapshot 複本保留空間的磁碟區數量。
+* 特定 Snapshot 複本數範圍內的磁碟區數量（例如少於 10 個複本、 10 至 200 個複本等）。
+
+
+在 _ 遠端保護概述 _ 一節中、這些圖表提供與受 SnapMirror 原則保護的磁碟區相關的資訊：
+
+* 健全且不健全的 SnapMirror 關係數量。
+* 根據延遲狀態、發生恢復點目標（ RPO ）延遲的 SnapMirror 關係數。
+* SnapMirror Volume 保護類型（例如 Volume SnapMirror 、 SVMDR 關係、 FlexGroup SnapMirror 關係、 SnapMirror 業務連續性（ SMBC ）一致性群組關係、以及未受保護的磁碟區）所保護的關係數量。
+* 受 SnapMirror 關係類型保護的關係數、例如 Asynous Mirror 、 Asynous Vault 、 Asynous MirrorVault 、 StrictSync 和 Sync 。
+
+
+image:DataProtectionDashboard_OverviewWidgets_.png["資料保護儀表板 Widget 顯示本機和遠端概觀"]
+
+頁面底部的 _Clusters_ 網格提供下列相關詳細資料：
+
+* 未受 Snapshot 保護的磁碟區。
+* 磁碟區違反快照保留空間。
+* 未受 SnapMirror 原則保護的磁碟區和 SnapMirror 關係發生延遲。
+* 不良的 SnapMirror 關係。
+
+
+image:DataProtectionDashboard_ClusterList.png["資料保護叢集清單"]
+
+
+
+== 安全性
+
+安全儀表板可讓您即時檢視目前的安全情況、顯示硬體和軟體磁碟區加密、反勒索軟體狀態和叢集驗證方法的圖表。安全性準則是根據中定義的建議link:https://www.netapp.com/pdf.html?item=/media/10674-tr4569.pdf["* 《 NetApp ONTAP 9 安全強化指南》 *"]來評估。
+
+選擇任何加密或反勒索軟體數量、即可深入探索您的環境。
+
+image:OE_SecurityDashboard.png["ONTAP Essentials 安全儀表板"]
+
+ONTAP Essentials Security 儀表板可監控您的環境、以判斷叢集法規遵循狀態。如需詳細資訊，請參閱link:https://docs.netapp.com/us-en/active-iq-unified-manager/health-checker/reference_cluster_compliance_categories.html["叢集法規遵循類別"]。ONTAP Essentials 使用下列監視器來判斷法規遵循狀況：
+
+|===
+| 監控名稱 | 屬性名稱（顯示在叢集詳細資料中） | 屬性符合值 
+
+
+| FIPS模式已停用 | FIPS 模式 | 已啟用 
+
+
+| 叢集不安全的SSH密碼 | 安全 SSH 設定 | 是的 
+
+
+| 已啟用遠端登入傳輸協定 | 遠端登入 | 已停用 
+
+
+| 已啟用遠端Shell | 遠端Shell | 已停用 
+
+
+| 預設的本機管理使用者已啟用 | 預設管理使用者 | 已停用 
+
+
+| md5雜湊密碼 | 使用中的 MD5 | 否 
+
+
+| 叢集對等通訊未加密 | 叢集對等 | 加密 / 無對等 
+
+
+| AutoSupport HTTPS 傳輸已停用 | 使用 HTTPS 的 AutoSupport | 是的 
+
+
+| 未設定 NTP 伺服器 | 網路時間傳輸協定 | 已設定 
+
+
+| NTP 伺服器數量不足 | 網路時間傳輸協定 | 已設定 
+
+
+| 叢集登入橫幅已停用 | 登入橫幅 | 已啟用 
+
+
+| 記錄轉送未加密 | 記錄轉送已加密 | 是的 
+|===
+請注意、如果停用上述監視器、叢集詳細資料會針對對應的安全性規範屬性、將值顯示為「 Not checked 」（未勾選）。
+
+image:OE_Cluster_Compliance_Example.png["叢集法規遵循狀態"]
+
+對於 SVM 、安全儀表板會查看下列監視器：
+
+|===
+| 監控名稱 | 屬性名稱（顯示在 Storage VM 設定中） | 屬性符合值 
+
+
+| 適用於SSH的儲存VM不安全密碼 | 安全 SSH 設定 | 是的 
+
+
+| 儲存VM登入橫幅已停用 | 登入橫幅 | 已啟用 
+
+
+| 儲存VM稽核記錄已停用 | 稽核記錄 | 已啟用 
+|===
+在叢集清單中、為每個叢集選取 _ 檢視詳細資料 _ 、以開啟「滑出」面板、顯示 _Cluster 、 Storage VM 、 _ 或 _Anti-勒索 ware_ 的目前設定。
+
+叢集詳細資料包括連線狀態，憑證資訊等：image:OE_Cluster_Slideout.png["叢集詳細資料投影片面板"]
+
+儲存 VM 詳細資料顯示稽核和 SSH 資訊：image:OE_Storage_Slideout.png["儲存索引標籤"]
+
+反勒索軟體詳細資料顯示儲存 VM 是否受到 ONTAP 的反勒索軟體保護或資料基礎架構洞見工作負載安全性的保護。請注意、 ONTAP ARP 欄會顯示 ONTAP 內建的防勒索軟體保護目前的狀態、該保護是在 ONTAP 系統上設定的。資料基礎架構 Insights 工作負載安全性可透過選取該欄中的「保護」來啟用。image:OE_Anti-Ransomware_Slideout.png["防勒索軟體標籤"]
+
+
+
+== 警示
+
+您可以在此檢視環境中的作用中警示、並快速深入瞭解潛在問題。選取「_resolved」索引標籤以檢視已解決的警示。
+
+image:OE_Alerts.png["ONTAP Essentials 警示清單"]
+
+
+
+== 基礎架構
+
+「VMware Infrastructure *基礎架構*」頁面提供叢集健全狀況與效能的檢視、您可以使用所有基本的物件上預先建置（但仍可進一步自訂）的查詢。ONTAP ONTAP選取您要探索的物件類型（叢集、儲存資源池等）、然後選擇是檢視健全狀況或效能資訊。設定篩選條件、深入瞭解個別系統。
+
+image:ONTAP_Essentials_Health_Performance.png["儲存資源池的基礎架構選擇"]
+
+顯示叢集健全狀況的基礎架構頁面：image:ONTAP_Essentials_Infrastructure_A.png["需要探索的基礎架構物件"]
+
+
+
+== 網路
+
+透過「支援基礎架構網路」、您可以檢視FC、NVMe FC、乙太網路和iSCSI基礎架構。ONTAP在這些頁面上、您可以探索叢集及其節點中的連接埠等功能。
+
+image:ONTAP_Essentials_Alerts_Menu.png["「Essentials網路功能表」ONTAP"] image:ONTAP_Essentials_Alerts_Page.png["顯示連接埠至叢集節點的「Essentials Networking FC」頁面ONTAP"]
+
+
+
+== 工作負載
+
+檢視及探索環境中LUN/ Volume、NFS或SMB共用區或qtree上的工作負載。
+
+image:ONTAP_Essentials_Workloads_Menu.png["工作負載功能表"]
+
+image:ONTAP_Essentials_Workloads_Page.png["工作負載清單頁面"]

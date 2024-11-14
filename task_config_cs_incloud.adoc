@@ -1,0 +1,94 @@
+---
+sidebar: sidebar 
+permalink: task_config_cs_incloud.html 
+keywords: Cloud, Storage, AWS, Cloud Volumes, Cloud ONTAP, firewall, VPC, Subnet,  cloud secure 
+summary: 「工作負載安全性」使用資料收集器從裝置收集檔案和使用者存取資料。 
+---
+= 設定Cloud Volumes ONTAP 適用於NetApp ONTAP 的支援NetApp的支援功能、包括支援功能
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+「工作負載安全性」使用資料收集器從裝置收集檔案和使用者存取資料。
+
+
+
+== 儲存組態Cloud Volumes ONTAP
+
+請參閱 OnCommand Cloud Volumes ONTAP 說明文件，以設定單一節點 / HA AWS 執行個體來主控工作負載安全性代理程式：https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/index.html[]
+
+完成組態設定後，請依照下列步驟設定 SVM ：https://docs.netapp.com/us-en/cloudinsights/task_add_collector_svm.html[]
+
+
+
+== 支援的平台
+
+* 支援所有雲端服務供應商（無論有何種情況）Cloud Volumes ONTAP 。例如：Amazon、Azure、Google Cloud。
+* Amazon FSX ONTAP
+
+
+
+
+== 代理機器組態
+
+代理機器必須在雲端服務供應商各自的子網路中進行設定。如需網路存取的詳細資訊、請參閱[Agent Requirements（代理程式需求）]。
+
+以下是AWS中的代理程式安裝步驟。您可在Azure或Google Cloud中遵循適用於雲端服務供應商的同等步驟進行安裝。
+
+在AWS中、請使用下列步驟設定要用作工作負載安全代理程式的機器：
+
+請使用下列步驟、將機器設定為工作負載安全代理程式：
+
+.步驟
+. 登入AWS主控台並瀏覽至EC2-instances頁面、然後選取_Launch instance_。
+. 請依照本頁所述，選擇適當版本的 RHEL 或 CentOS AMI ：https://docs.netapp.com/us-en/cloudinsights/concept_cs_agent_requirements.html[]
+. 選取Cloud ONTAP 實例所在的VPC和子網路。
+. 選取「_t2.xlarge」（4個vCPU和16 GB RAM）作為配置資源。
++
+.. 建立EC2執行個體。
+
+
+. 使用YUM套件管理程式安裝所需的Linux套件：
++
+.. 安裝_wGet_和_unzip _原生Linux套件。
+
+
+
+
+
+
+== 安裝工作負載安全代理程式
+
+. 以管理員或帳戶擁有者身分登入您的 Data Infrastructure Insights 環境。
+. 瀏覽至 Workload Security * Collector* 、然後按一下 * Agents* 標籤。
+. 按一下「*+代理程式*」、並將RHEL指定為目標平台。
+. 複製代理程式安裝命令。
+. 將「代理程式安裝」命令貼到您登入的RHEL EC2執行個體中。這會安裝工作負載安全代理程式，只要符合所有link:concept_cs_agent_requirements.html["代理程式先決條件"]要求即可。
+
+
+如需詳細步驟，請參閱此連結： https://docs 。 NetApp 。 com/us-en/cloudimses/task_cs_add_agent.html#Steps to 安裝代理程式
+
+
+
+== 疑難排解
+
+下表說明已知問題及其解決方法。
+
+|===
+
+
+| 問題 | 解決方案 
+
+
+| Data Collector會顯示「工作負載安全性：無法判斷ONTAP Amazon FxSN資料收集器的支援類型」錯誤。客戶無法將新的Amazon FSxN資料收集器新增至工作負載安全性。從代理程式連接埠443連線至FSxN叢集的連線逾時。防火牆和AWS安全性群組已啟用必要的規則、以允許通訊。代理程式已經部署、而且也位於相同的AWS帳戶中。此相同的代理程式可用來連接及監控其餘的NetApp裝置（且所有裝置均正常運作）。 | 將fsxadmin LIF網路區段新增至代理程式的安全性規則、即可解決此問題。如果您不確定連接埠、則允許所有連接埠。 
+|===

@@ -1,0 +1,291 @@
+---
+sidebar: sidebar 
+permalink: concept_user_roles.html 
+keywords: roles, guest, user, administrator, SSO, Federate, federation, identity, single sign-on, Account Owner, Reporting, Cloud Secure, Monitor and Optimize, security, observability 
+summary: Data Infrastructure Insights 提供多個具有不同權限層級的使用者帳戶。 
+---
+= 使用者帳戶與角色
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Data Infrastructure Insights 提供最多四個使用者帳戶角色：帳戶擁有者、系統管理員、使用者和訪客。每個帳戶都會被指派特定的權限等級、如下表所示。使用者可以link:#creating-accounts-by-inviting-users["已邀請"]使用 Data Infrastructure Insights 並指派特定角色、也可以link:#single-sign-on-sso-and-identity-federation["單一登入（SSO）授權"]使用預設角色登入。SSO 授權是 Data Infrastructure Insights Premium Edition 的一項功能。
+
+
+
+== 權限等級
+
+您使用具有管理員權限的帳戶來建立或修改使用者帳戶。每個使用者帳戶都會從下列權限等級中、為每個 Data Infrastructure Insights 功能指派一個角色。
+
+|===
+| 角色 | 觀察能力 | 工作負載安全 | 報告 | 管理 
+
+
+| 帳戶擁有者 | 與管理員相同 | 與管理員相同 | 與管理員相同 | 與管理員相同、並管理 SSO 驗證和身分識別聯盟組態。也可以指派其他擁有者。 
+
+
+| 系統管理員 | 可執行所有的可視化功能、以及資料收集器的管理。 | 可執行所有的安全功能、包括警示、鑑識、資料收集器、自動回應原則、以及安全性的API權杖。管理員也可以邀請其他使用者、但只能指派安全角色。 | 可執行所有的使用者/作者功能、包括管理報告API權杖、以及所有管理工作、例如報告組態、以及報告工作的關機和重新啟動。管理員也可以邀請其他使用者、但只能指派報告角色。 | 可以邀請其他使用者、但只能指派「可服務性」角色。可以檢視但無法修改 SSO 組態。可建立及管理 API 存取權杖。可檢視稽核資訊。可檢視訂閱資訊、使用情況和歷程記錄。可管理全域警示通知和訂閱通知收件者清單。 
+
+
+| 使用者 | 可檢視及修改儀表板、查詢、警示、註釋、註釋規則、 和應用程式、以及管理裝置解析度。 | 可檢視及管理警示、以及檢視鑑識。使用者角色可以變更警示狀態、新增附註、手動擷取快照、以及管理限制使用者存取。 | 可執行所有來賓/消費者功能、以及建立及管理報告和儀表板。 | 無法使用 
+
+
+| 訪客 | 擁有資產頁面、儀表板、警示的唯讀存取權、並可檢視及執行查詢。 | 可檢視警示和鑑識。來賓角色無法變更警示狀態、新增附註、手動擷取快照或限制使用者存取。 | 可檢視、排程及執行報告、並設定個人偏好設定、例如語言和時區的偏好設定。訪客/使用者無法建立報告或執行管理工作。 | 無法使用 
+|===
+最佳實務做法是限制擁有系統管理員權限的使用者人數。最多的帳戶應該是使用者或來賓帳戶。
+
+
+
+=== 資料基礎架構洞見權限（依使用者角色）
+
+下表顯示授予每個使用者角色的 Data Infrastructure Insights 權限。
+
+|===
+
+
+| 功能 | 系統管理員/帳戶擁有者 | 使用者 | 訪客 
+
+
+| 擷取單位：新增/修改/刪除 | 是 | n | n 
+
+
+| 警示*：建立/修改/刪除 | 是 | 是 | n 
+
+
+| 警示*：檢視 | 是 | 是 | 是 
+
+
+| 註釋規則：建立/執行/修改/刪除 | 是 | 是 | n 
+
+
+| 附註：建立/修改/指派/檢視/移除/刪除 | 是 | 是 | n 
+
+
+| API存取*：建立/重新命名/停用/撤銷 | 是 | n | n 
+
+
+| 應用程式：建立/檢視/修改/刪除 | 是 | 是 | n 
+
+
+| 資產頁面：修改 | 是 | 是 | n 
+
+
+| 資產頁面：檢視 | 是 | 是 | 是 
+
+
+| 稽核：檢視 | 是 | n | n 
+
+
+| 雲端成本 | 是 | n | n 
+
+
+| 安全性 | 是 | n | n 
+
+
+| 儀表板：建立/修改/刪除 | 是 | 是 | n 
+
+
+| 儀表板：檢視 | 是 | 是 | 是 
+
+
+| 資料收集器：新增/修改/輪詢/刪除 | 是 | n | n 
+
+
+| 通知：檢視 | 是 | 是 | 是 
+
+
+| 通知：修改 | 是 | n | n 
+
+
+| 查詢：建立/修改/刪除 | 是 | 是 | n 
+
+
+| 查詢：檢視/執行 | 是 | 是 | 是 
+
+
+| 裝置解析度 | 是 | 是 | n 
+
+
+| 報告*：檢視/執行 | 是 | 是 | 是 
+
+
+| 報告*：建立/修改/刪除/排程 | 是 | 是 | n 
+
+
+| 訂購：檢視/修改 | 是 | n | n 
+
+
+| 使用者管理：邀請/新增/修改/停用 | 是 | n | n 
+|===
+*需要Premium Edition
+
+
+
+== 邀請使用者建立帳戶
+
+透過 BlueXP 建立新的使用者帳戶。使用者可以回應透過電子郵件傳送的邀請、但如果使用者沒有 BlueXP 帳戶、則使用者必須註冊 BlueXP 、才能接受邀請。
+
+.開始之前
+* 使用者名稱是邀請函的電子郵件地址。
+* 瞭解您要指派的使用者角色。
+* 密碼由使用者在註冊程序中定義。
+
+
+.步驟
+. 登入 Data Infrastructure Insights
+. 在功能表中、按一下*管理>使用者管理*
++
+隨即顯示User Management（使用者管理）畫面。此畫面包含系統上所有帳戶的清單。
+
+. 按一下「*+使用者*」
++
+隨即顯示*邀請使用者*畫面。
+
+. 輸入邀請的電子郵件地址或多個地址。
++
+*附註：*輸入多個地址時、所有地址都會以相同的角色建立。您只能將多個使用者設定為相同的角色。
+
+
+
+. 為 Data Infrastructure Insights 的每項功能選取使用者角色。
++
+
+NOTE: 您可以選擇的功能和角色取決於您在特定管理員角色中擁有存取權限的功能。例如、如果您只有「報告」的「管理員」角色、則可以將使用者指派給「報告」中的任何角色、但無法指派「可觀察性」或「安全性」的角色。
+
++
+image:UserRoleChoices.png["使用者角色選項"]
+
+. 按一下*邀請*
++
+邀請即會傳送給使用者。使用者將有14天的時間接受邀請。一旦使用者接受邀請、他們將被帶到NetApp Cloud Portal、並使用邀請函中的電子郵件地址註冊。如果他們擁有該電子郵件地址的現有帳戶、只要登入即可存取其 Data Infrastructure Insights 環境。
+
+
+
+
+
+== 修改現有使用者的角色
+
+若要修改現有使用者的角色、包括將其新增為*次要帳戶擁有者*、請遵循下列步驟。
+
+. 按一下*管理>使用者管理*。畫面會顯示系統上所有帳戶的清單。
+. 按一下您要變更的帳戶使用者名稱。
+. 視需要修改使用者在每個 Data Infrastructure Insights 功能集中的角色。
+. 按一下「儲存變更」。
+
+
+
+
+=== 指派次要帳戶擁有者
+
+您必須以帳戶擁有者的身分登入、才能將帳戶擁有者角色指派給其他使用者。
+
+. 按一下*管理>使用者管理*。
+. 按一下您要變更的帳戶使用者名稱。
+. 在使用者對話方塊中、按一下*指派為擁有者*。
+. 儲存變更。
+
+
+image:Assign_Account_Owner.png["顯示帳戶擁有者選擇的使用者變更對話方塊"]
+
+您可以擁有任意數量的帳戶擁有者、但最佳實務做法是將擁有者角色限制為僅限選取人員。
+
+
+
+== 刪除使用者
+
+具有管理員角色的使用者可以按一下使用者名稱、然後按一下對話方塊中的「_Delete User_（刪除使用者_）」、刪除使用者（例如不再與公司合作的人）。使用者將從 Data Infrastructure Insights 環境中移除。
+
+請注意、使用者所建立的任何儀表板、查詢等、即使在移除使用者之後、仍可在 Data Infrastructure Insights 環境中使用。
+
+
+
+== 單一登入（SSO）和身分識別聯盟
+
+
+
+=== 什麼是身分識別聯盟？
+
+使用身分識別聯盟：
+
+* 驗證會委派給客戶的身分識別管理系統、使用客戶在公司目錄中的認證資料、以及多因素驗證（MFA）等自動化原則。
+* 使用者登入一次所有 NetApp BlueXP 服務（單一登入）。
+
+
+使用者帳戶是在適用於所有雲端服務的 NetApp BlueXP 中進行管理。依預設、驗證是使用 BlueXP 本機使用者設定檔完成。以下是此程序的簡化概觀：
+
+image:BlueXP_Authentication_Local.png["使用本機的 BlueXP 驗證"]
+
+不過、有些客戶想要使用自己的身分識別供應商來驗證其使用者的資料基礎架構洞見及其其他 NetApp BlueXP  服務。透過身分識別聯盟、 NetApp BlueXP 帳戶會使用公司目錄中的認證進行驗證。
+
+以下是此程序的簡化範例：
+
+image:BlueXP_Authentication_Federated.png["使用同盟的 BlueXP 驗證"]
+
+在上圖中、當使用者存取 Data Infrastructure Insights 時、該使用者會被導向客戶的身分識別管理系統進行驗證。帳戶驗證完成後、使用者會被導向 Data Infrastructure Insights 租戶 URL 。
+
+
+
+=== 啟用身分識別聯盟
+
+BlueXP 使用 Auth0 實作身分識別聯盟、並與 Active Directory Federation Services （ ADFS ）和 Microsoft Azure Active Directory （ AD ）等服務整合。若要設定身分識別聯盟，請參閱link:https://services.cloud.netapp.com/misc/federation-support["BlueXP 聯合指令"]。
+
+
+NOTE: 您必須先設定 BlueXP  身分識別聯盟、才能將 SSO 與資料基礎架構深入分析搭配使用。
+
+請務必瞭解、 BlueXP  中不斷變化的身分識別聯盟不僅適用於資料基礎架構洞見、也適用於所有 NetApp BlueXP  服務。客戶應與他們擁有的每個 BlueXP 產品的 NetApp 團隊討論此變更、以確保他們所使用的組態能與身分識別聯盟搭配運作、或是需要對任何帳戶進行調整。客戶也必須讓內部SSO團隊參與身分識別聯盟的變更。
+
+此外、請務必瞭解、一旦啟用身分識別聯盟、公司身分識別提供者的任何變更（例如從 SAML 移轉至 Microsoft AD ）都可能需要 BlueXP 中的疑難排解 / 變更 / 注意、才能更新使用者的設定檔。
+
+對於這類或任何其他聯盟問題，您可以在開啟支援服務單 https://mysupport.netapp.com/site/help[]，然後選取類別「 BlueXP  。 NetApp 。 com > 聯合問題」。
+
+
+
+=== 單一登入（SSO）使用者自動資源配置
+
+除了邀請使用者之外、管理員也可以為公司網域中的所有使用者啟用 * 單一登入（ SSO ）使用者自動資源配置 * 存取 Data Infrastructure Insights 、而無需個別邀請使用者。啟用 SSO 後、任何擁有相同網域電子郵件地址的使用者都可以使用其公司認證登入 Data Infrastructure Insights 。
+
+
+NOTE: Data Infrastructure Insights Premium Edition 提供 _SSO 使用者自動資源配置 _ 、而且必須先進行設定、才能啟用 Data Infrastructure Insights 。SSO 使用者自動佈建組態包括link:https://services.cloud.netapp.com/misc/federation-support["身分識別聯盟"]透過 NetApp BlueXP  、如前節所述。聯盟允許單一登入使用者使用公司目錄中的認證來存取您的 NetApp BlueXP 帳戶、使用開放式標準、例如安全聲明標記語言 2.0 （ SAML ）和 OpenID 連線（ OIDC ）。
+
+若要設定 _SSO 使用者自動資源配置 _ 、您必須先在 * 管理 > 使用者管理 * 頁面上設定 BlueXP 身分識別聯盟。選取橫幅中的 * 設定聯盟 * 連結以繼續執行 BlueXP 聯盟。設定好之後、 Data Infrastructure Insights 管理員就可以啟用 SSO 使用者登入。當系統管理員啟用_SSO使用者自動資源配置_時、他們會為所有SSO使用者（例如來賓或使用者）選擇預設角色。透過SSO登入的使用者將擁有該預設角色。
+
+image:Roles_federation_Banner.png["使用者管理與聯盟"]
+
+有時、系統管理員會想要將單一使用者提升為預設SSO角色（例如、讓他們成為系統管理員）。他們可以在「*管理>使用者管理*」頁面上、按一下使用者的右側功能表、然後選取「_assign role_」。以這種方式指派明確角色的使用者、即使其後停用 _SSO 使用者自動資源配置 _ 、仍可繼續存取 Data Infrastructure Insights 。
+
+如果使用者不再需要提升的角色、您可以按一下功能表以移除使用者。使用者將從清單中移除。如果啟用 _SSO 使用者自動資源配置 _ 、則使用者可以使用預設角色繼續透過 SSO 登入 Data Infrastructure Insights 。
+
+您可以取消核取「*顯示SSO使用者*」核取方塊、選擇隱藏SSO使用者。
+
+不過、如果下列任一項為真、請勿啟用_SSO使用者自動資源配置：
+
+* 貴組織擁有多個 Data Infrastructure Insights 租戶
+* 您的組織不希望同盟網域中的任何 / 每個使用者都能自動存取某個層級的 Data Infrastructure Insights 租戶。_目前我們無法使用此選項來使用群組來控制角色存取_。
+
+
+
+
+== 依網域限制存取
+
+Data Infrastructure Insights 可限制使用者只能存取您指定的網域。在 * 管理 > 使用者管理 * 頁面上、選取「限制網域」。
+
+image:Restrict_Domains_Modal.png["將網域限制為只有預設網域、預設值加上您指定的其他網域、或不受任何限制"]
+
+您將看到以下選項：
+
+* 無限制：無論使用者的網域為何、資料基礎架構 Insights 仍可存取。
+* 限制存取預設網域：預設網域是 Data Infrastructure Insights 環境帳戶擁有者所使用的網域。這些網域永遠都可以存取。
+* 將存取限制為預設值加上您指定的網域。列出您想要存取 Data Infrastructure Insights 環境的任何網域、以及預設網域。
+
+
+image:Restrict_Domains_Tooltip.png["限制網域工具提示"]
