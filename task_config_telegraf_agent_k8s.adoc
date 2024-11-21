@@ -440,7 +440,7 @@ _NetApp-CI-telegraf-DS_ 、 _NetApp-CI-Fluent-bit-DS_ 和 _NetApp-CI-net-觀察�
 | 我沒有看到叢集中存在的 Kubernetes CronJobs 正在收集任何度量。 | 驗證 Kubernetes 版本（即 `kubectl version`）。如果是 v1.2.x 或更低版本、這是預期的限制。Kubernetes Monitoring Operator 部署的 kube-state 度量版本僅支援 v1.cronjob 。使用 Kubernetes 1.2.x 及以下版本時、 cronjob 資源為 v1beta 。 cronjob.因此、 kube 狀態度量無法找到 cronjob 資源。 
 
 
-| 安裝操作員之後、 Telegraf-DS Pod 會進入 CrashLoopBackOff 、 Pod 記錄會顯示「 su ：驗證失敗」。 | 編輯 _AgentConfiguration_ 中的 Teledraf 區段、並將 _dockerMetricCollectionEnabled_ 設為 false 。有關詳細信息，請參閱操作員的link:telegraf_agent_k8s_config_options.html["組態選項"]。附註：如果您使用 Data Infrastructure Insights Federal Edition 、則限制使用 _su_ 的使用者將無法收集泊塢視窗度量、因為存取泊塢視窗套接字需要以 root 身分執行 telegraf 容器、或使用 _su_ 將 Telegraf 使用者新增至泊塢視窗群組。Docker 度量集合和使用 _su_ 預設為啟用；若要停用兩者、請移除 _AgentConfiguration_ 檔案中的 _telegraf.泊 塢視窗項目： ... 規格： ... Teledraf.. ...           - 名稱：泊塢視窗      執行模式：                     - 示範設定替代項目： - 索引鍵：泊塢視窗 _UNIX 襪子 _placeholder         值： UNIX ： ///run/泊 塢視窗 .sock ...... 
+| 安裝操作員之後、 Telegraf-DS Pod 會進入 CrashLoopBackOff 、 Pod 記錄會顯示「 su ：驗證失敗」。 | 編輯 _AgentConfiguration_ 中的 Teledraf 區段、並將 _dockerMetricCollectionEnabled_ 設為 false 。有關詳細信息，請參閱操作員的link:telegraf_agent_k8s_config_options.html["組態選項"]。... 規格： ... Telegraf ： ...           - 名稱：泊塢視窗      執行模式：                     - 示範設定替代項目： - 索引鍵：泊塢視窗 _UNIX 襪子 _placeholder         值： UNIX ： ///run/泊 塢視窗 .sock ...... 
 
 
 | 我在 Telegraf 記錄檔中看到類似以下內容的重複錯誤訊息： e ！[ 代理程式 ] 寫入 outputs.http ： POST 「 \https ： //les/rest/v1/lake <tenant_url> / 擷取 / 影響 xdb 」時發生錯誤：內容已超過期限（用戶端。 等待標頭時超過逾時） | 編輯 _AgentConfiguration_ 中的 Telegraf 區段、並將 _outputTimeout_ 增加至 10s 。有關詳細信息，請參閱操作員的link:telegraf_agent_k8s_config_options.html["組態選項"]。 

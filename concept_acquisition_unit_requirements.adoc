@@ -73,10 +73,3 @@ keywords: AU, acquisition unit, requirements, sizing
 對於上述每個「是」答案、建議您在AU中新增8 GB記憶體和50 GB磁碟空間。舉例來說、如果您對這兩個項目都回答「是」、就應該部署一個24GB記憶體系統、其中有150GB或更多的磁碟空間。在Linux上、要新增至記錄位置的磁碟空間。
 
 如需其他規模調整問題、請聯絡NetApp支援部門。
-
-
-
-== 聯邦版的額外要求
-
-* 在 Data Infrastructure Insights Federal Edition 叢集中安裝擷取單元時、基礎作業系統必須具備良好的 Entropy 來源。在 Linux 系統上、這通常是透過安裝 _rng-tools_ 或使用硬體隨機號碼產生（ RNG ）來完成。客戶有責任確保擷取單元機器符合此要求。
-

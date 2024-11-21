@@ -193,12 +193,9 @@
   <block id="e0dc2ed956b3711e722d965954939344" category="list-text">在此擷取單元上部署總共75個以上的資料收集器？</block>
   <block id="159904c45b61bfdda4989e18bf9891e8" category="paragraph">對於上述每個「是」答案、建議您在AU中新增8 GB記憶體和50 GB磁碟空間。舉例來說、如果您對這兩個項目都回答「是」、就應該部署一個24GB記憶體系統、其中有150GB或更多的磁碟空間。在Linux上、要新增至記錄位置的磁碟空間。</block>
   <block id="11bb1da5c9cf0248245ce5b24119d183" category="paragraph">如需其他規模調整問題、請聯絡NetApp支援部門。</block>
-  <block id="da9f9625eb860a1ad92687973f4b6f55" category="section-title">聯邦版的額外要求</block>
-  <block id="cde8307fb591a6c3934539dcb5919f06" category="list-text">在 Data Infrastructure Insights Federal Edition 叢集中安裝擷取單元時、基礎作業系統必須具備良好的 Entropy 來源。在 Linux 系統上、這通常是透過安裝 _rng-tools_ 或使用硬體隨機號碼產生（ RNG ）來完成。客戶有責任確保擷取單元機器符合此要求。</block>
   <block id="96cb7682ad0362f3aff6ef6f90dd2520" category="summary">Data Infrastructure Insights 會從 NetApp Active IQ 收集風險資料</block>
   <block id="b5fe3a41d32647f20f3b5ec96045d6d6" category="doc">Active IQ</block>
   <block id="df0ddcb04f0e5278d49d2c87dfa7f7fc" category="paragraph">NetApp <block ref="5d418eb60d51fa035e4b287bd4191a07" category="inline-link-macro-rx"></block>為 NetApp 客戶的硬體 / 軟體系統提供一系列視覺化，分析及其他支援相關服務。由NetApp回報的資料Active IQ 可加強系統問題的疑難排解、並提供與您的裝置相關的最佳化與預測分析。</block>
-  <block id="ace71aa31322ae1c7e3740649676adf8" category="admonition">Data Infrastructure Insights Federal Edition 不提供 ActiveIQ 。</block>
   <block id="97ba27a6c978c304ea9138ee01781875" category="paragraph">Data Infrastructure Insights 會針對 Active IQ 監控及回報的任何 NetApp 叢集式 Data ONTAP 儲存系統、收集 * 風險 * 。Data Infrastructure Insights 會自動收集儲存系統回報的風險、作為從這些裝置收集資料的一部分。您必須將適當的資料收集器新增至 Data Infrastructure Insights 、以收集 Active IQ 風險資訊。</block>
   <block id="bfdb97c5bb51966044d87207708e9888" category="paragraph">資料基礎架構洞見不會顯示 Active IQ 未監控及報告的 ONTAP 系統風險資料。</block>
   <block id="a98980e7429cd68c3207593853e627fe" category="paragraph">報告的風險會顯示在「風險」表的資料基礎架構洞見（位於 _storage _ 和 _ 儲存節點 _ 資產登陸頁面）中。下表顯示風險詳細資料、風險類別及風險的潛在影響、並提供Active IQ 指向「介紹儲存節點所有風險的資訊」頁面的連結（需要NetApp支援帳戶登入）。</block>
@@ -1104,7 +1101,6 @@
   <block id="7cf514f5919cb28bfec05b4c4f4c46c6" category="paragraph">按一下單一值小工具或儀表板小工具中的連結、會顯示對應於小工具中第一個查詢的查詢頁面。</block>
   <block id="643c94a9b7fa8044a23bb9cbc6ebffbe" category="section-title">格式化表格小工具</block>
   <block id="9e2381c8e7ac28deb699317b34df149b" category="paragraph">如同單一值和量表小工具、您可以在表格小工具中設定設定格式化的條件、讓您以色彩和/或特殊圖示來強調顯示資料。</block>
-  <block id="5fd3ff776b149305fbc059482c2bb581" category="admonition">Data Infrastructure Insights Federal Edition 目前不提供設定格式化的條件。</block>
   <block id="84679b44186157278902037b722c7359" category="paragraph">設定格式化的條件可讓您在表格小工具中設定及強調警示層級和臨界層級的臨界值、讓外在資料點和特殊資料點立即可見。</block>
   <block id="af857689eee998410c8a208e06da82aa" category="inline-image-macro">設定格式化的條件範例</block>
   <block id="07ee1acb2c120e65f59c1e4f6f6c04e9" category="paragraph"><block ref="07ee1acb2c120e65f59c1e4f6f6c04e9" category="inline-image-macro-rx" type="image"></block></block>
@@ -3716,7 +3712,6 @@
   <block id="58e92099c75821827b7a665f2931deb2" category="paragraph"><block ref="58e92099c75821827b7a665f2931deb2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b451cdd4206327fd0afecbb2df7b2bec" category="doc">關於儲存工作負載安全性</block>
   <block id="d91922a1bdba61ab374e14011d46cddf" category="paragraph">資料基礎架構洞見儲存工作負載安全性（前身為 Cloud Secure ）可針對內部威脅提供可據以行動的情報、協助保護您的資料。它可集中監控所有企業資料在混合雲環境中的存取、確保達成安全性與法規遵循目標。</block>
-  <block id="f685e8c506c41657d74fe2fe7ec4ca60" category="admonition">Data Infrastructure Insights Federal Edition 不提供工作負載安全功能。</block>
   <block id="1729a56cfc89021478498fe0c89a843a" category="section-title">可見度</block>
   <block id="72afd90b781c569f0442e6e45c9f3193" category="paragraph">集中可見度並控制使用者對儲存在內部部署或雲端的重要企業資料的存取。</block>
   <block id="6bb784bfbef2792b99ae322d0ce648b6" category="paragraph">取代無法提供即時且準確的資料存取與控制可見度的工具和手動程序。工作負載安全功能可在雲端和內部部署儲存系統上進行獨特作業、為您提供惡意使用者行為的即時警示。</block>
@@ -6842,7 +6837,6 @@
   <block id="02230bab9788e4843408e124331bb1ca" category="cell">我沒有看到叢集中存在的 Kubernetes CronJobs 正在收集任何度量。</block>
   <block id="b3b6bea000b13acbfcb412bad49ee494" category="cell">驗證 Kubernetes 版本（即<block ref="4fc58818ca77fb3a60cbd34a7f7d5071" prefix=" " category="inline-code"></block>）。如果是 v1.2.x 或更低版本、這是預期的限制。Kubernetes Monitoring Operator 部署的 kube-state 度量版本僅支援 v1.cronjob 。使用 Kubernetes 1.2.x 及以下版本時、 cronjob 資源為 v1beta 。 cronjob.因此、 kube 狀態度量無法找到 cronjob 資源。</block>
   <block id="45698e13b1c2f7241751839133834506" category="cell">安裝操作員之後、 Telegraf-DS Pod 會進入 CrashLoopBackOff 、 Pod 記錄會顯示「 su ：驗證失敗」。</block>
-  <block id="f8c008ebe75bf3ef5a707b1a1565926f" category="cell">編輯 _AgentConfiguration_ 中的 Teledraf 區段、並將 _dockerMetricCollectionEnabled_ 設為 false 。有關詳細信息，請參閱操作員的<block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。附註：如果您使用 Data Infrastructure Insights Federal Edition 、則限制使用 _su_ 的使用者將無法收集泊塢視窗度量、因為存取泊塢視窗套接字需要以 root 身分執行 telegraf 容器、或使用 _su_ 將 Telegraf 使用者新增至泊塢視窗群組。Docker 度量集合和使用 _su_ 預設為啟用；若要停用兩者、請移除 _AgentConfiguration_ 檔案中的 _telegraf.泊 塢視窗項目： ... 規格： ... Teledraf.. ...           - 名稱：泊塢視窗      執行模式：                     - 示範設定替代項目： - 索引鍵：泊塢視窗 _UNIX 襪子 _placeholder         值： UNIX ： ///run/泊 塢視窗 .sock ......</block>
   <block id="802997bcb8e9581226b3000b8b611b1c" category="cell">我在 Telegraf 記錄檔中看到類似以下內容的重複錯誤訊息： e ！[ 代理程式 ] 寫入 outputs.http ： POST 「 \https ： //les/rest/v1/lake &lt;tenant_url&gt; / 擷取 / 影響 xdb 」時發生錯誤：內容已超過期限（用戶端。 等待標頭時超過逾時）</block>
   <block id="5a581223d2fea6c45a7ac1278334f8c1" category="cell">編輯 _AgentConfiguration_ 中的 Telegraf 區段、並將 _outputTimeout_ 增加至 10s 。有關詳細信息，請參閱操作員的<block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。</block>
   <block id="4f05106cca363b0f3c492314ab777534" category="cell">我遺失某些事件記錄的 _ 參與物件 _ 資料。</block>
@@ -11824,4 +11818,5 @@
   <block id="399bd1ee587245ecac6f39beaa99886f" category="sidebar">PostgreSQL</block>
   <block id="14590850b4107a6f92feb1af739b82eb" category="sidebar">Puppet</block>
   <block id="15ec8934d96530d4c5f4a3b0f701f745" category="sidebar">RethinkDB</block>
+  <block id="e77701e8957afb414a45ca434ef7f000" category="cell">編輯 _AgentConfiguration_ 中的 Teledraf 區段、並將 _dockerMetricCollectionEnabled_ 設為 false 。有關詳細信息，請參閱操作員的<block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。... 規格： ... Telegraf ： ...           - 名稱：泊塢視窗      執行模式：                     - 示範設定替代項目： - 索引鍵：泊塢視窗 _UNIX 襪子 _placeholder         值： UNIX ： ///run/泊 塢視窗 .sock ......</block>
 </blocks>

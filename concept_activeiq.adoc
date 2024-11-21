@@ -21,9 +21,6 @@ summary: Data Infrastructure Insights 會從 NetApp Active IQ 收集風險資料
 [role="lead"]
 NetApp link:https://www.netapp.com/us/products/data-infrastructure-management/active-iq.aspx["Active IQ"]為 NetApp 客戶的硬體 / 軟體系統提供一系列視覺化，分析及其他支援相關服務。由NetApp回報的資料Active IQ 可加強系統問題的疑難排解、並提供與您的裝置相關的最佳化與預測分析。
 
-
-NOTE: Data Infrastructure Insights Federal Edition 不提供 ActiveIQ 。
-
 Data Infrastructure Insights 會針對 Active IQ 監控及回報的任何 NetApp 叢集式 Data ONTAP 儲存系統、收集 * 風險 * 。Data Infrastructure Insights 會自動收集儲存系統回報的風險、作為從這些裝置收集資料的一部分。您必須將適當的資料收集器新增至 Data Infrastructure Insights 、以收集 Active IQ 風險資訊。
 
 資料基礎架構洞見不會顯示 Active IQ 未監控及報告的 ONTAP 系統風險資料。

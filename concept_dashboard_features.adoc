@@ -639,9 +639,6 @@ image:Single-ValueWidgets.png["單值Widget、含格式設定和不含格式設�
 
 如同單一值和量表小工具、您可以在表格小工具中設定設定格式化的條件、讓您以色彩和/或特殊圖示來強調顯示資料。
 
-
-NOTE: Data Infrastructure Insights Federal Edition 目前不提供設定格式化的條件。
-
 設定格式化的條件可讓您在表格小工具中設定及強調警示層級和臨界層級的臨界值、讓外在資料點和特殊資料點立即可見。
 
 image:ConditionalFormattingExample.png["設定格式化的條件範例"]
