@@ -38,7 +38,7 @@ keywords: dashboard, widget, ontap, overview, insight
 
 image:OE_Overview.png["適用於Essentials的概述儀表板ONTAP"]
 
-「*總覽*」儀表板會顯示有用的資訊、例如您環境中的叢集數量及其整體容量與效能百分比。您也會看到預測性資料、說明在儲存容量或效能容量用盡空間之前、預期的天數。此外、如果基礎架構中的任何控制器都以超過65%的CPU執行、則在發生容錯移轉時可能會使叢集承受風險、ONTAP Essentials會將這些控制器顯示為「Hot」（熱）控制器。
+「 * 總覽 * 」儀表板會顯示有用的資訊，例如租戶上的叢集數量及其整體容量和效能百分比。您也會看到預測性資料、說明在儲存容量或效能容量用盡空間之前、預期的天數。此外、如果基礎架構中的任何控制器都以超過65%的CPU執行、則在發生容錯移轉時可能會使叢集承受風險、ONTAP Essentials會將這些控制器顯示為「Hot」（熱）控制器。
 
 資訊圖表可讓您瞭解一段時間後的效能、以及容量使用量的細分。每個圖表或資料點都可作為探索或調查的起點。
 
@@ -158,7 +158,7 @@ image:OE_Cluster_Compliance_Example.png["叢集法規遵循狀態"]
 
 == 警示
 
-您可以在此檢視環境中的作用中警示、並快速深入瞭解潛在問題。選取「_resolved」索引標籤以檢視已解決的警示。
+您可以在此檢視租戶上的「作用中」警示，並快速深入瞭解潛在問題。選取「_resolved」索引標籤以檢視已解決的警示。
 
 image:OE_Alerts.png["ONTAP Essentials 警示清單"]
 
@@ -184,7 +184,7 @@ image:ONTAP_Essentials_Alerts_Menu.png["「Essentials網路功能表」ONTAP"] i
 
 == 工作負載
 
-檢視及探索環境中LUN/ Volume、NFS或SMB共用區或qtree上的工作負載。
+檢視並探索租戶上的 LUN/ Volume ， NFS 或 SMB 共用或 qtree 上的工作負載。
 
 image:ONTAP_Essentials_Workloads_Menu.png["工作負載功能表"]
 

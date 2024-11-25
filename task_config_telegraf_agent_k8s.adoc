@@ -182,7 +182,7 @@ NetApp Kubernetes監控操作員會安裝自己的Kube-態 指標、以避免與
 
 === 設定Proxy支援
 
-您可以在兩個地方使用環境中的 Proxy 來安裝 Kubernetes Monitoring Operator 。這些可能是相同或獨立的Proxy系統：
+您可以在兩個地方使用租戶上的 Proxy 來安裝 Kubernetes Monitoring Operator 。這些可能是相同或獨立的Proxy系統：
 
 * 執行安裝程式碼片段（使用「 cURL 」）時需要 Proxy 、以將執行程式碼片段的系統連線至您的 Data Infrastructure Insights 環境
 * 目標 Kubernetes 叢集與您的 Data Infrastructure Insights 環境通訊所需的 Proxy

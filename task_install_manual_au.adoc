@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task_install_manual_au.html 
 keywords: Acquisition Unit, AU, install, configure, Linux, add, remove, uninstall, delete, deleting, move, moving, manual, AU, Patch 
-summary: 資料基礎架構 Insights 可設定為手動更新 AU 軟體、讓您更能掌控環境中安裝的軟體。 
+summary: 資料基礎架構 Insights 可設定為手動更新 AU 軟體，讓您更能掌控安裝在租戶上的軟體。 
 ---
 = 手動安裝擷取單元軟體
 :hardbreaks:
@@ -16,7 +16,7 @@ summary: 資料基礎架構 Insights 可設定為手動更新 AU 軟體、讓您
 
 
 [role="lead"]
-根據預設、 Data Infrastructure Insights 會在部署更新時自動更新 Acquisition Unit （ AU ）軟體。不過、在安全的控制環境中、可能無法或不需要自動更新。在這些案例中、您可以設定 Data Infrastructure Insights 、讓 AU 軟體手動更新、讓您更能掌控環境中安裝的軟體。
+根據預設、 Data Infrastructure Insights 會在部署更新時自動更新 Acquisition Unit （ AU ）軟體。不過、在安全的控制環境中、可能無法或不需要自動更新。在這些案例中，您可以設定 Data Infrastructure Insights ，讓 AU 軟體手動更新，讓您更能掌控安裝在租戶上的軟體。
 
 若要手動下載並安裝 AU 軟體、請執行下列步驟。Data Infrastructure Insights 提供實用的 Swagger 文件頁面、您可以在其中許多步驟中使用、也可以使用自己的 API 指令碼 / 命令。移至「管理」 > 「 API 存取」、然後按一下「 API 文件」連結。
 

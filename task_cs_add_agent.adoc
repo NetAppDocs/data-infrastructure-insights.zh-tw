@@ -19,7 +19,7 @@ summary: 新增工作負載安全性代理程式
 
 
 [role="lead"]
-「工作負載安全性」（前身Cloud Secure 為「功能」）會使用一或多個代理程式來收集使用者活動資料。代理程式會連線至您環境中的裝置、並收集傳送至工作負載安全SaaS層進行分析的資料。請參閱link:concept_cs_agent_requirements.html["代理程式需求"]以設定代理程式 VM 。
+「工作負載安全性」（前身Cloud Secure 為「功能」）會使用一或多個代理程式來收集使用者活動資料。代理程式會連線至租戶上的裝置，並收集傳送至工作負載安全 SaaS 層的資料以供分析。請參閱link:concept_cs_agent_requirements.html["代理程式需求"]以設定代理程式 VM 。
 
 
 

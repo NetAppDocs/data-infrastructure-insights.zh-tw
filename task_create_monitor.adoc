@@ -36,7 +36,7 @@ Data Infrastructure Insights 也會根據您的環境提供許多link:task_syste
 
 == 安全性最佳實務做法
 
-Data Infrastructure Insights 警示旨在強調您環境中的資料點和趨勢、而 Data Infrastructure Insights 可讓您以警示接收者的身份輸入任何有效的電子郵件地址。如果您是在安全的環境中工作、請特別留意誰收到通知、或是以其他方式有權存取警示。
+Data Infrastructure Insights 警示旨在強調租戶的資料點和趨勢，而 Data Infrastructure Insights 可讓您以警示收件者的身份輸入任何有效的電子郵件地址。如果您是在安全的環境中工作、請特別留意誰收到通知、或是以其他方式有權存取警示。
 
 
 
@@ -232,7 +232,7 @@ image:Monitors_Alert_Description.png["警示修正行動與說明"]
 
 == 監控群組
 
-群組可讓您檢視及管理相關的監視器。例如、您可以讓監控群組專用於環境中的儲存設備、或監控與特定收件者清單相關的項目。
+群組可讓您檢視及管理相關的監視器。例如，您可以讓監控群組專用於租戶上的儲存設備，或是監控特定收件者清單的相關資訊。
 
 image:Monitors_GroupList.png["監控群組"]
 
@@ -297,7 +297,7 @@ image:Monitors_PauseGroup.png["暫停群組"]
 
 == 系統定義的監視器
 
-Data Infrastructure Insights 包含多個系統定義的監控器、可同時用於度量和記錄。可用的系統監視器取決於環境中的資料收集器。因此、 Data Infrastructure Insights 中可用的監視器可能會隨著新增資料收集器或變更其組態而變更。
+Data Infrastructure Insights 包含多個系統定義的監控器、可同時用於度量和記錄。可用的系統監控器視租戶上的資料收集器而定。因此、 Data Infrastructure Insights 中可用的監視器可能會隨著新增資料收集器或變更其組態而變更。
 
 請檢視link:task_system_monitors.html["系統定義的監視器"]頁面、以取得 Data Infrastructure Insights 隨附的顯示器說明。
 

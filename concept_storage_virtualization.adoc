@@ -29,7 +29,7 @@ Data Infrastructure Insights 可區分擁有本機儲存或其他儲存陣列虛
 
 image:StorageVirtualization_TableWidgetSettings.png["顯示儲存虛擬化類型的基本查詢"]
 
-產生的表格 Widget 會顯示環境中的 _Standard_ 、 _Backend_ 和 _Virtual_ 儲存。
+產生的表格 Widget 會顯示租戶上的 _Standard_ ， _Backend_ 和 _Virtual_ 儲存。
 
 image:StorageVirtualization_TableWidgetShowingVirtualizedTypes.png["顯示虛擬化類型的表格"]
 
@@ -45,7 +45,7 @@ image:StorageVirtualization_StorageSummary.png["顯示虛擬與備份儲存資�
 
 === 現有的登陸頁面和儀表板
 
-請注意、如果您目前環境中有自訂的登錄頁面或儀表板、這些頁面或儀表板在預設情況下不會自動顯示所有的虛擬化資訊。不過、您可以 _ 恢復為預設 _ 任何自訂儀表板或登陸頁面（您必須重新實作自訂）、或修改相關的 Widget 來納入所需的虛擬化屬性或指標。
+請注意，如果您目前在租戶上有自訂的登錄頁面或儀表板，這些頁面或儀表板在預設情況下不會自動顯示所有虛擬化資訊。不過、您可以 _ 恢復為預設 _ 任何自訂儀表板或登陸頁面（您必須重新實作自訂）、或修改相關的 Widget 來納入所需的虛擬化屬性或指標。
 
 自訂儀表板或登陸頁畫面的右上角提供 _ 恢復為預設 _ 。
 

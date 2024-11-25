@@ -38,7 +38,7 @@ NOTE: 報告功能可在 Data Infrastructure Insights link:concept_subscribing_t
 在您設計報告之前、請先完成下列工作：
 
 * 正確設定所有link:task_configure_data_collectors.html["資料收集器"]項目。
-* 在環境中的裝置和資源上輸入附註（例如階層、資料中心和業務單位）。在產生報告之前、請先讓附註保持穩定、因為 Data Infrastructure Insights Reporting 會收集歷史資訊。
+* 在租戶的裝置和資源上輸入註釋（例如階層，資料中心和業務單位）。在產生報告之前、請先讓附註保持穩定、因為 Data Infrastructure Insights Reporting 會收集歷史資訊。
 
 
 
@@ -194,7 +194,7 @@ VM容量資料模型中的容量是從虛擬磁碟（VMDK）取得。這表示�
 
 ==== Volume容量資料模型
 
-可讓您分析環境中磁碟區的所有層面、並依廠商、模型、層級、服務層級和資料中心來組織資料。
+可讓您分析租戶上各磁碟區的所有層面，並依廠商，機型，層級，服務層級和資料中心來組織資料。
 
 您可以檢視與孤立磁碟區、未使用的磁碟區和保護磁碟區（用於複寫）相關的容量。您也可以看到不同的Volume技術（iSCSI或FC）、並針對陣列虛擬化問題、將虛擬磁碟區與非虛擬磁碟區進行比較。
 

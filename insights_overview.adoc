@@ -31,7 +31,7 @@ Insights可讓您深入瞭解資源使用量、以及資源使用量對其他資
 
 === 共享的資源正承受壓力
 
-高影響力的工作負載可能會降低共享資源中其他工作負載的效能。這會使共享資源承受壓力。Data Infrastructure Insights 提供的工具可協助您調查環境中的資源飽和度和影響。link:insights_shared_resources_under_stress.html["深入瞭解"]
+高影響力的工作負載可能會降低共享資源中其他工作負載的效能。這會使共享資源承受壓力。Data Infrastructure Insights 提供的工具可協助您調查資源飽和度，以及對租戶的影響。link:insights_shared_resources_under_stress.html["深入瞭解"]
 
 
 

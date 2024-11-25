@@ -60,7 +60,7 @@ summary: Data Infrastructure Insights 支援 Telegraf 做為其代理程式、�
 
 === 設定Proxy支援
 
-您可以在兩個地方使用Proxy來安裝NetApp Kubernetes監控操作員。這些可能是相同或獨立的Proxy系統：
+您可以在兩個地方使用租戶上的 Proxy 來安裝 NetApp Kubernetes 監控操作員。這些可能是相同或獨立的Proxy系統：
 
 * 執行安裝程式碼片段（使用「 cURL 」）時需要 Proxy 、以將執行程式碼片段的系統連線至您的 Data Infrastructure Insights 環境
 * 目標 Kubernetes 叢集與您的 Data Infrastructure Insights 環境通訊所需的 Proxy

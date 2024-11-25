@@ -27,7 +27,7 @@ Data Infrastructure Insights 使用此資料收集器收集 Consul 的指標。
 
 . 從 * 可伺服 > 收集器 * 、按一下 * + 資料收集器 * 。選擇「 Consul 」。
 +
-如果您尚未設定值機員進行收集，系統會在您的環境中提示您link:task_config_telegraf_agent.html["安裝代理程式"]。
+如果您尚未設定值機員以進行集合，系統會在租戶上提示您link:task_config_telegraf_agent.html["安裝代理程式"]。
 
 +
 如果您已設定代理程式、請選取適當的作業系統或平台、然後按一下*繼續*。

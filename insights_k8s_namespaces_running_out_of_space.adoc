@@ -19,7 +19,7 @@ summary: Insights可協助您預測Kubernetes空間何時會滿。
 
 
 [role="lead"]
-在您的環境中、空間不足的情況絕不是好現象。Data Infrastructure Insights 可協助您預測 Kubernetes 永續磁碟區何時會滿。
+租戶空間不足的情況永遠不是好情況。Data Infrastructure Insights 可協助您預測 Kubernetes 永續磁碟區何時會滿。
 
 _Kubernetes Namspaces Outout of space_ Insight可讓您檢視Kubernetes命名空間中可能會耗盡空間的工作負載、並預估每個持續磁碟區將滿之前的剩餘天數。
 

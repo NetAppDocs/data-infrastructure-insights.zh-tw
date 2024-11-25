@@ -64,7 +64,7 @@ VMware等Hypervisor提供ESXi主機及其虛擬機器（VM）的詳細資訊。�
 
 == Data Infrastructure Insights 是否支援光纖通道交換器？
 
-是的、除了從您的儲存資產收集資料外、資料基礎架構洞見也會從您環境中的 Cisco 、 Brocade 和 QLogic 交換器取得庫存和效能資料。
+是的，除了從您的儲存資產收集資料外，資料基礎架構洞見也會從租戶上的 Cisco ， Brocade 和 QLogic 交換器取得庫存和效能資料。
 
 
 

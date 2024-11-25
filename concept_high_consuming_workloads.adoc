@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_high_consuming_workloads.html 
 keywords: insight, greedy, degraded, bully, victim, impacted, impacting, impactful, impact, resources, consuming, workload 
-summary: Insights可讓您深入瞭解資源如何影響環境中的其他資源。 
+summary: Insights 可讓您瞭解資源對租戶的其他資源有何影響。 
 ---
 = 洞見：高消費的工作負載
 :toc: macro
@@ -19,7 +19,7 @@ summary: Insights可讓您深入瞭解資源如何影響環境中的其他資源
 
 
 [role="lead"]
-高影響力的工作負載可能會降低共享資源中其他工作負載的效能。Data Infrastructure Insights 提供的工具可協助您調查環境中的資源飽和度和影響。
+高影響力的工作負載可能會降低共享資源中其他工作負載的效能。Data Infrastructure Insights 提供的工具可協助您調查資源飽和度，以及對租戶的影響。
 
 
 
@@ -59,7 +59,7 @@ image:Insights_Demanding_Workload_Chart.png["嚴苛的工作負載圖表"] image
 
 === 我該如何解決飽和問題？
 
-您可以採取許多步驟來降低或消除環境中的飽和機率。以下是您可以嘗試的幾項功能。
+您可以採取許多步驟來降低或消除租戶的飽和機率。以下是您可以嘗試的幾項功能。
 
 * 移轉高IOPS使用者
 +

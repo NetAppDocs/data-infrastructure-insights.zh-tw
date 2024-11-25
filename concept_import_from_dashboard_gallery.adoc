@@ -19,7 +19,7 @@ keywords: dashboard, gallery, import
 
 
 [role="lead"]
-Data Infrastructure Insights 提供多種建議的儀表板、讓您深入瞭解資料。每個儀表板都包含小工具、可協助您回答特定問題、或解決與環境中目前收集的資料相關的特定問題。
+Data Infrastructure Insights 提供多種建議的儀表板、讓您深入瞭解資料。每個儀表板都包含小工具，可協助回答特定問題，或解決與租戶目前所收集資料相關的特定問題。
 
 若要從圖庫匯入儀表板、請執行下列步驟：
 

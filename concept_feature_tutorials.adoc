@@ -21,7 +21,7 @@ keywords: onboarding, getting started, video, tutorial, resolution, dashboard, q
 [role="lead"]
 Data Infrastructure Insights 內含實用功能、可讓您快速輕鬆地找到資料、疑難排解問題、並深入瞭解企業環境。利用強大的查詢功能輕鬆尋找資料、在儀表板中視覺化資料、並針對您設定的資料臨界值傳送電子郵件警示。
 
-Data Infrastructure Insights 包含許多影片教學課程、可協助您瞭解這些功能、並更有效地實作您的業務洞察策略。每個擁有資料基礎架構 Insights 環境存取權的使用者、都能善用這些教學課程。
+Data Infrastructure Insights 包含許多影片教學課程、可協助您瞭解這些功能、並更有效地實作您的業務洞察策略。每位擁有 Data Infrastructure Insights 租戶存取權的使用者，都可以利用這些教學課程。
 
 
 

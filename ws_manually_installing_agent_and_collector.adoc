@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: ws_manually_installing_agent_and_collector.html 
 keywords: install, configure, agent, collector, workload, security, cloud secure 
-summary: 工作負載安全性代理程式可以手動安裝或更新，讓您更能掌控環境中安裝的軟體。 
+summary: 工作負載安全性代理程式可以手動安裝或更新，讓您更能掌控安裝在租戶上的軟體。 
 ---
 = 手動安裝 Workload Security Agent 和 Collector
 :hardbreaks:
@@ -16,7 +16,7 @@ summary: 工作負載安全性代理程式可以手動安裝或更新，讓您�
 
 
 [role="lead"]
-根據預設，當工作負載安全性代理程式或收集器有新版本可用時，系統會傳送升級前通知，並在您的環境中自動更新代理程式和收集器。不過，在安全的受控環境中，可能不需要自動升級。在這種情況下，可將工作負載安全性設定為手動安裝 / 升級代理程式和收集器，以更有效地控制系統上安裝的軟體。
+根據預設，當有新版本的工作負載安全性代理程式或收集器可用時，系統會傳送升級前通知，並在您的租戶上自動更新代理程式和收集器。不過，在安全的受控環境中，可能不需要自動升級。在這種情況下，可將工作負載安全性設定為手動安裝 / 升級代理程式和收集器，以更有效地控制系統上安裝的軟體。
 
 
 

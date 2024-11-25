@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: insights_shared_resources_under_stress.html 
 keywords: insight, greedy, degraded, impacted, impacting, impactful, impact, resources, consuming, workload 
-summary: Insights可讓您深入瞭解資源如何影響環境中的其他資源。 
+summary: Insights 可讓您瞭解資源對租戶的其他資源有何影響。 
 ---
 = 洞見：壓力所在的共享資源
 :toc: macro
@@ -19,7 +19,7 @@ summary: Insights可讓您深入瞭解資源如何影響環境中的其他資源
 
 
 [role="lead"]
-高影響力的工作負載可能會降低共享資源中其他工作負載的效能。這會使共享資源承受壓力。Data Infrastructure Insights 提供的工具可協助您調查環境中的資源飽和度和影響。
+高影響力的工作負載可能會降低共享資源中其他工作負載的效能。這會使共享資源承受壓力。Data Infrastructure Insights 提供的工具可協助您調查資源飽和度，以及對租戶的影響。
 
 
 
@@ -63,7 +63,7 @@ image:ResourceInsightDemanding.png["嚴苛的工作負載圖表"] image:Resource
 
 == 我該如何解決飽和問題？
 
-您可以採取許多步驟來降低或消除環境中的飽和機率。您可以展開頁面上的「*+顯示建議*」連結來顯示這些資訊。以下是您可以嘗試的幾項功能。
+您可以採取許多步驟來降低或消除租戶的飽和機率。您可以展開頁面上的「*+顯示建議*」連結來顯示這些資訊。以下是您可以嘗試的幾項功能。
 
 * 移轉高IOPS使用者
 +

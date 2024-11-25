@@ -21,7 +21,7 @@ summary: Kubernetes登陸頁面說明
 [role="lead"]
 資料基礎架構 Insights Kubernetes Explorer 是一個強大的工具、可顯示 Kubernetes 叢集的整體健全狀況和使用情形、並可讓您輕鬆深入調查調查領域。
 
-按一下*儀表板> Kubernetes Explorer*即可開啟Kubernetes叢集清單頁面。本總覽頁面包含環境中Kubernetes叢集的表格。
+按一下*儀表板> Kubernetes Explorer*即可開啟Kubernetes叢集清單頁面。本概要頁面包含租戶上 Kubernetes 叢集的表格。
 
 image:Kubernetes_List_Page_new.png["Kubernetes清單頁面"]
 
@@ -29,7 +29,7 @@ image:Kubernetes_List_Page_new.png["Kubernetes清單頁面"]
 
 === 叢集清單
 
-叢集清單會針對您環境中的每個叢集顯示下列資訊：
+叢集清單會針對租戶上的每個叢集顯示下列資訊：
 
 * 叢集*名稱*。按一下叢集名稱將會開啟該叢集link:kubernetes_cluster_detail.html["*詳細資料頁*"]的。
 * *飽和*百分比。整體飽和是CPU、記憶體或儲存飽和的最高值。

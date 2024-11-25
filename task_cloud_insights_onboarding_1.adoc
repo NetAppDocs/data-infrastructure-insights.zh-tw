@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task_cloud_insights_onboarding_1.html 
-summary: 註冊 Data Infrastructure Insights 並建立您的環境。 
+summary: 註冊 Data Infrastructure Insights 並建立租戶。 
 keywords: onboarding, new user 
 ---
 = 資料基礎架構洞見入門
@@ -49,11 +49,11 @@ image:BlueXP_CloudInsights.png["BlueXP  上的 Data Infrastructure Insights 免
 
 == 開始免費試用 Data Infrastructure Insights
 
-如果這是您第一次登入 Data Infrastructure Insights 、請在 Data Infrastructure Insights 產品下、按一下 * 開始免費試用 * 。Data Infrastructure Insights 將引導您建立公司的環境、包括選擇環境所在的區域。
+如果這是您第一次登入 Data Infrastructure Insights 、請在 Data Infrastructure Insights 產品下、按一下 * 開始免費試用 * 。Data Infrastructure Insights 將引導您建立公司的租戶，包括選擇租戶所在的區域。
 
-image:trial_region_selector.png["選取您要在哪個區域中主控 Data Infrastructure Insights 環境"]
+image:trial_region_selector.png["選取您的 Data Infrastructure Insights 租戶所在的區域"]
 
-建立環境完成後、您可以使用 BlueXP  認證登入並開始免費的 30 天資料基礎架構深入分析試用版。在此試用期間、您可以探索 Data Infrastructure Insights 所提供的功能。
+建立租戶之後，您可以使用 BlueXP  認證登入，開始免費的 30 天資料基礎架構深入分析試用版。在此試用期間、您可以探索 Data Infrastructure Insights 所提供的功能。
 
 在免費試用期間、您可以link:concept_subscribing_to_cloud_insights.html["開始訂購"]隨時取得 Data Infrastructure Insights 。訂閱後、您可以根據目前的訂閱內容、使用 Data Infrastructure Insights 功能。
 
@@ -61,17 +61,17 @@ image:trial_region_selector.png["選取您要在哪個區域中主控 Data Infra
 
 == 登入後立即使用
 
-建立環境之後、您隨時都可以登入 NetApp BlueXP  入口網站、然後按一下 * 移至資料基礎架構 Insights * 。您將直接進入 Data Infrastructure Insights 環境。
+建立租戶之後，您可以隨時登入 NetApp BlueXP  入口網站，然後按一下 * 移至資料基礎架構 Insights * 。您將直接被帶到 Data Infrastructure Insights 租戶。
 
-您也可以直接開啟瀏覽器來存取 Data Infrastructure Insights 環境 URL 、例如：
+您也可以直接開啟瀏覽器來存取 Data Infrastructure Insights 租戶 URL ，例如：
 
- \https://<environment-prefix>.c01.cloudinsights.netapp.com/
+ \https://<tenant-prefix>.c01.cloudinsights.netapp.com/
 每位使用者的邀請電子郵件中也會包含此URL、方便您輕鬆存取及加入書籤。如果使用者尚未登入 BlueXP 、系統會提示使用者登入。
 
 
-NOTE: 新使用者必須先註冊以存取 BlueXP 、才能存取其環境 URL 。
+NOTE: 新使用者必須先註冊以存取 BlueXP  ，才能存取租戶 URL 。
 
-第一次登入新環境時，系統會引導您設定至link:task_getting_started_with_cloud_insights.html["*開始收集資料*"]。
+第一次登入新租戶時，系統會引導您設定至link:task_getting_started_with_cloud_insights.html["*開始收集資料*"]。
 
 
 

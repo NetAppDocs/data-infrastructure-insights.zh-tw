@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task_create_application.html 
-summary: 您可以視需要定義應用程式、然後套用至環境中的資產。 
+summary: 您可以視需要定義應用程式，然後套用至租戶上的資產。 
 keywords: application, create application, 
 ---
 = 建立應用程式
@@ -16,7 +16,7 @@ keywords: application, create application,
 
 
 [role="lead"]
-若要追蹤與環境中執行的特定應用程式相關的資料、您可以在 Data Infrastructure Insights 中定義應用程式。
+若要追蹤與租戶上執行的特定應用程式相關的資料，您可以在 Data Infrastructure Insights 中定義應用程式。
 
 .開始之前
 如果您想要將應用程式與企業實體建立關聯、則必須先建立企業實體、才能定義應用程式。

@@ -19,7 +19,7 @@ keywords: AU, acquisition unit, requirements, sizing
 
 
 [role="lead"]
-您必須安裝擷取單元（AU）、才能從基礎架構資料收集器（儲存設備、VM、連接埠、EC2等）取得資訊。安裝擷取單元之前、您應確保環境符合作業系統、CPU、記憶體及磁碟空間需求。
+您必須安裝擷取單元（AU）、才能從基礎架構資料收集器（儲存設備、VM、連接埠、EC2等）取得資訊。在安裝擷取單元之前，您應確保租戶符合作業系統， CPU ，記憶體和磁碟空間需求。
 
 
 
@@ -43,7 +43,7 @@ keywords: AU, acquisition unit, requirements, sizing
 | 可用磁碟空間 | 50 GB （建議使用 100 GB ）的 Linux 磁碟空間應以這種方式分配： NetApp 10 GB （大型環境為 20 GB ） NetApp 40 GB （大型環境為 80 GB ） /tmp 安裝期間至少 1 GB 可用空間 | 50GB 
 
 
-| 網路 | 需要 100 Mbps/1 Gbps 乙太網路連線、靜態 IP 位址、以及連接埠 80 或 443 （輸出）連線、從擷取單元連線至 * 。 NetApp .com 或您的資料基礎架構 Insights 環境（例如： https ： <environment_id> 。 C01 。 NetApp 。 com ）。如需擷取單元與每個資料收集器之間的需求、請參閱的說明link:data_collector_list.html["資料收集器"]。如果您的組織需要使用代理伺服器來存取網際網路、您可能需要瞭解組織的代理伺服器行為、並尋求特定例外情況、才能讓 Data Infrastructure Insights 運作。例如、貴組織是否預設會封鎖存取、而且例外情況下只允許存取特定網站/網域？如果是這樣，您將需要將以下域添加到例外列表中： *.cloudinsights ． NetApp ． com 有關詳細信息，請參閱關於代理link:task_troubleshooting_linux_acquisition_unit_problems.html#considerations-about-proxies-and-firewalls["這裡（ Linux ）"]或link:task_troubleshooting_windows_acquisition_unit_problems.html#considerations-about-proxies-and-firewalls["這裡（ Windows ）"]。 | 相同 
+| 網路 | 需要 100 Mbps/1 Gbps 乙太網路連線，靜態 IP 位址，以及連接埠 80 或 443 （輸出）連線 NetApp ，從擷取單元連線至 * 。 cloudentses.com/com 或您的資料基礎架構 Insights 租戶（例如： https ： <tenant_id> 。 C01 。 NetApp 。 com ）。如需擷取單元與每個資料收集器之間的需求、請參閱的說明link:data_collector_list.html["資料收集器"]。如果您的組織需要使用代理伺服器來存取網際網路、您可能需要瞭解組織的代理伺服器行為、並尋求特定例外情況、才能讓 Data Infrastructure Insights 運作。例如、貴組織是否預設會封鎖存取、而且例外情況下只允許存取特定網站/網域？如果是這樣，您將需要將以下域添加到例外列表中： *.cloudinsights ． NetApp ． com 有關詳細信息，請參閱關於代理link:task_troubleshooting_linux_acquisition_unit_problems.html#considerations-about-proxies-and-firewalls["這裡（ Linux ）"]或link:task_troubleshooting_windows_acquisition_unit_problems.html#considerations-about-proxies-and-firewalls["這裡（ Windows ）"]。 | 相同 
 
 
 | 權限 | 擷取單元伺服器上的Sudo權限。/tmp必須以執行功能掛載。 | 取得單位伺服器的系統管理員權限 

@@ -19,7 +19,7 @@ summary: Apache資料收集器組態
 
 
 [role="lead"]
-此資料收集器可從您環境中的Apache伺服器收集資料。
+此資料收集器可讓您從租戶上的 Apache 伺服器收集資料。
 
 .先決條件
 * 您必須設定Apache HTTP伺服器並正確執行

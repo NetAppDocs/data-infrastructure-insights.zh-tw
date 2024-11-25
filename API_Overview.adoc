@@ -39,7 +39,7 @@ summary: Data Infrastructure Insights API 可與其他應用程式整合、例�
 
 image:API_Swagger_Types.png["API 類型"]
 
-API文件是以Swagger為基礎、提供API的簡短說明與使用資訊、並可讓您在環境中試用。視您的使用者角色和 / 或 Data Infrastructure Insights 版本而定、您可使用的 API 類型可能會有所不同。
+API 文件是以 Swagger-based 為基礎，提供 API 的簡短說明和使用資訊，並可讓您在租戶中試用。視您的使用者角色和 / 或 Data Infrastructure Insights 版本而定、您可使用的 API 類型可能會有所不同。
 
 image:API_Swagger_Example.png["API Swagger範例"]
 
@@ -195,11 +195,9 @@ image:API_Performance.png["API效能範例"]
 
 == 物件效能指標
 
-API可傳回環境中物件的詳細度量、例如：
+API 可以傳回租戶上物件的詳細計量，例如：
 
 * 儲存效能指標、例如IOPS（每秒輸入/輸出要求數）、延遲或處理量。
-
-
 * 交換器效能指標、例如流量使用率、零點數資料或連接埠錯誤。
 
 

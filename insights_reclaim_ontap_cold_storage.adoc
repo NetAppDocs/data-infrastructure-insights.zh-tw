@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: insights_reclaim_ontap_cold_storage.html 
 keywords: insight, greedy, degraded, impacted, impacting, impactful, impact, resources, consuming, workload 
-summary: Insights可讓您深入瞭解資源如何影響環境中的其他資源。 
+summary: Insights 可讓您瞭解資源對租戶的其他資源有何影響。 
 ---
 = 洞見：回收 ONTAP Cold Storage
 :toc: macro
