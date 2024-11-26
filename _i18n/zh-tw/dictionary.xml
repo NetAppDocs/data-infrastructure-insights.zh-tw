@@ -11819,4 +11819,8 @@
   <block id="0967b055354d8d340dcc9aacf450c7f9" category="cell">持續磁碟區上的 IOPS 臨界值可用於在持續磁碟區超過預先定義的效能期望時、向管理員發出警示。啟動此監視器將會產生適用於持續性磁碟區之典型 IOPS 設定檔的警示。此監視器將涵蓋租戶上的所有持續磁碟區。您可以根據監控目標來調整警告和臨界臨界臨界臨界值、方法是複製此監視器並設定適合您工作負載的臨界值。</block>
   <block id="3ee2ba16702e3b406dd125b347f5f30b" category="summary">工作負載安全性代理程式可以手動安裝或更新，讓您更能掌控安裝在租戶上的軟體。</block>
   <block id="17a311772e6362d1e9dd73c324273dcc" category="paragraph">根據預設，當有新版本的工作負載安全性代理程式或收集器可用時，系統會傳送升級前通知，並在您的租戶上自動更新代理程式和收集器。不過，在安全的受控環境中，可能不需要自動升級。在這種情況下，可將工作負載安全性設定為手動安裝 / 升級代理程式和收集器，以更有效地控制系統上安裝的軟體。</block>
+  <block id="6a6cf662ae6f91c127da69e22956cc12" category="section-title">原型模式</block>
+  <block id="e60c852a7a4c8de70f56c1772db9c0f5" category="paragraph">在收集器的 _Advanced Configuration_ 設定中啟用此選項時，工作負載安全性會將 FPolicy 引擎設定為原型模式。ONTAP 9.15 版及更新版本均支援原型模式。</block>
+  <block id="502f573701c400ca3de6252b1c8e6e9e" category="paragraph">如需此功能的詳細資訊<block ref="5c3d3ed23ecd4e0a61ac3e8d31f3a637" category="inline-link-macro-rx"></block>，請參閱。</block>
+  <block id="e28cace0b0e193aac1db472078caa8fb" category="paragraph">protobuf 需要特定權限（其中部分或全部可能已經存在）：</block>
 </blocks>

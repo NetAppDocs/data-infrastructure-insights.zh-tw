@@ -149,6 +149,28 @@ security login create -user-or-group-name csuser -application http -authmethod p
 ....
 
 
+=== 原型模式
+
+在收集器的 _Advanced Configuration_ 設定中啟用此選項時，工作負載安全性會將 FPolicy 引擎設定為原型模式。ONTAP 9.15 版及更新版本均支援原型模式。
+
+如需此功能的詳細資訊link:https://docs.netapp.com/us-en/ontap/nas-audit/steps-setup-fpolicy-config-concept.html["ONTAP 文件"]，請參閱。
+
+protobuf 需要特定權限（其中部分或全部可能已經存在）：
+
+叢集模式：
+
+....
+security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <cluster_name>
+security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole
+....
+Vserver 模式：
+
+....
+security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <svm_name>
+security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole -vserver <svm_name>
+....
+
+
 === ONTAP 自主勒索軟體保護和 ONTAP 存取權限遭拒
 
 如果您使用叢集管理認證、則不需要新的權限。
