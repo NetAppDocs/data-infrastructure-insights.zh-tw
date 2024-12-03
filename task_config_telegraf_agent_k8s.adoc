@@ -19,8 +19,6 @@ summary: Kubernetes Monitoring Operator 會收集 Kubernetes 資料、以供 Dat
 Data Infrastructure Insights 為 Kubernetes 集合提供 * Kubernetes Monitoring Operator* 。瀏覽至 * Kubernetes > Collectores > +Kubernetes Collector* 以部署新的運算子。
 
 
-toc::[]
-
 
 == 安裝 Kubernetes Monitoring Operator 之前
 
@@ -65,15 +63,11 @@ image:KubernetesModifyDeploymentMenu.png["在 Kubernetes Collector 清單頁面�
 
 畫面會顯示每個元件的目前狀態、並可讓您視需要停用或啟用該收集器的元件。
 
-image:KubernetesModifyDeploymentScreen.png["Mody 部署選項、 700"]
+image:KubernetesModifyDeploymentScreen.png["修改部署選項，寬度 =700"]
 
 
 
-== 升級
-
-
-
-=== 升級至最新的 Kubernetes Monitoring Operator
+== 升級至最新的 Kubernetes Monitoring Operator
 
 判斷現有運算子是否存在 AgentConfiguration （如果您的命名空間不是預設的 _NetApp-monitoring 、請改用適當的命名空間）：
 

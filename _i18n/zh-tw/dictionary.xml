@@ -6665,9 +6665,6 @@
   <block id="4a8935a67aadaec6ba4fbfd58e9329b9" category="inline-image-macro">在 Kubernetes Collector 清單頁面上修改部署功能表</block>
   <block id="7a9e68f513e02f6f4993d88781b49637" category="paragraph"><block ref="7a9e68f513e02f6f4993d88781b49637" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e1ab0e7895c9df2539e36203b84c90d1" category="paragraph">畫面會顯示每個元件的目前狀態、並可讓您視需要停用或啟用該收集器的元件。</block>
-  <block id="9cef0071e460e946beaa92e847eee7a2" category="inline-image-macro">Mody 部署選項、 700</block>
-  <block id="680dda670e97a05d2baca651224019c6" category="paragraph"><block ref="680dda670e97a05d2baca651224019c6" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="edcc6d64ff09289fd7b549c0265f3ea6" category="section-title">升級</block>
   <block id="8b54cfbc7f4622be8f18ef9e6b323931" category="section-title">升級至最新的 Kubernetes Monitoring Operator</block>
   <block id="59f9e8b92a6bc55e991031f0b5fea324" category="paragraph">判斷現有運算子是否存在 AgentConfiguration （如果您的命名空間不是預設的 _NetApp-monitoring 、請改用適當的命名空間）：</block>
   <block id="bb5c0afa0b80550de02b1ac19c1226b4" category="paragraph">如果存在 AgentConfiguration ：</block>
@@ -11823,4 +11820,6 @@
   <block id="2e9d4d6615af62102584a57c2c8ddacd" category="list-text">出現提示時，請複製並輸入儲存庫密碼</block>
   <block id="2cea2fa4f716d1fa2efbffe877eb702c" category="list-text">儲存影像簽名公開金鑰（範例中的 DII 映像簽署 .pub ）</block>
   <block id="55d6bfb079ee69230d07a9a9c1c17b66" category="list-text">使用 CO簽署 來驗證影像。請參閱以下代碼使用範例</block>
+  <block id="f0eddc4fb4218ed4ec07da7604fbc1c8" category="inline-image-macro">修改部署選項，寬度 =700</block>
+  <block id="593e78308f625f4551ee5b44b6d582e5" category="paragraph"><block ref="593e78308f625f4551ee5b44b6d582e5" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
