@@ -6721,15 +6721,6 @@
   <block id="bd0f62d92c7b0e5d6e74b4447418c58b" category="paragraph">若要移除 Kubernetes Monitoring Operator 檢視整個叢集機密的權限、請在安裝之前、從 _operer-setup.yaml_ 檔案中刪除下列資源：</block>
   <block id="1790cdbccc4ddd4389eb90d73e043f4b" category="paragraph">如果是升級、也請從叢集中刪除資源：</block>
   <block id="a66e68a20b3b94a700f3a3b9baa06764" category="paragraph">如果啟用變更分析、請修改 _AgentConfiguration_ 或 _operer-config.yaml_ 以取消變更管理區段的註解、並在變更管理區段下包含 _kindsToIgnoreFromWatch ：「 Secrets 」。請注意此行中單引號和雙引號的存在和位置。</block>
-  <block id="342761835c95d3618833ced82b6260ac" category="section-title">正在驗證Kubernetes Checksum</block>
-  <block id="db313a156e59a943eb317e556df6b532" category="paragraph">Data Infrastructure Insights 代理程式安裝程式會執行完整性檢查、但有些使用者可能會想要在安裝或套用下載的成品之前執行自己的驗證。若要執行純下載作業（而非預設的下載與安裝）、這些使用者可以編輯從UI取得的代理程式安裝命令、並移除後續的「install」選項。</block>
-  <block id="8ff498fedef16be83cafa8d00c04dd6d" category="list-text">從命令中刪除後端"--install"。</block>
-  <block id="facc439433117841a75e83541c8f2373" category="paragraph">下載專用命令會將 Data Infrastructure Insights 中所有必要的成品下載到工作目錄中。這些成品包括但不限於：</block>
-  <block id="700459827d4941a6a127bc7de7938d5d" category="list-text">簽署的Checksum檔案（sh256.signed）</block>
-  <block id="e1f4fa985535cfb2dd4b3f50c918b7eb" category="list-text">用於簽名驗證的一個PES檔案（NetApp_CERT.pem）</block>
-  <block id="7c9f5399bb10652ab7e06778c4de02e1" category="paragraph">您可以確認其指紋為下列項目、以驗證該PEM檔案：</block>
-  <block id="7a2babd4fa48c9b0c07e4b865ff53efa" category="paragraph">更具體地說、</block>
-  <block id="76dfc651463ab4e67ce2140b8aadb473" category="paragraph">簽署的Checksum檔案可以使用PEM檔案進行驗證：</block>
   <block id="ae233b4bee0ed9f611ffe211f5804e00" category="section-title">公差和污染</block>
   <block id="6aae913b976c156306d8a5cbbbc06ad5" category="inline-link-macro">在 _AgentConfiguration_ 中</block>
   <block id="d6f0c62217650cf8ede1bd5e1e862b5a" category="paragraph">_NetApp-CI-telegraf-DS_ 、 _NetApp-CI-Fluent-bit-DS_ 和 _NetApp-CI-net-觀察者 -L4-DS_ 示範必須在叢集中的每個節點上排程一個 Pod 、以便正確收集所有節點上的資料。已將操作員配置爲允許某些已知的 * 污點 * 。如果在節點上配置了任何自定義污點，從而阻止 Pod 在每個節點上運行，則可以爲這些污點創建 *公差 * <block ref="dc90f93af5ccf5020646213d9b7d2c3d" category="inline-link-macro-rx"></block>。如果您已將自訂污點套用至叢集中的所有節點、您也必須在操作員部署中新增必要的容錯功能、以便排程及執行操作員 Pod 。</block>
@@ -11823,4 +11814,13 @@
   <block id="e60c852a7a4c8de70f56c1772db9c0f5" category="paragraph">在收集器的 _Advanced Configuration_ 設定中啟用此選項時，工作負載安全性會將 FPolicy 引擎設定為原型模式。ONTAP 9.15 版及更新版本均支援原型模式。</block>
   <block id="502f573701c400ca3de6252b1c8e6e9e" category="paragraph">如需此功能的詳細資訊<block ref="5c3d3ed23ecd4e0a61ac3e8d31f3a637" category="inline-link-macro-rx"></block>，請參閱。</block>
   <block id="e28cace0b0e193aac1db472078caa8fb" category="paragraph">protobuf 需要特定權限（其中部分或全部可能已經存在）：</block>
+  <block id="435f137980b3b041bbc191c90260bf28" category="section-title">驗證 Kubernetes 監控操作員影像簽名</block>
+  <block id="d9348d075dc7b3c91cff99d56dfc327b" category="inline-link-macro">Kubernetes文件</block>
+  <block id="d4f8460ff8f7a6b9a2f0fa99bf9124dd" category="paragraph">操作員的映像及其部署的所有相關映像均由 NetApp 簽署。您可以在安裝前使用 CO簽署 工具手動驗證映像，或設定 Kubernetes 接入控制器。如需更多詳細資料<block ref="1aa503106da392b948a493e0ecf5782d" category="inline-link-macro-rx"></block>，請參閱。</block>
+  <block id="c26df34b044a0a427be188b6e37d45c2" category="paragraph">用於驗證映像簽名的公開金鑰可在監控操作員安裝方塊的 _ 選擇性：將操作員映像上傳至您的私有儲存庫 &gt; 映像簽章公開金鑰 _ 下取得</block>
+  <block id="0bc181a97045ca85d89be70b124298b4" category="paragraph">若要手動驗證影像簽名，請執行下列步驟：</block>
+  <block id="b08a05b2c1b7cc9bf90ee55d748a813c" category="list-text">複製並執行「影像擷取片段」</block>
+  <block id="2e9d4d6615af62102584a57c2c8ddacd" category="list-text">出現提示時，請複製並輸入儲存庫密碼</block>
+  <block id="2cea2fa4f716d1fa2efbffe877eb702c" category="list-text">儲存影像簽名公開金鑰（範例中的 DII 映像簽署 .pub ）</block>
+  <block id="55d6bfb079ee69230d07a9a9c1c17b66" category="list-text">使用 CO簽署 來驗證影像。請參閱以下代碼使用範例</block>
 </blocks>
