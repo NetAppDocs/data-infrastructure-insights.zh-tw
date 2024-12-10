@@ -250,6 +250,9 @@ Data Infrastructure Insights 支援的依字母順序排列的資料收集器清
 | link:task_dc_na_ontap_rest.html["NetApp ONTAP REST 收集器"] | 基礎架構 
 
 
+| link:task_dc_na_ontap_all_san_array.html["NetApp ONTAP All SAN Array （ ASA ）收集器"] | 基礎架構 
+
+
 | link:task_dc_na_cdot.html["NetApp ONTAP Select"] | 基礎架構 
 
 
@@ -305,6 +308,9 @@ Data Infrastructure Insights 支援的依字母順序排列的資料收集器清
 
 
 | link:task_config_telegraf_agent.html#ubuntu-and-debian["Ubuntu 擴大機； Debian"] | 服務 
+
+
+| link:task_dc_vast_datastore.html["龐大的資料存放區"] | 基礎架構 
 
 
 | link:task_dc_vmware.html["VMware vSphere"] | 基礎架構 

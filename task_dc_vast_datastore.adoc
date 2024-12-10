@@ -1,0 +1,135 @@
+---
+sidebar: sidebar 
+permalink: task_dc_vast_datastore.html 
+keywords: data collector, VAST storage, VAST data 
+summary: 設定大型資料資料存放區儲存資料收集器。 
+---
+= 龐大的資料存放區資料收集器
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Data Infrastructure Insights 使用龐大的資料存放區資料收集器來收集庫存和效能資料。
+
+
+
+== 術語
+
+對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示最常用的資產術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+
+[cols="2*"]
+|===
+| 廠商/模型術語 | Data Infrastructure Insights 術語 
+
+
+| 電信業者 | 磁碟（位置的磁碟櫃部分欄位） 
+
+
+| 叢集 | 儲存設備 
+
+
+| CNodes | StorageNode （類型 = cnode ） 
+
+
+| dNodes | StorageNode （類型 = dnode ） 
+
+
+| NVRAM | 磁碟 
+
+
+| 受保護的路徑 | 內部 Volume Sync 
+
+
+| QoS 原則 | 內部 Volume （ QoS 限制） 
+
+
+| 配額 | 配額 
+
+
+| SSD | 磁碟 
+
+
+| 租戶 | 儲存虛擬機器 
+
+
+| ViewPolicies | 檔案網格（用於權限） 
+
+
+| 檢視 | 內部Volume 
+|===
+附註：這些只是通用的術語對應、可能不代表此資料收集器的每個案例。
+
+
+
+== 需求
+
+* 大型資料存放區系統 IP 位址或完整網域名稱
+* 使用者名稱 / 密碼存取龐大的系統
+* 連接埠需求： HTTPS 443
+
+
+
+
+== 組態
+
+[cols="2*"]
+|===
+| 欄位 | 說明 
+
+
+| 大型資料存放區儲存設備 IP/ 主機名稱 | 儲存系統的 IP 位址或 FQDN 
+
+
+| 使用者 | 大型儲存使用者名稱 
+
+
+| 密碼 | 大儲存密碼 
+|===
+
+
+== 進階組態
+
+[cols="2*"]
+|===
+| 欄位 | 說明 
+
+
+| 連線類型 | 選擇HTTP或HTTPS。也會顯示預設連接埠。 
+
+
+| 置換TCP連接埠 | 如果空白、請使用「連線類型」欄位中的預設連接埠、否則請輸入要使用的連線連接埠 
+
+
+| 庫存輪詢時間間隔（分鐘） | 預設值為60分鐘 
+
+
+| 效能意見調查時間間隔（秒） | 預設值為 300 
+|===
+
+
+== 疑難排解
+
+如果您在使用此資料收集器時遇到問題、請嘗試下列事項：
+
+
+
+=== 庫存
+
+[cols="2*"]
+|===
+| 問題： | 試用： 
+
+
+| 「無效的登入認證資料」、並顯示錯誤訊息「Policy Not Allow（原則不允許）」或「you are not authorized（您未獲授權）」 | 透過Pure http介面驗證Pure使用者帳戶和密碼 
+|===
+您可以在頁面或中找到其他link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]資訊。

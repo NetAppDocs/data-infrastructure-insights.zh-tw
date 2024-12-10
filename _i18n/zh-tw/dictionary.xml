@@ -11822,4 +11822,40 @@
   <block id="55d6bfb079ee69230d07a9a9c1c17b66" category="list-text">使用 CO簽署 來驗證影像。請參閱以下代碼使用範例</block>
   <block id="f0eddc4fb4218ed4ec07da7604fbc1c8" category="inline-image-macro">修改部署選項，寬度 =700</block>
   <block id="593e78308f625f4551ee5b44b6d582e5" category="paragraph"><block ref="593e78308f625f4551ee5b44b6d582e5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ee063f6b962df93a461d2ffc011f30c6" category="inline-link-macro">NetApp ONTAP All SAN Array （ ASA ）收集器</block>
+  <block id="9e21612beb462f7bd1f813292fecce9e" category="cell"><block ref="9e21612beb462f7bd1f813292fecce9e" category="inline-link-macro-rx"></block></block>
+  <block id="b9b8d4cf4d94212bab3d8ce132b74a37" category="inline-link-macro">龐大的資料存放區</block>
+  <block id="9b445526869ff95a6549cc8c81c4131b" category="cell"><block ref="9b445526869ff95a6549cc8c81c4131b" category="inline-link-macro-rx"></block></block>
+  <block id="53c9e67c854dc8f210a1632d7ec33799" category="summary">ONTAP All SAN Array Data Collector</block>
+  <block id="a6415bd2448b7919eed8f0af42d67ee9" category="doc">NetApp ONTAP All SAN Array （ ASA ）資料收集器</block>
+  <block id="b405c90a99544fe264526a99edd2f41c" category="paragraph">此資料收集器會使用 REST API 呼叫、從執行 ONTAP 9.16.0 及更高版本的儲存系統擷取庫存、 EMS 記錄和效能資料。</block>
+  <block id="87df89e1b5a76047447b71a01aec2982" category="list-text">ONTAP 9.16.0 版或更新版本。</block>
+  <block id="7032ac73bd8241edcec890cdcfabcfa3" category="summary">設定大型資料資料存放區儲存資料收集器。</block>
+  <block id="ffc9339c36ed95025058c23ec2753b24" category="doc">龐大的資料存放區資料收集器</block>
+  <block id="db6d41642fd36481ced7748f3f81bc64" category="paragraph">Data Infrastructure Insights 使用龐大的資料存放區資料收集器來收集庫存和效能資料。</block>
+  <block id="1d6af794b2599c1407a83029a09d1ecf" category="cell">電信業者</block>
+  <block id="457f8d4c765467475ea256add7a3fdc6" category="cell">磁碟（位置的磁碟櫃部分欄位）</block>
+  <block id="5b90b71cdc32ad1ac3a7c9235afb9c2f" category="cell">CNodes</block>
+  <block id="c514ac300b6b6e64d5d0b5cc21c5406a" category="cell">StorageNode （類型 = cnode ）</block>
+  <block id="abcef8b528b45f6e48e135521400cf7f" category="cell">dNodes</block>
+  <block id="da316cef9dacf85ad51ef2feaf010065" category="cell">StorageNode （類型 = dnode ）</block>
+  <block id="15a01110f16efe243b3f75f198287ea2" category="cell">NVRAM</block>
+  <block id="2d4aef30a49a581a6ed89ce840054235" category="cell">磁碟</block>
+  <block id="c8e6306840fb73fee1dbc570f9991451" category="cell">受保護的路徑</block>
+  <block id="41ad9be6d4308d2a5b19ec77094e428e" category="cell">內部 Volume Sync</block>
+  <block id="4ea922c8a9600ba45c7d092b9fac3071" category="cell">QoS 原則</block>
+  <block id="8d83e8b6efd5f54fe3b580a2f28b2f16" category="cell">內部 Volume （ QoS 限制）</block>
+  <block id="fb0d8a1c841cd92afd4cb16ddedaeed5" category="cell">配額</block>
+  <block id="80307ff54caa7cf20882ee314544c98d" category="cell">SSD</block>
+  <block id="ab46b0da4c689d676afbc74038c40f71" category="cell">租戶</block>
+  <block id="c86f4cd8354a2b53d0d427eea434f0bc" category="cell">ViewPolicies</block>
+  <block id="a1c6152b473e54093548a39b0a49cf60" category="cell">檔案網格（用於權限）</block>
+  <block id="ed4832a84ee072b00a6740f657183598" category="cell">檢視</block>
+  <block id="e2ab08588eb609321db99af452ec8dbd" category="list-text">大型資料存放區系統 IP 位址或完整網域名稱</block>
+  <block id="9658c9c5c5e1ce7340ab09e1dcacf227" category="list-text">使用者名稱 / 密碼存取龐大的系統</block>
+  <block id="7abb31f5998b15d8c5e15f3bff14bab8" category="list-text">連接埠需求： HTTPS 443</block>
+  <block id="32ff8302603799728a4e2397623f2b3a" category="cell">大型資料存放區儲存設備 IP/ 主機名稱</block>
+  <block id="a59ed6c78eadc966927de4b65adc1801" category="cell">儲存系統的 IP 位址或 FQDN</block>
+  <block id="9f329f951728d9fd2dc3c86d970b2e7f" category="cell">大型儲存使用者名稱</block>
+  <block id="50f8e432f3a17936f4fd1dee864d7ff1" category="cell">大儲存密碼</block>
 </blocks>
