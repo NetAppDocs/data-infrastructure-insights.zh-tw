@@ -20,7 +20,43 @@ NetApp持續改善及強化其產品與服務。以下是 Data Infrastructure In
 
 
 
+== 2024 年 12 月
+
+
+
+=== SAN Analyzer 簡介：強化區塊工作負載的可見度
+
+SAN 在處理重要工作負載方面扮演重要角色，但其複雜性可能導致重大中斷和客戶中斷。有了 DII * SAN Analyzer * ，管理 SAN 變得更簡單，更有效率。這項功能強大的工具提供端點對端點的可見度，可將相依性從 VM/ 主機對應至網路， LUN 及儲存設備。藉由提供互動式拓撲圖， SAN Analyzer 可讓您找出問題，瞭解變更，並增強對資料流的理解。使用 SAN Analyzer 簡化複雜 IT 環境中的 SAN 管理，並提高您對區塊工作負載的可見度。
+
+image:san_analyzer_example_with_panel.png["儲存系統的 SAN Analyzer 拓撲圖"]
+
+
+
+=== 利用智慧型主機解壓縮和 VM 回收技術來最佳化 VM 成本
+
+Data Infrastructure Insights 可分析環境的歷史行為，建立短期和長期預測，針對關閉電源和閒置的 VM ，產生主機汰換和回收的詳細建議，協助您管理基礎架構和授權成本。這些建議有助於確保效能穩定，釋放未使用的容量，並減少記憶體和 CPU 分配。
+
+image:vm_optimization_summary.png["VM 最佳化摘要畫面"]
+
+
+
+=== 利用時間圖表和表格 Widget 支援來發掘記錄洞見
+
+現在，您可以利用時間圖表（長條圖，直線圖，區域圖）來識別記錄資料中的趨勢和模式，例如重複發生的錯誤或活動尖峰，藉此提供寶貴的系統行為洞見。此外，使用表格之後，您現在可以直接在儀表板中加入記錄訊息，以更全面的方式檢視記錄詳細資料。
+
+image:log_insights_dashboard_example.png["在儀表板上記錄洞見"]
+
+
+
 == 2024 年 11 月
+
+
+
+=== 全新工作負載安全警示 API
+
+使用新的工作負載安全link:concept_cs_api.html["* cloudsecure_forensics 。 alerts* API"]功能檢索鑑識警示詳細資料。
+
+image:ws_forensics_alerts_api.png["工作負載安全性鑑識警示 API"]
 
 
 
