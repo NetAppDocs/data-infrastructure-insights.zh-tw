@@ -11884,4 +11884,8 @@
   <block id="17411e5191f440928552bd359518e697" category="cell">有效；傳回與 AutoDir1 相符的第一層目錄，以及與 AutoFile03242022 相符的第二層目錄的所有活動（案例不敏感）</block>
   <block id="a874dae9695be1c2a6ef02373776f7b7" category="cell">搜尋字串中的星號（ \* ）會搜尋所有項目。但是，諸如 &lt;searchTerm&gt; 或 &lt;searchTerm&gt; 等領先的通配符字符串將導致查詢速度緩慢。若要獲得更好的效能、請改用字首字串、格式為 &lt;searchTerm&gt; * （換句話說、在搜尋詞彙後加上星號（ * ）。範例：使用字串 _testvolume * 、而非 _*testvolume 或 _*test* Volume 。使用目錄搜尋，以遞歸方式查看指定資料夾下的所有活動（階層式搜尋）。例如，「 /path1/path2/path3// 」會在 /path1/path2/path3 下以遞歸方式列出所有活動。或者、也可以使用「 All Activity) 標籤下的「 Add to Filter 」（新增至篩選器）選項。</block>
   <block id="980f8b6539b7c131f66cdde66f81a98f" category="cell">目錄路徑篩選器（以 / 結尾的路徑字串）建議使用最多 4 個目錄深度，以獲得更快的結果。例如，如果目錄路徑為 /aaa/BBB/CCC/DDD ，請嘗試搜尋「 /AAA/BBB/CCC/DDD/」 ，以更快載入資料。</block>
+  <block id="26ae3eeb85fe056d40f1b756635ebb59" category="section-title">利用鑑識分組主動管理風險</block>
+  <block id="144b03f9a57dbd781b29163e6412a6a3" category="paragraph">隆重推出我們最新的功能，旨在增強您的安全性與資源管理功能！利用進階的鑑識群組依據功能和階層式的多個群組依據支援，您現在可以輕鬆識別哪些使用者存取特定資料夾，判斷最活躍的使用者和共用，並追蹤作用中的用戶端 IP 位址，主動管理風險。找出最容易存取的檔案和資料夾，以最佳化儲存和頻寬使用率，並透過識別真實使用者來加強對系統存取的控制。</block>
+  <block id="15b5571e4da70619b1e8530a8df35661" category="inline-image-macro">取證範例畫面顯示分組依據</block>
+  <block id="d932f771e537d16693bed2e69269a746" category="paragraph"><block ref="d932f771e537d16693bed2e69269a746" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
