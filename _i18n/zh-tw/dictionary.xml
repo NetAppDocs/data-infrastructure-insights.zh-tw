@@ -1951,8 +1951,6 @@
   <block id="f2b5d43aba260933c552d69977b7274d" category="list-text">* 訂閱 * Data Infrastructure Insights 、透過<block ref="ae0970f4d06315494d31beaa05a7be05" category="inline-link-macro-rx"></block>直接或持續不中斷地存取您的資料<block ref="e91d3f98f4b43abdea3c839a7777954c" category="inline-link-macro-rx"></block>。</block>
   <block id="7bc1d8b07dfc0e98950abc0c7f3979a5" category="inline-link-macro">資訊與地區</block>
   <block id="6c36c3c54c4f691f7ed13a16d49bbde7" category="paragraph">在註冊過程中、您可以選擇全球區域來主控 Data Infrastructure Insights 環境。有關詳細信息，請參閱 Data Infrastructure Insights <block ref="286a302a1ee50fd59eb368d3d9779037" category="inline-link-macro-rx"></block>（關於 Data Infrastructure Insights ）。</block>
-  <block id="b56a9b49aabd38d375de7e8e4f8b5622" category="inline-link-macro">Data Infrastructure Insights 定價</block>
-  <block id="cee7deeaab7259c2e4c56b35d6bb0c93" category="paragraph">如需 Data Infrastructure Insights Basic 與 Premium Edition 中可用功能的完整比較<block ref="c893050db2e06595e0b03cb2a1aae724" category="inline-link-macro-rx"></block>、請參閱頁面。</block>
   <block id="ef66b5abbe1e0b79e23deb05dd2d11a9" category="admonition">非使用中的 Data Infrastructure Insights Basic Edition 環境會被刪除、並回收其資源。如果連續30天沒有使用者活動、環境將視為非作用中、如果連續7天沒有擷取資料。Data Infrastructure Insights 會傳送通知、並在刪除環境之前提供四天的寬限期。</block>
   <block id="d618d9be50e37adf260935938e49af96" category="inline-image-macro">掛鎖</block>
   <block id="12ddfc86083937d7a126f2fd8615aa6b" category="inline-xref">模組評估</block>
@@ -11888,4 +11886,6 @@
   <block id="144b03f9a57dbd781b29163e6412a6a3" category="paragraph">隆重推出我們最新的功能，旨在增強您的安全性與資源管理功能！利用進階的鑑識群組依據功能和階層式的多個群組依據支援，您現在可以輕鬆識別哪些使用者存取特定資料夾，判斷最活躍的使用者和共用，並追蹤作用中的用戶端 IP 位址，主動管理風險。找出最容易存取的檔案和資料夾，以最佳化儲存和頻寬使用率，並透過識別真實使用者來加強對系統存取的控制。</block>
   <block id="15b5571e4da70619b1e8530a8df35661" category="inline-image-macro">取證範例畫面顯示分組依據</block>
   <block id="d932f771e537d16693bed2e69269a746" category="paragraph"><block ref="d932f771e537d16693bed2e69269a746" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ee0b2f1c8ad7945cf603e8d752a5e7b5" category="inline-link-macro">Data Infrastructure Insights 版本</block>
+  <block id="bbf9080a1bf1fb2f62558ce683d64be0" category="paragraph">如需 Data Infrastructure Insights Basic 與 Premium Edition 中可用功能的完整比較<block ref="49bb501f6c401ae5b06c3dbe5fc987bd" category="inline-link-macro-rx"></block>、請參閱頁面。</block>
 </blocks>

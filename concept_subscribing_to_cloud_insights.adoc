@@ -25,7 +25,7 @@ keywords: subscribe, trial, subscription, contract, raw capacity, region, data r
 
 在註冊過程中、您可以選擇全球區域來主控 Data Infrastructure Insights 環境。有關詳細信息，請參閱 Data Infrastructure Insights link:security_information_and_region.html["資訊與地區"]（關於 Data Infrastructure Insights ）。
 
-如需 Data Infrastructure Insights Basic 與 Premium Edition 中可用功能的完整比較link:https://www.netapp.com/cloud-services/cloud-insights/editions-pricing["Data Infrastructure Insights 定價"]、請參閱頁面。
+如需 Data Infrastructure Insights Basic 與 Premium Edition 中可用功能的完整比較link:https://www.netapp.com/cloud-services/cloud-insights/editions-pricing["Data Infrastructure Insights 版本"]、請參閱頁面。
 
 
 WARNING: 非使用中的 Data Infrastructure Insights Basic Edition 環境會被刪除、並回收其資源。如果連續30天沒有使用者活動、環境將視為非作用中、如果連續7天沒有擷取資料。Data Infrastructure Insights 會傳送通知、並在刪除環境之前提供四天的寬限期。
