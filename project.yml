@@ -87,6 +87,8 @@ sidebar:
         url: "/task_query_copy_table_values.html"
       - title: 查詢記錄
         url: "/concept_log_explorer.html"
+      - title: 識別非使用中的裝置
+        url: "/task_identify_inactive_devices.html"
     - title: 洞見
       entries:
       - title: 總覽

@@ -10128,11 +10128,9 @@
   <block id="14af2cecff51d4bd977845145cc871e8" category="list-text">*刪除*：已移除且不再可用的資料收集器。</block>
   <block id="b92e6e167ffd0f1968a046d49559d1cd" category="list-text">採購單位：專為託管資料收集器而設的電腦、通常是虛擬機器。此電腦通常與受監控項目位於相同的資料中心/ VPC。</block>
   <block id="c5b4625b23c5673b268b9b686102faa0" category="list-text">資料來源：與硬體或軟體堆疊進行通訊的模組。它由在AU電腦上執行的組態和程式碼所組成、可與裝置進行通訊。</block>
-  <block id="14f8a78e828f1a5ed0a16f4eb166171e" category="summary">識別非作用中的裝置可讓您選擇刪除或將其分配給作用中的角色。</block>
   <block id="ee5c6c936b3e5e6b3191a941d5161f88" category="doc">識別非使用中的裝置</block>
   <block id="dedb4128ca8f8589aeee2da1198fdc45" category="paragraph">識別您擁有的資產及使用者是「適當調整規模」及釋出未使用基礎架構的關鍵。您可以輕鬆地重新分配或取消分配使用不足的資源、避免不必要的採購。</block>
   <block id="89335488274d94cea3defd958dbbabbe" category="paragraph">請使用下列步驟來識別非使用中資產。</block>
-  <block id="62a2ac40719f6cb31d5e1ad43d9d8a19" category="list-text">瀏覽至 * 瀏覽 -&gt; + 新指標查詢 * 。</block>
   <block id="9ec73c52f582999e7cc8d920ca844c81" category="list-text">從下拉式清單中選取 _Storage_ 。</block>
   <block id="4c6af067d4990a4c05731f55b8095467" category="list-text">按一下齒輪、並將 _IsActive_ 新增為欄。</block>
   <block id="49eec5d17a233960170b22a7e35d15a7" category="paragraph">顯示檢查的列為作用中。「 x 」表示非使用中的裝置。</block>
@@ -11891,4 +11889,26 @@
   <block id="b7e85347cdffb5889c57e4b1ad785a2e" category="list-text">用於驗證二進位簽章的公開憑證</block>
   <block id="bfc63dcde995168de645c7c0b1b67357" category="paragraph">從 DII 下載和複製的安裝程式碼片段會自動檢查安裝指令碼的總和，而 Telegraf 二進位的簽章則會由安裝指令碼驗證。</block>
   <block id="26f2872f4049fcba9927c1b41d6502d3" category="section-title">驗證 Checksum 值</block>
+  <block id="2cc37e7dae91aa6d162030f273b8b089" category="section-title">建立及使用 API 存取權杖</block>
+  <block id="f7e5cf33ae8a7c09bd73c6eb95b3e017" category="paragraph">若要建立用於擷取 Telegraf 資料的 API 存取權杖，請執行下列其中一項：</block>
+  <block id="8ddcacd36bfaa54f9de9d8d1c6d98ca9" category="section-title">透過資料收集器安裝頁面建立</block>
+  <block id="394d78dd95d6065caac482adbe22a898" category="list-text">瀏覽至您要使用之平台（ Windows ， Linux ）的資料收集器安裝頁面。</block>
+  <block id="7db0aa7259305c6d7d0e72d5ca0ebe3e" category="list-text">使用 + API 存取權杖按鈕建立權杖。</block>
+  <block id="eaaf6f42e491bead6370a5960ab7260c" category="list-text">輸入名稱，然後按一下儲存。</block>
+  <block id="0972f446b6a6a91283e10881d0cd5cf0" category="list-text">現在應該在下拉式清單中選取權杖名稱，並在安裝收集器時使用該權杖名稱。</block>
+  <block id="4cb3c725652f3200a0496010ad323294" category="section-title">手動建立 API 存取權杖</block>
+  <block id="cc7ffe0790f9f9e2c594de1ca95da934" category="list-text">瀏覽至 Admin&gt;API Access 。</block>
+  <block id="f567a7e9fa5b6ea07dfbcb1f10ba898f" category="list-text">按一下 + API 存取權杖。</block>
+  <block id="da2b1a111c6e52a8a048f3f7d02e27f5" category="list-text">輸入名稱和描述（可選）。</block>
+  <block id="2a5f374bd17838390e94539cf1c9edc6" category="list-text">在「此權杖將用於呼叫哪種類型的 API ？」下，選取「僅資料擷取」，然後取消選取「擷取單元」。</block>
+  <block id="bde31c4af787b8aa67aa8f46d9927e06" category="list-text">在「權限」下，選取「讀取 / 寫入」。</block>
+  <block id="47513702e119e549693050eff5813577" category="list-text">取消選取「自動旋轉 Kubernetes 的權杖」。</block>
+  <block id="e1fda48afafafca9c77b96f3325e10f1" category="paragraph">若要使用新建立的 API 存取權杖，請從安裝程式頁面上的「選擇現有的 API 存取權杖或建立新的 API 存取權杖」下拉式清單中選取。請注意，只能使用具有下列內容的權杖：</block>
+  <block id="9533e239d3608e18a0887fa1e16eeb68" category="list-text">API 類型：僅「資料擷取」</block>
+  <block id="80ca9e629a03eaeba4e8aee7e74f24d0" category="list-text">權限：讀取 / 寫入</block>
+  <block id="4b6539abc7c077e53508d1262f8b50a0" category="list-text">Kubernetes 自動旋轉：關閉</block>
+  <block id="dc404ee30c75f557f651d109560394f2" category="summary">識別非作用中的裝置可讓您選擇刪除它們，或將它們分配給作用中的角色。</block>
+  <block id="ca351e1a429ee72dbdb2061c22743ef6" category="list-text">瀏覽 * 可服務性 &gt; 瀏覽 -&gt; + 新指標查詢 * 。</block>
+  <block id="5e7f24385025eba3461014d3d964455b" category="paragraph">若要移除非作用中的裝置，只要選取要移除的裝置，然後在 * 大量動作 * 下拉式清單中，選取 _ 刪除非作用中的裝置 _ 。</block>
+  <block id="72a442c57900f55848aa4acb856a507d" category="sidebar">識別非使用中的裝置</block>
 </blocks>

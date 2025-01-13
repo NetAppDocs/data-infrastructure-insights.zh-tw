@@ -1,21 +1,18 @@
 ---
 sidebar: sidebar 
 permalink: task_identify_inactive_devices.html 
-keywords: inactive, device, 
-summary: 識別非作用中的裝置可讓您選擇刪除或將其分配給作用中的角色。 
+keywords: inactive, device, remove, removing, identify, identifying 
+summary: 識別非作用中的裝置可讓您選擇刪除它們，或將它們分配給作用中的角色。 
 ---
 = 識別非使用中的裝置
-:toc: macro
 :hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
-:toc: 
 :toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
@@ -24,10 +21,12 @@ summary: 識別非作用中的裝置可讓您選擇刪除或將其分配給作�
 請使用下列步驟來識別非使用中資產。
 
 .步驟
-* 瀏覽至 * 瀏覽 -> + 新指標查詢 * 。
+* 瀏覽 * 可服務性 > 瀏覽 -> + 新指標查詢 * 。
 * 從下拉式清單中選取 _Storage_ 。
 * 按一下齒輪、並將 _IsActive_ 新增為欄。
 +
 顯示檢查的列為作用中。「 x 」表示非使用中的裝置。
 
 
+
+若要移除非作用中的裝置，只要選取要移除的裝置，然後在 * 大量動作 * 下拉式清單中，選取 _ 刪除非作用中的裝置 _ 。
