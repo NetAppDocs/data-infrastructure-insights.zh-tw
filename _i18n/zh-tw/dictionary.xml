@@ -4034,9 +4034,7 @@
   <block id="1fec62ac6ef0096301dec6c9552701f7" category="cell">遞迴查詢指定目錄下的所有檔案和資料夾</block>
   <block id="e16b5b7f26f54214445cbe38d72c2828" category="cell">快速</block>
   <block id="f6a092f816e6eb604694d6a921395ccb" category="cell">目錄搜尋最多 4 個目錄的速度很快。</block>
-  <block id="840207e609d7b9a7b687b3b2712e903d" category="cell">遞迴查詢指定路徑 regex 下的所有檔案和資料夾（ test* 可能表示檔案或目錄或兩者皆是）</block>
   <block id="e7b02c274fe199317927b2a2d54e280e" category="cell">慢一點</block>
-  <block id="4b88bc6659fa6ffa1353db049ea38556" category="cell">與目錄搜尋相比、 Directory+ File regex 搜尋速度較慢。</block>
   <block id="1bd0462f5987c1382af61035c6ea62ff" category="cell">搜尋超過 4 個目錄的速度較慢。</block>
   <block id="2127f473d96f54c997a492a6ca024c5b" category="cell">任何其他非路徑型篩選器。建議使用報價的使用者和實體類型篩選條件、例如、 User="Administrator" Entity Type ="txt"</block>
   <block id="9b9935ad5969c28de13381a2e512b47c" category="paragraph">附註：</block>
@@ -4071,7 +4069,6 @@
   <block id="e0c965c954b5a9fdc33c5b0516799f7d" category="cell">傳回所有開頭為「AutoRansomUser4_03162022」的項目</block>
   <block id="eae639a70006feff484a39363c977e24" category="cell">網域</block>
   <block id="3c16a1572c295ef2bbd770516679c559" category="cell">傳回目標欄位為空白的結果</block>
-  <block id="012f3ec70fcf8eccc1fce56e4a0b94b6" category="section-title">路徑/原始路徑搜尋</block>
   <block id="64048c881c93933680d02730e9d9ce63" category="paragraph">包含/不含/的搜尋結果會有所不同</block>
   <block id="53ca5edb3205aa3468395e1789114a60" category="cell">無法運作</block>
   <block id="1d7531d059e4088a0878ea4eb94d32b6" category="cell">"/AutoDir1/AutoFile03242022"</block>
@@ -6554,10 +6551,7 @@
   <block id="b5648f15565fb8185bfc83aaabee9577" category="paragraph">如果您的作業系統未使用systemd：</block>
   <block id="936ff88b3ce432ac2624f7f2bb4998a4" category="paragraph">若要在Ubuntu / Debian上解除安裝代理程式、請在Bash終端機中執行下列作業：</block>
   <block id="7f3a9bda6122a676154f73d5edf02232" category="list-text"><block ref="760050cb55c606cd7ef0af21f798bf45" category="inline-link-macro-rx"></block>。</block>
-  <block id="99b7973dda927022b1a7232d7b78e926" category="section-title">驗證Checksum</block>
-  <block id="6a9aa39bb342c83778b90096fb82f44f" category="paragraph">Data Infrastructure Insights 代理程式安裝程式會執行完整性檢查、但有些使用者可能會想要在安裝或套用下載的成品之前執行自己的驗證。您可以下載安裝程式並為下載的套件產生Checksum、然後將Checksum與安裝說明中顯示的值進行比較、以完成此作業。</block>
   <block id="1078df24543dad61e1b5b51f611f5b0f" category="section-title">無需安裝即可下載安裝程式套件</block>
-  <block id="48feb91430f93bd8ac9740e9cdc40c75" category="paragraph">若要執行純下載作業（而非預設的下載與安裝）、使用者可以編輯從UI取得的代理程式安裝命令、並移除後置「install」選項。</block>
   <block id="deadee5e2cfce7600cfd5def40a7d618" category="paragraph">請遵循下列步驟：</block>
   <block id="8c386e0a7a8cfc20ef9a26dacd925e69" category="list-text">依照指示複製代理程式安裝程式程式片段。</block>
   <block id="225b18b0098145b352b8fbf6c04e8098" category="list-text">不要將程式碼片段貼到命令視窗中、而是貼到文字編輯器中。</block>
@@ -6571,14 +6565,8 @@
   <block id="37756806bad02e3e8fb3d5413278c336" category="paragraph">下載專用命令會將 Data Infrastructure Insights 中所有必要的成品下載到工作目錄中。這些成品包括但不限於：</block>
   <block id="8d4a361a3f25b78818c569d8f15cf4a6" category="list-text">安裝指令碼</block>
   <block id="b015398c226e1e3576258432ece31819" category="list-text">環境檔案</block>
-  <block id="004cac3ce7d67014b5fadcffaf9b5b70" category="list-text">Y反 洗錢檔案</block>
-  <block id="9f32134bbefffdc9df70a2d73c2df6a6" category="list-text">Checksum 檔案（結尾為 sho256.signed 或 sho256.ps1 ）</block>
-  <block id="4f1c754cd67cd57cebe0be2f5e8638a4" category="paragraph">安裝指令碼、環境檔案及Yaml檔案均可使用目視檢查進行驗證。</block>
-  <block id="d8f6d626cfe2a4f97d97ff93d95db51b" category="section-title">產生Checksum值</block>
   <block id="d1703bc5bb53c90ffbbae52dfe829603" category="paragraph">若要產生Checksum值、請針對您的適當平台執行下列命令：</block>
   <block id="9374ddadb9776b458a2963573b22f63d" category="list-text">RHEL/Ubuntu：</block>
-  <block id="aacd43790bd404cab1a350cb047a9a9d" category="section-title">驗證 Checksum</block>
-  <block id="43e3c65a555911ad6d7235d9e9206e4c" category="paragraph">從 Checksum 檔案擷取預期的 Checksum</block>
   <block id="47a6cd89e04d0d805a75aa0fe5822c20" category="list-text">非Windows：</block>
   <block id="b59ea01f26635c31c3c1df660848f6c8" category="section-title">安裝下載的套件</block>
   <block id="6c32334bfce9f857b0fdbdca68040a0b" category="paragraph">一旦所有成品都已通過驗證、即可執行下列步驟來啟動代理程式安裝：</block>
@@ -11596,7 +11584,6 @@
   <block id="8b323f07a8614b39412ac6f03ce45d0e" category="sidebar">工作負載安全性使用者管理</block>
   <block id="abc492c54ab99cf963d50d67acb42565" category="sidebar">事件率檢查器（代理程式規模調整指南）</block>
   <block id="a8df87f53c1b831dfc886e69dec19144" category="sidebar">活動鑑識：所有活動</block>
-  <block id="e5ac43b15443b9248d0df9b88a442cf9" category="sidebar">活動鑑識：實體</block>
   <block id="f9aae5fda8d810a29f12d1e61b4ab25f" category="sidebar">使用者</block>
   <block id="9b5911ec569b49f0ae81ecb2c9067806" category="sidebar">不受依賴的勒索軟體保護整合ONTAP</block>
   <block id="1c31d515d2e78422350a8dfc6a331a38" category="sidebar">ONTAP 存取遭拒整合</block>
@@ -11844,7 +11831,6 @@
   <block id="ce0a4ef9bdcf713141ba5af92b5449a2" category="list-text">群組依據下拉式清單將提供選項，可依使用者，路徑，實體類型等來分組活動</block>
   <block id="2f67a7ee2834facb4c2289f3f9f8a7b0" category="list-text">在表格上方會出現一個通用路徑按鈕，我們可以在表格上方取得內含實體路徑詳細資料的滑出面板。</block>
   <block id="2b9b3cac1b8e073b6533f3389ac6ad5f" category="list-text">以滑出式面板連結存取實體的 * 使用者 * <block ref="62cf04ad66abc0c5964885d5ae0624ca" category="inline-link-macro-rx"></block>。</block>
-  <block id="06bc22bdba9ef782b6246496ad8db1bd" category="list-text">*Path* 是 _entity_ 路徑。</block>
   <block id="2c20ae8e4eac25c0be12e73a9aea15f8" category="list-text">* 第一層資料夾（根目錄） * 是實體路徑的根目錄（小寫）。</block>
   <block id="d56292c623739eef9a2dbb8219169c5c" category="list-text">* 第二層資料夾 * 是實體路徑的第二層目錄（以較低的大小寫表示）。</block>
   <block id="21a75329f45abb51a3f768e3caaf47c5" category="list-text">* 第三層資料夾 * 是實體路徑的第三層目錄（以較低的大小寫表示）。</block>
@@ -11858,7 +11844,6 @@
   <block id="80662c9452da0395efcb752fc6efd791" category="list-text">活動計數會顯示為超連結；選取此選項會將選取的群組新增為篩選。活動表會根據該篩選條件更新。</block>
   <block id="f5048103eec701282d4bd47edb30c0dd" category="list-text">請注意，如果您變更篩選條件，變更時間範圍或重新整理畫面，則必須重新設定篩選條件，才能返回篩選結果。</block>
   <block id="a7b9ef6a74f521c07a42dfe2b3ba5984" category="list-text">可以從滑出面板新增篩選器。此值會新增至頂端_Filter by（篩選條件）清單中的適當篩選條件。</block>
-  <block id="a6c33488a3d8762852d55cced3c5bf96" category="list-text">* 實體的 Path* - 建議目錄路徑篩選器（以 / 結尾的路徑字串）最多 4 個目錄深、以獲得更快的結果。例如，「 _」 / 「 home/userX/nested1/nested2/"_ 」。如需詳細資訊、請參閱下表。</block>
   <block id="abc9548bbf938c1b00d7d7943eea69c6" category="list-text">第一層資料夾（根目錄） - 實體路徑的根目錄作為篩選器。例如，如果實體路徑為 /home/userX/nested1/nested2/ ，則可使用 Home 或 Home 。</block>
   <block id="ef05d086fd7703f59da830094683f26b" category="list-text">第二層資料夾 - 實體路徑篩選器的第二層目錄。例如，如果實體路徑為 /home/userX/nested1/nested2/ ，則可使用 userX 或「 userX 」。</block>
   <block id="d09c77be27888e5715284768b4b56a37" category="list-text">第三層資料夾–實體路徑篩選器的第三層目錄。</block>
@@ -11882,10 +11867,28 @@
   <block id="17411e5191f440928552bd359518e697" category="cell">有效；傳回與 AutoDir1 相符的第一層目錄，以及與 AutoFile03242022 相符的第二層目錄的所有活動（案例不敏感）</block>
   <block id="a874dae9695be1c2a6ef02373776f7b7" category="cell">搜尋字串中的星號（ \* ）會搜尋所有項目。但是，諸如 &lt;searchTerm&gt; 或 &lt;searchTerm&gt; 等領先的通配符字符串將導致查詢速度緩慢。若要獲得更好的效能、請改用字首字串、格式為 &lt;searchTerm&gt; * （換句話說、在搜尋詞彙後加上星號（ * ）。範例：使用字串 _testvolume * 、而非 _*testvolume 或 _*test* Volume 。使用目錄搜尋，以遞歸方式查看指定資料夾下的所有活動（階層式搜尋）。例如，「 /path1/path2/path3// 」會在 /path1/path2/path3 下以遞歸方式列出所有活動。或者、也可以使用「 All Activity) 標籤下的「 Add to Filter 」（新增至篩選器）選項。</block>
   <block id="980f8b6539b7c131f66cdde66f81a98f" category="cell">目錄路徑篩選器（以 / 結尾的路徑字串）建議使用最多 4 個目錄深度，以獲得更快的結果。例如，如果目錄路徑為 /aaa/BBB/CCC/DDD ，請嘗試搜尋「 /AAA/BBB/CCC/DDD/」 ，以更快載入資料。</block>
-  <block id="26ae3eeb85fe056d40f1b756635ebb59" category="section-title">利用鑑識分組主動管理風險</block>
-  <block id="144b03f9a57dbd781b29163e6412a6a3" category="paragraph">隆重推出我們最新的功能，旨在增強您的安全性與資源管理功能！利用進階的鑑識群組依據功能和階層式的多個群組依據支援，您現在可以輕鬆識別哪些使用者存取特定資料夾，判斷最活躍的使用者和共用，並追蹤作用中的用戶端 IP 位址，主動管理風險。找出最容易存取的檔案和資料夾，以最佳化儲存和頻寬使用率，並透過識別真實使用者來加強對系統存取的控制。</block>
-  <block id="15b5571e4da70619b1e8530a8df35661" category="inline-image-macro">取證範例畫面顯示分組依據</block>
-  <block id="d932f771e537d16693bed2e69269a746" category="paragraph"><block ref="d932f771e537d16693bed2e69269a746" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ee0b2f1c8ad7945cf603e8d752a5e7b5" category="inline-link-macro">Data Infrastructure Insights 版本</block>
   <block id="bbf9080a1bf1fb2f62558ce683d64be0" category="paragraph">如需 Data Infrastructure Insights Basic 與 Premium Edition 中可用功能的完整比較<block ref="49bb501f6c401ae5b06c3dbe5fc987bd" category="inline-link-macro-rx"></block>、請參閱頁面。</block>
+  <block id="9dd6e3f1271bf8cdcd9a0becace5f06f" category="section-title">2025 年 1 月</block>
+  <block id="d482be2df573f6eb04e440a4a05482a1" category="section-title">利用 Forensics 群組主動管理風險</block>
+  <block id="2e6b3809f9d5218f35a0a7a320263e07" category="paragraph">隆重推出我們最新的功能，旨在增強您的安全性與資源管理功能！利用進階的依群組功能和階層式多重群組依支援，您現在可以輕鬆識別存取特定資料夾的使用者，判斷最活躍的使用者和共用，並追蹤作用中的用戶端 IP 位址，主動管理風險。找出最容易存取的檔案和資料夾，以最佳化儲存和頻寬使用率，並透過識別使用者來加強對系統存取的控制。</block>
+  <block id="7c86c6e5a05df9478bfb181de6b56a05" category="inline-image-macro">鑑識活動追蹤範例畫面</block>
+  <block id="e14be859c412d77ea3be17beace7319c" category="paragraph"><block ref="e14be859c412d77ea3be17beace7319c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b6e54264047927b79be771cbfd2b5201" category="section-title">儀表板存取控制</block>
+  <block id="84229233ad61c44b8e53075992f6c8a5" category="paragraph">Data Infrastructure Insights 現在讓您更能掌控所建立儀表板的存取權。您可以選擇修改圖表的對象。您可以控制對潛在敏感資訊的曝光。仍在使用尚未準備好全面可見度的儀表板嗎？您可以將其保留為私密狀態，直到您準備好分享。</block>
+  <block id="f916d734e48a8724b0f8c434b43a06a7" category="inline-image-macro">儀表板共用選項</block>
+  <block id="e2d1989486babbb3dc0993863f9f4ef8" category="paragraph"><block ref="e2d1989486babbb3dc0993863f9f4ef8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c278bdd917e4f32f7d8a13861d3c1a43" category="list-text">*Path* 是 _entity_ 路徑。這應該是確切的實體路徑（例如「 _/home/userX/nested1/nested2/abc.txt 」），或是遞迴搜尋路徑的目錄部分（例如「 _/home/userX/nested1/nested2/_ 」）。注意：此處不允許 regex 路徑模式（例如 _userX_ ）。或者，也可以指定如下所述的個別路徑資料夾層級篩選器來進行路徑篩選。</block>
+  <block id="09cde459dc94ebcdb7fb39e8a2b6e65f" category="list-text">* 實體的 Path* ：這應該是確切的實體路徑（例如「 _/home/userX/nested1/nested2/abc.txt 」），或是遞歸搜尋路徑的目錄部分（例如「 _/home/userX/nested1/nested2/_ 」）。注意：此處不允許 regex 路徑模式（例如 * 使用者 X* ）。建議目錄路徑篩選器（以 / 結尾的路徑字串）最多 4 個目錄深，以獲得更快的結果。例如， "_/home/userX/nested1/nested2/_" 。如需詳細資訊、請參閱下表。</block>
+  <block id="39dfb1596c6a6cd5efc77677cffa9f47" category="cell">路徑值與 /home/userX/nested1/test 完全相符</block>
+  <block id="67796eee76b434ba7f714f24fce77a4c" category="cell">與目錄搜尋相比，搜尋的確切搜尋速度較慢。</block>
+  <block id="ee884ab6f8aeb5114dc04fcb169533de" category="section-title">路徑搜尋</block>
+  <block id="3bbdd1e5a1fbf0d58680e594b8806722" category="section-title">驗證 Telegraf 套件校驗和</block>
+  <block id="7ff5578ba477d9e2321cffdc188dd439" category="paragraph">Data Infrastructure Insights Agent 安裝程式會執行完整性檢查，但有些使用者可能會想要在安裝下載的 Telegraf 二進位檔之前執行自己的驗證。您可以下載安裝程式並為下載的套件產生Checksum、然後將Checksum與安裝說明中顯示的值進行比較、以完成此作業。</block>
+  <block id="741ebc51b7127a27c632897c49b71ad3" category="paragraph">若要執行僅下載作業（與預設的下載與安裝相反），使用者可以編輯從 UI 取得的代理程式安裝命令，並移除「安裝」選項。</block>
+  <block id="8b5391cb0617a6870147a0c34743013d" category="list-text">Telegraf 二進位檔案</block>
+  <block id="6b15d8f349fa2e771a92e4131bcae2d2" category="list-text">Telegraf 二進位的簽名</block>
+  <block id="b7e85347cdffb5889c57e4b1ad785a2e" category="list-text">用於驗證二進位簽章的公開憑證</block>
+  <block id="bfc63dcde995168de645c7c0b1b67357" category="paragraph">從 DII 下載和複製的安裝程式碼片段會自動檢查安裝指令碼的總和，而 Telegraf 二進位的簽章則會由安裝指令碼驗證。</block>
+  <block id="26f2872f4049fcba9927c1b41d6502d3" category="section-title">驗證 Checksum 值</block>
 </blocks>

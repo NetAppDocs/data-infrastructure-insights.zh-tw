@@ -29,7 +29,7 @@ Data Infrastructure Insights 目前的 Telegraf 版本是 *1.24.0* 。
 NOTE: 為確保稽核與資料報告的準確性、強烈建議您使用*網路時間傳輸協定（NTP）*或*簡易網路時間傳輸協定（SNTP）*來同步代理機器上的時間。
 
 
-NOTE: 如果您想在安裝 Agent 之前驗證安裝檔案，請參閱以下的一節<<驗證Checksum>>。
+NOTE: 如果您想在安裝 Agent 之前驗證安裝檔案，請參閱以下的一節<<Verifying Checksums>>。
 
 
 
@@ -364,15 +364,15 @@ systemctl stop telegraf (If your operating system is using systemd)
 
 
 
-== 驗證Checksum
+== 驗證 Telegraf 套件校驗和
 
-Data Infrastructure Insights 代理程式安裝程式會執行完整性檢查、但有些使用者可能會想要在安裝或套用下載的成品之前執行自己的驗證。您可以下載安裝程式並為下載的套件產生Checksum、然後將Checksum與安裝說明中顯示的值進行比較、以完成此作業。
+Data Infrastructure Insights Agent 安裝程式會執行完整性檢查，但有些使用者可能會想要在安裝下載的 Telegraf 二進位檔之前執行自己的驗證。您可以下載安裝程式並為下載的套件產生Checksum、然後將Checksum與安裝說明中顯示的值進行比較、以完成此作業。
 
 
 
 === 無需安裝即可下載安裝程式套件
 
-若要執行純下載作業（而非預設的下載與安裝）、使用者可以編輯從UI取得的代理程式安裝命令、並移除後置「install」選項。
+若要執行僅下載作業（與預設的下載與安裝相反），使用者可以編輯從 UI 取得的代理程式安裝命令，並移除「安裝」選項。
 
 請遵循下列步驟：
 
@@ -387,35 +387,36 @@ Data Infrastructure Insights 代理程式安裝程式會執行完整性檢查、
 
 * 下載並安裝（預設）：
 +
- installerName=cloudinsights-kubernetes.sh … && sudo -E -H ./$installerName --download –-install
+ installerName=cloudinsights-ubuntu_debian.sh … && ./$installerName --download --verify && sudo -E -H ./$installerName --install
 * 僅限下載：
 +
- installerName=cloudinsights-kubernetes.sh … && sudo -E -H ./$installerName --download
+ installerName=cloudinsights-ubuntu_debian.sh … && ./$installerName --download --verify
 
 
 Windows：
 
 * 下載並安裝（預設）：
 +
- !$($installerName=".\cloudinsights-windows.ps1") … -and $(&$installerName -download -install)
+ !$($installerName=".\cloudinsights-windows.ps1") … -and $(if(((Get-FileHash $installerName).Hash).ToLower() -eq "INSTALLER_CHECKSUM ") { &$installerName -download -verify -install } else { Write-Host "Install script checksum does not match"})"
 * 僅限下載：
 +
- !$($installerName=".\cloudinsights-windows.ps1") … -and $(&$installerName -download)
+ !$($installerName=".\cloudinsights-windows.ps1") … -and $(if(((Get-FileHash $installerName).Hash).ToLower() -eq "INSTALLER_CHECKSUM ") { &$installerName -download -verify } else { Write-Host "Install script checksum does not match"})"
 
 
 下載專用命令會將 Data Infrastructure Insights 中所有必要的成品下載到工作目錄中。這些成品包括但不限於：
 
 * 安裝指令碼
 * 環境檔案
-* Y反 洗錢檔案
-* Checksum 檔案（結尾為 sho256.signed 或 sho256.ps1 ）
+* Telegraf 二進位檔案
+* Telegraf 二進位的簽名
+* 用於驗證二進位簽章的公開憑證
 
 
-安裝指令碼、環境檔案及Yaml檔案均可使用目視檢查進行驗證。
+從 DII 下載和複製的安裝程式碼片段會自動檢查安裝指令碼的總和，而 Telegraf 二進位的簽章則會由安裝指令碼驗證。
 
 
 
-=== 產生Checksum值
+=== 驗證 Checksum 值
 
 若要產生Checksum值、請針對您的適當平台執行下列命令：
 
@@ -425,20 +426,6 @@ Windows：
 * Windows：
 +
  Get-FileHash telegraf.zip -Algorithm SHA256 | Format-List
-
-
-
-
-=== 驗證 Checksum
-
-從 Checksum 檔案擷取預期的 Checksum
-
-* 非Windows：
-+
- openssl smime -verify -in telegraf*.sha256.signed -CAfile netapp_cert.pem -purpose any -nosigs -noverify
-* Windows：
-+
- (Get-Content telegraf.zip.sha256.ps1 -First 1).toUpper()
 
 
 

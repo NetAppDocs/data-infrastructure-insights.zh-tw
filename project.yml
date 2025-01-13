@@ -245,8 +245,6 @@ sidebar:
       entries:
       - title: 活動鑑識：所有活動
         url: "/forensic_activity_history.html"
-      - title: 活動鑑識：實體
-        url: "/forensic_entity_detail.html"
       - title: 使用者
         url: "/forensic_user_overview.html"
     - title: 自動化回應原則
