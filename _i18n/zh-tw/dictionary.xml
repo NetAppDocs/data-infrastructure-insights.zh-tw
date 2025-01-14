@@ -11216,7 +11216,6 @@
   <block id="6b0d087c4bacdd4357f49c495293bdde" category="cell">skipProcessorsAfterAggreaters</block>
   <block id="412ea2434c00799606f268b4aa2b35dc" category="cell">未受保護</block>
   <block id="9091b3fb9f4d43844af8dc0a973c67e0" category="inline-link-macro">已知的 Telegraf 問題</block>
-  <block id="d466d69e5a5f62e5d6773f7d399fe086" category="cell">請參閱本<block ref="0dcd3ea27696029fecb8ccd7e247f633" category="inline-link-macro-rx"></block>。設定 _ 無保護 _ 會指示 Kubernetes 監控營運者以旗標執行 Telegraf 。<block ref="3a41393afb053a415e6dc30cf704d899" prefix=" " category="inline-code"></block></block>
   <block id="81beb48dd63a014bf8c446eeeb319a2e" category="cell">可自訂操作員的 kbe 狀態度量安裝的組態選項</block>
   <block id="8804d25db5f16b9db006116b6edf45bc" category="cell">cpuLimit</block>
   <block id="8b673d5f702e58efd947465ead5c9647" category="cell">kube 狀態度量部署的 CPU 限制</block>
@@ -11911,4 +11910,11 @@
   <block id="ca351e1a429ee72dbdb2061c22743ef6" category="list-text">瀏覽 * 可服務性 &gt; 瀏覽 -&gt; + 新指標查詢 * 。</block>
   <block id="5e7f24385025eba3461014d3d964455b" category="paragraph">若要移除非作用中的裝置，只要選取要移除的裝置，然後在 * 大量動作 * 下拉式清單中，選取 _ 刪除非作用中的裝置 _ 。</block>
   <block id="72a442c57900f55848aa4acb856a507d" category="sidebar">識別非使用中的裝置</block>
+  <block id="70d57a4cf0763cd6479ef380a0e3959d" category="cell">由於無法驗證 TLS 憑證，因此 Telegraf DS Pod 回報 Kubernetes 輸入外掛程式無法發出 HTTP 要求的錯誤。例如： e ！外掛程式中的 [Inputs.Kubernets] 錯誤：發出取得 <block ref="67e388e14afab5b44ba05645532bfd4c" category="inline-link-rx"></block> TLS 的 HTTP 要求時發生錯誤<block ref="67e388e14afab5b44ba05645532bfd4c" category="inline-link-rx"></block>：驗證憑證失敗： X509 ：無法驗證 &lt;kubelet_IP&gt; 的憑證，因為它不包含任何 IP SAN</block>
+  <block id="006f752e44410388cadd8f8a37ce069f" category="inline-link-macro">代理程式組態</block>
+  <block id="e7367bd1ec175ef5c58d982c52bc4348" category="inline-link-macro">serverTLSBootstrap</block>
+  <block id="eb693e07b3c7e38a77aa691eee254db7" category="cell">如果 kibelet 使用自我簽署的憑證，且 / 或指定的憑證未在憑證 _ 主體替代名稱 _ 清單中包含 &lt;kubelet_IP&gt; ，就會發生這種情況。若要解決此問題<block ref="1ff2a3d734af6ebdb77c417baa3479b1" category="inline-link-macro-rx"></block>，使用者可以修改，並將 _telegraf:insecureK8sSkipVerify_ 設為 _true_ 。這會將 Telegraf 輸入外掛程式設定為略過驗證。或者，使用者也可以設定的 kibelet <block ref="9ed8afe3c99331fa3d23c13414b98aba" category="inline-link-macro-rx"></block>，以觸發來自「 certifications.k8s.io 」 API 的憑證要求。</block>
+  <block id="2f461803a8b3a27284482a32459a1078" category="cell">EE 本<block ref="0dcd3ea27696029fecb8ccd7e247f633" category="inline-link-macro-rx"></block>。設定 _ 無保護 _ 會指示 Kubernetes 監控營運者以旗標執行 Telegraf 。<block ref="3a41393afb053a415e6dc30cf704d899" prefix=" " category="inline-code"></block></block>
+  <block id="0860569a69c3584507ee09f4be585418" category="cell">insecureK8sSkipVerify</block>
+  <block id="3008cd3125cccc003fa13335717e556e" category="cell">如果由於缺少 IP SAN 而導致 Telegraf 無法驗證憑證，請嘗試啟用驗證跳過</block>
 </blocks>

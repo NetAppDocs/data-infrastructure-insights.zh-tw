@@ -112,7 +112,10 @@ link:task_config_telegraf_agent_k8s.html#configuringcustomizing-the-operator["Ku
 |  | skipProcessorsAfterAggreaters | 請參閱 link:https://github.com/influxdata/telegraf/blob/master/docs/CONFIGURATION.md#agent["Telegraf 組態文件"] 
 
 
-|  | 未受保護 | 請參閱本link:https://community.influxdata.com/t/updating-telegraf-to-version-1-29-5-crashes-kubernetes-pod/33376["已知的 Telegraf 問題"]。設定 _ 無保護 _ 會指示 Kubernetes 監控營運者以旗標執行 Telegraf 。 `--unprotected` 
+|  | 未受保護 | EE 本link:https://community.influxdata.com/t/updating-telegraf-to-version-1-29-5-crashes-kubernetes-pod/33376["已知的 Telegraf 問題"]。設定 _ 無保護 _ 會指示 Kubernetes 監控營運者以旗標執行 Telegraf 。 `--unprotected` 
+
+
+|  | insecureK8sSkipVerify | 如果由於缺少 IP SAN 而導致 Telegraf 無法驗證憑證，請嘗試啟用驗證跳過 
 
 
 | Kube-state 指標 |  | 可自訂操作員的 kbe 狀態度量安裝的組態選項 

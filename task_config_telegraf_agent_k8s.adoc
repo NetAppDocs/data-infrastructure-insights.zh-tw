@@ -484,5 +484,8 @@ fluent-bit:
  fs.inotify.max_user_instances=<something larger than current setting>
  fs.inotify.max_user_watches=<something larger than current setting>
 ----
+
+
+| 由於無法驗證 TLS 憑證，因此 Telegraf DS Pod 回報 Kubernetes 輸入外掛程式無法發出 HTTP 要求的錯誤。例如： e ！外掛程式中的 [Inputs.Kubernets] 錯誤：發出取得 "https://<kubelet_IP>:10250/stats/summary":[] TLS 的 HTTP 要求時發生錯誤"https://<kubelet_IP>:10250/stats/summary":[]：驗證憑證失敗： X509 ：無法驗證 <kubelet_IP> 的憑證，因為它不包含任何 IP SAN | 如果 kibelet 使用自我簽署的憑證，且 / 或指定的憑證未在憑證 _ 主體替代名稱 _ 清單中包含 <kubelet_IP> ，就會發生這種情況。若要解決此問題link:telegraf_agent_k8s_config_options.html["代理程式組態"]，使用者可以修改，並將 _telegraf:insecureK8sSkipVerify_ 設為 _true_ 。這會將 Telegraf 輸入外掛程式設定為略過驗證。或者，使用者也可以設定的 kibelet link:https://kubernetes.io/docs/reference/config-api/kubelet-config.v1beta1/["serverTLSBootstrap"]，以觸發來自「 certifications.k8s.io 」 API 的憑證要求。 
 |===
 您可以在頁面或中找到其他link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]資訊。
