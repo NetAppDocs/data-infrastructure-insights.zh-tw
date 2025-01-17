@@ -4435,9 +4435,7 @@
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">開放原始碼</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知檔案提供有關 NetApp 軟體所使用之協力廠商版權與授權的資訊。</block>
   <block id="c7f50a9f133f1f71a9f91fe12f7c7f7e" category="inline-link-macro">資料基礎架構洞見通知（前身為 Cloud Insights ）</block>
-  <block id="552bbf7b91025a7ce4d57570549e5d96" category="paragraph"><block ref="552bbf7b91025a7ce4d57570549e5d96" category="inline-link-macro-rx"></block></block>
   <block id="4d8cd5134c1193f4d301c7e6bcaa38a7" category="inline-link-macro">工作負載安全性注意事項（先前Cloud Secure 稱為「不安全」）</block>
-  <block id="536041084bffaf10e48c1cc03ccee7a2" category="paragraph"><block ref="536041084bffaf10e48c1cc03ccee7a2" category="inline-link-macro-rx"></block></block>
   <block id="af943d1d81f743ab6e7c9bcbe3a8c6e9" category="summary">NKMO Clusterrole的Yaml檔案範例</block>
   <block id="94e0aa0f534273005cdbd647f8f4eab8" category="doc">NKMO Clusterrole Yaml範例</block>
   <block id="38836a8a56831bc3569901f9b16d3eaf" category="paragraph">NetApp Kubernetes監控操作員（NKMO）的_kubectl_元件必須至少設定下列Kubernetes物件的存取權限：代理程式、叢集角色、叢集角色繫結、customresourcetings、部署、 命名空間、角色、角色繫結、機密、服務帳戶、 和服務。以下是叢集角色的範例、具有這些最低權限。</block>
@@ -11917,4 +11915,6 @@
   <block id="2f461803a8b3a27284482a32459a1078" category="cell">EE 本<block ref="0dcd3ea27696029fecb8ccd7e247f633" category="inline-link-macro-rx"></block>。設定 _ 無保護 _ 會指示 Kubernetes 監控營運者以旗標執行 Telegraf 。<block ref="3a41393afb053a415e6dc30cf704d899" prefix=" " category="inline-code"></block></block>
   <block id="0860569a69c3584507ee09f4be585418" category="cell">insecureK8sSkipVerify</block>
   <block id="3008cd3125cccc003fa13335717e556e" category="cell">如果由於缺少 IP SAN 而導致 Telegraf 無法驗證憑證，請嘗試啟用驗證跳過</block>
+  <block id="3a6957a9f0cd14c98be3bfcbf85db668" category="paragraph"><block ref="3a6957a9f0cd14c98be3bfcbf85db668" category="inline-link-macro-rx"></block></block>
+  <block id="9e43104f0687bd3a308759c5411641d7" category="paragraph"><block ref="9e43104f0687bd3a308759c5411641d7" category="inline-link-macro-rx"></block></block>
 </blocks>

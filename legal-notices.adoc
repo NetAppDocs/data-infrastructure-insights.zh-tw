@@ -47,6 +47,6 @@ link:https://www.netapp.com/company/legal/privacy-policy/["https://www.netapp.co
 
 通知檔案提供有關 NetApp 軟體所使用之協力廠商版權與授權的資訊。
 
-link:media/Notice_Cloud_Insights-2023-04.pdf["資料基礎架構洞見通知（前身為 Cloud Insights ）"]
+link:media/Data_Infrastructure_InsightsOn-prem_ComponentsNOTICE-1.pdf["資料基礎架構洞見通知（前身為 Cloud Insights ）"]
 
-link:media/Notice_Cloud_Secure-2022-12-14.pdf["工作負載安全性注意事項（先前Cloud Secure 稱為「不安全」）"]
+link:media/Data_Infrastructure_Insights_Workload_SecurityOn-prem_ComponentsNOTICE-1.pdf["工作負載安全性注意事項（先前Cloud Secure 稱為「不安全」）"]
