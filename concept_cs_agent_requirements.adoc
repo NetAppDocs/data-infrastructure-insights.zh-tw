@@ -115,9 +115,6 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network, Cl
 | TCP | 35000 - 55000 | SVM資料LIF IP位址 | 工作負載安全代理程式 | 從 ONTAP 到工作負載安全代理程式的 Fpolicy 事件通訊。這些連接埠必須向工作負載安全性代理程式開啟、 ONTAP 才能傳送事件給它、包括工作負載安全性代理程式本身的任何防火牆（若有）。請注意、您不需要保留 * 所有 * 這些連接埠、但您為此保留的連接埠必須在此範圍內。建議您先保留約 100 個連接埠、必要時增加。 
 
 
-| TCP | 7 | 工作負載安全代理程式 | SVM資料LIF IP位址 | 從 Agent 回應至 SVM Data 生命 
-
-
 | SSH | 22 | 工作負載安全代理程式 | 叢集管理 | CIFS/SMB 使用者封鎖所需。 
 |===
 
