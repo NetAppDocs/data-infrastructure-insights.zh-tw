@@ -1,0 +1,27 @@
+---
+sidebar: sidebar 
+permalink: san_anayzer_overview.html 
+summary: SAN Analyzer 提供租戶資產的拓撲 
+keywords: topology, analyze, analysis, map 
+---
+= SAN Analyzer 總覽
+:hardbreaks:
+:toclevels: 2
+:allow-uri-read: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+SAN 在處理重要工作負載方面扮演重要角色，但其複雜性可能導致重大中斷和客戶中斷。有了 DII * SAN Analyzer * ，管理 SAN 變得更簡單，更有效率。這項功能強大的工具提供端點對端點的可見度，可將相依性從 VM/ 主機對應至網路， LUN 及儲存設備。
+
+藉由提供互動式拓撲圖， SAN Analyzer 可讓您找出問題，瞭解變更，並增強對資料流的理解。使用 SAN Analyzer 簡化複雜 IT 環境中的 SAN 管理，並提高您對區塊工作負載的可見度。
+
+image:san_analyzer_example_with_panel.png["儲存系統的 SAN Analyzer 拓撲圖"]
+
+
+
+== 探索資產之間的連結

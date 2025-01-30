@@ -278,11 +278,12 @@ Testcluster-1::*> net int service-policy create -policy only_data_fpolicy -allow
 
 == Play-Pause Data Collector
 
-2 個新作業現在顯示在收集器的 kebab 功能表上（暫停和繼續）。
-
 如果資料收集器處於 _Running 狀態、您可以暫停收集。開啟收集器的「三點」功能表、然後選取暫停。當收集器暫停時、不會從 ONTAP 收集任何資料、也不會將資料從收集器傳送至 ONTAP 。這表示任何 Fpolicy 事件都不會從 ONTAP 流向資料收集器、也不會從資料基礎架構深入分析。
 
 請注意、如果在 ONTAP 上建立任何新的磁碟區等、而收集器處於暫停狀態、工作負載安全性就不會收集資料、這些磁碟區等資料也不會反映在儀表板或表格中。
+
+
+NOTE: 如果收集器已限制使用者，則無法暫停。在暫停收集器之前還原使用者存取權。
 
 請謹記下列事項：
 
