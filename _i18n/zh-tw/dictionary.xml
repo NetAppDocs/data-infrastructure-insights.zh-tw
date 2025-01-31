@@ -11923,4 +11923,8 @@
   <block id="b03a68ce04fd31de1bf167d4c6537d2f" category="paragraph">藉由提供互動式拓撲圖， SAN Analyzer 可讓您找出問題，瞭解變更，並增強對資料流的理解。使用 SAN Analyzer 簡化複雜 IT 環境中的 SAN 管理，並提高您對區塊工作負載的可見度。</block>
   <block id="9c6601cca8cd67405c34e4897bb272f1" category="section-title">探索資產之間的連結</block>
   <block id="14fe64769d4df689f51e13f60c5ec439" category="admonition">如果收集器已限制使用者，則無法暫停。在暫停收集器之前還原使用者存取權。</block>
+  <block id="81c776ec15386302abf1c34d317e3393" category="paragraph">選擇 * 可視性 &gt; 分析 &gt; SAN Analyzer* 以查看 SAN Analyzer 。設定應用程式，主機，架構和 / 或儲存設備的篩選器。隨即顯示物件的地圖，顯示已連接的物件。將游標移到物件上方，即可檢視這些連線的流量計量。</block>
+  <block id="fde6f74861c217b576ec5d769f2467c3" category="paragraph"><block ref="fde6f74861c217b576ec5d769f2467c3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3cfbb427bd17b95ae08e5597561217ef" category="paragraph">按一下某個物件或群組，會開啟一個滑出面板，提供有關物件及其連線的其他詳細資料。滑出內容包括顯示摘要，連接埠詳細資料和分區資訊的索引標籤（如果有）。</block>
+  <block id="7512260392fef04bf211fab22007addd" category="paragraph"><block ref="7512260392fef04bf211fab22007addd" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

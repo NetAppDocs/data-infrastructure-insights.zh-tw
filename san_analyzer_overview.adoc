@@ -25,3 +25,11 @@ image:san_analyzer_example_with_panel.png["儲存系統的 SAN Analyzer 拓撲�
 
 
 == 探索資產之間的連結
+
+選擇 * 可視性 > 分析 > SAN Analyzer* 以查看 SAN Analyzer 。設定應用程式，主機，架構和 / 或儲存設備的篩選器。隨即顯示物件的地圖，顯示已連接的物件。將游標移到物件上方，即可檢視這些連線的流量計量。
+
+image:san_analyzer_traffic_metrics.png[""]
+
+按一下某個物件或群組，會開啟一個滑出面板，提供有關物件及其連線的其他詳細資料。滑出內容包括顯示摘要，連接埠詳細資料和分區資訊的索引標籤（如果有）。
+
+image:san_analyzer_slideout_example.png[""]
