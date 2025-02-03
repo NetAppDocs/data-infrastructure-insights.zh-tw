@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: dashboard_access_management.html 
+summary: 您可以決定所建立的儀表板是公用或私有。 
+keywords: dashboard, public, shared, private 
+---
+= 儀表板存取管理
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:nofooter: 
+:toclevels: 1
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Data Infrastructure Insights 現在讓您更能掌控所建立儀表板的存取權。您可以選擇修改圖表的對象。您可以控制對潛在敏感資訊的曝光。保持儀表板的隱密性可讓您完成視覺效果，直到準備好讓組織中的其他人使用這些視覺效果為止。
+
+image:Dashboard_Sharing_Options.png["儀表板共用選項，寬度 =300"]
+
+根據預設，當您建立新的儀表板時，該儀表板只有您（建立者）可以看到。沒有其他使用者可以看到或修改儀表板。
+
+完成儀表板後，您可以選擇允許組織中的其他人檢視儀表板。若要共用儀表板，請在儀表板清單中，從右側功能表中選取 _Share_ 。
+
+image:dashboard_access_share_menu.png["從功能表中共用儀表板存取"]
+
+您可以選擇將儀表板分享給「所有人」，或選擇擁有「編輯」或「唯讀」權限的使用者。
+
+image:dashboard_access_share_drop-down.png["下拉式清單，可共用具有「編輯」或「讀取」權限的儀表板"]

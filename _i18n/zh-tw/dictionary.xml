@@ -11927,4 +11927,16 @@
   <block id="fde6f74861c217b576ec5d769f2467c3" category="paragraph"><block ref="fde6f74861c217b576ec5d769f2467c3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3cfbb427bd17b95ae08e5597561217ef" category="paragraph">按一下某個物件或群組，會開啟一個滑出面板，提供有關物件及其連線的其他詳細資料。滑出內容包括顯示摘要，連接埠詳細資料和分區資訊的索引標籤（如果有）。</block>
   <block id="7512260392fef04bf211fab22007addd" category="paragraph"><block ref="7512260392fef04bf211fab22007addd" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="18082cdb9388e2686e081dd6012e47b8" category="summary">您可以決定所建立的儀表板是公用或私有。</block>
+  <block id="cc5c681651d638257ae03658c963c7c6" category="doc">儀表板存取管理</block>
+  <block id="571ad98bb1054a211a5d3fa3a3240265" category="paragraph">Data Infrastructure Insights 現在讓您更能掌控所建立儀表板的存取權。您可以選擇修改圖表的對象。您可以控制對潛在敏感資訊的曝光。保持儀表板的隱密性可讓您完成視覺效果，直到準備好讓組織中的其他人使用這些視覺效果為止。</block>
+  <block id="505e6238dfdc62d1b4bbdf930fa887b8" category="inline-image-macro">儀表板共用選項，寬度 =300</block>
+  <block id="43b5d7a5affce9056fb3d7ec4b82fe17" category="paragraph"><block ref="43b5d7a5affce9056fb3d7ec4b82fe17" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="547a803d844f9925f62c57d49f10caf6" category="paragraph">根據預設，當您建立新的儀表板時，該儀表板只有您（建立者）可以看到。沒有其他使用者可以看到或修改儀表板。</block>
+  <block id="78d12ef818f574226b0780765511e2d5" category="paragraph">完成儀表板後，您可以選擇允許組織中的其他人檢視儀表板。若要共用儀表板，請在儀表板清單中，從右側功能表中選取 _Share_ 。</block>
+  <block id="8e561a2090f27ed80a24e59dff11dcce" category="inline-image-macro">從功能表中共用儀表板存取</block>
+  <block id="5fc6afe4cfc7bc7e58ad6e7119812663" category="paragraph"><block ref="5fc6afe4cfc7bc7e58ad6e7119812663" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="16442b20a2319083af65dedb2d7e942e" category="paragraph">您可以選擇將儀表板分享給「所有人」，或選擇擁有「編輯」或「唯讀」權限的使用者。</block>
+  <block id="1dcba5cd7d6049883623c0653a2031f6" category="inline-image-macro">下拉式清單，可共用具有「編輯」或「讀取」權限的儀表板</block>
+  <block id="ac0466f21ebde71eed9f3673b4c7da1b" category="paragraph"><block ref="ac0466f21ebde71eed9f3673b4c7da1b" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
