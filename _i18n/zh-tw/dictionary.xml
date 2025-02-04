@@ -3977,7 +3977,6 @@
   <block id="58ecb418298e803c7a0ae49007466440" category="paragraph">「所有活動」頁面可協助您瞭解在工作負載安全性環境中、對實體所執行的行動。</block>
   <block id="33a203d3623a54e6d264ebf5af5db210" category="section-title">檢查所有活動資料</block>
   <block id="dde100b78d6d436ad1c738fca1b98fc6" category="paragraph">您可以在圖表中拖曳矩形來縮放圖表。將載入整個頁面以顯示縮放時間範圍。放大時、會顯示可讓使用者縮小的按鈕。</block>
-  <block id="be2a0bbd0e52bd10107615bcddc56fba" category="paragraph">「_*所有活動*」表格顯示下列資訊。請注意、並非所有這些欄都會預設顯示。您可以按一下「齒輪」圖示來選取要顯示的欄。</block>
   <block id="10b85952c1ec4b6508b7012df066ef83" category="list-text">存取實體的*時間*、包括上次存取的年、月、日和時間。</block>
   <block id="38d1b0982212e47a2dd73e4c40793793" category="inline-link-macro">使用者資訊</block>
   <block id="6bf51f11b7d2354b7c099ad162d81b7a" category="list-text">使用者執行的*活動*。支援的類型包括：</block>
@@ -3988,11 +3987,9 @@
   <block id="dc1663562fc43061ff1040783cb4e9d2" category="list-text">*建立*-建立檔案或資料夾。</block>
   <block id="6bcfc6d0ddd3e857bf7ff9d50a1aad07" category="list-text">*刪除*-刪除檔案或資料夾。如果刪除資料夾、則會針對該資料夾和子資料夾中的所有檔案取得_DELETE _事件。</block>
   <block id="865fb9ac996b45282ae7a37ddf907748" category="list-text">*讀取*-檔案已讀取。</block>
-  <block id="63342c59c5eab274a4129fdce2de1067" category="list-text">*讀取中繼資料*：僅適用於啟用資料夾監控選項。將在Windows上開啟資料夾或在Linux資料夾內執行「ls」時產生。</block>
   <block id="3ee2cb44fd1180239223a95847150e56" category="list-text">*重新命名*-重新命名檔案或資料夾。</block>
   <block id="ccf535ac132e169591e0c8835e83f80f" category="list-text">*寫入*-資料寫入檔案。</block>
   <block id="bc2e1628223bbd57334a725f0401d199" category="list-text">*寫入中繼資料*-寫入檔案中繼資料、例如權限已變更。</block>
-  <block id="d05ab97003568ddbd1e124e280eff44d" category="list-text">*其他變更*：上述未提及的任何其他事件。所有未對應的事件都會對應至「其他變更」活動類型。適用於檔案和資料夾。</block>
   <block id="d97c308acbc0f0d3e5a290abc82e12a0" category="inline-link-macro">實體詳細資料</block>
   <block id="5d7a5f24f08d7baa937ba58212dc4cb3" category="list-text">用於擷取事件的*傳輸協定*。</block>
   <block id="760b2221e00b39c02b810e7c86cb4944" category="list-text">當原始檔案重新命名時、用於重新命名事件的*原始路徑*。根據預設、此欄在表格中不可見。使用欄選取器將此欄新增至表格。</block>
@@ -4000,28 +3997,22 @@
   <block id="119f264c2e26701f999cacca54ff6a5a" category="section-title">篩選取證活動歷程記錄資料</block>
   <block id="e2dc5b88c4f53d2a648a9f81fdc77ecb" category="paragraph">您可以使用兩種方法來篩選資料。</block>
   <block id="b44d27d7b6b6912f12597adc1f9fa486" category="list-text">輸入「篩選條件」欄位以篩選資料：</block>
-  <block id="94d39d472f5515f9137731ff36ee8221" category="paragraph">按一下「*+*」按鈕、從頂端的「篩選條件」小工具中選取適當的篩選條件：</block>
   <block id="9aca188b05e6e40de4b37c9a1ae88452" category="inline-image-macro">實體Filer、寬=500</block>
   <block id="7b4254d6ca4c36d3c1912bda6433d382" category="paragraph"><block ref="7b4254d6ca4c36d3c1912bda6433d382" category="inline-image-macro-rx" type="image"></block></block>
   <block id="37fccc39126a22f07b06f0552cde9c16" category="paragraph">輸入搜尋文字</block>
   <block id="e35ab2c794348db93821f8e7eafc7960" category="paragraph">按Enter或按一下篩選方塊外側以套用篩選條件。</block>
   <block id="bf0bfb79a81a231f0f04666c3569da3f" category="paragraph">您可以依下列欄位篩選取證活動資料：</block>
   <block id="85e0179872301e1053d45f643b6899c5" category="list-text">*活動*類型。</block>
-  <block id="1dc677ce29033ce9855fe2699237c9a1" category="list-text">*存取實體的來源IP*。您必須以雙引號提供有效的來源IP位址、例如「10.1.1.1」。不完整的IP（例如"10.1.1.*"、"10.1.*.*"等）將無法運作。</block>
   <block id="993bee13d79883a291c5bf94757d27d8" category="list-text">*傳輸協定*以擷取特定傳輸協定的活動。</block>
-  <block id="c3d430182436845185c1ac182ba51c05" category="list-text">*執行活動的使用者名稱*。您需要提供確切的使用者名稱以進行篩選。無法使用部分使用者名稱進行搜尋、或是以「*」為前置或後置的部分使用者名稱進行搜尋。</block>
   <block id="15ac0cdbe87a38b3f0c5588fd122123c" category="list-text">*雜訊抑制*可篩選使用者在過去2小時內建立的檔案。它也可用來篩選使用者存取的暫存檔（例如、.tmp檔案）。</block>
   <block id="3a6aae5bc174d27a503441e1d24d0c68" category="list-text">* 執行活動之使用者的網域 * 。您需要提供 * 精確的網域 * 來進行篩選。搜尋部分網域、或以萬用字元（「 * 」）為前置或後置的部分網域將無法運作。_ 無 _ 可以指定來搜尋遺失的網域。</block>
   <block id="5e5226f8443d6c79a977ffd6e71a8d9d" category="paragraph">下列欄位必須遵守特殊篩選規則：</block>
-  <block id="28894211649d8f9f99c54dc12f77784e" category="list-text">* 實體類型 * 、使用實體（檔案）副檔名 - 最好在引號內指定確切的實體類型。例如 _ "txt" _ 。</block>
   <block id="0d97b222b080d69a549c4eb4a4bfe399" category="list-text">* 執行活動的使用者 * ：最好在報價中指定確切的使用者。例如、 _ 「管理員」 _ 。</block>
   <block id="793b0425edef55b10657fd6cc2a5ab5a" category="list-text">*實體所在的設備*（SVM）</block>
   <block id="6bbd4f26d0615caf6a29b9c2d238dad2" category="list-text">*實體所在的Volume *</block>
   <block id="6edcb8abb66cf4a0700d1ea8dac389e5" category="list-text">當原始檔案重新命名時、用於重新命名事件的*原始路徑*。</block>
   <block id="ac27cb91c44714292702bc3eb4cf63af" category="paragraph">篩選時、上述欄位必須符合下列條件：</block>
   <block id="9f5698d8ff9580fb0292b0180a70711f" category="list-text">確切值應在引號內：範例：「searchtext」</block>
-  <block id="ae908dd27651e4f543cd1488054f03ce" category="list-text">萬用字元字串不得包含引號：範例：searchtext、\*searchtext*會篩選任何包含「searchtext」的字串。</block>
-  <block id="6de2a99ab7d1b49c0d30165b7f923bde" category="list-text">字串加上字首、例如：searchtext*、會搜尋以「searchtext」開頭的任何字串。</block>
   <block id="98979e670bd293d9570a2b24562e08a2" category="section-title">活動鑑識篩選器範例：</block>
   <block id="0930b50f995b3a6af46dc5f205e5c2be" category="cell">使用者套用的篩選運算式</block>
   <block id="13876d45cb0b459833e4aebb72877939" category="cell">預期成果</block>
@@ -4043,8 +4034,6 @@
   <block id="5addbd908b76e38709a3256b2eba74c5" category="list-text">* 等待匯出完成 * ：處理時間可從數分鐘到數小時不等。您可能需要重新整理鑑識頁面數次。匯出工作完成後、將會啟用「下載上次匯出 CSV 檔案」按鈕。</block>
   <block id="fb56822932e96a02d5b71841b0bb86a7" category="list-text">* 下載 * ：按一下「下載上次建立的匯出檔案」按鈕、以 .zip 格式取得匯出的資料。此資料將可供下載、直到使用者啟動另一個「非同步匯出」或已過 3 天（以先發生者為準）為止。此按鈕將保持啟用狀態、直到啟動另一個「非同步匯出」為止。</block>
   <block id="8ab0a5a1cd44cd0d41ee8657d513b901" category="list-text">* 限制 * ：</block>
-  <block id="60ace3612e0acf6a0941aadafd7b24ab" category="list-text">非同步下載的數量目前限制為每位使用者 1 次、每位租戶 3 次。</block>
-  <block id="db0adf696c53371ef4510888d244f184" category="list-text">匯出的資料上限為 100 萬筆記錄。</block>
   <block id="f61af81d2b9edda67ad225742bd8e959" category="paragraph">透過 API 擷取取鑑識資料的範例指令碼位於 NetApp 代理程式上的 /opt/oracle/cloudsecure/agent/Export 指令碼 // 。如需指令碼的詳細資訊、請參閱此位置的讀我檔案。</block>
   <block id="db7f539a64befdbef8a36c1e95be3922" category="section-title">所有活動的欄選擇</block>
   <block id="2c196fb6f976fd067f518fa5198011f3" category="paragraph">「_All activity」（全部活動）表格預設會顯示選取欄。若要新增、移除或變更欄、請按一下表格右側的齒輪圖示、然後從可用欄清單中選取。</block>
@@ -4055,18 +4044,15 @@
   <block id="19d8a8363cc18927f8f792b40e752c60" category="section-title">Forensics頁面中篩選器的適用性</block>
   <block id="5ac805f98623b1f23909793e4ff3a262" category="cell">適用於這些篩選器</block>
   <block id="b1b275726951e4adc620b69d947baf49" category="cell">不適用於這些篩選器</block>
-  <block id="0a3087cfc2ea9ac71095f821d14ee027" category="cell">Auto*03172022 如果搜尋文字包含連字號或底線、請在方括號中提供運算式、例如（ SVM* ）用於搜尋 SVM-123</block>
   <block id="3518217f55c95e834c4ea7984f8aa0cd" category="cell">AutoSabotageUser1_03172022？</block>
   <block id="a28771ee6ad9a7771a86f5d6ceeed78e" category="cell">傳回AutoSabotageUser1_03172022A、AutoSabotageUser1_03172022B、AutoSabotageUser1_031720225等</block>
   <block id="3adefd54fc738f8196af6304ed8929ac" category="cell">AutoSabotageUser1_03172022或AutoRansomUser4_03162022</block>
   <block id="0a01700b4705c6c47c24699ad7d4a4cb" category="cell">傳回任何AutoSabotageUser1_03172022或AutoRansomUser4_03162022</block>
   <block id="0ca071eb91357e8d4685daee24bd3360" category="cell">非AutoRansomUser4_03162022</block>
   <block id="e0ac20adce6ffee48c7151b070aa5737" category="cell">裝置</block>
-  <block id="e0c965c954b5a9fdc33c5b0516799f7d" category="cell">傳回所有開頭為「AutoRansomUser4_03162022」的項目</block>
   <block id="eae639a70006feff484a39363c977e24" category="cell">網域</block>
   <block id="3c16a1572c295ef2bbd770516679c559" category="cell">傳回目標欄位為空白的結果</block>
   <block id="64048c881c93933680d02730e9d9ce63" category="paragraph">包含/不含/的搜尋結果會有所不同</block>
-  <block id="53ca5edb3205aa3468395e1789114a60" category="cell">無法運作</block>
   <block id="1d7531d059e4088a0878ea4eb94d32b6" category="cell">"/AutoDir1/AutoFile03242022"</block>
   <block id="888f8ecf6256a9875ff5de4f10099453" category="cell">/AutoDir1/AutoFile03242022或/AutoDir1/AutoFile03242022</block>
   <block id="d87dd477d16107bb862f99dedbcacce4" category="cell">不是/AutoDir1/AutoFile03242022</block>
@@ -4079,7 +4065,6 @@
   <block id="189e8f8cb6dcbc5db679c602980ce869" category="list-text">如果 SVM-1 受到工作負載安全性的監控、且 SVM 的根使用者將共用裝載於 IP 位址為 10.197.12.40 的用戶端上、則取證活動頁面中顯示的使用者名稱將為 _root@10.197.12.40_ 。</block>
   <block id="9a7b0be436e968c987b9d5f84ae815c4" category="list-text">如果將同一個 SVM-1 裝載到另一個 IP 位址為 10.197.12.41 的用戶端、取證活動頁面中顯示的使用者名稱將為 _root@10.197.12.41_ 。</block>
   <block id="8ef0cd5e57c1bad7b905d070f6b527a2" category="paragraph">* •這是為了依照 IP 位址來分隔 NFS 根使用者活動。以前、所有活動都只由 _root_ 使用者執行、沒有 IP 區分。</block>
-  <block id="92232e830756517d2e51d25331f14f25" category="cell">在「All Activities」（所有活動）表格的「User」（使用者）欄下、使用者名稱顯示為：「LDAP:HQ.COMPANYNAME.COM:S-1-5-21-3577637-1906459482-1437260136-1831817”」或「LDAP:Default：80038003」。</block>
   <block id="0c4a0e9a569be65e94908f9222457694" category="inline-link-macro">使用者目錄收集器疑難排解</block>
   <block id="fa754fd7176d2dbf75086e702bb8e0ba" category="cell">可能的原因可能是：1.尚未設定使用者目錄收集器。若要新增一個、請前往 * 工作負載安全性 &gt; 收集器 &gt; 使用者目錄收集器 * 、然後按一下 *+ 使用者目錄收集器 * 。選擇_Active Directory或_LDAP Directory Server_。2.已設定使用者目錄收集器，但它已停止或處於錯誤狀態。請前往 * 收集器 &gt; 使用者目錄收集器 * 、並檢查狀態。如需疑難排解秘訣，請參閱<block ref="700dae282c67631ab7fef060d50fba0f" category="inline-link-macro-rx"></block>文件的一節。正確設定後、名稱將在24小時內自動解析。如果仍無法解決、請檢查是否已新增正確的使用者資料收集器。確定使用者確實是新增Active Directory / LDAP目錄伺服器的一部分。</block>
   <block id="65524feb61d50c77bb7ba2638a763f8e" category="cell">UI中未顯示某些NFS事件。</block>
@@ -11833,29 +11818,17 @@
   <block id="80662c9452da0395efcb752fc6efd791" category="list-text">活動計數會顯示為超連結；選取此選項會將選取的群組新增為篩選。活動表會根據該篩選條件更新。</block>
   <block id="f5048103eec701282d4bd47edb30c0dd" category="list-text">請注意，如果您變更篩選條件，變更時間範圍或重新整理畫面，則必須重新設定篩選條件，才能返回篩選結果。</block>
   <block id="a7b9ef6a74f521c07a42dfe2b3ba5984" category="list-text">可以從滑出面板新增篩選器。此值會新增至頂端_Filter by（篩選條件）清單中的適當篩選條件。</block>
-  <block id="abc9548bbf938c1b00d7d7943eea69c6" category="list-text">第一層資料夾（根目錄） - 實體路徑的根目錄作為篩選器。例如，如果實體路徑為 /home/userX/nested1/nested2/ ，則可使用 Home 或 Home 。</block>
-  <block id="ef05d086fd7703f59da830094683f26b" category="list-text">第二層資料夾 - 實體路徑篩選器的第二層目錄。例如，如果實體路徑為 /home/userX/nested1/nested2/ ，則可使用 userX 或「 userX 」。</block>
   <block id="d09c77be27888e5715284768b4b56a37" category="list-text">第三層資料夾–實體路徑篩選器的第三層目錄。</block>
-  <block id="af2e930a257c8313695f9a6d5e9c587c" category="list-text">例如，如果實體路徑為 /home/userX/nested1/nested2/ ，則可使用 nested1 或「 nested1 」。</block>
-  <block id="73563b05b63d5f6abf9aac631e04c7b1" category="list-text">第四層資料夾 - 實體路徑篩選器的目錄第四層目錄。例如，如果實體路徑為 /home/userX/nested1/nested2/ ，則可使用 nested2 或「 nested2 」。</block>
   <block id="4f1f0488f8878a68e5eb50610b690092" category="cell">路徑 = "/home/userX/nested1/nested2/"</block>
   <block id="bd12893dcbe3201853dc72f0c6467347" category="cell">路徑 = "/home/userX/nested1/"</block>
-  <block id="1d0c26b23985cb45609efc05c13c3294" category="cell">路徑 = 「 /home/userX/nested1/test 」</block>
   <block id="735bdb9fe63d4b5dcefb1fab563b1783" category="cell">路徑 = 「 /home/userX/nested1/nested2/nested3/"</block>
   <block id="fa9485df6d085377bf71d0ebb0343af0" category="list-text">同樣地，當所選時間範圍超過 3 天時，「活動歷程記錄」圖表中顯示的計數度量會四捨五入至 30 分鐘。</block>
   <block id="20b023807d41f295e71a0807936532d8" category="paragraph">您可以依 _ 時間，使用者，來源 IP ，活動， _ ， _ 實體類型 _ ，第一層資料夾（根目錄），第二層資料夾，第三層資料夾和第四層資料夾來排序活動記錄資料。根據預設、表格會依遞減的_Timed_順序排序、表示最新的資料會先顯示。「_Device」和「_Protocol」欄位的排序功能已停用。</block>
-  <block id="3ba465c35d8b2ac685818d0b9a9ba4f7" category="cell">使用者，實體類型，裝置， Volume ，原始路徑， 1stLevel 資料夾， 2ndLevel 資料夾， 3rdLevel 資料夾， 4thLevel 資料夾</block>
-  <block id="6273bbd8f9632e4d401abdeec82c9a39" category="cell">傳回以「 Auto 」開頭並以「 03172022 」結尾的所有資源</block>
-  <block id="3917b61839732c75ca8202af25ad4257" category="cell">使用者，實體類型，裝置， Volume ， 1stLevel 資料夾， 2ndLevel 資料夾， 3rdLevel 資料夾， 4thLevel 資料夾</block>
-  <block id="18575a59bc1468900953267afdfc5c81" category="cell">使用者，網域，實體類型，原始路徑</block>
-  <block id="7c76f178211d14484e376bc483bd1077" category="cell">使用者，網域，實體類型，原始路徑， 1stLevel 資料夾， 2ndLevel 資料夾， 3rdLevel 資料夾， 4thLevel 資料夾</block>
   <block id="44144cdf07fe03ca4c4d71ecf2ee830c" category="cell">只能使用精確搜尋；會傳回所有具有正確路徑的活動，例如 /AutoDir1/AutoFile03242022 （不敏感的案例）</block>
   <block id="f7bf447e3a19a294d681133f069ea62c" category="cell">" / 自動直接 1/ "</block>
   <block id="8431be8aa2f333f025452fc93c584143" category="cell">有效；傳回與 AutoDir1 相符之第一層目錄的所有活動（案例不敏感）</block>
   <block id="dac09bc6942369c2d0f8d36f26d2e201" category="cell">"/AutoDir1/AutoFile03242022"</block>
   <block id="17411e5191f440928552bd359518e697" category="cell">有效；傳回與 AutoDir1 相符的第一層目錄，以及與 AutoFile03242022 相符的第二層目錄的所有活動（案例不敏感）</block>
-  <block id="a874dae9695be1c2a6ef02373776f7b7" category="cell">搜尋字串中的星號（ \* ）會搜尋所有項目。但是，諸如 &lt;searchTerm&gt; 或 &lt;searchTerm&gt; 等領先的通配符字符串將導致查詢速度緩慢。若要獲得更好的效能、請改用字首字串、格式為 &lt;searchTerm&gt; * （換句話說、在搜尋詞彙後加上星號（ * ）。範例：使用字串 _testvolume * 、而非 _*testvolume 或 _*test* Volume 。使用目錄搜尋，以遞歸方式查看指定資料夾下的所有活動（階層式搜尋）。例如，「 /path1/path2/path3// 」會在 /path1/path2/path3 下以遞歸方式列出所有活動。或者、也可以使用「 All Activity) 標籤下的「 Add to Filter 」（新增至篩選器）選項。</block>
-  <block id="980f8b6539b7c131f66cdde66f81a98f" category="cell">目錄路徑篩選器（以 / 結尾的路徑字串）建議使用最多 4 個目錄深度，以獲得更快的結果。例如，如果目錄路徑為 /aaa/BBB/CCC/DDD ，請嘗試搜尋「 /AAA/BBB/CCC/DDD/」 ，以更快載入資料。</block>
   <block id="ee0b2f1c8ad7945cf603e8d752a5e7b5" category="inline-link-macro">Data Infrastructure Insights 版本</block>
   <block id="bbf9080a1bf1fb2f62558ce683d64be0" category="paragraph">如需 Data Infrastructure Insights Basic 與 Premium Edition 中可用功能的完整比較<block ref="49bb501f6c401ae5b06c3dbe5fc987bd" category="inline-link-macro-rx"></block>、請參閱頁面。</block>
   <block id="9dd6e3f1271bf8cdcd9a0becace5f06f" category="section-title">2025 年 1 月</block>
@@ -11867,8 +11840,6 @@
   <block id="84229233ad61c44b8e53075992f6c8a5" category="paragraph">Data Infrastructure Insights 現在讓您更能掌控所建立儀表板的存取權。您可以選擇修改圖表的對象。您可以控制對潛在敏感資訊的曝光。仍在使用尚未準備好全面可見度的儀表板嗎？您可以將其保留為私密狀態，直到您準備好分享。</block>
   <block id="f916d734e48a8724b0f8c434b43a06a7" category="inline-image-macro">儀表板共用選項</block>
   <block id="e2d1989486babbb3dc0993863f9f4ef8" category="paragraph"><block ref="e2d1989486babbb3dc0993863f9f4ef8" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c278bdd917e4f32f7d8a13861d3c1a43" category="list-text">*Path* 是 _entity_ 路徑。這應該是確切的實體路徑（例如「 _/home/userX/nested1/nested2/abc.txt 」），或是遞迴搜尋路徑的目錄部分（例如「 _/home/userX/nested1/nested2/_ 」）。注意：此處不允許 regex 路徑模式（例如 _userX_ ）。或者，也可以指定如下所述的個別路徑資料夾層級篩選器來進行路徑篩選。</block>
-  <block id="09cde459dc94ebcdb7fb39e8a2b6e65f" category="list-text">* 實體的 Path* ：這應該是確切的實體路徑（例如「 _/home/userX/nested1/nested2/abc.txt 」），或是遞歸搜尋路徑的目錄部分（例如「 _/home/userX/nested1/nested2/_ 」）。注意：此處不允許 regex 路徑模式（例如 * 使用者 X* ）。建議目錄路徑篩選器（以 / 結尾的路徑字串）最多 4 個目錄深，以獲得更快的結果。例如， "_/home/userX/nested1/nested2/_" 。如需詳細資訊、請參閱下表。</block>
   <block id="39dfb1596c6a6cd5efc77677cffa9f47" category="cell">路徑值與 /home/userX/nested1/test 完全相符</block>
   <block id="67796eee76b434ba7f714f24fce77a4c" category="cell">與目錄搜尋相比，搜尋的確切搜尋速度較慢。</block>
   <block id="ee884ab6f8aeb5114dc04fcb169533de" category="section-title">路徑搜尋</block>
@@ -11950,4 +11921,57 @@
   <block id="0dc236d363c2d7f668f1ee1391ffab69" category="paragraph">VM 回收索引標籤可提供超過 30 ， 60 或 90 天閒置或關機的 VM 詳細資料，以及潛在容量，記憶體和 vCPU 的節約效益。從清單中選取虛擬機器會開啟該虛擬機器的詳細資料頁面。</block>
   <block id="5edbd52aee44c2dfb6c01abc4128600a" category="inline-image-macro">VM 回收標籤</block>
   <block id="e2e66b001cd3f2f1481c4b23049ca899" category="paragraph"><block ref="e2e66b001cd3f2f1481c4b23049ca899" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7c0e2b6958fb0cb284c1950d13dd92b7" category="paragraph">「 * 所有活動 * 」表格顯示下列資訊。請注意、並非所有這些欄都會預設顯示。您可以按一下「齒輪」圖示來選取要顯示的欄。</block>
+  <block id="44263fc9b1d7463adb10ca9afc45060e" category="list-text">*讀取中繼資料*：僅適用於啟用資料夾監控選項。將在 Windows 上開啟資料夾或在 Linux 資料夾內執行「 ls 」時產生。</block>
+  <block id="296d30798995d9503c7e56e6937dc7e1" category="list-text">*其他變更*：上述未提及的任何其他事件。所有未對應的事件都會對應至「其他變更」活動類型。適用於檔案和資料夾。</block>
+  <block id="18b2404a514ba0df8811a1ef18ce21c8" category="list-text">*Path* 是 _entity_ 路徑。這應該是確切的實體路徑（例如「 _/home/userX/nested1/nested2/abc.txt 」），或是遞迴搜尋路徑的目錄部分（例如「 _/home/userX/nested1/nested2/_ 」）。附註：此處不允許使用 regex 路徑模式（例如， \*nerseed * ）。或者，也可以指定如下所述的個別路徑資料夾層級篩選器來進行路徑篩選。</block>
+  <block id="ff7a8d750ff46de2529a38c020e55d07" category="list-text">實體名稱 * 是實體路徑的最後一個元件；對於實體類型為檔案，則是檔案名稱。</block>
+  <block id="4ec2ab8548d402ce5e2a202a8ea0a5dc" category="list-text">請注意，當實體名稱被選取為篩選器時，「群組依據」下拉式清單將會停用；此外，當使用者已在「群組依據」畫面上時，「實體名稱為」篩選器將會停用。</block>
+  <block id="34c71ee0e2f7ee568a6fba85dbe3f12c" category="paragraph">按一下 *[+]* 按鈕，從頂端的「篩選依據」小工具中選取適當的篩選器：</block>
+  <block id="593a62c8da056fafb6ac6651ffc0bf77" category="list-text">*執行活動的使用者名稱*。您需要提供確切的使用者名稱以進行篩選。使用部分使用者名稱或以「 * 」開頭或後綴的部分使用者名稱進行搜尋將無法運作。</block>
+  <block id="9db7dc70a2e0452d843a040725d27f0c" category="list-text">* 實體類型 * 、使用實體（檔案）副檔名 - 最好在引號內指定確切的實體類型。例如： _ "txt" _ 。</block>
+  <block id="f1354a51722f5f69bac39634de675af5" category="list-text">* 實體的 Path* ：這應該是確切的實體路徑（例如「 _/home/userX/nested1/nested2/abc.txt 」），或是遞歸搜尋路徑的目錄部分（例如「 _/home/userX/nested1/nested2/_ 」）。附註：此處不允許使用 regex 路徑模式（例如， \*nerseed * ）。建議目錄路徑篩選器（以 / 結尾的路徑字串）最多 4 個目錄深，以獲得更快的結果。例如， "_/home/userX/nested1/nested2/_" 。如需詳細資訊、請參閱下表。</block>
+  <block id="6911c153f3664c18429e8ec40b2a767b" category="list-text">第一層資料夾（根目錄） - 實體路徑的根目錄作為篩選器。例如，如果實體路徑為 /home/userX/nested1/nested2/ ，則可使用 Home 或 Home 。</block>
+  <block id="23e3dfc154773a88f3b9923c80ec7481" category="list-text">第二層資料夾 - 實體路徑篩選器的第二層目錄。例如，如果實體路徑為 /home/userX/nested1/nested2/ ，則可使用 userX 或 "userX" 。</block>
+  <block id="857d0e5023171871c119ae87aeee53bc" category="list-text">例如，如果實體路徑為 /home/userX/nested1/nested2/ ，則可使用 nested1 或「 nested1 」。</block>
+  <block id="3781ad6dba415c69a08c1285b1b7d3df" category="list-text">第四層資料夾 - 實體路徑篩選器的目錄第四層目錄。例如，如果實體路徑為 /home/userX/nested1/nested2/ ，則可使用 nested2 或「 nested2 」。</block>
+  <block id="84fe991275e24aba0f251415516a1e6c" category="list-text">*存取實體的來源IP*。</block>
+  <block id="902172441eece016fa20a235ed73347b" category="list-text">您可以使用通配符 * 和 ? 。例如： 10.0.0.* ， 10.0.0.10 ， 10.10*</block>
+  <block id="86ef89dbeec61182083cf6530ee135bc" category="list-text">如果需要完全相符，則必須以雙引號提供有效的來源 IP 位址，例如「 10.1.1.1.1 」。不完整的 IP 搭配雙引號，例如「 10.1.1 」，「 10.1.1.* 」等，將無法運作。</block>
+  <block id="905b0c69ef1c6841cf8c0b1791011328" category="list-text">* 實體名稱 * - 實體路徑的檔案名稱作為篩選器。例如，如果實體路徑為 /home/userX/nested1/testfile.txt ，則實體名稱為 testfile.txt 。請注意，建議您在引號內指定確切的檔案名稱，請盡量避免萬用字元搜尋。例如， "testfile.txt" 。此外，請注意，建議將此實體名稱篩選器用於較短的時間範圍（最多 3 天）。</block>
+  <block id="7534d146e70223d1303533e0a14fe154" category="list-text">萬用字元字串不得包含引號：例如： searchtext ， \*searchtext* 會篩選包含 'earchtext' 的任何字串。</block>
+  <block id="b37486cde222fa7d4db54c7f9079af41" category="list-text">帶有前綴的字符串（例如： searchtext* ）將搜索以 'earchtext' 開頭的任何字符串。</block>
+  <block id="c1b9a95df28615d752861a653c912165" category="paragraph">請注意，所有篩選欄位都是區分大小寫的搜尋。例如：如果套用的篩選器為「實體類型」，值為「字型」，則會傳回實體類型為「字型」，「字型文字」，「字型文字」，「字型文字」，「字型文字」，「字型文字」的結果。</block>
+  <block id="96e29af4c73b1b900742b35d78410d0d" category="cell">路徑 = "/home/userX/nested1/test"</block>
+  <block id="8e14529189c6a9e30ee446b642210f06" category="cell">實體名稱 = "test.log"</block>
+  <block id="d291397dc1bcc71a7246b56b5ad13661" category="cell">檔案名稱與 test.log 完全相符</block>
+  <block id="aff71f671afca7db5dcb5abeb1e94258" category="cell">完全符合</block>
+  <block id="fbff2043925d9da26087de5d55841c19" category="cell">實體名稱 = * test.log</block>
+  <block id="b3b4c0809900611c37d77a422fd3b157" category="cell">以 test.log 結尾的檔案名稱</block>
+  <block id="efa5397985b8609a5dbeb430a4bcadd3" category="cell">慢</block>
+  <block id="b17c9447397dcc3e6e0040513674b0eb" category="cell">由於萬用字元，可能會變慢。</block>
+  <block id="c24b132e995cb587464672369f22193b" category="cell">實體名稱 = test* 。 log</block>
+  <block id="b31f3dcbb2229f44061bd4d79f2d4c1d" category="cell">檔案名稱以 test 開頭，結尾為 .log</block>
+  <block id="8ef87bc62946324375ce0406cffecb74" category="cell">實體名稱 = test.lo</block>
+  <block id="18f0f6a0abceaaff775f56b818d4f9c5" category="cell">以 test.lo 開頭的檔案名稱例如：它會符合 test.log ， test.log.1 ， test.log1</block>
+  <block id="b832139a74c071bbfe5bd133e3c47185" category="cell">由於結尾是萬用字元，因此可能會變慢。</block>
+  <block id="f9648e2415808590c79ee96c5f4d0e66" category="cell">實體名稱 = 測試</block>
+  <block id="c71da0649fb7712d7e74ce581db70fb3" category="cell">以 test 開頭的檔案名稱</block>
+  <block id="53ad658aa3b68ee6f8ac34262f27efc5" category="cell">最慢</block>
+  <block id="c4583cc10f343a12230f1e643aa9907a" category="cell">由於結尾處有通配符，使用的一般值較多，因此可能是最慢的。</block>
+  <block id="88a78f0edb8b7d91fe9b9c8fb2e4bc6b" category="list-text">目前，每位使用者的非同步下載次數限制為每位使用者 1 次，每位使用者 3 次。</block>
+  <block id="e4435ba88bd58079d0501884e2cdce27" category="list-text">匯出的資料上限為「活動表」的 100 萬筆記錄，而「群組依據」的上限則為 50 萬筆記錄。</block>
+  <block id="19f35db392e49cb7f3cff5327114daf2" category="cell">Auto*03172022 如果搜尋文字包含連字號或底線、請在方括號中提供運算式、例如（ SVM* ）用於搜尋 SVM-123</block>
+  <block id="8745a33435e7e88bd4e44ad19ea05b34" category="cell">使用者，實體類型，裝置， Volume ，原始路徑， 1stLevel 資料夾， 2ndLevel 資料夾， 3rdLevel 資料夾， 4thLevel 資料夾，實體名稱，來源 IP</block>
+  <block id="470d04a7c99630dbe5d3f0c2b95291fd" category="cell">傳回以「 Auto 」開頭並以「 03172022 」結尾的所有資源</block>
+  <block id="8f04371c9eb330d35f4fd429b3a6b70b" category="cell">使用者，實體類型，裝置， Volume ， 1stLevel 資料夾， 2ndLevel 資料夾， 3rdLevel 資料夾， 4thLevel 資料夾，實體名稱，來源 IP</block>
+  <block id="b12f964a7d4b88d6b12b49acaa4e8da5" category="cell">使用者，網域，實體類型，原始路徑，實體名稱，來源 IP</block>
+  <block id="46b8cf2bc3a5a3834c08eec497d3eaaa" category="cell">使用者，網域，實體類型，原始路徑， 1stLevel 資料夾， 2ndLevel 資料夾， 3rdLevel 資料夾， 4thLevel 資料夾，實體名稱，來源 IP</block>
+  <block id="71fdd823af8d6c227f786362616494a5" category="cell">傳回開頭不是 "AutoRansomUser4_03162022" 的所有項目</block>
+  <block id="aaa6685e24d0d36fa7036ff4fe31a74e" category="cell">不管用</block>
+  <block id="f43bb0cf54d8d5e402232117f3654e92" category="cell">在「所有活動」表的「使用者」欄下方，使用者名稱顯示為：「 LDAP:HQ.COMPANYNAME.COM:S-1-5-21-3577637-1906459482-1437260136-1831817" 」或「 LDAP:Default:80038003 」</block>
+  <block id="5ee73cc203856368d4c788cc5e4c2b86" category="cell">搜尋字串中的星號（ \* ）會搜尋所有項目。但是，諸如 &lt;searchTerm&gt; 或 &lt;searchTerm&gt; 等領先的通配符字符串將導致查詢速度緩慢。若要獲得更好的效能、請改用字首字串、格式為 &lt;searchTerm&gt; * （換句話說、在搜尋詞彙後加上星號（ * ）。範例：使用字串 _testvolume * 、而非 _*testvolume 或 _*test* Volume 。使用目錄搜尋，以遞歸方式查看指定資料夾下的所有活動（階層式搜尋）。例如，「 /path1/path2/path3/" 會以遞歸方式列出 /path1/path2/path3 下的所有活動。或者，也可以使用「所有活動」索引標籤下的「新增至篩選」選項。</block>
+  <block id="43bfa97b37a997b631be2c5c6423c5fc" category="cell">目錄路徑篩選器（以 / 結尾的路徑字串）建議使用最多 4 個目錄深度，以獲得更快的結果。例如，如果目錄路徑為 /aaa/BBB/CCC/DDD ，請嘗試搜尋「 /AAA/BBB/CCC/DDD/」 ，以更快載入資料。</block>
+  <block id="76b6bb11709d612b89ea4e85c1289694" category="cell">鑑識 UI 在使用實體名稱篩選器時，載入資料的速度緩慢且面臨失敗。</block>
+  <block id="9047530966d5f017f54aa4479b25a938" category="cell">請嘗試使用較小的時間範圍，並使用雙引號進行精確的值搜尋。例如，如果 entityPath 是「 /home/userX/nested1/nested2/nested3/testfile.txt 」，請嘗試使用「 testfile.txt 」做為實體名稱篩選器。</block>
 </blocks>
