@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: cvm_optimization_overview.html 
+summary: VM 最佳化 
+keywords: dashboard, widget, custom, concepts, queries, variables, rollup, roll up, grouping, aggregate, aggregation, filter, axis, group by, expressions, timeseries, exact match, theme, visibility, formatting, conditional, hide, collapse, expand 
+---
+= VM 最佳化
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:nofooter: 
+:toclevels: 1
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Data Infrastructure Insights 可分析環境的歷史行為，建立短期和長期預測，針對關閉電源和閒置的 VM ，產生主機汰換和回收的詳細建議，協助您管理基礎架構和授權成本。這些建議有助於確保效能穩定，釋放未使用的容量，並減少記憶體和 CPU 分配。
+
+image:vm_optimization_summary.png["VM 最佳化摘要畫面"]
+
+若要開始，請瀏覽至「可觀察性」 > 「分析」 > 「 VM 最佳化」。您會看到依核心數量和儲存節省成本來分類的潛在節約效益摘要。您可以依資料中心，虛擬中心 IP 或叢集將篩選器設為焦點，或是設定自己的篩選器，以進一步縮小焦點範圍。
+
+image:vm_optimization_overview.png["VM 最佳化總覽"]
+
+Hypervisor 的「解除監管」標籤會根據您選擇的最佳化策略，顯示您可能節省的成本。每項策略都使用不同的臨界值來判斷可能的節約效益。
+
+在清單中選取叢集，以開啟滑出面板，其中包含叢集的 CPU 和記憶體使用率詳細資料。
+
+image:vm_optimization_hypervisor_decommissioning_tab.png["Hypervisor 最佳化標籤"]
+
+VM 回收索引標籤可提供超過 30 ， 60 或 90 天閒置或關機的 VM 詳細資料，以及潛在容量，記憶體和 vCPU 的節約效益。從清單中選取虛擬機器會開啟該虛擬機器的詳細資料頁面。
+
+image:vm_optimization_reclamation_tab.png["VM 回收標籤"]

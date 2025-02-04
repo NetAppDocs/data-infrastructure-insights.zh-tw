@@ -11939,4 +11939,15 @@
   <block id="16442b20a2319083af65dedb2d7e942e" category="paragraph">您可以選擇將儀表板分享給「所有人」，或選擇擁有「編輯」或「唯讀」權限的使用者。</block>
   <block id="1dcba5cd7d6049883623c0653a2031f6" category="inline-image-macro">下拉式清單，可共用具有「編輯」或「讀取」權限的儀表板</block>
   <block id="ac0466f21ebde71eed9f3673b4c7da1b" category="paragraph"><block ref="ac0466f21ebde71eed9f3673b4c7da1b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="98465e4573c2849304e85edaeef13370" category="summary">VM 最佳化</block>
+  <block id="761ab7bf046ac25fda0da8f1af542322" category="paragraph">若要開始，請瀏覽至「可觀察性」 &gt; 「分析」 &gt; 「 VM 最佳化」。您會看到依核心數量和儲存節省成本來分類的潛在節約效益摘要。您可以依資料中心，虛擬中心 IP 或叢集將篩選器設為焦點，或是設定自己的篩選器，以進一步縮小焦點範圍。</block>
+  <block id="045386d087f10e1f0ae1e3bf75624afe" category="inline-image-macro">VM 最佳化總覽</block>
+  <block id="7110454d98ba958eec64260bbc5dec80" category="paragraph"><block ref="7110454d98ba958eec64260bbc5dec80" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="03f6f40a2cf552119978ffce0238086f" category="paragraph">Hypervisor 的「解除監管」標籤會根據您選擇的最佳化策略，顯示您可能節省的成本。每項策略都使用不同的臨界值來判斷可能的節約效益。</block>
+  <block id="6e3975fe060cfaed5d52ef53dce4935b" category="paragraph">在清單中選取叢集，以開啟滑出面板，其中包含叢集的 CPU 和記憶體使用率詳細資料。</block>
+  <block id="f76142da98b557ade1c2d52abf0a207b" category="inline-image-macro">Hypervisor 最佳化標籤</block>
+  <block id="bfea8ae8feffd62a3b499ac0dc5015ac" category="paragraph"><block ref="bfea8ae8feffd62a3b499ac0dc5015ac" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0dc236d363c2d7f668f1ee1391ffab69" category="paragraph">VM 回收索引標籤可提供超過 30 ， 60 或 90 天閒置或關機的 VM 詳細資料，以及潛在容量，記憶體和 vCPU 的節約效益。從清單中選取虛擬機器會開啟該虛擬機器的詳細資料頁面。</block>
+  <block id="5edbd52aee44c2dfb6c01abc4128600a" category="inline-image-macro">VM 回收標籤</block>
+  <block id="e2e66b001cd3f2f1481c4b23049ca899" category="paragraph"><block ref="e2e66b001cd3f2f1481c4b23049ca899" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
