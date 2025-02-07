@@ -6445,7 +6445,6 @@
   <block id="da7e75e5407636a24c1c7cce20e7d225" category="paragraph">Data Infrastructure Insights 目前的 Telegraf 版本是 *1.24.0* 。</block>
   <block id="2041337c363c1ecaeb2a1aa9c8999494" category="paragraph">如需在 Kubernetes 上安裝的相關資訊，請參閱<block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block>頁面。</block>
   <block id="ae2f2b5e87a12f1cd650f0e46b92e4ec" category="admonition">為確保稽核與資料報告的準確性、強烈建議您使用*網路時間傳輸協定（NTP）*或*簡易網路時間傳輸協定（SNTP）*來同步代理機器上的時間。</block>
-  <block id="f97f94f0ff0c35a96686e2fd00940ac8" category="admonition">如果您想在安裝 Agent 之前驗證安裝檔案，請參閱以下的一節<block ref="1d9f3d6343939e76574c60762a7f2fae" category="inline-xref-macro-rx"></block>。</block>
   <block id="137bac1c26ca6d0b61bc783c9a2fcbbd" category="section-title">安裝代理程式</block>
   <block id="a4c0f3c4bd8931418c028fb88c45e72f" category="paragraph">如果您正在安裝服務資料收集器、但尚未設定代理程式、系統會提示您先安裝適當作業系統的代理程式。本主題提供在下列作業系統上安裝Telegraf代理程式的說明：</block>
   <block id="8d6f7baf6fd8e47d9316fcc507ab0f85" category="list-text"><block ref="85415f26af88eac138de6f713927df0c" category="inline-xref-macro-rx"></block></block>
@@ -11974,4 +11973,5 @@
   <block id="43bfa97b37a997b631be2c5c6423c5fc" category="cell">目錄路徑篩選器（以 / 結尾的路徑字串）建議使用最多 4 個目錄深度，以獲得更快的結果。例如，如果目錄路徑為 /aaa/BBB/CCC/DDD ，請嘗試搜尋「 /AAA/BBB/CCC/DDD/」 ，以更快載入資料。</block>
   <block id="76b6bb11709d612b89ea4e85c1289694" category="cell">鑑識 UI 在使用實體名稱篩選器時，載入資料的速度緩慢且面臨失敗。</block>
   <block id="9047530966d5f017f54aa4479b25a938" category="cell">請嘗試使用較小的時間範圍，並使用雙引號進行精確的值搜尋。例如，如果 entityPath 是「 /home/userX/nested1/nested2/nested3/testfile.txt 」，請嘗試使用「 testfile.txt 」做為實體名稱篩選器。</block>
+  <block id="af8cb62c8a34ba6726d4859a2c8c7e95" category="admonition">如果您想在安裝 Agent 之前驗證安裝檔案，請參閱以下的一節<block ref="bf4e2f55c3503e0739d2135298b462c7" category="inline-xref-macro-rx"></block>。</block>
 </blocks>

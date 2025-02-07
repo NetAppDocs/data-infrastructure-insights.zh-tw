@@ -29,7 +29,7 @@ Data Infrastructure Insights 目前的 Telegraf 版本是 *1.24.0* 。
 NOTE: 為確保稽核與資料報告的準確性、強烈建議您使用*網路時間傳輸協定（NTP）*或*簡易網路時間傳輸協定（SNTP）*來同步代理機器上的時間。
 
 
-NOTE: 如果您想在安裝 Agent 之前驗證安裝檔案，請參閱以下的一節<<Verifying Checksums>>。
+NOTE: 如果您想在安裝 Agent 之前驗證安裝檔案，請參閱以下的一節<<驗證 Telegraf 套件校驗和>>。
 
 
 
