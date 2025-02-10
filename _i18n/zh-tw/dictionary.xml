@@ -5827,17 +5827,13 @@
   <block id="699058fd0a28bd24bd4721ecd1db6615" category="paragraph">回應的格式如下：</block>
   <block id="cb9887667fc38a045fa6b13ed03ab244" category="summary">報告架構圖表</block>
   <block id="d1faf51eb9187865439a19b56e1f0f35" category="doc">資料基礎架構洞見報告架構圖表</block>
-  <block id="e90f7dd992e0cf34bd039e9aea1bb153" category="inline-link-macro">架構表格</block>
-  <block id="4cd8c7a0a81af63c6cf9cab90cbb2336" category="paragraph">本文件提供報告資料庫的架構圖表。您也可以下載包含的檔案<block ref="2332424ce6d0703b657b351f20f445fe" category="inline-link-macro-rx"></block>。</block>
   <block id="d6b50e981dcf3c483f39cca16ed4a3bf" category="section-title">庫存資料</block>
   <block id="4ee2fd4b3ba41c46dcb5c95f5ab3c98c" category="paragraph">下列影像說明庫存資料擷取。</block>
   <block id="933e469cb306a0ea9faabd3e4235d3be" category="section-title">註釋</block>
   <block id="4ab6864fc58ecd8b598ee10dfe2ac311" category="inline-image-macro">註釋</block>
   <block id="823fea947b864c91d6e752501473c559" category="paragraph"><block ref="823fea947b864c91d6e752501473c559" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b5fba9ff24d0045d1377a05a46b32f68" category="inline-image-macro">應用程式</block>
-  <block id="d33bf75d5e80061b9367f195f05e3eeb" category="paragraph"><block ref="d33bf75d5e80061b9367f195f05e3eeb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="eb59b991a8859e32315f0c110063a18c" category="section-title">Kubernetes 指標</block>
-  <block id="7c77c6e00a2f8a03a7fdfb2757000d7b" category="paragraph"><block ref="7c77c6e00a2f8a03a7fdfb2757000d7b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="889b2b6891b247cb3f1629028a6a72ad" category="section-title">Kubernetes 叢集指標事實</block>
   <block id="4b8c184a61895e613e3b38aaa98e8328" category="paragraph"><block ref="4b8c184a61895e613e3b38aaa98e8328" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fe896f49e503c0194f73c1c6cf8c07f1" category="section-title">Kubernetes 命名空間度量資料</block>
@@ -5850,57 +5846,39 @@
   <block id="8069630217044bdf027d2b8af00a69d8" category="paragraph"><block ref="8069630217044bdf027d2b8af00a69d8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c07ee5debf5f3a3fef16c1ee5e8e4942" category="section-title">NAS</block>
   <block id="b9d04cd47823420fa061075ba05345de" category="inline-image-macro">NAS</block>
-  <block id="3b4e5c73809e6994ed3212bb7ddf9c8b" category="paragraph"><block ref="3b4e5c73809e6994ed3212bb7ddf9c8b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9d42905511528df6765f3f1a7c04b865" category="section-title">路徑和違規</block>
   <block id="e1f873037143ad09d4539dd078099e6d" category="inline-image-macro">路徑和違規</block>
-  <block id="ebc55d7e3fe64743e28ad5ed6ec5e5b2" category="paragraph"><block ref="ebc55d7e3fe64743e28ad5ed6ec5e5b2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1cfe27cbd0a5a77107c6dfcf07d2629c" category="section-title">連接埠連線能力</block>
   <block id="7f4214df4af946e8a7615e82db28d116" category="inline-image-macro">連接埠連線能力</block>
-  <block id="1206ab321eae7286620a3018bfb95cb2" category="paragraph"><block ref="1206ab321eae7286620a3018bfb95cb2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5bab0780005928c1dbfdbb00ea1df4a6" category="section-title">SAN Fabric</block>
   <block id="242ecb7731cc20f39e1540965229f1ce" category="inline-image-macro">SAN 架構</block>
-  <block id="08d595e0713ed1ea1c5bfbf317cfada7" category="paragraph"><block ref="08d595e0713ed1ea1c5bfbf317cfada7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ddecebdea58b5f264d27f1f7909bab74" category="inline-image-macro">儲存設備</block>
-  <block id="51c14a87b4fa40df1324284a1bb28911" category="paragraph"><block ref="51c14a87b4fa40df1324284a1bb28911" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1af4d8d1e27060818e9c85e97a69ce95" category="inline-image-macro">儲存節點</block>
-  <block id="8fa6c5e8edf99771f8bff4748cd4437a" category="paragraph"><block ref="8fa6c5e8edf99771f8bff4748cd4437a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="583a65df9db4119165f5ea0abaa50281" category="section-title">VM</block>
   <block id="cd723ed383c1d461e38f7569ed30e7fd" category="inline-image-macro">虛擬機器</block>
-  <block id="fe82a552e413503d4121ee6fd50f63e5" category="paragraph"><block ref="fe82a552e413503d4121ee6fd50f63e5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d260e141887ca1a59da8973861299709" category="section-title">容量 Datamart</block>
   <block id="9ad5c20e0121bd52bd3fcef56f73d00d" category="paragraph">下列影像說明容量資料傳輸技術。</block>
   <block id="c5ca8dd445f709cb9110e451b4898f71" category="inline-image-macro">計費</block>
-  <block id="e764fd818e8a60f10a76ae77381bfaf8" category="paragraph"><block ref="e764fd818e8a60f10a76ae77381bfaf8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ec1d23d46d47071826c25c1be457754c" category="section-title">磁碟群組容量</block>
-  <block id="859e0945a15fa9fabbbf016a602a42fc" category="paragraph"><block ref="859e0945a15fa9fabbbf016a602a42fc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="87aaa09aa3753a95331c644c7b301566" category="section-title">檔案系統使用率</block>
-  <block id="0f72ed0193c9f6e827b093b9ccb5692c" category="paragraph"><block ref="0f72ed0193c9f6e827b093b9ccb5692c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ca2219979432d21faba231a579345d08" category="section-title">內部Volume容量</block>
-  <block id="6bcd4ec60a2f1f010ce8992ba7f4c165" category="paragraph"><block ref="6bcd4ec60a2f1f010ce8992ba7f4c165" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d7e27f6a5d216572cc692811c6530f82" category="section-title">Kubernetes PV 容量</block>
   <block id="0c42f8a4ffc0a7acc1f41a76a8aadd0d" category="paragraph"><block ref="0c42f8a4ffc0a7acc1f41a76a8aadd0d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d024c12213e71ea6a55252fbd3311782" category="section-title">連接埠容量</block>
   <block id="05ee109bb6a61c05a6e9a540d3d31c3f" category="paragraph"><block ref="05ee109bb6a61c05a6e9a540d3d31c3f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="38f9518fc5a08755d8726dd013507ff6" category="section-title">qtree容量</block>
-  <block id="85275511fdcd60f9afc50a8dc99e4bc5" category="paragraph"><block ref="85275511fdcd60f9afc50a8dc99e4bc5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e0ba81e0831c363ed8d29ad89590f535" category="section-title">儲存容量效率</block>
-  <block id="721aede41f047426f957ff682629e9a3" category="paragraph"><block ref="721aede41f047426f957ff682629e9a3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="72ef24c018bdda1f94bc3f159a543c04" category="section-title">儲存與儲存資源池容量</block>
-  <block id="bffc4627852bfd98c5194d770bc8a0c7" category="paragraph"><block ref="bffc4627852bfd98c5194d770bc8a0c7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="955630f91d989ab6e44388b92dc3ec42" category="section-title">儲存節點容量</block>
   <block id="cb9ac9276d68505110a2f855e0584167" category="paragraph"><block ref="cb9ac9276d68505110a2f855e0584167" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c407084b02a56538766fb242db0b4450" category="section-title">VM容量</block>
-  <block id="83b9739ec081b938c1167a09ed5eb70f" category="paragraph"><block ref="83b9739ec081b938c1167a09ed5eb70f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="69ba447dc5e9ab1619f330f106eabbf3" category="section-title">Volume容量</block>
-  <block id="84afe34b86a51d01fbe9bc82f5546c35" category="paragraph"><block ref="84afe34b86a51d01fbe9bc82f5546c35" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f5a0f3d3aca1daf0fc15bc8c06641d58" category="section-title">效能資料</block>
   <block id="4b0a396c135d61ae9a60a4baa44adf59" category="paragraph">下列影像說明效能資料藝術。</block>
   <block id="b4cc8db8c41365008f6c83a7edd0c3f9" category="section-title">應用程式Volume每小時效能</block>
   <block id="9938cac46b49a5874f9aae8c12197356" category="paragraph"><block ref="9938cac46b49a5874f9aae8c12197356" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1dcdf4799c1661b5732a356dad0691d0" category="section-title">磁碟每日效能</block>
-  <block id="c61d5ee86f360bfb37d65d25b92d8b69" category="paragraph"><block ref="c61d5ee86f360bfb37d65d25b92d8b69" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f86c571e203a9013f990c064f0b41d7a" category="section-title">磁碟每小時效能</block>
-  <block id="3dbb3b6e21eea031050b31060313c408" category="paragraph"><block ref="3dbb3b6e21eea031050b31060313c408" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3176895f7b0fd7802579ef7f42a2c642" category="section-title">主機每小時效能</block>
   <block id="52e6f974dc77751f36293cd0a12c42a1" category="paragraph"><block ref="52e6f974dc77751f36293cd0a12c42a1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8ed77ce1d723e3b9eb45d36731ab5125" category="section-title">內部Volume每小時效能</block>
@@ -5908,19 +5886,14 @@
   <block id="35a2f98661106a51b803c7959dd0906f" category="section-title">內部Volume每日效能</block>
   <block id="176adbc6b6bf8de89cf7f7afe5c28cf3" category="paragraph"><block ref="176adbc6b6bf8de89cf7f7afe5c28cf3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="05a9ced33983772db161394893a94d72" category="section-title">qtree每日效能</block>
-  <block id="5798c65ea98d63c3c2d1ab932e8c3bbc" category="paragraph"><block ref="5798c65ea98d63c3c2d1ab932e8c3bbc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d6b73d87facce72dbc09974de7a801e6" category="section-title">儲存節點每日效能</block>
   <block id="681deee752c2eeeedda4bc3077015d16" category="paragraph"><block ref="681deee752c2eeeedda4bc3077015d16" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ee5d6febefb6ed5a889b193c7b9f70d7" category="section-title">儲存節點每小時效能</block>
   <block id="3cc06e501d2313afc8a5354ed8cbebe3" category="paragraph"><block ref="3cc06e501d2313afc8a5354ed8cbebe3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4b49234362b48d766a5b0b1863f7c92c" category="section-title">切換主機的每小時效能</block>
-  <block id="632590b38845e06be878069588e6e5c7" category="paragraph"><block ref="632590b38845e06be878069588e6e5c7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="186dbcc03644e55957a9b1b52609c7d9" category="section-title">交換器每小時的連接埠效能</block>
-  <block id="56d66efcaf566eea795a6ebd02d2fa6e" category="paragraph"><block ref="56d66efcaf566eea795a6ebd02d2fa6e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="341ebe0d593f6e0dec63405ce23a76e1" category="section-title">切換每小時儲存效能</block>
-  <block id="a00a08416d4e3d2841e9c44cb8d9f65b" category="paragraph"><block ref="a00a08416d4e3d2841e9c44cb8d9f65b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="94b56d759d5921c506e923eefdbe62b8" category="section-title">切換每小時磁帶效能</block>
-  <block id="7d4c86213113e6498b04a4e0c5b3d897" category="paragraph"><block ref="7d4c86213113e6498b04a4e0c5b3d897" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5020b90850e754bc38486e80ef1e9292" category="section-title">VM效能</block>
   <block id="fce52c04340881c99fd21c228440c1bf" category="paragraph"><block ref="fce52c04340881c99fd21c228440c1bf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="148a0a1a0c4f5f645a32c02dd12e0313" category="section-title">VM每日主機效能</block>
@@ -5928,9 +5901,7 @@
   <block id="94c1dd9d7823c16fea64885fdb5ac184" category="section-title">VM每小時主機效能</block>
   <block id="4e5b033da78fbd177925f9a50abab298" category="paragraph"><block ref="4e5b033da78fbd177925f9a50abab298" category="inline-image-macro-rx" type="image"></block></block>
   <block id="638d0e4f76718f4d82d0bdfd3b4c5425" category="section-title">VMDK每日效能</block>
-  <block id="0c8df8e69e71a378baf617f3ff985afc" category="paragraph"><block ref="0c8df8e69e71a378baf617f3ff985afc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="520ab7e34819995ee389e0b0acd6042e" category="section-title">VMDK每小時效能</block>
-  <block id="17b8e5d1c10542a4c25ad27c290eb108" category="paragraph"><block ref="17b8e5d1c10542a4c25ad27c290eb108" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cb25875b45e4c1358cd431cc09ff89fb" category="section-title">Volume每小時效能</block>
   <block id="9b32116d8eca48b62ed2e18d3ce0a898" category="paragraph"><block ref="9b32116d8eca48b62ed2e18d3ce0a898" category="inline-image-macro-rx" type="image"></block></block>
   <block id="735b6ed9b0069fd73dd0986ba5ad4bf2" category="section-title">Volume每日效能</block>
@@ -11974,12 +11945,44 @@
   <block id="76b6bb11709d612b89ea4e85c1289694" category="cell">鑑識 UI 在使用實體名稱篩選器時，載入資料的速度緩慢且面臨失敗。</block>
   <block id="9047530966d5f017f54aa4479b25a938" category="cell">請嘗試使用較小的時間範圍，並使用雙引號進行精確的值搜尋。例如，如果 entityPath 是「 /home/userX/nested1/nested2/nested3/testfile.txt 」，請嘗試使用「 testfile.txt 」做為實體名稱篩選器。</block>
   <block id="af8cb62c8a34ba6726d4859a2c8c7e95" category="admonition">如果您想在安裝 Agent 之前驗證安裝檔案，請參閱以下的一節<block ref="bf4e2f55c3503e0739d2135298b462c7" category="inline-xref-macro-rx"></block>。</block>
-  <block id="6cc5c9e930ea3d3b8bff4367c60ceea4" category="section-title">2025 年 2 月</block>
-  <block id="bd255743216cfae20f87e84a9cd8e7e1" category="section-title">DII API 使用率追蹤：強化安全性與效率</block>
-  <block id="cbae7135744441f0129b7ededa75e291" category="paragraph">強化 REST API 使用率追蹤功能，強化您的安全狀態，並簡化資源管理。透過 API 使用率追蹤，您可以查看使用的 API Token ， IP 位址及其產生的流量量。這項資訊可供管理員使用者存取，可讓您快速偵測異常活動模式，識別潛在威脅，並透過消除不必要的要求來最佳化效能。將權杖連結至特定的 IP 位址和使用層級，即可深入瞭解系統存取和使用趨勢，讓您掌控維持安全，有效率的環境，並讓作業順暢運作。</block>
-  <block id="864d5cf863bc1474afd3f84717104d24" category="paragraph">若要檢視 API 使用率，請瀏覽至 * 可服務性 &gt; 管理 &gt; API 存取 * ，然後選取 _ 檢視 API 使用率 _ 。請注意，此 API 僅適用於 DII 可服務性 API ；不適用於工作負載安全性或報告 API 。</block>
-  <block id="320be4cb0a9128705d37286f8afff816" category="inline-image-macro">API 使用分析範例</block>
-  <block id="d7f696b40402f5f6c5dc60d881af09a0" category="paragraph"><block ref="d7f696b40402f5f6c5dc60d881af09a0" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="811a069713a14c7b8c3b0333afcedfff" category="section-title">工作負載安全 API 可限制使用者</block>
-  <block id="4c68ec61ca843531d828d448eb135006" category="paragraph">新增了一個 API 來管理工作負載安全性中的使用者限制。使用 API ，您可以封鎖或解除封鎖使用者，或變更其受限存取的持續時間。請參閱管理 &gt; API 存取 &gt; API 文件頁面，以取得 _cloudsecure_actions.block_ API 。</block>
+  <block id="b5e2520d83844090cbcad2992fac4925" category="paragraph">本文件提供報告資料庫的架構圖表。</block>
+  <block id="741a2e8739099a5148fe0d9d5c0fe0c9" category="paragraph"><block ref="741a2e8739099a5148fe0d9d5c0fe0c9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2171493f10f54d18ab8fdf010d8db5a6" category="paragraph"><block ref="2171493f10f54d18ab8fdf010d8db5a6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2ba60e6889ba6752a56d85b11bbf6cbe" category="paragraph"><block ref="2ba60e6889ba6752a56d85b11bbf6cbe" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="44cbd786eaf1d4fda5f6091798987f55" category="paragraph"><block ref="44cbd786eaf1d4fda5f6091798987f55" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7ca2de03c0ff0bea82737ce6200dcc61" category="paragraph"><block ref="7ca2de03c0ff0bea82737ce6200dcc61" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="56c3b4c8943d3e66a683161155cf84cc" category="paragraph"><block ref="56c3b4c8943d3e66a683161155cf84cc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="09963fc62dfe375991d7a330487bdda9" category="paragraph"><block ref="09963fc62dfe375991d7a330487bdda9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6b7313371988582ca952d2f744097e63" category="paragraph"><block ref="6b7313371988582ca952d2f744097e63" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f5946acd59c23dab4aae24c3c6ff9d94" category="paragraph"><block ref="f5946acd59c23dab4aae24c3c6ff9d94" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a05be99f9a1d9449b2ee1e7fe3297e56" category="paragraph"><block ref="a05be99f9a1d9449b2ee1e7fe3297e56" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="353f8ff167d6b06cb1060b07283c71cf" category="paragraph"><block ref="353f8ff167d6b06cb1060b07283c71cf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8128bf00c3dd48ea0308a61bf79bf474" category="paragraph"><block ref="8128bf00c3dd48ea0308a61bf79bf474" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9a9cf17565c7b55151b00eebad1d8fc4" category="paragraph"><block ref="9a9cf17565c7b55151b00eebad1d8fc4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2b9056fee578c5190843c2bb6e737850" category="paragraph"><block ref="2b9056fee578c5190843c2bb6e737850" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f0427242943d1a3586622d5410418a15" category="paragraph"><block ref="f0427242943d1a3586622d5410418a15" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6178ef56aa3f2a5f8dc17aba9fdc6937" category="paragraph"><block ref="6178ef56aa3f2a5f8dc17aba9fdc6937" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cfe2f2bf8598bd97409ff409fb08b8fe" category="paragraph"><block ref="cfe2f2bf8598bd97409ff409fb08b8fe" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6a479c446a2c3c74601cb16d7baf365d" category="paragraph"><block ref="6a479c446a2c3c74601cb16d7baf365d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="aa49d1833fa65328baa1f5b563b37988" category="section-title">叢集交換器效能</block>
+  <block id="cf199397b48ddab9c9a458174d4fc0fc" category="inline-image-macro">叢集交換器效能</block>
+  <block id="8cbbed9e7be601a6f2090ea9bf634896" category="paragraph"><block ref="8cbbed9e7be601a6f2090ea9bf634896" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3323f4b32ce47e3be9df91fed7c741ce" category="paragraph"><block ref="3323f4b32ce47e3be9df91fed7c741ce" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="881cc83f1cb7267980061fcfbc3d0665" category="paragraph"><block ref="881cc83f1cb7267980061fcfbc3d0665" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="66df7a595cff923bef8342bd42616ea6" category="section-title">主機 VM 每日效能</block>
+  <block id="e2539e9a3b71907e8c713f5b5de3f72d" category="paragraph"><block ref="e2539e9a3b71907e8c713f5b5de3f72d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7b5d72e421be03dfa35bc77f0c11ca40" category="section-title">主機 VM 每小時效能</block>
+  <block id="a404b1f69a65459addc11ea1df0b16dc" category="paragraph"><block ref="a404b1f69a65459addc11ea1df0b16dc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c4bc3e836e71cb1cdb898f2b8fcbaae2" category="paragraph"><block ref="c4bc3e836e71cb1cdb898f2b8fcbaae2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ae5d004249409cab99134cd9e7a467ce" category="section-title">qtree 每小時效能</block>
+  <block id="91d9da03409b8386f865869e58bef4d5" category="inline-image-macro">qtree Hourly 效能</block>
+  <block id="f3da80abd994a3d23519a0694002b3cc" category="paragraph"><block ref="f3da80abd994a3d23519a0694002b3cc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b12a1ad1b165c865fec7e47684ab20f1" category="paragraph"><block ref="b12a1ad1b165c865fec7e47684ab20f1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c59982b2056ff0ac455152d5d42e1535" category="paragraph"><block ref="c59982b2056ff0ac455152d5d42e1535" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1134591d8908faea5b2e0d9112651a63" category="paragraph"><block ref="1134591d8908faea5b2e0d9112651a63" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fe24337549241c27f966ac819989f465" category="paragraph"><block ref="fe24337549241c27f966ac819989f465" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f7470d78fb5690f1d7c6f3865c6d063f" category="inline-image-macro">VM 每小時主機效能</block>
+  <block id="1677cd7abeaa8f0a0514a964c0c2bda6" category="paragraph"><block ref="1677cd7abeaa8f0a0514a964c0c2bda6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0b7788a77d5d76748437f02599d4ffbf" category="paragraph"><block ref="0b7788a77d5d76748437f02599d4ffbf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e4d6c49d3ae18aca7ed82f5ef2ab8266" category="paragraph"><block ref="e4d6c49d3ae18aca7ed82f5ef2ab8266" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

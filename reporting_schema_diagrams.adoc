@@ -7,7 +7,6 @@ summary: 報告架構圖表
 = 資料基礎架構洞見報告架構圖表
 :hardbreaks:
 :allow-uri-read: 
-:toclevekls: 2
 :nofooter: 
 :icons: font
 :linkattrs: 
@@ -15,7 +14,7 @@ summary: 報告架構圖表
 
 
 [role="lead"]
-本文件提供報告資料庫的架構圖表。您也可以下載包含的檔案link:ci_reporting_database_schema.pdf["架構表格"]。
+本文件提供報告資料庫的架構圖表。
 
 
 NOTE: 報告功能可在 Data Infrastructure Insights link:concept_subscribing_to_cloud_insights.html["Premium Edition"]中找到。
@@ -36,13 +35,13 @@ image:annotations.png["註釋"]
 
 === 應用程式
 
-image:apps_annot.png["應用程式"]
+image:apps_annot.jpg["應用程式"]
 
 
 
 === Kubernetes 指標
 
-image:k8s_schema.jpg["Kubernetes"]
+image:k8s.jpg["Kubernetes"]
 
 
 
@@ -78,43 +77,43 @@ image:k8s_workload_metrics_fact.jpg["Kubernetes 工作負載指標事實"]
 
 === NAS
 
-image:nas.png["NAS"]
+image:nas.jpg["NAS"]
 
 
 
 === 路徑和違規
 
-image:logical.png["路徑和違規"]
+image:logical.jpg["路徑和違規"]
 
 
 
 === 連接埠連線能力
 
-image:connectivity.png["連接埠連線能力"]
+image:connectivity.jpg["連接埠連線能力"]
 
 
 
 === SAN Fabric
 
-image:fabric.png["SAN 架構"]
+image:fabric.jpg["SAN 架構"]
 
 
 
 === 儲存設備
 
-image:storage.png["儲存設備"]
+image:storage.jpg["儲存設備"]
 
 
 
 === 儲存節點
 
-image:storage_node.png["儲存節點"]
+image:storage_node.jpg["儲存節點"]
 
 
 
 === VM
 
-image:vm.png["虛擬機器"]
+image:vm.jpg["虛擬機器"]
 
 '''
 
@@ -127,25 +126,25 @@ image:vm.png["虛擬機器"]
 
 === 計費
 
-image:Chargeback_Fact.png["計費"]
+image:Chargeback_Fact.jpg["計費"]
 
 
 
 === 磁碟群組容量
 
-image:Disk_Group_Capacity.png["磁碟群組容量"]
+image:Disk_Group_Capacity.jpg["磁碟群組容量"]
 
 
 
 === 檔案系統使用率
 
-image:fs_util.png["檔案系統使用率"]
+image:fs_util.jpg["檔案系統使用率"]
 
 
 
 === 內部Volume容量
 
-image:Internal_Volume_Capacity_Fact.png["內部Volume容量"]
+image:Internal_Volume_Capacity_Fact.jpg["內部Volume容量"]
 
 
 
@@ -163,19 +162,19 @@ image:ports.png["連接埠容量"]
 
 === qtree容量
 
-image:Qtree_Capacity_Fact.png["qtree容量"]
+image:Qtree_Capacity_Fact.jpg["qtree容量"]
 
 
 
 === 儲存容量效率
 
-image:efficiency.png["儲存容量效率"]
+image:efficiency.jpg["儲存容量效率"]
 
 
 
 === 儲存與儲存資源池容量
 
-image:Storage_and_Storage_Pool_Capacity_Fact.png["儲存與儲存資源池容量"]
+image:Storage_and_Storage_Pool_Capacity_Fact.jpg["儲存與儲存資源池容量"]
 
 
 
@@ -187,13 +186,13 @@ image:Storage_Node_Capacity_Fact.jpg["儲存節點容量"]
 
 === VM容量
 
-image:VM_Capacity_Fact.png["VM容量"]
+image:VM_Capacity_Fact.jpg["VM容量"]
 
 
 
 === Volume容量
 
-image:Volume_Capacity.png["Volume容量"]
+image:Volume_Capacity.jpg["Volume容量"]
 
 '''
 
@@ -210,21 +209,39 @@ image:application_performance_fact.jpg["應用程式Volume每小時效能"]
 
 
 
+=== 叢集交換器效能
+
+image:cluster_switch_performance_fact.jpg["叢集交換器效能"]
+
+
+
 === 磁碟每日效能
 
-image:disk_daily_performance_fact.png["磁碟每日效能"]
+image:disk_daily_performance_fact.jpg["磁碟每日效能"]
 
 
 
 === 磁碟每小時效能
 
-image:disk_hourly_performance_fact.png["磁碟每小時效能"]
+image:disk_hourly_performance_fact.jpg["磁碟每小時效能"]
 
 
 
 === 主機每小時效能
 
 image:host_performance_fact.jpg["主機每小時效能"]
+
+
+
+=== 主機 VM 每日效能
+
+image:host_vm_daily_performance_fact.jpg["主機 VM 每日效能"]
+
+
+
+=== 主機 VM 每小時效能
+
+image:host_vm_hourly_performance_fact.jpg["主機 VM 每小時效能"]
 
 
 
@@ -242,7 +259,13 @@ image:internal_volume_daily_performance_fact.jpg["內部Volume每日效能"]
 
 === qtree每日效能
 
-image:QtreeDailyPerformanceFact.png["qtree每日效能"]
+image:QtreeDailyPerformanceFact.jpg["qtree每日效能"]
+
+
+
+=== qtree 每小時效能
+
+image:QtreeHourlyPerformanceFact.jpg["qtree Hourly 效能"]
 
 
 
@@ -260,25 +283,25 @@ image:storage_node_hourly_performance_fact.jpg["儲存節點每小時效能"]
 
 === 切換主機的每小時效能
 
-image:switch_performance_for_host_hourly_fact.png["切換主機的每小時效能"]
+image:switch_performance_for_host_hourly_fact.jpg["切換主機的每小時效能"]
 
 
 
 === 交換器每小時的連接埠效能
 
-image:switch_performance_for_port_hourly_fact.png["交換器每小時的連接埠效能"]
+image:switch_performance_for_port_hourly_fact.jpg["交換器每小時的連接埠效能"]
 
 
 
 === 切換每小時儲存效能
 
-image:switch_performance_for_storage_hourly_fact.png["切換每小時儲存效能"]
+image:switch_performance_for_storage_hourly_fact.jpg["切換每小時儲存效能"]
 
 
 
 === 切換每小時磁帶效能
 
-image:switch_performance_for_tape_hourly_fact.png["切換每小時磁帶效能"]
+image:switch_performance_for_tape_hourly_fact.jpg["切換每小時磁帶效能"]
 
 
 
@@ -296,7 +319,7 @@ image:vm_daily_performance_fact.png["VM每日主機效能"]
 
 === VM每小時主機效能
 
-image:vm_hourly_performance_fact.png["VM每小時主機效能"]
+image:vmware_host_performance_fact.jpg["VM 每小時主機效能"]
 
 
 
@@ -314,13 +337,13 @@ image:vm_hourly_performance_fact.png["VM每小時主機效能"]
 
 === VMDK每日效能
 
-image:vmdk_daily_performance_fact.png["VMDK每日效能"]
+image:vmdk_daily_performance_fact.jpg["VMDK每日效能"]
 
 
 
 === VMDK每小時效能
 
-image:vmdk_hourly_performance_fact.png["VMDK每小時效能"]
+image:vmdk_hourly_performance_fact.jpg["VMDK每小時效能"]
 
 
 
