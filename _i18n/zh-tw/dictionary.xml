@@ -6323,14 +6323,12 @@
   <block id="9be58f2fc8b11ec837406376ca6b3e2a" category="doc">資料基礎架構洞見入門</block>
   <block id="c9c452240be4db82e89f010124f3c4a2" category="paragraph">在開始使用資料基礎架構洞見之前、您必須先註冊 * NetApp BlueXP  入口網站。如果您已經登入 NetApp BlueXP  、您可以透過幾個快速步驟、開始免費試用 Data Infrastructure Insights 。</block>
   <block id="5bff30d13ce98c505187872963af1f25" category="section-title">建立您的 NetApp BlueXP 帳戶</block>
-  <block id="b73a83fb453d4638343c31abb0f03dfc" category="paragraph">若要開始使用 NetApp 的雲端服務，請前往<block ref="b4c824fcd8d5915314065a3371563411" category="inline-link-macro-rx"></block>並按一下 * 開始使用 * 。</block>
   <block id="1e26781b207fa848ce81c7268cf016a7" category="list-text">如果您尚未註冊、請選取 * 註冊 *</block>
   <block id="05d2a837df7692f0d65e4466b2fb05bd" category="list-text">輸入有效的商業電子郵件地址、然後選擇密碼。</block>
   <block id="ad66d403ef43ddd58a7b527874c51878" category="list-text">輸入您的公司名稱和全名。</block>
   <block id="895a961645c5f6456e2cc43102e1de8a" category="list-text">接受條款與條件、然後選擇 * 繼續 * 。</block>
   <block id="027e58ebcf59f73bde476a8af6584584" category="list-text">BlueXP 將引導您完成入門。</block>
   <block id="6670eac4232d1c66e6c936fe67e52aff" category="section-title">如果我已經登入 NetApp BlueXP 、該怎麼辦？</block>
-  <block id="71292a4043ee880f4b2810b42954372c" category="paragraph">擁有 NetApp BlueXP  帳戶後，只要在入口網站頁面上選擇 * 登入 * 即可<block ref="b4c824fcd8d5915314065a3371563411" category="inline-link-macro-rx"></block>。</block>
   <block id="a46b8a484704b65f978247cb9b3901aa" category="paragraph">輸入您的電子郵件地址和密碼。接著您將前往NetApp的雲端產品頁面。</block>
   <block id="a255e7df64ed3494ccf094bd8b25822f" category="paragraph">選取 Data Infrastructure Insights 。</block>
   <block id="ce69050591300865b670a02cda814df2" category="inline-image-macro">BlueXP  上的 Data Infrastructure Insights 免費試用版</block>
@@ -11985,4 +11983,6 @@
   <block id="1677cd7abeaa8f0a0514a964c0c2bda6" category="paragraph"><block ref="1677cd7abeaa8f0a0514a964c0c2bda6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0b7788a77d5d76748437f02599d4ffbf" category="paragraph"><block ref="0b7788a77d5d76748437f02599d4ffbf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e4d6c49d3ae18aca7ed82f5ef2ab8266" category="paragraph"><block ref="e4d6c49d3ae18aca7ed82f5ef2ab8266" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1158d69294406edc67b8de2b5ed02647" category="paragraph">若要開始使用 NetApp 的雲端服務，請前往<block ref="40ad5c1f57b9131d3640bb640a07e49e" category="inline-link-macro-rx"></block>並按一下 * 開始使用 * 。</block>
+  <block id="90aa9e4cd4632612b7635f2c366a8948" category="paragraph">擁有 NetApp BlueXP  帳戶後，只要在入口網站頁面上選擇 * 登入 * 即可<block ref="40ad5c1f57b9131d3640bb640a07e49e" category="inline-link-macro-rx"></block>。</block>
 </blocks>

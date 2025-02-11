@@ -24,7 +24,7 @@ toc::[]
 
 == 建立您的 NetApp BlueXP 帳戶
 
-若要開始使用 NetApp 的雲端服務，請前往link:https://cloud.netapp.com["* NetApp BlueXP*"^]並按一下 * 開始使用 * 。
+若要開始使用 NetApp 的雲端服務，請前往link:https://bluexp.netapp.com/["* NetApp BlueXP*"^]並按一下 * 開始使用 * 。
 
 * 如果您尚未註冊、請選取 * 註冊 *
 * 輸入有效的商業電子郵件地址、然後選擇密碼。
@@ -37,7 +37,7 @@ toc::[]
 
 === 如果我已經登入 NetApp BlueXP 、該怎麼辦？
 
-擁有 NetApp BlueXP  帳戶後，只要在入口網站頁面上選擇 * 登入 * 即可link:https://cloud.netapp.com["* NetApp BlueXP*"^]。
+擁有 NetApp BlueXP  帳戶後，只要在入口網站頁面上選擇 * 登入 * 即可link:https://bluexp.netapp.com/["* NetApp BlueXP*"^]。
 
 輸入您的電子郵件地址和密碼。接著您將前往NetApp的雲端產品頁面。
 
