@@ -11985,4 +11985,16 @@
   <block id="e4d6c49d3ae18aca7ed82f5ef2ab8266" category="paragraph"><block ref="e4d6c49d3ae18aca7ed82f5ef2ab8266" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1158d69294406edc67b8de2b5ed02647" category="paragraph">若要開始使用 NetApp 的雲端服務，請前往<block ref="40ad5c1f57b9131d3640bb640a07e49e" category="inline-link-macro-rx"></block>並按一下 * 開始使用 * 。</block>
   <block id="90aa9e4cd4632612b7635f2c366a8948" category="paragraph">擁有 NetApp BlueXP  帳戶後，只要在入口網站頁面上選擇 * 登入 * 即可<block ref="40ad5c1f57b9131d3640bb640a07e49e" category="inline-link-macro-rx"></block>。</block>
+  <block id="e6652e28190651190702622512d6199d" category="section-title">適用於最新一代 ASA 系統的 ONTAP 基礎架構</block>
+  <block id="b7b46ce5d1a547db89c0bc615ff272a5" category="inline-link-macro">ASA</block>
+  <block id="e4d6d8fa32272beabde4921e66b643d2" category="paragraph">ONTAP 基本功能現在包含最新一代裝置的隨裝即用管理<block ref="a86d3d554a7f4851edc0f19a9e8accf3" category="inline-link-macro-rx"></block>功能。這包括 SAN Analyzer for VM-LUN 拓撲，其中包含在 ONTAP 上執行的工作負載，現在也提供 NetApp 支援，作為資料基礎架構洞見基礎版的一部分。</block>
+  <block id="8af8d6d7603eec1cb34086e9cf6e2055" category="inline-image-macro">ONTAP Essentials 下拉式選單顯示 ASA 與 Unified 不同</block>
+  <block id="5fe97e7e7c561aa4a8199e55d380aadb" category="paragraph"><block ref="5fe97e7e7c561aa4a8199e55d380aadb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bd255743216cfae20f87e84a9cd8e7e1" category="section-title">DII API 使用率追蹤：強化安全性與效率</block>
+  <block id="0be262a01ffd53cb1827d924de37e376" category="paragraph">透過強化的 REST API 使用率追蹤功能，加強您的安全狀態，並簡化資源管理，供管理員使用者使用。透過 API 使用率追蹤，您可以查看使用的 API Token ， IP 位址及其產生的流量量。將權杖連結至特定的 IP 位址和使用層級，即可深入瞭解系統存取和使用趨勢，讓您掌控維持安全，有效率的環境，並讓作業順暢運作。</block>
+  <block id="864d5cf863bc1474afd3f84717104d24" category="paragraph">若要檢視 API 使用率，請瀏覽至 * 可服務性 &gt; 管理 &gt; API 存取 * ，然後選取 _ 檢視 API 使用率 _ 。請注意，此 API 僅適用於 DII 可服務性 API ；不適用於工作負載安全性或報告 API 。</block>
+  <block id="320be4cb0a9128705d37286f8afff816" category="inline-image-macro">API 使用分析範例</block>
+  <block id="d7f696b40402f5f6c5dc60d881af09a0" category="paragraph"><block ref="d7f696b40402f5f6c5dc60d881af09a0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="811a069713a14c7b8c3b0333afcedfff" category="section-title">工作負載安全 API 可限制使用者</block>
+  <block id="4c68ec61ca843531d828d448eb135006" category="paragraph">新增了一個 API 來管理工作負載安全性中的使用者限制。使用 API ，您可以封鎖或解除封鎖使用者，或變更其受限存取的持續時間。請參閱管理 &gt; API 存取 &gt; API 文件頁面，以取得 _cloudsecure_actions.block_ API 。</block>
 </blocks>
