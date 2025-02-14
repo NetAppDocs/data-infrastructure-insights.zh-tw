@@ -11864,7 +11864,6 @@
   <block id="14fe64769d4df689f51e13f60c5ec439" category="admonition">如果收集器已限制使用者，則無法暫停。在暫停收集器之前還原使用者存取權。</block>
   <block id="81c776ec15386302abf1c34d317e3393" category="paragraph">選擇 * 可視性 &gt; 分析 &gt; SAN Analyzer* 以查看 SAN Analyzer 。設定應用程式，主機，架構和 / 或儲存設備的篩選器。隨即顯示物件的地圖，顯示已連接的物件。將游標移到物件上方，即可檢視這些連線的流量計量。</block>
   <block id="fde6f74861c217b576ec5d769f2467c3" category="paragraph"><block ref="fde6f74861c217b576ec5d769f2467c3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="3cfbb427bd17b95ae08e5597561217ef" category="paragraph">按一下某個物件或群組，會開啟一個滑出面板，提供有關物件及其連線的其他詳細資料。滑出內容包括顯示摘要，連接埠詳細資料和分區資訊的索引標籤（如果有）。</block>
   <block id="7512260392fef04bf211fab22007addd" category="paragraph"><block ref="7512260392fef04bf211fab22007addd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="18082cdb9388e2686e081dd6012e47b8" category="summary">您可以決定所建立的儀表板是公用或私有。</block>
   <block id="cc5c681651d638257ae03658c963c7c6" category="doc">儀表板存取管理</block>
@@ -11997,4 +11996,10 @@
   <block id="d7f696b40402f5f6c5dc60d881af09a0" category="paragraph"><block ref="d7f696b40402f5f6c5dc60d881af09a0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="811a069713a14c7b8c3b0333afcedfff" category="section-title">工作負載安全 API 可限制使用者</block>
   <block id="4c68ec61ca843531d828d448eb135006" category="paragraph">新增了一個 API 來管理工作負載安全性中的使用者限制。使用 API ，您可以封鎖或解除封鎖使用者，或變更其受限存取的持續時間。請參閱管理 &gt; API 存取 &gt; API 文件頁面，以取得 _cloudsecure_actions.block_ API 。</block>
+  <block id="49467730a5826d8dc222a2fe6fe8f9ad" category="admonition">大多數 SAN Analyzer 篩選器（包括您可以新增的篩選器）都是關聯式的；當您在其中一個篩選器中選取物件時，其他篩選器下拉式清單中顯示的選項會隨著所選物件或物件的內容而重新整理。唯一的例外是「應用程式」，「連接埠」和「交換器」；這些篩選器不是關聯式的。</block>
+  <block id="6ce5d5cf78dd02f70416bdf28a2785a2" category="paragraph">按一下某個物件或群組，會開啟一個滑出面板，提供有關物件及其連線的其他詳細資料。滑出式面板會顯示摘要，其中會提供所選物件的詳細資料（例如 IP ， Hypervisor ，連線架構等，視物件類型而定），以及顯示物件度量（例如延遲或 IOPS ）的圖表，以及相關的變更和警示。如果需要，您也可以選擇在圖表上顯示與上方關聯物件的度量。</block>
+  <block id="0e83da7d6fe40d6888d88d1a5caca1e4" category="paragraph">除了 Summary （摘要）索引標籤外，滑出面板還會顯示適用於所選物件的連接埠詳細資料或區域資訊等選項卡。</block>
+  <block id="6b240be76b07166c90df4dd3d8870b5f" category="paragraph">如果您的環境包含 iSCSI 裝置，請將游標移至 _iscsi_ 物件上方，以醒目提示與這些相關 iSCSI 裝置相關的連線。</block>
+  <block id="f922b3837a16ba3a595d03fafff3c0c6" category="inline-image-macro">iSCSI 流量已反白顯示</block>
+  <block id="30a8ce61ff74633c5fba361b87bb964a" category="paragraph"><block ref="30a8ce61ff74633c5fba361b87bb964a" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
