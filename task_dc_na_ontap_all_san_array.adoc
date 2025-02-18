@@ -34,6 +34,11 @@ summary: ONTAP All SAN Array Data Collector
 
 
 
+NOTE: ASA R2 代表最新一代的 ONTAP ASA 儲存平台。這包括陣列型號 ASA A1K ， A90 ， A70 ， A50 ， A30 和 A20 。
+
+對於所有前一代 ASA 系統，請使用link:task_dc_na_ontap_rest.html["ONTAP REST"]收集器。
+
+
 
 == 權限相關注意事項
 
