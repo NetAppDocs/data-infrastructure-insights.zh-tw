@@ -69,6 +69,34 @@ image:KubernetesModifyDeploymentScreen.png["修改部署選項，寬度 =700"]
 
 == 升級至最新的 Kubernetes Monitoring Operator
 
+
+
+=== DII 按鈕升級
+
+您可以透過 DII Kubernetes Collectores 頁面來升級 Kubernetes Monitoring Operator 。按一下您要升級的叢集旁的功能表，然後選取 _ 升級 _ 。操作人員將驗證映像簽名，執行目前安裝的快照，並執行升級。在幾分鐘內，您應該會看到「從升級進行中升級到最新狀態」的營運者狀態進度。如果您遇到錯誤，請選取錯誤狀態以取得更多詳細資料，並參閱下方的按鈕式升級疑難排解表。
+
+
+
+==== 使用私有儲存庫進行按鈕式升級
+
+如果您的營運者已設定為使用私有儲存庫，請確保執行營運者所需的所有映像，以及其簽名均可在您的儲存庫中取得。如果您在升級過程中遇到遺失映像的錯誤，只要將映像新增至儲存庫，然後重試升級即可。若要將映像簽名上傳至儲存庫，請使用以下的代碼同步工具，確保上傳 3 個選項下指定的所有映像的簽名：將操作者映像上傳至您的私有儲存庫 > 影像提取片段
+
+[listing]
+----
+cosign copy example.com/src:v1 example.com/dest:v1
+#Example
+cosign copy <DII container registry>/netapp-monitoring:<image version> <private repository>/netapp-monitoring:<image version>
+----
+
+
+==== 回復到先前執行的版本
+
+如果您使用按鈕升級功能進行升級，並且在升級後七天內遇到與目前操作員版本有關的任何問題，您可以使用升級程序中建立的快照，降級至先前執行的版本。按一下您要回溯的叢集旁的功能表，然後選取 _Roll Back_ 。
+
+
+
+=== 手動升級
+
 判斷現有運算子是否存在 AgentConfiguration （如果您的命名空間不是預設的 _NetApp-monitoring 、請改用適當的命名空間）：
 
  kubectl -n netapp-monitoring get agentconfiguration netapp-monitoring-configuration

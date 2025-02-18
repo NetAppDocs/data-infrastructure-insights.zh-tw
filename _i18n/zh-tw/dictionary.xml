@@ -12002,4 +12002,11 @@
   <block id="6b240be76b07166c90df4dd3d8870b5f" category="paragraph">如果您的環境包含 iSCSI 裝置，請將游標移至 _iscsi_ 物件上方，以醒目提示與這些相關 iSCSI 裝置相關的連線。</block>
   <block id="f922b3837a16ba3a595d03fafff3c0c6" category="inline-image-macro">iSCSI 流量已反白顯示</block>
   <block id="30a8ce61ff74633c5fba361b87bb964a" category="paragraph"><block ref="30a8ce61ff74633c5fba361b87bb964a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="581ba4a57638d5498f99aafb2b6402c9" category="section-title">DII 按鈕升級</block>
+  <block id="433d081988851966788ba677d938d07d" category="paragraph">您可以透過 DII Kubernetes Collectores 頁面來升級 Kubernetes Monitoring Operator 。按一下您要升級的叢集旁的功能表，然後選取 _ 升級 _ 。操作人員將驗證映像簽名，執行目前安裝的快照，並執行升級。在幾分鐘內，您應該會看到「從升級進行中升級到最新狀態」的營運者狀態進度。如果您遇到錯誤，請選取錯誤狀態以取得更多詳細資料，並參閱下方的按鈕式升級疑難排解表。</block>
+  <block id="03875270ab1c6cff042b492ee14233c4" category="section-title">使用私有儲存庫進行按鈕式升級</block>
+  <block id="e54a7171ef187b31ad82e9367e9488f8" category="paragraph">如果您的營運者已設定為使用私有儲存庫，請確保執行營運者所需的所有映像，以及其簽名均可在您的儲存庫中取得。如果您在升級過程中遇到遺失映像的錯誤，只要將映像新增至儲存庫，然後重試升級即可。若要將映像簽名上傳至儲存庫，請使用以下的代碼同步工具，確保上傳 3 個選項下指定的所有映像的簽名：將操作者映像上傳至您的私有儲存庫 &gt; 影像提取片段</block>
+  <block id="3e70b4412d3a3b92cd10a9e1453fc282" category="section-title">回復到先前執行的版本</block>
+  <block id="4d8704d77f12b96a935cdf09de6c94be" category="paragraph">如果您使用按鈕升級功能進行升級，並且在升級後七天內遇到與目前操作員版本有關的任何問題，您可以使用升級程序中建立的快照，降級至先前執行的版本。按一下您要回溯的叢集旁的功能表，然後選取 _Roll Back_ 。</block>
+  <block id="95168a3a05a80c7b596b36a7ec8218c4" category="section-title">手動升級</block>
 </blocks>
