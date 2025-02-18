@@ -40,7 +40,7 @@ NOTE: 報告功能可在 Data Infrastructure Insights link:concept_subscribing_t
 . 選取 * 報告 * 以存取預先定義的報告。
 
 
-image:Reporting_Menu.png["報告功能表"] image:Reporting_Team_Content.png["顯示報告的團隊內容已反白顯示"]
+image:Reporting_Menu.png["報告功能表"] image:Reporting_Team_Content.png["顯示報告的群組內容已反白顯示，寬度 =800"]
 
 
 

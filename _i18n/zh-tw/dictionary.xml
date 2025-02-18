@@ -1964,10 +1964,8 @@
   <block id="c66bd552dea63071ad19e124c869ab2e" category="paragraph">AWS Marketplace免費試用版無法延長。您可以在試用期間隨時降級至 Data Infrastructure Insights Basic Edition 訂閱、或造訪 * 管理 -&gt; 訂閱 * 頁面、變更為付費的 Data Infrastructure Insights 訂閱。</block>
   <block id="03742c91392961db83c5540550a3500a" category="section-title">如果我的試用期已到期、該怎麼辦？</block>
   <block id="55b44e6cb866667b35e33325e5f2b246" category="paragraph">如果您的免費試用期已過期、但您尚未訂閱 Data Infrastructure Insights 、則在您訂閱之前、您的功能將有限。資料擷取可能會停止、幾週後、您的資料將會根據我們的資料保留政策刪除。</block>
-  <block id="b3aa21e2b7855df7d2d86e0bcb7a55d9" category="section-title">如果我的訂閱已過期怎麼辦？</block>
   <block id="35b65825e5ac5124cb47e8b94e7e203a" category="paragraph">如果您訂閱 Data Infrastructure Insights 、但該訂閱已過期、您將有五天的寬限期、以便續約。在這段寬限期內、所有 Data Infrastructure Insights 功能都會保持啟用狀態。</block>
   <block id="60e8665be02d68c6c89f05f0f7865a28" category="paragraph">寬限期結束後、資料基礎架構 Insights 功能會暫停、直到您續約為止。若要續約、請參閱 * 管理 &gt; 訂閱 * 頁面、或聯絡 NetApp 銷售人員。</block>
-  <block id="4d1fc9b1363bc3a01af741ec16cbe749" category="admonition">您在寬限期結束前所收集的 Data Infrastructure Insights 資料、在寬限期結束後 30 天內仍保持不變。如果您在此期間內續約、則直到寬限期結束為止的所有資料都可供您使用。</block>
   <block id="267ff18a74a9df19266142dc71925a29" category="section-title">如果我的 * 訂閱 * 已過期怎麼辦？</block>
   <block id="5ee83dda0a980eba56098446eee3b5e4" category="admonition">您的 Data Infrastructure Insights 資料會在寬限期後 30 天內保持不變。如果您在此期間內續約、則直到寬限期結束為止的所有資料都可供您使用。</block>
   <block id="76064df620f99261dce25de296d7e769" category="paragraph">您也可以利用 * 模組評估 * 。例如、如果您已訂閱基礎架構可服務性、但正在將 Kubernetes 新增至您的環境、則從安裝 NetApp Kubernetes 監控操作員開始、您將自動進行 Kubernetes 可服務性的 30 天評估。在評估期間結束時、您的 Kubernetes Observ易 受管理單元使用量僅需支付費用。</block>
@@ -5720,8 +5718,6 @@
   <block id="27daabf1c454d33595dbe589aefcd6e0" category="list-text">在左導覽窗格中、選取 * 內容 &gt; 團隊內容 * 。</block>
   <block id="4049f6107bd22bd909a404599ebeacd6" category="list-text">選取 * 報告 * 以存取預先定義的報告。</block>
   <block id="ee3a0672263c3995fe8e38b6cfe439c4" category="inline-image-macro">報告功能表</block>
-  <block id="81a9f8ce382fd16358d56245a66220a4" category="inline-image-macro">顯示報告的團隊內容已反白顯示</block>
-  <block id="48bcae107d50992efecf85a6c4736dba" category="paragraph"><block ref="042d6428eca469dceeec3a1b4202ab56" category="inline-image-macro-rx" type="image"></block> <block ref="9aede4345f2bc9132f2c99c71d833e20" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a75b8fc33414d692d111110189a35f09" category="section-title">使用預先定義的報告來回答常見問題</block>
   <block id="e89ec6ed2e5ec193067c2a247878a526" category="paragraph">下列預先定義的報告可在*團隊內容&gt;報告*中找到。</block>
   <block id="1c3be015eacffb807e30cff683e0ab59" category="section-title">應用程式服務層級的容量與效能</block>
@@ -12009,4 +12005,6 @@
   <block id="3e70b4412d3a3b92cd10a9e1453fc282" category="section-title">回復到先前執行的版本</block>
   <block id="4d8704d77f12b96a935cdf09de6c94be" category="paragraph">如果您使用按鈕升級功能進行升級，並且在升級後七天內遇到與目前操作員版本有關的任何問題，您可以使用升級程序中建立的快照，降級至先前執行的版本。按一下您要回溯的叢集旁的功能表，然後選取 _Roll Back_ 。</block>
   <block id="95168a3a05a80c7b596b36a7ec8218c4" category="section-title">手動升級</block>
+  <block id="92e9b9412f142b06bb1d5b741604efd6" category="inline-image-macro">顯示報告的群組內容已反白顯示，寬度 =800</block>
+  <block id="d7daabce37094cca59c57db4ac298a14" category="paragraph"><block ref="042d6428eca469dceeec3a1b4202ab56" category="inline-image-macro-rx" type="image"></block> <block ref="5880297252ec23e342670c23021aaf20" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
