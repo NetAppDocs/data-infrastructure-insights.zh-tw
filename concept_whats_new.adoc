@@ -20,6 +20,10 @@ NetApp持續改善及強化其產品與服務。以下是 Data Infrastructure In
 
 
 
+== 2025 年 2 月
+
+
+
 === 適用於最新一代 ASA 系統的 ONTAP 基礎架構
 
 ONTAP 基本功能現在包含最新一代裝置的隨裝即用管理link:task_dc_na_ontap_all_san_array.html["ASA"]功能。這包括 SAN Analyzer for VM-LUN 拓撲，其中包含在 ONTAP 上執行的工作負載，現在也提供 NetApp 支援，作為資料基礎架構洞見基礎版的一部分。
