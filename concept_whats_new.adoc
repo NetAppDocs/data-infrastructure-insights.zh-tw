@@ -36,7 +36,7 @@ image:ontap_essentials_asa_views.png["ONTAP Essentials 下拉式選單顯示 ASA
 
 透過強化的 REST API 使用率追蹤功能，加強您的安全狀態，並簡化資源管理，供管理員使用者使用。透過 API 使用率追蹤，您可以查看使用的 API Token ， IP 位址及其產生的流量量。將權杖連結至特定的 IP 位址和使用層級，即可深入瞭解系統存取和使用趨勢，讓您掌控維持安全，有效率的環境，並讓作業順暢運作。
 
-若要檢視 API 使用率，請瀏覽至 * 可服務性 > 管理 > API 存取 * ，然後選取 _ 檢視 API 使用率 _ 。請注意，此 API 僅適用於 DII 可服務性 API ；不適用於工作負載安全性或報告 API 。
+若要檢視 API 使用率，請瀏覽至 * 可服務性 > 管理 > API 存取 * ，然後選取 _ 檢視 API 使用率 _ 。請注意，此 API 僅適用於 DII 可服務性 API ，不適用於工作負載安全性。
 
 image:api_usage_analytics_screenshot.png["API 使用分析範例"]
 
