@@ -56,6 +56,15 @@ image:Notifications_email_list.png["電子郵件通知"]
 
 | 試用版或訂閱已過期帳戶將在48小時內停止收集資料帳戶將在48小時後刪除 | 請聯絡link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["NetApp銷售"]以購買訂閱 
 |===
+[NOTE]
+====
+若要確保收件者收到 Data Infrastructure Insights 的通知，請將下列電子郵件地址新增至任何「允許」清單：
+
+* accounts@service.cloudinsights.netapp.com
+* DoNotReply@cloudinsights.netapp.com
+
+
+====
 
 
 == 警示的全域收件者清單

@@ -12011,4 +12011,7 @@
   <block id="9813cb21933d9e535322d83efc9b8d25" category="paragraph">對於所有前一代 ASA 系統，請使用<block ref="75bdda54644cc13465ab7acc10710396" category="inline-link-macro-rx"></block>收集器。</block>
   <block id="6cc5c9e930ea3d3b8bff4367c60ceea4" category="section-title">2025 年 2 月</block>
   <block id="8261d0e1521d30da1b36761d508cb245" category="paragraph">若要檢視 API 使用率，請瀏覽至 * 可服務性 &gt; 管理 &gt; API 存取 * ，然後選取 _ 檢視 API 使用率 _ 。請注意，此 API 僅適用於 DII 可服務性 API ，不適用於工作負載安全性。</block>
+  <block id="bcaea0fa3a691efcd767e69c0bf6c611" category="paragraph">若要確保收件者收到 Data Infrastructure Insights 的通知，請將下列電子郵件地址新增至任何「允許」清單：</block>
+  <block id="920ab4b11a04d50637a16a5c9699b3ba" category="list-text">accounts@service.cloudinsights.netapp.com</block>
+  <block id="b68146f7d3be586c34e5b6d021541f50" category="list-text">DoNotReply@cloudinsights.netapp.com</block>
 </blocks>
