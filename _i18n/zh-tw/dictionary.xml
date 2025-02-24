@@ -11627,7 +11627,6 @@
   <block id="a5692a71664d8513828d30dad7c829ca" category="list-text">您的租戶命名方案會多久變更一次？</block>
   <block id="71ff3a9d48edc0f7244689324f167d1b" category="paragraph">通常，您會使用類似下列的工作流程來識別租戶上的裝置。識別是一種迭代的程序、可能需要多個步驟來規劃和完善規則。</block>
   <block id="6923128dfebc9b724f26745512b0b891" category="admonition">如果您的租戶上有不明裝置（也稱為未知或一般裝置），而且您隨後設定了在輪詢時識別這些裝置的資料來源，則這些裝置將不再顯示或視為一般裝置。</block>
-  <block id="3283326b105a290a6a4699e952c4bb7a" category="paragraph">Data Infrastructure Insights 包含許多影片教學課程、可協助您瞭解這些功能、並更有效地實作您的業務洞察策略。每位擁有 Data Infrastructure Insights 租戶存取權的使用者，都可以利用這些教學課程。</block>
   <block id="555fd4883eff42c3c7a47a8af5c0d4c2" category="summary">Insights 可讓您瞭解資源對租戶的其他資源有何影響。</block>
   <block id="e59c6b6bc918194e22abd3fa59a5ca7d" category="paragraph">高影響力的工作負載可能會降低共享資源中其他工作負載的效能。Data Infrastructure Insights 提供的工具可協助您調查資源飽和度，以及對租戶的影響。</block>
   <block id="509083e073a2e0f15ee1570b73d69d00" category="paragraph">您可以採取許多步驟來降低或消除租戶的飽和機率。以下是您可以嘗試的幾項功能。</block>
@@ -12014,4 +12013,5 @@
   <block id="bcaea0fa3a691efcd767e69c0bf6c611" category="paragraph">若要確保收件者收到 Data Infrastructure Insights 的通知，請將下列電子郵件地址新增至任何「允許」清單：</block>
   <block id="920ab4b11a04d50637a16a5c9699b3ba" category="list-text">accounts@service.cloudinsights.netapp.com</block>
   <block id="b68146f7d3be586c34e5b6d021541f50" category="list-text">DoNotReply@cloudinsights.netapp.com</block>
+  <block id="b496ede8f397a48079afe818e67e759f" category="paragraph">Data Infrastructure Insights 包含許多影片教學課程、可協助您瞭解這些功能、並更有效地實作您的業務洞察策略。</block>
 </blocks>
