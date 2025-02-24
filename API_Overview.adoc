@@ -273,7 +273,7 @@ API存取權杖有到期日。當API存取權杖過期時、使用者需要產�
 
 * 編輯NetApp Kubernetes監控操作員。
 +
- kubectl -n netapp-monitoring edit agent agent-monitoring-netapp
+ kubectl -n netapp-monitoring edit agent netapp-ci-agent-monitoring-netapp
 * 修改_spec.output-sink .ap-key_值、以新的API權杖取代舊的API權杖。
 +
 ....

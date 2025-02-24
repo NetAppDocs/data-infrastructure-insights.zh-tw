@@ -1437,11 +1437,7 @@
   <block id="bf3f7ef872246f009e37d0a4c0951049" category="paragraph">*格式：* US-BV-\1</block>
   <block id="08b3c5691f5c3cb584dc1a3ec5321962" category="summary">Data Infrastructure Insights 提供教學課程、讓您瞭解如何執行許多工作。</block>
   <block id="5b425cd08035f29c3dad5d45f1d2ea6e" category="doc">功能教學課程</block>
-  <block id="c11546e49fdd67698723459cc158d58e" category="paragraph">Data Infrastructure Insights 內含實用功能、可讓您快速輕鬆地找到資料、疑難排解問題、並深入瞭解企業環境。利用強大的查詢功能輕鬆尋找資料、在儀表板中視覺化資料、並針對您設定的資料臨界值傳送電子郵件警示。</block>
-  <block id="0b79795d3efc95b9976c7c5b933afce2" category="section-title">簡介</block>
-  <block id="1a2d0d51ce048c550f58a12da3a8a0b7" category="paragraph">觀看簡短的教學課程、瞭解 Data Infrastructure Insights 如何運作。</block>
   <block id="7dc1d63676b307452b778906ec63a727" category="section-title">檢查清單與影片教學課程</block>
-  <block id="bb32edd6cfeb5b70b9425ab7efaffc7d" category="paragraph">Data Infrastructure Insights 網站上顯示的 * 啟動檢查清單 * 包含數項實用工作和概念的清單。在檢查清單中選取項目、即可前往該概念的適當 Data Infrastructure Insights 頁面。例如、按一下 _ 建立儀表板 _ 項目會開啟 Data Infrastructure Insights * Dashboard* 頁面。</block>
   <block id="06bc4be9452f8162d26f7cb4b4d2e0b2" category="inline-image-macro">教學課程檢查清單進度</block>
   <block id="8d72a33fb7e1e81326ed633058c4c3c6" category="paragraph"><block ref="8d72a33fb7e1e81326ed633058c4c3c6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="76139ab832813477c275f09a383293c0" category="paragraph">頁面頂端是影片教學課程的連結、說明如何建立儀表板。您可以視需要多次觀看影片、直到按一下「_迄今」為止！不要再顯示該影片的「此」連結。影片會在您每次前往儀表板頁面時播放、直到您關閉為止。</block>
@@ -1450,10 +1446,6 @@
   <block id="0aac9dc0b59278dac24dcb96f42f6674" category="paragraph">看完影片至少一次之後、檢查清單中的「建立儀表板」項目會勾選、表示您已完成教學課程。接著、您可以繼續下一個教學課程。</block>
   <block id="02bf91ef19eb660db8593e97292dde1c" category="admonition">您可以任意順序檢視教學課程、次數不限、直到解僱為止。</block>
   <block id="2d7a0a906729c332280875fa9c1ea09c" category="section-title">取消檢查清單</block>
-  <block id="9fd687d950079f0d903acce7d665006e" category="paragraph">啟動檢查清單會顯示在您的站台上、直到您按一下檢查清單底部的「不要再顯示此清單」連結為止。即使在取消檢查清單之後、每個適當的 Data Infrastructure Insights 頁面上仍會提供這些教學課程、直到您從訊息標題列中取消每個學習單元為止。</block>
-  <block id="ec7cecc5c967770303bd0879fae9fa97" category="section-title">檢視教學課程</block>
-  <block id="dd0d7945a3c6cc8c8a340c913a130d8d" category="section-title">查詢資料</block>
-  <block id="730fe644f1d87eaec727a65945705b30" category="section-title">解決裝置問題</block>
   <block id="e8cdc72b15f2eb76eb1815f526758f2e" category="doc">洞見：高消費的工作負載</block>
   <block id="e182a8a3f2adf774fb1c959df71b8600" category="section-title">術語</block>
   <block id="7f595b1ef82026007f2533413106e7d8" category="paragraph">談到工作負載或資源影響時、下列定義非常實用。</block>
@@ -12013,5 +12005,7 @@
   <block id="bcaea0fa3a691efcd767e69c0bf6c611" category="paragraph">若要確保收件者收到 Data Infrastructure Insights 的通知，請將下列電子郵件地址新增至任何「允許」清單：</block>
   <block id="920ab4b11a04d50637a16a5c9699b3ba" category="list-text">accounts@service.cloudinsights.netapp.com</block>
   <block id="b68146f7d3be586c34e5b6d021541f50" category="list-text">DoNotReply@cloudinsights.netapp.com</block>
-  <block id="b496ede8f397a48079afe818e67e759f" category="paragraph">Data Infrastructure Insights 包含許多影片教學課程、可協助您瞭解這些功能、並更有效地實作您的業務洞察策略。</block>
+  <block id="f96c0cb8e557b8c2286592a385c5fd6e" category="paragraph">Data Infrastructure Insights 內含實用功能，可讓您快速輕鬆地疑難排解問題，並深入瞭解企業環境。利用強大的查詢功能輕鬆尋找資料、在儀表板中視覺化資料、並針對您設定的資料臨界值傳送電子郵件警示。</block>
+  <block id="9a3ddb6d99b9ffb5f7473690abc9fb52" category="paragraph">資料基礎架構 Insights 租用戶所顯示的 * 啟動檢查清單 * ，包含數項實用工作與概念的清單。在檢查清單中選取項目、即可前往該概念的適當 Data Infrastructure Insights 頁面。例如、按一下 _ 建立儀表板 _ 項目會開啟 Data Infrastructure Insights * Dashboard* 頁面。</block>
+  <block id="363b2b401698741ed946f685265f5dc1" category="paragraph">在您按一下檢查清單底部的「不要再顯示此清單」連結之前，系統會顯示「啟動檢查清單」。即使在取消檢查清單之後、每個適當的 Data Infrastructure Insights 頁面上仍會提供這些教學課程、直到您從訊息標題列中取消每個學習單元為止。</block>
 </blocks>
