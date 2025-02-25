@@ -26,7 +26,7 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network, Cl
 | 元件 | Linux需求 
 
 
-| 作業系統 | 執行下列其中一項授權版本的電腦： * CentOS 8 Stream （ 64 位元）， CentOS 9 Stream ， SELinux * openSUSE Leap15.3 至 15.5 （ 64 位元） * Oracle Linux 8.6 至 8.8 ， 9.1 至 9.4 （ 64 位元） * Red Hat Enterprise Linux 8.6 至 8.8 ， 9.1 至 9.4 （ 64 位元）， SELinux建議使用專屬伺服器。 
+| 作業系統 | 執行下列其中一項授權版本的電腦： * CentOS 9 Stream （ 64 位元） * openSUSE Leap15.3 至 15.5 （ 64 位元） * Oracle Linux 8.10 （ 64 位元）， 9.1 至 9.4 （ 64 位元）， SELinux * Red Hat Enterprise Linux 8.10 （ 64 位元）， 9.1 至 64 位元（ 64 位元）， SELinux *建議使用專屬伺服器。 
 
 
 | 命令 | 安裝時需要「解壓縮」。此外、安裝、執行指令碼及解除安裝時、還需要使用「su–」命令。 

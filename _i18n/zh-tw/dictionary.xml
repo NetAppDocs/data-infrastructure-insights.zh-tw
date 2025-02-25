@@ -547,7 +547,6 @@
   <block id="a7ef8f0bed1d94220b7abd3877b10643" category="doc">工作負載安全代理程式需求</block>
   <block id="b6818f4aea164eb8b94acf9d70d2e034" category="inline-link-macro">安裝代理程式</block>
   <block id="36bb58d4c9e71b2c4ea1af277d7e3a81" category="paragraph">您必須<block ref="8c7f43ef892529523b024d4c41e5a1ca" category="inline-link-macro-rx"></block>從資料收集器取得資訊。在安裝代理程式之前、您應確保環境符合作業系統、CPU、記憶體及磁碟空間的需求。</block>
-  <block id="9624d517bb67d29503e5054b415313cf" category="cell">執行下列其中一項授權版本的電腦： * CentOS 8 Stream （ 64 位元）， CentOS 9 Stream ， SELinux * openSUSE Leap15.3 至 15.5 （ 64 位元） * Oracle Linux 8.6 至 8.8 ， 9.1 至 9.4 （ 64 位元） * Red Hat Enterprise Linux 8.6 至 8.8 ， 9.1 至 9.4 （ 64 位元）， SELinux建議使用專屬伺服器。</block>
   <block id="c441ee50c88f6e5e3a7c69fc69dad8b8" category="cell">命令</block>
   <block id="92094f10227c0d6e4da9a65b1cc23700" category="cell">安裝時需要「解壓縮」。此外、安裝、執行指令碼及解除安裝時、還需要使用「su–」命令。</block>
   <block id="805053e0ff5abb1e01f2d2ce7d07ad96" category="cell">4個CPU核心</block>
@@ -12008,4 +12007,5 @@
   <block id="1f1f9d998591f96c2653327f9004b1a9" category="cell"><block ref="588cebdad26ee4a9a3bb08c290310eb7" category="inline-link-macro-rx"></block>Data Infrastructure Insights 用來與擷取單元溝通、但無法在 Data Infrastructure Insights 和 Data Collector 本身之間進行通訊。以下是您可以嘗試的幾件事：確保取得設備能夠解析FQDN並到達所需的連接埠。確認不需要Proxy即可到達錯誤訊息中指定的端點。Curl可用來測試擷取裝置與端點之間的通訊。請確定您*未*使用Proxy進行此測試。範例： root@qualisitionunit# curl -s -H Accept:application/json -H "Content-type: application/json" -H API 金鑰： &lt;API 金鑰用於資料收集器認證 - H 秘密金鑰： &lt; 資料收集器認證中使用的秘密金鑰 &gt; -X Get \https://&lt;AWS 區域端點： 8080/v1/Storage/IPRanges 請參閱此<block ref="ee10e7e073fdf55fff4a0c77a9c435fc" category="inline-link-macro-rx"></block>。</block>
   <block id="1ec51096f7cea66fb872ea91910e89b9" category="paragraph">如需其他疑難排解秘訣，請參閱<block ref="6fe211aef2305839bd4b415ac3b03770" category="inline-link-macro-rx"></block>（需要支援登入）。</block>
   <block id="9e6e19182965cf2820f2a5f8cce84e8b" category="cell">當AU安裝在SELinux上時、SE應設定為_permals_模式。不支援_強制_模式。將SELinux設定為允許模式後、請重新啟動AU服務。<block ref="2aa71c1262c825b4349ce4125965fabb" category="inline-link-macro-rx"></block>。</block>
+  <block id="a0549e61b3931f3ffafdfcc909b88bf8" category="cell">執行下列其中一項授權版本的電腦： * CentOS 9 Stream （ 64 位元） * openSUSE Leap15.3 至 15.5 （ 64 位元） * Oracle Linux 8.10 （ 64 位元）， 9.1 至 9.4 （ 64 位元）， SELinux * Red Hat Enterprise Linux 8.10 （ 64 位元）， 9.1 至 64 位元（ 64 位元）， SELinux *建議使用專屬伺服器。</block>
 </blocks>
