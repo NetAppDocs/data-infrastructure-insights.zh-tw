@@ -1644,12 +1644,8 @@
   <block id="787ad0b7a17de4ad6b1711bbf8d79fcb" category="inline-link-macro">訂購</block>
   <block id="e3f7fb4cb907310317d00ec805d579f0" category="cell">檢閱頁面上的訂閱詳細資料<block ref="1270e27ca8ec5d3dff21c492e4b5c786" category="inline-link-macro-rx"></block></block>
   <block id="1670271ef2e024b3bd83b4667cfad9f1" category="cell">訂閱將於90天內到期、訂閱將於30天內到期</block>
-  <block id="9f1787a10e1ab4246b75150fda98b7f6" category="inline-link-macro">NetApp銷售</block>
-  <block id="56e2a36f9711ac801f182c46e593a905" category="cell">如果「自動續約」已啟用「聯絡人」以續約，則不需要採取任何行動<block ref="24745b642cc0706e7f0bffb600ab0d70" category="inline-link-macro-rx"></block></block>
   <block id="a8e16db6b3540132d03fdb273b982975" category="cell">試用期將於2天內結束</block>
-  <block id="ca668270291dd570712b6adc1ce8923f" category="cell">從頁面更新試用版<block ref="1270e27ca8ec5d3dff21c492e4b5c786" category="inline-link-macro-rx"></block>。您可以一次續約試用版。請聯絡<block ref="24745b642cc0706e7f0bffb600ab0d70" category="inline-link-macro-rx"></block>以購買訂閱</block>
   <block id="1e520752d3100399ac52c71e449da882" category="cell">試用版或訂閱已過期帳戶將在48小時內停止收集資料帳戶將在48小時後刪除</block>
-  <block id="e89ae227607d5f04ef37a542e59758d5" category="cell">請聯絡<block ref="24745b642cc0706e7f0bffb600ab0d70" category="inline-link-macro-rx"></block>以購買訂閱</block>
   <block id="8e93b1e0d1805d8655a5ef72cc4c1f73" category="section-title">警示的全域收件者清單</block>
   <block id="f80a3af59189fad5d417cb3684841b2f" category="paragraph">警示的電子郵件通知會針對警示上的每個動作傳送至警示收件者清單。您可以選擇傳送警示通知給全域收件者清單。</block>
   <block id="df43b72d848c482dd610f8178005dbe4" category="paragraph">若要設定全域警示收件者、請在*全域監控通知收件者*區段中選擇所需的收件者。</block>
@@ -1776,7 +1772,6 @@
   <block id="b865b0f0f94674aa0d7878e2253f2c1b" category="doc">預覽功能</block>
   <block id="8a0d14c15291ab894b50ee0f241e5564" category="paragraph">Data Infrastructure Insights 以 _Preview_ 的方式強調新功能。預覽功能可在有限的環境或有限容量下使用。</block>
   <block id="2240ee7d4e56b8ba7ac49b14311cdeed" category="inline-link-macro">NetApp銷售團隊</block>
-  <block id="1faeb81be1b403bf2b660e33e3c7e5f7" category="paragraph">如果您有興趣預覽其中一項或多項功能，請聯絡<block ref="16ff11ed878ec2cb7f479192bb9f1a7d" category="inline-link-macro-rx"></block>以取得更多資訊。</block>
   <block id="5fa0ef8fc40e60003288942e2da3e300" category="cell">*功能*</block>
   <block id="d972e288b86634fdb9a758828b4d511a" category="cell">回收 ONTAP Cold Storage</block>
   <block id="e1f1a8af4cedab3466112b828b25b73f" category="cell">以冷容量和其他相關指標來提供 ONTAP Volume 工作負載的視覺化效果。</block>
@@ -1857,7 +1852,6 @@
   <block id="1ce9a43d63998783a781596de13b0965" category="list-text"><block ref="fa5b9c38e8e5b8e1f4e408b08ce16532" category="inline-link-macro-rx"></block></block>
   <block id="2911a8a094a0fc515bf83ad1a0cf9eba" category="list-text">* 交談 * ：您將與 NetApp 支援人員連線以取得協助（僅限工作日）。您可以在任何 Data Infrastructure Insights 畫面右上角的 * 說明 &gt; 即時聊天 * 功能表選項中使用聊天功能。</block>
   <block id="ac2ae10a8c7bd50e80c93d5e57fc84da" category="inline-link-macro">*聯絡銷售人員*</block>
-  <block id="5c0e6c90408c98d6eca3e09416c4ee77" category="paragraph">您也可以按一下連結來申請銷售支援<block ref="57d2406fdd9ad62e0bb0722bd44749df" category="inline-link-macro-rx"></block>。</block>
   <block id="30a12dfd5908adfdb9f06395cb4b5c34" category="paragraph">您的 Data Infrastructure Insights 序號可從 * 說明 &gt; 支援 * 功能表的服務中看到。如果您在存取服務時遇到問題、且先前已向 NetApp 註冊序號、您也可以從 NetApp 支援網站檢視您的資料基礎架構 Insights 序號清單、如下所示：</block>
   <block id="290bf19e1ed3fabfc80a0ac6d77f6466" category="list-text">登入mysupport.netapp.com</block>
   <block id="77cb462f113aa28274c4c9d4a0bd4124" category="list-text">從「產品」 &gt; 「我的產品」功能表索引標籤、使用「產品系列」「 SaaS Data Infrastructure Insights 」來找出您所有已註冊的序號：</block>
@@ -1936,7 +1930,6 @@
   <block id="6341e61d6dc641d29b3f2e7300137ea9" category="list-text">註冊帳戶<block ref="e0b3e45a049f223d3b91d005d1e31db5" category="inline-link-macro-rx"></block>即可存取所有 NetApp 雲端產品。</block>
   <block id="2ef085adce795622c057ad2ea6c13059" category="inline-link-macro">NetApp銷售</block>
   <block id="cab27dc53edb571cac663ce2e16450dc" category="inline-link-macro">AWS 市場</block>
-  <block id="f2b5d43aba260933c552d69977b7274d" category="list-text">* 訂閱 * Data Infrastructure Insights 、透過<block ref="ae0970f4d06315494d31beaa05a7be05" category="inline-link-macro-rx"></block>直接或持續不中斷地存取您的資料<block ref="e91d3f98f4b43abdea3c839a7777954c" category="inline-link-macro-rx"></block>。</block>
   <block id="7bc1d8b07dfc0e98950abc0c7f3979a5" category="inline-link-macro">資訊與地區</block>
   <block id="6c36c3c54c4f691f7ed13a16d49bbde7" category="paragraph">在註冊過程中、您可以選擇全球區域來主控 Data Infrastructure Insights 環境。有關詳細信息，請參閱 Data Infrastructure Insights <block ref="286a302a1ee50fd59eb368d3d9779037" category="inline-link-macro-rx"></block>（關於 Data Infrastructure Insights ）。</block>
   <block id="ef66b5abbe1e0b79e23deb05dd2d11a9" category="admonition">非使用中的 Data Infrastructure Insights Basic Edition 環境會被刪除、並回收其資源。如果連續30天沒有使用者活動、環境將視為非作用中、如果連續7天沒有擷取資料。Data Infrastructure Insights 會傳送通知、並在刪除環境之前提供四天的寬限期。</block>
@@ -2002,7 +1995,6 @@
   <block id="99d34ca2583ae7363bd4e07f9b2d98cc" category="inline-xref">自行訂閱</block>
   <block id="ab5e9545afec38b9d4cc8cb1f64b1a59" category="paragraph">如果託管單元數少於 1 ， 000 ，您可以透過 NetApp 銷售部門或 AWS Marketplace 訂閱<block ref="5ef09ccc45a6e1ddce52b5a69393ce8f" category="inline-xref-macro-rx"></block>。</block>
   <block id="61951f38f686ce7c31ccc7f65173062c" category="section-title">透過NetApp銷售直接訂閱</block>
-  <block id="e3b70cffc25d522a4137f9cafd0f3c50" category="paragraph">如果您預期的託管單元數為 1 ， 000 或更高，請按一下<block ref="57d2406fdd9ad62e0bb0722bd44749df" category="inline-link-macro-rx"></block>按鈕，透過 NetApp 銷售團隊訂閱。</block>
   <block id="0313fe3f07d732172e3b8700c1cea6f1" category="paragraph">您必須將資料基礎架構洞見 * 序號 * 提供給 NetApp 銷售代表、才能將付費訂閱套用至您的資料基礎架構洞見環境。序號可唯一識別您的 Data Infrastructure Insights 試用環境、並可在 * 管理 &gt; 訂閱 * 頁面上找到。</block>
   <block id="ba16017252787d62326108ae062b54b0" category="section-title">透過AWS Marketplace自行訂閱</block>
   <block id="75df7bd83cb6391af3c2bb23c74cb72d" category="admonition">您必須是帳戶擁有者或管理員、才能將 AWS Marketplace 訂閱套用至現有的 Data Infrastructure Insights 試用帳戶。此外、您必須擁有Amazon Web Services（AWS）帳戶。</block>
@@ -2428,7 +2420,6 @@
   <block id="135a3d8d94bbc8eb1cd03dbd8fa28277" category="paragraph"><block ref="135a3d8d94bbc8eb1cd03dbd8fa28277" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ad437072c1980f7cddeaf25e082880bb" category="section-title">將 VMware 標記對應至 Cloud Insights 註釋</block>
   <block id="7f8b37715b940736bc29a71b2f98126d" category="inline-link-macro">VMware</block>
-  <block id="b67ffcdf52573a01af5e6400d8043174" category="paragraph"><block ref="eb8043f75c4f74e4780785affa0e63c3" category="inline-link-macro-rx"></block>資料收集器可讓您使用在 VMware 上設定的相同名稱標籤填入 Cloud Insights 文字註解。</block>
   <block id="02892541231ed9b9797890da851659d1" category="section-title">適用於 FOS 9.1.1 c 及更高版本韌體的 Brocade CLI 收集器可靠性增強功能</block>
   <block id="f451a3db1d946e0e6f7a6faff75241f4" category="paragraph">在某些執行 9.1.1c 韌體的 Brocade Fibre Channel 交換器上、某些 CLI 命令的輸出可能會以「 motd 」登入橫幅文字作為前置字元、或是使用者變更預設密碼的警告。Brocade CLI 收集器已經過強化、可忽略這兩種無關文字類型。</block>
   <block id="08cc9fe40f6d675ceb9852acf6cb4d2d" category="paragraph">在此增強之前、只有沒有虛擬架構的 FOS 9.1.1 交換器可能會在此收集器類型中被發現。</block>
@@ -2775,7 +2766,6 @@
   <block id="9a3185d3dd699a74f8c315584250a80c" category="inline-link-macro">代理程式安裝</block>
   <block id="c41fe2272c9ff38bed21d6e67f9945cc" category="paragraph">擷取遠距網路整合資料的代理程式已更新至* 1.22.3*版、效能與安全性均有所提升。想要更新的使用者可參閱文件中適當的升級部分<block ref="7eca75c9707898b05c3a8b3fe84d7968" category="inline-link-macro-rx"></block>。先前版本的代理程式將繼續運作、不需要使用者採取任何行動。</block>
   <block id="ecf4e9e3c38358de05561be5ed03f5d0" category="section-title">預覽功能</block>
-  <block id="876a3f6e99a6a623eff957c61ab96f8a" category="paragraph">經常強調許多令人興奮的全新預覽功能。Cloud Insights如果您有興趣預覽其中一項或多項功能，請聯絡<block ref="16ff11ed878ec2cb7f479192bb9f1a7d" category="inline-link-macro-rx"></block>以取得更多資訊。</block>
   <block id="2ad48475868a5acf715f48e45c20d2d1" category="cell">–封鎖攻擊時的使用者存取Cloud Secure</block>
   <block id="4e28671aa760c1ba504510846bdf520c" category="cell">偵測到攻擊時、能夠封鎖使用者存取、為您的業務關鍵資料提供更好的保護。您可以使用自動回應原則自動封鎖存取，或從警示或使用者詳細資料頁面手動封鎖存取。<block ref="e8dc9c29c76388404a63bbf729dac2fd" category="inline-link-macro-rx"></block></block>
   <block id="b56a5394775a9f077c12cb3e770d913c" category="section-title">2022 年 5 月</block>
@@ -3209,7 +3199,6 @@
   <block id="2a6de53195a3acc5f7d30058cb96c7b0" category="cell">可以執行所有的「作者」功能、以及所有管理工作、例如報告的組態、以及報告工作的關機和重新啟動。</block>
   <block id="6ba491c2b785c6d3b29438ccaae4be23" category="admonition">適用於500 MU以上的環境。Cloud Insights</block>
   <block id="9e1a95c1bf70be97bddc1d6d3b0fd7bf" category="inline-link-macro">現有客戶的重要注意事項</block>
-  <block id="bbe0f3f4b15751e0fe172352be87e28a" category="admonition">如果您是最新的 Premium Edition 客戶並希望保留您的報告，請閱讀本<block ref="def308f247292b766d2c9907f94474d4" category="inline-link-macro-rx"></block>。</block>
   <block id="788f4763779031fd7bb3241cdf39ad5b" category="section-title">資料擷取的新API類別</block>
   <block id="facfa3abb0f333223d77bb5c23d49f72" category="paragraph">包含*資料擷取* API類別、讓您更能掌控自訂資料和代理程式。Cloud Insights如需此API類別和其他API類別的詳細文件、Cloud Insights 請瀏覽至*管理&gt; API存取*、然後按一下_API Documentation（_API文件_）連結。您也可以在「附註」欄位中附加註解至AU、此欄位會顯示在AU詳細資料頁面和AU清單頁面上。</block>
   <block id="ea6b0fa25e3cb324da39980f6290f837" category="section-title">2020 年 8 月</block>
@@ -3466,7 +3455,6 @@
   <block id="e289ad98e91a5c5e09b44d6006fba214" category="section-title">2019 年 6 月</block>
   <block id="b5288703cf95cb2a528be0fe38299786" category="section-title">版本Cloud Insights</block>
   <block id="b4f83b03956523a39e8bbbd0895f0f29" category="inline-link-macro">Cloud Insights</block>
-  <block id="39627bb9ad7910603c9a7a558b721eed" category="paragraph">各種版本均提供以符合您的預算和業務需求。Cloud Insights擁有有效NetApp支援帳戶的現有NetApp客戶可享有7天的資料保留、免費*基本版*存取NetApp資料收集器、或是享有更高的資料保留率、存取所有受支援的資料收集器、專家技術支援及*標準版*的更多資訊。如需可用功能的詳細資訊，請參閱 NetApp <block ref="90b37a6f19d0c9cebf9cb98c49d719f7" category="inline-link-macro-rx"></block>網站。</block>
   <block id="076961e5ebe9ba19944f1e07d39a3734" category="section-title">全新基礎架構資料收集器NetApp HCI</block>
   <block id="ee295f6adf0fba3513382450efd2d056" category="inline-link-macro">虛擬中心NetApp HCI</block>
   <block id="40d7c8ab2c54cab8d61c485a80cdd6c0" category="list-text"><block ref="d2237560e4b0257aaba680703e5b6009" category="inline-link-macro-rx"></block>已新增為基礎架構資料收集器。HCI Virtual Center資料收集器會收集NetApp HCI 有關「支援主機」的資訊、並要求對Virtual Center內的所有物件擁有唯讀權限。</block>
@@ -6399,7 +6387,6 @@
   <block id="2ddc4416c197500bc7619829b98c8b77" category="doc">設定代理程式以收集資料（ Windows/Linux ）</block>
   <block id="bdb9a31f361d8d3be1c6915647e92d4d" category="inline-link-macro">Telegraf</block>
   <block id="5f021f72cc2bb955c838ed30118dbef0" category="paragraph">Data Infrastructure Insights 使用<block ref="eed175bcf32f20f81ea47b9c982c2797" category="inline-link-macro-rx"></block>其代理程式來收集整合資料。Telegraf是外掛程式導向的伺服器代理程式、可用來收集及報告度量、事件及記錄。輸入外掛程式可透過直接存取系統/作業系統、呼叫協力廠商API或聆聽已設定的串流（例如 卡夫卡、塔斯D等）。輸出外掛程式用於將收集的度量、事件和記錄從代理程式傳送至 Data Infrastructure Insights 。</block>
-  <block id="da7e75e5407636a24c1c7cce20e7d225" category="paragraph">Data Infrastructure Insights 目前的 Telegraf 版本是 *1.24.0* 。</block>
   <block id="2041337c363c1ecaeb2a1aa9c8999494" category="paragraph">如需在 Kubernetes 上安裝的相關資訊，請參閱<block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block>頁面。</block>
   <block id="ae2f2b5e87a12f1cd650f0e46b92e4ec" category="admonition">為確保稽核與資料報告的準確性、強烈建議您使用*網路時間傳輸協定（NTP）*或*簡易網路時間傳輸協定（SNTP）*來同步代理機器上的時間。</block>
   <block id="137bac1c26ca6d0b61bc783c9a2fcbbd" category="section-title">安裝代理程式</block>
@@ -11850,8 +11837,6 @@
   <block id="9c6601cca8cd67405c34e4897bb272f1" category="section-title">探索資產之間的連結</block>
   <block id="14fe64769d4df689f51e13f60c5ec439" category="admonition">如果收集器已限制使用者，則無法暫停。在暫停收集器之前還原使用者存取權。</block>
   <block id="81c776ec15386302abf1c34d317e3393" category="paragraph">選擇 * 可視性 &gt; 分析 &gt; SAN Analyzer* 以查看 SAN Analyzer 。設定應用程式，主機，架構和 / 或儲存設備的篩選器。隨即顯示物件的地圖，顯示已連接的物件。將游標移到物件上方，即可檢視這些連線的流量計量。</block>
-  <block id="fde6f74861c217b576ec5d769f2467c3" category="paragraph"><block ref="fde6f74861c217b576ec5d769f2467c3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7512260392fef04bf211fab22007addd" category="paragraph"><block ref="7512260392fef04bf211fab22007addd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="18082cdb9388e2686e081dd6012e47b8" category="summary">您可以決定所建立的儀表板是公用或私有。</block>
   <block id="cc5c681651d638257ae03658c963c7c6" category="doc">儀表板存取管理</block>
   <block id="571ad98bb1054a211a5d3fa3a3240265" category="paragraph">Data Infrastructure Insights 現在讓您更能掌控所建立儀表板的存取權。您可以選擇修改圖表的對象。您可以控制對潛在敏感資訊的曝光。保持儀表板的隱密性可讓您完成視覺效果，直到準備好讓組織中的其他人使用這些視覺效果為止。</block>
@@ -12008,4 +11993,20 @@
   <block id="f96c0cb8e557b8c2286592a385c5fd6e" category="paragraph">Data Infrastructure Insights 內含實用功能，可讓您快速輕鬆地疑難排解問題，並深入瞭解企業環境。利用強大的查詢功能輕鬆尋找資料、在儀表板中視覺化資料、並針對您設定的資料臨界值傳送電子郵件警示。</block>
   <block id="9a3ddb6d99b9ffb5f7473690abc9fb52" category="paragraph">資料基礎架構 Insights 租用戶所顯示的 * 啟動檢查清單 * ，包含數項實用工作與概念的清單。在檢查清單中選取項目、即可前往該概念的適當 Data Infrastructure Insights 頁面。例如、按一下 _ 建立儀表板 _ 項目會開啟 Data Infrastructure Insights * Dashboard* 頁面。</block>
   <block id="363b2b401698741ed946f685265f5dc1" category="paragraph">在您按一下檢查清單底部的「不要再顯示此清單」連結之前，系統會顯示「啟動檢查清單」。即使在取消檢查清單之後、每個適當的 Data Infrastructure Insights 頁面上仍會提供這些教學課程、直到您從訊息標題列中取消每個學習單元為止。</block>
+  <block id="fcef7a70b7e9119c20e30e9ab1556015" category="paragraph">瞭解貴公司環境中所使用的應用程式、有助於追蹤資產使用量與成本。</block>
+  <block id="0e7f6af549f009474555d1625059e6d7" category="cell">如果啟用「自動續約」，則不需要採取任何行動，請聯絡 NetApp 銷售人員以續約</block>
+  <block id="2e9dbda35cab3bb298214da257ad124f" category="cell">從頁面更新試用版<block ref="1270e27ca8ec5d3dff21c492e4b5c786" category="inline-link-macro-rx"></block>。您可以一次續約試用版。請聯絡 NetApp 銷售人員以購買訂閱</block>
+  <block id="a25c3f0a67375ee45e02e2a95818cfb5" category="cell">請聯絡 NetApp 銷售人員以購買訂閱</block>
+  <block id="670521a1846ad94b7cc140e2678df21c" category="paragraph">如果您有興趣預覽其中一項或多項功能，請聯絡<block ref="02af545fedbe237243dabe2f44648f4d" category="inline-link-macro-rx"></block>以取得更多資訊。</block>
+  <block id="16630d72023cbbf23b8ab69cac2b3ff7" category="paragraph">您也可以按一下連結來申請銷售支援<block ref="6193a07b36740b6aedc4527702e204e2" category="inline-link-macro-rx"></block>。</block>
+  <block id="3fcd9845b26dde701c891681edc7b769" category="list-text">* 訂閱 * Data Infrastructure Insights 、透過<block ref="326364f658f4dbd53be7e9aa308d8ef9" category="inline-link-macro-rx"></block>直接或持續不中斷地存取您的資料<block ref="e91d3f98f4b43abdea3c839a7777954c" category="inline-link-macro-rx"></block>。</block>
+  <block id="5d42f131ad60489240ed184620da0559" category="paragraph">如果您預期的託管單元數為 1 ， 000 或更高，請按一下<block ref="6193a07b36740b6aedc4527702e204e2" category="inline-link-macro-rx"></block>按鈕，透過 NetApp 銷售團隊訂閱。</block>
+  <block id="a42decca1d15ec644d4c66c06689344e" category="paragraph"><block ref="a4e343c69e2eae514016d98dfce8b36b" category="inline-link-macro-rx"></block>資料收集器可讓您使用在 VMware 上設定的相同名稱標籤填入 Cloud Insights 文字註解。</block>
+  <block id="0d0549b05d1645d38baa1a6cedaa7190" category="paragraph">經常強調許多令人興奮的全新預覽功能。Cloud Insights如果您有興趣預覽其中一項或多項功能，請聯絡<block ref="02af545fedbe237243dabe2f44648f4d" category="inline-link-macro-rx"></block>以取得更多資訊。</block>
+  <block id="6230fc6d3836bf964eb587a1b21b5c48" category="admonition">如果您是最新的 Premium Edition 客戶並希望保留您的報告，請閱讀本<block ref="85f8206314043d7dd91d050def6a5cd1" category="inline-link-macro-rx"></block>。</block>
+  <block id="76a42951dc5d3e54f25d85112bcaa111" category="paragraph">各種版本均提供以符合您的預算和業務需求。Cloud Insights擁有有效NetApp支援帳戶的現有NetApp客戶可享有7天的資料保留、免費*基本版*存取NetApp資料收集器、或是享有更高的資料保留率、存取所有受支援的資料收集器、專家技術支援及*標準版*的更多資訊。如需可用功能的詳細資訊，請參閱 NetApp <block ref="67d94682b6b1dd7a9ae6ec194255c574" category="inline-link-macro-rx"></block>網站。</block>
+  <block id="238195bd1c59d39a21a833f68ecd7a0c" category="inline-image-macro">SAN Analyzer 流量計量範例</block>
+  <block id="5620b4a9c0487779fe08be37f85948ac" category="paragraph"><block ref="5620b4a9c0487779fe08be37f85948ac" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="905f3e264909d9cdcfa3de883e22e115" category="inline-image-macro">SAN Analyzer 滑出面板</block>
+  <block id="16e072902d4155747f40acc51a5aa5a3" category="paragraph"><block ref="16e072902d4155747f40acc51a5aa5a3" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

@@ -27,7 +27,7 @@ keywords: subscribe, trial, subscription, contract, raw capacity, region, data r
 ** 安排會議或等待代表就試用版與您聯絡。
 
 
-* * 訂閱 * Data Infrastructure Insights 、透過link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["NetApp銷售"]直接或持續不中斷地存取您的資料link:https://aws.amazon.com/marketplace/pp/prodview-pbc3h2mkgaqxe["AWS 市場"]。
+* * 訂閱 * Data Infrastructure Insights 、透過link:https://bluexp.netapp.com/contact-cds["NetApp銷售"]直接或持續不中斷地存取您的資料link:https://aws.amazon.com/marketplace/pp/prodview-pbc3h2mkgaqxe["AWS 市場"]。
 
 
 在註冊過程中、您可以選擇全球區域來主控 Data Infrastructure Insights 環境。有關詳細信息，請參閱 Data Infrastructure Insights link:security_information_and_region.html["資訊與地區"]（關於 Data Infrastructure Insights ）。
@@ -185,7 +185,7 @@ NOTE: 現有的 Workload Security 訂閱會調整其 MU 使用量、使節點使
 
 === 透過NetApp銷售直接訂閱
 
-如果您預期的託管單元數為 1 ， 000 或更高，請按一下link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["*聯絡銷售人員*"]按鈕，透過 NetApp 銷售團隊訂閱。
+如果您預期的託管單元數為 1 ， 000 或更高，請按一下link:https://bluexp.netapp.com/contact-cds["*聯絡銷售人員*"]按鈕，透過 NetApp 銷售團隊訂閱。
 
 您必須將資料基礎架構洞見 * 序號 * 提供給 NetApp 銷售代表、才能將付費訂閱套用至您的資料基礎架構洞見環境。序號可唯一識別您的 Data Infrastructure Insights 試用環境、並可在 * 管理 > 訂閱 * 頁面上找到。
 

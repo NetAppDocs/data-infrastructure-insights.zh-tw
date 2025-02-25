@@ -5,13 +5,16 @@ keywords: applications, asset, cost
 summary: 瞭解貴公司環境中所使用的應用程式、有助於追蹤資產使用量與成本。 
 ---
 = 依應用程式追蹤資產使用量
+:hardbreaks:
 :allow-uri-read: 
-:firstname: [.lead]
-:author: [.lead]
-:authorinitials: [
-:authors: [.lead]
-:revdate: Understanding the applications used in your company's environment helps you to keep track of asset usage and cost.
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
+
+[role="lead"]
+瞭解貴公司環境中所使用的應用程式、有助於追蹤資產使用量與成本。
 
 您必須先定義這些應用程式，並將其與適當的資產建立關聯，才能追蹤與租戶上執行的應用程式相關的資料。您可以將應用程式與下列資產建立關聯：主機、虛擬機器、磁碟區、內部磁碟區、qtree、 共享區和Hypervisor。
 

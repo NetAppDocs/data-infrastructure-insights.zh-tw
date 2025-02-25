@@ -10,7 +10,7 @@ summary: 有了工作負載安全功能、您就能在疑似遭破壞的情況�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media
+:imagesdir: ./media/
 
 
 [role="lead"]

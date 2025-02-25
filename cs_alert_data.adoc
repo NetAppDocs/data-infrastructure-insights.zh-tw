@@ -10,7 +10,7 @@ summary: 當使用者活動異常或可能遭受攻擊時、「工作負載安�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media
+:imagesdir: ./media/
 
 
 [role="lead"]

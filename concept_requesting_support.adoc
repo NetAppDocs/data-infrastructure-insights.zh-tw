@@ -122,7 +122,7 @@ NOTE: 您必須註冊<<activating-support-entitlement,啟動支援>>才能取得
 * * 交談 * ：您將與 NetApp 支援人員連線以取得協助（僅限工作日）。您可以在任何 Data Infrastructure Insights 畫面右上角的 * 說明 > 即時聊天 * 功能表選項中使用聊天功能。
 
 
-您也可以按一下連結來申請銷售支援link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["*聯絡銷售人員*"]。
+您也可以按一下連結來申請銷售支援link:https://bluexp.netapp.com/contact-cds["*聯絡銷售人員*"]。
 
 您的 Data Infrastructure Insights 序號可從 * 說明 > 支援 * 功能表的服務中看到。如果您在存取服務時遇到問題、且先前已向 NetApp 註冊序號、您也可以從 NetApp 支援網站檢視您的資料基礎架構 Insights 序號清單、如下所示：
 

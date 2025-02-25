@@ -10,7 +10,7 @@ summary: 您可以針對潛在攻擊（例如勒索軟體）和/或活動警告�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media
+:imagesdir: ./media/
 
 
 [role="lead"]

@@ -48,13 +48,13 @@ image:Notifications_email_list.png["電子郵件通知"]
 | 試用版或訂閱已更新 | 檢閱頁面上的訂閱詳細資料link:concept_subscribing_to_cloud_insights.html["訂購"] 
 
 
-| 訂閱將於90天內到期、訂閱將於30天內到期 | 如果「自動續約」已啟用「聯絡人」以續約，則不需要採取任何行動link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["NetApp銷售"] 
+| 訂閱將於90天內到期、訂閱將於30天內到期 | 如果啟用「自動續約」，則不需要採取任何行動，請聯絡 NetApp 銷售人員以續約 
 
 
-| 試用期將於2天內結束 | 從頁面更新試用版link:concept_subscribing_to_cloud_insights.html["訂購"]。您可以一次續約試用版。請聯絡link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["NetApp銷售"]以購買訂閱 
+| 試用期將於2天內結束 | 從頁面更新試用版link:concept_subscribing_to_cloud_insights.html["訂購"]。您可以一次續約試用版。請聯絡 NetApp 銷售人員以購買訂閱 
 
 
-| 試用版或訂閱已過期帳戶將在48小時內停止收集資料帳戶將在48小時後刪除 | 請聯絡link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["NetApp銷售"]以購買訂閱 
+| 試用版或訂閱已過期帳戶將在48小時內停止收集資料帳戶將在48小時後刪除 | 請聯絡 NetApp 銷售人員以購買訂閱 
 |===
 [NOTE]
 ====
