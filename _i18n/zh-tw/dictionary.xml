@@ -1830,8 +1830,6 @@
   <block id="3b2314bf0168715cc6642c0246916477" category="paragraph">許多 NetApp 產品均包含資料基礎架構洞見基礎版、作為套件的一部分。如果您想要升級至 Premium Edition 、請聯絡您的銷售代表。</block>
   <block id="0ead5de583924ac8d48848b85f68e778" category="section-title">自助服務支援：</block>
   <block id="6c0afebc7e7822e3ca22734d7b5d42c0" category="paragraph">這些支援選項以試用模式提供、全年無休免費提供：</block>
-  <block id="e3072490c4d1e9d415ba1bcef5c7bdb1" category="list-text">* https://kb 。 NetApp 。 com/Special ： Search ？ query=Cloud + Insights [ 知識庫 ]*</block>
-  <block id="3926b94c4a8e59d9d045fe99d237163b" category="paragraph">+ 按一下本節中的連結、即可前往 NetApp 知識庫、在其中搜尋相關文章、操作方法等。</block>
   <block id="5b6cf869265c13af8566f192b4ab3d2a" category="inline-link-macro">文件</block>
   <block id="7cef246d709d34533b9dea3e15d3f5a2" category="list-text">*<block ref="2ecfa39652ed0f06ca436cc3b19d2bbb" category="inline-link-macro-rx"></block>*</block>
   <block id="15d10c3fd39c9846221b3ea9c93b55e0" category="paragraph">按一下「說明文件」連結即可前往此說明文件中心。</block>
@@ -2624,7 +2622,6 @@
   <block id="eefa6cd78e40f4194cf842026e05a215" category="section-title">Cloud Connection for ONTAP R得9.9以上版本已過時</block>
   <block id="2589e2b6868c0dfc4223608ad37b1ecf" category="paragraph">Cloud Connection ONTAP for Re9.9+資料收集器已過時。從2023年4月4日起、您環境中的Cloud Connection資料收集器將不再收集資料、而會在輪詢時顯示錯誤。Cloud Connection資料收集器將在Cloud Insights 後續更新中從功能性的功能中一併移除。</block>
   <block id="f5395c9793af8a11b406ca7c1ac70da9" category="inline-link-macro">深入瞭解</block>
-  <block id="8ae386dae67728714e42ae37acbde665" category="paragraph">在2023年4月4日之前、您必須為ONTAP Cloud Connection目前收集的ONTAP 所有其他系統、設定新的NetApp支援資料管理軟體資料收集器。<block ref="61bbaeff08609910a4a5c1401ada9f16" category="inline-link-macro-rx"></block>。</block>
   <block id="abb14d21829ba186172f6e1d0b64b55b" category="section-title">2023 年 1 月</block>
   <block id="636b18f0d68407e346d028a8211fb724" category="section-title">新的記錄監控器</block>
   <block id="497c0ee717343a5ba95064eaf970a772" category="inline-link-macro">額外的系統監視器</block>
@@ -7275,7 +7272,6 @@
   <block id="3fde2c923d9dcbf8f73ec0e80dc74d75" category="paragraph">最簡單的方法是在 Proxy / 防火牆中指定萬用字元組態、以便與 Data Infrastructure Insights 通訊、例如：</block>
   <block id="7011d12128c7027c0a5ef0db2c274300" category="admonition">通配符通常使用星號（*）、但您的Proxy /防火牆組態可能使用不同的格式。請參閱您的Proxy文件、以確保環境中的萬用字元規格正確無誤。</block>
   <block id="347129195bfdcce2fcf0d362a84ed033" category="inline-link-macro">知識庫</block>
-  <block id="6ad0fb78b8821fe632ae6653b56991b5" category="paragraph">有關代理配置<block ref="9ee959d13eb0fcadf2047adb8fe84539" category="inline-link-macro-rx"></block>的詳細信息，請參閱 NetApp 。</block>
   <block id="042f2a856726ac957ea57dbbe84766ca" category="section-title">檢視Proxy URL</block>
   <block id="ab7992748e11f14996bdc2646a49e293" category="paragraph">您可以在就職期間選擇資料收集器時、按一下「* Proxy Settings*」（*代理設定*）連結、或按一下「* Help &gt; Support*」（*說明&gt;支援*）頁面上「_Proxy Settings_」（_代理設定_）下的連結、來檢視Proxy端隨即顯示如下表格。</block>
   <block id="2d606071517d0747fae04dd73f7f6408" category="inline-image-macro">Proxy端點表格</block>
@@ -8057,7 +8053,6 @@
   <block id="e73a974e5f64b7f2d040fb59fd2aafcd" category="cell">變更資料來源組態以使用機箱IP位址。</block>
   <block id="04eb81d16943e8c8a6314aaac38a4f4b" category="cell">收到一則訊息、指出有超過1個節點登入Access Gateway連接埠</block>
   <block id="17f6f686e23fbca9f92a7a9926136c2d" category="cell">效能收集失敗、並顯示「傳送 SNMP 要求時逾時」。</block>
-  <block id="212277044ae3f4c8673a76ebbe182cbd" category="cell">視查詢變數和交換器組態而定、某些查詢可能會超過預設逾時。<block ref="0374e985eaa396deda9975ede578752d" category="inline-link-macro-rx"></block>。</block>
   <block id="e04ebf98a9012bb6a191a7804699c68b" category="summary">設定 Brocade FOS REST 資料收集器。</block>
   <block id="706579d23b1ddf6c6ff6115a0f9271b4" category="doc">Brocade FOS REST Data Collector</block>
   <block id="eff72425072b480bbbaf5cf932ce0c52" category="paragraph">Data Infrastructure Insights 使用 Brocade FOS REST 收集器來探索執行 FabricOS （ FOS ）韌體 8.2 及更新版本之 Brocade 交換器裝置的庫存與效能。</block>
@@ -9353,8 +9348,6 @@
   <block id="a9d11491cdc145dca25e537c123d978b" category="summary">設定NetApp Cloud Connection以供ONTAP 採用NetApp 9.9以上資料收集器</block>
   <block id="34727dd01aaa3e0d53fd68d429bbff53" category="doc">NetApp Cloud Connection for ONTAP NetApp 9.9以上資料收集器</block>
   <block id="0803ffc49bb5d009027ad578d29858b8" category="paragraph">此資料收集器可建立雲端連線、以支援ONTAP 從下列AFF 系統收集資料：FAS</block>
-  <block id="35799672184c185a5b76dc14b0e32aa7" category="inline-link-macro">知識庫</block>
-  <block id="0de86890c2f317ce1ead6727d6bff886" category="admonition">自 2023 年 4 月 4 日起、此資料收集器將不再安裝在 Data Infrastructure Insights 中、並將於 2023 年 7 月從所有 Data Infrastructure Insights 安裝中移除。如需轉換至 AU 型資料收集的相關資訊，請參閱<block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>。</block>
   <block id="aa660f33d4c20ae2b92aa73acb4c5828" category="summary">設定適用於AWS資料收集器的NetApp Cloud Volumes Services</block>
   <block id="6d719c7976115879cdcafb7922e7e5fd" category="doc">適用於AWS資料收集器的NetApp Cloud Volumes服務</block>
   <block id="85930060216df642a21fd8c262d1cc6c" category="paragraph">此資料收集器支援從NetApp Cloud Volumes Services收集AWS組態的庫存。</block>
@@ -9366,7 +9359,6 @@
   <block id="9447267c06cce84dba179c481872fb16" category="cell">Cloud Volumes秘密金鑰</block>
   <block id="36d35d8bdb33f254c1406a404bc7c125" category="cell">我收到與此類似的錯誤：「無法執行要求：連線至 &lt;AWS 區域端點 &gt;:8080 [&lt;AWS 區域端點 &gt;/AWS 區域端點 IP&gt;] 失敗：連線逾時：取得 \https://&lt;AWS 區域端點 FQDN&gt;:8080/v1/Storage/IPRanges HTTP/1.1 」</block>
   <block id="ef756d1229bc6f51e983884d984a03f3" category="inline-link-macro">NetApp知識庫文章</block>
-  <block id="babd9d09d01450e3fe3a53819529d6f5" category="cell"><block ref="588cebdad26ee4a9a3bb08c290310eb7" category="inline-link-macro-rx"></block>Data Infrastructure Insights 用來與擷取單元溝通、但無法在 Data Infrastructure Insights 和 Data Collector 本身之間進行通訊。以下是您可以嘗試的幾件事：確保取得設備能夠解析FQDN並到達所需的連接埠。確認不需要Proxy即可到達錯誤訊息中指定的端點。Curl可用來測試擷取裝置與端點之間的通訊。請確定您*未*使用Proxy進行此測試。範例： root@qualisitionunit# curl -s -H Accept:application/json -H "Content-type: application/json" -H API 金鑰： &lt;API 金鑰用於資料收集器認證 - H 秘密金鑰： &lt; 資料收集器認證中使用的秘密金鑰 &gt; -X Get \https://&lt;AWS 區域端點： 8080/v1/Storage/IPRanges 請參閱此<block ref="776b569bb4fd625ede408f144a17e02c" category="inline-link-macro-rx"></block>。</block>
   <block id="47407ceeb441f7c5d1eac8ca6060c4b7" category="summary">設定NetApp Cloud Volumes ONTAP 資料收集器</block>
   <block id="a7544b3f9e0cc7c642c8b55af45cc192" category="doc">NetApp Cloud Volumes ONTAP 資料收集器</block>
   <block id="2285e08ef18a1a3f2e02b335409147d7" category="paragraph">此資料收集器可支援Cloud Volumes ONTAP 從各種零散組態收集庫存。</block>
@@ -10842,7 +10834,6 @@
   <block id="05b4ddcb7946bd7615ac3f1458e51d47" category="cell">請重新輸入排程時間、小心不要輸入完整的「 AM 」或「 PM 」字元、只要在「 AM 」或「 P 」輸入「 A 」即可。如果您沒有看到額外的字元、排程時間將會正確設定。</block>
   <block id="ddcf50c29294d4414f3f7c1bbc892cb5" category="section-title">資源</block>
   <block id="55d00560611b7ac6ad1fbc07da675be3" category="inline-link-macro">NetApp知識庫</block>
-  <block id="b4bfb3ce4e8b9e9d62106cb32011d02d" category="paragraph">如需其他疑難排解秘訣，請參閱<block ref="15447e468ec3e05469147de69518b15c" category="inline-link-macro-rx"></block>（需要支援登入）。</block>
   <block id="5b54c3b04831265b1d859da4050ad35f" category="paragraph">如需其他支援資訊、請參閱 Data Infrastructure Insights <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 頁面。</block>
   <block id="90c8925e0cc3bad3ddb84b5af67af65a" category="paragraph">如果您訂閱了有效的 Data Infrastructure Insights 、您可以使用下列支援選項：</block>
   <block id="0af89698bf5d1150026d4fcbbcf784a6" category="inline-link-macro">支援服務單</block>
@@ -10855,7 +10846,6 @@
   <block id="7ef7f61ee5433c00d6e2bd93b6a72b5f" category="cell">在 *Acquisition Units* 標籤的 *Observe &gt; Collectors* 頁面上的 AU 狀態顯示 "Certificate Expired " （證書已過期）或 "Certificate Recalled （證書已撤銷） " 。</block>
   <block id="a56fa9c38676d6ae98991340b46ca3ad" category="cell">按一下AU右側的功能表、然後選取*還原連線*。請依照指示還原您的擷取設備：1.停止擷取單元（AU）服務。您可以按一下「_複製停止命令_」按鈕、將命令快速複製到剪貼簿、然後將此命令貼到擷取單元機器上的命令提示字元中。2.在 NetApp AU 的 /var/lib/lovardses/acq/conf_ 資料夾中建立名為「 token 」的檔案。3.按一下 _ 複製權杖 _ 按鈕，然後將此權杖貼到您建立的檔案中。4.重新啟動 AU 服務。按一下「_複製重新啟動命令_」按鈕、然後將命令貼到AU的命令提示字元中。</block>
   <block id="ba5ed4798f807b143761ea5211f06ea2" category="cell">啟動擷取單元伺服器服務時、權限遭拒</block>
-  <block id="abb32e1da1ad856744ba53e096ef4ba3" category="cell">當AU安裝在SELinux上時、SE應設定為_permals_模式。不支援_強制_模式。將SELinux設定為允許模式後、請重新啟動AU服務。<block ref="a82c78a8c8abe174de58c3bb493cbdd3" category="inline-link-macro-rx"></block>。</block>
   <block id="f8c1f64e9a97f83b0f209268bdd07bcb" category="cell">伺服器需求未達到</block>
   <block id="b4851e92b19af0c5c82447fc0937709d" category="inline-link-macro">需求</block>
   <block id="1b30be776a2009c2060ad54316282f2f" category="cell">確保您的擷取單元伺服器或 VM 符合要求<block ref="e5b1973153b9956f66244f44dc226837" category="inline-link-macro-rx"></block></block>
@@ -12009,4 +11999,13 @@
   <block id="5620b4a9c0487779fe08be37f85948ac" category="paragraph"><block ref="5620b4a9c0487779fe08be37f85948ac" category="inline-image-macro-rx" type="image"></block></block>
   <block id="905f3e264909d9cdcfa3de883e22e115" category="inline-image-macro">SAN Analyzer 滑出面板</block>
   <block id="16e072902d4155747f40acc51a5aa5a3" category="paragraph"><block ref="16e072902d4155747f40acc51a5aa5a3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1eaf65163d0a898b5a6a94771ef2cf69" category="list-text">* https://kb.netapp.com/Cloud/BlueXP/DII[KnowledgeBase]*</block>
+  <block id="0e8f78366da6895d9cdeb4b8ed117539" category="paragraph">按一下本節中的連結即可前往NetApp知識庫、您可在其中搜尋相關文章、操作方法等。</block>
+  <block id="bf404f6bed29d85c3f6e00ca198b64e2" category="paragraph">在2023年4月4日之前、您必須為ONTAP Cloud Connection目前收集的ONTAP 所有其他系統、設定新的NetApp支援資料管理軟體資料收集器。</block>
+  <block id="bf82f4272c116f4033743ef9a8d2db15" category="paragraph">有關代理配置<block ref="b348c1aae834cf0cd466b9787dfa5acf" category="inline-link-macro-rx"></block>的詳細信息，請參閱 NetApp 。</block>
+  <block id="a7cf74afe22d08d0531dde90555aadbd" category="cell">視查詢變數和交換器組態而定、某些查詢可能會超過預設逾時。<block ref="fd40aed016519dab72e69cf2e3342cb9" category="inline-link-macro-rx"></block>。</block>
+  <block id="fb915b764f3baecfa629ff22686e14ee" category="admonition">自 2023 年 4 月 4 日起、此資料收集器將不再安裝在 Data Infrastructure Insights 中、並將於 2023 年 7 月從所有 Data Infrastructure Insights 安裝中移除。</block>
+  <block id="1f1f9d998591f96c2653327f9004b1a9" category="cell"><block ref="588cebdad26ee4a9a3bb08c290310eb7" category="inline-link-macro-rx"></block>Data Infrastructure Insights 用來與擷取單元溝通、但無法在 Data Infrastructure Insights 和 Data Collector 本身之間進行通訊。以下是您可以嘗試的幾件事：確保取得設備能夠解析FQDN並到達所需的連接埠。確認不需要Proxy即可到達錯誤訊息中指定的端點。Curl可用來測試擷取裝置與端點之間的通訊。請確定您*未*使用Proxy進行此測試。範例： root@qualisitionunit# curl -s -H Accept:application/json -H "Content-type: application/json" -H API 金鑰： &lt;API 金鑰用於資料收集器認證 - H 秘密金鑰： &lt; 資料收集器認證中使用的秘密金鑰 &gt; -X Get \https://&lt;AWS 區域端點： 8080/v1/Storage/IPRanges 請參閱此<block ref="ee10e7e073fdf55fff4a0c77a9c435fc" category="inline-link-macro-rx"></block>。</block>
+  <block id="1ec51096f7cea66fb872ea91910e89b9" category="paragraph">如需其他疑難排解秘訣，請參閱<block ref="6fe211aef2305839bd4b415ac3b03770" category="inline-link-macro-rx"></block>（需要支援登入）。</block>
+  <block id="9e6e19182965cf2820f2a5f8cce84e8b" category="cell">當AU安裝在SELinux上時、SE應設定為_permals_模式。不支援_強制_模式。將SELinux設定為允許模式後、請重新啟動AU服務。<block ref="2aa71c1262c825b4349ce4125965fabb" category="inline-link-macro-rx"></block>。</block>
 </blocks>

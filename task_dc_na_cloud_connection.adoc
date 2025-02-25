@@ -22,4 +22,4 @@ keywords: data collector, NetApp, Cloud agent, ONTAP
 此資料收集器可建立雲端連線、以支援ONTAP 從下列AFF 系統收集資料：FAS
 
 
-NOTE: 自 2023 年 4 月 4 日起、此資料收集器將不再安裝在 Data Infrastructure Insights 中、並將於 2023 年 7 月從所有 Data Infrastructure Insights 安裝中移除。如需轉換至 AU 型資料收集的相關資訊，請參閱link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Insights/How_to_transition_from_NetApp_Cloud_Connection_to_AU_based_data_collector["知識庫"^]。
+NOTE: 自 2023 年 4 月 4 日起、此資料收集器將不再安裝在 Data Infrastructure Insights 中、並將於 2023 年 7 月從所有 Data Infrastructure Insights 安裝中移除。

@@ -95,7 +95,7 @@ image:NewLinuxAUInstall.png["Linux AU說明"]
 
 NOTE: 通配符通常使用星號（*）、但您的Proxy /防火牆組態可能使用不同的格式。請參閱您的Proxy文件、以確保環境中的萬用字元規格正確無誤。
 
-有關代理配置link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Insights/Where_is_the_proxy_information_saved_to_in_the_Cloud_Insights_Acquisition_Unit["知識庫"]的詳細信息，請參閱 NetApp 。
+有關代理配置link:https://kb.netapp.com/Cloud/BlueXP/DII/Where_is_the_proxy_information_saved_to_in_the_Cloud_Insights_Acquisition_Unit["知識庫"]的詳細信息，請參閱 NetApp 。
 
 
 
@@ -151,7 +151,7 @@ image::NewWindowsAUInstall.png[Windows AU安裝]
 
 NOTE: 通配符通常使用星號（*）、但您的Proxy /防火牆組態可能使用不同的格式。請參閱您的Proxy文件、以確保環境中的萬用字元規格正確無誤。
 
-有關代理配置link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Insights/Where_is_the_proxy_information_saved_to_in_the_Cloud_Insights_Acquisition_Unit["知識庫"]的詳細信息，請參閱 NetApp 。
+有關代理配置link:https://kb.netapp.com/Cloud/BlueXP/DII/Where_is_the_proxy_information_saved_to_in_the_Cloud_Insights_Acquisition_Unit["知識庫"]的詳細信息，請參閱 NetApp 。
 
 
 

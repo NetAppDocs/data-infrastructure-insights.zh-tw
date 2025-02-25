@@ -168,6 +168,6 @@ Data Infrastructure Insights 會從 Brocade FC 交換器資料收集器取得下
 | 收到一則訊息、指出有超過1個節點登入Access Gateway連接埠 | 請檢查NPV裝置是否正常運作、以及所有連接的WWN是否正常運作。請勿直接取得NPV裝置。相反地、取得核心Fabric交換器將會收集NPV裝置資料。 
 
 
-| 效能收集失敗、並顯示「傳送 SNMP 要求時逾時」。 | 視查詢變數和交換器組態而定、某些查詢可能會超過預設逾時。link:https://kb.netapp.com/Cloud/BlueXP/Cloud_Insights/Cloud_Insight_Brocade_data_source_fails_performance_collection_with_a_timeout_due_to_default_SNMP_configuration["深入瞭解"]。 
+| 效能收集失敗、並顯示「傳送 SNMP 要求時逾時」。 | 視查詢變數和交換器組態而定、某些查詢可能會超過預設逾時。link:https://kb.netapp.com/Cloud/BlueXP/DII/Data_Infrastructure_Insights_Brocade_data_source_fails_performance_collection_with_a_timeout_due_to_default_SNMP_configuration["深入瞭解"]。 
 |===
 您可以在頁面或中找到其他link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]資訊。

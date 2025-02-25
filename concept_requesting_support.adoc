@@ -87,10 +87,9 @@ NetApp 以多種方式提供資料基礎架構洞見支援。我們全年無休�
 
 這些支援選項以試用模式提供、全年無休免費提供：
 
-* * https://kb 。 NetApp 。 com/Special ： Search ？ query=Cloud + Insights [ 知識庫 ]*
-
-
-+ 按一下本節中的連結、即可前往 NetApp 知識庫、在其中搜尋相關文章、操作方法等。
+* * https://kb.netapp.com/Cloud/BlueXP/DII[KnowledgeBase]*
++
+按一下本節中的連結即可前往NetApp知識庫、您可在其中搜尋相關文章、操作方法等。
 
 * *link:https://docs.netapp.com/us-en/cloudinsights/["文件"]*
 +
