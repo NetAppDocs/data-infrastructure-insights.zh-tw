@@ -4455,13 +4455,10 @@
   <block id="8a75e64ac585bb8eb6efae44768cfc8e" category="list-text">使用動詞 ["Get" 、 "watch " 、 "list" 建立所需的組和資源的新規則。請參閱 \https://kubernetes.io/docs/reference/access-authn-authz/rbac/</block>
   <block id="5aa700b8892918bb447b666e3ba9b2a8" category="list-text">將變更套用至叢集</block>
   <block id="cd83da6b8675e2660027f1d689252b6f" category="summary">資料收集器支援對照表包含有關支援的資料收集器的詳細資訊。</block>
-  <block id="cd7e7970b42b429cc98a79d8c1b34bf7" category="paragraph">資料收集器支援對照表提供 Data Infrastructure Insights 支援的資料收集器參考資料、包括廠商和模型資訊。</block>
   <block id="42dcbfa5bf86ee5b5b8828619d00cc03" category="section-title">HP Enterprise 3PAR / Alletra 9000/ Primera StoreServ 儲存設備</block>
   <block id="4511f2a211688512da3a86b3400de7ff" category="paragraph">此資料收集器支援的機型和版本：</block>
   <block id="25ac429f9072293d27a836ee2a148f47" category="cell">模型</block>
   <block id="798084429970e88fa1f49f12b5f60f32" category="cell">韌體版本</block>
-  <block id="2c27d357495661792f689f1125b5c6ba" category="cell">HPE Alletra 9080 HPE_3PAR 20450 HPE_3PAR 20800 HPE_3PAR 20850 HPE_3PAR 20850_R2 HPE_3PAR 7200c HPE_3PAR 7400 HPE_3PAR 7440c HPE_3PAR 7450c HPE_3PAR 8200 HPE_3PAR 服務 HP P400P400PPE</block>
-  <block id="c00642d871f5ba7dbc50bbe96271824a" category="cell">3.1.1 （ MU1 ） 3.1.2 （ MU3 ） 3.1.3 （ MU1 ） 3.1.3 （ MU2 ） 3.1.3 （ MU3 ） 3.2.1 （ MU3 ） 3.2.1 （ MU5 ） 3.2.2 3.2.2 （ MU2 ） 3.2.2 （ MU4 ） 3.2.2 （ MU6 ） 3.3.1 （ MU1 ） 3.3.1 （ MU2 ） 3.3.1 （ MU5 ） 3.3.2</block>
   <block id="e9f6271a49020907aa1e305c5f6b83d2" category="paragraph">此資料收集器支援的產品：</block>
   <block id="deb10517653c255364175796ace3553f" category="cell">產品</block>
   <block id="14c3221394982b060bb874fd101a4564" category="cell">功能/屬性</block>
@@ -4474,7 +4471,6 @@
   <block id="32b772638ff99c31326af82c9279e67b" category="cell">儲存管理ID</block>
   <block id="466b98ca0f38bd8bf2260246c91f6882" category="cell">落差</block>
   <block id="87ac67e16fa6efcc775b8fda5acedb4e" category="cell">容量（GB）</block>
-  <block id="da131d973f2063663343507981491a2b" category="cell">使用容量</block>
   <block id="2b6ab62cf39a19f857f0b90ab838d72b" category="cell">磁碟ID</block>
   <block id="0575ba8b3de2a093ac1c8f7999f6d53e" category="cell">在陣列中唯一識別此磁碟</block>
   <block id="727f68bbe2be673442f7254cc743874c" category="cell">此磁碟實體位於陣列中的位置</block>
@@ -4513,7 +4509,6 @@
   <block id="2ea3b0f6afbc5d22bca6c482c0bf54ca" category="cell">建立者ID</block>
   <block id="66dd8dbc40f1ea2184689ce0298fbc4e" category="cell">顯示IP</block>
   <block id="fe602599e3d257924db1f762dc597c27" category="cell">原始容量失敗</block>
-  <block id="2926308276b54d05b7135472e86cd5d2" category="cell">故障磁碟的原始資本（故障所有磁碟的總和）</block>
   <block id="cefc4f7cbc8c34762e0f76703e7e174e" category="cell">家庭</block>
   <block id="854ad18980f79dfec85984afdddd270f" category="cell">儲存產品系列可能是Clariion、Symmetrix等</block>
   <block id="c0bd7654d5b278e65f21cf4e9153fdb4" category="cell">製造商</block>
@@ -4521,7 +4516,6 @@
   <block id="17a88204bd7aca01d277ef859ea3d6ad" category="cell">總原始容量</block>
   <block id="4aaedf1d727682cdc9f916b585dda8a0" category="cell">總原始容量（陣列上所有磁碟的總和）</block>
   <block id="94f8c4a3d192d67e7ae1dc89ef993dee" category="cell">備用原始容量</block>
-  <block id="4773dbfa3c801904d3b3bad31f5e1463" category="cell">備用磁碟的原始資本（所有備援磁碟的總和）</block>
   <block id="615e6f9baca5553d44683a098d342b70" category="cell">虛擬化</block>
   <block id="86e8565005314e436f24af8cba43b1d6" category="cell">這是儲存虛擬化設備嗎？</block>
   <block id="fa4665ac784c14b8a22483b7f6707e27" category="cell">記憶體大小</block>
@@ -4549,12 +4543,10 @@
   <block id="926f6258ce260652ef8ea5eb22445140" category="cell">重複資料刪除技術的節約效益</block>
   <block id="ee395fb91b64d2a3e6e8534a6976ea62" category="cell">重複資料刪除技術的節約比率（以百分比表示）</block>
   <block id="779e06394f4a280166f19617e8ef5717" category="cell">包括在DWh容量中</block>
-  <block id="46c1fe67a316d70b034ea4739ed9740b" category="cell">從ACQ到cotnrol的方法、DWH Capacity中的stroage集區非常有趣</block>
   <block id="2b827ed06bc12e2efe951fbc13ff7d7a" category="cell">其他已分配容量</block>
   <block id="304bad0dc54522eb48374fb8085f80ae" category="cell">分配給其他（非資料而非快照）的容量</block>
   <block id="9820087cff724c72b84cf4ba97cccba2" category="cell">其他已用容量（MB）</block>
   <block id="a584b894d429df1d9d8b6be8c5d5f84c" category="cell">資料與快照以外的任何容量</block>
-  <block id="0f2f1d67770c23b95d94248b0b8606ed" category="cell">實體磁碟容量（MB）</block>
   <block id="96a760e0b89761d5937ae358ad54fa70" category="cell">用作儲存資源池的原始容量</block>
   <block id="0ada3599b3c347439afd86e8a27ffcef" category="cell">RAID群組</block>
   <block id="72f740f92483312ab6d77576d8d634e7" category="cell">指出此storagePool是否為RAID群組</block>
@@ -4599,9 +4591,7 @@
   <block id="75f0e4b043129fbf3599caefccfc08e4" category="cell">主機別名</block>
   <block id="22bb75b17c257e3403e89aa51a170ac3" category="cell">WWN</block>
   <block id="c05f6c233521207f6fe311afef550c3c" category="cell">效能</block>
-  <block id="b53b341465de241c31c870cfba16b3b2" category="cell">IOPS讀取</block>
   <block id="cfc2491ccb7efa580470e9e15a712369" category="cell">SMI-S</block>
-  <block id="7857d6caa142a172c4a0aff1ea1e6fbf" category="cell">磁碟上的讀取IOPS數</block>
   <block id="a8246d471a59bb08ec552486b5292669" category="cell">IOPS總計</block>
   <block id="3cc1e0b40beae2563f380e8f7f638a32" category="cell">IOPS寫入</block>
   <block id="6e2a30781aae73d2fdb531dd3deaab69" category="cell">處理量讀取</block>
@@ -4707,14 +4697,12 @@
   <block id="90cd8b181e4a2ff3486772f1a19ee248" category="cell">S3 API</block>
   <block id="37f7a5a5f0166ba596df9bac839c4577" category="section-title">Microsoft Azure NetApp Files</block>
   <block id="3337a607cd5a33d6b8d3f27ce7da458d" category="cell">API 版本</block>
-  <block id="7e9dcd08c3f5f3a5484ac911b99afbbf" category="cell">2019-06-01</block>
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="cell">Azure NetApp Files</block>
   <block id="0e94a343837618ef493fa5876846a5a8" category="cell">檔案共用</block>
   <block id="633890c55ebb7bc068a1f71cc7393584" category="cell">是InternalVolume</block>
   <block id="b0de63e7254b90535555e3dfe56db445" category="cell">檔案共用區代表內部磁碟區（NetApp磁碟區）、或是內部磁碟區內的qtree /資料夾</block>
   <block id="2c1e5a2720eac64f3d4d8db2e0b74299" category="cell">共享</block>
   <block id="9f2110e50837733c09310ef1a135a67e" category="cell">此檔案共用區是否有與其相關的任何共用區</block>
-  <block id="e69c0d8737a9e7c40996c79758a3a38d" category="cell">檔案網格的路徑</block>
   <block id="0ac4d98c66b5fb7cf3f098db4aebb1f2" category="cell">上次Snapshot時間</block>
   <block id="94a5a2c33ed1d620b31389632e2b5e4f" category="cell">上次快照時間</block>
   <block id="e964f015143fe755e8288a14280010fd" category="cell">Snapshot計數</block>
@@ -4737,12 +4725,9 @@
   <block id="b440fbb86ede4987364f36c681bd291c" category="cell">此特定共用的權限</block>
   <block id="bcd25ddbd80c9ca3be75c1b216585709" category="cell">Azure NetApp Files REST API</block>
   <block id="cc4856057eb6a162f1fd9a2b32c845e0" category="section-title">Brocade光纖通道交換器</block>
-  <block id="4dd2d172929babcfe64e863987f1cfa4" category="cell">178.0 183.0 200E 300E 3900 Brocade 4024 內嵌式 48000 Brocade 5000 Brocade 5100 5300 Brocade 5480 內嵌式 Brocade 6505 6510 Brocade 6520 Brocade 6548 7800 Brocade 7840 Brocade DCX Brocade DCX-4S Backbone Brocade DCX8510-4 Brocade DCX8510-8 Brocade G610 Brocade G620 Brocade G630 Brocade G720 Brocade Brocade Brocade X77-X4 內嵌式 Brocade X7-8 Brocade Brocade Brocade X7-8 Brocade Brocade Brocade Brocade Brocade X7-4</block>
-  <block id="df3b04987dc3f4294a68b578ff46c0d5" category="cell">v5.3.2c v6.2.1b v6.2.2g v6.3.2 v6.4.1a.v6.2.2 v6.4.2a.2a.v7.0.0 v7.0.0 v7.0.1b v7.2.0c v7.3.2c v7.3.1d v7.4.1d</block>
   <block id="22b991799b8241e1ade0192865f9b429" category="cell">FC名稱伺服器項目</block>
   <block id="f8696d8889d2d13a878e3b5aa8768789" category="cell">FC ID</block>
   <block id="53c6fd08130593d1c56a7122fc0d697e" category="cell">NX連接埠WWN</block>
-  <block id="a5af4cc5c959780ddbf0bf153438e968" category="cell">實體連接埠WWN</block>
   <block id="7a942a50f198aee542fc21ef74f505c5" category="cell">交換器連接埠WWN</block>
   <block id="1638bbd4664fd745118d95786b7e37b9" category="cell">手動輸入</block>
   <block id="5b565cd8e56007724018b6130825f1ec" category="cell">vSAN已啟用</block>
@@ -4750,7 +4735,6 @@
   <block id="058a5a6c4d66e33827b6904af7c82631" category="cell">IVR實體架構</block>
   <block id="3b3f04a2e159b7475f64b7082793ab63" category="cell">IVR機箱WWN</block>
   <block id="557d0c8c8a409800c957ceb06cd331a8" category="cell">以英文分隔的已啟用IVR的機箱WWN清單</block>
-  <block id="80710788ce347def281e67c09a7362ed" category="cell">最低IVR機 箱WWN</block>
   <block id="ff5d0564392a7810bd2c76c027640222" category="cell">IVR網路的識別碼</block>
   <block id="10760d3f9dd93bd0c27ffa9e9139aa65" category="cell">邏輯交換器</block>
   <block id="5c74550adebd1e0f0f8cb8e2fd349689" category="cell">機箱WWN</block>
@@ -4783,23 +4767,14 @@
   <block id="5973510ea863952ac60299cc0a18fc10" category="cell">組態名稱</block>
   <block id="99c08ecdd2c144c31f173cc2dc42a473" category="cell">預設分區行為</block>
   <block id="901555fb06e346cb065ceb9808dcfc25" category="cell">連接埠</block>
-  <block id="c562ffe902aba692b225308816ed912f" category="cell">寬帶點數</block>
   <block id="305af65222ed3fff91f5c8bcdfe17162" category="cell">SNMP</block>
-  <block id="9f057bc9d61202f4a89cdecf955aa63f" category="cell">bbCreditCard歸零總計</block>
-  <block id="9504a36cd3422281dfefef0dc97db642" category="cell">bbCreditCard ZeroMs</block>
-  <block id="04a374aed5eb054f5b0cec63bc48afaf" category="cell">portErrors.class3Discard</block>
-  <block id="0ab3e6dafdc13ef025fd93dd6a4117f7" category="cell">portErrors.crc</block>
-  <block id="7635e7242ed6ccb50ce6a91a730fa760" category="cell">連接埠錯誤</block>
   <block id="5c394e06e1a337867eb1585523e7df4d" category="cell">portErrors.encOut</block>
   <block id="97764bd9d14500421402a118e910080b" category="cell">由於長訊框而導致連接埠錯誤</block>
   <block id="40cf1a82ffecefa301e97b88ef2d2516" category="cell">短框架導致連接埠錯誤</block>
-  <block id="bd050273acfe55800648f4f6544c0cd7" category="cell">portErrors.link故障</block>
   <block id="1b753dba9291c3ba4813c8947aca51e7" category="cell">連接埠錯誤連結失敗</block>
-  <block id="0c4c4c25ccc906ee5eb99e3f4c14d50b" category="cell">portErrors.linkResetrx</block>
   <block id="a0fc5d7e3524d0afb46f31eedf0b6d78" category="cell">連接埠因連結重設而發生錯誤</block>
   <block id="c36ab3da3727266f0ca30c59fc733c86" category="cell">連接埠錯誤訊號遺失</block>
   <block id="7a42895ca113258204c11197d4362517" category="cell">連接埠錯誤同步遺失</block>
-  <block id="63b367c2526e5a0edbb6494d7d944b7f" category="cell">連接埠錯誤逾時捨棄</block>
   <block id="557885d8fdc0fa05f3a759a1030aa216" category="cell">連接埠錯誤總計</block>
   <block id="95842224e67f548b32cf6a40694bc93c" category="cell">交通路況影格速率</block>
   <block id="66ecba979e4c0593a85349db952d786b" category="cell">總流量影格速率</block>
@@ -4807,9 +4782,7 @@
   <block id="0ae25e87a8bc8dc203c30a2f42f7bb84" category="cell">流量的平均影格大小</block>
   <block id="d50bacde9fff9c8cdc3cb6b8f211ce2a" category="cell">傳輸框架</block>
   <block id="68af77c90ab8d6ca116b64a27598df5e" category="cell">流量平均影格大小</block>
-  <block id="edecb16e36b9f979f3d184c212309c10" category="cell">流量</block>
   <block id="d4d9c6e406b7849c3f27d6ef4b56c383" category="cell">總流量</block>
-  <block id="f68229305a9fba0dfd80975cff086351" category="cell">流量使用率</block>
   <block id="1233fa55158f486f5bbd29842c06ea60" category="cell">總流量使用率</block>
   <block id="2f53549a73098820cf8cf4ea9ac78731" category="cell">Brocade SNMP</block>
   <block id="b11e9b395b002d7acc96aa829b6a73d5" category="cell">SNMPv1、SNMPv2、v3</block>
@@ -4817,19 +4790,12 @@
   <block id="1d5c153f4cffcf41dfd2e4aa0265af22" category="cell">Brocade SSH</block>
   <block id="9a7ce4f20c6c7386dec1aa36308cd937" category="cell">資料來源精靈組態</block>
   <block id="1589c0dc03c78d7945ff3f4a2b07995e" category="section-title">Brocade網路顧問HTTP</block>
-  <block id="bb55acab50fa076ed32232615b8b29e3" category="cell">14.4.1 14.4.3 14.4.4 14.4.5</block>
-  <block id="9cdce79ed00d2dc49af5be1b8e857818" category="cell">Brocade 5300 Brocade 6510 Brocade 6520 Brocade 6548 Brocade DCX 8510-8 Brocade G620 DS-6620B EMC Connectrix ED-DCX8510-8B</block>
-  <block id="91ef32794e9ff7c5dbda8a7618d997ae" category="cell">v7.2.1a v7.3.1a v7.4.1b v7.4.2d v8.2.3b v8.2.3c v9.0.1a v9.0.1b v9.0.1e1</block>
   <block id="652cae0b6c479d32c012a2cbd2a6cb76" category="cell">HTTP/S</block>
   <block id="e7ae8eefc55ebbce4c2ae493458c9511" category="cell">Brocade網路顧問REST API</block>
   <block id="c59814c5745505a7a040fa82a314dad7" category="cell">80/443</block>
   <block id="9187ca9a7b77e8c1f820196faa5e17aa" category="section-title">Brocade FOS REST</block>
-  <block id="a0b3771fba22b49c8375b03bfbff4cc3" category="cell">Brocade 6505 Brocade G720 Brocade X6-8</block>
-  <block id="5994ce56255e6f5813d79c8a9680e6a7" category="cell">v8.2.3c v8.2.3c1 v9.0.1e1 v9.1.1b</block>
   <block id="8c88bd5f8f9a952cd4f079a84aa8cf0b" category="cell">Brocade FOS REST API</block>
   <block id="bf2e398e4b4a71557453fba2eb1e54fe" category="section-title">Cisco MDS 與 Nexus Fabric 交換器</block>
-  <block id="e05adcb171c2b15516dfd13bfd27fa18" category="cell">8978-E04 CN1610 DS-C9124-2-K9 DS-C9124-K9 DS-C9124-K9 DS-C9132T-K9 DS-C9132T-K9</block>
-  <block id="8a7a2a2bb25d9596bc87ed8b70bbe95a" category="cell">3.3(1)4.1(3a)5.0(1a) 5.0(3)N2(3.11e) 5.0(3)N2(3)5.0(3)N2(4.01d)5.0(4.04e)5.0(3)N2(4.13e)</block>
   <block id="0d1da8be32a393e6c2b527cbe79d7cf8" category="cell">網域ID類型</block>
   <block id="502996d9790340c5fd7b86a5b93b1c9f" category="cell">優先順序</block>
   <block id="a49b6b6027788b76ff58b7cd4e63deca" category="cell">SANRoute已啟用</block>
@@ -4839,14 +4805,10 @@
   <block id="5e87a04e84bfa9d81110bc491cf552b8" category="cell">Cisco SNMP</block>
   <block id="4bfaedd3a71f4a6c68e4ed7389df4540" category="cell">SNMPv1（僅限庫存）、SNMPv2、v3</block>
   <block id="5dd7f974793d58d84e016fb32974be47" category="section-title">凝聚力</block>
-  <block id="425ebc0532b90e45565f33c02ed83695" category="cell">C2500 C2505 C4000 運算節點 C4600 C5036 C5066 C6025 C6035 C6055 PXG1 UC-C240M5H10</block>
-  <block id="f905cc892f859515d42c89f4b4cbd151" category="cell">6.5.1f_re版本 -20210913_13f6a4bf 6.5.1f_U1_re版本 -20211027_9e4e40cb 6.6.6.0d_U6_re版本 -20221204_c03629f0 6.8.1_re版本 -2020807_6c9115ef 6.8.</block>
   <block id="def09fa4a833717d38298eb37c861af8" category="cell">加密</block>
   <block id="c3766fec098a393e130a4e0bb5275179" category="cell">qtree 10 以上</block>
   <block id="f775bcf566ad94ec8751e7d62aa26230" category="cell">Coesity REST API</block>
   <block id="32b206e1063dfaad6a69643c2c618aa3" category="section-title">EMC Celerra（SSH）</block>
-  <block id="c1a7b110270fac5be1b2a6b3d0f644c9" category="cell">NS-480FC NSX VG8 VNX5200 VNX5300 VNX5400 VNX5600 VNX7600</block>
-  <block id="f9ae0684a88bb8e09ba3f287840d0498" category="cell">5.5.38-1 6.0.65-2 7.1.76-4 7.1.79-8 7.1.832.21-266 8.1.21-303 8.1.9-155</block>
   <block id="ebf7787778d7d227624dbcac732c76cf" category="cell">GuidKey 1.</block>
   <block id="0ada6fe3d2dceaa115002ac5f86da4d3" category="cell">GuidKey1是指自OCI 7.2.5版以來、其GUID金鑰未變更的所有物件。</block>
   <block id="b7362eb6c4fb4b475f8bd7ab576a4f17" category="cell">GuidKey 2.</block>
@@ -4867,9 +4829,6 @@
   <block id="2eb6f9c791d4456e610437be53a864bc" category="cell">儲存設備的CPU計數</block>
   <block id="5d626be8921bba852f30e8f7b76b6c4f" category="cell">Celerra CLI</block>
   <block id="6bffb0a09ef4822cf14de5c78f72857b" category="section-title">EMC CLARiiON（導航CLI）</block>
-  <block id="02624de894403bc204b8d27f658fcebd" category="cell">6.23 6.26 6.28 7.30 7.32 7.33</block>
-  <block id="750594fe3e731d9fbf47e4a6892c01bd" category="cell">AX4-5F8 CX3-20f CX3-40f CX4-480 VNX5100 VNX5200 VNX5300 VNX5400 VNX5500 VNX5600 VNX5700 VNX5800 VNX7600 VNX8000</block>
-  <block id="a7e8ae21f005f2e76ac2562a6f06e676" category="cell">04.28.000.5.710 04.30.000.5.525 05.32.000.5.218 05.32.000.5.219 05.32.000.5.221 05.32.000.5.225 05.32.000.5.249 05.33.000.5.074 05.33.009.5.155 05.33.009.5.184</block>
   <block id="91af5705f16502125e8b2187e64202c0" category="cell">CLI</block>
   <block id="03937134cedab9078be39a77ee3a48a0" category="cell">群組</block>
   <block id="54821ac5da4d26f36fcf925593467491" category="cell">用戶端API名稱</block>
@@ -4893,14 +4852,11 @@
   <block id="e33d9a21974ff6bdd21be69d55902b46" category="cell">新版CLI</block>
   <block id="a12becc8af138ab4fa60fa13e0d34585" category="cell">6389、2162、2163、443（HTTPS）/80（HTTP）</block>
   <block id="61d005913edc6d572aca506d0732d8e2" category="section-title">EMC資料網域（SSH）</block>
-  <block id="27b204d551ee2242411772494cb6d715" category="cell">DD VE DD2200 DD2500 DD3300 DD4200 DD6300 DD6800 DD6900 DD7200 DD9300 DD9400 DD9500 DD9800 DD990 DD9900</block>
-  <block id="e85e668d96cd8210763f1cebfe9ba03b" category="cell">6.1.2.051-633576 6.1.2.20-606786 6.1.2.50-632120 6.2.0.30-629757.2.0.35-635767 6.2.30-663869 6.2.40-671977.2.1.60-686367.10.0-1017741</block>
   <block id="44877c6aa8e93fa5a91c9361211464fb" category="cell">速度</block>
   <block id="fc104690076528afbc53ac5662460473" category="cell">磁碟速度（RPM）</block>
   <block id="2974ee84ee6098a6cbbb0a39f3ed689a" category="cell">Data Domain CLI</block>
   <block id="1044c8fb5028d43ba6ecf95164980347" category="section-title">EMC ECS</block>
   <block id="c8f63ecaff5e983a2441126a241c4cfa" category="cell">ECS</block>
-  <block id="f6333e6d8d9aaeab07de17f646f30c62" category="cell">3.6.1.1 3.6.1.3 3.6.2.1 3.6.2.4 3.7.0.0 3.7.0.3 3.7.0.4 3.7.0.5 3.8.0.1 3.8.0.2</block>
   <block id="c1ebc925cf4e0a09ee827da58d2b58c5" category="cell">磁碟群組</block>
   <block id="ce8c80d09164befdcf723e3f912cd2ac" category="cell">磁碟群組ID</block>
   <block id="dd54739e5dea73dc878745af033f6163" category="cell">磁碟群組的唯一ID</block>
@@ -4912,8 +4868,6 @@
   <block id="e3d522e209910662c18f5e32bd073eab" category="cell">使用的節點容量使用率</block>
   <block id="47b75ba86bc9631012976f9c3bbab804" category="cell">EMC ECS REST API</block>
   <block id="52a1f74f20562906f006eb2ca90b4227" category="section-title">Dell EMC Isilon 和 PowerScale REST</block>
-  <block id="4d5b0d8598aae50452aee3052faabef6" category="cell">A200 A2000 A300 A3000 F200 F600 F800 F900 H400 H500 NL410 S210 X400 X410</block>
-  <block id="ca83789fce1abe4e066fa1ef2f11ef8c" category="cell">9.1.0.11 9.1.0.6 9.2.1.10 9.2.1.11 9.2.1.12.9.2.2.1.16 9.2.1.19 9.2.1.21 9.2.1.6 9.2.1.7 9.2.1.9 9.4.0.11 9.4.0.12 9.4.0.13 9.4.0.14 9.4.0.5 9.4.0.7.9.5.0.3 v8.0.0.4 v8.0.0.6 v8.0.0.7 v8.1.2.0 v8.2.2.0</block>
   <block id="4ba8649862a0113bf0990d4564064285" category="cell">廠商磁碟群組類型</block>
   <block id="cd4221ee8d901dbd43eb91164d6bcf33" category="cell">廠商指定的磁碟群組類型</block>
   <block id="3804f025b9b768ee6db8fd73a054573a" category="cell">臨界值（MB）</block>
@@ -4934,38 +4888,28 @@
   <block id="911d26b7250324e4f58bb2fec8a90659" category="cell">檔案系統處理量寫入</block>
   <block id="1637df9cd961b86fbeb0fabf80ba05a6" category="cell">EMC Isilon 和 PowerScale REST API</block>
   <block id="e1c3c69291771830d53f0b78396c9230" category="section-title">Dell EMC Isilon / PowerScale （ CLI ）</block>
-  <block id="51b625d6addc0e43e8a47ac5aa049060" category="cell">A200 A2000 A300 F200 F800 F900 H400 H500 H600 H700 NL400 NL410 S210 X200 X210 X400 X410</block>
-  <block id="89555faebdb0be850c8096d96c21889b" category="cell">9.1.0.10 9.1.0.12 9.1.0.16 9.1.0.18 9.1.0.19 9.1.0.7 9.2.1.11 9.2.1.13 9.2.1.15 9.2.1.15 9.2.1.22 9.2.1.7 9.2.1.9 9.3.0.3 9.4.0.0 9.4.0.12.9.4.12.9.4.0.13</block>
   <block id="387d72402ae248356930194964bdfa8b" category="cell">配額軟限制</block>
   <block id="e4f6684ad98e9b133ae9741729a084ea" category="cell">容量配額軟限制</block>
   <block id="58ebcd17c13c92b031d8870f4360619f" category="cell">Isilon SSH</block>
   <block id="45a62a8ae256e48199c3cb271a260e21" category="section-title">EMC PowerStore REST</block>
-  <block id="782b3e3b928de64196e12d879af5133e" category="cell">PowerStore 1000T PowerStore 1200T PowerStore 3000T PowerStore 3200T PowerStore 5000T PowerStore 5000X PowerStore 9000T PowerStore 9200T</block>
-  <block id="9283a77c62d557cf709d604584b48fa3" category="cell">2.0.1.3 2.1.1.0 2.1.1.1.3 3.0.0.1 3.2.0.0.1 3.2.0.0 3.2.0.1 3.2.1.0</block>
   <block id="86a8fb3f5dbc54a1ddb9e4e66ada2915" category="cell">合作夥伴節點UUID</block>
   <block id="b4f161c8fe26c799d33016c385f6fb33" category="cell">HA配對的UUID</block>
   <block id="4f7de25ed8f099cc30aa75bbb3b896de" category="cell">父序號</block>
   <block id="70eda6cf3169df9e5c7a4f47825c9328" category="cell">QoS -原則</block>
   <block id="b231f764525753f8a789f224b1d6ab55" category="cell">需要遮罩</block>
-  <block id="1cb2d1d70060306ac70068e463fc608b" category="cell">qtree 。 14 以上</block>
   <block id="f490bbfe1c6761ba2e315375e05f67cd" category="cell">總壓縮節約量</block>
   <block id="2f4b1075fd1ed28c7acb3b13c46bba1c" category="cell">EMC PowerStore REST API</block>
   <block id="94b28c491047940f499bb7ba2258992e" category="section-title">EMC RecoverPoint（HTTP）</block>
   <block id="78814f3852ff02a5c06c73000467afca" category="cell">RecoverPoint</block>
-  <block id="2246f740ff5e1f129fbfbdac0b060f63" category="cell">5.1.P1 （ C.17 ） 5.1.SP4.P1 （ h 89 ） 5.1.SP4.P2 （ h 101 ） 5.1.SP4.P3 （ h 10 ） 5.1.SP4.P4 （ h 97 ）</block>
   <block id="bc4c28b83b9ed203ab891d609f17e4b7" category="cell">來源儲存設備</block>
   <block id="97ba585b67bdc69a079ed75dd7163fa9" category="cell">目標儲存設備</block>
   <block id="5ea93ac7e9175685461a3aa7ecd6678d" category="cell">RecoverPoint REST API</block>
   <block id="33d604c934e3aff2954614be6c447f79" category="section-title">EMC ScaleIO 與 PowerFlex REST</block>
   <block id="89cdc1ad74e26bbad40a1985d965a10f" category="cell">ScaleIO</block>
-  <block id="d10754452cfaa4a1e9127718e2623244" category="cell">R2_6.11000.113 R2_6.11000.115 R3_0.1400.101 R3_5.1200.104 R3_6.500.113 R3_6.700.103</block>
   <block id="69a35504044cfa0ed20e3f78fb1fb666" category="cell">用戶端API說明</block>
   <block id="1cb3a4910aebba077a5922621afe7466" category="cell">主機 IP</block>
   <block id="ef2bf1c7f778e627ac9f8b235393cefc" category="cell">EMC ScaleIO 與 PowerFlex REST API</block>
   <block id="305f24249d52ff8168d1b27f40c147f2" category="section-title">EMC Symmetrix CLI</block>
-  <block id="80ab59f6aabf4af4349282653e17c8da" category="cell">v10.0.0.0 V10.0.1.0 v7.6.2.67 V8.3.0.22 V8.3.0.6 v8.4.0.7 v8.4.0.9 V9.1.0.18 V9.1.0.5 V9.1.0.6 V9.2.0.0 V9.2.0.0 V9.2.0.0</block>
-  <block id="ced36b4cd1a263f511a018469d008a9a" category="cell">DMX3-24 DMX4-24 PMax2000 PowerMax_2000 PowerMax_8000 VMAX-1 VMAX100K VMAX10K VMAX200K VMAX250F VMAX400K VMAX40K VMAX450F VMAX850F VMAX950F</block>
-  <block id="6dad1236dbf3ed0091e15d0e2d7b6ca0" category="cell">5773.198.142 （ 168D0000 ）建置 5 5876.272.177 （ 16F40000 ）建置 39 5876.286.194 （ 16F40000 ）建置 115 5876.309.196 （ 16F40000 ）建置 162 5977.1131.1131（ 17590000 ）建置</block>
   <block id="ce160a2c5bc8a350f1079c835c90b0b6" category="cell">iSCSI節點對應</block>
   <block id="11617eafbdb7381c8096b2c1bb8435bf" category="cell">網路管道</block>
   <block id="5d740945f9ed116dbef1c8fe27c6cac8" category="cell">自動恢復</block>
@@ -4994,38 +4938,24 @@
   <block id="65f2a94c8c2d56d5b43a1a3d9d811102" category="cell">2707</block>
   <block id="2291f088bb6260a7b8f29b4966d2ee58" category="cell">Symmetrix SMI-S</block>
   <block id="48ffcee6e99f3e10a7e5934acb136202" category="section-title">Dell Unisphere REST</block>
-  <block id="70de058249cc92a2397759cad04ae0f6" category="cell">V10.0.0.5 V10.0.1.3 V9.2.1.6 V9.2.3.20 V9.2.3.22 V9.2.3.4 V9.2.4.1</block>
-  <block id="28780acc618494810db69c53c0a9fd65" category="cell">PowerMax_2000 PowerMax_2500 PowerMax_8000 VMAX250F VMAX950F</block>
-  <block id="5694529c939c8a5c1d97a881f515b59d" category="cell">5978.479.479 建置 350 5978.711.711 建置 25255978.711.711 建置 2778 建置 2785978.711.711 建置 2875978.711.711 建置 3295978.711.711 建置</block>
-  <block id="717b8b402735256b8bd11a6123fe7037" category="cell">Storage Node.19+</block>
   <block id="41d5b2ba273c2ea7c2cebca8fcd494f7" category="cell">壓縮節約空間</block>
   <block id="248a2ada600649dd9a0defecae5a2871" category="cell">Dell Unisphere API</block>
   <block id="68c87bc16048b7ab1db3119e879590f7" category="section-title">EMC VNX（SSH）</block>
-  <block id="650583531a5dada75e2debcf9178eb89" category="cell">VNX5300 VNX5400 VNX5700 VNX5800</block>
-  <block id="0a861d74651a7c6ed72ad8961c33d7d8" category="cell">05.33.009.5.231 7.1.76-4 7.1.80-3 8.1.9-232</block>
   <block id="f043a08758706c0551863a8b0cfc84cd" category="cell">VNX SSH 和 CLI</block>
   <block id="d805560a2796d5cb8d0b7d6d581b5c63" category="section-title">EMC VNXe 與 Unity Unisphere （ CLI ）</block>
-  <block id="b9f61630af4dfce521ac084c228591a1" category="cell">Unity 300 Unity 300F Unity 350F Unity 380 Unity 380F Unity 400 Unity 400F Unity 450F Unity 480F Unity 500 Unity 550F Unity 600 Unity 600F Unity 650F Unity 680F Unity 880 VNXe3200</block>
-  <block id="1dba3408b3e6c52568a72552681b013d" category="cell">3.1.17.102239063.1.17.10229825 4.1.2.9257522 4.2.1.95359824.2.3.96706354.5.1.0.5.001 5.0.2.0.5.009</block>
   <block id="ff344e4a3da2f3def65b21c4fb69abfe" category="cell">qtree 4 以上</block>
   <block id="b758b39f4fe981ffd4124309d84e2703" category="cell">容量軟限制</block>
   <block id="68d13764f7761df0def3e72de99042be" category="cell">VNXe 和 UnEthisphere CLI</block>
   <block id="0d0679d541823c0d0d5fa3f8521a681e" category="section-title">EMC VPLEX</block>
   <block id="9a82bc7d59b7ff440c08c1e56c857ad4" category="cell">VPLEX</block>
-  <block id="cb702b584bf0a55c5f4b1dd3768cb150" category="cell">5.4.1.00.075.4.1.01.00.056.2.0.03.00.026.2.0.04.00.076.2.0.05.00.116.2.0.07.00.02</block>
   <block id="6b46051fc6711bf70599ead288d0a90a" category="cell">EMC VPLEX CLI</block>
   <block id="dfaab1339734d2399b253d2c86d08a0a" category="cell">EMC VPLEX API</block>
   <block id="cecc3b667dcb6cfacfe39e7910093e18" category="section-title">EMC XtremIO（HTTP）</block>
-  <block id="a90319cf02b8a5489b77183316582cbf" category="cell">6.2.1 6.2.2 6.3.1 6.3.2 6.3.3 6.4.0</block>
-  <block id="c7e9de79a26dbfc57a1994e6c962f57c" category="cell">1 塊磚塊和 125TB 1 塊磚塊和 24TB 1 塊磚塊， 26TB 1 塊磚塊， 31 TB 1 塊磚塊， 62TB 1 塊磚塊， 8TB 1X10TB 1X40TB 2 塊磚塊， 52TB 2 塊磚塊， 62TB 2 塊磚塊， 76TB 2 塊磚塊， 8TB 2X20TB 2X40TB</block>
-  <block id="b755f268c5a5f89cac5d607c5894621a" category="cell">4.0.27-1 4.0.31-11 6.1.0-99_X2 6.3.3-8_X2 6.4.0-22_X2 6.4.0-36_hotfix_2_X2</block>
   <block id="a3b822e9b7fc9153f5593ec750cb7443" category="cell">可能的傳輸率</block>
   <block id="91ce008b7da13548c83365a5eb07e063" category="cell">搜尋時間</block>
   <block id="a83c1eefc7fca7514ddc960021a3dc7f" category="cell">以英文分隔的磁碟速度（rpm）清單</block>
   <block id="6cacc8dd39dbd60947aaa200f1f574d4" category="cell">EMC XtremIO REST API</block>
   <block id="3f0ca6a8202a9018ed738eb7d458ac5a" category="section-title">NetApp E系列</block>
-  <block id="b0f2d1277725ba6fb932bdb40660db62" category="cell">2600 2660 2680 2702 2704 2800B 2804 2806 3000 5480 5488 5488 5504 5564 5600 5700 5700B 6000</block>
-  <block id="40a5db31e4ca9e134d2d1c14d2032a85" category="cell">08.40.60.08.10.14.08.20.11.08.20.27.08.20.30.08.20.5.08.20.8.08.25.14.08.25.</block>
   <block id="ab7c13788cae2eff01d1255b815725d7" category="cell">RMI</block>
   <block id="40391a3671202eba588cf010846ee33e" category="cell">快取大小</block>
   <block id="113c69aaaeb7806c3953bbc1398afc81" category="cell">裝置快取大小（以MB為單位）</block>
@@ -5040,37 +4970,25 @@
   <block id="ea7563d4b814fae4d35a0657be6ed685" category="cell">Google Compute Platform REST API</block>
   <block id="f3856c7e096c52f1bcea0e237cd6f33a" category="section-title">HDS HCPs（HTTPS）</block>
   <block id="de9af54682ac41397db654efb63c031a" category="cell">Hitachi內容平台</block>
-  <block id="bbd8a9cb6dedabd911c1c1d94d0bb25d" category="cell">9.3.7.2 9.5.0.121</block>
   <block id="8ba5a01a291075248a9fb648699c4b8b" category="cell">HDS HCP REST API</block>
   <block id="38f629170ac3ab74b9d6d2cc411c2f3c" category="cell">9090</block>
   <block id="a2099e963cf5983d81dc9e12f00afe22" category="section-title">Hndvice管理程式</block>
-  <block id="efbdad2c026e627dee09de7a8291629e" category="cell">7.6.1 8.7.7 8.8.1 8.8.3 8.8.5</block>
-  <block id="e6f7551311cdb6a03165f1d8de522e1c" category="cell">DF850MH DF850S HM800 HM850 P9500 RAID700 RAID800 VSP5000 XP24000 XP7</block>
-  <block id="f21a4ffc40bd0114de7ee75a673a4092" category="cell">083/A-H 0988/H-S DKC:608-08-22 DKC:608-08-65 DKC:70-06-46 DKC:70-06-67-00/00 DKC:806-06-80 DKC:80-06-08-DKC:08-08-DKC:08-08-DKC:08-08-DKC-08-DKC:08-08-DKC:08-08-DKC:08-08-DKC-08-DKC:810-DKC:810-DKC:810-DKC:08-08-DKC:810-DKC:810-DKC:810-DKC:810-DKC:810-DKC:810-DKC:810-DKC:810-DKC:810-DKC:40/00/</block>
   <block id="054d32c5203253d8f851a6d5a2c67159" category="cell">HDS XML API</block>
   <block id="2f412c240cac35e48beb96e1bb550342" category="cell">匯出/CLI</block>
   <block id="b173eaa0fda50923922975250a698acd" category="cell">匯出公用程式（USPV）/ SNM CLI（AMS）</block>
   <block id="fa88c9439486746e95052c570d09f290" category="cell">HiCommand Device Manager XML API</block>
   <block id="d0fb963ff976f9c37fc81fe03c21ea7b" category="cell">2001</block>
   <block id="e906da4bbfc8c7a9d24cbac652ab8fdd" category="section-title">Hitachi Ops Center</block>
-  <block id="d41da868e7bf844a90bc1a5c78483396" category="cell">VSP 5100 VSP 5500 VSP F1500 VSP F600 VSP G800</block>
-  <block id="e86d629c348644ad060a4b625e1f78ea" category="cell">80-06-92-00/00:01-65-03/05 83-05-46-60/00:01-65-03/05 83-05-47-40/00:01-65-03/05 83-05-48-40/00:01-65-03/05 90-08-80-08-00:01-65-03-03/0590-08-03/05-05-08-01-06-01-00:01-65-05-03/08-05-00-05-08-01-05-00</block>
   <block id="59c3fdf35bd621ae2f98d332917d6736" category="cell">保護類型</block>
   <block id="d5f04824c2ba6327572c872cf8533e07" category="cell">Hitachi Ops Center REST API</block>
   <block id="b47d5567b66b2c2d7d44a9625a934052" category="section-title">HDS HNAS（CLI）</block>
-  <block id="8a6baa02b821ae453f2fa860a06055a6" category="cell">G600 G800 HNAS 4080 HNAS 4100 N800</block>
-  <block id="f447318a45bc7a904e3120d0aa739e66" category="cell">13.9.6918.05 14.5.7413.01 14.6.7520.04</block>
   <block id="18b2b0426959c6ff5ef1e2b73137cb5c" category="cell">HDS HNAS CLI</block>
   <block id="ea126fc7094292a7eafddaa5f79bc629" category="section-title">HPE Nimble / Alletra 6000儲存設備</block>
-  <block id="445a523d99de140b06c58856134f2d20" category="cell">6030 A1000 AFF 20Q A3000 AFF 40 A5000 CS1000 CS300 CS3000 CS500 H5000 HF20 HF20H Hf40 Hf60</block>
-  <block id="87ab38571142d3a30af3725336a82bc4" category="cell">5.0.10.0-742719-opt 5.0.7.0-604814-opt 5.0.8.0-677726- opt 5.2.1.1000-1017822-opt 5.2.1.400-796142-opt 5.2.1.600-841103-opt 5.2.1.700-882343-opt</block>
   <block id="4261623eb364ceabdf81868a93e8d685" category="cell">保留容量</block>
   <block id="0c35f4ba2a30997ea5cf014a5ae58b0e" category="cell">保留容量（以MB為單位）</block>
   <block id="d7576ac715ac6cef050f42e555aa9b5b" category="cell">HP Nimble REST API</block>
   <block id="2a10665525774fa2501c2c8c4985ce61" category="cell">5392</block>
   <block id="d8a9c0973aff634fea36b1ea1a3021a2" category="section-title">Huawei海洋儲存設備（REST / HTTPS）</block>
-  <block id="197aba044fde8cee77874853a89677b3" category="cell">5300 V5 5500 V3 5500 V5 5800 V3 多拉多 5000 V6 SAS 多拉多 6000 V3 多拉多 6000 V6 NVMe</block>
-  <block id="7702d08416c8d9f57857d9d99b7906b4" category="cell">V300R001C01 V300R002C10 V300R006C20 V300R006C50 V500R007C10 V500R007C30 V600R003C00 V600R005C03</block>
   <block id="b99d9e6339c66107303cc64a9c47c625" category="cell">Huawei OceanStor REST API</block>
   <block id="172ef5a94b4dd0aa120c6878fc29f70c" category="cell">8088</block>
   <block id="6a56cccbc57bc9da92069fa8f49c91f9" category="cell">Huawei OceanStor Performance REST API</block>
@@ -5078,8 +4996,6 @@
   <block id="ac56726c6a22130ed1fe9f64c6315a34" category="cell">說明：說明SVM的免費文字註解</block>
   <block id="86c360de1ccb0f40138c8d34b463e1f5" category="cell">IBM Cleversafe REST API</block>
   <block id="3c488986c63ec1eef9b3352d99db04b9" category="section-title">IBM DS 8K （ DSCLI ）</block>
-  <block id="8edaaf2b6ae5c8874416cd53faf57aae" category="cell">2107-951 2107-961 2107-9852107-996</block>
-  <block id="04db64fac2b58f7189e2497c41aa8c46" category="cell">7.6.31.4250 7.7.51.1400 7.8.57.187.9.21.91 7.9.32.126</block>
   <block id="4bbd202d856380ac051d143247ae5632" category="cell">DSNI</block>
   <block id="90dea4c56274bea868949696515087e2" category="cell">IBM DS CLI</block>
   <block id="0a84dda610dbad21765736406b7a838c" category="section-title">IBM PowerVM（SSH）</block>
@@ -5096,22 +5012,16 @@
   <block id="1cf34a855e141c48fbc42273e5748ab9" category="cell">平台類型</block>
   <block id="7b5236651c205cb5069ecb1a5bd445bb" category="cell">IBM 硬體管理主控台 SSH 存取</block>
   <block id="f10ebf10385784ef6c531e432c6747e5" category="section-title">IBM SVC（CLI）</block>
-  <block id="4d68a2c634a27bafcefd84ddb06979c5" category="cell">2072-12F 2072-12G 2072-2N4 20722-324 2072-3H4 2072-3N4 20766-124 2076-12F 20766-2242076-224 2076-224 2076- AFF 2077-24G 20766-624</block>
-  <block id="df0e2ebd0bac3e8ded9546636c40acd7" category="cell">1.5.2.7 1.6.1.1.6.1.1.6.1.6.1.1.57.5.0.11 7.5.0.12 7.7.7.1.87.8.1.147.8.1.6.7.8.1.8.8.1.88.2.1.108.2.1.12.1.148.2.1.9.8.3.1.28.3.1.23.1.58.3.1.68.3.1.78.3.1.9.8.4.8.4.0.11.8.4.5.</block>
   <block id="0f151f12e5bfc4508260d20ebc5fef43" category="cell">使用FlashPools</block>
   <block id="03a52eb6b4bc772c112d1ab81b7dc2f0" category="cell">指出此儲存庫是否使用Flash Pool（NetApp專屬）</block>
   <block id="98921133d10fbdb0fb6dbb7b2648befe" category="cell">標題</block>
   <block id="d761a5c8d00a0bbb8fb068e3b40c9011" category="cell">指定此Volume的標頭（在NetApp中）</block>
   <block id="139fddbdd4b220cf12dda59ee49de66d" category="cell">IBM SVC CLI</block>
   <block id="53507fe7810fc64c1c6c7255516458de" category="section-title">IBM XIV 與 A9000 （ XIVCLI ）</block>
-  <block id="9cbb10040cafa3da554e0c67ea2445f2" category="cell">415 A14.</block>
-  <block id="bbd02868ac6fdad382bc22081aa783c4" category="cell">10.2.4.e 12.3.2.c</block>
   <block id="f9c725e3cfead2f9b22f443378d51309" category="cell">XIV CLI</block>
   <block id="f31f4c6e1e62cfacf42879e9b7143f63" category="cell">IBM XIV CLI</block>
   <block id="24389bfe4fe2eba8bf9aa9203a44cdad" category="cell">7778</block>
   <block id="64ca9f1efd950d3e7815f291e83db0ae" category="section-title">Infinidat Infinidat Infinbox（HTTP）</block>
-  <block id="67e7ece9be902bb5afce715009698108" category="cell">F6230 F6240 F6303 F6304</block>
-  <block id="3848d054239f288c27c09c643c760357" category="cell">6.0.31.0 7.0.14.20</block>
   <block id="47f7060be7cf2bba280a7fc28fd9a923" category="cell">Infinidat REST API</block>
   <block id="932e7a6684eb169ea5f6544bb33681d4" category="section-title">Microsoft Azure 運算</block>
   <block id="34c920d997d82aaaf9be49cb175d2637" category="list-text">2018-06-01</block>
@@ -5138,9 +5048,6 @@
   <block id="fccc64972a9468a11f125cadb090e89e" category="cell">5985</block>
   <block id="7f1de29e6da19d22b51c68001e7e0e54" category="cell">135</block>
   <block id="a61a9c39243f1f0af5e6bc0eee7e4206" category="section-title">NetApp 7 模式</block>
-  <block id="8f18d2f14650495a35607299888487dd" category="cell">1.12 1.14 1.17 1.19 1.20 1.21</block>
-  <block id="f3cb24609643314e7a0326c5f8011a9e" category="cell">FAS2040 FAS2050 FAS2220 FAS2240-2 FAS2240-4 FAS2520 FAS2554 FAS3140 FAS3160 FAS3210 FAS3220 FAS3240 FAS3240 FAS3250 FAS6240 FAS6290 FAS8020 FAS8040 FAS8060 FAS8080 N6070 N6240 V3240</block>
-  <block id="e71cb6e4d2070aa9b7286e5a6e24e0bd" category="cell">7.3.6 8.1.1 7-Mode 8.1.3P2 7-Mode 8.1.4P1 7-Mode 8.1.4P10 7-Mode 8.1.4 P9D18 7-Mode 8.2.1 7-Mode 8.2.2 7-Mode 8.2.3 7-Mode 8.2.3 7-Mode 8.3P2 7-Mode 8.2.3p3 7-Mode 8.2.4 7-Mode 8.2.4 Data ONTAP Data ONTAP Data ONTAP</block>
   <block id="fa97f6975c9b94a252d204cd22159ff4" category="cell">能力</block>
   <block id="82e3d407504f0d6040bbcb3cf5e0cee8" category="cell">授權</block>
   <block id="019d1ca7d50cc54b995f60d456435e87" category="cell">已使用</block>
@@ -5148,8 +5055,6 @@
   <block id="1a9879ab1b221052d644c9c0beba7553" category="cell">FileShare上是否啟用投機性鎖定</block>
   <block id="d5b3f55cf578ad75b136acb2a4d422df" category="cell">安全性類型</block>
   <block id="a05dae5ed3d2ab9186ed568f63301748" category="cell">啟動器工作階段ID</block>
-  <block id="a41f92b40ec03a010f2ac82c94ba6f89" category="cell">複製來源</block>
-  <block id="fd1440d605649ff0f097f69b98c6f54a" category="cell">來源內部Volume的名稱</block>
   <block id="1180856d28d3ba0cc01fd5efa2ed8d65" category="cell">上次已知存取時間</block>
   <block id="2121c770d8948a4d648bb9ab2e622cbb" category="cell">最後一次知道對Volume的存取</block>
   <block id="6945317d8b0db275e1b767843815fe73" category="cell">空間保證</block>
@@ -5159,18 +5064,12 @@
   <block id="58cfc3b89daf19c66b2ecbbb3462d99b" category="cell">目標內部Volume</block>
   <block id="f55f6181900936e07234ac7b41933273" category="cell">oplocks</block>
   <block id="3a2f864765dcc20e6d83754d6808e471" category="cell">指出是否在Qtree上啟用投機性鎖定</block>
-  <block id="66c5ba064e1b1eb8faa2ba8296c74654" category="cell">qtree儲存同步</block>
-  <block id="9bc81a38537a6dbb5b905fb85f2f0339" category="cell">來源Qtree ID</block>
-  <block id="6c18a46459ee069bb67484acaaea5f95" category="cell">目標Qtree ID</block>
   <block id="05277f5142a29d438aa0104a801cf8e4" category="cell">IO密度讀取</block>
   <block id="3ec236f75dfd23dabdc7f90cffe7840d" category="cell">IO密度總計</block>
   <block id="7586f714a97963e79cc8d16b3e8df592" category="cell">寫入IO密度</block>
   <block id="120097aae43f642350aa4ea6b7db5bbc" category="cell">已更換磁碟讀取總數</block>
   <block id="b25d1f10591ecf26b3978de4f3228bc7" category="cell">NetApp 7 模式 ZAPI</block>
   <block id="837e5317f8f1d06276bea49ab62e99d9" category="cell">ZAPI</block>
-  <block id="1a4c7c9b6e3157ccd0101fd0836c0bfc" category="section-title">NetApp Cloud Volumes Service</block>
-  <block id="29dc284dcf38e4fe32feb8a0fd5c0b4b" category="cell">AWS Cloud Volumes</block>
-  <block id="63713dccbc1364b72d1a00c589b34dda" category="cell">Cloud Volumes Service REST API</block>
   <block id="36df1b975561708b246ef1801ea416e5" category="cell">FSX ONTAP</block>
   <block id="13816363e2eaa66d7be294be0dbaef8c" category="cell">Data ONTAP</block>
   <block id="8af35792f5b036ab613422b4a458459e" category="cell">iSCSI安全資訊</block>
@@ -5200,8 +5099,6 @@
   <block id="9446a98ad14416153cc4d45ab8b531bf" category="cell">效能</block>
   <block id="502de0ca02b6a1c74a8a9c374793c768" category="cell">NetApp ONTAP API</block>
   <block id="9faca164fbcd544d1981957d0b4e8fef" category="section-title">NetApp叢集Data ONTAP 式NetApp 8.1.1以上</block>
-  <block id="4a07a61fa2c711c9fc5bae0b8a8057fe" category="cell">FAS80A150 FAS8060 AFF AFF FAS500f ， A200 ，， A220 ， AFF FAS2620 FAS2650 FAS2720 FAS2750 ， A250 ， AFF ， A300 ，， A320 ， AFF ， A400 ， FAS8200 FAS8300 FAS8700 FAS9000 FAS9500 ， A700s ， AFF ， A800 ， AFF ， A900 ， AFF ， C190 ， AFF ， C250 ， AFF ， C400 ， AFF ， AFF8020 ， FAS8040 ， FAS8060 ， AFF8080 ， 8080 ， CD100 ， CDM100 ， CD302040 ， FAS、 AFF ， AFF ， AFF ， AFF ， 2002010-A2040 ， FAS302010-A2010-A502040 ， FAS2010-FAS2010-FAS2010-FAS2010-A2010-A2010-A2010-A50A50A50A50A50A50A50A50 ， FAS</block>
-  <block id="0e81c94ca82abcdceefe92f03e92b4da" category="cell">8.2.3P5 8.3.10.3.10.3.11.9.1P2 8.3.2.8.3.2.8.3.2P12 8.3.2P2 9.1.9.1.09.1.0P1 9.1.0P10 9.1.0P11 9.1.0P11 9.1.0P12 9.1.0P12 9.1.0P14 9.1.0P15 9.1.0P17 9.1.0P19</block>
   <block id="6dd181b66104328be632f9193563f2a1" category="cell">FlashPool資格</block>
   <block id="3730a8f51f1477ec133a27a39eb1038f" category="cell">內部磁碟區是否可以參與混合式快取</block>
   <block id="dc3a382f5cbca87a35fdc4deba8f8826" category="cell">調適性QoS原則</block>
@@ -5230,53 +5127,35 @@
   <block id="d0ef851de9d11c9d5222fcdc81d24047" category="cell">已儲存物件儲存空間 SIS 空間</block>
   <block id="a5fed773013bf44d7fc3c090dba7be01" category="cell">使用的物件存放區空間</block>
   <block id="e90757a1a3f3e8a4b40daae00fcc1b61" category="section-title">NetApp SolidFire RJ8.1以上</block>
-  <block id="e0e5e88bf87543da85f0d903d2d6fe42" category="cell">H410S-2 H610S-2 H610S-4 SF19210 SF2405 SF38410 SF4805 SF9605 FC00001 H300S H410S-0 H410S-1 H410S-2 H500S H610S-1 H610S-2 H610S-4 H610S2 19210 SF38410 4SF9605</block>
-  <block id="413d52e367b31c7d05b76dc2b7c97491" category="cell">11.1.0.72 11.5.0.63 11.7.0.76 11.8.0.23 12.0.333 12.2.0.777 12.3.0.958 12.3.1.103 12.3.1.165 12.3.2.3 12.5.0.897 12.7.0.380</block>
   <block id="af0a5cd61b6efca604f162ab970d4ecf" category="cell">帳戶識別碼</block>
   <block id="5d55785a871474b5490ecc8da433a32d" category="cell">帳戶名稱</block>
   <block id="642a34dc59e1f45b52246e81378e86e6" category="cell">QoS爆發IOPS</block>
   <block id="7816688caa253ba9627537f17066fb4c" category="cell">QoS最低IOPS</block>
   <block id="e2448c89743cd1dd4759858e0b83ae4f" category="cell">SolidFire REST API</block>
   <block id="cdae224de44c7ca9779763280e90b457" category="section-title">NetApp StorageGRID （ HTTPS ）</block>
-  <block id="0f2d1ea2dab7112ddf653378efea1189" category="cell">3.0 3.2 3.3 3.4 3.5</block>
   <block id="9b421b4d46417a513776e234031691c1" category="cell">Webscale</block>
-  <block id="47e0becdfcfbbfd8cdd3a1f6b8503e1c" category="cell">11.2.0 11.4.0 11.4.0.3 11.4.0.4 11.5.0.1 11.5.0.11 11.5.0.2 11.5.0.3 11.5.0.6 11.5.0.7 11.5.0.8 11.5.0.9 11.6.0.1 11.6.0.1 11.6.0.10 11.6.0.2 11.6.0.4 11.6.0.5 11.6.0.7 11.6.0.8 11.6.0.9 11.11.11.11.7.0</block>
   <block id="dfd2bfc8d7a5d7d3f94a57b772ffb204" category="cell">節點容量使用量允許的中繼資料（以 MB 為單位）</block>
   <block id="1dd3a78893ed38f568415e1e82060632" category="cell">節點容量使用率使用中繼資料（以 MB 為單位）</block>
   <block id="668445f09da337d276dc852bb6a0dbb3" category="cell">站台名稱</block>
-  <block id="aebb627cd726b3cef553d204f38a30e1" category="cell">IOPS總計</block>
-  <block id="0e7eeb5ae5a9b72d3c35c2ccece0b487" category="cell">容量配額硬限制</block>
-  <block id="42912c555e8bff9f4a5fd6443fef82fe" category="cell">容量配額軟限制</block>
-  <block id="b05f0d41b637f86ee2555bfc971f76bf" category="cell">檔案計數</block>
   <block id="af002e7b28db9eb92392e4a88668401e" category="cell">節點容量使用量允許的中繼資料</block>
   <block id="2e743137d5bf45f513a853852894e4e1" category="cell">節點容量使用率使用的中繼資料</block>
   <block id="f8e695a68b2cc6a03c28f54dfffb7e5d" category="cell">靜態API StorageGRID</block>
   <block id="389f5255791b76256678f54d2aa8d9aa" category="section-title">Nutanix儲存設備（REST）</block>
-  <block id="495abca5b383c7790e42cbda188b8e10" category="cell">HPE DL360 - 8 G10 NX-3060-G6 NX-3170-G6 NX-8035-G6 NX-8150-G7 HPE DL360 - 8 G10 HPE DL380 - 12 G10 NX-3060-G5-NX-3170-G75-5155-G6 NX-8035-G6-NX-8035-G7 NX-8150-G8-G710-G10-G10-81508-G8</block>
-  <block id="89718235e5f7bb8c9b679d639834f085" category="cell">6.5.1.6 6.5.2 6.5.2.5 6.5.2.6 6.5.2.7 6.5.3.1.</block>
   <block id="5833254d196e4a1b64f41ef17f3948c3" category="cell">Nutanix REST API</block>
   <block id="5ae0ae5f7d8a52fd8d8b0c9920771343" category="section-title">OpenStack （ REST API / SSH ）</block>
   <block id="9a49bf4f2da6cbfd867175d49a9d97e1" category="cell">OpenStack REST API</block>
   <block id="bf17d59a145a73aabf6bd6a5b8e6fdc7" category="cell">OpenStack SSH</block>
   <block id="a5a401d1937bde9ceea96e2345f7c9d8" category="section-title">Oracle ZFS（HTTPS）</block>
-  <block id="9b2c53e192e00fce6b71d9fba5af949d" category="cell">Sun ZFS Storage 7330 Sun ZFS Storage 7335 Sun ZFS Storage 73350 Sun ZFS Storage 7370 Sun ZFS Storage 7420 Sun ZFS Storage 7430 Sun ZFS Storage 7450</block>
-  <block id="2a456a375221a21454f58e4d79cd8457" category="cell">1-1.1 1-1.2 1-1.3 1-1.34 1-1.4 2013.06.05.6.12 2013.06.05.6.15 2013.06.05.7.21 2013.06.05.7.24 2013.06.05.7.25 2013.06.05.7.26</block>
   <block id="2e24a64f661bb25d79cdb67855a0d38d" category="cell">儲存節點資料</block>
-  <block id="3c6e0b8a9c15224a8228b9a98ca1531d" category="cell">金鑰</block>
   <block id="bb149a60e36dad22aec22d6ee2620af0" category="cell">伺服器ID</block>
   <block id="55799eddc9f10f989c2583f4b951cf96" category="cell">Oracle ZFS REST API</block>
   <block id="3b8a614226a953a8cd9526fca6fe9ba5" category="cell">215</block>
   <block id="9425abd0b36053580d0284f0d9fbe9a2" category="section-title">Pure Storage FlashArray（HTTP）</block>
-  <block id="79924c38f548c32717e58f123443cd65" category="cell">DFSC1 FA-420 FA-450 FA-C40R3 FA-C60 FA-C60R3 FA-X10R2 FA-X10R3 FA-X20R2 FA-X20R3 FA-X50R2 FA-X50R3 FA-X70R2 FA-X70R3-X90R2 FA-X90R3 FA-XL130 FA-XL170 FA-X70R3-MFA 2-MFA ，足總 2070 ，足總 2</block>
-  <block id="f8683aae3b9aff59f33e08b3c1321b74" category="cell">4.8.8.8.5.3.14 5.3.15 5.3.17 5.3.18 5.3.205.3.21 5.3.6.3.8.6.1.10 6.1.116.1.136.1.146.1.15.6.1.176.1.186.1.196.1.21.6.1.226.1.236.1.</block>
   <block id="f7ade9e282e08c1d6d53cd5f4fc13a47" category="cell">Pure Storage REST API</block>
   <block id="e7fa2f0f68f6e6823354c3bdca9c5e37" category="section-title">Red Hat RHV （ REST ）</block>
   <block id="d5c43e381bdc06ed4b571374caed0944" category="cell">Red Hat RHEV REST API</block>
   <block id="8725de916cefd6ec6edef09657389513" category="section-title">Rubrik 儲存設備</block>
-  <block id="837890981541251bff4eb2483d208c8d" category="cell">v5.3</block>
-  <block id="e2b3bb0058fba718c8c21590144ca93d" category="cell">5.3.3-P1-19391 6.0.3-P3-13584 7.0.2-p4-15876 7.0.3-P1-15949 8.0.3-P2-22743</block>
   <block id="4bad3d6271e78d79dec31845300a2241" category="cell">Rubrik Storage REST API</block>
-  <block id="77815a7b25e952dd0392c53354bd8485" category="cell">VMware vCenter Server 6.7.0 組建編號 10244857 VMware vCenter Server 6.7.0 組建編號： 14368073 VMware vCenter Server 7.0.3 組建編號： 19234570 VMware vCenter Server 7.0.3 組建編號： 20150588 VMware vCenter Server 7.0.3 組建編號： 20395099 VMware vCenter Server 7.0.3 組建編號： 20990077 VMware vCenter Server 7.0.3 組建編號： 21477706 VMware vCenter Server 7.0.3 組建編號： 21784236-21893-2150931 VMware vCenter Server</block>
   <block id="2c10282d2a9ce8be1576d7af8091d09e" category="cell">Web服務</block>
   <block id="51359e8b51c63b87d50cb1bab73380e2" category="cell">原則</block>
   <block id="584f8eaacb1a0c605080be390dd2c14a" category="cell">Volume UUID</block>
@@ -5288,81 +5167,45 @@
   <block id="0df3afc7b3c290bc4820d50b2bee11b4" category="cell">CPU等候時間總計（以百分比表示）</block>
   <block id="daadad26e1c264cad9b4346b69b75269" category="cell">VMware REST API</block>
   <block id="4dab2f9796b0af6304d00e21e2b9dfb4" category="section-title">AWS上的VMware Cloud</block>
-  <block id="45122b610e63149fdae6dd98e199d2da" category="list-text">VMware vCenter Server 7.0.3 build 20532039</block>
-  <block id="038a360b328b431f7601dd10c68dbec8" category="list-text">VMware vCenter Server 7.0.3 build -20870699</block>
-  <block id="7d468cdc87e1f555c0983c706373ca82" category="list-text">VMware vCenter Server 8.0.0 內部版本 -21709157</block>
   <block id="0ad0d30d976e28ead46bff59a349da08" category="section-title">VMware vSphere（Web服務）</block>
-  <block id="0315ac1f4b06c1ff2432bc3d2885e3b1" category="list-text">VMware ESXi 6.0.0 內部版本 -10719132.</block>
   <block id="7b50da6f35962a02991272e1fc9a21d6" category="list-text">VMware ESXi 6.0.0 組建 - 2494585</block>
-  <block id="a27829bf815c7374f7c227c66eb66ef6" category="list-text">VMware ESXi 6.0.0 組建 - 5572656</block>
-  <block id="f8d1c376ef5b5145e6c309de4c3a884b" category="list-text">VMware ESXi 6.0.0 組建 - 9313334</block>
-  <block id="511267dd334ed8fde93b681500300102" category="list-text">VMware ESXi 6.5.0 組建編號： 14990892</block>
-  <block id="1b0d2f504fd313001dd5f6595ad6e398" category="list-text">VMware ESXi 6.5.0 組建 - 5969303</block>
-  <block id="1c910a25321686571259dbfa56263aba" category="list-text">VMware ESXi 7.0.0 組建 - 15843807</block>
   <block id="6e25183d63a4f49fb6e6f363a6001d75" category="list-text">VMware ESXi 7.0.3 build -20036589</block>
   <block id="0089dd08bb8221b121a4bc45fd8f7750" category="list-text">VMware ESXi 7.0.3 build 20328353</block>
-  <block id="cc9efad17bcd692a209e96081c63a16d" category="list-text">VMware ESXi 7.0.3 build 20842708</block>
-  <block id="31677e318a54e76598a52886813d4ee7" category="list-text">VMware vCenter Server 5.0.0 內部版本 -3073236</block>
-  <block id="e486b0d17d1d750db1a3cbc8bf151244" category="list-text">VMware vCenter Server 5.0.0 內部版本 -455964</block>
   <block id="c53e4a42fa049b0d57a9b53dfde50f93" category="list-text">VMware vCenter Server 5.0.0 組建 - 623373</block>
-  <block id="00ebc559d625fb9c028115fc120b7c23" category="list-text">VMware vCenter Server 5.1.0 組建 -3814779</block>
   <block id="1302adc28e5abb22ced3b70e1b5e672a" category="list-text">VMware vCenter Server 5.5.0 內部版本 -1750787</block>
   <block id="57e227d0cf2b5e80ae37022474895847" category="list-text">VMware vCenter Server 5.5.0 內部版本 -2442329</block>
-  <block id="2d1231e1568e824f46e9400eb1f1391f" category="list-text">VMware vCenter Server 5.5.0 組建編號 3000241</block>
   <block id="c486570fe0a987ac4e2262def8128fd6" category="list-text">VMware vCenter Server 5.5.0 組建 - 3252642</block>
-  <block id="971c07c7bdec264179f867897b252de8" category="list-text">VMware vCenter Server 5.5.0 建置 -372164</block>
-  <block id="fb67f5a19e2e99b8f829d411e0a9926e" category="list-text">VMware vCenter Server 5.5.0 組建編號： 4180647</block>
   <block id="bf010e44cd676eee50f84737abe93bb9" category="list-text">VMware vCenter Server 5.5.0 建置 -6516310</block>
   <block id="d80f29266c5582ddf8d319d2781753c7" category="list-text">VMware vCenter Server 5.5.0 建置 -9911218</block>
   <block id="5d38709739d43fd979729dac27e37f76" category="list-text">VMware vCenter Server 6.0.0 組建 - 13638472</block>
   <block id="054ab0940019d1deeaa30375b5c7c6ec" category="list-text">VMware vCenter Server 6.0.0 內部版本 -14510545</block>
   <block id="34b356625e84e56b2474d343e4040abb" category="list-text">VMware vCenter Server 6.0.0 內部版本 -2776511</block>
   <block id="3f78ded857b95ba3bb7a665c21832e4c" category="list-text">VMware vCenter Server 6.0.0 內部版本 -3634793</block>
-  <block id="2794a3dd96c71b3d54ffa96f78cacfa0" category="list-text">VMware vCenter Server 6.0.0 內部版本 -3634794</block>
-  <block id="a77b1c3756b44c88061f8e33b47c812f" category="list-text">VMware vCenter Server 6.0.0 內部版本 -5960847</block>
-  <block id="cff3baf6081d63d2fdd6a64a4bb609d6" category="list-text">VMware vCenter Server 6.0.0 內部版本 -7924803</block>
-  <block id="5491ad941c5aa9023763e3d6312f7b72" category="list-text">VMware vCenter Server 6.0.0 組建 - 8803875</block>
   <block id="03ecfb828e3ec48e0cb8eb49793e2b6c" category="list-text">VMware vCenter Server 6.0.0 內部版本 -9313458</block>
   <block id="1282e3716b60599413610132093318a7" category="list-text">VMware vCenter Server 6.5.0 內部版本 -10964411</block>
-  <block id="fc47bf5766605b38569a8fccf05ff51d" category="list-text">VMware vCenter Server 6.5.0 組建編號： 15679215</block>
-  <block id="4635251231468d126b45d9db01e820ca" category="list-text">VMware vCenter Server 6.5.0 內部版本 -17590285</block>
   <block id="e14b385fcfcd8f74dfadfb8c5570e2f9" category="list-text">VMware vCenter Server 6.5.0 內部版本 -17994927</block>
   <block id="cc2f2731350046a14701ebd0e8eb994e" category="list-text">VMware vCenter Server 6.5.0 組建編號： 18499837</block>
   <block id="f8a21d6909203de5525712b4332b88c8" category="list-text">VMware vCenter Server 6.5.0 建置 -18711281</block>
-  <block id="dd6888e933a9622df0d92b3a8df29cbc" category="list-text">VMware vCenter Server 6.5.0 內部版本 -19261680</block>
   <block id="2ccbf45cc0a224c4557b057864d89549" category="list-text">VMware vCenter Server 6.5.0 內部版本 -20510539</block>
-  <block id="b82a0819ebf1d36e94b6664bcab6e841" category="list-text">VMware vCenter Server 6.5.0 建置 -7119157</block>
   <block id="ce5943085be2807e54b4f1aa33007948" category="list-text">VMware vCenter Server 6.7.0 內部版本 -10244857</block>
   <block id="d9a6b27d1a3fd392f17df9635cea4355" category="list-text">VMware vCenter Server 6.7.0 組建編號 11727113</block>
-  <block id="d393d3c0352bcce0ffb4680301e88502" category="list-text">VMware vCenter Server 6.7.0 組建版本 -13007421</block>
-  <block id="b62487461de22dc9034724acf0170fb7" category="list-text">VMware vCenter Server 6.7.0 組建 - 13639324</block>
-  <block id="21a1c30d0162632e051020d0a7fadbe3" category="list-text">VMware vCenter Server 6.7.0 內部版本 -14368073</block>
-  <block id="b99f91aa7d39502cc32138323e368863" category="list-text">VMware vCenter Server 6.7.0 組建編號： 15129973</block>
   <block id="de1af98f8497d0aba3904775a3e97238" category="list-text">VMware vCenter Server 6.7.0 組建編號： 15679289</block>
   <block id="f80756feac72b853aae0528ff6166381" category="list-text">VMware vCenter Server 6.7.0 內部版本 -17137327</block>
   <block id="28dc582e747a0e5404807be66589c420" category="list-text">VMware vCenter Server 6.7.0 內部版本 -18010599</block>
   <block id="ed57678693c91a8fdc1e99dbd28c1ed2" category="list-text">VMware vCenter Server 6.7.0 內部版本 -18485185</block>
   <block id="ab8df1fa8f5c46b8ba50ea3607c683c0" category="list-text">VMware vCenter Server 6.7.0 組建編號 18831049</block>
   <block id="1f4d95178a913185d195cf51c4b1fb4d" category="list-text">VMware vCenter Server 6.7.0 內部版本 -19299595</block>
-  <block id="0d8ea485a1ba4fbc295bba4a2eb6a94b" category="list-text">VMware vCenter Server 6.7.0 內部版本 -19832247</block>
   <block id="9a9b6e91c28c2770ae65b840a2abb66e" category="list-text">VMware vCenter Server 6.7.0 內部版本 -19832280</block>
   <block id="a6d5faa23b7d52d0849c1759700994bf" category="list-text">VMware vCenter Server 6.7.0 組建編號 20504301</block>
   <block id="5580863871992d3da017ceedf4f43c28" category="list-text">VMware vCenter Server 6.7.0 組建版本 -20504362</block>
   <block id="98dc2e488dc66d3fc65ad0305abca134" category="list-text">VMware vCenter Server 6.7.0 內部版本 -8170161</block>
-  <block id="d0780c98a24bc649f75681f1b7c7e759" category="list-text">VMware vCenter Server 6.7.0 組建編號 9433931</block>
-  <block id="1386c752ef764fe3c4c82461c3a232c9" category="list-text">VMware vCenter Server 7.0.0 內部版本 -16620013</block>
-  <block id="5457cfb7d86a36ffe9066bfd48b2acb1" category="list-text">VMware vCenter Server 7.0.0 內部版本 -16749670</block>
-  <block id="82e495bfe1a53e5e566fedbb6a515602" category="list-text">VMware vCenter Server 7.0.1 內部版本 -17491160</block>
-  <block id="2779747b0c94fda2b94e9949dd2b7598" category="list-text">VMware vCenter Server 7.0.2 內部版本 -17694817</block>
   <block id="614c161c2f2cbdf1d30d5a0e399c4201" category="list-text">VMware vCenter Server 7.0.2 內部版本 -17958471</block>
   <block id="d5c3fc81237f0d819399df634cdfc80e" category="list-text">VMware vCenter Server 7.0.2 內部版本 18356314</block>
   <block id="6ca545bf1cd381b43c504732235dfd08" category="list-text">VMware vCenter Server 7.0.2 內部版本 18455184</block>
-  <block id="0d594a401d9a31eb8428b58c41f8474a" category="list-text">VMware vCenter Server 7.0.3 組建 -18700403</block>
   <block id="e9e134b52eae17e3b8fb66fe6b629a23" category="list-text">VMware vCenter Server 7.0.3 內部版本 -18778458</block>
   <block id="457742c8b098f86a96a9da1a76b60026" category="list-text">VMware vCenter Server 7.0.3 內部版本 -19234570</block>
   <block id="3dbe4dc8f85cac020e7470cdf1f435f8" category="list-text">VMware vCenter Server 7.0.3 組建 -19480866</block>
   <block id="f975e03c7a2e30d04409e925e39ed5e0" category="list-text">VMware vCenter Server 7.0.3 內部版本 -19717403</block>
-  <block id="736e638792dd2ff897287510104168e9" category="list-text">VMware vCenter Server 7.0.3 build -20051473</block>
   <block id="5049f0c3b0f25073df471705811f09a3" category="list-text">VMware vCenter Server 7.0.3 build -20150588</block>
   <block id="1ccce22a4188acff0051ba4528a6c800" category="list-text">VMware vCenter Server 7.0.3 build -20395099</block>
   <block id="ccf8289a707296e28136f90a039b13c1" category="list-text">VMware vCenter Server 7.0.3 組建 -20845200</block>
@@ -5373,7 +5216,6 @@
   <block id="6793b9be93063fd8d9ab3e2fcf4b49e9" category="list-text">VMware vCenter Server 7.0.3 build 21958406</block>
   <block id="b4db9aef9d4eb2c8f83d551fd1a272a1" category="list-text">VMware vCenter Server 8.0.0 內部版本 -20920323</block>
   <block id="a05647ef71ebe85ee91b9785dcf2b82e" category="list-text">VMware vCenter Server 8.0.0 組建 - 21216066</block>
-  <block id="06450b55dd990fe8530bcc47f2e2c522" category="list-text">VMware vCenter Server 8.0.0 內部版本 -21457384</block>
   <block id="100dedae1855bd3b489e046014a6bc55" category="list-text">VMware vCenter Server 8.0.1 build -21560480</block>
   <block id="12bd880ebd4562250dced4bf19bb9e06" category="list-text">VMware vCenter Server 8.0.1 組建編號 21815093</block>
   <block id="4cbb96ca787d5ad40a2c9fc88221ea43" category="list-text">VMware vCenter Server 8.0.1 組建編號 21860503</block>
@@ -12008,4 +11850,191 @@
   <block id="1ec51096f7cea66fb872ea91910e89b9" category="paragraph">如需其他疑難排解秘訣，請參閱<block ref="6fe211aef2305839bd4b415ac3b03770" category="inline-link-macro-rx"></block>（需要支援登入）。</block>
   <block id="9e6e19182965cf2820f2a5f8cce84e8b" category="cell">當AU安裝在SELinux上時、SE應設定為_permals_模式。不支援_強制_模式。將SELinux設定為允許模式後、請重新啟動AU服務。<block ref="2aa71c1262c825b4349ce4125965fabb" category="inline-link-macro-rx"></block>。</block>
   <block id="a0549e61b3931f3ffafdfcc909b88bf8" category="cell">執行下列其中一項授權版本的電腦： * CentOS 9 Stream （ 64 位元） * openSUSE Leap15.3 至 15.5 （ 64 位元） * Oracle Linux 8.10 （ 64 位元）， 9.1 至 9.4 （ 64 位元）， SELinux * Red Hat Enterprise Linux 8.10 （ 64 位元）， 9.1 至 64 位元（ 64 位元）， SELinux *建議使用專屬伺服器。</block>
+  <block id="af66622d3522b0b6fa496a47273bdb04" category="paragraph">資料收集器支援對照表提供 Data Infrastructure Insights 支援的資料收集器參考資料，包括廠商和機型資訊。</block>
+  <block id="8892f0f7118a4e14ceef9a37218a5a33" category="cell">HPE Alletra 9080 HPE_3PAR 20450 HPE_3PAR 20800 HPE_3PAR 20850 HPE_3PAR 7200 HPE_3PAR 7200c HPE_3P7400 AR HPE_3P400c P400c P400HP P400_3AR P4008 P400P P400 HP P400C P200P200HP PPE</block>
+  <block id="18adaaa9a30f8065f2b72c800cd263ca" category="cell">3.1.1 （ MU1 ） 3.1.2 （ MU3 ） 3.1.3 （ MU1 ） 3.1.3 （ MU2 ） 3.2.1 （ MU2 ） 3.2.1 （ MU3 ） 3.2.1 （ MU5 ） 3.2.2 （ MU4 ） 3.2.2 （ MU6 ） 3.3.1 3.3.1 （ MU1 ） 3.3.1 （ MU2 ） 3.3.1 （ MU3 ） 3.3.1</block>
+  <block id="10fd66f5b4802aee3a88de2a537a57b4" category="cell">已用容量</block>
+  <block id="77ca1f32dd520c4ac24f6c1d12ecda48" category="cell">故障磁碟的原始容量（所有故障磁碟的總和）</block>
+  <block id="5f74db3052fd919ac2aa53259ceb1aef" category="cell">備用磁碟的原始容量（所有備援磁碟的總和）</block>
+  <block id="3a02997589ec83b551ece558ef97b541" category="cell">從 ACQ 控制 DWH 容量感興趣的儲存池</block>
+  <block id="5c04c311b8d47b29e194b80bd5dec946" category="cell">實體磁碟容量（MB）</block>
+  <block id="14731a54eec6457016b47123d8481edf" category="cell">磁碟上的讀取 IOP 數</block>
+  <block id="897356954c2cd3d41b221e3f24f99bba" category="cell">金鑰</block>
+  <block id="59304f49dd831f1f6fcf7dc01f72303b" category="cell">2019 年 6 月 1 日 2024-07-01</block>
+  <block id="078f367ea2c7fdd337cff739053aab32" category="cell">檔案網格路徑</block>
+  <block id="a93ac7b8eff0ac62c96fcb53605d4c43" category="cell">175.53 176.51 183.0 Brocade Brocade Brocade Brocade Brocade 200E Brocade Brocade Brocade Brocade Brocade 300E Brocade Brocade Brocade Brocade 4024 內嵌 Brocade 5000 Brocade 5100 Brocade 5300 Brocade 5480 內嵌式 Brocade 6505 Brocade 6510 Brocade 6520 Brocade 6546 Brocade 6547 內嵌式 Brocade 6548 Brocade 6558 Brocade 7800 Brocade 7810 擴充交換器 Brocade 7840 Brocade DCX Brocade DCX-4S Backbone Brocade DCX8510-4 Brocade</block>
+  <block id="2d0e20fe59aee6d3b25ad07e28e52f72" category="cell">v6.2.2b v6.2.2f v6.2.2f9 v6.2.2g v6.4.1a.v6.4.1b v6.4.2a.</block>
+  <block id="a226f89d9ef4e309dc8360113cea166b" category="cell">實體連接埠 WWN</block>
+  <block id="638510a219f4b13657f8558372e4b3f3" category="cell">最低的 IVR 機箱 WWN</block>
+  <block id="de9e687c272e4633df94c3a7f92c295c" category="cell">已收到 BB Credit Zero</block>
+  <block id="f0d6bd96c9f84add944df8d5060dd505" category="cell">BB Credit Zero Total</block>
+  <block id="9e877574819be34335e4842ad03c3463" category="cell">BB Credit Zero 已傳輸</block>
+  <block id="4ba93ddbedc42074f8c866cdb853d32b" category="cell">傳輸的 BB Credit Zero M</block>
+  <block id="9ebd189a2535b5c5f077bac84cb548af" category="cell">連接埠錯誤類別 3 捨棄</block>
+  <block id="984512a4632a2dac603a9939a93b9bf3" category="cell">連接埠錯誤 CRC</block>
+  <block id="625217f8f44ee63daf196b073a5d207b" category="cell">連接埠錯誤環境</block>
+  <block id="940c7770350bceaced3c9719f011e9c4" category="cell">連接埠錯誤長訊框</block>
+  <block id="2c98b48ffd85ac841ee9bad35b47a9ee" category="cell">連接埠錯誤短訊框</block>
+  <block id="3e75235453f258867730103a9181b6f2" category="cell">連接埠錯誤連結失敗</block>
+  <block id="46d31f6595967a81ce62461fd617a430" category="cell">連接埠錯誤連結重設 Rx</block>
+  <block id="361b3853018aaa4301398bbc054ea961" category="cell">連接埠錯誤傳輸連結重設</block>
+  <block id="560df5fb1590844a55a48814b462dd79" category="cell">連接埠錯誤訊號遺失</block>
+  <block id="e84b3dabdd74420138d318a1361b6bbf" category="cell">連接埠錯誤同步遺失</block>
+  <block id="ba2c2322bca1effdb5ec6a239eb1cab1" category="cell">連接埠錯誤傳輸捨棄逾時</block>
+  <block id="1795f08a1e40ddad6681ae8682fa9ac7" category="cell">連接埠錯誤逾時捨棄</block>
+  <block id="647a8ab49c869d21aff22c9c5b440750" category="cell">連接埠錯誤總數</block>
+  <block id="e50f84c8ec3b271bcb58e11a44e38a6b" category="cell">已接收流量</block>
+  <block id="1cbc66743e29ca6f88d0254ed7d3c4cf" category="cell">流量傳輸率</block>
+  <block id="8a5f03924fbc02859be696012a68088a" category="cell">已接收流量使用率</block>
+  <block id="84eb7a551425ddf565e7d2512276c051" category="cell">總流量使用率</block>
+  <block id="46fd3cae12922cb0a543e2871c723eef" category="cell">流量傳輸使用率</block>
+  <block id="28189d45e939e4dd0e85a1e076edf8c8" category="cell">連接埠資料</block>
+  <block id="51ecd39566dc39427b678a3b93141867" category="cell">14.4.3 14.4.4</block>
+  <block id="7c00f86f07c9f53c6fd11c9454cc335c" category="cell">Brocade 6520 Brocade DCX 8510-4 Brocade G620 Brocade X6-8 EMC Connectrix DS-6510b</block>
+  <block id="7c580e1285fca42c00e53dd8aa725a18" category="cell">v7.3.0b v7.4.1b v8.2.3c1 v9.0.1e1</block>
+  <block id="7f6a9b7b3b991d95c44101b66be155fc" category="cell">183.0 184.0 190.0 191.0 Brocade 6505 Brocade 6510 Brocade 6520 Brocade 7810 擴充交換器 Brocade 7840 Brocade DCX8510-4 Brocade DCX8510-8 Brocade G610 Brocade G620 Brocade G630 Brocade G720 Brocade G730 Brocade X6-4 Brocade X6-8 Brocade X7-4 Brocade X7-8</block>
+  <block id="d7511436a768d776e7f0abc8e12cc041" category="cell">v8.2.2a v8.2.2D v8.2.2d4 v8.2.3 v8.2.3a v8.2.3b v8.2.3c v8.2.3c v8.2.3d v8.2.3e v8.2.3v8.2.</block>
+  <block id="bad9c4d6af39160a23a9cb25c1b7e665" category="cell">DS-C9124-2-K9 DS-C9124-K9 DS-C9132T-K9 DS-C932P-K9 DS-C9148-16P-K9 DS-C9148-32P-K9 DS-C9148-48P-DS-C91482-48P-DS-C9148S-K9</block>
+  <block id="e84b7cdd12c89dc380dde00d6b98b502" category="cell">3.31c 4.1(3a)4.2(1a) 5.0(1a) 5.0(3)5.2(3)N2(3.11e)5.0(4.01d)5.0(3)N2(4.13i) 5.0(3)N2e)5.0(3)N2(4.21j)5.2(3)6.2</block>
+  <block id="f15546118813b61b3d57630351537719" category="cell">c4000 運算節點 C4600 C5036 C5066 C6025 C6035 C6055 PXG1 UC-C240M5H10 虛擬 ROBO</block>
+  <block id="9534a4ae4cf6b437f5650ec04cb24990" category="cell">6.8.1_U1_RELON-20221022_6f58ed2a 6.8.1_U7_RELON-20231213_41094bba 6.8.2_RELON-20240317_97f56d9a 6.8.2_U1_RELON-20240509_a5da46447.1.2_U2_RELion-20240925_66477.1_24b20477.1_20271-20271-20271-20472_2027.1 版本</block>
+  <block id="c34707d3e7f50a0d42277fbeba40bf0f" category="cell">NSX VG8 VNX5200 VNX5300 VNX5400 VNX5500</block>
+  <block id="3eb50107a4194001d513fe3771a55d5b" category="cell">5.5.38-1 7.1.76-4 7.1.79-87.1.832.21-268.1.9-155</block>
+  <block id="ba1ce7f7c942af2296bc6475c4cd669f" category="cell">6.26 6.28 7.32 7.33</block>
+  <block id="c0a59cec42b6b73f082568d84a5b62ce" category="cell">CX3-40f CX4-480 VNX5100 VNX5200 VNX5300 VNX5400 VNX5500 VNX5600 VNX5700 VNX5800 VNX7600</block>
+  <block id="23891907176c380bc6a15df683b74260" category="cell">04.28.000.5.710 05.32.000.5.206 05.32.000.5.218 05.32.000.5.219 05.32.000.5.221 05.32.000.5.225 05.32.000.5.249 05.33.000.5.074 05.33.008.5.119 05.33.009.5.155 05.33.009.5.184</block>
+  <block id="6f333cf84e824835530a56bf57940c9b" category="cell">DD VE DD2500 DD3300 DD4200 DD6300 DD6400 DD6800 DD6900 DD7200 DD9300 DD9400 DD9500 DD9800 DD9900 DD9910</block>
+  <block id="ceddcf25e5d7ac334486c8df53ed46e0" category="cell">6.1.2.051-633576 6.1.2.20-606786 6.2.30-663869 6.2.1.40-671976.2.1.60-686365 7.10.0.0.20-1023227 7.10.1.0-10429287.10.1.1.1-1049892 7.10.1.1.10-1068159</block>
+  <block id="da758f480b77107de8824b6e93df8155" category="cell">3.6.1.3 3.6.2.1 3.7.0.0 3.7.0.3 3.7.0.4 3.7.0.6 3.8.0.1 3.8.0.2 3.8.0.3 3.8.0.4 3.8.0.5 3.8.0.6 3.8.1.1 3.8.1.3</block>
+  <block id="af0378e9a881d09da6d21e170759f14c" category="cell">qtree 8 以上</block>
+  <block id="fdfa563cf7dba4df0816de8880847d9f" category="cell">A100 A200 A2000 A300 A3000 F200 F600 F800 F900 H400 H500 H5600 H600 H700 NL410 S210 X210 X410</block>
+  <block id="f72c7718d80ab8dcb1e5dbcaa962e352" category="cell">9.1.0.10 9.1.0.6 9.1.0.9 9.2.1.10 9.2.1.11 9.2.1.12.1.12.1.12.9.2.1.13.9.2.1.19 9.2.1.4 9.2.1.6 9.2.1.9 9.4.0.11 9.4.0.13</block>
+  <block id="f4cc3a98ca545a946194225a4f09fc58" category="cell">A100 A200 H400 H500 NL400 NL410 S210 回溯（最近通話時間）： X200 X400 X410 Sudo python</block>
+  <block id="9f270014d5084f590ec4690f6f5a08dc" category="cell">9.1.0.18 9.1.0.19 9.2.1.12 9.2.1.15 9.4.0.17 9.5.0.3 9.5.0.6 9.5.0.8 9.7.1.2 9.8.0.2 v7.2.0.5 v7.2.1.3 v7.2.1.6 v8.0.0.4 v8.0.0.6 v8.0.0.7 v8.0.1.1 v8.1.2.0</block>
+  <block id="66aa2fcb097faf5bc8feeeb94d697a67" category="cell">PowerStore 1000T PowerStore 1200T PowerStore 3000T PowerStore 3200T PowerStore 5000T PowerStore 5200T PowerStore 9000T PowerStore 9200T</block>
+  <block id="1887ae79cfee9d04a9a93db78634c9d3" category="cell">2.1.0.1 2.1.1.0 3.2.0.1 3.2.1.0 3.2.1.1 3.5.0.1 3.5.0.2 3.6.0.0 3.6.1.0 3.6.1.1 3.6.1.2 3.6.1.3 3.6.1.4 4.0.0.1.0.0.2.</block>
+  <block id="c00bd3de3e188fadf0aed29d315602a3" category="cell">5.1.sp4.p1(h.89)5.1.sp4.p2(h.101) 5.1.sp4.p3(h.109) 5.1.sp4.p4(h.97)</block>
+  <block id="f48096c8419cf2397d68b0b270223fb6" category="cell">R3_5.1201.101 R3_6.1000.134 R3_6.400.107</block>
+  <block id="aab4e758f1e2f91a778a269663e0099c" category="cell">V10.0.0.0 V10.0.1.1 V10.1.0.V10.1.0.0.1 V10.1.0.3.10.1.0.0.5 V10.2.0.2.0.0 V8.3.0.0.0.8.0.9.0.V9.1.0.6 V9.2.1.0 V9.2.2.0 V9.2.3.0</block>
+  <block id="62caaf784d1b997bda3e7c9e6791dc32" category="cell">PMax8000 PowerMax_2000 PowerMax_8000 VMAX-1 VMAX100K VMAX10K VMAX200K VMAX250F VMAX400K VMAX450F VMAX850F VMAX950F</block>
+  <block id="cce45f959b36630f91ce8810a2cc05ce" category="cell">5876.286.194(16F40000) 建置 1155876.309.196(16F40000) 建置 1535876.309.196(16F40000) 建置 1625876.309.196(16F40000) 建置 945977.1151.1151(175990000) 建置 45977.115</block>
+  <block id="0b0a6c716cb7854046b9864b94d86320" category="cell">V10.0.0.5 V10.0.1.5 V10.1.0.0.1 V10.1.0.0.5 V10.1.0.6 V10.1.0.0.8 V10.2.0.1.V10.2.0.2 V9.2.3.15 V9.2.3.22 V9.2.3.4 V9.2.4.1</block>
+  <block id="05e526f18c753002274aba5ebe5067b6" category="cell">PowerMax_2000 PowerMax_2500 PowerMax_8000 PowerMax_8500 VMAX200K VMAX250F VMAX400K VMAX450F VMAX950F</block>
+  <block id="65f3a5b4089c90b1b4d1aca936b2f44e" category="cell">5977.1131.1131 組建 6155977.1151.1151 組建 60 組建 5978.711.711 組建 2055978.7147148.714</block>
+  <block id="ba3a3a04afde4017467cd96ffe48e5a8" category="cell">VNX5300 VNX5500 VNX5700</block>
+  <block id="a1a04267bb4b66c81cf9a52365537563" category="cell">05.32.000.5.216 05.32.000.5.221 05.32.000.5.249 7.1.76-4 7.1.80-3</block>
+  <block id="b3ae5a9b7b965216bc213b1d85691618" category="cell">Unity 300 Unity 300F Unity 350F Unity 380 Unity 380F Unity 400 Unity 400F Unity 450F Unity 480 Unity 480F Unity 500 Unity 550F Unity 600F Unity 650F Unity 680F Unity 880 Unity 880F UnityVSA VNXe3200</block>
+  <block id="784d5dc4fdb40de52793d2359c1891d4" category="cell">3.1.17.10229825 4.1.2.9257522 5.0.6.0.005.008.0.5.007.2.0.5.007.2.0.5.007.5.007.2.1.0.5.0135.2.2.0.5.004.5.0.0.005.004.3.0.5.1205.3.1.0.5.008.3.1.0.5.0285.0.0.5.094</block>
+  <block id="fcc2873cc95b86a3af5562ff18d19fa7" category="cell">6.2.0.04.00.07 6.2.0.07.00.02 6.2.1.0.0.519</block>
+  <block id="81f0ef41fcb5779c39155416e75ba62b" category="cell">6.2.1 6.3.2 6.3.3 6.4.0 6.4.1 6.4.2</block>
+  <block id="fda418ac11ad26c34a9f3d76102ca795" category="cell">1 塊磚頭和 125TB 1 塊磚塊和 24TB 1 塊磚塊和 31 TB 1 塊磚塊和 8TB 1X10TB 1X20TB 1X40TB 2 塊磚塊和 188TB 2 塊磚塊和 83TB 3 塊磚塊以及 251TB 4 塊磚塊和 628TB 4 塊磚塊和 754TB 4X20TB 6X40TB</block>
+  <block id="088d5fa2842780807160373c1c16385a" category="cell">4.0.27-1 4.0.31-11 6.3.3-8_X2 6.4.0-36_hotfix_2_X2</block>
+  <block id="5b1b583c79c15bfdd7302e5dbb1fd545" category="cell">2660 2680 2702 2704 2800B 2804 2806 3000 4000 5486 5488 5504 5564 5600 5700 5700B 6000</block>
+  <block id="4a012257b27562364273bd0fbce12646" category="cell">08.40.60.00.08.80.00.8.20.16.08.20.27.08.20.30.08.20.0.20.8.8.8.25.14.08.25.6.0.08.30.20.0.8.40.</block>
+  <block id="0b601b61b018ca45c66479f7d889ccca" category="section-title">Pure Storage FlashBlade REST</block>
+  <block id="7d5b5dd6c17187a9d46c13b63a6b9dc0" category="cell">FlashBlade FlashBlade//S200</block>
+  <block id="61082be7476212157501671eefc2e078" category="cell">Purity //FB 4.1.5 Purity //FB 4.3.0 Purity //FB 4.3.6 Purity //FB 4.4.3</block>
+  <block id="371e6a5612e80e07cef0fc0cccb142c8" category="cell">Pure Storage FlashBlade API</block>
+  <block id="b1247096c25e46b023d1b653b5b53bb9" category="cell">9.6.2.37 9.6.3.33 9.7.2.27</block>
+  <block id="2b4b288cb9726df4dc219bfcd8b9cd6e" category="cell">7.6.1 8.8.7.1 8.7.3 8.7.6 8.8.3</block>
+  <block id="c38b186c37788cc3b996afe54bf91eef" category="cell">DF850MH DF850S HM800 HM850 P9500 RAID800 VSP5000 XP24000 XP8</block>
+  <block id="70beddaa9ac7ad3e114400a38326c5d1" category="cell">0983/A-H 0984/B-H 0985/B-S 0986/ A-H 0988/H-S DKC:60-08-22 DKC:60-08-65 DKC:70-06-43 DKC:80-06-8000/02 DKC:80-06-91-00/00</block>
+  <block id="8829fa767af7710678363d8745f0d521" category="cell">VSP 5100 VSP 5500 VSP 5600 VSP 5600H VSP E1090 VSP E590 VSP E990 VSP E990 VSP E790H VSP F1500 VSP F400 VSP F900 VSP G1000 VSP G1500 VSP G600 VSP G800 VSP G900 XP8</block>
+  <block id="1ecb1800a29ed9d5cb02d90e375574ab" category="cell">80-06-06-91-00/00:01-71-03/0280-06-06-94-0/00:01-70-03-0480-06-05-00-01-60-0</block>
+  <block id="1888967ab4defb152c0d9e8ea1087907" category="cell">檔案 34 G600 G800 HNAS 4060 HNAS 4080 HNAS 4100 N800</block>
+  <block id="d15be23087692d658b2c704c20f51c82" category="cell">14.6.7520.04 14.7.7623.07 14.9.7916.07 15.1.8030.03 15.1.8030.05 15.2.8128.05 15.2.8128.07 15.2.8128.09 15.3.8224.02</block>
+  <block id="47de51f071ab0bb56bbed13cc9aa5f58" category="cell">5050 A1000 AFF 20Q AFF 40 AFF 60 AFF 80 CS1000 CS300 CS3000 HCS500 HF20 HF20C HF20H Hf40 Hf40C Hf60</block>
+  <block id="6da001b5babd4c7f72990321efe6b8eb" category="cell">5.0.8.0-677726-opt 5.2.1100-1027043-opt 5.2.1.800-930936-opt 6.0.400-991061-opt 6.0.500-1005932-opt 6.1.100-1013503-opt 6.1.105200-1020304-opt 6.1.300-1028597-6.1.300-opt 2.502-10702-10672.502-10701-10702-10507-6.1-10702-opt</block>
+  <block id="07319ca93147719d0b1dd2f025f6cf77" category="cell">18800 V5 2600 V3 5310 V5 5500 V3 5500 V5 5800 V3 6800 V3 Dorado 18000 V6 NVMe Dorado 3000 V6 Dorado 5000 V3 Dorado 6000 V3 Dorado 6000 V6 NVMe</block>
+  <block id="db25589feb1a22997be60a887e360743" category="cell">V300R001C01 V300R002C10 V300R006C10 V300R006C20 V300R006C50 V500R00C10 V500R007C30 V500R007C60 Kunpeng V500R007C61 V500R007C71 Kunpeng V600R003C00 V600R005C00R27 V600C006 V600C00R27</block>
+  <block id="c87309179da826a7812bff35008be5d7" category="cell">2107-951 2107-961 2107-993 2107-994 2107-996 2107-A05</block>
+  <block id="8a19c2013ac29369b3f3e5765e3db701" category="cell">-7.10.1.8 7.6.31.4250 7.7.51.1400 7.9.32.101 7.9.33.95 7.9.40.251 7.9.41.65</block>
+  <block id="667678853cd2a0f3c0847b9765cc7321" category="cell">2072-12F 2072-12G 20722-2242072-24C 2072-24E 2072-24F 2072-24G 2072-2N4 20722-3242072-3H4 2072-3N2 2072-3N4 2072-92F 2072-92G 20766-1242-2478 AFF</block>
+  <block id="b54da4a5bb83d456f93b867e94b4d4f7" category="cell">1.5.2.7 1.6.1.1.6.1.1.41.6.1.1.57.7.1.87.8.1.11.8.1.12.7.8.1.13.1.7.8.1.147.8.1.167.8.1.5.8.1.6.7.8.1.7.8.1.7.8.1.7.8.1.7.8.</block>
+  <block id="43ba9900ff2fc7d9d32072540b2cab12" category="cell">A14</block>
+  <block id="465eb21446914e7c885c18e24b1f7145" category="cell">10.2.4.e</block>
+  <block id="9e9c50a1ea4657a7c9b53afe16848ed1" category="cell">F4303 F6240</block>
+  <block id="d2845813068753058175a1d7e9facb06" category="cell">6.0.20.40 6.0.31.0 7.1.14.0 7.3.20.90</block>
+  <block id="3170522648367d21423b781343eec922" category="cell">1.12 1.17 1.19 1.20 1.21</block>
+  <block id="14c793a93f35bdf4058bdcd23fa1c30a" category="cell">FAS2040 FAS2220 FAS2240-4 FAS2520 FAS2554 FAS3140 FAS3160 FAS3250 FAS3270 FAS6240 FAS6250 FAS8020 FAS8040 FAS8060 N6070 N6240 N6270</block>
+  <block id="16c7df8ff4cba468dac596630ab74337" category="cell">8.1.1 7-Mode 8.1.4P9D18 7-Mode 8.2.2 7-Mode 8.2.3 7-Mode 8.2.3 7-Mode 8.2.3P2 7-Mode 8.2.3P3 7-Mode 8.2.4 7-Mode 8.2.4 7.4P4 7-Mode Data ONTAP 8.2.4 Data ONTAP Data ONTAP</block>
+  <block id="0b1aee7a3a84cb882fa888a731f0ac0c" category="section-title">NetApp E 系列 REST</block>
+  <block id="ebb0dbfce3d000a2a29edbaf0dddf91d" category="cell">2800B 2806 5700 6000</block>
+  <block id="6c2aa3d2995e48ee5e95f78750a53005" category="cell">08.62.00.02 08.71.03.00 08.73.00.00 08.74.01.00 08.74.02.00 08.75.00.00 08.75.00.01 08.80.00.00 08.81.00.03 08.81.02.00 08.81.03.00 08.90.00.00 68.80.49.74</block>
+  <block id="f1ea78fb0be7b3e9de3f17737c6275f5" category="cell">NetApp E 系列 REST API</block>
+  <block id="4a60d2831168dafee439f25e62509197" category="cell">FAS500f A150 ASA ASA ASA FAS8200 FAS8300 FAS8700 FAS80A1K ASA FAS2620 FAS2650 FAS2720 FAS2750 FAS2820 FAS9000 FAS9500 FAS200 ASA A220 AFF A250 ASA A300 ASA A320 AFF A400 AFF A70 AFF A700 AFF A700s AFF AFF AFF A800 AFF A90 AFF A900 FAS900 AFF AFF AFF C190 AFF ， C250 AFF ， C400 AFF ， C60 AFF ， AFF8020 AFFA8040 FASA8030A30A70A30 AFF ， A70A70A70A30 AFF ， A250 ， A70A70A250A70A70A70A70A30</block>
+  <block id="5c3e074bf156575e833ca2bb37378de6" category="cell">8.2.3P4 8.2.3P5 8.3.1P2 8.3.2.3.2.2P12 8.3.2P12 9.0.2P5 9.0.09.0.09.1.0P1 9.1.0P11 9.1.0P15 9.1.0P15 9.1.0P17 9.1.0P19 9.1.0P199.1.0P2 9.1.0P20</block>
+  <block id="c13cc2fac88a818b93f5ffcb5db492c9" category="cell">ASA-A1K</block>
+  <block id="6d7dd3ca2962ef69238056e606102287" category="cell">NetApp 版本 9.16.1 ： SAT 1 月 18 日 19 ： 31 ： 15 UTC 2025 NetApp 版本 9.16.1RC1 ： 11 月 4 日星期一 10 ： 39 ： 46 UTC 2024</block>
+  <block id="679634d7c4ed7b140ef10a84bc89db37" category="cell">NetApp ASA API</block>
+  <block id="7c11c8b7cb2bb03933f57c7d02b47490" category="section-title">NetApp ONTAP REST</block>
+  <block id="06d9d6cb6ba27f0d88486f9f5a3bb5a5" category="cell">A150 A220 A250 AFF A300 AFF A400 A70 AFF A700 AFF A700 s A800 AFF A90 AFF A900 FAS2720 FAS2750 FAS2820 FAS8200 FAS8300 FAS8700 FAS9000 FAS9500 AFF C250 ASA C400 AFF ASA A800 AFF A250 AFF A400 ASA AFF A800 CDVM200 AFF FA300 AFF AFF BOX</block>
+  <block id="65d7f1c266e63ec0f2298e0fa344ea1a" category="cell">NetApp NetApp 版本 9.14.1 ：週二 1 月 23 日 21 ： 48 ： 01 UTC 2024 NetApp NetApp NetApp NetApp 版本 9.14.1P10 ：週四 11 月 28 日 12 ： 32 ： 16 UTC 2024 NetApp NetApp NetApp 版本 9.14.1P1 ： 2 月 15 日 00 ： 45 ： 21 UTC 2024 NetApp 版本 9.14.1P4 ： 6 月 18 日 UTC NetApp 版本 9.2024 NetApp 14.017 ： 6 月 14 ： 14 ： 14 ： 14 ： NetApp 2007 年 10 月 14 ： 14 ： 14 ： 14 ： 14 ： 14 ： 14 ： 14 ： 14 ： 14 ： 16 NetApp NetApp NetApp NetApp NetApp NetApp NetApp NetApp NetApp NetApp NetApp NetApp</block>
+  <block id="e07be06c315f09b3ca98301b790f4053" category="cell">NetApp ONTAP REST API</block>
+  <block id="0b180bcdbe0b105ac46393b6c98cbdda" category="cell">H410S-2 H610S-2 H610S-4 SF19210 SF2405 SF4805 SF9605 SF9608 H300S H410S-0 H410S-1 H410S-2 H500S H610S-1 H610S-2 H610S-4 SF19210 SF38410 SF4805 SF9605 SF9608</block>
+  <block id="b4f40a14678e21a932e4e936a7afeb1e" category="cell">11.1.0.72 11.7.0.76 11.8.0.23 12.0.333 12.2.0.777 12.3.0.958 12.3.1.103 12.3.1.165 12.3.2.3 12.5.0.897 12.7.0.380</block>
+  <block id="4405ffb87bb4bb624a1e4d02b219ce09" category="cell">3.2 3.3 3.4 3.5 4.0 4.1</block>
+  <block id="ca9dd8b75c7fd009b26e7f7ed4086a45" category="cell">11.4.0 11.5.0.11 11.5.0.611.5.0.711.5.0.911.6.0.11.6.0.11.6.0.11.6.0.11.6.0.1111.6.0.1211.6.0.1311.6.0.1411.6.0.1511.6.0.1611.6.0.11.6.0.11.6.0.11.6.0.711.</block>
+  <block id="a9d65d0ae6859f113b35ec779d2a6103" category="cell">NX-3170-G7 NX-8155-G7 HPE DX360-10 G10 HPE DX380 12LFF G11 HPE DX385-12 Gen10 Plus NX-3060-G6 NX-3060-G7 NX-3060-G8 NX-31560-G8 NX-3155-G7 NX-3155-G7 NX-3155-G8 NX-805X-G8-G8 NX-805X-G10-G70 NX-G10-G10-G8 NX-80810-G10-G10-G10-G10-G10-G10-8 Nx 810-G10-G10-G10-G10-G10-G10-G10-G10-8</block>
+  <block id="7bdab7a08b6442f04adc36cc96c75cfa" category="cell">5.20.1.1 6.10 6.5.3.7 6.5.4.5.5.6.5.7.5.6.5.6.5.6.5.6.6.6.6.6.6.7.1.66.8.1.5 7.0</block>
+  <block id="19486db591195a34bcbfcc6804045ded" category="cell">Sun ZFS Storage 7120 Sun ZFS Storage 7330 Sun ZFS Storage 7335 Sun ZFS Storage 73350 Sun ZFS Storage 7370 Sun ZFS Storage 7390 Sun ZFS Storage 7420</block>
+  <block id="c2a8db1aff35485204993d2b84985ca1" category="cell">1-1.1 1-1.2 1-1.3 1-1.34 1-1.4 2013.06.05.6.12 2013.06.05.6.15 2013.06.05.7.21 2013.06.05.7.24 2013.06.05.7.25 2013.06.05.7.26</block>
+  <block id="35784b4a82fd374c7ec3369fbb1e8df8" category="cell">DFSC1 FA-450 FA-C40R3 FA-C50R4 FA-C60 FA-C60R3 FA-C70R4 FA-C90R4-X10R2 FA-X10R3 FA-X20R2 FA-X20R3 FA-X20R4 FA-X20R4 FA-X50R2 FA-X50R2 FA-X50R3-X50R3-X50R4-X70R3-X70R3-X70FA-X70FA-X70R3-X70FA</block>
+  <block id="16e3c790f42be3497bb96ba4de87fe03" category="cell">5.3.14 5.3.206.3.10.6.1.10.6.3.5.6.3.5.6.3.6.6.3.6.3.6.3.6.3.6.3.6.3.6.3.6.3.6.3.6.3.6.3.6.3.3.6.3.6.3.3.3.6.3.3.6.3.6.3.6.3.6.3.6.3.6.3.6.3.6.3.6.3.6.3.6.3.6.5.6.5.6.5.6.5.6.5.6.5.6.5.6.5.6.6.5.6.6.6.6.6.6.5.6.6.6.6.6.6.5.6.6.5.6.6.6.6.6.6.6.6.5.6.6.6.6.6.6.6.6.6.5.6.6.6.6.6.6.6.</block>
+  <block id="690bcd95488a17f6da2ee792589e63e5" category="paragraph">韌體版本：</block>
+  <block id="75b54a8072b703ac091433244f18a3ab" category="list-text">8.1.3-p12-25506</block>
+  <block id="060d3eb2191aaf01b8239fc32a4b8197" category="list-text">8.1.3-P13-25544</block>
+  <block id="34a95c6769e0b0e00732b9a16acabd91" category="list-text">8.1.3-P2-24912</block>
+  <block id="f0229645d665090b16737f8b12e16cea" category="list-text">9.0.3-P10-25744</block>
+  <block id="8e90a31ec1038febdaa65fbe16fae6f0" category="list-text">9.0.3-p5-25595</block>
+  <block id="3feaa9090b446fe3d622498e062a1418" category="list-text">9.0.3-P6-25611.</block>
+  <block id="7cbeb44eb0882c811675acedfcc216ec" category="list-text">9.1.1-27527</block>
+  <block id="3f58d825ecd478dba04ce837f6363ec6" category="list-text">9.1.2-27824</block>
+  <block id="a677eb347b17891300f20b07baf29b62" category="list-text">9.1.2-P1-27870</block>
+  <block id="31c591e3d56340fe528948a622864c07" category="list-text">9.1.2-P1-27870_HP1473894</block>
+  <block id="a06bae789537e0e9a107d71a92d6d176" category="list-text">9.1.3-P1-28075</block>
+  <block id="5065214f6ae2dcb267c01a3128e48b31" category="list-text">9.2.2-P1-29213</block>
+  <block id="1dbcd71c414b8a10683f868b77cc678c" category="list-text">9.2.3-29313</block>
+  <block id="65d52df708179478b18fe5d84d7da6d1" category="cell">VA2437096 大數據</block>
+  <block id="f69e2a9c3768d42d8e5e02648fe89c32" category="cell">組建版本：版本：版本： 5.0.0-sp24-1389206 組建版本：版本 -5.0.0-sp24-1389206 組建版本：版本 -5.0.0-sp70-1532643 組建版本：版本：版本 -5.1.0-sp50-1578267 系統版本： 5.0.94 系統版本： 5.0.133 系統版本： 5.0.94 系統版本： 5.0.210</block>
+  <block id="a8b910290e6b27951c8130d057487cd0" category="cell">龐大的資料存放區 API</block>
+  <block id="451123b68d20f93bcbecfc2110ead325" category="list-text">VMware vCenter Server 7.0.3 build 24322018</block>
+  <block id="98a21ee07313ae9f7368e2d4c8d063b0" category="list-text">VMware vCenter Server 8.0.0 內部版本 -22877852</block>
+  <block id="d4cd90b6b79d4c82a1112a363be70ebd" category="list-text">VMware vCenter Server 8.0.1 組建 - 22161730</block>
+  <block id="08501c4a4258f91738b89b4d61317724" category="list-text">VMware vCenter Server 8.0.1 組建 - 23525738</block>
+  <block id="c5aa93784f790740a7faf156512376bd" category="list-text">VMware ESXi 6.7.0 組建編號 20497097</block>
+  <block id="b976906567db1fc86dc4ee3e5faeefd4" category="list-text">VMware ESXi 8.0.0 build 21203435</block>
+  <block id="5d5cd22797496b3e470852424d905453" category="list-text">VMware vCenter Server 6.0.0 內部版本 -5183551</block>
+  <block id="907ab3fe0c1199fc2c735acb0320b680" category="list-text">VMware vCenter Server 6.5.0 組建編號： 12863991</block>
+  <block id="5352f1ba64f327343e34d58e33efd9fb" category="list-text">VMware vCenter Server 6.5.0 組建編號 15259038</block>
+  <block id="6f2b468a118315047707aa5e882d3dc1" category="list-text">VMware vCenter Server 6.5.0 組建 - 22499743</block>
+  <block id="7e6341a1cb2454ea7778437e866d1416" category="list-text">VMware vCenter Server 6.5.0 內部版本 -5973321</block>
+  <block id="7116d45ae01a53de848fb31f789a1302" category="list-text">VMware vCenter Server 6.7.0 組建版本 -14070654</block>
+  <block id="b643c77cd530ed49995d87419b84e1f3" category="list-text">VMware vCenter Server 6.7.0 組建版本 -14792544</block>
+  <block id="91f848f6d7726a5f559d4eec10b6f47b" category="list-text">VMware vCenter Server 6.7.0 組建 -17137232</block>
+  <block id="e28fc99b039a937be5ca3e1af3ca0a25" category="list-text">VMware vCenter Server 6.7.0 內部版本 -1801056</block>
+  <block id="21d04a81bd484445558d5395b4042ad7" category="list-text">VMware vCenter Server 6.7.0 內部版本 -22509751</block>
+  <block id="36f2a3f557b226446b32af9312fc1131" category="list-text">VMware vCenter Server 6.7.0 組建編號 24323669</block>
+  <block id="ba04ed693b91c58d2b06949d827b6c3f" category="list-text">VMware vCenter Server 7.0.2 組建編號 22781136</block>
+  <block id="d55f3568c7e833ab89895bee61c09acb" category="list-text">VMware vCenter Server 7.0.3 build -22357613</block>
+  <block id="3ab83c43d750d530878aed2417380b3d" category="list-text">VMware vCenter Server 7.0.3 build -22837322</block>
+  <block id="ecb546fa5367b08bd4b38a604bb819a2" category="list-text">VMware vCenter Server 7.0.3 build 23085514</block>
+  <block id="70b838a29ab361938962bdb01fe6a40f" category="list-text">VMware vCenter Server 7.0.3 組建 - 23788036</block>
+  <block id="83ca694ba839c425fd7dd7b2a175fca7" category="list-text">VMware vCenter Server 7.0.3 組建 - 24026615</block>
+  <block id="fe76026de44cc20ceae8a60be417dea7" category="list-text">VMware vCenter Server 7.0.3 build 24201990</block>
+  <block id="a9733e2cc513b1bbbc7a9984873870e6" category="list-text">VMware vCenter Server 8.0.0 內部版本 -20519528</block>
+  <block id="a9f131d582b30574b72cef672d9b3387" category="list-text">VMware vCenter Server 8.0.1 build -22088981</block>
+  <block id="ae99c7b67f8d89f77963b4ea4bd03b98" category="list-text">VMware vCenter Server 8.0.1 組建 - 22368047</block>
+  <block id="f781be2b19f1cdb362de12df23fe1d08" category="list-text">VMware vCenter Server 8.0.1 內部版本 - 2405165</block>
+  <block id="99b6aac4c2dc02692b7b48c3f5bf748e" category="list-text">VMware vCenter Server 8.0.2 組建 - 22385739</block>
+  <block id="f4f140c8240b1118ea5972cdcb8c4bb7" category="list-text">VMware vCenter Server 8.0.2 組建編號 22617221</block>
+  <block id="edfc3cf4d3e62e776a873dd8d403d68f" category="list-text">VMware vCenter Server 8.0.2 內部版本 23319993</block>
+  <block id="227125526019d3c42f592ac68badb583" category="list-text">VMware vCenter Server 8.0.2 組建 - 23504390</block>
+  <block id="ad3f5dc223e3dedcdbadf8c3de542841" category="list-text">VMware vCenter Server 8.0.2 組建編號 23929136</block>
+  <block id="9918751be82cfd4ffdb1b36d47195f11" category="list-text">VMware vCenter Server 8.0.2 組建 - 24321653</block>
+  <block id="cf4af5823bd57e760c4b4d3820c2ee06" category="list-text">VMware vCenter Server 8.0.3 build 24022515</block>
+  <block id="20fc1d192a8b7f3d4679b450f328a779" category="list-text">VMware vCenter Server 8.0.3 build 24091160</block>
+  <block id="1c21a303d962b5c2aaa6a1cf83f62414" category="list-text">VMware vCenter Server 8.0.3 build 24262322</block>
+  <block id="5136d67ed194c95ea9a2710028034652" category="list-text">VMware vCenter Server 8.0.3 build 24305161</block>
+  <block id="24820d2348a2986c54e81b6bc96fb06f" category="list-text">VMware vCenter Server 8.0.3 build 24322831</block>
 </blocks>
