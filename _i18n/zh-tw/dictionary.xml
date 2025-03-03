@@ -1942,7 +1942,6 @@
   <block id="de41af8028b5287cc6d65bb0e73cae11" category="section-title">透過AWS Marketplace試用</block>
   <block id="bc8745f374e91204332a0cd070e3c20c" category="inline-xref">託管單位</block>
   <block id="a1aea5576cb96c98e98a9642fc30f4b0" category="paragraph">您也可以透過AWS Marketplace註冊免費試用。AWS Marketplace 免費試用版可讓您在 33 天試用期內存取 Data Infrastructure Insights 、並允許最多 499 <block ref="74100db5c6c154a5b13e17b29feeccc3" category="inline-xref-macro-rx"></block> （ MU ）。</block>
-  <block id="54cf8a50b1cedbeedf2404d21702105e" category="paragraph">附註：如果您設定的MU超過499 MU、您將會進入「違反」狀態。當您的試用處於「遭入侵」狀態時、您將無法存取某些 Data Infrastructure Insights 功能、直到資料外洩問題解決為止、無論是減少已設定的 MU 數量、或是訂閱 Data Infrastructure Insights 。</block>
   <block id="c66bd552dea63071ad19e124c869ab2e" category="paragraph">AWS Marketplace免費試用版無法延長。您可以在試用期間隨時降級至 Data Infrastructure Insights Basic Edition 訂閱、或造訪 * 管理 -&gt; 訂閱 * 頁面、變更為付費的 Data Infrastructure Insights 訂閱。</block>
   <block id="03742c91392961db83c5540550a3500a" category="section-title">如果我的試用期已到期、該怎麼辦？</block>
   <block id="55b44e6cb866667b35e33325e5f2b246" category="paragraph">如果您的免費試用期已過期、但您尚未訂閱 Data Infrastructure Insights 、則在您訂閱之前、您的功能將有限。資料擷取可能會停止、幾週後、您的資料將會根據我們的資料保留政策刪除。</block>
@@ -1973,7 +1972,6 @@
   <block id="c3a44b5ae4d0db1da47414cf32828287" category="list-text">物件原始</block>
   <block id="49a22ea7d938494c1ed0f89b1259e69d" category="list-text">雲端已耗用</block>
   <block id="9530a67a23d320926f20ff19d1667b8c" category="paragraph">每個層都以不同的速率計量、並一起計算整個層級、以提供 _ 有效的權利 _ 。計算有效使用量的公式如下：</block>
-  <block id="f00305fde34ce30d58eb994d36b91d7f" category="admonition">受管理單元的總和可能與摘要區段中的資料收集器數略有不同。這是因為託管單元的數量會四捨五入到最近的託管單元。「資料收集器」清單中這些數字的總和、可能會略高於「狀態」區段中的「受管理單元總數」。摘要區段會反映您訂閱的實際託管單位數。為了協助達成此目標、 DII 會根據 _ 訂閱 _ 數量來計算單一 * 有效權利 * 編號；然後根據 _ 探索 _ 儲存設備來計算相同的編號、只有在有效探索到的容量大於有效權利時才會宣告違反。如此一來、您就能靈活地監控不同於每個層級訂閱數量的數量、只要發現的總儲存容量在訂閱的有效權利範圍內、 DII 就能提供此功能。</block>
   <block id="f2dddeb36ea97f1d320b0c83ef58c28c" category="paragraph">資料基礎架構 Insights 基礎架構可服務性和 Kubernetes 可服務性計量表使用量（依 * 受管理單元 * ）。管理單元的使用量是根據基礎架構環境中*主機或虛擬機器*的數量、以及*未格式化容量*的管理量來計算。</block>
   <block id="0b8e651376aa14f43ba4123bb6c8d139" category="list-text">1個受管理單元= 2個主機（任何虛擬或實體機器）</block>
   <block id="dc3f15e1a26ca80a17b59bb6db783b8a" category="list-text">1受管理單元= 4 TiB的實體或虛擬磁碟未格式化容量</block>
@@ -12037,4 +12035,5 @@
   <block id="1c21a303d962b5c2aaa6a1cf83f62414" category="list-text">VMware vCenter Server 8.0.3 build 24262322</block>
   <block id="5136d67ed194c95ea9a2710028034652" category="list-text">VMware vCenter Server 8.0.3 build 24305161</block>
   <block id="24820d2348a2986c54e81b6bc96fb06f" category="list-text">VMware vCenter Server 8.0.3 build 24322831</block>
+  <block id="c0e4c1840494e97bdd3774c6b4983211" category="admonition">受管理單元的總和可能與摘要區段中的資料收集器數略有不同。這是因為託管單元的數量會四捨五入到最近的託管單元。「資料收集器」清單中這些數字的總和、可能會略高於「狀態」區段中的「受管理單元總數」。摘要區段會反映您訂閱的實際託管單位數。為了協助達成此目標， DII 會根據 _ 訂閱 _ 數量來計算單一 * 有效的權益 * 編號，然後根據 _ 探索 _ 儲存空間來計算相同的數量。如此一來、您就能靈活地監控不同於每個層級訂閱數量的數量、只要發現的總儲存容量在訂閱的有效權利範圍內、 DII 就能提供此功能。</block>
 </blocks>

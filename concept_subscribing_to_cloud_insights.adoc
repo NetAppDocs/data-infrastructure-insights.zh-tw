@@ -58,8 +58,6 @@ NOTE: 如果您需要更多時間來評估 Data Infrastructure Insights 、而�
 
 您也可以透過AWS Marketplace註冊免費試用。AWS Marketplace 免費試用版可讓您在 33 天試用期內存取 Data Infrastructure Insights 、並允許最多 499 <<observability-metering,託管單位>> （ MU ）。
 
-附註：如果您設定的MU超過499 MU、您將會進入「違反」狀態。當您的試用處於「遭入侵」狀態時、您將無法存取某些 Data Infrastructure Insights 功能、直到資料外洩問題解決為止、無論是減少已設定的 MU 數量、或是訂閱 Data Infrastructure Insights 。
-
 AWS Marketplace免費試用版無法延長。您可以在試用期間隨時降級至 Data Infrastructure Insights Basic Edition 訂閱、或造訪 * 管理 -> 訂閱 * 頁面、變更為付費的 Data Infrastructure Insights 訂閱。
 
 
@@ -142,7 +140,7 @@ image:Module_Trials_Estimator.png["評估者"]
 
  Effective usage = Raw TiB + (0.1 x Object Tier Raw TiB) + (0.25 x Cloud Tier Provisioning TiB)
 
-NOTE: 受管理單元的總和可能與摘要區段中的資料收集器數略有不同。這是因為託管單元的數量會四捨五入到最近的託管單元。「資料收集器」清單中這些數字的總和、可能會略高於「狀態」區段中的「受管理單元總數」。摘要區段會反映您訂閱的實際託管單位數。為了協助達成此目標、 DII 會根據 _ 訂閱 _ 數量來計算單一 * 有效權利 * 編號；然後根據 _ 探索 _ 儲存設備來計算相同的編號、只有在有效探索到的容量大於有效權利時才會宣告違反。如此一來、您就能靈活地監控不同於每個層級訂閱數量的數量、只要發現的總儲存容量在訂閱的有效權利範圍內、 DII 就能提供此功能。
+NOTE: 受管理單元的總和可能與摘要區段中的資料收集器數略有不同。這是因為託管單元的數量會四捨五入到最近的託管單元。「資料收集器」清單中這些數字的總和、可能會略高於「狀態」區段中的「受管理單元總數」。摘要區段會反映您訂閱的實際託管單位數。為了協助達成此目標， DII 會根據 _ 訂閱 _ 數量來計算單一 * 有效的權益 * 編號，然後根據 _ 探索 _ 儲存空間來計算相同的數量。如此一來、您就能靈活地監控不同於每個層級訂閱數量的數量、只要發現的總儲存容量在訂閱的有效權利範圍內、 DII 就能提供此功能。
 
 
 
