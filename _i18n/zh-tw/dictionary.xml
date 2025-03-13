@@ -1978,8 +1978,6 @@
   <block id="1c5c258274f71ebb61b16a0e0935d305" category="list-text">1 託管單元 = 40 TiB 的非格式化容量、適用於特定次要儲存設備： AWS S3 、 Cohesity SmartFiles 、 Dell EMC Data Domain 、 Dell EMC ECS 、 Hitachi Content Platform 、 IBM Cleversafe 、 NetApp StorageGRID 、 Rukrik 。</block>
   <block id="1552a022e1b90a3bc06148ff722ce4a0" category="list-text">1 個託管單元 = 4 個 Kuberentes vCPU 。</block>
   <block id="959487d08cec8dfae823bcdea09da795" category="list-text">1 受管理單元 K8s 調整 = 2 個節點、或同時受基礎架構監控的主機。</block>
-  <block id="6cede1cfde12fc6d88ad1d8b6636a977" category="inline-xref">以下</block>
-  <block id="d8be2988f45df4b59f1cfe2e32869556" category="paragraph">如果您的環境包含或預期包含1、000個以上的託管單位、您就有資格享有* Volume Pricing *、系統將會提示您聯絡NetApp銷售人員以訂閱。如需詳細資訊、請參閱<block ref="e38bca6fb8f053d6cea5cce9993ed45c" category="inline-xref-macro-rx"></block>。</block>
   <block id="f057d707b9d5c17f0fad56f8204f6bff" category="section-title">工作負載安全性計量</block>
   <block id="c3ef097c271469a3ca9718d35396087c" category="paragraph">工作負載安全性是透過叢集來計量、方法與「可觀察性」計量相同。</block>
   <block id="3943920606f23b23925f15408e26cae2" category="paragraph">您可以在 * 工作負載安全性 * 標籤的 * 管理 &gt; 訂閱 * 頁面中檢視工作負載安全性使用情況。</block>
@@ -11829,7 +11827,6 @@
   <block id="670521a1846ad94b7cc140e2678df21c" category="paragraph">如果您有興趣預覽其中一項或多項功能，請聯絡<block ref="02af545fedbe237243dabe2f44648f4d" category="inline-link-macro-rx"></block>以取得更多資訊。</block>
   <block id="16630d72023cbbf23b8ab69cac2b3ff7" category="paragraph">您也可以按一下連結來申請銷售支援<block ref="6193a07b36740b6aedc4527702e204e2" category="inline-link-macro-rx"></block>。</block>
   <block id="3fcd9845b26dde701c891681edc7b769" category="list-text">* 訂閱 * Data Infrastructure Insights 、透過<block ref="326364f658f4dbd53be7e9aa308d8ef9" category="inline-link-macro-rx"></block>直接或持續不中斷地存取您的資料<block ref="e91d3f98f4b43abdea3c839a7777954c" category="inline-link-macro-rx"></block>。</block>
-  <block id="5d42f131ad60489240ed184620da0559" category="paragraph">如果您預期的託管單元數為 1 ， 000 或更高，請按一下<block ref="6193a07b36740b6aedc4527702e204e2" category="inline-link-macro-rx"></block>按鈕，透過 NetApp 銷售團隊訂閱。</block>
   <block id="a42decca1d15ec644d4c66c06689344e" category="paragraph"><block ref="a4e343c69e2eae514016d98dfce8b36b" category="inline-link-macro-rx"></block>資料收集器可讓您使用在 VMware 上設定的相同名稱標籤填入 Cloud Insights 文字註解。</block>
   <block id="0d0549b05d1645d38baa1a6cedaa7190" category="paragraph">經常強調許多令人興奮的全新預覽功能。Cloud Insights如果您有興趣預覽其中一項或多項功能，請聯絡<block ref="02af545fedbe237243dabe2f44648f4d" category="inline-link-macro-rx"></block>以取得更多資訊。</block>
   <block id="6230fc6d3836bf964eb587a1b21b5c48" category="admonition">如果您是最新的 Premium Edition 客戶並希望保留您的報告，請閱讀本<block ref="85f8206314043d7dd91d050def6a5cd1" category="inline-link-macro-rx"></block>。</block>
@@ -12036,4 +12033,5 @@
   <block id="5136d67ed194c95ea9a2710028034652" category="list-text">VMware vCenter Server 8.0.3 build 24305161</block>
   <block id="24820d2348a2986c54e81b6bc96fb06f" category="list-text">VMware vCenter Server 8.0.3 build 24322831</block>
   <block id="c0e4c1840494e97bdd3774c6b4983211" category="admonition">受管理單元的總和可能與摘要區段中的資料收集器數略有不同。這是因為託管單元的數量會四捨五入到最近的託管單元。「資料收集器」清單中這些數字的總和、可能會略高於「狀態」區段中的「受管理單元總數」。摘要區段會反映您訂閱的實際託管單位數。為了協助達成此目標， DII 會根據 _ 訂閱 _ 數量來計算單一 * 有效的權益 * 編號，然後根據 _ 探索 _ 儲存空間來計算相同的數量。如此一來、您就能靈活地監控不同於每個層級訂閱數量的數量、只要發現的總儲存容量在訂閱的有效權利範圍內、 DII 就能提供此功能。</block>
+  <block id="ce70e0ca30a003d9df6c2c5bf545464a" category="paragraph">如果您預期的託管單元數為 1 ， 000 或更高，請按一下<block ref="a9a75603ab8aac3033fb50ea01ab50c4" category="inline-link-macro-rx"></block>按鈕，透過 NetApp 銷售團隊訂閱。</block>
 </blocks>

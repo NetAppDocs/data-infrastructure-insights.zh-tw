@@ -158,8 +158,6 @@ NOTE: 受管理單元的總和可能與摘要區段中的資料收集器數略�
 
 
 
-如果您的環境包含或預期包含1、000個以上的託管單位、您就有資格享有* Volume Pricing *、系統將會提示您聯絡NetApp銷售人員以訂閱。如需詳細資訊、請參閱<<how-do-i-subscribe,以下>>。
-
 
 
 === 工作負載安全性計量
@@ -183,7 +181,7 @@ NOTE: 現有的 Workload Security 訂閱會調整其 MU 使用量、使節點使
 
 === 透過NetApp銷售直接訂閱
 
-如果您預期的託管單元數為 1 ， 000 或更高，請按一下link:https://bluexp.netapp.com/contact-cds["*聯絡銷售人員*"]按鈕，透過 NetApp 銷售團隊訂閱。
+如果您預期的託管單元數為 1 ， 000 或更高，請按一下link:https://www.netapp.com/forms/cloud-insights-contact-us["*聯絡銷售人員*"]按鈕，透過 NetApp 銷售團隊訂閱。
 
 您必須將資料基礎架構洞見 * 序號 * 提供給 NetApp 銷售代表、才能將付費訂閱套用至您的資料基礎架構洞見環境。序號可唯一識別您的 Data Infrastructure Insights 試用環境、並可在 * 管理 > 訂閱 * 頁面上找到。
 
