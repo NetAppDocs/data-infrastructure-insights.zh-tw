@@ -158,8 +158,6 @@
   <block id="129f8880167531920bb3396830948e86" category="cell">Linux需求</block>
   <block id="033d64e0352a24070b4d6ba6e37207af" category="cell">Windows需求</block>
   <block id="696c660ff8d9323e55146a6dbd4e4088" category="cell">作業系統</block>
-  <block id="0b9ef6f03f11262f4246aad76e7320f2" category="cell">執行下列其中一項授權版本的電腦： * CentOS （ 64 位元）： 7.2 到 7.9 ， 8.1 到 8.4 ， Stream 8 ， Stream 9 * AlmaLinux 9.3 和 9.4 * Debian （ 64 位元）： 9 和 10 * openSUSE Leap 15.1 到 15.5 * Oracle Enterprise Linux （ 64 位元）： 7.5 到 7.9 ， 8.1 到 8.8建議使用專屬伺服器。如果您是搭配 SELinux 執行，建議您在擷取單元系統上執行下列命令： Sudo semanage fcontext -a -t usr_t "/opt/oracle/cloudimses//.*)" NetApp Sudo restorecon -R /opt/dell/cloudimsights NetApp</block>
-  <block id="bc551a8dcf48d42b6ea5cf411242afd9" category="cell">執行下列其中一種授權版本的電腦： * Microsoft Windows 10 64位元* Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022 * Microsoft Windows 11此電腦不應執行其他應用程式層級軟體。建議使用專屬伺服器。</block>
   <block id="2b55387dd066c5bac646ac61543d152d" category="cell">CPU</block>
   <block id="36b415ace97b614344903d1d039cc60d" category="cell">2個CPU核心</block>
   <block id="c90a13d8ec8fe53c6bb33fe10af6f2fe" category="cell">相同</block>
@@ -12034,4 +12032,6 @@
   <block id="24820d2348a2986c54e81b6bc96fb06f" category="list-text">VMware vCenter Server 8.0.3 build 24322831</block>
   <block id="c0e4c1840494e97bdd3774c6b4983211" category="admonition">受管理單元的總和可能與摘要區段中的資料收集器數略有不同。這是因為託管單元的數量會四捨五入到最近的託管單元。「資料收集器」清單中這些數字的總和、可能會略高於「狀態」區段中的「受管理單元總數」。摘要區段會反映您訂閱的實際託管單位數。為了協助達成此目標， DII 會根據 _ 訂閱 _ 數量來計算單一 * 有效的權益 * 編號，然後根據 _ 探索 _ 儲存空間來計算相同的數量。如此一來、您就能靈活地監控不同於每個層級訂閱數量的數量、只要發現的總儲存容量在訂閱的有效權利範圍內、 DII 就能提供此功能。</block>
   <block id="ce70e0ca30a003d9df6c2c5bf545464a" category="paragraph">如果您預期的託管單元數為 1 ， 000 或更高，請按一下<block ref="a9a75603ab8aac3033fb50ea01ab50c4" category="inline-link-macro-rx"></block>按鈕，透過 NetApp 銷售團隊訂閱。</block>
+  <block id="dde5131249fb4fdf0bb4b08bbcba4943" category="cell">執行下列其中一項授權版本的電腦： * AlmaLinux 9.3 至 9.5 * CentOS （ 64 位元）： 7.2 至 7.9 ， 8.1 至 8.4 ， Stream 8 ， Stream 9 * Debian （ 64 位元）： 9 至 11 * openSUSE Leap 15.1 至 15.6 * Oracle Enterprise Linux （ 64 位元）： 7.5 至 7.9 ， 8.1 至 8.10 ， 9.3 至 9.5建議使用專屬伺服器。如果您是搭配 SELinux 執行，建議您在擷取單元系統上執行下列命令： Sudo semanage fcontext -a -t usr_t "/opt/oracle/cloudimses//.*)" NetApp Sudo restorecon -R /opt/dell/cloudimsights NetApp</block>
+  <block id="31192200d4ffdcb773965b28dbfbe0fd" category="cell">執行下列其中一項授權版本的電腦： * Microsoft Windows 10 64 位元 * Microsoft Windows 11 * Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022 * Microsoft Windows Server 2025 此電腦不應執行其他應用程式層級軟體。建議使用專屬伺服器。</block>
 </blocks>

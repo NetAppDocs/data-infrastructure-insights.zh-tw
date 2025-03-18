@@ -31,7 +31,7 @@ keywords: AU, acquisition unit, requirements, sizing
 | 元件 | Linux需求 | Windows需求 
 
 
-| 作業系統 | 執行下列其中一項授權版本的電腦： * CentOS （ 64 位元）： 7.2 到 7.9 ， 8.1 到 8.4 ， Stream 8 ， Stream 9 * AlmaLinux 9.3 和 9.4 * Debian （ 64 位元）： 9 和 10 * openSUSE Leap 15.1 到 15.5 * Oracle Enterprise Linux （ 64 位元）： 7.5 到 7.9 ， 8.1 到 8.8建議使用專屬伺服器。如果您是搭配 SELinux 執行，建議您在擷取單元系統上執行下列命令： Sudo semanage fcontext -a -t usr_t "/opt/oracle/cloudimses//.*)" NetApp Sudo restorecon -R /opt/dell/cloudimsights NetApp | 執行下列其中一種授權版本的電腦： * Microsoft Windows 10 64位元* Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022 * Microsoft Windows 11此電腦不應執行其他應用程式層級軟體。建議使用專屬伺服器。 
+| 作業系統 | 執行下列其中一項授權版本的電腦： * AlmaLinux 9.3 至 9.5 * CentOS （ 64 位元）： 7.2 至 7.9 ， 8.1 至 8.4 ， Stream 8 ， Stream 9 * Debian （ 64 位元）： 9 至 11 * openSUSE Leap 15.1 至 15.6 * Oracle Enterprise Linux （ 64 位元）： 7.5 至 7.9 ， 8.1 至 8.10 ， 9.3 至 9.5建議使用專屬伺服器。如果您是搭配 SELinux 執行，建議您在擷取單元系統上執行下列命令： Sudo semanage fcontext -a -t usr_t "/opt/oracle/cloudimses//.*)" NetApp Sudo restorecon -R /opt/dell/cloudimsights NetApp | 執行下列其中一項授權版本的電腦： * Microsoft Windows 10 64 位元 * Microsoft Windows 11 * Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022 * Microsoft Windows Server 2025 此電腦不應執行其他應用程式層級軟體。建議使用專屬伺服器。 
 
 
 | CPU | 2個CPU核心 | 相同 
