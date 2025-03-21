@@ -138,7 +138,7 @@ Data Infrastructure Insights 會從 VMware vSphere 資料收集器取得下列�
 
 == 將 VMware 標籤對應至 Data Infrastructure Insights 註釋
 
-VMware 資料收集器可讓您在 Data Infrastructure Insights 註釋中填入 VMware 上設定的標記。註釋的名稱必須與 VMware 標籤完全相同。Data Infrastructure Insights 一律會填入相同名稱的文字類型註解、並會「盡力」填入其他類型（數字、布林等）的註釋。如果您的註釋類型不同、而且資料收集器無法填入註釋、則可能需要移除註釋、然後重新建立為文字類型。
+VMware 資料收集器可讓您在 Data Infrastructure Insights 註釋中填入 VMware 上設定的標記。DII 註釋名稱必須與 VMware * 類別 * 名稱相同；然後將標記套用為 DII 註釋的註釋值，其名稱與類別相同。Data Infrastructure Insights 一律會填入相同名稱的文字類型註解、並會「盡力」填入其他類型（數字、布林等）的註釋。如果您的註釋類型不同、而且資料收集器無法填入註釋、則可能需要移除註釋、然後重新建立為文字類型。
 
 請注意、 VMware 標籤可能區分大小寫、而 Data Infrastructure Insights 標籤則不區分大小寫。因此、如果您在 Data Infrastructure Insights 中建立名為「擁有者」的註釋、並在 VMware 中建立名為「擁有者」、「擁有者」和「擁有者」的標記、則所有這些「擁有者」的變化都會對應到 Cloud Insight 的「擁有者」註釋。
 
