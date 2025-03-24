@@ -12034,4 +12034,19 @@
   <block id="dde5131249fb4fdf0bb4b08bbcba4943" category="cell">執行下列其中一項授權版本的電腦： * AlmaLinux 9.3 至 9.5 * CentOS （ 64 位元）： 7.2 至 7.9 ， 8.1 至 8.4 ， Stream 8 ， Stream 9 * Debian （ 64 位元）： 9 至 11 * openSUSE Leap 15.1 至 15.6 * Oracle Enterprise Linux （ 64 位元）： 7.5 至 7.9 ， 8.1 至 8.10 ， 9.3 至 9.5建議使用專屬伺服器。如果您是搭配 SELinux 執行，建議您在擷取單元系統上執行下列命令： Sudo semanage fcontext -a -t usr_t "/opt/oracle/cloudimses//.*)" NetApp Sudo restorecon -R /opt/dell/cloudimsights NetApp</block>
   <block id="31192200d4ffdcb773965b28dbfbe0fd" category="cell">執行下列其中一項授權版本的電腦： * Microsoft Windows 10 64 位元 * Microsoft Windows 11 * Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022 * Microsoft Windows Server 2025 此電腦不應執行其他應用程式層級軟體。建議使用專屬伺服器。</block>
   <block id="7f09a101a37de5c76c92d5d4c88ddd83" category="paragraph">VMware 資料收集器可讓您在 Data Infrastructure Insights 註釋中填入 VMware 上設定的標記。DII 註釋名稱必須與 VMware * 類別 * 名稱相同；然後將標記套用為 DII 註釋的註釋值，其名稱與類別相同。Data Infrastructure Insights 一律會填入相同名稱的文字類型註解、並會「盡力」填入其他類型（數字、布林等）的註釋。如果您的註釋類型不同、而且資料收集器無法填入註釋、則可能需要移除註釋、然後重新建立為文字類型。</block>
+  <block id="a45c25e047c23be206aa7b3a16363223" category="section-title">測試資料收集器的連線能力</block>
+  <block id="f87f37252fe67067fb99f8836651c043" category="paragraph">測試連線功能（於 2025 年 3 月推出）旨在協助終端使用者在 Data Infrastructure Insights （ DII ）工作負載安全性中設定資料收集器時，找出故障的特定原因。這可讓使用者自行修正與網路通訊或遺失角色相關的問題。</block>
+  <block id="1b2653fb105694dfe09676512ab134f1" category="paragraph">此功能可協助使用者在設定資料收集器之前，判斷是否已執行所有網路相關檢查。此外，它會根據在 ONTAP 中指派給使用者的 ONTAP 版本，角色和權限，通知使用者他們可以存取的功能。</block>
+  <block id="19d0215fc9df8f59134fbe4fd3da51b3" category="admonition">使用者目錄收集器不支援測試連線</block>
+  <block id="c773b377fd90821c4f3ee55215cd41a8" category="section-title">連線測試的先決條件</block>
+  <block id="e99dc3f8404b277c56f4651f3af946a4" category="list-text">此功能必須具備叢集層級認證，才能完整運作。</block>
+  <block id="66c64857404ba9a308b135b635a71699" category="list-text">SVM 模式不支援功能存取檢查。</block>
+  <block id="abe57be95f5d1f273263305ba65a7fc2" category="list-text">如果您使用的是自訂使用者（例如， _CsUser_ ），請針對您要使用的功能，提供必要的權限和特定功能權限。</block>
+  <block id="d88673df8d2a6992c6bf4625898d75e6" category="inline-image-macro">工作負載安全測試連線按鈕</block>
+  <block id="28ccd88a9589dac6de50156682ee8b05" category="paragraph"><block ref="28ccd88a9589dac6de50156682ee8b05" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9897d52b4dd5fcdaa385dc01c536b910" category="paragraph">請務必同時檢閱<block ref="1b72e4faa8ed037a1c80dfeb6858512c" category="inline-xref-macro-rx"></block>以下部分。</block>
+  <block id="1d8426d3d5052d9c2d702ed8ef8bc4a3" category="section-title">測試連線</block>
+  <block id="bc23aa0997542e15a65a21a96991960a" category="paragraph">使用者可以前往新增 / 編輯收集器頁面，輸入叢集層級詳細資料（在叢集模式中）或 SVM 層級詳細資料（在 SVM 模式中），然後按一下 * 測試連線 * 按鈕。工作負載安全性接著會處理要求，並顯示適當的成功或失敗訊息。</block>
+  <block id="e8f41baace36619af4a7292787a17936" category="inline-image-macro">工作負載安全性「測試連線」成功訊息</block>
+  <block id="e6ea93198fd78cbc89b93053e0d0b573" category="paragraph"><block ref="e6ea93198fd78cbc89b93053e0d0b573" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
