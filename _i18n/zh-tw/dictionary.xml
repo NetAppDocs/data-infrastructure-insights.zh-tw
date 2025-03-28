@@ -3891,8 +3891,6 @@
   <block id="d4df4178129288e74d306d474f41121d" category="cell"><block ref="d4df4178129288e74d306d474f41121d" category="inline-link-macro-rx"></block></block>
   <block id="c7a56e9ede426bcb6ef8adebfa167f5b" category="inline-link-macro">Nutanix NX系列</block>
   <block id="9935d13e4384b8045cffd7789defe14c" category="cell"><block ref="9935d13e4384b8045cffd7789defe14c" category="inline-link-macro-rx"></block></block>
-  <block id="f2cf54cfab756c7cdb0f16c0ed5cda12" category="inline-link-macro">OpenStack</block>
-  <block id="d2c9f580641c4ac421cd1184c444c1e6" category="cell"><block ref="d2c9f580641c4ac421cd1184c444c1e6" category="inline-link-macro-rx"></block></block>
   <block id="a1b8b82e2c6dab4ba2762641402e6184" category="inline-link-macro">OpenZFS</block>
   <block id="f5a800ee25a815f4c8c0d66efcf7438d" category="cell"><block ref="f5a800ee25a815f4c8c0d66efcf7438d" category="inline-link-macro-rx"></block></block>
   <block id="a2c92312bc8a9e692141bc61305782f3" category="inline-link-macro">Oracle ZFS儲存設備</block>
@@ -9415,51 +9413,6 @@
   <block id="5b02fb8f86f33e62862c6886dbbe655e" category="list-text">唯讀使用者名稱和密碼、除非使用Volume群組、否則在此情況下、必須輸入管理使用者名稱和密碼</block>
   <block id="bf61ff29d8ff867a7727b034a7efa26f" category="list-text">連接埠需求：HTTPS 443</block>
   <block id="b8b0b769d3e3395123e9c6b52b36b840" category="cell">用於連接Nutanix陣列的TCP連接埠。預設值為 9440 。</block>
-  <block id="6e831c008aae70e3aac84aff192fcea2" category="summary">OpenStack資料收集器：</block>
-  <block id="2f186f5eedfe86b735c206f6be34f9a7" category="doc">OpenStack資料收集器</block>
-  <block id="1affaa3c0d19c2e084afa700debb8740" category="paragraph">OpenStack（REST API / KVM）資料收集器會擷取所有OpenStack執行個體的庫存資料、以及VM效能資料（選用）。</block>
-  <block id="ee627d472fc6df1e0c1367deb7ee0063" category="list-text">OpenStack控制器的IP位址</block>
-  <block id="280f91bd66acb7cf04ec960fca75f64a" category="list-text">OpenStack管理員角色認證和Sudo存取Linux KVM Hypervisor。如果您未使用admin帳戶或與管理員同等的權限、則需要使用試用版和錯誤來識別資料收集器使用者ID的預設原則。</block>
-  <block id="c0ea429a2fadacc206fdc8f17cfa492c" category="list-text">OpenStack 湯糰模組必須安裝並設定、才能收集效能。若要設定「湯糰」、請編輯每個 Hypervisor 的 nova.conf 檔案、然後在每個 Hypervisor 上重新啟動 Nova Compute 服務。不同OpenStack版本的選項名稱會變更：</block>
-  <block id="8beeeec38dbc6258291f2e47130835d8" category="list-text">冰屋</block>
-  <block id="291b02b25fbb9789119d2383e9f08e29" category="list-text">Juno</block>
-  <block id="3afe87a2a8c61f8023e56883b9baccb8" category="list-text">公斤</block>
-  <block id="84e1da9e55480128662cfdfe79cb8923" category="list-text">自由</block>
-  <block id="89042bafc0f1c8153060574c3895f44b" category="list-text">Mitaka</block>
-  <block id="1c8b97c83b0726216cd5dbc88a64b0ed" category="list-text">Newton</block>
-  <block id="baba8cba1a3c4596919404471ad4d0d8" category="list-text">八田市</block>
-  <block id="43ec0ba7025c8d3dfc798f09c6fb36d2" category="list-text">對於CPU統計資料、運算節點上的/etc/nova/nova.conf必須開啟「compute_mones=ComputeDriverCPUMonitor」。</block>
-  <block id="30d248ff55e04656a0bc13e82c28ca89" category="list-text">連接埠需求：</block>
-  <block id="4931562219172e126d11a20bd2ee6af3" category="list-text">http為5000、https為13000、Keystone服務為13000</block>
-  <block id="5829ef3d89411d46f0a05f6867ff2efd" category="list-text">22適用於KVM SSH</block>
-  <block id="a58963a7c2c9eafce2ab09ca28270ee0" category="list-text">8774適用於Nova Compute Service</block>
-  <block id="745b1ee1989bc6dd0ac838e4dcb448e5" category="list-text">8776適用於Cinder Block Service</block>
-  <block id="dfe1b74026ff6682b451240881e76be4" category="list-text">8777 提供「湯糰效能服務」</block>
-  <block id="ca3d2d05f916b41d8f53f506ace2e80e" category="list-text">9292 for Glance Image Service *注意*連接埠會繫結至特定服務、而且該服務可能會在較大型環境的控制器或其他主機上執行。</block>
-  <block id="9be07620e581c90b777b5fef1296cc28" category="cell">OpenStack控制器IP位址</block>
-  <block id="c5e968faf75175530ec61fb1846cfdce" category="cell">OpenStack控制器的IP位址或完整網域名稱</block>
-  <block id="60f987e0e1dafdb918779f7224cd3aaf" category="cell">OpenStack管理員</block>
-  <block id="963b85b5fea0fb25d7f739d70b488f08" category="cell">OpenStack管理的使用者名稱</block>
-  <block id="702c22fcd705ed77553d755f22f3966a" category="cell">OpenStack密碼</block>
-  <block id="79db7b7c9e06d7a21d6a84e5efacf631" category="cell">OpenStack管理所用的密碼</block>
-  <block id="97564e1a26ba1c694feebd9a3f2d9f38" category="cell">OpenStack管理員租戶</block>
-  <block id="5d24fef3e48bfdbcdc47e96414966a56" category="cell">OpenStack管理員租戶名稱</block>
-  <block id="80fd569cda415ce2714eede8209d7eb3" category="cell">KVM Sudo使用者</block>
-  <block id="7014ddc89480575c89e23a7982c7c0ac" category="cell">KVM Sudo使用者名稱</block>
-  <block id="aab8d1693141a32bece39aa945271b85" category="cell">選擇「密碼」或「OpenSSH金鑰檔」以指定認證類型</block>
-  <block id="31deddc69cd96113632a3ab17e5cd93e" category="cell">用於透過SSH連線至裝置的認證類型</block>
-  <block id="b6593f79d3306be8166f8e92e7cb4a65" category="cell">完整的庫存私密金鑰路徑</block>
-  <block id="dba54b8be33cd375b2f9f38a66dd55b4" category="cell">KVM Sudo密碼</block>
-  <block id="dfe35b8b294b35971918582bb405c7a8" category="cell">透過SSH啟用Hypervisor庫存探索</block>
-  <block id="8bc6def4f9968da03c00d5a791ff25b3" category="cell">核取此選項、即可透過SSH啟用Hypervisor庫存探索</block>
-  <block id="724bdc3d08a628510ac4b35391f971e9" category="cell">OpenStack管理URL連接埠</block>
-  <block id="93dc129787d356e23553d69cfe40511e" category="cell">使用HTTPS</block>
-  <block id="1e435f995c73427ccb198051f1f58881" category="cell">核取以使用安全HTTP</block>
-  <block id="6b9dc11d780e38196cc7f712ba7d8f5c" category="cell">用於SSH的連接埠</block>
-  <block id="19f99c5f7ed3601984d9068bcacd7fa8" category="cell">SSH程序重試</block>
-  <block id="b65a95e1edb457db54d2696cdde74458" category="cell">庫存輪詢之間的時間間隔。預設值為 20 分鐘。</block>
-  <block id="ebe11f389d67e77cfd3d461ac635ac57" category="cell">「組態錯誤」、錯誤訊息開頭為「原則不允許」或「您未獲授權」</block>
-  <block id="98a8b66b2a474494c50e1594ce9331b1" category="cell">*檢查IP位址*檢查使用者名稱和密碼</block>
   <block id="298831ffa37c3339463b0927313f5324" category="summary">設定Oracle ZFS資料收集器。</block>
   <block id="12aa4229d08c65b7528cfd8184ed0f2b" category="doc">Oracle ZFS儲存設備資料收集器</block>
   <block id="19a548e7f1d623a2cebfcbb03e92f222" category="paragraph">Data Infrastructure Insights 使用 Oracle ZFS Storage Appliance 資料收集器來收集庫存和效能資料。</block>
@@ -11383,7 +11336,6 @@
   <block id="8f4063b3e2653e9f3c560f79c771819b" category="sidebar">E 系列 REST</block>
   <block id="c106fc8dee70ab4a9453d7ed9a891bd7" category="sidebar">解決方案管理伺服器的問題NetApp HCI</block>
   <block id="bb88c75c573c51be16c7d85804e7a9fe" category="sidebar">Nutanix</block>
-  <block id="7ff6cc997b141399bcdf2c338fb4031c" category="sidebar">OpenStack</block>
   <block id="30162ed78b6c10f731411f2fc440c24f" category="sidebar">Oracle</block>
   <block id="d30973809f2e4238b7eb2bac9241674c" category="sidebar">純</block>
   <block id="1d9fc183665bd1e195391190be506894" category="sidebar">Red Hat</block>
@@ -11646,7 +11598,6 @@
   <block id="2f461803a8b3a27284482a32459a1078" category="cell">EE 本<block ref="0dcd3ea27696029fecb8ccd7e247f633" category="inline-link-macro-rx"></block>。設定 _ 無保護 _ 會指示 Kubernetes 監控營運者以旗標執行 Telegraf 。<block ref="3a41393afb053a415e6dc30cf704d899" prefix=" " category="inline-code"></block></block>
   <block id="0860569a69c3584507ee09f4be585418" category="cell">insecureK8sSkipVerify</block>
   <block id="3008cd3125cccc003fa13335717e556e" category="cell">如果由於缺少 IP SAN 而導致 Telegraf 無法驗證憑證，請嘗試啟用驗證跳過</block>
-  <block id="3a6957a9f0cd14c98be3bfcbf85db668" category="paragraph"><block ref="3a6957a9f0cd14c98be3bfcbf85db668" category="inline-link-macro-rx"></block></block>
   <block id="9e43104f0687bd3a308759c5411641d7" category="paragraph"><block ref="9e43104f0687bd3a308759c5411641d7" category="inline-link-macro-rx"></block></block>
   <block id="348fd8f652c33b1be14b9b2f000cff0d" category="cell">這很可能是ONTAP 因為位在邊上的網路問題。請遵循下列步驟：1.請確定SVM資料LIF或管理LIF上沒有防火牆、無法與SVM連線。2.透過叢集管理 IP 新增 SVM 時，請確保 SVM 的資料 LIF 和管理 LIF 可從 Agent VM 中進行 Ping 。發生問題時、請檢查閘道、網路遮罩和路由以取得LIF。您也可以嘗試使用叢集管理IP透過ssh登入叢集、然後ping代理IP。請確定代理程式IP可調校：_network ping -vserver &lt;vserver name&gt;-destination &lt;Agent IP&gt;-lIF &lt;LIF Name&gt;-show-detail _如果無法調校、請確定ONTAP 位於的網路設定正確無誤、以便代理程式機器可調校。3.如果您嘗試透過叢集 IP 連線，但無法正常運作，請嘗試直接透過 SVM IP 連線。請參閱上述步驟、瞭解透過SVM IP進行連線的步驟。4.透過 SVM IP 和 vsadmin 認證新增收集器時，請檢查 SVM Lif 是否已啟用 Data plus Mgmt 角色。在這種情況下、ping SVM LIF會正常運作、但SSH到SVM LIF則無法運作。如果是、請建立僅限SVM管理LIF、並嘗試透過此SVM管理僅LIF進行連線。5.如果仍無法運作，請建立新的 SVM Lif ，並嘗試透過該 Lif 進行連線。確定子網路遮罩設定正確。6.進階偵錯： A ）在 ONTAP 中啟動封包追蹤。 B ）嘗試從 CloudSecure UI 將資料收集器連線至 SVM 。 C ）等待錯誤出現。在 ONTAP 中停止封包追蹤。 d ）從 ONTAP 開啟封包追蹤。此網站位於以下位置： __https ： //spi/spi/etc/log/packet_stalles/_e ），請確定 ONTAP 到值機員方塊有一個 SYN.F ）如果 ONTAP ONTAP 沒有 SYN, 則 &lt;clustername&gt; ONTAP 中的防火牆會發生問題。 g ）在 ONTAP 中開啟防火牆，讓 &lt;cluster_mgmt_ip&gt; 能夠連線到值機員方塊。7.如果仍無法運作，請諮詢網路團隊，確定沒有外部防火牆封鎖從 ONTAP 到值機員信箱的連線。9.如果上述任何一項都無法解決問題，請開啟案例<block ref="d0162286c59c67bf86d01f060ee7cd04" category="inline-link-macro-rx"></block>以取得進一步協助。</block>
   <block id="2b8272217b69f1c5b5ad5968f0bc0945" category="list-text">註冊免費試用 Data Infrastructure Insights ，探索可用的功能。若要註冊免費試用：</block>
@@ -11786,7 +11737,6 @@
   <block id="8af8d6d7603eec1cb34086e9cf6e2055" category="inline-image-macro">ONTAP Essentials 下拉式選單顯示 ASA 與 Unified 不同</block>
   <block id="5fe97e7e7c561aa4a8199e55d380aadb" category="paragraph"><block ref="5fe97e7e7c561aa4a8199e55d380aadb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bd255743216cfae20f87e84a9cd8e7e1" category="section-title">DII API 使用率追蹤：強化安全性與效率</block>
-  <block id="0be262a01ffd53cb1827d924de37e376" category="paragraph">透過強化的 REST API 使用率追蹤功能，加強您的安全狀態，並簡化資源管理，供管理員使用者使用。透過 API 使用率追蹤，您可以查看使用的 API Token ， IP 位址及其產生的流量量。將權杖連結至特定的 IP 位址和使用層級，即可深入瞭解系統存取和使用趨勢，讓您掌控維持安全，有效率的環境，並讓作業順暢運作。</block>
   <block id="320be4cb0a9128705d37286f8afff816" category="inline-image-macro">API 使用分析範例</block>
   <block id="d7f696b40402f5f6c5dc60d881af09a0" category="paragraph"><block ref="d7f696b40402f5f6c5dc60d881af09a0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="811a069713a14c7b8c3b0333afcedfff" category="section-title">工作負載安全 API 可限制使用者</block>
@@ -11810,7 +11760,6 @@
   <block id="8429b607073457ee8f7513c9b33f2b47" category="inline-link-macro">ONTAP REST</block>
   <block id="9813cb21933d9e535322d83efc9b8d25" category="paragraph">對於所有前一代 ASA 系統，請使用<block ref="75bdda54644cc13465ab7acc10710396" category="inline-link-macro-rx"></block>收集器。</block>
   <block id="6cc5c9e930ea3d3b8bff4367c60ceea4" category="section-title">2025 年 2 月</block>
-  <block id="8261d0e1521d30da1b36761d508cb245" category="paragraph">若要檢視 API 使用率，請瀏覽至 * 可服務性 &gt; 管理 &gt; API 存取 * ，然後選取 _ 檢視 API 使用率 _ 。請注意，此 API 僅適用於 DII 可服務性 API ，不適用於工作負載安全性。</block>
   <block id="bcaea0fa3a691efcd767e69c0bf6c611" category="paragraph">若要確保收件者收到 Data Infrastructure Insights 的通知，請將下列電子郵件地址新增至任何「允許」清單：</block>
   <block id="920ab4b11a04d50637a16a5c9699b3ba" category="list-text">accounts@service.cloudinsights.netapp.com</block>
   <block id="b68146f7d3be586c34e5b6d021541f50" category="list-text">DoNotReply@cloudinsights.netapp.com</block>
@@ -12049,4 +11998,7 @@
   <block id="bc23aa0997542e15a65a21a96991960a" category="paragraph">使用者可以前往新增 / 編輯收集器頁面，輸入叢集層級詳細資料（在叢集模式中）或 SVM 層級詳細資料（在 SVM 模式中），然後按一下 * 測試連線 * 按鈕。工作負載安全性接著會處理要求，並顯示適當的成功或失敗訊息。</block>
   <block id="e8f41baace36619af4a7292787a17936" category="inline-image-macro">工作負載安全性「測試連線」成功訊息</block>
   <block id="e6ea93198fd78cbc89b93053e0d0b573" category="paragraph"><block ref="e6ea93198fd78cbc89b93053e0d0b573" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ca873110efddef67beadcfe5f8a4ca84" category="paragraph">透過強化的 REST API 使用率追蹤功能，加強您的安全狀態，並簡化資源管理，供管理員使用者使用。透過 API 使用率追蹤，您可以查看使用的 API Token ， IP 位址及其產生的流量量。將權杖連結至特定的 IP 位址和使用層級，即可深入瞭解系統存取和使用趨勢，讓您掌控維持安全，有效率的環境，並讓作業順暢運作。透過強化的 REST API 使用率追蹤功能，加強您的安全狀態，並簡化資源管理，供管理員使用者使用。透過 API 使用率追蹤，您可以查看使用的 API Token ， IP 位址及其產生的流量量。將權杖連結至特定的 IP 位址和使用層級，即可深入瞭解系統存取和使用趨勢，讓您掌控維持安全，有效率的環境，並讓作業順暢運作。</block>
+  <block id="24f17d3ee72bb2738ceb12180ec2fa71" category="paragraph">若要檢視 API 使用率，請瀏覽至 * 可服務性 &gt; 管理 &gt; API 存取 * ，然後選取 _ 檢視 API 使用率 _ 。請注意，此 API 僅適用於 DII 可服務性 API ，不適用於工作負載安全性。若要檢視 API 使用率，請瀏覽至 * 可服務性 &gt; 管理 &gt; API 存取 * ，然後選取 _ 檢視 API 使用率 _ 。請注意，此 API 僅適用於 DII 可服務性 API ，不適用於工作負載安全性。</block>
+  <block id="c033c9dce9a48cc67d3409bab6aab6ba" category="paragraph"><block ref="c033c9dce9a48cc67d3409bab6aab6ba" category="inline-link-macro-rx"></block></block>
 </blocks>
