@@ -32,14 +32,6 @@ image:ontap_essentials_asa_views.png["ONTAP Essentials 下拉式選單顯示 ASA
 
 
 
-=== 適用於最新一代 ASA 系統的 ONTAP 基礎架構
-
-ONTAP 基本功能現在包含最新一代裝置的隨裝即用管理link:task_dc_na_ontap_all_san_array.html["ASA"]功能。這包括 SAN Analyzer for VM-LUN 拓撲，其中包含在 ONTAP 上執行的工作負載，現在也提供 NetApp 支援，作為資料基礎架構洞見基礎版的一部分。
-
-image:ontap_essentials_asa_views.png["ONTAP Essentials 下拉式選單顯示 ASA 與 Unified 不同"]
-
-
-
 === DII API 使用率追蹤：強化安全性與效率
 
 透過強化的 REST API 使用率追蹤功能，加強您的安全狀態，並簡化資源管理，供管理員使用者使用。透過 API 使用率追蹤，您可以查看使用的 API Token ， IP 位址及其產生的流量量。將權杖連結至特定的 IP 位址和使用層級，即可深入瞭解系統存取和使用趨勢，讓您掌控維持安全，有效率的環境，並讓作業順暢運作。透過強化的 REST API 使用率追蹤功能，加強您的安全狀態，並簡化資源管理，供管理員使用者使用。透過 API 使用率追蹤，您可以查看使用的 API Token ， IP 位址及其產生的流量量。將權杖連結至特定的 IP 位址和使用層級，即可深入瞭解系統存取和使用趨勢，讓您掌控維持安全，有效率的環境，並讓作業順暢運作。
