@@ -20,6 +20,67 @@ NetApp持續改善及強化其產品與服務。以下是 Data Infrastructure In
 
 
 
+== 2025 年 3 月
+
+
+
+=== 增強的關聯式導覽功能，可有效管理基礎架構
+
+運用 Data Infrastructure Insights 實現卓越營運，節省時間。我們現在新增內容相關的功能表連結，可讓您直接從任何物件跳到資產登錄頁面，深入瞭解裝置效能， SAN Analyzer 提供網路拓撲視覺化功能，記錄作業感知功能，或變更分析程式以進行組態管理。
+
+透過跨多個檢視即時存取重要資料，您可以更快速地更清楚瞭解物件關係。這套簡化的工作流程可加速決策與問題解決，最終為您節省時間，並強化整體分析功能。
+
+image:contextual_menu_example.png["內容相關功能表範例， width=500"]
+
+
+
+=== 保留移除資產的歷史記錄
+
+我們的增強型 Infra 變更功能現在會保留移除資產的歷史記錄，例如已移動且不再可用的 qtree 和 Volume 。
+
+您的疑難排解難題中遺漏了什麼？再也不來了！您會看到所有內容，包括標記有刪除項目的刪除物件，即使在資產移除之後，也能提供完整的內容，確保您不會錯過過去變更或端點對端點路徑上的警示所產生的重要元素。
+
+結果如何？即使相關資產不再存在，解決時間更快，基礎架構決策更具信心。
+
+image:infra_change_removed_assets.png["移除基礎架構變更中的資產，並以刪除線，寬度 =300 表示"]
+
+
+
+=== Kubernetes 駕駛員按鈕式升級
+
+想要確定您擁有最新的 Kubernetes 營運商嗎？從 DII Kubernetes Collectores 叢集功能表，隨需升級營運者。只要從功能表中選取「升級」，操作人員就會驗證映像簽名，擷取目前安裝的快照，然後執行升級。
+
+按鈕式升級是一項選用功能，可依叢集來管理其啟動。
+
+image:dii_push_button_upgrade.png["按鈕操作員可從叢集功能表（寬度 = 600 ）升級"]
+
+
+
+=== 測試儲存工作負載安全資料收集器的連線能力
+
+測試連線功能旨在協助終端使用者在 Data Infrastructure Insights （ DII ）工作負載安全性中設定資料收集器時，找出故障的特定原因。這可讓使用者自行修正與網路通訊或遺失角色相關的問題。
+
+image:ws_test_connection_button.png["工作負載安全測試連線按鈕"] image:ws_test_connection_success_example.png["工作負載安全性「測試連線」成功訊息"]
+
+
+
+=== 作業系統支援
+
+除了資料基礎架構 Insights 擷取單元之外，現在還支援下列作業系統link:https://docs.netapp.com/us-en/cloudinsights/concept_acquisition_unit_requirements.html["已支援"]：
+
+* AlmaLinux 9.5
+* Debian （ 64 位元） 11.
+* openSUSE Leap 15.6
+* Oracle Enterprise Linux （ 64 位元） 8.9 ， 8.10 ， 9.5
+* Red Hat （ 64 位元） 8.9 ， 8.10 ， 9.5
+* 岩石 9.5
+* SUSE Linux Enterprise Server 15 SP6
+* Ubuntu Server 24.04 LTS
+
+
+'''
+
+
 == 2025 年 2 月
 
 
@@ -34,15 +95,11 @@ image:ontap_essentials_asa_views.png["ONTAP Essentials 下拉式選單顯示 ASA
 
 === DII API 使用率追蹤：強化安全性與效率
 
-透過強化的 REST API 使用率追蹤功能，加強您的安全狀態，並簡化資源管理，供管理員使用者使用。透過 API 使用率追蹤，您可以查看使用的 API Token ， IP 位址及其產生的流量量。將權杖連結至特定的 IP 位址和使用層級，即可深入瞭解系統存取和使用趨勢，讓您掌控維持安全，有效率的環境，並讓作業順暢運作。透過強化的 REST API 使用率追蹤功能，加強您的安全狀態，並簡化資源管理，供管理員使用者使用。透過 API 使用率追蹤，您可以查看使用的 API Token ， IP 位址及其產生的流量量。將權杖連結至特定的 IP 位址和使用層級，即可深入瞭解系統存取和使用趨勢，讓您掌控維持安全，有效率的環境，並讓作業順暢運作。
+透過強化的 REST API 使用率追蹤功能，加強您的安全狀態，並簡化資源管理，供管理員使用者使用。透過 API 使用率追蹤，您可以查看使用的 API Token ， IP 位址及其產生的流量量。將權杖連結至特定的 IP 位址和使用層級，即可深入瞭解系統存取和使用趨勢，讓您掌控維持安全，有效率的環境，並讓作業順暢運作。
 
-若要檢視 API 使用率，請瀏覽至 * 可服務性 > 管理 > API 存取 * ，然後選取 _ 檢視 API 使用率 _ 。請注意，此 API 僅適用於 DII 可服務性 API ，不適用於工作負載安全性。若要檢視 API 使用率，請瀏覽至 * 可服務性 > 管理 > API 存取 * ，然後選取 _ 檢視 API 使用率 _ 。請注意，此 API 僅適用於 DII 可服務性 API ，不適用於工作負載安全性。
+若要檢視 API 使用率，請瀏覽至 * 可服務性 > 管理 > API 存取 * ，然後選取 _ 檢視 API 使用率 _ 。請注意，此 API 僅適用於 DII 可服務性 API ，不適用於工作負載安全性。
 
 image:api_usage_analytics_screenshot.png["API 使用分析範例"]
-
-
-
-=== 工作負載安全 API 可限制使用者
 
 
 

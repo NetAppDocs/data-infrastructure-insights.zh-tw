@@ -19,7 +19,7 @@ keywords: reporting, cognos, data warehouse, dwh, managing, customizing, copying
 
 
 [role="lead"]
-您可以自訂報告的輸出格式與交付、設定報告內容或排程、以及電子郵件報告。
+您可以自訂報告的輸出格式和交付，設定報告內容或排程，以及電子郵件報告。
 
 
 NOTE: 報告功能可在 Data Infrastructure Insights link:concept_subscribing_to_cloud_insights.html["Premium Edition"]中找到。
@@ -39,8 +39,6 @@ IMPORTANT: 變更報告權限或安全性之前、您必須先將「我的內容
 image:Reporting_Output_and_Delivery.png["報告輸出與交付"]
 
 . 按一下*「內容」>「排程」*
-
-
 . 您可以設定下列選項：
 +
 ** *排程*您想要執行報告的時間。

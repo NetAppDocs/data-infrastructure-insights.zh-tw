@@ -5465,7 +5465,6 @@
   <block id="b91bb54d5249b7797f071b75dfcc2669" category="cell">1天（或直到下一個ETL）</block>
   <block id="96cfad9bf45103ee0ef58fa25c0cfa6b" category="summary">自訂報告輸出與交付、將報告複製到剪貼簿、開啟報告（XML）。</block>
   <block id="e1039935b082dfd38ef43eb7fef4b452" category="doc">管理報告</block>
-  <block id="ce2ce538c48e429c8dc98553649f3bbd" category="paragraph">您可以自訂報告的輸出格式與交付、設定報告內容或排程、以及電子郵件報告。</block>
   <block id="11ad95cf52a6f6d0f02121ba7f3398ce" category="admonition">變更報告權限或安全性之前、您必須先將「我的內容」報告複製到「團隊內容」資料夾、以確保報告已儲存。</block>
   <block id="b4c2efa32144f8c7f6fa5513ac1c7e55" category="section-title">自訂報告的輸出格式和交付</block>
   <block id="8bee38bef7beb0158135e68890b6cc17" category="paragraph">您可以自訂報告的格式和交付方法。</block>
@@ -11998,7 +11997,37 @@
   <block id="bc23aa0997542e15a65a21a96991960a" category="paragraph">使用者可以前往新增 / 編輯收集器頁面，輸入叢集層級詳細資料（在叢集模式中）或 SVM 層級詳細資料（在 SVM 模式中），然後按一下 * 測試連線 * 按鈕。工作負載安全性接著會處理要求，並顯示適當的成功或失敗訊息。</block>
   <block id="e8f41baace36619af4a7292787a17936" category="inline-image-macro">工作負載安全性「測試連線」成功訊息</block>
   <block id="e6ea93198fd78cbc89b93053e0d0b573" category="paragraph"><block ref="e6ea93198fd78cbc89b93053e0d0b573" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ca873110efddef67beadcfe5f8a4ca84" category="paragraph">透過強化的 REST API 使用率追蹤功能，加強您的安全狀態，並簡化資源管理，供管理員使用者使用。透過 API 使用率追蹤，您可以查看使用的 API Token ， IP 位址及其產生的流量量。將權杖連結至特定的 IP 位址和使用層級，即可深入瞭解系統存取和使用趨勢，讓您掌控維持安全，有效率的環境，並讓作業順暢運作。透過強化的 REST API 使用率追蹤功能，加強您的安全狀態，並簡化資源管理，供管理員使用者使用。透過 API 使用率追蹤，您可以查看使用的 API Token ， IP 位址及其產生的流量量。將權杖連結至特定的 IP 位址和使用層級，即可深入瞭解系統存取和使用趨勢，讓您掌控維持安全，有效率的環境，並讓作業順暢運作。</block>
-  <block id="24f17d3ee72bb2738ceb12180ec2fa71" category="paragraph">若要檢視 API 使用率，請瀏覽至 * 可服務性 &gt; 管理 &gt; API 存取 * ，然後選取 _ 檢視 API 使用率 _ 。請注意，此 API 僅適用於 DII 可服務性 API ，不適用於工作負載安全性。若要檢視 API 使用率，請瀏覽至 * 可服務性 &gt; 管理 &gt; API 存取 * ，然後選取 _ 檢視 API 使用率 _ 。請注意，此 API 僅適用於 DII 可服務性 API ，不適用於工作負載安全性。</block>
   <block id="c033c9dce9a48cc67d3409bab6aab6ba" category="paragraph"><block ref="c033c9dce9a48cc67d3409bab6aab6ba" category="inline-link-macro-rx"></block></block>
+  <block id="88c55c9f00e518db40a6c680728b787f" category="section-title">2025 年 3 月</block>
+  <block id="27e5c5c33051ef47e145b432e9e357db" category="section-title">增強的關聯式導覽功能，可有效管理基礎架構</block>
+  <block id="ca3a08b4a664d3460c1afb17ce14a0ca" category="paragraph">運用 Data Infrastructure Insights 實現卓越營運，節省時間。我們現在新增內容相關的功能表連結，可讓您直接從任何物件跳到資產登錄頁面，深入瞭解裝置效能， SAN Analyzer 提供網路拓撲視覺化功能，記錄作業感知功能，或變更分析程式以進行組態管理。</block>
+  <block id="45e1277af0993d1c08727056083474c9" category="paragraph">透過跨多個檢視即時存取重要資料，您可以更快速地更清楚瞭解物件關係。這套簡化的工作流程可加速決策與問題解決，最終為您節省時間，並強化整體分析功能。</block>
+  <block id="d27d64bffed25c10a892bc8f660ba7f7" category="inline-image-macro">內容相關功能表範例， width=500</block>
+  <block id="6dd26781bf3123977fae6dbb9f75427c" category="paragraph"><block ref="6dd26781bf3123977fae6dbb9f75427c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="27fca6aa6301d8c72a523105d0dfaa1a" category="section-title">保留移除資產的歷史記錄</block>
+  <block id="586eb9e16a0ec8ad28e277e9d196f2dd" category="paragraph">我們的增強型 Infra 變更功能現在會保留移除資產的歷史記錄，例如已移動且不再可用的 qtree 和 Volume 。</block>
+  <block id="a79d807cd6c977273077bb3d4a51e1b2" category="paragraph">您的疑難排解難題中遺漏了什麼？再也不來了！您會看到所有內容，包括標記有刪除項目的刪除物件，即使在資產移除之後，也能提供完整的內容，確保您不會錯過過去變更或端點對端點路徑上的警示所產生的重要元素。</block>
+  <block id="d8da5ac928748682c768408271223f18" category="paragraph">結果如何？即使相關資產不再存在，解決時間更快，基礎架構決策更具信心。</block>
+  <block id="a0b5ff2e6cd6a9740be797a7a6b34997" category="inline-image-macro">移除基礎架構變更中的資產，並以刪除線，寬度 =300 表示</block>
+  <block id="f3c74d92e889a4bd4cbd4388efc65fdb" category="paragraph"><block ref="f3c74d92e889a4bd4cbd4388efc65fdb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f09332c5a7acdbdfd43f130781181079" category="section-title">Kubernetes 駕駛員按鈕式升級</block>
+  <block id="d72c7a2edae9e6c8ab8d1527df9217ff" category="paragraph">想要確定您擁有最新的 Kubernetes 營運商嗎？從 DII Kubernetes Collectores 叢集功能表，隨需升級營運者。只要從功能表中選取「升級」，操作人員就會驗證映像簽名，擷取目前安裝的快照，然後執行升級。</block>
+  <block id="abdd6f2e7e9f2361861772c2c29f98fb" category="paragraph">按鈕式升級是一項選用功能，可依叢集來管理其啟動。</block>
+  <block id="b0fc14520e77d6941197ef450ea7eaae" category="inline-image-macro">按鈕操作員可從叢集功能表（寬度 = 600 ）升級</block>
+  <block id="e3f059356a2fbfebca83fcdf9910b3d2" category="paragraph"><block ref="e3f059356a2fbfebca83fcdf9910b3d2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4ed46393b3a0412ddf1eae5c48a6d652" category="section-title">測試儲存工作負載安全資料收集器的連線能力</block>
+  <block id="fe66903c02341817b7eae46d6cef7796" category="paragraph">測試連線功能旨在協助終端使用者在 Data Infrastructure Insights （ DII ）工作負載安全性中設定資料收集器時，找出故障的特定原因。這可讓使用者自行修正與網路通訊或遺失角色相關的問題。</block>
+  <block id="701f9e4af7f2f002d1df02722e85bb9c" category="paragraph"><block ref="28ccd88a9589dac6de50156682ee8b05" category="inline-image-macro-rx" type="image"></block> <block ref="e6ea93198fd78cbc89b93053e0d0b573" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f8af8f12dc05f5482c3f4fd82b8cdae2" category="paragraph">除了資料基礎架構 Insights 擷取單元之外，現在還支援下列作業系統<block ref="e27610920cf83f6a88b088882e8c727e" category="inline-link-macro-rx"></block>：</block>
+  <block id="fcf95cfc7074058539f2dddb1953e304" category="list-text">AlmaLinux 9.5</block>
+  <block id="a4d1a1b0fcd0ad5c982e632c20fe46c7" category="list-text">Debian （ 64 位元） 11.</block>
+  <block id="d2eddc9906197e8402324c9aa4cd553c" category="list-text">openSUSE Leap 15.6</block>
+  <block id="d3720f74b5a7e492d19484a99dc4099a" category="list-text">Oracle Enterprise Linux （ 64 位元） 8.9 ， 8.10 ， 9.5</block>
+  <block id="62cdf3cf4f8add1aca2819c46ff9a420" category="list-text">Red Hat （ 64 位元） 8.9 ， 8.10 ， 9.5</block>
+  <block id="4e80b0ab552791c676018d06a8ab1a7c" category="list-text">岩石 9.5</block>
+  <block id="ef436eeff254793f46443f71b4c3e50d" category="list-text">SUSE Linux Enterprise Server 15 SP6</block>
+  <block id="7ce4625168ff8cf506188a346ab739ac" category="list-text">Ubuntu Server 24.04 LTS</block>
+  <block id="0be262a01ffd53cb1827d924de37e376" category="paragraph">透過強化的 REST API 使用率追蹤功能，加強您的安全狀態，並簡化資源管理，供管理員使用者使用。透過 API 使用率追蹤，您可以查看使用的 API Token ， IP 位址及其產生的流量量。將權杖連結至特定的 IP 位址和使用層級，即可深入瞭解系統存取和使用趨勢，讓您掌控維持安全，有效率的環境，並讓作業順暢運作。</block>
+  <block id="8261d0e1521d30da1b36761d508cb245" category="paragraph">若要檢視 API 使用率，請瀏覽至 * 可服務性 &gt; 管理 &gt; API 存取 * ，然後選取 _ 檢視 API 使用率 _ 。請注意，此 API 僅適用於 DII 可服務性 API ，不適用於工作負載安全性。</block>
+  <block id="2613b3928d7ae4e00e8610b858e67528" category="paragraph">您可以自訂報告的輸出格式和交付，設定報告內容或排程，以及電子郵件報告。</block>
 </blocks>
