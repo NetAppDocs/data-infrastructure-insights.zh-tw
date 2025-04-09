@@ -78,5 +78,8 @@ image:CS_Data_Collector_Error.png["工作負載安全性收集器錯誤更多詳
 
 
 | 選取 SVM 模式時， Data Collector 會發生錯誤。 | 以 SVM 模式連線時，如果使用叢集管理 IP 來連線，而非 SVM 管理 IP ，則連線將會錯誤。請確定使用正確的 SVM IP 。 
+
+
+| 啟用「拒絕存取」功能時，資料收集器會顯示錯誤訊息：「 Connector 處於錯誤狀態。服務名稱：稽核。失敗原因：無法在 SVM test_SVM 上設定 fpolicy 。原因：使用者未經授權。 " | 使用者可能遺失「拒絕存取」功能所需的 REST 權限。請依照上的指示link:concept_ws_integration_with_ontap_access_denied.html["本頁"]來設定權限。一旦設定權限，請重新啟動收集器。 
 |===
 如果您仍遇到問題、請聯絡*「說明」>「支援*」頁面中提及的支援連結。

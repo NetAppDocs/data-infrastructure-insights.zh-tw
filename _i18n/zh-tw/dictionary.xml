@@ -4630,7 +4630,6 @@
   <block id="7c66134758a1231967900b1324c83c0e" category="cell">3PAR CLI</block>
   <block id="68934a3e9455fa72420237eb05902327" category="cell">錯</block>
   <block id="7d964a677df15c513f1f0dee98d77997" category="section-title">Amazon AWS EC2</block>
-  <block id="d1d0848fd9db162d999c32260709d8f8" category="paragraph">API 版本：</block>
   <block id="fca305053b0aa4da40eb77c13c037773" category="list-text">2014-10-01</block>
   <block id="6cb85fb9933f1990eaa1dc7619c84233" category="cell">資料儲存區</block>
   <block id="0e8433f9a404f1f3ba601c14b026d321" category="cell">HTTPS</block>
@@ -4798,7 +4797,6 @@
   <block id="4bfaedd3a71f4a6c68e4ed7389df4540" category="cell">SNMPv1（僅限庫存）、SNMPv2、v3</block>
   <block id="5dd7f974793d58d84e016fb32974be47" category="section-title">凝聚力</block>
   <block id="def09fa4a833717d38298eb37c861af8" category="cell">加密</block>
-  <block id="c3766fec098a393e130a4e0bb5275179" category="cell">qtree 10 以上</block>
   <block id="f775bcf566ad94ec8751e7d62aa26230" category="cell">Coesity REST API</block>
   <block id="32b206e1063dfaad6a69643c2c618aa3" category="section-title">EMC Celerra（SSH）</block>
   <block id="ebf7787778d7d227624dbcac732c76cf" category="cell">GuidKey 1.</block>
@@ -4935,7 +4933,6 @@
   <block id="68c87bc16048b7ab1db3119e879590f7" category="section-title">EMC VNX（SSH）</block>
   <block id="f043a08758706c0551863a8b0cfc84cd" category="cell">VNX SSH 和 CLI</block>
   <block id="d805560a2796d5cb8d0b7d6d581b5c63" category="section-title">EMC VNXe 與 Unity Unisphere （ CLI ）</block>
-  <block id="ff344e4a3da2f3def65b21c4fb69abfe" category="cell">qtree 4 以上</block>
   <block id="b758b39f4fe981ffd4124309d84e2703" category="cell">容量軟限制</block>
   <block id="68d13764f7761df0def3e72de99042be" category="cell">VNXe 和 UnEthisphere CLI</block>
   <block id="0d0679d541823c0d0d5fa3f8521a681e" category="section-title">EMC VPLEX</block>
@@ -5134,9 +5131,6 @@
   <block id="f8e695a68b2cc6a03c28f54dfffb7e5d" category="cell">靜態API StorageGRID</block>
   <block id="389f5255791b76256678f54d2aa8d9aa" category="section-title">Nutanix儲存設備（REST）</block>
   <block id="5833254d196e4a1b64f41ef17f3948c3" category="cell">Nutanix REST API</block>
-  <block id="5ae0ae5f7d8a52fd8d8b0c9920771343" category="section-title">OpenStack （ REST API / SSH ）</block>
-  <block id="9a49bf4f2da6cbfd867175d49a9d97e1" category="cell">OpenStack REST API</block>
-  <block id="bf17d59a145a73aabf6bd6a5b8e6fdc7" category="cell">OpenStack SSH</block>
   <block id="a5a401d1937bde9ceea96e2345f7c9d8" category="section-title">Oracle ZFS（HTTPS）</block>
   <block id="2e24a64f661bb25d79cdb67855a0d38d" category="cell">儲存節點資料</block>
   <block id="bb149a60e36dad22aec22d6ee2620af0" category="cell">伺服器ID</block>
@@ -11792,7 +11786,6 @@
   <block id="a0549e61b3931f3ffafdfcc909b88bf8" category="cell">執行下列其中一項授權版本的電腦： * CentOS 9 Stream （ 64 位元） * openSUSE Leap15.3 至 15.5 （ 64 位元） * Oracle Linux 8.10 （ 64 位元）， 9.1 至 9.4 （ 64 位元）， SELinux * Red Hat Enterprise Linux 8.10 （ 64 位元）， 9.1 至 64 位元（ 64 位元）， SELinux *建議使用專屬伺服器。</block>
   <block id="af66622d3522b0b6fa496a47273bdb04" category="paragraph">資料收集器支援對照表提供 Data Infrastructure Insights 支援的資料收集器參考資料，包括廠商和機型資訊。</block>
   <block id="8892f0f7118a4e14ceef9a37218a5a33" category="cell">HPE Alletra 9080 HPE_3PAR 20450 HPE_3PAR 20800 HPE_3PAR 20850 HPE_3PAR 7200 HPE_3PAR 7200c HPE_3P7400 AR HPE_3P400c P400c P400HP P400_3AR P4008 P400P P400 HP P400C P200P200HP PPE</block>
-  <block id="18adaaa9a30f8065f2b72c800cd263ca" category="cell">3.1.1 （ MU1 ） 3.1.2 （ MU3 ） 3.1.3 （ MU1 ） 3.1.3 （ MU2 ） 3.2.1 （ MU2 ） 3.2.1 （ MU3 ） 3.2.1 （ MU5 ） 3.2.2 （ MU4 ） 3.2.2 （ MU6 ） 3.3.1 3.3.1 （ MU1 ） 3.3.1 （ MU2 ） 3.3.1 （ MU3 ） 3.3.1</block>
   <block id="10fd66f5b4802aee3a88de2a537a57b4" category="cell">已用容量</block>
   <block id="77ca1f32dd520c4ac24f6c1d12ecda48" category="cell">故障磁碟的原始容量（所有故障磁碟的總和）</block>
   <block id="5f74db3052fd919ac2aa53259ceb1aef" category="cell">備用磁碟的原始容量（所有備援磁碟的總和）</block>
@@ -11802,8 +11795,6 @@
   <block id="897356954c2cd3d41b221e3f24f99bba" category="cell">金鑰</block>
   <block id="59304f49dd831f1f6fcf7dc01f72303b" category="cell">2019 年 6 月 1 日 2024-07-01</block>
   <block id="078f367ea2c7fdd337cff739053aab32" category="cell">檔案網格路徑</block>
-  <block id="a93ac7b8eff0ac62c96fcb53605d4c43" category="cell">175.53 176.51 183.0 Brocade Brocade Brocade Brocade Brocade 200E Brocade Brocade Brocade Brocade Brocade 300E Brocade Brocade Brocade Brocade 4024 內嵌 Brocade 5000 Brocade 5100 Brocade 5300 Brocade 5480 內嵌式 Brocade 6505 Brocade 6510 Brocade 6520 Brocade 6546 Brocade 6547 內嵌式 Brocade 6548 Brocade 6558 Brocade 7800 Brocade 7810 擴充交換器 Brocade 7840 Brocade DCX Brocade DCX-4S Backbone Brocade DCX8510-4 Brocade</block>
-  <block id="2d0e20fe59aee6d3b25ad07e28e52f72" category="cell">v6.2.2b v6.2.2f v6.2.2f9 v6.2.2g v6.4.1a.v6.4.1b v6.4.2a.</block>
   <block id="a226f89d9ef4e309dc8360113cea166b" category="cell">實體連接埠 WWN</block>
   <block id="638510a219f4b13657f8558372e4b3f3" category="cell">最低的 IVR 機箱 WWN</block>
   <block id="de9e687c272e4633df94c3a7f92c295c" category="cell">已收到 BB Credit Zero</block>
@@ -11832,96 +11823,46 @@
   <block id="51ecd39566dc39427b678a3b93141867" category="cell">14.4.3 14.4.4</block>
   <block id="7c00f86f07c9f53c6fd11c9454cc335c" category="cell">Brocade 6520 Brocade DCX 8510-4 Brocade G620 Brocade X6-8 EMC Connectrix DS-6510b</block>
   <block id="7c580e1285fca42c00e53dd8aa725a18" category="cell">v7.3.0b v7.4.1b v8.2.3c1 v9.0.1e1</block>
-  <block id="7f6a9b7b3b991d95c44101b66be155fc" category="cell">183.0 184.0 190.0 191.0 Brocade 6505 Brocade 6510 Brocade 6520 Brocade 7810 擴充交換器 Brocade 7840 Brocade DCX8510-4 Brocade DCX8510-8 Brocade G610 Brocade G620 Brocade G630 Brocade G720 Brocade G730 Brocade X6-4 Brocade X6-8 Brocade X7-4 Brocade X7-8</block>
-  <block id="d7511436a768d776e7f0abc8e12cc041" category="cell">v8.2.2a v8.2.2D v8.2.2d4 v8.2.3 v8.2.3a v8.2.3b v8.2.3c v8.2.3c v8.2.3d v8.2.3e v8.2.3v8.2.</block>
-  <block id="bad9c4d6af39160a23a9cb25c1b7e665" category="cell">DS-C9124-2-K9 DS-C9124-K9 DS-C9132T-K9 DS-C932P-K9 DS-C9148-16P-K9 DS-C9148-32P-K9 DS-C9148-48P-DS-C91482-48P-DS-C9148S-K9</block>
-  <block id="e84b7cdd12c89dc380dde00d6b98b502" category="cell">3.31c 4.1(3a)4.2(1a) 5.0(1a) 5.0(3)5.2(3)N2(3.11e)5.0(4.01d)5.0(3)N2(4.13i) 5.0(3)N2e)5.0(3)N2(4.21j)5.2(3)6.2</block>
-  <block id="f15546118813b61b3d57630351537719" category="cell">c4000 運算節點 C4600 C5036 C5066 C6025 C6035 C6055 PXG1 UC-C240M5H10 虛擬 ROBO</block>
-  <block id="9534a4ae4cf6b437f5650ec04cb24990" category="cell">6.8.1_U1_RELON-20221022_6f58ed2a 6.8.1_U7_RELON-20231213_41094bba 6.8.2_RELON-20240317_97f56d9a 6.8.2_U1_RELON-20240509_a5da46447.1.2_U2_RELion-20240925_66477.1_24b20477.1_20271-20271-20271-20472_2027.1 版本</block>
   <block id="c34707d3e7f50a0d42277fbeba40bf0f" category="cell">NSX VG8 VNX5200 VNX5300 VNX5400 VNX5500</block>
   <block id="3eb50107a4194001d513fe3771a55d5b" category="cell">5.5.38-1 7.1.76-4 7.1.79-87.1.832.21-268.1.9-155</block>
   <block id="ba1ce7f7c942af2296bc6475c4cd669f" category="cell">6.26 6.28 7.32 7.33</block>
   <block id="c0a59cec42b6b73f082568d84a5b62ce" category="cell">CX3-40f CX4-480 VNX5100 VNX5200 VNX5300 VNX5400 VNX5500 VNX5600 VNX5700 VNX5800 VNX7600</block>
-  <block id="23891907176c380bc6a15df683b74260" category="cell">04.28.000.5.710 05.32.000.5.206 05.32.000.5.218 05.32.000.5.219 05.32.000.5.221 05.32.000.5.225 05.32.000.5.249 05.33.000.5.074 05.33.008.5.119 05.33.009.5.155 05.33.009.5.184</block>
-  <block id="6f333cf84e824835530a56bf57940c9b" category="cell">DD VE DD2500 DD3300 DD4200 DD6300 DD6400 DD6800 DD6900 DD7200 DD9300 DD9400 DD9500 DD9800 DD9900 DD9910</block>
-  <block id="ceddcf25e5d7ac334486c8df53ed46e0" category="cell">6.1.2.051-633576 6.1.2.20-606786 6.2.30-663869 6.2.1.40-671976.2.1.60-686365 7.10.0.0.20-1023227 7.10.1.0-10429287.10.1.1.1-1049892 7.10.1.1.10-1068159</block>
-  <block id="da758f480b77107de8824b6e93df8155" category="cell">3.6.1.3 3.6.2.1 3.7.0.0 3.7.0.3 3.7.0.4 3.7.0.6 3.8.0.1 3.8.0.2 3.8.0.3 3.8.0.4 3.8.0.5 3.8.0.6 3.8.1.1 3.8.1.3</block>
-  <block id="af0378e9a881d09da6d21e170759f14c" category="cell">qtree 8 以上</block>
   <block id="fdfa563cf7dba4df0816de8880847d9f" category="cell">A100 A200 A2000 A300 A3000 F200 F600 F800 F900 H400 H500 H5600 H600 H700 NL410 S210 X210 X410</block>
-  <block id="f72c7718d80ab8dcb1e5dbcaa962e352" category="cell">9.1.0.10 9.1.0.6 9.1.0.9 9.2.1.10 9.2.1.11 9.2.1.12.1.12.1.12.9.2.1.13.9.2.1.19 9.2.1.4 9.2.1.6 9.2.1.9 9.4.0.11 9.4.0.13</block>
-  <block id="f4cc3a98ca545a946194225a4f09fc58" category="cell">A100 A200 H400 H500 NL400 NL410 S210 回溯（最近通話時間）： X200 X400 X410 Sudo python</block>
   <block id="9f270014d5084f590ec4690f6f5a08dc" category="cell">9.1.0.18 9.1.0.19 9.2.1.12 9.2.1.15 9.4.0.17 9.5.0.3 9.5.0.6 9.5.0.8 9.7.1.2 9.8.0.2 v7.2.0.5 v7.2.1.3 v7.2.1.6 v8.0.0.4 v8.0.0.6 v8.0.0.7 v8.0.1.1 v8.1.2.0</block>
   <block id="66aa2fcb097faf5bc8feeeb94d697a67" category="cell">PowerStore 1000T PowerStore 1200T PowerStore 3000T PowerStore 3200T PowerStore 5000T PowerStore 5200T PowerStore 9000T PowerStore 9200T</block>
-  <block id="1887ae79cfee9d04a9a93db78634c9d3" category="cell">2.1.0.1 2.1.1.0 3.2.0.1 3.2.1.0 3.2.1.1 3.5.0.1 3.5.0.2 3.6.0.0 3.6.1.0 3.6.1.1 3.6.1.2 3.6.1.3 3.6.1.4 4.0.0.1.0.0.2.</block>
-  <block id="c00bd3de3e188fadf0aed29d315602a3" category="cell">5.1.sp4.p1(h.89)5.1.sp4.p2(h.101) 5.1.sp4.p3(h.109) 5.1.sp4.p4(h.97)</block>
-  <block id="f48096c8419cf2397d68b0b270223fb6" category="cell">R3_5.1201.101 R3_6.1000.134 R3_6.400.107</block>
-  <block id="aab4e758f1e2f91a778a269663e0099c" category="cell">V10.0.0.0 V10.0.1.1 V10.1.0.V10.1.0.0.1 V10.1.0.3.10.1.0.0.5 V10.2.0.2.0.0 V8.3.0.0.0.8.0.9.0.V9.1.0.6 V9.2.1.0 V9.2.2.0 V9.2.3.0</block>
   <block id="62caaf784d1b997bda3e7c9e6791dc32" category="cell">PMax8000 PowerMax_2000 PowerMax_8000 VMAX-1 VMAX100K VMAX10K VMAX200K VMAX250F VMAX400K VMAX450F VMAX850F VMAX950F</block>
   <block id="cce45f959b36630f91ce8810a2cc05ce" category="cell">5876.286.194(16F40000) 建置 1155876.309.196(16F40000) 建置 1535876.309.196(16F40000) 建置 1625876.309.196(16F40000) 建置 945977.1151.1151(175990000) 建置 45977.115</block>
-  <block id="0b0a6c716cb7854046b9864b94d86320" category="cell">V10.0.0.5 V10.0.1.5 V10.1.0.0.1 V10.1.0.0.5 V10.1.0.6 V10.1.0.0.8 V10.2.0.1.V10.2.0.2 V9.2.3.15 V9.2.3.22 V9.2.3.4 V9.2.4.1</block>
   <block id="05e526f18c753002274aba5ebe5067b6" category="cell">PowerMax_2000 PowerMax_2500 PowerMax_8000 PowerMax_8500 VMAX200K VMAX250F VMAX400K VMAX450F VMAX950F</block>
-  <block id="65f3a5b4089c90b1b4d1aca936b2f44e" category="cell">5977.1131.1131 組建 6155977.1151.1151 組建 60 組建 5978.711.711 組建 2055978.7147148.714</block>
   <block id="ba3a3a04afde4017467cd96ffe48e5a8" category="cell">VNX5300 VNX5500 VNX5700</block>
   <block id="a1a04267bb4b66c81cf9a52365537563" category="cell">05.32.000.5.216 05.32.000.5.221 05.32.000.5.249 7.1.76-4 7.1.80-3</block>
   <block id="b3ae5a9b7b965216bc213b1d85691618" category="cell">Unity 300 Unity 300F Unity 350F Unity 380 Unity 380F Unity 400 Unity 400F Unity 450F Unity 480 Unity 480F Unity 500 Unity 550F Unity 600F Unity 650F Unity 680F Unity 880 Unity 880F UnityVSA VNXe3200</block>
   <block id="784d5dc4fdb40de52793d2359c1891d4" category="cell">3.1.17.10229825 4.1.2.9257522 5.0.6.0.005.008.0.5.007.2.0.5.007.2.0.5.007.5.007.2.1.0.5.0135.2.2.0.5.004.5.0.0.005.004.3.0.5.1205.3.1.0.5.008.3.1.0.5.0285.0.0.5.094</block>
   <block id="fcc2873cc95b86a3af5562ff18d19fa7" category="cell">6.2.0.04.00.07 6.2.0.07.00.02 6.2.1.0.0.519</block>
   <block id="81f0ef41fcb5779c39155416e75ba62b" category="cell">6.2.1 6.3.2 6.3.3 6.4.0 6.4.1 6.4.2</block>
-  <block id="fda418ac11ad26c34a9f3d76102ca795" category="cell">1 塊磚頭和 125TB 1 塊磚塊和 24TB 1 塊磚塊和 31 TB 1 塊磚塊和 8TB 1X10TB 1X20TB 1X40TB 2 塊磚塊和 188TB 2 塊磚塊和 83TB 3 塊磚塊以及 251TB 4 塊磚塊和 628TB 4 塊磚塊和 754TB 4X20TB 6X40TB</block>
   <block id="088d5fa2842780807160373c1c16385a" category="cell">4.0.27-1 4.0.31-11 6.3.3-8_X2 6.4.0-36_hotfix_2_X2</block>
-  <block id="5b1b583c79c15bfdd7302e5dbb1fd545" category="cell">2660 2680 2702 2704 2800B 2804 2806 3000 4000 5486 5488 5504 5564 5600 5700 5700B 6000</block>
-  <block id="4a012257b27562364273bd0fbce12646" category="cell">08.40.60.00.08.80.00.8.20.16.08.20.27.08.20.30.08.20.0.20.8.8.8.25.14.08.25.6.0.08.30.20.0.8.40.</block>
   <block id="0b601b61b018ca45c66479f7d889ccca" category="section-title">Pure Storage FlashBlade REST</block>
   <block id="7d5b5dd6c17187a9d46c13b63a6b9dc0" category="cell">FlashBlade FlashBlade//S200</block>
-  <block id="61082be7476212157501671eefc2e078" category="cell">Purity //FB 4.1.5 Purity //FB 4.3.0 Purity //FB 4.3.6 Purity //FB 4.4.3</block>
   <block id="371e6a5612e80e07cef0fc0cccb142c8" category="cell">Pure Storage FlashBlade API</block>
-  <block id="b1247096c25e46b023d1b653b5b53bb9" category="cell">9.6.2.37 9.6.3.33 9.7.2.27</block>
   <block id="2b4b288cb9726df4dc219bfcd8b9cd6e" category="cell">7.6.1 8.8.7.1 8.7.3 8.7.6 8.8.3</block>
   <block id="c38b186c37788cc3b996afe54bf91eef" category="cell">DF850MH DF850S HM800 HM850 P9500 RAID800 VSP5000 XP24000 XP8</block>
-  <block id="70beddaa9ac7ad3e114400a38326c5d1" category="cell">0983/A-H 0984/B-H 0985/B-S 0986/ A-H 0988/H-S DKC:60-08-22 DKC:60-08-65 DKC:70-06-43 DKC:80-06-8000/02 DKC:80-06-91-00/00</block>
   <block id="8829fa767af7710678363d8745f0d521" category="cell">VSP 5100 VSP 5500 VSP 5600 VSP 5600H VSP E1090 VSP E590 VSP E990 VSP E990 VSP E790H VSP F1500 VSP F400 VSP F900 VSP G1000 VSP G1500 VSP G600 VSP G800 VSP G900 XP8</block>
-  <block id="1ecb1800a29ed9d5cb02d90e375574ab" category="cell">80-06-06-91-00/00:01-71-03/0280-06-06-94-0/00:01-70-03-0480-06-05-00-01-60-0</block>
   <block id="1888967ab4defb152c0d9e8ea1087907" category="cell">檔案 34 G600 G800 HNAS 4060 HNAS 4080 HNAS 4100 N800</block>
   <block id="d15be23087692d658b2c704c20f51c82" category="cell">14.6.7520.04 14.7.7623.07 14.9.7916.07 15.1.8030.03 15.1.8030.05 15.2.8128.05 15.2.8128.07 15.2.8128.09 15.3.8224.02</block>
-  <block id="47de51f071ab0bb56bbed13cc9aa5f58" category="cell">5050 A1000 AFF 20Q AFF 40 AFF 60 AFF 80 CS1000 CS300 CS3000 HCS500 HF20 HF20C HF20H Hf40 Hf40C Hf60</block>
-  <block id="6da001b5babd4c7f72990321efe6b8eb" category="cell">5.0.8.0-677726-opt 5.2.1100-1027043-opt 5.2.1.800-930936-opt 6.0.400-991061-opt 6.0.500-1005932-opt 6.1.100-1013503-opt 6.1.105200-1020304-opt 6.1.300-1028597-6.1.300-opt 2.502-10702-10672.502-10701-10702-10507-6.1-10702-opt</block>
   <block id="07319ca93147719d0b1dd2f025f6cf77" category="cell">18800 V5 2600 V3 5310 V5 5500 V3 5500 V5 5800 V3 6800 V3 Dorado 18000 V6 NVMe Dorado 3000 V6 Dorado 5000 V3 Dorado 6000 V3 Dorado 6000 V6 NVMe</block>
   <block id="db25589feb1a22997be60a887e360743" category="cell">V300R001C01 V300R002C10 V300R006C10 V300R006C20 V300R006C50 V500R00C10 V500R007C30 V500R007C60 Kunpeng V500R007C61 V500R007C71 Kunpeng V600R003C00 V600R005C00R27 V600C006 V600C00R27</block>
   <block id="c87309179da826a7812bff35008be5d7" category="cell">2107-951 2107-961 2107-993 2107-994 2107-996 2107-A05</block>
-  <block id="8a19c2013ac29369b3f3e5765e3db701" category="cell">-7.10.1.8 7.6.31.4250 7.7.51.1400 7.9.32.101 7.9.33.95 7.9.40.251 7.9.41.65</block>
-  <block id="667678853cd2a0f3c0847b9765cc7321" category="cell">2072-12F 2072-12G 20722-2242072-24C 2072-24E 2072-24F 2072-24G 2072-2N4 20722-3242072-3H4 2072-3N2 2072-3N4 2072-92F 2072-92G 20766-1242-2478 AFF</block>
-  <block id="b54da4a5bb83d456f93b867e94b4d4f7" category="cell">1.5.2.7 1.6.1.1.6.1.1.41.6.1.1.57.7.1.87.8.1.11.8.1.12.7.8.1.13.1.7.8.1.147.8.1.167.8.1.5.8.1.6.7.8.1.7.8.1.7.8.1.7.8.1.7.8.</block>
   <block id="43ba9900ff2fc7d9d32072540b2cab12" category="cell">A14</block>
   <block id="465eb21446914e7c885c18e24b1f7145" category="cell">10.2.4.e</block>
-  <block id="9e9c50a1ea4657a7c9b53afe16848ed1" category="cell">F4303 F6240</block>
-  <block id="d2845813068753058175a1d7e9facb06" category="cell">6.0.20.40 6.0.31.0 7.1.14.0 7.3.20.90</block>
   <block id="3170522648367d21423b781343eec922" category="cell">1.12 1.17 1.19 1.20 1.21</block>
-  <block id="14c793a93f35bdf4058bdcd23fa1c30a" category="cell">FAS2040 FAS2220 FAS2240-4 FAS2520 FAS2554 FAS3140 FAS3160 FAS3250 FAS3270 FAS6240 FAS6250 FAS8020 FAS8040 FAS8060 N6070 N6240 N6270</block>
   <block id="16c7df8ff4cba468dac596630ab74337" category="cell">8.1.1 7-Mode 8.1.4P9D18 7-Mode 8.2.2 7-Mode 8.2.3 7-Mode 8.2.3 7-Mode 8.2.3P2 7-Mode 8.2.3P3 7-Mode 8.2.4 7-Mode 8.2.4 7.4P4 7-Mode Data ONTAP 8.2.4 Data ONTAP Data ONTAP</block>
   <block id="0b1aee7a3a84cb882fa888a731f0ac0c" category="section-title">NetApp E 系列 REST</block>
-  <block id="ebb0dbfce3d000a2a29edbaf0dddf91d" category="cell">2800B 2806 5700 6000</block>
-  <block id="6c2aa3d2995e48ee5e95f78750a53005" category="cell">08.62.00.02 08.71.03.00 08.73.00.00 08.74.01.00 08.74.02.00 08.75.00.00 08.75.00.01 08.80.00.00 08.81.00.03 08.81.02.00 08.81.03.00 08.90.00.00 68.80.49.74</block>
   <block id="f1ea78fb0be7b3e9de3f17737c6275f5" category="cell">NetApp E 系列 REST API</block>
-  <block id="4a60d2831168dafee439f25e62509197" category="cell">FAS500f A150 ASA ASA ASA FAS8200 FAS8300 FAS8700 FAS80A1K ASA FAS2620 FAS2650 FAS2720 FAS2750 FAS2820 FAS9000 FAS9500 FAS200 ASA A220 AFF A250 ASA A300 ASA A320 AFF A400 AFF A70 AFF A700 AFF A700s AFF AFF AFF A800 AFF A90 AFF A900 FAS900 AFF AFF AFF C190 AFF ， C250 AFF ， C400 AFF ， C60 AFF ， AFF8020 AFFA8040 FASA8030A30A70A30 AFF ， A70A70A70A30 AFF ， A250 ， A70A70A250A70A70A70A70A30</block>
-  <block id="5c3e074bf156575e833ca2bb37378de6" category="cell">8.2.3P4 8.2.3P5 8.3.1P2 8.3.2.3.2.2P12 8.3.2P12 9.0.2P5 9.0.09.0.09.1.0P1 9.1.0P11 9.1.0P15 9.1.0P15 9.1.0P17 9.1.0P19 9.1.0P199.1.0P2 9.1.0P20</block>
-  <block id="c13cc2fac88a818b93f5ffcb5db492c9" category="cell">ASA-A1K</block>
   <block id="6d7dd3ca2962ef69238056e606102287" category="cell">NetApp 版本 9.16.1 ： SAT 1 月 18 日 19 ： 31 ： 15 UTC 2025 NetApp 版本 9.16.1RC1 ： 11 月 4 日星期一 10 ： 39 ： 46 UTC 2024</block>
   <block id="679634d7c4ed7b140ef10a84bc89db37" category="cell">NetApp ASA API</block>
   <block id="7c11c8b7cb2bb03933f57c7d02b47490" category="section-title">NetApp ONTAP REST</block>
-  <block id="06d9d6cb6ba27f0d88486f9f5a3bb5a5" category="cell">A150 A220 A250 AFF A300 AFF A400 A70 AFF A700 AFF A700 s A800 AFF A90 AFF A900 FAS2720 FAS2750 FAS2820 FAS8200 FAS8300 FAS8700 FAS9000 FAS9500 AFF C250 ASA C400 AFF ASA A800 AFF A250 AFF A400 ASA AFF A800 CDVM200 AFF FA300 AFF AFF BOX</block>
-  <block id="65d7f1c266e63ec0f2298e0fa344ea1a" category="cell">NetApp NetApp 版本 9.14.1 ：週二 1 月 23 日 21 ： 48 ： 01 UTC 2024 NetApp NetApp NetApp NetApp 版本 9.14.1P10 ：週四 11 月 28 日 12 ： 32 ： 16 UTC 2024 NetApp NetApp NetApp 版本 9.14.1P1 ： 2 月 15 日 00 ： 45 ： 21 UTC 2024 NetApp 版本 9.14.1P4 ： 6 月 18 日 UTC NetApp 版本 9.2024 NetApp 14.017 ： 6 月 14 ： 14 ： 14 ： 14 ： NetApp 2007 年 10 月 14 ： 14 ： 14 ： 14 ： 14 ： 14 ： 14 ： 14 ： 14 ： 14 ： 16 NetApp NetApp NetApp NetApp NetApp NetApp NetApp NetApp NetApp NetApp NetApp NetApp</block>
   <block id="e07be06c315f09b3ca98301b790f4053" category="cell">NetApp ONTAP REST API</block>
-  <block id="0b180bcdbe0b105ac46393b6c98cbdda" category="cell">H410S-2 H610S-2 H610S-4 SF19210 SF2405 SF4805 SF9605 SF9608 H300S H410S-0 H410S-1 H410S-2 H500S H610S-1 H610S-2 H610S-4 SF19210 SF38410 SF4805 SF9605 SF9608</block>
-  <block id="b4f40a14678e21a932e4e936a7afeb1e" category="cell">11.1.0.72 11.7.0.76 11.8.0.23 12.0.333 12.2.0.777 12.3.0.958 12.3.1.103 12.3.1.165 12.3.2.3 12.5.0.897 12.7.0.380</block>
   <block id="4405ffb87bb4bb624a1e4d02b219ce09" category="cell">3.2 3.3 3.4 3.5 4.0 4.1</block>
-  <block id="ca9dd8b75c7fd009b26e7f7ed4086a45" category="cell">11.4.0 11.5.0.11 11.5.0.611.5.0.711.5.0.911.6.0.11.6.0.11.6.0.11.6.0.11.6.0.1111.6.0.1211.6.0.1311.6.0.1411.6.0.1511.6.0.1611.6.0.11.6.0.11.6.0.11.6.0.711.</block>
-  <block id="a9d65d0ae6859f113b35ec779d2a6103" category="cell">NX-3170-G7 NX-8155-G7 HPE DX360-10 G10 HPE DX380 12LFF G11 HPE DX385-12 Gen10 Plus NX-3060-G6 NX-3060-G7 NX-3060-G8 NX-31560-G8 NX-3155-G7 NX-3155-G7 NX-3155-G8 NX-805X-G8-G8 NX-805X-G10-G70 NX-G10-G10-G8 NX-80810-G10-G10-G10-G10-G10-G10-8 Nx 810-G10-G10-G10-G10-G10-G10-G10-G10-8</block>
-  <block id="7bdab7a08b6442f04adc36cc96c75cfa" category="cell">5.20.1.1 6.10 6.5.3.7 6.5.4.5.5.6.5.7.5.6.5.6.5.6.5.6.6.6.6.6.6.7.1.66.8.1.5 7.0</block>
-  <block id="19486db591195a34bcbfcc6804045ded" category="cell">Sun ZFS Storage 7120 Sun ZFS Storage 7330 Sun ZFS Storage 7335 Sun ZFS Storage 73350 Sun ZFS Storage 7370 Sun ZFS Storage 7390 Sun ZFS Storage 7420</block>
-  <block id="c2a8db1aff35485204993d2b84985ca1" category="cell">1-1.1 1-1.2 1-1.3 1-1.34 1-1.4 2013.06.05.6.12 2013.06.05.6.15 2013.06.05.7.21 2013.06.05.7.24 2013.06.05.7.25 2013.06.05.7.26</block>
   <block id="35784b4a82fd374c7ec3369fbb1e8df8" category="cell">DFSC1 FA-450 FA-C40R3 FA-C50R4 FA-C60 FA-C60R3 FA-C70R4 FA-C90R4-X10R2 FA-X10R3 FA-X20R2 FA-X20R3 FA-X20R4 FA-X20R4 FA-X50R2 FA-X50R2 FA-X50R3-X50R3-X50R4-X70R3-X70R3-X70FA-X70FA-X70R3-X70FA</block>
-  <block id="16e3c790f42be3497bb96ba4de87fe03" category="cell">5.3.14 5.3.206.3.10.6.1.10.6.3.5.6.3.5.6.3.6.6.3.6.3.6.3.6.3.6.3.6.3.6.3.6.3.6.3.6.3.6.3.6.3.3.6.3.6.3.3.3.6.3.3.6.3.6.3.6.3.6.3.6.3.6.3.6.3.6.3.6.3.6.3.6.3.6.5.6.5.6.5.6.5.6.5.6.5.6.5.6.5.6.6.5.6.6.6.6.6.6.5.6.6.6.6.6.6.5.6.6.5.6.6.6.6.6.6.6.6.5.6.6.6.6.6.6.6.6.6.5.6.6.6.6.6.6.6.</block>
-  <block id="690bcd95488a17f6da2ee792589e63e5" category="paragraph">韌體版本：</block>
   <block id="75b54a8072b703ac091433244f18a3ab" category="list-text">8.1.3-p12-25506</block>
   <block id="060d3eb2191aaf01b8239fc32a4b8197" category="list-text">8.1.3-P13-25544</block>
   <block id="34a95c6769e0b0e00732b9a16acabd91" category="list-text">8.1.3-P2-24912</block>
@@ -11936,13 +11877,11 @@
   <block id="5065214f6ae2dcb267c01a3128e48b31" category="list-text">9.2.2-P1-29213</block>
   <block id="1dbcd71c414b8a10683f868b77cc678c" category="list-text">9.2.3-29313</block>
   <block id="65d52df708179478b18fe5d84d7da6d1" category="cell">VA2437096 大數據</block>
-  <block id="f69e2a9c3768d42d8e5e02648fe89c32" category="cell">組建版本：版本：版本： 5.0.0-sp24-1389206 組建版本：版本 -5.0.0-sp24-1389206 組建版本：版本 -5.0.0-sp70-1532643 組建版本：版本：版本 -5.1.0-sp50-1578267 系統版本： 5.0.94 系統版本： 5.0.133 系統版本： 5.0.94 系統版本： 5.0.210</block>
   <block id="a8b910290e6b27951c8130d057487cd0" category="cell">龐大的資料存放區 API</block>
   <block id="451123b68d20f93bcbecfc2110ead325" category="list-text">VMware vCenter Server 7.0.3 build 24322018</block>
   <block id="98a21ee07313ae9f7368e2d4c8d063b0" category="list-text">VMware vCenter Server 8.0.0 內部版本 -22877852</block>
   <block id="d4cd90b6b79d4c82a1112a363be70ebd" category="list-text">VMware vCenter Server 8.0.1 組建 - 22161730</block>
   <block id="08501c4a4258f91738b89b4d61317724" category="list-text">VMware vCenter Server 8.0.1 組建 - 23525738</block>
-  <block id="c5aa93784f790740a7faf156512376bd" category="list-text">VMware ESXi 6.7.0 組建編號 20497097</block>
   <block id="b976906567db1fc86dc4ee3e5faeefd4" category="list-text">VMware ESXi 8.0.0 build 21203435</block>
   <block id="5d5cd22797496b3e470852424d905453" category="list-text">VMware vCenter Server 6.0.0 內部版本 -5183551</block>
   <block id="907ab3fe0c1199fc2c735acb0320b680" category="list-text">VMware vCenter Server 6.5.0 組建編號： 12863991</block>
@@ -12030,4 +11969,346 @@
   <block id="0be262a01ffd53cb1827d924de37e376" category="paragraph">透過強化的 REST API 使用率追蹤功能，加強您的安全狀態，並簡化資源管理，供管理員使用者使用。透過 API 使用率追蹤，您可以查看使用的 API Token ， IP 位址及其產生的流量量。將權杖連結至特定的 IP 位址和使用層級，即可深入瞭解系統存取和使用趨勢，讓您掌控維持安全，有效率的環境，並讓作業順暢運作。</block>
   <block id="8261d0e1521d30da1b36761d508cb245" category="paragraph">若要檢視 API 使用率，請瀏覽至 * 可服務性 &gt; 管理 &gt; API 存取 * ，然後選取 _ 檢視 API 使用率 _ 。請注意，此 API 僅適用於 DII 可服務性 API ，不適用於工作負載安全性。</block>
   <block id="2613b3928d7ae4e00e8610b858e67528" category="paragraph">您可以自訂報告的輸出格式和交付，設定報告內容或排程，以及電子郵件報告。</block>
+  <block id="7676d746a6b2036f8764b1e1250213d3" category="cell">3.1.1 （ MU1 ） 3.1.2 （ MU3 ） 3.1.3 （ MU1 ） 3.1.3 （ MU2 ） 3.2.1 （ MU2 ） 3.2.1 （ MU3 ） 3.2.1 （ MU5 ） 3.2.2 （ MU4 ） 3.2.2 （ MU6 ） 3.3.1 3.3.1 （ MU1 ） 3.3.1 （ MU2 ） 3.3.1 （ MU3 ） 3.3.1</block>
+  <block id="d9c3a16f0d6e7e82d6b68abd0ed8778b" category="paragraph">此資料收集器支援的機型和版本： API 版本：</block>
+  <block id="6f558f34dcdd934f1ac4e3ce9d73b963" category="cell">176.51 183.0 Brocade Brocade Brocade 200E Brocade Brocade Brocade Brocade 300E Brocade Brocade Brocade Brocade Brocade 4024 內嵌 Brocade 5000 Brocade 5100 Brocade 5300 Brocade 5480 內嵌式 Brocade 6505 Brocade 6510 Brocade 6520 Brocade 6546 內嵌 Brocade 6547 內嵌式 Brocade 6548 Brocade 6558 Brocade 7800 Brocade 7810 擴充交換器 Brocade 7840 Brocade DCX Brocade DCX-4S Backbone Brocade DCX8510-4 Brocade DCX8510-8 Brocade Brocade G610-8</block>
+  <block id="1e449740fd4d0553a426bc62f0a54ecf" category="cell">v6.2.2b v6.2.2d v6.2.2d v6.4.7.3.7.3.v7.3.v7.3.v7.3.v7.3.v7.3.v7.3.v7.3.v7.3.v7.3.v7.3.v7.3.v7.3.v7.3.v7.3.v7.3.v7.3.v7.3.v7.3.v7.3.v7.3.v7.3.v7.3.v7.3.v7.3.v7.3.v7.3.v7.3.v7.3.v7.3.v7.3.v7.3.v7.3.v7.3.v7.3.v7.3.v</block>
+  <block id="b0bd9ec55b40493b14c0bd6ecbff1533" category="cell">183.0 184.0 190.0 Brocade 6505 Brocade 6510 Brocade 6520 Brocade 7810 擴充交換器 Brocade 7840 Brocade DCX8510-4 Brocade DCX8510-8 Brocade G610 Brocade G620 Brocade G630 Brocade G720 Brocade G730 Brocade X6-4 Brocade X6-8 Brocade X7-4 Brocade X7-8</block>
+  <block id="62e42484aab6829c40d4a601fe0112ca" category="cell">v8.2.2a v8.2.2D v8.2.2d4 v8.2.3 v8.2.3a v8.2.3b v8.2.3c v8.2.3c v8.2.3d v8.2.3e v8.2.3v8.2.</block>
+  <block id="0c53c13f49489638439ba5dac60da36e" category="cell">DS-C9124-2-K9 DS-C9124-K9 DS-C9132T-K9 DS-C932P-K9 DS-C9148-16P-K9 DS-C9148-32P-K9</block>
+  <block id="520d20af3a455a4e51cc788869066cb8" category="cell">3.31c 4.1(3a)4.2(1a) 5.0(1a) 5.0(3)5.2(3)N2(3.11e)5.0(4.01d)5.0(3)N2(4.13i) 5.0(3)N2e)5.0(3)N2(4.21j)5.2(3)6.2</block>
+  <block id="6376cf10c76dd80a9c3ddb6572d1fbaf" category="cell">c4000 運算節點 C4600 C5036 C5066 C6025 C6035 C6055 CX8405 PXG1 UC-C240M5H10 虛擬 ROBO</block>
+  <block id="07d3c87c45b57d1a2996c5876d750087" category="cell">6.8.1_U1_release - 20221022_6f58ed2a 6.8.2_U1_release - 20240509_a5da4644 7.1.2_U2_release - 20240925_66722648 7.1.2_U3_release - 20241231_bb47fe72.1_release - 20241114_794e9327.2_</block>
+  <block id="05f4d84e2e82ebb184b9b043520fc436" category="cell">04.28.000.5.710 05.32.000.5.206 05.32.000.5.218 05.32.000.5.219 05.32.000.5.221 05.32.000.5.225 05.32.000.5.249 05.33.000.5.074 05.33.008.5.119 05.33.009.5.155</block>
+  <block id="6e97680381b6e91b87d325b8c675a870" category="cell">DD VE DD2500 DD3300 DD3300 DD4200 DD6300 DD6400 DD6800 DD6900 DD7200 DD9300 DD9410 DD9500 DD9800 DD990 DD9900 DD9910</block>
+  <block id="e4e628632b9ed88d15f10ef8bc5e806c" category="cell">6.0.2.30-606339 6.1.2.01-633576 6.1.2.20-606786 6.2.30-663869 6.2.1.40-671976.2.60-686365 7.10.0-1023227 7.10.1.0.0-10429287.10.1.1.1-1049892 7.10.10.10-1068159</block>
+  <block id="5248b60a0d76d91bbdc6d4014f26831e" category="cell">3.6.1.3 3.6.2.1 3.7.0.0 3.7.0.3 3.7.0.4 3.7.0.6 3.8.0.1 3.8.0.2 3.8.0.3 3.8.0.4 3.8.0.5 3.8.0.6 3.8.1.1 3.8.1.2 3.8.1.3</block>
+  <block id="d757fa379cef63edd0e00f69ff032974" category="cell">9.1.0.10 9.1.0.6 9.1.0.9 9.2.1.10 9.2.1.11 9.2.1.12.1.12.1.12.9.2.1.13.9.2.1.9.2.1.9.2.1.9 9.4.0.11 9.4.9.4.0.14 9.4.0.15.0.15.9.4.0.16.</block>
+  <block id="251ae20eab71f33cfbf49fe6181dc759" category="cell">A200 H400 H500 NL400 NL410 S210 回溯（最近一次通話最後一次）： X200 X400 X410</block>
+  <block id="1e92c315f181b75ce95608f0a8b64e2a" category="cell">2.1.0.1 2.1.1.0 3.2.0.1 3.2.1.0 3.2.1.1 3.5.0.1 3.5.0.2 3.6.0.0 3.6.1.0 3.6.1.1 3.6.1.2 3.6.1.3 3.6.1.4 4.0.0.1 4.0.0.2 4.0.1.0</block>
+  <block id="ec7c785d75e5cb24a1d1d372d18235d1" category="cell">5.1.SP4.P1(h.89)5.1.SP4.P2 （ h.101 ） 5.1.SP4.P(P3(h.109) 5.1.SP4.P4.P(h.97)5.1.SP4.P5(h.138)</block>
+  <block id="af4f7a2cf09048574e5c6e1559820139" category="cell">R3_5.1201.101 R3_6.1000.134</block>
+  <block id="2c78f616287b9995f25da6e17e294fce" category="cell">V10.0.0.0 V10.0.1.1 V10.1.0.V10.1.0.0.1 V10.1.0.3.10.1.0.0.5 V10.2.0.2.0.0 V8.3.0.0.7 v8.4.0.9.0.5V9.1.0.6 V9.2.1.0 V9.2.2.0 V9.2.3.0</block>
+  <block id="3896a9ea5e8a48270d88421a4c8209f9" category="cell">V10.0.0.5 V10.0.1.5 V10.1.0.0.1 V10.1.0.0.5 V10.1.0.6 V10.1.0.0.8 V10.2.0.1.V10.2.0.2 V9.2.3.15 V9.2.3.20 V9.2.3.22 V9.2.3.4</block>
+  <block id="5fb79d910a23aae4d2add551c1a6fcd8" category="cell">5977.1131.1131 組建 6155977.1151.1151 組建 60 組建 5978.711.711 組建 2055978.7147148.714</block>
+  <block id="5b1a6e317032b3a35e9e9db32de7f912" category="cell">1 塊磚塊和 125TB 1 塊磚塊和 24TB 1 塊磚塊和 31 TB 1 塊磚塊和 8TB 1X10TB 1X20TB 1X40TB 2 塊磚塊和 83TB 3 塊磚塊以及 251TB 3 塊磚塊和 283TB 4 塊磚塊和 628TB 4 塊磚塊以及 754TB 4X20TB 6X40TB</block>
+  <block id="2995f3cde2b725d866e511ecf43484f4" category="cell">2660 2680 2702 2704 2800B 2804 2806 3000 4000 5486 5488 5504 5564 5600 5700 5700B 6000 7999</block>
+  <block id="78db958e7063b21a4ec6e975fb868216" category="cell">08.40.60.00.08.80.00.00.7.84.46.08.20.16.08.20.27.08.20.30.08.20.</block>
+  <block id="82457f5a517229453261a8c68cf7ffc6" category="cell">Purity //FB 4.1.5 Purity //FB 4.3.0 Purity //FB 4.3.11 Purity //FB 4.3.6 Purity //FB 4.4.3</block>
+  <block id="ead8c8d82d973401206b762798d6a62e" category="cell">9.6.2.37 9.6.3.33 9.7.2.27 9.7.3.14</block>
+  <block id="9903b07d64b5ee9501ff2d07deb88ea1" category="cell">0983/A-H 0984/B-H 0985/B-S 0986/ A-H 0988/H-S DKC:60-08-22 DKC:60-08-65 DKC:70-06-43 DKC:80-06-8000/02 DKC:80-06-91-00/00 DKC:80-06-96-08-DKC08-08-DKC-08-DKC08-08-DKC-08-DKC-08-2009 ： DKC-08-DKC-08-DKC-08-DKC-08-DKC-08-2009</block>
+  <block id="00736879f0a8fc69a9e17b389b2320c0" category="cell">80-06-06-91-00/00:01-71-03/0280-06-04-94-00/00:01-70-03-0480-06-06-00-0</block>
+  <block id="78916dba8b76d0033fd2a9a3e9b38643" category="cell">5050 6070 A1000 AFF 20Q AFF 40 AFF 60 AFF 80 CS1000 CS300 CS3000 HCS500 HFC20C HF20H HF40 Hf60</block>
+  <block id="ebcdda920eacecf6a4ae7f27f0decb0c" category="cell">5.0.8.0-677726-opt 5.2.1.1100-1027043-opt 5.2.1.400-796142-opt 5.2.1.700-882343-opt 5.2.1.800-930936-opt 6.0.400-991061-opt 6.0.500-1005932-opt 6.1.200-1020304-opt 6.1.300-opt 1.02-10702-10702-10672.502-opt</block>
+  <block id="eaaa8261960470fa56e091d6438096bf" category="cell">-7.10.1.87.6.31.4250 7.7.51.1400 7.9.32.101 7.9.33.132 7.9.33.95 7.9.40.251 7.9.41.65</block>
+  <block id="a7a6599d6afb722185a6452bd00a9897" category="cell">2072-12F 2072-12G 20722-2242072-24C 2072-24E 2072-24F 2072-24G 2072-2N4 20722-3242072-3H4 2072-3N2 2072-3N4 2072-92F 2072-92G AFF</block>
+  <block id="88ebb9efffaf4c4c5cd0a62088cdf031" category="cell">1.5.2.7 1.6.1.1.6.1.1.41.6.1.57.7.1.87.8.1.11.8.1.12.7.8.1.13.7.8.1.13.7.8.1.14.7.8.1.16.7.8.1.6.7.8.1.7.8.1.7.8.1.7.8.</block>
+  <block id="8a2dc6ca64cd8ca0066655f265c8b7df" category="cell">F4303 F6230 F6240</block>
+  <block id="a9ab2ca89cfd93348b20bfa5a9fd3dfb" category="cell">6.0.20.40 6.0.31.0 7.1.14.07.1.15.07.3.20.90 8.1.0.280</block>
+  <block id="a962f243fe5f3472debd60437d3b0017" category="cell">FAS2040 FAS2220 FAS2240-4 FAS2520 FAS2552 FAS2554 FAS3140 FAS3160 FAS3250 FAS3270 FAS6240 FAS6250 FAS8020 FAS8040 FAS8060 N6070 N6240 N6270</block>
+  <block id="29202c62846ec305f285592b2ff5b42f" category="cell">2800B 2806 5700</block>
+  <block id="f901b1b26d96629dd39627ef97f5b83d" category="cell">08.71.03.00 08.73.00.00 08.74.02.00 08.75.00.00 08.75.00.01 08.80.00.00 08.81.00.03 08.81.02.00 08.81.03.00 08.90.00.00</block>
+  <block id="25a770769b90c7d4a93cdc2b4a58aae2" category="cell">FASA150 FASA150 AFF AFF AFF AFF AFF ASA ASA FAS2620 FAS2650 FAS2720 FAS2750 FAS2820 FAS9000 FAS9500 FAS500f ASA 80AFF40 FASA250 FASA250 FAS8200 FAS8300 FAS8700 ASA ASA AFF ASA AFF ASA AFF AFF AFF 80AFF800 AFF AFF AFF AFF AFF 8030AFF40 FASA250 AFF AFF AFF AFF AFF AFF 80AFF600</block>
+  <block id="e8480a6701cc4ae6b1c7d5a8984a48fc" category="list-text">8.2.3P4</block>
+  <block id="ac52b448fcf26ad499c2c41a2601dc65" category="list-text">8.2.3P5</block>
+  <block id="b4542454d9f0fe3ae175c9f5476bb7dd" category="list-text">8.3.1P2</block>
+  <block id="67ecd8dd078799deeaa7c0e774f9c4e9" category="list-text">8.3.2</block>
+  <block id="7f6d7477b871f0a19275773c1c15168e" category="list-text">8.3.2P12</block>
+  <block id="b555700be880ad7d52aab4210371aad6" category="list-text">8.3.2P5</block>
+  <block id="e6bcb21e01e3e3a224056a0468abf062" category="list-text">9.0.0</block>
+  <block id="cfcd3424d31800a2f3cde5362ab2dcdc" category="list-text">9.1.0</block>
+  <block id="242be3d3ed420e592c683b10c9b70ce0" category="list-text">9.1.0P1</block>
+  <block id="130009574dc91810b7ddedd566b89a8d" category="list-text">9.1.0P11</block>
+  <block id="36b47ba605ef02d20699e674e51031cd" category="list-text">9.1.0P15</block>
+  <block id="59b93972f991b05ddd1ab2cbae738e25" category="list-text">9.1.0P17</block>
+  <block id="57b505e669d8da86ce4611f97ae083aa" category="list-text">9.1.0P19</block>
+  <block id="3fa5bd61ce7dd65cc045d27c0b4e7063" category="list-text">9.1.0P2</block>
+  <block id="05e1e9bf46857a40f69bb7520094dcbe" category="list-text">9.1.0P20</block>
+  <block id="132143b8dd56e68ffe05202c5ab765cf" category="list-text">9.1.0P3</block>
+  <block id="a1b053e50147d27ef335bc058f4b5373" category="list-text">9.1.0P6</block>
+  <block id="7dc55c4552ab61f336ab3370c0e11602" category="list-text">9.1.0P7</block>
+  <block id="35c4b3801e0da6729d586fe87602717e" category="list-text">9.1.0P8</block>
+  <block id="a9953f764c1114eba7d651c1d62b6762" category="list-text">9.1.0P9</block>
+  <block id="69b18625fddab3afc6d2b0e68e6f847a" category="list-text">9.10.0</block>
+  <block id="ea2aca94e5b174a1b84f2c3891379526" category="list-text">9.10.1</block>
+  <block id="fa9e578294e7805f088a90c5d72e24da" category="list-text">9.10.1P1</block>
+  <block id="8d677b1d3a87d6b3089fe06edd24c352" category="list-text">9.10.1P10</block>
+  <block id="c5f2a4f301884151faff0ff805a52c65" category="list-text">9.10.1P11</block>
+  <block id="e24ccd897a7c57cb41393e1b27dd1256" category="list-text">9.10.1P12</block>
+  <block id="a62ba812a1863b0a1692c694d7e68754" category="list-text">9.10.1P13</block>
+  <block id="04d879f94cd96e8de0c24f1879bb2b07" category="list-text">9.10.1P14</block>
+  <block id="737f6809aca9b9ba8ca2d27b64666da7" category="list-text">9.10.1P15</block>
+  <block id="241576fb6bb338436c4b1728be1e2980" category="list-text">9.10.1P16</block>
+  <block id="704c90b59b1428c48a64ff3918255729" category="list-text">9.10.1P17</block>
+  <block id="75c61aba878b0af67c444ba1686a4adf" category="list-text">9.10.1P18</block>
+  <block id="4d0492dfbcaabba58581978740f6fd59" category="list-text">9.10.1P19</block>
+  <block id="9e04ea564c4438a8b95de037f1ca20a0" category="list-text">9.10.1P2</block>
+  <block id="9a9f0bc12d4f0fe6ed287df4278b232a" category="list-text">9.10.1P20</block>
+  <block id="80d6f8ed9b0f8b5226881f3bbdc0d379" category="list-text">9.10.1P3</block>
+  <block id="9bb1209510bec1faff0c34fa27b53e7d" category="list-text">9.10.1P4</block>
+  <block id="6ce0c16efa289a9aa804313c47d12b5f" category="list-text">9.10.1P5</block>
+  <block id="981f8497cb3a13567c56a02275ae278c" category="list-text">9.10.1P6</block>
+  <block id="f726c822498e959a526e03eb249d86bc" category="list-text">9.10.1P7</block>
+  <block id="8a5ee5fe9c9116366ce99e6e4e28640e" category="list-text">9.10.1P8</block>
+  <block id="6fe47327c63f5761d6e807c2a11741b6" category="list-text">9.10.1P9</block>
+  <block id="3313c043c770f5983152fca903ddfa9e" category="list-text">9.11.0P1</block>
+  <block id="11efa46f237387b311e6ed482756ac49" category="list-text">9.11.1</block>
+  <block id="8ad624a6665b15e8f306ef1eaf8ff036" category="list-text">9.11.1P1</block>
+  <block id="6f929815b53af214fb85050d7018c423" category="list-text">9.11.1P10</block>
+  <block id="b41617fd1250d9261ddab03ca21e9065" category="list-text">9.11.1P11</block>
+  <block id="d33e7070b2d0ef6e5b8427d86ad0027d" category="list-text">9.11.1P12</block>
+  <block id="036e283d0d2b7a693c7e3ed39559e515" category="list-text">9.11.1P13</block>
+  <block id="7c73abc11a766e9f1a7bd854711126c7" category="list-text">9.11.1P14</block>
+  <block id="11feb9d1934471047d55be3bee3d4c15" category="list-text">9.11.1P15</block>
+  <block id="cc14e901894f87775b102e14e85758a2" category="list-text">9.11.1P16</block>
+  <block id="3fef604abf9bfb85352fc53ab4ac372b" category="list-text">9.11.1P17</block>
+  <block id="25a85f9bfa72732aba2a23f9cd8d02c3" category="list-text">9.11.1P18</block>
+  <block id="bed0f45b4dc019a75fa305cf02c9c692" category="list-text">9.11.1P2</block>
+  <block id="0f5149edb354d9c08e4380c0309f7c52" category="list-text">9.11.1P3</block>
+  <block id="60c153e0ec5ee4601950a2256ca730fa" category="list-text">9.11.1P4</block>
+  <block id="8d1f182e019b35276cad314db59d6b1c" category="list-text">9.11.1P5</block>
+  <block id="b76e974d9b27c269d33776c5832c6549" category="list-text">9.11.1P6</block>
+  <block id="6a0fb4ccd9df37a4928d666f900fc111" category="list-text">9.11.1P7</block>
+  <block id="ee297c3ee4d46f935bc45d0d064be8f4" category="list-text">9.11.1P8</block>
+  <block id="ac844c749ee94b582ae244c828b00311" category="list-text">9.11.1P9</block>
+  <block id="b50ef0c82f2cb86e10106d6dcf4be872" category="list-text">9.11.1X12</block>
+  <block id="eba1f3287bdc33dfa25c084b5e15a4c5" category="list-text">9.12.1</block>
+  <block id="b5c4301816e6af2bf88c788518733eb7" category="list-text">9.12.1P1</block>
+  <block id="8f54fbf368765fd506959c0f94135922" category="list-text">9.12.1P10</block>
+  <block id="ad5b5a69bd60c175f9dd593030d700a1" category="list-text">9.12.1P11</block>
+  <block id="c96b0341b44c93c9a7abaafc0a1b4ab6" category="list-text">9.12.1P12</block>
+  <block id="b05999232b6c5728adf7436bda2b8585" category="list-text">9.12.1P13</block>
+  <block id="bb641d243ab9ef7280e6782196167a4f" category="list-text">9.12.1P14</block>
+  <block id="b1a640b1889193f6f2b9d7a9280988aa" category="list-text">9.12.1P15</block>
+  <block id="0d8f4e150eb54d04e8e2a32013b60362" category="list-text">9.12.1P16</block>
+  <block id="e63a3bacf93364ee052610727cd42325" category="list-text">9.12.1P17</block>
+  <block id="d97a5d8fe03cae92f98f0cec538e910d" category="list-text">9.12.1P2</block>
+  <block id="c73a557aa730a12e572f4ab3fe734b08" category="list-text">9.12.1P3</block>
+  <block id="777ca4c4a95cd4253cb2b2a86e409d1b" category="list-text">9.12.1P4</block>
+  <block id="8c4ad99d9c23f352182987171c423d82" category="list-text">9.12.1P5</block>
+  <block id="5c234a2fe676cd0e25275a447a969117" category="list-text">9.12.1P6</block>
+  <block id="b551afc25bf830c2cdde148fdaeb7166" category="list-text">9.12.1P7</block>
+  <block id="0a2ad8a5390d9b340f6677c9b422907c" category="list-text">9.12.1P8</block>
+  <block id="fa8e116399dd8e9e0f40d321b3b2c626" category="list-text">9.12.1P9</block>
+  <block id="e6b411af64f8108d8230e8dc4d5ed17e" category="list-text">9.13.0</block>
+  <block id="393a6a36506c829b7512215a44d7558e" category="list-text">9.13.0P1</block>
+  <block id="83c7c08de7cd7287c1694245c3db5460" category="list-text">9.13.0P3</block>
+  <block id="57a3061930625af99195891e9e561fb2" category="list-text">9.13.1</block>
+  <block id="41994ef360079582a74901e73b624a44" category="list-text">9.13.1D1</block>
+  <block id="2f80ef71ea9a00e5d42923e64e7d5ac7" category="list-text">9.13.1P1</block>
+  <block id="e86f9685903c9ff75aac2ae98870e5e5" category="list-text">9.13.1P10</block>
+  <block id="be444e472e3c933af6efba360dd4f691" category="list-text">9.13.1P11</block>
+  <block id="58568d7e61802b4a55cbd5234ec36382" category="list-text">9.13.1P12</block>
+  <block id="cd71e6c234c4a2e01cda37d1a04210c6" category="list-text">9.13.1P13</block>
+  <block id="9eaecbf2c8fa86e89407dd024d0822bf" category="list-text">9.13.1P14</block>
+  <block id="9e97339e893d28b4ce9b9e8534afa4fe" category="list-text">9.13.1P2</block>
+  <block id="058fea268fe4ff434cd63b064d436552" category="list-text">9.13.1P3</block>
+  <block id="5d67910c66f0f0d959d85af2ce315fd7" category="list-text">9.13.1P4</block>
+  <block id="67eec252d0c15f68f639fadbf580d6c9" category="list-text">9.13.1P5</block>
+  <block id="dc3658b89e9d1f671e582fcb34064829" category="list-text">9.13.1P6</block>
+  <block id="8876979456078ff24a3861e4ac3f0463" category="list-text">9.13.1P7</block>
+  <block id="c5a3d05981c37443e351ae5acd51f600" category="list-text">9.13.1P8</block>
+  <block id="99bac8dc2f5f3c64dc40c55b1d79eee3" category="list-text">9.13.1P9</block>
+  <block id="f316f0dfd566f9d842d2d368b7e3ecbb" category="list-text">9.14.0</block>
+  <block id="11637422d89649ea21b77621765c7f67" category="list-text">9.14.0P1</block>
+  <block id="814639e0a762322df1c967d71dc9b841" category="list-text">9.14.0P2</block>
+  <block id="d544ab02530940d46c43ea00a73d59d3" category="list-text">9.14.1</block>
+  <block id="c8e98c25218474051c9b7d78bbd1756a" category="list-text">9.14.1P1</block>
+  <block id="db30672368fecad9e4ad702ef78d5f00" category="list-text">9.14.1P10</block>
+  <block id="640e89a9659b039c4a70b0b0e0b13f51" category="list-text">9.14.1P11</block>
+  <block id="4836f579e5c0a9b0dd955105f4c1169d" category="list-text">9.14.1P2</block>
+  <block id="f53f40ff6c0298696c48a7f032661dbe" category="list-text">9.14.1P4</block>
+  <block id="8685aaacfa775a83b2992c99363aa9d7" category="list-text">9.14.1P5</block>
+  <block id="585c0ac58e17531cf085a7375c4bf3f3" category="list-text">9.14.1P6</block>
+  <block id="ddf16af06aacb7571f11eeb9253a626b" category="list-text">9.14.1P7</block>
+  <block id="ebbe4cbae17517c84e54eba083c8da4b" category="list-text">9.14.1P8</block>
+  <block id="d73363717d834d4a2ab99eeb68453131" category="list-text">9.14.1P8D5</block>
+  <block id="f8a8cd0923816d5b6d78f88100eeeb74" category="list-text">9.14.1P9</block>
+  <block id="86259c42e39aca9d604557fc0df7cdfd" category="list-text">9.14.1X14</block>
+  <block id="e2a6950e117d892956cab85ead3b8f5f" category="list-text">9.14.1X20</block>
+  <block id="2f550d4ca52f3cf0205b3dc3813685a1" category="list-text">9.14.1X24</block>
+  <block id="d9df468f7ec059062fe27406e7e15237" category="list-text">9.15.0P1</block>
+  <block id="d8fde17f7482290d3fc56b981fe6e5f3" category="list-text">9.15.0P2</block>
+  <block id="120ae360daecd24b580b71f9f2766bbc" category="list-text">9.15.1</block>
+  <block id="babb745e519aed45f31bc3d49e67be5c" category="list-text">9.15.1P1</block>
+  <block id="7e6de2949243520c036f5350934865c4" category="list-text">9.15.1P2</block>
+  <block id="1892ea8093b1b179a591906019b46813" category="list-text">9.15.1P2D2</block>
+  <block id="1a6c927dff2b4164c21b2d570f87ed5c" category="list-text">9.15.1P3</block>
+  <block id="3ae7aab793c87e0b1a5e3f0cfef0a98c" category="list-text">9.15.1P4</block>
+  <block id="38aeea65c787a586230870fa9ed96a89" category="list-text">9.15.1P5</block>
+  <block id="7cc66ab8fef0327ed61711d8cd9c0e91" category="list-text">9.15.1P6</block>
+  <block id="a94def7bd8645fffeb7856a0b730acfb" category="list-text">9.15.1P7</block>
+  <block id="cc1e51f6714a9a4de877bfe5d6abc663" category="list-text">9.15.1P7D4</block>
+  <block id="fd43304224fcabc307d59c5ec05b2dec" category="list-text">9.15.1P8</block>
+  <block id="988a2f8f75724c92369ef7cf6c1af9c3" category="list-text">9.15.1X19</block>
+  <block id="398a2f5fbfe6d752b77067052fc148f5" category="list-text">9.15.1X27</block>
+  <block id="0bd0e673df4c14cae45a11fac30c530b" category="list-text">9.16.1</block>
+  <block id="5329b0514f6808bed8f7ea91aa5dfffe" category="list-text">9.16.1P1</block>
+  <block id="38581ea3df1d6327e2ef6aa30a992d3d" category="list-text">9.16.1X16</block>
+  <block id="309cc4b6e6becf1dabfbf424307d63a3" category="list-text">9.16.1X26</block>
+  <block id="abcfd7456fda735d64d7072f1f14b7a9" category="list-text">9.16.1X29</block>
+  <block id="81e76ca235a16e1d875f94529d326de0" category="list-text">9.17.1</block>
+  <block id="c4e97bb93085dd52655d04ae6039f80d" category="list-text">9.17.1X7</block>
+  <block id="ede0f5d55262ef3a8fefabdc493d497d" category="list-text">9.2.0P3</block>
+  <block id="db3defc5982e5a3ab1c7c23c3b9bd186" category="list-text">9.2.0P4</block>
+  <block id="b7cc677864a8a148a8f6712077c927d6" category="list-text">9.3.0P15</block>
+  <block id="e9139ea9a0fa5afb4831b26688b26d3b" category="list-text">9.3.0P18</block>
+  <block id="b4741f32acb38e97db6b77225a0d0cf7" category="list-text">9.3.0P20</block>
+  <block id="b7db39fc5b39222c845501bca15cc8c4" category="list-text">9.3.0P21</block>
+  <block id="510d51ec91223c24b77fc0ea152b50ed" category="list-text">9.3.0P6</block>
+  <block id="3c2e602ce04e890e1b9c8175a85ef4c8" category="list-text">9.3.0P7</block>
+  <block id="6437c39422137a247e5e9d1c9aabf6b5" category="list-text">9.3.0P8</block>
+  <block id="6559406d608469eefd6f5e0c5c852b5c" category="list-text">9.4.0</block>
+  <block id="aa416989385117e4941b76a0feb61454" category="list-text">9.4.0P2</block>
+  <block id="491e6ba08cfc0c639cd017d19b1b2cfe" category="list-text">9.4.0P5</block>
+  <block id="c91a20d61da13aa7b510f863170390db" category="list-text">9.5.0</block>
+  <block id="6cf77378a8f1a1b1d4d70f0ff6da155b" category="list-text">9.5.0P1</block>
+  <block id="d764be875f30dd3a950800536a9fb687" category="list-text">9.5.0P10</block>
+  <block id="acfee56a1bf506743e8b8f31f75074cb" category="list-text">9.5.0P14</block>
+  <block id="fc3b3aeb7b9a0349080eb2a8056b06be" category="list-text">9.5.0P16</block>
+  <block id="f11dceb6cacf28edc33a96aee3d17642" category="list-text">9.5.0P17</block>
+  <block id="c6650bd6c1264529980b15b6f6858c2c" category="list-text">9.5.0P18</block>
+  <block id="8c2170e555304e3e14a005d317062c38" category="list-text">9.5.0P19</block>
+  <block id="d4103820187fbaa7bf45929257204980" category="list-text">9.5.0P2</block>
+  <block id="2631c038fdca94bf11707aa8f35ed402" category="list-text">9.5.0P3</block>
+  <block id="1f8d42e0fff6d4a28bdb09d8a03ab38f" category="list-text">9.5.0P6</block>
+  <block id="19cebe5385e4ca57a6759cba667e6395" category="list-text">9.5.0P7</block>
+  <block id="498cd44375960a6969a747d2be071ecc" category="list-text">9.5.0P9</block>
+  <block id="1883e1795fd9ea9566a0feff4163cd3f" category="list-text">9.6.0</block>
+  <block id="8ad562be237927689859edb2fa26a888" category="list-text">9.6.0P11</block>
+  <block id="a7f4d2a5cc04f3bb912737e221af6ee6" category="list-text">9.6.0P18</block>
+  <block id="c728acd00d1930d7cf2a501ae9c259f8" category="list-text">9.6.0P2</block>
+  <block id="75c610f09ef777fbe13792e0e3951cda" category="list-text">9.6.0P3</block>
+  <block id="cce2950b60dc0d55bf3830c5c03d1dd7" category="list-text">9.6.0P5</block>
+  <block id="0b4047640baeed0b5ab80380007b7d16" category="list-text">9.7.0</block>
+  <block id="10e54ae9734bf80ed8df28f7fe4687b4" category="list-text">9.7.0P10</block>
+  <block id="71cd7c4ae2a4e1f9308df41eaa16f424" category="list-text">9.7.0P11</block>
+  <block id="6f29ba609fca1ca40416002aa7940f21" category="list-text">9.7.0P12</block>
+  <block id="0921f439fcbce836562783f31b9d307a" category="list-text">9.7.0P13</block>
+  <block id="73f2bc4ef2acbc80af91eccc807fba3f" category="list-text">9.7.0P14</block>
+  <block id="3ed3dedd1e826b9057a6146032547fae" category="list-text">9.7.0P15</block>
+  <block id="fbf941a8ce8565e9ee7919f045e36b5c" category="list-text">9.7.0P16</block>
+  <block id="530e000df82674e65165e93870e5e186" category="list-text">9.7.0P17</block>
+  <block id="dd4e9ea12962524ef0656adbf7332ec1" category="list-text">9.7.0P18</block>
+  <block id="37c8d112fb8f69f48ed8b73efc7d5f73" category="list-text">9.7.0P19</block>
+  <block id="a78b33080e764901e9faf784ddf9ecea" category="list-text">9.7.0P20</block>
+  <block id="bb3a6f9af518c7ef2c681739cb573ad5" category="list-text">9.7.0P21</block>
+  <block id="224d85c6ecfbc4a4211d04c14ef96048" category="list-text">9.7.0P22</block>
+  <block id="777c3659ca9e529a26a02eb0633afe51" category="list-text">9.7.0P23</block>
+  <block id="c9a121fbf6660ae310a5a8ff583c63fe" category="list-text">9.7.0P4</block>
+  <block id="0c9c93ab67a07181bd867f25b6bd7609" category="list-text">9.7.0P5</block>
+  <block id="e93d9e5e64344ee2543584ed25b6331b" category="list-text">9.7.0P6</block>
+  <block id="300af83339932c117e40a26058e99342" category="list-text">9.7.0P7</block>
+  <block id="7bf36aff015b9cae71de886282513b8d" category="list-text">9.7.0P8</block>
+  <block id="ce901682465ebe915d94307190f673c8" category="list-text">9.7.0P9</block>
+  <block id="3944340f50ba82bd002202199d7abe5e" category="list-text">9.7.0X17</block>
+  <block id="b986ed6de4db8c07091d6f0b537ea702" category="list-text">9.8.0</block>
+  <block id="da6f3108688381d819a41aa913cf1e19" category="list-text">9.8.0P1</block>
+  <block id="deb8a9119a167f8fa049b82613624fbc" category="list-text">9.8.0P10</block>
+  <block id="7ee70a01ba786af9b59d982223ac71f5" category="list-text">9.8.0P11</block>
+  <block id="85c61f496ad4ea3c959fecea506ac58e" category="list-text">9.8.0P12</block>
+  <block id="3c92472032750ed4a2c0e27d1800b25e" category="list-text">9.8.0P13</block>
+  <block id="7f9b4710e7cd1de83b1d2aacebadcc53" category="list-text">9.8.0P14</block>
+  <block id="0125e3652c60c88a180594ab60564bba" category="list-text">9.8.0P14X5</block>
+  <block id="8c5f541323d4aa6813a524fbf9dd59a8" category="list-text">9.8.0P15</block>
+  <block id="4a6dae456f8b918b4c60072a72969636" category="list-text">9.8.0P16</block>
+  <block id="8a3155dbb9a7e427a5aefa328145b791" category="list-text">9.8.0P17</block>
+  <block id="39c57774aedb11c80726096f7c63d910" category="list-text">9.8.0P18</block>
+  <block id="dd3d25b38b8b95f473e3ad04b84983b7" category="list-text">9.8.0P19</block>
+  <block id="6fbc609dbaaafb69a4fef2e8c9b82cec" category="list-text">9.8.0P2</block>
+  <block id="934ec1fd507192161f3173dd691bb427" category="list-text">9.8.0P20</block>
+  <block id="af01ee56d931e6c39a2ee294d28069a6" category="list-text">9.8.0P21</block>
+  <block id="446a21f2b6a58f60cb7a3fc624f1b3de" category="list-text">9.8.0P3</block>
+  <block id="54f39adb1d10d8b403c0e469a333821d" category="list-text">9.8.0P4</block>
+  <block id="ff49edf9eeb787300fe7512cc9d67595" category="list-text">9.8.0P6</block>
+  <block id="9f4478aaba51d401f2aa6f72291db2c4" category="list-text">9.8.0P7</block>
+  <block id="0040df68d204b4266db9420b2bd9165c" category="list-text">9.8.0P8</block>
+  <block id="5ccc1d7c927ab6348c87a26b1d4df138" category="list-text">9.8.0P9</block>
+  <block id="214f5cb6ee4c43e9856f8c8c4a4497fa" category="list-text">9.9.0</block>
+  <block id="67c6ecbcd91c613e8659b3f0c4b01510" category="list-text">9.9.1</block>
+  <block id="3a4b029b3c2e71cb6764a2c18e652488" category="list-text">9.9.1P10</block>
+  <block id="46e5a6ca96917b5474029bbaac860801" category="list-text">9.9.1P11</block>
+  <block id="203468c884044389db8d0082e97d7fdb" category="list-text">9.9.1P12</block>
+  <block id="4c8c44efdbac91b6046550f1378b35d3" category="list-text">9.9.1P13</block>
+  <block id="84bd18f4c14e86226003b0433f4bbafb" category="list-text">9.9.1P14</block>
+  <block id="90809ad2cbea0a3a241fb130454dbcb2" category="list-text">9.9.1P15</block>
+  <block id="ce9e267a734b42ebaa2ced5f747133b7" category="list-text">9.9.1P16</block>
+  <block id="21d63a7ec5919a149e0baafa3ca172dd" category="list-text">9.9.1P17</block>
+  <block id="5d1735bfc133d394b00df8f136d52077" category="list-text">9.9.1P18</block>
+  <block id="15ace809fd6618b531126bc75ff12aa8" category="list-text">9.9.1P19</block>
+  <block id="f42881361c9c6865d49fd05bf347146a" category="list-text">9.9.1P2</block>
+  <block id="d4960421bee21c61ebf8d27b38d6080a" category="list-text">9.9.1P20</block>
+  <block id="7d6a08d11ebcd453bf13060310fcfeeb" category="list-text">9.9.1P3</block>
+  <block id="f9d157259fbe48b272c368d76bb54049" category="list-text">9.9.1P5X2</block>
+  <block id="baf935f699cf2fba569f01e21467a7d7" category="list-text">9.9.1P6</block>
+  <block id="5c5ab1439f6ac62d53efee3758d3c999" category="list-text">9.9.1P7</block>
+  <block id="f6d334c5abfc986211c0472ba79714a7" category="list-text">9.9.1P9</block>
+  <block id="265835728543cddb55a9e9c7cc79f48b" category="cell">ASA-A1K ASA-A20 ASA-A90</block>
+  <block id="b186a55ab6e895af5dbbc598dba3d2c9" category="cell">A150 A220 A250 A300 A400 A70 AFF A700 AFF A700 s A800 AFF A90 AFF A900 AFF C190 AFF C250 AFF C400 ， 800 ASA A250 AFF A400 ， A400 ASA FAS2720 FAS2750 FAS2820 FAS8200 FAS8300 FAS8700 FAS9000 FAS9500 ， A800 ASA ASA ， A800 AFF ， C250 ASA ， C800 AFF ， AFF ， AFF AFF ， AFF AFF ， 200</block>
+  <block id="4c0a8dc21a8419b47120aceea8e1125d" category="list-text">NetappRelease 9.14.1P10 ： 11 月 28 日星期四 12 ： 32 ： 16 UTC 2024</block>
+  <block id="bd8781e094b04996c9da26acdb31835b" category="list-text">NetappRelease 9.14.1P11 ：週三 1 月 22 日 11 ： 55 ： 28 UTC 2025</block>
+  <block id="9681072c1ea9c013348ab66f6e07671c" category="list-text">NetappRelease 9.14.1P1 ： 2 月 15 日週四 00 ： 45 ： 21 UTC 2024</block>
+  <block id="bf8eab24cb02461594da1045e213930e" category="list-text">NetappRelease 9.14.1P4 ： 4 月 18 日星期四 15 ： 59 ： 10 UTC 2024</block>
+  <block id="eb0703ee609d4fa35d49740db94c46ff" category="list-text">NetappRelease 9.14.1P5 ：星期六 5 月 18 日 19 ： 42 ： 16 UTC 2024</block>
+  <block id="675a5dc32854b0e9a37ab836ff3d2ff5" category="list-text">NetappRelease 9.14.1P6 ：星期二 6 月 18 日 16 ： 11 ： 44 UTC 2024</block>
+  <block id="1edaa5e1ef58d0b172ae73aed3f0ce7d" category="list-text">NetappRelease 9.14.1P7 ： Thu Aug01 03 ： 07 ： 44 UTC 2024</block>
+  <block id="7dd8a7b0082420d42d35a2ef42b26403" category="list-text">NetappRelease 9.14.1P8 ：週五 9 月 13 日 07 ： 12 ： 27 UTC 2024</block>
+  <block id="50170e8f644d8478279324b20d68697b" category="list-text">NetappRelease 9.14.1P9 ：週一 10 月 21 日 18 ： 04 ： 05 UTC 2024</block>
+  <block id="08925be9345315a2b43d75f76557ffc3" category="list-text">NetappRelease 9.15.1 ： 4 月 4 日星期四 12 ： 21 ： 07 UTC 2024</block>
+  <block id="1b03996435ea4659e34dbc3be7e4faf5" category="list-text">NetappRelease 9.15.1P1 ：星期二 7 月 30 日 05 ： 15 ： 49 UTC 2024</block>
+  <block id="1b45216cf6f4f6afea44d1e8e3050ec2" category="list-text">NetappRelease 9.15.1P2 ：星期二 8 月 27 日 16 ： 35 ： 16 UTC 2024</block>
+  <block id="6d7a324e9dd2dee885a0fe392e254a93" category="list-text">NetappRelease 9.15.1P3 ：週三 9 月 25 日 22 ： 33 ： 44 UTC 2024</block>
+  <block id="eba11b6b68d1d4168edfb3c7cfe6d025" category="list-text">NetappRelease 9.15.1P4 ： Sun 10 月 27 日 20 ： 15 ： 53 UTC 2024</block>
+  <block id="40957df94a29d3dc26d13e7fd2ea5600" category="list-text">NetappRelease 9.15.1P5 ： Sun 11 月 24 日 16 ： 31 ： 37 UTC 2024</block>
+  <block id="bfdf678e3fa003fe7446d7e1eaedd107" category="list-text">NetappRelease 9.15.1P6 ：週三 12 月 04 日 01 ： 42 ： 39 UTC 2024</block>
+  <block id="5a091f5e936dc49d848c9c443a8c6ac2" category="list-text">NetappRelease 9.15.1P7 ：週六 1 月 18 日 21 ： 34 ： 02 UTC 2025</block>
+  <block id="f4a2db329e641047bab00d72f457a0f3" category="list-text">NetappRelease 9.15.1RC2 ：週一 6 月 24 日 04 ： 49 ： 55 UTC 2024</block>
+  <block id="5fe3118f15f475a13fd3a59f91a58a73" category="list-text">NetappRelease 9.16.1 ：週六 1 月 18 日 19 ： 31 ： 15 UTC 2025</block>
+  <block id="4563b8f0209cbd3757ef3f8f3d6c367f" category="list-text">NetappRelease 9.16.1P1 ：週五 2 月 14 日 03 ： 53 ： 50 UTC 2025</block>
+  <block id="13c188199456123504d0930e6edccf66" category="list-text">NetappRelease 9.16.1RC1 ： 11 月 1 日 04 年 10 月 39 ： 46 UTC 2024</block>
+  <block id="927116b17b6232240f2cc99957abd403" category="list-text">NetappRelease 9.16.1X26 ：星期一， 09 年 12 月 10 ： 27 ： 42 UTC 2024</block>
+  <block id="8cb7f86014f2d6bda751cf0e082275c4" category="list-text">NetappRelease 9.16.1X29 ： Sun Jan 12 11 ： 18 ： 25 UTC 2025</block>
+  <block id="5eec4f4fc503f273dc57f81c785f16c3" category="list-text">NetappRelease 9.17.1X7 ：週五 2 月 14 日 11 ： 21 ： 52 UTC 2025</block>
+  <block id="a0bc92ae017a4e0e0a13659b431fc42d" category="list-text">NetappRelease Clawhammer__9.14.1 ：週六 5 月 18 日 09:23:49 UTC 2024</block>
+  <block id="fa6d9e41cb8e0bd2024eb96981de90c9" category="list-text">NetappRelease Cloudstream _9.16.1 ：週一 11 月 04 日 05 ： 51 ： 46 UTC 2024</block>
+  <block id="2b502da97c49bc44393f3b7c7aafca3e" category="list-text">NetappRelease Cloudstream _9.16.1 ： Thu Mar 13 20 ： 55 ： 54 UTC 2025</block>
+  <block id="a8b5083dc41617e1bacd6620dc927aa0" category="list-text">NetappRelease Electricjellyfish _ 9.17.1 ：週一 3 月 03 日 05 ： 57 ： 49 UTC 2025</block>
+  <block id="92c42ca1290614a185bb02c4f23335c8" category="list-text">NetappRelease Electricjellyfish _ 9.17.1 ： Sun Mar 09 05 ： 56 ： 14 UTC 2025</block>
+  <block id="99029aed0cba02f0824cac1d518ac99f" category="list-text">NetappRelease Electricjellyfish _ 9.17.1 ： Sun Mar 16 04 ： 54 ： 53 UTC 2025</block>
+  <block id="a32af6f189d23263de1a0cfec5082285" category="list-text">NetappRelease Electricjellyfish _ 9.17.1 ：星期二 1 月 28 日 11 ： 48 ： 14 UTC 2025</block>
+  <block id="62e0b141f79e75f42ea91d2ddccb00f2" category="list-text">NetappRelease Electricjellyfish _ 9.17.1 ：星期二 3 月 18 日 04 ： 59 ： 54 UTC 2025</block>
+  <block id="103ad6f426f1d9f3c02da81162ac306f" category="list-text">NetappRelease Electricjellyfish _ 9.17.1 ：週三 3 月 12 日 04 ： 42 ： 03 UTC 2025</block>
+  <block id="8d214b10b4e20c8dad6b99000f400107" category="list-text">NetappRelease Mightysquirr0__9.15.1 ： 5 月 24 日星期五 05 ： 03 ： 10 UTC 2024</block>
+  <block id="dbfa8b38c97072999ba8dd2a8d949e07" category="list-text">NetappRelease Mightysquirr0__9.15.1 ：週六 1 月 18 日 11:39:42 UTC 2025</block>
+  <block id="929f9fa6cd0ae41268bbd0b894f135ec" category="list-text">NetappRelease Tropicallightning _9.18.0 ： 2 月 21 日星期五下午 2 點 02 分 58 UTC 2025</block>
+  <block id="ac078df1e94c19c055159c17167ec9ab" category="list-text">NetappRelease Tropicallightning _9.18.0 ： 2 月 17 日星期一上午 8 ： 18 ： 14 UTC 2025</block>
+  <block id="c6b8b835cb977e6f8d89f3990b1a487f" category="list-text">NetappRelease Tropicallightning _9.18.0 ： Thu 2 月 20 日上午 8 ： 11 ： 55 UTC 2025</block>
+  <block id="c27a7fb3263ce1ab5d41e70d47792d8e" category="list-text">NetappRelease Tropicallightning _9.18.0 ： Thu 2 月 27 日下午 4 ： 15 ： 40 UTC 2025</block>
+  <block id="3445568e749f9040a732e4bc50c56b7d" category="list-text">NetappRelease Tropicallightning__9.18.0 ：星期二， 1814 ： 00 ： 54 UTC 2025</block>
+  <block id="3c2856eb22a7e7c8fd4ed89747776984" category="list-text">NetappRelease Tropicallightning _9.18.0 ： 2 月 26 日星期三上午 8 ： 19 ： 21 UTC 2025</block>
+  <block id="e03be4af19268d6e10fe7d727e849386" category="list-text">NetappRelease Tropicallightning _9.18.0 ：週三 1 月 29 日上午 8 ： 34 ： 06 UTC 2025</block>
+  <block id="12017dd49435719b25983ccf8856826d" category="cell">H410S-2 H610S-2 H610S-4 SF19210 SF2405 SF4805 SF9605 SF9608 H410S-0 H410S-1 H410S-2 H500S H610S-1 H610S-2 H610S-4 SF19210 SF38410 SF4805 SF9605 SF9608</block>
+  <block id="b8fe9bf283a2aa8fb31a26d93fefe962" category="cell">11.1.0.72 11.7.0.76 12.0.333 12.2.0.777 12.3.0.958 12.3.1.103 12.3.1.165 12.3.2.3 12.5.0.897 12.7.0.380</block>
+  <block id="fc8e016a41c4109eeb75bb9795abff5c" category="cell">11.4.0 11.5.0.11 11.5.0.611.5.0.711.5.0.911.6.0.11.6.0.11.6.0.11.6.0.11.6.0.11.6.0.1111.6.0.11.6.0.1411.6.0.1511.6.0.1611.6.0.11.6.0.11.6.0.11.6.0.711.</block>
+  <block id="cac44aec078c05aec937bc2feff6642c" category="cell">NX-3170-G7 NX-8155-G7 HPE DX380 12LFF G11 HPE DX380-24 G10 HPE DX385-12 Gen10 Plus NX-3060-G6 NX-3060-G7 NX-3060-G8 NX-3155-G8 NX-3155G - G7 NX-3155G - G8 NX-3170-G6X-8035-G8-G8-G8 X150 G8-X308-G8-X150</block>
+  <block id="3c9c0c0c3366e317d29608c6dfb05799" category="cell">5.20.1.1 6.10 6.10.1 6.5.3.7 6.5.5.5.5.5.7.5.7.5.6.5.6.5.6.5.6.5.6.6.6.6.6.5.6.6.6.6.6.6.7.6.7.1.67.0</block>
+  <block id="d56a859f3f85129a821911cfe0f89751" category="cell">Sun ZFS Storage 7120 Sun ZFS Storage 7320 Sun ZFS Storage 7330 Sun ZFS Storage 7335 Sun ZFS Storage 73350 Sun ZFS Storage 7370 Sun ZFS Storage 7390 Sun ZFS Storage 7420</block>
+  <block id="545835744cbde5a39d1d8b85f8938af6" category="cell">1-1.1 1-1.2 1-1.3 1-1.34 1-1.4 2013.06.05.6.12 2013.06.05.6.15 2013.06.05.7.21 2013.06.05.7.24 2013.06.05.7.25 2013.06.05.7.26</block>
+  <block id="26afa4c35d66d6b9853371100d3a6cb3" category="cell">5.3.145.3.206.1.10.6.1.146.1.186.1.196.1.216.1.226.1.236.2.106.3.106.3.106.3.136.3.136.3.146.3.15.6.3.166.3.176.3.186.3.3.3.3.6.3.6.3.6.3.6.3.6.3.6.3.6.3.6.3.6.3.6.3.6.3.6.3.6.</block>
+  <block id="5d05535e5a364899dddfdcefa556fdd4" category="paragraph">此資料收集器支援的機型和版本：韌體版本：</block>
+  <block id="d39eaf41437009557ed20fdf496e7d94" category="list-text">9.1.3-P8-28434</block>
+  <block id="6b35dfb88a4fbe8e92a78e511002a6fa" category="list-text">9.2.3-P1-29368</block>
+  <block id="657feca11e888929a5245cae146cf690" category="cell">組建版本：版本：版本： 5.0.0-sp24-1389206 組建版本：版本 -5.0.0-sp24-1389206 組建版本：版本 -5.0.0-sp70-1532643 組建版本：版本 -5.1.0-sp50-1578267 組建版本：版本 -5.1.0-sp51-hf3-1643358 組建版本：版本：版本</block>
+  <block id="fa760a55f41142c139a5b0a9192bc062" category="list-text">VMware ESXi 6.0.0 內部版本 -10474991</block>
+  <block id="0315ac1f4b06c1ff2432bc3d2885e3b1" category="list-text">VMware ESXi 6.0.0 內部版本 -10719132.</block>
+  <block id="c81e4813a52bdd03d257237fd3bc3526" category="list-text">VMware ESXi 6.0.0 組建 - 13635687</block>
+  <block id="d23fb69188207411f5fe50faf9e3b701" category="list-text">VMware ESXi 6.0.0 組建 - 3620759</block>
+  <block id="e74d562e1bba9b2c20d60259aa12a807" category="list-text">VMware ESXi 6.0.0 組建 - 5050593</block>
+  <block id="c5a167572cb7847ab9ac451442dcc8a9" category="list-text">VMware ESXi 6.0.0 組建 - 5224934</block>
+  <block id="484d66a24501ea1ad4d2d34d4d64c2b3" category="list-text">VMware ESXi 6.0.0 組建編號 9239799</block>
+  <block id="3d9254358b13bcf7d44afcf258f73fd7" category="list-text">VMware ESXi 6.5.0 組建 - 5310538</block>
+  <block id="f1bbfc67a175810e7ac8c661d6b4a2cc" category="list-text">VMware ESXi 8.0.1 組建 - 21495797</block>
+  <block id="06450b55dd990fe8530bcc47f2e2c522" category="list-text">VMware vCenter Server 8.0.0 內部版本 -21457384</block>
+  <block id="97603db27713a81e2c84405a5352db03" category="cell">啟用「拒絕存取」功能時，資料收集器會顯示錯誤訊息：「 Connector 處於錯誤狀態。服務名稱：稽核。失敗原因：無法在 SVM test_SVM 上設定 fpolicy 。原因：使用者未經授權。 "</block>
+  <block id="56cad8f9ba4de10172f57856721882b0" category="cell">使用者可能遺失「拒絕存取」功能所需的 REST 權限。請依照上的指示<block ref="acf32226210d6c3eeee22de70798517f" category="inline-link-macro-rx"></block>來設定權限。一旦設定權限，請重新啟動收集器。</block>
 </blocks>
