@@ -10982,28 +10982,21 @@
   <block id="9308a4a251c0b6f099fc32506e41c24d" category="inline-image-macro">工作負載安全性收集器錯誤更多詳細資料連結</block>
   <block id="6a6fcf99d83d56b2429dfa3ef83b50a0" category="paragraph"><block ref="6a6fcf99d83d56b2429dfa3ef83b50a0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d7a4e713cb63e4db8a2b51e171793fb0" category="cell">資料收集器會執行一段時間、並在隨機時間後停止、失敗時顯示：「錯誤訊息：連接器處於錯誤狀態。服務名稱：稽核。故障原因：外部fpolicy伺服器過載。"</block>
-  <block id="6b6d7f0bb3be3abde199877bf4398807" category="cell">來自於此的事件率ONTAP 遠高於值機員方塊所能處理的事件率。因此連線終止。當中斷連線時、請檢查CloudSecure中的尖峰流量。您可以從* CloudSecure &gt;活動鑑識&gt; All Activ練習*頁面查看。如果尖峰彙總流量高於值機員方塊所能處理的流量、請參閱「事件率檢查器」頁面、瞭解如何在值機員方塊中調整收集器部署的規模。如果代理程式安裝於2021年3月4日之前的Agent方塊中、請在Agent方塊中執行下列命令：回應「net.core。rmem_max = 8388608」&gt;&gt;/etc/syscl.conf回應「net.ipve.tcp_rmem = 40962097152 8388608'&gt;&gt;/etc/syscntl.conf syscl.conf syscp from the collector重新啟動後、重新啟動。</block>
   <block id="7dc1f3b50a6e66da2ae31d89467342c4" category="cell">Collector會報告錯誤訊息：「在連接器上找不到可連線至SVM資料介面的本機IP位址」。</block>
   <block id="dfb48a2f78b82c90165015b0e73f7e58" category="inline-link-macro">NetApp支援</block>
   <block id="17f836aa8a8fb1af2d3360f0ff3cda15" category="cell">訊息：「無法判斷ONTAP [hostname:&lt;IP Address&gt;的資訊類型。原因：連線錯誤至儲存系統&lt;IP位址&gt;：主機無法連線（主機無法連線）"</block>
-  <block id="e5f53b94e30dcc1b62ef059336b700c9" category="cell">1.確認已提供正確的 SVM IP 管理位址或叢集管理 IP 。2.SSH 連接至 SVM 或您要連線的叢集。連線後、請確認SVM或叢集名稱正確無誤。</block>
   <block id="17a99211f689747ad8a030b9a5329d3f" category="cell">錯誤訊息：「連接器處於錯誤狀態。service.name：稽核。故障原因：外部fpolicy伺服器已終止。"</block>
   <block id="92803a6fb12b06142e6654f883c9c782" category="inline-link-macro">檢查防火牆命令</block>
-  <block id="94748ec62c100ce45c97bda6d69f9969" category="cell">1.防火牆很可能會封鎖代理機器中的必要連接埠。確認已開啟連接埠範圍35000-55000/TCP、讓代理機器從SVM連線。此外、請確保ONTAP 沒有啟用任何防火牆、從「邊」封鎖與代理機器的通訊。2.在 Agent （代理）框中鍵入以下命令，確保端口範圍已打開。_Sudo iptarts-SAVE | Grep 3500*範例輸出應如下所示：_A in_public_allow -p tcp -m tcp -dport 35000 -m conntrack -ctst態new -j Accept_3。登入SVM、輸入下列命令、並檢查是否未設定任何防火牆來封鎖與ONTAP 之通訊。_ 系統服務防火牆顯示 _ _ 系統服務防火牆原則顯示 _ <block ref="c2f863dc8aacfc5c321b626bd2f4e2b3" category="inline-link-macro-rx"></block> 在 ONTAP 端。4.SSH 至您要監控的 SVM/ 叢集。從SVM資料LIF Ping Agent Box（支援CIFS、NFS傳輸協定）、並確保ping正常運作： _network ping -vserver &lt;vserver name&gt;-destination &lt;Agent ip&gt;-lIF &lt;LIF Name&gt;-show-detect_如果無法ping通、請確定ONTAP 支援更新的網路設定正確、以便代理機器能夠ping通。如果透過2個資料收集器將單一SVM新增兩次至租戶、則會顯示此錯誤。透過UI刪除其中一個資料收集器。然後透過UI重新啟動其他資料收集器。然後資料收集器會顯示「執行中」狀態、並開始接收來自SVM的事件。基本上、在租戶中、只能透過1個資料收集器新增1個SVM。1 SVM不應透過2個資料收集器新增兩次。6.如果在兩個不同的工作負載安全環境（租戶）中新增相同的 SVM ，最後一個將永遠成功。第二個收集器會使用自己的IP位址來設定fpolicy、然後啟動第一個。因此第一個收集器將停止接收事件、其「稽核」服務將進入錯誤狀態。若要避免這種情況發生、請在單一環境中設定每個SVM。7.如果服務原則設定不正確，也可能發生此錯誤。使用支援支援支援功能的支援功能9.8或更新版本時、若要連線至資料來源收集器、則需要資料服務資料服務、例如NFS和/或資料- CIFS、以提供資料- fpolice-Client服務ONTAP 。此外、資料fpolice-Client服務必須與受監控SVM的資料LIF相關聯。</block>
   <block id="3ff8715e3293a7f6a746ae2f5903e6fc" category="cell">活動頁面未顯示任何事件。</block>
-  <block id="57cb6cf5756643ef9f1a5fc9914bed03" category="cell">1.檢查 ONTAP 收集器是否處於「執行中」狀態。如果是、請開啟部分檔案、確保CIFS用戶端VM上產生部分CIFS事件。2.如果看不到任何活動，請登入 SVM 並輸入下列命令。_&lt;SVM&gt;EVENT log show -SOURSfpolicy_Please ensure that are no errors related to fpolicy（事件日誌顯示-SOURSfpolicy_請 確保沒有與fpolicy相關的錯誤）。3.如果看不到任何活動，請登入 SVM 。輸入下列命令：_&lt;SVM&gt;fpolicy show_檢查是否已設定名為「clouded_」的fpolicy原則、且狀態為「on」。如果未設定、則代理程式很可能無法在SVM中執行命令。請確認已遵循頁面開頭所述的所有先決條件。</block>
   <block id="bf7317c42b788373d4a9473aa1cc851b" category="cell">SVM Data Collector處於錯誤狀態、錯誤訊息為「代理程式無法連線至收集器」</block>
-  <block id="1522f1e2edee0ebe89de50e47b32f4a7" category="cell">1.代理程式很可能超載，無法連線至資料來源收集器。2.檢查有多少資料來源收集器連線至 Agent 。3.同時在 UI 的「 All Activity) 」頁面中檢查資料流率。4.如果每秒的活動數量相當高，請安裝另一個 Agent ，並將部分資料來源收集器移至新的 Agent 。</block>
   <block id="3650ca0390cbe1b7b56c0868bc3472e8" category="cell">SVM Data Collector會顯示錯誤訊息「fpolicy.server.connectError: Node失敗、無法與FPolicy伺服器建立連線：12.195.15.146」（原因：「Select Timed Out」（選擇逾時））</block>
   <block id="19fbc1da6cc1d96ccb997d120b2a91eb" category="cell">在SVM/叢集中啟用防火牆。因此fpolicy引擎無法連線至fpolicy伺服器。可用於取得更多資訊的CLI包括：事件記錄檔show -SOUR叢fpolicy、其中顯示錯誤事件記錄檔show -source fpolicy -功能 變數事件、行動、說明、其中顯示更多詳細資料。ONTAP<block ref="c2f863dc8aacfc5c321b626bd2f4e2b3" category="inline-link-macro-rx"></block>在 ONTAP 側。</block>
   <block id="9075128206bc41797fb7dcbcce601bd5" category="cell">錯誤訊息：「Connector處於錯誤狀態。服務名稱：稽核。故障原因：SVM上找不到有效的資料介面（角色：資料、資料傳輸協定：NFS或CIFS或兩者、狀態：UP）。」</block>
   <block id="5e50a9740093f324176ef9cdd483d732" category="cell">確保有作業介面（做為CIFS/NFS的資料和資料傳輸協定角色）。</block>
   <block id="42c19ac69d2315e69adceb5440ce4cbe" category="cell">資料收集器會進入「錯誤」狀態、然後在一段時間後進入「執行中」狀態、然後再次返回「錯誤」。此週期會重複。</block>
-  <block id="9c1397faec00b5e5c1414c787d14358e" category="cell">這通常發生在下列案例中：1.新增多個資料收集器。2.顯示這類行為的資料收集器將會在這些資料收集器中新增 1 個 SVM 。表示2個以上的資料收集器連接至1個SVM。3.確保只有 1 個資料收集器連線至 1 個 SVM 。4.刪除連接至同一個 SVM 的其他資料收集器。</block>
   <block id="2d964cb606454cdebb2ea12ed310dbab" category="cell">連接器處於錯誤狀態。服務名稱：稽核。失敗原因：無法設定（SVM svmname上的原則。原因：在'fpolicy.policy.scoe-modify:"felf"中為「res-to -include'元素指定的值無效</block>
   <block id="82e15291d012761eb5c9c9dc7f78a45f" category="cell">共用名稱必須在沒有任何報價的情況下提供。編輯ONTAP 「SVM DSC」組態以修正共用名稱。_包括和排除共享_不適用於長清單的共享區名稱。如果您要納入或排除大量共用、請改用依磁碟區篩選。</block>
   <block id="195474d2c18505993c684349168eca84" category="cell">叢集中有未使用的現有fPolicies。在安裝工作負載安全性之前、應該如何處理這些問題？</block>
-  <block id="a991a3dd31c71b0054aa7140c8d25b9a" category="cell">建議刪除所有現有未使用的fpolicy設定、即使它們處於中斷連線狀態。「工作負載安全性」會以「cloudseced_」開頭的字元建立fpolicy。可以刪除所有其他未使用的fpolicy組態。用於顯示fpolicy清單的CLI命令：_fpolicy show_刪除fpolicy組態的步驟：_fpolicy disable-vserver &lt;svmname&gt;-police-name &lt;policy_name&gt;_fpolicy刪除-vserver &lt;svmname&gt;-policy_name&gt;-policy_name &lt;policy_name_vpolicy &lt;vmname -policy -vms_delete policy -policy &lt;vpolicy -name_external policy -name&gt;</block>
   <block id="63deecc7a53992db1697a520a67af0bd" category="cell">啟用工作負載安全功能後ONTAP 、效能表現會受到影響：延遲偶爾會變得很高、IOP偶爾會變得很低。</block>
   <block id="25de52ee95bc069e80aae94425213b53" category="inline-link-macro">1372994</block>
   <block id="a23b44fdff4bcafe023f18c4c11815e0" category="inline-link">1415152</block>
@@ -11014,7 +11007,6 @@
   <block id="723f73d5b4ee441851ae64cbfe823522" category="cell">資料收集器發生錯誤、顯示此錯誤訊息。「錯誤：連接器處於錯誤狀態。服務名稱：稽核。失敗原因：無法在SVM SVM_TEST上設定原則。原因：缺少ZAPI欄位值：事件。「</block>
   <block id="0631a8aa5414db88c4ba11ffa8ff89e8" category="cell">從只設定NFS服務的新SVM開始著手。在ONTAP 工作負載安全性中新增一個功能不全的SVM資料收集器。CIFS被設定為SVM允許的傳輸協定、同時在ONTAP 工作負載安全性中加入SVM Data Collector。等到工作負載安全性中的資料收集器顯示錯誤。由於未在SVM上設定CIFS伺服器、因此工作負載安全性會顯示左圖所示的錯誤。編輯ONTAP 《SVM資料收集器》、並視允許的傳輸協定取消CIFS檢查。儲存資料收集器。它會在僅啟用NFS傳輸協定的情況下開始執行。</block>
   <block id="1b852bd0522bb1e9abdc5b85f45b2eff" category="cell">資料收集器會顯示錯誤訊息：「錯誤：無法在2次重試中判斷收集器的健全狀況、請再次嘗試重新啟動收集器（錯誤代碼：AGENT008）」。</block>
-  <block id="c54f0cb7ebe859ae013e2a39e57b38c0" category="cell">1.在「資料收集器」頁面上、捲動至資料收集器右側、顯示錯誤訊息、然後按一下「3點」功能表。選取_編輯_。再次輸入資料收集器的密碼。按下「_Sav__」按鈕以儲存資料收集器。資料收集器會重新啟動、錯誤應該會解決。2.Agent 機器可能沒有足夠的 CPU 或 RAM 保留空間，這就是 DSC 故障的原因。請檢查新增至機器代理程式的資料收集器數量。如果超過20個、請增加代理機器的CPU和RAM容量。CPU和RAM增加之後、DSC就會進入初始化、然後自動進入執行狀態。請參閱上的尺寸調整指南<block ref="830ad31fe88c5bf31dcfcc5f15ccdf0e" category="inline-link-macro-rx"></block>。</block>
   <block id="f4635255d83c947a8f5c0873878fce73" category="cell">選取 SVM 模式時， Data Collector 會發生錯誤。</block>
   <block id="e01a5196bbb9ef19ecab5eb2b9c9a7a8" category="cell">以 SVM 模式連線時，如果使用叢集管理 IP 來連線，而非 SVM 管理 IP ，則連線將會錯誤。請確定使用正確的 SVM IP 。</block>
   <block id="489efd89349dbbe0899a6a7b922044da" category="paragraph">如果您仍遇到問題、請聯絡*「說明」&gt;「支援*」頁面中提及的支援連結。</block>
@@ -11592,7 +11584,6 @@
   <block id="0860569a69c3584507ee09f4be585418" category="cell">insecureK8sSkipVerify</block>
   <block id="3008cd3125cccc003fa13335717e556e" category="cell">如果由於缺少 IP SAN 而導致 Telegraf 無法驗證憑證，請嘗試啟用驗證跳過</block>
   <block id="9e43104f0687bd3a308759c5411641d7" category="paragraph"><block ref="9e43104f0687bd3a308759c5411641d7" category="inline-link-macro-rx"></block></block>
-  <block id="348fd8f652c33b1be14b9b2f000cff0d" category="cell">這很可能是ONTAP 因為位在邊上的網路問題。請遵循下列步驟：1.請確定SVM資料LIF或管理LIF上沒有防火牆、無法與SVM連線。2.透過叢集管理 IP 新增 SVM 時，請確保 SVM 的資料 LIF 和管理 LIF 可從 Agent VM 中進行 Ping 。發生問題時、請檢查閘道、網路遮罩和路由以取得LIF。您也可以嘗試使用叢集管理IP透過ssh登入叢集、然後ping代理IP。請確定代理程式IP可調校：_network ping -vserver &lt;vserver name&gt;-destination &lt;Agent IP&gt;-lIF &lt;LIF Name&gt;-show-detail _如果無法調校、請確定ONTAP 位於的網路設定正確無誤、以便代理程式機器可調校。3.如果您嘗試透過叢集 IP 連線，但無法正常運作，請嘗試直接透過 SVM IP 連線。請參閱上述步驟、瞭解透過SVM IP進行連線的步驟。4.透過 SVM IP 和 vsadmin 認證新增收集器時，請檢查 SVM Lif 是否已啟用 Data plus Mgmt 角色。在這種情況下、ping SVM LIF會正常運作、但SSH到SVM LIF則無法運作。如果是、請建立僅限SVM管理LIF、並嘗試透過此SVM管理僅LIF進行連線。5.如果仍無法運作，請建立新的 SVM Lif ，並嘗試透過該 Lif 進行連線。確定子網路遮罩設定正確。6.進階偵錯： A ）在 ONTAP 中啟動封包追蹤。 B ）嘗試從 CloudSecure UI 將資料收集器連線至 SVM 。 C ）等待錯誤出現。在 ONTAP 中停止封包追蹤。 d ）從 ONTAP 開啟封包追蹤。此網站位於以下位置： __https ： //spi/spi/etc/log/packet_stalles/_e ），請確定 ONTAP 到值機員方塊有一個 SYN.F ）如果 ONTAP ONTAP 沒有 SYN, 則 &lt;clustername&gt; ONTAP 中的防火牆會發生問題。 g ）在 ONTAP 中開啟防火牆，讓 &lt;cluster_mgmt_ip&gt; 能夠連線到值機員方塊。7.如果仍無法運作，請諮詢網路團隊，確定沒有外部防火牆封鎖從 ONTAP 到值機員信箱的連線。9.如果上述任何一項都無法解決問題，請開啟案例<block ref="d0162286c59c67bf86d01f060ee7cd04" category="inline-link-macro-rx"></block>以取得進一步協助。</block>
   <block id="2b8272217b69f1c5b5ad5968f0bc0945" category="list-text">註冊免費試用 Data Infrastructure Insights ，探索可用的功能。若要註冊免費試用：</block>
   <block id="6d2404e5699069be70636f65562fe693" category="list-text">前往<block ref="66922be03d9fc23a3ec9641b7884c8f2" category="inline-link-rx"></block></block>
   <block id="e78fd759357c2a61f07ddc6a902f9270" category="list-text">在頁面頂端選取 * 如何購買 * 。</block>
@@ -12265,28 +12256,6 @@
   <block id="f4a2db329e641047bab00d72f457a0f3" category="list-text">NetappRelease 9.15.1RC2 ：週一 6 月 24 日 04 ： 49 ： 55 UTC 2024</block>
   <block id="5fe3118f15f475a13fd3a59f91a58a73" category="list-text">NetappRelease 9.16.1 ：週六 1 月 18 日 19 ： 31 ： 15 UTC 2025</block>
   <block id="4563b8f0209cbd3757ef3f8f3d6c367f" category="list-text">NetappRelease 9.16.1P1 ：週五 2 月 14 日 03 ： 53 ： 50 UTC 2025</block>
-  <block id="13c188199456123504d0930e6edccf66" category="list-text">NetappRelease 9.16.1RC1 ： 11 月 1 日 04 年 10 月 39 ： 46 UTC 2024</block>
-  <block id="927116b17b6232240f2cc99957abd403" category="list-text">NetappRelease 9.16.1X26 ：星期一， 09 年 12 月 10 ： 27 ： 42 UTC 2024</block>
-  <block id="8cb7f86014f2d6bda751cf0e082275c4" category="list-text">NetappRelease 9.16.1X29 ： Sun Jan 12 11 ： 18 ： 25 UTC 2025</block>
-  <block id="5eec4f4fc503f273dc57f81c785f16c3" category="list-text">NetappRelease 9.17.1X7 ：週五 2 月 14 日 11 ： 21 ： 52 UTC 2025</block>
-  <block id="a0bc92ae017a4e0e0a13659b431fc42d" category="list-text">NetappRelease Clawhammer__9.14.1 ：週六 5 月 18 日 09:23:49 UTC 2024</block>
-  <block id="fa6d9e41cb8e0bd2024eb96981de90c9" category="list-text">NetappRelease Cloudstream _9.16.1 ：週一 11 月 04 日 05 ： 51 ： 46 UTC 2024</block>
-  <block id="2b502da97c49bc44393f3b7c7aafca3e" category="list-text">NetappRelease Cloudstream _9.16.1 ： Thu Mar 13 20 ： 55 ： 54 UTC 2025</block>
-  <block id="a8b5083dc41617e1bacd6620dc927aa0" category="list-text">NetappRelease Electricjellyfish _ 9.17.1 ：週一 3 月 03 日 05 ： 57 ： 49 UTC 2025</block>
-  <block id="92c42ca1290614a185bb02c4f23335c8" category="list-text">NetappRelease Electricjellyfish _ 9.17.1 ： Sun Mar 09 05 ： 56 ： 14 UTC 2025</block>
-  <block id="99029aed0cba02f0824cac1d518ac99f" category="list-text">NetappRelease Electricjellyfish _ 9.17.1 ： Sun Mar 16 04 ： 54 ： 53 UTC 2025</block>
-  <block id="a32af6f189d23263de1a0cfec5082285" category="list-text">NetappRelease Electricjellyfish _ 9.17.1 ：星期二 1 月 28 日 11 ： 48 ： 14 UTC 2025</block>
-  <block id="62e0b141f79e75f42ea91d2ddccb00f2" category="list-text">NetappRelease Electricjellyfish _ 9.17.1 ：星期二 3 月 18 日 04 ： 59 ： 54 UTC 2025</block>
-  <block id="103ad6f426f1d9f3c02da81162ac306f" category="list-text">NetappRelease Electricjellyfish _ 9.17.1 ：週三 3 月 12 日 04 ： 42 ： 03 UTC 2025</block>
-  <block id="8d214b10b4e20c8dad6b99000f400107" category="list-text">NetappRelease Mightysquirr0__9.15.1 ： 5 月 24 日星期五 05 ： 03 ： 10 UTC 2024</block>
-  <block id="dbfa8b38c97072999ba8dd2a8d949e07" category="list-text">NetappRelease Mightysquirr0__9.15.1 ：週六 1 月 18 日 11:39:42 UTC 2025</block>
-  <block id="929f9fa6cd0ae41268bbd0b894f135ec" category="list-text">NetappRelease Tropicallightning _9.18.0 ： 2 月 21 日星期五下午 2 點 02 分 58 UTC 2025</block>
-  <block id="ac078df1e94c19c055159c17167ec9ab" category="list-text">NetappRelease Tropicallightning _9.18.0 ： 2 月 17 日星期一上午 8 ： 18 ： 14 UTC 2025</block>
-  <block id="c6b8b835cb977e6f8d89f3990b1a487f" category="list-text">NetappRelease Tropicallightning _9.18.0 ： Thu 2 月 20 日上午 8 ： 11 ： 55 UTC 2025</block>
-  <block id="c27a7fb3263ce1ab5d41e70d47792d8e" category="list-text">NetappRelease Tropicallightning _9.18.0 ： Thu 2 月 27 日下午 4 ： 15 ： 40 UTC 2025</block>
-  <block id="3445568e749f9040a732e4bc50c56b7d" category="list-text">NetappRelease Tropicallightning__9.18.0 ：星期二， 1814 ： 00 ： 54 UTC 2025</block>
-  <block id="3c2856eb22a7e7c8fd4ed89747776984" category="list-text">NetappRelease Tropicallightning _9.18.0 ： 2 月 26 日星期三上午 8 ： 19 ： 21 UTC 2025</block>
-  <block id="e03be4af19268d6e10fe7d727e849386" category="list-text">NetappRelease Tropicallightning _9.18.0 ：週三 1 月 29 日上午 8 ： 34 ： 06 UTC 2025</block>
   <block id="12017dd49435719b25983ccf8856826d" category="cell">H410S-2 H610S-2 H610S-4 SF19210 SF2405 SF4805 SF9605 SF9608 H410S-0 H410S-1 H410S-2 H500S H610S-1 H610S-2 H610S-4 SF19210 SF38410 SF4805 SF9605 SF9608</block>
   <block id="b8fe9bf283a2aa8fb31a26d93fefe962" category="cell">11.1.0.72 11.7.0.76 12.0.333 12.2.0.777 12.3.0.958 12.3.1.103 12.3.1.165 12.3.2.3 12.5.0.897 12.7.0.380</block>
   <block id="fc8e016a41c4109eeb75bb9795abff5c" category="cell">11.4.0 11.5.0.11 11.5.0.611.5.0.711.5.0.911.6.0.11.6.0.11.6.0.11.6.0.11.6.0.11.6.0.1111.6.0.11.6.0.1411.6.0.1511.6.0.1611.6.0.11.6.0.11.6.0.11.6.0.711.</block>
@@ -12311,4 +12280,58 @@
   <block id="06450b55dd990fe8530bcc47f2e2c522" category="list-text">VMware vCenter Server 8.0.0 內部版本 -21457384</block>
   <block id="97603db27713a81e2c84405a5352db03" category="cell">啟用「拒絕存取」功能時，資料收集器會顯示錯誤訊息：「 Connector 處於錯誤狀態。服務名稱：稽核。失敗原因：無法在 SVM test_SVM 上設定 fpolicy 。原因：使用者未經授權。 "</block>
   <block id="56cad8f9ba4de10172f57856721882b0" category="cell">使用者可能遺失「拒絕存取」功能所需的 REST 權限。請依照上的指示<block ref="acf32226210d6c3eeee22de70798517f" category="inline-link-macro-rx"></block>來設定權限。一旦設定權限，請重新啟動收集器。</block>
+  <block id="7f4e990617f489c9ef64bd60d50bbe6b" category="paragraph">來自於此的事件率ONTAP 遠高於值機員方塊所能處理的事件率。因此連線終止。</block>
+  <block id="6cbdb7b222e25139b815f11a8bf316b0" category="paragraph">當中斷連線時、請檢查CloudSecure中的尖峰流量。您可以從* CloudSecure &gt;活動鑑識&gt; All Activ練習*頁面查看。</block>
+  <block id="fb318561d723fea4bf5cfc32c9f76869" category="paragraph">如果尖峰彙總流量高於值機員方塊所能處理的流量、請參閱「事件率檢查器」頁面、瞭解如何在值機員方塊中調整收集器部署的規模。</block>
+  <block id="df5d9f6706ba32a91dad936fdd8c31ec" category="paragraph">如果代理程式安裝在 2021 年 3 月 4 日之前的代理程式方塊中，請在代理程式方塊中執行下列命令：</block>
+  <block id="00b9b87b6684a6049795f956c8ffb2a5" category="paragraph">重新調整大小後，從 UI 重新啟動收集器。</block>
+  <block id="190f101017d4849e32ad24c85a037484" category="paragraph">這很可能是ONTAP 因為位在邊上的網路問題。請遵循下列步驟：</block>
+  <block id="b2e0ae5db392da4135a0d6d4c1790759" category="list-text">請確定SVM資料LIF或管理LIF上沒有防火牆、無法與SVM連線。</block>
+  <block id="1750d9cfda79066e3c52899aa692608a" category="list-text">透過叢集管理 IP 新增 SVM 時，請確保 SVM 的資料 LIF 和管理 LIF 可從 Agent VM 中進行 Ping 。發生問題時、請檢查閘道、網路遮罩和路由以取得LIF。</block>
+  <block id="391d354d5b5d9326eec673c4983e3e05" category="paragraph">您也可以嘗試使用叢集管理IP透過ssh登入叢集、然後ping代理IP。請確定代理程式 IP 可以 Ping ：</block>
+  <block id="e7ba86f45d7d15de38f2537adf2afd68" category="paragraph">_network ping -vserver &lt;vserver name&gt; -destination &lt;Agent IP&gt; -lif &lt;Lif Name&gt; -show-detail _</block>
+  <block id="ed6479f97f72e2c84fce83c6e84134fa" category="paragraph">如果無法 Ping 、請確定 ONTAP 中的網路設定正確、以便值機員機器可以 Ping 。</block>
+  <block id="83d96b0695c5db59120643aeaf92968a" category="list-text">如果您嘗試透過叢集 IP 連線，但無法正常運作，請嘗試直接透過 SVM IP 連線。請參閱上述步驟、瞭解透過SVM IP進行連線的步驟。</block>
+  <block id="e91b7ee623b377e0be2de8ac35124ec3" category="list-text">透過 SVM IP 和 vsadmin 認證新增收集器時，請檢查 SVM Lif 是否已啟用 Data plus Mgmt 角色。在這種情況下、ping SVM LIF會正常運作、但SSH到SVM LIF則無法運作。如果是、請建立僅限SVM管理LIF、並嘗試透過此SVM管理僅LIF進行連線。</block>
+  <block id="b020b89cfb4132620fce8c763d4e5f43" category="list-text">如果仍無法運作，請建立新的 SVM Lif ，並嘗試透過該 Lif 進行連線。確定子網路遮罩設定正確。</block>
+  <block id="38d9f61eb71e00630fe95685c679f545" category="list-text">進階偵錯：</block>
+  <block id="9ea7967a350a4c316eef82d40d89255d" category="list-text">在 ONTAP 中啟動封包追蹤。</block>
+  <block id="46ec79d0768a6d0a100a8c413f2bf2e1" category="list-text">嘗試從 CloudSecure UI 將資料收集器連線至 SVM 。</block>
+  <block id="2f58d7381ad7f7f030c921ce2c9f8cf8" category="list-text">請等待錯誤出現。停止ONTAP 封包追蹤。</block>
+  <block id="d1222ca7babc8de42ebd32afdc47c19e" category="list-text">從 ONTAP 開啟封包追蹤。您可以在這個位置使用此功能</block>
+  <block id="01282ac850154ef88f6a2c9c98c72d86" category="list-text">請確定 ONTAP 到值機員方塊有一個 SYN 。</block>
+  <block id="af3c0fb88b84cfd9cc8ca65f34e57ba7" category="list-text">如果 ONTAP 沒有 SYN, 則 ONTAP 中的防火牆會發生問題。</block>
+  <block id="bb2dad639d0be16200439eaf0f1271fd" category="list-text">在 ONTAP 中開啟防火牆，讓 ONTAP 能夠連線到代理程式方塊。</block>
+  <block id="1abacfdd7dee433fff13b8711376db1e" category="list-text">如果仍無法運作，請諮詢網路團隊，確定沒有外部防火牆封鎖從 ONTAP 到值機員信箱的連線。</block>
+  <block id="489bafc46aa7866b520261897d22b678" category="list-text">如果上述任何一項都無法解決問題，請開啟案例<block ref="d0162286c59c67bf86d01f060ee7cd04" category="inline-link-macro-rx"></block>以取得進一步協助。</block>
+  <block id="ba6e4156573da1d7fd83deff708c619a" category="list-text">確認已提供正確的 SVM IP 管理位址或叢集管理 IP 。</block>
+  <block id="c6ee5bc9438aec5cca325db3a8c1c1cd" category="list-text">SSH 連接至 SVM 或您要連線的叢集。連線後、請確認SVM或叢集名稱正確無誤。</block>
+  <block id="f75d363acbf8cf70fefffb53b3da571a" category="list-text">防火牆很可能會封鎖代理機器中的必要連接埠。確認已開啟連接埠範圍35000-55000/TCP、讓代理機器從SVM連線。此外、請確保ONTAP 沒有啟用任何防火牆、從「邊」封鎖與代理機器的通訊。</block>
+  <block id="3e37349ce90b03d4001880c0fe9ad301" category="list-text">在 Agent （代理）框中鍵入以下命令，確保端口範圍已打開。</block>
+  <block id="31778181eddc9131a7464e3f7ffa4c64" category="paragraph">輸出範例應如下所示：</block>
+  <block id="f294b3b3851a69f25c2946aa296d638a" category="list-text">登入SVM、輸入下列命令、並檢查是否未設定任何防火牆來封鎖與ONTAP 之通訊。</block>
+  <block id="afa095cfe4f919dd17ad75565b75c881" category="paragraph"><block ref="c2f863dc8aacfc5c321b626bd2f4e2b3" category="inline-link-macro-rx"></block>在 ONTAP 側。</block>
+  <block id="e786ac643c38b800614aa1d0e4d3319c" category="list-text">SSH 至您要監控的 SVM/ 叢集。從 SVM 資料 LIF Ping Agent Box （支援 CIFS ， NFS 傳輸協定），並確保 ping 作業正常：</block>
+  <block id="6f26cda33d7241c6a94f8ffbfeab11be" category="list-text">如果透過 2 個資料收集器將單一 SVM 新增兩次至租用戶，則會顯示此錯誤。透過UI刪除其中一個資料收集器。然後透過UI重新啟動其他資料收集器。然後資料收集器會顯示「執行中」狀態、並開始接收來自SVM的事件。</block>
+  <block id="633321786e7e07f94e52b4d73df28b1f" category="paragraph">基本上、在租戶中、只能透過1個資料收集器新增1個SVM。1 SVM不應透過2個資料收集器新增兩次。</block>
+  <block id="cf2a826b3dbe4d26f14753b4a312c007" category="list-text">如果在兩個不同的工作負載安全環境（租戶）中新增相同的 SVM ，最後一個將永遠成功。第二個收集器會使用自己的IP位址來設定fpolicy、然後啟動第一個。因此第一個收集器將停止接收事件、其「稽核」服務將進入錯誤狀態。若要避免這種情況發生、請在單一環境中設定每個SVM。</block>
+  <block id="5db652447c417b7edd8a6faf30683ee0" category="list-text">如果服務原則設定不正確，也可能發生此錯誤。使用支援支援支援功能的支援功能9.8或更新版本時、若要連線至資料來源收集器、則需要資料服務資料服務、例如NFS和/或資料- CIFS、以提供資料- fpolice-Client服務ONTAP 。此外、資料fpolice-Client服務必須與受監控SVM的資料LIF相關聯。</block>
+  <block id="9fbb9e6888c2aef7254ccac7160ec144" category="list-text">檢查 ONTAP 收集器是否處於「執行中」狀態。如果是、請開啟部分檔案、確保CIFS用戶端VM上產生部分CIFS事件。</block>
+  <block id="30eacabf37bbb4653e7ca981b2801051" category="list-text">如果看不到任何活動，請登入 SVM 並輸入下列命令。_&lt;SVM&gt;EVENT log show -SOURSfpolicy_Please ensure that are no errors related to fpolicy（事件日誌顯示-SOURSfpolicy_請 確保沒有與fpolicy相關的錯誤）。</block>
+  <block id="a936f63883c022699e3a5ae08232ef26" category="list-text">如果看不到任何活動，請登入 SVM 。輸入下列命令：</block>
+  <block id="c838f9e60ab91d3bf9f4ae53696f31dc" category="paragraph">檢查是否已設定名為「 cloudsecured_ 」的 fpolicy 原則，且狀態為「 on 」。如果未設定、則代理程式很可能無法在SVM中執行命令。請確認已遵循頁面開頭所述的所有先決條件。</block>
+  <block id="2b7249a3eb66724971d86b79578b4015" category="list-text">代理程式很可能超載，無法連線至資料來源收集器。</block>
+  <block id="4df741dad2f6a6c39f5a70a091533287" category="list-text">檢查有多少資料來源收集器連線至 Agent 。</block>
+  <block id="d3def8792ee2d2f60ea9dd540351d13c" category="list-text">同時在 UI 的「 All Activity) 」頁面中檢查資料流率。</block>
+  <block id="99a207238eac17ccccaa337b350f2c5e" category="list-text">如果每秒的活動數量相當高，請安裝另一個 Agent ，並將部分資料來源收集器移至新的 Agent 。</block>
+  <block id="bf084a2e9e043e416efdf5762e90830e" category="paragraph">這種情況通常發生在下列情況中：</block>
+  <block id="15e5b3ba5eaf37b26361f3e2a868ae94" category="list-text">新增多個資料收集器。</block>
+  <block id="e7b379f8d8ee16ec17e9758c65babb58" category="list-text">顯示這類行為的資料收集器將會在這些資料收集器中新增 1 個 SVM 。表示2個以上的資料收集器連接至1個SVM。</block>
+  <block id="778e500175319f00ec332bd346fedb28" category="list-text">確保只有 1 個資料收集器連線至 1 個 SVM 。</block>
+  <block id="12a944dc1d44e8ee8192cd638cb95cb4" category="list-text">刪除連接至同一個 SVM 的其他資料收集器。</block>
+  <block id="5c81db005bfd2b3f9c22268bec51a515" category="paragraph">建議刪除所有現有未使用的fpolicy設定、即使它們處於中斷連線狀態。「工作負載安全性」會以「cloudseced_」開頭的字元建立fpolicy。可以刪除所有其他未使用的fpolicy組態。</block>
+  <block id="ac5c1a90c90193c22745b697a0f6d000" category="paragraph">顯示 fpolicy 清單的 CLI 命令：</block>
+  <block id="7c275595b37d9736259910a2cee23932" category="paragraph">刪除 fpolicy 組態的步驟：</block>
+  <block id="f2e1c8f11a6d114e56889c093ddb4738" category="list-text">在「資料收集器」頁面上、捲動至資料收集器右側、顯示錯誤訊息、然後按一下「3點」功能表。選取_編輯_。再次輸入資料收集器的密碼。按下「_Sav__」按鈕以儲存資料收集器。資料收集器會重新啟動、錯誤應該會解決。</block>
+  <block id="96f9921aa76d3057450b4f8f037c88c6" category="list-text">Agent 機器可能沒有足夠的 CPU 或 RAM 保留空間，這就是 DSC 故障的原因。請檢查新增至機器代理程式的資料收集器數量。如果超過20個、請增加代理機器的CPU和RAM容量。CPU和RAM增加之後、DSC就會進入初始化、然後自動進入執行狀態。請參閱上的尺寸調整指南<block ref="830ad31fe88c5bf31dcfcc5f15ccdf0e" category="inline-link-macro-rx"></block>。</block>
 </blocks>
