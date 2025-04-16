@@ -5,17 +5,8 @@ keywords: data collector, Celerra, EMC, DELL, VNX File
 summary: 設定Dell EMC Celerra資料收集器。 
 ---
 = Dell EMC VNX檔案（前身為Celerra統一化儲存系統）資料收集器
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

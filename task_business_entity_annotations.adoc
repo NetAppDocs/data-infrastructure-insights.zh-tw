@@ -5,17 +5,8 @@ keywords: annotations, business entity
 summary: 企業實體附註可用於監控及報告企業階層中的資產 
 ---
 = 企業實體附註
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

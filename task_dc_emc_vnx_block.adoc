@@ -5,17 +5,8 @@ keywords: data collector, EMC, clariion, VNX block
 summary: 設定Dell EMC VNX區塊儲存設備（前身為CLARiiON）。 
 ---
 = Dell EMC VNX區塊儲存設備（NaviCLI）資料收集器
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

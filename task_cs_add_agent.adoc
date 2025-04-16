@@ -5,17 +5,8 @@ keywords: agent, Workload Security, installation, Cloud Secure
 summary: 新增工作負載安全性代理程式 
 ---
 = 工作負載安全代理程式安裝
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
@@ -40,7 +31,7 @@ summary: 新增工作負載安全性代理程式
 系統會顯示「新增代理程式」頁面：
 
 +
-image::Add-agent-1.png[新增工作負載安全代理程式]
+image:Add-agent-1.png["新增工作負載安全代理程式"]
 
 . 確認代理伺服器符合最低系統需求。
 . 若要驗證代理伺服器是否執行支援的Linux版本、請按一下_versions Supported（i）_。
@@ -52,7 +43,7 @@ image:CloudSecureAgentWithProxy_Instructions.png["代理程式安裝附有Proxy�
 . 在終端機視窗中執行安裝命令。
 . 安裝成功完成時、系統會顯示下列訊息：
 +
-image::new-agent-detect.png[成功安裝代理程式的訊息]
+image:new-agent-detect.png["成功安裝代理程式的訊息"]
 
 
 

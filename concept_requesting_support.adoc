@@ -6,17 +6,12 @@ keywords: support, knowledgebase, documentation, community, chat, videos, help, 
 ---
 = 正在申請支援
 :hardbreaks:
-:toclevels: 2
 :allow-uri-read: 
-:toclevels: 2
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
 
+[role="lead"]
+目錄： []
 
-toc::[]
 您可以按一下 * 說明 > 支援 * 來存取 Data Infrastructure Insights 中的支援選項。您可用的支援選項取決於 Data Infrastructure Insights Edition 。
 
 image:SupportPageWithLearningCenter.png["支援頁面"]

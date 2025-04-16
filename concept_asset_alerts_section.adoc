@@ -5,17 +5,8 @@ summary: Data Infrastructure Insights 中資產頁面相關警示區段的總覽
 keywords: asset, landing page, violations, Alerts, 
 ---
 = 資產頁面相關警示區段
-:toc: macro
 :hardbreaks:
-:toclevels: 2
 :allow-uri-read: 
-:toc: 
-:toclevels: 2
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

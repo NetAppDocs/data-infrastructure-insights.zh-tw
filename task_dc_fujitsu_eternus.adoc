@@ -5,17 +5,8 @@ keywords: data collector, Fujitsu, Eternus
 summary: 設定Fujitsu Eternus資料收集器。 
 ---
 = Fujitsu Eternus資料收集器
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

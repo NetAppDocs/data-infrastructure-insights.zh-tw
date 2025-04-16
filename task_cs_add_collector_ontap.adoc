@@ -5,17 +5,8 @@ keywords: data collector, ONTAP, SVM
 summary: 新增資料收集器 
 ---
 = 設定NetApp ONTAP 解決方案資料收集器
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

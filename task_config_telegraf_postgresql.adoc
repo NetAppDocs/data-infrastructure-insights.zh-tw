@@ -5,17 +5,8 @@ keywords: telegraf, installation, install, postgresql
 summary: PostgreSQL資料收集器組態 
 ---
 = PostgreSQL資料收集器
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

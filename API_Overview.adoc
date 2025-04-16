@@ -5,17 +5,8 @@ keywords: API, customer API, premium, JSON, Swagger, Access Token, token, rotate
 summary: Data Infrastructure Insights API 可與其他應用程式整合、例如監控和報告系統。 
 ---
 = Data Infrastructure Insights API
-:toc: macro
 :hardbreaks:
-:toclevels: 2
 :allow-uri-read: 
-:toc: 
-:toclevels: 2
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
@@ -230,8 +221,7 @@ image:DiskPerformanceExample.png["磁碟效能JSON"]
 
 CapacityItem是單一邏輯容量單位。其父物件所定義的單位為「Value（值）」和「highThreshold（高臨界值）」。它也支援選用的明細圖、說明如何建構容量值。例如、100 TB storagePool的總容量為值100的電容項目。細項資料可能顯示已配置給「資料」的60 TB及「快照」的40 TB。
 
-附註:: 「高臨界值」代表對應度量的系統定義臨界值、用戶端可用來針對超出可接受設定範圍的值產生警示或視覺提示。
-
+附註：「高臨界值」代表對應度量的系統定義臨界值，用戶端可用來針對超出可接受設定範圍的值產生警示或視覺提示。
 
 以下顯示具有多個容量計數器的StoragePools容量：
 

@@ -5,17 +5,8 @@ keywords: data collector, S3, Storage
 summary: 將AWS S3設定為儲存資料收集器。 
 ---
 = 將AWS S3設定為儲存資料收集器
-:toc: macro
 :hardbreaks:
-:toclevels: 2
 :allow-uri-read: 
-:toc: 
-:toclevels: 2
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

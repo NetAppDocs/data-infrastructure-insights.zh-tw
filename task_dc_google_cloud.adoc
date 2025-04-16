@@ -5,17 +5,8 @@ summary: 設定Google運算資料收集器
 keywords: data collector, queries, create 
 ---
 = NetApp Google運算資料收集器
-:toc: macro
 :hardbreaks:
-:toclevels: 2
 :allow-uri-read: 
-:toc: 
-:toclevels: 2
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

@@ -5,17 +5,8 @@ keywords: telegraf, installation, install, openzfs
 summary: OpenZFS資料收集器組態 
 ---
 = OpenZFS Data Collector
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

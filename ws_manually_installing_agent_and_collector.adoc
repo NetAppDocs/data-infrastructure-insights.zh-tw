@@ -6,13 +6,7 @@ summary: 工作負載安全性代理程式可以手動安裝或更新，讓您�
 ---
 = 手動安裝 Workload Security Agent 和 Collector
 :hardbreaks:
-:toclevels: 2
 :allow-uri-read: 
-:toclevels: 2
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
 
 [role="lead"]

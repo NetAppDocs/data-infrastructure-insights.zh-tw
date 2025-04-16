@@ -5,17 +5,8 @@ keywords: data collector, azure, Netapp files, anf
 summary: 設定Azure NetApp Files 資料收集器。 
 ---
 = 設定Azure NetApp Files 資料收集器
-:toc: macro
 :hardbreaks:
-:toclevels: 2
 :allow-uri-read: 
-:toc: 
-:toclevels: 2
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

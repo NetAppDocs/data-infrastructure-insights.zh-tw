@@ -5,15 +5,12 @@ keywords: Forensic, entity, entity overview, entity behavior, entities
 summary: 「鑑識實體」頁面 
 ---
 = 「鑑識實體」頁面
-:toc: macro
 :hardbreaks:
 :allow-uri-read: 
-:toc: 
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

@@ -5,17 +5,8 @@ summary: 查詢高I/O密度時、您想要排除根磁碟區。
 keywords: NetApp, root volume, high I/O, 
 ---
 = 確保IO密度報告僅說明內部資料磁碟區
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

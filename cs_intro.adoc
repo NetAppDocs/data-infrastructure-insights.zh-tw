@@ -5,17 +5,8 @@ keywords: CloudSecure, Cloud Secure
 summary: 總覽 
 ---
 = 關於儲存工作負載安全性
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

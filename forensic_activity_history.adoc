@@ -5,15 +5,12 @@ keywords: Forensic, activity history, activity data, history
 summary: 鑑識活動歷程記錄資料 
 ---
 = 鑑識-所有活動
-:toc: macro
 :hardbreaks:
 :allow-uri-read: 
-:toc: 
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

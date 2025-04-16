@@ -5,17 +5,8 @@ keywords: data collector, ontap, ontap, CDOT
 summary: ONTAP資料收集器 
 ---
 = NetApp ONTAP 數據管理軟體資料收集器
-:toc: macro
 :hardbreaks:
-:toclevels: 2
 :allow-uri-read: 
-:toc: 
-:toclevels: 2
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
@@ -248,7 +239,7 @@ cluster1 ci_readonly DEFAULT read only
 cluster1 ci_readonly security readonly
 ....
 ....
-cluster1::security login> show
+cluster1:security login> show
 Vserver: cluster1
 Authentication Acct
 UserName    Application   Method      Role Name      Locked

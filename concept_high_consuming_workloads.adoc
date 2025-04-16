@@ -5,17 +5,8 @@ keywords: insight, greedy, degraded, bully, victim, impacted, impacting, impactf
 summary: Insights 可讓您瞭解資源對租戶的其他資源有何影響。 
 ---
 = 洞見：高消費的工作負載
-:toc: macro
 :hardbreaks:
-:toclevels: 2
 :allow-uri-read: 
-:toc: 
-:toclevels: 2
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

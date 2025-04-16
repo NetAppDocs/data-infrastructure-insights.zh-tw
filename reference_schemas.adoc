@@ -6,13 +6,7 @@ keywords: dwh, data warehouse, schema, reporting
 ---
 = 資料基礎架構洞見報告架構
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
 
 [role="lead"]

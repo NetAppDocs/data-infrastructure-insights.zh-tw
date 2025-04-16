@@ -5,17 +5,8 @@ summary: 廠商專屬的資料收集器參考資訊。
 keywords: data collector, vendor, AWS, BROADCOM, Cisco, Dell, EMC, Hitachi, IBM, NetApp, OceanStor, OpenStack, Oracle, Pure Storage, Red Hat, redhat, VMware 
 ---
 = 廠商專屬參考資料
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

@@ -6,13 +6,7 @@ summary: 自動裝置解析功能可協助您準確追蹤租戶的效能和庫�
 ---
 = 自動裝置解決方案總覽
 :hardbreaks:
-:toclevels: 2
 :allow-uri-read: 
-:toclevels: 2
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
 
 [role="lead"]

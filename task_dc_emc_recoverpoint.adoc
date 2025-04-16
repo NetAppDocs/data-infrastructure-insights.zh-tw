@@ -5,17 +5,8 @@ keywords: data collector, RecoverPoint, EMC, DELL
 summary: 設定Dell EMC RecoverPoint資料收集器。 
 ---
 = Dell EMC RecoverPoint資料收集器
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

@@ -6,10 +6,11 @@ summary: 疑難排解工作負載安全性資料收集器
 ---
 = ONTAP SVM 資料收集器疑難排解
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toclevels: 1
-:nofooter: 
+:firstname: :nofooter:yml
+:author: :nofooter:yml
+:authorinitials: :
+:authors: :nofooter:yml
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
@@ -20,11 +21,11 @@ summary: 疑難排解工作負載安全性資料收集器
 
 如需設定此收集器的說明、請參閱link:task_add_collector_svm.html["設定 SVM Collector"]頁面。
 
-下表說明已知問題及其解決方法。
-
-發生錯誤時、請按一下「_Status」（狀態）欄中的「_Mor詳細 資料」、以取得錯誤的詳細資料。
+發生錯誤時，您可以按一下「已安裝的資料收集器」頁面 _ 狀態 _ 欄中的 _ 更多詳細資料 _ ，以取得有關錯誤的詳細資料。
 
 image:CS_Data_Collector_Error.png["工作負載安全性收集器錯誤更多詳細資料連結"]
+
+下表說明已知問題及其解決方法。
 
 [cols="2*"]
 |===

@@ -5,17 +5,8 @@ summary: 顯示虛擬機器效能的儀表板範例。
 keywords: dashboard, widget, custom, example, virtual machine, vm, performance 
 ---
 = 儀表板範例：虛擬機器效能
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

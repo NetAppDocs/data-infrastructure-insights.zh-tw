@@ -5,17 +5,8 @@ summary: 資料收集器擷取狀態
 keywords: collector, acquisition, status 
 ---
 = 判斷資料收集器擷取狀態
-:toc: macro
 :hardbreaks:
-:toclevels: 2
 :allow-uri-read: 
-:toc: 
-:toclevels: 2
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

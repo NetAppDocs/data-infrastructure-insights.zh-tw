@@ -5,17 +5,8 @@ keywords: data collector, 3PAR, HP, HP 3PAR, HPE,
 summary: 設定HP Enterprise Alletra 9000 / Primera（前身為3PAR）資料收集器。 
 ---
 = HP Enterprise Alletra 9000 / Primera儲存資料收集器
-:toc: macro
 :hardbreaks:
-:toclevels: 2
 :allow-uri-read: 
-:toc: 
-:toclevels: 2
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

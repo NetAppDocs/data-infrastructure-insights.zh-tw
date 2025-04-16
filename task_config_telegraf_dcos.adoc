@@ -5,17 +5,8 @@ keywords: telegraf, installation, install, dcos
 summary: Dcos組態 
 ---
 = 資料中心/作業系統資料收集器
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

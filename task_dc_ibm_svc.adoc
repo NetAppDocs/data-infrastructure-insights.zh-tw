@@ -5,17 +5,8 @@ keywords: IBM, SVC,SAN
 summary: 設定IBM SAN Volume Controller資料收集器。 
 ---
 = 設定IBM SAN Volume Controller資料收集器
-:toc: macro
 :hardbreaks:
-:toclevels: 2
 :allow-uri-read: 
-:toc: 
-:toclevels: 2
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

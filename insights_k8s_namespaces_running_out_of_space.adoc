@@ -5,17 +5,8 @@ keywords: insight, pv, persistent volume, backend
 summary: Insights可協助您預測Kubernetes空間何時會滿。 
 ---
 = 洞見：Kubernetes命名空間不足
-:toc: macro
 :hardbreaks:
-:toclevels: 2
 :allow-uri-read: 
-:toc: 
-:toclevels: 2
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

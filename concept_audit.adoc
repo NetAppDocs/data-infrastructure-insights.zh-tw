@@ -5,17 +5,8 @@ keywords: audit, users, activities
 summary: 稽核可讓您檢視 Data Infrastructure Insights 系統中的系統和使用者活動。 
 ---
 = 稽核
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

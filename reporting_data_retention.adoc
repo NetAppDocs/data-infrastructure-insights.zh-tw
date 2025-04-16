@@ -5,17 +5,8 @@ summary: 資料基礎架構洞見報告資料保留
 keywords: reporting, cognos, data warehouse, dwh, managing, customizing, copying, retention 
 ---
 = 如何保留歷史資料以供報告
-:toc: macro
 :hardbreaks:
-:toclevels: 2
 :allow-uri-read: 
-:toc: 
-:toclevels: 2
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

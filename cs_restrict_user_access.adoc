@@ -107,7 +107,7 @@ security login role create -role csrole -cmddirname "vserver name-mapping" -acce
 . 列出SVM上的所有匯出原則。
 +
 ....
-contrail-qa-fas8020::> export-policy rule show -vserver <svm name>
+contrail-qa-fas8020:> export-policy rule show -vserver <svm name>
              Policy          Rule    Access   Client                RO
 Vserver      Name            Index   Protocol Match                 Rule
 ------------ --------------- ------  -------- --------------------- ---------
@@ -126,11 +126,11 @@ svm3        test            3       cifs,    0.0.0.0/0             any
 ....
 . 在SVM上、將「cloudsecure_rRule」做為用戶端比對的所有原則中刪除規則、方法是指定其各自的規則索引。工作負載安全性規則通常為1。
 +
- contrail-qa-fas8020::*> export-policy rule delete -vserver <svm name> -policyname * -ruleindex 1
+ contrail-qa-fas8020:*> export-policy rule delete -vserver <svm name> -policyname * -ruleindex 1
 . 確保工作負載安全規則已刪除（可選步驟確認）。
 +
 ....
-contrail-qa-fas8020::*> export-policy rule show -vserver <svm name>
+contrail-qa-fas8020:*> export-policy rule show -vserver <svm name>
              Policy          Rule    Access   Client                RO
 Vserver      Name            Index   Protocol Match                 Rule
 ------------ --------------- ------  -------- --------------------- ---------

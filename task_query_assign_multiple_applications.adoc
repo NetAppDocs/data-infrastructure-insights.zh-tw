@@ -5,17 +5,8 @@ summary: 使用查詢來指派多個應用程式或註釋給物件、或從物�
 keywords: query, queries, application, annotation, multiple 
 ---
 = 將多個應用程式指派給資產、或從資產中移除多個應用程式
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

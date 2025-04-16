@@ -5,17 +5,8 @@ keywords: data collector, infinidat, InfiniBox
 summary: 設定Infinidat InfinidBox資料收集器。 
 ---
 = Infinidat InfinidBox資料收集器
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

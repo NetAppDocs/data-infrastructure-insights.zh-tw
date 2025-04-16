@@ -5,17 +5,8 @@ keywords: telegraf, installation, install, kubernetes, pods, clusters, filters, 
 summary: Kubernetes命名空間登陸頁面說明 
 ---
 = Kubernetes命名空間詳細資料頁面
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

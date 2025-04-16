@@ -6,13 +6,7 @@ summary: 一般 DB 主機解析程式收集器
 ---
 = NetApp 通用 DB 主機解析程式
 :hardbreaks:
-:toclevels: 2
 :allow-uri-read: 
-:toclevels: 2
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
 
 [role="lead"]

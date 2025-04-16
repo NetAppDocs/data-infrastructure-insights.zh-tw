@@ -5,17 +5,8 @@ keywords: changes, management, analysis
 summary: 追蹤 Kubernetes 變更比以往更容易。 
 ---
 = Kubernetes 變更分析
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

@@ -5,17 +5,8 @@ keywords: telegraf, installation, install, consul
 summary: Consul資料收集器組態 
 ---
 = Consul Data Collector
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

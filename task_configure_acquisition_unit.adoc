@@ -5,17 +5,8 @@ keywords: Acquisition Unit, AU, install, configure, Linux, add, remove, uninstal
 summary: 採購單位在Windows和Linux上安裝、解除安裝、設定Proxy支援等功能。 
 ---
 = 設定擷取單位
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
@@ -120,7 +111,8 @@ image:ProxyEndpoints_NewTable.png["Proxy端點表格"]
 
 
 
-image::NewWindowsAUInstall.png[Windows AU安裝]
+[role="thumb"]
+image:NewWindowsAUInstall.png["Windows AU安裝"]
 
 . 確認裝載擷取裝置的伺服器或VM符合建議的系統需求。
 . 確認伺服器執行的是受支援的Windows版本。按一下「_OS versions Supported（i）_（作業系統支援版本（i）_）」以取得支援版本的清單。

@@ -6,18 +6,55 @@ keywords: features
 ---
 = Data Infrastructure Insights 的新功能
 :hardbreaks:
-:toclevels: 2
 :allow-uri-read: 
-:toclevels: 2
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
 
 [role="lead"]
 NetApp持續改善及強化其產品與服務。以下是 Data Infrastructure Insights （前身為 Cloud Insights ）提供的一些最新功能。
 
+
+
+== 2025 年 4 月
+
+
+
+=== 以 ML-Powered Anomaly Bounds in Line Widget 提供主動式問題解決方案
+
+若要疑難排解折線圖或不規則曲線圖 Widget 的效能問題，您現在可以在實際度量旁顯示預期的行為界限，以便區分正常和異常的度量趨勢。
+
+DII 機器學習搭配季節性資料分析，可根據歷史模式建立智慧型臨界值。當指標偏離預期範圍時，系統會將這些指標強調為異常狀況，以便快速識別問題，縮短平均解決問題時間，並在問題影響營運之前解決問題。
+
+image:expected_bounds_example_showing_spike.png["顯示尖峰超過，寬度 =400 的預期界限"]
+
+
+
+=== 利用 VSAN 儲存支援來最佳化 VMware 成本
+
+我們的 VM 最佳化功能現在包含對含 VSAN 儲存設備的 VMware 環境的支援。除了 CPU 和記憶體使用量之外，分析現在也會考慮採用本機 VSAN 儲存設備進行回收建議，協助您進一步降低授權成本。
+
+image:vm_optimization_with_vsan.png["VSAN 的 VM 最佳化範例"]
+
+
+
+=== 彈指之間即可取得警示詳細資料
+
+全新的滑出面板讓您更輕鬆地調查警示。選取警示以檢視該警示的詳細資料，並在調查問題時輕鬆切換警示，而不會遺失您的位置。
+
+image:alert_slideout_example.png["警示會滑出，以利瀏覽"]
+
+
+
+=== 工作負載安全性鑑識非同步匯出
+
+根據要匯出的資料量，匯出鑑識資料可能需要數秒到數小時的時間。工作負載安全性會以非同步方式匯出該資料，以便在編譯 .CSV 時繼續工作。
+
+
+
+=== 資料收集器通知分組為規則
+
+如果您已在資料收集器上設定通知，從 4 月 15 日起，這些通知將會在「通知規則」中處理，並針對收件者相同的收集器設定單一規則。具有不同收件者的收集器會有個別的規則。現有的收集器通知會移轉至通知規則。
+
+'''
 
 
 == 2025 年 3 月
@@ -64,6 +101,14 @@ image:ws_test_connection_button.png["工作負載安全測試連線按鈕"] imag
 
 
 
+=== 測試儲存工作負載安全資料收集器的連線能力
+
+測試連線功能旨在協助終端使用者在 Data Infrastructure Insights （ DII ）工作負載安全性中設定資料收集器時，找出故障的特定原因。這可讓使用者自行修正與網路通訊或遺失角色相關的問題。
+
+image:ws_test_connection_button.png["工作負載安全測試連線按鈕"] image:ws_test_connection_success_example.png["工作負載安全性「測試連線」成功訊息"]
+
+
+
 === 作業系統支援
 
 除了資料基礎架構 Insights 擷取單元之外，現在還支援下列作業系統link:https://docs.netapp.com/us-en/cloudinsights/concept_acquisition_unit_requirements.html["已支援"]：
@@ -93,13 +138,25 @@ image:ontap_essentials_asa_views.png["ONTAP Essentials 下拉式選單顯示 ASA
 
 
 
+=== 適用於最新一代 ASA 系統的 ONTAP 基礎架構
+
+ONTAP 基本功能現在包含最新一代裝置的隨裝即用管理link:task_dc_na_ontap_all_san_array.html["ASA"]功能。這包括 SAN Analyzer for VM-LUN 拓撲，其中包含在 ONTAP 上執行的工作負載，現在也提供 NetApp 支援，作為資料基礎架構洞見基礎版的一部分。
+
+image:ontap_essentials_asa_views.png["ONTAP Essentials 下拉式選單顯示 ASA 與 Unified 不同"]
+
+
+
 === DII API 使用率追蹤：強化安全性與效率
 
-透過強化的 REST API 使用率追蹤功能，加強您的安全狀態，並簡化資源管理，供管理員使用者使用。透過 API 使用率追蹤，您可以查看使用的 API Token ， IP 位址及其產生的流量量。將權杖連結至特定的 IP 位址和使用層級，即可深入瞭解系統存取和使用趨勢，讓您掌控維持安全，有效率的環境，並讓作業順暢運作。
+透過強化的 REST API 使用率追蹤功能，加強您的安全狀態，並簡化資源管理，供管理員使用者使用。透過 API 使用率追蹤，您可以查看使用的 API Token ， IP 位址及其產生的流量量。將權杖連結至特定的 IP 位址和使用層級，即可深入瞭解系統存取和使用趨勢，讓您掌控維持安全，有效率的環境，並讓作業順暢運作。透過強化的 REST API 使用率追蹤功能，加強您的安全狀態，並簡化資源管理，供管理員使用者使用。透過 API 使用率追蹤，您可以查看使用的 API Token ， IP 位址及其產生的流量量。將權杖連結至特定的 IP 位址和使用層級，即可深入瞭解系統存取和使用趨勢，讓您掌控維持安全，有效率的環境，並讓作業順暢運作。
 
-若要檢視 API 使用率，請瀏覽至 * 可服務性 > 管理 > API 存取 * ，然後選取 _ 檢視 API 使用率 _ 。請注意，此 API 僅適用於 DII 可服務性 API ，不適用於工作負載安全性。
+若要檢視 API 使用率，請瀏覽至 * 可服務性 > 管理 > API 存取 * ，然後選取 _ 檢視 API 使用率 _ 。請注意，此 API 僅適用於 DII 可服務性 API ，不適用於工作負載安全性。若要檢視 API 使用率，請瀏覽至 * 可服務性 > 管理 > API 存取 * ，然後選取 _ 檢視 API 使用率 _ 。請注意，此 API 僅適用於 DII 可服務性 API ，不適用於工作負載安全性。
 
 image:api_usage_analytics_screenshot.png["API 使用分析範例"]
+
+
+
+=== 工作負載安全 API 可限制使用者
 
 
 

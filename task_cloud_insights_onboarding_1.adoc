@@ -6,20 +6,14 @@ keywords: onboarding, new user
 ---
 = 資料基礎架構洞見入門
 :hardbreaks:
-:toclevels: 2
 :allow-uri-read: 
-:toclevels: 2
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
 
 [role="lead"]
 在開始使用資料基礎架構洞見之前、您必須先註冊 * NetApp BlueXP  入口網站。如果您已經登入 NetApp BlueXP  、您可以透過幾個快速步驟、開始免費試用 Data Infrastructure Insights 。
 
+目錄： []
 
-toc::[]
 
 
 == 建立您的 NetApp BlueXP 帳戶

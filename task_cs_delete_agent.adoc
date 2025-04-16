@@ -5,17 +5,8 @@ keywords: agent, Workload Security, delete agent, Cloud Secure
 summary: 刪除工作負載安全性代理程式 
 ---
 = 刪除工作負載安全代理程式
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

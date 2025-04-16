@@ -6,13 +6,7 @@ summary: 識別非作用中的裝置可讓您選擇刪除它們，或將它們�
 ---
 = 識別非使用中的裝置
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
 
 [role="lead"]

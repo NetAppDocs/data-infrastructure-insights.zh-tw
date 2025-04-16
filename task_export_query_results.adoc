@@ -5,17 +5,8 @@ summary: 如何將查詢結果匯出至.csv檔案
 keywords: query, queries, export, csv 
 ---
 = 將查詢結果匯出至.CSV檔案
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

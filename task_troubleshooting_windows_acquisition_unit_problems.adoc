@@ -5,17 +5,8 @@ summary: Windows上擷取設備問題的疑難排解秘訣。
 keywords: AU, acquisition unit, trioubleshooting 
 ---
 = 疑難排解Windows上的擷取設備問題
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

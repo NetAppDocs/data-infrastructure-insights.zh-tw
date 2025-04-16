@@ -5,17 +5,8 @@ summary: 您可以建立附註規則、自動將附註套用至多個資產。
 keywords: annotate, annotation, rules 
 ---
 = 建立註釋規則
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

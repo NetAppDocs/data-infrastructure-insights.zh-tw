@@ -5,17 +5,9 @@ keywords: telegraf, installation, install, agent, telegraf agent, kubernetes, ek
 summary: NetApp Kubernetes 監控營運者有許多可設定的選項。 
 ---
 = Kubernetes 監控操作員組態選項
-:toc: macro
 :hardbreaks:
-:toclevels: 2
 :allow-uri-read: 
-:toc: 
 :nofooter: 
-:toclevels: 2
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

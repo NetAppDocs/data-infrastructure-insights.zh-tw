@@ -5,17 +5,8 @@ summary: 您可以篩選與目前資產直接相關的物件。
 keywords: Assets, landing page, filtering, context, related 
 ---
 = 在關聯中篩選物件
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

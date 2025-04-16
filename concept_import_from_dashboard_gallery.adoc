@@ -5,17 +5,8 @@ summary: 您可以匯入建議的儀表板、以協助回答業務洞察問題�
 keywords: dashboard, gallery, import 
 ---
 = 從儀表板圖庫匯入
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

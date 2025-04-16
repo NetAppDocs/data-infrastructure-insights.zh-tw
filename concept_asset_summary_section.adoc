@@ -5,17 +5,8 @@ summary: Data Infrastructure Insights 中資產頁面摘要區段的總覽。
 keywords: asset, summary, landing page, topology, auto, refresh 
 ---
 = 資產頁摘要區段
-:toc: macro
 :hardbreaks:
-:toclevels: 2
 :allow-uri-read: 
-:toc: 
-:toclevels: 2
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

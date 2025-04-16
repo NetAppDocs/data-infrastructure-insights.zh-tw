@@ -5,17 +5,8 @@ keywords: collectors, data collectors, configure, introduction, browsers , Cloud
 summary: 只要幾個簡單步驟、就能開始使用工作負載安全功能 
 ---
 = 工作負載安全入門
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

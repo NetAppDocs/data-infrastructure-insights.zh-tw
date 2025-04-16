@@ -6,13 +6,7 @@ keywords: data collector, vendor, infrastructure, integration, service
 ---
 = Data Infrastructure Insights 資料收集器清單
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/The alerting page redesign will also be ready by the of the month. Need to add it to what’s new as wellopens
 
 
 [role="lead"]

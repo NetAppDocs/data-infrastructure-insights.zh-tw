@@ -5,17 +5,8 @@ keywords: webhook, notification, Discord, integration
 summary: 建立Webhook、針對效能或庫存臨界值發出警示、以利不和 
 ---
 = Webhook不和範例
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

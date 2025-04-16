@@ -5,17 +5,8 @@ summary: 新增通知的電子郵件地址。
 keywords: email, notifications, signature, recipient, list, subscription 
 ---
 = 設定電子郵件通知
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

@@ -5,17 +5,8 @@ summary: 發揮儀表板最大效益的最佳實務做法
 keywords: dashboard, hints, tips, best practice, widgets, metrics, 
 ---
 = 儀表板和小工具的最佳實務做法
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

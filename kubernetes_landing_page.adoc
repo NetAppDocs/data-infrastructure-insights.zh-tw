@@ -5,17 +5,8 @@ keywords: telegraf, installation, install, kubernetes, pods, clusters, filters, 
 summary: Kubernetes登陸頁面說明 
 ---
 = Kubernetes叢集概觀
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

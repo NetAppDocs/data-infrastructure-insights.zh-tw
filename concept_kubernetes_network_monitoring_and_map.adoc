@@ -5,17 +5,8 @@ keywords: service map, workloads,
 summary: 介紹 Kubernetes 的工作負載相依性和流程、並強調網路和效能問題 
 ---
 = Kubernetes 網路效能監控與地圖
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

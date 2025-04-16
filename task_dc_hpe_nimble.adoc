@@ -5,17 +5,8 @@ keywords: data collector, HP Nimble, HP, HPE, Alletra 6000
 summary: 設定HP Enterprise Alletra 6000（前身為Nimble）資料收集器。 
 ---
 = HPE Alletra 6000資料收集器
-:toc: macro
 :hardbreaks:
-:toclevels: 2
 :allow-uri-read: 
-:toc: 
-:toclevels: 2
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

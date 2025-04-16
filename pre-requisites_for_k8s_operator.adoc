@@ -5,17 +5,9 @@ keywords: telegraf, installation, install, agent, telegraf agent, kubernetes, ek
 summary: Data Infrastructure Insights 支援 Telegraf 做為其代理程式、可在 Kubernetes 上收集整合資料。 
 ---
 = 安裝或升級 NetApp Kubernetes 監控操作員之前
-:toc: macro
 :hardbreaks:
-:toclevels: 2
 :allow-uri-read: 
-:toc: 
 :nofooter: 
-:toclevels: 2
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

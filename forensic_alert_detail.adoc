@@ -5,17 +5,8 @@ keywords: alert, Critical, Warning, Low, alert detail Synopsis, Time range, Star
 summary: 警示詳細資料 
 ---
 = 警示詳細資料
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

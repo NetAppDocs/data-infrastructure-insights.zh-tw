@@ -6,13 +6,7 @@ summary: ONTAP All SAN Array Data Collector
 ---
 = NetApp ONTAP All SAN Array （ ASA ）資料收集器
 :hardbreaks:
-:toclevels: 2
 :allow-uri-read: 
-:toclevels: 2
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
 
 [role="lead"]

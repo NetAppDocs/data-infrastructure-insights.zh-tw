@@ -5,17 +5,8 @@ summary: Data Infrastructure Insights 可提供前端和後端虛擬化儲存設
 keywords: storage, virtual, virtualized, virtualization, 
 ---
 = 儲存虛擬化
-:toc: macro
 :hardbreaks:
-:toclevels: 2
 :allow-uri-read: 
-:toc: 
-:toclevels: 2
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

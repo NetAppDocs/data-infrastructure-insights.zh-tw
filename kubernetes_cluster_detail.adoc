@@ -5,17 +5,8 @@ keywords: kubernetes, pods, clusters, nodes. troubleshooting, planning
 summary: Kubernetes詳細資料頁面提供相關資訊和詳細資料、可協助您進行疑難排解和規劃。 
 ---
 = Kubernetes叢集詳細資料頁面
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

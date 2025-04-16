@@ -5,24 +5,16 @@ summary: 儀表板功能與概念。
 keywords: dashboard, widget, custom, concepts, queries, variables, rollup, roll up, grouping, aggregate, aggregation, filter, axis, group by, expressions, timeseries, exact match, theme, visibility, formatting, conditional, hide, collapse, expand 
 ---
 = 儀表板功能
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
 :nofooter: 
-:toclevels: 1
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
 儀表板和小工具可讓您靈活運用資料的顯示方式。以下是一些概念、可協助您充分發揮自訂儀表板的效益。
 
+目錄： []
 
-toc::[]
 
 
 == Widget命名
@@ -66,13 +58,17 @@ image:WidgetNamingExample-C.png["Widget命名範例"]
 
 Data Infrastructure Insights 針對 Widget 中的特定度量提供不同的 * 轉換 * 選項（特別是稱為「自訂」或整合指標的度量、例如來自 Kubernetes 、 ONTAP 進階資料、 Telegraf 外掛程式等）、可讓您以多種方式顯示資料。將可轉型的度量新增至小工具時、系統會顯示下拉式清單、提供下列轉換選項：
 
-無:: 資料會顯示為「現用」、不會有任何操作。
-費率:: 目前值除以上次觀察後的時間範圍。
-累計:: 先前值和目前值總和的累積。
-差異:: 先前觀察值與目前值之間的差異。
-差異率:: 差異值除以上次觀察後的時間範圍。
-累計率:: 累計值除以上次觀察後的時間範圍。
+無：資料會依目前狀態顯示，不會有任何操作。
 
+速率：目前值除以上次觀察後的時間範圍。
+
+Cumulative ：先前值和目前值總和的累積。
+
+差異：先前觀察值與目前值之間的差異。
+
+差異速率：差異值除以上次觀察後的時間範圍。
+
+累計率：累計值除以上次觀察後的時間範圍。
 
 請注意、轉換指標並不會變更基礎資料本身、只會變更資料的顯示方式。
 
@@ -401,7 +397,7 @@ IOPS線會顯示在圖表上、其比例會顯示在左側。
 
 
 
-image::SecondaryAxisExplained.png[次要軸範例]
+image:SecondaryAxisExplained.png["次要軸範例"]
 
 
 

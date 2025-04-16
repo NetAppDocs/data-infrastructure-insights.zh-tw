@@ -5,17 +5,8 @@ keywords: logs, monitors, alerts, EMS,
 summary: 記錄瀏覽器是一項功能強大的工具、可透過不同的系統記錄來調查問題。 
 ---
 = 記錄檔案總管
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

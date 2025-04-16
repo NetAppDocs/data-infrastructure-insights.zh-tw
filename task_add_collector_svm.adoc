@@ -5,17 +5,8 @@ keywords: data collector, ONTAP, NetApp, SVM, cloud ontap, firewall
 summary: 新增工作負載安全資料收集器 
 ---
 = 設定ONTAP SVM Data Collector
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
@@ -57,18 +48,18 @@ summary: 新增工作負載安全資料收集器
 
 * 執行下列命令、確保已針對SVM設定正確的應用程式：
 +
- clustershell::> security login show -vserver <vservername> -user-or-group-name <username>
+ clustershell:> security login show -vserver <vservername> -user-or-group-name <username>
 
 
 輸出範例：image:cs_svm_sample_output.png["SVM命令輸出範例"]
 
-* 確保 SVM 已設定 CIFS 伺服器： clusterShell ：： > `vserver cifs show`
+* 確保 SVM 已設定 CIFS 伺服器： clusterShell ： > `vserver cifs show`
 +
 系統會傳回Vserver名稱、CIFS伺服器名稱及其他欄位。
 
-* 設定SVM vsadmin使用者的密碼。如果使用自訂使用者或叢集管理使用者，請略過此步驟。 clusterShell ：： > `security login password -username vsadmin -vserver svmname`
-* 解除鎖定SVM vsadmin使用者以進行外部存取。如果使用自訂使用者或叢集管理使用者，請略過此步驟。 clusterShell ：： > `security login unlock -username vsadmin -vserver svmname`
-* 確保資料LIF的防火牆原則設定為「mGMT」（而非「dATA」）。如果使用專用管理 lif 來新增 SVM ， clusterShell ：： > ，請略過此步驟 `network interface modify -lif <SVM_data_LIF_name> -firewall-policy mgmt`
+* 設定SVM vsadmin使用者的密碼。如果使用自訂使用者或叢集管理使用者，請略過此步驟。 clusterShell ： > `security login password -username vsadmin -vserver svmname`
+* 解除鎖定SVM vsadmin使用者以進行外部存取。如果使用自訂使用者或叢集管理使用者，請略過此步驟。 clusterShell ： > `security login unlock -username vsadmin -vserver svmname`
+* 確保資料LIF的防火牆原則設定為「mGMT」（而非「dATA」）。如果使用專用管理 lif 來新增 SVM ， clusterShell ： > ，請略過此步驟 `network interface modify -lif <SVM_data_LIF_name> -firewall-policy mgmt`
 * 啟用防火牆時、您必須定義例外狀況、才能使用Data ONTAP 「Data Collector」允許連接埠的TCP流量。
 +
 如需組態資訊，請參閱link:concept_cs_agent_requirements.html["代理程式需求"]。這適用於安裝在雲端的內部部署代理程式和代理程式。
@@ -301,7 +292,7 @@ MetroCluster 建議使用下列項目：
 範例：
 
 ....
-Testcluster-1::*> net int service-policy create -policy only_data_fpolicy -allowed-addresses 0.0.0.0/0 -vserver aniket_svm
+Testcluster-1:*> net int service-policy create -policy only_data_fpolicy -allowed-addresses 0.0.0.0/0 -vserver aniket_svm
 -services data-cifs,data-nfs,data,-core,data-fpolicy-client
 (network interface service-policy create)
 ....

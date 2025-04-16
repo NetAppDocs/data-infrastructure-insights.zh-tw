@@ -6,13 +6,7 @@ summary: Cloud Insights 會追蹤基礎架構的變更、以便輕鬆進行分�
 ---
 = 基礎架構變更分析
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
 
 [role="lead"]

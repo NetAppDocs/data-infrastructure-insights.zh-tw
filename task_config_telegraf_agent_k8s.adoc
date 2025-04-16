@@ -6,13 +6,8 @@ summary: Kubernetes Monitoring Operator 會收集 Kubernetes 資料、以供 Dat
 ---
 = Kubernetes 監控營運商的安裝與組態
 :hardbreaks:
-:toclevels: 2
 :allow-uri-read: 
 :nofooter: 
-:toclevels: 2
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
 
 [role="lead"]

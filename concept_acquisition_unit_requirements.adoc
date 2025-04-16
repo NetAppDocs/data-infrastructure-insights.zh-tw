@@ -5,17 +5,8 @@ summary: 作為採購單位的伺服器或 VM 必須符合最低需求。
 keywords: AU, acquisition unit, requirements, sizing 
 ---
 = 採購單位需求
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

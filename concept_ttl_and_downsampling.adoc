@@ -5,17 +5,8 @@ summary: 說明資料保留時間和縮減取樣
 keywords: time-to-live, TTL, downsampling, downsample, retention 
 ---
 = 資料保留與縮減取樣資料
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

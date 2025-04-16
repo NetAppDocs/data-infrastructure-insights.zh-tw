@@ -5,17 +5,8 @@ summary: 自訂報告輸出與交付、將報告複製到剪貼簿、開啟報�
 keywords: reporting, cognos, data warehouse, dwh, managing, customizing, copying 
 ---
 = 管理報告
-:toc: macro
 :hardbreaks:
-:toclevels: 2
 :allow-uri-read: 
-:toc: 
-:toclevels: 2
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

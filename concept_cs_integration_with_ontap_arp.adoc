@@ -5,17 +5,8 @@ summary: 工作負載安全功能整合ONTAP 了功能不全的勒索軟體保�
 keywords: ransomware, ARP, Protection, Security 
 ---
 = 整合ONTAP 了功能完善的勒索軟體保護功能
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

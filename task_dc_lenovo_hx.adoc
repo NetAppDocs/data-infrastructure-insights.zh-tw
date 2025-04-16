@@ -5,17 +5,8 @@ keywords: data collector, Lenovo, HX
 summary: 設定Lenovo HX資料收集器。 
 ---
 = Lenovo HX資料收集器
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

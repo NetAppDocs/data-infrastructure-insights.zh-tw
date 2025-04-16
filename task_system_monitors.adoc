@@ -5,17 +5,8 @@ keywords: monitors, alerts, log, metric
 summary: 建立監控器以警示效能或庫存臨界值、以及度量或記錄條件。 
 ---
 = 系統監視器
-:toc: macro
 :hardbreaks:
-:toclevels: 2
 :allow-uri-read: 
-:toc: 
-:toclevels: 2
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
@@ -24,8 +15,8 @@ Data Infrastructure Insights 包含多個系統定義的監控器、可同時用
 
 NOTE: 根據預設、許多系統監視器都處於 _ 暫停 _ 狀態。您可以選取監視器的 _Resum_( 恢復 ) 選項來啟用系統監視器。確保在資料收集器中啟用 _Advanced Counter 資料收集 _ 和啟用 ONTAP EMS 記錄收集 _ 。這些選項可在 ONTAP 資料收集器的 _Advanced Configuration_ 下找到：image:Enable_Log_Monitor_Collection.png["啟用ONTAP 進階計數器和EMS記錄收集功能以利執行功能"]
 
+目錄： []
 
-toc::[]
 
 
 == 監控說明

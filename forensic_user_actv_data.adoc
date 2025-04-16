@@ -5,17 +5,12 @@ keywords: Forensic, user activity, user activity data,
 summary: 鑑識使用者活動資料 
 ---
 = 鑑識使用者活動資料
-:toc: macro
 :hardbreaks:
-:toclevels: 
 :allow-uri-read: 
-:toc: 
-:toclevels: 
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

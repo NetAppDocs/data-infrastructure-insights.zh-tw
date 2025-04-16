@@ -5,17 +5,8 @@ keywords: roles, guest, user, administrator, SSO, Federate, federation, identity
 summary: Data Infrastructure Insights 提供多個具有不同權限層級的使用者帳戶。 
 ---
 = 使用者帳戶與角色
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

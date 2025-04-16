@@ -5,17 +5,8 @@ summary: 進階搜尋技術可協助您找到所需的資產。
 keywords: asset page, objects, search, advanced, alerts 
 ---
 = 搜尋資產與警示的提示與秘訣
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

@@ -5,17 +5,8 @@ keywords: insight, greedy, degraded, impacted, impacting, impactful, impact, res
 summary: Insights可讓您深入瞭解資源使用量和趨勢。 
 ---
 = 洞見
-:toc: macro
 :hardbreaks:
-:toclevels: 2
 :allow-uri-read: 
-:toc: 
-:toclevels: 2
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

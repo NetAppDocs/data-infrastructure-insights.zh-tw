@@ -5,17 +5,8 @@ summary: 資產頁面的「使用者資料」區段可讓您將註釋或應用�
 keywords: asset page, user data, applications, annotations 
 ---
 = 使用者資料區段
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

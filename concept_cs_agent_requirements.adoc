@@ -5,17 +5,8 @@ summary: 您作為代理程式使用的伺服器或VM必須符合最低需求
 keywords: agent, Linux, requirements, docker, browsers, permissions, Network, Cloud Secure 
 ---
 = 工作負載安全代理程式需求
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

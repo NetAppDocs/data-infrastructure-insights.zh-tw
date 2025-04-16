@@ -5,17 +5,8 @@ summary: 設定NetApp StorageGRID 資料收集器
 keywords: data collector, queries, create, storagegrid 
 ---
 = NetApp StorageGRID 資料收集器
-:toc: macro
 :hardbreaks:
-:toclevels: 2
 :allow-uri-read: 
-:toc: 
-:toclevels: 2
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

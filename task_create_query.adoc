@@ -5,17 +5,8 @@ summary: 查詢可讓您快速輕鬆地找出您感興趣的資產和指標。
 keywords: query, queries 
 ---
 = 建立查詢
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

@@ -6,13 +6,7 @@ keywords: dashboard, widget, custom, view, data
 ---
 = 儀表板總覽
 :hardbreaks:
-:toclevels: 2
 :allow-uri-read: 
-:toclevels: 2
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
 
 [role="lead"]
@@ -21,8 +15,8 @@ Data Infrastructure Insights 可讓使用者靈活地建立基礎架構資料的
 
 IMPORTANT: 本節中的範例僅供說明之用、並未涵蓋所有可能的情境。此處的概念與步驟可用來建立您自己的儀表板、以強調您特定需求的特定資料。
 
+目錄： []
 
-toc::[]
 
 
 == 建立儀表板

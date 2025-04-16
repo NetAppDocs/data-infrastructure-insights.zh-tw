@@ -5,17 +5,8 @@ keywords: data collector, Unisphere, EMC
 summary: 設定Dell EMC UnREST資料收集器。 
 ---
 = 設定Dell EMC Unisphere資料收集器
-:toc: macro
 :hardbreaks:
-:toclevels: 2
 :allow-uri-read: 
-:toc: 
-:toclevels: 2
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

@@ -5,17 +5,8 @@ keywords: webhook, notification, Microsoft, Teams, integration
 summary: 建立Webhook、針對Microsoft團隊的效能或庫存臨界值發出警示 
 ---
 = Microsoft團隊的Webhook範例
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

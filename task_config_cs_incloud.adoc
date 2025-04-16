@@ -5,17 +5,8 @@ keywords: Cloud, Storage, AWS, Cloud Volumes, Cloud ONTAP, firewall, VPC, Subnet
 summary: 「工作負載安全性」使用資料收集器從裝置收集檔案和使用者存取資料。 
 ---
 = 設定Cloud Volumes ONTAP 適用於NetApp ONTAP 的支援NetApp的支援功能、包括支援功能
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

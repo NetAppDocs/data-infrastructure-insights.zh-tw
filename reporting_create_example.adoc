@@ -5,17 +5,8 @@ summary: 使用此程序、使用預先定義的 Data Infrastructure Insights �
 keywords: reporting, cognos, data warehouse, dwh, create, report 
 ---
 = 建立報告（範例）
-:toc: macro
 :hardbreaks:
-:toclevels: 2
 :allow-uri-read: 
-:toc: 
-:toclevels: 2
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

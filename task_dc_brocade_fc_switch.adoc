@@ -5,17 +5,8 @@ keywords: data collector, Brocade, FC switch,
 summary: 設定Brocade FC交換器資料收集器。 
 ---
 = Brocade FC交換器資料收集器
-:toc: macro
 :hardbreaks:
-:toclevels: 2
 :allow-uri-read: 
-:toc: 
-:toclevels: 2
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

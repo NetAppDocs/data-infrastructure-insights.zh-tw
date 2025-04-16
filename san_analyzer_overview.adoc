@@ -6,13 +6,7 @@ keywords: topology, analyze, analysis, map
 ---
 = SAN Analyzer 總覽
 :hardbreaks:
-:toclevels: 2
 :allow-uri-read: 
-:toclevels: 2
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
 
 [role="lead"]

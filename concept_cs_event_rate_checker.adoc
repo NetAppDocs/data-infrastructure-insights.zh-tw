@@ -5,17 +5,8 @@ summary: 在安裝ONTAP SVM DSC之前、可以執行此指令碼來檢查SVM中�
 keywords: event, checker, rate, sizing, cloud secure 
 ---
 = SVM事件率檢查器（代理程式規模調整指南）
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

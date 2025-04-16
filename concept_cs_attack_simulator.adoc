@@ -5,17 +5,8 @@ keywords: ransomware, simulation, simulator, restrict, attack
 summary: 您可以使用指令碼來模擬勒索軟體攻擊、以測試或展示工作負載安全性 
 ---
 = 工作負載安全性：模擬攻擊
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

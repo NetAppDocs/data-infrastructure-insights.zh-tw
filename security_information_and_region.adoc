@@ -5,17 +5,8 @@ summary: Data Infrastructure Insights 在整個版本生命週期中遵循安全
 keywords: security, risk, protection 
 ---
 = 資訊與地區
-:toc: macro
 :hardbreaks:
-:toclevels: 2
 :allow-uri-read: 
-:toc: 
-:toclevels: 2
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

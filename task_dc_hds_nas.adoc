@@ -5,17 +5,8 @@ keywords: data collector, HDS HNAS, HDS NAS
 summary: 設定HDS NAS（HNAS）資料收集器。 
 ---
 = 設定Hitachi Vantara NAS資料收集器
-:toc: macro
 :hardbreaks:
-:toclevels: 2
 :allow-uri-read: 
-:toc: 
-:toclevels: 2
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

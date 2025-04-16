@@ -6,13 +6,7 @@ summary: 建立監控器以警示效能或庫存臨界值
 ---
 = 使用Webhooks通知
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
 
 [role="lead"]

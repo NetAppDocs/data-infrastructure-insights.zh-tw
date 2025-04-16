@@ -5,17 +5,8 @@ summary: 使用 Data Infrastructure Insights API 直接查詢報告資料庫。
 keywords: reporting, cognos, data warehouse, dwh, API 
 ---
 = 透過API存取報告資料庫
-:toc: macro
 :hardbreaks:
-:toclevels: 2
 :allow-uri-read: 
-:toc: 
-:toclevels: 2
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

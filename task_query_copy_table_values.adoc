@@ -5,17 +5,8 @@ summary: 您可以將值從表格複製到剪貼簿、以便用於其他應用�
 keywords: query, queries, copy, values, clipboard 
 ---
 = 複製表格值
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

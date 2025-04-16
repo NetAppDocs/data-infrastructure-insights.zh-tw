@@ -5,17 +5,8 @@ keywords: data collector, Red Hat Virtualization
 summary: 設定Red Hat虛擬化資料收集器。 
 ---
 = Red Hat虛擬化資料收集器
-:toc: macro
 :hardbreaks:
-:toclevels: 2
 :allow-uri-read: 
-:toc: 
-:toclevels: 2
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

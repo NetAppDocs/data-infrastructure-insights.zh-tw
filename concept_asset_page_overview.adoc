@@ -6,13 +6,7 @@ keywords: asset page, objects, landing page, Virtual machine, VM, Storage Virtua
 ---
 = 資產頁面總覽
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
 
 [role="lead"]

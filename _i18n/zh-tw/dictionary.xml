@@ -102,7 +102,6 @@
   <block id="eeb633b07360786b4ed111224e472b5a" category="section-title">電容項目</block>
   <block id="17261729b0a6791788f14c944a555443" category="paragraph">CapacityItem是單一邏輯容量單位。其父物件所定義的單位為「Value（值）」和「highThreshold（高臨界值）」。它也支援選用的明細圖、說明如何建構容量值。例如、100 TB storagePool的總容量為值100的電容項目。細項資料可能顯示已配置給「資料」的60 TB及「快照」的40 TB。</block>
   <block id="3b0649c72650c313a357338dcdfb64ec" category="list-text">附註</block>
-  <block id="116187c467970a363a1be1eec9777926" category="list-text">「高臨界值」代表對應度量的系統定義臨界值、用戶端可用來針對超出可接受設定範圍的值產生警示或視覺提示。</block>
   <block id="01499e599eb4fdc4c936da877a465d53" category="paragraph">以下顯示具有多個容量計數器的StoragePools容量：</block>
   <block id="85aa7a55c03d4a7d205562096674066a" category="inline-image-macro">儲存資源池容量範例</block>
   <block id="6f0ac10b550f7a116f9d902d16213da3" category="paragraph"><block ref="6f0ac10b550f7a116f9d902d16213da3" category="inline-image-macro-rx" type="image"></block></block>
@@ -828,17 +827,6 @@
   <block id="59a039b9bdde97f886d094af635410bd" category="section-title">轉型指標</block>
   <block id="f7c36dece720648d179dbf6c974f9288" category="paragraph">Data Infrastructure Insights 針對 Widget 中的特定度量提供不同的 * 轉換 * 選項（特別是稱為「自訂」或整合指標的度量、例如來自 Kubernetes 、 ONTAP 進階資料、 Telegraf 外掛程式等）、可讓您以多種方式顯示資料。將可轉型的度量新增至小工具時、系統會顯示下拉式清單、提供下列轉換選項：</block>
   <block id="6adf97f83acf6453d4a6a4b1070f3754" category="list-text">無</block>
-  <block id="8dff9b3275d903bce911a227cbed3634" category="list-text">資料會顯示為「現用」、不會有任何操作。</block>
-  <block id="dcb66ff6e4a2517ade22183779939c9d" category="list-text">費率</block>
-  <block id="9b3e9f4a548e4f107c31fe2a21eed22a" category="list-text">目前值除以上次觀察後的時間範圍。</block>
-  <block id="eb2527806a7e1ef48009eaaa785368fe" category="list-text">累計</block>
-  <block id="81be1e144a5ed592ed4813fe9a14b16d" category="list-text">先前值和目前值總和的累積。</block>
-  <block id="db1f4ab5845def61a83d5df13e0c2397" category="list-text">差異</block>
-  <block id="a1933dae1248a2768b141e98f357f4e1" category="list-text">先前觀察值與目前值之間的差異。</block>
-  <block id="182287f79b18308934050eed051fa06e" category="list-text">差異率</block>
-  <block id="c4b4b6e9c3267be39ae1c34d6560414a" category="list-text">差異值除以上次觀察後的時間範圍。</block>
-  <block id="bef0e8af1d9f29c6ecb74d3390d4f227" category="list-text">累計率</block>
-  <block id="71d65ae1cbf6688be0226ae6c7ce8a47" category="list-text">累計值除以上次觀察後的時間範圍。</block>
   <block id="7ade6c64e9a88c6a4e7b10ff7debb111" category="paragraph">請注意、轉換指標並不會變更基礎資料本身、只會變更資料的顯示方式。</block>
   <block id="9c03aeff3f0df812a2cff2cd25e5e8b0" category="section-title">儀表板Widget查詢與篩選器</block>
   <block id="cf43137803fb51915f84cbc5c3068d34" category="section-title">查詢</block>
@@ -4378,8 +4366,6 @@
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">隱私權政策</block>
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
-  <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">開放原始碼</block>
-  <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知檔案提供有關 NetApp 軟體所使用之協力廠商版權與授權的資訊。</block>
   <block id="c7f50a9f133f1f71a9f91fe12f7c7f7e" category="inline-link-macro">資料基礎架構洞見通知（前身為 Cloud Insights ）</block>
   <block id="4d8cd5134c1193f4d301c7e6bcaa38a7" category="inline-link-macro">工作負載安全性注意事項（先前Cloud Secure 稱為「不安全」）</block>
   <block id="af943d1d81f743ab6e7c9bcbe3a8c6e9" category="summary">NKMO Clusterrole的Yaml檔案範例</block>
@@ -5972,11 +5958,7 @@
   <block id="af53996a121bcf0b43c612a8465b5398" category="list-text">執行下列命令、確保已針對SVM設定正確的應用程式：</block>
   <block id="cce32d87b6a1e3cf5567d9c84f96be3f" category="inline-image-macro">SVM命令輸出範例</block>
   <block id="d056d5eb1e184e9c1ac10b7b898406c4" category="paragraph">輸出範例：<block ref="c5dea5ffbc3dcabd33992848de2142cc" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7f94746ef413dd6cce888dc8191c7d02" category="list-text">確保 SVM 已設定 CIFS 伺服器： clusterShell ：： &gt;<block ref="fafd8ff6ac4a59e73c5d4e3b47d545ee" prefix=" " category="inline-code"></block></block>
   <block id="4b39c6cbbc0b2ff309b19953839ed0f3" category="paragraph">系統會傳回Vserver名稱、CIFS伺服器名稱及其他欄位。</block>
-  <block id="b059c5a49d6022043ff796404b82c462" category="list-text">設定SVM vsadmin使用者的密碼。如果使用自訂使用者或叢集管理使用者，請略過此步驟。 clusterShell ：： &gt;<block ref="73b77b9c99e693ec16bc3e4960672465" prefix=" " category="inline-code"></block></block>
-  <block id="7236e4bb54415ccc8948a0979ed96585" category="list-text">解除鎖定SVM vsadmin使用者以進行外部存取。如果使用自訂使用者或叢集管理使用者，請略過此步驟。 clusterShell ：： &gt;<block ref="db25ee40fb860a97415dab9c598caaf9" prefix=" " category="inline-code"></block></block>
-  <block id="2358ac25c31ef63c5d2ed813dbf64816" category="list-text">確保資料LIF的防火牆原則設定為「mGMT」（而非「dATA」）。如果使用專用管理 lif 來新增 SVM ， clusterShell ：： &gt; ，請略過此步驟<block ref="0197c7c6728dc0e945da717147320f69" prefix=" " category="inline-code"></block></block>
   <block id="2d3cc76ffef3ba66813c26ecf4f96b0f" category="list-text">啟用防火牆時、您必須定義例外狀況、才能使用Data ONTAP 「Data Collector」允許連接埠的TCP流量。</block>
   <block id="1b44ec95d8bb09c8257712da31dde413" category="inline-link-macro">代理程式需求</block>
   <block id="d47350de0cb738713602fc081af217e9" category="paragraph">如需組態資訊，請參閱<block ref="66b24601b32ea1e28a736b303c9dda16" category="inline-link-macro-rx"></block>。這適用於安裝在雲端的內部部署代理程式和代理程式。</block>
@@ -9573,15 +9555,6 @@
   <block id="49dac8e94cf3a894a33bf2ff0051828c" category="list-text">輸入註釋的*名稱*和*說明*。</block>
   <block id="5ed946a370c3e5d22bb43ca0f39ca56b" category="paragraph">您可以在這些欄位中輸入最多255個字元。</block>
   <block id="405058419342051b3c11561ed45101a9" category="list-text">按一下「*類型*」、然後選取下列其中一個選項、代表此註釋所允許的資料類型：</block>
-  <block id="853674fd87670915f5e62faf7ba4201b" category="list-text">建立一個下拉式清單，其中有 yes 和 no 選項，例如，「直接附加」註解是布林值。</block>
-  <block id="30351833b3f477dc86ff2081ead61845" category="list-text">這會建立一個保留日期的欄位。例如、如果註釋是日期、請選取此選項。</block>
-  <block id="368748c929322a3f212441c747f2b16d" category="list-text">建立下列其中一項：</block>
-  <block id="909b59bf6aecf275b91dbb2cf2ec5521" category="list-text">下拉式固定清單</block>
-  <block id="ef957d205d8a4826f9552e63f41f17fe" category="paragraph">當其他人在裝置上指派此註釋類型時、他們無法新增更多值至清單。</block>
-  <block id="1658a49ef0d858de0e9ee69c3a5e10b4" category="list-text">下拉式彈性清單</block>
-  <block id="6c97cf7a205eed7477c9cb071a14d09e" category="paragraph">如果您在建立此清單時選取「即時新增值」選項、則當其他人在裝置上指派此註釋類型時、他們可以將更多值新增至清單。</block>
-  <block id="790087407b1b2f72741fa0eec24f9cf7" category="list-text">建立一個欄位、讓指派附註的使用者可以輸入一個數字。例如、如果註釋類型為「Floor」、則使用者可以選取「Number」的值類型、然後輸入樓層編號。</block>
-  <block id="d5a5fcc5b0ad62b2be2608a1437cc15c" category="list-text">建立允許自由格式文字的欄位。例如、您可以輸入「Language（語言）」作為註釋類型、選取「Text（文字）」作為值類型、然後輸入語言作為值。</block>
   <block id="a619e1879772f3d8b997e57449a4917d" category="admonition">設定類型並儲存變更後、便無法變更註釋類型。如果您需要變更類型、則必須刪除註釋並建立新的註釋。</block>
   <block id="7cc5d080d4ace8620cb66ec8af48642c" category="list-text">如果您選取「清單」作為註釋類型、請執行下列動作：</block>
   <block id="72d27766c4fd84aa2a683895eae75df9" category="list-text">如果您想要在資產頁面上新增更多值至註釋、請選取*「即時新增值」*、以建立彈性清單。</block>
@@ -10977,7 +10950,6 @@
   <block id="cd340fe1a6cf5e3a42e4f1d2eae63efb" category="paragraph">「工作負載安全性」使用資料收集器從裝置收集檔案和使用者存取資料。您可以在此找到疑難排解此收集器問題的秘訣。</block>
   <block id="e937b51440ae649590205a6bdfe87f95" category="inline-link-macro">設定 SVM Collector</block>
   <block id="7dd7d734df8f68ee69beae1fdbd5a09e" category="paragraph">如需設定此收集器的說明、請參閱<block ref="22f03f06815cacacef516ef1743c2ffa" category="inline-link-macro-rx"></block>頁面。</block>
-  <block id="4b3fbac9b531aa2660d41834f330998e" category="paragraph">發生錯誤時、請按一下「_Status」（狀態）欄中的「_Mor詳細 資料」、以取得錯誤的詳細資料。</block>
   <block id="9308a4a251c0b6f099fc32506e41c24d" category="inline-image-macro">工作負載安全性收集器錯誤更多詳細資料連結</block>
   <block id="6a6fcf99d83d56b2429dfa3ef83b50a0" category="paragraph"><block ref="6a6fcf99d83d56b2429dfa3ef83b50a0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d7a4e713cb63e4db8a2b51e171793fb0" category="cell">資料收集器會執行一段時間、並在隨機時間後停止、失敗時顯示：「錯誤訊息：連接器處於錯誤狀態。服務名稱：稽核。故障原因：外部fpolicy伺服器過載。"</block>
@@ -11955,8 +11927,6 @@
   <block id="4e80b0ab552791c676018d06a8ab1a7c" category="list-text">岩石 9.5</block>
   <block id="ef436eeff254793f46443f71b4c3e50d" category="list-text">SUSE Linux Enterprise Server 15 SP6</block>
   <block id="7ce4625168ff8cf506188a346ab739ac" category="list-text">Ubuntu Server 24.04 LTS</block>
-  <block id="0be262a01ffd53cb1827d924de37e376" category="paragraph">透過強化的 REST API 使用率追蹤功能，加強您的安全狀態，並簡化資源管理，供管理員使用者使用。透過 API 使用率追蹤，您可以查看使用的 API Token ， IP 位址及其產生的流量量。將權杖連結至特定的 IP 位址和使用層級，即可深入瞭解系統存取和使用趨勢，讓您掌控維持安全，有效率的環境，並讓作業順暢運作。</block>
-  <block id="8261d0e1521d30da1b36761d508cb245" category="paragraph">若要檢視 API 使用率，請瀏覽至 * 可服務性 &gt; 管理 &gt; API 存取 * ，然後選取 _ 檢視 API 使用率 _ 。請注意，此 API 僅適用於 DII 可服務性 API ，不適用於工作負載安全性。</block>
   <block id="2613b3928d7ae4e00e8610b858e67528" category="paragraph">您可以自訂報告的輸出格式和交付，設定報告內容或排程，以及電子郵件報告。</block>
   <block id="7676d746a6b2036f8764b1e1250213d3" category="cell">3.1.1 （ MU1 ） 3.1.2 （ MU3 ） 3.1.3 （ MU1 ） 3.1.3 （ MU2 ） 3.2.1 （ MU2 ） 3.2.1 （ MU3 ） 3.2.1 （ MU5 ） 3.2.2 （ MU4 ） 3.2.2 （ MU6 ） 3.3.1 3.3.1 （ MU1 ） 3.3.1 （ MU2 ） 3.3.1 （ MU3 ） 3.3.1</block>
   <block id="d9c3a16f0d6e7e82d6b68abd0ed8778b" category="paragraph">此資料收集器支援的機型和版本： API 版本：</block>
@@ -12334,4 +12304,47 @@
   <block id="96f9921aa76d3057450b4f8f037c88c6" category="list-text">Agent 機器可能沒有足夠的 CPU 或 RAM 保留空間，這就是 DSC 故障的原因。請檢查新增至機器代理程式的資料收集器數量。如果超過20個、請增加代理機器的CPU和RAM容量。CPU和RAM增加之後、DSC就會進入初始化、然後自動進入執行狀態。請參閱上的尺寸調整指南<block ref="830ad31fe88c5bf31dcfcc5f15ccdf0e" category="inline-link-macro-rx"></block>。</block>
   <block id="3f30aeae69979f1a726fa86b1951eb1a" category="paragraph">每個層都以不同的速率計量，並一起計算整個層級，以提供加權權利。計算加權使用量的公式如下：</block>
   <block id="277010ce624a057cfbdaed781a611725" category="paragraph">為了協助達成此目標， DII 會根據 _ 訂閱 _ 數量來計算單一 * 加權權利 * 編號；然後根據 _ 探索 _ 儲存設備來計算相同的編號，只有在探索到的容量大於加權權利時才會宣告違規。如此一來，您就能靈活地監控不同於每個層級訂閱數量的數量，只要發現的總儲存容量在訂閱的加權權利範圍內， DII 就會允許這些數量。</block>
+  <block id="8d178fa49ef817f44dcc4258ca07b1dd" category="paragraph">附註：「高臨界值」代表對應度量的系統定義臨界值，用戶端可用來針對超出可接受設定範圍的值產生警示或視覺提示。</block>
+  <block id="923fc210f74163c8b2f7b1b3b93f66d9" category="paragraph">目錄： []</block>
+  <block id="cb7c09827bd69ac10d5ced00302bbe0a" category="paragraph">無：資料會依目前狀態顯示，不會有任何操作。</block>
+  <block id="04e0a16e5e5751fe89d90dc8e7c4836d" category="paragraph">速率：目前值除以上次觀察後的時間範圍。</block>
+  <block id="57f025c43ccbd17175f551d2537502f6" category="paragraph">Cumulative ：先前值和目前值總和的累積。</block>
+  <block id="ee7e4da7ed0e53334d90ad8a9e7b2ac7" category="paragraph">差異：先前觀察值與目前值之間的差異。</block>
+  <block id="f92ec8daf31bca80a75188fc51e7c9d7" category="paragraph">差異速率：差異值除以上次觀察後的時間範圍。</block>
+  <block id="f3a6e5fadd6dd5c92532731c5e678fed" category="paragraph">累計率：累計值除以上次觀察後的時間範圍。</block>
+  <block id="b22cba5f40e7b73c3ff809f5520ed4bf" category="paragraph"><block ref="b22cba5f40e7b73c3ff809f5520ed4bf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="42ce83dc3f5ef22d986311b267a5ac20" category="section-title">2025 年 4 月</block>
+  <block id="fbc87552732cc2b26b43d6276a074ffc" category="section-title">以 ML-Powered Anomaly Bounds in Line Widget 提供主動式問題解決方案</block>
+  <block id="9f7cd8199d6124c4f4553f2c176b1d5c" category="paragraph">若要疑難排解折線圖或不規則曲線圖 Widget 的效能問題，您現在可以在實際度量旁顯示預期的行為界限，以便區分正常和異常的度量趨勢。</block>
+  <block id="eebf90e82914469f2dfc221f4faf2065" category="paragraph">DII 機器學習搭配季節性資料分析，可根據歷史模式建立智慧型臨界值。當指標偏離預期範圍時，系統會將這些指標強調為異常狀況，以便快速識別問題，縮短平均解決問題時間，並在問題影響營運之前解決問題。</block>
+  <block id="44ca9974803bd41bb1826d9cf436c703" category="inline-image-macro">顯示尖峰超過，寬度 =400 的預期界限</block>
+  <block id="093b02dc890c25bbe57cc9883b6f37e5" category="paragraph"><block ref="093b02dc890c25bbe57cc9883b6f37e5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6c8b67e91957195849c42aaf1ad22042" category="section-title">利用 VSAN 儲存支援來最佳化 VMware 成本</block>
+  <block id="7ae6cf4414540fa7a14236e09f4bc284" category="paragraph">我們的 VM 最佳化功能現在包含對含 VSAN 儲存設備的 VMware 環境的支援。除了 CPU 和記憶體使用量之外，分析現在也會考慮採用本機 VSAN 儲存設備進行回收建議，協助您進一步降低授權成本。</block>
+  <block id="ec05f91c2c2b63f117125c8a95ae7d4f" category="inline-image-macro">VSAN 的 VM 最佳化範例</block>
+  <block id="65aab751aa4e4fdccdbfd146653962a1" category="paragraph"><block ref="65aab751aa4e4fdccdbfd146653962a1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dd926bc8baa503ad7ada93a04edffe21" category="section-title">彈指之間即可取得警示詳細資料</block>
+  <block id="baf64fe15bce38c00a414f9f4ac29283" category="paragraph">全新的滑出面板讓您更輕鬆地調查警示。選取警示以檢視該警示的詳細資料，並在調查問題時輕鬆切換警示，而不會遺失您的位置。</block>
+  <block id="e9acb24b6ccfd9ff0141dc2683fb1fc6" category="inline-image-macro">警示會滑出，以利瀏覽</block>
+  <block id="3ae807e49abe8a58660ef733493cbacc" category="paragraph"><block ref="3ae807e49abe8a58660ef733493cbacc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="19cefc1a05e82b0e19584462dea5a563" category="section-title">工作負載安全性鑑識非同步匯出</block>
+  <block id="a39507b873640f4e60c12fb375005a04" category="paragraph">根據要匯出的資料量，匯出鑑識資料可能需要數秒到數小時的時間。工作負載安全性會以非同步方式匯出該資料，以便在編譯 .CSV 時繼續工作。</block>
+  <block id="6c17946dd20446540805b53e2f7cd731" category="section-title">資料收集器通知分組為規則</block>
+  <block id="c3bd9ae81ad0672e842d282715d758e1" category="paragraph">如果您已在資料收集器上設定通知，從 4 月 15 日起，這些通知將會在「通知規則」中處理，並針對收件者相同的收集器設定單一規則。具有不同收件者的收集器會有個別的規則。現有的收集器通知會移轉至通知規則。</block>
+  <block id="ca873110efddef67beadcfe5f8a4ca84" category="paragraph">透過強化的 REST API 使用率追蹤功能，加強您的安全狀態，並簡化資源管理，供管理員使用者使用。透過 API 使用率追蹤，您可以查看使用的 API Token ， IP 位址及其產生的流量量。將權杖連結至特定的 IP 位址和使用層級，即可深入瞭解系統存取和使用趨勢，讓您掌控維持安全，有效率的環境，並讓作業順暢運作。透過強化的 REST API 使用率追蹤功能，加強您的安全狀態，並簡化資源管理，供管理員使用者使用。透過 API 使用率追蹤，您可以查看使用的 API Token ， IP 位址及其產生的流量量。將權杖連結至特定的 IP 位址和使用層級，即可深入瞭解系統存取和使用趨勢，讓您掌控維持安全，有效率的環境，並讓作業順暢運作。</block>
+  <block id="24f17d3ee72bb2738ceb12180ec2fa71" category="paragraph">若要檢視 API 使用率，請瀏覽至 * 可服務性 &gt; 管理 &gt; API 存取 * ，然後選取 _ 檢視 API 使用率 _ 。請注意，此 API 僅適用於 DII 可服務性 API ，不適用於工作負載安全性。若要檢視 API 使用率，請瀏覽至 * 可服務性 &gt; 管理 &gt; API 存取 * ，然後選取 _ 檢視 API 使用率 _ 。請注意，此 API 僅適用於 DII 可服務性 API ，不適用於工作負載安全性。</block>
+  <block id="1178bc1f7bc2e2481537fe9d595549fd" category="paragraph">包括： https://raw.githubusercontent.com/NetAppDocs/common/main/_include/open-source-notice-intro.adoc[]</block>
+  <block id="4bffd602151b14e55ad1f19de262d0c1" category="list-text">確保 SVM 已設定 CIFS 伺服器： clusterShell ： &gt;<block ref="fafd8ff6ac4a59e73c5d4e3b47d545ee" prefix=" " category="inline-code"></block></block>
+  <block id="52ea452f7c0975b526b909c63394b7e8" category="list-text">設定SVM vsadmin使用者的密碼。如果使用自訂使用者或叢集管理使用者，請略過此步驟。 clusterShell ： &gt;<block ref="73b77b9c99e693ec16bc3e4960672465" prefix=" " category="inline-code"></block></block>
+  <block id="9b7edcaaf6b4a85dc972c92c9191eb04" category="list-text">解除鎖定SVM vsadmin使用者以進行外部存取。如果使用自訂使用者或叢集管理使用者，請略過此步驟。 clusterShell ： &gt;<block ref="db25ee40fb860a97415dab9c598caaf9" prefix=" " category="inline-code"></block></block>
+  <block id="368c3bb96cbd7737c094fe94dfdedf94" category="list-text">確保資料LIF的防火牆原則設定為「mGMT」（而非「dATA」）。如果使用專用管理 lif 來新增 SVM ， clusterShell ： &gt; ，請略過此步驟<block ref="0197c7c6728dc0e945da717147320f69" prefix=" " category="inline-code"></block></block>
+  <block id="c71b503670f2867f513635832d1599c3" category="paragraph"><block ref="c71b503670f2867f513635832d1599c3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d2b98171b3e920dab4bb3e92ccf4e89a" category="paragraph"><block ref="d2b98171b3e920dab4bb3e92ccf4e89a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="feacd3cef81abfcdbf59bda9ba5b97fd" category="paragraph"><block ref="feacd3cef81abfcdbf59bda9ba5b97fd" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="24b75506ade423135a0ebfd6a8ab8fa4" category="paragraph">布林值：建立一個下拉式清單，其中有 yes 和 no 選項，例如，「直接附加」註解是布林值。日期：這會建立一個保留日期的欄位。例如、如果註釋是日期、請選取此選項。清單：建立下列其中一項： * 下拉式固定清單</block>
+  <block id="3eb86d134a8e7d548d1298e1aa9a12d5" category="paragraph">+ 當其他人在裝置上指派此附註類型時，他們無法在清單中新增更多值。* 下拉式彈性清單</block>
+  <block id="d8f872f26b52cf9aec4a137dbe0a8c26" category="paragraph">+ 如果您在建立此清單時選取「即時新增值」選項，當其他人在裝置上指派此附註類型時，他們可以在清單中新增更多值。</block>
+  <block id="d41b70ca456515e9579f88a5bc4b81f5" category="paragraph">Number ：建立欄位，讓指派註釋的使用者可以輸入數字。例如、如果註釋類型為「Floor」、則使用者可以選取「Number」的值類型、然後輸入樓層編號。</block>
+  <block id="9dc3b5c01c2c832a96e1c6c19e498029" category="paragraph">文字：建立允許自由格式文字的欄位。例如、您可以輸入「Language（語言）」作為註釋類型、選取「Text（文字）」作為值類型、然後輸入語言作為值。</block>
+  <block id="bf446d389b04278c2780f587bb4b6e54" category="paragraph">發生錯誤時，您可以按一下「已安裝的資料收集器」頁面 _ 狀態 _ 欄中的 _ 更多詳細資料 _ ，以取得有關錯誤的詳細資料。</block>
 </blocks>

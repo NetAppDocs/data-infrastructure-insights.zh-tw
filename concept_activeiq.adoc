@@ -5,17 +5,9 @@ keywords: Active IQ, risks, svm, AIQ, risk
 summary: Data Infrastructure Insights 會從 NetApp Active IQ 收集風險資料 
 ---
 = Active IQ
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
 :nofooter: 
-:toclevels: 1
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

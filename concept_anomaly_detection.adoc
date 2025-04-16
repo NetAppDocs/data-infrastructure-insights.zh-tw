@@ -5,17 +5,9 @@ keywords: Anomalies, anomaly, patterns, monitor, alert
 summary: 監控度量以瞭解異常狀況 
 ---
 = 異常狀況偵測監視器
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
 :nofooter: 
-:toclevels: 1
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

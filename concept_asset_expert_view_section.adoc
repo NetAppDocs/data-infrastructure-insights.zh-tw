@@ -5,17 +5,8 @@ summary: 資產頁面的「專家檢視」區段是疑難排解或監控的強�
 keywords: asset page, expert view, metrics, greedy, degraded, correlated, contributors, chart, refresh 
 ---
 = 專家檢視
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

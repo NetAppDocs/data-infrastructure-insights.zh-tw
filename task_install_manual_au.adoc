@@ -6,13 +6,7 @@ summary: 資料基礎架構 Insights 可設定為手動更新 AU 軟體，讓您
 ---
 = 手動安裝擷取單元軟體
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
 
 [role="lead"]

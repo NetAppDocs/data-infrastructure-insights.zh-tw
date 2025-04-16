@@ -5,17 +5,8 @@ summary: 預先定義的報告總覽
 keywords: reporting, cognos, data warehouse, dwh, pre-defined 
 ---
 = 預先定義的報告變得簡單易用
-:toc: macro
 :hardbreaks:
-:toclevels: 2
 :allow-uri-read: 
-:toc: 
-:toclevels: 2
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

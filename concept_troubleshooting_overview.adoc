@@ -6,13 +6,7 @@ keywords:
 ---
 = 疑難排解資料基礎架構洞見問題
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
 
 [role="lead"]

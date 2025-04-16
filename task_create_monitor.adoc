@@ -5,17 +5,8 @@ keywords: monitors, alerts, log, metric, system-defined, system, metric,
 summary: 建立監控器以警示效能或庫存臨界值、以及度量或記錄條件。 
 ---
 = 使用監視器警示
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
@@ -24,8 +15,8 @@ summary: 建立監控器以警示效能或庫存臨界值、以及度量或記�
 
 TIP: 所有 Data Infrastructure Insights 版本均提供監控和警示功能、但 Basic Edition 必須遵守下列條件： * 您一次最多只能有五個自訂監控器處於作用中狀態。超過五個的任何監視器都會建立或移至_暫停_狀態。*不支援VMDK、虛擬機器、主機和資料存放區度量監控。如果您已針對這些指標建立監控、則這些指標將會暫停、降級至Basic Edition時將無法恢復。
 
+目錄： []
 
-toc::[]
 監控功能可讓您針對儲存設備、VM、EC2和連接埠等「基礎架構」物件所產生的度量、以及針對Kubernetes、ONTAP 支援各種進階指標和Telegraf外掛程式所收集的「整合」資料、設定臨界值。當超過警告層級或臨界層級臨界值時、這些_metric _監控器會發出警示。
 
 您也可以建立監視器、在偵測到指定的_log events時觸發警告、嚴重或資訊層級的警示。

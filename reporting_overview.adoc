@@ -6,13 +6,7 @@ keywords: reporting, cognos, data warehouse, dwh
 ---
 = 資料基礎架構洞見報告總覽
 :hardbreaks:
-:toclevels: 2
 :allow-uri-read: 
-:toclevels: 2
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
 
 [role="lead"]

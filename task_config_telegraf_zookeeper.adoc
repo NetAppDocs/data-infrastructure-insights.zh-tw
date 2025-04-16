@@ -5,17 +5,8 @@ keywords: telegraf, installation, install, apache, zookeeper
 summary: Apache Zookkeeper資料收集器組態 
 ---
 = Zookkeeper Data Collector
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

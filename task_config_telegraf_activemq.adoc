@@ -5,17 +5,8 @@ keywords: telegraf, installation, install, ActiveMQ
 summary: HTTP 資料收集器組態 
 ---
 = ActiveMQ資料收集器
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

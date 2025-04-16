@@ -5,17 +5,8 @@ keywords: data collector, Brocade, BNA
 summary: 設定Brocade BNA收集器。 
 ---
 = Brocade Network Advisor資料收集器
-:toc: macro
 :hardbreaks:
-:toclevels: 2
 :allow-uri-read: 
-:toc: 
-:toclevels: 2
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

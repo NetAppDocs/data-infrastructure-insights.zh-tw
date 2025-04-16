@@ -5,17 +5,8 @@ summary: 檢視已由監視器觸發的警示
 keywords: monitor, alert, viewing 
 ---
 = 從監控器檢視及管理警示
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

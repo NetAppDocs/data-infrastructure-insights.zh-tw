@@ -5,17 +5,8 @@ summary: 修改或刪除查詢
 keywords: query, queries, modify, edit, delete, remove 
 ---
 = 修改或刪除查詢
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
