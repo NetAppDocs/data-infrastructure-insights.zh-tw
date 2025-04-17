@@ -999,7 +999,6 @@
   <block id="d4c39c48f7a7f001c1903155c3db9ac7" category="paragraph"><block ref="d4c39c48f7a7f001c1903155c3db9ac7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="03df896fc71cd516fdcf44aa699c4933" category="section-title">變數</block>
   <block id="b4b0f4b96c62f1b25f5e8866a7d69ab6" category="paragraph">變數可讓您一次變更儀表板上部分或所有小工具中顯示的資料。將一或多個小工具設定為使用通用變數、在單一位置所做的變更會導致每個小工具中顯示的資料自動更新。</block>
-  <block id="45430f654166211a655017eedb515347" category="paragraph">儀表板變數有多種類型、可用於不同欄位、而且必須遵循命名規則。以下將說明這些概念。</block>
   <block id="e8196d2aa0d7c28cd131d991850f1cea" category="section-title">可變類型</block>
   <block id="f39814a3ff54979da6b688b16b8244e2" category="paragraph">變數可以是下列其中一種類型：</block>
   <block id="1634ed475d7378ae8b2f149b1a4c43e3" category="list-text">*屬性*：使用物件的屬性或度量進行篩選</block>
@@ -10952,34 +10951,13 @@
   <block id="7dd7d734df8f68ee69beae1fdbd5a09e" category="paragraph">如需設定此收集器的說明、請參閱<block ref="22f03f06815cacacef516ef1743c2ffa" category="inline-link-macro-rx"></block>頁面。</block>
   <block id="9308a4a251c0b6f099fc32506e41c24d" category="inline-image-macro">工作負載安全性收集器錯誤更多詳細資料連結</block>
   <block id="6a6fcf99d83d56b2429dfa3ef83b50a0" category="paragraph"><block ref="6a6fcf99d83d56b2429dfa3ef83b50a0" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d7a4e713cb63e4db8a2b51e171793fb0" category="cell">資料收集器會執行一段時間、並在隨機時間後停止、失敗時顯示：「錯誤訊息：連接器處於錯誤狀態。服務名稱：稽核。故障原因：外部fpolicy伺服器過載。"</block>
-  <block id="7dc1f3b50a6e66da2ae31d89467342c4" category="cell">Collector會報告錯誤訊息：「在連接器上找不到可連線至SVM資料介面的本機IP位址」。</block>
   <block id="dfb48a2f78b82c90165015b0e73f7e58" category="inline-link-macro">NetApp支援</block>
-  <block id="17f836aa8a8fb1af2d3360f0ff3cda15" category="cell">訊息：「無法判斷ONTAP [hostname:&lt;IP Address&gt;的資訊類型。原因：連線錯誤至儲存系統&lt;IP位址&gt;：主機無法連線（主機無法連線）"</block>
-  <block id="17a99211f689747ad8a030b9a5329d3f" category="cell">錯誤訊息：「連接器處於錯誤狀態。service.name：稽核。故障原因：外部fpolicy伺服器已終止。"</block>
   <block id="92803a6fb12b06142e6654f883c9c782" category="inline-link-macro">檢查防火牆命令</block>
-  <block id="3ff8715e3293a7f6a746ae2f5903e6fc" category="cell">活動頁面未顯示任何事件。</block>
-  <block id="bf7317c42b788373d4a9473aa1cc851b" category="cell">SVM Data Collector處於錯誤狀態、錯誤訊息為「代理程式無法連線至收集器」</block>
-  <block id="3650ca0390cbe1b7b56c0868bc3472e8" category="cell">SVM Data Collector會顯示錯誤訊息「fpolicy.server.connectError: Node失敗、無法與FPolicy伺服器建立連線：12.195.15.146」（原因：「Select Timed Out」（選擇逾時））</block>
-  <block id="19fbc1da6cc1d96ccb997d120b2a91eb" category="cell">在SVM/叢集中啟用防火牆。因此fpolicy引擎無法連線至fpolicy伺服器。可用於取得更多資訊的CLI包括：事件記錄檔show -SOUR叢fpolicy、其中顯示錯誤事件記錄檔show -source fpolicy -功能 變數事件、行動、說明、其中顯示更多詳細資料。ONTAP<block ref="c2f863dc8aacfc5c321b626bd2f4e2b3" category="inline-link-macro-rx"></block>在 ONTAP 側。</block>
-  <block id="9075128206bc41797fb7dcbcce601bd5" category="cell">錯誤訊息：「Connector處於錯誤狀態。服務名稱：稽核。故障原因：SVM上找不到有效的資料介面（角色：資料、資料傳輸協定：NFS或CIFS或兩者、狀態：UP）。」</block>
-  <block id="5e50a9740093f324176ef9cdd483d732" category="cell">確保有作業介面（做為CIFS/NFS的資料和資料傳輸協定角色）。</block>
-  <block id="42c19ac69d2315e69adceb5440ce4cbe" category="cell">資料收集器會進入「錯誤」狀態、然後在一段時間後進入「執行中」狀態、然後再次返回「錯誤」。此週期會重複。</block>
-  <block id="2d964cb606454cdebb2ea12ed310dbab" category="cell">連接器處於錯誤狀態。服務名稱：稽核。失敗原因：無法設定（SVM svmname上的原則。原因：在'fpolicy.policy.scoe-modify:"felf"中為「res-to -include'元素指定的值無效</block>
-  <block id="82e15291d012761eb5c9c9dc7f78a45f" category="cell">共用名稱必須在沒有任何報價的情況下提供。編輯ONTAP 「SVM DSC」組態以修正共用名稱。_包括和排除共享_不適用於長清單的共享區名稱。如果您要納入或排除大量共用、請改用依磁碟區篩選。</block>
-  <block id="195474d2c18505993c684349168eca84" category="cell">叢集中有未使用的現有fPolicies。在安裝工作負載安全性之前、應該如何處理這些問題？</block>
-  <block id="63deecc7a53992db1697a520a67af0bd" category="cell">啟用工作負載安全功能後ONTAP 、效能表現會受到影響：延遲偶爾會變得很高、IOP偶爾會變得很低。</block>
   <block id="25de52ee95bc069e80aae94425213b53" category="inline-link-macro">1372994</block>
   <block id="a23b44fdff4bcafe023f18c4c11815e0" category="inline-link">1415152</block>
   <block id="1728bd23561a7ad8c0a5ece1af1fc9e1" category="inline-link">1438207</block>
   <block id="36e30a439910e67f76754ab0874aef1b" category="inline-link">1479704</block>
   <block id="7e18cc81c15bd72df03b7461c26d6e4a" category="inline-link">1354659</block>
-  <block id="40e2d40b31fb9557e4b0f6ca0bff37f3" category="cell">使用 ONTAP 搭配工作負載安全功能時、 ONTAP 有時會出現延遲問題。有許多可能的原因如下所述：<block ref="5b7caa0ef6cc830703e594488c525913" category="inline-link-macro-rx"></block>，<block ref="b861ec6ca06b8e18b9d090dd75b00a26" category="inline-link-rx"></block>，，<block ref="a5fade3ab29d18b9b976189fcb9919ed" category="inline-link-rx"></block>，<block ref="8899da2205eee6e62b28641da3533e12" category="inline-link-rx"></block><block ref="c9d1d03c1b92a8bbffc617ad493e8619" category="inline-link-rx"></block>。所有這些問題都已在 ONTAP 9.13.1 及更新版本中修正、強烈建議您使用這些更新版本之一。</block>
-  <block id="723f73d5b4ee441851ae64cbfe823522" category="cell">資料收集器發生錯誤、顯示此錯誤訊息。「錯誤：連接器處於錯誤狀態。服務名稱：稽核。失敗原因：無法在SVM SVM_TEST上設定原則。原因：缺少ZAPI欄位值：事件。「</block>
-  <block id="0631a8aa5414db88c4ba11ffa8ff89e8" category="cell">從只設定NFS服務的新SVM開始著手。在ONTAP 工作負載安全性中新增一個功能不全的SVM資料收集器。CIFS被設定為SVM允許的傳輸協定、同時在ONTAP 工作負載安全性中加入SVM Data Collector。等到工作負載安全性中的資料收集器顯示錯誤。由於未在SVM上設定CIFS伺服器、因此工作負載安全性會顯示左圖所示的錯誤。編輯ONTAP 《SVM資料收集器》、並視允許的傳輸協定取消CIFS檢查。儲存資料收集器。它會在僅啟用NFS傳輸協定的情況下開始執行。</block>
-  <block id="1b852bd0522bb1e9abdc5b85f45b2eff" category="cell">資料收集器會顯示錯誤訊息：「錯誤：無法在2次重試中判斷收集器的健全狀況、請再次嘗試重新啟動收集器（錯誤代碼：AGENT008）」。</block>
-  <block id="f4635255d83c947a8f5c0873878fce73" category="cell">選取 SVM 模式時， Data Collector 會發生錯誤。</block>
-  <block id="e01a5196bbb9ef19ecab5eb2b9c9a7a8" category="cell">以 SVM 模式連線時，如果使用叢集管理 IP 來連線，而非 SVM 管理 IP ，則連線將會錯誤。請確定使用正確的 SVM IP 。</block>
   <block id="489efd89349dbbe0899a6a7b922044da" category="paragraph">如果您仍遇到問題、請聯絡*「說明」&gt;「支援*」頁面中提及的支援連結。</block>
   <block id="f998abe6d6e1433185e617432fa562a7" category="summary">新增檔案副檔名至允許的檔案類型清單、以減少警示。</block>
   <block id="2b38e4e9371e68c324f4d975aeec0b8b" category="doc">允許的檔案類型原則</block>
@@ -12246,14 +12224,10 @@
   <block id="3d9254358b13bcf7d44afcf258f73fd7" category="list-text">VMware ESXi 6.5.0 組建 - 5310538</block>
   <block id="f1bbfc67a175810e7ac8c661d6b4a2cc" category="list-text">VMware ESXi 8.0.1 組建 - 21495797</block>
   <block id="06450b55dd990fe8530bcc47f2e2c522" category="list-text">VMware vCenter Server 8.0.0 內部版本 -21457384</block>
-  <block id="97603db27713a81e2c84405a5352db03" category="cell">啟用「拒絕存取」功能時，資料收集器會顯示錯誤訊息：「 Connector 處於錯誤狀態。服務名稱：稽核。失敗原因：無法在 SVM test_SVM 上設定 fpolicy 。原因：使用者未經授權。 "</block>
-  <block id="56cad8f9ba4de10172f57856721882b0" category="cell">使用者可能遺失「拒絕存取」功能所需的 REST 權限。請依照上的指示<block ref="acf32226210d6c3eeee22de70798517f" category="inline-link-macro-rx"></block>來設定權限。一旦設定權限，請重新啟動收集器。</block>
-  <block id="7f4e990617f489c9ef64bd60d50bbe6b" category="paragraph">來自於此的事件率ONTAP 遠高於值機員方塊所能處理的事件率。因此連線終止。</block>
   <block id="6cbdb7b222e25139b815f11a8bf316b0" category="paragraph">當中斷連線時、請檢查CloudSecure中的尖峰流量。您可以從* CloudSecure &gt;活動鑑識&gt; All Activ練習*頁面查看。</block>
   <block id="fb318561d723fea4bf5cfc32c9f76869" category="paragraph">如果尖峰彙總流量高於值機員方塊所能處理的流量、請參閱「事件率檢查器」頁面、瞭解如何在值機員方塊中調整收集器部署的規模。</block>
   <block id="df5d9f6706ba32a91dad936fdd8c31ec" category="paragraph">如果代理程式安裝在 2021 年 3 月 4 日之前的代理程式方塊中，請在代理程式方塊中執行下列命令：</block>
   <block id="00b9b87b6684a6049795f956c8ffb2a5" category="paragraph">重新調整大小後，從 UI 重新啟動收集器。</block>
-  <block id="190f101017d4849e32ad24c85a037484" category="paragraph">這很可能是ONTAP 因為位在邊上的網路問題。請遵循下列步驟：</block>
   <block id="b2e0ae5db392da4135a0d6d4c1790759" category="list-text">請確定SVM資料LIF或管理LIF上沒有防火牆、無法與SVM連線。</block>
   <block id="1750d9cfda79066e3c52899aa692608a" category="list-text">透過叢集管理 IP 新增 SVM 時，請確保 SVM 的資料 LIF 和管理 LIF 可從 Agent VM 中進行 Ping 。發生問題時、請檢查閘道、網路遮罩和路由以取得LIF。</block>
   <block id="391d354d5b5d9326eec673c4983e3e05" category="paragraph">您也可以嘗試使用叢集管理IP透過ssh登入叢集、然後ping代理IP。請確定代理程式 IP 可以 Ping ：</block>
@@ -12292,12 +12266,10 @@
   <block id="4df741dad2f6a6c39f5a70a091533287" category="list-text">檢查有多少資料來源收集器連線至 Agent 。</block>
   <block id="d3def8792ee2d2f60ea9dd540351d13c" category="list-text">同時在 UI 的「 All Activity) 」頁面中檢查資料流率。</block>
   <block id="99a207238eac17ccccaa337b350f2c5e" category="list-text">如果每秒的活動數量相當高，請安裝另一個 Agent ，並將部分資料來源收集器移至新的 Agent 。</block>
-  <block id="bf084a2e9e043e416efdf5762e90830e" category="paragraph">這種情況通常發生在下列情況中：</block>
   <block id="15e5b3ba5eaf37b26361f3e2a868ae94" category="list-text">新增多個資料收集器。</block>
   <block id="e7b379f8d8ee16ec17e9758c65babb58" category="list-text">顯示這類行為的資料收集器將會在這些資料收集器中新增 1 個 SVM 。表示2個以上的資料收集器連接至1個SVM。</block>
   <block id="778e500175319f00ec332bd346fedb28" category="list-text">確保只有 1 個資料收集器連線至 1 個 SVM 。</block>
   <block id="12a944dc1d44e8ee8192cd638cb95cb4" category="list-text">刪除連接至同一個 SVM 的其他資料收集器。</block>
-  <block id="5c81db005bfd2b3f9c22268bec51a515" category="paragraph">建議刪除所有現有未使用的fpolicy設定、即使它們處於中斷連線狀態。「工作負載安全性」會以「cloudseced_」開頭的字元建立fpolicy。可以刪除所有其他未使用的fpolicy組態。</block>
   <block id="ac5c1a90c90193c22745b697a0f6d000" category="paragraph">顯示 fpolicy 清單的 CLI 命令：</block>
   <block id="7c275595b37d9736259910a2cee23932" category="paragraph">刪除 fpolicy 組態的步驟：</block>
   <block id="f2e1c8f11a6d114e56889c093ddb4738" category="list-text">在「資料收集器」頁面上、捲動至資料收集器右側、顯示錯誤訊息、然後按一下「3點」功能表。選取_編輯_。再次輸入資料收集器的密碼。按下「_Sav__」按鈕以儲存資料收集器。資料收集器會重新啟動、錯誤應該會解決。</block>
@@ -12347,4 +12319,45 @@
   <block id="d41b70ca456515e9579f88a5bc4b81f5" category="paragraph">Number ：建立欄位，讓指派註釋的使用者可以輸入數字。例如、如果註釋類型為「Floor」、則使用者可以選取「Number」的值類型、然後輸入樓層編號。</block>
   <block id="9dc3b5c01c2c832a96e1c6c19e498029" category="paragraph">文字：建立允許自由格式文字的欄位。例如、您可以輸入「Language（語言）」作為註釋類型、選取「Text（文字）」作為值類型、然後輸入語言作為值。</block>
   <block id="bf446d389b04278c2780f587bb4b6e54" category="paragraph">發生錯誤時，您可以按一下「已安裝的資料收集器」頁面 _ 狀態 _ 欄中的 _ 更多詳細資料 _ ，以取得有關錯誤的詳細資料。</block>
+  <block id="18ecc77d71add8ff4b0a4dd5d38432a5" category="section-title">放大到某個時間範圍</block>
+  <block id="b8a17d6bb00e8b3257bbc4ccce8f2aeb" category="paragraph">檢視時間序列 Widget （線條，不規則曲線，區域，堆疊區域）或登陸頁面上的圖形時，您可以將滑鼠拖曳到圖形上以放大。然後在畫面右上角鎖定時間範圍，讓其他頁面上的圖形能反映該鎖定時間範圍的資料。若要解除鎖定，請從清單中選取不同的時間範圍。</block>
+  <block id="f4d7fcf5873b7a09e82de6fe44f2a436" category="section-title">線路 Widget 中的異常界限</block>
+  <block id="d3e0c8a1ecd8c84ddaa334c2d9827e7f" category="paragraph">在儀表板或登陸頁面上加入折線圖或不規則曲線圖 Widget 時，您可以選擇在 * 預期界限 * 的資料內容中檢視圖表。您可以將此視為尋找資料模式中的異常。</block>
+  <block id="01b92f51612a1570641a4accf27354f1" category="paragraph">DII 使用季節性資料（每小時或每天）來設定資料在指定時間內的上限和下限。如果資料尖峰高於或低於預期範圍，圖表會將其反白標示為異常。</block>
+  <block id="99c3329d5d99881331bb15f97799f6be" category="inline-image-macro">異常範圍範例：顯示實際資料尖峰超過預期界限寬度 =600 的情況</block>
+  <block id="47a7aeee60dd8a61f9f66ca35aeae7f9" category="paragraph"><block ref="47a7aeee60dd8a61f9f66ca35aeae7f9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6e98803189caf8d600ac277ee26488e8" category="paragraph">若要檢視異常範圍，請編輯 Widget 並選擇顯示異常範圍 _ 。您可以從兩種偵測演算法中選擇：</block>
+  <block id="4516a972134716668d9d005af29ef139" category="list-text">* 調適性偵測器 * 可快速適應變更，因此有助於進行詳細調查。</block>
+  <block id="7e7aac57571a8828ad25658e8d2d2521" category="list-text">* 順暢的偵測器 * 可將雜訊和誤報降至最低，並可過濾短期波動，同時仍可偵測重大變動。</block>
+  <block id="6cb8858a82e1e2e2845f25162ba82f87" category="paragraph">此外，您也可以選擇顯示 _ 小時 _ 或 _ 每日 _ 季節性，以及設定偵測的靈敏度。_ 高靈敏度偵測到更多跨界， _ 低靈敏度偵測較少。</block>
+  <block id="31187a5ee059290053d0f82340837242" category="inline-image-macro">Anomaly 界限的設定，包括偵測演算法，季節性和靈敏度</block>
+  <block id="2ffe23ad54a8e26e74e3f37be728dbeb" category="paragraph"><block ref="2ffe23ad54a8e26e74e3f37be728dbeb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ef5c52fd00b778503c506ad346c37295" category="paragraph">請記住，圖表設定為顯示單行時，您只能檢視預期範圍。如果您的群組依據設定或篩選器顯示多行，或者您已為 Widget 設定多個查詢，則會停用顯示預期界限的選項。</block>
+  <block id="793246caa2d17de182541cbff17fbabd" category="inline-image-macro">顯示尖峰超過，寬度 =300 的預期界限</block>
+  <block id="ea696d4ab8fb62865dfbe3741a7a5d98" category="paragraph"><block ref="ea696d4ab8fb62865dfbe3741a7a5d98" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="182ce87180fe5b09fa1710d1b249ecf0" category="paragraph">已知問題及其解決方法如下所述。</block>
+  <block id="23d35f04a6305a542c62e0793452c9ad" category="paragraph">* 問題： * 資料收集器會執行一段時間，並在隨機時間後停止，失敗的原因是：「錯誤訊息： Connector 處於錯誤狀態。服務名稱：稽核。故障原因：外部fpolicy伺服器過載。"</block>
+  <block id="85501d33ecd840c5761971c7b55e894c" category="paragraph">* 試試看： * ONTAP 的事件率遠高於 Agent Box 的處理率。因此連線終止。</block>
+  <block id="8dec88cb91cbe8919968ad8546e29d29" category="paragraph">* 問題： * 收集器回報錯誤訊息：「連接器上找不到可連接 SVM 資料介面的本機 IP 位址」。* 試試看： * 這很可能是因為 ONTAP 端的網路問題。請遵循下列步驟：</block>
+  <block id="d14f3c628a090f279b8f9c00766e85cc" category="paragraph">* 問題： * 訊息：「無法判斷 ONTAP [ 主機名稱： &lt;IP Address&gt; 。原因：連線錯誤至儲存系統 &lt;IP Address&gt; ：無法連線主機（無法連線至主機） * 請嘗試以下操作： *</block>
+  <block id="4a8da97869c1ccb5f0c010bc73fcb940" category="paragraph">* 問題： * 錯誤訊息：「 Connector is in error state 。service.name：稽核。故障原因：外部fpolicy伺服器已終止。"*試用：*</block>
+  <block id="4b198a0cd43be6fc081b4995826e7672" category="paragraph">* 問題： * 活動頁面上沒有任何事件。*試用：*</block>
+  <block id="e45fdd2145016f7fcc29b179b255183e" category="paragraph">* 問題： * SVM Data Collector 處於錯誤狀態，錯誤訊息為「 Agent failed to connect to the collector 」 * 請嘗試以下操作： *</block>
+  <block id="8a1416995d314617de12ed7aa4bd2467" category="paragraph">* 問題： * SVM Data Collector 顯示錯誤訊息「 fpolicy.server.connectError: Node failed to 建置與 FPolicy 伺服器的連線「 12.195.15.146 」（原因：「 Select Timed Out 」（選取逾時）） * 請嘗試： * SVM/ 叢集已啟用防火牆。因此fpolicy引擎無法連線至fpolicy伺服器。ONTAP 中的 CLI 可用來取得更多資訊，包括：</block>
+  <block id="0b0c14625851c63aa1977699a0bb729f" category="paragraph">* 問題： * 錯誤訊息：「 Connector 處於錯誤狀態。服務名稱：稽核。故障原因：SVM上找不到有效的資料介面（角色：資料、資料傳輸協定：NFS或CIFS或兩者、狀態：UP）。」* 嘗試： * 確保有一個作業介面（作為資料和資料傳輸協定的角色，如 CIFS/NFS 。</block>
+  <block id="b36fd6f11853dfd44a57310a6054c451" category="paragraph">* 問題： * 資料收集器進入錯誤狀態，過一段時間後進入執行中狀態，然後再回到錯誤。此週期會重複。* 請嘗試： * * 這通常發生在下列案例中：</block>
+  <block id="5e34f5db201b138420b061f08cbe11af" category="paragraph">* 問題： * Connector 處於錯誤狀態。服務名稱：稽核。失敗原因：無法設定（SVM svmname上的原則。原因：在 'fpolicy.policy.scote-modify 中指定的 'hare-to -include' 元素的值無效： "Federal * 請嘗試以下操作： * * 共用名稱必須在沒有任何報價的情況下提供。編輯ONTAP 「SVM DSC」組態以修正共用名稱。</block>
+  <block id="af601d5fafb52a70ba0c4c8d49f7d8ad" category="paragraph">_包括和排除共享_不適用於長清單的共享區名稱。如果您要納入或排除大量共用、請改用依磁碟區篩選。</block>
+  <block id="e89b27e0a4f2f1144fe6db2c891631a7" category="paragraph">* 問題： * 叢集中有未使用的現有 fpolicies 。在安裝工作負載安全性之前、應該如何處理這些問題？* 請嘗試： * 建議刪除所有現有的未使用 fpolicy 設定，即使它們處於中斷連線狀態。「工作負載安全性」會以「cloudseced_」開頭的字元建立fpolicy。可以刪除所有其他未使用的fpolicy組態。</block>
+  <block id="fde38d88f8244f8a7b724b900bd7e422" category="paragraph">| 啟用工作負載安全功能後， ONTAP 效能會受到影響：延遲有時會變得很高， IOPs 偶爾會變得很低。| 使用 ONTAP 搭配工作負載安全功能時，有時會在 ONTAP 中看到延遲問題。有許多可能的原因如下所述：<block ref="5b7caa0ef6cc830703e594488c525913" category="inline-link-macro-rx"></block>，<block ref="b861ec6ca06b8e18b9d090dd75b00a26" category="inline-link-rx"></block>，，<block ref="a5fade3ab29d18b9b976189fcb9919ed" category="inline-link-rx"></block>，<block ref="8899da2205eee6e62b28641da3533e12" category="inline-link-rx"></block><block ref="c9d1d03c1b92a8bbffc617ad493e8619" category="inline-link-rx"></block>。所有這些問題都已在 ONTAP 9.13.1 及更新版本中修正、強烈建議您使用這些更新版本之一。</block>
+  <block id="392c3c278e79c8048452de58dff9fd56" category="paragraph">* 問題： * 資料收集器發生錯誤，顯示此錯誤訊息。「錯誤：連接器處於錯誤狀態。服務名稱：稽核。失敗原因：無法在SVM SVM_TEST上設定原則。原因：缺少ZAPI欄位值：事件。「 * 試試看： *</block>
+  <block id="bcb838cbc5adbbb585ffd4e501e4b07b" category="list-text">從只設定NFS服務的新SVM開始著手。</block>
+  <block id="55007273037aed04d07e70999d5153b2" category="list-text">在ONTAP 工作負載安全性中新增一個功能不全的SVM資料收集器。CIFS被設定為SVM允許的傳輸協定、同時在ONTAP 工作負載安全性中加入SVM Data Collector。</block>
+  <block id="c5e48108c2128269b181c77142f6e2c0" category="list-text">等到工作負載安全性中的資料收集器顯示錯誤。</block>
+  <block id="bc71f49bfafa6a1dbe64216acd61b88e" category="list-text">由於未在SVM上設定CIFS伺服器、因此工作負載安全性會顯示左圖所示的錯誤。</block>
+  <block id="10b2e2acac1b3fff1d033229848652e2" category="list-text">編輯ONTAP 《SVM資料收集器》、並視允許的傳輸協定取消CIFS檢查。儲存資料收集器。它會在僅啟用NFS傳輸協定的情況下開始執行。</block>
+  <block id="c6ac5b768bf8fa1cdc43218fe66da4f4" category="paragraph">* 問題： * 資料收集器會顯示錯誤訊息：「錯誤：無法在 2 次重試內判斷收集器的健全狀況，請嘗試重新啟動收集器（錯誤代碼： AGENT008 ）」。* 試用： *</block>
+  <block id="8c5a140b8e26d5573c3346f7da21fdd0" category="paragraph">* 問題： * 選取 SVM 模式時， Data Collector 發生錯誤。* 嘗試： * 在 SVM 模式下連線時，如果使用叢集管理 IP 來連線，而非 SVM 管理 IP ，則連線將會錯誤。請確定使用正確的 SVM IP 。</block>
+  <block id="55be0ee113a903248473234512ad1ba6" category="paragraph">* 問題： * 啟用「存取遭拒」功能時，資料收集器會顯示錯誤訊息：「 Connector 處於錯誤狀態。服務名稱：稽核。失敗原因：無法在 SVM test_SVM 上設定 fpolicy 。原因：使用者未經授權。 "* 嘗試此操作： * 使用者可能缺少「存取遭拒」功能所需的剩餘權限。請依照上的指示<block ref="acf32226210d6c3eeee22de70798517f" category="inline-link-macro-rx"></block>來設定權限。</block>
+  <block id="c9d2ff4bbf3f4496b0b55e66133b6e56" category="paragraph">一旦設定權限，請重新啟動收集器。</block>
 </blocks>
