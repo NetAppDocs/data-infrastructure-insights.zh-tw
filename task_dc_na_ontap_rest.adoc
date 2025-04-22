@@ -48,13 +48,13 @@ NOTE: ONTAP REST 收集器可用來取代先前的 ONTAPI 型收集器。因此�
 security login rest-role create -role {role name} -api /api -access readonly
 security login rest-role create -role {role name} -api /api/cluster/agents -access all
 vserver services web access create -name spi -role {role name} -vserver {vserver name as retrieved above}
-security login create -user-or-group-name {username} -application http -authentication-method password -role {role name}
 ....
+
+
 . 使用下列命令建立唯讀使用者。執行create命令後、系統會提示您輸入此使用者的密碼。
-+
- security login create -username ci_user -application http -authentication-method password -role ci_readonly
 
 
+ security login create -user-or-group-name {username} -application http -authentication-method password -role {role name}
 如果使用AD/LDAP帳戶、則命令應該是
 
  security login create -user-or-group-name DOMAIN\aduser/adgroup -application http -authentication-method domain -role ci_readonly

@@ -22,6 +22,8 @@ userconfig --add NetAppCIUser -r user -l 1-128 -c user -p qwide!
 
 根據預設、此收集器會嘗試探索屬於交換器所屬所有架構一部分的所有 FOS 裝置。
 
+請注意： FOS 的預設唯讀使用者「使用者」對所有虛擬架構都沒有檢視權限，也沒有「機箱角色」權限。這表示您使用「使用者」搭配 Data Infrastructure Insights 的成功機率很低，這需要瞭解 FOS 裝置的實體和邏輯組態。
+
 
 
 == 術語
