@@ -1206,10 +1206,7 @@
   <block id="0c934902725716ff33a000cef8df7331" category="section-title">儀表板控制項</block>
   <block id="d1a06af586beabfef382d9a9a1b7cbe4" category="paragraph">儀表板畫面有多個控制項：</block>
   <block id="e1cee0b7833b8d6d0c9830c0c359d32a" category="list-text">*時間選擇器*：可讓您檢視儀表板資料的時間範圍、從過去15分鐘到過去30天、或是自訂時間範圍最長31天。您可以選擇在個別小工具中覆寫此全域時間範圍。</block>
-  <block id="3f5ac045dae0be24b305231f2e8120a3" category="list-text">*編輯*按鈕：選取此選項將啟用編輯模式、可讓您變更儀表板。新儀表板預設會以「編輯」模式開啟。</block>
   <block id="d8de249d2c603118f28d5a4a162472de" category="list-text">*儲存*按鈕：可讓您儲存或刪除儀表板。</block>
-  <block id="2d9c0480416024820f428b9656ea2e60" category="paragraph">您可以在按一下「*儲存*」之前輸入新名稱、以重新命名目前的儀表板。</block>
-  <block id="4c91165c490e5fa72e8f2d18eb8d690c" category="list-text">*新增小工具*按鈕、可讓您將任何數量的表格、圖表或其他小工具新增至儀表板。</block>
   <block id="9b07dfa776e7e85e1de7a9e7a5c3bb2b" category="paragraph">您可以調整小工具的大小、並將其重新定位至儀表板內的不同位置、以便根據目前的需求、提供最佳的資料檢視。</block>
   <block id="e861414ecdd46ceedcfd68cb18af35a1" category="section-title">Widget類型</block>
   <block id="241e81a1429afe00dffbd10c52eb5d1a" category="paragraph">您可以從下列Widget類型中選擇：</block>
@@ -12229,7 +12226,6 @@
   <block id="b2e0ae5db392da4135a0d6d4c1790759" category="list-text">請確定SVM資料LIF或管理LIF上沒有防火牆、無法與SVM連線。</block>
   <block id="1750d9cfda79066e3c52899aa692608a" category="list-text">透過叢集管理 IP 新增 SVM 時，請確保 SVM 的資料 LIF 和管理 LIF 可從 Agent VM 中進行 Ping 。發生問題時、請檢查閘道、網路遮罩和路由以取得LIF。</block>
   <block id="391d354d5b5d9326eec673c4983e3e05" category="paragraph">您也可以嘗試使用叢集管理IP透過ssh登入叢集、然後ping代理IP。請確定代理程式 IP 可以 Ping ：</block>
-  <block id="e7ba86f45d7d15de38f2537adf2afd68" category="paragraph">_network ping -vserver &lt;vserver name&gt; -destination &lt;Agent IP&gt; -lif &lt;Lif Name&gt; -show-detail _</block>
   <block id="ed6479f97f72e2c84fce83c6e84134fa" category="paragraph">如果無法 Ping 、請確定 ONTAP 中的網路設定正確、以便值機員機器可以 Ping 。</block>
   <block id="83d96b0695c5db59120643aeaf92968a" category="list-text">如果您嘗試透過叢集 IP 連線，但無法正常運作，請嘗試直接透過 SVM IP 連線。請參閱上述步驟、瞭解透過SVM IP進行連線的步驟。</block>
   <block id="e91b7ee623b377e0be2de8ac35124ec3" category="list-text">透過 SVM IP 和 vsadmin 認證新增收集器時，請檢查 SVM Lif 是否已啟用 Data plus Mgmt 角色。在這種情況下、ping SVM LIF會正常運作、但SSH到SVM LIF則無法運作。如果是、請建立僅限SVM管理LIF、並嘗試透過此SVM管理僅LIF進行連線。</block>
@@ -12257,7 +12253,6 @@
   <block id="cf2a826b3dbe4d26f14753b4a312c007" category="list-text">如果在兩個不同的工作負載安全環境（租戶）中新增相同的 SVM ，最後一個將永遠成功。第二個收集器會使用自己的IP位址來設定fpolicy、然後啟動第一個。因此第一個收集器將停止接收事件、其「稽核」服務將進入錯誤狀態。若要避免這種情況發生、請在單一環境中設定每個SVM。</block>
   <block id="5db652447c417b7edd8a6faf30683ee0" category="list-text">如果服務原則設定不正確，也可能發生此錯誤。使用支援支援支援功能的支援功能9.8或更新版本時、若要連線至資料來源收集器、則需要資料服務資料服務、例如NFS和/或資料- CIFS、以提供資料- fpolice-Client服務ONTAP 。此外、資料fpolice-Client服務必須與受監控SVM的資料LIF相關聯。</block>
   <block id="9fbb9e6888c2aef7254ccac7160ec144" category="list-text">檢查 ONTAP 收集器是否處於「執行中」狀態。如果是、請開啟部分檔案、確保CIFS用戶端VM上產生部分CIFS事件。</block>
-  <block id="30eacabf37bbb4653e7ca981b2801051" category="list-text">如果看不到任何活動，請登入 SVM 並輸入下列命令。_&lt;SVM&gt;EVENT log show -SOURSfpolicy_Please ensure that are no errors related to fpolicy（事件日誌顯示-SOURSfpolicy_請 確保沒有與fpolicy相關的錯誤）。</block>
   <block id="a936f63883c022699e3a5ae08232ef26" category="list-text">如果看不到任何活動，請登入 SVM 。輸入下列命令：</block>
   <block id="c838f9e60ab91d3bf9f4ae53696f31dc" category="paragraph">檢查是否已設定名為「 cloudsecured_ 」的 fpolicy 原則，且狀態為「 on 」。如果未設定、則代理程式很可能無法在SVM中執行命令。請確認已遵循頁面開頭所述的所有先決條件。</block>
   <block id="2b7249a3eb66724971d86b79578b4015" category="list-text">代理程式很可能超載，無法連線至資料來源收集器。</block>
@@ -12339,7 +12334,6 @@
   <block id="e45fdd2145016f7fcc29b179b255183e" category="paragraph">* 問題： * SVM Data Collector 處於錯誤狀態，錯誤訊息為「 Agent failed to connect to the collector 」 * 請嘗試以下操作： *</block>
   <block id="8a1416995d314617de12ed7aa4bd2467" category="paragraph">* 問題： * SVM Data Collector 顯示錯誤訊息「 fpolicy.server.connectError: Node failed to 建置與 FPolicy 伺服器的連線「 12.195.15.146 」（原因：「 Select Timed Out 」（選取逾時）） * 請嘗試： * SVM/ 叢集已啟用防火牆。因此fpolicy引擎無法連線至fpolicy伺服器。ONTAP 中的 CLI 可用來取得更多資訊，包括：</block>
   <block id="0b0c14625851c63aa1977699a0bb729f" category="paragraph">* 問題： * 錯誤訊息：「 Connector 處於錯誤狀態。服務名稱：稽核。故障原因：SVM上找不到有效的資料介面（角色：資料、資料傳輸協定：NFS或CIFS或兩者、狀態：UP）。」* 嘗試： * 確保有一個作業介面（作為資料和資料傳輸協定的角色，如 CIFS/NFS 。</block>
-  <block id="b36fd6f11853dfd44a57310a6054c451" category="paragraph">* 問題： * 資料收集器進入錯誤狀態，過一段時間後進入執行中狀態，然後再回到錯誤。此週期會重複。* 請嘗試： * * 這通常發生在下列案例中：</block>
   <block id="5e34f5db201b138420b061f08cbe11af" category="paragraph">* 問題： * Connector 處於錯誤狀態。服務名稱：稽核。失敗原因：無法設定（SVM svmname上的原則。原因：在 'fpolicy.policy.scote-modify 中指定的 'hare-to -include' 元素的值無效： "Federal * 請嘗試以下操作： * * 共用名稱必須在沒有任何報價的情況下提供。編輯ONTAP 「SVM DSC」組態以修正共用名稱。</block>
   <block id="af601d5fafb52a70ba0c4c8d49f7d8ad" category="paragraph">_包括和排除共享_不適用於長清單的共享區名稱。如果您要納入或排除大量共用、請改用依磁碟區篩選。</block>
   <block id="e89b27e0a4f2f1144fe6db2c891631a7" category="paragraph">* 問題： * 叢集中有未使用的現有 fpolicies 。在安裝工作負載安全性之前、應該如何處理這些問題？* 請嘗試： * 建議刪除所有現有的未使用 fpolicy 設定，即使它們處於中斷連線狀態。「工作負載安全性」會以「cloudseced_」開頭的字元建立fpolicy。可以刪除所有其他未使用的fpolicy組態。</block>
@@ -12350,7 +12344,6 @@
   <block id="c5e48108c2128269b181c77142f6e2c0" category="list-text">等到工作負載安全性中的資料收集器顯示錯誤。</block>
   <block id="bc71f49bfafa6a1dbe64216acd61b88e" category="list-text">由於未在SVM上設定CIFS伺服器、因此工作負載安全性會顯示左圖所示的錯誤。</block>
   <block id="10b2e2acac1b3fff1d033229848652e2" category="list-text">編輯ONTAP 《SVM資料收集器》、並視允許的傳輸協定取消CIFS檢查。儲存資料收集器。它會在僅啟用NFS傳輸協定的情況下開始執行。</block>
-  <block id="c6ac5b768bf8fa1cdc43218fe66da4f4" category="paragraph">* 問題： * 資料收集器會顯示錯誤訊息：「錯誤：無法在 2 次重試內判斷收集器的健全狀況，請嘗試重新啟動收集器（錯誤代碼： AGENT008 ）」。* 試用： *</block>
   <block id="8c5a140b8e26d5573c3346f7da21fdd0" category="paragraph">* 問題： * 選取 SVM 模式時， Data Collector 發生錯誤。* 嘗試： * 在 SVM 模式下連線時，如果使用叢集管理 IP 來連線，而非 SVM 管理 IP ，則連線將會錯誤。請確定使用正確的 SVM IP 。</block>
   <block id="55be0ee113a903248473234512ad1ba6" category="paragraph">* 問題： * 啟用「存取遭拒」功能時，資料收集器會顯示錯誤訊息：「 Connector 處於錯誤狀態。服務名稱：稽核。失敗原因：無法在 SVM test_SVM 上設定 fpolicy 。原因：使用者未經授權。 "* 嘗試此操作： * 使用者可能缺少「存取遭拒」功能所需的剩餘權限。請依照上的指示<block ref="acf32226210d6c3eeee22de70798517f" category="inline-link-macro-rx"></block>來設定權限。</block>
   <block id="c9d2ff4bbf3f4496b0b55e66133b6e56" category="paragraph">一旦設定權限，請重新啟動收集器。</block>
@@ -12360,4 +12353,30 @@
   <block id="c7ce8523ab71d2ab79f0a54681bde5c6" category="paragraph">您的 ZFS 陣列可能太舊，無法獲得 REST API 支援。AK 2013.1.3.0 是第一個具備 REST API 功能的 ZFS OS 版本，並非所有的 ZFS 應用裝置都能升級至該版本。</block>
   <block id="0be262a01ffd53cb1827d924de37e376" category="paragraph">透過強化的 REST API 使用率追蹤功能，加強您的安全狀態，並簡化資源管理，供管理員使用者使用。透過 API 使用率追蹤，您可以查看使用的 API Token ， IP 位址及其產生的流量量。將權杖連結至特定的 IP 位址和使用層級，即可深入瞭解系統存取和使用趨勢，讓您掌控維持安全，有效率的環境，並讓作業順暢運作。</block>
   <block id="8261d0e1521d30da1b36761d508cb245" category="paragraph">若要檢視 API 使用率，請瀏覽至 * 可服務性 &gt; 管理 &gt; API 存取 * ，然後選取 _ 檢視 API 使用率 _ 。請注意，此 API 僅適用於 DII 可服務性 API ，不適用於工作負載安全性。</block>
+  <block id="d4e6618283d16f29ba2c9d35766c45a1" category="paragraph">您可以按一下儲存功能表中的 * 重新命名 * 來重新命名目前的儀表板。</block>
+  <block id="e29fd9e1d666ef26240aa2b0ed0fc1eb" category="list-text">*+ 新增 Widget * 按鈕，可讓您將任何數量的表格，圖表或其他 Widget 新增至儀表板。</block>
+  <block id="62f5739cc82c405ea8357b692b14edbe" category="list-text">*+ 新增變數 * 按鈕，可讓您使用變數主動篩選儀表板資料。</block>
+  <block id="76eae0a751a898b7502d367e62b8fd6d" category="list-text">* 時間橫條圖 * ：顯示一段時間內的記錄或度量資料。</block>
+  <block id="671839ef7e8bf30120d054f860c84021" category="inline-image-macro">顯示記錄資料的時間橫條圖範例，寬度 =200</block>
+  <block id="7fec05b71ec732e9bd7bdcbdbd94e7f8" category="paragraph"><block ref="7fec05b71ec732e9bd7bdcbdbd94e7f8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8b4b69c36bee3b088919c3e43a80f18c" category="section-title">移轉收集器</block>
+  <block id="d801c228c66c7fa487f2a8b7e96d562d" category="paragraph">您可以輕鬆地將工作負載安全收集器從一個代理程式移轉到另一個代理程式，以便在代理程式之間有效地平衡收集器的負載。</block>
+  <block id="e360b039f3620c4847b5b84d78e80480" category="list-text">來源代理必須處於 _Connected 狀態。</block>
+  <block id="6ac92a202fa1f4747631bdcddfe6dd36" category="list-text">要移轉的收集器必須處於 _Running 狀態。</block>
+  <block id="fc9d3df613063ee57906c461320744e2" category="paragraph">附註：</block>
+  <block id="c4da4d3440b598c8edf40d69f984f009" category="list-text">Data 和 User Directory 收集器都支援移轉。</block>
+  <block id="47e78491de9a67f5836acba0100229fe" category="list-text">不支援手動託管租戶移轉收集器。</block>
+  <block id="8d7cc88bc7151c6f89c782e846c2e794" category="section-title">移轉收集器</block>
+  <block id="754f58ec9179e0d0a95d7cfbd792e670" category="paragraph">若要移轉收集器，請遵循下列步驟：</block>
+  <block id="213d23bd03074c84906851a840c802f5" category="list-text">前往「編輯收集器」頁面。</block>
+  <block id="df217418f3f92028ed4fc80e60e917a6" category="list-text">從值機員下拉式清單中選取目的地代理。</block>
+  <block id="20085de2d7ac8fc18785d6450ab167e3" category="list-text">按一下「儲存收集器」按鈕。</block>
+  <block id="d86dd741c6543921b9b4bc3d1da7d642" category="paragraph">工作負載安全性將會處理要求。成功移轉後，使用者將重新導向至收集器清單頁面。若發生故障，編輯頁面上會顯示適當的訊息。</block>
+  <block id="bff6d170f0b8edf07af035d6c7a0785f" category="paragraph">附註：當收集器成功移轉至目的地代理程式時，先前在「編輯收集器」頁面上所做的任何組態變更都會繼續套用。</block>
+  <block id="92f3bb936d162eca89372102e441a55c" category="inline-image-macro">選擇其他代理程式來移轉收集器</block>
+  <block id="db4125d1ded8b7b828eabf0eeb986b37" category="paragraph"><block ref="db4125d1ded8b7b828eabf0eeb986b37" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="84f0533755d1a33e5cc67c5d1108baa6" category="list-text">如果看不到任何活動，請登入 SVM 並輸入下列命令。</block>
+  <block id="839fd302fc2dc5dee66803e94e9f95dc" category="paragraph">請確定 fpolicy 沒有相關錯誤。</block>
+  <block id="6e393b37e77fb2093e24fb776c6faf55" category="paragraph">* 問題： * 資料收集器進入錯誤狀態，過一段時間後進入執行中狀態，然後再回到錯誤。此週期會重複。* 請嘗試： * 這通常發生在下列情況：</block>
+  <block id="8202c6a36256606217ad100be587d707" category="paragraph">* 問題： * 資料收集器會顯示錯誤訊息：「錯誤：無法在 2 次重試內判斷收集器的健全狀況，請嘗試重新啟動收集器（錯誤代碼： AGENT008 ）」。*試用：*</block>
 </blocks>

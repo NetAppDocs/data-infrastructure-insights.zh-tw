@@ -52,8 +52,7 @@ sysctl -p
 您也可以嘗試使用叢集管理IP透過ssh登入叢集、然後ping代理IP。請確定代理程式 IP 可以 Ping ：
 
 +
-_network ping -vserver <vserver name> -destination <Agent IP> -lif <Lif Name> -show-detail _
-
+ network ping -vserver <vserver name> -destination <Agent IP> -lif <Lif Name> -show-detail
 +
 如果無法 Ping 、請確定 ONTAP 中的網路設定正確、以便值機員機器可以 Ping 。
 
@@ -67,7 +66,7 @@ _network ping -vserver <vserver name> -destination <Agent IP> -lif <Lif Name> -s
 .. 請等待錯誤出現。停止ONTAP 封包追蹤。
 .. 從 ONTAP 開啟封包追蹤。您可以在這個位置使用此功能
 +
- \https://<cluster_mgmt_ip>/spi/<clustername>/etc/log/packet_traces/
+ https://<cluster_mgmt_ip>/spi/<clustername>/etc/log/packet_traces/
 .. 請確定 ONTAP 到值機員方塊有一個 SYN 。
 .. 如果 ONTAP 沒有 SYN, 則 ONTAP 中的防火牆會發生問題。
 .. 在 ONTAP 中開啟防火牆，讓 ONTAP 能夠連線到代理程式方塊。
@@ -92,7 +91,7 @@ _network ping -vserver <vserver name> -destination <Agent IP> -lif <Lif Name> -s
 . 防火牆很可能會封鎖代理機器中的必要連接埠。確認已開啟連接埠範圍35000-55000/TCP、讓代理機器從SVM連線。此外、請確保ONTAP 沒有啟用任何防火牆、從「邊」封鎖與代理機器的通訊。
 . 在 Agent （代理）框中鍵入以下命令，確保端口範圍已打開。
 +
- sudo iptables-save \| grep 3500*
+ sudo iptables-save | grep 3500*
 +
 輸出範例應如下所示：
 
@@ -109,7 +108,7 @@ link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-cm-nm
 
 . SSH 至您要監控的 SVM/ 叢集。從 SVM 資料 LIF Ping Agent Box （支援 CIFS ， NFS 傳輸協定），並確保 ping 作業正常：
 +
- _network ping -vserver <vserver name> -destination <Agent IP> -lif <Lif Name> -show-detail_
+ network ping -vserver <vserver name> -destination <Agent IP> -lif <Lif Name> -show-detail
 +
 如果無法 Ping 、請確定 ONTAP 中的網路設定正確、以便值機員機器可以 Ping 。
 
@@ -126,7 +125,12 @@ link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-cm-nm
 * 問題： * 活動頁面上沒有任何事件。*試用：*
 
 . 檢查 ONTAP 收集器是否處於「執行中」狀態。如果是、請開啟部分檔案、確保CIFS用戶端VM上產生部分CIFS事件。
-. 如果看不到任何活動，請登入 SVM 並輸入下列命令。_<SVM>EVENT log show -SOURSfpolicy_Please ensure that are no errors related to fpolicy（事件日誌顯示-SOURSfpolicy_請 確保沒有與fpolicy相關的錯誤）。
+. 如果看不到任何活動，請登入 SVM 並輸入下列命令。
++
+ <SVM>event log show -source fpolicy
++
+請確定 fpolicy 沒有相關錯誤。
+
 . 如果看不到任何活動，請登入 SVM 。輸入下列命令：
 +
  <SVM>fpolicy show
@@ -161,7 +165,7 @@ link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-cm-nm
 
 ****
 ****
-* 問題： * 資料收集器進入錯誤狀態，過一段時間後進入執行中狀態，然後再回到錯誤。此週期會重複。* 請嘗試： * * 這通常發生在下列案例中：
+* 問題： * 資料收集器進入錯誤狀態，過一段時間後進入執行中狀態，然後再回到錯誤。此週期會重複。* 請嘗試： * 這通常發生在下列情況：
 
 . 新增多個資料收集器。
 . 顯示這類行為的資料收集器將會在這些資料收集器中新增 1 個 SVM 。表示2個以上的資料收集器連接至1個SVM。
@@ -206,7 +210,7 @@ fpolicy policy external-engine delete -vserver <svmname> -engine-name <engine_na
 
 ****
 ****
-* 問題： * 資料收集器會顯示錯誤訊息：「錯誤：無法在 2 次重試內判斷收集器的健全狀況，請嘗試重新啟動收集器（錯誤代碼： AGENT008 ）」。* 試用： *
+* 問題： * 資料收集器會顯示錯誤訊息：「錯誤：無法在 2 次重試內判斷收集器的健全狀況，請嘗試重新啟動收集器（錯誤代碼： AGENT008 ）」。*試用：*
 
 . 在「資料收集器」頁面上、捲動至資料收集器右側、顯示錯誤訊息、然後按一下「3點」功能表。選取_編輯_。再次輸入資料收集器的密碼。按下「_Sav__」按鈕以儲存資料收集器。資料收集器會重新啟動、錯誤應該會解決。
 . Agent 機器可能沒有足夠的 CPU 或 RAM 保留空間，這就是 DSC 故障的原因。請檢查新增至機器代理程式的資料收集器數量。如果超過20個、請增加代理機器的CPU和RAM容量。CPU和RAM增加之後、DSC就會進入初始化、然後自動進入執行狀態。請參閱上的尺寸調整指南link:concept_cs_event_rate_checker.html["本頁"]。
