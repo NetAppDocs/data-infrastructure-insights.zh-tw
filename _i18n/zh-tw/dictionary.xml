@@ -11663,7 +11663,6 @@
   <block id="e4d6c49d3ae18aca7ed82f5ef2ab8266" category="paragraph"><block ref="e4d6c49d3ae18aca7ed82f5ef2ab8266" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1158d69294406edc67b8de2b5ed02647" category="paragraph">若要開始使用 NetApp 的雲端服務，請前往<block ref="40ad5c1f57b9131d3640bb640a07e49e" category="inline-link-macro-rx"></block>並按一下 * 開始使用 * 。</block>
   <block id="90aa9e4cd4632612b7635f2c366a8948" category="paragraph">擁有 NetApp BlueXP  帳戶後，只要在入口網站頁面上選擇 * 登入 * 即可<block ref="40ad5c1f57b9131d3640bb640a07e49e" category="inline-link-macro-rx"></block>。</block>
-  <block id="e6652e28190651190702622512d6199d" category="section-title">適用於最新一代 ASA 系統的 ONTAP 基礎架構</block>
   <block id="b7b46ce5d1a547db89c0bc615ff272a5" category="inline-link-macro">ASA</block>
   <block id="e4d6d8fa32272beabde4921e66b643d2" category="paragraph">ONTAP 基本功能現在包含最新一代裝置的隨裝即用管理<block ref="a86d3d554a7f4851edc0f19a9e8accf3" category="inline-link-macro-rx"></block>功能。這包括 SAN Analyzer for VM-LUN 拓撲，其中包含在 ONTAP 上執行的工作負載，現在也提供 NetApp 支援，作為資料基礎架構洞見基礎版的一部分。</block>
   <block id="8af8d6d7603eec1cb34086e9cf6e2055" category="inline-image-macro">ONTAP Essentials 下拉式選單顯示 ASA 與 Unified 不同</block>
@@ -12288,8 +12287,6 @@
   <block id="fbc87552732cc2b26b43d6276a074ffc" category="section-title">以 ML-Powered Anomaly Bounds in Line Widget 提供主動式問題解決方案</block>
   <block id="9f7cd8199d6124c4f4553f2c176b1d5c" category="paragraph">若要疑難排解折線圖或不規則曲線圖 Widget 的效能問題，您現在可以在實際度量旁顯示預期的行為界限，以便區分正常和異常的度量趨勢。</block>
   <block id="eebf90e82914469f2dfc221f4faf2065" category="paragraph">DII 機器學習搭配季節性資料分析，可根據歷史模式建立智慧型臨界值。當指標偏離預期範圍時，系統會將這些指標強調為異常狀況，以便快速識別問題，縮短平均解決問題時間，並在問題影響營運之前解決問題。</block>
-  <block id="44ca9974803bd41bb1826d9cf436c703" category="inline-image-macro">顯示尖峰超過，寬度 =400 的預期界限</block>
-  <block id="093b02dc890c25bbe57cc9883b6f37e5" category="paragraph"><block ref="093b02dc890c25bbe57cc9883b6f37e5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6c8b67e91957195849c42aaf1ad22042" category="section-title">利用 VSAN 儲存支援來最佳化 VMware 成本</block>
   <block id="7ae6cf4414540fa7a14236e09f4bc284" category="paragraph">我們的 VM 最佳化功能現在包含對含 VSAN 儲存設備的 VMware 環境的支援。除了 CPU 和記憶體使用量之外，分析現在也會考慮採用本機 VSAN 儲存設備進行回收建議，協助您進一步降低授權成本。</block>
   <block id="ec05f91c2c2b63f117125c8a95ae7d4f" category="inline-image-macro">VSAN 的 VM 最佳化範例</block>
@@ -12302,8 +12299,6 @@
   <block id="a39507b873640f4e60c12fb375005a04" category="paragraph">根據要匯出的資料量，匯出鑑識資料可能需要數秒到數小時的時間。工作負載安全性會以非同步方式匯出該資料，以便在編譯 .CSV 時繼續工作。</block>
   <block id="6c17946dd20446540805b53e2f7cd731" category="section-title">資料收集器通知分組為規則</block>
   <block id="c3bd9ae81ad0672e842d282715d758e1" category="paragraph">如果您已在資料收集器上設定通知，從 4 月 15 日起，這些通知將會在「通知規則」中處理，並針對收件者相同的收集器設定單一規則。具有不同收件者的收集器會有個別的規則。現有的收集器通知會移轉至通知規則。</block>
-  <block id="ca873110efddef67beadcfe5f8a4ca84" category="paragraph">透過強化的 REST API 使用率追蹤功能，加強您的安全狀態，並簡化資源管理，供管理員使用者使用。透過 API 使用率追蹤，您可以查看使用的 API Token ， IP 位址及其產生的流量量。將權杖連結至特定的 IP 位址和使用層級，即可深入瞭解系統存取和使用趨勢，讓您掌控維持安全，有效率的環境，並讓作業順暢運作。透過強化的 REST API 使用率追蹤功能，加強您的安全狀態，並簡化資源管理，供管理員使用者使用。透過 API 使用率追蹤，您可以查看使用的 API Token ， IP 位址及其產生的流量量。將權杖連結至特定的 IP 位址和使用層級，即可深入瞭解系統存取和使用趨勢，讓您掌控維持安全，有效率的環境，並讓作業順暢運作。</block>
-  <block id="24f17d3ee72bb2738ceb12180ec2fa71" category="paragraph">若要檢視 API 使用率，請瀏覽至 * 可服務性 &gt; 管理 &gt; API 存取 * ，然後選取 _ 檢視 API 使用率 _ 。請注意，此 API 僅適用於 DII 可服務性 API ，不適用於工作負載安全性。若要檢視 API 使用率，請瀏覽至 * 可服務性 &gt; 管理 &gt; API 存取 * ，然後選取 _ 檢視 API 使用率 _ 。請注意，此 API 僅適用於 DII 可服務性 API ，不適用於工作負載安全性。</block>
   <block id="1178bc1f7bc2e2481537fe9d595549fd" category="paragraph">包括： https://raw.githubusercontent.com/NetAppDocs/common/main/_include/open-source-notice-intro.adoc[]</block>
   <block id="4bffd602151b14e55ad1f19de262d0c1" category="list-text">確保 SVM 已設定 CIFS 伺服器： clusterShell ： &gt;<block ref="fafd8ff6ac4a59e73c5d4e3b47d545ee" prefix=" " category="inline-code"></block></block>
   <block id="52ea452f7c0975b526b909c63394b7e8" category="list-text">設定SVM vsadmin使用者的密碼。如果使用自訂使用者或叢集管理使用者，請略過此步驟。 clusterShell ： &gt;<block ref="73b77b9c99e693ec16bc3e4960672465" prefix=" " category="inline-code"></block></block>
@@ -12363,4 +12358,6 @@
   <block id="f0c8a72ba609d5ea03569e2dfec9ccf9" category="paragraph">請注意： FOS 的預設唯讀使用者「使用者」對所有虛擬架構都沒有檢視權限，也沒有「機箱角色」權限。這表示您使用「使用者」搭配 Data Infrastructure Insights 的成功機率很低，這需要瞭解 FOS 裝置的實體和邏輯組態。</block>
   <block id="6ae3f27888576a5c4fe83bc692a46ff9" category="paragraph">" 要求失敗，狀態為 404 \https://.....:215/api/access/v1"</block>
   <block id="c7ce8523ab71d2ab79f0a54681bde5c6" category="paragraph">您的 ZFS 陣列可能太舊，無法獲得 REST API 支援。AK 2013.1.3.0 是第一個具備 REST API 功能的 ZFS OS 版本，並非所有的 ZFS 應用裝置都能升級至該版本。</block>
+  <block id="0be262a01ffd53cb1827d924de37e376" category="paragraph">透過強化的 REST API 使用率追蹤功能，加強您的安全狀態，並簡化資源管理，供管理員使用者使用。透過 API 使用率追蹤，您可以查看使用的 API Token ， IP 位址及其產生的流量量。將權杖連結至特定的 IP 位址和使用層級，即可深入瞭解系統存取和使用趨勢，讓您掌控維持安全，有效率的環境，並讓作業順暢運作。</block>
+  <block id="8261d0e1521d30da1b36761d508cb245" category="paragraph">若要檢視 API 使用率，請瀏覽至 * 可服務性 &gt; 管理 &gt; API 存取 * ，然後選取 _ 檢視 API 使用率 _ 。請注意，此 API 僅適用於 DII 可服務性 API ，不適用於工作負載安全性。</block>
 </blocks>
