@@ -12,9 +12,6 @@ keywords: application, create application,
 [role="lead"]
 若要追蹤與租戶上執行的特定應用程式相關的資料，您可以在 Data Infrastructure Insights 中定義應用程式。
 
-.開始之前
-如果您想要將應用程式與企業實體建立關聯、則必須先建立企業實體、才能定義應用程式。
-
 .關於這項工作
 Data Infrastructure Insights 可讓您追蹤與應用程式相關的資產資料、以利使用或成本報告等工作。
 

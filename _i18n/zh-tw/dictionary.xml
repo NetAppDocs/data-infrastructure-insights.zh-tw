@@ -6361,7 +6361,6 @@
   <block id="12deeaac5f633c54b730f8c247dbf7e0" category="paragraph">可使用下列命令解除安裝較新版本的監控操作員：</block>
   <block id="aee5f180cc531b30ec6cf8dcf509d9b8" category="paragraph">如果監控操作員部署在其專屬命名空間中、請刪除命名空間：</block>
   <block id="97e76f0c81cc1c26b3d8ffe0d972c5af" category="paragraph">如果第一個命令傳回「找不到資源」、請依照下列指示解除安裝舊版監控操作員。</block>
-  <block id="0b14d0fbc4256c7ec7c3bb39b2c28854" category="paragraph">依序執行下列每個命令。視您目前的安裝情況而定、其中一些命令可能會傳回「找不到物件」訊息。這些訊息可能會被安全忽略。</block>
   <block id="82a8cca794947463478c2f08445a8ff4" category="paragraph">如果先前已建立安全性內容限制：</block>
   <block id="a945216a5c61e628c867b8948c797454" category="section-title">關於Kube-state指標</block>
   <block id="951a50d1b55837ddb5ff4cb5af4ebc8a" category="paragraph">NetApp Kubernetes監控操作員會安裝自己的Kube-態 指標、以避免與任何其他執行個體發生衝突。</block>
@@ -7238,7 +7237,6 @@
   <block id="9931bdf1120e743a2d938e061f7df898" category="paragraph">隨即顯示確認訊息、提示您是否要刪除規則。</block>
   <block id="b101d3b5c8c4309f4cffa3adfd387b6b" category="list-text">按一下「*確定*」</block>
   <block id="e42dae64f8e80d611352315992a2460d" category="doc">建立應用程式</block>
-  <block id="598c4639acaf0f3c5a419f9cf865ef56" category="paragraph">如果您想要將應用程式與企業實體建立關聯、則必須先建立企業實體、才能定義應用程式。</block>
   <block id="ba52eab802a385ced7d6e9782614bf0b" category="paragraph">Data Infrastructure Insights 可讓您追蹤與應用程式相關的資產資料、以利使用或成本報告等工作。</block>
   <block id="91ee28fc3faa982ecdc71598fe7ce8b9" category="list-text">在 Data Infrastructure Insights 功能表中、按一下 * 可觀察性 &gt; 豐富 &gt; 應用程式 * 。選取</block>
   <block id="8358341ae527ee11b5b1dc8e8f22edea" category="paragraph">此時會顯示「新增應用程式」對話方塊。</block>
@@ -12379,4 +12377,5 @@
   <block id="839fd302fc2dc5dee66803e94e9f95dc" category="paragraph">請確定 fpolicy 沒有相關錯誤。</block>
   <block id="6e393b37e77fb2093e24fb776c6faf55" category="paragraph">* 問題： * 資料收集器進入錯誤狀態，過一段時間後進入執行中狀態，然後再回到錯誤。此週期會重複。* 請嘗試： * 這通常發生在下列情況：</block>
   <block id="8202c6a36256606217ad100be587d707" category="paragraph">* 問題： * 資料收集器會顯示錯誤訊息：「錯誤：無法在 2 次重試內判斷收集器的健全狀況，請嘗試重新啟動收集器（錯誤代碼： AGENT008 ）」。*試用：*</block>
+  <block id="c073fe7a74166cd5d73ec57ce2d1f76e" category="paragraph">依序執行下列每個命令。視您目前的安裝而定，其中一些命令可能會傳回「找不到物件」訊息。這些訊息可能會被安全忽略。</block>
 </blocks>
