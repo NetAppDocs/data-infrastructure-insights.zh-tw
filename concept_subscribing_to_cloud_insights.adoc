@@ -159,7 +159,7 @@ image:Module_Trials_Estimator.png["評估者"]
 
 您可以在 * 工作負載安全性 * 標籤的 * 管理 > 訂閱 * 頁面中檢視工作負載安全性使用情況。
 
-image:ws_metering_example_page.png["'Admin> Subscription > Workload Security 標籤顯示高階、中階和入門級節點數 '"]
+image:ws_metering_example_page.png["管理 > 訂閱 > 工作負載安全性索引標籤顯示高階，中階和入門級節點數"]
 
 
 NOTE: 現有的 Workload Security 訂閱會調整其 MU 使用量、使節點使用率不會佔用託管單位。資料基礎架構 Insights 計量表的使用量、確保符合授權使用的法規要求。

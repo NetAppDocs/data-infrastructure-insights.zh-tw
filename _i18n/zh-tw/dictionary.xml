@@ -1962,8 +1962,6 @@
   <block id="f057d707b9d5c17f0fad56f8204f6bff" category="section-title">工作負載安全性計量</block>
   <block id="c3ef097c271469a3ca9718d35396087c" category="paragraph">工作負載安全性是透過叢集來計量、方法與「可觀察性」計量相同。</block>
   <block id="3943920606f23b23925f15408e26cae2" category="paragraph">您可以在 * 工作負載安全性 * 標籤的 * 管理 &gt; 訂閱 * 頁面中檢視工作負載安全性使用情況。</block>
-  <block id="36e75837cd661882faf4ce93d35cafea" category="inline-image-macro">'Admin&amp;gt; Subscription &amp;gt; Workload Security 標籤顯示高階、中階和入門級節點數 '</block>
-  <block id="78770d4128ce656a56bd8e8ecd580a0e" category="paragraph"><block ref="9d3e296bb7e7c4cf7ec09d1ec6e96740" category="inline-image-macro-rx" type="image"></block></block>
   <block id="daba1c6ff8590913bcb10d43d3bfcf13" category="admonition">現有的 Workload Security 訂閱會調整其 MU 使用量、使節點使用率不會佔用託管單位。資料基礎架構 Insights 計量表的使用量、確保符合授權使用的法規要求。</block>
   <block id="c015ba02347af3d8c00ede570637622a" category="section-title">如何訂閱？</block>
   <block id="99d34ca2583ae7363bd4e07f9b2d98cc" category="inline-xref">自行訂閱</block>
@@ -12378,4 +12376,6 @@
   <block id="6e393b37e77fb2093e24fb776c6faf55" category="paragraph">* 問題： * 資料收集器進入錯誤狀態，過一段時間後進入執行中狀態，然後再回到錯誤。此週期會重複。* 請嘗試： * 這通常發生在下列情況：</block>
   <block id="8202c6a36256606217ad100be587d707" category="paragraph">* 問題： * 資料收集器會顯示錯誤訊息：「錯誤：無法在 2 次重試內判斷收集器的健全狀況，請嘗試重新啟動收集器（錯誤代碼： AGENT008 ）」。*試用：*</block>
   <block id="c073fe7a74166cd5d73ec57ce2d1f76e" category="paragraph">依序執行下列每個命令。視您目前的安裝而定，其中一些命令可能會傳回「找不到物件」訊息。這些訊息可能會被安全忽略。</block>
+  <block id="d873c97dd6dca1c7bd30ed50b82bee0f" category="inline-image-macro">管理 &amp;gt; 訂閱 &amp;gt; 工作負載安全性索引標籤顯示高階，中階和入門級節點數</block>
+  <block id="a2efde4371837d491f7f2d093cb687a2" category="paragraph"><block ref="6239b49ee0db956af965dd1ce0c92bfa" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
