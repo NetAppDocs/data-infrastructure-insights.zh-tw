@@ -184,25 +184,11 @@
   <block id="e0dc2ed956b3711e722d965954939344" category="list-text">在此擷取單元上部署總共75個以上的資料收集器？</block>
   <block id="159904c45b61bfdda4989e18bf9891e8" category="paragraph">對於上述每個「是」答案、建議您在AU中新增8 GB記憶體和50 GB磁碟空間。舉例來說、如果您對這兩個項目都回答「是」、就應該部署一個24GB記憶體系統、其中有150GB或更多的磁碟空間。在Linux上、要新增至記錄位置的磁碟空間。</block>
   <block id="11bb1da5c9cf0248245ce5b24119d183" category="paragraph">如需其他規模調整問題、請聯絡NetApp支援部門。</block>
-  <block id="96cb7682ad0362f3aff6ef6f90dd2520" category="summary">Data Infrastructure Insights 會從 NetApp Active IQ 收集風險資料</block>
   <block id="b5fe3a41d32647f20f3b5ec96045d6d6" category="doc">Active IQ</block>
-  <block id="df0ddcb04f0e5278d49d2c87dfa7f7fc" category="paragraph">NetApp <block ref="5d418eb60d51fa035e4b287bd4191a07" category="inline-link-macro-rx"></block>為 NetApp 客戶的硬體 / 軟體系統提供一系列視覺化，分析及其他支援相關服務。由NetApp回報的資料Active IQ 可加強系統問題的疑難排解、並提供與您的裝置相關的最佳化與預測分析。</block>
-  <block id="97ba27a6c978c304ea9138ee01781875" category="paragraph">Data Infrastructure Insights 會針對 Active IQ 監控及回報的任何 NetApp 叢集式 Data ONTAP 儲存系統、收集 * 風險 * 。Data Infrastructure Insights 會自動收集儲存系統回報的風險、作為從這些裝置收集資料的一部分。您必須將適當的資料收集器新增至 Data Infrastructure Insights 、以收集 Active IQ 風險資訊。</block>
-  <block id="bfdb97c5bb51966044d87207708e9888" category="paragraph">資料基礎架構洞見不會顯示 Active IQ 未監控及報告的 ONTAP 系統風險資料。</block>
-  <block id="a98980e7429cd68c3207593853e627fe" category="paragraph">報告的風險會顯示在「風險」表的資料基礎架構洞見（位於 _storage _ 和 _ 儲存節點 _ 資產登陸頁面）中。下表顯示風險詳細資料、風險類別及風險的潛在影響、並提供Active IQ 指向「介紹儲存節點所有風險的資訊」頁面的連結（需要NetApp支援帳戶登入）。</block>
-  <block id="44def9cfd3c785a71c36d95e24981147" category="inline-image-macro">風險表Active IQ</block>
-  <block id="253139fff686e1ef9f39ced79055cc70" category="paragraph"><block ref="253139fff686e1ef9f39ced79055cc70" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8887b934719a6de0be9e0e43f0ab23d0" category="paragraph">登陸頁的「摘要」小工具中也會顯示已報告風險的計數、並會顯示連結至適當Active IQ 的「功能表」頁面。在_storage登陸頁面上、此計數是所有基礎儲存節點的風險總和。</block>
   <block id="96caf84605c76fdc8e4cec8734853381" category="inline-image-macro">儲存頁面摘要</block>
   <block id="1be3faf6a174e90a1b900868f94e4600" category="paragraph"><block ref="1be3faf6a174e90a1b900868f94e4600" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="4a45597eae979dc62d93cd1d748058bd" category="section-title">開啟Active IQ 「介紹」頁面</block>
-  <block id="487f4fcccb6a34d5590990b8e54ace74" category="paragraph">按一下Active IQ 指向某個資訊頁的連結時、如果您目前尚未登入Active IQ 您的資訊區帳戶、則必須執行下列步驟、才能檢視Active IQ 儲存節點的資訊區頁面。</block>
-  <block id="ae19f5b6992b8d45f55c8e5baa5492c8" category="list-text">在資料基礎架構洞見摘要 Widget 或風險表中、按一下「 Active IQ 」連結。</block>
-  <block id="cd2403e73e741b8001cced6aa04fa472" category="list-text">登入您的NetApp支援帳戶。您將直接進入Active IQ 資訊區的儲存節點頁面。</block>
   <block id="62fcdd34f555d8c4a7cdda3b94732063" category="section-title">查詢風險</block>
-  <block id="32a5da80264ae98c83852181734d819d" category="paragraph">在 Data Infrastructure Insights 中、您可以將 * monitoring.count* 欄新增至儲存或儲存節點查詢。如果傳回的結果包含Active IQ監控的儲存系統、則監控.count欄會顯示儲存系統或節點的風險數量。</block>
   <block id="0ba8adc53c16a6ffe145978e834b02f8" category="section-title">儀表板</block>
-  <block id="88773c59e894d8416f71b9658d5a03fc" category="paragraph">您可以建立小工具（例如圓形圖、表格小工具、長條圖、直條圖、散佈圖、 以及單一價值小工具）、以視覺化方式呈現Data ONTAP 由NetApp監控之NetApp叢集式視覺化系統的儲存和儲存節點物件風險Active IQ 。在這些小工具中、「物件風險」可選取為欄或度量、其中「儲存或儲存節點」是焦點物件。</block>
   <block id="e0ca94f4a4b2b9a6b7968e11a7757d03" category="inline-image-macro">小工具中的物件風險</block>
   <block id="4a7b46f5ae3d121fb437f8755e468f60" category="paragraph"><block ref="4a7b46f5ae3d121fb437f8755e468f60" category="inline-image-macro-rx" type="image"></block></block>
   <block id="be2f9224b979c292cb15fb8ca6626094" category="summary">監控度量以瞭解異常狀況</block>
@@ -12378,4 +12364,64 @@
   <block id="c073fe7a74166cd5d73ec57ce2d1f76e" category="paragraph">依序執行下列每個命令。視您目前的安裝而定，其中一些命令可能會傳回「找不到物件」訊息。這些訊息可能會被安全忽略。</block>
   <block id="d873c97dd6dca1c7bd30ed50b82bee0f" category="inline-image-macro">管理 &amp;gt; 訂閱 &amp;gt; 工作負載安全性索引標籤顯示高階，中階和入門級節點數</block>
   <block id="a2efde4371837d491f7f2d093cb687a2" category="paragraph"><block ref="6239b49ee0db956af965dd1ce0c92bfa" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="67cdd97ee57ecbb8d5397980e2f337b2" category="summary">Data Infrastructure Insights 會從 NetApp Active IQ 數位顧問（也稱為數位顧問）收集風險資料</block>
+  <block id="dab2edf9eaac3950e92c281ce358af01" category="doc">Active IQ Digital Advisor</block>
+  <block id="c68ffc18976c6478ceba645cdcfe3ad4" category="paragraph">NetApp <block ref="cbe8da543274ee624cafab4e3c376bb9" category="inline-link-macro-rx"></block>（也稱為數位顧問）為 NetApp 客戶的硬體 / 軟體系統提供一系列視覺化，分析及其他支援相關服務。Digital Advisor 所報告的資料可加強系統問題的疑難排解，並可深入瞭解與您的裝置相關的最佳化與預測分析。</block>
+  <block id="bb4ab99c035d10d75227562a13f30fbd" category="paragraph">Data Infrastructure Insights 會針對任何由數位顧問監控和報告的 NetApp 叢集式 Data ONTAP 儲存系統，收集 * 風險 * 。Data Infrastructure Insights 會自動收集儲存系統回報的風險、作為從這些裝置收集資料的一部分。您必須將適當的資料收集器新增至 Data Infrastructure Insights ，以收集 Digital Advisor 風險資訊。</block>
+  <block id="5b3f4c933f6bb8b2000bc2d18617bf70" category="paragraph">資料基礎架構洞見不會顯示 ONTAP 系統的風險資料，這些系統並未受到數位顧問監控和回報。</block>
+  <block id="512f021ba1976438e7134e934898c5bd" category="paragraph">報告的風險會顯示在「風險」表的資料基礎架構洞見（位於 _storage _ 和 _ 儲存節點 _ 資產登陸頁面）中。下表顯示風險詳細資料，風險類別及風險的潛在影響，並提供數位顧問頁面的連結，其中摘要說明儲存節點的所有風險（需要 NetApp 支援帳戶登入）。</block>
+  <block id="29a84751efa30791c464febff54612dd" category="inline-image-macro">數位顧問風險表</block>
+  <block id="b10eb84d2e981f75c16c48813937b3b7" category="paragraph"><block ref="b10eb84d2e981f75c16c48813937b3b7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1a6627262063d4ee7cc3abb758c1fcf6" category="paragraph">登陸頁的「摘要」小工具中也會顯示回報的風險計數，並提供適當的「數位顧問」頁面連結。在_storage登陸頁面上、此計數是所有基礎儲存節點的風險總和。</block>
+  <block id="0a341d745c345ab59da1ff09230bf0f5" category="section-title">開啟「數位顧問」頁面</block>
+  <block id="d6749e879d62d77cbfe2a4f30aa6f3ca" category="paragraph">按一下「數位顧問」頁面的連結時，如果您目前尚未登入「數位顧問」帳戶，則必須執行下列步驟，才能檢視儲存節點的「數位顧問」頁面。</block>
+  <block id="61c06e5830878d055d855182425d292e" category="list-text">在 Data Infrastructure Insights Summary Widget 或風險表中，按一下「 Digital Advisor 」連結。</block>
+  <block id="5570e484e2050414e7ae0efcb7989c8c" category="list-text">登入您的NetApp支援帳戶。您將直接進入 Digital Advisor 的儲存節點頁面。</block>
+  <block id="21c1dac7b79e4e1279824cc10d71d738" category="paragraph">在 Data Infrastructure Insights 中、您可以將 * monitoring.count* 欄新增至儲存或儲存節點查詢。如果傳回的結果包括由數位顧問監控的儲存系統，則 Monitoring.count 欄會顯示儲存系統或節點的風險數。</block>
+  <block id="bd27458945df244cb55045b52a24310c" category="paragraph">您可以建置 Widget （例如圓形圖，表格 Widget ，長條圖，直條圖，散佈圖和單值 Widget ），以視覺化 NetApp 叢集 Data ONTAP 系統（由數位顧問監控）的儲存和儲存節點的物件風險。在這些小工具中、「物件風險」可選取為欄或度量、其中「儲存或儲存節點」是焦點物件。</block>
+  <block id="88ebaf1e13c1e098d9a4a73a9242d56d" category="summary">為 PagerDuty 建立工作負載安全網路攔截器，以警示安全性</block>
+  <block id="a423930cfe0734579ae74f4cb828cdc6" category="doc">工作負載安全 Webhook 的 PagerDuty 範例</block>
+  <block id="d50bb41906d2f733d067c591f51e4963" category="admonition">本頁面是指可能會變更的第三方指示。如需最新資訊，請參閱<block ref="4cf6cb20b95cded724b319964a5ce815" category="inline-link-macro-rx"></block>。</block>
+  <block id="40a77f4bbfd0ca63ed510e92b9833d67" category="list-text">在 PagerDuty 中，瀏覽至 * 服務 &gt; 服務目錄 * ，然後按一下 *+ 新服務 * 按鈕。</block>
+  <block id="7d26cc043fbfb2e53a18d31fea52c7e8" category="list-text">輸入 _ 名稱 _ ，然後選取 _ 直接使用我們的 API _ 。選取新增服務 _ 。</block>
+  <block id="d4eb5fdef857fa235821f3033fa67762" category="list-text">選取 _Integrations 標籤以查看 * 整合金鑰 * 。當您建立下方的 Data Infrastructure Insights 網路連結時、您將需要這個關鍵。</block>
+  <block id="a3e8d0a78049eabf2c286c14c55b54f2" category="inline-image-macro">pagerDuty 事件清單範例， width=700</block>
+  <block id="5d7dc3b4dea14491b2bd2a77d44d3906" category="paragraph"><block ref="5d7dc3b4dea14491b2bd2a77d44d3906" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="742b9235199c630d771bdfddb2c88611" category="section-title">建立工作負載安全 PagerDuty Webhook ：</block>
+  <block id="ac3971f28a80367895637f2a7baff2b9" category="list-text">瀏覽至管理 &gt; 通知，然後選取 _Workload Security Webhooks_ 標籤。選取「 + Webhook 」以建立新的網路攔截器。</block>
+  <block id="1d87d3a9dea9aa3897a6eae95a91d36a" category="list-text">為 Webhook 命名有意義的名稱。</block>
+  <block id="2f1454968ee4b9454d180e309715be49" category="list-text">在 _ 範本類型 _ 下拉式清單中，選取 _ 頁面負載觸發器 _ 。</block>
+  <block id="3fbd0a1ea55bc616095344f3e328a58e" category="list-text">建立名為 _routingKey_ 的自訂參數秘密，並將值設為上述建立的 PagerDuty _Integration Key_ 。</block>
+  <block id="69976b733a7e722341855c38d322daf8" category="inline-image-macro">設定路由金鑰，寬度 =300</block>
+  <block id="59429acf87914c20fdad5f135b01c652" category="paragraph"><block ref="59429acf87914c20fdad5f135b01c652" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a5d9118ea338b5d8a10b75a82d2b1af4" category="inline-image-macro">工作負載安全分頁工作負載 Webhook 範例， width=400</block>
+  <block id="3d72322f92053aca22220d16d1e96147" category="paragraph"><block ref="3d72322f92053aca22220d16d1e96147" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="30eb5b55a445f5f9ecc59318a74aca4d" category="list-text">若要透過 Webhook 通知事件，請瀏覽至 _Workload Security &gt; Policies 。選取「攻擊原則」或「警示原則」。</block>
+  <block id="4637fc3950065ad14b9030eccdbb419f" category="list-text">輸入有意義的原則名稱。</block>
+  <block id="a5cb6f5849887e301a555c444584e1c2" category="list-text">選取必要的攻擊類型，原則應附加的裝置，以及必要的動作。</block>
+  <block id="267bb94f071c1cc48b24df7711f00add" category="list-text">在 _webhooks Notifications_ 下拉式清單中，選取所需的 PagerDuty Webhooks 。儲存原則。</block>
+  <block id="d3982edf8ee2e9d64dff417d32932263" category="paragraph">附註： Webhooks 也可透過編輯方式附加至現有原則。</block>
+  <block id="ed8719c17bf4a6b47a6788c4a3556656" category="inline-image-macro">新增攻擊原則對話方塊，顯示 Webhook ， width=400</block>
+  <block id="ebc41e374ce79e003d0fdbca5ff78a65" category="paragraph"><block ref="ebc41e374ce79e003d0fdbca5ff78a65" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="95833a73b3e45da13788f4fcafa6cccb" category="summary">為 Slack 建立工作負載安全網路攔截，以警示安全性</block>
+  <block id="4c41f7a846a2313609fc27e816292120" category="doc">Slack 的工作負載安全 Webhook 範例</block>
+  <block id="2a07da088af04bdad7b7af04058988d0" category="paragraph">本頁面是指可能會變更的第三方指示。如需最新資訊，請參閱 Slack 文件。</block>
+  <block id="5862c65b8f7019053c2c8608553da8b0" category="section-title">寬限時間範例</block>
+  <block id="3a3bfcc3b5ed3df4a3c05a7b1bf64859" category="list-text">前往<block ref="895c0cedff8a42203a3dd912da834bde" category="inline-link-rx"></block>並建立新的應用程式給它一個有意義的名稱，然後選取一個工作區。</block>
+  <block id="22c69d9725266703049e6aa276638f1c" category="inline-image-macro">建立可寬延的應用程式，寬度 =400</block>
+  <block id="247e1031c7df77d7e892f04e3d981f15" category="paragraph"><block ref="247e1031c7df77d7e892f04e3d981f15" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cfd6657a0c61826500cdfc6129ca5675" category="list-text">前往傳入的 Webhooks ，按一下 _ 啟動傳入的 Webhooks_ ，選取 _ 新增 Webhook_ ，然後選取要張貼的頻道。</block>
+  <block id="6156beaa30eb28272c612e8f6354b961" category="list-text">複製Webhook URL。此 URL 將在建立工作負載安全網路攔截器時提供。</block>
+  <block id="6b7df77372799e1a695a1ded8374a011" category="section-title">建立工作負載安全性 Slack Webhook</block>
+  <block id="722b5451130fff18e8af3cc06455619f" category="list-text">瀏覽至管理 &gt; 通知，然後選取 _Workload Security Webhooks_ 標籤。選取「超過 _ Webhook 」以建立新的網路攔截器。</block>
+  <block id="c6474368b7cd8a2778b616cf4905ae3d" category="list-text">在 _ 範本類型 _ 下拉式清單中，選取 _ 缺少 _ 。</block>
+  <block id="fc2a3346b6fec59f8cff07a6f8aade93" category="list-text">貼上從上方複製的 URL 。</block>
+  <block id="a03c7cdbfcc4b139a6c388264157965d" category="inline-image-macro">Webhook 寬限時間範例：工作負載安全性，寬度 =400</block>
+  <block id="6e4b68c24aaef9b8e2d3cb4e2669fabc" category="paragraph"><block ref="6e4b68c24aaef9b8e2d3cb4e2669fabc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2f5eb341673ba105f1383f2b750ad3b0" category="section-title">透過 Webhook 通知</block>
+  <block id="2d7c71390213ca5b29909f9995d38c22" category="list-text">若要透過 Webhook 通知事件，請瀏覽至 _Workload Security &gt; Policies 。按一下「攻擊原則」或「警示原則」。</block>
+  <block id="5c91d93f01617de1c11eee11259b389d" category="list-text">選取所需的攻擊類型，應附加原則的裝置，以及必要的動作。</block>
+  <block id="91229a6bb91ad336076b839006d6f3d8" category="list-text">在 _webhooks Notifications_ 下拉式清單中，選取所需的 Webhooks 。儲存原則。</block>
+  <block id="ed3289eb0a2d31b7eb1d54764da04491" category="inline-image-macro">新增攻擊原則對話方塊，寬度 =400</block>
+  <block id="f91815c8aac9f13a54e97684dfd7a4bf" category="paragraph"><block ref="f91815c8aac9f13a54e97684dfd7a4bf" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

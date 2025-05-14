@@ -1,0 +1,58 @@
+---
+sidebar: sidebar 
+permalink: ws_webhook_example_slack.html 
+keywords: webhook, notification, Slack, integration, 
+summary: 為 Slack 建立工作負載安全網路攔截，以警示安全性 
+---
+= Slack 的工作負載安全 Webhook 範例
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Webhooks可讓使用者使用自訂的Webhooks通道、將警示通知傳送至各種應用程式。本頁提供設定Slack Webhooks的範例。
+
+本頁面是指可能會變更的第三方指示。如需最新資訊，請參閱 Slack 文件。
+
+
+
+==== 寬限時間範例
+
+* 前往 https://api.slack.com/apps[]並建立新的應用程式給它一個有意義的名稱，然後選取一個工作區。
+
+
+image:ws_create_slack_app.png["建立可寬延的應用程式，寬度 =400"]
+
+* 前往傳入的 Webhooks ，按一下 _ 啟動傳入的 Webhooks_ ，選取 _ 新增 Webhook_ ，然後選取要張貼的頻道。
+* 複製Webhook URL。此 URL 將在建立工作負載安全網路攔截器時提供。
+
+
+
+
+==== 建立工作負載安全性 Slack Webhook
+
+. 瀏覽至管理 > 通知，然後選取 _Workload Security Webhooks_ 標籤。選取「超過 _ Webhook 」以建立新的網路攔截器。
+. 為 Webhook 命名有意義的名稱。
+. 在 _ 範本類型 _ 下拉式清單中，選取 _ 缺少 _ 。
+. 貼上從上方複製的 URL 。
+
+
+image:ws_webhook_slack_example.png["Webhook 寬限時間範例：工作負載安全性，寬度 =400"]
+
+
+
+==== 透過 Webhook 通知
+
+* 若要透過 Webhook 通知事件，請瀏覽至 _Workload Security > Policies 。按一下「攻擊原則」或「警示原則」。
+* 輸入有意義的原則名稱。
+* 選取所需的攻擊類型，應附加原則的裝置，以及必要的動作。
+* 在 _webhooks Notifications_ 下拉式清單中，選取所需的 Webhooks 。儲存原則。
+
+
+附註： Webhooks 也可透過編輯方式附加至現有原則。
+
+image:ws_add_attack_policy.png["新增攻擊原則對話方塊，寬度 =400"]
