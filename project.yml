@@ -105,12 +105,22 @@ sidebar:
         url: "/task_create_monitor.html"
       - title: 檢視及管理警示
         url: "/task_view_and_manage_alerts.html"
-      - title: 設定通知收件者
-        url: "/concept_notifications_email.html"
       - title: 系統定義的監視器
         url: "/task_system_monitors.html"
+      - title: 設定通知收件者
+        url: "/concept_notifications_email.html"
       - title: Webhook通知
-        url: "/task_create_webhook.html"
+        entries:
+        - title: 設定 Webhooks
+          url: "/task_create_webhook.html"
+        - title: Webhook 範例 - 不和
+          url: "/task_webhook_example_discord.html"
+        - title: Webhook 範例 - PagerDuty
+          url: "/task_webhook_example_pagerduty.html"
+        - title: Webhook 範例 - Slack
+          url: "/task_webhook_example_slack.html"
+        - title: Webhook 範例：團隊
+          url: "/task_webhook_example_teams.html"
     - title: 使用註釋
       entries:
       - title: 定義註釋
@@ -263,8 +273,20 @@ sidebar:
       url: "/cs_restrict_user_access.html"
     - title: 模擬勒索軟體攻擊
       url: "/concept_cs_attack_simulator.html"
-    - title: 通知
+    - title: 電子郵件通知
       url: "/cs_notifications_email.html"
+    - title: Webhook通知
+      entries:
+      - title: 正在建立 Webhooks
+        url: "/ws_notifications_using_webhooks.html"
+      - title: 不和 Webhook 範例
+        url: "/ws_webhook_example_discord.html"
+      - title: PagerDuty Webhook 範例
+        url: "/ws_webhook_example_pagerduty.html"
+      - title: 鬆弛 Webhook 範例
+        url: "/ws_webhook_example_slack.html"
+      - title: 團隊 Webhook 範例
+        url: "/ws_webhook_example_teams.html"
     - title: 工作負載安全API
       url: "/concept_cs_api.html"
     - title: SVM 收集器疑難排解

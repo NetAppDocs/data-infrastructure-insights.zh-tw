@@ -28,7 +28,7 @@ NOTE: 本頁面是指可能會變更的第三方指示。如需最新資訊，�
 +
 image:Webhooks_PagerDutyScreen1.png["PagerDuty畫面"]
 
-. 選取 _Integrations 標籤以查看 * 整合金鑰 * 。當您建立下方的 Data Infrastructure Insights 網路連結時、您將需要這個關鍵。
+. 選取 _Integrations 標籤以查看 * 整合金鑰 * 。當您在下方建立 Workload Security Webhook 時，您將需要這個金鑰。
 
 
 . 請前往*「事件」*或*「服務」*檢視「警示」。

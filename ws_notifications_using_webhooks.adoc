@@ -1,0 +1,136 @@
+---
+sidebar: sidebar 
+permalink: ws_notifications_using_webhooks.html 
+keywords: alert, webhook, notification 
+summary: 為工作負載安全警示通知建立網路掛鉤。 
+---
+= 使用 Webhooks 發出工作負載安全通知
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Webhooks 可讓使用者使用自訂的 Webhook 頻道，將關鍵或警告警示通知傳送給各種應用程式。
+
+許多商業應用程式都支援 Webhooks 做為標準輸入介面，例如：寬限時間， PagerDuty ，團隊和不和。工作負載安全可支援一般的可自訂網路攔截管道，因此可支援許多這些交付管道。有關設定 Webhooks 的資訊，請參閱個別應用程式的網站。例如， Slack 提供link:https://api.slack.com/messaging/webhooks["這份實用指南"]。
+
+您可以建立多個 Webhook 頻道，每個頻道的目標是不同的用途，個別的應用程式，不同的收件者等
+
+Webhook 通道執行個體由下列元素組成
+
+|===
+| 名稱 | 說明 
+
+
+| URL | Webhook 目標 URL ，包括 http ： // 或 https ： // 前置詞以及 URL 參數 
+
+
+| 方法 | GET / POST - 預設為 POST 
+
+
+| 自訂標頭 | 在此處指定任何自訂標頭 
+
+
+| 訊息本文 | 請將您的訊息內容放在這裡 
+
+
+| 預設警示參數 | 列出Webhook的預設參數 
+
+
+| 自訂參數與機密 | 自訂參數和機密可讓您新增獨特的參數和安全元素，例如密碼 
+|===
+
+
+== 建立 Webhook
+
+若要建立 Workload Security Webhook ，請前往管理 > 通知，然後選取「 Workload Security Webhooks 」標籤。下圖顯示可寬緩建立 Webhook 畫面的範例。
+
+附註：使用者必須是工作負載安全 _ 管理 _ ，才能建立及管理工作負載安全網路攔截器。
+
+image:ws_webhook_slack_example.png["Webhook 寬限時間範例：工作負載安全性，寬度 =500"]
+
+* 為每個欄位輸入適當的資訊，然後按一下「儲存」。
+* 您也可以按一下「測試Webhook」按鈕來測試連線。請注意、這會根據所選的方法、將「Message Body（訊息本文）」（不含替代）傳送至定義的URL。
+* SWS Webhooks 包含許多預設參數。此外、您也可以建立自己的自訂參數或機密。
+
+
+
+
+== 參數：它們是什麼？如何使用它們？
+
+警示參數是根據警示填入的動態值。例如，將以警示的嚴重性類型取代 %%searsears%%%_ 參數。
+
+請注意，按一下「測試 Webhook 」按鈕時不會執行替代；測試會傳送有效負載，顯示參數的預留位置（ <param-name> %%_ ），但不會以資料取代。
+
+
+
+=== 自訂參數與機密
+
+在本節中、您可以新增任何您想要的自訂參數和/或機密。自訂參數或機密可以位於 URL 或訊息本文中。機密可讓使用者設定安全的自訂參數，例如密碼，密碼等
+
+下列範例影像顯示如何在網路掛鉤建立中使用自訂參數。
+
+image:ws_webhook_parameters_example.png["工作負載安全 Webhook ，含參數，寬度 =800"]
+
+
+
+== 工作負載安全性 Webhooks 清單頁面
+
+在 Webhooks 清單頁面上、顯示的是名稱、建立者、建立日期、狀態、安全、 和上次報告的欄位。附註：「狀態」欄的值會根據上次 Webhook 觸發結果持續變更。以下是狀態結果範例。
+
+|===
+
+
+| 狀態 | 說明 
+
+
+| 好的 | 已成功傳送通知。 
+
+
+| 403 | 禁止。 
+
+
+| 404 | 找不到 URL 。 
+
+
+| 400  a| 
+錯誤要求。如果訊息本文中有任何錯誤，您可能會看到此狀態，例如：
+
+* json 格式錯誤。
+* 為保留金鑰提供無效值。例如， PagerDuty 僅接受「嚴重性」的嚴重 / 警告 / 錯誤 / 資訊。任何其他結果可能會產生 400 個狀態。
+* 應用程式特定驗證錯誤。例如， Slack 最多允許在一個區段內有 10 個欄位。如果超過 10 ，可能會導致 400 個狀態。
+
+
+
+
+| 410 | 資源不再可用 
+|===
+「上次報告」欄表示上次觸發網路攔截的時間。
+
+從列出頁面的 Webhooks ，使用者也可以編輯 / 複製 / 刪除 Webhooks 。
+
+
+
+== 在警示原則中設定 Webhook 通知
+
+若要將網路掛機通知新增至警示原則，請移至 - 工作負載安全性 > 原則 - 並選取現有原則或新增原則。在 _Actions_ 區段 > _Webhook Notifications_ 下拉式清單中，選取所需的 Webhooks 。
+
+image:ws_edit_attack_policy.png["編輯攻擊原則對話方塊，顯示網路攔截下拉式清單，寬度 =500"]
+
+Webhook 通知與原則相關。當攻擊（ W/DD/warn ）發生時，將會採取設定的動作（拍攝快照 / 使用者封鎖），然後觸發相關的網路攔截通知。
+
+附註：電子郵件通知不受原則影響，會像往常一樣觸發。
+
+* 如果原則暫停，網路攔截通知將不會觸發。
+* 可以將多個 Webhooks 附加到單一原則，但建議將不超過 5 個 Webhooks 附加到原則。
+
+
+
+
+=== 工作負載安全 Webhook 範例
+
+Webhooks link:ws_webhook_example_slack.html["可寬延"] for Webhooks for link:ws_webhook_example_pagerduty.html["PagerDuty"]Webhooks for Webhookslink:ws_webhook_example_teams.html["團隊"]link:ws_webhook_example_discord.html["不和"]

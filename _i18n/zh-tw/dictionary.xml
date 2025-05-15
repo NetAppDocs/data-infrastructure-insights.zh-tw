@@ -3585,8 +3585,6 @@
   <block id="df6a21f670066b82b5409a049dec0efe" category="doc">自動化回應原則</block>
   <block id="e5da02c738b911c42fb0a45a5b76c8d9" category="paragraph">回應原則會觸發動作、例如在發生攻擊或異常使用者行為時、拍攝快照或限制使用者存取。</block>
   <block id="8816114441548a7f4d390de764f25ad9" category="paragraph">您可以在特定裝置或所有裝置上設定原則。若要設定回應原則、請選取 * 管理 &gt; 自動回應原則 * 、然後按一下適當的 *+Policy* 按鈕。您可以建立攻擊或警告的原則。</block>
-  <block id="74caaeae1f2607ea4824df314e3bd233" category="inline-image-macro">建立攻擊原則</block>
-  <block id="7ee8aae70113b376d8eb550719ded4da" category="paragraph"><block ref="7ee8aae70113b376d8eb550719ded4da" category="inline-image-macro-rx" type="image"></block></block>
   <block id="10519a96ebde07deba902eb606bf97ff" category="paragraph">您必須以唯一名稱儲存原則。</block>
   <block id="168e31fead9fc72274b5723b0c86d27f" category="paragraph">若要停用自動回應動作（例如「拍攝Snapshot」）、只要取消檢查動作並儲存原則即可。</block>
   <block id="3218ac0e5f26253bd8724ab98d8f5e02" category="inline-link-macro">警示詳細資料頁面</block>
@@ -6344,106 +6342,11 @@
   <block id="e06effb18b8b0d2f3ce53c30a98e4b93" category="paragraph">請注意、 Kubernetes Monitoring Operator 的預設命名空間是「 NetApp-Monitoring 」。如果您已設定自己的命名空間、請在這些名稱空間以及所有後續命令和檔案中取代該命名空間。</block>
   <block id="12deeaac5f633c54b730f8c247dbf7e0" category="paragraph">可使用下列命令解除安裝較新版本的監控操作員：</block>
   <block id="aee5f180cc531b30ec6cf8dcf509d9b8" category="paragraph">如果監控操作員部署在其專屬命名空間中、請刪除命名空間：</block>
-  <block id="97e76f0c81cc1c26b3d8ffe0d972c5af" category="paragraph">如果第一個命令傳回「找不到資源」、請依照下列指示解除安裝舊版監控操作員。</block>
   <block id="82a8cca794947463478c2f08445a8ff4" category="paragraph">如果先前已建立安全性內容限制：</block>
   <block id="a945216a5c61e628c867b8948c797454" category="section-title">關於Kube-state指標</block>
   <block id="951a50d1b55837ddb5ff4cb5af4ebc8a" category="paragraph">NetApp Kubernetes監控操作員會安裝自己的Kube-態 指標、以避免與任何其他執行個體發生衝突。</block>
   <block id="8334797b9b3383d4f48d98178b8845ea" category="inline-link-macro">本頁</block>
   <block id="807c67eb6796ba389d19bd183fc2b317" category="paragraph">如需有關 Kube-State-Metrics 的資訊，請參閱<block ref="73f7e5446269af2d39c747140597d176" category="inline-link-macro-rx"></block>。</block>
-  <block id="4f20cb3e8959a7865ba5aaa5af540ddb" category="section-title">設定 / 自訂操作員</block>
-  <block id="67dea165315ff79ce5620f051688d07c" category="paragraph">這些區段包含自訂運算子組態、使用 Proxy 、使用自訂或私有泊塢視窗儲存庫或使用 OpenShift 的相關資訊。</block>
-  <block id="d9a52817194c8be56b59a9d57114278a" category="section-title">組態選項</block>
-  <block id="cac54dc379f23a7aed8745bde8386662" category="inline-link-macro">可用的設定</block>
-  <block id="8baa15e22ac6c7ee4ce4e0a88da9798e" category="paragraph">最常修改的設定可在 _AgentConfiguration_ 自訂資源中進行設定。您可以編輯 _operer-config.yaml_ 檔案、在部署運算子之前編輯此資源。此檔案包含設定的註解範例。如需最新版的運算子，請參閱清單<block ref="d0a687c4569dc784e63f3960b33ab7c7" category="inline-link-macro-rx"></block>。</block>
-  <block id="27aa502b8f8f23143b77f0800d6dd42f" category="paragraph">您也可以使用下列命令在部署運算子之後編輯此資源：</block>
-  <block id="3ab04e244a91c8a73c48633c62ac613a" category="paragraph">若要判斷您部署的營運者版本是否支援 AgentConfiguration 、請執行下列命令：</block>
-  <block id="51ba9262aad7e83aa5f74ed6dc93a039" category="paragraph">如果您看到「錯誤來自伺服器（ NotFound ）」訊息、則必須先升級您的營運商、才能使用 AgentConfiguration 。</block>
-  <block id="92caa6668b03ccf88ed2c1dbef632933" category="paragraph">如果您使用上述任一種或兩者的 Proxy 、為了安裝 Kubernetes Operating Monitor 、您必須先確定您的 Proxy 已設定為允許與 Data Infrastructure Insights 環境進行良好的通訊。如果您有代理伺服器、而且可以從想要安裝運算子的伺服器 / VM 存取 Data Infrastructure Insights 、則您的 Proxy 可能已正確設定。</block>
-  <block id="4cf131cb570986a48574d0708d4c8b35" category="paragraph">對於用於安裝 Kubernetes 作業系統的 Proxy 、在安裝運算子之前、請先設定 _http 代理伺服器 /https 代理伺服器 _ 環境變數。在某些Proxy環境中、您可能也需要設定_no_proxyEnvironments _變數。</block>
-  <block id="e25c898cccd50c035eb1941a8411ba8b" category="paragraph">若要設定變數、請在系統 * 上 * 安裝 Kubernetes Monitoring 運算子之前 * 執行下列步驟：</block>
-  <block id="8abad16925d189288490bd9d8b5e034c" category="paragraph">對於 Kubernetes 叢集用來與 Data Infrastructure Insights 環境通訊的 Proxy 、請在閱讀完所有指示之後、安裝 Kubernetes Monitoring Operator 。</block>
-  <block id="6b883170f6284320691d7cfefa3f48e3" category="paragraph">在部署 Kubernetes Monitoring Operator 之前、請先在 operator-config.yaml 中設定 AgentConfiguration 的 Proxy 區段。</block>
-  <block id="e79dbc8635cd754ff3943b0362cd5a36" category="paragraph">根據預設、 Kubernetes Monitoring Operator 會從 Data Infrastructure Insights 儲存庫中擷取容器映像。如果您使用 Kubernetes 叢集做為監控目標、且該叢集設定為僅從自訂或私有 Docker 儲存庫或容器登錄中提取容器映像、則必須設定 Kubernetes Monitoring Operator 所需的容器存取權。</block>
-  <block id="b1dbe9124bd000f8918a20bf61bc24f6" category="list-text">CI-KRBA-Proxy</block>
-  <block id="67efe5df179f0f50a5a5e82fd46a07fc" category="list-text">CI-ksm</block>
-  <block id="217b41d0f229477b95c3b46b9905e8a6" category="list-text">CI-Telegraf</block>
-  <block id="7357e4ce1b613c72370aa11b8881c327" category="list-text">CI-Fluent 位元</block>
-  <block id="fe05143e1e28d056a7092a13c7ef1fda" category="list-text">CI-Kubernetes-event-Exporter</block>
-  <block id="d8c9294ea12d1c7d12e34008f3ecee39" category="section-title">關於機密的備註</block>
-  <block id="bd0f62d92c7b0e5d6e74b4447418c58b" category="paragraph">若要移除 Kubernetes Monitoring Operator 檢視整個叢集機密的權限、請在安裝之前、從 _operer-setup.yaml_ 檔案中刪除下列資源：</block>
-  <block id="1790cdbccc4ddd4389eb90d73e043f4b" category="paragraph">如果是升級、也請從叢集中刪除資源：</block>
-  <block id="a66e68a20b3b94a700f3a3b9baa06764" category="paragraph">如果啟用變更分析、請修改 _AgentConfiguration_ 或 _operer-config.yaml_ 以取消變更管理區段的註解、並在變更管理區段下包含 _kindsToIgnoreFromWatch ：「 Secrets 」。請注意此行中單引號和雙引號的存在和位置。</block>
-  <block id="ae233b4bee0ed9f611ffe211f5804e00" category="section-title">公差和污染</block>
-  <block id="6aae913b976c156306d8a5cbbbc06ad5" category="inline-link-macro">在 _AgentConfiguration_ 中</block>
-  <block id="d6f0c62217650cf8ede1bd5e1e862b5a" category="paragraph">_NetApp-CI-telegraf-DS_ 、 _NetApp-CI-Fluent-bit-DS_ 和 _NetApp-CI-net-觀察者 -L4-DS_ 示範必須在叢集中的每個節點上排程一個 Pod 、以便正確收集所有節點上的資料。已將操作員配置爲允許某些已知的 * 污點 * 。如果在節點上配置了任何自定義污點，從而阻止 Pod 在每個節點上運行，則可以爲這些污點創建 *公差 * <block ref="dc90f93af5ccf5020646213d9b7d2c3d" category="inline-link-macro-rx"></block>。如果您已將自訂污點套用至叢集中的所有節點、您也必須在操作員部署中新增必要的容錯功能、以便排程及執行操作員 Pod 。</block>
-  <block id="e1e08e40036f927a0e660c22aa837f88" category="inline-link-macro">污染與容許</block>
-  <block id="9680829f0eb82d9736ac7fe477135a87" category="paragraph">瞭解更多關於 Kubernetes <block ref="2a69bcb19ea6a4db3f5d1b466ff78e77" category="inline-link-macro-rx"></block>的資訊。</block>
-  <block id="fbc05142fc5476cd7c2dd603607412ee" category="inline-link-macro">* NetApp Kubernetes 監控操作員安裝 * 頁面</block>
-  <block id="c425b824281c7958c5622dd1dc041533" category="paragraph">返回<block ref="6f93c3205a564eadff1f05e34704d40c" category="inline-link-macro-rx"></block></block>
-  <block id="5961d0092306c169d325c3e662030e8e" category="paragraph">如果您在設定 Kubernetes 監控操作員時遇到問題、請嘗試下列事項：</block>
-  <block id="3dcf0a51075fbcf98f9e53d661506adf" category="cell">我看不到Kubernetes持續Volume與對應的後端儲存設備之間的超連結/連線。我的Kubernetes持續Volume是使用儲存伺服器的主機名稱來設定。</block>
-  <block id="588706510a3c974b95453cecc3cb59d6" category="cell">請依照步驟解除安裝現有的Telegraf代理程式、然後重新安裝最新的Telegraf代理程式。您必須使用 Telegraf 2.0 版或更新版本、且必須主動監控您的 Kubernetes 叢集儲存設備、以獲得 Data Infrastructure Insights 。</block>
-  <block id="a603e86bb87b54e9b7acc7e242269514" category="cell">我在記錄中看到類似以下內容的訊息： E0901 15 ： 21 ： 39.962145 1 反射器。前往： 178 ） k8s.io/kube 狀態指標 / 內部 / 儲存 / 建置器。前往： 352 ：無法列出 * v1.MutatingWebhookbuilder 組態：伺服器找不到所要求的資源 E0901 ： 21 ： 43.16178 伺服器無法找到 IO 資源 v1.16178 v1/816v1.v1.v1.v1.v1.v1.v1.v2.1*</block>
-  <block id="0428b79968fc5aa0a5b6d427e6815d82" category="cell">如果您執行Kubernetes版本低於1.20的Kubernetes 2.0.0版或更新版本之Kube-state度量、則可能會出現這些訊息。若要取得Kubernetes版本：_kubeclt版本_若要取得Kube-st態 度量版本：_kubeclt Get Deploy / kube-state-metases -o jsonpath='{.image}'_若要避免發生這些訊息、使用者可以修改其kube-state-metases部署、以停用下列Les:_mutatingwebhookwebhookvalidkap_props_enefroup參數組態： resources=certicatesignquests、水平複製、組態、cronjobs、取消套用、部署、端點、橫向套用自動擴充、擷取、工作、限制範圍、命名空間、網路原則、節點、持續套用磁碟區、持續套用磁碟區、資源資源等、機密、服務、服務、網路套用原則、預設套用範圍、重複本、複本、複製、資源、套用、資源、限制、資源組、資源、資源組態、資源、儲存、預設值、資源、限制、資源、資源、儲存、組態設定、儲存、儲存、儲存、限制、資源、資源、資源、儲存區、限制、資源、資源、資源、資源、儲存區、資源、限制、資源、資源、資源、儲存區、限制、儲存區、資源組態設定、資源、儲存區、資源、資源、儲存區、資源、資源、資源、儲存區、儲存區、資源、資源、資源、資源、資源、資源、 驗證webhookconfigurations、volume附件"</block>
-  <block id="b8ce784188c470b3c8ff0c7cc1a403e1" category="cell">我看到 Telegraf 的錯誤訊息與下列類似，但 Telegraf 確實啟動並執行： 10 月 11 日 14 ： 23 ： 41 IP-172-31-39-47 systemd[1] ：啟動外掛程式導向的伺服器代理程式，將計量報告給影響資料庫。10 月 11 日 14 ： 23 ： 41 IP-172-31-39-47 Telegraf[1827] ： Time="2021-10-11T14:23:41Z" Level=error msg="Failed to create cache directory./etc/telegraf/.cache/snowflake ， err ： mkdir /etc/telegraf/.ca Che ：權限遭拒。忽略 \n" func="govake.(*defaultLogger ） .Errorf " file="log.go:120" Oct11 14 ： 23 ： 41 IP-172-39-47 Telef=18211-20211-20z"已忽略。開啟 /etc/telegraf/.cache/cloflake/occ_restore_cache.json ：無此類檔案或目錄 \n" func="govake.(*defaultLogger ） .Errorf" file="log.go:120" 10 月 11 日 14 ： 23 ： 41 IP-172-39-47 teleraf[1821-2021:2012]啟動Telegraf 1.19.3</block>
-  <block id="0ccd64b2e6202fbb544d22cd48a872b2" category="inline-link-macro">這篇GitHub文章</block>
-  <block id="8f176f657f418586c2a4828045ab0c37" category="cell">這是已知的問題。如<block ref="23bd9a1f0b26414ad35f4299a95464f0" category="inline-link-macro-rx"></block>需詳細資訊、請參閱。只要Telegraf已啟動且正在執行、使用者就可以忽略這些錯誤訊息。</block>
-  <block id="9aab00e938cede2932654042bc507309" category="cell">在Kubernetes上、我的Telegraf pod報告下列錯誤：「處理mountstats資訊時發生錯誤：無法開啟mountstats檔案：/hostfs/proc/1/mountstats、錯誤：開啟/hostfs/proc/1/mountstats：權限遭拒」</block>
-  <block id="4123cf4f6521073cef46192908207644" category="cell">如果啟用並強制執行 SELinux 、則可能會阻止 Telegraf Pod 存取 Kubernetes 節點上的 /proc/1/mountstats 檔案。若要克服此限制、請編輯 agentconfiguration 、然後啟用 RunPrivileged 設定。如需詳細資訊、請<block ref="f28efb863bb7dfcdf91b1badf5c0c340" category="inline-link-macro-rx"></block>參閱。</block>
-  <block id="f997e79142f159c33823b9deeab809eb" category="cell">在Kubernetes上、我的Telegraf ReplicaSet pod報告下列錯誤：[inputs.prometheus]錯誤in plugin：Could not load keypair /etc/Kubernetes /pi/etcd/server.crt：/etc/Kubernetes /pi/etcd/server.key：open /etc/Kubernetes /pi/etcd/server.crt目錄或這樣的檔案</block>
-  <block id="9df12d675c4f61381132e45173ef90d0" category="cell">Telegraf ReplicaSet Pod可在指定為主節點或etcd節點上執行。如果ReplicaSet Pod未在其中一個節點上執行、您將會收到這些錯誤。檢查您的主節點/ etcd節點是否有問題。如果有、請將必要的容許值新增至Telegraf ReplicaSet、Telegraf-RS。例如、編輯ReplicaSet... kurbectl編輯RS Telefra-RS ...、並將適當的容許值新增至規格。然後重新啟動ReplicaSet Pod。</block>
-  <block id="7f213685ee85ff84e10c6c9b9c633789" category="cell">我有PSP/PSA.環境。這是否會影響我的監控操作員？</block>
-  <block id="55b27691d4a3ba1d0f59fb6a06ac2e22" category="cell">如果您的 Kubernetes 叢集正在執行 Pod 安全政策（ PSP ）或 Pod 安全許可（ PSA ）、則您必須升級至最新的 Kubernetes 監控營運者。請依照下列步驟升級至目前支援 PP/PSA 的營運商： 1.<block ref="a7177598d8f3c4f7d3503ecefe58c480" category="inline-xref-macro-rx"></block>先前的監控操作員： kebectl delete agents NetApp NetApp -n NetApp 監控 kebectl delete ns NetApp 監控 kebectl delete crd agents.monitoring.clusterrolebinding agent-manager-rolebinding agent-proxy-roleagent-rolebinding admin-rapproxy-rateagent-bindingleagent-bindingleadmin-rolecinglecinglecinglecinglecinglecingle.<block ref="6fd69549c3aeb303e3b2df8a94f1263f" category="inline-xref-macro-rx"></block>最新版本的監控業者。</block>
-  <block id="b10669273dd57c8fd5d2fe2a3b97e299" category="cell">我在嘗試部署操作員時遇到問題、而且我使用 PP/PSA 。</block>
-  <block id="f005ad36a865e60c2f589a58c0daafa5" category="cell">1.使用下列命令編輯代理程式： kubectl -n &lt;name-space&gt; 編輯代理程式 2.將「已啟用安全性原則」標示為「假」。這將會停用 Pod 安全政策和 Pod 安全許可、並允許營運者進行部署。使用下列命令進行確認：kubecll Get PSP（應顯示Pod安全性原則已移除）kbecll Get all -n &lt;命名空間&gt;| Grep -I pp（應顯示找不到任何項目）</block>
-  <block id="59e3026f71d01a624108642cdb778ebd" category="cell">出現「ImagePullBackOff」錯誤</block>
-  <block id="43340e6cc4e88197d57f8d6d5ea50a46" category="inline-xref">瞭解更多資訊</block>
-  <block id="31c512270381a100a1d6ed5460e4382a" category="cell">如果您有自訂或私有泊塢視窗儲存庫、但尚未設定 Kubernetes Monitoring Operator 正確辨識、就可能會出現這些錯誤。<block ref="64c2e35c96e92fc99426098fae703fff" category="inline-xref-macro-rx"></block>關於設定自訂 / 私有報告。</block>
-  <block id="6da3e5f4ef4407262c741e8325a8249d" category="cell">我的監控操作員部署有問題、目前的文件無法協助我解決問題。</block>
-  <block id="368fbe1d48012e8e4f24249e2b27a8dd" category="paragraph">擷取或記下下列命令的輸出、然後聯絡技術支援團隊。</block>
-  <block id="70d79a6ca6098037988336f11346dce8" category="cell">Operator 命名空間中的 Net-Oborative （工作負載對應） Pod 位於 CrashLoopBackOff</block>
-  <block id="b1dd812a8bc65d5769e88b945f591999" category="cell">這些 Pod 對應於網路可觀察性的工作負載對應資料收集器。請嘗試下列方法：•檢查其中一個 Pod 的記錄、以確認最低核心版本。例如： --{"CI-租 戶 -id":" 您的租戶 -id" 、 "collector 叢集 " ： "Your -k8s-cluster 名稱 " 、 "Environment ： "prod" 、 "Level" ： "error" 、 "msg" ：驗證失敗。原因：核心版本 3.10.0 低於最低核心版本 4.18.0 、 "Time" ： "2022-11-09T08:23:08Z"} --- • Net 觀察者 Pod 要求 Linux 核心版本至少為 4.18.0 。使用命令 "uname -r " 檢查核心版本、並確定它們 &gt;=4.18.0</block>
-  <block id="e49c236734fe2ea50ae36fcb5353eed9" category="cell">Pod 在 Operator 命名空間中執行（預設值： NetApp-Monitoring ）、但查詢中的工作負載對應或 Kubernetes 度量、 UI 中不會顯示任何資料</block>
-  <block id="b301a7b156c241fb466de1bca776811c" category="cell">檢查 K8S 叢集節點上的時間設定。為了準確地進行稽核和資料報告、強烈建議您使用網路時間傳輸協定（ NTP ）或簡易網路時間傳輸協定（ SNTP ）、同步代理機器上的時間。</block>
-  <block id="665dddc2adb2f34c745ef47345ee5e93" category="cell">運算子命名空間中的某些網路觀察者 Pod 處於「擱置中」狀態</block>
-  <block id="c55a7a21faf06d9f162882100bc46e42" category="cell">Net-觀察者 是一組示範集、在 k8s 叢集的每個節點上執行 Pod 。•記下處於「擱置中」狀態的 Pod 、並檢查它是否發生 CPU 或記憶體資源問題。確保節點中有可用的必要記憶體和 CPU 。</block>
-  <block id="0b681475d547cee4e6a8aa2975d2a6ad" category="cell">安裝 Kubernetes 監控操作員之後，我會立即在記錄中看到下列內容： [ 外掛程式中出現 inputs.prometheus] 錯誤：向 \http://kube-state-metrics 提出 HTTP 要求時發生錯誤。 &lt;namespace&gt; 。 http://kube-state-metrics svc.cluster 。 &lt;namespace&gt; 本機： dial tcp: LOOKUP kube-state -indformations.data.svc.cluster &lt;namespace&gt; 。本機：無此類主機</block>
-  <block id="d232f49a9877a99204dde54474c23ce6" category="cell">此訊息通常只有在安裝新的營運者、且_Telefra-Rs_ pod在_ksm_ pod啟動之前就已啟動時才會出現。所有Pod都在執行時、這些訊息應該會停止。</block>
-  <block id="02230bab9788e4843408e124331bb1ca" category="cell">我沒有看到叢集中存在的 Kubernetes CronJobs 正在收集任何度量。</block>
-  <block id="b3b6bea000b13acbfcb412bad49ee494" category="cell">驗證 Kubernetes 版本（即<block ref="4fc58818ca77fb3a60cbd34a7f7d5071" prefix=" " category="inline-code"></block>）。如果是 v1.2.x 或更低版本、這是預期的限制。Kubernetes Monitoring Operator 部署的 kube-state 度量版本僅支援 v1.cronjob 。使用 Kubernetes 1.2.x 及以下版本時、 cronjob 資源為 v1beta 。 cronjob.因此、 kube 狀態度量無法找到 cronjob 資源。</block>
-  <block id="45698e13b1c2f7241751839133834506" category="cell">安裝操作員之後、 Telegraf-DS Pod 會進入 CrashLoopBackOff 、 Pod 記錄會顯示「 su ：驗證失敗」。</block>
-  <block id="802997bcb8e9581226b3000b8b611b1c" category="cell">我在 Telegraf 記錄檔中看到類似以下內容的重複錯誤訊息： e ！[ 代理程式 ] 寫入 outputs.http ： POST 「 \https ： //les/rest/v1/lake &lt;tenant_url&gt; / 擷取 / 影響 xdb 」時發生錯誤：內容已超過期限（用戶端。 等待標頭時超過逾時）</block>
-  <block id="5a581223d2fea6c45a7ac1278334f8c1" category="cell">編輯 _AgentConfiguration_ 中的 Telegraf 區段、並將 _outputTimeout_ 增加至 10s 。有關詳細信息，請參閱操作員的<block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。</block>
-  <block id="4f05106cca363b0f3c492314ab777534" category="cell">我遺失某些事件記錄的 _ 參與物件 _ 資料。</block>
-  <block id="67ee92e19812baa7cedb346320ca0182" category="cell">請務必遵循上述章節中的步驟<block ref="d9283cdb1b027ed2a61fa92c8dc3e314" category="inline-link-macro-rx"></block>。</block>
-  <block id="5e77ada1a807785ef1b03c3f1b96779c" category="cell">為什麼我看到兩個監控營運商 Pod 正在執行、一個名為 NetApp-CI-monitoring 、 &lt;pod&gt; 、另一個名為 monitoring 、 &lt;pod&gt; ？</block>
-  <block id="1c1bebc9155c93bfe8263d7dd59e4d97" category="inline-xref">移除舊的運算子</block>
-  <block id="3aadd91c93bca2d335851fd692f310be" category="inline-xref">安裝新的</block>
-  <block id="c3a998877066e09c478b4163a26933ab" category="cell">截至 2023 年 10 月 12 日、 Data Infrastructure Insights 已重新考慮營運商、以更好地為使用者提供服務；若要充分採用這些變更<block ref="860504374016936ed59489a365e20672" category="inline-xref-macro-rx"></block><block ref="26142c5a68eb5609ee139db77de754bb" category="inline-xref-macro-rx"></block>、您必須和。</block>
-  <block id="d91f7c56a5bd6c0e9735fe39d7d2d1a6" category="cell">我的 Kubernetes 事件意外停止回報 Data Infrastructure Insights 。</block>
-  <block id="0f21fa822dc46792cc163d7e77fe6c2c" category="paragraph">擷取事件導出者 Pod 的名稱：</block>
-  <block id="9df5220f9f1e94f2849e58be10655af5" category="paragraph">應為「 NetApp-CI-EVENT - Exporter 」或「 EVENT - Exporter 」。接下來，編輯監控代理程式<block ref="254deec50834604297ddd3caab0d8ce7" prefix=" " category="inline-code"></block>，並設定 log_file 的值，以反映上一步中找到的適當事件導出器 Pod 名稱。更具體地說、 log_file 應該設定為「 /var/log/container/NetApp-CI-event-Exporter.log 」或「 /var/log/containers/event-Exporter.log 」</block>
-  <block id="fe98497efedbe156ecc4b953aea77e07" category="inline-xref">解除安裝</block>
-  <block id="7b4d917229221f1292dd0dc7b693cccf" category="inline-xref">重新安裝</block>
-  <block id="e832e916ac4edbd5ff4fc3ce13949058" category="paragraph">或者，您也可以<block ref="eb03b2f692ebf826fa07016cc9fa15a6" category="inline-xref-macro-rx"></block>和<block ref="f33f6e060928000e7af3fed4c4e6c6a0" category="inline-xref-macro-rx"></block>值機員一起使用。</block>
-  <block id="cacd73b257654b42f59477320860f203" category="cell">我看到 Kubernetes Monitoring Operator 部署的 Pod 因為資源不足而當機。</block>
-  <block id="1bf4c34fd6e2ff1bf1741953bce0f5e1" category="cell">請參閱 Kubernetes Monitoring Operator <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block> ，視需要增加 CPU 和 / 或記憶體限制。</block>
-  <block id="d30a0cd77a13a9c540651e05cf93b85c" category="cell">遺失影像或組態無效、導致 NetApp-CI-kube 狀態指標 Pod 無法啟動或準備就緒。目前狀況集已停滯、組態變更並未套用至 NetApp-CI-kube 狀態指標群。</block>
-  <block id="54ddc3c7d064822eed932015d8740336" category="inline-link-macro">毀損</block>
-  <block id="24842c3920322c32befcba0bfb6c67b4" category="cell">StateSetSet 處於某種<block ref="01cb4c066842f659530df33ef9ef5308" category="inline-link-macro-rx"></block>狀態。在修正任何組態問題之後、 NetApp-CI-kube 狀態指標 Pod 就會恢復運作。</block>
-  <block id="ab53b155d3f5f63613ea9034aaafadbd" category="cell">NetApp-CI-kube-state 指標 Pod 在執行 Kubernetes 操作員升級後無法啟動、造成勘誤影像資料（無法擷取影像）。</block>
-  <block id="da4a57ccdb996916b48d63fa3e08bb40" category="cell">請嘗試手動重設 Pod 。</block>
-  <block id="2bc94fccd24faa68b4153886af40ec57" category="cell">我的 Kubernetes 叢集在記錄分析下會觀察到「事件已捨棄為較舊、然後是 maxEventAgeSeconds 」的訊息。</block>
-  <block id="6c71496a372f3b5c0cbc9e2eb84a5fd0" category="cell">修改運算子 _agentconfigurated_ 、並增加 _event-aler-maxEventAgeSeconds_ （即增加至 60s ）、 _event-kaler-kubeQPS_ （即增加至 100 ）、以及 _event-kaler-kubebBurst （即增加至 500 ）。如需這些組態選項的詳細資訊，請參閱<block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>頁面。</block>
-  <block id="7438b4e926a47d987228924d394e21fc" category="cell">Telegraf 會警告或因為可鎖定的記憶體不足而當機。</block>
-  <block id="9953ac1176fec4ceef2b233ecd286c7b" category="cell">嘗試增加基礎作業系統 / 節點中 Telegraf 可鎖定記憶體的限制。如果增加限制並非選項，請修改 NKMO 代理組態，並將 _NOISS_ 設為 _true_ 。這將指示 Telegraf 不要嘗試保留鎖定的記憶體頁面。雖然這可能會造成安全風險、因為解密的機密資料可能會被換出到磁碟、但它允許在無法保留鎖定記憶體的環境中執行。如需 _inbizon_ 組態選項的詳細資訊，請參閱<block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>頁面。</block>
-  <block id="d2402cb2e8bc53d6f0ea3a592a927071" category="cell">我看到 Telegraf 發出的警告訊息類似以下內容： _W! [Inputs.DiskIO] 無法收集「 VDC 」的磁碟名稱：讀取 /dev/VDC 時發生錯誤：沒有此類檔案或目錄 _</block>
-  <block id="d167beea70a778e86c7a57bc2bd4338a" category="inline-link-macro">駕駛員的組態選項</block>
-  <block id="1f3c6b9eb496e3586cb89ac14caca626" category="cell">對於 Kubernetes Monitoring 操作員而言、這些警告訊息是良性的、可以安全地忽略。  或者、在 AgentConfiguration 中編輯 Telegraf 區段、並將 _runDsPrivileged 設為 true 。如需詳細資訊、請<block ref="ebda7113c4f0b0fd6090a6c2a6162dc1" category="inline-link-macro-rx"></block>參閱。</block>
-  <block id="828b70096630fbae314b6b8a4022c2d3" category="cell">我的 Fluent 位元 Pod 發生故障，並出現下列錯誤： [2024/10/16 14 ： 16 ： 23 ] [ 錯誤 ] [/src/flue-bit/plugins/in_tail/fs_inos_inoseture.c:360 errno=24 ] 太多開啟的檔案 [2024/10/16 14 ： 16 ： 23 ] [ 錯誤 ] 無法初始化輸入 tail.0[2024/16 ： 10/16 ： 16 ： 16 錯誤 [ 錯誤</block>
-  <block id="4c7e0efe737f180965ee5c651fc247df" category="paragraph">嘗試變更叢集中的 _fsnotify_settings ：</block>
-  <block id="354078bb27a2ab00cc965db863bbe682" category="paragraph">重新啟動 Fluent 位元。</block>
-  <block id="1e5f8c710fd35d7d1072ae4bd3588a8f" category="paragraph">附註：若要在重新啟動節點時持續執行這些設定、您需要將下列行放入 /etc/sysctl.conf</block>
   <block id="1914b55914b6ee44bc0dcd84cc7caeb3" category="summary">Apache資料收集器組態</block>
   <block id="a2c447b19901c50472d86c46b78e4269" category="doc">Apache Data Collector</block>
   <block id="1194c1f585884540788ba8946023cc33" category="list-text">您必須設定Apache HTTP伺服器並正確執行</block>
@@ -11145,7 +11048,6 @@
   <block id="b181654a18c519e18fe14012429b9ef1" category="sidebar">監控與警示</block>
   <block id="cdd0e837105d3238f7da72918d54613a" category="sidebar">建立監視器</block>
   <block id="ad9a3a2d37a9151fd99385dc40e9ceb2" category="sidebar">設定通知收件者</block>
-  <block id="7808e188a885339f3f8e1e464ed4c37e" category="sidebar">Webhook通知</block>
   <block id="da07f01695645efa19eb52cac5cc53b5" category="sidebar">使用註釋</block>
   <block id="2635223642c14a2989016a1da22a9c49" category="sidebar">定義註釋</block>
   <block id="8a3dc09bb48c2323487ac640ef2aec19" category="sidebar">使用註釋</block>
@@ -11269,7 +11171,6 @@
   <block id="399bd1ee587245ecac6f39beaa99886f" category="sidebar">PostgreSQL</block>
   <block id="14590850b4107a6f92feb1af739b82eb" category="sidebar">Puppet</block>
   <block id="15ec8934d96530d4c5f4a3b0f701f745" category="sidebar">RethinkDB</block>
-  <block id="e77701e8957afb414a45ca434ef7f000" category="cell">編輯 _AgentConfiguration_ 中的 Teledraf 區段、並將 _dockerMetricCollectionEnabled_ 設為 false 。有關詳細信息，請參閱操作員的<block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。... 規格： ... Telegraf ： ...           - 名稱：泊塢視窗      執行模式：                     - 示範設定替代項目： - 索引鍵：泊塢視窗 _UNIX 襪子 _placeholder         值： UNIX ： ///run/泊 塢視窗 .sock ......</block>
   <block id="4b6ec640a739de84859bbba0720bdd6d" category="paragraph">API 文件是以 Swagger-based 為基礎，提供 API 的簡短說明和使用資訊，並可讓您在租戶中試用。視您的使用者角色和 / 或 Data Infrastructure Insights 版本而定、您可使用的 API 類型可能會有所不同。</block>
   <block id="c04f7cc93f2bec4f5426a8bbbb93132e" category="paragraph">API 可以傳回租戶上物件的詳細計量，例如：</block>
   <block id="82e28d3d2fa09d2aa4c4664db0d25f1b" category="paragraph">您必須先定義這些應用程式，並將其與適當的資產建立關聯，才能追蹤與租戶上執行的應用程式相關的資料。您可以將應用程式與下列資產建立關聯：主機、虛擬機器、磁碟區、內部磁碟區、qtree、 共享區和Hypervisor。</block>
@@ -11335,7 +11236,6 @@
   <block id="206cb1224c200bbbd73cfa4118ad7c1e" category="paragraph">您也可以直接開啟瀏覽器來存取 Data Infrastructure Insights 租戶 URL ，例如：</block>
   <block id="8892cd0f593b5478c5dbbe5ac3270b4a" category="admonition">新使用者必須先註冊以存取 BlueXP  ，才能存取租戶 URL 。</block>
   <block id="587f396a83dde1056c9bf606ffc535f7" category="paragraph">第一次登入新租戶時，系統會引導您設定至<block ref="2949f1254245e371c2d697f481723a7e" category="inline-link-macro-rx"></block>。</block>
-  <block id="7a7f1dddc2fef7ed16175a3e2e424b3f" category="paragraph">您可以在兩個地方使用租戶上的 Proxy 來安裝 Kubernetes Monitoring Operator 。這些可能是相同或獨立的Proxy系統：</block>
   <block id="8c8f719781e45e8796bf00085394a1ca" category="paragraph">此資料收集器可讓您從租戶上的 Apache 伺服器收集資料。</block>
   <block id="44c442d3e78a8d192000c14c74f3d018" category="paragraph">如果您尚未設定值機員以進行集合，系統會在租戶上提示您<block ref="a1b69a79c96be75135c991d76ebf15bb" category="inline-link-macro-rx"></block>。</block>
   <block id="c121549c3bf2718d22e8e3925c1ac1fa" category="paragraph">如果您的租戶上有工作負載安全性，設定的端點 URL 也會顯示在此清單中。</block>
@@ -11365,15 +11265,6 @@
   <block id="e60c852a7a4c8de70f56c1772db9c0f5" category="paragraph">在收集器的 _Advanced Configuration_ 設定中啟用此選項時，工作負載安全性會將 FPolicy 引擎設定為原型模式。ONTAP 9.15 版及更新版本均支援原型模式。</block>
   <block id="502f573701c400ca3de6252b1c8e6e9e" category="paragraph">如需此功能的詳細資訊<block ref="5c3d3ed23ecd4e0a61ac3e8d31f3a637" category="inline-link-macro-rx"></block>，請參閱。</block>
   <block id="e28cace0b0e193aac1db472078caa8fb" category="paragraph">protobuf 需要特定權限（其中部分或全部可能已經存在）：</block>
-  <block id="435f137980b3b041bbc191c90260bf28" category="section-title">驗證 Kubernetes 監控操作員影像簽名</block>
-  <block id="d9348d075dc7b3c91cff99d56dfc327b" category="inline-link-macro">Kubernetes文件</block>
-  <block id="d4f8460ff8f7a6b9a2f0fa99bf9124dd" category="paragraph">操作員的映像及其部署的所有相關映像均由 NetApp 簽署。您可以在安裝前使用 CO簽署 工具手動驗證映像，或設定 Kubernetes 接入控制器。如需更多詳細資料<block ref="1aa503106da392b948a493e0ecf5782d" category="inline-link-macro-rx"></block>，請參閱。</block>
-  <block id="c26df34b044a0a427be188b6e37d45c2" category="paragraph">用於驗證映像簽名的公開金鑰可在監控操作員安裝方塊的 _ 選擇性：將操作員映像上傳至您的私有儲存庫 &gt; 映像簽章公開金鑰 _ 下取得</block>
-  <block id="0bc181a97045ca85d89be70b124298b4" category="paragraph">若要手動驗證影像簽名，請執行下列步驟：</block>
-  <block id="b08a05b2c1b7cc9bf90ee55d748a813c" category="list-text">複製並執行「影像擷取片段」</block>
-  <block id="2e9d4d6615af62102584a57c2c8ddacd" category="list-text">出現提示時，請複製並輸入儲存庫密碼</block>
-  <block id="2cea2fa4f716d1fa2efbffe877eb702c" category="list-text">儲存影像簽名公開金鑰（範例中的 DII 映像簽署 .pub ）</block>
-  <block id="55d6bfb079ee69230d07a9a9c1c17b66" category="list-text">使用 CO簽署 來驗證影像。請參閱以下代碼使用範例</block>
   <block id="f0eddc4fb4218ed4ec07da7604fbc1c8" category="inline-image-macro">修改部署選項，寬度 =700</block>
   <block id="593e78308f625f4551ee5b44b6d582e5" category="paragraph"><block ref="593e78308f625f4551ee5b44b6d582e5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ee063f6b962df93a461d2ffc011f30c6" category="inline-link-macro">NetApp ONTAP All SAN Array （ ASA ）收集器</block>
@@ -11503,10 +11394,6 @@
   <block id="ca351e1a429ee72dbdb2061c22743ef6" category="list-text">瀏覽 * 可服務性 &gt; 瀏覽 -&gt; + 新指標查詢 * 。</block>
   <block id="5e7f24385025eba3461014d3d964455b" category="paragraph">若要移除非作用中的裝置，只要選取要移除的裝置，然後在 * 大量動作 * 下拉式清單中，選取 _ 刪除非作用中的裝置 _ 。</block>
   <block id="72a442c57900f55848aa4acb856a507d" category="sidebar">識別非使用中的裝置</block>
-  <block id="70d57a4cf0763cd6479ef380a0e3959d" category="cell">由於無法驗證 TLS 憑證，因此 Telegraf DS Pod 回報 Kubernetes 輸入外掛程式無法發出 HTTP 要求的錯誤。例如： e ！外掛程式中的 [Inputs.Kubernets] 錯誤：發出取得 <block ref="67e388e14afab5b44ba05645532bfd4c" category="inline-link-rx"></block> TLS 的 HTTP 要求時發生錯誤<block ref="67e388e14afab5b44ba05645532bfd4c" category="inline-link-rx"></block>：驗證憑證失敗： X509 ：無法驗證 &lt;kubelet_IP&gt; 的憑證，因為它不包含任何 IP SAN</block>
-  <block id="006f752e44410388cadd8f8a37ce069f" category="inline-link-macro">代理程式組態</block>
-  <block id="e7367bd1ec175ef5c58d982c52bc4348" category="inline-link-macro">serverTLSBootstrap</block>
-  <block id="eb693e07b3c7e38a77aa691eee254db7" category="cell">如果 kibelet 使用自我簽署的憑證，且 / 或指定的憑證未在憑證 _ 主體替代名稱 _ 清單中包含 &lt;kubelet_IP&gt; ，就會發生這種情況。若要解決此問題<block ref="1ff2a3d734af6ebdb77c417baa3479b1" category="inline-link-macro-rx"></block>，使用者可以修改，並將 _telegraf:insecureK8sSkipVerify_ 設為 _true_ 。這會將 Telegraf 輸入外掛程式設定為略過驗證。或者，使用者也可以設定的 kibelet <block ref="9ed8afe3c99331fa3d23c13414b98aba" category="inline-link-macro-rx"></block>，以觸發來自「 certifications.k8s.io 」 API 的憑證要求。</block>
   <block id="2f461803a8b3a27284482a32459a1078" category="cell">EE 本<block ref="0dcd3ea27696029fecb8ccd7e247f633" category="inline-link-macro-rx"></block>。設定 _ 無保護 _ 會指示 Kubernetes 監控營運者以旗標執行 Telegraf 。<block ref="3a41393afb053a415e6dc30cf704d899" prefix=" " category="inline-code"></block></block>
   <block id="0860569a69c3584507ee09f4be585418" category="cell">insecureK8sSkipVerify</block>
   <block id="3008cd3125cccc003fa13335717e556e" category="cell">如果由於缺少 IP SAN 而導致 Telegraf 無法驗證憑證，請嘗試啟用驗證跳過</block>
@@ -12384,7 +12271,6 @@
   <block id="d50bb41906d2f733d067c591f51e4963" category="admonition">本頁面是指可能會變更的第三方指示。如需最新資訊，請參閱<block ref="4cf6cb20b95cded724b319964a5ce815" category="inline-link-macro-rx"></block>。</block>
   <block id="40a77f4bbfd0ca63ed510e92b9833d67" category="list-text">在 PagerDuty 中，瀏覽至 * 服務 &gt; 服務目錄 * ，然後按一下 *+ 新服務 * 按鈕。</block>
   <block id="7d26cc043fbfb2e53a18d31fea52c7e8" category="list-text">輸入 _ 名稱 _ ，然後選取 _ 直接使用我們的 API _ 。選取新增服務 _ 。</block>
-  <block id="d4eb5fdef857fa235821f3033fa67762" category="list-text">選取 _Integrations 標籤以查看 * 整合金鑰 * 。當您建立下方的 Data Infrastructure Insights 網路連結時、您將需要這個關鍵。</block>
   <block id="a3e8d0a78049eabf2c286c14c55b54f2" category="inline-image-macro">pagerDuty 事件清單範例， width=700</block>
   <block id="5d7dc3b4dea14491b2bd2a77d44d3906" category="paragraph"><block ref="5d7dc3b4dea14491b2bd2a77d44d3906" category="inline-image-macro-rx" type="image"></block></block>
   <block id="742b9235199c630d771bdfddb2c88611" category="section-title">建立工作負載安全 PagerDuty Webhook ：</block>
@@ -12424,4 +12310,122 @@
   <block id="91229a6bb91ad336076b839006d6f3d8" category="list-text">在 _webhooks Notifications_ 下拉式清單中，選取所需的 Webhooks 。儲存原則。</block>
   <block id="ed3289eb0a2d31b7eb1d54764da04491" category="inline-image-macro">新增攻擊原則對話方塊，寬度 =400</block>
   <block id="f91815c8aac9f13a54e97684dfd7a4bf" category="paragraph"><block ref="f91815c8aac9f13a54e97684dfd7a4bf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="29d142bb0759eaeb3b47bf1809087cc7" category="inline-image-macro">新增「攻擊原則」對話方塊，顯示網路攔截下拉式清單</block>
+  <block id="9c3cfe368d37e834800103686eba11c1" category="paragraph"><block ref="9c3cfe368d37e834800103686eba11c1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="399d9439282b6aa91b927feb3a74cd4e" category="paragraph">您可以將一或多個 Webhooks 附加至原則，以便在建立警示並採取行動時收到通知。建議在原則中新增的 Webhooks 不超過 10 個。請記住，如果原則暫停，將不會觸發 Webhook 通知。</block>
+  <block id="86333e396837a3f52be5d6366640bedc" category="cell">我的排程報告會透過電子郵件傳送，但如果來源是「 My Content 」（我的內容）資料夾，則無法存取報告。</block>
+  <block id="03b930a8b5bb624ecc7fd24d2673e5a2" category="cell">為了避免這種情況，報告或報告檢視必須儲存至「團隊內容 &gt; 自訂報告 - xxxxxx 」資料夾，以及從該儲存版本建立的排程。租戶上的所有使用者都可以看到「自訂報告 - xxxxxx 」資料夾。</block>
+  <block id="932f2c5acc21af69f8b6364c9253f343" category="cell">儲存工作時，資料夾可能會顯示「團隊內容」，並顯示「自訂報告 - xxxxxx 」的內容清單，但您無法在此儲存工作，因為 Cognos 認為這是您無法寫入的「團隊內容」資料夾。</block>
+  <block id="68d49a29df93f86fad174957a3b64f3e" category="cell">因應之道是建立具有唯一名稱的新資料夾（例如「 NewFolder 」）並儲存在該處，或儲存至「 My Content 」（我的內容），然後複製 / 移至「 Custom Reports - xxxxxx 」（自訂報告 - xxxxxx ）。</block>
+  <block id="6c64b0b8fa6a49a7d9d02dc05ff84dd9" category="paragraph">注意：如果第一個命令傳回「找不到資源」，請使用下列指示來解除安裝舊版監控操作員。</block>
+  <block id="8f5d4322bbada1e271bc144d48fbd530" category="section-title">Kube-state指標計數器</block>
+  <block id="0868aed0151117af81e4d8a3bf48f5d1" category="paragraph">請使用下列連結來存取這些kube狀態度量計數器的資訊：</block>
+  <block id="dcd18b6a9c1c857332184b4ab6b6b876" category="inline-link">ConfigMap指標</block>
+  <block id="43c0e039eb7d522a6d4d124fdff7e06f" category="list-text"><block ref="43c0e039eb7d522a6d4d124fdff7e06f" category="inline-link-rx"></block></block>
+  <block id="9c6d0e0120fcf6c4d873e186cc9739bf" category="list-text"><block ref="9c6d0e0120fcf6c4d873e186cc9739bf" category="inline-link-rx"></block></block>
+  <block id="aa7c0000dea1ded472606bf83241d554" category="list-text"><block ref="aa7c0000dea1ded472606bf83241d554" category="inline-link-rx"></block></block>
+  <block id="3743b47b26a692a03362afc5a67c0463" category="inline-link">入口指標</block>
+  <block id="4cb7ce0b5790952cc6bda2997a7dabc9" category="list-text"><block ref="4cb7ce0b5790952cc6bda2997a7dabc9" category="inline-link-rx"></block></block>
+  <block id="5fdc0df1bae486ee24716c612b24ca02" category="list-text"><block ref="5fdc0df1bae486ee24716c612b24ca02" category="inline-link-rx"></block></block>
+  <block id="8b04a06b05700061d42a433c93746a63" category="list-text"><block ref="8b04a06b05700061d42a433c93746a63" category="inline-link-rx"></block></block>
+  <block id="69207fca599a65027f8a0597b95b093d" category="list-text"><block ref="69207fca599a65027f8a0597b95b093d" category="inline-link-rx"></block></block>
+  <block id="ea541521b7c5e710af931c8e4f58eb87" category="inline-link">持續Volume報銷標準</block>
+  <block id="628462d67f17543dc95a839333690c0e" category="list-text"><block ref="628462d67f17543dc95a839333690c0e" category="inline-link-rx"></block></block>
+  <block id="3962a47d5b09f2b1246c86d8bc272414" category="list-text"><block ref="3962a47d5b09f2b1246c86d8bc272414" category="inline-link-rx"></block></block>
+  <block id="5df76f1cf3ae3096632fd05036cd39a0" category="list-text"><block ref="5df76f1cf3ae3096632fd05036cd39a0" category="inline-link-rx"></block></block>
+  <block id="8f9fbab4275b3c6156f4a1e2bd589d5e" category="inline-link">機密數據</block>
+  <block id="94500053c0d8262e7a0caa0908ba6f8d" category="list-text"><block ref="94500053c0d8262e7a0caa0908ba6f8d" category="inline-link-rx"></block></block>
+  <block id="4e3e0b949c1506c4eb21f3ebfc141e3b" category="list-text"><block ref="4e3e0b949c1506c4eb21f3ebfc141e3b" category="inline-link-rx"></block></block>
+  <block id="3a41cf72ebe7dd71e2b8cb6f1a7e14ff" category="list-text"><block ref="3a41cf72ebe7dd71e2b8cb6f1a7e14ff" category="inline-link-rx"></block></block>
+  <block id="dd76ae8de47aca7994545a7035613bf0" category="list-text">使用下列命令建立唯讀使用者。執行create命令後、系統會提示您輸入此使用者的密碼。請注意，在下列命令中，我們會顯示角色集為 _CI_readonly_ 。如果您在上述步驟 3 中建立的角色名稱不同，請改用該自訂角色名稱。</block>
+  <block id="7b8cb6a2da35e297a98a9c7f685b10bf" category="summary">為工作負載安全警示通知建立網路掛鉤。</block>
+  <block id="b4e56cbfee73fd0b031d980fbdbc1221" category="doc">使用 Webhooks 發出工作負載安全通知</block>
+  <block id="bac104179c44c4bc668db684ba506bc9" category="paragraph">Webhooks 可讓使用者使用自訂的 Webhook 頻道，將關鍵或警告警示通知傳送給各種應用程式。</block>
+  <block id="990e31b802a497274f77721882cb6da4" category="paragraph">許多商業應用程式都支援 Webhooks 做為標準輸入介面，例如：寬限時間， PagerDuty ，團隊和不和。工作負載安全可支援一般的可自訂網路攔截管道，因此可支援許多這些交付管道。有關設定 Webhooks 的資訊，請參閱個別應用程式的網站。例如， Slack 提供<block ref="467ef0b7b93a9b44aaca1d16165eef1f" category="inline-link-macro-rx"></block>。</block>
+  <block id="e62bbcee343d1c4078d7ed518ab7f3ee" category="paragraph">您可以建立多個 Webhook 頻道，每個頻道的目標是不同的用途，個別的應用程式，不同的收件者等</block>
+  <block id="0326dc02270d26b9aa0fcc21670bbc3c" category="paragraph">Webhook 通道執行個體由下列元素組成</block>
+  <block id="b0ac392b439426b331b045ad65467402" category="cell">Webhook 目標 URL ，包括 http ： // 或 https ： // 前置詞以及 URL 參數</block>
+  <block id="efe9fb8b736f9718a65c192aa55d6872" category="cell">GET / POST - 預設為 POST</block>
+  <block id="77ae8cdfe961d00e6b7198c0b4b9225d" category="cell">在此處指定任何自訂標頭</block>
+  <block id="e7f8923326bbc6f4dd350791d1fb6a68" category="cell">自訂參數和機密可讓您新增獨特的參數和安全元素，例如密碼</block>
+  <block id="7d0fb1abafaa77cc173cde1c20a9b468" category="section-title">建立 Webhook</block>
+  <block id="b75499ba3db3e96a9cbd11a42c3fe6c0" category="paragraph">若要建立 Workload Security Webhook ，請前往管理 &gt; 通知，然後選取「 Workload Security Webhooks 」標籤。下圖顯示可寬緩建立 Webhook 畫面的範例。</block>
+  <block id="5854bbac1a9eef0aa3b8826e4b590167" category="paragraph">附註：使用者必須是工作負載安全 _ 管理 _ ，才能建立及管理工作負載安全網路攔截器。</block>
+  <block id="ed17bcfa5b6800ee2366bd59c6841139" category="inline-image-macro">Webhook 寬限時間範例：工作負載安全性，寬度 =500</block>
+  <block id="82d268ab9507535ba79560ffdd4cceaa" category="paragraph"><block ref="82d268ab9507535ba79560ffdd4cceaa" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="06029b3b6ab34d7559066837f8368b46" category="list-text">為每個欄位輸入適當的資訊，然後按一下「儲存」。</block>
+  <block id="7cfef38ea92859115108ef412b7dca98" category="list-text">SWS Webhooks 包含許多預設參數。此外、您也可以建立自己的自訂參數或機密。</block>
+  <block id="48e0084c21a6bb50e3cc56c001f6fa17" category="section-title">參數：它們是什麼？如何使用它們？</block>
+  <block id="b6c486d5c5d3d8e3d18432bb1213247b" category="paragraph">警示參數是根據警示填入的動態值。例如，將以警示的嚴重性類型取代 %%searsears%%%_ 參數。</block>
+  <block id="77de8a33404c1cab13d313ea89350b5f" category="paragraph">請注意，按一下「測試 Webhook 」按鈕時不會執行替代；測試會傳送有效負載，顯示參數的預留位置（ &lt;param-name&gt; %%_ ），但不會以資料取代。</block>
+  <block id="15e92a44b12cf41d3f40f77e8e2c8b93" category="paragraph">在本節中、您可以新增任何您想要的自訂參數和/或機密。自訂參數或機密可以位於 URL 或訊息本文中。機密可讓使用者設定安全的自訂參數，例如密碼，密碼等</block>
+  <block id="a6989d2c2b41ad858a188274bc26fe0c" category="paragraph">下列範例影像顯示如何在網路掛鉤建立中使用自訂參數。</block>
+  <block id="e983402ac2aa969b4104f94401546233" category="inline-image-macro">工作負載安全 Webhook ，含參數，寬度 =800</block>
+  <block id="c1012bcef95f71a7c68fcb655af06d96" category="paragraph"><block ref="c1012bcef95f71a7c68fcb655af06d96" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="41b6874558c9eb3116a55974301fa12e" category="section-title">工作負載安全性 Webhooks 清單頁面</block>
+  <block id="1ed6f86fb851ccd8eb5bbe8f67ef44b4" category="paragraph">在 Webhooks 清單頁面上、顯示的是名稱、建立者、建立日期、狀態、安全、 和上次報告的欄位。附註：「狀態」欄的值會根據上次 Webhook 觸發結果持續變更。以下是狀態結果範例。</block>
+  <block id="e0aa021e21dddbd6d8cecec71e9cf564" category="cell">好的</block>
+  <block id="7daed9f594e8232919838299c164ba3b" category="cell">已成功傳送通知。</block>
+  <block id="bbf94b34eb32268ada57a3be5062fe7d" category="cell">403</block>
+  <block id="12ad6874f2d36eb26a91812772d78654" category="cell">禁止。</block>
+  <block id="4f4adcbf8c6f66dcfc8a3282ac2bf10a" category="cell">404</block>
+  <block id="e9b45211d5fe6bf0d8f95d36f6117896" category="cell">找不到 URL 。</block>
+  <block id="18d8042386b79e2c279fd162df0205c8" category="cell">400</block>
+  <block id="a88f5fdfecdca445ddff8f8beebf4dc8" category="paragraph">錯誤要求。如果訊息本文中有任何錯誤，您可能會看到此狀態，例如：</block>
+  <block id="54e4f5f3025564a79248f4eafcf572bd" category="list-text">json 格式錯誤。</block>
+  <block id="4c6741b2df890b31d7145a3a89d7fe97" category="list-text">為保留金鑰提供無效值。例如， PagerDuty 僅接受「嚴重性」的嚴重 / 警告 / 錯誤 / 資訊。任何其他結果可能會產生 400 個狀態。</block>
+  <block id="e5380910063dcc09387dc251034f74d7" category="list-text">應用程式特定驗證錯誤。例如， Slack 最多允許在一個區段內有 10 個欄位。如果超過 10 ，可能會導致 400 個狀態。</block>
+  <block id="1068c6e4c8051cfd4e9ea8072e3189e2" category="cell">410</block>
+  <block id="6c8f67c34646f11dddcbd14087f74140" category="cell">資源不再可用</block>
+  <block id="5428643772f000240b7e8a1a72ae691f" category="paragraph">「上次報告」欄表示上次觸發網路攔截的時間。</block>
+  <block id="3dd9aa9a2a5fdeba10da96e8722cb5eb" category="paragraph">從列出頁面的 Webhooks ，使用者也可以編輯 / 複製 / 刪除 Webhooks 。</block>
+  <block id="8f25c7deb978cff658bfa935641a7f9d" category="section-title">在警示原則中設定 Webhook 通知</block>
+  <block id="449abff7f947e9f1f071528b129faae8" category="paragraph">若要將網路掛機通知新增至警示原則，請移至 - 工作負載安全性 &gt; 原則 - 並選取現有原則或新增原則。在 _Actions_ 區段 &gt; _Webhook Notifications_ 下拉式清單中，選取所需的 Webhooks 。</block>
+  <block id="222059a7505f1eca2b48813a593e9ff0" category="inline-image-macro">編輯攻擊原則對話方塊，顯示網路攔截下拉式清單，寬度 =500</block>
+  <block id="5a0850c8348b01c8aee9966f61b3417f" category="paragraph"><block ref="5a0850c8348b01c8aee9966f61b3417f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e87f0fe8baf8a493217723eb57e1ff79" category="paragraph">Webhook 通知與原則相關。當攻擊（ W/DD/warn ）發生時，將會採取設定的動作（拍攝快照 / 使用者封鎖），然後觸發相關的網路攔截通知。</block>
+  <block id="f7aae500d702527a0ca0ccb9406de93b" category="paragraph">附註：電子郵件通知不受原則影響，會像往常一樣觸發。</block>
+  <block id="5d85e370b1d77d0446861bca3ba2923b" category="list-text">如果原則暫停，網路攔截通知將不會觸發。</block>
+  <block id="a42fc48e948265e9bdcb235f801134f1" category="list-text">可以將多個 Webhooks 附加到單一原則，但建議將不超過 5 個 Webhooks 附加到原則。</block>
+  <block id="01b91c7ee988946f75e90ac744922e22" category="section-title">工作負載安全 Webhook 範例</block>
+  <block id="6357c8b51f784219ec3029dfa894719a" category="paragraph">Webhooks <block ref="2990f1f56161b3387a3b4aed372cd205" category="inline-link-macro-rx"></block> for Webhooks for <block ref="119cd804e167819a5b1cbe06f835cd07" category="inline-link-macro-rx"></block>Webhooks for Webhooks<block ref="fd47f99f71f4060a45930a1b7d2d1fd6" category="inline-link-macro-rx"></block><block ref="9ec366bafa5f53c82668f1616a12e6a8" category="inline-link-macro-rx"></block></block>
+  <block id="e37a0dbdff524f7df33c9b0829c33ade" category="summary">建立工作負載安全網路攔截器，讓不和的人能夠警示安全性</block>
+  <block id="ecd55cea03da0e912d8c61fb0a4aae96" category="doc">工作負載安全 Webhook 不和範例</block>
+  <block id="a46dcf40ced5ca5e59453256043c2f70" category="admonition">本頁面是指第三方指示，這些指示可能會有所變更。如需最新資訊，請參閱<block ref="d3daba8ef1153460be2adfd1c98aadd0" category="inline-link-macro-rx"></block>。</block>
+  <block id="35108eb7860d4fa37ba17a8da3b024cc" category="list-text">複製Webhook URL。您需要將此內容貼到 Workload Security Webhook 組態中。</block>
+  <block id="34bc0a1e928cb7a727add955c86c8b27" category="section-title">建立工作負載安全 Webhook ：</block>
+  <block id="9c68cecc45f7d2672ef96a70730eb27f" category="list-text">瀏覽至管理 &gt; 通知，然後選取 _Workload Security Webhooks_ 標籤。按一下「 + Webhook 」以建立新的 Webhook 。</block>
+  <block id="a33310b88b68025831b875d70e9ac5ea" category="list-text">為 Webhook 命名有意義的名稱。</block>
+  <block id="894901c6393b0d6216fad5de10c2218d" category="list-text">將上述的不和 URL 貼到 _url_ 欄位。</block>
+  <block id="b5f33f80d75cf4237689bd392621b186" category="inline-image-macro">工作負載安全網路攔截不和範例</block>
+  <block id="9014e779862fdcb202e062b95ed55d47" category="paragraph"><block ref="9014e779862fdcb202e062b95ed55d47" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c9ea14ebf3a3ea9a0aecf75b54f2cff9" category="paragraph">為了測試 Webhook ，請暫時將訊息本文中的 URL 值取代為任何有效的 URL （例如 https://netapp.com_) ，然後按一下 _Test Webhook _ 按鈕。不和需要提供有效的 URL ，才能使用測試 Webhook 功能。</block>
+  <block id="e1150a1be7e7fe7211d9e10ff4871fce" category="paragraph">測試完成後、請務必將訊息本文設回。</block>
+  <block id="0955f5f71d5826efcd311553b6815a3b" category="list-text">選取所需的攻擊類型，應附加原則的裝置，以及必要的動作。</block>
+  <block id="8b332b578052f3eb84fb78a36e130ea0" category="list-text">在 _webhooks Notifications_ 下拉式清單下，選取所需的不和 Webhooks 並儲存。</block>
+  <block id="e1fcf2112681f895b322cafc67b11b1b" category="inline-image-macro">顯示網路攔截下拉式清單的攻擊原則對話方塊</block>
+  <block id="c66703085cda4dd32d4a0b4b1c3a8ea2" category="paragraph"><block ref="c66703085cda4dd32d4a0b4b1c3a8ea2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7163daed5c4987e3eae27e625e9a472b" category="list-text">選取 _Integrations 標籤以查看 * 整合金鑰 * 。當您在下方建立 Workload Security Webhook 時，您將需要這個金鑰。</block>
+  <block id="0b144e381a33a7c1d457f6186c081c52" category="summary">為 Microsoft 團隊建立工作負載安全網路攔截器，以警示安全性</block>
+  <block id="b5388c2c614c2dd3870c3d9f14573ec7" category="doc">適用於 Microsoft 團隊的工作負載安全 Webhook 範例</block>
+  <block id="74d008664a35e7cd00d69c1231ddcebf" category="admonition">本頁面是指可能會變更的第三方指示。如需最新資訊，請參閱<block ref="6038388e9e69aac822d4c5e5498c6fe3" category="inline-link-macro-rx"></block>。</block>
+  <block id="cd22e3d66087dd79fc4db011afc3526b" category="section-title">建立工作負載安全團隊 Webhook ：</block>
+  <block id="5db00a5746769753784ac48a61e715e7" category="list-text">瀏覽至管理 &gt; 通知，然後選取 _ 「 Workload Security Webhooks_ 標籤。選取「超過 _ Webhook 」以建立新的網路攔截器。</block>
+  <block id="d93addce531b0b0de578a232ea79922b" category="inline-image-macro">工作負載安全團隊網路攔截範例</block>
+  <block id="54aa4e03133399551d6d675b60106e9d" category="paragraph"><block ref="54aa4e03133399551d6d675b60106e9d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4abaf0684c2f840c258e730090601b65" category="paragraph">若要透過 Webhook 通知事件，請瀏覽至 _Workload Security &gt; Policies 。選取「攻擊原則」或「警示原則」。</block>
+  <block id="aed69949857466e79c0ca41f160bd355" category="list-text">選取必要的攻擊類型，應附加原則的裝置，以及必要的動作。</block>
+  <block id="807fc9787aa40c9ef0f4140af16af193" category="list-text">在 _webhooks Notifications_ 下拉式清單下，選取所需的團隊 Webhooks 。儲存原則。</block>
+  <block id="69f2e3246807adb3f4d29d9480ac71fd" category="inline-image-macro">新增攻擊原則對話方塊，顯示 Webhook</block>
+  <block id="149360851d3e95c4b6af6d5b468af365" category="paragraph"><block ref="149360851d3e95c4b6af6d5b468af365" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a212bf20191ce3ebcdc71cc32cd6c8f9" category="sidebar">設定 Webhooks</block>
+  <block id="1393cf1aced4d4d439002f5fee391505" category="sidebar">Webhook 範例 - 不和</block>
+  <block id="85105ec69d02f51f65708d8e077bcfdd" category="sidebar">Webhook 範例 - PagerDuty</block>
+  <block id="05512e4b2bbf83f5c78875eccf9e4f19" category="sidebar">Webhook 範例 - Slack</block>
+  <block id="b8a0cb26df88b004f5ae0ba6f6a170a1" category="sidebar">Webhook 範例：團隊</block>
+  <block id="c836566b25407f9b00af0ee750a250a6" category="sidebar">正在建立 Webhooks</block>
+  <block id="8c4223ab469f8b3e9d1aa30d51cf4390" category="sidebar">不和 Webhook 範例</block>
+  <block id="9129ee5b293413b88d69268ce77a5a06" category="sidebar">PagerDuty Webhook 範例</block>
+  <block id="63a04ee1b7791a07aa2f0767ceb2cb77" category="sidebar">鬆弛 Webhook 範例</block>
+  <block id="b58ab179b4f6f21dfbd61177415644b6" category="sidebar">團隊 Webhook 範例</block>
 </blocks>
