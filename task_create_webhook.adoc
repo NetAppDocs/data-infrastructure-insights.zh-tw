@@ -7,6 +7,10 @@ summary: 建立監控器以警示效能或庫存臨界值
 = 使用Webhooks通知
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]
@@ -64,6 +68,8 @@ image:Webhook_Default_Parameters.png["Data Infrastructure Insights 預設 Webhoo
 === 參數：這些參數是什麼？我該如何使用？
 
 警示參數是根據警示填入的動態值。例如、-%%TrigeredOn%_參數將被觸發警示的物件取代。
+
+您可以將任何物件屬性（例如儲存名稱）新增為 Webhook 的參數。例如，您可以在 Webhook 說明中設定 Volume 名稱和儲存名稱的參數，例如：「 Volume 高延遲： _%relatedObject.volume.name%%_ ， Storage ： _%%relatedObject.storage.name%%_" 。
 
 請注意、在本節中、按一下「Test Webhook」（測試Webhook）按鈕時、會執行「_not」（非）替換；此按鈕會傳送有效負載、顯示「%」替換、但不會以資料取代。
 

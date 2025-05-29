@@ -7,6 +7,10 @@ keywords: ransomware, ARP, Protection, Security, access
 = 與 ONTAP 存取整合遭拒
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]
@@ -14,7 +18,9 @@ ONTAP 存取遭拒功能會在 NAS 環境（ NFS 和 SMB ）中使用工作負�
 
 資料基礎架構洞見工作負載安全性與 ONTAP 整合、可接收拒絕存取的事件、並提供額外的分析和自動回應層。
 
-先決條件
+
+
+== 先決條件
 
 * 最低 ONTAP 版本： 9.13.0 。
 * 工作負載安全管理員在新增收集器或編輯現有收集器時、必須選取「進階組態」下的「監控存取遭拒事件」核取方塊、以啟用「拒絕存取」功能。
@@ -30,20 +36,12 @@ image:WS_Access_Denied_Enable_in_Collector.png["在 ONTAP 收集器進階組態�
 
 如果是使用已授予使用者權限的自訂使用者（例如、 _CsUser_ ）來新增收集器、請依照下列步驟、將必要權限授予工作負載安全性、以便向 ONTAP 註冊存取遭拒事件。
 
-若為具有 _CLERY_ 認證的 CsUser 、請從 ONTAP 命令列執行下列命令。請注意、 _csrestrole_ 是自訂角色、而 _csUser_ 是 ONTAP 自訂使用者。
+若為具有 _CLERY_ 認證的 CsUser 、請從 ONTAP 命令列執行下列命令。請注意，此權限可能已經存在。
 
-[listing]
-----
- security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <cluster_name>
- security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole
-----
-對於具有 _SVM_ 認證的 CsUser 、請從 ONTAP 命令列執行下列命令：
+ security login role create -role csrole -cmddirname "vserver fpolicy" -access all
+對於具有 _SVM_ 認證的 CsUser ，請從 ONTAP 命令列執行下列命令。請注意，此權限可能已經存在。
 
-[listing]
-----
- security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <svm_name>
- security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole -vserver <svm_name>
-----
+ security login role create -vserver <vservername> -role csrole -cmddirname "vserver fpolicy" -access all
 瞭解有關配置其他link:task_add_collector_svm.html["權限ONTAP"]的更多信息。
 
 

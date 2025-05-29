@@ -49,9 +49,8 @@ keywords: ransomware, ARP, Protection, Security
 對於具有叢集認證的_CsUser_、請從ONTAP 下列指令行執行下列動作：
 
 ....
-security login rest-role create -role arwrole -api /api/storage/volumes -access readonly -vserver <cluster_name>
-security login rest-role create -api /api/security/anti-ransomware -access readonly  -role arwrole -vserver <cluster_name>
-security login create -user-or-group-name csuser -application http -authmethod password -role arwrole
+security login role create -role csrole -cmddirname "volume" -access readonly
+security login role create -role csrole -cmddirname "security anti-ransomware volume" -access readonly
 ....
 瞭解有關配置其他link:task_add_collector_svm.html["權限ONTAP"]的更多信息。
 

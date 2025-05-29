@@ -133,4 +133,6 @@ Webhook 通知與原則相關。當攻擊（ W/DD/warn ）發生時，將會採�
 
 === 工作負載安全 Webhook 範例
 
-Webhooks link:ws_webhook_example_slack.html["可寬延"] for Webhooks for link:ws_webhook_example_pagerduty.html["PagerDuty"]Webhooks for Webhookslink:ws_webhook_example_teams.html["團隊"]link:ws_webhook_example_discord.html["不和"]
+Webhooks forlink:ws_webhook_example_slack.html["可寬延"]
+
+Webhooks link:ws_webhook_example_pagerduty.html["PagerDuty"] for Webhooks for Webhooks link:ws_webhook_example_teams.html["團隊"]link:ws_webhook_example_discord.html["不和"]

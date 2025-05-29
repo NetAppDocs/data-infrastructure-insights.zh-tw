@@ -309,7 +309,7 @@ image:CloudSecure_ActivitySelection.png["活動選擇器、寬=30%"]
 | 在「所有活動」表的「使用者」欄下方，使用者名稱顯示為：「 LDAP:HQ.COMPANYNAME.COM:S-1-5-21-3577637-1906459482-1437260136-1831817" 」或「 LDAP:Default:80038003 」 | 可能的原因可能是：1.尚未設定使用者目錄收集器。若要新增一個、請前往 * 工作負載安全性 > 收集器 > 使用者目錄收集器 * 、然後按一下 *+ 使用者目錄收集器 * 。選擇_Active Directory或_LDAP Directory Server_。2.已設定使用者目錄收集器，但它已停止或處於錯誤狀態。請前往 * 收集器 > 使用者目錄收集器 * 、並檢查狀態。如需疑難排解秘訣，請參閱link:http://docs.netapp.com/us-en/cloudinsights/task_config_user_dir_connect.html#troubleshooting-user-directory-collector-configuration-errors["使用者目錄收集器疑難排解"]文件的一節。正確設定後、名稱將在24小時內自動解析。如果仍無法解決、請檢查是否已新增正確的使用者資料收集器。確定使用者確實是新增Active Directory / LDAP目錄伺服器的一部分。 
 
 
-| UI中未顯示某些NFS事件。 | 請檢查下列項目：1.具有POSIX屬性集的AD伺服器之使用者目錄收集器應以從UI啟用的unixid屬性執行。2.從 UI 3 在使用者頁面中搜尋時，應該會看到任何執行 NFS 存取的使用者。NFS不支援原始事件（尚未探索使用者的事件）4。不會監控匿名存取NFS匯出。5.請確定 NFS4.1 版本低於 NFS4.1 。 
+| UI中未顯示某些NFS事件。 | 請檢查下列項目：1.具有POSIX屬性集的AD伺服器之使用者目錄收集器應以從UI啟用的unixid屬性執行。2.從 UI 3 在使用者頁面中搜尋時，應該會看到任何執行 NFS 存取的使用者。NFS不支援原始事件（尚未探索使用者的事件）4。不會監控匿名存取NFS匯出。5.確定使用的 NFS 版本為 4.1 版或更低版本。（請注意， ONTAP 9.15 或更新版本支援 NFS 4.1 。） 
 
 
 | 在 Forensics _All Activity_ 或 _Entity_ 頁面的篩選器中輸入一些包含如星號（ * ）等萬用字元的字母後，頁面載入速度會非常緩慢。 | 搜尋字串中的星號（ \* ）會搜尋所有項目。但是，諸如 <searchTerm> 或 <searchTerm> 等領先的通配符字符串將導致查詢速度緩慢。若要獲得更好的效能、請改用字首字串、格式為 <searchTerm> * （換句話說、在搜尋詞彙後加上星號（ * ）。範例：使用字串 _testvolume * 、而非 _*testvolume 或 _*test* Volume 。使用目錄搜尋，以遞歸方式查看指定資料夾下的所有活動（階層式搜尋）。例如，「 /path1/path2/path3/" 會以遞歸方式列出 /path1/path2/path3 下的所有活動。或者，也可以使用「所有活動」索引標籤下的「新增至篩選」選項。 

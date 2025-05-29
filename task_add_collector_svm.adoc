@@ -7,6 +7,10 @@ summary: 新增工作負載安全資料收集器
 = 設定ONTAP SVM Data Collector
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]
@@ -20,7 +24,7 @@ summary: 新增工作負載安全資料收集器
 +
 ** 更新版本。Data ONTAP為獲得最佳效能、請使用高於 9.13.1 的 Data ONTAP 版本。
 ** SMB傳輸協定3.1版及更早版本。
-** ONTAP 9.15.1 或更新版本的 NFS 4.1 版本、包括 NFS 4.1 。
+** NFS 版本（包括 NFS 4.1 ）（請注意， ONTAP 9.15 或更新版本支援 NFS 4.1 ）。
 ** 支援從支援的更新版本為支援FlexGroup ONTAP
 ** 支援的支援ONTAP Select
 
@@ -59,12 +63,12 @@ summary: 新增工作負載安全資料收集器
 
 * 設定SVM vsadmin使用者的密碼。如果使用自訂使用者或叢集管理使用者，請略過此步驟。 clusterShell ： > `security login password -username vsadmin -vserver svmname`
 * 解除鎖定SVM vsadmin使用者以進行外部存取。如果使用自訂使用者或叢集管理使用者，請略過此步驟。 clusterShell ： > `security login unlock -username vsadmin -vserver svmname`
-* 確保資料LIF的防火牆原則設定為「mGMT」（而非「dATA」）。如果使用專用管理 lif 來新增 SVM ， clusterShell ： > ，請略過此步驟 `network interface modify -lif <SVM_data_LIF_name> -firewall-policy mgmt`
+* 確保資料 LIF 的防火牆原則設定為「 GMT 」（非「 ATA 」）。如果使用專用管理 lif 來新增 SVM ， clusterShell ： > ，請略過此步驟 `network interface modify -lif <SVM_data_LIF_name> -firewall-policy mgmt`
 * 啟用防火牆時、您必須定義例外狀況、才能使用Data ONTAP 「Data Collector」允許連接埠的TCP流量。
 +
 如需組態資訊，請參閱link:concept_cs_agent_requirements.html["代理程式需求"]。這適用於安裝在雲端的內部部署代理程式和代理程式。
 
-* 當代理程式安裝在AWS EC2執行個體中以監控Cloud ONTAP SVM時、代理程式和儲存設備必須位於同一個VPC中。如果它們位於獨立的VPC中、則VPC之間必須有有效的路由。
+* 當代理程式安裝在AWS EC2執行個體中以監控Cloud ONTAP SVM時、代理程式和儲存設備必須位於同一個VPC中。如果它們位於不同的 VPC 中，則 VPC 之間必須有有效的路由。
 
 
 
@@ -110,17 +114,8 @@ image:ws_test_connection_success_example.png["工作負載安全性「測試連�
 
 如果您使用叢集管理認證、則不需要新的權限。
 
-如果您使用的自訂使用者（例如、_CsUser_）具有授予使用者的權限、請依照下列步驟授予工作負載安全性權限、以封鎖使用者。
+如果您使用的自訂使用者（例如， _CsUser_ ）具有授予使用者的權限，請遵循中的步驟，link:cs_restrict_user_access.html["使用者存取封鎖"]授予工作負載安全性權限以封鎖使用者。
 
-對於具有叢集認證的CsUser、請從ONTAP 下列功能執行：
-
-....
-security login role create -role csrole -cmddirname "vserver export-policy rule" -access all
-security login role create -role csrole -cmddirname set -access all
-security login role create -role csrole -cmddirname "vserver cifs session" -access all
-security login role create -role csrole -cmddirname "vserver services access-check authentication translate" -access all
-security login role create -role csrole -cmddirname "vserver name-mapping" -access all
-....
 
 
 == 權限相關注意事項
@@ -131,6 +126,14 @@ security login role create -role csrole -cmddirname "vserver name-mapping" -acce
 
 如果您無法使用叢集管理管理員使用者來允許工作負載安全性存取ONTAP 《SVM資料收集器》、您可以建立一個名為「CsUser」的新使用者、其角色如下所示。將工作負載安全資料收集器設定為使用叢集管理IP時、請使用「CsUser」的使用者名稱和密碼。
 
+附註：您可以建立單一角色，用於自訂使用者的所有功能權限。如果有現有使用者，請先使用下列命令刪除現有的使用者和角色：
+
+....
+security login delete -user-or-group-name csuser -application *
+security login role delete -role csrole -cmddirname *
+security login rest-role delete -role csrestrole -api *
+security login rest-role delete -role arwrole -api *
+....
 若要建立新的使用者、ONTAP 請使用叢集管理管理員使用者名稱/密碼登入到功能表、然後在ONTAP 功能表伺服器上執行下列命令：
 
  security login role create -role csrole -cmddirname DEFAULT -access readonly
@@ -142,8 +145,7 @@ security login role create -role csrole -cmddirname "event filter" -access all
 security login role create -role csrole -cmddirname "event notification destination" -access all
 security login role create -role csrole -cmddirname "event notification" -access all
 security login role create -role csrole -cmddirname "security certificate" -access all
-....
-....
+security login role create -role csrole -cmddirname "cluster application-record" -access all
 security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole
 security login create -user-or-group-name csuser -application ssh -authmethod password -role csrole
 security login create -user-or-group-name csuser -application http -authmethod password -role csrole
@@ -154,6 +156,13 @@ security login create -user-or-group-name csuser -application http -authmethod p
 
 如果您無法使用叢集管理管理員使用者來允許工作負載安全性存取ONTAP 《SVM資料收集器》、您可以建立一個名為「CsUser」的新使用者、其角色如下所示。將工作負載安全資料收集器設定為使用Vserver Management IP時、請使用「CsUser」的使用者名稱和密碼。
 
+附註：您可以建立單一角色，用於自訂使用者的所有功能權限。如果有現有使用者，請先使用下列命令刪除現有的使用者和角色：
+
+....
+security login delete -user-or-group-name csuser -application * -vserver <vservername>
+security login role delete -role csrole -cmddirname * -vserver <vservername>
+security login rest-role delete -role csrestrole -api * -vserver <vservername>
+....
 若要建立新的使用者、ONTAP 請使用叢集管理管理員使用者名稱/密碼登入到位、然後在ONTAP 伺服器上執行下列命令。為了方便起見、請先將這些命令複製到文字編輯器、並在ONTAP 執行下列命令之前、以Vserver名稱取代<vservername>：
 
  security login role create -vserver <vservername> -role csrole -cmddirname DEFAULT -access none
@@ -183,16 +192,10 @@ protobuf 需要特定權限（其中部分或全部可能已經存在）：
 
 叢集模式：
 
-....
-security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <cluster_name>
-security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole
-....
+ security login role create -role csrole -cmddirname "vserver fpolicy" -access all
 Vserver 模式：
 
-....
-security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <svm_name>
-security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole -vserver <svm_name>
-....
+ security login role create -vserver <vservername> -role csrole -cmddirname "vserver fpolicy" -access all
 
 
 === ONTAP 自主勒索軟體保護和 ONTAP 存取權限遭拒
@@ -243,7 +246,7 @@ security login create -user-or-group-name csuser -application http -authmethod p
 | SVM 名稱 | SVM名稱（透過叢集IP連線時、此欄位為必填欄位） 
 
 
-| 使用者名稱 | 透過叢集IP新增SVM/叢集時、存取SVM/叢集的使用者名稱選項為：1.叢集管理2.「CsUser」3.扮演類似CsUser角色的AD使用者。透過 SVM IP 新增時，選項為： 4. vsadmin 5.「CsUser」6.與CsUser角色相似的AD使用者名稱。 
+| 使用者名稱 | 透過叢集IP新增SVM/叢集時、存取SVM/叢集的使用者名稱選項為：1.叢集管理2.'CsUser' 3.扮演類似CsUser角色的AD使用者。透過 SVM IP 新增時，選項為： 4. vsadmin 5.'CsUser' 6.與CsUser角色相似的AD使用者名稱。 
 
 
 | 密碼 | 上述使用者名稱的密碼 
@@ -277,9 +280,9 @@ MetroCluster 建議使用下列項目：
 . 資料收集器應由_叢集IP_連線。
 . 在任何時候、一個資料收集器都應該在執行中、另一個則會發生錯誤。
 +
-目前「執行中」的SVM資料收集器會顯示為_Running。目前的「最新」SVM資料收集器會顯示為_Error_。
+目前「執行中」 SVM 的資料收集器會顯示為 _Running 。目前的「頂級」 SVM 資料收集器會顯示為 _Error_ 。
 
-. 每當有切換時、資料收集器的狀態會從「執行中」變更為「錯誤」、反之亦然。
+. 只要進行切換，資料收集器的狀態就會從「執行中」變更為「錯誤」，反之亦然。
 . 資料收集器從「錯誤」狀態移至「執行中」狀態最多需要兩分鐘的時間。
 
 
@@ -304,15 +307,15 @@ Testcluster-1:*> net int service-policy create -policy only_data_fpolicy -allowe
 
 如果資料收集器處於 _Running 狀態、您可以暫停收集。開啟收集器的「三點」功能表、然後選取暫停。當收集器暫停時、不會從 ONTAP 收集任何資料、也不會將資料從收集器傳送至 ONTAP 。這表示任何 Fpolicy 事件都不會從 ONTAP 流向資料收集器、也不會從資料基礎架構深入分析。
 
-請注意、如果在 ONTAP 上建立任何新的磁碟區等、而收集器處於暫停狀態、工作負載安全性就不會收集資料、這些磁碟區等資料也不會反映在儀表板或表格中。
+請注意，如果在 ONTAP 上建立任何新的磁碟區等，而收集器處於暫停狀態，工作負載安全性就不會收集資料，這些磁碟區等也不會反映在儀表板或表格中。
 
 
 NOTE: 如果收集器已限制使用者，則無法暫停。在暫停收集器之前還原使用者存取權。
 
 請謹記下列事項：
 
-* 根據暫停收集器上設定的設定、不會執行快照清除。
-* EMS 事件（例如 ONTAP ARP ）不會在暫停的收集器上處理。這表示如果 ONTAP 發現勒索軟體攻擊、資料基礎架構洞見工作負載安全性將無法取得該事件。
+* 根據暫停收集器上設定的設定，不會執行快照清除。
+* EMS 事件（例如 ONTAP ARP ）不會在暫停的收集器上處理。這表示如果 ONTAP 發現勒索軟體攻擊，資料基礎架構洞見工作負載安全性將無法取得該事件。
 * 系統不會傳送已暫停收集器的健全狀況通知電子郵件。
 * 暫停的收集器不支援手動或自動動作（例如 Snapshot 或使用者封鎖）。
 * 在代理程式或收集器升級、代理程式 VM 重新啟動 / 重新開機、或代理程式服務重新啟動時、暫停的收集器會保持在 _Paused 狀態。
@@ -337,14 +340,14 @@ ONTAP 9.14.1 及更新版本支援持續儲存區。請注意、 Volume 名稱�
 叢集模式：
 
 ....
-security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <cluster-name>
-security login rest-role create -role csrestrole -api /api/cluster/jobs/ -access readonly -vserver <cluster-name>
+security login role create -role csrole -cmddirname "vserver fpolicy" -access all
+security login role create -role csrole -cmddirname "job show" -access readonly
 ....
 Vserver 模式：
 
 ....
-security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <vserver-name>
-security login rest-role create -role csrestrole -api /api/cluster/jobs/ -access readonly -vserver <vserver-name>
+security login role create -vserver <vservername> -role csrole -cmddirname "vserver fpolicy" -access all
+security login role create -vserver <vservername> -role csrole -cmddirname "job show" -access readonly
 ....
 
 
