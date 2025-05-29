@@ -157,14 +157,6 @@ sidebar:
         url: "/concept_asset_page_overview.html"
       - title: 物件的關聯中篩選
         url: "/concept_in_context_filters.html"
-      - title: 摘要與拓撲區段
-        url: "/concept_asset_summary_section.html"
-      - title: 專家檢視區段
-        url: "/concept_asset_expert_view_section.html"
-      - title: 使用者資料區段
-        url: "/concept_asset_user_data_section.html"
-      - title: 相關警示區段
-        url: "/concept_asset_alerts_section.html"
       - title: 儲存虛擬化
         url: "/concept_storage_virtualization.html"
       - title: 搜尋資產的提示與秘訣
