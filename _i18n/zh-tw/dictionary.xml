@@ -11046,9 +11046,6 @@
   <block id="4f66686b8ecee711e99b772d5958e1f2" category="sidebar">裝置解決規則</block>
   <block id="7db0f69537661b21a4e5d980dacdfe4a" category="sidebar">資產頁面資訊</block>
   <block id="4fff047134fd613268df82a3fa05b4f4" category="sidebar">物件的關聯中篩選</block>
-  <block id="e718a563ac80582f7757e3df11c40de9" category="sidebar">摘要與拓撲區段</block>
-  <block id="aeddd81d4219f42f5592ea31912fb399" category="sidebar">專家檢視區段</block>
-  <block id="48ea80f3c83ef15f01fec95ea4b83ec8" category="sidebar">相關警示區段</block>
   <block id="eca4e665b33eb69c5bea8a2f8e32949c" category="sidebar">搜尋資產的提示與秘訣</block>
   <block id="ebe085ef7e29214280a16ef989f4eddd" category="sidebar">報告總覽</block>
   <block id="1d140984e8baec02fa2faf26dd665a56" category="sidebar">使用預先定義的報告</block>
@@ -12575,4 +12572,11 @@
   <block id="86cdc2548407309cf22885284404c866" category="paragraph">Webhooks 可讓使用者使用自訂的 Webhook 頻道，將關鍵或警告警示通知傳送給各種應用程式。</block>
   <block id="fc2d88a1f6b61e7bd83c4e85a527c903" category="paragraph">Webhooks for<block ref="2990f1f56161b3387a3b4aed372cd205" category="inline-link-macro-rx"></block></block>
   <block id="a2a31fbada6144e8ed1aea34738b3286" category="paragraph">Webhooks <block ref="119cd804e167819a5b1cbe06f835cd07" category="inline-link-macro-rx"></block> for Webhooks for Webhooks <block ref="fd47f99f71f4060a45930a1b7d2d1fd6" category="inline-link-macro-rx"></block><block ref="9ec366bafa5f53c82668f1616a12e6a8" category="inline-link-macro-rx"></block></block>
+  <block id="2931bebb11e5b03f5e756134d072eac5" category="section-title">非同步導出</block>
+  <block id="e730d56759be0ef8806901d77dd17d91" category="paragraph">將資料匯出至 .CSV 的時間可能從數秒到數小時不等，視匯出的資料量而定。數據基礎設施洞察非同步導出數據，因此您可以在編譯 .CSV 時繼續工作。</block>
+  <block id="39837fa691e3d209ab7742e70f5583e2" category="paragraph">透過選擇右上角工具列中的「鈴鐺」圖示來檢視和下載您的 .CSV 匯出檔案。</block>
+  <block id="be3cd993552a93c9e77368543bb564ef" category="inline-image-macro">帶有可供下載的 .csv 導出列表的鈴鐺圖標，寬度=400</block>
+  <block id="25663750e3a92ca79621844d9a055d8a" category="paragraph"><block ref="25663750e3a92ca79621844d9a055d8a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="44c7c3a77a122ce29cb93ab53513f83f" category="section-title">資產名稱中的逗號</block>
+  <block id="4d53c0239522855d4d60019758390f70" category="section-title">時間格式，還是非時間格式？</block>
 </blocks>
