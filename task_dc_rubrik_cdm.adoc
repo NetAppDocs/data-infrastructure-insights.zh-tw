@@ -59,10 +59,13 @@ Data Infrastructure Insights 會從 Rubrik 資料收集器取得下列庫存資�
 | IP | Rubrik叢集的IP位址 
 
 
-| 使用者名稱 | 叢集的使用者名稱 
+| 使用者名稱/服務帳戶 | 叢集的使用者名稱 
 
 
-| 密碼 | 叢集的密碼 
+| 密碼/秘密 | 叢集的密碼 
+
+
+| 服務帳戶的組織 ID | 這需要是完整的字串，如“Organization:::nnnnnn-nnnn.....” 
 |===
 
 
@@ -93,6 +96,6 @@ Data Infrastructure Insights 會從 Rubrik 資料收集器取得下列庫存資�
 | 我收到一則訊息、表示已建立多個儲存設備。 | 檢查叢集設定是否正確、收集器是否指向單一叢集。 
 
 
-| 我收到磁碟API傳回更多資料的警告 | 請洽詢支援部門以取得額外資料。 
+| 輪詢失敗，錯誤代碼為 400 [錯誤請求]....無效的 ManagedId.... | 您已在組織 ID 欄位中填充了一個值，但 Rubrik 叢集不認為這是一個有效的組織 ID，儘管 Rubrik 發出的錯誤訊息稱為“ManagedId” 
 |===
 您可以在頁面或中找到其他link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]資訊。
