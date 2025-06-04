@@ -6396,21 +6396,8 @@
   <block id="bc781ab763b71df7b975bbfe7c860bba" category="paragraph">如需詳細資訊<block ref="3147fac008aa304c440ef0d367c93828" category="inline-link-macro-rx"></block>，請參閱。</block>
   <block id="dea8b0c01ac3c8f22d85423d187ec3d2" category="cell">CouchDB</block>
   <block id="64f2993184c14c565d6ba3100a20ca05" category="cell">驗證快取命中驗證快取遺失資料庫讀取資料庫寫入資料庫開啟OS檔案最長要求時間最短要求時間http要求方法複製http要求方法刪除http要求方法取得http要求方法標題http要求方法張貼http要求方法放置狀態代碼200狀態代碼 201狀態代碼202狀態代碼301狀態代碼304狀態代碼400狀態代碼401狀態代碼4040狀態代碼4040狀態代碼4040狀態代碼4040狀態代碼409狀態代碼412狀態代碼500</block>
-  <block id="d1f2d0eb68a6b45c8dc6a6dba792539e" category="summary">Dcos組態</block>
-  <block id="072a17ceb11d2f7027c8a1539261d0b0" category="doc">資料中心/作業系統資料收集器</block>
-  <block id="bba9e01ebd689f9c44999482a5a64c33" category="paragraph">Data Infrastructure Insights 使用此資料收集器從 DC/DC / 作業系統收集指標。</block>
-  <block id="ada6106f548a6369154652d4ea69d9a1" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。選擇 *DC/OS* 。</block>
-  <block id="906f9dd57fb2872473e89e09bf5bf50e" category="list-text">請依照「DC-OS組態」畫面中的指示來設定資料收集器。這些指示會因您用來收集資料的作業系統或平台類型而有所不同。</block>
-  <block id="169d74d7790e089aeca58cb836db2fcc" category="inline-link">資料中心/作業系統文件</block>
-  <block id="b0f77e8918eef13e0142c8675b792231" category="paragraph">您可以在中找到設定<block ref="bcf6b27a44ba394f1a86a682cd050dc1" category="inline-link-rx"></block>資訊。</block>
   <block id="497031794414a552435f90151ac3b54b" category="cell">物件</block>
   <block id="e2da36de4fe1aaf514aaef4ecca2c8ec" category="cell">識別碼</block>
-  <block id="90fd43f146814c9c0cb1e9040b914fa0" category="cell">資料點</block>
-  <block id="c43575a6656a31d36fd3cee9520b5838" category="cell">dcos_nod</block>
-  <block id="a675bd36bf3917644534c43b4ba2e55f" category="cell">dcos_container dcos_app</block>
-  <block id="022435a7e2f917aa3bce64222061f83d" category="cell">叢集主機名稱路徑（僅限檔案系統欄位）介面（僅限網路欄位）container ID task_name</block>
-  <block id="2cf0eab79c0db36a5df9e2deeba2b2c2" category="cell">system_uptime（浮點）cpu核心（浮點）cpu總和（浮點）cpu使用者（浮點）cpu系統（浮點）cpu閒置（浮點）cpu等待（浮點）load_1min（浮點）load_5min（浮點）load_15（浮點）file_capa_total_bytes（int_capse_inodes（int）（int_free字節數）（int_swap）（int_fytes int（int_f多少）（int_free）（int_swap）（int_swap）（int_fodes）、以int_f多少 字節）（int_swap）、共）、共）、共可用的網路閒）（int_swap）（int_swap）（int_swap）（int_swap）（int_fodes int（int_swap）（int_swap）（int_free network_in_Packets（浮點）network_Out_Packets（浮點）network_in_derrid捨 棄（浮點）network_Out_dip刪除（浮點）network_in_errors（浮點）network_Out_errors（浮點）Process _count（浮點）</block>
-  <block id="bc9c01f26c422a397298e3d733c43cb5" category="paragraph">您可以在頁面中找到其他資訊<block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block>。</block>
   <block id="0982f7ddf38c72531e91321d3b4e198e" category="summary">Docker資料收集器組態</block>
   <block id="d80788e8d22d139775039533ead6bae8" category="doc">Docker Data Collector</block>
   <block id="7ab1583e1a436a4f564958859dce5c00" category="paragraph">Data Infrastructure Insights 使用此資料收集器從 Docker 收集指標。</block>
@@ -11381,7 +11368,6 @@
   <block id="7070fd1d7b5d144bd3131c3c2b7ee1ca" category="list-text">選擇 * 申請試用 * 。如果您尚未向 BlueXP  註冊，請輸入您的詳細資料並註冊。否則請登入。</block>
   <block id="e461fd437885ee63b7f00e77ade6b3cb" category="list-text">安排會議或等待代表就試用版與您聯絡。</block>
   <block id="44d2017272b4664ce749afa3c1fc2785" category="summary">SAN Analyzer 提供租戶資產的拓撲</block>
-  <block id="916cfef6f81652d81c744e0537c656b2" category="doc">SAN Analyzer 總覽</block>
   <block id="a720fce5b3da4c111f19c80487c269cf" category="paragraph">SAN 在處理重要工作負載方面扮演重要角色，但其複雜性可能導致重大中斷和客戶中斷。有了 DII * SAN Analyzer * ，管理 SAN 變得更簡單，更有效率。這項功能強大的工具提供端點對端點的可見度，可將相依性從 VM/ 主機對應至網路， LUN 及儲存設備。</block>
   <block id="b03a68ce04fd31de1bf167d4c6537d2f" category="paragraph">藉由提供互動式拓撲圖， SAN Analyzer 可讓您找出問題，瞭解變更，並增強對資料流的理解。使用 SAN Analyzer 簡化複雜 IT 環境中的 SAN 管理，並提高您對區塊工作負載的可見度。</block>
   <block id="9c6601cca8cd67405c34e4897bb272f1" category="section-title">探索資產之間的連結</block>
@@ -12587,4 +12573,10 @@
   <block id="bb9284d1e6e1080190597d2d9826cc87" category="paragraph">選擇任何警報行即可開啟該警報的詳細資訊面板。警報詳細資訊面板提供有關該警報的更多詳細信息，包括“摘要”、顯示與對象資料相關的圖表的“專家視圖”、任何“相關資產”以及警報調查員輸入的“註釋”。</block>
   <block id="ce2f8058fa83417353b52945b6bfd42f" category="inline-image-macro">指標警報詳細資訊面板</block>
   <block id="8f9a1f05fd3f7e730fd077aaaac2e6f0" category="paragraph"><block ref="8f9a1f05fd3f7e730fd077aaaac2e6f0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5a71b3e73a269322067fedef6352832a" category="doc">SAN 分析器概述</block>
+  <block id="308d93e3f78b9236fe8462a038df9e71" category="paragraph">如果您的環境有不同的協議，您可以按 iSCSI 或 FC 進行篩選：</block>
+  <block id="d0cb407e54552661d276105ea643b822" category="inline-image-macro">SAN 分析器協議</block>
+  <block id="1ba02fc2bd769c9cff9ca39f38c94497" category="paragraph"><block ref="1ba02fc2bd769c9cff9ca39f38c94497" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="69903a755173d1c4699b4fdd2f6091ea" category="paragraph">數種 ONTAP 模式提供資料基礎架構洞見的電力指標、可用於監控或警示。</block>
+  <block id="dad21edfb3c02cb57e392a9d9a2e3eed" category="admonition">這些清單並不全面，可能會有所變更。一般而言，如果某個型號與清單中的型號屬於同一系列，則支援內容應該相同，但不保證一定相同。如果您不確定您的型號是否支援功率指標，請聯絡 ONTAP 支援。</block>
 </blocks>

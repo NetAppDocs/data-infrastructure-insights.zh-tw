@@ -4,9 +4,13 @@ permalink: san_analyzer_overview.html
 summary: SAN Analyzer 提供租戶資產的拓撲 
 keywords: topology, analyze, analysis, map 
 ---
-= SAN Analyzer 總覽
+= SAN 分析器概述
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]
@@ -32,6 +36,10 @@ NOTE: 大多數 SAN Analyzer 篩選器（包括您可以新增的篩選器）都
 除了 Summary （摘要）索引標籤外，滑出面板還會顯示適用於所選物件的連接埠詳細資料或區域資訊等選項卡。
 
 image:san_analyzer_slideout_example.png["SAN Analyzer 滑出面板"]
+
+如果您的環境有不同的協議，您可以按 iSCSI 或 FC 進行篩選：
+
+image:san_analyzer_protocols.png["SAN 分析器協議"]
 
 如果您的環境包含 iSCSI 裝置，請將游標移至 _iscsi_ 物件上方，以醒目提示與這些相關 iSCSI 裝置相關的連線。
 
