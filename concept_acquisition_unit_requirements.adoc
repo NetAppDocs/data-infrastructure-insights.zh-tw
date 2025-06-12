@@ -22,7 +22,7 @@ keywords: AU, acquisition unit, requirements, sizing
 | 元件 | Linux需求 | Windows需求 
 
 
-| 作業系統 | 執行下列其中一項授權版本的電腦： * AlmaLinux 9.3 至 9.5 * CentOS （ 64 位元）： 7.2 至 7.9 ， 8.1 至 8.4 ， Stream 8 ， Stream 9 * Debian （ 64 位元）： 9 至 11 * openSUSE Leap 15.1 至 15.6 * Oracle Enterprise Linux （ 64 位元）： 7.5 至 7.9 ， 8.1 至 8.10 ， 9.3 至 9.5建議使用專屬伺服器。如果您是搭配 SELinux 執行，建議您在擷取單元系統上執行下列命令： Sudo semanage fcontext -a -t usr_t "/opt/oracle/cloudimses//.*)" NetApp Sudo restorecon -R /opt/dell/cloudimsights NetApp | 執行下列其中一項授權版本的電腦： * Microsoft Windows 10 64 位元 * Microsoft Windows 11 * Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022 * Microsoft Windows Server 2025 此電腦不應執行其他應用程式層級軟體。建議使用專屬伺服器。 
+| 作業系統 | 執行下列任一授權版本的電腦：* AlmaLinux 9.3 至 9.5* Centos（64 位元）：7.2 至 7.9、8.1 至 8.4、Stream 8、Stream 9* Debian（64 位元）：9 至 12* OpenSUSE Leap 15.1 至 Linux 15.64 位元 15.62* . 8.10、9.3 至 9.6* Red Hat（64 位元）：7.2 至 7.9、8.1 至 8.10、9.1 至 9.6* Rocky 9.0 至 9.5* SUSE Linux Enterprise Server 15、15 SP2 至 15 SP6* SELinux這台電腦不應執行其他應用程式級軟體。建議使用專屬伺服器。如果您是搭配 SELinux 執行，建議您在擷取單元系統上執行下列命令： Sudo semanage fcontext -a -t usr_t "/opt/oracle/cloudimses//.*)" NetApp Sudo restorecon -R /opt/dell/cloudimsights NetApp | 執行下列其中一項授權版本的電腦： * Microsoft Windows 10 64 位元 * Microsoft Windows 11 * Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022 * Microsoft Windows Server 2025 此電腦不應執行其他應用程式層級軟體。建議使用專屬伺服器。 
 
 
 | CPU | 2個CPU核心 | 相同 

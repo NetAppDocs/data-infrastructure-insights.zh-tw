@@ -10,7 +10,7 @@ summary: 設定 Brocade FOS REST 資料收集器。
 
 
 [role="lead"]
-Data Infrastructure Insights 使用 Brocade FOS REST 收集器來探索執行 FabricOS （ FOS ）韌體 8.2 及更新版本之 Brocade 交換器裝置的庫存與效能。
+Data Infrastructure Insights 使用 Brocade FOS REST 收集器來探索執行 FabricOS （ FOS ）韌體 8.2 及更新版本之 Brocade 交換器裝置的庫存與效能。請注意，早期的 8.2 FOS 版本可能存在 REST API 錯誤；強烈建議運行您的平台支援的最新 FOS 版本。
 
 請注意： FOS 的預設「使用者」層級對於 Data Infrastructure Insights 來說功能不夠強大、無法檢視裝置的所有邏輯層面、我們需要啟用「機箱角色」的使用者帳戶、以及在交換器上設定的所有虛擬架構上的權限。
 
@@ -124,6 +124,9 @@ Data Infrastructure Insights 會從 Brocade FOS REST 資料收集器取得下列
 
 
 | 測試功能會警告我無法存取通訊協定 | 指定的 Brocade FOS 8.2+ 裝置只想在 HTTP 或 HTTPS 上說話 - 如果交換器已安裝數位憑證、當交換器嘗試與未加密的 HTTP 與 HTTPS 進行通訊時、交換器就會拋出 HTTP 錯誤。測試功能會嘗試與 HTTP 和 HTTPS 進行通訊 - 如果測試告訴您某個傳輸協定通過、您可以安全地儲存收集器、而不必擔心另一個傳輸協定失敗 - 收集器會在收集期間嘗試這兩個傳輸協定、而且只有在兩者都無法運作時才會失敗。 
+
+
+| 錯誤：庫存失敗，出現 401 未授權...無效會話金鑰... | 這是 8.2 FOS 早期版本（例如 8.2.1c）中存在的一個明顯 bug，這些版本無法正確支援 HTTP 基本驗證。請升級到 8.2 或 9.* 版本。 
 
 
 | 錯誤：「 Data Infrastructure Insights Received Invalid Chassis Role 」 | 檢查在此資料來源中設定的使用者是否已獲得機箱角色權限。 

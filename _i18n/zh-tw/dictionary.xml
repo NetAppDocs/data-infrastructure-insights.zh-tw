@@ -7715,7 +7715,6 @@
   <block id="17f6f686e23fbca9f92a7a9926136c2d" category="cell">效能收集失敗、並顯示「傳送 SNMP 要求時逾時」。</block>
   <block id="e04ebf98a9012bb6a191a7804699c68b" category="summary">設定 Brocade FOS REST 資料收集器。</block>
   <block id="706579d23b1ddf6c6ff6115a0f9271b4" category="doc">Brocade FOS REST Data Collector</block>
-  <block id="eff72425072b480bbbaf5cf932ce0c52" category="paragraph">Data Infrastructure Insights 使用 Brocade FOS REST 收集器來探索執行 FabricOS （ FOS ）韌體 8.2 及更新版本之 Brocade 交換器裝置的庫存與效能。</block>
   <block id="8712a2bc3286760646a66b8eaaabacac" category="paragraph">請注意： FOS 的預設「使用者」層級對於 Data Infrastructure Insights 來說功能不夠強大、無法檢視裝置的所有邏輯層面、我們需要啟用「機箱角色」的使用者帳戶、以及在交換器上設定的所有虛擬架構上的權限。</block>
   <block id="2266e1fc2ce062b23521f809220d83a2" category="paragraph">以下是一個範例、說明如何在 SSH 工作階段中建立「最低權限」使用者帳戶、以利資料基礎架構 Insights 使用 FOS 裝置：</block>
   <block id="87acb0f928436de44c10589e7dfad434" category="paragraph">userconfig --add NetAppCIUser -r user -l 1-128 -c user -p qwide!</block>
@@ -11684,7 +11683,6 @@
   <block id="5136d67ed194c95ea9a2710028034652" category="list-text">VMware vCenter Server 8.0.3 build 24305161</block>
   <block id="24820d2348a2986c54e81b6bc96fb06f" category="list-text">VMware vCenter Server 8.0.3 build 24322831</block>
   <block id="ce70e0ca30a003d9df6c2c5bf545464a" category="paragraph">如果您預期的託管單元數為 1 ， 000 或更高，請按一下<block ref="a9a75603ab8aac3033fb50ea01ab50c4" category="inline-link-macro-rx"></block>按鈕，透過 NetApp 銷售團隊訂閱。</block>
-  <block id="dde5131249fb4fdf0bb4b08bbcba4943" category="cell">執行下列其中一項授權版本的電腦： * AlmaLinux 9.3 至 9.5 * CentOS （ 64 位元）： 7.2 至 7.9 ， 8.1 至 8.4 ， Stream 8 ， Stream 9 * Debian （ 64 位元）： 9 至 11 * openSUSE Leap 15.1 至 15.6 * Oracle Enterprise Linux （ 64 位元）： 7.5 至 7.9 ， 8.1 至 8.10 ， 9.3 至 9.5建議使用專屬伺服器。如果您是搭配 SELinux 執行，建議您在擷取單元系統上執行下列命令： Sudo semanage fcontext -a -t usr_t "/opt/oracle/cloudimses//.*)" NetApp Sudo restorecon -R /opt/dell/cloudimsights NetApp</block>
   <block id="31192200d4ffdcb773965b28dbfbe0fd" category="cell">執行下列其中一項授權版本的電腦： * Microsoft Windows 10 64 位元 * Microsoft Windows 11 * Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022 * Microsoft Windows Server 2025 此電腦不應執行其他應用程式層級軟體。建議使用專屬伺服器。</block>
   <block id="7f09a101a37de5c76c92d5d4c88ddd83" category="paragraph">VMware 資料收集器可讓您在 Data Infrastructure Insights 註釋中填入 VMware 上設定的標記。DII 註釋名稱必須與 VMware * 類別 * 名稱相同；然後將標記套用為 DII 註釋的註釋值，其名稱與類別相同。Data Infrastructure Insights 一律會填入相同名稱的文字類型註解、並會「盡力」填入其他類型（數字、布林等）的註釋。如果您的註釋類型不同、而且資料收集器無法填入註釋、則可能需要移除註釋、然後重新建立為文字類型。</block>
   <block id="a45c25e047c23be206aa7b3a16363223" category="section-title">測試資料收集器的連線能力</block>
@@ -12579,4 +12577,8 @@
   <block id="1ba02fc2bd769c9cff9ca39f38c94497" category="paragraph"><block ref="1ba02fc2bd769c9cff9ca39f38c94497" category="inline-image-macro-rx" type="image"></block></block>
   <block id="69903a755173d1c4699b4fdd2f6091ea" category="paragraph">數種 ONTAP 模式提供資料基礎架構洞見的電力指標、可用於監控或警示。</block>
   <block id="dad21edfb3c02cb57e392a9d9a2e3eed" category="admonition">這些清單並不全面，可能會有所變更。一般而言，如果某個型號與清單中的型號屬於同一系列，則支援內容應該相同，但不保證一定相同。如果您不確定您的型號是否支援功率指標，請聯絡 ONTAP 支援。</block>
+  <block id="cd016f59e3bce345c5a22a0c73b84bc2" category="cell">執行下列任一授權版本的電腦：* AlmaLinux 9.3 至 9.5* Centos（64 位元）：7.2 至 7.9、8.1 至 8.4、Stream 8、Stream 9* Debian（64 位元）：9 至 12* OpenSUSE Leap 15.1 至 Linux 15.64 位元 15.62* . 8.10、9.3 至 9.6* Red Hat（64 位元）：7.2 至 7.9、8.1 至 8.10、9.1 至 9.6* Rocky 9.0 至 9.5* SUSE Linux Enterprise Server 15、15 SP2 至 15 SP6* SELinux這台電腦不應執行其他應用程式級軟體。建議使用專屬伺服器。如果您是搭配 SELinux 執行，建議您在擷取單元系統上執行下列命令： Sudo semanage fcontext -a -t usr_t "/opt/oracle/cloudimses//.*)" NetApp Sudo restorecon -R /opt/dell/cloudimsights NetApp</block>
+  <block id="f551ca729032aed761417786181395c8" category="paragraph">Data Infrastructure Insights 使用 Brocade FOS REST 收集器來探索執行 FabricOS （ FOS ）韌體 8.2 及更新版本之 Brocade 交換器裝置的庫存與效能。請注意，早期的 8.2 FOS 版本可能存在 REST API 錯誤；強烈建議運行您的平台支援的最新 FOS 版本。</block>
+  <block id="882ec11eef2cffbd43db944e6046b98d" category="cell">錯誤：庫存失敗，出現 401 未授權...無效會話金鑰...</block>
+  <block id="fcad57aa5101382922e3f8fe687cf7b0" category="cell">這是 8.2 FOS 早期版本（例如 8.2.1c）中存在的一個明顯 bug，這些版本無法正確支援 HTTP 基本驗證。請升級到 8.2 或 9.* 版本。</block>
 </blocks>
