@@ -58,8 +58,8 @@ NOTE: 您的權杖只能在建立程序期間複製到剪貼簿並儲存。建�
 
 例如、使用下列項目來擷取儲存資產：
 
- curl https://<tenant_host_name>/rest/v1/cloudsecure/activities -H 'X-CloudInsights-ApiKey: <API_Access_Token>'
-其中、_<API_Access_Token >>是您在API存取金鑰建立期間所儲存的權杖。
+ curl https://<Workload Security tenant>/rest/v1/cloudsecure/activities -H 'X-CloudInsights-ApiKey: <API_Access_Token>'
+其中 _<API_Access_Token>_ 是您在建立 API 存取金鑰期間所儲存的令牌，而 _<Workload Security Tenant>_ 是您的 Workload Security 環境的租用戶 URL。
 
 如需詳細資訊、請參閱「*管理> API存取*」下的「_API文件_」連結。
 
@@ -75,6 +75,6 @@ NOTE: 您的權杖只能在建立程序期間複製到剪貼簿並儲存。建�
 
 [source]
 ----
-python3 data-export.py --tenant_url <tenant id>.cs01.cloudinsights.netapp.com --access_key %ACCESS_KEY% --path_filter "<dir path>" --user_name "<user>" --from_time "01-08-2024 00:00:00" --to_time "31-08-2024 23:59:59" --iteration_interval 12 --num_workers 3
+python3 data-export.py --tenant_url <Workload Security tenant> --access_key %ACCESS_KEY% --path_filter "<dir path>" --user_name "<user>" --from_time "01-08-2024 00:00:00" --to_time "31-08-2024 23:59:59" --iteration_interval 12 --num_workers 3
 ----
 主要參數： - `--iteration_interval 12`：將所要求的時間範圍分成 12 小時的間隔。- `--num_workers 3`：使用 3 個執行緒平行擷取這些時間間隔。
