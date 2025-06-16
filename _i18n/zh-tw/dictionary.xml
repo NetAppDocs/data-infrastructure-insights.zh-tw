@@ -12626,4 +12626,6 @@
   <block id="34d4df065e8cb474864212e7cbd25aab" category="list-text">導覽至 _cloudsecure_installers.collector_ &gt; _/v1/cloudsecure/collector-types/installers/{collectorTypeUUID}_ API。輸入上一步複製的 _collectorTypeUUID_。將安裝程式下載至 _/{agent-install-path}/cloudsecure/tmp/collectors_ 目錄。</block>
   <block id="875ee097a763d140a4468d57aabb8d80" category="list-text">如果收集器升級成功，則可以刪除目錄 _/{agent-install-path}/cloudsecure/tmp/collectors_ 中的所有檔案。</block>
   <block id="f7185660114f7b999956b1355a59005c" category="paragraph">如果收集器安裝程式檔案未位於 _/{agent-install-path}/cloudsecure/tmp/collectors_ 目錄中或無法存取，則會出現此錯誤。請確保安裝程式檔案已下載，並且 _collectors_ 和安裝程式 zip 檔案的完整目錄結構歸 cssys:cssys 所有，然後重新啟動代理服務：_systemctl restart cloudsecure-agent.service_。</block>
+  <block id="7d7553997a3a5a75a3b0c10d87de471a" category="inline-link-macro">聯絡您的 NetApp 銷售代表</block>
+  <block id="9cff751c63b93d5cf30de3f9b1c5ae37" category="admonition">報告功能可在 Data Infrastructure Insights <block ref="e53fcfe2d8e430963458770e616738bd" category="inline-link-macro-rx"></block>中找到。報告功能的可用性取決於最低佔用空間要求。<block ref="1609ad57ad0e13d165eb8d59f42fcd45" category="inline-link-macro-rx"></block>了解更多。</block>
 </blocks>
