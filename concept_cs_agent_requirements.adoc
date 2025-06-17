@@ -17,7 +17,7 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network, Cl
 | 元件 | Linux需求 
 
 
-| 作業系統 | 執行下列其中一項授權版本的電腦： * CentOS 9 Stream （ 64 位元） * openSUSE Leap15.3 至 15.5 （ 64 位元） * Oracle Linux 8.10 （ 64 位元）， 9.1 至 9.4 （ 64 位元）， SELinux * Red Hat Enterprise Linux 8.10 （ 64 位元）， 9.1 至 64 位元（ 64 位元）， SELinux *建議使用專屬伺服器。 
+| 作業系統 | 執行下列任一授權版本的電腦：* AlmaLinux 9.4 和 9.5（64 位元），包括 SELinux* CentOS 9 Stream（64 位元）* Debian 11（64 位元）和 12（64 位元），包括 SELinux* OpenSUSE Leap 15.3164 位元（64 位元）和 Oracle 164764 Oracle 15.318 位元）（16421643）（15.68 位元） 9.1（64 位元）至 9.6（64 位元），包括 SELinux* Red Hat Enterprise Linux 8.10（64 位元）和 9.1（64 位元），包括 SELinux* Red Hat Enterprise Linux 8.10（64 位元）和 9.1（64 位元）至 9.6（64 位元），包括 SELinux* Rocky 9.4（64 位元）和 Linux 9.5（64 位元），包括 SELinux* Rocky 402（64 位元）和 Linux 9.5（64 位元），包括 S. SP6（64 位元），包括 SELinux* Ubuntu 20.04 LTS（64 位元）、22.04 LTS（64 位元）和 24.04 LTS（64 位元）此電腦不應執行其他應用程式級軟體。建議使用專屬伺服器。 
 
 
 | 命令 | 安裝時需要「解壓縮」。此外、安裝、執行指令碼及解除安裝時、還需要使用「su–」命令。 

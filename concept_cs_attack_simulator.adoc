@@ -59,7 +59,7 @@ mount -t nfs -o vers=4.0 Vserver data IP>:/nfsvol /destinationlinuxfolder
 
 
 
-==== 若要在Linux中掛載CIFS：
+==== 要在 Linux 中掛載 CIFS：
 
 [listing]
 ----

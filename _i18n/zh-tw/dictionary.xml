@@ -594,7 +594,6 @@
   <block id="749376c343309b5abf1f8bc2f1e6e9f7" category="list-text">您可以在工作負載安全代理程式機器上執行指令碼、不需要準備其他Linux機器。不過、如果您偏好在其他系統上執行指令碼、只要複製指令碼並在該處執行即可。</block>
   <block id="6a2eb10d0f7d8e6c5942069b7aa730bf" category="paragraph">若要在Linux中掛載NFS匯出：</block>
   <block id="dd94533008fec4ee5889a56fd78e2a26" category="paragraph">請勿掛載NFS 4.1版、Fpolicy不支援。</block>
-  <block id="6006ea3f9ae2b497be9e9bce2d0ead62" category="paragraph">若要在Linux中掛載CIFS：</block>
   <block id="a22c6eb3597528c16b0d46880ae4b1ae" category="paragraph">接下來、設定資料收集器：</block>
   <block id="5e7fe8c41f8a34a29dc01b5eced565e8" category="list-text">如果尚未設定工作負載安全性代理程式、請加以設定。</block>
   <block id="79e81469dc70b00e14fd266807fa2813" category="section-title">執行勒索軟體模擬器指令碼</block>
@@ -11495,7 +11494,6 @@
   <block id="1f1f9d998591f96c2653327f9004b1a9" category="cell"><block ref="588cebdad26ee4a9a3bb08c290310eb7" category="inline-link-macro-rx"></block>Data Infrastructure Insights 用來與擷取單元溝通、但無法在 Data Infrastructure Insights 和 Data Collector 本身之間進行通訊。以下是您可以嘗試的幾件事：確保取得設備能夠解析FQDN並到達所需的連接埠。確認不需要Proxy即可到達錯誤訊息中指定的端點。Curl可用來測試擷取裝置與端點之間的通訊。請確定您*未*使用Proxy進行此測試。範例： root@qualisitionunit# curl -s -H Accept:application/json -H "Content-type: application/json" -H API 金鑰： &lt;API 金鑰用於資料收集器認證 - H 秘密金鑰： &lt; 資料收集器認證中使用的秘密金鑰 &gt; -X Get \https://&lt;AWS 區域端點： 8080/v1/Storage/IPRanges 請參閱此<block ref="ee10e7e073fdf55fff4a0c77a9c435fc" category="inline-link-macro-rx"></block>。</block>
   <block id="1ec51096f7cea66fb872ea91910e89b9" category="paragraph">如需其他疑難排解秘訣，請參閱<block ref="6fe211aef2305839bd4b415ac3b03770" category="inline-link-macro-rx"></block>（需要支援登入）。</block>
   <block id="9e6e19182965cf2820f2a5f8cce84e8b" category="cell">當AU安裝在SELinux上時、SE應設定為_permals_模式。不支援_強制_模式。將SELinux設定為允許模式後、請重新啟動AU服務。<block ref="2aa71c1262c825b4349ce4125965fabb" category="inline-link-macro-rx"></block>。</block>
-  <block id="a0549e61b3931f3ffafdfcc909b88bf8" category="cell">執行下列其中一項授權版本的電腦： * CentOS 9 Stream （ 64 位元） * openSUSE Leap15.3 至 15.5 （ 64 位元） * Oracle Linux 8.10 （ 64 位元）， 9.1 至 9.4 （ 64 位元）， SELinux * Red Hat Enterprise Linux 8.10 （ 64 位元）， 9.1 至 64 位元（ 64 位元）， SELinux *建議使用專屬伺服器。</block>
   <block id="af66622d3522b0b6fa496a47273bdb04" category="paragraph">資料收集器支援對照表提供 Data Infrastructure Insights 支援的資料收集器參考資料，包括廠商和機型資訊。</block>
   <block id="8892f0f7118a4e14ceef9a37218a5a33" category="cell">HPE Alletra 9080 HPE_3PAR 20450 HPE_3PAR 20800 HPE_3PAR 20850 HPE_3PAR 7200 HPE_3PAR 7200c HPE_3P7400 AR HPE_3P400c P400c P400HP P400_3AR P4008 P400P P400 HP P400C P200P200HP PPE</block>
   <block id="10fd66f5b4802aee3a88de2a537a57b4" category="cell">已用容量</block>
@@ -12628,4 +12626,6 @@
   <block id="f7185660114f7b999956b1355a59005c" category="paragraph">如果收集器安裝程式檔案未位於 _/{agent-install-path}/cloudsecure/tmp/collectors_ 目錄中或無法存取，則會出現此錯誤。請確保安裝程式檔案已下載，並且 _collectors_ 和安裝程式 zip 檔案的完整目錄結構歸 cssys:cssys 所有，然後重新啟動代理服務：_systemctl restart cloudsecure-agent.service_。</block>
   <block id="7d7553997a3a5a75a3b0c10d87de471a" category="inline-link-macro">聯絡您的 NetApp 銷售代表</block>
   <block id="9cff751c63b93d5cf30de3f9b1c5ae37" category="admonition">報告功能可在 Data Infrastructure Insights <block ref="e53fcfe2d8e430963458770e616738bd" category="inline-link-macro-rx"></block>中找到。報告功能的可用性取決於最低佔用空間要求。<block ref="1609ad57ad0e13d165eb8d59f42fcd45" category="inline-link-macro-rx"></block>了解更多。</block>
+  <block id="49efdacfb2c6deb2da842846699cf1e7" category="cell">執行下列任一授權版本的電腦：* AlmaLinux 9.4 和 9.5（64 位元），包括 SELinux* CentOS 9 Stream（64 位元）* Debian 11（64 位元）和 12（64 位元），包括 SELinux* OpenSUSE Leap 15.3164 位元（64 位元）和 Oracle 164764 Oracle 15.318 位元）（16421643）（15.68 位元） 9.1（64 位元）至 9.6（64 位元），包括 SELinux* Red Hat Enterprise Linux 8.10（64 位元）和 9.1（64 位元），包括 SELinux* Red Hat Enterprise Linux 8.10（64 位元）和 9.1（64 位元）至 9.6（64 位元），包括 SELinux* Rocky 9.4（64 位元）和 Linux 9.5（64 位元），包括 SELinux* Rocky 402（64 位元）和 Linux 9.5（64 位元），包括 S. SP6（64 位元），包括 SELinux* Ubuntu 20.04 LTS（64 位元）、22.04 LTS（64 位元）和 24.04 LTS（64 位元）此電腦不應執行其他應用程式級軟體。建議使用專屬伺服器。</block>
+  <block id="edf63ae7e3cf0cd744884c156cab7abb" category="section-title">要在 Linux 中掛載 CIFS：</block>
 </blocks>
