@@ -39,7 +39,7 @@ Data Infrastructure Insights 包含安全功能、可讓您的環境以增強的
 AU 安裝之後、您可以在下列任一位置的採購單元系統上找到 securityadmin 工具：
 
 ....
-Windows - C:\Program Files\SANscreen\securityadmin\bin\securityadmin.bat
+Windows - <install_path>\Cloud Insights\Acquisition Unit\acq\securityadmin\bin\securityadmin.bat
 Linux - /bin/oci-securityadmin.sh
 ....
 
@@ -61,7 +61,7 @@ image:SecurityAdminMenuChoices.png["安全性管理工具選項（ Linux ）"]
 
 +
 ....
-Windows - C:\Program Files\SANscreen\backup\vault
+Windows - <install_path>\Cloud Insights\Acquisition Unit\acq\securityadmin\backup\vault
 Linux - /var/log/netapp/oci/backup/vault
 ....
 +
