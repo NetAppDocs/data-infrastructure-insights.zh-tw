@@ -37,6 +37,12 @@ image:QuerySelectColumns.png["選取欄"]
 
 
 
+== 觀看實際操作
+
+link:https://media.netapp.com/video-detail/d0530e0b-a222-52e7-92b1-dbeeee41b712/explore-and-analyze-with-queries-in-data-infrastructure-insights["使用資料基礎設施洞察中的查詢進行探索和分析（影片）"]
+
+
+
 == 選擇 Aggregation 、 Units 、 Conditional Formatting
 
 

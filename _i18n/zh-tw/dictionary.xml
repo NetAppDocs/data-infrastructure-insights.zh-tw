@@ -596,7 +596,6 @@
   <block id="dd94533008fec4ee5889a56fd78e2a26" category="paragraph">請勿掛載NFS 4.1版、Fpolicy不支援。</block>
   <block id="a22c6eb3597528c16b0d46880ae4b1ae" category="paragraph">接下來、設定資料收集器：</block>
   <block id="5e7fe8c41f8a34a29dc01b5eced565e8" category="list-text">如果尚未設定工作負載安全性代理程式、請加以設定。</block>
-  <block id="79e81469dc70b00e14fd266807fa2813" category="section-title">執行勒索軟體模擬器指令碼</block>
   <block id="1ccbd3884a5f46ebee24ea2d455e82c6" category="list-text">登入值機員方塊。</block>
   <block id="b3431d54476e0f70ea6fc00bae48572b" category="summary">在安裝ONTAP SVM DSC之前、可以執行此指令碼來檢查SVM中的事件率</block>
   <block id="2723c4d559ff96bb42870d86c109708e" category="doc">SVM事件率檢查器（代理程式規模調整指南）</block>
@@ -12538,7 +12537,6 @@
   <block id="29acd3d3cfc5f8e3cb650abeb2622a68" category="cell">agentlogin.cs01-eu-1.cloudinsights.netapp.com</block>
   <block id="012f0abca78822d24d27455403c3d089" category="cell">agentlogin.cs01-ap-1.cloudinsights.netapp.com</block>
   <block id="5638f0cd643e22827b55eec8b52ab7e4" category="paragraph">其中 _&lt;API_Access_Token&gt;_ 是您在建立 API 存取金鑰期間所儲存的令牌，而 _&lt;Workload Security Tenant&gt;_ 是您的 Workload Security 環境的租用戶 URL。</block>
-  <block id="9e2b8018039d7d99b04df272bce4aba9" category="list-text">勒索軟體模擬指令碼僅適用於Linux。如果使用者將 ONTAP ARP 與工作負載安全性集成，模擬腳本還應產生高置信度警報。</block>
   <block id="61622ea1d4086909bd90c0efc1d6a2e5" category="list-text">只有當 ONTAP 版本為 9.15 或更高版本時，工作負載安全才會偵測使用 NFS 4.1 產生的事件和警報。</block>
   <block id="18ce72511b1d5c5efd6fbe69db6d9b27" category="list-text">使用者可以根據自己的喜好和系統需求選擇 Python 或 shell 腳本。</block>
   <block id="9efded9e764f04e1a9d0996a56b10881" category="list-text">Python 腳本需要先安裝。如果您不想使用 Python，請使用 Shell 腳本。</block>
@@ -12628,4 +12626,23 @@
   <block id="9cff751c63b93d5cf30de3f9b1c5ae37" category="admonition">報告功能可在 Data Infrastructure Insights <block ref="e53fcfe2d8e430963458770e616738bd" category="inline-link-macro-rx"></block>中找到。報告功能的可用性取決於最低佔用空間要求。<block ref="1609ad57ad0e13d165eb8d59f42fcd45" category="inline-link-macro-rx"></block>了解更多。</block>
   <block id="49efdacfb2c6deb2da842846699cf1e7" category="cell">執行下列任一授權版本的電腦：* AlmaLinux 9.4 和 9.5（64 位元），包括 SELinux* CentOS 9 Stream（64 位元）* Debian 11（64 位元）和 12（64 位元），包括 SELinux* OpenSUSE Leap 15.3164 位元（64 位元）和 Oracle 164764 Oracle 15.318 位元）（16421643）（15.68 位元） 9.1（64 位元）至 9.6（64 位元），包括 SELinux* Red Hat Enterprise Linux 8.10（64 位元）和 9.1（64 位元），包括 SELinux* Red Hat Enterprise Linux 8.10（64 位元）和 9.1（64 位元）至 9.6（64 位元），包括 SELinux* Rocky 9.4（64 位元）和 Linux 9.5（64 位元），包括 SELinux* Rocky 402（64 位元）和 Linux 9.5（64 位元），包括 S. SP6（64 位元），包括 SELinux* Ubuntu 20.04 LTS（64 位元）、22.04 LTS（64 位元）和 24.04 LTS（64 位元）此電腦不應執行其他應用程式級軟體。建議使用專屬伺服器。</block>
   <block id="edf63ae7e3cf0cd744884c156cab7abb" category="section-title">要在 Linux 中掛載 CIFS：</block>
+  <block id="ee817f2b2a73b759041de15700c640ab" category="list-text">勒索軟體模擬指令碼僅適用於Linux。如果使用者將 ONTAP ARP 與 Workload Security 集成，模擬腳本也應產生高置信度警報。</block>
+  <block id="aeb28c68bc1dab765c30f59d6d996ff2" category="section-title">觀看實際操作</block>
+  <block id="c8d448b9409555cf2e8422b8c3317946" category="inline-link-macro">使用資料基礎設施洞察中的查詢進行探索和分析（影片）</block>
+  <block id="e0d2c40c23e890868e573da2463ab970" category="paragraph"><block ref="e0d2c40c23e890868e573da2463ab970" category="inline-link-macro-rx"></block></block>
+  <block id="dc144dad3008fbf761d88b6231252fe9" category="summary">VM Analyzer 為租用戶上的虛擬資產提供拓撲</block>
+  <block id="12a96e4209d40670da1501e5ae32f7c1" category="doc">VM 分析器概述</block>
+  <block id="90184485963d030ad4dd7567d71584f9" category="paragraph">透過 DII 的 *VM Analyzer*，管理您的虛擬資產將變得更簡單、更有效率。這款強大的工具提供端到端的可視性，能夠映射從 VMDK/VM 到主機、到資料儲存、到內部磁碟區/到儲存的依賴關係。</block>
+  <block id="28966c9414b6884efd36e8984f749976" category="paragraph">藉由提供互動式拓撲圖， VM Analyzer 可讓您找出問題，瞭解變更，並增強對資料流的理解。簡化虛擬機器管理並提高您對虛擬工作負載的可見度。</block>
+  <block id="38bb6439d9226f9f886c24401bfc4271" category="paragraph"><block ref="38bb6439d9226f9f886c24401bfc4271" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f9b7a93ca7c70a47d59513eb8fc49881" category="paragraph">選擇 * 可視性 &gt; 分析 &gt; VM Analyzer* 以查看 VM Analyzer 。為應用程式、虛擬機器、磁碟區、內部磁碟區設定篩選器，或新增您自己的篩選器。隨即顯示物件的地圖，顯示已連接的物件。將游標移到物件上方，即可檢視這些連線的流量計量。</block>
+  <block id="7485c59fee0f1341e68427d50b2c0b5f" category="inline-image-macro">VM Analyzer 效能指標範例</block>
+  <block id="09562317f0e4300c8d530df45c626200" category="paragraph"><block ref="09562317f0e4300c8d530df45c626200" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fdbcd622aeb7794a55d5a3c57f4ed433" category="admonition">大多數 VM Analyzer 篩選器（包括您可以新增的篩選器）都是關聯式的；當您在其中一個篩選器中選取物件時，其他篩選器下拉式清單中顯示的選項會隨著所選物件或物件的內容而重新整理。</block>
+  <block id="86975522d809db49e0c205d536440123" category="paragraph">按一下某個物件或群組，會開啟一個滑出面板，提供有關物件及其連線的其他詳細資料。滑出式面板會顯示摘要，其中包含所選物件的詳細資訊（例如，吞吐量或使用率，取決於物件的類型），以及顯示該物件指標（例如延遲或 IOPS）的圖表。其他選項卡可用於探索相關的其他資源、變更和警報。如果需要，您也可以選擇在圖表上顯示「排名靠前」或「競爭」物件的指標。</block>
+  <block id="d2471c4bc746eeea68ab17452321a403" category="inline-link-macro">使用 VM Analyzer 簡化故障排除（影片）</block>
+  <block id="6e27a8c95ed5ddbd5bf8c70b3cdcde35" category="paragraph"><block ref="6e27a8c95ed5ddbd5bf8c70b3cdcde35" category="inline-link-macro-rx"></block></block>
+  <block id="f463cb1a5df7d729d273f46c1e5cb861" category="sidebar">分析數據</block>
+  <block id="c917a46858bc7b65af2e1c90ee0a1453" category="sidebar">SAN 分析器</block>
+  <block id="2e2565dd8910383ad2b3626e2b5d37b2" category="sidebar">VM 分析器</block>
 </blocks>

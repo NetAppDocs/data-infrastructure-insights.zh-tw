@@ -161,6 +161,12 @@ sidebar:
         url: "/concept_storage_virtualization.html"
       - title: 搜尋資產的提示與秘訣
         url: "/concept_searching_assets.html"
+    - title: 分析數據
+      entries:
+      - title: SAN 分析器
+        url: "/san_analyzer_overview.html"
+      - title: VM 分析器
+        url: "/vm_analyzer_overview.html"
     - title: 報告
       entries:
       - title: 報告總覽

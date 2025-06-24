@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: vm_analyzer_overview.html 
+summary: VM Analyzer 為租用戶上的虛擬資產提供拓撲 
+keywords: topology, analyze, analysis, map, virtual, vm, vmware 
+---
+= VM 分析器概述
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+透過 DII 的 *VM Analyzer*，管理您的虛擬資產將變得更簡單、更有效率。這款強大的工具提供端到端的可視性，能夠映射從 VMDK/VM 到主機、到資料儲存、到內部磁碟區/到儲存的依賴關係。
+
+藉由提供互動式拓撲圖， VM Analyzer 可讓您找出問題，瞭解變更，並增強對資料流的理解。簡化虛擬機器管理並提高您對虛擬工作負載的可見度。
+
+image:vm_analyzer_example_with_panel_a.png["儲存系統的 VM Analyzer 拓撲圖"]
+
+
+
+== 探索資產之間的連結
+
+選擇 * 可視性 > 分析 > VM Analyzer* 以查看 VM Analyzer 。為應用程式、虛擬機器、磁碟區、內部磁碟區設定篩選器，或新增您自己的篩選器。隨即顯示物件的地圖，顯示已連接的物件。將游標移到物件上方，即可檢視這些連線的流量計量。
+
+image:vm_analyzer_performance_metrics.png["VM Analyzer 效能指標範例"]
+
+
+NOTE: 大多數 VM Analyzer 篩選器（包括您可以新增的篩選器）都是關聯式的；當您在其中一個篩選器中選取物件時，其他篩選器下拉式清單中顯示的選項會隨著所選物件或物件的內容而重新整理。
+
+按一下某個物件或群組，會開啟一個滑出面板，提供有關物件及其連線的其他詳細資料。滑出式面板會顯示摘要，其中包含所選物件的詳細資訊（例如，吞吐量或使用率，取決於物件的類型），以及顯示該物件指標（例如延遲或 IOPS）的圖表。其他選項卡可用於探索相關的其他資源、變更和警報。如果需要，您也可以選擇在圖表上顯示「排名靠前」或「競爭」物件的指標。
+
+
+
+== 觀看實際操作
+
+link:https://media.netapp.com/video-detail/0e62b784-8456-5ef7-8879-f0352135a0f1/simplified-troubleshooting-with-vm-analyzer["使用 VM Analyzer 簡化故障排除（影片）"]
