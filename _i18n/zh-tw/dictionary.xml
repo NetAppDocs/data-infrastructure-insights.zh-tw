@@ -1844,10 +1844,8 @@
   <block id="f887dd4c6ffb2d6fd67813bccd44e611" category="paragraph">開始使用 Data Infrastructure Insights 只需三個簡單步驟：</block>
   <block id="21a763771df4e64b083a2b050ce81f09" category="inline-link-macro">* NetApp BlueXP*</block>
   <block id="6341e61d6dc641d29b3f2e7300137ea9" category="list-text">註冊帳戶<block ref="e0b3e45a049f223d3b91d005d1e31db5" category="inline-link-macro-rx"></block>即可存取所有 NetApp 雲端產品。</block>
-  <block id="2ef085adce795622c057ad2ea6c13059" category="inline-link-macro">NetApp銷售</block>
   <block id="cab27dc53edb571cac663ce2e16450dc" category="inline-link-macro">AWS 市場</block>
   <block id="7bc1d8b07dfc0e98950abc0c7f3979a5" category="inline-link-macro">資訊與地區</block>
-  <block id="6c36c3c54c4f691f7ed13a16d49bbde7" category="paragraph">在註冊過程中、您可以選擇全球區域來主控 Data Infrastructure Insights 環境。有關詳細信息，請參閱 Data Infrastructure Insights <block ref="286a302a1ee50fd59eb368d3d9779037" category="inline-link-macro-rx"></block>（關於 Data Infrastructure Insights ）。</block>
   <block id="ef66b5abbe1e0b79e23deb05dd2d11a9" category="admonition">非使用中的 Data Infrastructure Insights Basic Edition 環境會被刪除、並回收其資源。如果連續30天沒有使用者活動、環境將視為非作用中、如果連續7天沒有擷取資料。Data Infrastructure Insights 會傳送通知、並在刪除環境之前提供四天的寬限期。</block>
   <block id="d618d9be50e37adf260935938e49af96" category="inline-image-macro">掛鎖</block>
   <block id="12ddfc86083937d7a126f2fd8615aa6b" category="inline-xref">模組評估</block>
@@ -1859,8 +1857,6 @@
   <block id="dcfc2d1a305cec73fa5f84fa3a0ed89c" category="paragraph">當免費試用即將結束時、 Data Infrastructure Insights 會顯示橫幅該橫幅中有一個 _View Subscription_ 連結、可開啟 * 管理 -&gt; Subscription* 頁面。非管理員使用者會看到橫幅、但無法前往「訂閱」頁面。</block>
   <block id="14e0941a34fd8121073e220481ffa66f" category="admonition">如果您需要更多時間來評估 Data Infrastructure Insights 、而且試用期已設定在 4 天或更短的時間內過期、您可以將試用期延長 30 天。您只能延長試用期一次。如果試用期已到期、您將無法延長試用期。</block>
   <block id="de41af8028b5287cc6d65bb0e73cae11" category="section-title">透過AWS Marketplace試用</block>
-  <block id="bc8745f374e91204332a0cd070e3c20c" category="inline-xref">託管單位</block>
-  <block id="a1aea5576cb96c98e98a9642fc30f4b0" category="paragraph">您也可以透過AWS Marketplace註冊免費試用。AWS Marketplace 免費試用版可讓您在 33 天試用期內存取 Data Infrastructure Insights 、並允許最多 499 <block ref="74100db5c6c154a5b13e17b29feeccc3" category="inline-xref-macro-rx"></block> （ MU ）。</block>
   <block id="c66bd552dea63071ad19e124c869ab2e" category="paragraph">AWS Marketplace免費試用版無法延長。您可以在試用期間隨時降級至 Data Infrastructure Insights Basic Edition 訂閱、或造訪 * 管理 -&gt; 訂閱 * 頁面、變更為付費的 Data Infrastructure Insights 訂閱。</block>
   <block id="03742c91392961db83c5540550a3500a" category="section-title">如果我的試用期已到期、該怎麼辦？</block>
   <block id="55b44e6cb866667b35e33325e5f2b246" category="paragraph">如果您的免費試用期已過期、但您尚未訂閱 Data Infrastructure Insights 、則在您訂閱之前、您的功能將有限。資料擷取可能會停止、幾週後、您的資料將會根據我們的資料保留政策刪除。</block>
@@ -11475,7 +11471,6 @@
   <block id="a25c3f0a67375ee45e02e2a95818cfb5" category="cell">請聯絡 NetApp 銷售人員以購買訂閱</block>
   <block id="670521a1846ad94b7cc140e2678df21c" category="paragraph">如果您有興趣預覽其中一項或多項功能，請聯絡<block ref="02af545fedbe237243dabe2f44648f4d" category="inline-link-macro-rx"></block>以取得更多資訊。</block>
   <block id="16630d72023cbbf23b8ab69cac2b3ff7" category="paragraph">您也可以按一下連結來申請銷售支援<block ref="6193a07b36740b6aedc4527702e204e2" category="inline-link-macro-rx"></block>。</block>
-  <block id="3fcd9845b26dde701c891681edc7b769" category="list-text">* 訂閱 * Data Infrastructure Insights 、透過<block ref="326364f658f4dbd53be7e9aa308d8ef9" category="inline-link-macro-rx"></block>直接或持續不中斷地存取您的資料<block ref="e91d3f98f4b43abdea3c839a7777954c" category="inline-link-macro-rx"></block>。</block>
   <block id="a42decca1d15ec644d4c66c06689344e" category="paragraph"><block ref="a4e343c69e2eae514016d98dfce8b36b" category="inline-link-macro-rx"></block>資料收集器可讓您使用在 VMware 上設定的相同名稱標籤填入 Cloud Insights 文字註解。</block>
   <block id="0d0549b05d1645d38baa1a6cedaa7190" category="paragraph">經常強調許多令人興奮的全新預覽功能。Cloud Insights如果您有興趣預覽其中一項或多項功能，請聯絡<block ref="02af545fedbe237243dabe2f44648f4d" category="inline-link-macro-rx"></block>以取得更多資訊。</block>
   <block id="6230fc6d3836bf964eb587a1b21b5c48" category="admonition">如果您是最新的 Premium Edition 客戶並希望保留您的報告，請閱讀本<block ref="85f8206314043d7dd91d050def6a5cd1" category="inline-link-macro-rx"></block>。</block>
@@ -12645,4 +12640,18 @@
   <block id="f463cb1a5df7d729d273f46c1e5cb861" category="sidebar">分析數據</block>
   <block id="c917a46858bc7b65af2e1c90ee0a1453" category="sidebar">SAN 分析器</block>
   <block id="2e2565dd8910383ad2b3626e2b5d37b2" category="sidebar">VM 分析器</block>
+  <block id="35c091b25f788bb392ac1dd40614c3e3" category="list-text">*訂閱*數據基礎設施洞察，透過各種靈活的訂閱選項持續、不間斷地存取您的資料：</block>
+  <block id="a2282c5ca88a344b1bf947a11cb57bc8" category="inline-link-macro">NetApp 直銷</block>
+  <block id="dbed590bd111eb57145cd0aa78c71ccb" category="list-text"><block ref="dbed590bd111eb57145cd0aa78c71ccb" category="inline-link-macro-rx"></block></block>
+  <block id="fbb9a72326df00d6f836e5eea8110335" category="list-text">AWS 市場：</block>
+  <block id="ec298b41c1e3f240e9fc796c682f69de" category="inline-link-macro">固定期限訂閱</block>
+  <block id="f56e44396701dcd46539ca0e7b1b3320" category="list-text"><block ref="f56e44396701dcd46539ca0e7b1b3320" category="inline-link-macro-rx"></block></block>
+  <block id="d1517db071086971f3453ded8278c7a1" category="inline-link-macro">隨用隨付訂閱</block>
+  <block id="beb65c517e5736532dac13881b116755" category="list-text"><block ref="beb65c517e5736532dac13881b116755" category="inline-link-macro-rx"></block></block>
+  <block id="746580535bc19093643356f95bde7a34" category="inline-link-macro">固定基數+按需付費超額訂閱</block>
+  <block id="1c1852e9d80a834e93713a1f977f8284" category="list-text"><block ref="1c1852e9d80a834e93713a1f977f8284" category="inline-link-macro-rx"></block></block>
+  <block id="21e74b3c28d006317f38a2bc8eb1da3b" category="inline-link-macro">Azure Marketplace</block>
+  <block id="eaf0150fe02dfa14aeba907403d82430" category="list-text"><block ref="fbbacee6d384df67d0c4b258087bb5d8" category="inline-link-macro-rx"></block> （所有訂閱選項）</block>
+  <block id="fbcb8e05bba1155469592f550e005cf6" category="paragraph">在註冊過程中、您可以選擇全球區域來主控 Data Infrastructure Insights 環境。有關詳細信息，請參閱 Data Infrastructure Insights <block ref="286a302a1ee50fd59eb368d3d9779037" category="inline-link-macro-rx"></block>（關於 Data Infrastructure Insights ）。</block>
+  <block id="48a6157894b0b86c589decc577da9409" category="paragraph">您也可以透過AWS Marketplace註冊免費試用。透過 AWS Marketplace 免費試用，您可以存取資料基礎設施洞察，試用期為 33 天。</block>
 </blocks>
