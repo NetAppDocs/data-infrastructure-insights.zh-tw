@@ -12654,4 +12654,5 @@
   <block id="eaf0150fe02dfa14aeba907403d82430" category="list-text"><block ref="fbbacee6d384df67d0c4b258087bb5d8" category="inline-link-macro-rx"></block> （所有訂閱選項）</block>
   <block id="fbcb8e05bba1155469592f550e005cf6" category="paragraph">在註冊過程中、您可以選擇全球區域來主控 Data Infrastructure Insights 環境。有關詳細信息，請參閱 Data Infrastructure Insights <block ref="286a302a1ee50fd59eb368d3d9779037" category="inline-link-macro-rx"></block>（關於 Data Infrastructure Insights ）。</block>
   <block id="48a6157894b0b86c589decc577da9409" category="paragraph">您也可以透過AWS Marketplace註冊免費試用。透過 AWS Marketplace 免費試用，您可以存取資料基礎設施洞察，試用期為 33 天。</block>
+  <block id="fc51886cff6ff32716f8675890366527" category="admonition">DII 會查看監控創建前一周的所有現有數據，並發現任何持續超過 30 分鐘的顯著數據峰值或下降——這些都被視為異常。在第二週（「學習」階段），隨著收集和分析的數據點越來越多，警報中的「噪音」可能會增加。但在接下來的幾周里，隨著數據分析的增多，這種「噪音」通常會減少。</block>
 </blocks>
