@@ -11,7 +11,7 @@ summary: Data Infrastructure Insights 會從 NetApp Active IQ 數位顧問（也
 
 
 [role="lead"]
-NetApp link:https://www.netapp.com/us/products/data-infrastructure-management/active-iq.aspx["Active IQ Digital Advisor"]（也稱為數位顧問）為 NetApp 客戶的硬體 / 軟體系統提供一系列視覺化，分析及其他支援相關服務。Digital Advisor 所報告的資料可加強系統問題的疑難排解，並可深入瞭解與您的裝置相關的最佳化與預測分析。
+NetApp link:https://docs.netapp.com/us-en/active-iq/["Active IQ Digital Advisor"]（也稱為數位顧問）為 NetApp 客戶的硬體 / 軟體系統提供一系列視覺化，分析及其他支援相關服務。Digital Advisor 所報告的資料可加強系統問題的疑難排解，並可深入瞭解與您的裝置相關的最佳化與預測分析。
 
 Data Infrastructure Insights 會針對任何由數位顧問監控和報告的 NetApp 叢集式 Data ONTAP 儲存系統，收集 * 風險 * 。Data Infrastructure Insights 會自動收集儲存系統回報的風險、作為從這些裝置收集資料的一部分。您必須將適當的資料收集器新增至 Data Infrastructure Insights ，以收集 Digital Advisor 風險資訊。
 

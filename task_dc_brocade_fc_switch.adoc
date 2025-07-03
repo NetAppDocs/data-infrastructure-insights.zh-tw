@@ -153,12 +153,38 @@ Data Infrastructure Insights 會從 Brocade FC 交換器資料收集器取得下
 | 錯誤：「 Data Infrastructure Insights Received Invalid Chassis Role 」 | 檢查在此資料來源中設定的使用者是否已獲得機箱角色權限。 
 
 
-| 錯誤：「不相符的機箱IP位址」 | 變更資料來源組態以使用機箱IP位址。 
+| 錯誤：「不相符的機箱IP位址」 | 一般來說，DII 不支援擷取單元和裝置之間的網路位址轉換或連接埠位址轉換。 DII可能偵測到收集器配置中的主機名稱/IP 位址與裝置認為的任何位址都不符。 
 
 
 | 收到一則訊息、指出有超過1個節點登入Access Gateway連接埠 | 請檢查NPV裝置是否正常運作、以及所有連接的WWN是否正常運作。請勿直接取得NPV裝置。相反地、取得核心Fabric交換器將會收集NPV裝置資料。 
 
 
+| 錯誤：....登入的最大遠端會話數... | FOS 對每個使用者角色支援的並發 SSH 會話數量有不同的限制。 DII連接到此裝置的 SSH 會話在登入時因違反這些限製而被拒絕。這可能表示您有重複的收集器發現了相同資產，應避免這種情況。 
+|===
+
+
+=== 效能
+
+[cols="2*"]
+|===
+| 問題： | 試用： 
+
+
 | 效能收集失敗、並顯示「傳送 SNMP 要求時逾時」。 | 視查詢變數和交換器組態而定、某些查詢可能會超過預設逾時。link:https://kb.netapp.com/Cloud/BlueXP/DII/Data_Infrastructure_Insights_Brocade_data_source_fails_performance_collection_with_a_timeout_due_to_default_SNMP_configuration["深入瞭解"]。 
+
+
+| 效能收集失敗，原因為...SNMP 表中發現重複行... | DII 偵測到錯誤的 SNMP 回應。您運行的可能是 FOS 8.2.3e。請升級至 8.2.3e2 或更高版本。 
+
+
+| 效能收集失敗，原因為...未知使用者名稱... | 您已為 DII 收集器設定了「SNMP 使用者名稱」值，但該值未插入 SNMPv3 使用者插槽。僅在 Brocade FOS 上建立使用者並不一定能將其啟用為 SNMPv3 使用者 - 您必須將其插入 v3 使用者插槽。 
+
+
+| 效能收集失敗，原因為...不支援的安全等級... | 您已將 DII 收集器設定為使用 SNMPv3，但相關裝置上未啟用加密（又稱隱私）和/或授權設定。 
+
+
+| 效能收集失敗，顯示...隱私密碼為空，僅允許使用隱私協定 NONE | 您已將 DII 收集器設定為使用 SNMPv3，並使用加密又稱為隱私協定（AES 等），但您的「SNMP 隱私密碼」值為空，因此 DII 無法與此裝置協商加密的 SNMPv3 資料流 
+
+
+| 效能收集失敗，錯誤為.....VF：nn，無存取權限... | 您已將 DII 收集器設定為在啟用了多個虛擬光纖通道 (VF) 的裝置上使用 SNMPv3，但 SNMPv3 使用者不具備 VF NN 的權限。 DII不支援對實體資產進行部分發現 - 您應該始終主動授予 DII 對所有 128 個可能的 VF 的存取權限，因為 DII 始終會嘗試檢索給定實體裝置上任何現有 VF 的效能資料。 
 |===
 您可以在頁面或中找到其他link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]資訊。

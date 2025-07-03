@@ -12151,7 +12151,6 @@
   <block id="a2efde4371837d491f7f2d093cb687a2" category="paragraph"><block ref="6239b49ee0db956af965dd1ce0c92bfa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="67cdd97ee57ecbb8d5397980e2f337b2" category="summary">Data Infrastructure Insights 會從 NetApp Active IQ 數位顧問（也稱為數位顧問）收集風險資料</block>
   <block id="dab2edf9eaac3950e92c281ce358af01" category="doc">Active IQ Digital Advisor</block>
-  <block id="c68ffc18976c6478ceba645cdcfe3ad4" category="paragraph">NetApp <block ref="cbe8da543274ee624cafab4e3c376bb9" category="inline-link-macro-rx"></block>（也稱為數位顧問）為 NetApp 客戶的硬體 / 軟體系統提供一系列視覺化，分析及其他支援相關服務。Digital Advisor 所報告的資料可加強系統問題的疑難排解，並可深入瞭解與您的裝置相關的最佳化與預測分析。</block>
   <block id="bb4ab99c035d10d75227562a13f30fbd" category="paragraph">Data Infrastructure Insights 會針對任何由數位顧問監控和報告的 NetApp 叢集式 Data ONTAP 儲存系統，收集 * 風險 * 。Data Infrastructure Insights 會自動收集儲存系統回報的風險、作為從這些裝置收集資料的一部分。您必須將適當的資料收集器新增至 Data Infrastructure Insights ，以收集 Digital Advisor 風險資訊。</block>
   <block id="5b3f4c933f6bb8b2000bc2d18617bf70" category="paragraph">資料基礎架構洞見不會顯示 ONTAP 系統的風險資料，這些系統並未受到數位顧問監控和回報。</block>
   <block id="512f021ba1976438e7134e934898c5bd" category="paragraph">報告的風險會顯示在「風險」表的資料基礎架構洞見（位於 _storage _ 和 _ 儲存節點 _ 資產登陸頁面）中。下表顯示風險詳細資料，風險類別及風險的潛在影響，並提供數位顧問頁面的連結，其中摘要說明儲存節點的所有風險（需要 NetApp 支援帳戶登入）。</block>
@@ -12655,4 +12654,18 @@
   <block id="fbcb8e05bba1155469592f550e005cf6" category="paragraph">在註冊過程中、您可以選擇全球區域來主控 Data Infrastructure Insights 環境。有關詳細信息，請參閱 Data Infrastructure Insights <block ref="286a302a1ee50fd59eb368d3d9779037" category="inline-link-macro-rx"></block>（關於 Data Infrastructure Insights ）。</block>
   <block id="48a6157894b0b86c589decc577da9409" category="paragraph">您也可以透過AWS Marketplace註冊免費試用。透過 AWS Marketplace 免費試用，您可以存取資料基礎設施洞察，試用期為 33 天。</block>
   <block id="0fb60d67e2b52b6e6bca8533e617e698" category="admonition">創建監視器後，DII 會查看前一周的所有現有數據，以發現顯著的數據峰值或下降；這些峰值或下降被視為異常。在監視器創建後的第一周（“學習”階段），警報中的“噪音”可能會增加。為了減輕這種噪音，只有持續時間超過 30 分鐘的峰值或下降才會被視為異常並產生警報。在接下來的一周裡，隨著更多數據的分析，噪音通常會減少，並且持續一段時間的顯著峰值或下降都將被視為異常。</block>
+  <block id="7a20b5e6e74635b92f5666cd649ddfcc" category="paragraph">NetApp <block ref="f2ce28f6c068a59381fa4a12e4e21d63" category="inline-link-macro-rx"></block>（也稱為數位顧問）為 NetApp 客戶的硬體 / 軟體系統提供一系列視覺化，分析及其他支援相關服務。Digital Advisor 所報告的資料可加強系統問題的疑難排解，並可深入瞭解與您的裝置相關的最佳化與預測分析。</block>
+  <block id="75aa1464e2cc1e0b9a103a1ed29b926c" category="cell">一般來說，DII 不支援擷取單元和裝置之間的網路位址轉換或連接埠位址轉換。 DII可能偵測到收集器配置中的主機名稱/IP 位址與裝置認為的任何位址都不符。</block>
+  <block id="9591ee2075b3837328ec834b9318e6fd" category="cell">錯誤：....登入的最大遠端會話數...</block>
+  <block id="9c157f91c84bf6ed98e9e4dc1f4e93da" category="cell">FOS 對每個使用者角色支援的並發 SSH 會話數量有不同的限制。 DII連接到此裝置的 SSH 會話在登入時因違反這些限製而被拒絕。這可能表示您有重複的收集器發現了相同資產，應避免這種情況。</block>
+  <block id="8f11f053224e09627ccc999dee93a80d" category="cell">效能收集失敗，原因為...SNMP 表中發現重複行...</block>
+  <block id="467d1dc00ef5f225297dd855ea67d851" category="cell">DII 偵測到錯誤的 SNMP 回應。您運行的可能是 FOS 8.2.3e。請升級至 8.2.3e2 或更高版本。</block>
+  <block id="f42d37ad24590fafdd93dde1ee7e6f79" category="cell">效能收集失敗，原因為...未知使用者名稱...</block>
+  <block id="c2bcfc128dfe47b6cf1fb0bb2692cd17" category="cell">您已為 DII 收集器設定了「SNMP 使用者名稱」值，但該值未插入 SNMPv3 使用者插槽。僅在 Brocade FOS 上建立使用者並不一定能將其啟用為 SNMPv3 使用者 - 您必須將其插入 v3 使用者插槽。</block>
+  <block id="8861809df1f65f69315eda11de0ed238" category="cell">效能收集失敗，原因為...不支援的安全等級...</block>
+  <block id="8b5084d74c95a6be4f7e840c45b1bb75" category="cell">您已將 DII 收集器設定為使用 SNMPv3，但相關裝置上未啟用加密（又稱隱私）和/或授權設定。</block>
+  <block id="52fd100dcb3cd52b2b71dcd8d77edfca" category="cell">效能收集失敗，顯示...隱私密碼為空，僅允許使用隱私協定 NONE</block>
+  <block id="871dd9472775ddbfdce3884fbc6130a5" category="cell">您已將 DII 收集器設定為使用 SNMPv3，並使用加密又稱為隱私協定（AES 等），但您的「SNMP 隱私密碼」值為空，因此 DII 無法與此裝置協商加密的 SNMPv3 資料流</block>
+  <block id="5fc13cc8fea1e8f6d7dfd8f19d75023f" category="cell">效能收集失敗，錯誤為.....VF：nn，無存取權限...</block>
+  <block id="cda70acc46e3d1a4dc1d0f11bb28b33f" category="cell">您已將 DII 收集器設定為在啟用了多個虛擬光纖通道 (VF) 的裝置上使用 SNMPv3，但 SNMPv3 使用者不具備 VF NN 的權限。 DII不支援對實體資產進行部分發現 - 您應該始終主動授予 DII 對所有 128 個可能的 VF 的存取權限，因為 DII 始終會嘗試檢索給定實體裝置上任何現有 VF 的效能資料。</block>
 </blocks>
