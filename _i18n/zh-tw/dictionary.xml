@@ -6241,8 +6241,6 @@
   <block id="2d9b30e80afc5eb380c508d14b4f0676" category="list-text">準備好之後、請複製 KUBECtl 套用程式碼片段、下載並執行、以部署操作員。</block>
   <block id="cc56bec82b2c1d802e942018b5923042" category="list-text">安裝會自動繼續進行。完成後、按一下 _ 下一步 _ 按鈕。</block>
   <block id="512795526de87931c50ae79cb1cb0a2b" category="list-text">安裝完成後、按一下 _ 下一步 _ 按鈕。請務必刪除或安全儲存 _operer-Secrets 。 yaml_ 檔案。</block>
-  <block id="faaf8961a729f548e51c3b9f1af0f7e8" category="inline-xref">設定 Proxy</block>
-  <block id="2954bdba102f234c90367d1425951c86" category="paragraph">如果您使用的是 Proxy ，請參閱關於<block ref="1a6ccc12a618fccf7330b5bee5bca7b7" category="inline-xref-macro-rx"></block>。</block>
   <block id="c149af672528f58d22f99809653add8a" category="inline-xref">使用自訂 / 私有泊塢視窗儲存庫</block>
   <block id="84cce7a55f3a5c0926f355d54120bd4b" category="paragraph">如果您有自訂儲存庫，請閱讀關於<block ref="5616d0aefbf2e33b5f6c94a93c02e259" category="inline-xref-macro-rx"></block>。</block>
   <block id="ce4c84a03d990672d77b5332c35eaada" category="section-title">Kubernetes 監控元件</block>
@@ -12414,7 +12412,6 @@
   <block id="0ccd64b2e6202fbb544d22cd48a872b2" category="inline-link-macro">這篇GitHub文章</block>
   <block id="8f176f657f418586c2a4828045ab0c37" category="cell">這是已知的問題。如<block ref="23bd9a1f0b26414ad35f4299a95464f0" category="inline-link-macro-rx"></block>需詳細資訊、請參閱。只要Telegraf已啟動且正在執行、使用者就可以忽略這些錯誤訊息。</block>
   <block id="9aab00e938cede2932654042bc507309" category="cell">在Kubernetes上、我的Telegraf pod報告下列錯誤：「處理mountstats資訊時發生錯誤：無法開啟mountstats檔案：/hostfs/proc/1/mountstats、錯誤：開啟/hostfs/proc/1/mountstats：權限遭拒」</block>
-  <block id="4123cf4f6521073cef46192908207644" category="cell">如果啟用並強制執行 SELinux 、則可能會阻止 Telegraf Pod 存取 Kubernetes 節點上的 /proc/1/mountstats 檔案。若要克服此限制、請編輯 agentconfiguration 、然後啟用 RunPrivileged 設定。如需詳細資訊、請<block ref="f28efb863bb7dfcdf91b1badf5c0c340" category="inline-link-macro-rx"></block>參閱。</block>
   <block id="f997e79142f159c33823b9deeab809eb" category="cell">在Kubernetes上、我的Telegraf ReplicaSet pod報告下列錯誤：[inputs.prometheus]錯誤in plugin：Could not load keypair /etc/Kubernetes /pi/etcd/server.crt：/etc/Kubernetes /pi/etcd/server.key：open /etc/Kubernetes /pi/etcd/server.crt目錄或這樣的檔案</block>
   <block id="9df12d675c4f61381132e45173ef90d0" category="cell">Telegraf ReplicaSet Pod可在指定為主節點或etcd節點上執行。如果ReplicaSet Pod未在其中一個節點上執行、您將會收到這些錯誤。檢查您的主節點/ etcd節點是否有問題。如果有、請將必要的容許值新增至Telegraf ReplicaSet、Telegraf-RS。例如、編輯ReplicaSet... kurbectl編輯RS Telefra-RS ...、並將適當的容許值新增至規格。然後重新啟動ReplicaSet Pod。</block>
   <block id="7f213685ee85ff84e10c6c9b9c633789" category="cell">我有PSP/PSA.環境。這是否會影響我的監控操作員？</block>
@@ -12668,4 +12665,5 @@
   <block id="871dd9472775ddbfdce3884fbc6130a5" category="cell">您已將 DII 收集器設定為使用 SNMPv3，並使用加密又稱為隱私協定（AES 等），但您的「SNMP 隱私密碼」值為空，因此 DII 無法與此裝置協商加密的 SNMPv3 資料流</block>
   <block id="5fc13cc8fea1e8f6d7dfd8f19d75023f" category="cell">效能收集失敗，錯誤為.....VF：nn，無存取權限...</block>
   <block id="cda70acc46e3d1a4dc1d0f11bb28b33f" category="cell">您已將 DII 收集器設定為在啟用了多個虛擬光纖通道 (VF) 的裝置上使用 SNMPv3，但 SNMPv3 使用者不具備 VF NN 的權限。 DII不支援對實體資產進行部分發現 - 您應該始終主動授予 DII 對所有 128 個可能的 VF 的存取權限，因為 DII 始終會嘗試檢索給定實體裝置上任何現有 VF 的效能資料。</block>
+  <block id="8ff9d3e7325b20dc214cb38b6233f6c6" category="cell">如果啟用並強制執行 SELinux 、則可能會阻止 Telegraf Pod 存取 Kubernetes 節點上的 /proc/1/mountstats 檔案。若要克服此限制、請編輯 agentconfiguration 、然後啟用 RunPrivileged 設定。有關更多詳細信息，請參閱 OpenShift 說明。</block>
 </blocks>
