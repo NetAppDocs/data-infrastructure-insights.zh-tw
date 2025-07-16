@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: task_dc_google_cloud_netapp_volumes.html 
-summary: 設定 Google Cloud NetApp Volumes 資料收集器 
+summary: 設定Google Cloud NetApp Volumes資料收集器。 
 keywords: data collector, queries, create, google, cloud, volumes, 
 ---
-= NetApp Google Cloud NetApp Volumes 資料收集器
+= Google Cloud NetApp Volumes資料收集器
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,13 +14,13 @@ keywords: data collector, queries, create, google, cloud, volumes,
 
 
 [role="lead"]
-此資料收集器支援從 Google NetApp Cloud Volumes 雲端平台組態收集庫存和效能。這個收集器將會尋找一個 Google 組織內所有專案中的所有運算資源。如果您想透過 Data Infrastructure Insights 探索多個 Google 組織、您將想要為每個組織部署一個 Data Infrastructure Insights 收集器。
+此資料收集器支援從Google Cloud NetApp Volumes配置中收集清單和效能資訊。它能夠發現 Google 組織內所有專案中的NetApp磁碟區和儲存資源。如果您希望使用Data Infrastructure Insights監控多個 Google 組織，請為每個組織部署一個收集器。
 
 
 
 == 服務帳戶需求
 
-* 您必須依照中的指示建立服務帳戶link:https://cloud.google.com/iam/docs/creating-managing-service-accounts["建立 / 管理服務帳戶"]。此類服務帳戶會以唯一的 ID 識別、稱為 _clientId_ 、將用作使用者名稱。
+* 您必須依照中的指示建立服務帳戶link:https://cloud.google.com/iam/docs/creating-managing-service-accounts["建立 / 管理服務帳戶"]。此服務帳戶由唯一 ID（稱為 _clientId_）標識，該 ID 將用作使用者名稱。
 * 此外，請依照中的指示建立服務帳戶金鑰link:https://cloud.google.com/iam/docs/creating-managing-service-account-keys["建立 / 管理服務帳戶金鑰"]。此金鑰可下載為 json 檔案、其內容將用作密碼。
 * 服務帳戶的範圍必須為 _compuing.readonly_ 、 _monitoring.read_ 和 _Cloud 平台 _ 。
 
@@ -29,7 +29,7 @@ keywords: data collector, queries, create, google, cloud, volumes,
 
 == 組態
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 欄位 | 說明 
 
@@ -40,7 +40,7 @@ keywords: data collector, queries, create, google, cloud, volumes,
 | 選擇「排除」或「包含」，依「地點」篩選 GCNV 資產 | 此預設為「排除」，因為此收集器預設會探索貴組織全球的所有 GCNV Volume 。 
 
 
-| GCNV 排除 / 包含位置 | 這預設為空白，並與「選擇「排除」或「包含」選項搭配使用。如果您只想探索世界特定區域內的資產，可以利用這兩個選項來限制收集器的範圍 
+| GCNV 排除 / 包含位置 | 預設為空，與「選擇『排除』或『包含』選項」一起使用。如果您只想發現特定區域內的資產，請使用這兩個選項來限制此收集器的範圍。 
 
 
 | 專案ID | 根據「選擇「排除」...值的值、您要在探索中或從探索中篩選的專案ID清單。預設清單為空白 
@@ -55,7 +55,7 @@ keywords: data collector, queries, create, google, cloud, volumes,
 
 == 進階組態
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 欄位 | 說明 
 
@@ -63,7 +63,7 @@ keywords: data collector, queries, create, google, cloud, volumes,
 | 庫存輪詢時間間隔（分鐘） | 預設為60分鐘 
 
 
-| 使用 AU Proxy 進行 REST API 呼叫 | 此核取方塊會使收集器使用與收集器所在 AU 相同的 Proxy 。此功能預設為未啟用，這表示收集器會嘗試將 HTTPS API 呼叫直接傳送至 Google 。 
+| 使用 AU Proxy 進行 REST API 呼叫 | 選擇此選項可讓收集器使用與其所在的採集單元相同的代理程式。預設情況下，此選項處於停用狀態，這表示收集器會嘗試直接向 Google 發送 HTTPS API 呼叫。 
 
 
 | 標示要篩選虛擬機器的金鑰和值 | 按一下「*+篩選標籤*」、即可篩選符合VM機碼和標籤值的機碼和值、以選擇要包含/排除的VM（及相關磁碟）。「標籤金鑰」為必填、「標籤值」為選用項目。當Label值為空白時、只要VM符合Label Key、就會進行篩選。 

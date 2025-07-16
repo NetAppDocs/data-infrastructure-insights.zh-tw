@@ -2,16 +2,19 @@
 sidebar: sidebar 
 permalink: telegraf_agent_k8s_config_options.html 
 keywords: telegraf, installation, install, agent, telegraf agent, kubernetes, eks, operator, k8s, options, configuration 
-summary: NetApp Kubernetes 監控營運者有許多可設定的選項。 
+summary: 使用 AgentConfiguration 選項設定NetApp Kubernetes Monitoring Operator。 
 ---
 = Kubernetes 監控操作員組態選項
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]
-link:task_config_telegraf_agent_k8s.html#configuringcustomizing-the-operator["Kubernetes 監控營運者"]您可以自訂組態。
+這link:task_config_telegraf_agent_k8s.html#configuringcustomizing-the-operator["Kubernetes 監控營運者"]透過 AgentConfiguration 檔案提供豐富的自訂選項。配置資源限制、收集間隔、代理設定、容忍度以及 telegraf、kube-state-metrics、日誌收集、工作負載映射、變更管理等元件的特定設置，以優化 Kubernetes 環境的監控。
 
 下表列出 _AgentConfiguration_ 檔案的可能選項：
 
@@ -131,7 +134,7 @@ link:task_config_telegraf_agent_k8s.html#configuringcustomizing-the-operator["Ku
 |  | 公差 | Kube-state - 衡量其他容忍度。 
 
 
-|  | 標籤 | 以逗號分隔的資源清單應擷取 +++ 範例： cronjobs=[*],daemonsets=[*],plasing=[*],inges=[*],jobs=[*],vedemas=[*],nodes=[*],sterentvolumes=[*,equpos=*[*],equas*[* 
+|  | 標籤 | kube-state-metrics 應捕獲標籤的資源的逗號分隔清單 +++ 範例：cronjobs=[*],daemonsets=[*],deployments=[*],ingresses=[*],jobs=[*],namespaces=[*],nodes=[*], persistentvolumeclaims=[*],persistentvolumes=[*],pods=[*],replicasets=[*],resourcequotas=[*],services=[*],statefulsets=[*] +++ 
 
 
 | 記錄 |  | 可自訂記錄收集和安裝操作員的組態選項 
@@ -200,7 +203,7 @@ link:task_config_telegraf_agent_k8s.html#configuringcustomizing-the-operator["Ku
 |  | MemRequest | mem 要求 change-觀察者 water-RS 
 
 
-|  | Failure宣言 IntermalMins | 未成功部署工作負載的時間間隔（以分鐘為單位）將標示為失敗 
+|  | 工作負載失敗宣告間隔秒數 | 工作負載部署失敗後將被標記為失敗的時間間隔（以秒為單位） 
 
 
 |  | deployAggrIntervalSeconds | 工作負載部署進行中事件的傳送頻率 
@@ -454,8 +457,8 @@ spec:
     # cpuRequest: '500m'
     # memRequest: '500Mi'
 
-    # # Interval in minutes after which a non-successful deployment of a workload will be marked as failed
-    # failureDeclarationIntervalMins: '30'
+    # # Interval after which a non-successful deployment of a workload will be marked as failed, in seconds
+    # workloadFailureDeclarationIntervalSeconds: '30'
 
     # # Frequency at which workload deployment in-progress events are sent
     # deployAggrIntervalSeconds: '300'
