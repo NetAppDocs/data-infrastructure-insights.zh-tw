@@ -12667,4 +12667,6 @@
   <block id="c84711fe6ad5fa23070462b2086412e2" category="cell">kube-state-metrics 應捕獲標籤的資源的逗號分隔清單 +++ 範例：cronjobs=[*],daemonsets=[*],deployments=[*],ingresses=[*],jobs=[*],namespaces=[*],nodes=[*], persistentvolumeclaims=[*],persistentvolumes=[*],pods=[*],replicasets=[*],resourcequotas=[*],services=[*],statefulsets=[*] +++</block>
   <block id="f7b8b6cbce2f95ef7109d41adce08b69" category="cell">工作負載失敗宣告間隔秒數</block>
   <block id="02c3ccd1d51babc54da2759d79e61c5c" category="cell">工作負載部署失敗後將被標記為失敗的時間間隔（以秒為單位）</block>
+  <block id="8edfed76354af11279c58c2d91948eda" category="cell">流利位元容器日誌路徑</block>
+  <block id="3150c73f1d1522f3b831f0d591077194" category="cell">預設情況下，Fluentbit DaemonSet 將掛載 /var/log 和 /var/lib/docker/containers 主機路徑來存取/讀取 Kubernetes 容器日誌。如果 Kubernetes 已設定為將容器記錄檔放置在非預設位置，請使用此選項修改 Fluentbit DaemonSet 以掛載非預設路徑。</block>
 </blocks>
