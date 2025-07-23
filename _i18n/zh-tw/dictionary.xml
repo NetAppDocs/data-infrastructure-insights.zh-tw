@@ -10626,11 +10626,8 @@
   <block id="b33aed8f3134996703dc39f9a7c95783" category="cell">代理程式</block>
   <block id="4e49d105e5ecfd95da78eb980f698488" category="cell">操作員可以安裝的所有元件通用的組態選項。這些選項可視為「整體」選項。</block>
   <block id="286bec770910c4da609323e21222e283" category="cell">dockerRepo</block>
-  <block id="55f37f5127b4085cc0881e89df336196" category="cell">相較於 Data Infrastructure Insights 泊塢視窗 repo 、 dockerRepo 會置換以從「客戶」的「私有」泊塢視窗中提取影像。預設為 Data Infrastructure Insights 泊塢視窗 repo</block>
   <block id="994be3a18bf7e0a16ab2be2d5c1643ae" category="cell">dockerImagePullSecret</block>
-  <block id="9f033a5b208feb9ef67ab1def3051525" category="cell">選用：客戶的秘密私人回購</block>
   <block id="343d28c140c3f5ce20a1ac3f8f7dae2c" category="cell">叢集名稱</block>
-  <block id="5a550f6f445193e3c7e81200a2c9d8de" category="cell">可唯一識別所有客戶叢集的任意文字欄位。這在 Data Infrastructure Insights 租戶中應該是獨一無二的。預設是客戶在 UI 中輸入的「叢集名稱」欄位</block>
   <block id="5c7af4a6b686285084e62f255503c141" category="cell">Proxy 格式： Proxy ：伺服器：連接埠：使用者名稱：密碼： NoProxy ：啟用 ISTelegrafProxy: 啟用 isAuProxy: 啟用 isFluentbitProxy: 啟用 isCollectorProxy: 啟用 isCollectorProxy:</block>
   <block id="f8ac74d8a3668ddf89efeb8e806ca908" category="cell">可選擇設定 Proxy 。這通常是客戶的公司代理。</block>
   <block id="0c8011c6947aae43789eb8972c306e85" category="cell">可自訂電信業者安裝的組態選項</block>
@@ -10720,10 +10717,6 @@
   <block id="6e753299d008aca89690ad5b5c6b784f" category="cell">change-觀察者 water-RS 的記憶體限制</block>
   <block id="582e83d73d36aa6674624867468704da" category="cell">CPU 要求變更觀察者手錶 -RS</block>
   <block id="d73c96f8e69fcf08ffd440cc16f573af" category="cell">mem 要求 change-觀察者 water-RS</block>
-  <block id="c055d40d7bbe856522ad8c59006f6754" category="cell">deployAggrIntervalSeconds</block>
-  <block id="e06e4cc3c2b6796e0850387e7147734e" category="cell">工作負載部署進行中事件的傳送頻率</block>
-  <block id="43aa9b44901fa9982cd6c7faf3f97402" category="cell">NonWorkloadAggrIntervalSeconds</block>
-  <block id="cff422cbad1df823699a6830f754d451" category="cell">非工作負載部署的組合與傳送頻率</block>
   <block id="6d53bc2f7711e2d9a24631defb23b18f" category="cell">termsToRedact</block>
   <block id="532aa006f97c495d1734618405645779" category="cell">env 名稱和資料對應中使用的一組規則運算式，其值將會被編修範例詞彙： "pwd" ， "password" ， "toke" ， "apikey" ， "api-key" ， "JWt"</block>
   <block id="44011a6b8af68cc46d2d0dfb669fd887" category="cell">其他 KindsToWatch</block>
@@ -11290,7 +11283,6 @@
   <block id="ca351e1a429ee72dbdb2061c22743ef6" category="list-text">瀏覽 * 可服務性 &gt; 瀏覽 -&gt; + 新指標查詢 * 。</block>
   <block id="5e7f24385025eba3461014d3d964455b" category="paragraph">若要移除非作用中的裝置，只要選取要移除的裝置，然後在 * 大量動作 * 下拉式清單中，選取 _ 刪除非作用中的裝置 _ 。</block>
   <block id="72a442c57900f55848aa4acb856a507d" category="sidebar">識別非使用中的裝置</block>
-  <block id="2f461803a8b3a27284482a32459a1078" category="cell">EE 本<block ref="0dcd3ea27696029fecb8ccd7e247f633" category="inline-link-macro-rx"></block>。設定 _ 無保護 _ 會指示 Kubernetes 監控營運者以旗標執行 Telegraf 。<block ref="3a41393afb053a415e6dc30cf704d899" prefix=" " category="inline-code"></block></block>
   <block id="0860569a69c3584507ee09f4be585418" category="cell">insecureK8sSkipVerify</block>
   <block id="3008cd3125cccc003fa13335717e556e" category="cell">如果由於缺少 IP SAN 而導致 Telegraf 無法驗證憑證，請嘗試啟用驗證跳過</block>
   <block id="9e43104f0687bd3a308759c5411641d7" category="paragraph"><block ref="9e43104f0687bd3a308759c5411641d7" category="inline-link-macro-rx"></block></block>
@@ -12663,10 +12655,20 @@
   <block id="44690d418c76e0ca92d23ed5623ea33b" category="cell">預設為空，與「選擇『排除』或『包含』選項」一起使用。如果您只想發現特定區域內的資產，請使用這兩個選項來限制此收集器的範圍。</block>
   <block id="c3fd7f4eb7ebff0a7ad57fe275b56834" category="cell">選擇此選項可讓收集器使用與其所在的採集單元相同的代理程式。預設情況下，此選項處於停用狀態，這表示收集器會嘗試直接向 Google 發送 HTTPS API 呼叫。</block>
   <block id="ae4768c261eca8a6c88e3f5101e586e5" category="summary">使用 AgentConfiguration 選項設定NetApp Kubernetes Monitoring Operator。</block>
-  <block id="4b6ede77804c1986eba28cc32fdecda4" category="paragraph">這<block ref="025a80672f7feae526479c9984c435c7" category="inline-link-macro-rx"></block>透過 AgentConfiguration 檔案提供豐富的自訂選項。配置資源限制、收集間隔、代理設定、容忍度以及 telegraf、kube-state-metrics、日誌收集、工作負載映射、變更管理等元件的特定設置，以優化 Kubernetes 環境的監控。</block>
   <block id="c84711fe6ad5fa23070462b2086412e2" category="cell">kube-state-metrics 應捕獲標籤的資源的逗號分隔清單 +++ 範例：cronjobs=[*],daemonsets=[*],deployments=[*],ingresses=[*],jobs=[*],namespaces=[*],nodes=[*], persistentvolumeclaims=[*],persistentvolumes=[*],pods=[*],replicasets=[*],resourcequotas=[*],services=[*],statefulsets=[*] +++</block>
   <block id="f7b8b6cbce2f95ef7109d41adce08b69" category="cell">工作負載失敗宣告間隔秒數</block>
   <block id="02c3ccd1d51babc54da2759d79e61c5c" category="cell">工作負載部署失敗後將被標記為失敗的時間間隔（以秒為單位）</block>
   <block id="8edfed76354af11279c58c2d91948eda" category="cell">流利位元容器日誌路徑</block>
   <block id="3150c73f1d1522f3b831f0d591077194" category="cell">預設情況下，Fluentbit DaemonSet 將掛載 /var/log 和 /var/lib/docker/containers 主機路徑來存取/讀取 Kubernetes 容器日誌。如果 Kubernetes 已設定為將容器記錄檔放置在非預設位置，請使用此選項修改 Fluentbit DaemonSet 以掛載非預設路徑。</block>
+  <block id="7e5bd63d855501c5e08449ea5b593ee7" category="summary">監控基礎設施健康狀況</block>
+  <block id="48f51aa9a5737857bbd298bfb874281e" category="doc">監控基礎設施健康狀況</block>
+  <block id="a2c6fd0b23854404c386430346919db8" category="paragraph">這<block ref="025a80672f7feae526479c9984c435c7" category="inline-link-macro-rx"></block>透過 AgentConfiguration 檔案提供豐富的自訂選項。您可以設定資源限制、收集間隔、代理設定、容差以及特定於元件的設置，以最佳化 Kubernetes 環境的監控。使用這些選項可以自訂 telegraf、kube-state-metrics、日誌收集、工作負載映射、變更管理和其他監控元件。</block>
+  <block id="ea55ba51f0b69383ec5bb89cabada638" category="cell">dockerRepo 覆蓋，用於從客戶的私有 Docker 儲存庫（而不是Data Infrastructure Insights Docker 儲存庫）拉取映像。預設為Data Infrastructure Insights Docker 儲存庫。</block>
+  <block id="8e8bb119221ff93e3f93bea9ae89444f" category="cell">可選：客戶私有儲存庫的秘密。</block>
+  <block id="82b5c50bc4616a08a16b907f9dd29573" category="cell">自由文字字段，用於在所有客戶集群中唯一標識一個集群。此欄位在Data Infrastructure Insights租用戶中應是唯一的。預設值為客戶在 UI 中為「叢集名稱」欄位輸入的內容。</block>
+  <block id="d466d69e5a5f62e5d6773f7d399fe086" category="cell">看看這個<block ref="0dcd3ea27696029fecb8ccd7e247f633" category="inline-link-macro-rx"></block> 。設定 _unprotected_ 將指示 Kubernetes Monitoring Operator 使用下列方式執行 Telegraf <block ref="3a41393afb053a415e6dc30cf704d899" prefix=" " category="inline-code"></block>旗幟。</block>
+  <block id="fded60399ef22b3b04bd3856d344233b" category="cell">工作負載部署聚合間隔秒數</block>
+  <block id="f5d43bfb3eaf806884e4936fc4453865" category="cell">合併和發送工作負載部署的頻率（以秒為單位）</block>
+  <block id="fb937d63289578595fb05fc626554661" category="cell">nonWorkloadDeployAggrIntervalSeconds</block>
+  <block id="e4685d20c866cca50df5bea5e4230497" category="cell">非工作負載部署合併發送的頻率（以秒為單位）</block>
 </blocks>

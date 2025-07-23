@@ -14,7 +14,7 @@ summary: 使用 AgentConfiguration 選項設定NetApp Kubernetes Monitoring Oper
 
 
 [role="lead"]
-這link:task_config_telegraf_agent_k8s.html#configuringcustomizing-the-operator["Kubernetes 監控營運者"]透過 AgentConfiguration 檔案提供豐富的自訂選項。配置資源限制、收集間隔、代理設定、容忍度以及 telegraf、kube-state-metrics、日誌收集、工作負載映射、變更管理等元件的特定設置，以優化 Kubernetes 環境的監控。
+這link:task_config_telegraf_agent_k8s.html#configuringcustomizing-the-operator["Kubernetes 監控營運者"]透過 AgentConfiguration 檔案提供豐富的自訂選項。您可以設定資源限制、收集間隔、代理設定、容差以及特定於元件的設置，以最佳化 Kubernetes 環境的監控。使用這些選項可以自訂 telegraf、kube-state-metrics、日誌收集、工作負載映射、變更管理和其他監控元件。
 
 下表列出 _AgentConfiguration_ 檔案的可能選項：
 
@@ -26,13 +26,13 @@ summary: 使用 AgentConfiguration 選項設定NetApp Kubernetes Monitoring Oper
 | 代理程式 |  | 操作員可以安裝的所有元件通用的組態選項。這些選項可視為「整體」選項。 
 
 
-|  | dockerRepo | 相較於 Data Infrastructure Insights 泊塢視窗 repo 、 dockerRepo 會置換以從「客戶」的「私有」泊塢視窗中提取影像。預設為 Data Infrastructure Insights 泊塢視窗 repo 
+|  | dockerRepo | dockerRepo 覆蓋，用於從客戶的私有 Docker 儲存庫（而不是Data Infrastructure Insights Docker 儲存庫）拉取映像。預設為Data Infrastructure Insights Docker 儲存庫。 
 
 
-|  | dockerImagePullSecret | 選用：客戶的秘密私人回購 
+|  | dockerImagePullSecret | 可選：客戶私有儲存庫的秘密。 
 
 
-|  | 叢集名稱 | 可唯一識別所有客戶叢集的任意文字欄位。這在 Data Infrastructure Insights 租戶中應該是獨一無二的。預設是客戶在 UI 中輸入的「叢集名稱」欄位 
+|  | 叢集名稱 | 自由文字字段，用於在所有客戶集群中唯一標識一個集群。此欄位在Data Infrastructure Insights租用戶中應是唯一的。預設值為客戶在 UI 中為「叢集名稱」欄位輸入的內容。 
 
 
 |  | Proxy 格式： Proxy ：伺服器：連接埠：使用者名稱：密碼： NoProxy ：啟用 ISTelegrafProxy: 啟用 isAuProxy: 啟用 isFluentbitProxy: 啟用 isCollectorProxy: 啟用 isCollectorProxy: | 可選擇設定 Proxy 。這通常是客戶的公司代理。 
@@ -107,7 +107,7 @@ summary: 使用 AgentConfiguration 選項設定NetApp Kubernetes Monitoring Oper
 |  | skipProcessorsAfterAggreaters | 請參閱 link:https://github.com/influxdata/telegraf/blob/master/docs/CONFIGURATION.md#agent["Telegraf 組態文件"] 
 
 
-|  | 未受保護 | EE 本link:https://community.influxdata.com/t/updating-telegraf-to-version-1-29-5-crashes-kubernetes-pod/33376["已知的 Telegraf 問題"]。設定 _ 無保護 _ 會指示 Kubernetes 監控營運者以旗標執行 Telegraf 。 `--unprotected` 
+|  | 未受保護 | 看看這個link:https://community.influxdata.com/t/updating-telegraf-to-version-1-29-5-crashes-kubernetes-pod/33376["已知的 Telegraf 問題"] 。設定 _unprotected_ 將指示 Kubernetes Monitoring Operator 使用下列方式執行 Telegraf  `--unprotected`旗幟。 
 
 
 |  | insecureK8sSkipVerify | 如果由於缺少 IP SAN 而導致 Telegraf 無法驗證憑證，請嘗試啟用驗證跳過 
@@ -209,10 +209,10 @@ summary: 使用 AgentConfiguration 選項設定NetApp Kubernetes Monitoring Oper
 |  | 工作負載失敗宣告間隔秒數 | 工作負載部署失敗後將被標記為失敗的時間間隔（以秒為單位） 
 
 
-|  | deployAggrIntervalSeconds | 工作負載部署進行中事件的傳送頻率 
+|  | 工作負載部署聚合間隔秒數 | 合併和發送工作負載部署的頻率（以秒為單位） 
 
 
-|  | NonWorkloadAggrIntervalSeconds | 非工作負載部署的組合與傳送頻率 
+|  | nonWorkloadDeployAggrIntervalSeconds | 非工作負載部署合併發送的頻率（以秒為單位） 
 
 
 |  | termsToRedact | env 名稱和資料對應中使用的一組規則運算式，其值將會被編修範例詞彙： "pwd" ， "password" ， "toke" ， "apikey" ， "api-key" ， "JWt" 
@@ -468,11 +468,11 @@ spec:
     # # Interval after which a non-successful deployment of a workload will be marked as failed, in seconds
     # workloadFailureDeclarationIntervalSeconds: '30'
 
-    # # Frequency at which workload deployment in-progress events are sent
-    # deployAggrIntervalSeconds: '300'
+    # # Frequency at which workload deployments are combined and sent, in seconds
+    # workloadDeployAggrIntervalSeconds: '300'
 
-    # # Frequency at which non-workload deployments are combined and sent
-    # nonWorkloadAggrIntervalSeconds: '15'
+    # # Frequency at which non-workload deployments are combined and sent, in seconds
+    # nonWorkloadDeployAggrIntervalSeconds: '15'
 
     # # A set of regular expressions used in env names and data maps whose value will be redacted
     # termsToRedact: '"pwd", "password", "token", "apikey", "api-key", "api_key", "jwt", "accesskey", "access_key", "access-key", "ca-file", "key-file", "cert", "cafile", "keyfile", "tls", "crt", "salt", ".dockerconfigjson", "auth", "secret"'
