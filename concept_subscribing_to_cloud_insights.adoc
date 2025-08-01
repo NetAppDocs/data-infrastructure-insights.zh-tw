@@ -64,7 +64,7 @@ NOTE: 如果您需要更多時間來評估 Data Infrastructure Insights 、而�
 
 您也可以透過AWS Marketplace註冊免費試用。透過 AWS Marketplace 免費試用，您可以存取資料基礎設施洞察，試用期為 33 天。
 
-AWS Marketplace免費試用版無法延長。您可以在試用期間隨時降級至 Data Infrastructure Insights Basic Edition 訂閱、或造訪 * 管理 -> 訂閱 * 頁面、變更為付費的 Data Infrastructure Insights 訂閱。
+AWS Marketplace 免費試用期無法延長。
 
 
 
