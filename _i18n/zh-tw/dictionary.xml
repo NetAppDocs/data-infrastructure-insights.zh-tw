@@ -5930,8 +5930,6 @@
   <block id="eff16f7e2ed55dec2fc30b6481ebf593" category="paragraph">MetroCluster 建議使用下列項目：</block>
   <block id="65b46bd8eed280f6feefa47f4a74d302" category="list-text">將兩個資料收集器連接至來源SVM、另一個連接至目的地SVM。</block>
   <block id="d5d55b52a220ca4d14feac2aa8b83d23" category="list-text">資料收集器應由_叢集IP_連線。</block>
-  <block id="c2e2e688fedcc6b98883e05a15afc9b8" category="list-text">在任何時候、一個資料收集器都應該在執行中、另一個則會發生錯誤。</block>
-  <block id="34d88af94446d0d86575e402898fc1b0" category="list-text">資料收集器從「錯誤」狀態移至「執行中」狀態最多需要兩分鐘的時間。</block>
   <block id="f0240b95ecfe16d637a84130b5ed57d9" category="section-title">服務原則</block>
   <block id="4cb8e0d8b1d299b402fd5ddce7d39cd5" category="paragraph">如果將服務原則搭配 ONTAP * 9.9.1 版或更新版本 * 使用、則為了連線至資料來源收集器、需要 _data-fpolicy_client_ 服務、以及資料服務 _data-NFS_ 和 / 或 _data-CIFS_ 。</block>
   <block id="ee22588534e4e3b699a85e968f56f4a7" category="paragraph">在9.9.1之前的ONTAP 版本中、不需要設定_data-fpolice-client_。</block>
@@ -12344,8 +12342,6 @@
   <block id="1b0825e538a70e8323fac1cbfe230ee5" category="paragraph">附註：您可以建立單一角色，用於自訂使用者的所有功能權限。如果有現有使用者，請先使用下列命令刪除現有的使用者和角色：</block>
   <block id="91f83541442d1c49aaf40212bccffad1" category="paragraph">附註：您可以建立單一角色，用於自訂使用者的所有功能權限。如果有現有使用者，請先使用下列命令刪除現有的使用者和角色：</block>
   <block id="858faeb682f19ff16f83d24c86cb97f7" category="cell">透過叢集IP新增SVM/叢集時、存取SVM/叢集的使用者名稱選項為：1.叢集管理2.'CsUser' 3.扮演類似CsUser角色的AD使用者。透過 SVM IP 新增時，選項為： 4. vsadmin 5.'CsUser' 6.與CsUser角色相似的AD使用者名稱。</block>
-  <block id="0851edbfbb1a0406acbc79df15296b3f" category="paragraph">目前「執行中」 SVM 的資料收集器會顯示為 _Running 。目前的「頂級」 SVM 資料收集器會顯示為 _Error_ 。</block>
-  <block id="046c8e391630ab49d75409e270a4f4b6" category="list-text">只要進行切換，資料收集器的狀態就會從「執行中」變更為「錯誤」，反之亦然。</block>
   <block id="7a69a2fce9a9acb9c8a84936863c1330" category="paragraph">請注意，如果在 ONTAP 上建立任何新的磁碟區等，而收集器處於暫停狀態，工作負載安全性就不會收集資料，這些磁碟區等也不會反映在儀表板或表格中。</block>
   <block id="0d55775dbf06cf5596fe0f5c3363f19a" category="list-text">根據暫停收集器上設定的設定，不會執行快照清除。</block>
   <block id="f8b4c5607366d38cf806b0860c9cc5e4" category="list-text">EMS 事件（例如 ONTAP ARP ）不會在暫停的收集器上處理。這表示如果 ONTAP 發現勒索軟體攻擊，資料基礎架構洞見工作負載安全性將無法取得該事件。</block>
@@ -12671,4 +12667,8 @@
   <block id="fb937d63289578595fb05fc626554661" category="cell">nonWorkloadDeployAggrIntervalSeconds</block>
   <block id="e4685d20c866cca50df5bea5e4230497" category="cell">非工作負載部署合併發送的頻率（以秒為單位）</block>
   <block id="1cd8d8ba87dcbd642231ac1e1fb52f76" category="paragraph">AWS Marketplace 免費試用期無法延長。</block>
+  <block id="f9140e559462604832a886e4eb558360" category="list-text">在任何時間點，一個資料收集器應該處於運作狀態，另一個資料收集器將顯示為_已停止_。</block>
+  <block id="a2c39bece4ce05e23c13d7dc078d390f" category="paragraph">目前「正在運行」的 SVM 的資料收集器將顯示為「正在運行」。目前「停止」的 SVM 資料收集器將顯示為「已停止」。</block>
+  <block id="e02fc5a08fc17a2cc71f90cc044645af" category="list-text">每當發生切換時，資料收集器的狀態就會從“運行”變為“停止”，反之亦然。</block>
+  <block id="f2d8284860e834b1803b72a789ffeb84" category="list-text">資料收集器從_停止_狀態轉變為_運行_狀態最多需要兩分鐘。</block>
 </blocks>
