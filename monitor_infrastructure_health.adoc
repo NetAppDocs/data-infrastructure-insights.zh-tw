@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: monitor_infrastructure_health.html 
-keywords: health, infra, infrastructure, monitoring 
+keywords: health, monitor, infrastructure 
 summary: 監控基礎設施健康狀況 
 ---
 = 監控基礎設施健康狀況

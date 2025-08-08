@@ -12655,8 +12655,6 @@
   <block id="02c3ccd1d51babc54da2759d79e61c5c" category="cell">工作負載部署失敗後將被標記為失敗的時間間隔（以秒為單位）</block>
   <block id="8edfed76354af11279c58c2d91948eda" category="cell">流利位元容器日誌路徑</block>
   <block id="3150c73f1d1522f3b831f0d591077194" category="cell">預設情況下，Fluentbit DaemonSet 將掛載 /var/log 和 /var/lib/docker/containers 主機路徑來存取/讀取 Kubernetes 容器日誌。如果 Kubernetes 已設定為將容器記錄檔放置在非預設位置，請使用此選項修改 Fluentbit DaemonSet 以掛載非預設路徑。</block>
-  <block id="7e5bd63d855501c5e08449ea5b593ee7" category="summary">監控基礎設施健康狀況</block>
-  <block id="48f51aa9a5737857bbd298bfb874281e" category="doc">監控基礎設施健康狀況</block>
   <block id="a2c6fd0b23854404c386430346919db8" category="paragraph">這<block ref="025a80672f7feae526479c9984c435c7" category="inline-link-macro-rx"></block>透過 AgentConfiguration 檔案提供豐富的自訂選項。您可以設定資源限制、收集間隔、代理設定、容差以及特定於元件的設置，以最佳化 Kubernetes 環境的監控。使用這些選項可以自訂 telegraf、kube-state-metrics、日誌收集、工作負載映射、變更管理和其他監控元件。</block>
   <block id="ea55ba51f0b69383ec5bb89cabada638" category="cell">dockerRepo 覆蓋，用於從客戶的私有 Docker 儲存庫（而不是Data Infrastructure Insights Docker 儲存庫）拉取映像。預設為Data Infrastructure Insights Docker 儲存庫。</block>
   <block id="8e8bb119221ff93e3f93bea9ae89444f" category="cell">可選：客戶私有儲存庫的秘密。</block>
@@ -12667,8 +12665,9 @@
   <block id="fb937d63289578595fb05fc626554661" category="cell">nonWorkloadDeployAggrIntervalSeconds</block>
   <block id="e4685d20c866cca50df5bea5e4230497" category="cell">非工作負載部署合併發送的頻率（以秒為單位）</block>
   <block id="1cd8d8ba87dcbd642231ac1e1fb52f76" category="paragraph">AWS Marketplace 免費試用期無法延長。</block>
-  <block id="f9140e559462604832a886e4eb558360" category="list-text">在任何時間點，一個資料收集器應該處於運作狀態，另一個資料收集器將顯示為_已停止_。</block>
-  <block id="a2c39bece4ce05e23c13d7dc078d390f" category="paragraph">目前「正在運行」的 SVM 的資料收集器將顯示為「正在運行」。目前「停止」的 SVM 資料收集器將顯示為「已停止」。</block>
-  <block id="e02fc5a08fc17a2cc71f90cc044645af" category="list-text">每當發生切換時，資料收集器的狀態就會從“運行”變為“停止”，反之亦然。</block>
   <block id="f2d8284860e834b1803b72a789ffeb84" category="list-text">資料收集器從_停止_狀態轉變為_運行_狀態最多需要兩分鐘。</block>
+  <block id="da3fe25b9ad7a2bbb8f75a52d2d39828" category="summary">監控基礎設施健康狀況</block>
+  <block id="0513a990ff8b7eb9d4d9e530e812b450" category="paragraph">ONTAP SVM 資料收集器使工作負載安全能夠監控NetApp ONTAP儲存虛擬機器 (SVM) 上的檔案和使用者存取活動。本指南將引導您完成 SVM 資料收集器的先決條件、設定和管理，以便為您的ONTAP環境提供全面的安全監控。</block>
+  <block id="57da797adb74a055edb3de9c7e734b65" category="list-text">在任何時間點，目前「正在運行」的 SVM 的資料收集器將顯示為「正在運行」。目前「停止」的 SVM 資料收集器將顯示為「已停止」。</block>
+  <block id="61dcd000a72340c1c72d4c7a96c2ec90" category="list-text">每當發生切換時，資料收集器的狀態將從_Running_變為_Stopped，反之亦然。</block>
 </blocks>

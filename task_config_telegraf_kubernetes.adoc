@@ -7,6 +7,10 @@ summary: Kubernetes 的資料收集器
 = 資料收集器： Kubernetes
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]
