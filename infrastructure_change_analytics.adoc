@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: infrastructure_change_analytics.html 
 keywords: changes, management, analysis, infra, infrastructure 
-summary: Cloud Insights 會追蹤基礎架構的變更、以便輕鬆進行分析和疑難排解。 
+summary: Data Infrastructure Insights追蹤基礎設施的變化，以便於分析和故障排除。 
 ---
 = 基礎架構變更分析
 :hardbreaks:

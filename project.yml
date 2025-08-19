@@ -82,7 +82,7 @@ sidebar:
       - title: 修改或刪除查詢
         url: "/task_modify_delete_query.html"
       - title: 為物件指派多個應用程式/註釋
-        url: "/task_query_assign_multiple_applicationss.html"
+        url: "/task_query_assign_multiple_applications.html"
       - title: 將表格值複製到剪貼簿
         url: "/task_query_copy_table_values.html"
       - title: 查詢記錄
@@ -171,6 +171,8 @@ sidebar:
         url: "/san_analyzer_overview.html"
       - title: VM 分析器
         url: "/vm_analyzer_overview.html"
+      - title: 監控基礎設施健康狀況
+        url: "/monitor_infrastructure_health.html"
     - title: 報告
       entries:
       - title: 報告總覽

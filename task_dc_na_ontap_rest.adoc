@@ -7,10 +7,14 @@ summary: ONTAP REST Data Collector
 = NetApp ONTAP REST 資料收集器
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]
-此資料收集器會使用 REST API 呼叫、從執行 ONTAP 9.14.1 及更高版本的儲存系統擷取庫存、 EMS 記錄和效能資料。對於舊版 ONTAP 系統、請使用 ZAPI 型的「 NetApp ONTAP 資料管理軟體」收集器類型。
+此資料收集器使用 REST API 呼叫從執行ONTAP 9.14.1 及更高版本的儲存系統取得庫存、EMS 日誌和效能資料。對於早期版本的ONTAP系統，請使用基於 ZAPI 的「NetApp ONTAP資料管理軟體」收集器類型。
 
 
 NOTE: ONTAP REST 收集器可用來取代先前的 ONTAPI 型收集器。因此、收集或報告的計量可能會有所差異。如需關於 ONTAPI 與 REST 之間差異的詳細資訊，請參閱link:https://docs.netapp.com/us-en/ontap-restmap-9141/index.html["ONTAP 9.14.1 ONTAPI- 對 REST 的對應"]文件。
@@ -77,6 +81,18 @@ User/Group                 Authentication                 Acct   Authentication
 Name           Application Method        Role Name        Locked Method
 -------------- ----------- ------------- ---------------- ------ --------------
 restUser       http        password      restRole         no     none
+----
+如果需要，您可以檢查 spi 存取權限：
+
+[listing]
+----
+**Vserver:> vserver services web access show -name spi
+ Vserver                      Type     Service Name     Role
+-------------- -------- ---------------- ----------------
+<vserver name >     admin             spi           admin
+<vserver name >     admin             spi           csrestrole
+
+2 entries were displayed.**
 ----
 
 

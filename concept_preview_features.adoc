@@ -13,12 +13,3 @@ keywords: coming soon, preview,
 Data Infrastructure Insights 以 _Preview_ 的方式強調新功能。預覽功能可在有限的環境或有限容量下使用。
 
 如果您有興趣預覽其中一項或多項功能，請聯絡link:https://bluexp.netapp.com/contact-cds["NetApp銷售團隊"]以取得更多資訊。
-
-|===
-
-
-| *功能* | *說明* 
-
-
-| 回收 ONTAP Cold Storage | 以冷容量和其他相關指標來提供 ONTAP Volume 工作負載的視覺化效果。 
-|===
