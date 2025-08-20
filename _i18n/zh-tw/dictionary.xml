@@ -11206,7 +11206,6 @@
   <block id="3208596ca58c1fef6b7222123babb2fc" category="paragraph"><block ref="3208596ca58c1fef6b7222123babb2fc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9c55b8bf6c1b8aab646e91366d10f4c2" category="list-text">顯示 _ 活動歷程記錄 _ 的圖表（根據所選的整體時間範圍）</block>
   <block id="977eedf5743a236d4137f46ddfcd8dea" category="list-text">_ 所有活動 _ 資料的清單。</block>
-  <block id="ce0a4ef9bdcf713141ba5af92b5449a2" category="list-text">群組依據下拉式清單將提供選項，可依使用者，路徑，實體類型等來分組活動</block>
   <block id="2f67a7ee2834facb4c2289f3f9f8a7b0" category="list-text">在表格上方會出現一個通用路徑按鈕，我們可以在表格上方取得內含實體路徑詳細資料的滑出面板。</block>
   <block id="2b9b3cac1b8e073b6533f3389ac6ad5f" category="list-text">以滑出式面板連結存取實體的 * 使用者 * <block ref="62cf04ad66abc0c5964885d5ae0624ca" category="inline-link-macro-rx"></block>。</block>
   <block id="2c20ae8e4eac25c0be12e73a9aea15f8" category="list-text">* 第一層資料夾（根目錄） * 是實體路徑的根目錄（小寫）。</block>
@@ -12697,4 +12696,5 @@
   <block id="9a1645f81973ce35a5b8a3cb57dafb2e" category="paragraph">當警報得到解決時，這些健康分數的降低會逐漸消失，並且分數會在 2 小時內完全恢復。</block>
   <block id="3ad17df8e0c21cd3fba4fa89d748a88e" category="paragraph">此資料收集器使用 REST API 呼叫從執行ONTAP 9.14.1 及更高版本的儲存系統取得庫存、EMS 日誌和效能資料。對於早期版本的ONTAP系統，請使用基於 ZAPI 的「NetApp ONTAP資料管理軟體」收集器類型。</block>
   <block id="93c13f56f33b4026f411d3de7b0577a5" category="paragraph">如果需要，您可以檢查 spi 存取權限：</block>
+  <block id="1895704ffbc6e56720172ab7d145f8ae" category="list-text">分組下拉式選單將提供按使用者、實體類型等對活動進行分組的選項。</block>
 </blocks>
