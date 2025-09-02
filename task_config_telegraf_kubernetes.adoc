@@ -41,7 +41,11 @@ NetApp Kubernetes 監控營運者會擷取下列 kube-state 度量計數器。�
 . 持續Volume指標
 . 持續 Volume Claim Metrics
 . Pod指標
-. ReplicaSet度量
+. ReplicaSet 指標
 . 服務指標
-. StatefulSet指標
+. StatefulSet 指標
+. 水平 Pod 自動縮放器指標
+. Cronjob 指標
+. 工作指標
+. 資源配額指標
 

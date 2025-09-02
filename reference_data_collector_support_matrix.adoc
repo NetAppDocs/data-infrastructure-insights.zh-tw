@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference_data_collector_support_matrix.html 
 summary: 資料收集器支援對照表包含有關支援的資料收集器的詳細資訊。 
-keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, Huawei 
+keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, Huawei, OpenStack 
 ---
 = Data Infrastructure Insights 資料收集器支援對照表
 :hardbreaks:
@@ -142,7 +142,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 .5+| 資訊 | API名稱 | 實作 | SSH |  
 
 
-| API版本 | 實作 | SSH |  
+| API版本 | 實作 | SSH | Google 
 
 
 | 資料來源名稱 | 實作 | SSH | 資訊 
@@ -11676,6 +11676,392 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+== Google Cloud Netapp 卷
+
+此資料收集器支援的產品：
+
+|===
+| 產品 | 類別 | 功能/屬性 | 狀態 | 使用的傳輸協定 | 其他資訊 
+
+
+.71+| 基礎 .7+| 檔案共用 | 名稱 | 實作 | HTTPS |  
+
+
+| 路徑 | 實作 | HTTPS | 檔案網格路徑 
+
+
+| qtree ID | 實作 | HTTPS | qtree的唯一ID 
+
+
+| 是InternalVolume | 實作 | HTTPS | 檔案共用區代表內部磁碟區（NetApp磁碟區）、或是內部磁碟區內的qtree /資料夾 
+
+
+| 共享 | 實作 | HTTPS | 此檔案共用區是否有與其相關的任何共用區 
+
+
+| 狀態 | 實作 | HTTPS |  
+
+
+| 安全性類型 | 實作 | HTTPS |  
+
+
+.3+| 資訊 | 資料來源名稱 | 實作 | HTTPS | 資訊 
+
+
+| 建立者ID | 實作 | HTTPS |  
+
+
+| 日期 | 實作 | HTTPS |  
+
+
+.24+| 內部Volume | 內部Volume ID | 實作 | HTTPS |  
+
+
+| 名稱 | 實作 | HTTPS |  
+
+
+| 儲存資源池ID | 實作 | HTTPS |  
+
+
+| 類型 | 落差 | HTTPS |  
+
+
+| 資源隨需配置 | 實作 | HTTPS |  
+
+
+| 支援精簡配置 | 實作 | HTTPS | 此內部磁碟區是否支援其上的磁碟區層精簡配置 
+
+
+| 已啟用重複資料刪除 | 實作 | HTTPS | 是否在儲存資源池上啟用重複資料刪除功能 
+
+
+| 壓縮已啟用 | 實作 | HTTPS | 是否在儲存資源池上啟用壓縮 
+
+
+| 上次Snapshot時間 | 實作 | HTTPS | 上次快照時間 
+
+
+| Snapshot計數 | 實作 | HTTPS | 內部磁碟區上的快照數量 
+
+
+| 狀態 | 實作 | HTTPS |  
+
+
+| 保護類型 | 實作 | HTTPS |  
+
+
+| Snapshot已用容量 | 實作 | HTTPS |  
+
+
+| Snapshot分配容量 | 落差 | HTTPS | 快照的已分配容量（以MB為單位） 
+
+
+| 資料使用容量 | 實作 | HTTPS |  
+
+
+| 資料分配容量 | 落差 | HTTPS | 分配給資料的容量 
+
+
+| 總使用容量 | 實作 | HTTPS | 總容量（單位：MB） 
+
+
+| 已分配容量總計 | 實作 | HTTPS |  
+
+
+| 原始對可用比率 | 實作 | HTTPS | 從可用容量轉換為原始容量的比率 
+
+
+| 分層最低散熱天數 | 實作 | HTTPS |  
+
+
+| QoS -原則 | 實作 | HTTPS |  
+
+
+|  | 實作 | HTTPS |  
+
+
+| 留言 | 落差 | HTTPS | 說明：說明SVM的免費文字註解 
+
+
+| QoS限制原始 | 實作 | HTTPS |  
+
+
+.5+| qtree | qtree ID | 實作 | HTTPS | qtree的唯一ID 
+
+
+| 名稱 | 實作 | HTTPS |  
+
+
+| 安全風格 | 實作 | HTTPS | 目錄的安全樣式：UNIX、NTFS或混合式 
+
+
+| 狀態 | 實作 | HTTPS |  
+
+
+| 類型 | 落差 | HTTPS |  
+
+
+.3+| 分享 | 名稱 | 實作 | HTTPS |  
+
+
+| 傳輸協定 | 實作 | HTTPS | 共享傳輸協定的列舉 
+
+
+| IP介面 | 實作 | HTTPS | 以逗號分隔的IP位址清單、其中顯示此共用區 
+
+
+.2+| 共用啟動器 | 啟動器 | 實作 | HTTPS |  
+
+
+| 權限 | 實作 | HTTPS | 此特定共用的權限 
+
+
+.10+| 儲存設備 | IP | 實作 | HTTPS |  
+
+
+| 顯示IP | 實作 | HTTPS |  
+
+
+| 名稱 | 實作 | HTTPS |  
+
+
+| 製造商 | 實作 | HTTPS |  
+
+
+| 家庭 | 實作 | HTTPS | 儲存產品系列可能是Clariion、Symmetrix等 
+
+
+| 虛擬化 | 實作 | HTTPS | 這是儲存虛擬化設備嗎？ 
+
+
+| 管理 URL | 實作 | HTTPS |  
+
+
+| 總原始容量 | 實作 | HTTPS | 總原始容量（陣列上所有磁碟的總和） 
+
+
+| 備用原始容量 | 實作 | HTTPS | 備用磁碟的原始容量（所有備援磁碟的總和） 
+
+
+| 原始容量失敗 | 實作 | HTTPS | 故障磁碟的原始容量（所有故障磁碟的總和） 
+
+
+.17+| 儲存資源池 | 儲存資源池ID | 實作 | HTTPS |  
+
+
+| 名稱 | 實作 | HTTPS |  
+
+
+| 類型 | 落差 | HTTPS |  
+
+
+| 狀態 | 實作 | HTTPS |  
+
+
+| 支援精簡配置 | 實作 | HTTPS | 此內部磁碟區是否支援其上的磁碟區層精簡配置 
+
+
+| 包括在DWh容量中 | 實作 | HTTPS | 從 ACQ 控制 DWH 容量感興趣的儲存池 
+
+
+| 廠商層級 | 實作 | HTTPS | 廠商專屬層級名稱 
+
+
+| 已啟用重複資料刪除 | 實作 | HTTPS | 是否在儲存資源池上啟用重複資料刪除功能 
+
+
+| 壓縮已啟用 | 實作 | HTTPS | 是否在儲存資源池上啟用壓縮 
+
+
+| 虛擬化 | 實作 | HTTPS | 這是儲存虛擬化設備嗎？ 
+
+
+| RAID群組 | 實作 | HTTPS | 指出此storagePool是否為RAID群組 
+
+
+| 資料使用容量 | 實作 | HTTPS |  
+
+
+| 資料分配容量 | 落差 | HTTPS | 分配給資料的容量 
+
+
+| 已分配容量總計 | 實作 | HTTPS |  
+
+
+| 實體磁碟容量（MB） | 實作 | HTTPS | 用作儲存資源池的原始容量 
+
+
+| 原始對可用比率 | 實作 | HTTPS | 從可用容量轉換為原始容量的比率 
+
+
+|  | 實作 | HTTPS |  
+
+
+.52+| 效能 .21+| 內部Volume | 總延遲 | 實作 | HTTPS |  
+
+
+| 使用的物件存放區空間 | 實作 | HTTPS |  
+
+
+| 總容量 | 實作 | HTTPS |  
+
+
+| 延遲讀取 | 實作 | HTTPS |  
+
+
+| IOPS其他 | 實作 | HTTPS |  
+
+
+| IOPS寫入 | 實作 | HTTPS |  
+
+
+| 已用容量 | 實作 | HTTPS |  
+
+
+| 處理量讀取 | 實作 | HTTPS |  
+
+
+| 伺服器ID | 實作 | HTTPS |  
+
+
+| IOPS總計 | 實作 | HTTPS |  
+
+
+| Snapshot使用容量比率 | 實作 | HTTPS | 報告為時間序列 
+
+
+| 延遲寫入 | 實作 | HTTPS |  
+
+
+| IOPS讀取 | 實作 | HTTPS | 磁碟上的讀取 IOP 數 
+
+
+| 容量使用率 | 實作 | HTTPS |  
+
+
+| 總資料容量 | 實作 | HTTPS |  
+
+
+| 資料使用容量 | 實作 | HTTPS |  
+
+
+| 處理量寫入 | 實作 | HTTPS |  
+
+
+| 總處理量 | 實作 | HTTPS | 平均磁碟總速率（橫跨所有磁碟的讀寫）、單位為MB/s 
+
+
+| Snapshot已用容量 | 實作 | HTTPS |  
+
+
+| 金鑰 | 實作 | HTTPS |  
+
+
+| Snapshot保留容量 | 實作 | HTTPS |  
+
+
+.16+| 儲存設備 | 總延遲 | 實作 | HTTPS |  
+
+
+| 原始容量失敗 | 實作 | HTTPS |  
+
+
+| 備用原始容量 | 實作 | HTTPS | 備用磁碟的原始容量（所有備援磁碟的總和） 
+
+
+| 延遲讀取 | 實作 | HTTPS |  
+
+
+| IOPS其他 | 實作 | HTTPS |  
+
+
+| IOPS寫入 | 實作 | HTTPS |  
+
+
+| 原始容量 | 實作 | HTTPS |  
+
+
+| 處理量讀取 | 實作 | HTTPS |  
+
+
+| 伺服器ID | 實作 | HTTPS |  
+
+
+| IOPS總計 | 實作 | HTTPS |  
+
+
+| 延遲寫入 | 實作 | HTTPS |  
+
+
+| IOPS讀取 | 實作 | HTTPS | 磁碟上的讀取 IOP 數 
+
+
+| StoragePools容量 | 實作 | HTTPS |  
+
+
+| 處理量寫入 | 實作 | HTTPS |  
+
+
+| 總處理量 | 實作 | HTTPS | 平均磁碟總速率（橫跨所有磁碟的讀寫）、單位為MB/s 
+
+
+| 金鑰 | 實作 | HTTPS |  
+
+
+.15+| StoragePool磁碟 | 使用的物件存放區空間 | 實作 | HTTPS |  
+
+
+| 總容量 | 實作 | HTTPS |  
+
+
+| IOPS寫入 | 實作 | HTTPS |  
+
+
+| 已用容量 | 實作 | HTTPS |  
+
+
+| 原始容量 | 實作 | HTTPS |  
+
+
+| 處理量讀取 | 實作 | HTTPS |  
+
+
+| IOPS總計 | 實作 | HTTPS |  
+
+
+| IOPS讀取 | 實作 | HTTPS | 磁碟上的讀取 IOP 數 
+
+
+| 容量使用率 | 實作 | HTTPS |  
+
+
+| 總資料容量 | 實作 | HTTPS |  
+
+
+| 已配置的容量 | 實作 | HTTPS |  
+
+
+| 資料使用容量 | 實作 | HTTPS |  
+
+
+| 處理量寫入 | 實作 | HTTPS |  
+
+
+| 總處理量 | 實作 | HTTPS | 平均磁碟總速率（橫跨所有磁碟的讀寫）、單位為MB/s 
+
+
+| 過度使用容量比率 | 實作 | HTTPS | 報告為時間序列 
+|===
+此資料收集器使用的管理 API ：
+
+|===
+| API | 使用的傳輸協定 | 使用傳輸層傳輸層傳輸協定 | 使用的傳入連接埠 | 使用的傳出連接埠 | 支援驗證 | 僅需要「唯讀」認證 | 支援加密 | 防火牆易用（靜態連接埠） 
+
+
+| Google Compute Platform REST API | HTTPS |  | 443 |  | 是的 | 是的 | 是的 | 是的 
+|===
+
+
 == HDS HCPs（HTTPS）
 
 此資料收集器支援的機型和版本：
@@ -19912,8 +20298,8 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 * 9.8.0P7
 * 9.8.0P8
 * 9.8.0P9
-* 9.9.0
-* 9.9.1
+* 9.0
+* 9.1
 * 9.9.1P10
 * 9.9.1P11
 * 9.9.1P12
@@ -22029,26 +22415,48 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 
 
 | A150 A220 A250 A300 A400 A70 AFF A700 AFF A700 s A800 AFF A90 AFF A900 AFF C190 AFF C250 AFF C400 ， 800 ASA A250 AFF A400 ， A400 ASA FAS2720 FAS2750 FAS2820 FAS8200 FAS8300 FAS8700 FAS9000 FAS9500 ， A800 ASA ASA ， A800 AFF ， C250 ASA ， C800 AFF ， AFF ， AFF AFF ， AFF AFF ， 200  a| 
-* NetappRelease 9.14.1P10 ： 11 月 28 日星期四 12 ： 32 ： 16 UTC 2024
-* NetappRelease 9.14.1P11 ：週三 1 月 22 日 11 ： 55 ： 28 UTC 2025
-* NetappRelease 9.14.1P1 ： 2 月 15 日週四 00 ： 45 ： 21 UTC 2024
-* NetappRelease 9.14.1P4 ： 4 月 18 日星期四 15 ： 59 ： 10 UTC 2024
-* NetappRelease 9.14.1P5 ：星期六 5 月 18 日 19 ： 42 ： 16 UTC 2024
-* NetappRelease 9.14.1P6 ：星期二 6 月 18 日 16 ： 11 ： 44 UTC 2024
-* NetappRelease 9.14.1P7 ： Thu Aug01 03 ： 07 ： 44 UTC 2024
-* NetappRelease 9.14.1P8 ：週五 9 月 13 日 07 ： 12 ： 27 UTC 2024
-* NetappRelease 9.14.1P9 ：週一 10 月 21 日 18 ： 04 ： 05 UTC 2024
-* NetappRelease 9.15.1 ： 4 月 4 日星期四 12 ： 21 ： 07 UTC 2024
-* NetappRelease 9.15.1P1 ：星期二 7 月 30 日 05 ： 15 ： 49 UTC 2024
-* NetappRelease 9.15.1P2 ：星期二 8 月 27 日 16 ： 35 ： 16 UTC 2024
-* NetappRelease 9.15.1P3 ：週三 9 月 25 日 22 ： 33 ： 44 UTC 2024
-* NetappRelease 9.15.1P4 ： Sun 10 月 27 日 20 ： 15 ： 53 UTC 2024
-* NetappRelease 9.15.1P5 ： Sun 11 月 24 日 16 ： 31 ： 37 UTC 2024
-* NetappRelease 9.15.1P6 ：週三 12 月 04 日 01 ： 42 ： 39 UTC 2024
-* NetappRelease 9.15.1P7 ：週六 1 月 18 日 21 ： 34 ： 02 UTC 2025
-* NetappRelease 9.15.1RC2 ：週一 6 月 24 日 04 ： 49 ： 55 UTC 2024
-* NetappRelease 9.16.1 ：週六 1 月 18 日 19 ： 31 ： 15 UTC 2025
-* NetappRelease 9.16.1P1 ：週五 2 月 14 日 03 ： 53 ： 50 UTC 2025
+* NetApp版本 9.14.1P10：2024 年 11 月 28 日星期四 12:32:16 UTC
+* NetApp版本 9.14.1P11：2025 年 1 月 22 日星期三 11:55:28 UTC
+* NetApp版本 9.14.1P1：2024 年 2 月 15 日星期四 00:45:21 UTC
+* NetApp版本 9.14.1P4：2024 年 4 月 18 日星期四 15:59:10 UTC
+* NetApp版本 9.14.1P5：2024 年 5 月 18 日星期六 19:42:16 UTC
+* NetApp版本 9.14.1P6：2024 年 6 月 18 日星期二 16:11:44 UTC
+* NetApp版本 9.14.1P7：2024 年 8 月 1 日星期四 03:07:44 UTC
+* NetApp版本 9.14.1P8：2024 年 9 月 13 日星期五 07:12:27 UTC
+* NetApp版本 9.14.1P9：2024 年 10 月 21 日星期一 18:04:05 UTC
+* NetApp版本 9.15.1：2024 年 7 月 4 日星期四 12:21:07 UTC
+* NetApp版本 9.15.1P1：2024 年 7 月 30 日星期二 05:15:49 UTC
+* NetApp版本 9.15.1P2：2024 年 8 月 27 日星期二 16:35:16 UTC
+* NetApp版本 9.15.1P3：2024 年 9 月 25 日星期三 22:33:44 UTC
+* NetApp版本 9.15.1P4：2024 年 10 月 27 日星期日 20:15:53 UTC
+* NetApp版本 9.15.1P5：2024 年 11 月 24 日星期日 16:31:37 UTC
+* NetApp版本 9.15.1P6：2024 年 12 月 4 日星期三 01:42:39 UTC
+* NetApp版本 9.15.1P7：2025 年 1 月 18 日星期六 21:34:02 UTC
+* NetApp版本 9.15.1RC2：2024 年 6 月 24 日星期一 04:49:55 UTC
+* NetApp版本 9.16.1：2025 年 1 月 18 日星期六 19:31:15 UTC
+* NetApp版本 9.16.1P1：2025 年 2 月 14 日星期五 03:53:50 UTC
+* NetApp版本 9.16.1RC1：2024 年 11 月 4 日星期一 10:39:46 UTC
+* NetApp版本 9.16.1X26：2024 年 12 月 9 日星期一 10:27:42 UTC
+* NetApp版本 9.16.1X29：2025 年 1 月 12 日星期日 11:18:25 UTC
+* NetApp版本 9.17.1X7：2025 年 2 月 14 日星期五 11:21:52 UTC
+* NetApp發佈 Clawhammer__9.14.1：2024 年 5 月 18 日星期六 09:23:49 UTC
+* NetApp發佈 Cloudstream__9.16.1：2024 年 11 月 4 日星期一 05:51:46 UTC
+* NetApp發佈 Cloudstream__9.16.1：2025 年 3 月 13 日星期四 20:55:54 UTC
+* NetApp發佈 Electricjellyfish__9.17.1:2025 年 3 月 3 日星期一 05:57:49 UTC
+* NetApp發佈 Electricjellyfish__9.17.1:2025 年 3 月 9 日星期日 05:56:14 UTC
+* NetApp發佈 Electricjellyfish__9.17.1:2025 年 3 月 16 日星期日 04:54:53 UTC
+* NetApp發佈 Electricjellyfish__9.17.1:2025 年 1 月 28 日星期二 11:48:14 UTC
+* NetApp發佈 Electricjellyfish__9.17.1:2025 年 3 月 18 日星期二 04:59:54 UTC
+* NetApp發佈 Electricjellyfish__9.17.1:2025 年 3 月 12 日星期三 04:42:03 UTC
+* NetApp版本 Mightysquirrel__9.15.1：2024 年 5 月 24 日星期五 05:03:10 UTC
+* NetApp版本 Mightysquirrel__9.15.1：2025 年 1 月 18 日星期六 11:39:42 UTC
+* NetApp發佈 Tropicallightning__9.18.0：2025 年 2 月 21 日星期五 14:02:58 UTC
+* NetApp發佈 Tropicallightning__9.18.0：2025 年 2 月 17 日星期一 08:18:14 UTC
+* NetApp發佈 Tropicallightning__9.18.0：2025 年 2 月 20 日星期四 08:11:55 UTC
+* NetApp發佈 Tropicallightning__9.18.0：2025 年 2 月 27 日星期四 04:15:40 UTC
+* NetApp發佈 Tropicallightning__9.18.0：2025 年 2 月 18 日星期二 14:00:54 UTC
+* NetApp發佈 Tropicallightning__9.18.0：2025 年 2 月 26 日星期三 08:19:21 UTC
+* NetApp發佈 Tropicallightning__9.18.0：2025 年 1 月 29 日星期三 08:34:06 UTC
 
 
 |===
@@ -24380,6 +24788,268 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 
 
 | Nutanix REST API | HTTPS | HTTPS | 443 |  | 是的 | 是的 | 是的 | 是的 
+|===
+
+
+== OpenStack（REST API/SSH）
+
+|===
+|===
+此資料收集器支援的產品：
+
+|===
+| 產品 | 類別 | 功能/屬性 | 狀態 | 使用的傳輸協定 | 其他資訊 
+
+
+.76+| 基礎 .7+| 資料儲存區 | 容量 | 實作 | HTTPS | Snapshot使用容量（單位：MB） 
+
+
+| MOID | 實作 | HTTPS |  
+
+
+| 名稱 | 實作 | HTTPS |  
+
+
+| oID | 實作 | HTTPS |  
+
+
+| 已配置的容量 | 實作 | HTTPS |  
+
+
+| 已用容量 | 實作 | HTTPS |  
+
+
+| 虛擬中心IP | 實作 | HTTPS |  
+
+
+.3+| NASShare資料存放區 | 資料存放區oID | 實作 | HTTPS |  
+
+
+| NAS共用oID | 實作 | HTTPS |  
+
+
+| oID | 實作 | HTTPS |  
+
+
+.4+| NASShare主機 | NAS共用oID | 實作 | HTTPS |  
+
+
+| 主機oID | 實作 | HTTPS |  
+
+
+| oID | 實作 | HTTPS |  
+
+
+| 唯讀 | 實作 | HTTPS |  
+
+
+.6+| LUN | oID | 實作 | HTTPS |  
+
+
+| 數量 | 實作 | HTTPS |  
+
+
+| 資料存放區oID | 實作 | HTTPS |  
+
+
+| 主機oID | 實作 | HTTPS |  
+
+
+| 磁碟名稱 | 實作 | HTTPS |  
+
+
+| TID | 實作 | HTTPS |  
+
+
+.6+| NAS共用 | 容量 | 實作 | HTTPS | 已分配容量（單位：MB） 
+
+
+| 檔案管理器IP | 實作 | HTTPS |  
+
+
+| 檔案管理器名稱 | 實作 | HTTPS |  
+
+
+| oID | 實作 | HTTPS |  
+
+
+| 共用路徑 | 實作 | HTTPS | 讓HvNasShare與共用配對 
+
+
+| 類型 | 落差 | HTTPS |  
+
+
+.6+| 路徑 | oID | 實作 | HTTPS |  
+
+
+| LUN oID | 實作 | HTTPS |  
+
+
+| 主機連接埠WWPN | 實作 | HTTPS |  
+
+
+| 儲存連接埠WWPN | 實作 | HTTPS |  
+
+
+| 使用中 | 實作 | HTTPS |  
+
+
+| 類型 | 落差 | HTTPS |  
+
+
+.6+| 伺服器 | 叢集 | 實作 | HTTPS | 叢集名稱 
+
+
+| 資料中心名稱 | 實作 | HTTPS |  
+
+
+| 主機oID | 實作 | HTTPS |  
+
+
+| MOID | 實作 | HTTPS |  
+
+
+| oID | 實作 | HTTPS |  
+
+
+| 虛擬中心IP | 實作 | HTTPS |  
+
+
+.7+| 虛擬磁碟 | 容量 | 實作 | HTTPS | Snapshot使用容量（單位：MB） 
+
+
+| 資料存放區oID | 實作 | HTTPS |  
+
+
+| LUN oID | 實作 | HTTPS |  
+
+
+| 名稱 | 實作 | HTTPS |  
+
+
+| oID | 實作 | HTTPS |  
+
+
+| 類型 | 落差 | HTTPS |  
+
+
+| 已用容量 | 實作 | HTTPS |  
+
+
+.13+| 虛擬機器 | 訪客狀態 | 實作 | HTTPS |  
+
+
+| 資料存放區oID | 實作 | HTTPS |  
+
+
+| 主機oID | 實作 | HTTPS |  
+
+
+| IPS | 實作 | HTTPS |  
+
+
+| MOID | 實作 | HTTPS |  
+
+
+| 記憶體 | 實作 | HTTPS |  
+
+
+| 名稱 | 實作 | HTTPS |  
+
+
+| oID | 實作 | HTTPS |  
+
+
+| 電源狀態 | 實作 | HTTPS |  
+
+
+| 狀態變更時間 | 實作 | HTTPS |  
+
+
+| 處理器 | 實作 | HTTPS |  
+
+
+| 已配置的容量 | 實作 | HTTPS |  
+
+
+| 已用容量 | 實作 | HTTPS |  
+
+
+.3+| 虛擬機器磁碟 | oID | 實作 | HTTPS |  
+
+
+| 虛擬磁碟oID | 實作 | HTTPS |  
+
+
+| 虛擬機器oID | 實作 | HTTPS |  
+
+
+.7+| 主機 | 主機CPU計數 | 實作 | HTTPS |  
+
+
+| 主機網域 | 實作 | HTTPS |  
+
+
+| 主機安裝的記憶體 | 實作 | HTTPS |  
+
+
+| 主機作業系統 | 實作 | HTTPS |  
+
+
+| IPS | 實作 | HTTPS |  
+
+
+| 名稱 | 實作 | HTTPS |  
+
+
+| oID | 實作 | HTTPS |  
+
+
+.4+| iSCSI節點 | 主機別名 | 實作 | HTTPS |  
+
+
+| 節點名稱 | 實作 | HTTPS |  
+
+
+| oID | 實作 | HTTPS |  
+
+
+| 類型 | 落差 | HTTPS |  
+
+
+.4+| 資訊 | 資料來源名稱 | 實作 | HTTPS | 資訊 
+
+
+| 日期 | 實作 | HTTPS |  
+
+
+| 建立者ID | 實作 | HTTPS |  
+
+
+| 建立者金鑰 | 實作 | HTTPS |  
+
+
+.4+| 效能 .4+| 主機 | CPU使用率總計 | 實作 |  |  
+
+
+| 金鑰 | 實作 |  |  
+
+
+| 總記憶體使用率 | 實作 |  |  
+
+
+| 伺服器ID | 實作 |  |  
+|===
+此資料收集器使用的管理 API ：
+
+|===
+| API | 使用的傳輸協定 | 使用傳輸層傳輸層傳輸協定 | 使用的傳入連接埠 | 使用的傳出連接埠 | 支援驗證 | 僅需要「唯讀」認證 | 支援加密 | 防火牆易用（靜態連接埠） 
+
+
+| OpenStack REST API | HTTPS | HTTPS | 443 |  | 是的 | 錯 | 是的 | 是的 
+
+
+| OpenStack SSH | SSH | SSH | 22 |  | 是的 | 錯 | 是的 | 是的 
 |===
 
 

@@ -18,6 +18,49 @@ NetApp持續改善及強化其產品與服務。以下是 Data Infrastructure In
 
 
 
+== 2025年8月
+
+
+
+=== 觸手可及的重點小工具數據
+
+大多數小部件中的新*分析*功能可讓您一次仔細查看一個小部件中的資料。只需單擊小部件上的“分析”按鈕即可打開詳細視圖，您可以在其中以交互方式探索底層數據並放大以獲得更深入的見解 - 而無需離開儀表板上下文。
+
+image:widget_analyze_panel.png["分析線部件的面板，寬度=900"]
+
+
+
+=== 匯出和匯入儀表板
+
+如果您管理多個租戶並開發了一個有用的儀表板，則可以匯出該儀表板並將其匯入到另一個租戶。
+
+image:dashboard_import_from_file.png["顯示導入的圖像"] image:dashboard_export_from_menu.png["顯示匯出的影像"]
+
+
+
+=== 增強的雲端整合： Google Cloud NetApp Volumes (GCNV) 支持
+
+* Google Cloud NetApp Volumes* (GCNV) 現已完全支援作為 DII 中的資料收集器，從而完善了我們的混合雲監控生態系統。了解整個基礎架構中的關鍵儲存對象，例如組織、池和磁碟區。現在，您可以從單一平台追蹤所有儲存環境（本地或雲端）。
+
+
+
+=== 增強型StorageGRID監控
+
+StorageGRID日誌收集現在預設啟用，為 DII 提供事件追蹤數據，並且我們擴展了 StorageGrid 監控，增加了 50 多個預設警報、即時事件追蹤和新儀表板，以簡化複雜的儲存網格操作。透過深入了解流量策略和儲存桶效能來提前解決問題。
+
+
+
+=== 作業系統支援
+
+除了資料基礎架構 Insights 擷取單元之外，現在還支援下列作業系統link:concept_acquisition_unit_requirements.html["已支援"]：
+
+* AlmaLinux（64位）10
+* Red Hat（64位）10
+* Rocky（64 位）9.6
+
+
+
+
 == 2025 年 6 月
 
 
