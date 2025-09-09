@@ -10,9 +10,7 @@ keywords: support, knowledgebase, documentation, community, chat, videos, help, 
 
 
 [role="lead"]
-目錄： []
-
-您可以按一下 * 說明 > 支援 * 來存取 Data Infrastructure Insights 中的支援選項。您可用的支援選項取決於 Data Infrastructure Insights Edition 。
+您可以透過選擇「幫助」>「支援」來存取Data Infrastructure Insights中可用的支援選項。
 
 image:SupportPageWithLearningCenter.png["支援頁面"]
 
@@ -70,11 +68,7 @@ image:SupportPage_SN_Section-NA.png["SN_SCREEN"]
 
 == 取得支援資訊
 
-NetApp 以多種方式提供資料基礎架構洞見支援。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章或NetApp社群。對於訂閱 * Data Infrastructure Insights 的使用者、可透過電話或網路票證取得技術支援。需有 NetApp 支援網站（NSS）SSO 帳戶，才能網路提交問題單及案例管理。
-
-*只要您的所有NetApp儲存系統均涵蓋在「優級支援」層級以上、「基本版」即提供支援。
-
-許多 NetApp 產品均包含資料基礎架構洞見基礎版、作為套件的一部分。如果您想要升級至 Premium Edition 、請聯絡您的銷售代表。
+NetApp透過多種方式為Data Infrastructure Insights提供支援。提供全天候的廣泛免費自助支援選項，例如知識庫 (KB) 文章或NetApp社群。對於訂閱Data Infrastructure Insights的用戶，可以透過電話或網路票務獲得技術支援。網路票證和案例管理需要NetApp支援站點 (NSS) SSO 帳戶。
 
 
 

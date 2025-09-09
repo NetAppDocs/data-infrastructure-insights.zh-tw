@@ -7,6 +7,10 @@ summary: 稽核可讓您檢視 Data Infrastructure Insights 系統中的系統�
 = 稽核
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]
@@ -135,11 +139,13 @@ image:Audit_Filters.png["稽核篩選器"]
 
 == 保留稽核資料
 
-資料基礎架構 Insights 保留稽核資料的時間量是根據您的版本而定：
+Data Infrastructure Insights保留稽核資料的時間取決於您的訂閱：
 
-* Basic Edition：稽核資料保留30天
-* 標準版和高級版：稽核資料保留1年以上、再加1天
+* 試用環境：審計資料保留 30 天
+* 訂閱環境：審計資料保留 1 年 1 天
 
+
+超過保留時間的稽核項目會自動清除。不需要使用者互動。
 
 超過保留時間的稽核項目會自動清除。不需要使用者互動。
 
