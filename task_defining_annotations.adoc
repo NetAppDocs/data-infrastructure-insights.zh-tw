@@ -7,6 +7,10 @@ summary: 使用註釋追蹤資料。
 = 定義註釋
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]
@@ -24,6 +28,12 @@ summary: 使用註釋追蹤資料。
 * 建立規則以自動將註釋套用至同一類型的多個資產。
 * 依資產附註篩選資產。
 
+
+
+
+== 觀看實際操作
+
+link:https://media.netapp.com/video-detail/248621bd-6619-5dc8-9718-5d78d0fd21da["註釋和註釋規則（影片），window=read-later"]
 
 
 

@@ -7,6 +7,10 @@ summary: 您可以使用 Data Infrastructure Insights API 匯入註釋和應用�
 = 匯入附註
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]

@@ -7,6 +7,10 @@ summary: 企業實體附註可用於監控及報告企業階層中的資產
 = 企業實體附註
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]

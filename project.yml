@@ -27,8 +27,6 @@ sidebar:
       url: "/security_admin_tool.html"
   - title: 快速入門
     entries:
-    - title: 功能教學課程
-      url: "/concept_feature_tutorials.html"
     - title: 收集資料
       entries:
       - title: 總覽

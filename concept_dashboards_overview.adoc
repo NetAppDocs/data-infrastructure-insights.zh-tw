@@ -31,6 +31,12 @@ IMPORTANT: 本節中的範例僅供說明之用、並未涵蓋所有可能的情
 
 
 
+== 觀看實際操作
+
+link:https://media.netapp.com/video-detail/5a293f3c-c655-5879-9133-1a32aaa140e8["使用NetApp建立強大的儀表板（影片）"]
+
+
+
 == 儀表板控制項
 
 儀表板畫面有多個控制項：

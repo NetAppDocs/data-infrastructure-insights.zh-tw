@@ -7,6 +7,10 @@ keywords: annotate, annotation, rules
 = 建立註釋規則
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]

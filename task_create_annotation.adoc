@@ -7,6 +7,10 @@ summary: 如何建立附註。
 = 使用註釋
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]

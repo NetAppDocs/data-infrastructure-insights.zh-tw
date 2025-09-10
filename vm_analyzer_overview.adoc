@@ -37,4 +37,4 @@ NOTE: 大多數 VM Analyzer 篩選器（包括您可以新增的篩選器）都�
 
 == 觀看實際操作
 
-link:https://media.netapp.com/video-detail/0e62b784-8456-5ef7-8879-f0352135a0f1/simplified-troubleshooting-with-vm-analyzer["使用 VM Analyzer 簡化故障排除（影片）"]
+link:https://media.netapp.com/video-detail/0e62b784-8456-5ef7-8879-f0352135a0f1/simplified-troubleshooting-with-vm-analyzer["使用 VM Analyzer 簡化故障排除（影片），window=read-later"]
