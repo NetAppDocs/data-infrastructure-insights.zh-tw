@@ -247,7 +247,7 @@ Data Infrastructure Insights 支援的依字母順序排列的資料收集器清
 | link:task_dc_na_ontap_rest.html["NetApp ONTAP REST 收集器"] | 基礎架構 
 
 
-| link:task_dc_na_ontap_all_san_array.html["NetApp ONTAP All SAN Array （ ASA ）收集器"] | 基礎架構 
+| link:task_dc_na_ontap_all_san_array.html["NetApp ONTAP ASA r2（全 SAN 陣列）收集器"] | 基礎架構 
 
 
 | link:task_dc_na_cdot.html["NetApp ONTAP Select"] | 基礎架構 
