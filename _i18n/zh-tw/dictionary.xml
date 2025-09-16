@@ -11249,7 +11249,6 @@
   <block id="72a442c57900f55848aa4acb856a507d" category="sidebar">識別非使用中的裝置</block>
   <block id="0860569a69c3584507ee09f4be585418" category="cell">insecureK8sSkipVerify</block>
   <block id="3008cd3125cccc003fa13335717e556e" category="cell">如果由於缺少 IP SAN 而導致 Telegraf 無法驗證憑證，請嘗試啟用驗證跳過</block>
-  <block id="9e43104f0687bd3a308759c5411641d7" category="paragraph"><block ref="9e43104f0687bd3a308759c5411641d7" category="inline-link-macro-rx"></block></block>
   <block id="2b8272217b69f1c5b5ad5968f0bc0945" category="list-text">註冊免費試用 Data Infrastructure Insights ，探索可用的功能。若要註冊免費試用：</block>
   <block id="6d2404e5699069be70636f65562fe693" category="list-text">前往<block ref="66922be03d9fc23a3ec9641b7884c8f2" category="inline-link-rx"></block></block>
   <block id="e78fd759357c2a61f07ddc6a902f9270" category="list-text">在頁面頂端選取 * 如何購買 * 。</block>
@@ -11587,7 +11586,6 @@
   <block id="bc23aa0997542e15a65a21a96991960a" category="paragraph">使用者可以前往新增 / 編輯收集器頁面，輸入叢集層級詳細資料（在叢集模式中）或 SVM 層級詳細資料（在 SVM 模式中），然後按一下 * 測試連線 * 按鈕。工作負載安全性接著會處理要求，並顯示適當的成功或失敗訊息。</block>
   <block id="e8f41baace36619af4a7292787a17936" category="inline-image-macro">工作負載安全性「測試連線」成功訊息</block>
   <block id="e6ea93198fd78cbc89b93053e0d0b573" category="paragraph"><block ref="e6ea93198fd78cbc89b93053e0d0b573" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c033c9dce9a48cc67d3409bab6aab6ba" category="paragraph"><block ref="c033c9dce9a48cc67d3409bab6aab6ba" category="inline-link-macro-rx"></block></block>
   <block id="88c55c9f00e518db40a6c680728b787f" category="section-title">2025 年 3 月</block>
   <block id="27e5c5c33051ef47e145b432e9e357db" category="section-title">增強的關聯式導覽功能，可有效管理基礎架構</block>
   <block id="ca3a08b4a664d3460c1afb17ce14a0ca" category="paragraph">運用 Data Infrastructure Insights 實現卓越營運，節省時間。我們現在新增內容相關的功能表連結，可讓您直接從任何物件跳到資產登錄頁面，深入瞭解裝置效能， SAN Analyzer 提供網路拓撲視覺化功能，記錄作業感知功能，或變更分析程式以進行組態管理。</block>
@@ -12754,4 +12752,6 @@
   <block id="cd0e26864bdcc93e571cf104049dc723" category="summary">ONTAP全 SAN 陣列資料 (ASA r2 ) 收集器</block>
   <block id="4d632e035deea033a31abbef4a39ee80" category="doc">NetApp ONTAP ASA r2（全SAN陣列）資料收集器</block>
   <block id="d97291003c6a6e6615571bf02531ca30" category="sidebar">ONTAP ASA （全 SAN 陣列）r2</block>
+  <block id="32344df03ee279db932571d5121eebc2" category="paragraph"><block ref="32344df03ee279db932571d5121eebc2" category="inline-link-macro-rx"></block></block>
+  <block id="af88d796899408a2445389775634dda1" category="paragraph"><block ref="af88d796899408a2445389775634dda1" category="inline-link-macro-rx"></block></block>
 </blocks>
