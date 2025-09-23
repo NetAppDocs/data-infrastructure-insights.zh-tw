@@ -29,6 +29,8 @@ NOTE: 全域變化可能會對您的ONTAP系統產生潛在影響。強烈建議
 ** SMB傳輸協定3.1版及更早版本。
 ** NFS 版本（包括 NFS 4.1 ）（請注意， ONTAP 9.15 或更新版本支援 NFS 4.1 ）。
 ** 支援從支援的更新版本為支援FlexGroup ONTAP
+** ONTAP 9.7 及更高版本的 NFS 支援FlexCache 。
+** ONTAP 9.14.1 及更高版本的 SMB 支援FlexCache 。
 ** 支援的支援ONTAP Select
 
 
