@@ -11987,7 +11987,6 @@
   <block id="a39507b873640f4e60c12fb375005a04" category="paragraph">根據要匯出的資料量，匯出鑑識資料可能需要數秒到數小時的時間。工作負載安全性會以非同步方式匯出該資料，以便在編譯 .CSV 時繼續工作。</block>
   <block id="6c17946dd20446540805b53e2f7cd731" category="section-title">資料收集器通知分組為規則</block>
   <block id="c3bd9ae81ad0672e842d282715d758e1" category="paragraph">如果您已在資料收集器上設定通知，從 4 月 15 日起，這些通知將會在「通知規則」中處理，並針對收件者相同的收集器設定單一規則。具有不同收件者的收集器會有個別的規則。現有的收集器通知會移轉至通知規則。</block>
-  <block id="1178bc1f7bc2e2481537fe9d595549fd" category="paragraph">包括： https://raw.githubusercontent.com/NetAppDocs/common/main/_include/open-source-notice-intro.adoc[]</block>
   <block id="4bffd602151b14e55ad1f19de262d0c1" category="list-text">確保 SVM 已設定 CIFS 伺服器： clusterShell ： &gt;<block ref="fafd8ff6ac4a59e73c5d4e3b47d545ee" prefix=" " category="inline-code"></block></block>
   <block id="52ea452f7c0975b526b909c63394b7e8" category="list-text">設定SVM vsadmin使用者的密碼。如果使用自訂使用者或叢集管理使用者，請略過此步驟。 clusterShell ： &gt;<block ref="73b77b9c99e693ec16bc3e4960672465" prefix=" " category="inline-code"></block></block>
   <block id="9b7edcaaf6b4a85dc972c92c9191eb04" category="list-text">解除鎖定SVM vsadmin使用者以進行外部存取。如果使用自訂使用者或叢集管理使用者，請略過此步驟。 clusterShell ： &gt;<block ref="db25ee40fb860a97415dab9c598caaf9" prefix=" " category="inline-code"></block></block>
@@ -12754,4 +12753,6 @@
   <block id="d97291003c6a6e6615571bf02531ca30" category="sidebar">ONTAP ASA （全 SAN 陣列）r2</block>
   <block id="32344df03ee279db932571d5121eebc2" category="paragraph"><block ref="32344df03ee279db932571d5121eebc2" category="inline-link-macro-rx"></block></block>
   <block id="af88d796899408a2445389775634dda1" category="paragraph"><block ref="af88d796899408a2445389775634dda1" category="inline-link-macro-rx"></block></block>
+  <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">開源</block>
+  <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知文件提供有關NetApp軟體中使用的第三方版權和許可的資訊。</block>
 </blocks>

@@ -41,7 +41,11 @@ link:https://www.netapp.com/pdf.html?item=/media/11887-patentspage.pdf["https://
 
 link:https://www.netapp.com/company/legal/privacy-policy/["https://www.netapp.com/company/legal/privacy-policy/"^]
 
-包括： https://raw.githubusercontent.com/NetAppDocs/common/main/_include/open-source-notice-intro.adoc[]
+
+
+== 開源
+
+通知文件提供有關NetApp軟體中使用的第三方版權和許可的資訊。
 
 link:media/DII_Notice-Sept_2025.pdf["資料基礎架構洞見通知（前身為 Cloud Insights ）"]
 
