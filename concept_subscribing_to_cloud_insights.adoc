@@ -145,7 +145,7 @@ image:Module_Trials_Estimator.png["評估者"]
 
 每個層都以不同的速率計量，並一起計算整個層級，以提供加權權利。計算加權使用量的公式如下：
 
- Weighted usage = Raw TiB + (0.1 x Object Tier Raw TiB) + (0.25 x Cloud Tier Provisioning TiB)
+ Weighted Capacity = Raw TiB + (0.1 x Object Tier Raw TiB) + (0.25 x Cloud Tier Provisioned TiB)
 為了協助達成此目標， DII 會根據 _ 訂閱 _ 數量來計算單一 * 加權權利 * 編號；然後根據 _ 探索 _ 儲存設備來計算相同的編號，只有在探索到的容量大於加權權利時才會宣告違規。如此一來，您就能靈活地監控不同於每個層級訂閱數量的數量，只要發現的總儲存容量在訂閱的加權權利範圍內， DII 就會允許這些數量。
 
 
