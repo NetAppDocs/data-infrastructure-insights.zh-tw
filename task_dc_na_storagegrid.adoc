@@ -12,9 +12,15 @@ keywords: data collector, queries, create, storagegrid
 [role="lead"]
 NetApp StorageGRID 支援StorageGRID 從VMware支援從VMware組態收集庫存和效能。
 
+[NOTE]
+====
+為了在所有StorageGRID系統中對 DII 權利進行一致的計量，無論底層硬體拓撲和配置如何， Data Infrastructure Insights都會使用總可用容量（storagegrid_storage_utilization_total_space_bytes），而不是基於實體磁碟佈局的 RAW 容量。
 
-NOTE: 將以不同的原始TB與託管單位速率進行計量。StorageGRID每 40 TB 的未格式化 StorageGRID 容量就會以 1 計費link:concept_subscribing_to_cloud_insights.html#pricing["託管單位（MU）"]。
+對於使用基於容量的授權模式的客戶， StorageGRID被計量為「物件」儲存。
 
+對於使用傳統 (MU) 授權模式的客戶， StorageGRID以 40TiB 比 1 MU 的比率計量為二級儲存。
+
+====
 
 
 == 術語
