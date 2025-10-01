@@ -9313,7 +9313,6 @@
   <block id="3937c19963e89baafdbfa5c84162007d" category="cell">可用於定義環境中的不同服務層級。階層可以定義層級類型、例如所需的速度（例如金級或銀級）。此功能僅適用於內部磁碟區、qtree、儲存陣列、儲存資源池和磁碟區。</block>
   <block id="ada9af7e09b3cd313d5b59cd63288dc4" category="cell">違規嚴重性</block>
   <block id="34c0c2c5a3a24bf63af1919806d5cc0d" category="cell">在最高至最低重要性的階層中、排列違規（例如遺失主機連接埠或缺少備援）的等級（例如MAJOR）。</block>
-  <block id="b87860ab0dc061b503ef8df718421f44" category="admonition">別名、資料中心、Hot、服務層級、 交換器層級、層級和違規嚴重性是系統層級的附註、您無法刪除或重新命名；您只能變更其指派的值。</block>
   <block id="5f1e3307a64cd09f6f6b66948ee50fa2" category="section-title">建立自訂註釋</block>
   <block id="adc16f9bee699a3b015a38321d0c9cee" category="paragraph">使用註釋、您可以新增符合業務需求的自訂業務專屬資料至資產。雖然 Data Infrastructure Insights 提供一組預設註釋、但您可能會發現想要以其他方式檢視資料。自訂附註中的資料可補充已收集的裝置資料、例如儲存設備製造商、磁碟區數和效能統計資料。Data Infrastructure Insights 不會探索您使用註釋新增的資料。</block>
   <block id="84ec1a20b4e3f52996fa59ae944a6700" category="list-text">在 Data Infrastructure Insights 功能表中、按一下 * 管理 &gt; 註釋 * 。</block>
@@ -11990,9 +11989,6 @@
   <block id="c71b503670f2867f513635832d1599c3" category="paragraph"><block ref="c71b503670f2867f513635832d1599c3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d2b98171b3e920dab4bb3e92ccf4e89a" category="paragraph"><block ref="d2b98171b3e920dab4bb3e92ccf4e89a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="feacd3cef81abfcdbf59bda9ba5b97fd" category="paragraph"><block ref="feacd3cef81abfcdbf59bda9ba5b97fd" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="24b75506ade423135a0ebfd6a8ab8fa4" category="paragraph">布林值：建立一個下拉式清單，其中有 yes 和 no 選項，例如，「直接附加」註解是布林值。日期：這會建立一個保留日期的欄位。例如、如果註釋是日期、請選取此選項。清單：建立下列其中一項： * 下拉式固定清單</block>
-  <block id="3eb86d134a8e7d548d1298e1aa9a12d5" category="paragraph">+ 當其他人在裝置上指派此附註類型時，他們無法在清單中新增更多值。* 下拉式彈性清單</block>
-  <block id="d8f872f26b52cf9aec4a137dbe0a8c26" category="paragraph">+ 如果您在建立此清單時選取「即時新增值」選項，當其他人在裝置上指派此附註類型時，他們可以在清單中新增更多值。</block>
   <block id="d41b70ca456515e9579f88a5bc4b81f5" category="paragraph">Number ：建立欄位，讓指派註釋的使用者可以輸入數字。例如、如果註釋類型為「Floor」、則使用者可以選取「Number」的值類型、然後輸入樓層編號。</block>
   <block id="9dc3b5c01c2c832a96e1c6c19e498029" category="paragraph">文字：建立允許自由格式文字的欄位。例如、您可以輸入「Language（語言）」作為註釋類型、選取「Text（文字）」作為值類型、然後輸入語言作為值。</block>
   <block id="bf446d389b04278c2780f587bb4b6e54" category="paragraph">發生錯誤時，您可以按一下「已安裝的資料收集器」頁面 _ 狀態 _ 欄中的 _ 更多詳細資料 _ ，以取得有關錯誤的詳細資料。</block>
@@ -12737,8 +12733,6 @@
   <block id="3c86c080f12d925b5a5ec1ad14563f65" category="paragraph">配置監視器以追蹤基礎設施資源的效能閾值、日誌事件和異常。為節點寫入延遲、儲存容量或應用程式效能等指標建立自訂警報，並在滿足這些條件時接收通知。</block>
   <block id="7c2fe93d0a150c1ccb110c7be9ba4de5" category="inline-link-macro">使用NetApp建立強大的儀表板（影片）</block>
   <block id="87844637813d306b7e217695fa07af30" category="paragraph"><block ref="87844637813d306b7e217695fa07af30" category="inline-link-macro-rx"></block></block>
-  <block id="0fa83ca72fc86aac9bf3cb98f8457548" category="inline-link-macro">註釋和註釋規則（影片），window=read-later</block>
-  <block id="7353b790cd233bfb4d223636cde644bc" category="paragraph"><block ref="7353b790cd233bfb4d223636cde644bc" category="inline-link-macro-rx"></block></block>
   <block id="1fdb67257568169e128ab9cf001f8475" category="inline-link-macro">使用 VM Analyzer 簡化故障排除（影片），window=read-later</block>
   <block id="b1cd067329cb001e27800ecd33c25fac" category="paragraph"><block ref="b1cd067329cb001e27800ecd33c25fac" category="inline-link-macro-rx"></block></block>
   <block id="e71b7decdb06d88e6cf8e034f1ca4723" category="inline-link-macro">NetApp ONTAP ASA r2（全 SAN 陣列）收集器</block>
@@ -12759,4 +12753,21 @@
   <block id="181a51adda79e935faca2d7b775d08b6" category="paragraph">為了在所有StorageGRID系統中對 DII 權利進行一致的計量，無論底層硬體拓撲和配置如何， Data Infrastructure Insights都會使用總可用容量（storagegrid_storage_utilization_total_space_bytes），而不是基於實體磁碟佈局的 RAW 容量。</block>
   <block id="57c5326214c52d2a92dd11ca997a6719" category="paragraph">對於使用基於容量的授權模式的客戶， StorageGRID被計量為「物件」儲存。</block>
   <block id="c865955193b52e756a8fdaf662399f0d" category="paragraph">對於使用傳統 (MU) 授權模式的客戶， StorageGRID以 40TiB 比 1 MU 的比率計量為二級儲存。</block>
+  <block id="24c8b6cd775a9f5db48def0a8d60b2de" category="section-title">過濾布林值</block>
+  <block id="e21bd2c5e8c9a18f8a46d4982abc7d19" category="paragraph">當過濾布林值時，您可能會看到以下過濾選項：</block>
+  <block id="2c60a6bf607f2604b1c9ea225c01fe5f" category="list-text">*任何*：這將傳回所有結果，包括設定為「是」、「否」或根本沒有設定的結果。</block>
+  <block id="b450055879101bef9c44908d590708e3" category="list-text">*是*：僅傳回「是」的結果。請注意，DII 在大多數表格中均顯示“是”作為複選標記。值可以設定為“True”、“On”等；DII 將所有這些都視為“是”。</block>
+  <block id="2d8a6f63945d37accd14439bc5c628c0" category="list-text">*否*：僅傳回「否」結果。請注意，DII 在大多數表格中將“否”顯示為“X”。值可以設定為“False”、“Off”等；DII 將所有這些都視為“No”。</block>
+  <block id="76ea59ab07652499ae39b947c6c24151" category="list-text">*無*：僅傳回根本沒有設定值的結果。也稱為“空”值。</block>
+  <block id="5f5a92bd58c38457567a8f638d79bbae" category="admonition">別名、資料中心、熱門、服務等級、日落、交換器等級、層級和違規嚴重性是系統級註釋，您不能刪除或重新命名；您只能變更其指派的值。</block>
+  <block id="ad1e3d1ed847d48da9abca38044ca432" category="list-text">布林值：建立一個下拉列表，其中包含“是”和“否”選項。例如，「直接連接」註解就是布林值。</block>
+  <block id="3b7bd4f31319fccc3c2226989f30f2ae" category="list-text">日期：這將建立一個包含日期的欄位。例如，如果註釋是日期，請選擇此項目。</block>
+  <block id="543916d2ebe7d28ba5b4e5adc23f1e1c" category="list-text">清單：建立以下任一項：</block>
+  <block id="909b59bf6aecf275b91dbb2cf2ec5521" category="list-text">下拉固定列表</block>
+  <block id="ef957d205d8a4826f9552e63f41f17fe" category="paragraph">當其他人在裝置上指派此註解類型時，他們無法在清單中新增更多值。</block>
+  <block id="1658a49ef0d858de0e9ee69c3a5e10b4" category="list-text">下拉靈活列表</block>
+  <block id="6c97cf7a205eed7477c9cb071a14d09e" category="paragraph">如果您在建立此清單時選擇動態新增值選項，則當其他人在裝置上指派此註解類型時，他們可以在清單中新增更多值。</block>
+  <block id="c17dfb3f3f4ae3af21c5846ff8667831" category="paragraph-title">關於布林註解的說明</block>
+  <block id="86268b3f5a0b59ea7ad7bf21fde99e9d" category="paragraph">當布林註釋進行篩選時，您可能會看到以下要篩選的值：</block>
+  <block id="5d7833cba1c63365c4f78e55d7a8df24" category="list-text">*無*：僅傳回根本沒有設定註解的結果。也稱為“空”值。</block>
 </blocks>
