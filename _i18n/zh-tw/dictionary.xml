@@ -119,8 +119,6 @@
   <block id="30136395f01879792198317c11831ea4" category="section-title">Kubernetes</block>
   <block id="719a89b64a07694e338d45825fcd17f0" category="paragraph">請注意、這些命令使用預設命名空間「NetApp-Monitoring」。如果您已設定自己的命名空間、請在這些名稱空間以及所有後續命令和檔案中取代該命名空間。</block>
   <block id="cab974fdccabc8d42fdf59c797a3fc04" category="paragraph">附註：如果您已安裝最新的NetApp Kubernetes監控操作員、並使用可續約的API存取權杖、即將到期的權杖將自動由新的/重新整理的API存取權杖取代。不需要執行下列手動步驟。</block>
-  <block id="d894fe24a5654169420a98540a56b302" category="list-text">編輯NetApp Kubernetes監控操作員。</block>
-  <block id="a27d1e518922e9050e6e54ae8c965164" category="list-text">修改_spec.output-sink .ap-key_值、以新的API權杖取代舊的API權杖。</block>
   <block id="daed7387fa0b0965feb45d4dc3de1704" category="section-title">RHEL/CentOS和DEBIAN/Ubuntu</block>
   <block id="779ce1f6c23a08b510ed7a6c996d255a" category="list-text">編輯Telegraf組態檔、並以新的API權杖取代舊API權杖的所有執行個體。</block>
   <block id="e89f4056c39669637fb609320173681a" category="list-text">重新啟動Telegraf。</block>
@@ -1704,11 +1702,8 @@
   <block id="4e4315d948ef3fd3aad9be88a442863d" category="paragraph"><block ref="4e4315d948ef3fd3aad9be88a442863d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="79bac41a8e857539d5a75dc7e93e17d8" category="summary">您可以檢視知識庫文章、與NetApp社群連線、觀看影片、或開啟問題單以申請支援。</block>
   <block id="69ac5d78c7ecb4ab9a461a7400773ec3" category="doc">正在申請支援</block>
-  <block id="b9bfbe11ded79fa1b72b327d0497f9dd" category="inline-image-macro">支援頁面</block>
-  <block id="2a0a63dd16c8b87a179a933b2e9eb92e" category="paragraph"><block ref="2a0a63dd16c8b87a179a933b2e9eb92e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e9d356ec51ae4d84881e70ea3c98b6dc" category="section-title">正在啟動支援權利</block>
   <block id="27792947ed5d5da7c0d1f43327ed9dab" category="inline-xref">詳細資料</block>
-  <block id="7b205ab2cecff2344de68946f6fcafe2" category="paragraph">在試用模式下執行時、 Data Infrastructure Insights 提供自助服務和電子郵件支援。訂閱服務後、強烈建議您啟動支援服務權利。啟用支援權利可讓您透過線上聊天室、網路票證系統和電話存取技術支援。在完成註冊之前、預設的支援模式為自助服務。請參閱<block ref="055db438ec51479bd53b937469434a7e" category="inline-xref-macro-rx"></block>下方。</block>
   <block id="933754a1936f865bf848ed02693c2c26" category="paragraph">在初始訂閱程序期間、您的 Data Infrastructure Insights 執行個體將會產生一個 20 位數的 NetApp 序號、從「 950 」開始。此 NetApp 序號代表與您帳戶相關的資料基礎架構深入分析訂閱。您必須註冊NetApp序號、才能啟動支援權益。我們提供兩種支援登錄選項：</block>
   <block id="cc8ae441e8fc2d8b41c5c0efa830b99e" category="list-text">使用原已存在的 NetApp 支援網站（NSS）SSO 帳戶的使用者（即目前的 NetApp 客戶）</block>
   <block id="0a0b0ec9b756ca7bf1c8323bc90df282" category="list-text">沒有原已存在的 NetApp 支援網站（NSS）SSO 帳戶的新 NetApp 客戶</block>
@@ -1728,7 +1723,6 @@
   <block id="9ff2e299ad4aa21f1b2da73ae35e14c1" category="paragraph"><block ref="9ff2e299ad4aa21f1b2da73ae35e14c1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d0666b8b7ae744d105cb544ddc03d8c8" category="list-text">選擇 _ 資料基礎架構 Insights _ 做為產品系列。請選擇您的帳單供應商（ NetApp 或 AWS ）、並參考資料基礎架構 Insights 使用者介面中的「說明 &gt; 支援」功能表、提供您的序號和 NetApp 訂閱名稱或 AWS 客戶 ID ：</block>
   <block id="310e9bfbb0987bc588b6f281357bc81c" category="list-text">如果沒有錯誤發生、使用者將會被引導至「Registration Submitted Successfully（已成功提交登錄）」頁面。與用於註冊的NSSSSO使用者名稱相關的電子郵件地址、會在幾小時內收到一封電子郵件、說明「您的產品現在符合支援資格」。</block>
-  <block id="d41c7a89c53943f7c86e80fe6a27b4dc" category="list-text">身為 NetApp 新客戶，您也需要建立 NetApp 支援網站（NSS）使用者帳戶，以便日後登錄註冊，以及存取支援入口網站的技術支援聊天功能和網路提交問題單。此連結位於<block ref="4b0df7f6652ef877e322a199d6b6edce" category="inline-link-rx"></block>。您可以提供最新註冊的 Data Infrastructure Insights 序號、以加速程序的執行。</block>
   <block id="3757ee6dbdcabe2780104f98224939d5" category="list-text">這是資料基礎架構 Insights NetApp 序號的一次性註冊。</block>
   <block id="bc4afdcc32d9a7d1bc03c2d8ad5b1828" category="section-title">取得支援資訊</block>
   <block id="0ead5de583924ac8d48848b85f68e778" category="section-title">自助服務支援：</block>
@@ -1751,7 +1745,6 @@
   <block id="d509e88fe0d420e546f838c2bf3149e4" category="list-text"><block ref="d509e88fe0d420e546f838c2bf3149e4" category="inline-link-macro-rx"></block></block>
   <block id="78ce7a1ba00884845ede733dc79b1141" category="inline-link-macro">*支援服務單*</block>
   <block id="1ce9a43d63998783a781596de13b0965" category="list-text"><block ref="fa5b9c38e8e5b8e1f4e408b08ce16532" category="inline-link-macro-rx"></block></block>
-  <block id="2911a8a094a0fc515bf83ad1a0cf9eba" category="list-text">* 交談 * ：您將與 NetApp 支援人員連線以取得協助（僅限工作日）。您可以在任何 Data Infrastructure Insights 畫面右上角的 * 說明 &gt; 即時聊天 * 功能表選項中使用聊天功能。</block>
   <block id="ac2ae10a8c7bd50e80c93d5e57fc84da" category="inline-link-macro">*聯絡銷售人員*</block>
   <block id="30a12dfd5908adfdb9f06395cb4b5c34" category="paragraph">您的 Data Infrastructure Insights 序號可從 * 說明 &gt; 支援 * 功能表的服務中看到。如果您在存取服務時遇到問題、且先前已向 NetApp 註冊序號、您也可以從 NetApp 支援網站檢視您的資料基礎架構 Insights 序號清單、如下所示：</block>
   <block id="290bf19e1ed3fabfc80a0ac6d77f6466" category="list-text">登入mysupport.netapp.com</block>
@@ -12770,4 +12763,12 @@
   <block id="c17dfb3f3f4ae3af21c5846ff8667831" category="paragraph-title">關於布林註解的說明</block>
   <block id="86268b3f5a0b59ea7ad7bf21fde99e9d" category="paragraph">當布林註釋進行篩選時，您可能會看到以下要篩選的值：</block>
   <block id="5d7833cba1c63365c4f78e55d7a8df24" category="list-text">*無*：僅傳回根本沒有設定註解的結果。也稱為“空”值。</block>
+  <block id="a647293570fb3320889a900012ccf294" category="list-text">建立一個新的 API 令牌。</block>
+  <block id="174f87cfebc7cef23d8e19f4467ca8a1" category="inline-link-macro">手動升級</block>
+  <block id="6f997cc44c9290ef243df8a0a553f20e" category="list-text">請依照以下步驟操作<block ref="6d9abfddb9977fcf24c6a9ba410ec405" category="inline-link-macro-rx"></block>，選擇新的 API 令牌。</block>
+  <block id="5eb77ae291c88a890426b8950858cbcc" category="paragraph">注意：使用設定管理工具（例如 Kustomize）管理其NetApp Kubernetes Monitoring Operator 的客戶可以按照相同的步驟產生並下載一組更新的 YAML 以推送到他們的儲存庫。</block>
+  <block id="f407e820df29faa344002c82daa17ec2" category="inline-image-macro">支援頁面，width=600</block>
+  <block id="b0baa05e4ca03a2c83cff1367375a3bf" category="paragraph"><block ref="b0baa05e4ca03a2c83cff1367375a3bf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8c4e9ad03446638823176afd0e5f8ea8" category="paragraph">Data Infrastructure Insights在試用模式下提供自助服務和電子郵件支援。一旦您訂閱了服務，強烈建議您啟動支援權利。啟動支援權利後，您可以透過網路票務系統和電話獲得技術支援。在註冊完成之前，預設支援模式是自助服務。看<block ref="055db438ec51479bd53b937469434a7e" category="inline-xref-macro-rx"></block>以下。</block>
+  <block id="204d060241f7de3644e3ebeef168c8aa" category="list-text">作為新的NetApp客戶，您還需要建立一個NetApp支援網站 (NSS) 使用者帳戶，以便將來註冊並造訪支援入口網站以取得技術支援和網路票務。此連結位於<block ref="4b0df7f6652ef877e322a199d6b6edce" category="inline-link-rx"></block>。您可以提供新註冊的Data Infrastructure Insights序號以加快流程。</block>
 </blocks>
