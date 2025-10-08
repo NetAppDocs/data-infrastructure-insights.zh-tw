@@ -14,9 +14,7 @@ keywords: topology, analyze, analysis, map
 
 
 [role="lead"]
-SAN 在處理重要工作負載方面扮演重要角色，但其複雜性可能導致重大中斷和客戶中斷。有了 DII * SAN Analyzer * ，管理 SAN 變得更簡單，更有效率。這項功能強大的工具提供端點對端點的可見度，可將相依性從 VM/ 主機對應至網路， LUN 及儲存設備。
-
-藉由提供互動式拓撲圖， SAN Analyzer 可讓您找出問題，瞭解變更，並增強對資料流的理解。使用 SAN Analyzer 簡化複雜 IT 環境中的 SAN 管理，並提高您對區塊工作負載的可見度。
+SAN 在處理重要工作負載方面發揮著至關重要的作用，但其複雜性可能會導致嚴重的中斷和客戶中斷。透過 DII 的 *SAN Analyzer*，管理 SAN 變得更簡單、更有效率。這個強大的工具提供了端到端的可視性，將依賴關係從 VM/主機映射到網路、LUN 和儲存。透過提供互動式拓撲圖，SAN Analyzer 使您能夠找出問題、了解變更並增強對資料流的理解。使用 SAN Analyzer 簡化複雜 IT 環境中的 SAN 管理並提高對區塊工作負載的可見度。
 
 image:san_analyzer_example_with_panel.png["儲存系統的 SAN Analyzer 拓撲圖"]
 
@@ -44,3 +42,17 @@ image:san_analyzer_protocols.png["SAN 分析器協議"]
 如果您的環境包含 iSCSI 裝置，請將游標移至 _iscsi_ 物件上方，以醒目提示與這些相關 iSCSI 裝置相關的連線。
 
 image:san_analyzer_iscsi_traffic.png["iSCSI 流量已反白顯示"]
+
+
+
+== 故障排除提示
+
+如果遇到問題，請嘗試以下方法：
+
+[cols="2*"]
+|===
+| *問題：* | *試用：* 
+
+
+| 我在圖例中看到諸如_trafficUtilization_或_trafficRate_等指標的<0、=0或>0。 | 這種情況可能在極少數情況下發生，即度量值低於小數點後兩位，例如 0.000123。擴大時間窗口可能有助於更有效地分析指標。 
+|===

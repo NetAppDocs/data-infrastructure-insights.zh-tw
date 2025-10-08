@@ -11198,8 +11198,6 @@
   <block id="e78fd759357c2a61f07ddc6a902f9270" category="list-text">在頁面頂端選取 * 如何購買 * 。</block>
   <block id="e461fd437885ee63b7f00e77ade6b3cb" category="list-text">安排會議或等待代表就試用版與您聯絡。</block>
   <block id="44d2017272b4664ce749afa3c1fc2785" category="summary">SAN Analyzer 提供租戶資產的拓撲</block>
-  <block id="a720fce5b3da4c111f19c80487c269cf" category="paragraph">SAN 在處理重要工作負載方面扮演重要角色，但其複雜性可能導致重大中斷和客戶中斷。有了 DII * SAN Analyzer * ，管理 SAN 變得更簡單，更有效率。這項功能強大的工具提供端點對端點的可見度，可將相依性從 VM/ 主機對應至網路， LUN 及儲存設備。</block>
-  <block id="b03a68ce04fd31de1bf167d4c6537d2f" category="paragraph">藉由提供互動式拓撲圖， SAN Analyzer 可讓您找出問題，瞭解變更，並增強對資料流的理解。使用 SAN Analyzer 簡化複雜 IT 環境中的 SAN 管理，並提高您對區塊工作負載的可見度。</block>
   <block id="9c6601cca8cd67405c34e4897bb272f1" category="section-title">探索資產之間的連結</block>
   <block id="14fe64769d4df689f51e13f60c5ec439" category="admonition">如果收集器已限制使用者，則無法暫停。在暫停收集器之前還原使用者存取權。</block>
   <block id="81c776ec15386302abf1c34d317e3393" category="paragraph">選擇 * 可視性 &gt; 分析 &gt; SAN Analyzer* 以查看 SAN Analyzer 。設定應用程式，主機，架構和 / 或儲存設備的篩選器。隨即顯示物件的地圖，顯示已連接的物件。將游標移到物件上方，即可檢視這些連線的流量計量。</block>
@@ -12768,4 +12766,9 @@
   <block id="5a9b478b441f7c2030a759e864c6a230" category="cell">請聯絡您的帳戶管理員以驗證對Data Infrastructure Insights的存取權。驗證您的控制台個人資料電子郵件地址是否與Data Infrastructure Insights歡迎電子郵件中顯示的電子郵件地址相符</block>
   <block id="247e36ea24d5c72138f2f225cbb3ff5a" category="paragraph">更多故障排除技巧可在<block ref="f2ab65542a88d990d661538806479fe3" category="inline-link-macro-rx"></block>（需要支援登入）。</block>
   <block id="62d43538bf5a9e08593a0549e6121905" category="cell">當 AU 安裝在 SELINUX 上時，SE 應設定為 _permissive_ 模式。不支援_Enforcing_模式。將SELINUX設定為寬容模式後，重新啟動AU服務。</block>
+  <block id="7f87992c9dca3c36f4f05468d9b74826" category="paragraph">SAN 在處理重要工作負載方面發揮著至關重要的作用，但其複雜性可能會導致嚴重的中斷和客戶中斷。透過 DII 的 *SAN Analyzer*，管理 SAN 變得更簡單、更有效率。這個強大的工具提供了端到端的可視性，將依賴關係從 VM/主機映射到網路、LUN 和儲存。透過提供互動式拓撲圖，SAN Analyzer 使您能夠找出問題、了解變更並增強對資料流的理解。使用 SAN Analyzer 簡化複雜 IT 環境中的 SAN 管理並提高對區塊工作負載的可見度。</block>
+  <block id="98ec681d588dc0fae27ac945915ffe5e" category="section-title">故障排除提示</block>
+  <block id="2f0b05ac17e2cbf6a46b1c047243119b" category="paragraph">如果遇到問題，請嘗試以下方法：</block>
+  <block id="5ae21ce2895991936f988458e0d59550" category="cell">我在圖例中看到諸如_trafficUtilization_或_trafficRate_等指標的&lt;0、=0或&gt;0。</block>
+  <block id="08e0ca793e3dec21e2eea30949c98088" category="cell">這種情況可能在極少數情況下發生，即度量值低於小數點後兩位，例如 0.000123。擴大時間窗口可能有助於更有效地分析指標。</block>
 </blocks>
