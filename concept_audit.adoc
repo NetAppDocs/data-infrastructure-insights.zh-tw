@@ -89,9 +89,6 @@ image:Audit_Filters.png["稽核篩選器"]
 資料基礎架構 Insights 稽核的活動和行動可分為下列廣泛領域：
 
 * *使用者帳戶*：登入、登出、角色變更等
-+
-範例： _ 使用者 * Tony Lavoi* 從 * 10.1.120.15* 登入、使用者代理程式 * Mozilla / 5.0 （ Windows NT 10.0 ； Win64 ； x64 ） AppleWebKit/537.36 （ KHTML 、例如 Gecko ） Chrome / 85.0.4183.121 Safari/537.36* 、登入方法 * BlueXP PortPortal 登入 *
-
 * *擷取單位*：建立、刪除等
 +
 範例：_擷取單元* AU波士頓1 *移除_。

@@ -40,7 +40,7 @@ Data Infrastructure Insights 儲存下列資訊：
 
 * 使用者存取資料
 +
-驗證與存取資訊、可讓 NetApp BlueXP  與區域資料基礎架構洞見網站通訊、包括與使用者授權相關的資料。
+允許NetApp控制台與區域Data Infrastructure Insights站點通訊的身份驗證和存取訊息，包括與使用者授權相關的資料。
 
 * 儲存工作負載安全性使用者目錄資料
 +
@@ -76,7 +76,7 @@ Data Infrastructure Insights 會根據建立環境的區域來儲存資訊。
 無論資料基礎架構 Insights 環境所在的地區為何、下列資訊都位於美國境內：
 
 * 環境網站（有時稱為「租戶」）資訊、例如網站/帳戶擁有者。
-* 可讓 NetApp BlueXP  與區域資料基礎架構洞見網站通訊的資訊、包括與使用者授權相關的任何資訊。
+* 允許NetApp控制台與區域Data Infrastructure Insights通訊的訊息，包括與使用者授權有關的任何資訊。
 * 與 Data Infrastructure Insights 使用者與租戶之間關係相關的資訊。
 
 

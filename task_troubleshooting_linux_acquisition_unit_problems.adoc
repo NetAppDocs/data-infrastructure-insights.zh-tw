@@ -21,7 +21,7 @@ keywords: AU, acquisition unit, trioubleshooting
 | 在 *Acquisition Units* 標籤的 *Observe > Collectors* 頁面上的 AU 狀態顯示 "Certificate Expired " （證書已過期）或 "Certificate Recalled （證書已撤銷） " 。 | 按一下AU右側的功能表、然後選取*還原連線*。請依照指示還原您的擷取設備：1.停止擷取單元（AU）服務。您可以按一下「_複製停止命令_」按鈕、將命令快速複製到剪貼簿、然後將此命令貼到擷取單元機器上的命令提示字元中。2.在 NetApp AU 的 /var/lib/lovardses/acq/conf_ 資料夾中建立名為「 token 」的檔案。3.按一下 _ 複製權杖 _ 按鈕，然後將此權杖貼到您建立的檔案中。4.重新啟動 AU 服務。按一下「_複製重新啟動命令_」按鈕、然後將命令貼到AU的命令提示字元中。 
 
 
-| 啟動擷取單元伺服器服務時、權限遭拒 | 當AU安裝在SELinux上時、SE應設定為_permals_模式。不支援_強制_模式。將SELinux設定為允許模式後、請重新啟動AU服務。link:https://kb.netapp.com/Cloud/BlueXP/DII/Permission_denied_when_starting_the_Cloud_Insight_Acquisition_Unit_Server_Service["深入瞭解"]。 
+| 啟動擷取單元伺服器服務時、權限遭拒 | 當 AU 安裝在 SELINUX 上時，SE 應設定為 _permissive_ 模式。不支援_Enforcing_模式。將SELINUX設定為寬容模式後，重新啟動AU服務。 
 
 
 | 伺服器需求未達到 | 確保您的擷取單元伺服器或 VM 符合要求link:concept_acquisition_unit_requirements.html["需求"] 
@@ -90,6 +90,6 @@ image:ProxyEndpoints_NewTable.png["Proxy端點表格"]
 
 == 資源
 
-如需其他疑難排解秘訣，請參閱link:https://kb.netapp.com/Cloud/BlueXP/DII["NetApp知識庫"]（需要支援登入）。
+更多故障排除技巧可在link:https://kb.netapp.com/Cloud/ncds/nds/dii/dii_kbs["NetApp知識庫"]（需要支援登入）。
 
 如需其他支援資訊、請參閱 Data Infrastructure Insights link:concept_requesting_support.html["支援"] 頁面。

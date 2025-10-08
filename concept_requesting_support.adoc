@@ -80,7 +80,7 @@ NetApp透過多種方式為Data Infrastructure Insights提供支援。提供全�
 
 這些支援選項以試用模式提供、全年無休免費提供：
 
-* * https://kb.netapp.com/Cloud/BlueXP/DII[KnowledgeBase]*
+* * https://kb.netapp.com/Cloud/ncds/nds/dii/dii_kbs [知識庫]*
 +
 按一下本節中的連結即可前往NetApp知識庫、您可在其中搜尋相關文章、操作方法等。
 
@@ -113,7 +113,7 @@ NOTE: 您必須註冊<<activating-support-entitlement,啟動支援>>才能取得
 * link:https://mysupport.netapp.com/portal?_nfpb=true&_st=initialPage=true&_pageLabel=submitcase["*支援服務單*"]
 
 
-您也可以按一下連結來申請銷售支援link:https://bluexp.netapp.com/contact-cds["*聯絡銷售人員*"]。
+您也可以點擊「聯絡銷售」連結來要求銷售支援。
 
 您的 Data Infrastructure Insights 序號可從 * 說明 > 支援 * 功能表的服務中看到。如果您在存取服務時遇到問題、且先前已向 NetApp 註冊序號、您也可以從 NetApp 支援網站檢視您的資料基礎架構 Insights 序號清單、如下所示：
 

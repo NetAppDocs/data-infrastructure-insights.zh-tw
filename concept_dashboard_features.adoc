@@ -797,7 +797,7 @@ image:UnitsOnPrimaryAndSecondaryYAxis.png["兩個Y軸上的單位"]
 結合*電視模式*之後、自動重新整理功能可在儀表板或資產頁面上近乎即時地顯示資料。TV模式提供簡潔的顯示；導覽功能表會隱藏、提供更多螢幕空間供您顯示資料、如同編輯按鈕。TV Mode 會忽略典型的 Data Infrastructure Insights 逾時、直到手動登出或透過授權安全性通訊協定自動登出為止、畫面才會保持即時。
 
 
-NOTE: 由於 NetApp BlueXP  本身的使用者登入逾時時間為 7 天、因此資料基礎架構洞見也必須登出該事件。您只要重新登入、儀表板就會繼續顯示。
+NOTE: 由於NetApp Console 自己的使用者登入逾時時間為 7 天，因此Data Infrastructure Insights也必須在該事件發生時登出。您只需再次登錄，您的儀表板將繼續顯示。
 
 * 若要啟動電視模式、請按一下電視模式按鈕。
 * 若要停用電視模式、請按一下畫面左上角的* Exit（結束）*按鈕。

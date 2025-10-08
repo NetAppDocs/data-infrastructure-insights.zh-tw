@@ -488,7 +488,6 @@
   <block id="e79313bfe03c4561628e01c7102ba5fb" category="section-title">稽核事件與行動</block>
   <block id="8b967231ec2e102ec5001f95b74a1fbd" category="paragraph">資料基礎架構 Insights 稽核的活動和行動可分為下列廣泛領域：</block>
   <block id="c5c594e685367681b202d84ba0c87407" category="list-text">*使用者帳戶*：登入、登出、角色變更等</block>
-  <block id="d7a21ae00693a409dd262b09be87f4f7" category="paragraph">範例： _ 使用者 * Tony Lavoi* 從 * 10.1.120.15* 登入、使用者代理程式 * Mozilla / 5.0 （ Windows NT 10.0 ； Win64 ； x64 ） AppleWebKit/537.36 （ KHTML 、例如 Gecko ） Chrome / 85.0.4183.121 Safari/537.36* 、登入方法 * BlueXP PortPortal 登入 *</block>
   <block id="f8c4f6c2455f59fa0c1cc9fed5a8c6c1" category="list-text">*擷取單位*：建立、刪除等</block>
   <block id="c1e8e78730ec648eeb7339e916d33231" category="paragraph">範例：_擷取單元* AU波士頓1 *移除_。</block>
   <block id="fa421109b9971a24c53c504a4c5ef88d" category="list-text">*資料收集器*：新增、移除、修改、延遲/恢復、變更擷取單位、 開始/停止等</block>
@@ -1076,7 +1075,6 @@
   <block id="b7ead3a19a9e810bd9a56c2d0ba0970d" category="paragraph">每個Widget會在Widget的右上角顯示其自動重新整理時間間隔。</block>
   <block id="2d5591e725889a349c977cc4e7cae6db" category="paragraph">自訂儀表板時間範圍無法使用自動重新整理。</block>
   <block id="86a98ce9895b65a865ec666b2d4a77a5" category="paragraph">結合*電視模式*之後、自動重新整理功能可在儀表板或資產頁面上近乎即時地顯示資料。TV模式提供簡潔的顯示；導覽功能表會隱藏、提供更多螢幕空間供您顯示資料、如同編輯按鈕。TV Mode 會忽略典型的 Data Infrastructure Insights 逾時、直到手動登出或透過授權安全性通訊協定自動登出為止、畫面才會保持即時。</block>
-  <block id="e1ce05359ad592db56c9190034f73bb2" category="admonition">由於 NetApp BlueXP  本身的使用者登入逾時時間為 7 天、因此資料基礎架構洞見也必須登出該事件。您只要重新登入、儀表板就會繼續顯示。</block>
   <block id="16e17d81e16ad1130af115e7872fb73d" category="list-text">若要啟動電視模式、請按一下電視模式按鈕。</block>
   <block id="01ae5a5571c2696aeab673838cae159a" category="list-text">若要停用電視模式、請按一下畫面左上角的* Exit（結束）*按鈕。</block>
   <block id="ab725dcaf8aab4f9267b993fc1b48570" category="paragraph">您可以按一下右上角的「暫停」按鈕、暫時暫停自動重新整理。暫停時、儀表板時間範圍欄位會顯示暫停資料的作用中時間範圍。自動重新整理暫停時、您的資料仍在擷取和更新中。按一下「恢復」按鈕以繼續自動重新整理資料。</block>
@@ -1820,8 +1818,6 @@
   <block id="f3401e4ee824520e1586f085b0650e9f" category="summary">在免費試用期間的任何時間點、您都可以訂閱 Data Infrastructure Insights 。</block>
   <block id="1aab8077f1a540841a66dd24d0732360" category="doc">訂閱 Data Infrastructure Insights</block>
   <block id="f887dd4c6ffb2d6fd67813bccd44e611" category="paragraph">開始使用 Data Infrastructure Insights 只需三個簡單步驟：</block>
-  <block id="21a763771df4e64b083a2b050ce81f09" category="inline-link-macro">* NetApp BlueXP*</block>
-  <block id="6341e61d6dc641d29b3f2e7300137ea9" category="list-text">註冊帳戶<block ref="e0b3e45a049f223d3b91d005d1e31db5" category="inline-link-macro-rx"></block>即可存取所有 NetApp 雲端產品。</block>
   <block id="cab27dc53edb571cac663ce2e16450dc" category="inline-link-macro">AWS 市場</block>
   <block id="7bc1d8b07dfc0e98950abc0c7f3979a5" category="inline-link-macro">資訊與地區</block>
   <block id="d618d9be50e37adf260935938e49af96" category="inline-image-macro">掛鎖</block>
@@ -1882,7 +1878,6 @@
   <block id="9406fb3af0e8e2bf8446823785c0e069" category="inline-link">資料基礎架構洞見</block>
   <block id="fb34277cad05cd8f39fa57afaad666e5" category="paragraph">按一下 Amazon Marketplace 連結即可開啟 AWS<block ref="3ca19a3071fc3facb94d3a6ba2a1aa87" category="inline-link-rx"></block> 訂閱頁面、您可以在其中完成訂閱。請注意、您在計算機中輸入的值不會填入AWS訂閱頁面；您需要在此頁面上輸入管理單元總數。</block>
   <block id="b0d79f167bb60f1ee8201b52678b1e91" category="paragraph">在您輸入管理單元總數並選擇12個月或36個月的訂閱期限之後、請按一下*設定您的帳戶*以完成訂閱程序。</block>
-  <block id="1d523fd0bf0013fb2bfc407093be520b" category="paragraph">AWS 訂購程序完成後、您將被帶回 Data Infrastructure Insights 環境。或者、如果環境不再處於作用中狀態（例如、您已登出）、您將會進入 NetApp BlueXP 登入頁面。當您再次登入 Data Infrastructure Insights 時、您的訂閱將會生效。</block>
   <block id="5d3063371ceaf93b149242b0ae0e859e" category="admonition">在AWS Marketplace頁面上按一下*設定您的帳戶*之後、您必須在一小時內完成AWS訂購程序。如果您未在一小時內完成、則必須再次按*設定帳戶*以完成程序。</block>
   <block id="adeb6d7dca380a78c632dade1cb64bd9" category="paragraph">如果發生問題且訂閱程序無法正確完成、您仍會在登入環境時看到「試用版」橫幅。在此情況下、您可以前往*管理&gt;訂閱*、然後重複訂閱程序。</block>
   <block id="7a523464a7ffeacc5aafdfd0de3ab1aa" category="section-title">檢視您的訂閱狀態</block>
@@ -2021,7 +2016,6 @@
   <block id="19afc2b6de08730341fe43a49d74b17f" category="cell">使用者管理：邀請/新增/修改/停用</block>
   <block id="99fb7036d3e93ba3319d093dfe84cd02" category="paragraph">*需要Premium Edition</block>
   <block id="c6050a6ee22484e6d99c05b9079a54e6" category="section-title">邀請使用者建立帳戶</block>
-  <block id="2e28d2e91336191eb4cfb9f135bf4ce2" category="paragraph">透過 BlueXP 建立新的使用者帳戶。使用者可以回應透過電子郵件傳送的邀請、但如果使用者沒有 BlueXP 帳戶、則使用者必須註冊 BlueXP 、才能接受邀請。</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="list-title">開始之前</block>
   <block id="2261218e5eda0b1a833ad7434d235af5" category="list-text">使用者名稱是邀請函的電子郵件地址。</block>
   <block id="ee878f787b1f1f1d4994736d075986bd" category="list-text">瞭解您要指派的使用者角色。</block>
@@ -2060,27 +2054,12 @@
   <block id="d26ae26dfaa208a028ca6437966e9b43" category="section-title">什麼是身分識別聯盟？</block>
   <block id="3c55703ac1b754437c4ca4d09b9083c0" category="paragraph">使用身分識別聯盟：</block>
   <block id="1fa3ec89d7b92a55ab22349de75a4680" category="list-text">驗證會委派給客戶的身分識別管理系統、使用客戶在公司目錄中的認證資料、以及多因素驗證（MFA）等自動化原則。</block>
-  <block id="08f656c4c33fd00fad5ab1ef569dae11" category="list-text">使用者登入一次所有 NetApp BlueXP 服務（單一登入）。</block>
-  <block id="02f6b1d6847323521b6d5dfdeb3f5dbf" category="paragraph">使用者帳戶是在適用於所有雲端服務的 NetApp BlueXP 中進行管理。依預設、驗證是使用 BlueXP 本機使用者設定檔完成。以下是此程序的簡化概觀：</block>
-  <block id="58ccf39c430354a2330777ebbfdc320c" category="inline-image-macro">使用本機的 BlueXP 驗證</block>
-  <block id="6e7c9d2ac3ef07c7bcfe628147140973" category="paragraph"><block ref="6e7c9d2ac3ef07c7bcfe628147140973" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8307f5e5195927d36157a98119d50cb2" category="paragraph">不過、有些客戶想要使用自己的身分識別供應商來驗證其使用者的資料基礎架構洞見及其其他 NetApp BlueXP  服務。透過身分識別聯盟、 NetApp BlueXP 帳戶會使用公司目錄中的認證進行驗證。</block>
   <block id="5bdf50c3632df05e809cd15e1fcb4ca9" category="paragraph">以下是此程序的簡化範例：</block>
-  <block id="34dde67853699a7c5e92b37ac717d586" category="inline-image-macro">使用同盟的 BlueXP 驗證</block>
-  <block id="14bf8864e0c03f214a9531c84f7509ff" category="paragraph"><block ref="14bf8864e0c03f214a9531c84f7509ff" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7492f425dcc16dfdb3bf6df60569e6fb" category="paragraph">在上圖中、當使用者存取 Data Infrastructure Insights 時、該使用者會被導向客戶的身分識別管理系統進行驗證。帳戶驗證完成後、使用者會被導向 Data Infrastructure Insights 租戶 URL 。</block>
   <block id="41f5e02dabb202e2e56ff56a913cc88b" category="section-title">啟用身分識別聯盟</block>
-  <block id="76ef581d75f4d1e4d3bdceeb091433ef" category="inline-link-macro">BlueXP 聯合指令</block>
-  <block id="f68beb94c4510489905761611b802b02" category="paragraph">BlueXP 使用 Auth0 實作身分識別聯盟、並與 Active Directory Federation Services （ ADFS ）和 Microsoft Azure Active Directory （ AD ）等服務整合。若要設定身分識別聯盟，請參閱<block ref="dcb213271585f680aa429c2cd0d8d64f" category="inline-link-macro-rx"></block>。</block>
-  <block id="885922ff1b836c95f53f6ede8cf15917" category="admonition">您必須先設定 BlueXP  身分識別聯盟、才能將 SSO 與資料基礎架構深入分析搭配使用。</block>
-  <block id="5bb414ee12d60beb5148ebd546560765" category="paragraph">請務必瞭解、 BlueXP  中不斷變化的身分識別聯盟不僅適用於資料基礎架構洞見、也適用於所有 NetApp BlueXP  服務。客戶應與他們擁有的每個 BlueXP 產品的 NetApp 團隊討論此變更、以確保他們所使用的組態能與身分識別聯盟搭配運作、或是需要對任何帳戶進行調整。客戶也必須讓內部SSO團隊參與身分識別聯盟的變更。</block>
-  <block id="9ebe3356d760f8536e9bb24151537fda" category="paragraph">此外、請務必瞭解、一旦啟用身分識別聯盟、公司身分識別提供者的任何變更（例如從 SAML 移轉至 Microsoft AD ）都可能需要 BlueXP 中的疑難排解 / 變更 / 注意、才能更新使用者的設定檔。</block>
-  <block id="5688f19f1e497727b537222451f54cc6" category="paragraph">對於這類或任何其他聯盟問題，您可以在開啟支援服務單<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block>，然後選取類別「 BlueXP  。 NetApp 。 com &gt; 聯合問題」。</block>
   <block id="d6034d333b0966edaeeea729724c4988" category="section-title">單一登入（SSO）使用者自動資源配置</block>
   <block id="5ca34449651a28aef2f66150bbdab559" category="paragraph">除了邀請使用者之外、管理員也可以為公司網域中的所有使用者啟用 * 單一登入（ SSO ）使用者自動資源配置 * 存取 Data Infrastructure Insights 、而無需個別邀請使用者。啟用 SSO 後、任何擁有相同網域電子郵件地址的使用者都可以使用其公司認證登入 Data Infrastructure Insights 。</block>
   <block id="fa8a297cebb990edca45e0364e7e6b45" category="inline-link-macro">身分識別聯盟</block>
-  <block id="700b1528a54f585af4e6babcff795f22" category="admonition">Data Infrastructure Insights Premium Edition 提供 _SSO 使用者自動資源配置 _ 、而且必須先進行設定、才能啟用 Data Infrastructure Insights 。SSO 使用者自動佈建組態包括<block ref="822fb5372050010317b40dcb63a546f0" category="inline-link-macro-rx"></block>透過 NetApp BlueXP  、如前節所述。聯盟允許單一登入使用者使用公司目錄中的認證來存取您的 NetApp BlueXP 帳戶、使用開放式標準、例如安全聲明標記語言 2.0 （ SAML ）和 OpenID 連線（ OIDC ）。</block>
-  <block id="3e1bcd2d4d8f98d94d9ab44d7d7c4163" category="paragraph">若要設定 _SSO 使用者自動資源配置 _ 、您必須先在 * 管理 &gt; 使用者管理 * 頁面上設定 BlueXP 身分識別聯盟。選取橫幅中的 * 設定聯盟 * 連結以繼續執行 BlueXP 聯盟。設定好之後、 Data Infrastructure Insights 管理員就可以啟用 SSO 使用者登入。當系統管理員啟用_SSO使用者自動資源配置_時、他們會為所有SSO使用者（例如來賓或使用者）選擇預設角色。透過SSO登入的使用者將擁有該預設角色。</block>
   <block id="69b24ac806086d8120c6941f51bea8c7" category="inline-image-macro">使用者管理與聯盟</block>
   <block id="141cee4c6d3099b12c6927aace6bf538" category="paragraph"><block ref="141cee4c6d3099b12c6927aace6bf538" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a813fe1072f1f4f8421f847135972e39" category="paragraph">有時、系統管理員會想要將單一使用者提升為預設SSO角色（例如、讓他們成為系統管理員）。他們可以在「*管理&gt;使用者管理*」頁面上、按一下使用者的右側功能表、然後選取「_assign role_」。以這種方式指派明確角色的使用者、即使其後停用 _SSO 使用者自動資源配置 _ 、仍可繼續存取 Data Infrastructure Insights 。</block>
@@ -5752,7 +5731,6 @@
   <block id="6bf565eb0af1d9c4319c14b7f1ed3b40" category="list-text">功能資料</block>
   <block id="acc33fbeb51f2c273dbbbe898cd55111" category="paragraph">這是NetApp提供雲端資料服務所產生的資料、可讓NetApp在雲端資料服務的開發、部署、營運、維護及安全方面、掌握最新資訊。功能資料不包含客戶資訊或個人資訊。</block>
   <block id="8a0aeae003bb44ce51746437118cac5d" category="list-text">使用者存取資料</block>
-  <block id="31dc46cbad0a2e3127365feb257368b1" category="paragraph">驗證與存取資訊、可讓 NetApp BlueXP  與區域資料基礎架構洞見網站通訊、包括與使用者授權相關的資料。</block>
   <block id="1dd36ea366f8218507b500da92bb6c48" category="list-text">儲存工作負載安全性使用者目錄資料</block>
   <block id="e587cf6b5b26fd5aa0090c89ebb05008" category="paragraph">如果啟用工作負載安全功能、且客戶選擇啟用使用者目錄收集器、系統會儲存使用者顯示名稱、公司電子郵件地址、以及從Active Directory收集的其他資訊。</block>
   <block id="4030f95cb0d895349e65658e719f5d46" category="admonition">使用者目錄資料是指由工作負載安全性使用者目錄資料收集器所收集的使用者目錄資訊、而非資料基礎架構 Insights / 工作負載安全性本身的使用者相關資料。</block>
@@ -5770,7 +5748,6 @@
   <block id="206942a675cab8dd706f1c5d66ae53a4" category="list-text">工作負載安全稽核資訊</block>
   <block id="eadd19c061641ba4fce9e9fbb954b811" category="paragraph">無論資料基礎架構 Insights 環境所在的地區為何、下列資訊都位於美國境內：</block>
   <block id="2a56580b4f73dbbdeb1ee18d500fa3e8" category="list-text">環境網站（有時稱為「租戶」）資訊、例如網站/帳戶擁有者。</block>
-  <block id="5500b33272f685ee69a5dee2eb3d3ec9" category="list-text">可讓 NetApp BlueXP  與區域資料基礎架構洞見網站通訊的資訊、包括與使用者授權相關的任何資訊。</block>
   <block id="e2974ba7c41705b05f12779115268649" category="list-text">與 Data Infrastructure Insights 使用者與租戶之間關係相關的資訊。</block>
   <block id="71071f9eeb8b3ff7f4a52f9927b52da4" category="section-title">主機區域</block>
   <block id="2c5e620943b15b31c38df4433ca50af9" category="paragraph">主機區域包括：</block>
@@ -5983,29 +5960,18 @@
   <block id="6dccb0b39ff4102f40182d2486243608" category="section-title">從物件移除商業實體</block>
   <block id="7b855521b65fe198b7fa8deffb44b477" category="paragraph">若要從物件或物件移除企業實體、請查詢並選取物件、按一下*大量動作*、然後選取_移除註釋_。選取「營業實體」附註、然後按一下「*刪除*」。</block>
   <block id="9be58f2fc8b11ec837406376ca6b3e2a" category="doc">資料基礎架構洞見入門</block>
-  <block id="c9c452240be4db82e89f010124f3c4a2" category="paragraph">在開始使用資料基礎架構洞見之前、您必須先註冊 * NetApp BlueXP  入口網站。如果您已經登入 NetApp BlueXP  、您可以透過幾個快速步驟、開始免費試用 Data Infrastructure Insights 。</block>
-  <block id="5bff30d13ce98c505187872963af1f25" category="section-title">建立您的 NetApp BlueXP 帳戶</block>
   <block id="1e26781b207fa848ce81c7268cf016a7" category="list-text">如果您尚未註冊、請選取 * 註冊 *</block>
   <block id="05d2a837df7692f0d65e4466b2fb05bd" category="list-text">輸入有效的商業電子郵件地址、然後選擇密碼。</block>
   <block id="ad66d403ef43ddd58a7b527874c51878" category="list-text">輸入您的公司名稱和全名。</block>
   <block id="895a961645c5f6456e2cc43102e1de8a" category="list-text">接受條款與條件、然後選擇 * 繼續 * 。</block>
-  <block id="027e58ebcf59f73bde476a8af6584584" category="list-text">BlueXP 將引導您完成入門。</block>
-  <block id="6670eac4232d1c66e6c936fe67e52aff" category="section-title">如果我已經登入 NetApp BlueXP 、該怎麼辦？</block>
   <block id="a46b8a484704b65f978247cb9b3901aa" category="paragraph">輸入您的電子郵件地址和密碼。接著您將前往NetApp的雲端產品頁面。</block>
-  <block id="a255e7df64ed3494ccf094bd8b25822f" category="paragraph">選取 Data Infrastructure Insights 。</block>
-  <block id="ce69050591300865b670a02cda814df2" category="inline-image-macro">BlueXP  上的 Data Infrastructure Insights 免費試用版</block>
-  <block id="bb54fa54730b137dbc2cd2c625c413eb" category="paragraph"><block ref="bb54fa54730b137dbc2cd2c625c413eb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="eeecd13aa136e65aaedc64374c7415bc" category="section-title">開始免費試用 Data Infrastructure Insights</block>
   <block id="3b1f676d06286548e11b332567f42bbd" category="inline-link-macro">開始訂購</block>
   <block id="b48d78927dd619cab2e6b7fde5ffb6b1" category="paragraph">在免費試用期間、您可以<block ref="822a67eb96671d13fff372a75b259713" category="inline-link-macro-rx"></block>隨時取得 Data Infrastructure Insights 。訂閱後、您可以根據目前的訂閱內容、使用 Data Infrastructure Insights 功能。</block>
   <block id="2c4bb88652ba26d23266d851053ba465" category="section-title">登入後立即使用</block>
-  <block id="c95038e09e37b3186bbce880a572f8f5" category="paragraph">每位使用者的邀請電子郵件中也會包含此URL、方便您輕鬆存取及加入書籤。如果使用者尚未登入 BlueXP 、系統會提示使用者登入。</block>
   <block id="da115c4fc9cae6fc87764395ef9ff331" category="inline-link-macro">*開始收集資料*</block>
   <block id="cc580c5eecd9c28053db6de1830561ee" category="section-title">登出</block>
-  <block id="98377bec6f105f7567a616e2fae146d1" category="paragraph">若要登出 Data Infrastructure Insights 、請按一下您的 * 使用者名稱 * 、然後選取 * 登出 * 。您將返回 BlueXP 登入畫面。</block>
-  <block id="e09151ab8df045eb7a668a5d788f1872" category="admonition">登出 Data Infrastructure Insights 會將您登出 BlueXP  。您也會登出其他使用 BlueXP 登入的 NetApp 雲端服務。</block>
   <block id="8463a61dd94ff5934036d4c8a8936e32" category="section-title">閒置逾時</block>
-  <block id="db7d4581c8073d9c4dda50c4994c4383" category="paragraph">根據預設、如果六小時（ 360 分鐘）內沒有活動、 BlueXP 會將使用者登出。無論活動為何、使用者都會在七天後登出。</block>
   <block id="fde8afa3fd65a9f38d9b11377453846e" category="doc">設定Cloud Volumes ONTAP 適用於NetApp ONTAP 的支援NetApp的支援功能、包括支援功能</block>
   <block id="c45671a9389f697917f0b33d12822c51" category="section-title">儲存組態Cloud Volumes ONTAP</block>
   <block id="2ffc6472f9d6abaf761bbe2e6a0385ce" category="paragraph">請參閱 OnCommand Cloud Volumes ONTAP 說明文件，以設定單一節點 / HA AWS 執行個體來主控工作負載安全性代理程式：<block ref="caca64b8e9927e0ea8e8b0158b9e47cd" category="inline-link-rx"></block></block>
@@ -8929,7 +8895,6 @@
   <block id="5eb6bb157528b365f84c27bb4784031b" category="cell">秘密金鑰</block>
   <block id="9447267c06cce84dba179c481872fb16" category="cell">Cloud Volumes秘密金鑰</block>
   <block id="36d35d8bdb33f254c1406a404bc7c125" category="cell">我收到與此類似的錯誤：「無法執行要求：連線至 &lt;AWS 區域端點 &gt;:8080 [&lt;AWS 區域端點 &gt;/AWS 區域端點 IP&gt;] 失敗：連線逾時：取得 \https://&lt;AWS 區域端點 FQDN&gt;:8080/v1/Storage/IPRanges HTTP/1.1 」</block>
-  <block id="ef756d1229bc6f51e983884d984a03f3" category="inline-link-macro">NetApp知識庫文章</block>
   <block id="47407ceeb441f7c5d1eac8ca6060c4b7" category="summary">設定NetApp Cloud Volumes ONTAP 資料收集器</block>
   <block id="a7544b3f9e0cc7c642c8b55af45cc192" category="doc">NetApp Cloud Volumes ONTAP 資料收集器</block>
   <block id="2285e08ef18a1a3f2e02b335409147d7" category="paragraph">此資料收集器可支援Cloud Volumes ONTAP 從各種零散組態收集庫存。</block>
@@ -9265,7 +9230,6 @@
   <block id="53f8bc03c7402d7812acddbaa9e936ca" category="cell">可能的解決方案：*建議：使用更強大的功能（例如 1024位元）RSA金鑰。*不建議：修改JVM java.security組態、以利用限制JDK.certpath.disabledAlgorith數 來允許512位元RSA金鑰。請參閱。 <block ref="8c7ff7eed57156b6919b2144a456417e" category="inline-link-macro-rx"></block></block>
   <block id="fabe685d95e2e1417a08839fae32f1b9" category="cell">我看到以下訊息：「 VMware 日誌套件在 8.0.1 版以下的 VMware 上不受支援」</block>
   <block id="09e914a359bccc237b5d356257feffe8" category="inline-link-macro">知識庫文章</block>
-  <block id="2cb7dfab51629866872e7d7f1e343086" category="cell">8.0.1 之前的 VMware 版本不支援記錄收集。如果您想要使用 Data Infrastructure Insights 中的記錄集合功能、請將 VI Center Infrastructure 基礎架構升級至 8.0.1 版或更新版本。如需詳細資訊，請參閱本<block ref="510a6f6d1fdadbdea9d537bab50e5367" category="inline-link-macro-rx"></block>。</block>
   <block id="16418fb6362362bf39641dbe5e3e3d86" category="summary">使用註釋追蹤資料。</block>
   <block id="25d7e5698aba7e130a2b0da07a8635ed" category="paragraph">自訂資料基礎架構 Insights 以追蹤符合企業需求的資料時、您可以定義特殊附註（稱為附註）、並將其指派給您的資產。</block>
   <block id="407dc792025a10c7ad65e372a7704eb6" category="paragraph">您可以使用資產生命週期結束、資料中心、建置位置、儲存層或Volume服務層級等資訊、為資產指派附註。</block>
@@ -10321,17 +10285,11 @@
   <block id="37b418c8c2b422040e90081e18556979" category="section-title">登入問題</block>
   <block id="8f85ee65b3485bb4199931404085584c" category="cell">Data Infrastructure Insights 會每 6 小時自動登出一次</block>
   <block id="39595915536b739d06f4c02735749d51" category="cell">這是因為瀏覽器的第三方 Cookie 已停用。使用者可以設定瀏覽器來啟用所有第三方 Cookie 、或使用較窄的例外清單來啟用 Data Infrastructure Insights 。範例：開啟瀏覽器的設定選取「允許所有 Cookie 」選項。* 或 * 選取「區塊協力廠商 Cookie 」、並新增例外情況至： __[\*.]auth0.com 和 NetApp .com_ 。Microsoft Edge 提供與 Chrome 相同的例外格式。在 Firefox 中、 Cookie 例外會指定為 Simply _auth0.com 和 _netapp.com 。</block>
-  <block id="8ff0a6baa556dcfc21fcb29db0eff472" category="cell">我有 BlueXP 帳戶、但無法登入 BlueXP 。</block>
   <block id="0659d428df833a806e29e65e632d380a" category="inline-link-macro">NetApp支援</block>
-  <block id="6fbdc7276d4f79696070dabc0205c452" category="cell">從開啟 Ticket<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block> 。選擇類別「 blueXP.netapp.com &gt; 帳戶 / 登入問題」或「 bluexp.netapp.com &gt; 聯盟問題」。這些是專為 BlueXP 問題所設計。如需瞭解所有其他 Data Infrastructure Insights 技術支援問題<block ref="1a8b44ad735b0e8f3f08395032e9cb16" category="inline-link-macro-rx"></block>、請聯絡。</block>
   <block id="7bb58e74fa35bd90237db949c52cec82" category="cell">我受邀參加 Data Infrastructure Insights 、但卻收到「未經授權」的訊息。</block>
-  <block id="ab1561bb6c52df24635b2b2ff6194a94" category="cell">確認您已註冊 BlueXP 帳戶、或貴組織使用 SSO 登入 BlueXP 。驗證您的 BlueXP  設定檔電子郵件地址是否符合「資料基礎架構深入分析」歡迎電子郵件中顯示的電子郵件地址。如果電子郵件不符、請以正確的電子郵件地址申請新的邀請函。</block>
-  <block id="3a1e8ff9b6dee2eb5f1881fa4a0710e7" category="cell">我已從 BlueXP  登出、並自動從 Data Infrastructure Insights 登出。</block>
   <block id="b6497315eac7548893fe9df9a3a4e133" category="cell">跨 NetApp 雲端服務的單一登入（ SSO ）會登出所有資料基礎架構洞見課程。如果您可以存取多個 Data Infrastructure Insights 帳戶、請從任何一個帳戶登出、以登出所有作用中的工作階段。重新登入以存取您的帳戶。</block>
   <block id="6db6d0d20a3dd35029f13f472f68dbbd" category="cell">我在數天後自動登出。</block>
-  <block id="d6d54ee6b6dfdd2783aff066e96f7330" category="cell">NetApp Cloud 帳戶每隔幾天就需要重新驗證（目前的 BlueXP 設定是 7 天）。重新登入以存取您的帳戶。</block>
   <block id="8b6ee0d30d0749811a1b65835a1d82ad" category="cell">我收到錯誤訊息「不再授權登入」。</block>
-  <block id="1b51f17425f84d494f4007c3f9ae163b" category="cell">請聯絡您的帳戶管理員、以驗證對 Data Infrastructure Insights 的存取權限。驗證您的 BlueXP  設定檔電子郵件地址是否符合「資料基礎架構深入分析」歡迎電子郵件中顯示的電子郵件地址</block>
   <block id="96121ba0b77816de52c6e906145fa0f1" category="cell">其他登入錯誤</block>
   <block id="f4300936bf66917c778b4197c0a05315" category="cell">請在Chrome中嘗試無痕式模式、或清除瀏覽器記錄、Cookie和快取。嘗試使用不同的瀏覽器設定檔（例如 Chrome -新增人員）。</block>
   <block id="6f482c482b4f6739bf91b49fb509e1fa" category="section-title">其他問題</block>
@@ -11079,10 +11037,7 @@
   <block id="f596c7c5f04ed4be7cad8a6bac5f0b64" category="paragraph">如果這是您第一次登入 Data Infrastructure Insights 、請在 Data Infrastructure Insights 產品下、按一下 * 開始免費試用 * 。Data Infrastructure Insights 將引導您建立公司的租戶，包括選擇租戶所在的區域。</block>
   <block id="d6fc6f290827ae120b8547b3660afe0e" category="inline-image-macro">選取您的 Data Infrastructure Insights 租戶所在的區域</block>
   <block id="0959e45a1edcdcaa7f540365665b3986" category="paragraph"><block ref="0959e45a1edcdcaa7f540365665b3986" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1e8a8b3c445b73def4e806cac0aa998d" category="paragraph">建立租戶之後，您可以使用 BlueXP  認證登入，開始免費的 30 天資料基礎架構深入分析試用版。在此試用期間、您可以探索 Data Infrastructure Insights 所提供的功能。</block>
-  <block id="cccf87ffc04aeb31da5c700ef184d03c" category="paragraph">建立租戶之後，您可以隨時登入 NetApp BlueXP  入口網站，然後按一下 * 移至資料基礎架構 Insights * 。您將直接被帶到 Data Infrastructure Insights 租戶。</block>
   <block id="206cb1224c200bbbd73cfa4118ad7c1e" category="paragraph">您也可以直接開啟瀏覽器來存取 Data Infrastructure Insights 租戶 URL ，例如：</block>
-  <block id="8892cd0f593b5478c5dbbe5ac3270b4a" category="admonition">新使用者必須先註冊以存取 BlueXP  ，才能存取租戶 URL 。</block>
   <block id="587f396a83dde1056c9bf606ffc535f7" category="paragraph">第一次登入新租戶時，系統會引導您設定至<block ref="2949f1254245e371c2d697f481723a7e" category="inline-link-macro-rx"></block>。</block>
   <block id="8c8f719781e45e8796bf00085394a1ca" category="paragraph">此資料收集器可讓您從租戶上的 Apache 伺服器收集資料。</block>
   <block id="44c442d3e78a8d192000c14c74f3d018" category="paragraph">如果您尚未設定值機員以進行集合，系統會在租戶上提示您<block ref="a1b69a79c96be75135c991d76ebf15bb" category="inline-link-macro-rx"></block>。</block>
@@ -11241,7 +11196,6 @@
   <block id="2b8272217b69f1c5b5ad5968f0bc0945" category="list-text">註冊免費試用 Data Infrastructure Insights ，探索可用的功能。若要註冊免費試用：</block>
   <block id="6d2404e5699069be70636f65562fe693" category="list-text">前往<block ref="66922be03d9fc23a3ec9641b7884c8f2" category="inline-link-rx"></block></block>
   <block id="e78fd759357c2a61f07ddc6a902f9270" category="list-text">在頁面頂端選取 * 如何購買 * 。</block>
-  <block id="7070fd1d7b5d144bd3131c3c2b7ee1ca" category="list-text">選擇 * 申請試用 * 。如果您尚未向 BlueXP  註冊，請輸入您的詳細資料並註冊。否則請登入。</block>
   <block id="e461fd437885ee63b7f00e77ade6b3cb" category="list-text">安排會議或等待代表就試用版與您聯絡。</block>
   <block id="44d2017272b4664ce749afa3c1fc2785" category="summary">SAN Analyzer 提供租戶資產的拓撲</block>
   <block id="a720fce5b3da4c111f19c80487c269cf" category="paragraph">SAN 在處理重要工作負載方面扮演重要角色，但其複雜性可能導致重大中斷和客戶中斷。有了 DII * SAN Analyzer * ，管理 SAN 變得更簡單，更有效率。這項功能強大的工具提供端點對端點的可見度，可將相依性從 VM/ 主機對應至網路， LUN 及儲存設備。</block>
@@ -11366,8 +11320,6 @@
   <block id="1677cd7abeaa8f0a0514a964c0c2bda6" category="paragraph"><block ref="1677cd7abeaa8f0a0514a964c0c2bda6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0b7788a77d5d76748437f02599d4ffbf" category="paragraph"><block ref="0b7788a77d5d76748437f02599d4ffbf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e4d6c49d3ae18aca7ed82f5ef2ab8266" category="paragraph"><block ref="e4d6c49d3ae18aca7ed82f5ef2ab8266" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1158d69294406edc67b8de2b5ed02647" category="paragraph">若要開始使用 NetApp 的雲端服務，請前往<block ref="40ad5c1f57b9131d3640bb640a07e49e" category="inline-link-macro-rx"></block>並按一下 * 開始使用 * 。</block>
-  <block id="90aa9e4cd4632612b7635f2c366a8948" category="paragraph">擁有 NetApp BlueXP  帳戶後，只要在入口網站頁面上選擇 * 登入 * 即可<block ref="40ad5c1f57b9131d3640bb640a07e49e" category="inline-link-macro-rx"></block>。</block>
   <block id="b7b46ce5d1a547db89c0bc615ff272a5" category="inline-link-macro">ASA</block>
   <block id="e4d6d8fa32272beabde4921e66b643d2" category="paragraph">ONTAP 基本功能現在包含最新一代裝置的隨裝即用管理<block ref="a86d3d554a7f4851edc0f19a9e8accf3" category="inline-link-macro-rx"></block>功能。這包括 SAN Analyzer for VM-LUN 拓撲，其中包含在 ONTAP 上執行的工作負載，現在也提供 NetApp 支援，作為資料基礎架構洞見基礎版的一部分。</block>
   <block id="8af8d6d7603eec1cb34086e9cf6e2055" category="inline-image-macro">ONTAP Essentials 下拉式選單顯示 ASA 與 Unified 不同</block>
@@ -11406,8 +11358,6 @@
   <block id="0e7f6af549f009474555d1625059e6d7" category="cell">如果啟用「自動續約」，則不需要採取任何行動，請聯絡 NetApp 銷售人員以續約</block>
   <block id="2e9dbda35cab3bb298214da257ad124f" category="cell">從頁面更新試用版<block ref="1270e27ca8ec5d3dff21c492e4b5c786" category="inline-link-macro-rx"></block>。您可以一次續約試用版。請聯絡 NetApp 銷售人員以購買訂閱</block>
   <block id="a25c3f0a67375ee45e02e2a95818cfb5" category="cell">請聯絡 NetApp 銷售人員以購買訂閱</block>
-  <block id="670521a1846ad94b7cc140e2678df21c" category="paragraph">如果您有興趣預覽其中一項或多項功能，請聯絡<block ref="02af545fedbe237243dabe2f44648f4d" category="inline-link-macro-rx"></block>以取得更多資訊。</block>
-  <block id="16630d72023cbbf23b8ab69cac2b3ff7" category="paragraph">您也可以按一下連結來申請銷售支援<block ref="6193a07b36740b6aedc4527702e204e2" category="inline-link-macro-rx"></block>。</block>
   <block id="a42decca1d15ec644d4c66c06689344e" category="paragraph"><block ref="a4e343c69e2eae514016d98dfce8b36b" category="inline-link-macro-rx"></block>資料收集器可讓您使用在 VMware 上設定的相同名稱標籤填入 Cloud Insights 文字註解。</block>
   <block id="0d0549b05d1645d38baa1a6cedaa7190" category="paragraph">經常強調許多令人興奮的全新預覽功能。Cloud Insights如果您有興趣預覽其中一項或多項功能，請聯絡<block ref="02af545fedbe237243dabe2f44648f4d" category="inline-link-macro-rx"></block>以取得更多資訊。</block>
   <block id="6230fc6d3836bf964eb587a1b21b5c48" category="admonition">如果您是最新的 Premium Edition 客戶並希望保留您的報告，請閱讀本<block ref="85f8206314043d7dd91d050def6a5cd1" category="inline-link-macro-rx"></block>。</block>
@@ -11416,15 +11366,9 @@
   <block id="5620b4a9c0487779fe08be37f85948ac" category="paragraph"><block ref="5620b4a9c0487779fe08be37f85948ac" category="inline-image-macro-rx" type="image"></block></block>
   <block id="905f3e264909d9cdcfa3de883e22e115" category="inline-image-macro">SAN Analyzer 滑出面板</block>
   <block id="16e072902d4155747f40acc51a5aa5a3" category="paragraph"><block ref="16e072902d4155747f40acc51a5aa5a3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1eaf65163d0a898b5a6a94771ef2cf69" category="list-text">* https://kb.netapp.com/Cloud/BlueXP/DII[KnowledgeBase]*</block>
   <block id="0e8f78366da6895d9cdeb4b8ed117539" category="paragraph">按一下本節中的連結即可前往NetApp知識庫、您可在其中搜尋相關文章、操作方法等。</block>
   <block id="bf404f6bed29d85c3f6e00ca198b64e2" category="paragraph">在2023年4月4日之前、您必須為ONTAP Cloud Connection目前收集的ONTAP 所有其他系統、設定新的NetApp支援資料管理軟體資料收集器。</block>
-  <block id="bf82f4272c116f4033743ef9a8d2db15" category="paragraph">有關代理配置<block ref="b348c1aae834cf0cd466b9787dfa5acf" category="inline-link-macro-rx"></block>的詳細信息，請參閱 NetApp 。</block>
-  <block id="a7cf74afe22d08d0531dde90555aadbd" category="cell">視查詢變數和交換器組態而定、某些查詢可能會超過預設逾時。<block ref="fd40aed016519dab72e69cf2e3342cb9" category="inline-link-macro-rx"></block>。</block>
   <block id="fb915b764f3baecfa629ff22686e14ee" category="admonition">自 2023 年 4 月 4 日起、此資料收集器將不再安裝在 Data Infrastructure Insights 中、並將於 2023 年 7 月從所有 Data Infrastructure Insights 安裝中移除。</block>
-  <block id="1f1f9d998591f96c2653327f9004b1a9" category="cell"><block ref="588cebdad26ee4a9a3bb08c290310eb7" category="inline-link-macro-rx"></block>Data Infrastructure Insights 用來與擷取單元溝通、但無法在 Data Infrastructure Insights 和 Data Collector 本身之間進行通訊。以下是您可以嘗試的幾件事：確保取得設備能夠解析FQDN並到達所需的連接埠。確認不需要Proxy即可到達錯誤訊息中指定的端點。Curl可用來測試擷取裝置與端點之間的通訊。請確定您*未*使用Proxy進行此測試。範例： root@qualisitionunit# curl -s -H Accept:application/json -H "Content-type: application/json" -H API 金鑰： &lt;API 金鑰用於資料收集器認證 - H 秘密金鑰： &lt; 資料收集器認證中使用的秘密金鑰 &gt; -X Get \https://&lt;AWS 區域端點： 8080/v1/Storage/IPRanges 請參閱此<block ref="ee10e7e073fdf55fff4a0c77a9c435fc" category="inline-link-macro-rx"></block>。</block>
-  <block id="1ec51096f7cea66fb872ea91910e89b9" category="paragraph">如需其他疑難排解秘訣，請參閱<block ref="6fe211aef2305839bd4b415ac3b03770" category="inline-link-macro-rx"></block>（需要支援登入）。</block>
-  <block id="9e6e19182965cf2820f2a5f8cce84e8b" category="cell">當AU安裝在SELinux上時、SE應設定為_permals_模式。不支援_強制_模式。將SELinux設定為允許模式後、請重新啟動AU服務。<block ref="2aa71c1262c825b4349ce4125965fabb" category="inline-link-macro-rx"></block>。</block>
   <block id="af66622d3522b0b6fa496a47273bdb04" category="paragraph">資料收集器支援對照表提供 Data Infrastructure Insights 支援的資料收集器參考資料，包括廠商和機型資訊。</block>
   <block id="8892f0f7118a4e14ceef9a37218a5a33" category="cell">HPE Alletra 9080 HPE_3PAR 20450 HPE_3PAR 20800 HPE_3PAR 20850 HPE_3PAR 7200 HPE_3PAR 7200c HPE_3P7400 AR HPE_3P400c P400c P400HP P400_3AR P4008 P400P P400 HP P400C P200P200HP PPE</block>
   <block id="10fd66f5b4802aee3a88de2a537a57b4" category="cell">已用容量</block>
@@ -12540,7 +12484,6 @@
   <block id="2e2565dd8910383ad2b3626e2b5d37b2" category="sidebar">VM 分析器</block>
   <block id="35c091b25f788bb392ac1dd40614c3e3" category="list-text">*訂閱*數據基礎設施洞察，透過各種靈活的訂閱選項持續、不間斷地存取您的資料：</block>
   <block id="a2282c5ca88a344b1bf947a11cb57bc8" category="inline-link-macro">NetApp 直銷</block>
-  <block id="dbed590bd111eb57145cd0aa78c71ccb" category="list-text"><block ref="dbed590bd111eb57145cd0aa78c71ccb" category="inline-link-macro-rx"></block></block>
   <block id="fbb9a72326df00d6f836e5eea8110335" category="list-text">AWS 市場：</block>
   <block id="ec298b41c1e3f240e9fc796c682f69de" category="inline-link-macro">固定期限訂閱</block>
   <block id="f56e44396701dcd46539ca0e7b1b3320" category="list-text"><block ref="f56e44396701dcd46539ca0e7b1b3320" category="inline-link-macro-rx"></block></block>
@@ -12771,4 +12714,58 @@
   <block id="b0baa05e4ca03a2c83cff1367375a3bf" category="paragraph"><block ref="b0baa05e4ca03a2c83cff1367375a3bf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8c4e9ad03446638823176afd0e5f8ea8" category="paragraph">Data Infrastructure Insights在試用模式下提供自助服務和電子郵件支援。一旦您訂閱了服務，強烈建議您啟動支援權利。啟動支援權利後，您可以透過網路票務系統和電話獲得技術支援。在註冊完成之前，預設支援模式是自助服務。看<block ref="055db438ec51479bd53b937469434a7e" category="inline-xref-macro-rx"></block>以下。</block>
   <block id="204d060241f7de3644e3ebeef168c8aa" category="list-text">作為新的NetApp客戶，您還需要建立一個NetApp支援網站 (NSS) 使用者帳戶，以便將來註冊並造訪支援入口網站以取得技術支援和網路票務。此連結位於<block ref="4b0df7f6652ef877e322a199d6b6edce" category="inline-link-rx"></block>。您可以提供新註冊的Data Infrastructure Insights序號以加快流程。</block>
+  <block id="4d4f08b680e8b232c68293d97a2dac48" category="admonition">由於NetApp Console 自己的使用者登入逾時時間為 7 天，因此Data Infrastructure Insights也必須在該事件發生時登出。您只需再次登錄，您的儀表板將繼續顯示。</block>
+  <block id="43680febd505de2083039d0fe7ca8947" category="paragraph">如果您有興趣預覽其中一個或多個功能，請聯絡NetApp銷售團隊以取得更多資訊。</block>
+  <block id="f8c86fc2d67d1956112f774f6b072f20" category="list-text">* https://kb.netapp.com/Cloud/ncds/nds/dii/dii_kbs [知識庫]*</block>
+  <block id="f55d23a57e602a67ed79cd2014d28415" category="paragraph">您也可以點擊「聯絡銷售」連結來要求銷售支援。</block>
+  <block id="14b33e994477a76e918b15271e482d20" category="inline-link-macro">* NetApp控制台*</block>
+  <block id="485e07b6cd31ba2d7e9f46491555e216" category="list-text">註冊一個帳戶<block ref="783bda85a492283bb02841c8613ed63d" category="inline-link-macro-rx"></block>即可存取 NetApp 的所有雲端產品。</block>
+  <block id="90fd194e43d479c0c3c0d066c83fa95d" category="list-text">選擇*請求試用*。如果您尚未在控制台註冊，請輸入您的詳細資料並註冊。否則，請登入。</block>
+  <block id="8e895430cb7f81fc7e1bf63e870e6265" category="list-text"><block ref="8e895430cb7f81fc7e1bf63e870e6265" category="inline-link-macro-rx"></block></block>
+  <block id="08323cc8bf02aae61a01a839769a5e26" category="paragraph">AWS 訂閱程序完成後，您將返回Data Infrastructure Insights環境。或者，如果環境不再處於活動狀態（例如，您已登出），您將被帶到 NetAPp 控制台登入頁面。當您再次登入Data Infrastructure Insights時，您的訂閱將處於活動狀態。</block>
+  <block id="a6cab9905e7c8d4c6632a729468da854" category="paragraph">透過NetApp Console 可以建立新使用者帳戶。用戶可以回覆透過電子郵件發送的邀請，但如果用戶沒有控制台帳戶，則用戶需要註冊才能接受邀請。</block>
+  <block id="4070a1fca01c010c21a6d903adbba45c" category="list-text">使用者只需登入一次即可存取所有NetApp控制台服務（單一登入）。</block>
+  <block id="e38a79d0a33c9944d49b323ae38a3cbd" category="paragraph">所有雲端服務的使用者帳戶均在NetApp控制台中管理。預設情況下，使用控制臺本機使用者設定檔進行身份驗證。以下是該過程的簡化概述：</block>
+  <block id="b91ce10da0a96befde3daf96ef461002" category="inline-image-macro">使用本地身份驗證</block>
+  <block id="80baa00904ed63558dc3d0a1a04eb3e1" category="paragraph"><block ref="80baa00904ed63558dc3d0a1a04eb3e1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="aa9976cb174e8153b357604eaa9efd75" category="paragraph">但是，有些客戶希望使用自己的身分提供者來驗證其Data Infrastructure Insights和其他NetApp控制台服務的使用者身分。透過身分聯合， NetApp控制台帳戶可以使用來自公司目錄的憑證進行驗證。</block>
+  <block id="ff84df4edca96aff4369430e2d721aaf" category="inline-image-macro">使用聯合身份驗證</block>
+  <block id="a6a29f3b88017e799ffcd98bff8a98ff" category="paragraph"><block ref="a6a29f3b88017e799ffcd98bff8a98ff" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="886b1a3de15b78d2b278736a98396c67" category="inline-link-macro">聯邦指令</block>
+  <block id="c6d7acb559f79c2514c4e63a4fa62c93" category="paragraph">控制台使用 Auth0 實作身分合併並與 Active Directory 聯合驗證服務 (ADFS) 和 Microsoft Azure Active Directory (AD) 等服務整合。若要設定聯合身份驗證，請參閱<block ref="a4b6ed3ca8f07d360215db41c21a5e43" category="inline-link-macro-rx"></block>。</block>
+  <block id="98d798cf2b5d29b88d7b8011d355724a" category="admonition">您必須先設定身分聯合，然後才能將 SSO 與Data Infrastructure Insights結合使用。</block>
+  <block id="4ac685237dfedaa56fd08e5496497255" category="paragraph">重要的是要理解，更改身份聯合不僅適用於Data Infrastructure Insights，還適用於所有NetApp控制台服務。客戶應與其擁有的每個產品的NetApp團隊討論此更改，以確保他們使用的配置可與身分聯合配合使用，或是否需要對任何帳戶進行調整。客戶還需要讓其內部 SSO 團隊參與身份聯合的變革。</block>
+  <block id="b3ebc864803d6de1e2c5fdf3c020ad0e" category="paragraph">同樣重要的是要認識到，一旦啟用身份聯合，對公司身份提供者的任何更改（例如從 SAML 轉移到 Microsoft AD）都可能需要進行故障排除/更改/注意更新用戶的設定檔。</block>
+  <block id="aeb3c9ddf34c77460d6ca6a264475ebc" category="paragraph">對於此問題或任何其他聯盟問題，您可以打開支援票<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block>。</block>
+  <block id="2e9d92eab4f95a7f9f86e3283810fd7a" category="admonition">_SSO 使用者自動設定_在Data Infrastructure Insights Premium Edition 中可用，必須先進行設定才能為Data Infrastructure Insights啟用。 SSO 使用者自動設定包括<block ref="822fb5372050010317b40dcb63a546f0" category="inline-link-macro-rx"></block>透過NetApp Console 進行操作，如上節所述。聯合允許單一登入使用者使用來自公司目錄的憑證存取您的NetApp控制台帳戶，並使用安全性斷言標記語言 2.0 (SAML) 和 OpenID Connect (OIDC) 等開放標準。</block>
+  <block id="9a43d0d6fcf0114c87a7f4b91ec16de7" category="paragraph">若要在*管理 &gt; 使用者管理*頁面上設定_SSO 使用者自動設定_，您必須先設定身分聯合。選擇橫幅中的“*設定聯合*”連結以繼續進行控制台聯合。設定完成後，Data Infrastructure Insights管理員就可以啟用 SSO 使用者登入。當管理員啟用_SSO 使用者自動設定_時，他們會為所有 SSO 使用者（例如訪客或使用者）選擇一個預設角色。透過 SSO 登入的使用者將具有該預設角色。</block>
+  <block id="99a022ffdff1e8eeae3ab89eebb7370b" category="paragraph">允許NetApp控制台與區域Data Infrastructure Insights站點通訊的身份驗證和存取訊息，包括與使用者授權相關的資料。</block>
+  <block id="ca895bde8f170399f93431a372e7b032" category="list-text">允許NetApp控制台與區域Data Infrastructure Insights通訊的訊息，包括與使用者授權有關的任何資訊。</block>
+  <block id="549ae8b6dea4926a2af206c5d7300fc5" category="paragraph">在開始使用Data Infrastructure Insights之前，您必須在 * NetApp控制台* 入口網站上註冊。如果您已經擁有NetApp控制台登入名，只需幾個簡單的步驟即可開始免費試用Data Infrastructure Insights。</block>
+  <block id="bb793de9cdfd6b52adc5dea5b6228679" category="section-title">建立您的NetApp控制台帳戶</block>
+  <block id="b4e0df93660adc2e97f2f5484451c415" category="paragraph">若要開始使用 NetApp 的雲端服務，請造訪<block ref="5b0deb840231d6f2646d7cf25956c35a" category="inline-link-macro-rx"></block>然後點擊*開始*。</block>
+  <block id="d127182d44408d014798631913d1e97f" category="list-text">控制台將引導您完成入門步驟。</block>
+  <block id="f691976da142019af74f673d9e988d66" category="section-title">如果我已經擁有NetApp控制台登入資訊該怎麼辦？</block>
+  <block id="2a76d74bf06e79d6a8243138ab8d0572" category="paragraph">擁有NetApp控制台帳戶後，只需選擇<block ref="5b0deb840231d6f2646d7cf25956c35a" category="inline-link-macro-rx"></block>入口網頁。</block>
+  <block id="4ec4e4954d48db50650c5ec49007cf27" category="paragraph">導航至*分析和控制&gt;可觀察性*以了解Data Infrastructure Insights和/或請求演示。</block>
+  <block id="13d2916279db639fea18a00088e8cb21" category="paragraph">租戶創建完成後，使用控制台憑證登入並開始免費試用 30 天Data Infrastructure Insights。在此試用期間，您可以探索Data Infrastructure Insights所提供的功能。</block>
+  <block id="27e0956311428740c19b40a7a971c7ef" category="inline-link-macro">雲端服務</block>
+  <block id="d97af656d080e05ccc035b1948ac30b8" category="paragraph">建立租戶後，您可以隨時登入NetApp控制台入口網站並導航到<block ref="37a150e92f05332b5bc5a56046c3177c" category="inline-link-macro-rx"></block>頁面並選擇*前往Data Infrastructure Insights*。</block>
+  <block id="9834a50024d1c9eb92d1d75e4f1fc3fa" category="paragraph">該 URL 還將包含在每個使用者的邀請電子郵件中，以便於存取和添加書籤。如果使用者尚未登入控制台，系統將提示他們登入。</block>
+  <block id="955402d5e1e7fb2ed3dc9cdbbcb35826" category="admonition">新用戶仍必須註冊存取控制台，然後才能存取其租用戶 URL。</block>
+  <block id="21360340baae34a3a426d1ff1dbc116f" category="paragraph">若要退出Data Infrastructure Insights，請點擊您的*使用者名稱*並選擇*登出*。您將返回控制台登入畫面。</block>
+  <block id="c4207c205277b5cad1577163a6bae022" category="admonition">註銷Data Infrastructure Insights將使您退出控制台。您也將登出使用控制台登入的其他NetApp雲端服務。</block>
+  <block id="db8ff6a5dfcebcb4f9f3077c3acd8c0a" category="paragraph">預設情況下，如果六小時（360 分鐘）內沒有任何活動，控制台將登出使用者。無論活動如何，用戶將在七天後被註銷。</block>
+  <block id="912dc75ad8c1b3c63c4788f3dd66dbb8" category="paragraph">有關代理配置的更多信息，請參閱NetApp<block ref="c1e13c6c878698ae2a44059eca84db33" category="inline-link-macro-rx"></block> 。</block>
+  <block id="3dbf1ba1bacdb669e8846d5cf9a7e402" category="cell">根據查詢變數和交換器配置，某些查詢可能會超過預設逾時。<block ref="04a64b547dbf0b228e70a63d94725321" category="inline-link-macro-rx"></block> 。</block>
+  <block id="f51fb2108c9628f317aa92174475a004" category="cell">這<block ref="588cebdad26ee4a9a3bb08c290310eb7" category="inline-link-macro-rx"></block>Data Infrastructure Insights用於與採集單元進行通信，Data Infrastructure Insights和資料收集器本身之間不會進行通訊。您可以嘗試以下幾種方法：確保擷取單元能夠解析 fqdn 並到達所需的連接埠。確認不需要代理即可到達錯誤訊息中指定的端點。 Curl 可用於測試採集單元和端點之間的通訊。確保您沒有使用代理進行此測試。範例：root@acquisitionunit# curl -s -H accept:application/json -H "Content-type: application/json" -H api-key:&lt;資料收集器憑證中使用的 api 金鑰 -H secret-key:&lt;資料收集器憑證中使用的終端&gt; -X.P.</block>
+  <block id="64695c46a63626de5533ce69795996fb" category="cell">VMware 8.0.1 之前的版本不支援日誌收集。如果您希望使用Data Infrastructure Insights中的日誌收集功能，請將 VI Center Infrastructure 升級至 8.0.1 或更高版本。有關詳細信息，請參閱<block ref="ae8e56653b1173564f25a9c990f6c3c4" category="inline-link-macro-rx"></block>。</block>
+  <block id="f983e92f007e61009c98c62ad5615476" category="cell">我有一個控制台帳戶，但無法登入。</block>
+  <block id="5dd83d7d47f6c76b4dac6687a0fc6a2d" category="cell">從以下位置開啟票證<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block>。選擇類別 console.netapp.com &gt; 帳號/登入問題」或 console.netapp.com &gt; 聯合問題」。這些專門針對控制台問題或疑問。對於所有其他Data Infrastructure Insights技術支援問題，請聯絡<block ref="1a8b44ad735b0e8f3f08395032e9cb16" category="inline-link-macro-rx"></block>。</block>
+  <block id="0da134fdf104cff1abc8f449063214e0" category="cell">驗證您是否已註冊 Console 帳戶，或您的組織是否使用 Console 的 SSO 登入。驗證您的控制台設定檔電子郵件地址是否與Data Infrastructure Insights歡迎電子郵件中顯示的電子郵件地址相符。如果電子郵件不匹配，請使用正確的電子郵件地址要求新的邀請。</block>
+  <block id="1e811d1179da441c6a469e0c9e18f755" category="cell">我從控制台註銷，並自動從Data Infrastructure Insights中註銷。</block>
+  <block id="729e0245270539dde4c90fa689f6c381" category="cell">NetApp Cloud 帳戶需要每隔幾天重新進行一次驗證（目前控制台設定為 7 天）。重新登入以存取您的帳戶。</block>
+  <block id="5a9b478b441f7c2030a759e864c6a230" category="cell">請聯絡您的帳戶管理員以驗證對Data Infrastructure Insights的存取權。驗證您的控制台個人資料電子郵件地址是否與Data Infrastructure Insights歡迎電子郵件中顯示的電子郵件地址相符</block>
+  <block id="247e36ea24d5c72138f2f225cbb3ff5a" category="paragraph">更多故障排除技巧可在<block ref="f2ab65542a88d990d661538806479fe3" category="inline-link-macro-rx"></block>（需要支援登入）。</block>
+  <block id="62d43538bf5a9e08593a0549e6121905" category="cell">當 AU 安裝在 SELINUX 上時，SE 應設定為 _permissive_ 模式。不支援_Enforcing_模式。將SELINUX設定為寬容模式後，重新啟動AU服務。</block>
 </blocks>

@@ -170,7 +170,7 @@ Data Infrastructure Insights 會從 Brocade FC 交換器資料收集器取得下
 | 問題： | 試用： 
 
 
-| 效能收集失敗、並顯示「傳送 SNMP 要求時逾時」。 | 視查詢變數和交換器組態而定、某些查詢可能會超過預設逾時。link:https://kb.netapp.com/Cloud/BlueXP/DII/Data_Infrastructure_Insights_Brocade_data_source_fails_performance_collection_with_a_timeout_due_to_default_SNMP_configuration["深入瞭解"]。 
+| 效能收集失敗、並顯示「傳送 SNMP 要求時逾時」。 | 根據查詢變數和交換器配置，某些查詢可能會超過預設逾時。link:https://kb.netapp.com/Cloud/ncds/nds/dii/dii_kbs/Data_Infrastructure_Insights_Brocade_data_source_fails_performance_collection_with_a_timeout_due_to_default_SNMP_configuration["深入瞭解"] 。 
 
 
 | 效能收集失敗，原因為...SNMP 表中發現重複行... | DII 偵測到錯誤的 SNMP 回應。您運行的可能是 FOS 8.2.3e。請升級至 8.2.3e2 或更高版本。 

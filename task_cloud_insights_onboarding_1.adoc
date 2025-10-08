@@ -14,32 +14,30 @@ keywords: onboarding, new user
 
 
 [role="lead"]
-在開始使用資料基礎架構洞見之前、您必須先註冊 * NetApp BlueXP  入口網站。如果您已經登入 NetApp BlueXP  、您可以透過幾個快速步驟、開始免費試用 Data Infrastructure Insights 。
+在開始使用Data Infrastructure Insights之前，您必須在 * NetApp控制台* 入口網站上註冊。如果您已經擁有NetApp控制台登入名，只需幾個簡單的步驟即可開始免費試用Data Infrastructure Insights。
 
 
 
-== 建立您的 NetApp BlueXP 帳戶
+== 建立您的NetApp控制台帳戶
 
-若要開始使用 NetApp 的雲端服務，請前往link:https://bluexp.netapp.com/["* NetApp BlueXP*"^]並按一下 * 開始使用 * 。
+若要開始使用 NetApp 的雲端服務，請造訪link:https://console.netapp.com/["* NetApp控制台*"^]然後點擊*開始*。
 
 * 如果您尚未註冊、請選取 * 註冊 *
 * 輸入有效的商業電子郵件地址、然後選擇密碼。
 * 輸入您的公司名稱和全名。
 * 接受條款與條件、然後選擇 * 繼續 * 。
-* BlueXP 將引導您完成入門。
+* 控制台將引導您完成入門步驟。
 
 
 
 
-=== 如果我已經登入 NetApp BlueXP 、該怎麼辦？
+=== 如果我已經擁有NetApp控制台登入資訊該怎麼辦？
 
-擁有 NetApp BlueXP  帳戶後，只要在入口網站頁面上選擇 * 登入 * 即可link:https://bluexp.netapp.com/["* NetApp BlueXP*"^]。
+擁有NetApp控制台帳戶後，只需選擇link:https://console.netapp.com/["* NetApp控制台*"^]入口網頁。
 
 輸入您的電子郵件地址和密碼。接著您將前往NetApp的雲端產品頁面。
 
-選取 Data Infrastructure Insights 。
-
-image:BlueXP_CloudInsights.png["BlueXP  上的 Data Infrastructure Insights 免費試用版"]
+導航至*分析和控制>可觀察性*以了解Data Infrastructure Insights和/或請求演示。
 
 
 
@@ -49,7 +47,7 @@ image:BlueXP_CloudInsights.png["BlueXP  上的 Data Infrastructure Insights 免
 
 image:trial_region_selector.png["選取您的 Data Infrastructure Insights 租戶所在的區域"]
 
-建立租戶之後，您可以使用 BlueXP  認證登入，開始免費的 30 天資料基礎架構深入分析試用版。在此試用期間、您可以探索 Data Infrastructure Insights 所提供的功能。
+租戶創建完成後，使用控制台憑證登入並開始免費試用 30 天Data Infrastructure Insights。在此試用期間，您可以探索Data Infrastructure Insights所提供的功能。
 
 在免費試用期間、您可以link:concept_subscribing_to_cloud_insights.html["開始訂購"]隨時取得 Data Infrastructure Insights 。訂閱後、您可以根據目前的訂閱內容、使用 Data Infrastructure Insights 功能。
 
@@ -57,15 +55,15 @@ image:trial_region_selector.png["選取您的 Data Infrastructure Insights 租�
 
 == 登入後立即使用
 
-建立租戶之後，您可以隨時登入 NetApp BlueXP  入口網站，然後按一下 * 移至資料基礎架構 Insights * 。您將直接被帶到 Data Infrastructure Insights 租戶。
+建立租戶後，您可以隨時登入NetApp控制台入口網站並導航到link:https://services.cloud.netapp.com["雲端服務"]頁面並選擇*前往Data Infrastructure Insights*。
 
 您也可以直接開啟瀏覽器來存取 Data Infrastructure Insights 租戶 URL ，例如：
 
  \https://<tenant-prefix>.c01.cloudinsights.netapp.com/
-每位使用者的邀請電子郵件中也會包含此URL、方便您輕鬆存取及加入書籤。如果使用者尚未登入 BlueXP 、系統會提示使用者登入。
+該 URL 還將包含在每個使用者的邀請電子郵件中，以便於存取和添加書籤。如果使用者尚未登入控制台，系統將提示他們登入。
 
 
-NOTE: 新使用者必須先註冊以存取 BlueXP  ，才能存取租戶 URL 。
+NOTE: 新用戶仍必須註冊存取控制台，然後才能存取其租用戶 URL。
 
 第一次登入新租戶時，系統會引導您設定至link:task_getting_started_with_cloud_insights.html["*開始收集資料*"]。
 
@@ -73,13 +71,13 @@ NOTE: 新使用者必須先註冊以存取 BlueXP  ，才能存取租戶 URL �
 
 == 登出
 
-若要登出 Data Infrastructure Insights 、請按一下您的 * 使用者名稱 * 、然後選取 * 登出 * 。您將返回 BlueXP 登入畫面。
+若要退出Data Infrastructure Insights，請點擊您的*使用者名稱*並選擇*登出*。您將返回控制台登入畫面。
 
 
-NOTE: 登出 Data Infrastructure Insights 會將您登出 BlueXP  。您也會登出其他使用 BlueXP 登入的 NetApp 雲端服務。
+NOTE: 註銷Data Infrastructure Insights將使您退出控制台。您也將登出使用控制台登入的其他NetApp雲端服務。
 
 
 
 === 閒置逾時
 
-根據預設、如果六小時（ 360 分鐘）內沒有活動、 BlueXP 會將使用者登出。無論活動為何、使用者都會在七天後登出。
+預設情況下，如果六小時（360 分鐘）內沒有任何活動，控制台將登出使用者。無論活動如何，用戶將在七天後被註銷。

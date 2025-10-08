@@ -16,18 +16,18 @@ keywords: subscribe, trial, subscription, contract, raw capacity, region, data r
 [role="lead"]
 開始使用 Data Infrastructure Insights 只需三個簡單步驟：
 
-. 註冊帳戶link:https://bluexp.netapp.com//["* NetApp BlueXP*"]即可存取所有 NetApp 雲端產品。
+. 註冊一個帳戶link:https://console.netapp.com//["* NetApp控制台*"]即可存取 NetApp 的所有雲端產品。
 . 註冊免費試用 Data Infrastructure Insights ，探索可用的功能。若要註冊免費試用：
 +
 ** 前往 https://netapp.com[]
 ** 在頁面頂端選取 * 如何購買 * 。
-** 選擇 * 申請試用 * 。如果您尚未向 BlueXP  註冊，請輸入您的詳細資料並註冊。否則請登入。
+** 選擇*請求試用*。如果您尚未在控制台註冊，請輸入您的詳細資料並註冊。否則，請登入。
 ** 安排會議或等待代表就試用版與您聯絡。
 
 
 . *訂閱*數據基礎設施洞察，透過各種靈活的訂閱選項持續、不間斷地存取您的資料：
 +
-** link:https://bluexp.netapp.com/contact-cds["NetApp 直銷"]
+** link:https://console.netapp.com/contact-cds["NetApp 直銷"]
 ** AWS 市場：
 +
 *** link:https://aws.amazon.com/marketplace/pp/prodview-axhuy7muvzfx2["固定期限訂閱"]
@@ -202,7 +202,7 @@ NOTE: 您必須是帳戶擁有者或管理員、才能將 AWS Marketplace 訂閱
 
 在您輸入管理單元總數並選擇12個月或36個月的訂閱期限之後、請按一下*設定您的帳戶*以完成訂閱程序。
 
-AWS 訂購程序完成後、您將被帶回 Data Infrastructure Insights 環境。或者、如果環境不再處於作用中狀態（例如、您已登出）、您將會進入 NetApp BlueXP 登入頁面。當您再次登入 Data Infrastructure Insights 時、您的訂閱將會生效。
+AWS 訂閱程序完成後，您將返回Data Infrastructure Insights環境。或者，如果環境不再處於活動狀態（例如，您已登出），您將被帶到 NetAPp 控制台登入頁面。當您再次登入Data Infrastructure Insights時，您的訂閱將處於活動狀態。
 
 
 NOTE: 在AWS Marketplace頁面上按一下*設定您的帳戶*之後、您必須在一小時內完成AWS訂購程序。如果您未在一小時內完成、則必須再次按*設定帳戶*以完成程序。

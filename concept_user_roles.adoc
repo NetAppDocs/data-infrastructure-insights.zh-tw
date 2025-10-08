@@ -124,7 +124,7 @@ Data Infrastructure Insights 提供最多四個使用者帳戶角色：帳戶擁
 
 == 邀請使用者建立帳戶
 
-透過 BlueXP 建立新的使用者帳戶。使用者可以回應透過電子郵件傳送的邀請、但如果使用者沒有 BlueXP 帳戶、則使用者必須註冊 BlueXP 、才能接受邀請。
+透過NetApp Console 可以建立新使用者帳戶。用戶可以回覆透過電子郵件發送的邀請，但如果用戶沒有控制台帳戶，則用戶需要註冊才能接受邀請。
 
 .開始之前
 * 使用者名稱是邀請函的電子郵件地址。
@@ -209,18 +209,18 @@ image:Assign_Account_Owner.png["顯示帳戶擁有者選擇的使用者變更對
 使用身分識別聯盟：
 
 * 驗證會委派給客戶的身分識別管理系統、使用客戶在公司目錄中的認證資料、以及多因素驗證（MFA）等自動化原則。
-* 使用者登入一次所有 NetApp BlueXP 服務（單一登入）。
+* 使用者只需登入一次即可存取所有NetApp控制台服務（單一登入）。
 
 
-使用者帳戶是在適用於所有雲端服務的 NetApp BlueXP 中進行管理。依預設、驗證是使用 BlueXP 本機使用者設定檔完成。以下是此程序的簡化概觀：
+所有雲端服務的使用者帳戶均在NetApp控制台中管理。預設情況下，使用控制臺本機使用者設定檔進行身份驗證。以下是該過程的簡化概述：
 
-image:BlueXP_Authentication_Local.png["使用本機的 BlueXP 驗證"]
+image:Authentication_Local.png["使用本地身份驗證"]
 
-不過、有些客戶想要使用自己的身分識別供應商來驗證其使用者的資料基礎架構洞見及其其他 NetApp BlueXP  服務。透過身分識別聯盟、 NetApp BlueXP 帳戶會使用公司目錄中的認證進行驗證。
+但是，有些客戶希望使用自己的身分提供者來驗證其Data Infrastructure Insights和其他NetApp控制台服務的使用者身分。透過身分聯合， NetApp控制台帳戶可以使用來自公司目錄的憑證進行驗證。
 
 以下是此程序的簡化範例：
 
-image:BlueXP_Authentication_Federated.png["使用同盟的 BlueXP 驗證"]
+image:Authentication_Federated.png["使用聯合身份驗證"]
 
 在上圖中、當使用者存取 Data Infrastructure Insights 時、該使用者會被導向客戶的身分識別管理系統進行驗證。帳戶驗證完成後、使用者會被導向 Data Infrastructure Insights 租戶 URL 。
 
@@ -228,16 +228,16 @@ image:BlueXP_Authentication_Federated.png["使用同盟的 BlueXP 驗證"]
 
 === 啟用身分識別聯盟
 
-BlueXP 使用 Auth0 實作身分識別聯盟、並與 Active Directory Federation Services （ ADFS ）和 Microsoft Azure Active Directory （ AD ）等服務整合。若要設定身分識別聯盟，請參閱link:https://services.cloud.netapp.com/misc/federation-support["BlueXP 聯合指令"]。
+控制台使用 Auth0 實作身分合併並與 Active Directory 聯合驗證服務 (ADFS) 和 Microsoft Azure Active Directory (AD) 等服務整合。若要設定聯合身份驗證，請參閱link:https://services.cloud.netapp.com/misc/federation-support["聯邦指令"]。
 
 
-NOTE: 您必須先設定 BlueXP  身分識別聯盟、才能將 SSO 與資料基礎架構深入分析搭配使用。
+NOTE: 您必須先設定身分聯合，然後才能將 SSO 與Data Infrastructure Insights結合使用。
 
-請務必瞭解、 BlueXP  中不斷變化的身分識別聯盟不僅適用於資料基礎架構洞見、也適用於所有 NetApp BlueXP  服務。客戶應與他們擁有的每個 BlueXP 產品的 NetApp 團隊討論此變更、以確保他們所使用的組態能與身分識別聯盟搭配運作、或是需要對任何帳戶進行調整。客戶也必須讓內部SSO團隊參與身分識別聯盟的變更。
+重要的是要理解，更改身份聯合不僅適用於Data Infrastructure Insights，還適用於所有NetApp控制台服務。客戶應與其擁有的每個產品的NetApp團隊討論此更改，以確保他們使用的配置可與身分聯合配合使用，或是否需要對任何帳戶進行調整。客戶還需要讓其內部 SSO 團隊參與身份聯合的變革。
 
-此外、請務必瞭解、一旦啟用身分識別聯盟、公司身分識別提供者的任何變更（例如從 SAML 移轉至 Microsoft AD ）都可能需要 BlueXP 中的疑難排解 / 變更 / 注意、才能更新使用者的設定檔。
+同樣重要的是要認識到，一旦啟用身份聯合，對公司身份提供者的任何更改（例如從 SAML 轉移到 Microsoft AD）都可能需要進行故障排除/更改/注意更新用戶的設定檔。
 
-對於這類或任何其他聯盟問題，您可以在開啟支援服務單 https://mysupport.netapp.com/site/help[]，然後選取類別「 BlueXP  。 NetApp 。 com > 聯合問題」。
+對於此問題或任何其他聯盟問題，您可以打開支援票 https://mysupport.netapp.com/site/help[]。
 
 
 
@@ -246,9 +246,9 @@ NOTE: 您必須先設定 BlueXP  身分識別聯盟、才能將 SSO 與資料�
 除了邀請使用者之外、管理員也可以為公司網域中的所有使用者啟用 * 單一登入（ SSO ）使用者自動資源配置 * 存取 Data Infrastructure Insights 、而無需個別邀請使用者。啟用 SSO 後、任何擁有相同網域電子郵件地址的使用者都可以使用其公司認證登入 Data Infrastructure Insights 。
 
 
-NOTE: Data Infrastructure Insights Premium Edition 提供 _SSO 使用者自動資源配置 _ 、而且必須先進行設定、才能啟用 Data Infrastructure Insights 。SSO 使用者自動佈建組態包括link:https://services.cloud.netapp.com/misc/federation-support["身分識別聯盟"]透過 NetApp BlueXP  、如前節所述。聯盟允許單一登入使用者使用公司目錄中的認證來存取您的 NetApp BlueXP 帳戶、使用開放式標準、例如安全聲明標記語言 2.0 （ SAML ）和 OpenID 連線（ OIDC ）。
+NOTE: _SSO 使用者自動設定_在Data Infrastructure Insights Premium Edition 中可用，必須先進行設定才能為Data Infrastructure Insights啟用。 SSO 使用者自動設定包括link:https://services.cloud.netapp.com/misc/federation-support["身分識別聯盟"]透過NetApp Console 進行操作，如上節所述。聯合允許單一登入使用者使用來自公司目錄的憑證存取您的NetApp控制台帳戶，並使用安全性斷言標記語言 2.0 (SAML) 和 OpenID Connect (OIDC) 等開放標準。
 
-若要設定 _SSO 使用者自動資源配置 _ 、您必須先在 * 管理 > 使用者管理 * 頁面上設定 BlueXP 身分識別聯盟。選取橫幅中的 * 設定聯盟 * 連結以繼續執行 BlueXP 聯盟。設定好之後、 Data Infrastructure Insights 管理員就可以啟用 SSO 使用者登入。當系統管理員啟用_SSO使用者自動資源配置_時、他們會為所有SSO使用者（例如來賓或使用者）選擇預設角色。透過SSO登入的使用者將擁有該預設角色。
+若要在*管理 > 使用者管理*頁面上設定_SSO 使用者自動設定_，您必須先設定身分聯合。選擇橫幅中的“*設定聯合*”連結以繼續進行控制台聯合。設定完成後，Data Infrastructure Insights管理員就可以啟用 SSO 使用者登入。當管理員啟用_SSO 使用者自動設定_時，他們會為所有 SSO 使用者（例如訪客或使用者）選擇一個預設角色。透過 SSO 登入的使用者將具有該預設角色。
 
 image:Roles_federation_Banner.png["使用者管理與聯盟"]
 

@@ -7,6 +7,10 @@ summary: Insights 可讓您瞭解資源對租戶的其他資源有何影響。
 = 洞見：回收 ONTAP Cold Storage
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]

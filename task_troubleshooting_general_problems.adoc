@@ -25,19 +25,19 @@ keywords: troubleshooting, problems, browser, login, log in, accessing, access t
 | Data Infrastructure Insights 會每 6 小時自動登出一次 | 這是因為瀏覽器的第三方 Cookie 已停用。使用者可以設定瀏覽器來啟用所有第三方 Cookie 、或使用較窄的例外清單來啟用 Data Infrastructure Insights 。範例：開啟瀏覽器的設定選取「允許所有 Cookie 」選項。* 或 * 選取「區塊協力廠商 Cookie 」、並新增例外情況至： __[\*.]auth0.com 和 NetApp .com_ 。Microsoft Edge 提供與 Chrome 相同的例外格式。在 Firefox 中、 Cookie 例外會指定為 Simply _auth0.com 和 _netapp.com 。 
 
 
-| 我有 BlueXP 帳戶、但無法登入 BlueXP 。 | 從開啟 Ticket https://mysupport.netapp.com/site/help[] 。選擇類別「 blueXP.netapp.com > 帳戶 / 登入問題」或「 bluexp.netapp.com > 聯盟問題」。這些是專為 BlueXP 問題所設計。如需瞭解所有其他 Data Infrastructure Insights 技術支援問題link:concept_requesting_support.html["NetApp支援"]、請聯絡。 
+| 我有一個控制台帳戶，但無法登入。 | 從以下位置開啟票證 https://mysupport.netapp.com/site/help[]。選擇類別 console.netapp.com > 帳號/登入問題」或 console.netapp.com > 聯合問題」。這些專門針對控制台問題或疑問。對於所有其他Data Infrastructure Insights技術支援問題，請聯絡link:concept_requesting_support.html["NetApp支援"]。 
 
 
-| 我受邀參加 Data Infrastructure Insights 、但卻收到「未經授權」的訊息。 | 確認您已註冊 BlueXP 帳戶、或貴組織使用 SSO 登入 BlueXP 。驗證您的 BlueXP  設定檔電子郵件地址是否符合「資料基礎架構深入分析」歡迎電子郵件中顯示的電子郵件地址。如果電子郵件不符、請以正確的電子郵件地址申請新的邀請函。 
+| 我受邀參加 Data Infrastructure Insights 、但卻收到「未經授權」的訊息。 | 驗證您是否已註冊 Console 帳戶，或您的組織是否使用 Console 的 SSO 登入。驗證您的控制台設定檔電子郵件地址是否與Data Infrastructure Insights歡迎電子郵件中顯示的電子郵件地址相符。如果電子郵件不匹配，請使用正確的電子郵件地址要求新的邀請。 
 
 
-| 我已從 BlueXP  登出、並自動從 Data Infrastructure Insights 登出。 | 跨 NetApp 雲端服務的單一登入（ SSO ）會登出所有資料基礎架構洞見課程。如果您可以存取多個 Data Infrastructure Insights 帳戶、請從任何一個帳戶登出、以登出所有作用中的工作階段。重新登入以存取您的帳戶。 
+| 我從控制台註銷，並自動從Data Infrastructure Insights中註銷。 | 跨 NetApp 雲端服務的單一登入（ SSO ）會登出所有資料基礎架構洞見課程。如果您可以存取多個 Data Infrastructure Insights 帳戶、請從任何一個帳戶登出、以登出所有作用中的工作階段。重新登入以存取您的帳戶。 
 
 
-| 我在數天後自動登出。 | NetApp Cloud 帳戶每隔幾天就需要重新驗證（目前的 BlueXP 設定是 7 天）。重新登入以存取您的帳戶。 
+| 我在數天後自動登出。 | NetApp Cloud 帳戶需要每隔幾天重新進行一次驗證（目前控制台設定為 7 天）。重新登入以存取您的帳戶。 
 
 
-| 我收到錯誤訊息「不再授權登入」。 | 請聯絡您的帳戶管理員、以驗證對 Data Infrastructure Insights 的存取權限。驗證您的 BlueXP  設定檔電子郵件地址是否符合「資料基礎架構深入分析」歡迎電子郵件中顯示的電子郵件地址 
+| 我收到錯誤訊息「不再授權登入」。 | 請聯絡您的帳戶管理員以驗證對Data Infrastructure Insights的存取權。驗證您的控制台個人資料電子郵件地址是否與Data Infrastructure Insights歡迎電子郵件中顯示的電子郵件地址相符 
 
 
 | 其他登入錯誤 | 請在Chrome中嘗試無痕式模式、或清除瀏覽器記錄、Cookie和快取。嘗試使用不同的瀏覽器設定檔（例如 Chrome -新增人員）。 
@@ -64,7 +64,7 @@ keywords: troubleshooting, problems, browser, login, log in, accessing, access t
 
 == 資源
 
-如需其他疑難排解秘訣，請參閱link:https://kb.netapp.com/Cloud/BlueXP/DII["NetApp知識庫"]（需要支援登入）。
+更多故障排除技巧可在link:https://kb.netapp.com/Cloud/ncds/nds/dii/dii_kbs["NetApp知識庫"]（需要支援登入）。
 
 如需其他支援資訊、請參閱 Data Infrastructure Insights link:concept_requesting_support.html["支援"] 頁面。
 

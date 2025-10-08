@@ -164,6 +164,6 @@ VMware 資料收集器可讓您在 Data Infrastructure Insights 註釋中填入 
 | 錯誤：IP上的VirtualCenter具有不符合JVM要求的憑證 | 可能的解決方案：*建議：使用更強大的功能（例如 1024位元）RSA金鑰。*不建議：修改JVM java.security組態、以利用限制JDK.certpath.disabledAlgorith數 來允許512位元RSA金鑰。請參閱。 link:http://www.oracle.com/technetwork/java/javase/7u40-relnotes-2004172.html["JDK 7 update 40 發行說明"] 
 
 
-| 我看到以下訊息：「 VMware 日誌套件在 8.0.1 版以下的 VMware 上不受支援」 | 8.0.1 之前的 VMware 版本不支援記錄收集。如果您想要使用 Data Infrastructure Insights 中的記錄集合功能、請將 VI Center Infrastructure 基礎架構升級至 8.0.1 版或更新版本。如需詳細資訊，請參閱本link:https://kb.netapp.com/Cloud/BlueXP/Cloud_Insights/VMware_Logs_package_is_not_supported_on_VMware_below_version_8.0.1___Data_Infrastructure_Insights["知識庫文章"]。 
+| 我看到以下訊息：「 VMware 日誌套件在 8.0.1 版以下的 VMware 上不受支援」 | VMware 8.0.1 之前的版本不支援日誌收集。如果您希望使用Data Infrastructure Insights中的日誌收集功能，請將 VI Center Infrastructure 升級至 8.0.1 或更高版本。有關詳細信息，請參閱link:https://kb.netapp.com/Cloud/ncds/nds/dii/dii_kbs/Data_Infrastructure_Insights_Brocade_data_source_fails_performance_collection_with_a_timeout_due_to_default_SNMP_configuration["知識庫文章"]。 
 |===
 您可以在頁面或中找到其他link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]資訊。
