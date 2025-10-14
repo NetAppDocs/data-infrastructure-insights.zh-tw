@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: concept_feature_tutorials.html 
-summary: Data Infrastructure Insights 提供教學課程、讓您瞭解如何執行許多工作。 
+summary: Data Infrastructure Insights有教程向您展示如何執行許多任務。 
 keywords: onboarding, getting started, video, tutorial, resolution, dashboard, query, troubleshooting 
 ---
-= 功能教學課程
+= 功能教學
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,27 +14,27 @@ keywords: onboarding, getting started, video, tutorial, resolution, dashboard, q
 
 
 [role="lead"]
-Data Infrastructure Insights 內含實用功能，可讓您快速輕鬆地疑難排解問題，並深入瞭解企業環境。利用強大的查詢功能輕鬆尋找資料、在儀表板中視覺化資料、並針對您設定的資料臨界值傳送電子郵件警示。
+Data Infrastructure Insights具有許多實用功能，可讓您快速輕鬆地解決問題，並深入了解您的企業環境。使用強大的查詢功能輕鬆找到數據，在儀表板中可視化數據，並針對您設定的數據閾值發送電子郵件警報。
 
 
 
-== 檢查清單與影片教學課程
+== 清單和影片教程
 
-資料基礎架構 Insights 租用戶所顯示的 * 啟動檢查清單 * ，包含數項實用工作與概念的清單。在檢查清單中選取項目、即可前往該概念的適當 Data Infrastructure Insights 頁面。例如、按一下 _ 建立儀表板 _ 項目會開啟 Data Infrastructure Insights * Dashboard* 頁面。
+Data Infrastructure Insights租戶上顯示的*啟動清單*包含幾個有用的任務和概念的清單。選擇清單中的一項將帶您進入適合該概念的Data Infrastructure Insights頁面。例如，點擊「建立儀表板」項目將開啟Data Infrastructure Insights「儀表板」頁面。
 
-image:OnboardingChecklist.png["教學課程檢查清單進度"]
+image:OnboardingChecklist.png["教學清單進度"]
 
-頁面頂端是影片教學課程的連結、說明如何建立儀表板。您可以視需要多次觀看影片、直到按一下「_迄今」為止！不要再顯示該影片的「此」連結。影片會在您每次前往儀表板頁面時播放、直到您關閉為止。
+頁面頂部有一個視頻教程鏈接，展示如何創建儀表板。您可以隨意多次觀看該視頻，直到單擊“知道了！”不要再顯示這個_該影片的連結。每次您進入儀表板頁面時都會看到該視頻，直到您關閉它為止。
 
-image:Startup-DashboardWatchVideo.png["觀看Video Link"]
+image:Startup-DashboardWatchVideo.png["觀看影片連結"]
 
-看完影片至少一次之後、檢查清單中的「建立儀表板」項目會勾選、表示您已完成教學課程。接著、您可以繼續下一個教學課程。
-
-
-NOTE: 您可以任意順序檢視教學課程、次數不限、直到解僱為止。
+觀看影片至少一次後，清單中的「建立儀表板」項目將被勾選，表示您已完成本教學。然後您可以繼續下一個教學。
 
 
+NOTE: 您可以按照自己喜歡的順序查看教程，並且可以多次查看，直到關閉為止。
 
-=== 取消檢查清單
 
-在您按一下檢查清單底部的「不要再顯示此清單」連結之前，系統會顯示「啟動檢查清單」。即使在取消檢查清單之後、每個適當的 Data Infrastructure Insights 頁面上仍會提供這些教學課程、直到您從訊息標題列中取消每個學習單元為止。
+
+=== 取消清單
+
+啟動檢查表會一直顯示，直到您點擊檢查表底部的「不再顯示」連結為止。即使在關閉清單之後，教程仍然可以在每個適當的Data Infrastructure Insights頁面上找到，直到您從訊息標題列中關閉每個教程。

@@ -2,112 +2,112 @@
 sidebar: sidebar 
 permalink: task_dc_emc_ecs.html 
 keywords: data collector, ecs, EMC 
-summary: 設定ECS資料收集器。 
+summary: 配置 ECS 資料收集器。 
 ---
-= 設定EMC ECS資料收集器
+= 配置 EMC ECS 資料收集器
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-此資料收集器會從EMC ECS儲存系統取得庫存和效能資料。對於組態、資料收集器需要 ECS 叢集的 IP 位址或主機名稱、以及使用者名稱和密碼。
+此資料收集器從 EMC ECS 儲存系統取得庫存和效能資料。對於配置，資料收集器需要 ECS 叢集的 IP 位址或主機名稱以及使用者名稱和密碼。
 
 
-NOTE: Dell EMC ECS會以不同的原始TB至託管單位速率進行計量。每 40 TB 的未格式化 ECS 容量就會以 1 計費link:concept_subscribing_to_cloud_insights.html#pricing["託管單位（MU）"]。
+NOTE: Dell EMC ECS 依照不同的原始 TB 與託管單位費率進行計量。每 40TB 未格式化 ECS 容量按 1link:concept_subscribing_to_cloud_insights.html#pricing["管理單元（MU）"] 。
 
 
 
 == 術語
 
-Data Infrastructure Insights 會從 ECS 資料收集器取得下列庫存資訊。對於所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights從 ECS 數據收集器獲取以下庫存資訊。對於所取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | Data Infrastructure Insights 術語 
+| 供應商/型號術語 | Data Infrastructure Insights術語 
 
 
-| 叢集 | 儲存設備 
+| 簇 | 儲存 
 
 
-| 租戶 | 儲存資源池 
+| 租戶 | 儲存池 
 
 
-| 鏟斗 | 內部Volume 
+| 桶 | 內部體積 
 
 
 | 磁碟 | 磁碟 
 |===
-附註：這些只是通用的術語對應、可能不代表此資料收集器的每個案例。
+注意：這些只是常見的術語映射，可能並不代表此資料收集器的所有情況。
 
 
 
-== 需求
+== 要求
 
-* ECS 叢集的 IP 位址或主機名稱
+* ECS 叢集的 IP 位址或主機名
 * ECS 系統的使用者名稱和密碼
-* 連接埠 4443 （ HTTPS ）。需要連線至 ECS 系統上的 TCP 連接埠 4443 的輸出連線。
+* 端口 4443 (HTTPS)。需要與 ECS 系統上的 TCP 連接埠 4443 建立出站連線。
 
 
 
 
-== 組態
+== 配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| ECS主機 | ECS系統的IP位址或完整網域名稱 
+| ECS 主機 | ECS 系統的 IP 位址或完全限定域名 
 
 
-| ECS主機連接埠 | 用於與ECS主機通訊的連接埠 
+| ECS 主機連接埠 | 與 ECS 主機通訊所使用的連接埠 
 
 
 | ECS 使用者 ID | ECS 的使用者 ID 
 
 
-| 密碼 | 用於ECS的密碼 
+| 密碼 | ECS使用的密碼 
 |===
 
 
-== 進階組態
+== 進階配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| 庫存輪詢時間間隔（分鐘） | 預設值為 360 分鐘。 
+| 庫存輪詢間隔（分鐘） | 預設值為 360 分鐘。 
 |===
 
 
-== 疑難排解
+== 故障排除
 
-如果您在使用此資料收集器時遇到問題、請嘗試下列事項：
+如果您在使用此資料收集器時遇到問題，請嘗試以下操作：
 
 
 
-=== 庫存
+=== 存貨
 
 [cols="2*"]
 |===
-| 問題： | 試用： 
+| 問題： | 試試一下： 
 
 
-| 錯誤：使用者驗證失敗。 | 請確定您的此裝置認證資料正確無誤。 
+| 錯誤：使用者身份驗證失敗。 | 確保您對此裝置的憑證正確無誤。 
 |===
 
 
-=== 效能
+=== 表現
 
 [cols="2*"]
 |===
-| 問題： | 試用： 
+| 問題： | 試試一下： 
 
 
-| 錯誤：收集的資料不足。 | * 檢查日誌檔案中的收集時間戳記並相應地修改輪詢間隔 * 等待更長時間 
+| 錯誤：未收集足夠的數據。 | * 檢查日誌檔案中的收集時間戳記並相應地修改輪詢間隔 * 等待更長時間 
 
 
-| 錯誤：效能輪詢時間間隔過長。 | 檢查記錄檔$｛logfile｝中的收集時間戳記、並據此修改輪詢時間間隔 
+| 錯誤：效能輪詢間隔太大。 | 檢查日誌檔案 ${logfile} 中的收集時間戳記並相應地修改輪詢間隔 
 |===
-您可以在頁面或中找到其他link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]資訊。
+更多資訊可從link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。

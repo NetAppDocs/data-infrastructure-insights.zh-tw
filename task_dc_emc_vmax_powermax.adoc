@@ -2,33 +2,33 @@
 sidebar: sidebar 
 permalink: task_dc_emc_vmax_powermax.html 
 keywords: data collector, EMC, DELL, vmax, powermax 
-summary: 設定Dell EMC VMAX和PowerMax系列裝置資料收集器。 
+summary: 配置 Dell EMC VMAX 和 PowerMax 系列設備資料收集器。 
 ---
-= Dell EMC VMAX和PowerMax系列裝置資料收集器
+= Dell EMC VMAX 與 PowerMax 系列設備資料收集器
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-Data Infrastructure Insights 會使用 Solutions Enabler SYMCLI 命令搭配您環境中現有的 Solutions Enabler 伺服器、來探索 EMC VMAX 和 PowerMax 儲存陣列。現有的Solutions Enabler伺服器可透過存取關守磁碟區、連線至VMAX-PowerMax儲存陣列。
+Data Infrastructure Insights透過使用 Solutions Enabler symcli 指令結合您環境中現有的 Solutions Enabler 伺服器來發現 EMC VMAX 和 PowerMax 儲存陣列。現有的 Solutions Enabler 伺服器透過存取守門磁碟區可以連接到 VMAX/PowerMax 儲存陣列。
 
 
 
-== 需求
+== 要求
 
-在設定此資料收集器之前、您應確保 Data Infrastructure Insights 已連接至現有 Solutions Enabler 伺服器上的連接埠 2707 。Data Infrastructure Insights 會探索此伺服器的所有「本機」 Symmetrix 陣列、如該伺服器的「 symcfg 清單」輸出所示。
+在配置此資料收集器之前，您應該確保Data Infrastructure Insights與現有 Solutions Enabler 伺服器上的連接埠 2707 具有 TCP 連線。Data Infrastructure Insights發現此伺服器的所有「本機」 Symmetrix 陣列，如該伺服器的「symcfg list」輸出所示。
 
-* 具備SMI-S供應商應用程式的EMC Solutions Enabler（CLI）必須安裝在擷取單元伺服器上、且版本必須與Solutions Enabler Server上執行的版本相符或早於該版本。
-* 需要正確設定的｛installdir｝\emc\symapi\config\netcnfg-file。此檔案定義Solutions Enabler伺服器的服務名稱、以及存取方法（安全/ NOSEECURE /any）。
-* 如果您需要儲存節點層級的讀取/寫入延遲、SMI-S Provider必須與VMAX應用程式的Unif則 執行中執行個體通訊。
-* 管理解決方案啟用伺服器的IP位址
-* Solutions Enabler（SE）伺服器的系統管理員權限
-* SE軟體的唯讀使用者名稱和密碼
-* VMAX應用程式的Un版 型必須執行、並收集SMI-S Provider安裝所管理的EMC VMAX和PowerMax儲存陣列的統計資料
-* 效能存取驗證：在擷取單元的網頁瀏覽器中，前往 \https://<SMI-S 主機名稱或 IP ： 5989/ecomconfig_ ，其中「 SMI-S 主機名稱或 IP 」是 SMI-S 伺服器的 IP 位址或主機名稱。此URL適用於EMC SMI-S（又稱為「ECOM」）服務的管理入口網站、您將會收到登入快顯視窗。
-* 權限必須在Solutions Enabler伺服器的精靈組態檔中聲明、通常可在這裡找到：_/var/symapi/config/daema_users_
+* 必須在採集單元伺服器上安裝具有 SMI-S 提供者應用程式的 EMC Solutions Enabler (CLI)，且其版本必須與 Solutions Enabler Server 上執行的版本相符或更早。
+* 需要正確配置的 {installdir}\EMC\SYMAPI\config\netcnfg 檔案。該文件定義了 Solutions Enabler 伺服器的服務名稱以及存取方法（SECURE / NOSECURE /ANY）。
+* 如果您需要儲存節點層級的讀取/寫入延遲，則 SMI-S 提供者必須與 UNISPHERE for VMAX 應用程式的正在執行的實例進行通訊。
+* 管理 Solutions Enabler 伺服器的 IP 位址
+* Solutions Enabler (SE) Server 上的管理員權限
+* SE 軟體的唯讀使用者名稱和密碼
+* UNISPHERE for VMAX 應用程式必須正在運行並收集由 SMI-S 提供者安裝管理的 EMC VMAX 和 PowerMax sstorage 陣列的統計信息
+* 存取效能驗證：在擷取單元的 Web 瀏覽器中，前往 _\https://<SMI-S 主機名稱或 IP>:5989/ecomconfig_，其中「SMI-S 主機名稱或 IP」是您的 SMI-S 伺服器的 IP 位址或主機名稱。此 URL 是 EMC SMI-S（又稱「ECOM」）服務的管理入口網站 - 您將收到一個登入彈出視窗。
+* 必須在 Solutions Enabler 伺服器的守護程式設定檔中聲明權限，通常位於：_/var/symapi/config/daemon_users_
 +
-以下是具有適當cisys權限的範例檔案。
+這是一個具有適當 cisys 權限的範例檔案。
 
 +
 ....
@@ -49,127 +49,127 @@ cisys storapid <all>
 
 == 術語
 
-Data Infrastructure Insights 會從 EMC VMAE/PowerMax 資料來源取得下列庫存資訊。對於所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights從 EMC VMAX/PowerMax 資料來源取得以下庫存資訊。對於所取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | Data Infrastructure Insights 術語 
+| 供應商/型號術語 | Data Infrastructure Insights術語 
 
 
 | 磁碟 | 磁碟 
 
 
-| 磁碟群組 | 磁碟群組 
+| 磁碟組 | 磁碟組 
 
 
-| 儲存設備 | 陣列儲存設備 
+| 儲存 | 陣列儲存 
 
 
-| 總監 | 儲存節點 
+| 導演 | 儲存節點 
 
 
-| 裝置集區、儲存資源集區（SRP） | 儲存資源池 
+| 設備池、儲存資源池（SRP） | 儲存池 
 
 
-| 裝置TDev | Volume 
+| 設備 TDev | 體積 
 |===
-附註：這些只是通用的術語對應、可能不代表此資料收集器的每個案例。
+注意：這些只是常見的術語映射，可能並不代表此資料收集器的所有情況。
 
 
 
-== 組態
+== 配置
 
-* 注意： * 如果未啟用 SMI-S 使用者驗證、則會忽略 Data Infrastructure Insights 資料收集器中的預設值。
+*注意：*如果未啟用 SMI-S 使用者驗證，則會忽略Data Infrastructure Insights資料收集器中的預設值。
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| 服務名稱 | 在_netcnfg-file中指定的服務名稱 
+| 服務名稱 | _netcnfg_ 檔案中指定的服務名稱 
 
 
-| CLI的完整路徑 | 包含Symmetrix CLI的資料夾完整路徑 
+| CLI 的完整路徑 | 包含 Symmetrix CLI 的資料夾的完整路徑 
 
 
-| SMI-S主機IP位址 | SMI-S主機的IP位址 
+| SMI-S 主機 IP 位址 | SMI-S主機的IP位址 
 |===
 
 
-== 進階組態
+== 進階配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| 庫存輪詢時間間隔（分鐘） | 庫存輪詢之間的時間間隔。預設值為 40 分鐘。 
+| 庫存輪詢間隔（分鐘） | 庫存調查之間的間隔。預設值為 40 分鐘。 
 
 
-| 選擇「排除」或「包含」以指定清單 | 指定在收集資料時是否要納入或排除下列陣列清單。 
+| 選擇“排除”或“包含”來指定列表 | 指定收集資料時是否包含或排除以下數組清單。 
 
 
-| 庫存篩選器裝置清單 | 要包含或排除的裝置ID清單、以逗號分隔 
+| 庫存過濾器設備列表 | 要包含或排除的裝置 ID 的逗號分隔列表 
 
 
-| 連線快取 | 選擇連線快取方法：*本機表示Cloud Insights 正在Solutions Enabler伺服器上執行《The》（《Solutions Enabler》）擷取服務、該伺服器具備光纖通道連線功能、可連線至您要探索的Symmetrix陣列、並可存取關守磁碟區。部分遠端擷取設備（Rau）組態可能會出現此情形。* remide_lapped是預設值、在大多數情況下都應使用。這會使用NETCNFG檔案設定、使用IP連線至Solutions Enabler伺服器、該伺服器必須具備光纖通道連線至您要探索的Symmetrix陣列、並可存取Gatekeeper磁碟區。*如果reme_clapped選項使CLI命令失敗、請使用遠端選項。請記住、這會拖慢擷取程序（在極端情況下可能會減至數小時甚至數天）。NETCNFG檔案設定仍可用於連接至Solutions Enabler伺服器的IP連線、該伺服器的Fibre Channel可連線至正在探索的Symmetrix陣列。* 注意： * 此設定不會變更「 symcfg 清單」輸出所列遠端陣列的 Data Infrastructure Insights 行為。Data Infrastructure Insights 只會在此命令顯示為本機的裝置上收集資料。 
+| 連接快取 | 選擇連接快取方法：* LOCAL 表示Cloud Insights Acquisition 服務正在 Solutions Enabler 伺服器上運行，該伺服器具有與您要發現的 Symmetrix 陣列的光纖通道連接，並且可以存取守衛磁碟區。這可能在某些遠端採集單元 (RAU) 配置中看到。 * REMOTE_CACHED 是預設值，在大多數情況下都應該使用。它使用 NETCNFG 檔案設定透過 IP 連接到 Solutions Enabler 伺服器，該伺服器必須具有與您要發現的 Symmetrix 陣列的光纖通道連接，並且可以存取 Gatekeeper 磁碟區。 * 如果 REMOTE_CACHED 選項導致 CLI 指令失敗，請使用 REMOTE 選項。請記住，它會減慢獲取過程（在極端情況下可能需要數小時甚至數天）。  NETCNFG 檔案設定仍用於與 Solutions Enabler 伺服器建立 IP 連接，該伺服器具有與正在發現的 Symmetrix 陣列的光纖通道連接。 *注意：*此設定不會改變「symcfg list」輸出中列為 REMOTE 的陣列的Data Infrastructure Insights行為。Data Infrastructure Insights僅收集此命令顯示為 LOCAL 的裝置上的資料。 
 
 
-| SMI-S傳輸協定 | 用於連線至SMI-S供應商的傳輸協定。也會顯示使用的預設連接埠。 
+| SMI-S協議 | 用於連接到 SMI-S 提供者的協定。也顯示使用的預設連接埠。 
 
 
-| 置換SMIS-Port | 如果空白、請使用「連線類型」欄位中的預設連接埠、否則請輸入要使用的連線連接埠 
+| 覆蓋 SMIS 端口 | 如果為空，則在連接類型欄位中使用預設端口，否則輸入要使用的連接端口 
 
 
-| SMI-S使用者名稱 | SMI-S Provider主機的使用者名稱 
+| SMI-S 使用者名稱 | SMI-S 提供程式主機的使用者名 
 
 
-| SMI-S密碼 | SMI-S Provider主機的使用者名稱 
+| SMI-S 密碼 | SMI-S 提供程式主機的使用者名 
 
 
-| 效能輪詢時間間隔（秒） | 效能輪詢之間的時間間隔（預設為1000秒） 
+| 效能輪詢間隔（秒） | 效能輪詢之間的間隔（預設 1000 秒） 
 
 
-| 選擇「排除」或「包含」以指定清單 | 指定在收集效能資料時、是否要納入或排除下列陣列清單 
+| 選擇“排除”或“包含”來指定列表 | 指定在收集效能資料時是否包含或排除以下數組列表 
 
 
-| 效能篩選器裝置清單 | 要包含或排除的裝置ID清單、以逗號分隔 
+| 效能過濾器設備列表 | 要包含或排除的裝置 ID 的逗號分隔列表 
 |===
 
 
-== 疑難排解
+== 故障排除
 
-如果您在使用此資料收集器時遇到問題、請嘗試下列事項：
+如果您在使用此資料收集器時遇到問題，請嘗試以下操作：
 
 [cols="2*"]
 |===
-| 問題： | 試用： 
+| 問題： | 試試一下： 
 
 
-| 錯誤：所要求的功能目前未獲授權 | 安裝SYMAPI伺服器授權。 
+| 錯誤：所請求的功能目前未獲得許可 | 安裝 SYMAPI 伺服器許可證。 
 
 
-| 錯誤：找不到裝置 | 請確定已將Symmetrix裝置設定為由Solutions Enabler伺服器管理：-執行symcfg清單-v以查看已設定的Symmetrix裝置清單。 
+| 錯誤：未找到設備 | 確保 Symmetrix 裝置配置為由 Solutions Enabler 伺服器管理： - 執行 symcfg list -v 查看已設定的 Symmetrix 裝置清單。 
 
 
-| 錯誤：在服務檔案中找不到要求的網路服務 | 請確定已定義Solutions Enabler服務名稱、以供Solutions Enabler使用。此檔案通常位於Solutions Enabler用戶端安裝的SYMapi\config\下。 
+| 錯誤：在服務文件中未找到要求的網路服務 | 確保 Solutions Enabler 服務名稱已在 Solutions Enabler 的 netcnfg 檔案中定義。該檔案通常位於 Solutions Enabler 用戶端安裝中的 SYMAPI\config\ 下。 
 
 
-| 錯誤：遠端用戶端/伺服器交握失敗 | 在我們嘗試探索的Solutions Enabler主機上、查看最新的storsrvd.log*檔案。 
+| 錯誤：遠端客戶端/伺服器握手失敗 | 檢查我們嘗試發現的 Solutions Enabler 主機上最新的 storsrvd.log* 檔案。 
 
 
-| 錯誤：用戶端憑證中的一般名稱無效 | 編輯Solutions Enabler伺服器上的_hosts_檔案、以便擷取裝置的主機名稱解析為解決方案啟用伺服器上storsrvd.log所報告的IP位址。 
+| 錯誤：客戶端憑證中的通用名稱無效 | 編輯 Solutions Enabler 伺服器上的 _hosts_ 文件，以便採集單元的主機名稱解析為 Solutions Enabler 伺服器上 storsrvd.log 中報告的 IP 位址。 
 
 
-| 錯誤：功能無法取得記憶體 | 請確定系統中有足夠的可用記憶體可供執行Solutions Enabler 
+| 錯誤：函數無法取得記憶體 | 確保系統中有足夠的可用記憶體來執行 Solutions Enabler 
 
 
-| 錯誤：Solutions Enabler無法提供所需的所有資料。 | 調查Solutions Enabler的健全狀況和負載設定檔 
+| 錯誤：解決方案啟動器無法提供所有所需資料。 | 調查 Solutions Enabler 的健康狀況和負載概況 
 
 
-| 錯誤：•使用Solutions Enabler Server 8.x收集的Solutions Enabler 7.x時、「symcfg list -tdev" CLI命令可能會傳回不正確的資料使用Solutions Enabler 8.1.0或更早版本從Solutions Enabler Server 8.3或更新版本收集到的「symcfg list -SRP」CLI命令可能會傳回不正確的資料。 | 請務必使用相同的Solutions Enabler主要版本 
+| 錯誤：• 使用 Solutions Enabler 7.x 從 Solutions Enabler 伺服器 8.x 收集資料時，「symcfg list -tdev」CLI 指令可能會傳回不正確的資料。  • 使用 Solutions Enabler 8.1.0 或更早版本從 Solutions Enabler 伺服器 8.3 或更高版本收集資料時，「symcfg list -srp」CLI 指令可能會傳回不正確的資料。 | 確保您使用的是相同的 Solutions Enabler 主要版本 
 
 
-| 我看到「不明程式碼」訊息出現資料收集錯誤 | 如果 Solutions Enabler 伺服器的監控程式組態檔案中未聲明權限，您可能會看到此訊息（請參閱上述內容）<<需求,需求>>。這假設您的 SE 用戶端版本符合您的 SE 伺服器版本。如果未在/var/symapi/config/daema_users_USERS組態檔中設定_cisys使用者（執行Solutions Enabler命令）所需的精靈權限、也可能會發生此錯誤。若要修正此問題、請編輯/var/symapi/config/daema_userss檔案、並確定cisys使用者具有<all> 為storapid精靈指定的支援權限。範例： 14 ： 11 ： 25 # tail /var/symapi/config / daemon_users... cisys storapid <all> 
+| 我看到數據收集錯誤，訊息為：“未知代碼” | 如果 Solutions Enabler 伺服器的守護程式設定檔中未聲明權限，您可能會看到此訊息（請參閱<<要求,要求>>多於。 ）這假設您的 SE 用戶端版本與您的 SE 伺服器版本相符。如果 _cisys_ 使用者（執行 Solutions Enabler 指令）未在 /var/symapi/config/daemon_users 設定檔中設定必要的守護程式權限，也可能會發生此錯誤。若要解決此問題，請編輯 /var/symapi/config/daemon_users 檔案並確保 cisys 使用者俱有為 storapid 守護程式指定的 <all> 權限。例如：14:11:25 # tail /var/symapi/config/daemon_users ... cisys storapid <all> 
 |===
-您可以在頁面或中找到其他link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]資訊。
+更多資訊可從link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。

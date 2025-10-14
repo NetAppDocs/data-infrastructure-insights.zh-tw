@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task_cs_user_management.html 
 keywords: Workload Security, User, Login, account, cloud secure 
-summary: 工作負載安全性使用者帳戶是透過 Data Infrastructure Insights 使用者管理來管理 
+summary: 工作負載安全用戶帳戶透過Data Infrastructure Insights用戶管理進行管理 
 ---
 = 使用者管理
 :hardbreaks:
@@ -10,33 +10,33 @@ summary: 工作負載安全性使用者帳戶是透過 Data Infrastructure Insig
 
 
 [role="lead"]
-工作負載安全性使用者帳戶是透過 Data Infrastructure Insights 來管理。
+工作負載安全用戶帳戶透過Data Infrastructure Insights進行管理。
 
-Data Infrastructure Insights 提供四種使用者帳戶層級：帳戶擁有者、系統管理員、使用者和訪客。每個帳戶都會被指派特定的權限等級。擁有系統管理員權限的使用者帳戶可以建立或修改使用者、並將下列其中一個工作負載安全角色指派給每位使用者：
+Data Infrastructure Insights提供四個使用者帳戶層級：帳戶擁有者、管理員、使用者和訪客。每個帳戶都分配有特定的權限等級。具有管理員權限的使用者帳戶可以建立或修改用戶，並為每個使用者指派以下工作負載安全角色之一：
 
 |===
 
 
-| 角色 | 工作負載安全存取 
+| 角色 | 工作負載安全訪問 
 
 
-| 系統管理員 | 可執行所有工作負載安全功能、包括警示、鑑識、資料收集器、自動回應原則、以及工作負載安全API等功能。管理員也可以邀請其他使用者、但只能指派工作負載安全性角色。 
+| 行政人員 | 可執行所有工作負載安全功能，包括警報、取證、資料收集器、自動回應策略和工作負載安全 API。管理員也可以邀請其他用戶，但只能分配工作負載安全角色。 
 
 
-| 使用者 | 可檢視及管理警示、以及檢視鑑識。使用者角色可以變更警示狀態、新增附註、手動擷取快照及限制使用者存取。 
+| 使用者 | 可以查看和管理警報並查看取證。使用者角色可以更改警報狀態、新增註釋、手動拍攝快照以及限制使用者存取。 
 
 
-| 訪客 | 可檢視警示和鑑識。來賓角色無法變更警示狀態、新增附註、手動擷取快照或限制使用者存取。 
+| 客人 | 可以查看警報和取證。來賓角色不能更改警報狀態、新增註解、手動拍攝快照或限制使用者存取。 
 |===
 .步驟
-. 登入工作負載安全性
-. 在功能表中、按一下*管理>使用者管理*
+. 登入工作負載安全
+. 在選單中，按一下“管理”>“使用者管理”
 +
-您將被轉寄至 Data Infrastructure Insights 的「使用者管理」頁面。
+您將被轉發到資料基礎設施洞察的使用者管理頁面。
 
-. 為每位使用者選取所需的角色。
+. 為每個使用者選擇所需的角色。
 
 
-新增使用者時、只要選擇所需的角色（通常是使用者或訪客）即可。
+新增使用者時，只需選擇所需的角色（通​​常是使用者或訪客）。
 
-如需使用者帳戶和角色的詳細資訊、請參閱 Data Infrastructure Insights link:https://docs.netapp.com/us-en/cloudinsights/concept_user_roles.html["使用者角色"] 文件。
+有關用戶帳戶和角色的更多信息，請參閱Data Infrastructure Insightslink:https://docs.netapp.com/us-en/cloudinsights/concept_user_roles.html["使用者角色"]文件.

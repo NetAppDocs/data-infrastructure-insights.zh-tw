@@ -2,79 +2,62 @@
 sidebar: sidebar 
 permalink: task_config_user_dir_connect.html 
 keywords: collector, configure, LDAP, Active Directory, cloud secure 
-summary: 設定工作負載安全性Active Directory使用者目錄收集器 
+summary: 設定工作負載安全性 Active Directory 使用者目錄收集器 
 ---
-= 設定Active Directory（AD）使用者目錄收集器
+= 設定 Active Directory (AD) 使用者目錄收集器
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-工作負載安全性可設定為從Active Directory伺服器收集使用者屬性。
+可以設定工作負載安全性以從 Active Directory 伺服器收集使用者屬性。
 
 .開始之前
-* 您必須是 Data Infrastructure Insights 管理員或帳戶擁有者、才能執行此工作。
-* 您必須擁有裝載Active Directory伺服器的伺服器IP位址。
-* 在設定使用者目錄連接器之前、必須先設定代理程式。
+* 您必須是Data Infrastructure Insights管理員或帳戶所有者才能執行此任務。
+* 您必須擁有託管 Active Directory 伺服器的伺服器的 IP 位址。
+* 在配置使用者目錄連接器之前，必須先配置代理程式。
 
 
-.設定使用者目錄收集器的步驟
-. 在 Workload Security 功能表中，按一下： * Collectors > User Directory Collectors > + User Directory Collector* ，然後選取 * Active Directory*
+.配置使用者目錄收集器的步驟
+. 在「工作負載安全」功能表中，按一下：*收集器 > 使用者目錄收集器 > + 使用者目錄收集器*，然後選擇*Active Directory*
 +
-系統會顯示Add User Directory（新增使用者目錄）畫面。
+系統顯示新增使用者目錄畫面。
 
 
 
-在下列表格中輸入所需的資料、以設定使用者目錄收集器：
-
-[cols="2*"]
-|===
-
-
-| 名稱 | 說明 
-
-
-| 名稱 | 使用者目錄的唯一名稱。例如_GlobalADCollector_ 
-
-
-| 代理程式 | 從清單中選取已設定的代理程式 
-
-
-| 伺服器IP/網域名稱 | 裝載作用中目錄之伺服器的IP位址或完整網域名稱（FQDN） 
-
-
-| 樹系名稱 | 目錄結構的樹系層級。樹系名稱允許使用下列兩種格式：_x.y.z_=>直接網域名稱、如同您在SVM上的名稱一樣。[範例：hq.companyname.com]_DC=x、DC=y、DC=z_=>相對辨別名稱[範例：DC=HQ、DC=公司名稱、DC=com]、您也可以指定下列項目： _OU=Engineering、DC=HQ、DC=公司名稱、DC=com_[依特定OU工程篩選]_CN=UserName、OU=Engineering、DC=companyname、DC=NetApp、DC=com_[僅從OU <Engineering取得特定使用者]_CN=acrooms使用者、CN=Users、DC=HQ、DC=companyname、DC=useals=公司名稱、DC=com、DC、DC、DC =公司名稱、DC =公司名稱、DC =公司名稱、DC =公司名稱、DC =、DC =、DC =公司名稱、DC =、DC =、DC、DC =、DC =公司名稱、DC =、DC =、 
-
-
-| 連結DN | 允許使用者搜尋目錄。例如： _username@companyname.com_ 或 _username@domainname.com_ 此外，還需要網域唯讀權限。使用者必須是安全性群組 _ 唯讀網域控制站 _ 的成員。 
-
-
-| 連結密碼 | 目錄伺服器密碼（即用於Bind DN的使用者名稱密碼） 
-
-
-| 傳輸協定 | LDAP、LDAPS、LDAP-start-TLS 
-
-
-| 連接埠 | 選取連接埠 
-|===
-如果Active Directory中已修改預設屬性名稱、請輸入下列Directory Server必要屬性。在Active Directory中、這些屬性名稱通常是「_not」修改、在這種情況下、您只需繼續使用預設屬性名稱即可。
+透過在下表中輸入所需資料來設定使用者目錄收集器：
 
 [cols="2*"]
 |===
 
 
-| 屬性 | 目錄伺服器中的屬性名稱 
+| Name | 描述 
 
 
-| 顯示名稱 | 名稱 
+| Name | 使用者目錄的唯一名稱。例如_GlobalADColector_ 
 
 
-| SID | objectSid 
+| 代理人 | 從清單中選擇一個已配置的代理 
 
 
-| 使用者名稱 | SamAccountName 
+| 伺服器IP/域名 | 託管活動目錄的伺服器的 IP 位址或完全限定網域名稱 (FQDN) 
+
+
+| 森林名稱 | 目錄結構的森林層級。森林名稱允許以下兩種格式：_x.y.z_ => 直接域名，與您在 SVM 上的一樣。  [範例：hq.companyname.com] _DC=x,DC=y,DC=z_ => 相對可分辨名稱 [範例：DC=hq,DC= companyname,DC=com] 或您可以指定如下： _OU=engineering,DC=hq,DC= companyname=DC=com_ [按特定 name eng DC=netapp, DC=com_ [從 OU <engineering> 取得具有 <username> 的特定使用者] _CN=Acrobat Users,CN=Users,DC=hq,DC=companyname,DC=com,O= companyname,L=Boston,Scro=MA 的 
+
+
+| 綁定 DN | 允許使用者搜尋目錄。例如：_username@companyname.com_ 或 _username@domainname.com_ 另外，還需要網域唯讀權限。使用者必須是安全性群組「只讀網域控制站」的成員。 
+
+
+| 綁定密碼 | 目錄伺服器密碼（即綁定 DN 中使用的使用者名稱的密碼） 
+
+
+| 協定 | ldap、ldaps、ldap-start-tls 
+
+
+| 連接埠 | 選擇連接埠 
 |===
-按一下「包含選用屬性」以新增下列任何屬性：
+如果在 Active Directory 中修改了預設屬性名稱，請輸入下列 Directory Server 所需的屬性。大多數情況下，這些屬性名稱在 Active Directory 中不會被修改，在這種情況下，您可以簡單地使用預設屬性名稱。
 
 [cols="2*"]
 |===
@@ -83,7 +66,24 @@ summary: 設定工作負載安全性Active Directory使用者目錄收集器
 | 屬性 | 目錄伺服器中的屬性名稱 
 
 
-| 電子郵件地址 | 郵件 
+| 顯示名稱 | 姓名 
+
+
+| SID | 物件標識符 
+
+
+| 使用者名稱 | sAM帳戶名稱 
+|===
+按一下「包括可選屬性」以新增下列任意屬性：
+
+[cols="2*"]
+|===
+
+
+| 屬性 | 目錄伺服器中的屬性名稱 
+
+
+| 電子郵件 | 郵件 
 
 
 | 電話號碼 | 電話號碼 
@@ -92,95 +92,95 @@ summary: 設定工作負載安全性Active Directory使用者目錄收集器
 | 角色 | 標題 
 
 
-| 國家/地區 | 合作夥伴 
+| 國家 | 公司 
 
 
-| 州/省 | 州/省 
+| 狀態 | 狀態 
 
 
 | 部門 | 部門 
 
 
-| 相片 | thumbnailPhoto 
+| 照片 | 縮圖 
 
 
-| ManagerDN | 經理 
+| 經理DN | 主管 
 
 
-| 群組 | 成員 
+| 團體 | 成員 
 |===
 
 
-== 測試使用者目錄收集器組態
+== 測試您的使用者目錄收集器配置
 
-您可以使用下列程序來驗證LDAP使用者權限和屬性定義：
+您可以使用下列步驟驗證 LDAP 使用者權限和屬性定義：
 
-* 使用下列命令來驗證工作負載安全性LDAP使用者權限：
+* 使用下列指令驗證 Workload Security LDAP 使用者權限：
 +
 `ldapsearch -o ldif-wrap=no -LLL -x -b "dc=netapp,dc=com" -h 10.235.40.29 -p 389 -D \Administrator@netapp.com -W`
 
-* 使用AD檔案總管瀏覽AD資料庫、檢視物件內容和屬性、檢視權限、檢視物件架構、執行精密的搜尋、您可以儲存並重新執行。
+* 使用 AD Explorer 瀏覽 AD 資料庫、查看物件屬性和特性、檢視權限、檢視物件的模式、執行可以儲存和重新執行的複雜搜尋。
 +
-** 安裝link:https://docs.microsoft.com/en-us/sysinternals/downloads/adexplorer["廣告資源管理器"]在任何可連線到 AD 伺服器的 Windows 機器上。
-** 使用AD目錄伺服器的使用者名稱/密碼連線至AD伺服器。
+** 安裝link:https://docs.microsoft.com/en-us/sysinternals/downloads/adexplorer["AD 瀏覽器"]在任何可以連接到 AD 伺服器的 Windows 機器上。
+** 使用 AD 目錄伺服器的使用者名稱/密碼連線到 AD 伺服器。
 
 
 
 
-image:cs_ADExample.png["AD連線"]
+image:cs_ADExample.png["AD 連線"]
 
 
 
-== 疑難排解使用者目錄收集器組態錯誤
+== 排除使用者目錄收集器配置錯誤
 
-下表說明收集器組態期間可能發生的已知問題和解決方法：
+下表描述了收集器配置期間可能出現的已知問題和解決方法：
 
 [cols="2*"]
 |===
-| 問題： | 解決方法： 
+| 問題： | 解決： 
 
 
-| 新增使用者目錄連接器會導致「錯誤」狀態。錯誤顯示「LDAP伺服器提供的認證無效」。 | 提供的使用者名稱或密碼不正確。編輯並提供正確的使用者名稱和密碼。 
+| 新增使用者目錄連接器會導致「錯誤」狀態。錯誤提示「為 LDAP 伺服器提供的憑證無效」。 | 提供的使用者名稱或密碼不正確。編輯並提供正確的使用者名稱和密碼。 
 
 
-| 新增使用者目錄連接器會導致「錯誤」狀態。錯誤顯示：「無法取得對應於DN=DC=HQ、DC=domainname、DC=com的物件做為樹系名稱。」 | 提供的樹系名稱不正確。編輯並提供正確的樹系名稱。 
+| 新增使用者目錄連接器會導致「錯誤」狀態。錯誤提示：“無法取得與作為林名稱提供的 DN=DC=hq,DC=domainname,DC=com 對應的物件。” | 提供的森林名稱不正確。編輯並提供正確的森林名稱。 
 
 
-| 「工作負載安全性使用者設定檔」頁面不會顯示網域使用者的選用屬性。 | 這可能是因為CloudSecure中新增的選用屬性名稱與Active Directory中的實際屬性名稱不相符。編輯並提供正確的選用屬性名稱。 
+| 網域使用者的選用屬性未出現在工作負載安全使用者設定檔頁面中。 | 這可能是由於 CloudSecure 中新增的可選屬性名稱與 Active Directory 中的實際屬性名稱不符所造成的。編輯並提供正確的可選屬性名稱。 
 
 
-| 資料收集器處於錯誤狀態、並顯示「無法擷取LDAP使用者。故障原因：無法連線至伺服器、連線為null | 按一下「_Restart_」按鈕、重新啟動收集器。 
+| 資料收集器處於錯誤狀態，顯示「無法檢索 LDAP 使用者。失敗原因：無法連接到伺服器，連接為空” | 點選“重新啟動”按鈕重新啟動收集器。 
 
 
-| 新增使用者目錄連接器會導致「錯誤」狀態。 | 請確定您已提供必要欄位（伺服器、樹系名稱、綁定DN、綁定密碼）的有效值。確保始終以「Administrator @」（系統管理員@）的形式提供Bind-DN輸入、或以具有網域管理員權限的使用者帳戶提供。 
+| 新增使用者目錄連接器會導致「錯誤」狀態。 | 確保您已為必填欄位（伺服器、林名稱、綁定 DN、綁定密碼）提供了有效值。確保 bind-DN 輸入始終以「Administrator@<domain_forest_name>」或具有網域管理員權限的使用者帳戶的形式提供。 
 
 
-| 新增使用者目錄連接器會導致「重試」狀態。顯示錯誤「無法定義收集器的狀態、TCP命令[Connect(localhost:35012,None,List(),sents(,seconds,true)]失敗、因為java.net.ConnectionException:Connection拒絕。」 | 提供給AD伺服器的IP或FQDN不正確。編輯並提供正確的IP位址或FQDN。 
+| 新增使用者目錄連接器會導致「重試」狀態。顯示錯誤“無法定義收集器的狀態，原因 Tcp 命令 [Connect(localhost:35012,None,List(),Some(,seconds),true)] 因 java.net.ConnectionException:Connection 被拒絕而失敗。” | 為 AD 伺服器提供的 IP 或 FQDN 不正確。編輯並提供正確的 IP 位址或 FQDN。 
 
 
-| 新增使用者目錄連接器會導致「錯誤」狀態。錯誤顯示「無法建立LDAP連線」。 | 提供給AD伺服器的IP或FQDN不正確。編輯並提供正確的IP位址或FQDN。 
+| 新增使用者目錄連接器會導致「錯誤」狀態。錯誤提示「無法建立 LDAP 連線」。 | 為 AD 伺服器提供的 IP 或 FQDN 不正確。編輯並提供正確的 IP 位址或 FQDN。 
 
 
-| 新增使用者目錄連接器會導致「錯誤」狀態。錯誤顯示：「無法載入設定。原因：資料來源組態發生錯誤。具體原因：/connector / conf/application.conf：70：LDAP.LDAP連接埠具有類型字串而非數字」 | 提供的連接埠值不正確。請嘗試使用AD伺服器的預設連接埠值或正確的連接埠號碼。 
+| 新增使用者目錄連接器會導致「錯誤」狀態。錯誤提示：「無法載入設定。原因：資料來源配置錯誤。具體原因：/connector/conf/application.conf: 70: ldap.ldap-port 的類型為 STRING 而非 NUMBER” | 提供的連接埠值不正確。嘗試使用 AD 伺服器的預設連接埠值或正確的連接埠號碼。 
 
 
-| 我從必備屬性開始著手、就能順利運作。新增選用的屬性之後、就無法從AD擷取選用的屬性資料。 | 這可能是因為CloudSecure中新增的選用屬性與Active Directory中的實際屬性名稱不相符。編輯並提供正確的必要或選用屬性名稱。 
+| 我從強制屬性開始，並且它起作用了。新增可選項後，可選屬性資料不會從 AD 中取得。 | 這可能是由於 CloudSecure 中新增的可選屬性與 Active Directory 中的實際屬性名稱不符所造成的。編輯並提供正確的強製或可選屬性名稱。 
 
 
-| 重新啟動收集器之後、AD同步何時會發生？ | 收集器重新啟動後、廣告同步將立即進行。擷取使用者資料約30萬名使用者約需15分鐘、每12小時自動重新整理一次。 
+| 重新啟動收集器後，AD 同步何時發生？ | 收集器重新啟動後，AD 同步將立即發生。取得約30萬用戶的用戶資料大約需要15分鐘，並且每12小時自動刷新一次。 
 
 
-| 使用者資料會從AD同步至CloudSecure。資料何時會刪除？ | 如果沒有更新、使用者資料會保留13個月。如果刪除租戶、資料將會刪除。 
+| 使用者資料從 AD 同步到 CloudSecure。數據何時會被刪除？ | 如果沒有刷新，用戶資料將保留13個月。如果租戶被刪除，那麼資料也將被刪除。 
 
 
-| 使用者目錄連接器會導致「錯誤」狀態。"連接器處於錯誤狀態。服務名稱：usersLdap。失敗原因：無法擷取LDAP使用者。失敗原因：80090308: LdapErr：DSID-0C90453、註解：AcceptSecurityConttext錯誤、資料52e、v3839 | 提供的樹系名稱不正確。請參閱上述內容、瞭解如何提供正確的樹系名稱。 
+| 使用者目錄連接器導致“錯誤”狀態。 「連接器處於錯誤狀態。服務名稱：usersLdap。失敗原因：無法檢索 LDAP 使用者。失敗原因：80090308：LdapErr：DSID-0C090453，註：AcceptSecurityContext 錯誤，資料 52e，v3839” | 提供的森林名稱不正確。請參閱上文，了解如何提供正確的森林名稱。 
 
 
-| 電話號碼未填入使用者設定檔頁面。 | 這很可能是因為Active Directory的屬性對應問題所致。1.編輯從 Active Directory 擷取使用者資訊的特定 Active Directory 收集器。2.請注意，在選用屬性下，會有一個欄位名稱「電話號碼」對應至 Active Directory 屬性「 telephonenumber 」。4.現在，請使用上述 Active Directory 檔案總管工具來瀏覽 Active Directory ，並查看正確的屬性名稱。3.請確定 Active Directory 中有一個名為「 telephonenumber 」的屬性，該屬性確實具有使用者的電話號碼。5.我們在 Active Directory 中說，它已被修改為「電話編號」。6.然後編輯 CloudSecure 使用者目錄收集器。在選用屬性區段中、將「電話號碼」取代為「電話號碼」。7.儲存 Active Directory 收集器，收集器將重新啟動並取得使用者的電話號碼，並在使用者設定檔頁面中顯示相同的電話號碼。 
+| 用戶資料頁面中未填寫電話號碼。 | 這很可能是由於 Active Directory 的屬性對映問題所造成的。1.編輯從 Active Directory 取得使用者資訊的特定 Active Directory 收集器。2.請注意，在選用屬性下，有一個欄位名稱「電話號碼」會對應到 Active Directory 屬性「telephonenumber」。4.現在，請使用上述所述的 Active Directory Explorer 工具瀏覽 Active Directory 並查看正確的屬性名稱。3.確保 Active Directory 中有一個名為「telephonenumber」的屬性，其中確實包含使用者的電話號碼。5.假設在 Active Directory 中它已被修改為「電話號碼」。6.然後編輯 CloudSecure 使用者目錄收集器。在可選屬性部分，將“telephonenumber”替換為“phonenumber”。7.儲存 Active Directory 收集器，收集器將重新啟動並取得使用者的電話號碼，並將其顯示在使用者個人資料頁面中。 
 
 
-| 如果Active Directory（AD）伺服器上已啟用加密憑證（SSL）、則工作負載安全性使用者目錄收集器將無法連線至AD伺服器。 | 在設定使用者目錄收集器之前、請先停用AD伺服器加密。擷取使用者詳細資料後、將會保留13個月。如果擷取使用者詳細資料後AD伺服器中斷連線、則不會擷取AD中新增的使用者。若要再次擷取、使用者目錄收集器必須連線至AD。 
+| 如果在 Active Directory (AD) 伺服器上啟用了加密憑證 (SSL)，則 Workload Security User Directory Collector 無法連線到 AD 伺服器。 | 在設定使用者目錄收集器之前停用 AD 伺服器加密。一旦獲取用戶詳細信息，它將保留 13 個月。如果 AD 伺服器在取得使用者詳細資訊後斷開連接，則不會取得 AD 中新新增的使用者。要再次獲取，用戶目錄收集器需要連接到 AD。 
 
 
-| CloudInsights Security中有來自Active Directory的資料。想要刪除CloudInsights中的所有使用者資訊。 | 不可能只從CloudInsights Security刪除Active Directory使用者資訊。若要刪除使用者、必須刪除完整的租戶。 
+| CloudInsights Security 中存在來自 Active Directory 的資料。想要從 CloudInsights 中刪除所有使用者資訊。 | 無法僅從 CloudInsights Security 中刪除 Active Directory 使用者資訊。為了刪除用戶，需要刪除整個租戶。 
 |===

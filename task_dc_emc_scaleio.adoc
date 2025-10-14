@@ -2,89 +2,89 @@
 sidebar: sidebar 
 permalink: task_dc_emc_scaleio.html 
 keywords: data collector, scaleIO, PowerFlex EMC, DELL 
-summary: 設定 Dell EMC ScaleIO/PowerFlex 資料收集器。 
+summary: 配置 DELL EMC ScaleIO/PowerFlex 資料收集器。 
 ---
-= Dell EMC ScaleIO / PowerFlex 資料收集器
+= DELL EMC ScaleIO/PowerFlex 資料收集器
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-ScaleIO/PowerFlex 資料收集器會從 ScaleIO 與 PowerFlex 儲存設備收集庫存資訊。對於組態、此資料收集器需要 ScaleIO/PowerFlex 閘道位址、以及管理員使用者名稱和密碼。
+ScaleIO/PowerFlex 資料收集器從 ScaleIO 和 PowerFlex 儲存收集庫存資訊。為了進行配置，此資料收集器需要 ScaleIO/PowerFlex 網關位址以及管理員使用者名稱和密碼。
 
 
 
 == 術語
 
-Data Infrastructure Insights 會從 ScaleIO/PowerFlex 資料收集器取得下列庫存資訊。對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights從 ScaleIO/PowerFlex 資料收集器取得以下庫存資訊。對於Data Infrastructure Insights取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | Data Infrastructure Insights 術語 
+| 供應商/型號術語 | Data Infrastructure Insights術語 
 
 
-| MDM（中繼資料管理程式）叢集 | 儲存設備 
+| MDM（元資料管理器）集群 | 儲存 
 
 
-| SDS （ ScaleIO/PowerFlex Data Server ） | 儲存節點 
+| SDS（​​ScaleIO/PowerFlex 資料伺服器） | 儲存節點 
 
 
-| 儲存資源池 | 儲存資源池 
+| 儲存池 | 儲存池 
 
 
-| Volume | Volume 
+| 體積 | 體積 
 
 
 | 裝置 | 磁碟 
 |===
-附註：這些只是通用的術語對應、可能不代表此資料收集器的每個案例。
+注意：這些只是常見的術語映射，可能並不代表此資料收集器的所有情況。
 
 
 
-== 需求
+== 要求
 
-* 管理使用者帳戶的唯讀存取權
-* 連接埠需求：HTTPS連接埠443
-
-
+* 對管理員使用者帳戶的唯讀存取權限
+* 連接埠需求：HTTPS 連接埠 443
 
 
-== 組態
-
-[cols="2*"]
-|===
-| 欄位 | 說明 
 
 
-| ScaleIO/PowerFlex 閘道 | ScaleIO/PowerFlex 閘道的 IP 位址或 FQDN 、以逗號（、）或分號（；）分隔 
-
-
-| 使用者名稱 | 用於登入 ScaleIO/PowerFlex 裝置的管理員使用者名稱 
-
-
-| 密碼 | 用於登入 ScaleIO/PowerFlex 裝置的密碼 
-|===
-
-
-== 進階組態
-
-按一下「Inventory」（資源清冊）核取方塊以啟用資源清冊。
+== 配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
+
+
+| ScaleIO/PowerFlex 網關 | ScaleIO/PowerFlex 閘道的 IP 位址或 FQDN，以逗號 (,) 或分號 (;) 分隔 
+
+
+| 使用者名稱 | 用於登入 ScaleIO/PowerFlex 設備的管理員使用者名稱 
+
+
+| 密碼 | 用於登入 ScaleIO/PowerFlex 設備的密碼 
+|===
+
+
+== 進階配置
+
+按一下「庫存」複選框以啟用庫存收集。
+
+[cols="2*"]
+|===
+| 場地 | 描述 
 
 
 | HTTPS 連接埠 | 443 
 
 
-| 庫存輪詢時間間隔（分鐘） | 預設值為 60 。 
+| 庫存輪詢間隔（分鐘） | 預設值為 60。 
 
 
-| 連線逾時（秒） | 預設值為 60 。 
+| 連接逾時（秒） | 預設值為 60。 
 |===
 
 
-== 疑難排解
+== 故障排除
 
-您可以在頁面或中找到其他link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]資訊。
+更多資訊可從link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。

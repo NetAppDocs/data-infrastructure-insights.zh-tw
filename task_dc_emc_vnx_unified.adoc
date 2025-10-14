@@ -2,103 +2,103 @@
 sidebar: sidebar 
 permalink: task_dc_emc_vnx_unified.html 
 keywords: data collector, VNX, EMC, Dell 
-summary: 設定VNX資料收集器。 
+summary: 配置 VNX 資料收集器。 
 ---
-= 設定Dell EMC VNX Unified Data Collector
+= 設定 Dell EMC VNX Unified 資料收集器
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-對於組態設定、Dell EMC VNX Unified（SSH）資料收集器需要控制站的IP位址和唯讀使用者名稱和密碼。
+為了進行配置，Dell EMC VNX Unified (SSH) 資料收集器需要控制站的 IP 位址以及唯讀使用者名稱和密碼。
 
 
 
 == 術語
 
-Data Infrastructure Insights 會從這個資料收集器取得下列庫存資訊。對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights從該數據收集器獲取以下庫存資訊。對於Data Infrastructure Insights取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | Data Infrastructure Insights 術語 
+| 供應商/型號術語 | Data Infrastructure Insights術語 
 
 
 | 磁碟 | 磁碟 
 
 
-| 磁碟資料夾 | 磁碟群組 
+| 磁碟資料夾 | 磁碟組 
 
 
-| 檔案系統 | 內部Volume 
+| 檔案系統 | 內部體積 
 
 
-| 儲存設備 | 儲存設備 
+| 儲存 | 儲存 
 
 
 | 儲存處理器 | 儲存節點 
 
 
-| 儲存資源池、RAID群組 | 儲存資源池 
+| 儲存池、RAID組 | 儲存池 
 
 
-| LUN | Volume 
+| 邏輯單元號 | 體積 
 
 
-| 資料移轉 | 控制器 
+| 資料移動器 | 控制器 
 
 
-| 掛載於資料移動工具上的檔案系統 | 檔案共用 
+| 數據移動器上安裝的檔案系統 | 文件共享 
 
 
-| CIFS與NFS匯出 | 分享 
+| CIFS 和 NFS 導出 | 分享 
 
 
-| 磁碟區 | 後端LUN 
+| 磁碟卷 | 後端 LUN 
 |===
 
 
-== 需求
+== 要求
 
-您需要下列項目來設定VNX（SSH）資料收集器：
+您需要以下內容來設定 VNX (SSH) 資料收集器：
 
-* 將VNX IP位址和認證資料移至Celerra Control Station。
-* 唯讀使用者名稱和密碼。
-* 資料收集器能夠利用DART OS NAS標頭、針對後端陣列執行NaviCLI/NaviSecCLI命令
-
-
+* VNX IP 位址和 Celerra 控制站的憑證。
+* 只讀用戶名和密碼。
+* 資料收集器能夠利用 DART OS NAS 頭對後端陣列運行 NaviCLI/NaviSecCLI 命令
 
 
-== 組態
+
+
+== 配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| VNX IP位址 | VNX Control Station的IP位址或完整網域名稱 
+| VNX IP 位址 | VNX 控制站的 IP 位址或完全限定域名 
 
 
-| 使用者名稱 | VNX Control Station的使用者名稱 
+| 使用者名稱 | VNX 控制站的使用者名稱 
 
 
-| 密碼 | VNX Control Station的密碼 
+| 密碼 | VNX 控制站的密碼 
 |===
 
 
-== 進階組態
+== 進階配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| 庫存輪詢時間間隔（分鐘） | 庫存輪詢之間的時間間隔。預設值為 40 分鐘。 
+| 庫存輪詢間隔（分鐘） | 庫存調查之間的間隔。預設值為 40 分鐘。 
 
 
-| 效能意見調查時間間隔（秒）。 | 效能輪詢之間的時間間隔。預設值為 300 秒。 
+| 效能輪詢間隔（秒）。 | 效能輪詢之間的間隔。預設值為 300 秒。 
 |===
 
 
-== 疑難排解
+== 故障排除
 
-有關此資料收集器的其他資訊，請link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]參閱頁面或。
+關於此數據收集器的更多信息，請參閱link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。

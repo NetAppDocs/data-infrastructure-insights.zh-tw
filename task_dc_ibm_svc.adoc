@@ -2,123 +2,123 @@
 sidebar: sidebar 
 permalink: task_dc_ibm_svc.html 
 keywords: IBM, SVC,SAN 
-summary: 設定IBM SAN Volume Controller資料收集器。 
+summary: 配置 IBM SAN Volume Controller 資料收集器。 
 ---
-= 設定IBM SAN Volume Controller資料收集器
+= 配置 IBM SAN Volume Controller 資料收集器
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-IBM SAN Volume Controller（SVC）資料收集器會使用SSH收集庫存與效能資料、支援執行SVC作業系統的各種裝置。
+IBM SAN Volume Controller (SVC) 數據收集器使用 SSH 收集庫存和效能數據，支援運行 SVC 作業系統的各種設備。
 
-支援的裝置清單包括SVC、v7000、v5000和v3700等機型。如需支援的機型和韌體版本、請參閱 Data Infrastructure Insights 支援對照表。
+支援的設備清單包括 SVC、v7000、v5000 和 v3700 等型號。請參閱Data Infrastructure Insights支援矩陣以了解支援的型號和韌體版本。
 
 
 
 == 術語
 
-Data Infrastructure Insights 從 IBM SVC 資料收集器取得下列庫存資訊。對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights從 IBM SVC 資料收集器取得以下庫存資訊。對於Data Infrastructure Insights取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | Data Infrastructure Insights 術語 
+| 供應商/型號術語 | Data Infrastructure Insights術語 
 
 
-| 磁碟機 | 磁碟 
+| 駕駛 | 磁碟 
 
 
-| 叢集 | 儲存設備 
+| 簇 | 儲存 
 
 
 | 節點 | 儲存節點 
 
 
-| Mdisk群組 | 儲存資源池 
+| Mdisk集團 | 儲存池 
 
 
-| vDisk | Volume 
+| 虛擬磁碟 | 體積 
 
 
-| 磁碟 | 後端LUN和路徑 
+| 磁碟 | 後端 LUN 和路徑 
 |===
-附註：這些只是通用的術語對應、可能不代表此資料收集器的每個案例。
+注意：這些只是常見的術語映射，可能並不代表此資料收集器的所有情況。
 
 
 
 === 庫存需求
 
 * 每個SVC叢集的IP位址
-* 連接埠22可用
-* 唯讀使用者名稱和密碼
+* 連接埠 22 可用
+* 只讀使用者名稱和密碼
 
 
 
 
-=== 效能要求
+=== 性能要求
 
-* SVC主控台、適用於任何SVC叢集、且適用於SVC探索基礎套件。
-* 認證僅在將效能檔案從叢集節點複製到組態節點時、才需要管理存取層級。
-* 透過SSH連線至SVC叢集並執行：_svctask startstats -interval 1_來啟用資料收集
+* SVC 控制台，對於任何 SVC 叢集都是必需的，並且是 SVC 發現基礎包所必需的。
+* 憑證僅需要管理存取等級才能將效能檔案從叢集節點複製到設定節點。
+* 透過 SSH 連接到 SVC 叢集並執行以下命令啟用資料收集：_svctask startstats -interval 1_
 +
-附註：或者、您也可以使用SVC管理使用者介面來啟用資料收集功能。
+注意：或者，使用 SVC 管理使用者介面啟用資料收集。
 
 
 
 
 
-== 組態
-
-[cols="2*"]
-|===
-| 欄位 | 說明 
-
-
-| 叢集IP位址 | SVC儲存設備的IP位址或完整網域名稱 
-
-
-| 庫存使用者名稱 | SVC CLI的使用者名稱 
-
-
-| 庫存密碼 | SVC CLI的密碼 
-|===
-
-
-== 進階組態
+== 配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| 庫存輪詢時間間隔（分鐘） | 庫存輪詢之間的時間間隔。預設值為 40 分鐘。 
+| 叢集 IP 位址 | SVC 儲存的 IP 位址或完全限定域名 
 
 
-| 效能意見調查時間間隔（秒） | 效能輪詢之間的時間間隔。預設值為 300 秒。 
+| 庫存用戶名 | SVC CLI 的用戶名 
 
 
-| 清除傾印的統計資料檔案 | 選取此核取方塊以清除傾印的統計資料檔案 
+| 庫存密碼 | SVC CLI 的密碼 
 |===
 
 
-== 疑難排解
-
-如果您在使用此資料收集器時遇到問題、請嘗試下列事項：
+== 進階配置
 
 [cols="2*"]
 |===
-| 問題： | 試用： 
+| 場地 | 描述 
 
 
-| 錯誤：「無法起始命令、因為命令並未在組態節點上執行。」 | 必須在組態節點上執行命令。 
+| 庫存輪詢間隔（分鐘） | 庫存調查之間的間隔。預設值為 40 分鐘。 
+
+
+| 效能輪詢間隔（秒） | 效能輪詢之間的間隔。預設值為 300 秒。 
+
+
+| 清理轉儲的統計文件 | 選取此複選框可清理轉儲的統計文件 
 |===
-如果您在使用此資料收集器時遇到問題、請嘗試下列事項：
+
+
+== 故障排除
+
+如果您在使用此資料收集器時遇到問題，請嘗試以下操作：
 
 [cols="2*"]
 |===
-| 問題： | 試用： 
+| 問題： | 試試一下： 
 
 
-| 錯誤：「無法起始命令、因為命令並未在組態節點上執行。」 | 必須在組態節點上執行命令。 
+| 錯誤：“無法啟動該命令，因為它未在配置節點上運行。” | 該命令必須在配置節點上執行。 
 |===
-有關此資料收集器的其他資訊，請link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]參閱頁面或。
+如果您在使用此資料收集器時遇到問題，請嘗試以下操作：
+
+[cols="2*"]
+|===
+| 問題： | 試試一下： 
+
+
+| 錯誤：“無法啟動該命令，因為它未在配置節點上運行。” | 該命令必須在配置節點上執行。 
+|===
+關於此數據收集器的更多信息，請參閱link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。

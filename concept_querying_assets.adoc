@@ -1,51 +1,51 @@
 ---
 sidebar: sidebar 
 permalink: concept_querying_assets.html 
-summary: 查詢總覽 
+summary: 查詢概述 
 keywords: query, queries, Application, Datastore, Disk, Fabric, Generic Device, Host, Internal Volume, iSCSI, Network, Portal, Path, Port, Qtree, Quota, Share, Storage, Node, Pool, SVM, Switch, Tape, VMDK, Virtual Machine, VM, Volume, Zone, Member 
 ---
-= 用於查詢的資產
+= 查詢中使用的資產
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-查詢可讓您根據使用者選取的準則（例如註釋），在細化層級搜尋租戶上的資產和度量，藉此監控網路並進行疑難排解。
+透過查詢，您可以根據使用者選擇的條件（例如，註釋）在粒度層級上搜尋租戶上的資產和指標，從而監控和排除網路故障。
 
-請注意、註釋規則會自動將註釋指派給資產、_需要_查詢。
+請注意，註釋規則會自動將註釋指派給資產，需要查詢。
 
-您可以查詢租戶上的實體或虛擬庫存資產（及其相關計量），或是與整合一起提供的計量，例如 Kubernetes 或 ONTAP 進階資料。
+您可以查詢租戶上的實體或虛擬庫存資產（及其相關指標），或查詢 Kubernetes 或ONTAP Advanced Data 等整合所提供的指標。
 
 
 
 == 庫存資產
 
-下列資產類型可用於查詢、儀表板小工具和自訂資產登陸頁面。篩選器、運算式和顯示可用的欄位和計數器會因資產類型而異。並非所有資產都可用於所有小工具類型。
+以下資產類型可用於查詢、儀表板小工具和自訂資產登入頁面。可用於篩選器、表達式和顯示的欄位和計數器將因資產類型而異。並非所有資產都可以在所有小部件類型中使用。
 
-* 應用程式
-* 資料存放區
+* 應用
+* 資料儲存
 * 磁碟
-* 網路
+* 織物
 * 一般裝置
-* 主機
-* 內部Volume
-* iSCSI工作階段
-* iSCSI網路入口網站
-* 路徑
-* 連接埠
+* 主持人
+* 內部體積
+* iSCSI 會話
+* iSCSI 網路門戶
+* 小路
+* 港口
 * qtree
 * 配額
 * 分享
-* 儲存設備
+* 儲存
 * 儲存節點
-* 儲存資源池
-* 儲存虛擬機器（SVM）
-* 交換器
+* 儲存池
+* 儲存虛擬機器 (SVM)
+* 轉變
 * 磁帶
 * VMDK
-* 虛擬機器
-* Volume
-* 區域
+* 虛擬機
+* 體積
+* 區
 * 區域成員
 
 
@@ -53,6 +53,6 @@ keywords: query, queries, Application, Datastore, Disk, Fabric, Generic Device, 
 
 == 整合指標
 
-除了查詢庫存資產及其相關的效能指標之外、您也可以查詢*整合資料*指標、例如Kubernetes或Docker產生的指標、或是隨ONTAP 附的「VMware進階指標」。
+除了查詢庫存資產及其相關效能指標之外，您還可以查詢*整合資料*指標，例如 Kubernetes 或 Docker 產生的指標，或ONTAP進階指標提供的指標。
 
-image:QueryPageFilter.png["整合查詢篩選器範例"]
+image:QueryPageFilter.png["整合查詢過濾器範例"]

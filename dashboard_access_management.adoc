@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: dashboard_access_management.html 
-summary: 您可以決定所建立的儀表板是公用或私有。 
+summary: 您可以確定所建立的儀表板是公共的還是私有的。 
 keywords: dashboard, public, shared, private 
 ---
 = 儀表板存取管理
@@ -11,16 +11,16 @@ keywords: dashboard, public, shared, private
 
 
 [role="lead"]
-Data Infrastructure Insights 現在讓您更能掌控所建立儀表板的存取權。您可以選擇修改圖表的對象。您可以控制對潛在敏感資訊的曝光。保持儀表板的隱密性可讓您完成視覺效果，直到準備好讓組織中的其他人使用這些視覺效果為止。
+Data Infrastructure Insights現在可以讓您更好地控制對您建立的儀表板的存取。您可以選擇誰可以修改您的圖表。您可以控制潛在敏感資訊的暴露。將儀表板保持為私有狀態可讓您完成視覺化工作，直到組織中的其他人可以使用它們為止。
 
-image:Dashboard_Sharing_Options.png["儀表板共用選項，寬度 =300"]
+image:Dashboard_Sharing_Options.png["儀表板共享選項，寬度=300"]
 
-根據預設，當您建立新的儀表板時，該儀表板只有您（建立者）可以看到。沒有其他使用者可以看到或修改儀表板。
+預設情況下，當您建立新的儀表板時，此儀表板僅對您（建立者）可見。沒有其他使用者可以查看或修改儀表板。
 
-完成儀表板後，您可以選擇允許組織中的其他人檢視儀表板。若要共用儀表板，請在儀表板清單中，從右側功能表中選取 _Share_ 。
+當您完成儀表板後，您可以選擇允許組織中的其他人查看它。若要共用儀表板，請在儀表板清單中，從右側選單中選擇「共用」。
 
-image:dashboard_access_share_menu.png["從功能表中共用儀表板存取"]
+image:dashboard_access_share_menu.png["從選單存取儀表板共享"]
 
-您可以選擇將儀表板分享給「所有人」，或選擇擁有「編輯」或「唯讀」權限的使用者。
+您可以選擇將儀表板共用給所有人或選定的用戶，並賦予其編輯或唯讀權限。
 
-image:dashboard_access_share_drop-down.png["下拉式清單，可共用具有「編輯」或「讀取」權限的儀表板"]
+image:dashboard_access_share_drop-down.png["下拉式選單用於共享具有編輯或讀取權限的儀表板"]

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task_config_telegraf_couchdb.html 
 keywords: telegraf, installation, install, couchdb 
-summary: CouchDB資料收集器組態 
+summary: CouchDB 資料收集器配置 
 ---
 = CouchDB資料收集器
 :hardbreaks:
@@ -10,44 +10,44 @@ summary: CouchDB資料收集器組態
 
 
 [role="lead"]
-Data Infrastructure Insights 使用此資料收集器從 CouchDB 收集指標。
+Data Infrastructure Insights使用此資料收集器從 CouchDB 收集指標。
 
 
 
 == 安裝
 
-. 從 * 可伺服 > 收集器 * 、按一下 * + 資料收集器 * 。選擇 CouchDB 。
+. 從*可觀察性 > 收集器*中，按一下*+資料收集器*。選擇 CouchDB。
 +
-選取安裝Telegraf代理程式的作業系統或平台。
+選擇安裝 Telegraf 代理程式的作業系統或平台。
 
-. 如果您尚未安裝 Agent 進行收集，或想要為不同的作業系統或平台安裝 Agent ，請按一下 _ 顯示指示 _ 以展開指示link:task_config_telegraf_agent.html["代理程式安裝"]。
-. 選取要搭配此資料收集器使用的代理程式存取金鑰。您可以按一下「*+代理程式存取金鑰*」按鈕來新增代理存取金鑰。最佳實務做法：只有當您想要將資料收集器分組時、才使用不同的代理程式存取金鑰、例如依作業系統/平台。
-. 請依照組態步驟設定資料收集器。這些指示會因您用來收集資料的作業系統或平台類型而有所不同。
+. 如果您尚未安裝用於收集的代理，或者您希望為不同的作業系統或平台安裝代理，請按一下「顯示說明」以展開link:task_config_telegraf_agent.html["代理安裝"]指示。
+. 選擇用於此資料收集器的代理存取金鑰。您可以透過點擊 *+ 代理存取金鑰* 按鈕新增新的代理存取金鑰。最佳實務：只有當您想要對資料收集器進行分組（例如按作業系統/平台）時才使用不同的代理存取金鑰。
+. 依照設定步驟配置資料收集器。說明根據您用於收集資料的作業系統或平台的類型而有所不同。
 
 
-image:CouchDBDCConfigLinux.png["CouchDB組態"]
+image:CouchDBDCConfigLinux.png["CouchDB 配置"]
 
 
 
 == 設定
 
-如需詳細資訊link:http://docs.couchdb.org/en/stable/["CouchDB文件"]，請參閱。
+資訊可以在link:http://docs.couchdb.org/en/stable/["CouchDB 文件"]。
 
 
 
-== 物件與計數器
+== 物體和計數器
 
-收集下列物件及其計數器：
+收集以下物件及其計數器：
 
 [cols="<.<,<.<,<.<,<.<"]
 |===
-| 物件： | 識別碼： | 屬性： | 資料點： 
+| 目的： | 標識符： | 屬性： | 數據點： 
 
 
-| CouchDB | 命名空間伺服器 | 節點名稱節點IP | 驗證快取命中驗證快取遺失資料庫讀取資料庫寫入資料庫開啟OS檔案最長要求時間最短要求時間http要求方法複製http要求方法刪除http要求方法取得http要求方法標題http要求方法張貼http要求方法放置狀態代碼200狀態代碼 201狀態代碼202狀態代碼301狀態代碼304狀態代碼400狀態代碼401狀態代碼4040狀態代碼4040狀態代碼4040狀態代碼4040狀態代碼409狀態代碼412狀態代碼500 
+| CouchDB | 命名空間伺服器 | 節點名稱 節點IP | 驗證快取命中 驗證快取未命中 資料庫讀取 資料庫寫入 開啟資料庫 開啟作業系統檔案 最大請求時間 最小請求時間 Httpd 請求方法 複製 Httpd 請求方法 刪除 Httpd 請求方法 取得 Httpd 請求方法 頭部 Httpd 請求方法 發布 Httpd 請求方法 取得 Httpd 請求方法 頭部 Httpd 請求方法 發布 Httpd 請求方法 取得 Httpd 請求方法 頭 20120 狀態狀態代碼 304 狀態代碼 400 狀態代碼 401 狀態代碼 403 狀態代碼 404 狀態代碼 405 狀態代碼 409 狀態代碼 412 狀態代碼 500 
 |===
 
 
-== 疑難排解
+== 故障排除
 
-您可以在頁面中找到其他資訊link:concept_requesting_support.html["支援"]。
+更多資訊可從link:concept_requesting_support.html["支援"]頁。

@@ -4,70 +4,70 @@ permalink: task_device_resolution_fibre_channel.html
 keywords: Automatic, AR, AHR, Host, automatic device resolution, FC, Identify 
 summary:  
 ---
-= Fibre Channel裝置解析度
+= 光纖通道設備解析
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-「Fibre Channel identify」（光纖通道識別）畫面會顯示光纖通道裝置的WWN和WWPN、這些裝置的主機尚未透過自動裝置解析來識別。此畫面也會顯示已手動解決裝置問題的所有裝置。
+光纖通道識別螢幕顯示主機尚未透過自動設備解析識別的光纖通道設備的 WWN 和 WWPN。螢幕還顯示已透過手動裝置解析解決的所有裝置。
 
-以手動解析方式解決的裝置狀態為_OK_、並識別用於識別裝置的規則。遺失的裝置狀態為_未識別_。明確排除在識別範圍之外的裝置狀態為_excluded _。本頁列出識別裝置的總涵蓋範圍。
+已透過手動解析解決的裝置包含 _OK_ 狀態並標識用於識別裝置的規則。遺失的設備的狀態為_未識別_。明確排除在識別範圍之外的設備的狀態為「已排除」。本頁列出了裝置識別的總覆蓋範圍。
 
-您可以在「Fibre Channel identify」（光纖通道識別）畫面左側選取多個裝置、以執行大量動作。將游標移到裝置上、然後選取清單最右側的「_identity_」或「_Unidentity_」按鈕、即可在單一裝置上執行動作。
+您可以透過在光纖通道識別螢幕左側選擇多個裝置來執行批次操作。將滑鼠停留在裝置上並選擇清單最右側的「識別」或「取消識別」按鈕，可以在單一裝置上執行操作。
 
-「_總涵蓋範圍_」連結會顯示已識別的裝置數量/可用於您組態的裝置數量清單：
+_Total Coverage_ 連結顯示已識別的設備數量/可用於您的配置的設備數量的清單：
 
-* SRM別名
+* SRM 別名
 * 儲存別名
-* 交換器別名
+* 切換別名
 * 區域
 * 使用者定義
 
 
 
 
-== 手動新增Fibre Channel裝置
+== 手動新增光纖通道設備
 
-您可以使用裝置解析度 Fibre Channel Identify 標籤中的 _Manual Add_ 功能、將光纖通道裝置手動新增至 Data Infrastructure Insights 。此程序可用於預先識別預期未來會探索的裝置。
+您可以使用裝置解析光纖通道識別標籤中的「手動新增」功能，手動將光纖通道設備新增至Data Infrastructure Insights。該過程可能用於預先識別預計將來會發現的設備。
 
 .開始之前
-若要成功將裝置識別新增至系統、您必須知道WWN或IP位址和裝置名稱。
+要成功地將設備識別新增至系統，您需要知道 WWN 或 IP 位址和設備名稱。
 
-.關於這項工作
-您可以手動新增主機、儲存設備、磁帶或未知的光纖通道裝置。
+.關於此任務
+您可以手動新增主機、儲存、磁帶或未知光纖通道設備。
 
-.程序
-. 登入 Data Infrastructure Insights Web UI
-. 按一下「*管理>裝置解析度*」
-. 單擊* Fibre Channel identi*（光纖通道識別*）選項卡。
-. 按一下「*新增*」按鈕。
+.程式
+. 登入Data Infrastructure InsightsWeb UI
+. 按一下“管理”>“裝置解析度”
+. 按一下“*光纖通道識別*”標籤。
+. 點選“*新增*”按鈕。
 +
-此時會顯示「*新增裝置*」對話方塊
+顯示「新增裝置」對話框
 
-. 輸入WWN或IP位址、裝置名稱、然後選取裝置類型。
+. 輸入 WWN 或 IP 位址、裝置名稱並選擇設備類型。
 +
-您輸入的裝置會新增至「Fibre Channel identify」（光纖通道識別）索引標籤中的裝置清單。此規則被識別為_Manu__。
+您輸入的裝置將會新增至「光纖通道識別」標籤中的裝置清單中。此規則被標識為_Manual_。
 
 
 
 
 
-== 從.CSV檔案匯入Fibre Channel裝置識別
+== 從 .CSV 檔案匯入光纖通道設備標識
 
-您可以使用 .CSV 檔案中的裝置清單、將光纖通道裝置識別資料手動匯入 Data Infrastructure Insights 裝置解析度。
+您可以使用 .CSV 檔案中的設備清單手動將光纖通道設備識別匯入Data Infrastructure Insights設備解析中。
 
 . 開始之前
 
 
-您必須擁有正確格式的.CSV檔案、才能將裝置識別碼直接匯入裝置解析度。光纖通道裝置的.CSV檔案需要下列資訊：
+您必須擁有格式正確的 .CSV 檔案才能將設備識別直接匯入設備解析中。光纖通道設備的 .CSV 檔案需要以下資訊：
 
 |===
 
 
-| WWN | IP | 名稱 | 類型 
+| WWN | 智慧財產 | Name | 類型 
 |===
-資料欄位必須以引號括住、如下例所示。
+資料欄位必須用引號括起來，如下例所示。
 
 ....
 "WWN","IP","Name","Type"
@@ -76,45 +76,45 @@ summary:
 "WWN:1860","ADDRESS1860|IP1860","NAME-1860","HOST"
 ....
 
-NOTE: 最佳實務做法是先將Fibre Channel識別資訊匯出至.CSV檔案、在該檔案中進行所需的變更、然後將檔案匯入Fibre Channel識別。如此可確保預期的欄位以適當的順序出現。
+NOTE: 作為最佳實踐，建議首先將光纖通道識別資訊匯出到 .CSV 文件，在該文件中進行所需的更改，然後將該文件匯入迴光纖通道識別。這可確保預期的列存在且順序正確。
 
-若要匯入Fibre Channel識別資訊：
+若要匯入光纖通道識別資訊：
 
-. 登入 Data Infrastructure Insights Web UI 。
-. 按一下「*管理>裝置解析度*」
-. 選擇* Fibre Channel identi*（光纖通道識別）選項卡。
-. 按一下「*識別>從檔案識別*」按鈕。
-. 瀏覽至包含您要匯入之.CSV檔案的資料夾、然後選取所需的檔案。
+. 登入Data Infrastructure InsightsWeb UI。
+. 按一下“管理”>“裝置解析度”
+. 選擇“*光纖通道識別*”標籤。
+. 點選*識別>從文件中識別*按鈕。
+. 導航至包含要匯入的 .CSV 檔案的資料夾並選擇所需的檔案。
 +
-您輸入的裝置會新增至「Fibre Channel identify」（光纖通道識別）索引標籤中的裝置清單。「規則」被識別為「手動」。
+您輸入的裝置將會新增至「光纖通道識別」標籤中的裝置清單中。此「規則」被標識為手冊。
 
 
 
 
 
-== 將Fibre Channel裝置識別碼匯出至.CSV檔案
+== 將光纖通道設備識別匯出到 .CSV 文件
 
-您可以從 Data Infrastructure Insights 裝置解析功能、將現有的光纖通道裝置識別資料匯出至 .CSV 檔案。您可能會想匯出裝置識別碼、以便修改、然後將其匯入 Data Infrastructure Insights 、以便識別與原本符合匯出識別碼的裝置相似的裝置。
+您可以從Data Infrastructure Insights設備解析功能將現有的光纖通道設備識別匯出到 .CSV 檔案。您可能想要匯出裝置標識，以便可以對其進行修改，然後將其匯入回Data Infrastructure Insights，然後使用它來識別與最初符合匯出標識的裝置相似的裝置。
 
-.關於這項工作
-當裝置具有類似屬性、可在.CSV檔案中輕鬆編輯、然後匯入系統時、可能會使用此案例。
+.關於此任務
+當設備具有相似的屬性，可以在 .CSV 檔案中輕鬆編輯，然後重新匯入系統時，可能會使用此場景。
 
-當您將光纖通道裝置識別碼匯出至.CSV檔案時、檔案會依照所示順序包含下列資訊：
+將光纖通道設備識別匯出至 .CSV 檔案時，該檔案會依顯示的順序包含下列資訊：
 
 |===
 
 
-| WWN | IP | 名稱 | 類型 
+| WWN | 智慧財產 | Name | 類型 
 |===
-.程序
-. 登入 Data Infrastructure Insights Web UI 。
-. 按一下「*管理>裝置解析度*」
-. 選擇* Fibre Channel identi*（光纖通道識別）選項卡。
-. 選取您要匯出其識別碼的光纖通道裝置。
-. 按一下 * 匯出 * image:ExportButton.png["匯出按鈕"]按鈕。
+.程式
+. 登入Data Infrastructure InsightsWeb UI。
+. 按一下“管理”>“裝置解析度”
+. 選擇“*光纖通道識別*”標籤。
+. 選擇要匯出其識別的一個或多個光纖通道設備。
+. 點擊“匯出”image:ExportButton.png["匯出按鈕"]按鈕。
 +
-選取是要開啟.CSV檔案或儲存檔案。
+選擇是否開啟 .CSV 檔案或儲存檔案。
 
 
 
-相關資訊：link:task_device_resolution_ip.html["IP裝置解析度"] link:task_device_resolution_rules.html["建立裝置解決規則"] link:task_device_resolution_preferences.html["設定裝置解析度偏好設定"]
+有關的：link:task_device_resolution_ip.html["IP設備解析"] link:task_device_resolution_rules.html["建立設備解析規則"] link:task_device_resolution_preferences.html["設定裝置解析度首選項"]

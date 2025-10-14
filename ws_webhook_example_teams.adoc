@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: ws_webhook_example_teams.html 
 keywords: webhook, notification, Microsoft, Teams, integration 
-summary: 為 Microsoft 團隊建立工作負載安全網路攔截器，以警示安全性 
+summary: 為 Microsoft Teams 建立 Workload Security webhook 以發出安全性警報 
 ---
-= 適用於 Microsoft 團隊的工作負載安全 Webhook 範例
+= Microsoft Teams 的工作負載安全性 Webhook 範例
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,47 +14,47 @@ summary: 為 Microsoft 團隊建立工作負載安全網路攔截器，以警示
 
 
 [role="lead"]
-Webhooks可讓使用者使用自訂的Webhooks通道、將警示通知傳送至各種應用程式。本頁提供設定團隊Webhooks的範例。
+Webhook 允許使用者使用自訂的 webhook 通道向各種應用程式發送警報通知。本頁提供了為 Teams 設定 webhook 的範例。
 
 
-NOTE: 本頁面是指可能會變更的第三方指示。如需最新資訊，請參閱link:https://docs.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook["團隊文件"]。
+NOTE: 本頁引用第三方說明，可能會有變更。請參閱link:https://docs.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook["團隊文件"]以獲取最新資訊。
 
 
 
 == 團隊設定：
 
-. 在「團隊」中選取烤串、然後搜尋傳入的Webhook。
+. 在 Teams 中，選擇 kebab，然後搜尋 Incoming Webhook。
 +
-image:Webhooks_Teams_Create_Webhook.png["團隊的傳入Webhook"]
+image:Webhooks_Teams_Create_Webhook.png["Teams 中的傳入 Webhook"]
 
-. 選取*「新增至團隊」>「選取團隊」>「設定連接器」*。
-. 複製Webhook URL。您需要將此內容貼到 Workload Security Webhook 組態中。
-
-
+. 選擇*新增至團隊>選擇團隊>設定連接器*。
+. 複製 Webhook URL。您需要將其貼上到 Workload Security webhook 設定中。
 
 
-== 建立工作負載安全團隊 Webhook ：
 
-. 瀏覽至管理 > 通知，然後選取 _ 「 Workload Security Webhooks_ 標籤。選取「超過 _ Webhook 」以建立新的網路攔截器。
-. 為 Webhook 命名有意義的名稱。
-. 在_範本類型_下拉式清單中、選取*群組*。
+
+== 建立工作負載安全團隊 Webhook：
+
+. 導覽至“管理”>“通知”，然後選擇“工作負載安全性 Webhooks”標籤。選擇 _+ Webhook_ 來建立一個新的 webhook。
+. 為 webhook 賦予一個有意義的名稱。
+. 在“模板類型”下拉式選單中，選擇“團隊”。
 +
-image:ws_webhook_teams_example.png["工作負載安全團隊網路攔截範例"]
+image:ws_webhook_teams_example.png["工作負載安全團隊 webhook 範例"]
 
-. 將上方的URL貼到_url_欄位。
-
-
+. 將上面的 URL 貼到 _URL_ 欄位中。
 
 
-== 透過Webhook通知
-
-若要透過 Webhook 通知事件，請瀏覽至 _Workload Security > Policies 。選取「攻擊原則」或「警示原則」。
-
-* 輸入有意義的原則名稱。
-* 選取必要的攻擊類型，應附加原則的裝置，以及必要的動作。
-* 在 _webhooks Notifications_ 下拉式清單下，選取所需的團隊 Webhooks 。儲存原則。
 
 
-附註： Webhooks 也可透過編輯方式附加至現有原則。
+== 透過 Webhook 發送通知
 
-image:ws_add_attack_policy.png["新增攻擊原則對話方塊，顯示 Webhook"]
+若要透過 webhook 通知事件，請導覽至_工作負載安全性 > 策略_。選擇“_+攻擊策略_”或“_+警告策略_”。
+
+* 輸入一個有意義的策略名稱。
+* 選擇所需的攻擊類型、應附加策略的設備以及所需的操作。
+* 在「Webhooks Notifications」下拉式功能表下，選擇所需的 Teams webhook。保存策略。
+
+
+注意：也可以透過編輯將 Webhook 附加到現有策略。
+
+image:ws_add_attack_policy.png["新增顯示 webhook 的攻擊策略對話框"]

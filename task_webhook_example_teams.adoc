@@ -2,55 +2,55 @@
 sidebar: sidebar 
 permalink: task_webhook_example_teams.html 
 keywords: webhook, notification, Microsoft, Teams, integration 
-summary: 建立Webhook、針對Microsoft團隊的效能或庫存臨界值發出警示 
+summary: 建立 Webhook 以針對 Microsoft Teams 的效能或庫存閾值發出警報 
 ---
-= Microsoft團隊的Webhook範例
+= Microsoft Teams 的 Webhook 範例
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-Webhooks可讓使用者使用自訂的Webhooks通道、將警示通知傳送至各種應用程式。本頁提供設定團隊Webhooks的範例。
+Webhook 允許使用者使用自訂的 webhook 通道向各種應用程式發送警報通知。本頁提供了為 Teams 設定 webhook 的範例。
 
 
-NOTE: 本頁是指可能會變更的第三方指示。如需最新資訊，請參閱link:https://docs.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook["團隊文件"]。
+NOTE: 本頁引用第三方說明，可能會有所變更。請參閱link:https://docs.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook["團隊文件"]以獲取最新資訊。
 
 
 
 == 團隊設定：
 
-. 在「團隊」中選取烤串、然後搜尋傳入的Webhook。
+. 在 Teams 中，選擇 kebab，然後搜尋 Incoming Webhook。
 +
-image:Webhooks_Teams_Create_Webhook.png["團隊的傳入Webhook"]
+image:Webhooks_Teams_Create_Webhook.png["Teams 中的傳入 Webhook"]
 
-. 選取*「新增至團隊」>「選取團隊」>「設定連接器」*。
-. 複製Webhook URL。您必須將此內容貼到 Data Infrastructure Insights 網路攔截組態中。
-
-
-
-
-== Create Data Infrastructure Insights Webhook ：
-
-. 在 Data Infrastructure Insights 中、瀏覽至 * 管理 > 通知 * 、然後選取 * Webhooks* 標籤。按一下「*+ Webhing*」建立新的網路連結。
-. 為網路勾提供有意義的名稱、例如「團隊Webhook」。
-. 在_範本類型_下拉式清單中、選取*群組*。
-
-
-image:Webhooks-Teams_example.png["團隊網路連結範本"]
-
-. 將上方的URL貼到_url_欄位。
+. 選擇*新增至團隊>選擇團隊>設定連接器*。
+. 複製 Webhook URL。您需要將其貼到Data Infrastructure Insightswebhook 配置中。
 
 
 
 
-== 透過Webhook通知
+== 創建Data Infrastructure InsightsWebhook：
 
-要通過 Webhook 通知事件，請在 Data Infrastructure Insights 中導航至 *Alerts > Monitors* ，然後單擊 *+Monitor* 以創建新的link:task_create_monitor.html["監控"]。
+. 在Data Infrastructure Insights中，導覽至 *管理 > 通知* 並選擇 *Webhooks* 標籤。點選 *+Webhook* 建立一個新 webhook。
+. 為 webhook 賦予一個有意義的名稱，例如「Teams Webhook」。
+. 在“模板類型”下拉式選單中，選擇“團隊”。
 
-* 選取度量並定義監視器的條件。
-* 在「設定團隊通知」下、選擇* Webhook *交付方法。
-* 針對所需的事件（重大、警告、已解決）、選擇「團隊」網路連結
+
+image:Webhooks-Teams_example.png["Teams Webhook 模板"]
+
+. 將上面的 URL 貼到 _URL_ 欄位中。
+
+
+
+
+== 透過 Webhook 發送通知
+
+若要透過 webhook 通知事件，請在Data Infrastructure Insights中導覽至 *Alerts > Monitors*，然後按一下 *+Monitor* 以建立新的link:task_create_monitor.html["監視器"]。
+
+* 選擇一個指標並定義監視器的條件。
+* 在「設定團隊通知」下，選擇「Webhook」傳送方式。
+* 為所需事件（嚴重、警告、已解決）選擇「團隊」 webhook
 +
-image:Webhooks_Teams_Notifications.png["Webhook通知"]
+image:Webhooks_Teams_Notifications.png["Webhook 通知"]
 
 

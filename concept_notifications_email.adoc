@@ -1,82 +1,82 @@
 ---
 sidebar: sidebar 
 permalink: concept_notifications_email.html 
-summary: 新增通知的電子郵件地址。 
+summary: 新增用於通知的電子郵件地址。 
 keywords: email, notifications, signature, recipient, list, subscription 
 ---
-= 設定電子郵件通知
+= 配置電子郵件通知
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-您可以設定訂閱相關通知的電子郵件清單、以及接收效能原則臨界值違規通知的全域電子郵件清單。
+您可以設定與訂閱相關的通知的電子郵件列表，以及用於通知效能原則閾值違規的收件者的全域電子郵件清單。
 
-若要設定通知電子郵件收件者設定、請前往*管理>通知*頁面、然後選取_電子郵件_索引標籤。
+若要設定通知電子郵件收件者設置，請前往*管理>通知*頁面並選擇_電子郵件_標籤。
 
 [role="thumb"]
 image:Notifications_email_list.png["電子郵件通知"]
 
 
 
-== 訂閱通知收件者
+== 訂閱通知收件人
 
-若要設定訂閱相關事件通知的收件者、請前往「訂閱通知收件者」區段。您可以選擇將訂閱相關事件的電子郵件通知傳送給下列任一或所有收件者：
+若要設定訂閱相關事件通知的收件人，請前往「訂閱通知收件人」部分。您可以選擇將訂閱相關事件的電子郵件通知傳送給以下任何或所有收件者：
 
-* 所有帳戶擁有者
-* All _監控與最佳化_系統管理員
+* 所有帳戶所有者
+* 所有_監控和優化_管理員
 * 您指定的其他電子郵件地址
 
 
-以下是可能傳送的通知類型範例、以及您可以採取的使用者動作。
+以下是可能發送的通知類型以及您可以採取的使用者操作的範例。
 
 |===
 
 
-| *通知：* | *使用者行動：* 
+| *通知：* | *使用者操作：* 
 
 
-| 試用版或訂閱已更新 | 檢閱頁面上的訂閱詳細資料link:concept_subscribing_to_cloud_insights.html["訂購"] 
+| 試用版或訂閱版已更新 | 看訂閱詳情link:concept_subscribing_to_cloud_insights.html["訂閱"]頁 
 
 
-| 訂閱將於90天內到期、訂閱將於30天內到期 | 如果啟用「自動續約」，則不需要採取任何行動，請聯絡 NetApp 銷售人員以續約 
+| 訂閱將在 90 天後到期 訂閱將在 30 天後到期 | 如果啟用了“自動續訂”，則無需採取任何行動，請聯絡NetApp銷售人員續訂 
 
 
-| 試用期將於2天內結束 | 從頁面更新試用版link:concept_subscribing_to_cloud_insights.html["訂購"]。您可以一次續約試用版。請聯絡 NetApp 銷售人員以購買訂閱 
+| 試用期將於 2 天後結束 | 續訂試用版link:concept_subscribing_to_cloud_insights.html["訂閱"]頁。您可以續訂一次試用版。聯絡NetApp銷售人員購買訂閱 
 
 
-| 試用版或訂閱已過期帳戶將在48小時內停止收集資料帳戶將在48小時後刪除 | 請聯絡 NetApp 銷售人員以購買訂閱 
+| 試用或訂閱已過期 帳戶將在 48 小時後停止收集資料 帳戶將在 48 小時後刪除 | 聯絡NetApp銷售人員購買訂閱 
 |===
 [NOTE]
 ====
-若要確保收件者收到 Data Infrastructure Insights 的通知，請將下列電子郵件地址新增至任何「允許」清單：
+為了確保您的收件者收到來自Data Infrastructure Insights的通知，請將以下電子郵件地址新增至任何「允許」清單：
 
-* accounts@service.cloudinsights.netapp.com
-* DoNotReply@cloudinsights.netapp.com
+* \accounts@service.cloudinsights.netapp.com
+* \DoNotReply@cloudinsights.netapp.com
 
 
 ====
 
 
-== 警示的全域收件者清單
+== 警報的全域收件者列表
 
-警示的電子郵件通知會針對警示上的每個動作傳送至警示收件者清單。您可以選擇傳送警示通知給全域收件者清單。
+對於針對警報採取的每個操作，都會向警報收件者清單發送警報的電子郵件通知。您可以選擇向全球收件人清單發送警報通知。
 
-若要設定全域警示收件者、請在*全域監控通知收件者*區段中選擇所需的收件者。
+若要設定全域警報收件人，請在「全域監控通知收件人」部分中選擇所需的收件人。
 
-在建立或修改監視器時、您可以隨時覆寫個別監視器的全域收件者清單。
-
-
-NOTE: 「資料收集器」通知的優先順序高於任何與叢集/資料收集器相關的特定「監視器」通知。ONTAP您為資料收集器本身設定的收件者清單將會收到資料收集器警示。如果沒有作用中的資料收集器警示、則會將監控產生的警示傳送給特定的監控收件者。
+在建立或修改監視器時，您始終可以覆寫單一監視器的全域收件者清單。
 
 
+NOTE: ONTAP資料收集器通知優先於與叢集/資料收集器相關的任何特定監視器通知。您為資料收集器本身設定的收件者清單將接收資料收集器警報。如果沒有活動的資料收集器警報，則監視器產生的警報將發送給特定的監視器接收者。
 
-== 編輯 ONTAP 通知
 
-您可以從儲存設備登陸頁面右上角的下拉式清單中選取 _Edit Notifications_ 、以修改 ONTAP 叢集的通知。
 
-image:EditONTAPNotifications.png["ONTAP 編輯通知"]
+== 編輯ONTAP的通知
 
-您可以在此設定「重大」、「警告」、「資訊」和 / 或「已解決」警示的通知。每個案例都可以通知「全域收件者」清單或您選擇的其他收件者。
+您可以從儲存登入頁面右上角的下拉式選單中選擇「編輯通知」來修改ONTAP叢集的通知。
 
-image:EditONTAPNotifications_MultipleScenarios.png["適用於不同案例的 ONTAP 通知"]
+image:EditONTAPNotifications.png["ONTAP編輯通知"]
+
+從這裡，您可以設定嚴重、警告、訊息和/或已解決警報的通知。每個場景都可以通知全域收件者清單或您選擇的其他收件者。
+
+image:EditONTAPNotifications_MultipleScenarios.png["針對不同場景的ONTAP通知"]

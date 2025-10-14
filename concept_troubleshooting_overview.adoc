@@ -1,17 +1,17 @@
 ---
 sidebar: sidebar 
 permalink: concept_troubleshooting_overview.html 
-summary: 在本節中、您將找到一些秘訣和技巧、協助您疑難排解 Data Infrastructure Insights 環境中的問題。 
+summary: 在本節中，您將找到幫助您解決Data Infrastructure Insights環境中的問題的技巧和訣竅。 
 keywords:  
 ---
-= 疑難排解資料基礎架構洞見問題
+= Data Infrastructure Insights洞察問題故障排除
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-本節的主題提供疑難排解建議、以因應資料基礎架構 Insights 環境的問題。
+本節中的主題提供了Data Infrastructure Insights環境出現問題時的故障排除建議。
 
-按一下左側功能表中的類別、即可查看該類別的疑難排解資訊。
+按一下左側功能表中的類別以查看該類別的故障排除資訊。
 
-您可以link:concept_requesting_support.html["支援"]在 Data Infrastructure Insights * Help > Support* 頁面上找到更多疑難排解和其他資訊。
+您可以找到更多故障排除和其他link:concept_requesting_support.html["支援"]Data Infrastructure Insights*幫助>支援*頁面上的資訊。

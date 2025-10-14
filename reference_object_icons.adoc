@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: reference_object_icons.html 
-summary: Data Infrastructure Insights 物件圖示參考。 
+summary: Data Infrastructure Insights物件圖示參考。 
 keywords: icons, assets, objects, reference, map 
 ---
-= 物件圖示參考
+= 物件圖標參考
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,22 +14,22 @@ keywords: icons, assets, objects, reference, map
 
 
 [role="lead"]
-Data Infrastructure Insights 中使用的物件圖示。
+Data Infrastructure Insights中使用的物件圖示。
 
 
 
-== 基礎架構圖示：
+== 基礎設施圖示：
 
-image:Icon_Glossary.png["基礎架構圖示參考"]
+image:Icon_Glossary.png["基礎設施圖示參考"]
 
 
 
 == Kubernetes 圖示：
 
-image:K8sIconsWithLabels.png["Kubernetes 圖示參考、寬度 = 180"]
+image:K8sIconsWithLabels.png["Kubernetes 圖示參考，寬度=180"]
 
 
 
 == Kubernetes 網路效能監控與地圖圖示：
 
-image:ServiceMap_Icons.png["Kubernetes 網路效能監控與地圖、寬度 =640"]
+image:ServiceMap_Icons.png["Kubernetes 網路效能監控及地圖，width=640"]

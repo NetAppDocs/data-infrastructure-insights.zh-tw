@@ -2,46 +2,46 @@
 sidebar: sidebar 
 permalink: kubernetes_landing_page.html 
 keywords: telegraf, installation, install, kubernetes, pods, clusters, filters, filtering, k8s 
-summary: Kubernetes登陸頁面說明 
+summary: Kubernetes 登陸頁說明 
 ---
-= Kubernetes叢集概觀
+= Kubernetes 叢集概述
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-資料基礎架構 Insights Kubernetes Explorer 是一個強大的工具、可顯示 Kubernetes 叢集的整體健全狀況和使用情形、並可讓您輕鬆深入調查調查領域。
+Data Infrastructure InsightsKubernetes Explorer 是一個強大的工具，可顯示 Kubernetes 叢集的整體健康狀況和使用情況，並讓您輕鬆深入調查領域。
 
-按一下*儀表板> Kubernetes Explorer*即可開啟Kubernetes叢集清單頁面。本概要頁面包含租戶上 Kubernetes 叢集的表格。
+按一下「儀表板」>「Kubernetes 資源管理器」開啟 Kubernetes 叢集清單頁面。此概覽頁麵包含租用戶上的 Kubernetes 叢集表。
 
-image:Kubernetes_List_Page_new.png["Kubernetes清單頁面"]
-
-
-
-=== 叢集清單
-
-叢集清單會針對租戶上的每個叢集顯示下列資訊：
-
-* 叢集*名稱*。按一下叢集名稱將會開啟該叢集link:kubernetes_cluster_detail.html["*詳細資料頁*"]的。
-* *飽和*百分比。整體飽和是CPU、記憶體或儲存飽和的最高值。
-* 叢集中*節點*的數目。按一下此編號將會開啟「節點」清單頁面。
-* 叢集中的* pod *數。按一下此號碼將會開啟Pod清單頁面。
-* 叢集中的*命名空間*數目。按一下此號碼將會開啟「命名空間」清單頁面。
-* 叢集中*工作負載*的數目。按一下此數字將會開啟工作負載清單頁面。
+image:Kubernetes_List_Page_new.png["Kubernetes 清單頁面"]
 
 
 
+=== 集群列表
 
-== 精簡篩選條件
+集群清單顯示租戶上每個集群的以下資訊：
 
-當您開始篩選時、您會看到根據目前文字建立*萬用字元篩選器*的選項。選取此選項會傳回符合萬用字元運算式的所有結果。您也可以使用Not或and建立* Expressions *、或是選取「無」選項來篩選欄位中的null值。
+* 集群*名稱*。點擊叢集名稱將打開link:kubernetes_cluster_detail.html["*詳情頁*"]對於該集群。
+* *飽和度*百分比。總體飽和度是 CPU、記憶體或儲存飽和度中的最高值。
+* 集群中的*節點*數量。點擊此數字將開啟節點列表頁面。
+* 集群中的*Pod*數量。點擊此數字將開啟 Pod 清單頁面。
+* 集群中的*命名空間*的數量。點擊此數字將開啟命名空間清單頁面。
+* 叢集中的*工作負載*數量。點擊此數字將開啟工作量清單頁面。
 
-image:Filter_Kubernetes_Explorer.png["在K8S檔案總管中使用萬用字元進行篩選"]
 
-根據萬用字元或運算式（例如 不、和、「無」等）會在篩選欄位中以深藍色顯示。您直接從清單中選取的項目會以淺藍色顯示。
 
-image:Filter_Kubernetes_Explorer_2.png["顯示萬用字元和所選項目的篩選器"]
 
-Kubernetes篩選器是關聯式的、也就是說、如果您在特定節點頁面上、pod_name篩選器只會列出與該節點相關的Pod。此外、如果您套用特定命名空間的篩選器、則pod_name篩選器只會在該節點_and中列出該命名空間中的Pod。
+== 優化過濾器
 
-請注意、萬用字元與運算式篩選功能可搭配文字或清單使用、但不能搭配數值、日期或布爾值使用。
+當您進行篩選時，當您開始輸入時，系統會向您顯示基於目前文字建立*通配符過濾器*的選項。選擇此選項將傳回與通配符表達式相符的所有結果。您也可以使用 NOT 或 AND 建立*表達式*，或者您可以選擇「無」選項來過濾欄位中的空值。
+
+image:Filter_Kubernetes_Explorer.png["在 K8S Explorer 中使用通配符進行過濾"]
+
+基於通配符或表達式的篩選器（例如 NOT、AND、「無」等）在篩選器欄位中以深藍色顯示。您直接從清單中選擇的項目顯示為淺藍色。
+
+image:Filter_Kubernetes_Explorer_2.png["顯示通配符和選定項目的篩選器"]
+
+Kubernetes 過濾器是上下文相關的，例如，如果您在特定節點頁面上，pod_name 過濾器僅列出與該節點相關的 pod。此外，如果您對特定命名空間套用篩選器，則 pod_name 篩選器將只列出該節點上和該命名空間中的 pod。
+
+請注意，通配符和表達式過濾適用於文字或列表，但不適用於數字、日期或布林值。

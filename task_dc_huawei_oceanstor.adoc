@@ -2,103 +2,103 @@
 sidebar: sidebar 
 permalink: task_dc_huawei_oceanstor.html 
 keywords: data collector, Huawei, OceanStor, Dorado 
-summary: 設定Huawei OceanStor（REST / HTTPS）資料收集器。 
+summary: '配置華為 OceanStor (REST/HTTPS) 資料收集器。' 
 ---
-= Huawei海洋儲存資料收集器
+= 華為OceanStor資料擷取器
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-Data Infrastructure Insights 使用 Huawei OceanStor （ RS/HTTPS ）資料收集器來探索 Huawei OceanStor 和 OceanStor Dorado 儲存設備的庫存與效能。
+Data Infrastructure Insights使用華為 OceanStor（REST/HTTPS）資料收集器來發現華為 OceanStor 和 OceanStor Dorado 儲存的庫存和效能。
 
 
 
 == 術語
 
-Data Infrastructure Insights 從 Huawei OceanStor 取得下列庫存與效能資訊。對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights從華為 OceanStor 取得以下庫存和效能資訊。對於Data Infrastructure Insights取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | Data Infrastructure Insights 術語 
+| 供應商/型號術語 | Data Infrastructure Insights術語 
 
 
-| 儲存資源池 | 儲存資源池 
+| 儲存池 | 儲存池 
 
 
-| 檔案系統 | 內部Volume 
+| 檔案系統 | 內部體積 
 
 
 | 控制器 | 儲存節點 
 
 
-| FC連接埠（對應） | Volume Map 
+| FC 連接埠（已對應） | 體積圖 
 
 
-| 主機FC啟動器（已對應） | Volume遮罩 
+| 主機 FC 啟動器（已對應） | 體積遮罩 
 
 
-| NFS/CIFS共用 | 分享 
+| NFS/CIFS共享 | 分享 
 
 
-| iSCSI連結目標 | iSCSI目標節點 
+| iSCSI 連結目標 | iSCSI 目標節點 
 
 
-| iSCSI連結啟動器 | iSCSI啟動器節點 
+| iSCSI 連結啟動器 | iSCSI 發起節點 
 
 
 | 磁碟 | 磁碟 
 
 
-| LUN | Volume 
+| 邏輯單元號 | 體積 
 |===
 
 
-== 需求
+== 要求
 
-設定此資料收集器需要下列需求：
+配置此數據收集器需要滿足以下要求：
 
-* 裝置IP位址
-* 存取海洋儲存設備管理程式的認證資料
-* 連接埠8088必須可用
-
-
+* 設備 IP 位址
+* 存取 OceanStor 裝置管理員的憑證
+* 連接埠 8088 必須可用
 
 
-== 組態
+
+
+== 配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| 海洋儲存主機IP位址 | 海洋儲存裝置管理員的IP位址或完整網域名稱 
+| OceanStor 主機 IP 位址 | OceanStor Device Manager 的 IP 位址或完全限定域名 
 
 
-| 使用者名稱 | 用於登入海洋儲存裝置管理員的名稱 
+| 使用者名稱 | 用於登入 OceanStor Device Manager 的名稱 
 
 
-| 密碼 | 用於登入海洋儲存裝置管理員的密碼 
+| 密碼 | 登入OceanStor Device Manager的密碼 
 |===
 
 
-== 進階組態
+== 進階配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| TCP 連接埠 | TCP連接埠用於連線至海洋儲存裝置管理員。預設值為 8088 。 
+| TCP 連接埠 | 用於連接 OceanStor Device Manager 的 TCP 連接埠。預設值為 8088。 
 
 
-| 庫存輪詢時間間隔（分鐘） | 庫存輪詢之間的時間間隔。預設值為 60 分鐘。 
+| 庫存輪詢間隔（分鐘） | 庫存調查之間的間隔。預設值為 60 分鐘。 
 
 
-| 效能意見調查時間間隔（秒）。 | 預設值為 300 秒。 
+| 效能輪詢間隔（秒）。 | 預設值為 300 秒。 
 |===
 
 
-== 疑難排解
+== 故障排除
 
-有關此資料收集器的其他資訊，請link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]參閱頁面或。
+關於此數據收集器的更多信息，請參閱link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。

@@ -2,89 +2,89 @@
 sidebar: sidebar 
 permalink: task_dc_hds_hcp.html 
 keywords: data collector, Hitachi HDS, HCP 
-summary: 設定HDS資料收集器。 
+summary: 配置 HDS 資料收集器。 
 ---
-= Hitachi保健資料收集器
+= 日立 HCP 資料擷取器
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-此資料收集器使用保健專業人員管理API支援Hitachi內容平台（HCPs）。
+此資料收集器使用 HCP 管理 API 支援日立內容平台 (HCP)。
 
 
-NOTE: Hitachi Content Platform的原始TB與託管單位速率不同。每 40 TB 未格式化的 HCP 容量就會計為 1 link:concept_subscribing_to_cloud_insights.html#pricing["託管單位（MU）"]。
+NOTE: 日立內容平台依照不同的原始 TB 與託管單位費率進行計量。每 40 TB 未格式化的 HCP 容量按 1link:concept_subscribing_to_cloud_insights.html#pricing["管理單元（MU）"] 。
 
 
 
 == 術語
 
-Data Infrastructure Insights 會從 Hitachi HCP 資料收集器取得下列庫存資訊。對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights從 Hitachi HCP 數據收集器獲取以下庫存資訊。對於Data Infrastructure Insights取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | Data Infrastructure Insights 術語 
+| 供應商/型號術語 | Data Infrastructure Insights術語 
 
 
-| 保健專業人員叢集 | 儲存設備 
+| HCP叢集 | 儲存 
 
 
-| 租戶 | 儲存資源池 
+| 租戶 | 儲存池 
 
 
 |  | 命名空間 
 
 
-| 內部Volume | 節點 
+| 內部體積 | 節點 
 |===
-附註：這些只是通用的術語對應、可能不代表此資料收集器的每個案例。
+注意：這些只是常見的術語映射，可能並不代表此資料收集器的所有情況。
 
 
 
 == 庫存需求
 
-您必須具備下列條件才能收集庫存資料：
+為了收集庫存數據，您必須具備以下條件：
 
-* hcp.伺服器的IP位址
-* 用於保健專業人員軟體和對等權限的唯讀使用者名稱和密碼
-
-
+* HCP伺服器的IP位址
+* HCP 軟體的唯讀使用者名稱和密碼以及同儕權限
 
 
-== 組態
+
+
+== 配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| HCP主機 | hcp.主機的IP位址或完整網域名稱 
+| HCP主機 | HCP 主機的 IP 位址或完全限定域名 
 
 
-| hcp.連接埠 | 預設值為9090 
+| HCP 連接埠 | 預設值為 9090 
 
 
-| HCPs使用者ID | hcp.主機的使用者名稱。 
+| HCP 使用者 ID | HCP 主機的使用者名稱。 
 
 
-| hcp.密碼 | 用於保健專業人員主機的密碼。 
+| HCP 密碼 | 用於 HCP 主機的密碼。 
 
 
-| HCP-驗證類型 | 選擇HCP_local或active_directory 
+| HCP 認證類型 | 選擇 HCP_LOCAL 或 ACTIVE_DIRECTORY 
 |===
 
 
-== 進階組態
+== 進階配置
 
 |===
 
 
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| 庫存輪詢時間間隔（分鐘） | 庫存輪詢之間的時間間隔。預設值為 60 。 
+| 庫存輪詢間隔（分鐘） | 庫存調查之間的間隔。預設值為 60。 
 
 
-| 效能意見調查時間間隔（秒） | 效能輪詢之間的時間間隔。預設值為 900 。 
+| 效能輪詢間隔（秒） | 效能輪詢之間的間隔。預設值為 900。 
 |===
-您可以在頁面或中找到其他link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]資訊。
+更多資訊可從link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。

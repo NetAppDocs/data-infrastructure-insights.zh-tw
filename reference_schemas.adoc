@@ -1,20 +1,20 @@
 ---
 sidebar: sidebar 
 permalink: reference_schemas.html 
-summary: 用於報告的資料倉儲架構圖表和表格 
+summary: 用於報表的資料倉儲模式圖和表格 
 keywords: dwh, data warehouse, schema, reporting 
 ---
-= 資料基礎架構洞見報告架構
+= 用於報告的Data Infrastructure Insights模式
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-此處提供這些架構表格和圖表、作為 Data Infrastructure Insights Reporting 的參考資料。
+這些模式表和圖表在此提供，作為Data Infrastructure Insights報告的參考。
 
-link:https://docs.netapp.com/us-en/cloudinsights/ci_reporting_database_schema.pdf["*架構表*"]PDF 格式。按一下連結以開啟、或按一下滑鼠右鍵並選擇「_另存新檔...」進行下載。
+link:https://docs.netapp.com/us-en/cloudinsights/ci_reporting_database_schema.pdf["*模式表*"].PDF格式。點擊連結打開，或右鍵單擊並選擇“另存為...”進行下載。
 
 link:reporting_schema_diagrams.html["*架構圖*"]
 
 
-NOTE: 報告功能可在 Data Infrastructure Insights link:concept_subscribing_to_cloud_insights.html["Premium Edition"]中找到。
+NOTE: 報告功能可在Data Infrastructure Insights中使用link:concept_subscribing_to_cloud_insights.html["高級版"]。

@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concept_cs_api.html 
 keywords: api, access, token, swagger 
-summary: 工作負載安全性包含功能強大的API、可與其他應用程式（例如CMDB）整合。 
+summary: 工作負載安全性包括一個強大的 API，可與其他應用程式（如 CMDB）整合。 
 ---
-= 工作負載安全API
+= 工作負載安全 API
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,67 +14,67 @@ summary: 工作負載安全性包含功能強大的API、可與其他應用程�
 
 
 [role="lead"]
-工作負載安全性API可讓NetApp客戶和獨立軟體廠商（ISV）將工作負載安全性與其他應用程式（例如CMDB或其他票證系統）整合。
+工作負載安全 API 使NetApp客戶和獨立軟體供應商 (ISV) 能夠將工作負載安全性與其他應用程式（例如 CMDB 或其他票務系統）整合。
 
-API存取需求：
+API 存取要求：
 
-* API存取權杖模式用於授予存取權。
-* API權杖管理是由具有管理員角色的工作負載安全使用者執行。
-
-
-
-
-== API文件（Swagger）
-
-登入工作負載安全性並瀏覽至*管理> API存取*、即可找到最新的API資訊。按一下「* API Documentation *（* API文件*）」連結。API 文件是以 Swagger 為基礎，提供 API 的簡短說明和使用資訊，並可讓您在租戶上試用。
-
-
-NOTE: 如果呼叫鑑識活動 API 、請使用 cloudsecure_forensics 。 * v2* API 。如果您要對此 API 進行多個呼叫、請確定呼叫是依序進行、而非平行進行。多個平行呼叫可能會導致 API 逾時。
+* API 存取令牌模型用於授予存取權限。
+* API 令牌管理由具有管理員角色的工作負載安全使用者執行。
 
 
 
-== API存取權杖
 
-在使用工作負載安全性API之前、您必須先建立一個或多個* API存取權杖*。存取權杖可授予讀取權限。您也可以設定每個存取權杖的到期日。
+== API 文件（Swagger）
+
+透過登入 Workload Security 並導覽至 *Admin > API Access* 可以找到最新的 API 資訊。按一下*API 文件*連結。  API 文件基於 Swagger，提供 API 的簡要描述和使用信息，並允許您在租戶上試用。
+
+
+NOTE: 如果呼叫取證活動 API，請使用 cloudsecure_forensics.activities.*v2* API。如果您要多次呼叫此 API，請確保呼叫按順序進行，而不是並行。多次並行呼叫可能會導致 API 逾時。
+
+
+
+== API 存取令牌
+
+在使用工作負載安全 API 之前，您必須建立一個或多個 *API 存取權杖*。存取令牌授予讀取權限。您也可以設定每個存取令牌的有效期。
 
 若要建立存取權杖：
 
-* 按一下「*管理> API存取*」
-* 按一下「*+ API存取權杖*」
-* 輸入* Token Name*
-* 指定*權杖過期*
+* 點選“管理”>“API 存取”
+* 點選*+API 存取權令牌*
+* 輸入*代幣名稱*
+* 指定*令牌到期*
 
 
 
-NOTE: 您的權杖只能在建立程序期間複製到剪貼簿並儲存。建立權杖之後、就無法擷取這些權杖、因此強烈建議您複製權杖、並將其儲存在安全的位置。系統會提示您按一下「複製API存取權杖」按鈕、然後再關閉權杖建立畫面。
+NOTE: 您的令牌僅可在建立過程中複製到剪貼簿並儲存。令牌一旦創建就無法檢索，因此強烈建議複製令牌並將其保存在安全的位置。系統將提示您按一下「複製 API 存取權杖」按鈕，然後才能關閉令牌建立畫面。
 
-您可以停用、啟用及撤銷權杖。停用的權杖可以啟用。
+您可以停用、啟用和撤銷令牌。已禁用的令牌可以啟用。
 
-權杖可從客戶的角度，授予 API 一般用途存取權，並管理其租戶範圍內的 API 存取權。
+令牌從客戶的角度授予對 API 的通用存取權限，管理其自身租用戶範圍內對 API 的存取。
 
-應用程式會在使用者成功驗證及授權存取後、收到存取權杖、然後在呼叫目標API時、將存取權杖作為認證。傳遞的權杖會通知API、該權杖的承載器已獲授權存取API、並根據授權期間授予的範圍執行特定動作。
+使用者成功驗證並授權存取後，應用程式將收到存取令牌，然後在呼叫目標 API 時將存取令牌作為憑證傳遞。傳遞的令牌通知 API，令牌持有者已被授權存取 API 並根據授權期間授予的範圍執行特定操作。
 
-傳遞存取權杖的HTTP標頭為* X-CloudInsights：Apikes*
+傳遞存取令牌的 HTTP 標頭是 *X-CloudInsights-ApiKey:*
 
-例如、使用下列項目來擷取儲存資產：
+例如，使用以下命令檢索儲存資產：
 
  curl https://<Workload Security tenant>/rest/v1/cloudsecure/activities -H 'X-CloudInsights-ApiKey: <API_Access_Token>'
 其中 _<API_Access_Token>_ 是您在建立 API 存取金鑰期間所儲存的令牌，而 _<Workload Security Tenant>_ 是您的 Workload Security 環境的租用戶 URL。
 
-如需詳細資訊、請參閱「*管理> API存取*」下的「_API文件_」連結。
+詳細資訊可以在*管理 > API 存取*下的_API 文件_連結中找到。
 
 
 
-== 透過 API 擷取資料的指令碼
+== 透過 API 提取資料的腳本
 
-工作負載安全代理程式包含匯出指令碼、可將要求的時間範圍分成較小的批次、以利平行呼叫 v2 API 。
+工作負載安全代理程式包括一個匯出腳本，透過將請求的時間範圍劃分為更小的批次來促進對 v2 API 的平行呼叫。
 
-指令碼位於： __/opt/oracle/cloudsecure/agent/export NetApp -script_ 。同一目錄中的 README 檔案提供使用說明。
+該腳本位於 _/opt/netapp/cloudsecure/agent/export-script_。同一目錄中的 README 檔案提供了使用說明。
 
-以下是呼叫指令碼的範例命令：
+以下是呼叫腳本的範例命令：
 
 [source]
 ----
 python3 data-export.py --tenant_url <Workload Security tenant> --access_key %ACCESS_KEY% --path_filter "<dir path>" --user_name "<user>" --from_time "01-08-2024 00:00:00" --to_time "31-08-2024 23:59:59" --iteration_interval 12 --num_workers 3
 ----
-主要參數： - `--iteration_interval 12`：將所要求的時間範圍分成 12 小時的間隔。- `--num_workers 3`：使用 3 個執行緒平行擷取這些時間間隔。
+關鍵參數：- `--iteration_interval 12` ：將請求的時間範圍分成 12 小時的間隔。  - `--num_workers 3` ：使用 3 個執行緒並行取得這些間隔。

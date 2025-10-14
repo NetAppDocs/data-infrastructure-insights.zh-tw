@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: reporting_schema_diagrams.html 
 keywords: Schema, DB Schema, premium, dwh, data warehouse 
-summary: 報告架構圖表 
+summary: 報告架構圖 
 ---
-= 資料基礎架構洞見報告架構圖表
+= Data Infrastructure Insights報告架構圖
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,26 +14,26 @@ summary: 報告架構圖表
 
 
 [role="lead"]
-本文件提供報告資料庫的架構圖表。
+本文檔提供了報告資料庫的架構圖。
 
 
-NOTE: 報告功能可在 Data Infrastructure Insights link:concept_subscribing_to_cloud_insights.html["Premium Edition"]中找到。
-
-
-
-== 庫存資料
-
-下列影像說明庫存資料擷取。
+NOTE: 報告功能可在Data Infrastructure Insights中使用link:concept_subscribing_to_cloud_insights.html["高級版"]。
 
 
 
-=== 註釋
+== 庫存資料集市
 
-image:annotations.png["註釋"]
+下圖描述了庫存資料市集。
 
 
 
-=== 應用程式
+=== 註解
+
+image:annotations.png["註解"]
+
+
+
+=== 應用
 
 image:apps_annot.jpg["應用程式"]
 
@@ -51,21 +51,21 @@ image:k8s_cluster_metrics_fact.jpg["Kubernetes 叢集指標事實"]
 
 
 
-==== Kubernetes 命名空間度量資料
+==== Kubernetes 命名空間指標事實
 
-image:k8s_namespace_metrics_fact.jpg["Kubernetes 命名空間度量資料"]
-
-
-
-==== Kubernetes Node Metrics 資料
-
-image:k8s_node_metrics_fact.jpg["Kubernetes Node Metrics 資料"]
+image:k8s_namespace_metrics_fact.jpg["Kubernetes 命名空間指標事實"]
 
 
 
-==== Kubernetes PVC 指標資料
+==== Kubernetes 節點指標事實
 
-image:k8s_pvc_metrics_fact.jpg["Kubernetes PVC 指標資料"]
+image:k8s_node_metrics_fact.jpg["Kubernetes 節點指標事實"]
+
+
+
+==== Kubernetes PVC 指標事實
+
+image:k8s_pvc_metrics_fact.jpg["Kubernetes PVC 指標事實"]
 
 
 
@@ -75,9 +75,9 @@ image:k8s_workload_metrics_fact.jpg["Kubernetes 工作負載指標事實"]
 
 
 
-=== NAS
+=== 網路儲存
 
-image:nas.jpg["NAS"]
+image:nas.jpg["納斯"]
 
 
 
@@ -87,21 +87,21 @@ image:logical.jpg["路徑和違規"]
 
 
 
-=== 連接埠連線能力
+=== 連接埠連接
 
-image:connectivity.jpg["連接埠連線能力"]
-
-
-
-=== SAN Fabric
-
-image:fabric.jpg["SAN 架構"]
+image:connectivity.jpg["連接埠連接"]
 
 
 
-=== 儲存設備
+=== SAN 結構
 
-image:storage.jpg["儲存設備"]
+image:fabric.jpg["SAN 結構"]
+
+
+
+=== 儲存
+
+image:storage.jpg["貯存"]
 
 
 
@@ -111,40 +111,40 @@ image:storage_node.jpg["儲存節點"]
 
 
 
-=== VM
+=== 虛擬機
 
-image:vm.jpg["虛擬機器"]
+image:vm.jpg["虛擬機"]
 
 '''
 
 
-== 容量 Datamart
+== 容量數據集市
 
-下列影像說明容量資料傳輸技術。
-
-
-
-=== 計費
-
-image:Chargeback_Fact.jpg["計費"]
+下圖描述了容量資料集市。
 
 
 
-=== 磁碟群組容量
+=== 退款
 
-image:Disk_Group_Capacity.jpg["磁碟群組容量"]
-
-
-
-=== 檔案系統使用率
-
-image:fs_util.jpg["檔案系統使用率"]
+image:Chargeback_Fact.jpg["退款"]
 
 
 
-=== 內部Volume容量
+=== 磁碟組容量
 
-image:Internal_Volume_Capacity_Fact.jpg["內部Volume容量"]
+image:Disk_Group_Capacity.jpg["磁碟組容量"]
+
+
+
+=== 檔案系統利用率
+
+image:fs_util.jpg["檔案系統利用率"]
+
+
+
+=== 內部容積
+
+image:Internal_Volume_Capacity_Fact.jpg["內部容積"]
 
 
 
@@ -154,15 +154,15 @@ image:k8s_pvc_capacity_fact.jpg["Kubernetes PV 容量"]
 
 
 
-=== 連接埠容量
+=== 港口容量
 
-image:ports.png["連接埠容量"]
+image:ports.png["港口容量"]
 
 
 
-=== qtree容量
+=== qtree 容量
 
-image:Qtree_Capacity_Fact.jpg["qtree容量"]
+image:Qtree_Capacity_Fact.jpg["qtree 容量"]
 
 
 
@@ -172,9 +172,9 @@ image:efficiency.jpg["儲存容量效率"]
 
 
 
-=== 儲存與儲存資源池容量
+=== 儲存和儲存池容量
 
-image:Storage_and_Storage_Pool_Capacity_Fact.jpg["儲存與儲存資源池容量"]
+image:Storage_and_Storage_Pool_Capacity_Fact.jpg["儲存和儲存池容量"]
 
 
 
@@ -184,40 +184,40 @@ image:Storage_Node_Capacity_Fact.jpg["儲存節點容量"]
 
 
 
-=== VM容量
+=== 虛擬機器容量
 
-image:VM_Capacity_Fact.jpg["VM容量"]
+image:VM_Capacity_Fact.jpg["虛擬機器容量"]
 
 
 
-=== Volume容量
+=== 容積容量
 
-image:Volume_Capacity.jpg["Volume容量"]
+image:Volume_Capacity.jpg["容積容量"]
 
 '''
 
 
-== 效能資料
+== 績效數據集市
 
-下列影像說明效能資料藝術。
-
-
-
-=== 應用程式Volume每小時效能
-
-image:application_performance_fact.jpg["應用程式Volume每小時效能"]
+下圖描述了效能資料集市。
 
 
 
-=== 叢集交換器效能
+=== 應用程式量每小時表現
 
-image:cluster_switch_performance_fact.jpg["叢集交換器效能"]
+image:application_performance_fact.jpg["應用程式量每小時表現"]
 
 
 
-=== 磁碟每日效能
+=== 集群交換器性能
 
-image:disk_daily_performance_fact.jpg["磁碟每日效能"]
+image:cluster_switch_performance_fact.jpg["集群交換器性能"]
+
+
+
+=== 磁碟每日表現
+
+image:disk_daily_performance_fact.jpg["磁碟每日表現"]
 
 
 
@@ -227,45 +227,45 @@ image:disk_hourly_performance_fact.jpg["磁碟每小時效能"]
 
 
 
-=== 主機每小時效能
+=== 主持人每小時表現
 
-image:host_performance_fact.jpg["主機每小時效能"]
-
-
-
-=== 主機 VM 每日效能
-
-image:host_vm_daily_performance_fact.jpg["主機 VM 每日效能"]
+image:host_performance_fact.jpg["主持人每小時表現"]
 
 
 
-=== 主機 VM 每小時效能
+=== 主機虛擬機器每日效能
 
-image:host_vm_hourly_performance_fact.jpg["主機 VM 每小時效能"]
-
-
-
-=== 內部Volume每小時效能
-
-image:internal_volume_performance_fact.jpg["內部Volume每小時效能"]
+image:host_vm_daily_performance_fact.jpg["主機虛擬機器每日效能"]
 
 
 
-=== 內部Volume每日效能
+=== 主機虛擬機器每小時效能
 
-image:internal_volume_daily_performance_fact.jpg["內部Volume每日效能"]
-
-
-
-=== qtree每日效能
-
-image:QtreeDailyPerformanceFact.jpg["qtree每日效能"]
+image:host_vm_hourly_performance_fact.jpg["主機虛擬機器每小時效能"]
 
 
 
-=== qtree 每小時效能
+=== 內部交易量每小時表現
 
-image:QtreeHourlyPerformanceFact.jpg["qtree Hourly 效能"]
+image:internal_volume_performance_fact.jpg["內部交易量每小時表現"]
+
+
+
+=== 內部交易量每日表現
+
+image:internal_volume_daily_performance_fact.jpg["內部交易量每日表現"]
+
+
+
+=== Qtree 每日表現
+
+image:QtreeDailyPerformanceFact.jpg["Qtree 每日表現"]
+
+
+
+=== Qtree 每小時性能
+
+image:QtreeHourlyPerformanceFact.jpg["Qtree 每小時性能"]
 
 
 
@@ -281,78 +281,78 @@ image:storage_node_hourly_performance_fact.jpg["儲存節點每小時效能"]
 
 
 
-=== 切換主機的每小時效能
+=== 主機的交換器每小時效能
 
-image:switch_performance_for_host_hourly_fact.jpg["切換主機的每小時效能"]
-
-
-
-=== 交換器每小時的連接埠效能
-
-image:switch_performance_for_port_hourly_fact.jpg["交換器每小時的連接埠效能"]
+image:switch_performance_for_host_hourly_fact.jpg["主機的交換器每小時效能"]
 
 
 
-=== 切換每小時儲存效能
+=== 連接埠每小時切換效能
 
-image:switch_performance_for_storage_hourly_fact.jpg["切換每小時儲存效能"]
-
-
-
-=== 切換每小時磁帶效能
-
-image:switch_performance_for_tape_hourly_fact.jpg["切換每小時磁帶效能"]
+image:switch_performance_for_port_hourly_fact.jpg["連接埠每小時切換效能"]
 
 
 
-=== VM效能
+=== 儲存交換器每小時效能
 
-image:vm_hourly_performance_fact.png["VM效能"]
-
-
-
-=== VM每日主機效能
-
-image:vm_daily_performance_fact.png["VM每日主機效能"]
+image:switch_performance_for_storage_hourly_fact.jpg["儲存交換器每小時效能"]
 
 
 
-=== VM每小時主機效能
+=== 磁帶的每小時切換效能
+
+image:switch_performance_for_tape_hourly_fact.jpg["磁帶的每小時切換效能"]
+
+
+
+=== 虛擬機器效能
+
+image:vm_hourly_performance_fact.png["虛擬機器效能"]
+
+
+
+=== 主機虛擬機器每日效能
+
+image:vm_daily_performance_fact.png["主機虛擬機器每日效能"]
+
+
+
+=== 主機虛擬機器每小時效能
 
 image:vmware_host_performance_fact.jpg["VM 每小時主機效能"]
 
 
 
-=== VM每日主機效能
+=== 主機虛擬機器每日效能
 
-image:vm_daily_performance_fact.png["VM每日主機效能"]
-
-
-
-=== VM每小時主機效能
-
-image:vm_hourly_performance_fact.png["VM每小時主機效能"]
+image:vm_daily_performance_fact.png["主機虛擬機器每日效能"]
 
 
 
-=== VMDK每日效能
+=== 主機虛擬機器每小時效能
 
-image:vmdk_daily_performance_fact.jpg["VMDK每日效能"]
-
-
-
-=== VMDK每小時效能
-
-image:vmdk_hourly_performance_fact.jpg["VMDK每小時效能"]
+image:vm_hourly_performance_fact.png["主機虛擬機器每小時效能"]
 
 
 
-=== Volume每小時效能
+=== VMDK 每日效能
 
-image:volume_performance_fact.jpg["Volume每小時效能"]
+image:vmdk_daily_performance_fact.jpg["VMDK 每日效能"]
 
 
 
-=== Volume每日效能
+=== VMDK 每小時效能
 
-image:volume_daily_performance_fact.jpg["Volume每日效能"]
+image:vmdk_hourly_performance_fact.jpg["VMDK 每小時效能"]
+
+
+
+=== 每小時成交量表現
+
+image:volume_performance_fact.jpg["每小時成交量表現"]
+
+
+
+=== 成交量每日表現
+
+image:volume_daily_performance_fact.jpg["成交量每日表現"]

@@ -2,53 +2,53 @@
 sidebar: sidebar 
 permalink: task_webhook_example_discord.html 
 keywords: webhook, notification, Discord, integration 
-summary: 建立Webhook、針對效能或庫存臨界值發出警示、以利不和 
+summary: 建立 Webhook 來提醒 Discord 的效能或庫存閾值 
 ---
-= Webhook不和範例
+= Discord 的 Webhook 範例
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-Webhooks可讓使用者使用自訂的Webhooks通道、將警示通知傳送至各種應用程式。本頁提供設定Webhooks以解決不和的範例。
+Webhook 允許使用者使用自訂的 webhook 通道向各種應用程式發送警報通知。本頁提供了為 Discord 設定 webhook 的範例。
 
 
-NOTE: 本頁是指可能會變更的第三方指示。如需最新資訊，請參閱link:https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks["不和文件"]。
-
-
-
-== 不和設定：
-
-* 在不和中、選取伺服器、在「Text Channeling（文字頻道）」下、選取「Edit Channel（齒輪圖示）」。
-* 選擇*整合>檢視Webhook*、然後按一下*新Webhook*
-* 複製Webhook URL。您必須將此內容貼到 Data Infrastructure Insights 網路攔截組態中。
+NOTE: 本頁引用第三方說明，可能會有所變更。請參閱link:https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks["Discord 文件"]以獲取最新資訊。
 
 
 
+== Discord 設定：
 
-== Create Data Infrastructure Insights Webhook ：
-
-. 在 Data Infrastructure Insights 中、瀏覽至 * 管理 > 通知 * 、然後選取 * Webhooks* 標籤。按一下「*+ Webhing*」建立新的網路連結。
-. 為Webhook命名有意義的名稱、例如「不和」。
-. 在_範本類型_下拉式清單中、選取*不和*。
-. 將上方的URL貼到_url_欄位。
-
-
-image:Webhooks-Discord_example.png["不和Webhook範本"]
-
-
-NOTE: 若要測試 Webhook ，請暫時以任何有效的 URL （例如 _https ： NetApp ． com_ ）取代訊息本文中的 URL 值，然後按一下 _ 測試 Webhook _ 按鈕。測試完成後、請務必將訊息本文設回。
+* 在 Discord 中，選擇伺服器，在文字頻道下，選擇編輯頻道（齒輪圖示）
+* 選擇“整合”>“查看 Webhook”，然後按一下“新 Webhook”
+* 複製 Webhook URL。您需要將其貼到Data Infrastructure Insightswebhook 配置中。
 
 
 
-== 透過Webhook通知
 
-要通過 Webhook 通知事件，請在 Data Infrastructure Insights 中導航至 *Alerts > Monitors* ，然後單擊 *+Monitor* 以創建新的link:task_create_monitor.html["監控"]。
+== 創建Data Infrastructure InsightsWebhook：
 
-* 選取度量並定義監視器的條件。
-* 在「設定團隊通知」下、選擇* Webhook *交付方法。
-* 針對所需的事件（重大、警告、已解決）、選擇「不和」Webhook
+. 在Data Infrastructure Insights中，導覽至 *管理 > 通知* 並選擇 *Webhooks* 標籤。點選 *+Webhook* 建立一個新 webhook。
+. 為 webhook 賦予一個有意義的名稱，例如「Discord」。
+. 在“模板類型”下拉式選單中，選擇“Discord”。
+. 將上面的 URL 貼到 _URL_ 欄位中。
+
+
+image:Webhooks-Discord_example.png["Discord webhook 模板"]
+
+
+NOTE: 為了測試 webhook，請暫時將訊息正文中的 url 值替換為任何有效的 URL（例如 _https://netapp.com_），然後按一下 _測試 Webhook_ 按鈕。測試完成後，請務必將訊息正文重新設定。
+
+
+
+== 透過 Webhook 發送通知
+
+若要透過 webhook 通知事件，請在Data Infrastructure Insights中導覽至 *Alerts > Monitors*，然後按一下 *+Monitor* 以建立新的link:task_create_monitor.html["監視器"]。
+
+* 選擇一個指標並定義監視器的條件。
+* 在「設定團隊通知」下，選擇「Webhook」傳送方式。
+* 為所需事件（嚴重、警告、已解決）選擇「Discord」 webhook
 +
-image:Webhooks_Discord_Notifications.png["Webhook通知"]
+image:Webhooks_Discord_Notifications.png["Webhook 通知"]
 
 

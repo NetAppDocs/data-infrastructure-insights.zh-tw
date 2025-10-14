@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: san_analyzer_overview.html 
-summary: SAN Analyzer 提供租戶資產的拓撲 
+summary: SAN Analyzer 為租戶上的資產提供拓撲 
 keywords: topology, analyze, analysis, map 
 ---
 = SAN 分析器概述
@@ -16,32 +16,32 @@ keywords: topology, analyze, analysis, map
 [role="lead"]
 SAN 在處理重要工作負載方面發揮著至關重要的作用，但其複雜性可能會導致嚴重的中斷和客戶中斷。透過 DII 的 *SAN Analyzer*，管理 SAN 變得更簡單、更有效率。這個強大的工具提供了端到端的可視性，將依賴關係從 VM/主機映射到網路、LUN 和儲存。透過提供互動式拓撲圖，SAN Analyzer 使您能夠找出問題、了解變更並增強對資料流的理解。使用 SAN Analyzer 簡化複雜 IT 環境中的 SAN 管理並提高對區塊工作負載的可見度。
 
-image:san_analyzer_example_with_panel.png["儲存系統的 SAN Analyzer 拓撲圖"]
+image:san_analyzer_example_with_panel.png["儲存系統的 SAN Analyzer 拓樸圖"]
 
 
 
-== 探索資產之間的連結
+== 探索資產之間的聯繫
 
-選擇 * 可視性 > 分析 > SAN Analyzer* 以查看 SAN Analyzer 。設定應用程式，主機，架構和 / 或儲存設備的篩選器。隨即顯示物件的地圖，顯示已連接的物件。將游標移到物件上方，即可檢視這些連線的流量計量。
+選擇 *Observability > Analyze > SAN Analyzer* 來查看 SAN Analyzer。為應用程式、主機、結構和/或儲存設定過濾器。顯示物件的地圖，其中顯示了連接的物件。將滑鼠懸停在某個物件上即可查看該連線的流量指標。
 
-image:san_analyzer_traffic_metrics.png["SAN Analyzer 流量計量範例"]
+image:san_analyzer_traffic_metrics.png["SAN 分析器流量指標範例"]
 
 
-NOTE: 大多數 SAN Analyzer 篩選器（包括您可以新增的篩選器）都是關聯式的；當您在其中一個篩選器中選取物件時，其他篩選器下拉式清單中顯示的選項會隨著所選物件或物件的內容而重新整理。唯一的例外是「應用程式」，「連接埠」和「交換器」；這些篩選器不是關聯式的。
+NOTE: 大多數 SAN Analyzer 過濾器（包括您可能新增的過濾器）都是上下文相關的；當您在其中一個過濾器中選擇一個物件時，其他過濾器下拉式選單中顯示的選項將根據所選物件的上下文進行刷新。唯一的例外是應用程式、連接埠和交換器；這些過濾器不是上下文的。
 
-按一下某個物件或群組，會開啟一個滑出面板，提供有關物件及其連線的其他詳細資料。滑出式面板會顯示摘要，其中會提供所選物件的詳細資料（例如 IP ， Hypervisor ，連線架構等，視物件類型而定），以及顯示物件度量（例如延遲或 IOPS ）的圖表，以及相關的變更和警示。如果需要，您也可以選擇在圖表上顯示與上方關聯物件的度量。
+點擊某個物件或群組將開啟一個滑出面板，提供有關該物件及其連接的更多詳細資訊。滑出面板顯示摘要，其中提供有關所選物件的詳細資訊（例如，IP、虛擬機器管理程序、連接結構等，具體取決於物件的類型），以及顯示物件指標（例如延遲或 IOPS）以及相關變更和警報的圖表。如果需要，您也可以選擇在圖表上顯示「最相關」物件的指標。
 
-除了 Summary （摘要）索引標籤外，滑出面板還會顯示適用於所選物件的連接埠詳細資料或區域資訊等選項卡。
+除了「摘要」標籤之外，滑出面板還顯示適用於所選物件的連接埠詳細資訊或區域資訊等標籤。
 
-image:san_analyzer_slideout_example.png["SAN Analyzer 滑出面板"]
+image:san_analyzer_slideout_example.png["SAN 分析器滑出面板"]
 
 如果您的環境有不同的協議，您可以按 iSCSI 或 FC 進行篩選：
 
 image:san_analyzer_protocols.png["SAN 分析器協議"]
 
-如果您的環境包含 iSCSI 裝置，請將游標移至 _iscsi_ 物件上方，以醒目提示與這些相關 iSCSI 裝置相關的連線。
+如果您的環境包含 iSCSI 設備，將滑鼠懸停在 _iSCSI_ 物件上會反白與這些相關 iSCSI 設備相關的連線。
 
-image:san_analyzer_iscsi_traffic.png["iSCSI 流量已反白顯示"]
+image:san_analyzer_iscsi_traffic.png["反白顯示 iSCSI 流量"]
 
 
 
@@ -51,7 +51,7 @@ image:san_analyzer_iscsi_traffic.png["iSCSI 流量已反白顯示"]
 
 [cols="2*"]
 |===
-| *問題：* | *試用：* 
+| *問題：* | *試試這個：* 
 
 
 | 我在圖例中看到諸如_trafficUtilization_或_trafficRate_等指標的<0、=0或>0。 | 這種情況可能在極少數情況下發生，即度量值低於小數點後兩位，例如 0.000123。擴大時間窗口可能有助於更有效地分析指標。 

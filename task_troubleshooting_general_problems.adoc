@@ -1,46 +1,46 @@
 ---
 sidebar: sidebar 
 permalink: task_troubleshooting_general_problems.html 
-summary: 一般資料基礎架構洞見疑難排解秘訣。 
+summary: 通用Data Infrastructure Insights故障排除提示。 
 keywords: troubleshooting, problems, browser, login, log in, accessing, access to, Trident, qtree, quota 
 ---
-= 疑難排解一般資料基礎架構洞見問題
+= 解決一般Data Infrastructure Insights問題
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-您可在此找到疑難排解 Data Infrastructure Insights 的建議。
+在這裡，您可以找到Data Infrastructure Insights故障排除的建議。
 
-另請參閱link:task_troubleshooting_linux_acquisition_unit_problems.html["疑難排解Linux擷取單元問題"]和link:task_troubleshooting_windows_acquisition_unit_problems.html["疑難排解Windows接收單元問題"]。
+參見link:task_troubleshooting_linux_acquisition_unit_problems.html["Linux 擷取單元故障排除"]和link:task_troubleshooting_windows_acquisition_unit_problems.html["排除 Windows 擷取單元故障"]。
 
 
 
 == 登入問題
 
 |===
-| *問題：* | *試用：* 
+| *問題：* | *試試這個：* 
 
 
-| Data Infrastructure Insights 會每 6 小時自動登出一次 | 這是因為瀏覽器的第三方 Cookie 已停用。使用者可以設定瀏覽器來啟用所有第三方 Cookie 、或使用較窄的例外清單來啟用 Data Infrastructure Insights 。範例：開啟瀏覽器的設定選取「允許所有 Cookie 」選項。* 或 * 選取「區塊協力廠商 Cookie 」、並新增例外情況至： __[\*.]auth0.com 和 NetApp .com_ 。Microsoft Edge 提供與 Chrome 相同的例外格式。在 Firefox 中、 Cookie 例外會指定為 Simply _auth0.com 和 _netapp.com 。 
+| Data Infrastructure Insights每 6 小時自動註銷一次 | 這是由於瀏覽器停用了第三方 cookie。使用者可以設定他們的瀏覽器以啟用所有第三方 cookie，或使用更窄的例外清單僅為Data Infrastructure Insights啟用這些 cookie。例如：開啟瀏覽器的設置，選擇「允許所有 cookie」選項。  *或* 選擇「封鎖第三方 cookie」並為 _[\*.]auth0.com_ 和 _[*.]netapp.com_ 新增例外。 Microsoft Edge 遵循與 Chrome 相同的例外格式。在 Firefox 中，cookie 異常被簡單地指定為 _auth0.com_ 和 _netapp.com_。 
 
 
 | 我有一個控制台帳戶，但無法登入。 | 從以下位置開啟票證 https://mysupport.netapp.com/site/help[]。選擇類別 console.netapp.com > 帳號/登入問題」或 console.netapp.com > 聯合問題」。這些專門針對控制台問題或疑問。對於所有其他Data Infrastructure Insights技術支援問題，請聯絡link:concept_requesting_support.html["NetApp支援"]。 
 
 
-| 我受邀參加 Data Infrastructure Insights 、但卻收到「未經授權」的訊息。 | 驗證您是否已註冊 Console 帳戶，或您的組織是否使用 Console 的 SSO 登入。驗證您的控制台設定檔電子郵件地址是否與Data Infrastructure Insights歡迎電子郵件中顯示的電子郵件地址相符。如果電子郵件不匹配，請使用正確的電子郵件地址要求新的邀請。 
+| 我被邀請參加Data Infrastructure Insights，但收到“未授權”訊息。 | 驗證您是否已註冊 Console 帳戶，或您的組織是否使用 Console 的 SSO 登入。驗證您的控制台設定檔電子郵件地址是否與Data Infrastructure Insights歡迎電子郵件中顯示的電子郵件地址相符。如果電子郵件不匹配，請使用正確的電子郵件地址要求新的邀請。 
 
 
-| 我從控制台註銷，並自動從Data Infrastructure Insights中註銷。 | 跨 NetApp 雲端服務的單一登入（ SSO ）會登出所有資料基礎架構洞見課程。如果您可以存取多個 Data Infrastructure Insights 帳戶、請從任何一個帳戶登出、以登出所有作用中的工作階段。重新登入以存取您的帳戶。 
+| 我從控制台註銷，並自動從Data Infrastructure Insights中註銷。 | NetApp雲端服務中的單一登入 (SSO) 會登出所有Data Infrastructure Insights會話。如果您有權存取多個Data Infrastructure Insights帳戶，則從任何一個帳戶註銷都會註銷所有活動會話。重新登入以存取您的帳戶。 
 
 
-| 我在數天後自動登出。 | NetApp Cloud 帳戶需要每隔幾天重新進行一次驗證（目前控制台設定為 7 天）。重新登入以存取您的帳戶。 
+| 幾天後我就被自動註銷了。 | NetApp Cloud 帳戶需要每隔幾天重新進行一次驗證（目前控制台設定為 7 天）。重新登入以存取您的帳戶。 
 
 
-| 我收到錯誤訊息「不再授權登入」。 | 請聯絡您的帳戶管理員以驗證對Data Infrastructure Insights的存取權。驗證您的控制台個人資料電子郵件地址是否與Data Infrastructure Insights歡迎電子郵件中顯示的電子郵件地址相符 
+| 我收到一條錯誤訊息「不再有權登入」。 | 請聯絡您的帳戶管理員以驗證對Data Infrastructure Insights的存取權。驗證您的控制台設定檔電子郵件地址是否與Data Infrastructure Insights歡迎電子郵件中顯示的電子郵件地址相符 
 
 
-| 其他登入錯誤 | 請在Chrome中嘗試無痕式模式、或清除瀏覽器記錄、Cookie和快取。嘗試使用不同的瀏覽器設定檔（例如 Chrome -新增人員）。 
+| 其他登入錯誤 | 嘗試在 Chrome 中使用隱身模式，或清除瀏覽器記錄、Cookie 和快取。嘗試使用不同的瀏覽器設定檔（即 Chrome - 新增人員）。 
 |===
 
 
@@ -49,16 +49,16 @@ keywords: troubleshooting, problems, browser, login, log in, accessing, access t
 |===
 
 
-| * 問題： * | * 答案： * 
+| *問題：* | *回答：* 
 
 
-| 我的 Qtree 硬式配額在查詢中顯示正確、但我的軟式配額顯示為磁碟區的總容量。答對了嗎？ | 只有硬配額（手動設定或透過 Trident 設定）會顯示為設定配額；如果未指定硬配額、則 Qtree 容量會是內部 Volume 容量。 
+| 我的 Qtree 硬配額在查詢中顯示正確，但我的軟配額顯示為磁碟區的總容量。對嗎？ | 只有硬配額（手動設定或透過Trident設定）才會顯示為設定的配額；如果沒有指定硬配額，則 Qtree 容量將是內部磁碟區容量。 
 
 
-| 我在同一個 Qtree 中手動設定了軟配額和硬配額、但顯示的總容量是硬配額、對嗎？ | 是、如果指定硬配額、則會顯示為總容量。 
+| 我在同一個 Qtree 中手動設定了軟配額和硬配額，但顯示的總容量是硬配額；對嗎？ | 是的，如果指定了硬配額，則會顯示為總容量。 
 
 
-| 輸入 Cognos 報告排程時間時、有時我會在排程時間加上額外的「 m 」。例如，如果我輸入時間為「 02 ： 15 PM 」，可能會新增額外的字元：「 02 ： 15 PMM 」（或 PMM ）。當我按一下外部時，它會變更為「上午 2 ： 15 」。我可以儲存報告、但當我重新開啟儲存的報告時、排程時間會顯示為 AM （即晨間）、無論我是在排程時間中輸入 AM 或 PM 。 | 請重新輸入排程時間、小心不要輸入完整的「 AM 」或「 PM 」字元、只要在「 AM 」或「 P 」輸入「 A 」即可。如果您沒有看到額外的字元、排程時間將會正確設定。 
+| 當輸入 Cognos 報告計畫時間時，有時我會在計畫時間中出現一個多餘的「m」。例如，如果我輸入的時間是“02:15 PM”，它可能會添加一個額外的字元：“02:15 PMM”（或 PMm）。當我點擊外面時，它會將其更改為“凌晨 2:15”。我可以儲存報告，但是當我重新開啟已儲存的報告時，無論我在計畫時間中輸入的是 AM 還是 PM，計畫時間都會顯示為 AM（即早上）。 | 重新輸入計畫時間，注意不要輸入完整的「AM」或「PM」字元；輸入「A」表示「AM」或「P」表示「PM」即可。如果沒有顯示額外的字符，則計劃時間將正確設定。 
 |===
 
 
@@ -66,10 +66,10 @@ keywords: troubleshooting, problems, browser, login, log in, accessing, access t
 
 更多故障排除技巧可在link:https://kb.netapp.com/Cloud/ncds/nds/dii/dii_kbs["NetApp知識庫"]（需要支援登入）。
 
-如需其他支援資訊、請參閱 Data Infrastructure Insights link:concept_requesting_support.html["支援"] 頁面。
+可以從Data Infrastructure Insights中找到其他支援資訊link:concept_requesting_support.html["支援"]頁。
 
-如果您訂閱了有效的 Data Infrastructure Insights 、您可以使用下列支援選項：
+如果您擁有有效的Data Infrastructure Insights訂閱，則可以使用以下支援選項：
 
-link:https://www.netapp.com/us/contact-us/support.aspx["電話"] link:https://mysupport.netapp.com/site/cases/mine/create?serialNumber=95001014387268156333["支援服務單"]
+link:https://www.netapp.com/us/contact-us/support.aspx["電話"] link:https://mysupport.netapp.com/site/cases/mine/create?serialNumber=95001014387268156333["支援票"]
 
-如需詳細資訊，請參閱 https://docs.netapp.com/us-en/cloudinsights/concept_requesting_support.html["Data Infrastructure Insights 支援文件"]。
+有關詳細信息，請參閱 https://docs.netapp.com/us-en/cloudinsights/concept_requesting_support.html["Data Infrastructure Insights支援文檔"]。

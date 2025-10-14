@@ -2,85 +2,85 @@
 sidebar: sidebar 
 permalink: task_dc_brocade_sphereon_intrepid.html 
 keywords: data collector, Brocade, Sphereon Intrepid, 
-summary: 設定Brocade Sphereon / Intrepid交換器資料收集器 
+summary: 配置Brocade Sphereon/Intrepid Switch 資料收集器 
 ---
-= 設定Brocade Sphereon / Intrepid交換器資料收集器
+= 配置Brocade Sphereon/Intrepid Switch 資料收集器
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-資料基礎架構洞見使用 Brocade Sphereon / Intrepid 交換器（ SNMP ）資料收集器來探索 Brocade Sphereon 或 Intrepid 交換器的庫存。
+Data Infrastructure Insights使用Brocade Sphereon/Intrepid Switch (SNMP) 資料收集器來發現Brocade Sphereon 或 Intrepid 交換器的庫存。
 
 
 
-== 需求
+== 要求
 
-若要設定此資料收集器、必須符合下列需求：
+為了配置此數據收集器，必須滿足以下要求：
 
-* 網路中的所有交換器都必須有 IP 連線。如果您選取「探索架構中的所有交換器」核取方塊、 Data Infrastructure Insights 會識別架構中的所有交換器；不過、它需要 IP 連線才能連線到這些額外的交換器來探索它們。
-* 如果使用SNMP V1或SNMP V2、則為唯讀社群字串。
-* 以HTTP存取交換器以取得分區資訊。
-* 透過執行到交換器的snmpwalkUtility來存取驗證（請參閱_<install_path>\bin\_）。
-
-
+* 結構中的所有交換器都必須具有 IP 連線。如果選取「發現結構中的所有交換器」複選框，Data Infrastructure Insights將識別結構中的所有交換器；但是，它需要與這些額外的交換器建立 IP 連接才能發現它們。
+* 如果使用 SNMP V1 或 SNMP V2，則為唯讀社群字串。
+* 透過 HTTP 存取交換器以取得區域劃分資訊。
+* 透過執行 snmpwalk 公用程式對交換器進行存取驗證（請參閱 _<install_path>\bin\_）。
 
 
-== 組態
-
-[cols="2*"]
-|===
-| 欄位 | 說明 
 
 
-| Sphereon交換器 | 交換器的IP位址或完整網域名稱 
-
-
-| SNMP 版本 | SNMP 版本 
-
-
-| SNMP社群字串 | 用於存取交換器的SNMP唯讀社群字串 
-
-
-| SNMP使用者名稱 | 交換器的SMI-S使用者名稱（僅限SNMP v3） 
-
-
-| SNMP 密碼 | 交換器的SMI-S密碼（僅限SNMP v3） 
-|===
-
-
-== 進階組態
+== 配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| 庫存輪詢時間間隔（分鐘） | 庫存輪詢之間的時間間隔。預設值為 15 分鐘。 
+| Sphereon 開關 | 交換器的 IP 位址或完全限定域名 
 
 
-| SNMP驗證傳輸協定 | SNMP驗證傳輸協定（僅限SNMP v3） 
+| SNMP版本 | SNMP版本 
 
 
-| SNMP隱私密碼 | SNMP隱私密碼（僅限SNMP v3） 
+| SNMP 社群字串 | 用於存取交換器的 SNMP 唯讀社群字串 
 
 
-| SNMP重試次數 | SNMP重試嘗試次數 
+| SNMP 使用者名稱 | 交換器的 SMI-S 使用者名稱（僅限 SNMP v3） 
 
 
-| 網路名稱 | 要由資料收集器回報的網路名稱。保留空白以將網路名稱報告為WWN。 
-
-
-| 啟用資料綁定 | 選取以在從裝置接收SNMP設陷時啟用擷取。如果您選取「啟用補漏白」、也必須啟動SNMP。 
-
-
-| 設陷之間的最短時間（秒） | 擷取嘗試之間由陷阱觸發的最短時間。預設值為 10 秒。 
-
-
-| 效能意見調查時間間隔（秒） | 效能輪詢之間的時間間隔。預設值為 300 秒。 
+| SNMP 密碼 | 交換器的 SMI-S 密碼（僅限 SNMP v3） 
 |===
 
 
-== 疑難排解
+== 進階配置
 
-有關此資料收集器的其他資訊，請link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]參閱頁面或。
+[cols="2*"]
+|===
+| 場地 | 描述 
+
+
+| 庫存輪詢間隔（分鐘） | 庫存調查之間的間隔。預設值為 15 分鐘。 
+
+
+| SNMP 認證協議 | SNMP 驗證協定（僅限 SNMP v3） 
+
+
+| SNMP 隱私密碼 | SNMP 隱私密碼（僅限 SNMP v3） 
+
+
+| SNMP 重試次數 | SNMP 重試次數 
+
+
+| 布料名稱 | 資料收集器要報告的織物名稱。留空則將結構名稱報告為 WWN。 
+
+
+| 啟用陷印 | 選擇在從裝置接收到 SNMP 陷阱時啟用擷取。如果選擇啟用捕獲，則也必須啟動 SNMP。 
+
+
+| 陷阱之間的最短時間（秒） | 陷阱觸發的獲取嘗試之間的最短時間。預設值為 10 秒。 
+
+
+| 效能輪詢間隔（秒） | 效能輪詢之間的間隔。預設值為 300 秒。 
+|===
+
+
+== 故障排除
+
+關於此數據收集器的更多信息，請參閱link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。

@@ -2,139 +2,139 @@
 sidebar: sidebar 
 permalink: task_dc_brocade_rest.html 
 keywords: data collector, Brocade, FC switch, FOS, Rest 
-summary: 設定 Brocade FOS REST 資料收集器。 
+summary: 配置Brocade FOS REST 資料收集器。 
 ---
-= Brocade FOS REST Data Collector
+= Brocade FOS REST 資料收集器
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-Data Infrastructure Insights 使用 Brocade FOS REST 收集器來探索執行 FabricOS （ FOS ）韌體 8.2 及更新版本之 Brocade 交換器裝置的庫存與效能。請注意，早期的 8.2 FOS 版本可能存在 REST API 錯誤；強烈建議運行您的平台支援的最新 FOS 版本。
+Data Infrastructure Insights使用Brocade FOS REST 收集器來發現執行 FabricOS (FOS) 韌體 8.2 及更高版本的Brocade交換器設備的庫存和效能。請注意，早期的 8.2 FOS 版本可能存在 REST API 錯誤；強烈建議運行您的平台支援的最新 FOS 版本。
 
-請注意： FOS 的預設「使用者」層級對於 Data Infrastructure Insights 來說功能不夠強大、無法檢視裝置的所有邏輯層面、我們需要啟用「機箱角色」的使用者帳戶、以及在交換器上設定的所有虛擬架構上的權限。
+請注意：FOS 的預設「使用者」等級不足以讓Data Infrastructure Insights查看設備的所有邏輯方面 - 我們需要一個啟用了「機箱角色」的使用者帳戶，以及交換器上配置的所有虛擬結構的權限。
 
-以下是一個範例、說明如何在 SSH 工作階段中建立「最低權限」使用者帳戶、以利資料基礎架構 Insights 使用 FOS 裝置：
+以下是如何在與 FOS 設備的 SSH 會話中為Data Infrastructure Insights使用建立「最小權限」使用者帳戶的範例：
 
-userconfig --add NetAppCIUser -r user -l 1-128 -c user -p qwide!
+userConfig --add NetAppCIUser -r 使用者 -l 1-128 -c 使用者 -p Qwerty！
 
-這會建立使用者「 NetAppCIUser 」、密碼為「 Qwerty ！」。此使用者在所有 128 個可能的虛擬架構（ -l ）中都有「使用者」角色（ -r ）。此使用者還具有必要的「機箱」角色（ -c ）、並指派使用者層級存取權。
+這將創建一個用戶“NetAppCIUser”，密碼為“Qwerty！”。該使用者在所有 128 個可能的虛擬結構 ( -l ) 中具有「使用者」角色 ( -r )。該使用者還具有所需的“Chassis”角色（-c），並分配了使用者等級存取權限。
 
-根據預設、此收集器會嘗試探索屬於交換器所屬所有架構一部分的所有 FOS 裝置。
+預設情況下，此收集器將嘗試發現交換器所屬的所有結構中的所有 FOS 裝置。
 
-請注意： FOS 的預設唯讀使用者「使用者」對所有虛擬架構都沒有檢視權限，也沒有「機箱角色」權限。這表示您使用「使用者」搭配 Data Infrastructure Insights 的成功機率很低，這需要瞭解 FOS 裝置的實體和邏輯組態。
+請注意：FOS 的預設只讀使用者「使用者」對所有虛擬結構都沒有查看權限，也沒有「機箱角色」權限。這意味著使用具有Data Infrastructure Insights的「用戶」成功的可能性很低，因為它需要了解 FOS 設備的實體和邏輯配置。
 
 
 
 == 術語
 
-Data Infrastructure Insights 會從 Brocade FOS REST 資料收集器取得下列庫存資訊。對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights從Brocade FOS REST 資料收集器取得以下庫存資訊。對於Data Infrastructure Insights取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | Data Infrastructure Insights 術語 
+| 供應商/型號術語 | Data Infrastructure Insights術語 
 
 
-| 交換器 | 交換器 
+| 轉變 | 轉變 
 
 
-| 連接埠 | 連接埠 
+| 港口 | 港口 
 
 
-| 虛擬架構、實體架構 | 網路 
+| 虛擬結構、實體結構 | 織物 
 
 
-| 區域 | 區域 
+| 區 | 區 
 
 
-| 邏輯交換器 | 邏輯交換器 
+| 邏輯交換機 | 邏輯交換機 
 
 
-| LSAN區域 | IVR區域 
+| LSAN 區域 | IVR區域 
 |===
-附註：這些只是通用的術語對應、可能不代表此資料收集器的每個案例。
+注意：這些只是常見的術語映射，可能並不代表此資料收集器的所有情況。
 
 
 
-== 需求
+== 要求
 
-* 網路中的所有交換器都必須有 TCP 連線。這種資料收集器類型將無縫試用光纖網路中每個裝置的 HTTP 和 HTTPS 。如果您選取 _ 探索 Fabric 中的所有交換器 _ 核取方塊、 Data Infrastructure Insights 會識別 Fabric 中的所有交換器；不過、它需要 TCP 連線才能連線到這些額外的交換器來探索它們。
-* 網路中的所有交換器都需要相同的帳戶。您可以使用裝置的 Web 介面來確認存取。
-
-
+* 結構中的所有交換器都必須具有 TCP 連線。此資料收集器類型將為結構中的每個裝置無縫嘗試 HTTP 和 HTTPS。如果選取「發現結構中的所有交換器」複選框，Data Infrastructure Insights將識別結構中的所有交換器；但是，它需要與這些額外的交換器建立 TCP 連線才能發現它們。
+* 結構中的所有交換器都需要全域使用相同的帳戶。您可以使用裝置的 Web 介面來確認存取。
 
 
-== 組態
+
+
+== 配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| 交換器IP | FOS 交換器的 IP 位址或完整網域名稱 
+| 切換 IP | FOS 交換器的 IP 位址或完全限定域名 
 
 
-| 使用者名稱 | 交換器的使用者名稱 
+| 使用者名稱 | 交換器的用戶名 
 
 
-| 密碼 | 交換器的密碼 
+| 密碼 | 交換器密碼 
 |===
 
 
-== 進階組態
+== 進階配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| 排除的裝置 | 要從輪詢中排除的裝置 IPv4 位址清單、以逗號分隔。 
+| 排除的設備 | 若要從輪詢中排除的裝置 IPv4 位址的逗號分隔清單。 
 
 
-| 庫存輪詢時間間隔（分鐘） | 庫存輪詢之間的時間間隔。預設值為 60 。 
+| 庫存輪詢間隔（分鐘） | 庫存調查之間的間隔。預設值為 60。 
 
 
-| 探索網路中的所有交換器 | 選取以探索 Fabric 中的所有交換器。 
+| 發現結構中的所有交換機 | 選擇發現結構中的所有交換器。 
 
 
-| 選擇偏好 HBA 與區域別名 | 選擇是否偏好 HBA 或區域別名。 
+| 選擇支援 HBA 還是區域別名 | 選擇是否支援 HBA 或區域別名。 
 
 
-| 連線類型 | HTTP 或 HTTPS 。 
+| 連接類型 | HTTP 或 HTTPS。 
 
 
-| 請注意、此設定僅會變更 CI 首先嘗試使用每個裝置的傳輸協定、如果預設失敗、 CI 會自動嘗試使用相反的傳輸協定 | 置換TCP連接埠 
+| 請注意，此設定僅更改 CI 首先嘗試為每個設備使用的協議 - 如果預設協議失敗，CI 將自動嘗試相反的協議 | 覆蓋 TCP 連接埠 
 
 
-| 如果未使用預設值、請指定連接埠。 | 效能意見調查時間間隔（秒） 
+| 如果不使用預設端口，請指定一個端口。 | 效能輪詢間隔（秒） 
 |===
 
 
-== 疑難排解
+== 故障排除
 
-如果您在使用此資料收集器時遇到問題、請嘗試下列事項：
+如果您在使用此資料收集器時遇到問題，請嘗試以下操作：
 
 
 
-=== 庫存
+=== 存貨
 
 [cols="2*"]
 |===
-| 問題： | 試用： 
+| 問題： | 試試一下： 
 
 
-| 測試功能會警告我無法存取通訊協定 | 指定的 Brocade FOS 8.2+ 裝置只想在 HTTP 或 HTTPS 上說話 - 如果交換器已安裝數位憑證、當交換器嘗試與未加密的 HTTP 與 HTTPS 進行通訊時、交換器就會拋出 HTTP 錯誤。測試功能會嘗試與 HTTP 和 HTTPS 進行通訊 - 如果測試告訴您某個傳輸協定通過、您可以安全地儲存收集器、而不必擔心另一個傳輸協定失敗 - 收集器會在收集期間嘗試這兩個傳輸協定、而且只有在兩者都無法運作時才會失敗。 
+| 測試功能警告我協議無法訪問 | 給定的Brocade FOS 8.2+ 設備將僅希望透過 HTTP 或 HTTPS 進行通訊 - 如果交換器安裝了數位證書，則當嘗試使用未加密的 HTTP 而不是 HTTPS 與其通訊時，交換器將拋出 HTTP 錯誤。測試功能嘗試使用 HTTP 和 HTTPS 進行通訊 - 如果測試告訴您一個協定通過，您可以安全地保存收集器而不必擔心另一個協定不成功 - 收集器將在收集期間嘗試兩種協議，並且只有當兩者都不起作用時才會失敗。 
 
 
-| 錯誤：庫存失敗，出現 401 未授權...無效會話金鑰... | 這是 8.2 FOS 早期版本（例如 8.2.1c）中存在的一個明顯 bug，這些版本無法正確支援 HTTP 基本驗證。請升級到 8.2 或 9.* 版本。 
+| 錯誤：庫存失敗，出現 401 未授權...無效會話金鑰... | 這是一些非常早期的 8.2 FOS 版本（例如 8.2.1c）中的明顯錯誤，這些版本不能正確支援 HTTP 基本驗證。升級到更高版本 8.2 或 9.* 
 
 
-| 錯誤：「 Data Infrastructure Insights Received Invalid Chassis Role 」 | 檢查在此資料來源中設定的使用者是否已獲得機箱角色權限。 
+| 錯誤：“Data Infrastructure Insights收到無效的機箱角色” | 檢查該資料來源中已配置的使用者是否已被授予chassis角色權限。 
 
 
-| 錯誤：「不相符的機箱IP位址」 | 變更資料來源組態以使用機箱IP位址。 
+| 錯誤：“機箱 IP 位址不符” | 變更資料來源配置以使用機箱 IP 位址。 
 
 
-| 庫存失敗、並禁用 403 | 這可能只是不良認證、或是表示您嘗試使用功能不夠強大的角色、請記住、「使用者」層級的使用者沒有必要的「機箱角色」權限、或是無法檢視非預設虛擬架構的存取權限。 
+| 庫存失敗，出現 403 Forbidden | 這可能只是憑證錯誤，或者可能表明您嘗試使用權限不夠強的角色 - 請記住“用戶”級別的用戶沒有所需的“機箱角色”權限，或者沒有查看非默認虛擬結構的權限。 
 |===
-您可以在頁面或中找到其他link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]資訊。
+更多資訊可從link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。

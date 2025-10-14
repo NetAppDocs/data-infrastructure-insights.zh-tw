@@ -2,79 +2,79 @@
 sidebar: sidebar 
 permalink: task_dc_brocade_efcm.html 
 keywords: data collector, Brocade, EFCM, 
-summary: 設定Brocade資料收集器。 
+summary: 配置Brocade數據收集器。 
 ---
-= 設定Brocade Enterprise Fabric Connectivity Manager資料收集器
+= 設定Brocade Enterprise Fabric Connectivity Manager 資料收集器
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-Data Infrastructure Insights 使用 Brocade 企業光纖連線管理員（ EFCM ）資料收集器來探索 Brocade EFCM 交換器的庫存。Data Infrastructure Insights 支援 EFCM 9.5 、 9.6 和 9.7 版。
+Data Infrastructure Insights使用Brocade Enterprise Fabric Connectivity Manager (EFCM) 資料收集器來發現Brocade EFCM 交換器的庫存。Data Infrastructure Insights支援 EFCM 版本 9.5、9.6 和 9.7。
 
 
 
-== 需求
+== 要求
 
-* EFCM伺服器的網路位址或完整網域名稱
-* EFCM版本必須為9.5、9.6或9.7
-* EFCM 伺服器的 IP 位址
-* EFCM伺服器的唯讀使用者名稱和密碼
-* 透過資料基礎架構 Insights 伺服器的 Telnet 驗證連線器的存取、使用連接埠 51512 上的唯讀使用者名稱和密碼
-
-
+* EFCM 伺服器的網路位址或完全限定域名
+* EFCM 版本必須為 9.5、9.6 或 9.7
+* EFCM伺服器的IP位址
+* EFCM 伺服器的唯讀使用者名稱和密碼
+* 驗證了透過 Telnet 從Data Infrastructure Insights伺服器存取 Connectrix 交換器的權限，使用唯讀使用者名稱和密碼透過連接埠 51512
 
 
-== 組態
-
-[cols="2*"]
-|===
-| 欄位 | 說明 
 
 
-| EFC伺服器 | EFC伺服器的IP位址或完整網域名稱 
-
-
-| 使用者名稱 | 交換器的使用者名稱 
-
-
-| 密碼 | 交換器的密碼 
-|===
-
-
-== 進階組態
+== 配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| 庫存輪詢時間間隔（分鐘） | 庫存輪詢之間的時間間隔。預設值為 15 分鐘。 
+| EFC 伺服器 | EFC 伺服器的 IP 位址或完全限定域名 
 
 
-| 網路名稱 | 要由EFCM資料收集器回報的網路名稱。保留空白以將網路名稱報告為WWN。 
+| 使用者名稱 | 交換器的用戶名 
 
 
-| 通訊連接埠 | 用於與交換器通訊的連接埠 
+| 密碼 | 交換器密碼 
+|===
 
 
-| 啟用資料綁定 | 選取以在從裝置接收SNMP設陷時啟用擷取。如果您選取「啟用補漏白」、也必須啟動SNMP。 
+== 進階配置
+
+[cols="2*"]
+|===
+| 場地 | 描述 
 
 
-| 設陷之間的最短時間（秒） | 擷取嘗試之間由陷阱觸發的最短時間。預設值為 15 秒。 
+| 庫存輪詢間隔（分鐘） | 庫存調查之間的間隔。預設值為 15 分鐘。 
 
 
-| 非作用中的區域集 | 除了在作用中分區集上執行擷取之外、還要在其上執行擷取的非作用中分區清單 
+| 布料名稱 | EFCM 資料收集器要報告的織物名稱。留空則將結構名稱報告為 WWN。 
 
 
-| 要使用的NIC | 指定在SAN裝置上報告時、應在Rau上使用哪個網路介面 
+| 通訊埠 | 用於與交換器通訊的端口 
 
 
-| 排除裝置 | 要在輪詢中包含或排除的單位名稱以逗號分隔的清單 
+| 啟用陷印 | 選擇在從裝置接收到 SNMP 陷阱時啟用擷取。如果選擇啟用捕獲，則也必須啟動 SNMP。 
 
 
-| 使用EFCM交換器暱稱做為交換器名稱 | 選取以使用 EFCM 交換器暱稱做為 Data Infrastructure Insights 交換器名稱。 
+| 陷阱之間的最短時間（秒） | 陷阱觸發的獲取嘗試之間的最短時間。預設值為 15 秒。 
 
 
-| 效能意見調查時間間隔（秒） | 效能輪詢之間的時間間隔。預設值為 300 秒。 
+| 非活動區域集 | 以逗號分隔的非活動區域集列表，除了對活動區域集執行採集外，還要對這些非活動區域集執行採集 
+
+
+| 要使用的 NIC | 指定在 SAN 設備上報告時應在 RAU 上使用哪個網路接口 
+
+
+| 排除設備 | 以逗號分隔的要包含或排除在輪詢之外的單位名稱列表 
+
+
+| 使用 EFCM 交換器暱稱作為交換器名稱 | 選擇使用 EFCM 交換器暱稱作為Data Infrastructure Insights交換器名稱。 
+
+
+| 效能輪詢間隔（秒） | 效能輪詢之間的間隔。預設值為 300 秒。 
 |===

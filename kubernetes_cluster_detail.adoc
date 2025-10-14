@@ -2,78 +2,78 @@
 sidebar: sidebar 
 permalink: kubernetes_cluster_detail.html 
 keywords: kubernetes, pods, clusters, nodes. troubleshooting, planning 
-summary: Kubernetes詳細資料頁面提供相關資訊和詳細資料、可協助您進行疑難排解和規劃。 
+summary: Kubernetes 詳細資訊頁面提供資訊和詳細資訊以協助故障排除和規劃。 
 ---
-= Kubernetes叢集詳細資料頁面
+= Kubernetes 叢集詳細資訊頁面
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-Kubernetes叢集詳細資料頁面會顯示Kubernetes叢集的詳細總覽。
+Kubernetes 叢集詳細資訊頁面顯示 Kubernetes 叢集的詳細概述。
 
-image:Kubernetes_Detail_Page_new.png["叢集詳細資料頁面"]
-
-
-
-== 命名空間、節點和Pod數
-
-頁面頂端的計數會顯示叢集中的命名空間、節點和Pod總數、以及目前警示和擱置中的快顯數目。
+image:Kubernetes_Detail_Page_new.png["集群詳細資訊頁面"]
 
 
 
-== 共享資源與配置
+== 命名空間、節點和 Pod 數量
 
-在詳細資料頁面右上角、您的叢集飽和程度為目前百分比、以及顯示一段時間內最近趨勢的圖表。叢集飽和是指每個時間點的CPU、記憶體或儲存設備飽和程度最高。
+頁面頂部的計數顯示叢集中命名空間、節點和 pod 的總數，以及目前處於警報和待處理的 popd 數量。
 
-下方的頁面預設會顯示*共享資源*使用量、其中有CPU、記憶體和儲存設備的索引標籤。每個索引標籤都會顯示一段時間內的飽和百分比和趨勢、以及其他使用詳細資料。對於儲存設備而言、所顯示的值是後端和檔案系統飽和程度的較高值、而這是獨立計算出來的值。
 
-使用率最高的裝置會顯示在底部的表格中。按一下任一連結即可瀏覽這些裝置。
+
+== 共享資源和飽和度
+
+詳細資訊頁面的右上角是您的叢集飽和度（目前百分比）以及顯示近期趨勢隨時間變化的圖表。叢集飽和度是每個時間點 CPU、記憶體或儲存飽和度的最高值。
+
+在其下方，頁面預設顯示*共享資源*使用情況，其中包含 CPU、記憶體和儲存標籤。每個標籤顯示飽和度百分比和隨時間變化的趨勢，以及額外的使用詳情。對於存儲，顯示的值是後端和檔案系統飽和度中較大的一個，它們是獨立計算的。
+
+使用率最高的設備顯示在底部的表格中。點擊任意連結即可探索這些設備。
 
 
 
 == 命名空間
 
-「命名空間」索引標籤會顯示Kubernetes環境中所有命名空間的清單、顯示CPU和記憶體使用量、以及每個命名空間中的工作負載計數。按一下「Name（名稱）」連結以瀏覽每個命名空間。
+命名空間標籤顯示 Kubernetes 環境中所有命名空間的列表，顯示 CPU 和記憶體使用情況以及每個命名空間中的工作負載數量。點擊名稱連結來探索每個命名空間。
 
-image:Kubernetes_Namespace_tab_new.png["K8s環境中目前命名空間的清單"]
+image:Kubernetes_Namespace_tab_new.png["您的 K8s 環境中的目前命名空間列表"]
 
 
 
 == 工作負載
 
-同樣地、「工作負載」索引標籤會顯示每個命名空間中的工作負載清單、再次顯示CPU和記憶體使用量。按一下「命名空間」連結、即可深入瞭解每個項目。
+類似地，「工作負載」標籤顯示每個命名空間中的工作負載列表，再次顯示 CPU 和記憶體使用量。點擊命名空間連結即可深入到每個連結。
 
-image:Kubernetes_Workloads_tab_new.png["K8s環境中目前命名空間的清單"]
+image:Kubernetes_Workloads_tab_new.png["您的 K8s 環境中的目前命名空間列表"]
 
 
 
-== 叢集「輪式」
+== 集群“輪子”
 
-image:Kubernetes_Wheel_Section.png["叢集輪"]
+image:Kubernetes_Wheel_Section.png["集群輪"]
 
-叢集「輪式」區段提供節點和pod健全狀況一覽、您可以深入瞭解更多資訊。如果叢集包含的節點數量超過頁面此區域所能顯示的數量、您就能使用可用的按鈕來轉動定位輪。
+叢集「Wheel」部分一目了然地提供節點和 pod 的健康狀況，您可以深入了解更多資訊。如果您的叢集包含的節點數多於頁面此區域可以顯示的數量，您將能夠使用可用的按鈕來轉動輪子。
 
-警示Pod或節點會以紅色顯示。「警告」區域會以橘色顯示。非排程的Pod（即未附加的）會顯示在叢集「輪式」的下角。
+警報 pod 或節點顯示為紅色。 “警告”區域顯示為橘色。未調度（即未連接）的 Pod 將顯示在叢集「輪子」的下角。
 
-將游標移到Pod（圓圈）或節點（長條）上、將會延伸節點的檢視範圍。
+將滑鼠停留在 pod（圓圈）或 Node（條）上將擴展節點的視圖。
 
 image:Kubernetes_Node_Expand.png["擴充節點"]
 
-按一下該檢視中的Pod或節點、即可放大展開的節點檢視。
+點擊該視圖中的 pod 或節點將放大到擴展的節點視圖。
 
-image:Kubernetes_Critical_Pod_Zoom.png["擴充節點檢視"]
+image:Kubernetes_Critical_Pod_Zoom.png["擴展節點視圖"]
 
-您可在此處將游標暫留在某個元素上、以顯示該元素的詳細資料。例如、將游標移到關鍵Pod上、就會顯示該Pod的詳細資料。
+從這裡，您可以將滑鼠懸停在某個元素上以顯示有關該元素的詳細資訊。例如，在此範例中，將滑鼠懸停在關鍵 pod 上會顯示有關該 pod 的詳細資訊。
 
-image:Kubernetes_Pod_Red.png["重要Pod資訊"]
+image:Kubernetes_Pod_Red.png["關鍵 Pod 訊息"]
 
-您可以將游標移到Node元素上、以檢視Filesystem、Memory和CPU資訊。
+您可以將滑鼠懸停在節點元素上來查看檔案系統、記憶體和 CPU 資訊。
 
-image:Kubernetes_Capacity_Info.png["節點容量與配置"]
+image:Kubernetes_Capacity_Info.png["節點容量和分配"]
 
 
 
-== 量表注意事項
+== 關於儀表的說明
 
-記憶體和CPU量測計顯示三種顏色、因為它們顯示的是與_allocatable capportity_和_total capity_相關的_二 者。
+記憶體和 CPU 儀表顯示三種顏色，因為它們顯示與_可分配容量_和_總容量_相關的_已使用_。

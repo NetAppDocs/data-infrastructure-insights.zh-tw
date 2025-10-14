@@ -2,181 +2,181 @@
 sidebar: sidebar 
 permalink: task_dc_cisco_fc_switch.html 
 keywords: data collector, cisco, FC, cisco FC 
-summary: 設定Cisco MDS Fablic交換器資料收集器。 
+summary: 設定Cisco MDS Fablic Switch 資料收集器。 
 ---
-= Cisco MDS Fabric交換器資料收集器
+= Cisco MDS Fabric 交換器資料收集器
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-Data Infrastructure Insights 使用 Cisco MDS Fabric 交換器資料收集器來探索 Cisco MDS Fabric 交換器的庫存、以及各種啟用 FC 服務的 Cisco Nexus FCoE 交換器。
+Data Infrastructure Insights使用Cisco MDS Fabric 交換器資料收集器來發現Cisco MDS Fabric 交換器的庫存以及啟用了 FC 服務的各種Cisco Nexus FCoE 交換器。
 
-此外、您也可以使用此資料收集器、探索以NPV模式執行的許多Cisco裝置機型。
+此外，您可以使用此資料收集器發現許多以 NPV 模式運作的Cisco設備型號。
 
 
 
 == 術語
 
-Data Infrastructure Insights 會從 Cisco FC 交換器資料收集器取得下列庫存資訊。對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights從Cisco FC 交換器資料收集器取得以下庫存資訊。對於Data Infrastructure Insights取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | Data Infrastructure Insights 術語 
+| 供應商/型號術語 | Data Infrastructure Insights術語 
 
 
-| 交換器 | 交換器 
+| 轉變 | 轉變 
 
 
-| 連接埠 | 連接埠 
+| 港口 | 港口 
 
 
-| vSAN | 網路 
+| VSAN | 織物 
 
 
-| 區域 | 區域 
+| 區 | 區 
 
 
-| 邏輯交換器 | 邏輯交換器 
+| 邏輯交換機 | 邏輯交換機 
 
 
-| 名稱伺服器項目 | 名稱伺服器項目 
+| 名稱伺服器條目 | 名稱伺服器條目 
 
 
-| VSAN間路由（IVR）區域 | IVR區域 
+| VSAN 間路由 (IVR) 區域 | IVR區域 
 |===
-附註：這些只是通用的術語對應、可能不代表此資料收集器的每個案例。
+注意：這些只是常見的術語映射，可能並不代表此資料收集器的所有情況。
 
 
 
-== 需求
+== 要求
 
-* 網路或個別交換器中的一個交換器IP位址
-* 機箱探索、以啟用網路探索
-* 如果使用SNMP V2、則為唯讀社群字串
-* 連接埠161用於存取裝置
-
-
+* 架構中一台交換器或單一交換器的 IP 位址
+* 機箱發現，用於實現結構發現
+* 如果使用 SNMP V2，則為唯讀社群字串
+* 連接埠 161 用於存取設備
 
 
-== 組態
+
+
+== 配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| Cisco交換器IP | 交換器的IP位址或完整網域名稱 
+| Cisco交換器 IP | 交換器的 IP 位址或完全限定域名 
 
 
-| SNMP 版本 | 選取V1、V2或V3。若要取得效能、必須使用v2或更新版本。 
+| SNMP版本 | 選擇 V1、V2 或 V3。性能採集需要 V2 或更高版本。 
 
 
-| SNMP社群字串 | 用於存取交換器的SNMP唯讀社群字串（不適用於SNMP v3） 
+| SNMP 社群字串 | 用於存取交換器的 SNMP 唯讀社群字串（不適用於 SNMP v3） 
 
 
-| 使用者名稱 | 交換器的使用者名稱（僅限SNMP v3） 
+| 使用者名稱 | 交換器的使用者名稱（僅限 SNMP v3） 
 
 
-| 密碼 | 用於交換器的密碼（僅限v3） 
+| 密碼 | 用於交換器的密碼（僅限 SNMPv3） 
 |===
 
 
-== 進階組態
+== 進階配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| 庫存輪詢時間間隔（分鐘） | 庫存輪詢之間的時間間隔（預設為40分鐘） 
+| 庫存輪詢間隔（分鐘） | 庫存輪詢間隔（預設 40 分鐘） 
 
 
-| SNMP驗證傳輸協定 | SNMP驗證傳輸協定（僅限v3） 
+| SNMP 認證協議 | SNMP 驗證協定（僅限 SNMPv3） 
 
 
-| SNMP隱私權傳輸協定 | SNMP隱私傳輸協定（僅限v3） 
+| SNMP隱私協議 | SNMP 隱私協定（僅限 SNMPv3） 
 
 
-| SNMP隱私密碼 | SNMP隱私密碼 
+| SNMP 隱私密碼 | SNMP 隱私密碼 
 
 
-| SNMP重試次數 | SNMP重試嘗試次數 
+| SNMP 重試 | SNMP 重試次數 
 
 
-| SNMP逾時（毫秒） | SNMP逾時（預設值5000毫秒） 
+| SNMP 逾時（毫秒） | SNMP 逾時（預設 5000 毫秒） 
 
 
-| 啟用資料綁定 | 選取以啟用補漏白。如果啟用補漏白、您也必須啟動SNMP通知。 
+| 啟用陷印 | 選擇以啟用陷印。如果啟用陷阱，則也必須啟動 SNMP 通知。 
 
 
-| 設陷之間的最短時間（秒） | 擷取嘗試之間由陷阱觸發的最短時間（預設為10秒） 
+| 陷阱之間的最短時間（秒） | 陷阱觸發的擷取嘗試之間的最短時間（預設 10 秒） 
 
 
-| 探索All Fabric交換器 | 選取以探索網路中的所有交換器 
+| 發現所有 Fabric 交換機 | 選擇發現結構中的所有交換機 
 
 
-| 排除的裝置 | 要從輪詢中排除的裝置IP清單、以逗號分隔 
+| 排除的設備 | 要從輪詢中排除的設備 IP 的逗號分隔列表 
 
 
-| 隨附的裝置 | 輪詢中要包含的裝置IP清單、以逗號分隔 
+| 包含的設備 | 包含在輪詢中的裝置 IP 的逗號分隔列表 
 
 
-| 檢查裝置類型 | 選取此選項、只接受明確宣稱自己為Cisco裝置的裝置 
+| 檢查設備類型 | 選擇僅接受那些明確宣稱自己是Cisco設備的設備 
 
 
-| 第一個別名類型 | 提供別名解析的第一個偏好設定。請從下列選項中進行選擇：*裝置Alais *這是連接埠WWN（pWWN）的使用者易記名稱、可視需要用於所有組態命令。Cisco MDS 9000系列中的所有交換器都支援分散式裝置別名服務（裝置別名）。*無*不報告任何別名。*連接埠說明*可協助識別連接埠清單中的連接埠。*區域別名（All）*使用者易記的連接埠名稱、僅可用於作用中組態。這是預設值。 
+| 第一個別名類型 | 提供別名解析的首選。從以下選項中選擇：*裝置 Alais* 這是連接埠 WWN（pWWN）的使用者友善名稱，可根據需要在所有設定指令中使用。  Cisco MDS 9000 系列中的所有交換器都支援分散式設備別名服務（設備別名）。  *無* 不報告任何別名。  *連接埠描述* 幫助在連接埠清單中識別連接埠的描述。 *區域別名（全部）* 連接埠的使用者友善名稱，僅可用於活動配置。這是預設值。 
 
 
-| 第二個別名類型 | 提供別名解析的第二個偏好設定 
+| 第二種別名類型 | 提供別名解析的第二個首選項 
 
 
-| 第三別名類型 | 提供別名解析的第三個偏好設定 
+| 第三別名類型 | 提供第三個用於解析別名的首選項 
 
 
-| 啟用SANTAP Proxy模式支援 | 如果您的Cisco交換器在Proxy模式下使用SANTAP、請選取此選項。如果您使用的是EMC RecoverPoint、則可能是使用SANTap。 
+| 啟用 SANTap 代理模式支持 | 如果您的Cisco交換器在代理模式下使用 SANTap，請選擇。如果您正在使用 EMC RecoverPoint，那麼您可能正在使用 SANTap。 
 
 
-| 效能意見調查時間間隔（秒） | 效能輪詢之間的時間間隔（預設為300秒） 
+| 效能輪詢間隔（秒） | 效能輪詢之間的間隔（預設 300 秒） 
 |===
 
 
-== 疑難排解
+== 故障排除
 
-如果您在使用此資料收集器時遇到問題、請嘗試下列事項：
+如果您在使用此資料收集器時遇到問題，請嘗試以下操作：
 
 
 
-=== 庫存
+=== 存貨
 
 [cols="2*"]
 |===
-| 問題： | 試用： 
+| 問題： | 試試一下： 
 
 
-| 錯誤：無法探索機箱-未發現任何交換器 | •使用已設定的IP Ping裝置•使用Cisco Device Manager GUI登入裝置•使用CLI登入裝置•嘗試執行SNMP步階 
+| 錯誤：無法發現機箱 - 未發現任何交換機 | • 使用設定的 IP 對設備執行 ping 操作 • 使用Cisco設備管理器 GUI 登入設備 • 使用 CLI 登入設備 • 嘗試執行 SNMP walk 
 
 
-| 錯誤：裝置不是Cisco MDS交換器 | •確定為裝置設定的資料來源IP正確•使用Cisco Device Manager GUI登入裝置•使用CLI登入裝置 
+| 錯誤：設備不是Cisco MDS 交換機 | • 確保為設備設定的資料來源 IP 正確 • 使用Cisco設備管理員 GUI 登入設備 • 使用 CLI 登入設備 
 
 
-| 錯誤： Data Infrastructure Insights 無法取得交換器的 WWN 。 | 這可能不是FC或FCoE交換器、因此可能不受支援。確定資料來源中設定的IP/FQDN確實是FC/FCoE交換器。 
+| 錯誤：Data Infrastructure Insights無法取得交換器的 WWN。 | 這可能不是 FC 或 FCoE 交換機，因此可能不受支援。確保資料來源中配置的 IP/FQDN 確實是 FC/FCoE 交換器。 
 
 
-| 錯誤：發現多個節點已登入NPV交換器連接埠 | 停用NPV交換器的直接擷取 
+| 錯誤：發現多個節點登入 NPV 交換器端口 | 停用直接取得 NPV 開關 
 
 
-| 錯誤：無法連線至交換器 | •確定裝置已啟動•檢查IP位址和接聽連接埠•Ping裝置•使用Cisco Device Manager GUI登入裝置•使用CLI登入裝置•執行SNMP步階 
+| 錯誤：無法連接到交換機 | • 確保裝置已啟動 • 檢查 IP 位址和偵聽連接埠 • 對裝置執行 ping 操作 • 使用Cisco裝置管理員 GUI 登入裝置 • 使用 CLI 登入裝置 • 執行 SNMP walk 
 |===
 
 
-=== 效能
+=== 表現
 
 [cols="2*"]
 |===
-| 問題： | 試用： 
+| 問題： | 試試一下： 
 
 
-| 錯誤：SNMP v1不支援效能擷取 | •編輯資料來源並停用交換器效能•修改資料來源和交換器組態以使用SNMP v2或更新版本 
+| 錯誤：SNMP v1 不支援效能擷取 | • 編輯資料來源並停用交換器效能 • 修改資料來源和交換器設定以使用 SNMP v2 或更高版本 
 |===
-您可以在頁面或中找到其他link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]資訊。
+更多資訊可從link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。

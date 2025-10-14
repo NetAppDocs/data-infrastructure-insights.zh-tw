@@ -2,95 +2,95 @@
 sidebar: sidebar 
 permalink: task_webhook_example_pagerduty.html 
 keywords: webhook, notification, PagerDuty, integration 
-summary: 建立Webhook、針對PagerDuty的效能或庫存臨界值發出警示 
+summary: 建立 Webhook 來針對 Pagerduty 的效能或庫存閾值發出警報 
 ---
-= PagerDuty的Webhook範例
+= PagerDuty 的 Webhook 範例
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-Webhooks可讓使用者使用自訂的Webhooks通道、將警示通知傳送至各種應用程式。本頁提供設定PagerDuty Webhooks的範例。
+Webhook 允許使用者使用自訂的 webhook 通道向各種應用程式發送警報通知。本頁面提供了為 PagerDuty 設定 webhook 的範例。
 
 
-NOTE: 本頁是指可能會變更的第三方指示。如需最新資訊，請參閱link:https://support.pagerduty.com/docs/services-and-integrations["PagerDuty文件"]。
+NOTE: 本頁引用第三方說明，可能會有所變更。請參閱link:https://support.pagerduty.com/docs/services-and-integrations["PagerDuty 文檔"]以獲取最新資訊。
 
 
 
-== PagerDuty設定：
+== PagerDuty 設定：
 
-. 在PagerDuty中、瀏覽至*服務>服務目錄*、然後按一下「*新服務*」按鈕
-. 輸入_Name_、然後選取_直接使用我們的API _。按一下「新增服務」。
+. 在 PagerDuty 中，導覽至 *服務 > 服務目錄*，然後按一下 *+新服務* 按鈕
+. 輸入_名稱_並選擇_直接使用我們的 API_。點選_新增服務_。
 +
-image:Webhooks_PagerDutyScreen1.png["PagerDuty畫面"]
+image:Webhooks_PagerDutyScreen1.png["Pagerduty 螢幕"]
 
-. 按一下「整合」索引標籤以查看*整合金鑰*。當您建立下方的 Data Infrastructure Insights 網路連結時、您將需要這個關鍵。
+. 點選“Integrations”標籤即可查看“Integration Key”。當您建立下面的Data Infrastructure Insightswebhook 時，您將需要此金鑰。
 
 
-. 請前往*「事件」*或*「服務」*檢視「警示」。
+. 前往*事件*或*服務*查看警報。
 +
-image:Webhooks_PagerDutyScreen2.png["PagerDuty畫面"]
+image:Webhooks_PagerDutyScreen2.png["Pagerduty 螢幕"]
 
 
 
 
 
-== Create Data Infrastructure Insights Webhook ：
+== 創建Data Infrastructure InsightsWebhook：
 
-. 在 Data Infrastructure Insights 中、瀏覽至 * 管理 > 通知 * 、然後選取 * Webhooks* 標籤。按一下「*+ Webhing*」建立新的網路連結。
-. 為網路勾提供有意義的名稱、例如「PagerDuty Trigger」。您將使用此Webhook進行重大和警告層級的事件。
-. 在_範本類型_下拉式清單中、選取* PagerDut*。
+. 在Data Infrastructure Insights中，導覽至 *管理 > 通知* 並選擇 *Webhooks* 標籤。點選 *+Webhook* 建立一個新 webhook。
+. 為 webhook 賦予一個有意義的名稱，例如「PagerDuty Trigger」。您將使用此 webhook 來處理嚴重和警告等級的事件。
+. 在「範本類型」下拉式功能表中，選擇「PagerDuty」。
 
 
-. 建立名為_routingKey_的自訂參數密碼、並從上方設定PagerDuty _Integration Key_值。
+. 建立一個名為 _routingKey_ 的自訂參數機密，並將其值設為上面的 PagerDuty _Integration Key_ 值。
 +
-image:Webhooks_Custom_Secret_Routing_Key.png["設定路由金鑰"]
+image:Webhooks_Custom_Secret_Routing_Key.png["設定路由鍵"]
 
 
 
-重複這些步驟、為已解決的事件建立「PagerDuty Resolve」網路連結。
+重複這些步驟，為已解決的事件建立「PagerDuty Resolve」webhook。
 
 
 
-== PagerDuty to Data Infrastructure Insights Field Mapping
+== PagerDutyData Infrastructure Insights欄位映射
 
-下表和影像顯示 PagerDuty 和 Data Infrastructure Insights 之間的欄位對應：
+下表和圖片顯示了 PagerDuty 和Data Infrastructure Insights之間的欄位對應：
 
 [cols="<,<"]
 |===
-| PagerDuty | 資料基礎架構洞見 
+| PagerDuty | Data Infrastructure Insights 
 
 
-| 警示金鑰 | 警示ID 
+| 警報鍵 | 警報 ID 
 
 
-| 來源 | 觸發時間 
+| 來源 | 觸發於 
 
 
-| 元件 | 度量名稱 
+| 成分 | 指標名稱 
 
 
-| 群組 | 物件類型 
+| 團體 | 物件類型 
 
 
-| 類別 | 監控名稱 
+| 班級 | 監視器名稱 
 |===
-image:Webhooks-PagerDuty_Fields.png["CI中的PagerDuty欄位"]
+image:Webhooks-PagerDuty_Fields.png["CI 中的 PagerDuty 字段"]
 
 
 
-== 透過Webhook通知
+== 透過 Webhook 發送通知
 
-要通過 Webhook 通知事件，請在 Data Infrastructure Insights 中導航至 *Alerts > Monitors* ，然後單擊 *+Monitor* 以創建新的link:task_create_monitor.html["監控"]。
+若要透過 webhook 通知事件，請在Data Infrastructure Insights中導覽至 *Alerts > Monitors*，然後按一下 *+Monitor* 以建立新的link:task_create_monitor.html["監視器"]。
 
-* 選取度量並定義監視器的條件。
-* 在「設定團隊通知」下、選擇* Webhook *交付方法。
-* 選擇「PagerDuty Trigger」Webhook以進行重大和警告層級的事件。
-* 選擇「PagerDuty Resolve」以解決已解決的事件。
+* 選擇一個指標並定義監視器的條件。
+* 在「設定團隊通知」下，選擇「Webhook」傳送方式。
+* 為嚴重和警告等級事件選擇“PagerDuty Trigger”webhook。
+* 為已解決的事件選擇“PagerDuty Resolve”。
 +
-image:Webhooks_Notifications.png["Webhook通知"]
+image:Webhooks_Notifications.png["Webhook 通知"]
 
 
 
 
-NOTE: 最佳做法是針對觸發事件與已解決事件分別設定通知、因為PagerDuty處理觸發事件的方式與已解決事件的方式不同。
+NOTE: 為觸發事件和已解決事件設定單獨的通知是最佳做法，因為 PagerDuty 處理觸發事件的方式與處理已解決事件的方式不同。

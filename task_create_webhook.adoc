@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task_create_webhook.html 
 keywords: webhook, notification, slack, integration 
-summary: 建立監控器以警示效能或庫存臨界值 
+summary: 建立監視器以對效能或庫存閾值發出警報 
 ---
-= 使用Webhooks通知
+= 使用 Webhook 進行通知
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,87 +14,87 @@ summary: 建立監控器以警示效能或庫存臨界值
 
 
 [role="lead"]
-Webhooks可讓使用者使用自訂的Webhooks通道、將警示通知傳送至各種應用程式。
+Webhook 允許使用者使用自訂的 webhook 通道向各種應用程式發送警報通知。
 
-許多商業應用程式都支援Webhooks做為標準輸入介面、例如：可寬延、PagerDuty、Team、和和等都支援Webhooks。Data Infrastructure Insights 支援一般的客製化網路攔截管道、可支援許多這些交付管道。您可以在這些應用程式網站上找到Webhooks上的資訊。例如， Slack 提供link:https://api.slack.com/messaging/webhooks["這份實用指南"]。
+許多商業應用都支援webhooks作為標準輸入接口，例如：Slack、PagerDuty、Teams、Discord都支援webhooks。透過支援通用、可自訂的 webhook 通道， Data Infrastructure Insights可以支援許多此類交付通道。可以在這些應用程式網站上找到有關 webhook 的資訊。例如，Slack 提供link:https://api.slack.com/messaging/webhooks["這個有用的指南"]。
 
-您可以建立多個Webhook通道、每個通道的目標是不同的用途、獨立的應用程式、不同的收件者等
+您可以建立多個 webhook 通道，每個通道針對不同的目的；單獨的應用程式、不同的收件者等。
 
-Webhook通路執行個體由下列元素組成：
+Webhook 通道實例由下列元素組成：
 
 |===
 
 
-| 名稱 | 唯一名稱 
+| Name | 唯一名稱 
 
 
-| URL | Webhook 目標 URL ，包括 http://_ 或 https://_ 前置詞以及 URL 參數 
+| 網址 | Webhook 目標 URL，包括 _http://_ 或 _https://_ 前綴以及 URL 參數 
 
 
-| 方法 | Get、POST -預設為POST 
+| 方法 | GET、POST - 預設為 POST 
 
 
-| 自訂標頭 | 在此處指定任何自訂標頭行 
+| 自訂標題 | 在此指定任何自訂標題行 
 
 
-| 訊息本文 | 請將您的訊息內容放在這裡 
+| 訊息正文 | 在此處填寫您的郵件正文 
 
 
-| 預設警示參數 | 列出Webhook的預設參數 
+| 預設警報參數 | 列出 webhook 的預設參數 
 
 
-| 自訂參數與機密 | 自訂參數和機密可讓您新增獨特參數和安全元素、例如密碼 
+| 自訂參數和機密 | 自訂參數和秘密可讓您新​​增唯一參數和安全元素，例如密碼 
 |===
 
 
-== 建立Webhook
+== 建立 Webhook
 
-若要建立 Data Infrastructure Insights Webhook 、請前往 * 管理 > 通知 * 、然後選取 * Webhooks* 標籤。
+若要建立Data Infrastructure Insightswebhook，請前往 *管理 > 通知* 並選擇 *Webhooks* 標籤。
 
-下圖顯示為Slack設定的Webhook範例：
+下圖顯示了為 Slack 配置的範例 webhook：
 
-image:Webhook_Example_Slack.png["Webhook範例"]
+image:Webhook_Example_Slack.png["Webhook 範例"]
 
-為每個欄位輸入適當的資訊、並在完成時按一下「Save（儲存）」。
+在每個欄位中輸入適當的信息，完成後按一下「儲存」。
 
-您也可以按一下「測試Webhook」按鈕來測試連線。請注意、這會根據所選的方法、將「Message Body（訊息本文）」（不含替代）傳送至定義的URL。
+您也可以點擊「測試 Webhook」按鈕來測試連線。請注意，這將根據所選方法將「訊息正文」（不含替換）傳送到定義的 URL。
 
-Data Infrastructure Insights Webhooks 包含許多預設參數。此外、您也可以建立自己的自訂參數或機密。
+Data Infrastructure Insightswebhook 包含許多預設參數。此外，您還可以建立自己的自訂參數或秘密。
 
-image:Webhook_Default_Parameters.png["Data Infrastructure Insights 預設 Webhook 參數"]
-
-
-
-=== 參數：這些參數是什麼？我該如何使用？
-
-警示參數是根據警示填入的動態值。例如、-%%TrigeredOn%_參數將被觸發警示的物件取代。
-
-您可以將任何物件屬性（例如儲存名稱）新增為 Webhook 的參數。例如，您可以在 Webhook 說明中設定 Volume 名稱和儲存名稱的參數，例如：「 Volume 高延遲： _%relatedObject.volume.name%%_ ， Storage ： _%%relatedObject.storage.name%%_" 。
-
-請注意、在本節中、按一下「Test Webhook」（測試Webhook）按鈕時、會執行「_not」（非）替換；此按鈕會傳送有效負載、顯示「%」替換、但不會以資料取代。
+image:Webhook_Default_Parameters.png["Data Infrastructure Insights預設 Webhook 參數"]
 
 
 
-=== 自訂參數與機密
+=== 參數：它們是什麼以及如何使用它們？
 
-在本節中、您可以新增任何您想要的自訂參數和/或機密。基於安全考量、如果只定義了秘密、Webhook建立者就能修改此Webhook通道。其他人則為唯讀。您可以將URL/標頭中的機密作為_%<secret名稱>%%__使用。
+警報參數是每個警報填充的動態值。例如，_%%TriggeredOn%%_ 參數將被替換為觸發警報的物件。
 
+您可以將任何物件屬性（例如，儲存名稱）作為參數新增至 webhook。例如，您可以在 webhook 描述中設定磁碟區名稱和儲存名稱的參數，例如：「磁碟區的高延遲：_%%relatedObject.volume.name%%_，儲存：_%%relatedObject.storage.name%%_」。
 
-
-=== Webhooks 清單頁面
-
-在 Webhooks 清單頁面上、顯示的是名稱、建立者、建立日期、狀態、安全、 和上次報告的欄位。
+請注意，在本節中，按一下「測試 Webhook」按鈕時不會執行替換；該按鈕發送顯示 _%%_ 替換的有效負載，但不會用資料取代它們。
 
 
 
-== 在監視器中選擇Webhook通知
+=== 自訂參數和機密
 
-若要在中選擇網路攔截通知link:task_create_monitor.html["監控"]，請前往 * 警示 > 管理監視器 * ，然後選取所需的監視器，或新增新的監視器。在「設定團隊通知」區段中、選擇「_Webhack__」作為交付方法。選取警示層級（嚴重、警告、已解決）、然後選擇所需的網路連結。
-
-image:Webhook_Monitor_Notify.png["Webhook監控通知"]
+在本節中，您可以新增任何您想要的自訂參數和/或秘密。出於安全原因，如果定義了機密，則只有 webhook 建立者可以修改此 webhook 通道。對其他人來說它是唯讀的。您可以在 URL/Headers 中使用秘密作為 _%%<secret_name>%%_。
 
 
 
-== Webhook範例：
+=== Webhook 列表頁面
 
-Webhooks link:task_webhook_example_slack.html["可寬延"] for Webhooks for link:task_webhook_example_pagerduty.html["PagerDuty"]Webhooks for Webhookslink:task_webhook_example_teams.html["團隊"]link:task_webhook_example_discord.html["不和"]
+Webhooks 清單頁面顯示名稱、建立者、建立日期、狀態、安全性和上次報告欄位。
+
+
+
+== 在監視器中選擇 Webhook 通知
+
+若要選擇 webhook 通知link:task_create_monitor.html["監視器"]，轉到*警報>管理監視器*並選擇所需的監視器，或新增新的監視器。在「設定團隊通知」部分，選擇「Webhook」作為傳送方式。選擇警報等級（嚴重、警告、已解決），然後選擇所需的 webhook。
+
+image:Webhook_Monitor_Notify.png["Webhook 監控通知"]
+
+
+
+== Webhook 範例：
+
+Webhook 適用於link:task_webhook_example_slack.html["鬆弛"]Webhook 適用於link:task_webhook_example_pagerduty.html["PagerDuty"]Webhook 適用於link:task_webhook_example_teams.html["團隊"]Webhook 適用於link:task_webhook_example_discord.html["不和諧"]

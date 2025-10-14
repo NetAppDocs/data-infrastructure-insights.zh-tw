@@ -2,63 +2,63 @@
 sidebar: sidebar 
 permalink: task_dc_lenovo.html 
 keywords: data collector,Lenovo, HX Series 
-summary: 設定Lenovo資料收集器： 
+summary: 配置聯想資料收集器。 
 ---
-= 聯想資料收集器
+= 聯想數據採集器
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-Data Infrastructure Insights 使用 Lenovo 資料收集器來探索 Lenovo HX 儲存系統的庫存和效能資料。
+Data Infrastructure Insights使用聯想資料收集器來發現聯想 HX 儲存系統的庫存和效能資料。
 
-附註：這些只是通用的術語對應、可能不代表此資料收集器的每個案例。
-
-
-
-== 需求
-
-* Prism外部IP位址
-* 系統管理員使用者名稱和密碼
-* TCP連接埠需求：9440
+注意：這些只是常見的術語映射，可能並不代表此資料收集器的所有情況。
 
 
 
+== 要求
 
-== 組態
-
-[cols="2*"]
-|===
-| 欄位 | 說明 
-
-
-| Prism外部IP位址 | 叢集的外部資料服務IP位址 
+* Prism 外部 IP 位址
+* 管理員使用者名稱和密碼
+* TCP 連接埠需求：9440
 
 
-| 使用者名稱 | 管理帳戶的使用者名稱 
 
 
-| 密碼 | 管理帳戶的密碼 
-|===
-
-
-== 進階組態
+== 配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| TCP 連接埠 | 用於連接陣列的TCP連接埠。預設值為 9440 。 
+| Prism 外部 IP 位址 | 叢集的外部資料服務 IP 位址 
 
 
-| 庫存輪詢時間間隔（分鐘） | 庫存輪詢之間的時間間隔。預設值為 60 分鐘。 
+| 使用者名稱 | 管理員帳戶的使用者名稱 
 
 
-| 效能意見調查時間間隔（秒） | 效能輪詢之間的時間間隔。預設值為 300 秒。 
+| 密碼 | 管理者帳號的密碼 
 |===
 
 
-== 疑難排解
+== 進階配置
 
-有關此資料收集器的其他資訊，請link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]參閱頁面或。
+[cols="2*"]
+|===
+| 場地 | 描述 
+
+
+| TCP 連接埠 | 用於連接陣列的 TCP 連接埠。預設值為 9440。 
+
+
+| 庫存輪詢間隔（分鐘） | 庫存調查之間的間隔。預設值為 60 分鐘。 
+
+
+| 效能輪詢間隔（秒） | 效能輪詢之間的間隔。預設值為 300 秒。 
+|===
+
+
+== 故障排除
+
+關於此數據收集器的更多信息，請參閱link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。

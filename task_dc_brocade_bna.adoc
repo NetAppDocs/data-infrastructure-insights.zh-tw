@@ -2,113 +2,113 @@
 sidebar: sidebar 
 permalink: task_dc_brocade_bna.html 
 keywords: data collector, Brocade, BNA 
-summary: 設定Brocade BNA收集器。 
+summary: 配置Brocade BNA 收集器。 
 ---
-= Brocade Network Advisor資料收集器
+= Brocade Network Advisor 資料收集器
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-Data Infrastructure Insights 使用 Brocade 網路顧問資料收集器、從 Brocade 交換器取得庫存和效能資料。
+Data Infrastructure Insights使用Brocade Network Advisor 資料收集器從Brocade交換器取得庫存和效能資料。
 
 
 
 == 術語
 
-Data Infrastructure Insights 會從 Brocade 網路顧問資料收集器取得下列庫存資訊。對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights從Brocade Network Advisor 資料收集器取得以下庫存資訊。對於Data Infrastructure Insights取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | Data Infrastructure Insights 術語 
+| 供應商/型號術語 | Data Infrastructure Insights術語 
 
 
-| 交換器 | 交換器 
+| 轉變 | 轉變 
 
 
-| 連接埠 | 連接埠 
+| 港口 | 港口 
 
 
-| 虛擬架構、實體架構 | 網路 
+| 虛擬結構、實體結構 | 織物 
 
 
-| 邏輯交換器 | 邏輯交換器 
+| 邏輯交換機 | 邏輯交換機 
 |===
-附註：這些只是通用的術語對應、可能不代表此資料收集器的每個案例。
+注意：這些只是常見的術語映射，可能並不代表此資料收集器的所有情況。
 
 
 
-== 需求
+== 要求
 
-設定此資料收集器需要下列項目：
+配置此資料收集器需要以下內容：
 
-* Data Infrastructure Insights 擷取單元將會模擬 BNA 伺服器上 TCP 連接埠 443 的連線。BNA伺服器必須執行14.2.1版或更新版本。
-* Brocade Network Advisor伺服器IP位址
-* 系統管理員帳戶的使用者名稱和密碼
+* Data Infrastructure Insights採集單元將啟動與 BNA 伺服器上 TCP 連接埠 443 的連線。  BNA 伺服器必須執行 14.2.1 或更高版本。
+* Brocade Network Advisor 伺服器 IP 位址
+* 管理員帳戶的使用者名稱和密碼
 * 連接埠需求：HTTP/HTTPS 443
 
 
 
 
-== 組態
+== 配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| Brocade網路顧問伺服器IP | 網路顧問伺服器的IP位址 
+| Brocade Network Advisor 伺服器 IP | Network Advisor 伺服器的 IP 位址 
 
 
-| 使用者名稱 | 交換器的使用者名稱 
+| 使用者名稱 | 交換器的用戶名 
 
 
-| 使用者名稱 | 系統管理員使用者名稱 
+| 使用者名稱 | 管理員使用者名稱 
 
 
-| 密碼 | 系統管理員密碼 
+| 密碼 | 管理者密碼 
 |===
 
 
-== 進階組態
+== 進階配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| 連線類型 | HTTPS（預設連接埠443）或HTTP（預設連接埠80） 
+| 連接類型 | HTTPS（預設連接埠 443）或 HTTP（預設連接埠 80） 
 
 
-| 置換連線連接埠 | 如果空白、請使用「連線類型」欄位中的預設連接埠、否則請輸入要使用的連線連接埠 
+| 覆蓋連接埠 | 如果為空，則在連接類型欄位中使用預設端口，否則輸入要使用的連接端口 
 
 
-| 密碼 | 交換器的密碼 
+| 密碼 | 交換器密碼 
 
 
-| 庫存輪詢時間間隔（分鐘） | 預設值為 40 
+| 庫存輪詢間隔（分鐘） | 預設值為 40 
 
 
-| 報告存取閘道 | 勾選以將裝置納入Access Gateway模式 
+| 報告訪問網關 | 勾選以包含處於 Access Gateway 模式的設備 
 
 
-| 效能意見調查時間間隔（秒） | 預設值為 1800 
+| 效能輪詢間隔（秒） | 預設值為 1800 
 |===
 
 
-== 疑難排解
+== 故障排除
 
-如果您在使用此資料收集器時遇到問題、請嘗試下列事項：
+如果您在使用此資料收集器時遇到問題，請嘗試以下操作：
 
 
 
-=== 庫存
+=== 存貨
 
 [cols="2*"]
 |===
-| 問題： | 試用： 
+| 問題： | 試試一下： 
 
 
-| 收到一則訊息、指出有超過1個節點登入Access Gateway連接埠、或是資料收集器無法探索Access Gateway裝置。 | 請檢查NPV裝置是否正常運作、以及所有連接的WWN是否正常運作。請勿直接取得NPV裝置。相反地、取得核心Fabric交換器將會收集NPV裝置資料。 
+| 收到一條訊息，提示有超過 1 個節點登入 Access Gateway 端口，或資料收集器無法發現 Access Gateway 設備。 | 檢查 NPV 設備是否正常運作以及所有連接的 WWN 是否符合預期。不要直接取得 NPV 設備。相反，取得核心結構交換器將收集 NPV 設備資料。 
 |===
-您可以在頁面或中找到其他link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]資訊。
+更多資訊可從link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。

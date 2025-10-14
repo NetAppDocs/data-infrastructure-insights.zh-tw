@@ -2,16 +2,16 @@
 sidebar: sidebar 
 permalink: nkmo_clusterrole_yaml.html 
 keywords: NKMO, yaml, 
-summary: NKMO Clusterrole的Yaml檔案範例 
+summary: NKMO Clusterrole 的範例 YAML 文件 
 ---
-= NKMO Clusterrole Yaml範例
+= NKMO Clusterrole YAML 範例
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
 
 
 [role="lead"]
-NetApp Kubernetes監控操作員（NKMO）的_kubectl_元件必須至少設定下列Kubernetes物件的存取權限：代理程式、叢集角色、叢集角色繫結、customresourcetings、部署、 命名空間、角色、角色繫結、機密、服務帳戶、 和服務。以下是叢集角色的範例、具有這些最低權限。
+NetApp Kubernetes 監控操作員 (NKMO) 的 _kubectl_ 元件至少需要配置為可以存取以下 kubernetes 物件：代理程式、叢集角色、叢集角色綁定、自訂資源定義、部署、命名空間、角色、角色綁定、機密、服務帳戶和服務。下面是具有這些最低權限的範例叢集角色。
 
 [listing]
 ----

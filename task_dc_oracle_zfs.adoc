@@ -2,161 +2,161 @@
 sidebar: sidebar 
 permalink: task_dc_oracle_zfs.html 
 keywords: data collector, Oracle, ZFS, storage applicance 
-summary: 設定Oracle ZFS資料收集器。 
+summary: 配置 Oracle ZFS 資料收集器。 
 ---
-= Oracle ZFS儲存設備資料收集器
+= Oracle ZFS 儲存設備資料收集器
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-Data Infrastructure Insights 使用 Oracle ZFS Storage Appliance 資料收集器來收集庫存和效能資料。
+Data Infrastructure Insights使用 Oracle ZFS 儲存設備資料收集器來收集庫存和效能資料。
 
 
 
 == 術語
 
-Data Infrastructure Insights 透過 Oracle ZFS 資料收集器取得庫存資訊。對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights使用 Oracle ZFS 資料收集器取得庫存資訊。對於Data Infrastructure Insights取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | Data Infrastructure Insights 術語 
+| 供應商/型號術語 | Data Infrastructure Insights術語 
 
 
 | 磁碟（SSD） | 磁碟 
 
 
-| 叢集 | 儲存設備 
+| 簇 | 儲存 
 
 
 | 控制器 | 儲存節點 
 
 
-| LUN | Volume 
+| 邏輯單元號 | 體積 
 
 
-| LUN對應 | Volume Map 
+| LUN 映射 | 體積圖 
 
 
-| 啟動器、目標 | Volume遮罩 
+| 發起者，目標 | 體積遮罩 
 
 
-| 分享 | 內部Volume 
+| 分享 | 內部體積 
 |===
-附註：這些只是通用的術語對應、可能不代表此資料來源的每個案例。
+注意：這些只是常用術語映射，可能並不代表此資料來源的所有情況。
 
 
 
-== 需求
+== 要求
 
-* ZFS Controller（ZFS控制器）-1和ZFS Controller（ZFS控制器）-2的主機名稱
-* 系統管理員使用者名稱和密碼
-* 連接埠需求：215 HTTP / HTTPS
-
-
-
-
-== 必要的效能指標
-
-Oracle ZFS設備可讓儲存管理員靈活擷取效能統計資料。Data Infrastructure Insights 期望您在高可用度配對中設定 _each 控制器、以擷取下列指標：
-
-* SMB2.ops [共享]
-* nfs3.ops[share]
-* nfs4.ops[share]
-* nfs4-1.ops[share]
-
-
-如果控制器無法擷取任何或全部資料、可能會導致 Data Infrastructure Insights 沒有或報告不足的「內部磁碟區」工作負載。
+* ZFS Controller-1 和 ZFS Controller-2 的主機名
+* 管理員使用者名稱和密碼
+* 連接埠需求：215 HTTP/HTTPS
 
 
 
-== 組態
+
+== 所需績效指標
+
+Oracle ZFS 設備為儲存管理員提供了很大的靈活性來擷取效能統計資料。Data Infrastructure Insights希望您將高可用性對中的每個控制器配置為擷取以下指標：
+
+* smb2.ops[分享]
+* nfs3.ops[分享]
+* nfs4.ops[分享]
+* nfs4-1.ops[分享]
+
+
+如果控制器無法擷取其中的任何一個或全部，則可能會導致Data Infrastructure Insights沒有或少報「內部磁碟區」上的工作負載。
+
+
+
+== 配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| ZFS Controller-1 主機名稱 | 儲存控制器1的主機名稱 
+| ZFS 控制器-1 主機名 | 儲存控制器 1 的主機名 
 
 
-| ZFS控制器-2主機名稱 | 儲存控制器2的主機名稱 
+| ZFS 控制器-2 主機名 | 儲存控制器 2 的主機名 
 
 
-| 使用者名稱 | 儲存系統管理員使用者帳戶的使用者名稱 
+| 使用者名稱 | 儲存系統管理員使用者帳戶的使用者名 
 
 
-| 密碼 | 系統管理員使用者帳戶的密碼 
+| 密碼 | 管理者用戶帳號的密碼 
 |===
 
 
-== 進階組態
+== 進階配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| 連線類型 | HTTPS或HTTP也會顯示預設連接埠 
+| 連接類型 | HTTPS 或 HTTP，也顯示預設端口 
 
 
-| 置換連線連接埠 | 如果空白、請使用「連線類型」欄位中的預設連接埠、否則請輸入要使用的連線連接埠 
+| 覆蓋連接埠 | 如果為空，則在連接類型欄位中使用預設端口，否則輸入要使用的連接端口 
 
 
-| 庫存輪詢時間間隔 | 預設值為60秒 
+| 庫存輪詢間隔 | 預設值為 60 秒 
 
 
-| 效能意見調查時間間隔（秒） | 預設值為 300 。 
+| 效能輪詢間隔（秒） | 預設值為 300。 
 |===
 
 
-== 疑難排解
+== 故障排除
 
-如果您在使用此資料收集器時遇到問題、請嘗試下列事項：
+如果您在使用此資料收集器時遇到問題，請嘗試以下操作：
 
 
 
-=== 庫存
+=== 存貨
 
 [cols="2a, 2a"]
 |===
-| 問題： | 試用： 
+| 問題： | 試試一下： 
 
 
  a| 
-"登入認證資料無效"
+“登入憑證無效”
  a| 
-驗證ZFS使用者帳戶和密碼
-
-
-
- a| 
-" 要求失敗，狀態為 404 \https://.....:215/api/access/v1"
- a| 
-您的 ZFS 陣列可能太舊，無法獲得 REST API 支援。AK 2013.1.3.0 是第一個具備 REST API 功能的 ZFS OS 版本，並非所有的 ZFS 應用裝置都能升級至該版本。
+驗證 Zfs 使用者帳號和密碼
 
 
 
  a| 
-「組態錯誤」、並顯示錯誤訊息「停用REST服務」
+“請求失敗，狀態為 404 \https://.....:215/api/access/v1”
  a| 
-確認此裝置已啟用REST服務。
+您的 ZFS 陣列可能太舊，無法支援 REST API。  AK 2013.1.3.0 是第一個支援 REST API 的 ZFS OS 版本，並非所有 ZFS 裝置都可以升級到它。
 
 
 
  a| 
-「組態錯誤」、並顯示錯誤訊息「使用者未獲授權執行命令」
+“配置錯誤”，錯誤訊息為“REST 服務已停用”
  a| 
-此錯誤可能是因為某些角色（例如、「 advanced_Analytics 」）未包含在設定的使用者中。
+驗證此裝置上是否啟用了 REST 服務。
 
-為具有唯讀角色的使用者套用分析範圍可能會移除錯誤。請遵循下列步驟：
 
-. 在 ZFS 系統上、從 Configuration （組態） -> Users （使用者）畫面、將滑鼠移到角色上、然後按兩下以允許編輯
-. 從範圍下拉式功能表中選取「分析」。可能的內容清單隨即出現。
-. 按一下最上方的核取方塊、它會選取所有三個屬性。
-. 按一下右側的「新增」按鈕。
-. 按一下快顯視窗右上角的「Apply（套用）」按鈕。快顯視窗隨即關閉。
+
+ a| 
+“配置錯誤”，錯誤訊息為“使用者未授權執行命令”
+ a| 
+此錯誤可能是由於配置的使用者未包含某些角色（例如“advanced_analytics”）。
+
+對具有唯讀角色的使用者套用分析範圍可能會消除該錯誤。請依照以下步驟操作：
+
+. 在 ZFs 系統上，從配置 -> 使用者螢幕，將滑鼠移到角色上並雙擊以允許編輯
+. 從範圍下拉選單中選擇“分析”。出現可能的屬性清單。
+. 點擊最頂部的複選框，它將選擇所有三個屬性。
+. 點選右側的新增按鈕。
+. 點擊彈出視窗右上角的應用程式按鈕。彈出視窗將會關閉。
 
 
 |===
-您可以在頁面或中找到其他link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]資訊。
+更多資訊可從link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。

@@ -2,28 +2,28 @@
 sidebar: sidebar 
 permalink: task_dc_rubrik_cdm.html 
 keywords: data collector, Rubrik, 
-summary: 設定Rubrik CDM資料收集器。 
+summary: 配置 Rubrik CDM 資料收集器。 
 ---
-= Rubrik CDM資料收集器
+= Rubrik CDM 資料收集器
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-Data Infrastructure Insights 使用 Rubrik 資料收集器從 Rubrik 儲存設備取得庫存和效能資料。
+Data Infrastructure Insights使用 Rubrik 資料收集器從 Rubrik 儲存裝置取得庫存和效能資料。
 
 
 
 == 術語
 
-Data Infrastructure Insights 會從 Rubrik 資料收集器取得下列庫存資訊。對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights從 Rubrik 數據收集器獲取以下庫存資訊。對於Data Infrastructure Insights取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | Data Infrastructure Insights 術語 
+| 供應商/型號術語 | Data Infrastructure Insights術語 
 
 
-| 叢集 | 儲存設備、儲存資源池 
+| 簇 | 儲存、儲存池 
 
 
 | 節點 | 儲存節點 
@@ -31,71 +31,71 @@ Data Infrastructure Insights 會從 Rubrik 資料收集器取得下列庫存資�
 
 | 磁碟 | 磁碟 
 |===
-附註：這些只是通用的術語對應、可能不代表此資料來源的每個案例。
+注意：這些只是常用術語映射，可能並不代表此資料來源的所有情況。
 
 
 
-== 需求
+== 要求
 
-設定此資料收集器需要下列項目：
+配置此資料收集器需要以下內容：
 
-* Data Infrastructure Insights 擷取單元將啟動 TCP 連接埠 443 與 Rubrik 叢集的連線。每個叢集一個收集器。
-* Rubrik叢集IP位址。
+* Data Infrastructure Insights採集單元將啟動與 Rubrik 叢集的 TCP 連接埠 443 的連線。每個集群一個收集器。
+* Rubrik 叢集 IP 位址。
 * 叢集的使用者名稱和密碼。
 * Rubrik 叢集 IP 位址或主機名稱。
-* 對於「基本驗證」、為叢集的使用者名稱和密碼。如果您偏好使用服務帳戶型驗證、則需要服務帳戶、秘密和組織 ID
-* 連接埠需求：HTTPS 443
+* 對於基本身份驗證，需要叢集的使用者名稱和密碼。如果您喜歡使用基於服務帳戶的身份驗證，則需要一個服務帳戶、金鑰和一個組織 ID
+* 連接埠要求：HTTPS 443
 
 
 
 
-== 組態
+== 配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| IP | Rubrik叢集的IP位址 
+| 智慧財產 | Rubrik叢集的IP位址 
 
 
 | 使用者名稱/服務帳戶 | 叢集的使用者名稱 
 
 
-| 密碼/秘密 | 叢集的密碼 
+| 密碼/秘密 | 叢集密碼 
 
 
 | 服務帳戶的組織 ID | 這需要是完整的字串，如“Organization:::nnnnnn-nnnn.....” 
 |===
 
 
-== 進階組態
+== 進階配置
 
 [cols="2*"]
 |===
-| 庫存輪詢時間間隔（分鐘） | 預設值為 60 
+| 庫存輪詢間隔（分鐘） | 預設值為 60 
 
 
-| 效能意見調查時間間隔（秒） | 預設值為 300 
+| 效能輪詢間隔（秒） | 預設值為 300 
 |===
 
 
-== 疑難排解
+== 故障排除
 
-如果您在使用此資料收集器時遇到問題、請嘗試下列事項：
+如果您在使用此資料收集器時遇到問題，請嘗試以下操作：
 
 
 
-=== 庫存
+=== 存貨
 
 [cols="2*"]
 |===
-| 問題： | 試用： 
+| 問題： | 試試一下： 
 
 
-| 我收到一則訊息、表示已建立多個儲存設備。 | 檢查叢集設定是否正確、收集器是否指向單一叢集。 
+| 我收到一條訊息，提示已建立多個儲存。 | 檢查群集是否配置正確，以及收集器是否指向單一群集。 
 
 
-| 輪詢失敗，錯誤代碼為 400 [錯誤請求]....無效的 ManagedId.... | 您已在組織 ID 欄位中填充了一個值，但 Rubrik 叢集不認為這是一個有效的組織 ID，儘管 Rubrik 發出的錯誤訊息稱為“ManagedId” 
+| 輪詢失敗，回傳 400 [錯誤請求]....無效的 ManagedId.... | 您已在組織 ID 欄位中填充了一個值，但 Rubrik 叢集不認為這是一個有效的組織 ID，儘管 Rubrik 發出的錯誤訊息稱為“ManagedId” 
 |===
-您可以在頁面或中找到其他link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]資訊。
+更多資訊可從link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。

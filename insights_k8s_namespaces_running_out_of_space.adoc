@@ -2,39 +2,39 @@
 sidebar: sidebar 
 permalink: insights_k8s_namespaces_running_out_of_space.html 
 keywords: insight, pv, persistent volume, backend 
-summary: Insights可協助您預測Kubernetes空間何時會滿。 
+summary: 洞察可以幫助您預測 Kubernetes 空間何時可能會變滿。 
 ---
-= 洞見：Kubernetes命名空間不足
+= 洞見：Kubernetes 命名空間空間不足
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-租戶空間不足的情況永遠不是好情況。Data Infrastructure Insights 可協助您預測 Kubernetes 永續磁碟區何時會滿。
+租戶空間不足絕對不是好事。Data Infrastructure Insights可協助您預測 Kubernetes 持久卷變滿之前的時間。
 
-_Kubernetes Namspaces Outout of space_ Insight可讓您檢視Kubernetes命名空間中可能會耗盡空間的工作負載、並預估每個持續磁碟區將滿之前的剩餘天數。
+_Kubernetes 命名空間空間不足_洞察讓您可以查看 Kubernetes 命名空間中面臨空間不足風險的工作負載，並估計每個持久卷變滿之前剩餘的天數。
 
-您可以瀏覽*儀表板> Insights *來檢視此Insight。
+您可以透過導覽至「儀表板」>「洞察」來查看此洞察。
 
-image:K8sRunningOutOfSpaceWorkloadList.png["K8s命名空間中有空間不足風險的工作負載清單"]
+image:K8sRunningOutOfSpaceWorkloadList.png["K8s 命名空間中面臨空間耗盡風險的工作負載列表"]
 
-按一下工作負載以開啟Insight的詳細資料頁面。在本頁面上、您會看到顯示工作負載容量趨勢的圖表、以及顯示下列項目的表格：
+點擊工作負載即可開啟 Insight 的詳細資料頁面。在此頁面上，您將看到顯示工作負載容量趨勢的圖表以及顯示以下內容的表格：
 
 * 工作負載名稱
-* 持續Volume受影響
-* 預測的完整時間（以天計）
-* 持續Volume容量
-* 受影響的後端儲存資源、目前的容量已用完總容量。按一下此連結即可開啟後端Volume的詳細登陸頁面。
+* 持久卷受到影響
+* 預計完成時間（天）
+* 持久捲容量
+* 後端儲存資源受到影響，目前使用的容量超出總容量。點擊此連結將開啟後端卷的詳細登入頁面。
 
 
-image:K8sRunningOutOfSpaceWorkloadTable.png["顯示詳細資料的工作負載表"]
+image:K8sRunningOutOfSpaceWorkloadTable.png["顯示詳細資訊的工作負載表"]
 
 
 
-=== 如果空間不足、該怎麼辦？
+=== 如果空間不足，我該怎麼辦？
 
-在Insight頁面上、按一下*+ Show建置建議*以檢視可能的解決方案。當空間不足時、最簡單的選擇就是永遠增加更多容量、而 Data Infrastructure Insights 則可為您提供最佳容量、以增加目標 60 天預測的完整時間。也會顯示其他建議。
+在 Insight 頁面上，按一下 *+Show Recommendations* 以查看可能的解決方案。空間不足時最簡單的選擇始終是增加更多容量，而Data Infrastructure Insights會向您展示最佳的添加容量，以將滿載時間增加到目標 60 天預測。也顯示了其他建議。
 
-image:K8sRunningOutOfSpaceRecommendations.png["可增加至60天TFF的容量"]
+image:K8sRunningOutOfSpaceRecommendations.png["增加產能以恢復至 60 天 TTF"]
 
-您也可以在此複製方便的Insight連結、將頁面加入書籤、或輕鬆與團隊分享。
+您還可以在這裡複製此 Insight 的便捷連結、為該頁面添加書籤或輕鬆地與您的團隊共享。

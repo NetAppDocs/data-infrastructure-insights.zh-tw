@@ -2,51 +2,51 @@
 sidebar: sidebar 
 permalink: task_config_telegraf_consul.html 
 keywords: telegraf, installation, install, consul 
-summary: Consul資料收集器組態 
+summary: Consul 資料收集器配置 
 ---
-= Consul Data Collector
+= Consul 資料收集器
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-Data Infrastructure Insights 使用此資料收集器收集 Consul 的指標。
+Data Infrastructure Insights使用此資料收集器從 Consul 收集指標。
 
 
 
 == 安裝
 
-. 從 * 可伺服 > 收集器 * 、按一下 * + 資料收集器 * 。選擇「 Consul 」。
+. 從*可觀察性 > 收集器*中，按一下*+資料收集器*。選擇 Consul。
 +
-如果您尚未設定值機員以進行集合，系統會在租戶上提示您link:task_config_telegraf_agent.html["安裝代理程式"]。
+如果您尚未設定用於收集的代理，系統會提示您link:task_config_telegraf_agent.html["安裝代理"]您的租戶。
 
 +
-如果您已設定代理程式、請選取適當的作業系統或平台、然後按一下*繼續*。
+如果您已經配置了代理，請選擇適當的作業系統或平台，然後按一下「繼續」。
 
-. 請依照「Consul Configuration」（儲存組態）畫面中的指示來設定資料收集器。這些指示會因您用來收集資料的作業系統或平台類型而有所不同。
+. 請依照 Consul 設定畫面中的指示配置資料收集器。說明根據您用於收集資料的作業系統或平台的類型而有所不同。
 
 
 
 
 == 設定
 
-如需詳細資訊link:https://www.consul.io/docs/index.html["駐廠文件"]，請參閱。
+資訊可以在link:https://www.consul.io/docs/index.html["Consul 文件"]。
 
 
 
-== 儲存器的物件和計數器
+== 領事的物件和計數器
 
-收集下列物件及其計數器：
+收集以下物件及其計數器：
 
 [cols="<.<,<.<,<.<,<.<"]
 |===
-| 物件： | 識別碼： | 屬性： | 資料點： 
+| 目的： | 標識符： | 屬性： | 數據點： 
 
 
-| 駐港總領事 | 命名空間檢查ID服務節點 | 節點IP節點OS節點UUID節點名稱服務名稱檢查名稱服務ID狀態 | 重大通過警告 
+| 領事 | 命名空間檢查ID服務節點 | 節點 IP 節點 OS 節點 UUID 節點名稱 服務名稱 檢查名稱 服務 ID 狀態 | 關鍵超車警告 
 |===
 
 
-== 疑難排解
+== 故障排除
 
-您可以在頁面中找到其他資訊link:concept_requesting_support.html["支援"]。
+更多資訊可從link:concept_requesting_support.html["支援"]頁。

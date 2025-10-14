@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: concept_ws_integration_with_ontap_access_denied.html 
-summary: 工作負載安全性與 ONTAP 整合、可接收拒絕存取的事件、並提供額外的分析和自動回應層。 
+summary: 工作負載安全性與ONTAP整合以接收存取被拒絕事件並提供額外的分析和自動回應層。 
 keywords: ransomware, ARP, Protection, Security, access 
 ---
-= 與 ONTAP 存取整合遭拒
+= 與ONTAP整合存取被拒絕
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,40 +14,40 @@ keywords: ransomware, ARP, Protection, Security, access
 
 
 [role="lead"]
-ONTAP 存取遭拒功能會在 NAS 環境（ NFS 和 SMB ）中使用工作負載分析、主動偵測並警告檔案作業失敗的情況（例如、使用者嘗試執行他們沒有權限的作業）。這些失敗的檔案作業通知（特別是在安全性相關失敗的情況下）將有助於在早期階段進一步封鎖內部攻擊。
+ONTAP存取被拒絕功能使用 NAS 環境（NFS 和 SMB）中的工作負載分析來主動偵測並警告失敗的檔案操作（即使用者嘗試執行他們沒有權限的操作）。這些失敗的文件操作通知——特別是在發生與安全相關的故障的情況下——將進一步有助於在早期階段阻止內部攻擊。
 
-資料基礎架構洞見工作負載安全性與 ONTAP 整合、可接收拒絕存取的事件、並提供額外的分析和自動回應層。
+Data Infrastructure Insights工作負載安全性與ONTAP整合以接收存取被拒絕事件並提供額外的分析和自動回應層。
 
 
 
 == 先決條件
 
-* 最低 ONTAP 版本： 9.13.0 。
-* 工作負載安全管理員在新增收集器或編輯現有收集器時、必須選取「進階組態」下的「監控存取遭拒事件」核取方塊、以啟用「拒絕存取」功能。
+* 最低ONTAP版本：9.13.0。
+* 工作負載安全性管理員必須在新增收集器或編輯現有收集器時啟用「拒絕存取」功能，方法是選取「進階配置」下的「監控拒絕存取事件」複選框。
 
 
-image:WS_Access_Denied_Enable_in_Collector.png["在 ONTAP 收集器進階組態中啟用拒絕存取"]
+image:WS_Access_Denied_Enable_in_Collector.png["在ONTAP收集器進階配置中啟用“拒絕存取”"]
 
 
 
 == 需要使用者權限
 
-如果使用叢集管理認證新增 Data Collector 、則不需要新的權限。
+如果使用叢集管理憑證新增資料收集器，則不需要新的權限。
 
-如果是使用已授予使用者權限的自訂使用者（例如、 _CsUser_ ）來新增收集器、請依照下列步驟、將必要權限授予工作負載安全性、以便向 ONTAP 註冊存取遭拒事件。
+如果使用自訂使用者（例如 _csuser_）新增收集器並向該使用者授予權限，請依照下列步驟為工作負載安全性提供必要的權限，以便使用ONTAP註冊存取被拒絕事件。
 
-若為具有 _CLERY_ 認證的 CsUser 、請從 ONTAP 命令列執行下列命令。請注意，此權限可能已經存在。
+對於具有 _cluster_ 憑證的 csuser，從ONTAP命令列執行下列命令。請注意，此權限可能已經存在。
 
  security login role create -role csrole -cmddirname "vserver fpolicy" -access all
-對於具有 _SVM_ 認證的 CsUser ，請從 ONTAP 命令列執行下列命令。請注意，此權限可能已經存在。
+對於具有 _SVM_ 憑證的 csuser，從ONTAP命令列執行下列命令。請注意，此權限可能已經存在。
 
  security login role create -vserver <vservername> -role csrole -cmddirname "vserver fpolicy" -access all
-瞭解有關配置其他link:task_add_collector_svm.html["權限ONTAP"]的更多信息。
+閱讀有關配置其他內容的更多信息link:task_add_collector_svm.html["ONTAP 權限"]。
 
 
 
-== 存取遭拒事件
+== 訪問被拒絕事件
 
-從 ONTAP 系統擷取事件後、工作負載安全性鑑識頁面會顯示存取遭拒事件。除了顯示的資訊外、您也可以從齒輪圖示將 _ 所需活動 _ 欄新增至表格、以檢視特定作業的遺失使用者權限。
+從ONTAP系統取得事件後，「工作負載安全取證」頁面將顯示「存取被拒絕」事件。除了顯示的資訊之外，您還可以透過從齒輪圖示新增「所需活動」欄位來查看特定操作缺少的使用者權限。
 
-image:WS_Access_Denied_Example_Event_1.png["存取遭拒事件範例"]
+image:WS_Access_Denied_Example_Event_1.png["存取被拒絕事件範例"]

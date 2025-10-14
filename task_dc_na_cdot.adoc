@@ -4,226 +4,226 @@ permalink: task_dc_na_cdot.html
 keywords: data collector, ontap, ontap, CDOT 
 summary: ONTAP資料收集器 
 ---
-= NetApp ONTAP 數據管理軟體資料收集器
+= NetApp ONTAP資料管理軟體資料收集器
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-此資料收集器會使用ONTAP 隻讀API呼叫ONTAP 來自執行VMware的儲存系統、從該帳戶取得庫存和效能資料。此資料收集器也會在叢集應用程式登錄中建立記錄、以加速支援。
+此資料收集器使用來自ONTAP帳戶的唯讀 API 呼叫從執行ONTAP 的儲存系統取得庫存和效能資料。此資料收集器也會在叢集應用程式註冊表中建立記錄以加速支援。
 
 
 
 == 術語
 
-Data Infrastructure Insights 會從 ONTAP 資料收集器取得庫存和效能資料。對於所取得的每種資產類型、都會顯示該資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights從ONTAP數據收集器獲取庫存和性能數據。對於所取得的每種資產類型，都會顯示該資產最常用的術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | Data Infrastructure Insights 術語 
+| 供應商/型號術語 | Data Infrastructure Insights術語 
 
 
 | 磁碟 | 磁碟 
 
 
-| RAID群組 | 磁碟群組 
+| 突襲小組 | 磁碟組 
 
 
-| 叢集 | 儲存設備 
+| 簇 | 儲存 
 
 
 | 節點 | 儲存節點 
 
 
-| Aggregate | 儲存資源池 
+| 總計的 | 儲存池 
 
 
-| LUN | Volume 
+| 邏輯單元號 | 體積 
 
 
-| Volume | 內部Volume 
+| 體積 | 內部體積 
 |===
 
 
-== 資料管理術語ONTAP
+== ONTAP資料管理術語
 
-下列詞彙適用於ONTAP 您在《支援資料管理》儲存資產登陸頁面上可能找到的物件或參考資料。其中許多術語也適用於其他資料收集器。
-
-
-
-=== 儲存設備
-
-* 模型–此叢集內唯一、獨立節點模型名稱的以逗號分隔的清單。如果叢集內的所有節點都是相同的模型類型、則只會顯示一個模型名稱。
-* 廠商–如果您要設定新的資料來源、您會看到相同的廠商名稱。
-* 序號–陣列序號。在叢集架構儲存系統（例如ONTAP 、《資料管理》）中、此序號可能不如個別的「儲存節點」序號所使用。
-* IP–通常是在資料來源中設定的IP或主機名稱。
-* 微碼版本–韌體。
-* 原始容量：系統中所有實體磁碟的基礎2總和、無論其角色為何。
-* 延遲：代表主機面對的工作負載在讀取和寫入過程中所經歷的情況。在理想情況下、 Data Infrastructure Insights 會直接取得這項價值、但通常情況並非如此。資料基礎架構 Insights 通常會執行從個別內部磁碟區統計資料衍生的 IOPs 加權計算、而不是提供這項功能的陣列。
-* 處理量：從內部磁碟區集合而來。管理：這可能包含裝置管理介面的超連結。由 Data Infrastructure Insights 資料來源以程式設計方式建立、作為庫存報告的一部分。
+以下術語適用於您可能在ONTAP資料管理儲存資產登入頁面上找到的物件或參考。其中許多術語也適用於其他資料收集器。
 
 
 
+=== 儲存
 
-=== 儲存資源池
+* 模型 – 此叢集內唯一、離散節點模型名稱的逗號分隔清單。如果叢集中的所有節點都是相同的模型類型，則只會出現一個模型名稱。
+* 供應商 – 如果您正在設定新的資料來源，您將看到相同的供應商名稱。
+* 序號 – 陣列序號。在ONTAP資料管理等叢集架構儲存系統上，此序號可能不如單一「儲存節點」序號有用。
+* IP – 通常是資料來源中配置的 IP 或主機名稱。
+* 微碼版本 – 韌體。
+* 原始容量－系統中所有實體磁碟的以 2 為底的總和，無論其作用為何。
+* 延遲－表示主機在讀取和寫入過程中所面臨的工作負載的情況。理想情況下，Data Infrastructure Insights會直接取得該數值，但事實往往並非如此。取代提供此功能的陣列，Data Infrastructure Insights通常會執行根據各個內部卷的統計資料得出的 IOP 加權計算。
+* 吞吐量－從內部磁碟區聚合而成。管理－這可能包含裝置管理介面的超連結。由Data Infrastructure Insights資料來源以程式設計方式創建，作為庫存報告的一部分。
 
-* 儲存設備：此資源池所使用的儲存陣列。必填。
-* 類型–從列舉的可能性清單清單中選取一個描述性值。最常見的是「Aggregate」或「RAID Group」。
-* 節點–如果此儲存陣列的架構使集區屬於特定儲存節點、則其名稱將會顯示在這裡、以超連結的形式連結至其自己的登陸頁面。
-* 使用Flash Pool–是/否值–此SATA / SAS型集區是否使用SSD進行快取加速？
-* 備援：RAID層級或保護方案。RAID-DP為雙同位元檢查、RAID_tp為三同位元檢查。
-* 容量：此處的值是已用邏輯容量、可用容量和邏輯總容量、以及這些容量使用的百分比。
-* 過度委派容量：如果使用效率技術、您已將容量或內部Volume容量的總和分配給大於儲存資源池邏輯容量的總和、則此處的百分比值將大於0%。
-* Snapshot–已使用的快照容量和總容量、如果您的儲存資源池架構將部分容量專用於專為快照而設計的區段區域。在不支援支援的情況下、支援的部分可能會出現這個問題、而其他的不支援的組態則較少。ONTAP MetroCluster ONTAP
-* 使用率–百分比值、顯示此儲存資源池中任何磁碟貢獻容量的最高磁碟使用率百分比。磁碟使用率不一定與陣列效能有密切的關聯、因為磁碟重建、重複資料刪除活動等原因、在缺乏主機驅動的工作負載的情況下、使用率可能會很高。此外、許多陣列的複寫實作可能會提高磁碟使用率、但不會顯示為內部磁碟區或磁碟區工作負載。
-* IOPS：所有磁碟的IOPs總和、可為此儲存資源池提供容量。處理量：所有磁碟的總處理量、可為此儲存資源池提供容量。
+
+
+
+=== 儲存池
+
+* 儲存－該池位於哪個儲存陣列上。強制的。
+* 類型－來自可能性枚舉清單的描述性值。最常見的是「聚合」或「RAID 群組」」。
+* 節點 - 如果此儲存陣列的架構使得池屬於特定的儲存節點，則其名稱將在此處顯示為其自己的登入頁面的超連結。
+* 使用快閃記憶體池 – 是/否值 – 這個基於 SATA/SAS 的池是否有快取加速的 SSD？
+* 冗餘－RAID 等級或保護方案。  RAID_DP 是雙重奇偶校驗，RAID_TP 是三重奇偶校驗。
+* 容量－這裡的值是邏輯已使用容量、可用容量和邏輯總容量，以及這些容量中使用的百分比。
+* 過度承諾的容量 - 如果您使用效率技術分配的磁碟區或內部磁碟區容量總和大於儲存池的邏輯容量，則此處的百分比值將大於 0%。
+* 快照 - 如果您的儲存池架構將其部分容量專用於專門用於快照的分段區域，則快照容量已使用和總計。  MetroCluster配置中的ONTAP可能會出現這種情況，而其他ONTAP配置則不太會出現這種情況。
+* 利用率－一個百分比值，顯示為該儲存池貢獻容量的任何磁碟的最高磁碟繁忙百分比。磁碟利用率不一定與陣列效能有很強的相關性——在沒有主機驅動的工作負載的情況下，由於磁碟重建、重複資料刪除活動等，利用率可能會很高。此外，許多陣列的複製實作可能會提高磁碟利用率，但不會顯示為內部磁碟區或磁碟區工作負載。
+* IOPS – 為此儲存池貢獻容量的所有磁碟的 IOP 總和。吞吐量－為此儲存池貢獻容量的所有磁碟的總吞吐量。
 
 
 
 
 === 儲存節點
 
-* 儲存設備：此節點屬於何種儲存陣列。必填。
-* HA合作夥伴：在節點將容錯移轉至一個節點、而只有一個節點的平台上、通常會顯示於此處。
-* 狀態–節點健全狀況。只有當陣列健全狀況足以由資料來源進行庫存時、才能使用。
-* 模型–節點的模型名稱。
-* 版本–裝置的版本名稱。
-* 序號–節點序號。
-* 記憶體：基礎2記憶體（若有）。
-* 使用率：ONTAP 在功能方面、這是專屬演算法的控制器壓力索引。每次效能意見調查都會報告0到100%之間的數字、這是WAFL 指較高的VMware磁碟爭用或平均CPU使用率。如果您觀察到持續值> 50%、這表示規模過小–可能是控制器/節點不夠大、或旋轉磁碟不足以吸收寫入工作負載。
-* IOPS–直接衍生自ONTAP 節點物件上的RzAPI呼叫。
-* 延遲：直接衍生自ONTAP 節點物件上的RzAPI呼叫。
-* 處理量–直接衍生自節點物件上的 ONTAP ZAPI 通話。
-* 處理器–CPU數。
+* 儲存－此節點屬於哪個儲存陣列。強制的。
+* HA 合作夥伴 – 在一個節點將故障轉移到一個且僅一個其他節點的平台上，通常會在這裡看到它。
+* 狀態——節點的健康狀況。只有當陣列足夠健康，可以被資料來源清點時才可用。
+* 模型——節點的模型名稱。
+* 版本－設備的版本名稱。
+* 序號 – 節點序號。
+* 記憶體 – 以 2 為基數的記憶體（如果可用）。
+* 利用率 – 在ONTAP上，這是來自專有演算法的控制器壓力指數。每次效能輪詢時，都會報告 0 到 100% 之間的數字，該數字是WAFL磁碟爭用或平均 CPU 利用率中的較高者。如果您觀察到持續值 > 50%，則表示規模不足 - 可能是控制器/節點不夠大或旋轉磁碟不夠大，無法吸收寫入工作負載。
+* IOPS – 直接從節點物件上的ONTAP ZAPI 呼叫派生。
+* 延遲 – 直接源自於對節點物件的ONTAP ZAPI 呼叫。
+* 吞吐量 – 直接來自對節點物件的ONTAP ZAPI 呼叫。
+* 處理器 – CPU 數量。
 
 
 
 
-== 需求
+== 要求
 
-以下是設定及使用此資料收集器的需求：
+以下是配置和使用此資料收集器的要求：
 
-* 您必須擁有設定為唯讀API呼叫的管理員帳戶存取權。
-* 帳戶詳細資料包括使用者名稱和密碼。
-* 連接埠需求：80或443
+* 您必須具有為唯讀 API 呼叫配置的管理員帳戶的存取權限。
+* 帳戶詳細資訊包括使用者名稱和密碼。
+* 連接埠需求：80 或 443
 * 帳戶權限：
 +
-** 將OnTapi應用程式的唯讀角色名稱設為預設Vserver
-** 您可能需要額外的選擇性寫入權限。請參閱下方「權限相關注意事項」。
+** 只讀角色名稱到 ontapi 應用程式到預設 Vserver
+** 您可能需要額外的可選寫入權限。請參閱下面有關權限的說明。
 
 
-* 不含授權要求：ONTAP
+* ONTAP許可證要求：
 +
-** 用於光纖通道探索的FCP授權和對應/遮罩磁碟區
+** 光纖通道發現所需的 FCP 許可證和映射/屏蔽卷
 
 
 
 
 
 
-=== 收集 ONTAP 交換器度量的權限需求
+=== 收集ONTAP交換器指標的權限要求
 
-Data Infrastructure Insights 可在收集器的<<advanced-configuration,進階組態>>設定中、選擇收集 ONTAP 叢集交換器資料。除了在 Data Infrastructure Insights 收集器上啟用此功能外、您還必須 * 設定 ONTAP 系統本身link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["交換器資訊"]、以提供並確保<<a-note-about-permissions,權限>>設定正確的資料、以便將交換器資料傳送至 Data Infrastructure Insights 。
+Data Infrastructure Insights能夠收集ONTAP集群交換器數據，作為收集器的選項<<advanced-configuration,進階配置>>設定.除了在Data Infrastructure Insights收集器上啟用此功能外，您還必須*配置ONTAP系統*本身以提供link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["交換器資訊"]，並確保正確<<a-note-about-permissions,權限>>進行設置，以允許將交換器資料傳送到Data Infrastructure Insights。
 
 
 
-== 組態
+== 配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| NetApp管理IP | NetApp叢集的IP位址或完整網域名稱 
+| NetApp管理 IP | NetApp叢集的 IP 位址或完全限定域名 
 
 
 | 使用者名稱 | NetApp叢集的使用者名稱 
 
 
-| 密碼 | NetApp叢集的密碼 
+| 密碼 | NetApp叢集密碼 
 |===
 
 
-== 進階組態
+== 進階配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| 連線類型 | 選擇HTTP（預設連接埠80）或HTTPS（預設連接埠443）。預設值為HTTPS 
+| 連接類型 | 選擇 HTTP（預設連接埠 80）或 HTTPS（預設連接埠 443）。預設為 HTTPS 
 
 
-| 置換通訊連接埠 | 如果不想使用預設值、請指定不同的連接埠 
+| 覆蓋通訊埠 | 如果不想使用預設端口，請指定其他端口 
 
 
-| 庫存輪詢時間間隔（分鐘） | 預設為60分鐘。 
+| 庫存輪詢間隔（分鐘） | 預設為 60 分鐘。 
 
 
-| 用於TLS for HTTPS | 使用HTTPS時、僅允許TLS做為傳輸協定 
+| 對於 TLS 和 HTTPS | 使用 HTTPS 時僅允許 TLS 作為協定 
 
 
-| 自動查詢網路群組 | 啟用匯出原則規則的自動網路群組查詢 
+| 自動尋找網路組 | 啟用匯出策略規則的自動網路群組查找 
 
 
-| 網路群組擴充 | 網路群組擴充策略：選擇_file_或_Shell。預設值為_Shell。 
+| 網路組擴充 | Netgroup 擴張策略。選擇_file_或_shell_。預設值是 _shell_。 
 
 
-| HTTP讀取逾時秒數 | 預設值為30 
+| HTTP 讀取超時秒數 | 預設值為 30 
 
 
-| 強制回應為utf-8 | 強制資料收集器程式碼將CLI的回應解譯為UTF-8 
+| 強制響應為 UTF-8 | 強制資料收集器代碼將 CLI 的回應解釋為 UTF-8 
 
 
-| 效能意見調查時間間隔（秒） | 預設為 900 秒。 
+| 效能輪詢間隔（秒） | 預設值為 900 秒。 
 
 
-| 進階計數器資料收集 | 實現ONTAP 整合。選取此選項可在ONTAP 輪詢中包含「功能先進的計數器」資料。從清單中選擇所需的計數器。 
+| 進階計數器資料收集 | 啟用ONTAP整合。選擇此選項可將ONTAP進階計數器資料包含在輪詢中。從清單中選擇所需的計數器。 
 
 
-| 叢集交換器度量 | 允許 Data Infrastructure Insights 收集叢集交換器資料。請注意、除了在資料基礎架構洞見方面啟用此功能外、您也必須將 ONTAP 系統設定為提供link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["交換器資訊"]、並確保<<a-note-about-permissions,權限>>設定正確、以便將交換器資料傳送至資料基礎架構洞見。請參閱下方的「權限注意事項」。 
+| 集群交換器指標 | 允許Data Infrastructure Insights收集叢集交換器資料。請注意，除了在Data Infrastructure Insights方面啟用此功能外，還必須配置ONTAP系統以提供link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["交換器資訊"]，並確保正確<<a-note-about-permissions,權限>>進行設置，以允許將交換器資料傳送到Data Infrastructure Insights。請參閱下面的「關於權限的說明」。 
 |===
 
 
-== ONTAP 電力指標
+== ONTAP功率指標
 
-數種 ONTAP 模式提供資料基礎架構洞見的電力指標、可用於監控或警示。
-
-
-NOTE: 這些清單並不全面，可能會有所變更。一般而言，如果某個型號與清單中的型號屬於同一系列，則支援內容應該相同，但不保證一定相同。如果您不確定您的型號是否支援功率指標，請聯絡 ONTAP 支援。
-
-支援的機型：
-
-A200 A220 A250 A300 A320 A400 A700 A700 A800 A900 C190 FAS2240-4 FAS2552 FAS2650 FAS2720 FAS2750 FAS8200 FAS8300 FAS8700 FAS9000
-
-不支援的機型：
-
-FAS2620 FAS3250 FAS3270 FAS500f FAS6280 FAS / AFF 8020 FAS / AFF 8040 FAS / AFF 8060 FAS / AFF 8080
+多種ONTAP模型為Data Infrastructure Insights提供了可用於監控或警報的功率指標。
 
 
+NOTE: 這些清單並不全面，並且可能會發生變化。一般來說，如果某個型號與清單中的型號屬於同一系列，則支援應該相同，但不保證一定相同。如果您不確定您的型號是否支援功率指標，請聯絡ONTAP支援。
 
-== 權限相關注意事項
+支援的型號：
 
-由於許多 Data Infrastructure Insights 的 ONTAP 儀表板仰賴進階 ONTAP 計數器、因此您必須在資料收集器進階組態區段中啟用 * 進階計數器資料收集 * 。
+A200 A220 A250 A300 A320 A400 A700 A700s A800 A900 C190 FAS2240-4 FAS2552 FAS2650 FAS2720 FAS2750 FAS8200 FAS8300 FAS8700 FAS9000
 
-您也應該確保ONTAP 已啟用對該API的寫入權限。這通常需要具有必要權限的叢集層級帳戶。
+不支援的型號：
 
-若要在叢集層級建立 Data Infrastructure Insights 的本機帳戶、請使用叢集管理管理員使用者名稱 / 密碼登入 ONTAP 、然後在 ONTAP 伺服器上執行下列命令：
+FAS2620 FAS3250 FAS3270 FAS500f FAS6280 FAS/ AFF 8020 FAS/ AFF 8040 FAS/ AFF 8060 FAS/ AFF 8080
 
-. 開始之前、您必須先以ONTAP _Administrator帳戶登入到VMware、然後才能啟用_diagnostic-level命令_。
-. 使用下列命令建立唯讀角色。
+
+
+== 關於權限的說明
+
+由於許多Data Infrastructure Insights的ONTAP儀表板依賴進階ONTAP計數器，因此您必須在資料收集器的進階配置部分中啟用 *進階計數器資料收集*。
+
+您也應確保已啟用對ONTAP API 的寫入權限。這通常需要具有必要權限的叢集等級帳戶。
+
+若要在叢集層級為Data Infrastructure Insights建立本機帳戶，請使用叢集管理管理員使用者名稱/密碼登入ONTAP ，然後在ONTAP伺服器上執行下列命令：
+
+. 在開始之前，您必須使用_管理員_帳戶登入ONTAP ，並且必須啟用_診斷級命令_。
+. 使用以下命令建立唯讀角色。
 +
 ....
 security login role create -role ci_readonly -cmddirname DEFAULT -access readonly
 security login role create -role ci_readonly -cmddirname security -access readonly
 security login role create -role ci_readonly -access all -cmddirname {cluster application-record create}
 ....
-. 使用下列命令建立唯讀使用者。執行create命令後、系統會提示您輸入此使用者的密碼。
+. 使用以下命令建立唯讀用戶。執行建立命令後，系統將提示您輸入該使用者的密碼。
 +
  security login create -username ci_user -application ontapi -authentication-method password -role ci_readonly
 
 
-如果使用AD/LDAP帳戶、則命令應該是
+如果使用 AD/LDAP 帳戶，則命令應該是
 
  security login create -user-or-group-name DOMAIN\aduser/adgroup -application ontapi -authentication-method domain -role ci_readonly
 如果您正在收集叢集交換器資料：
@@ -232,7 +232,7 @@ security login role create -role ci_readonly -access all -cmddirname {cluster ap
 security login rest-role create -role ci_readonly_rest -api /api/network/ethernet -access readonly
 security login create -user-or-group-name ci_user -application http -authmethod password -role ci_readonly_rest
 ....
-產生的角色和使用者登入內容如下。實際輸出可能有所不同：
+最終的角色和使用者登入將類似於以下內容。您的實際輸出可能會有所不同：
 
 ....
 Role Command/ Access
@@ -250,55 +250,55 @@ UserName    Application   Method      Role Name      Locked
 ci_user     ontapi      password    ci_readonly   no
 ....
 
-NOTE: 如果未正確設定 ONTAP 存取控制、則資料基礎架構 Insights REST 呼叫可能會失敗、導致裝置的資料缺口。例如、如果您已在 Data Infrastructure Insights 收集器上啟用此功能、但尚未在 ONTAP 上設定權限、則取得作業將會失敗。此外、如果先前在 ONTAP 上定義角色、而您正在新增其餘 API 功能、請確定已將 _http_ 新增至角色。
+NOTE: 如果ONTAP存取控制設定不正確，則Data Infrastructure InsightsREST 呼叫可能會失敗，導致裝置資料出現差距。例如，如果您已在Data Infrastructure Insights收集器上啟用它，但尚未在ONTAP上配置權限，則獲取將失敗。此外，如果該角色先前在ONTAP上定義，並且您正在新增 Rest API 功能，請確保將 _http_ 新增至該角色。
 
 
 
-== 疑難排解
+== 故障排除
 
-如果您在使用此資料收集器時遇到問題、請嘗試下列事項：
-
-
-
-=== 庫存
-
-[cols="2*"]
-|===
-| 問題： | 試用： 
+如果您在使用此資料收集器時遇到問題，請嘗試以下操作：
 
 
-| 接收401 HTTP回應或13003 ZAPI錯誤代碼、且ZAPI傳回「權限不足」或「未授權使用此命令」 | 檢查使用者名稱和密碼、以及使用者權限/權限。 
 
-
-| 叢集版本低於8.1 | 叢集支援的最低版本為8.1。升級至支援的最低版本。 
-
-
-| ZAPI傳回「叢集角色不是叢集管理LIF」 | AU需要與叢集管理IP對話。檢查IP並視需要變更為不同的IP 
-
-
-| 錯誤：「不支援7模式檔案管理器」 | 如果您使用此資料收集器來探索7模式檔案管理器、就可能發生這種情況。改為將IP變更為指向cDOT叢集。 
-
-
-| ZAPI命令在重試後失敗 | AU與叢集發生通訊問題。檢查網路、連接埠號碼和IP位址。使用者也應該嘗試從AU機器的命令列執行命令。 
-
-
-| AU無法透過HTTP連線至ZAPI | 檢查ZAPI連接埠是否接受純文字。如果AU嘗試傳送純文字到SSL通訊端、通訊就會失敗。 
-
-
-| 通訊失敗、出現SSLException | AU正在嘗試將SSL傳送至檔案管理器上的純文字連接埠。檢查ZAPI連接埠是否接受SSL、或使用不同的連接埠。 
-
-
-| 其他連線錯誤：ZAPI回應的錯誤代碼為13001、「資料庫未開啟」ZAPI錯誤代碼為60、回應包含「API未按時完成」ZAPI回應包含「initialize_session（）傳回的空環境」ZAPI錯誤代碼為14007、回應包含「節點不健全」 | 檢查網路、連接埠號碼和IP位址。使用者也應該嘗試從AU機器的命令列執行命令。 
-|===
-
-
-=== 效能
+=== 存貨
 
 [cols="2*"]
 |===
-| 問題： | 試用： 
+| 問題： | 試試一下： 
 
 
-| 「無法從ZAPI收集效能」錯誤 | 這通常是因為perf stat未執行。請在每個節點上嘗試下列命令：>_system nodesystem shell -node*-command「spemtl -h cmd–stop；spemtl -h cmd–exec__」 
+| 收到 401 HTTP 回應或 13003 ZAPI 錯誤代碼，並且 ZAPI 返回“權限不足”或“未授權執行此命令” | 檢查使用者名稱和密碼以及使用者權限/許可。 
+
+
+| 叢集版本小於 8.1 | 集群最低支援版本為 8.1。升級到最低支援版本。 
+
+
+| ZAPI 傳回“群集角色不是 cluster_mgmt LIF” | AU 需要與叢集管理 IP 對話。檢查 IP 並在必要時更改為其他 IP 
+
+
+| 錯誤：“不支援 7 模式文件管理器” | 如果您使用此資料收集器來發現 7 模式檔案管理器，就會發生這種情況。將 IP 變更為指向 cdot 叢集。 
+
+
+| 重試後 ZAPI 指令失敗 | AU 與集群有通訊問題。檢查網路、連接埠號碼和 IP 位址。使用者還應該嘗試從 AU 機器的命令列運行命令。 
+
+
+| AU 無法透過 HTTP 連線到 ZAPI | 檢查 ZAPI 連接埠是否接受純文字。如果 AU 嘗試向 SSL 套接字發送純文本，則通訊失敗。 
+
+
+| 通訊失敗並出現 SSLException | AU 正在嘗試將 SSL 傳送到檔案總管上的純文字連接埠。檢查 ZAPI 連接埠是否接受 SSL，或使用其他連接埠。 
+
+
+| 其他連接錯誤： ZAPI 回應的錯誤代碼為 13001，“資料庫未開啟” ZAPI 錯誤代碼為 60，回應包含“API 未按時完成” ZAPI 回應包含“initialize_session() 傳回 NULL 環境” ZAPI 錯誤代碼為 14007，回應包含“節點不健康” | 檢查網路、連接埠號碼和 IP 位址。使用者還應該嘗試從 AU 機器的命令列運行命令。 
 |===
-您可以在頁面或中找到其他link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]資訊。
+
+
+=== 表現
+
+[cols="2*"]
+|===
+| 問題： | 試試一下： 
+
+
+| “無法從 ZAPI 收集效能”錯誤 | 這通常是由於 perf stat 沒有運行造成的。在每個節點上嘗試以下命令：> _system node systemshell -node * -command “spmctl -h cmd –stop; spmctl -h cmd –exec”_ 
+|===
+更多資訊可從link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。

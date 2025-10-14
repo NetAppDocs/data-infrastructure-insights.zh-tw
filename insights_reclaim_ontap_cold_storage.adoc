@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: insights_reclaim_ontap_cold_storage.html 
 keywords: insight, greedy, degraded, impacted, impacting, impactful, impact, resources, consuming, workload 
-summary: Insights 可讓您瞭解資源對租戶的其他資源有何影響。 
+summary: 洞察可以讓您了解資源如何影響租戶上的其他資源。 
 ---
-= 洞見：回收 ONTAP Cold Storage
+= 見解：回收ONTAP冷存儲
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,44 +14,44 @@ summary: Insights 可讓您瞭解資源對租戶的其他資源有何影響。
 
 
 [role="lead"]
-回收 ONTAP Cold Storage_ Insight 可提供冷容量、潛在成本 / 電力節約的相關資料、以及 ONTAP 系統上 Volume 的建議行動項目。
+_Reclaim ONTAP Cold Storage_ Insight 提供有關冷容量、潛在成本/電力節省以及ONTAP系統上捲的建議操作項目的資料。
 
-若要檢視這些洞見、請瀏覽 * 儀表板 > Insights * 、並查看 _ 回收 ONTAP Cold Storage_ 洞見。請注意、如果 Data Infrastructure Insights 偵測到冷儲存設備、此 Insight 將僅列出受影響的儲存設備、否則您將會看到「 All Clear （全部清除）」訊息。
+要查看這些見解，請導航至*儀表板>見解*並查看_Reclaim ONTAP Cold Storage_見解。請注意，如果Data Infrastructure Insights檢測到冷存儲，此洞察才會列出受影響的存儲，否則您將看到「全部清除」訊息。
 
-請記住、未顯示 30 天以內的冷資料。
+請記住，不會顯示少於 30 天的冷數據。
 
-image:Cold_Data_Insight_List.png["顯示 3 個含有 Cold 資料的儲存位置的深入資訊清單"]
+image:Cold_Data_Insight_List.png["顯示 3 個包含冷資料的儲存的洞察列表"]
 
-Insight 說明可快速指示偵測到的資料量為「冷」、以及資料所在的儲存容量。此表也提供含有冷資料的工作負載計數。
+Insight 描述快速指示了被偵測為「冷」的資料量以及該資料駐留在哪個儲存體中。該表還提供了冷數據的工作負載數量。
 
-從清單中選取 Insight 會開啟一個頁面、顯示更多詳細資料、包括將資料移至雲端或關閉未受控制的磁碟的建議、以及您可能因實作這些建議而實現的預估成本和省電效益。此頁面甚至提供一個方便的連結link:https://bluexp.netapp.com/cloud-tiering-service-tco["NetApp 的 TCO 計算機"]，讓您可以嘗試使用數字。
+從清單中選擇一個洞察將打開一個頁面，顯示更多詳細信息，包括將資料移動到雲端或循環使用統一磁碟的建議，以及實施這些建議可能實現的估計成本和電力節省。該頁面甚至提供了一個方便的鏈接link:https://bluexp.netapp.com/cloud-tiering-service-tco["NetApp 的 TCO 計算器"]這樣你就可以用這些數字來做實驗。
 
-image:Cold_Data_Power_Info.png["Cold Data Power 資訊"]
+image:Cold_Data_Power_Info.png["冷數據電力資訊"]
 
 
 
 === 建議
 
-在 Insight 頁面上、展開 * 建議 * 以探索下列選項：
+在「洞察」頁面上，展開「建議」以探索以下選項：
 
-* 將未使用的工作負載（殭屍）移至成本較低的儲存層（ HDD ）
+* 將未使用的工作負載（殭屍）移到成本較低的儲存層（HDD）
 +
-利用 zombie 旗標、冷儲存設備和天數、找出最冷且最大的資料量、並將工作負載移至成本較低的儲存層（例如使用硬碟儲存設備的儲存池）。當工作負載在 30 天或更長時間內未收到任何重大 IO 要求時、即視為「殭屍」。
+利用殭屍標誌、冷儲存和天數，找到最冷和最大的資料量，並將工作負載移至成本較低的儲存層（例如使用硬碟儲存的儲存池）。如果工作負載在 30 天或更長時間內未收到任何重要的 IO 請求，則該工作負載被視為「殭屍」。
 
 * 刪除未使用的工作負載
 +
-確認哪些工作負載未在使用中、並考慮將其歸檔或從儲存系統中移除。
+驗證哪些工作負載未被使用，並考慮將其存檔或從儲存系統中刪除。
 
-* 請考慮 NetApp 的 Fabric Pool 解決方案
+* 考慮 NetApp 的 Fabric Pool 解決方案
 +
-NetApp link:https://docs.netapp.com/us-en/cloud-manager-tiering/concept-cloud-tiering.html#features["Fabric Pool 解決方案"]會自動將冷資料分層至低成本的雲端儲存設備，藉此提高效能層的效率，並提供遠端資料保護。
+NetApp 的link:https://docs.netapp.com/us-en/cloud-manager-tiering/concept-cloud-tiering.html#features["Fabric 池解決方案"]自動將冷資料分層到低成本雲端存儲，從而提高效能層的效率並提供遠端資料保護。
 
 
 
 
 
-=== 視覺化與探索
+=== 視覺化和探索
 
-圖表和表格提供其他趨勢資訊、並可讓您深入瞭解個別工作負載。
+圖表和表格提供了額外的趨勢訊息，並允許您深入了解各個工作負載。
 
-image:Cold_Data_Storage_Trend.png["Cold Data Summary Graphs"] image:Cold_Data_Workload_Table.png["Cold Data Workload Table"]
+image:Cold_Data_Storage_Trend.png["冷數據摘要圖"] image:Cold_Data_Workload_Table.png["冷數據工作負載表"]

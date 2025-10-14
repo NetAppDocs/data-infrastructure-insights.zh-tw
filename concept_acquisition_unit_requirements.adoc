@@ -1,66 +1,66 @@
 ---
 sidebar: sidebar 
 permalink: concept_acquisition_unit_requirements.html 
-summary: 作為採購單位的伺服器或 VM 必須符合最低需求。 
+summary: 您用作採集單元的伺服器或虛擬機器必須符合最低要求。 
 keywords: AU, acquisition unit, requirements, sizing 
 ---
-= 採購單位需求
+= 採集單元要求
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-您必須安裝擷取單元（AU）、才能從基礎架構資料收集器（儲存設備、VM、連接埠、EC2等）取得資訊。在安裝擷取單元之前，您應確保租戶符合作業系統， CPU ，記憶體和磁碟空間需求。
+您必須安裝一個採集單元 (AU) 才能從基礎架構資料收集器（儲存、VM、連接埠、EC2 等）取得資訊。在安裝採集單元之前，您應該確保您的租用戶符合作業系統、CPU、記憶體和磁碟空間要求。
 
 
 
-== 需求
+== 要求
 
 |===
 
 
-| 元件 | Linux需求 | Windows需求 
+| 成分 | Linux 需求 | Windows 要求 
 
 
-| 作業系統 | 執行下列任一授權版本的電腦：* AlmaLinux 9.3 至 9.5* Centos（64 位元）：7.2 至 7.9、8.1 至 8.4、Stream 8、Stream 9* Debian（64 位元）：9 至 12* OpenSUSE Leap 15.1 至 Linux 15.64 位元 15.62* . 8.10、9.3 至 9.6* Red Hat（64 位元）：7.2 至 7.9、8.1 至 8.10、9.1 至 9.6* Rocky 9.0 至 9.5* SUSE Linux Enterprise Server 15、15 SP2 至 15 SP6* SELinux這台電腦不應執行其他應用程式級軟體。建議使用專屬伺服器。如果您是搭配 SELinux 執行，建議您在擷取單元系統上執行下列命令： Sudo semanage fcontext -a -t usr_t "/opt/oracle/cloudimses//.*)" NetApp Sudo restorecon -R /opt/dell/cloudimsights NetApp | 執行下列其中一項授權版本的電腦： * Microsoft Windows 10 64 位元 * Microsoft Windows 11 * Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022 * Microsoft Windows Server 2025 此電腦不應執行其他應用程式層級軟體。建議使用專屬伺服器。 
+| 作業系統 | 執行下列任一授權版本的電腦：* AlmaLinux 9.3 至 9.5 * Centos（64 位元）：7.2 至 7.9、8.1 至 8.4、Stream 8、Stream 9 * Debian（64 位元）：9 到 12 * OpenSUSE Leap 15.1 至 Linux 15.64 位元 15.62 * . 8.10、9.3 至 9.6 * Red Hat（64 位元）：7.2 至 7.9、8.1 至 8.10、9.1 至 9.6 * Rocky 9.0 至 9.5 * SUSE Linux Enterprise Server 15、15 SP2 至 15 SP6 * SELinux這台電腦不應執行其他應用程式級軟體。建議使用專用伺服器。如果您使用 SELinux 執行，建議在擷取單元系統上執行下列指令：sudo semanage fcontext -a -t usr_t "/opt/netapp/cloudinsights(/.*)?" sudo restorecon -R /opt/netapp/cloudinsights | 執行下列任一授權版本的電腦：* Microsoft Windows 10 64 位元* Microsoft Windows 11* Microsoft Windows Server 2012* Microsoft Windows Server 2012 R2* Microsoft Windows Server 2016* Microsoft Windows Server 2019* Microsoft Windows Server 2022* Microsoft Windows Server 2025 此電腦級軟體不應執行任何其他應用程式層級軟體。建議使用專用伺服器。 
 
 
-| CPU | 2個CPU核心 | 相同 
+| 中央處理器 | 2 個 CPU 核心 | 相同的 
 
 
-| 記憶體 | 8 GB RAM | 相同 
+| 記憶 | 8 GB 內存 | 相同的 
 
 
-| 可用磁碟空間 | 50 GB （建議使用 100 GB ）的 Linux 磁碟空間應以這種方式分配： NetApp 10 GB （大型環境為 20 GB ） NetApp 40 GB （大型環境為 80 GB ） /tmp 安裝期間至少 1 GB 可用空間 | 50GB 
+| 可用磁碟空間 | 50 GB（建議 100 GB） 對於 Linux，應按以下方式分配磁碟空間： /opt/netapp 10 GB（大型環境為 20 GB） /var/log/netapp 40 GB（大型環境為 80 GB） /tmp 至少 1 GB 在安裝期間可用 | 50GB 
 
 
-| 網路 | 需要 100 Mbps/1 Gbps 乙太網路連線，靜態 IP 位址，以及連接埠 80 或 443 （輸出）連線 NetApp ，從擷取單元連線至 * 。 cloudentses.com/com 或您的資料基礎架構 Insights 租戶（例如： https ： <tenant_id> 。 C01 。 NetApp 。 com ）。如需擷取單元與每個資料收集器之間的需求、請參閱的說明link:data_collector_list.html["資料收集器"]。如果您的組織需要使用代理伺服器來存取網際網路、您可能需要瞭解組織的代理伺服器行為、並尋求特定例外情況、才能讓 Data Infrastructure Insights 運作。例如、貴組織是否預設會封鎖存取、而且例外情況下只允許存取特定網站/網域？如果是這樣，您將需要將以下域添加到例外列表中： *.cloudinsights ． NetApp ． com 有關詳細信息，請參閱關於代理link:task_troubleshooting_linux_acquisition_unit_problems.html#considerations-about-proxies-and-firewalls["這裡（ Linux ）"]或link:task_troubleshooting_windows_acquisition_unit_problems.html#considerations-about-proxies-and-firewalls["這裡（ Windows ）"]。請注意，連接埠 443 必須從 AU 「出站」開啟至 Data Infrastructure Insights 。 | 相同 
+| 網路 | 需要 100 Mbps/1 Gbps 乙太網路連接、靜態 IP 位址以及從擷取單元到 *.cloudinsights.netapp.com 或您的Data Infrastructure Insights租戶（即 \https://<tenant_id>.c01.cloudinsights.netapp.com）的連接埠 80 或 443（出站）連接。對於採集單元和每個資料收集器之間的要求，請參閱link:data_collector_list.html["數據收集器"]。如果您的組織需要使用代理來存取互聯網，您可能需要了解組織的代理行為並尋求某些例外以使Data Infrastructure Insights能夠發揮作用。例如，您的組織是否預設阻止訪問，並且僅允許例外訪問特定網站/網域？如果是這樣，您需要將以下網域添加到例外列表中：*.cloudinsights.netapp.com 有關更多信息，請閱讀有關代理的信息link:task_troubleshooting_linux_acquisition_unit_problems.html#considerations-about-proxies-and-firewalls["這裡（Linux）"]或者link:task_troubleshooting_windows_acquisition_unit_problems.html#considerations-about-proxies-and-firewalls["這裡（Windows）"]。請注意，必須從 AU 到Data Infrastructure Insights「出站」開啟連接埠 443。 | 相同的 
 
 
-| 權限 | 擷取單元伺服器上的Sudo權限。/tmp必須以執行功能掛載。 | 取得單位伺服器的系統管理員權限 
+| 權限 | 採集單元伺服器上的 Sudo 權限。  /tmp 必須以 exec 功能掛載。 | 採集單元伺服器上的管理員權限 
 
 
-| 掃毒 |  | 安裝期間、您必須完全停用所有的掃毒程式。安裝之後、擷取單元軟體所使用的路徑必須排除在掃毒範圍之外。 
+| 病毒掃描 |  | 在安裝過程中，您必須完全停用所有病毒掃描程式。安裝後，必須將採集單元軟體使用的路徑排除在病毒掃描之外。 
 |===
 
 
 == 其他建議
 
-* 為確保稽核與資料報告的準確性、強烈建議您使用*網路時間傳輸協定（NTP）*或*簡易網路時間傳輸協定（SNTP）*來同步擷取裝置機器上的時間。
+* 為了準確的稽核和數據報告，強烈建議使用*網路時間協定 (NTP)* 或*簡單網路時間協定 (SNTP)* 同步擷取單元機器上的時間。
 
 
 
 
-== 關於規模調整
+== 關於尺寸
 
-您可以開始使用只有 8GB 記憶體和 50GB 磁碟空間的 Data Infrastructure Insights 擷取單元、但是對於較大型的環境、您應該自問下列問題：
+您可以從僅具有 8GB 記憶體和 50GB 磁碟空間的Data Infrastructure Insights採集單元開始，但是，對於更大的環境，您應該問自己以下問題：
 
 您是否期望：
 
-* 在ONTAP 這個擷取單元上探索超過2500部虛擬機器或10部大型（> 2個節點）的VMware叢集、Symmetrix或HDS/HPE VSP/XP陣列？
-* 在此擷取單元上部署總共75個以上的資料收集器？
+* 在此採集單元上發現超過 2500 個虛擬機器或 10 個大型（> 2 個節點） ONTAP叢集、Symmetrix 或 HDS/HPE VSP/XP 陣列？
+* 在這個採集單元上部署總共 75 個或更多的資料收集器？
 
 
-對於上述每個「是」答案、建議您在AU中新增8 GB記憶體和50 GB磁碟空間。舉例來說、如果您對這兩個項目都回答「是」、就應該部署一個24GB記憶體系統、其中有150GB或更多的磁碟空間。在Linux上、要新增至記錄位置的磁碟空間。
+對於上述每個「是」的回答，建議在 AU 中加入 8 GB 記憶體和 50 GB 磁碟空間。例如，如果您對兩個問題的答案都是“是”，那麼您應該部署一個 24GB 記憶體系統，並配備 150GB 或更多的磁碟空間。在 Linux 上，要新增到日誌位置的磁碟空間。
 
-如需其他規模調整問題、請聯絡NetApp支援部門。
+如有其他大小問題，請聯絡NetApp支援。

@@ -2,105 +2,105 @@
 sidebar: sidebar 
 permalink: task_dc_hds_nas.html 
 keywords: data collector, HDS HNAS, HDS NAS 
-summary: 設定HDS NAS（HNAS）資料收集器。 
+summary: '配置 HDS NAS (HNAS) 資料收集器。' 
 ---
-= 設定Hitachi Vantara NAS資料收集器
+= 配置 Hitachi Vantara NAS 資料收集器
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-Hitachi Vantara NAS資料收集器是一種庫存與組態資料收集器、可支援探索HDS NAS叢集。Data Infrastructure Insights 支援探索 NFS 和 CIFS 共用、檔案系統（內部磁碟區）和跨區（儲存池）。
+Hitachi Vantara NAS 資料收集器是一種庫存和配置資料收集器，支援發現 HDS NAS 叢集。Data Infrastructure Insights支援發現 NFS 和 CIFS 共用、檔案系統（內部磁碟區）和跨度（儲存池）。
 
 
 
 == 術語
 
-Data Infrastructure Insights 會從 HNAS 資料收集器取得下列庫存資訊。對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights從 HNAS 數據收集器獲取以下庫存資訊。對於Data Infrastructure Insights取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | Data Infrastructure Insights 術語 
+| 供應商/型號術語 | Data Infrastructure Insights術語 
 
 
-| 層級 | 磁碟群組 
+| 層級 | 磁碟組 
 
 
-| 叢集 | 儲存設備 
+| 簇 | 儲存 
 
 
 | 節點 | 儲存節點 
 
 
-| 跨距 | 儲存資源池 
+| 跨距 | 儲存池 
 
 
-| 系統磁碟機 | 後端Lun 
+| 系統驅動器 | 後端 Lun 
 
 
-| 檔案系統 | 內部Volume 
+| 檔案系統 | 內部體積 
 |===
-附註：這些只是通用的術語對應、可能不代表此資料收集器的每個案例。
+注意：這些只是常見的術語映射，可能並不代表此資料收集器的所有情況。
 
 
 
-== 需求
+== 要求
 
-* 裝置IP位址
-* 連接埠22、SSH傳輸協定
-* 使用者名稱與密碼-權限層級：supervisor
-* 附註：此資料收集器以SSH為基礎、因此主機必須能夠在HNAS本身或叢集所連接的系統管理單元（SMU）上、對TCP 22啟動SSH工作階段。
-
-
+* 設備 IP 位址
+* 連接埠 22，SSH 協定
+* 使用者名稱和密碼 - 權限等級：主管
+* 注意：此資料收集器是基於 SSH，因此託管它的 AU 必須能夠在 HNAS 本身或叢集連接到的系統管理單元 (SMU) 上啟動到 TCP 22 的 SSH 會話。
 
 
-== 組態
+
+
+== 配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| HNAS主機 | HNAS管理主機的IP位址或完整網域名稱 
+| 海航主機 | HNAS 管理主機的 IP 位址或完全限定域名 
 
 
-| 使用者名稱 | HNAS CLI的使用者名稱 
+| 使用者名稱 | HNAS CLI 的用戶名 
 
 
-| 密碼 | HNAS CLI使用的密碼 
+| 密碼 | 用於 HNAS CLI 的密碼 
 |===
 
 
-== 進階組態
+== 進階配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| 庫存輪詢時間間隔（分鐘） | 庫存輪詢之間的時間間隔。預設值為 30 分鐘。 
+| 庫存輪詢間隔（分鐘） | 庫存調查之間的間隔。預設值為 30 分鐘。 
 |===
 
 
-== 疑難排解
+== 故障排除
 
-如果您在使用此資料收集器時遇到問題、請嘗試下列事項：
+如果您在使用此資料收集器時遇到問題，請嘗試以下操作：
 
 
 
-=== 庫存
+=== 存貨
 
 [cols="2*"]
 |===
-| 問題： | 試用： 
+| 問題： | 試試一下： 
 
 
-| 「錯誤連線」並顯示錯誤訊息「錯誤設定Shell通道：」或「開啟Shell通道時發生錯誤」 | 可能是網路連線問題所造成、或SSH設定錯誤。確認與替代SSH用戶端的連線 
+| “連線錯誤”，錯誤訊息為“設定 shell 頻道錯誤：”或“開啟 shell 頻道錯誤” | 可能是網路連線問題或 SSH 設定錯誤造成的。確認與備用 SSH 用戶端的連接 
 
 
-| 出現錯誤訊息「Command: xxx as timed out（命令：xxx已逾時）」或「Error rieving data（擷取資料時發生錯誤）」。 | *使用替代SSH用戶端*提高逾時時間來嘗試命令 
+| “超時”或“檢索資料時出錯”，錯誤訊息為“命令：XXX 已逾時。” | * 使用備用 SSH 用戶端嘗試該指令 * 增加逾時 
 
 
-| 連線時發生「錯誤」或「登入認證無效」、並顯示錯誤訊息「無法與裝置通訊：」 | *檢查IP位址*檢查使用者名稱和密碼*確認與替代SSH用戶端的連線 
+| “連線錯誤”或“登入憑證無效”，錯誤訊息為“無法與裝置通訊：” | * 檢查 IP 位址 * 檢查使用者名稱和密碼 * 確認與備用 SSH 用戶端的連接 
 |===
-您可以在頁面或中找到其他link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]資訊。
+更多資訊可從link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。

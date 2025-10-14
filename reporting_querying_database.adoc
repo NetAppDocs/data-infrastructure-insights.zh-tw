@@ -1,72 +1,72 @@
 ---
 sidebar: sidebar 
 permalink: reporting_querying_database.html 
-summary: 使用 Data Infrastructure Insights API 直接查詢報告資料庫。 
+summary: 使用Data Infrastructure InsightsAPI 直接查詢報表資料庫。 
 keywords: reporting, cognos, data warehouse, dwh, API 
 ---
-= 透過API存取報告資料庫
+= 透過 API 存取報告資料庫
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-Data Infrastructure Insights 強大的 API 可讓使用者直接查詢 Data Infrastructure Insights Reporting 資料庫、而無需瀏覽 Cognos Reporting 環境。
+Data Infrastructure Insights強大的 API 允許使用者直接查詢Data Infrastructure Insights Reporting 資料庫，而無需經過 Cognos Reporting 環境。
 
 
-NOTE: 本文件是指 Data Infrastructure Insights Premium Edition 中提供的 Data Infrastructure Insights Reporting 功能。
-
-
-
-== OData
-
-Data Infrastructure Insights Reporting API 遵循link:https://www.odata.org/["OData v4"]（開放式資料傳輸協定）標準來查詢報告資料庫。如需更多資訊或深入瞭解、請參閱 link:https://www.odata.org/getting-started/basic-tutorial/["本教學課程"]OData 。
-
-所有申請都將以 URL \https://<Data 基礎架構洞見 URL>/rest/v1/dwh-management / oData_ 開始
+NOTE: 本文檔涉及Data Infrastructure Insights報告功能，該功能在Data Infrastructure Insights高級版中提供。
 
 
 
-== 產生APIKey
+== 奧達塔
 
-瞭解更多關於link:API_Overview.html["Data Infrastructure Insights API"]的資訊。
+Data Infrastructure Insights報告 API 遵循link:https://www.odata.org/["OData v4"]（開放資料協定）標準用於查詢報告資料庫。如需了解更多信息或了解更多信息，請查看link:https://www.odata.org/getting-started/basic-tutorial/["本教程"]在 OData 上。
 
-若要產生API金鑰、請執行下列動作：
-
-* 登入您的 Data Infrastructure Insights 環境、然後選取 * 管理 > API 存取 * 。
-* 按一下「+ API存取權杖」。
-* 輸入名稱與說明。
-* 針對類型、選擇_Data倉儲。
-* 將權限設為讀取/寫入。
-* 設定期望到期日。
-* 按一下「Save（儲存）」、然後*複製金鑰並將其儲存*到安全的地方。您稍後將無法存取完整金鑰。
-
-
-APIkeys 適用於<<synchronous-or-asynchronous,_Sync_ 或 _AsynSync_>>。
+所有請求均以 url _\https://< Data Infrastructure Insights URL>/rest/v1/dwh-management/odata_ 開頭
 
 
 
-== 直接查詢資料表
+== 產生 APIKey
 
-有了API金鑰、現在就能直接查詢報告資料庫。長 URL 可簡化為 \https://.../odata/ 以供顯示、而非完整的 \https://<Data 基礎架構洞見 URL>/rest / v1/dwh-management / OData/
+閱讀更多link:API_Overview.html["Data Infrastructure InsightsAPI"]。
 
-請嘗試類似的簡單查詢
+若要產生 API 金鑰，請執行下列操作：
 
-* \https://<Data 基礎架構洞見 URL>/rest / v1/dwh-management / oData/dwh_cCustom
-* \https://<Data 基礎架構洞見 URL>/rest / v1/dwh-management / oData/dwh_inventory
-* \https://<Data 基礎架構洞見 URL>/rest / v1/dwh-management / oData/dwh_inventory/storage
-* \https://<Data 基礎架構洞見 URL>/rest / v1/dwh-management / oData/dwh_inventory/disk
+* 登入您的Data Infrastructure Insights環境並選擇*管理>API 存取*。
+* 點選“+ API 存取令牌”。
+* 輸入名稱和描述。
+* 對於類型，選擇“資料倉儲”。
+* 將權限設定為讀取/寫入。
+* 設定願望到期日。
+* 點擊“儲存”，然後*複製金鑰並將其儲存*到安全的地方。您稍後將無法存取完整密鑰。
+
+
+APIkey 適用於<<synchronous-or-asynchronous,_Sync_ 或 _Async_>>。
+
+
+
+== 直接查詢表
+
+有了 API 金鑰，現在就可以直接查詢報告資料庫。為了顯示目的，長 URL 可能會簡化為 \https://.../odata/ 而不是完整的 \https://< Data Infrastructure Insights URL>/rest/v1/dwh-management/odata/
+
+嘗試一些簡單的查詢，例如
+
+* \https://<Data Infrastructure InsightsURL>/rest/v1/dwh-management/odata/dwh_custom
+* \https://<Data Infrastructure InsightsURL>/rest/v1/dwh-management/odata/dwh_inventory
+* \https://<Data Infrastructure InsightsURL>/rest/v1/dwh-management/odata/dwh_inventory/storage
+* \https://<Data Infrastructure InsightsURL>/rest/v1/dwh-management/odata/dwh_inventory/disk
 * \https://.../odata/dwh_custom/custom_queries
 
 
 
 
-== REST API範例
+== REST API 範例
 
-所有通話的 URL 為 \https://<Data 基礎架構洞見 URL>/rest / v1/dwh-management / oData_ 。
+所有呼叫的 URL 為 _\https://< Data Infrastructure Insights URL>/rest/v1/dwh-management/odata_。
 
-* Get /｛schema｝/*-從報告資料庫擷取資料。
+* GET /{schema}/** - 從報表資料庫檢索資料。
 
 
-格式： \https://<Data 基礎架構洞見 URL>/rest / v1/dwh-management / <schema_name> / <query> _
+格式：_\https://<Data Infrastructure InsightsURL>/rest/v1/dwh-management/odata/<schema_name>/<query>_
 
 範例：
 
@@ -103,44 +103,44 @@ APIkeys 適用於<<synchronous-or-asynchronous,_Sync_ 或 _AsynSync_>>。
 ....
 
 
-== 實用秘訣
+== 有用的提示
 
-使用報告API查詢時、請謹記下列事項。
+使用報告 API 查詢時請記住以下幾點。
 
-* 查詢有效負載必須是有效的Json字串
-* 查詢有效負載必須包含在單一行中
-* 雙引號必須轉義、例如：「
-* 索引標籤支援為\t
-* 避免留言
-* 支援大小寫較低的表格名稱
+* 查詢負載必須是有效的 JSON 字串
+* 查詢有效負載必須包含在一行中
+* 雙引號必須轉義，即 \"
+* 支援 Tab 鍵為 \t
+* 避免評論
+* 支援小寫表名
 
 
-此外：
+另外：
 
-* 需要2個標頭：
+* 需要 2 個標題：
 +
-** 名稱「X-CloudInsights - ApikKey」
-** 屬性值「<apikey>」
+** 名稱“X-CloudInsights-ApiKey”
+** 屬性值“<apikey>”
 
 
 
 
-您的 API 金鑰將專屬於您的 Data Infrastructure Insights 環境。
+您的 API 金鑰將特定於您的Data Infrastructure Insights環境。
 
 
 
-== 同步或非同步？
+== 同步還是異步？
 
-根據預設、 API 命令會以 _Synchronity_ 模式運作、這表示您傳送要求、並立即傳回回應。不過、有時候查詢可能需要很長時間才能執行、這可能會導致要求逾時。若要解決此問題、您可以執行要求 _ 非同步 _ 。在非同步模式中、要求會傳回可監控執行的 URL 。URL 會在準備好時傳回結果。
+預設情況下，API 命令將以同步模式運行，這表示您發送請求並立即回傳回應。但是，有時查詢可能需要很長時間才能執行，這可能導致請求逾時。為了解決這個問題，您可以非同步執行請求。在非同步模式下，請求將傳回一個URL，可以透過該URL監控執行情況。  URL 準備就緒後將傳回結果。
 
-若要以非同步模式執行查詢，請將標頭新增 `*Prefer: respond-async*`至要求。成功執行後、回應將包含下列標頭：
+若要以非同步模式執行查詢，請新增標頭 `*Prefer: respond-async*`響應請求。成功執行後，回應將包含以下標頭：
 
 ....
 Status Code: 202 (which means ACCEPTED)
 preference-applied: respond-async
 location: https://<Data Infrastructure Insights URL>/rest/v1/dwh-management/odata/dwh_custom/asyncStatus/<token>
 ....
-如果回應尚未就緒、查詢位置 URL 會傳回相同的標頭、如果回應準備好、則會傳回狀態 200 。回應內容將為文字類型、包含原始查詢的 http 狀態和部分中繼資料、然後是原始查詢的結果。
+如果回應尚未準備好，則查詢位置 URL 將傳回相同的標頭；如果回應已準備好，則將傳回狀態 200。回應內容將為文字類型，包含原始查詢的 http 狀態和一些元數據，然後是原始查詢的結果。
 
 ....
 HTTP/1.1 200 OK
@@ -150,10 +150,10 @@ HTTP/1.1 200 OK
 
  { <JSON_RESPONSE> }
 ....
-若要查看所有非同步查詢的清單、以及其中哪些查詢已就緒、請使用下列命令：
+若要查看所有非同步查詢的清單以及哪些查詢已準備就緒，請使用下列命令：
 
  GET https://<Data Infrastructure Insights URL>/rest/v1/dwh-management/odata/dwh_custom/asyncList
-回應的格式如下：
+回應具有以下格式：
 
 ....
 {

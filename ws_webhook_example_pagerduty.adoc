@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: ws_webhook_example_pagerduty.html 
 keywords: webhook, notification, PagerDuty, integration 
-summary: 為 PagerDuty 建立工作負載安全網路攔截器，以警示安全性 
+summary: 為 PagerDuty 建立工作負載安全性 webhook 以發出安全警報 
 ---
-= 工作負載安全 Webhook 的 PagerDuty 範例
+= PagerDuty 的工作負載安全性 Webhook 範例
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,53 +14,53 @@ summary: 為 PagerDuty 建立工作負載安全網路攔截器，以警示安全
 
 
 [role="lead"]
-Webhooks可讓使用者使用自訂的Webhooks通道、將警示通知傳送至各種應用程式。本頁提供設定PagerDuty Webhooks的範例。
+Webhook 允許使用者使用自訂的 webhook 通道向各種應用程式發送警報通知。本頁面提供了為 PagerDuty 設定 webhook 的範例。
 
 
-NOTE: 本頁面是指可能會變更的第三方指示。如需最新資訊，請參閱link:https://support.pagerduty.com/docs/services-and-integrations["PagerDuty文件"]。
+NOTE: 本頁引用第三方說明，可能會有變更。請參閱link:https://support.pagerduty.com/docs/services-and-integrations["PagerDuty 文檔"]以獲取最新資訊。
 
 
 
-== PagerDuty設定：
+== PagerDuty 設定：
 
-. 在 PagerDuty 中，瀏覽至 * 服務 > 服務目錄 * ，然後按一下 *+ 新服務 * 按鈕。
-. 輸入 _ 名稱 _ ，然後選取 _ 直接使用我們的 API _ 。選取新增服務 _ 。
+. 在 PagerDuty 中，導覽至 *服務 > 服務目錄* 並點選 *+新服務* 按鈕。
+. 輸入_名稱_並選擇_直接使用我們的 API_。選擇“新增服務”。
 +
-image:Webhooks_PagerDutyScreen1.png["PagerDuty畫面"]
+image:Webhooks_PagerDutyScreen1.png["Pagerduty 螢幕"]
 
-. 選取 _Integrations 標籤以查看 * 整合金鑰 * 。當您在下方建立 Workload Security Webhook 時，您將需要這個金鑰。
+. 選擇“Integrations”標籤來查看“Integration Key”。當您建立下面的工作負載安全 webhook 時，您將需要此金鑰。
 
 
-. 請前往*「事件」*或*「服務」*檢視「警示」。
+. 前往*事件*或*服務*查看警報。
 +
-image:ws_pagerduty_incidents_list.png["pagerDuty 事件清單範例， width=700"]
+image:ws_pagerduty_incidents_list.png["pagerduty 事件清單範例，寬度=700"]
 
 
 
 
 
-== 建立工作負載安全 PagerDuty Webhook ：
+== 建立工作負載安全性 PagerDuty Webhook：
 
-* 瀏覽至管理 > 通知，然後選取 _Workload Security Webhooks_ 標籤。選取「 + Webhook 」以建立新的網路攔截器。
-* 為 Webhook 命名有意義的名稱。
-* 在 _ 範本類型 _ 下拉式清單中，選取 _ 頁面負載觸發器 _ 。
-* 建立名為 _routingKey_ 的自訂參數秘密，並將值設為上述建立的 PagerDuty _Integration Key_ 。
-
-
-image:Webhooks_Custom_Secret_Routing_Key.png["設定路由金鑰，寬度 =300"]
-
-image:ws_webhook_pagerduty_example.png["工作負載安全分頁工作負載 Webhook 範例， width=400"]
+* 導覽至“管理”>“通知”，然後選擇“_Workload Security Webhooks_”標籤。選擇“+ Webhook”來建立一個新的 webhook。
+* 為 webhook 賦予一個有意義的名稱。
+* 在「範本類型」下拉式功能表中，選擇「PagerDuty 觸發器」。
+* 建立一個名為_routingKey_的自訂參數金鑰，並將其值設為上面建立的PagerDuty_Integration Key_。
 
 
+image:Webhooks_Custom_Secret_Routing_Key.png["設定路由鍵，width=300"]
 
-== 透過Webhook通知
-
-* 若要透過 Webhook 通知事件，請瀏覽至 _Workload Security > Policies 。選取「攻擊原則」或「警示原則」。
-* 輸入有意義的原則名稱。
-* 選取必要的攻擊類型，原則應附加的裝置，以及必要的動作。
-* 在 _webhooks Notifications_ 下拉式清單中，選取所需的 PagerDuty Webhooks 。儲存原則。
+image:ws_webhook_pagerduty_example.png["工作負載安全 pagerduty webhook 範例，寬度=400"]
 
 
-附註： Webhooks 也可透過編輯方式附加至現有原則。
 
-image:ws_add_attack_policy.png["新增攻擊原則對話方塊，顯示 Webhook ， width=400"]
+== 透過 Webhook 發送通知
+
+* 若要透過 webhook 通知事件，請導覽至_工作負載安全性 > 策略_。選擇“_+攻擊策略_”或“_+警告策略_”。
+* 輸入一個有意義的策略名稱。
+* 選擇所需的攻擊類型、應附加策略的設備以及所需的操作。
+* 在「Webhooks Notifications」下拉式功能表下，選擇所需的 PagerDuty webhook。保存策略。
+
+
+注意：也可以透過編輯將 Webhook 附加到現有策略。
+
+image:ws_add_attack_policy.png["新增攻擊策略對話框顯示 webhook，寬度=400"]

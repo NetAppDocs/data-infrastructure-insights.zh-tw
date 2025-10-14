@@ -1,16 +1,16 @@
 ---
 sidebar: sidebar 
 permalink: task_dc_na_cloud_connection.html 
-summary: 設定NetApp Cloud Connection以供ONTAP 採用NetApp 9.9以上資料收集器 
+summary: 配置NetApp Cloud Connection for ONTAP 9.9+ 資料收集器 
 keywords: data collector, NetApp, Cloud agent, ONTAP 
 ---
-= NetApp Cloud Connection for ONTAP NetApp 9.9以上資料收集器
+= NetApp Cloud Connection for ONTAP 9.9+ 資料收集器
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-此資料收集器可建立雲端連線、以支援ONTAP 從下列AFF 系統收集資料：FAS
+此資料收集器建立雲端連接以支援從ONTAP 9.9+ CVO、 AFF和FAS系統收集資料。
 
 
-NOTE: 自 2023 年 4 月 4 日起、此資料收集器將不再安裝在 Data Infrastructure Insights 中、並將於 2023 年 7 月從所有 Data Infrastructure Insights 安裝中移除。
+NOTE: 自 2023 年 4 月 4 日起，此資料收集器將無法再安裝在Data Infrastructure Insights中，並且將於 2023 年 7 月從所有Data Infrastructure Insights安裝中刪除。

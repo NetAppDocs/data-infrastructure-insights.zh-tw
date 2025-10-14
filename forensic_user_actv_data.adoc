@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: forensic_user_actv_data.html 
 keywords: Forensic, user activity, user activity data, 
-summary: 鑑識使用者活動資料 
+summary: 取證用戶活動數據 
 ---
-= 鑑識使用者活動資料
+= 取證用戶活動數據
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,25 +14,25 @@ summary: 鑑識使用者活動資料
 
 
 [role="lead"]
-「使用者活動」頁面可協助您瞭解使用者在實體上執行的動作。
+使用者活動頁面可協助您了解使用者對實體執行的操作。
 
-本頁提供的資料說明：
+本頁提供的數據顯示：
 
-* 實體存取時間、包括月、日、年和時間。
-* 透過連結存取實體的使用者link:forensic_user_overview.html["使用者詳細資料"]。
+* 實體存取時間，包括月、日、年、時間。
+* 透過連結存取實體的用戶link:forensic_user_overview.html["用戶詳細資訊數據"]。
 * 使用者執行的活動：
 +
-** 寫入
-** 讀取
-** 存取中繼資料
+** 寫
+** 讀
+** 存取元數據
 
 
-* 連結至的實體路徑link:forensic_entity_detail.html["實體詳細資料"]
+* 指向實體的路徑，其中包含指向link:forensic_entity_detail.html["實體詳細數據"]
 * 實體類型：
 +
-** 檔案
-** 路徑
+** 文件
+** 小路
 
 
-* 執行作業的IP位址。
+* 執行操作的 IP 位址。
 

@@ -2,39 +2,39 @@
 sidebar: sidebar 
 permalink: kubernetes_node_detail.html 
 keywords: k8s, pods, clusters, nodes. troubleshooting, planning 
-summary: Kubernetes節點詳細資料頁面可深入瞭解後端PV和Pod儲存設備。 
+summary: Kubernetes 節點詳細資訊頁面提供有關後端 PV 和 Pod 儲存的洞察。 
 ---
-= Kubernetes節點詳細資料頁面
+= Kubernetes 節點詳細資訊頁面
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-在Kubernetes Explorer中、您可以按一下「節點」圖示、開啟該節點的詳細資訊頁面。在此頁面上、您可以檢視節點的相關資訊、以及瀏覽VM、Pod和Container資訊。
+在 Kubernetes Explorer 中，您可以點擊節點圖示來開啟該節點的詳細資訊頁面。在此頁面上，您可以查看有關節點的資訊以及探索 VM、Pod 和容器資訊。
 
-image:KubernetesNodeFiltering.png["Kubernetes節點詳細資料頁面顯示篩選"]
-
-
-
-== 探索節點的Pod和持續磁碟區
-
-Data Infrastructure Insights 可讓您清楚掌握 Kubernetes 環境的後端儲存設備、讓您深入瞭解 Kubernetes Pod 和持續磁碟區（ PV ）。您可以追蹤PV計數器、例如IOPS、延遲和處理量、從單一Pod的使用量、透過PV計數器、直到PV、再到後端儲存設備。
-
-在 PV 層級、 Data Infrastructure Insights 會收集後端（內部磁碟區或磁碟區、視 PV 類型而定）容量資訊（總計、已使用、已使用百分比）、以及內部磁碟區快照數。從Pod到儲存層級、它會收集後端容量和內部Volume Snapshot數。
-
-在Volume或內部Volume登陸頁面上、會顯示兩個表格：
-
-image:Kubernetes_PV_Table.png["Kubernetes PV表"] image:Kubernetes_Pod_Table.png["Kubernetes Pod表格"]
-
-
-NOTE: 如果您已自訂Volume或內部Volume登陸頁面、則可能不會自動看到PV和Pod表格。若要查看這些表格、您必須將頁面回復為預設、此時您會看到PV和Pod表格。接著您可以視需要重新自訂頁面。
-
-請注意、為了善用這些新表格、建議您先解除安裝目前的Kubernetes代理程式、然後重新安裝。您也必須安裝Kube-State-Metrics版本2.1.0或更新版本。
+image:KubernetesNodeFiltering.png["顯示過濾的 Kubernetes 節點詳細資訊頁面"]
 
 
 
-== Kubernetes節點到VM連結
+== 探索節點的 Pod 和持久卷
 
-在Kubernetes Node頁面上、您可以按一下以開啟Node的VM頁面。VM頁面也包含指向Node本身的連結。
+Data Infrastructure Insights可讓您了解 Kubernetes 環境的後端存儲，讓您深入了解 Kubernetes Pod 和持久性磁碟區 (PV)。您可以追蹤 PV 計數器，例如 IOPS、延遲和吞吐量，從單一 Pod 的使用情況通過 PV 計數器到 PV，一直到後端儲存裝置。
 
-image:Kubernetes_Node_Page_with_VM_Link.png["Kubernetes Node頁面顯示VM連結"] image:Kubernetes_VM_Page_with_Node_Link.png["Kubernetes VM頁面顯示Node連結"]
+在 PV 級別，Data Infrastructure Insights收集後端（內部磁碟區或取決於 PV 類型的磁碟區）容量資訊（總計、已使用、已使用百分比）以及內部磁碟區快照計數。在 Pod 到儲存層級上，它會收集後端容量和內部磁碟區快照計數。
+
+在磁碟區或內部磁碟區登入頁面上，顯示兩個表格：
+
+image:Kubernetes_PV_Table.png["Kubernetes PV 表"] image:Kubernetes_Pod_Table.png["Kubernetes Pod 表"]
+
+
+NOTE: 如果您自訂了磁碟區或內部磁碟區登入頁面，則可能無法自動看到 PV 和 Pod 表。要查看這些表，您必須將頁面恢復為預設狀態，此時您將看到 PV 和 Pod 表。然後您可以根據需要繼續重新自訂頁面。
+
+請注意，為了利用這些新表，建議卸載目前的 Kubernetes 代理，然後重新安裝。您還必須安裝 Kube-State-Metrics 版本 2.1.0 或更高版本。
+
+
+
+== Kubernetes 節點到虛擬機器的鏈接
+
+在 Kubernetes Node 頁面上，您可以按一下 開啟 Node 的 VM 頁面。  VM 頁面還包含傳回節點本身的連結。
+
+image:Kubernetes_Node_Page_with_VM_Link.png["顯示虛擬機器連結的 Kubernetes 節點頁面"] image:Kubernetes_VM_Page_with_Node_Link.png["顯示節點連結的 Kubernetes VM 頁面"]

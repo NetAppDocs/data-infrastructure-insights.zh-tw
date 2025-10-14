@@ -2,85 +2,85 @@
 sidebar: sidebar 
 permalink: task_dc_infinidat_infinibox.html 
 keywords: data collector, infinidat, InfiniBox 
-summary: 設定Infinidat InfinidBox資料收集器。 
+summary: 配置 Infinidat InfiniBox 資料收集器。 
 ---
-= Infinidat InfinidBox資料收集器
+= Infinidat InfiniBox資料收集器
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-Infinidat Infinbox（HTTP）資料收集器用於從Infinidat Infinidat InfinBox儲存系統收集庫存資訊。
+Infinidat InfiniBox (HTTP) 資料收集器用於從 Infinidat InfiniBox 儲存系統收集庫存資訊。
 
 
 
 == 術語
 
-Data Infrastructure Insights 從 Infinidat InfinBox 資料收集器取得下列庫存資訊。對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights從 Infinidat InfiniBox 資料收集器取得以下庫存資訊。對於Data Infrastructure Insights取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | Data Infrastructure Insights 術語 
+| 供應商/型號術語 | Data Infrastructure Insights術語 
 
 
-| 儲存資源池 | 儲存資源池 
+| 儲存池 | 儲存池 
 
 
 | 節點 | 控制器 
 
 
-| 檔案系統 | 內部Volume 
+| 檔案系統 | 內部體積 
 
 
-| 檔案系統 | 檔案共用 
+| 檔案系統 | 文件共享 
 
 
 | 檔案系統匯出 | 分享 
 |===
 
 
-== 需求
+== 要求
 
-以下是設定此資料收集器的需求。
+以下是配置此資料收集器時的要求。
 
-* InfindBox管理節點的IP位址或FQDN
-* 管理使用者ID和密碼
-* 透過REST API連接埠443
-
-
+* InfiniBox 管理節點的 IP 位址或 FQDN
+* 管理員使用者名稱和密碼
+* 透過 REST API 存取連接埠 443
 
 
-== 組態
-
-[cols="2*"]
-|===
-| 欄位 | 說明 
 
 
-| InfinBox主機 | InfindBox管理節點的IP位址或完整網域名稱 
-
-
-| 使用者名稱 | 使用者名稱 
-
-
-| 密碼 | InfindBox管理節點的密碼 
-|===
-
-
-== 進階組態
+== 配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| TCP 連接埠 | TCP連接埠用於連線至InfinabBox伺服器。預設值為 443 。 
+| InfiniBox 主機 | InfiniBox 管理節點的 IP 位址或完全限定域名 
 
 
-| 庫存輪詢時間間隔 | 庫存輪詢之間的時間間隔。預設值為 60 分鐘。 
+| 使用者名稱 | InfiniBox 管理節點的使用者名稱 
+
+
+| 密碼 | InfiniBox 管理節點的密碼 
 |===
 
 
-== 疑難排解
+== 進階配置
 
-有關此資料收集器的其他資訊，請link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]參閱頁面或。
+[cols="2*"]
+|===
+| 場地 | 描述 
+
+
+| TCP 連接埠 | 用於連接到 InfiniBox 伺服器的 TCP 連接埠。預設值為 443。 
+
+
+| 庫存輪詢間隔 | 庫存調查之間的間隔。預設值為 60 分鐘。 
+|===
+
+
+== 故障排除
+
+關於此數據收集器的更多信息，請參閱link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。

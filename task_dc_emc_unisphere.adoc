@@ -2,12 +2,12 @@
 sidebar: sidebar 
 permalink: task_dc_emc_unisphere.html 
 keywords: data collector, Unisphere, EMC 
-summary: 設定Dell EMC UnREST資料收集器。 
+summary: 配置 Dell EMC Unisphere REST 資料收集器。 
 ---
-= 設定Dell EMC Unisphere資料收集器
+= 配置 Dell EMC Unisphere REST 資料收集器
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-本頁是一個小作品。如需最新的 Unisphere 文件，請參閱link:task_dc_emc_unisphere_rest.html["*本頁*"]。
+此頁面為存根。有關最新的 Unisphere 文檔，請參閱link:task_dc_emc_unisphere_rest.html["*本頁*"]。

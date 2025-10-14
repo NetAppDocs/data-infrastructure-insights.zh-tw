@@ -2,44 +2,44 @@
 sidebar: sidebar 
 permalink: concept_kubernetes_network_monitoring_and_map.html 
 keywords: service map, workloads, 
-summary: 介紹 Kubernetes 的工作負載相依性和流程、並強調網路和效能問題 
+summary: 介紹 Kubernetes 工作負載依賴關係和流程，並重點介紹網路和效能問題 
 ---
-= Kubernetes 網路效能監控與地圖
+= Kubernetes 網路效能監控與映射
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-Kubernetes 網路效能監控與地圖功能可對應服務之間的相依性（也稱為工作負載）、藉此簡化疑難排解程序、並即時掌握網路效能延遲和異常狀況、以便在影響使用者之前先識別效能問題。此功能可分析及稽核 Kubernetes 流量、協助組織降低整體成本。
+Kubernetes 網路效能監控和映射功能透過映射服務（也稱為工作負載）之間的依賴關係來簡化故障排除，並提供對網路效能延遲和異常的即時可見性，以便在效能問題影響使用者之前識別它們。此功能透過分析和審核 Kubernetes 流量來幫助組織降低整體成本。
 
-主要功能：•工作負載對應表呈現 Kubernetes 工作負載相依性和流程、並強調網路和效能問題。•監控 Kubernetes Pod 、工作負載和節點之間的網路流量、找出流量和延遲問題的來源。•分析入口、出口、跨區域和跨區域網路流量、藉此降低整體成本。
+主要特點：• 工作負載圖顯示 Kubernetes 工作負載依賴關係和流程，並反白顯示網路和效能問題。  • 監控 Kubernetes pod、工作負載和節點之間的網路流量；識別流量和延遲問題的來源。  • 透過分析入口、出口、跨區域和跨區域網路流量來降低整體成本。
 
-image:workload-map-animated.gif["工作負載對應範例"]
+image:workload-map-animated.gif["工作負載圖範例"]
 
 
 
 == 先決條件
 
-在使用 Kubernetes 網路效能監控和地圖之前，您必須先設定link:task_config_telegraf_agent_k8s.html["NetApp Kubernetes監控操作員"]以啟用此選項。在部署操作員期間、選取「網路效能與地圖」核取方塊以啟用。您也可以瀏覽至 Kubernetes 登陸頁面、然後選取「修改部署」來啟用此選項。
+在使用 Kubernetes 網路效能監控和映射之前，您必須先設定link:task_config_telegraf_agent_k8s.html["NetApp Kubernetes 監控操作員"]啟用此選項。在部署操作員期間，選擇“網路效能和地圖”複選框以啟用。您也可以透過導覽至 Kubernetes 登入頁面並選擇「修改部署」來啟用此選項。
 
-image:ServiceMap_NKMO_Deployment_Options.png["在 NKMO STUP 期間選取地圖選項"]
+image:ServiceMap_NKMO_Deployment_Options.png["在 NKMO 停止期間選擇地圖選項"]
 
 
 
-== 監控
+== 監視器
 
-工作負載對應會使用link:task_create_monitor.html["監控"]來衍生資訊。Data Infrastructure Insights 提供許多預設的 Kubernetes 監視器（請注意、這些監視器預設可能為 _Paused （暫停））。您可以 _ 恢復 _ （即啟用）您想要的監視器）、或是為 Kubernetes 物件建立自訂監視器、工作負載對應也會使用這些監視器。
+工作負載圖使用link:task_create_monitor.html["監視器"]來獲取資訊。Data Infrastructure Insights提供了許多預設的 Kubernetes 監視器（請注意，這些監視器預設可能處於_暫停_狀態。您可以_恢復_（即啟用）您想要的監視器），或者您可以為 kubernetes 物件建立自訂監視器，工作負載圖也將使用這些監視器。
 
-您可以針對下列任何物件類型建立 Data Infrastructure Insights 度量警示。請確定資料已依預設物件類型分組。
+您可以針對以下任何物件類型建立Data Infrastructure Insights指標警報。確保資料按預設物件類型分組。
 
-* Kubernetes.Workload
-* Kubernetes.daemonset
+* kubernetes.工作負載
+* kubernetes.daemonset
 * kubernetes.deployment
-* Kubernetes.cronjob
-* Kubernetes.job
-* Kubernetes.Replicaset
-* Kubernetes.statefset
-* Kubernetes.pod
+* kubernetes.cronjob
+* kubernetes.job
+* kubernetes.replicaset
+* kubernetes.statefulset
+* Kubernetes Pod
 * kubernetes.network_traffic_l4
 
 
@@ -47,53 +47,53 @@ image:ServiceMap_NKMO_Deployment_Options.png["在 NKMO STUP 期間選取地圖�
 
 == 地圖
 
-地圖會顯示服務 / 工作負載及其彼此之間的關係。箭頭顯示交通路況方向。將游標移至工作負載上方會顯示該工作負載的摘要資訊、如以下範例所示：
+地圖顯示服務/工作負載及其相互關係。箭頭顯示交通方向。將滑鼠懸停在工作負載上會顯示該工作負載的摘要訊息，如下例所示：
 
-image:ServiceMap_Simple_Example.png["工作負載對應工作負載範例"]
+image:ServiceMap_Simple_Example.png["工作負載圖工作負載範例"]
 
-圓圈內的圖示代表不同的服務類型。請注意，只有在基礎物件具有<<workload-labels,標籤>>時，才會顯示圖示。
+圓圈內的圖示代表不同的服務類型。請注意，僅當底層物件具有<<workload-labels,標籤>>。
 
-image:ServiceMap_Icons.png["說明服務圖示"]
+image:ServiceMap_Icons.png["服務圖示說明"]
 
-每個圓圈的大小代表節點大小。請注意、這些大小是相對的、您的瀏覽器縮放等級或螢幕大小可能會影響實際的圓圈大小。同樣地、交通路況線條樣式也能讓您一目瞭然地瞭解連線大小、粗體實線是高流量、而輕點虛線則是較低的流量。
+每個圓圈的大小表示節點大小。請注意，這些尺寸是相對的，您的瀏覽器縮放等級或螢幕尺寸可能會影響實際的圓圈尺寸。同樣，流量線樣式可讓您一目了然地了解連線大小；粗實線表示高流量，而淺虛線表示低流量。
 
-圓圈內的數字是服務目前正在處理的外部連線數量。
+圓圈內的數字是服務目前正在處理的外部連線數。
 
-image:ServiceMap_Node_and_Connection_Legend.png["顯示相對圓形（節點）和連接大小的圖例"]
-
-
-
-== 工作負載詳細資料和警示
-
-以色彩顯示的圓圈表示工作負載的警示或嚴重層級警示。將游標移到圓圈上方以取得問題摘要、或按一下圓圈以開啟詳細的滑出面板。
-
-image:Workload_Map_Slideout_with_Alert.png["工作負載使用警示來整合詳細資料"]
+image:ServiceMap_Node_and_Connection_Legend.png["圖例顯示了相對圓（節點）和連接尺寸"]
 
 
 
-== 尋找及篩選
+== 工作負載詳情和警報
 
-如同其他 Data Infrastructure Insights 功能、您可以輕鬆設定篩選條件、將重點放在您想要的特定物件或工作負載屬性上。
+彩色圓圈表示工作負載的警告或嚴重程度警報。將滑鼠停留在圓圈上以查看問題摘要，或點擊圓圈可開啟包含更多詳細資訊的滑出面板。
 
-image:Workload_Map_Filtering.png["工作負載對應篩選"]
+image:Workload_Map_Slideout_with_Alert.png["帶有警報的工作負載滑出詳細信息"]
 
-同樣地、在 _Find_ 欄位中鍵入字串、也會醒目提示相符的工作負載。
 
-image:Workload_Map_Find_Highlighting.png["在「尋找」方塊中鍵入會強調工作負載"]
+
+== 尋找和過濾
+
+與其他Data Infrastructure Insights功能一樣，您可以輕鬆設定篩選器以專注於您想要的特定物件或工作負載屬性。
+
+image:Workload_Map_Filtering.png["工作負載圖過濾"]
+
+同樣，在“查找”欄位中輸入字串將突出顯示匹配的工作負載。
+
+image:Workload_Map_Find_Highlighting.png["在尋找框中輸入突出顯示工作量"]
 
 
 
 == 工作負載標籤
 
-如果您希望地圖識別所顯示的工作負載類型（例如圓圈圖示）、則工作負載標籤是必要的。標籤的衍生方式如下：
+如果您希望地圖識別所顯示的工作負載類型（即圓圈圖示），則工作負載標籤是必要的。標籤的得出方式如下：
 
-* 以一般術語執行的服務 / 應用程式名稱
-* 如果來源是 Pod ：
+* 通用術語中運行的服務/應用程式的名稱
+* 如果來源是 pod：
 +
-** 標籤衍生自 Pod 的工作負載標籤
-** 工作負載上的預期標籤： app.Kubernetes.IO/ 元件
-** 標籤名稱參照： https://kubernetes.io/docs/concepts/overview/working-with-objects/common-labels/[]
-** 建議標籤：
+** 標籤源自 pod 的工作負載標籤
+** 工作負載上的預期標籤：app.kubernetes.io/component
+** 標籤名稱參考： https://kubernetes.io/docs/concepts/overview/working-with-objects/common-labels/[]
+** 推薦標籤：
 +
 *** 前端
 *** 後端
@@ -107,9 +107,9 @@ image:Workload_Map_Find_Highlighting.png["在「尋找」方塊中鍵入會強�
 
 * 如果來源位於 Kubernetes 叢集外部：
 +
-** Data Infrastructure Insights 會嘗試剖析 DNS 解析名稱、以擷取服務類型。
+** Data Infrastructure Insights將嘗試解析 DNS 解析名稱以提取服務類型。
 +
-例如、使用 DNS 解析名稱 _s3.eu-north-1.amazonaws.com 、解析解析名稱以取得 _S__ 作為服務類型。
+例如，DNS 解析名稱為 _s3.eu-north-1.amazonaws.com_，解析名稱將被解析為 _s3_ 作為服務類型。
 
 
 
@@ -119,14 +119,14 @@ image:Workload_Map_Find_Highlighting.png["在「尋找」方塊中鍵入會強�
 
 == 深入探索
 
-在工作負載上按一下滑鼠右鍵、即可提供其他選項、讓您進一步探索。例如、您可以從這裡放大檢視該工作負載的連線。
+右鍵單擊工作負載會顯示更多選項以供進一步探索。例如，您可以從這裡放大查看該工作負載的連線。
 
-image:Workload_Map_Zoom_Into_Connections.png["工作負載對應右鍵按一下「縮放」以顯示工作負載的連線"]
+image:Workload_Map_Zoom_Into_Connections.png["工作負載圖右鍵單擊縮放以顯示工作負載的連接"]
 
-或者、您也可以開啟「詳細資料」滑出面板、直接檢視「 _Summary_ 」、「 _Network_ 」或「 _Pod & Storage_ 」標籤。
+或者您可以開啟詳細資料滑出面板直接檢視_摘要_、_網路_或_Pod & Storage_標籤。
 
-image:Workload_Map_Detail_Network_Slideout.png["詳細資料投影片網路索引標籤範例"]
+image:Workload_Map_Detail_Network_Slideout.png["詳細滑出網路標籤範例"]
 
-最後、選取 _ 移至資產頁面 _ 將會開啟工作負載的詳細資產登陸頁面。
+最後，選​​擇「前往資產頁面」將開啟工作負載的詳細資產登入頁面。
 
 image:Workload_Map_Asset_Page.png["工作負載資產頁面"]

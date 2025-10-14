@@ -2,32 +2,32 @@
 sidebar: sidebar 
 permalink: task_dc_na_db_host.html 
 keywords: data collector, generic db 
-summary: 一般 DB 主機解析程式收集器 
+summary: 通用資料庫主機解析器收集器 
 ---
-= NetApp 通用 DB 主機解析程式
+= NetApp通用資料庫主機解析器
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-此資料收集器會取得庫存
+此數據收集器獲取庫存
 
 
 
 == 術語
 
-Data Infrastructure Insights 從這個收集器取得庫存。
+Data Infrastructure Insights從該收集器獲取庫存。
 
 
 
-== 組態
+== 配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| DB 伺服器 IP 位址 | DB 伺服器的 IP 位址 
+| 資料庫伺服器 IP 位址 | 資料庫伺服器的IP位址 
 
 
 | DB 伺服器連接埠 | 預設值為 3306 
@@ -39,23 +39,23 @@ Data Infrastructure Insights 從這個收集器取得庫存。
 | JDBC 驅動程式 URL | 驅動程式的 URL 
 
 
-| SQL 查詢 | 用於從資料表傳回資料的查詢 
+| SQL查詢 | 用於從表中傳回資料的查詢 
 |===
 
 
-== 進階組態
+== 進階配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| 庫存輪詢時間間隔（分鐘） | 預設為60分鐘 
+| 庫存輪詢間隔（分鐘） | 預設為 60 分鐘 
 
 
-| 啟用 SSL 連線 | 選取以啟用透過 SSL 連線 
+| 啟用 SSL 連接 | 選擇啟用透過 SSL 的連接 
 
 
-| 報告 WWN 別名 | 選取以報告 WWN 別名 
+| 報告 WWN 別名 | 選擇報告 WWN 別名 
 |===
-您可以在頁面或中找到其他link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]資訊。
+更多資訊可從link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。

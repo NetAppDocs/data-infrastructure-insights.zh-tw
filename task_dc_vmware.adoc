@@ -2,168 +2,168 @@
 sidebar: sidebar 
 permalink: task_dc_vmware.html 
 keywords: data collector, VMware, 
-summary: 設定VMware資料收集器。 
+summary: 配置 VMware 資料收集器。 
 ---
-= 設定VMware vSphere資料收集器
+= 配置 VMware VSphere 資料收集器
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-VMware vSphere 的資料收集器會收集 VM 來賓作業系統和 ESXi 主機效能和組態資訊、並要求 vSphere 中所有物件上的唯讀 Privileges 。截至 2024 年 8 月為止、 vSphere 收集器還會從 vSphere 環境中另外加入記錄訊息、以及某些 VMware 特定的度量。請注意、 Data Infrastructure Insights 只能從 vSphere 8.0.1 或更高版本的環境擷取 VMware 記錄資訊。同樣地、廠商專屬指標僅支援 vSphere 7+ 環境。因此、如果指定的收集器指向較舊的 vSphere 執行個體、您可能會想要停用該收集器上的記錄和 / 或廠商特定度量核取方塊。
+VMware vSphere 的資料收集器收集 VM 用戶機和 ESXi 主機效能和配置訊息，並需要對 vSphere 內的所有物件具有唯讀權限。自 2024 年 8 月起，vSphere 收集器也會引入來自 vSphere 環境的日誌訊息以及一些 VMware 特定指標。請注意，Data Infrastructure Insights只能從 vSphere 8.0.1 或更高版本的環境中檢索 VMware 日誌資訊。同樣，供應商特定指標僅支援 vSphere 7+ 環境。因此，如果指向較舊的 vSphere 實例，您可能需要停用給定收集器上的日誌和/或供應商特定指標複選框。
 
 
 
 == 術語
 
-Data Infrastructure Insights 會從 VMware vSphere 資料收集器取得下列庫存資訊。對於所取得的每種資產類型、都會顯示該資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights從 VMware vSphere 資料收集器取得以下庫存資訊。對於所取得的每種資產類型，都會顯示該資產最常用的術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | Data Infrastructure Insights 術語 
+| 供應商/型號術語 | Data Infrastructure Insights術語 
 
 
 | 虛擬磁碟 | 磁碟 
 
 
-| 主機 | 主機 
+| 主持人 | 主持人 
 
 
-| 虛擬機器 | 虛擬機器 
+| 虛擬機 | 虛擬機 
 
 
-| 資料儲存區 | 資料儲存區 
+| 資料儲存 | 資料儲存 
 
 
-| LUN | Volume 
+| 邏輯單元號 | 體積 
 
 
-| 光纖通道連接埠 | 連接埠 
+| 光纖通道連接埠 | 港口 
 |===
-這些只是通用的術語對應、可能不代表此資料收集器的每個案例。
+這些只是常見的術語映射，可能並不代表該資料收集器的所有情況。
 
 
 
-== 需求
+== 要求
 
-設定此資料收集器需要下列資訊：
+配置此數據收集器需要以下資訊：
 
-* Virtual Center伺服器的IP位址
-* Virtual Center中的唯讀使用者名稱和密碼
-* 我們需要對Virtual Center內的所有物件擁有唯讀權限。
-* Virtual Center伺服器上的SDK存取–通常已經設定。
-* 連接埠需求：https-80 https-443
-* 驗證存取：
+* 虛擬中心伺服器的 IP 位址
+* 虛擬中心中的唯讀使用者名稱和密碼
+* 我們要求對虛擬中心內的所有物件擁有唯讀權限。
+* 虛擬中心伺服器上的 SDK 存取 – 通常已經設定。
+* 連接埠需求：http-80 https-443
+* 驗證存取權限：
 +
-** 使用上述使用者名稱和密碼登入Virtual Center Client
-** 確認SDK已啟用：Telnet <VC_IP> 443
+** 使用上述使用者名稱和密碼登入 Virtual Center Client
+** 驗證 SDK 是否已啟用：telnet <vc_ip> 443
 
 
 
 
 
 
-== 設定與連線
-
-[cols="2*"]
-|===
-| 欄位 | 說明 
-
-
-| 名稱 | 資料收集器的唯一名稱 
-
-
-| 擷取單元 | 擷取單位名稱 
-|===
-
-
-== 組態
+== 設定和連接
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
+
+
+| Name | 資料收集器的唯一名稱 
+
+
+| 採集單元 | 收購單位名稱 
+|===
+
+
+== 配置
+
+[cols="2*"]
+|===
+| 場地 | 描述 
 
 
 | 虛擬中心IP位址 | 虛擬中心的IP位址 
 
 
-| 使用者名稱 | 用於存取Virtual Center的使用者名稱 
+| 使用者名稱 | 用於存取虛擬中心的使用者名 
 
 
 | 密碼 | 用於存取虛擬中心的密碼 
 |===
 
 
-== 進階組態
+== 進階配置
 
-在進階組態畫面中、勾選「* VM效能*」方塊以收集效能資料。庫存收集預設為啟用。您可以設定下列欄位：
-
-[cols="2*"]
-|===
-
-
-| 欄位 | 說明 
-
-
-| 庫存輪詢時間間隔（分鐘） | 預設值為20 
-
-
-| 篩選虛擬機器 | 選取叢集、資料中心或ESX主機 
-
-
-| 選擇「排除」或「包含」以指定清單 | 建立篩選器清單（叢集、資料中心及/或ESX_host） 
-
-
-| 重試次數 | 預設值為3 
-
-
-| 通訊連接埠 | 預設值為443 
-
-
-| 篩選裝置清單... | 此清單必須包含完全相符的字串、如果您想要依 ESX_host 進行篩選、則必須根據 Data Infrastructure Insights 和 vSphere 中所報告的確切 ESX 主機名稱、建立以逗號分隔的清單。這些「名稱」可以是IP位址、簡單主機名稱或完整網域名稱（FQDN）、這取決於這些主機在最初新增至vSphere時的命名方式。依叢集進行篩選時、請使用 CI 在 Hypervisor 上報告的 Data Infrastructure Insights 型叢集名稱： Data Infrastructure Insights 會以 vSphere 資料中心名稱和正斜線預先定義 vSphere 叢集名稱 - 「 DC1/clusterA 」是 Data Infrastructure Insights 會針對資料中心 DC1 內叢集 A 中的 Hypervisor 回報的叢集名稱。 
-
-
-| 效能意見調查時間間隔（秒） | 預設值為300 
-|===
-
-
-== 將 VMware 標籤對應至 Data Infrastructure Insights 註釋
-
-VMware 資料收集器可讓您在 Data Infrastructure Insights 註釋中填入 VMware 上設定的標記。DII 註釋名稱必須與 VMware * 類別 * 名稱相同；然後將標記套用為 DII 註釋的註釋值，其名稱與類別相同。Data Infrastructure Insights 一律會填入相同名稱的文字類型註解、並會「盡力」填入其他類型（數字、布林等）的註釋。如果您的註釋類型不同、而且資料收集器無法填入註釋、則可能需要移除註釋、然後重新建立為文字類型。
-
-請注意、 VMware 標籤可能區分大小寫、而 Data Infrastructure Insights 標籤則不區分大小寫。因此、如果您在 Data Infrastructure Insights 中建立名為「擁有者」的註釋、並在 VMware 中建立名為「擁有者」、「擁有者」和「擁有者」的標記、則所有這些「擁有者」的變化都會對應到 Cloud Insight 的「擁有者」註釋。
-
-請謹記下列事項：
-
-* Data Infrastructure Insights 目前僅自動發佈 NetApp 裝置的支援資訊。
-* 由於此支援資訊是以附註形式保存、因此您可以查詢或在儀表板中使用。
-* 如果使用者覆寫或清空註釋值、則資料基礎架構 Insights 會在每天更新註釋一次時、再次自動填入該值。
-
-
-
-
-== 疑難排解
-
-如果您在使用此資料收集器時遇到問題、請嘗試下列事項：
-
-
-
-=== 庫存
+在進階配置畫面中，勾選“*VM 效能*”方塊以收集效能資料。預設啟用庫存收集。可以配置以下欄位：
 
 [cols="2*"]
 |===
-| 問題： | 試用： 
 
 
-| 錯誤：包含篩選VM的清單不可為空白 | 如果選取「包含清單」、請列出有效的資料中心、叢集或主機名稱以篩選VM 
+| 場地 | 描述 
 
 
-| 錯誤：無法在IP上建立與VirtualCenter的連線 | 可能的解決方案：*驗證輸入的認證資料和IP位址。*嘗試使用VMware Infrastructure Client與Virtual Center通訊。*嘗試使用受管理的物件瀏覽器（例如MOB）與Virtual Center通訊。 
+| 庫存輪詢間隔（分鐘） | 預設值為 20 
 
 
-| 錯誤：IP上的VirtualCenter具有不符合JVM要求的憑證 | 可能的解決方案：*建議：使用更強大的功能（例如 1024位元）RSA金鑰。*不建議：修改JVM java.security組態、以利用限制JDK.certpath.disabledAlgorith數 來允許512位元RSA金鑰。請參閱。 link:http://www.oracle.com/technetwork/java/javase/7u40-relnotes-2004172.html["JDK 7 update 40 發行說明"] 
+| 過濾虛擬機 | 選擇叢集、資料中心或 ESX 主機 
 
 
-| 我看到以下訊息：「 VMware 日誌套件在 8.0.1 版以下的 VMware 上不受支援」 | VMware 8.0.1 之前的版本不支援日誌收集。如果您希望使用Data Infrastructure Insights中的日誌收集功能，請將 VI Center Infrastructure 升級至 8.0.1 或更高版本。有關詳細信息，請參閱link:https://kb.netapp.com/Cloud/ncds/nds/dii/dii_kbs/Data_Infrastructure_Insights_Brocade_data_source_fails_performance_collection_with_a_timeout_due_to_default_SNMP_configuration["知識庫文章"]。 
+| 選擇“排除”或“包含”來指定列表 | 建立過濾器清單（CLUSTER、DATACENTER 和/或 ESX_HOST） 
+
+
+| 重試次數 | 預設值為 3 
+
+
+| 通訊埠 | 預設值為 443 
+
+
+| 過濾設備清單... | 此列表必須由精確的字串匹配組成 - 如果您打算按 ESX_HOST 進行過濾，則必須建立一個以逗號分隔的列表，其中包含Data Infrastructure Insights和 vSphere 中報告的 ESX 主機的精確「名稱」。這些「名稱」可以是 IP 位址、簡單主機名稱或完全限定網域名稱 (FQDN) - 這取決於這些主機最初新增至 vSphere 時的命名方式。按下 CLUSTER 過濾時，使用 CI 在虛擬機器管理程式上報告的Data Infrastructure Insights樣式的叢集名稱 - Data Infrastructure Insights在 vSphere 叢集名稱前面加上 vSphere 資料中心名稱和正斜線 - “DC1/clusterA”是Data Infrastructure Insights 資料中心名稱和正斜線 - “DC1/clusterA”是Data Infrastructure Insights將在資料中心名稱和正斜線 - “DC1/clusterA”是Data Infrastructure Insightss 將在資料中心名稱和正斜線 - “DC1/clusterA”是Data Infrastructure Insightss 所在資料中心名稱和正斜線 - “DC1/clusterA”中的集端管理程式報告 
+
+
+| 效能輪詢間隔（秒） | 預設值為 300 
 |===
-您可以在頁面或中找到其他link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]資訊。
+
+
+== 將 VMware 標籤對應到Data Infrastructure Insights註釋
+
+VMware 資料收集器可讓您使用在 VMware 上配置的標籤填入Data Infrastructure Insights註解。 DII 註解名稱必須與 VMware *類別* 名稱相同；然後標籤將套用為與類別同名的 DII 註解的註解值。Data Infrastructure Insights將始終填充同名的文字類型註釋，並將「盡最大努力」填充其他類型（數字、布林值等）的註釋。如果您的註釋屬於不同類型且資料收集器無法填充它，則可能需要刪除該註釋並將其重新建立為文字類型。
+
+請注意，VMware 標籤可能區分大小寫，而Data Infrastructure Insights標籤不區分大小寫。因此，如果您在Data Infrastructure Insights中建立名為「OWNER」的註釋，並在 VMware 中建立名為「OWNER」、「Owner」和「owner」的標籤，則「owner」的所有這些變體都會對應到 Cloud Insight 的「OWNER」註釋。
+
+請記住以下幾點：
+
+* Data Infrastructure Insights目前僅自動發布NetApp設備的支援資訊。
+* 由於此支援資訊以註釋形式保存，因此您可以在儀表板中查詢或使用它。
+* 如果使用者覆蓋或清空註釋值，則當Data Infrastructure Insights更新註釋時，該值會再次自動填入（每天更新一次）。
+
+
+
+
+== 故障排除
+
+如果您在使用此資料收集器時遇到問題，請嘗試以下操作：
+
+
+
+=== 存貨
+
+[cols="2*"]
+|===
+| 問題： | 試試一下： 
+
+
+| 錯誤：用於過濾虛擬機器的清單不能為空 | 如果選擇“包含清單”，請列出有效的資料中心、叢集或主機名稱來過濾虛擬機 
+
+
+| 錯誤：無法實例化與 IP 上的 VirtualCenter 的連接 | 可能的解決方案：* 驗證輸入的憑證和 IP 位址。  * 嘗試使用 VMware Infrastructure Client 與 Virtual Center 通訊。  * 嘗試使用託管物件瀏覽器（例如​​ MOB）與虛擬中心進行通訊。 
+
+
+| 錯誤：IP 處的 VirtualCenter 具有不符合 JVM 要求的憑證 | 可能的解決方案：* 建議：使用更強的（例如 1024 位元）RSA 金鑰為虛擬中心重新產生憑證。 * 不建議：修改 JVM java.security 配置以利用約束 jdk.certpath.disabledAlgorithms 來允許 512 位元 RSA 金鑰。看link:http://www.oracle.com/technetwork/java/javase/7u40-relnotes-2004172.html["JDK 7 更新 40 發行說明"] 。 
+
+
+| 我看到以下訊息：“VMware 8.0.1 以下版本不支援 VMware 日誌包” | VMware 8.0.1 之前的版本不支援日誌收集。如果您希望使用Data Infrastructure Insights中的日誌收集功能，請將 VI Center Infrastructure 升級至 8.0.1 或更高版本。有關詳細信息，請參閱link:https://kb.netapp.com/Cloud/ncds/nds/dii/dii_kbs/Data_Infrastructure_Insights_Brocade_data_source_fails_performance_collection_with_a_timeout_due_to_default_SNMP_configuration["知識庫文章"]。 
+|===
+更多資訊可從link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。

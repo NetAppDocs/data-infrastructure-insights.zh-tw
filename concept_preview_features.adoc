@@ -1,15 +1,15 @@
 ---
 sidebar: sidebar 
 permalink: concept_preview_features.html 
-summary: 預覽功能的容量有限、而且重點功能尚未準備好準備好迎接黃金時間。 
+summary: 預覽功能容量有限，並突出顯示尚未準備好迎接黃金時段的功能。 
 keywords: coming soon, preview, 
 ---
-= 預覽功能
+= 預覽特性和功能
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-Data Infrastructure Insights 以 _Preview_ 的方式強調新功能。預覽功能可在有限的環境或有限容量下使用。
+Data Infrastructure Insights以預覽的方式突出顯示新特性和功能。預覽功能在有限的環境或有限的容量下可用。
 
 如果您有興趣預覽其中一個或多個功能，請聯絡NetApp銷售團隊以取得更多資訊。

@@ -2,52 +2,52 @@
 sidebar: sidebar 
 permalink: task_config_telegraf_memcached.html 
 keywords: telegraf, installation, install, memcached 
-summary: memcached資料收集器組態 
+summary: Memcached 資料收集器配置 
 ---
-= memcached資料收集器
+= Memcached 資料收集器
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-Data Infrastructure Insights 使用此資料收集器從 Memcached 收集度量。
+Data Infrastructure Insights使用此數據收集器從 Memcached 收集指標。
 
 
 
 == 安裝
 
-. 從 * 可伺服 > 收集器 * 、按一下 * + 資料收集器 * 。選擇 Memcached 。
+. 從*可觀察性 > 收集器*中，按一下*+資料收集器*。選擇 Memcached。
 +
-選取安裝Telegraf代理程式的作業系統或平台。
+選擇安裝 Telegraf 代理程式的作業系統或平台。
 
-. 如果您尚未安裝 Agent 進行收集，或想要為不同的作業系統或平台安裝 Agent ，請按一下 _ 顯示指示 _ 以展開指示link:task_config_telegraf_agent.html["代理程式安裝"]。
-. 選取要搭配此資料收集器使用的代理程式存取金鑰。您可以按一下「*+代理程式存取金鑰*」按鈕來新增代理存取金鑰。最佳實務做法：只有當您想要將資料收集器分組時、才使用不同的代理程式存取金鑰、例如依作業系統/平台。
-. 請依照組態步驟設定資料收集器。這些指示會因您用來收集資料的作業系統或平台類型而有所不同。
+. 如果您尚未安裝用於收集的代理，或者您希望為不同的作業系統或平台安裝代理，請按一下「顯示說明」以展開link:task_config_telegraf_agent.html["代理安裝"]指示。
+. 選擇用於此資料收集器的代理存取金鑰。您可以透過點擊 *+ 代理存取金鑰* 按鈕新增新的代理存取金鑰。最佳實務：只有當您想要對資料收集器進行分組（例如按作業系統/平台）時才使用不同的代理存取金鑰。
+. 依照設定步驟配置資料收集器。說明根據您用於收集資料的作業系統或平台的類型而有所不同。
 
 
-image:MemcachedDCConfigWindows.png["memcached組態"]
+image:MemcachedDCConfigWindows.png["Memcached 配置"]
 
 
 
 == 設定
 
-如需詳細資訊link:https://github.com/memcached/memcached/wiki["memcached wikik"]，請參閱。
+資訊可以在link:https://github.com/memcached/memcached/wiki["Memcached 維基百科"]。
 
 
 
-== 物件與計數器
+== 物體和計數器
 
-收集下列物件及其計數器：
+收集以下物件及其計數器：
 
 [cols="<.<,<.<,<.<,<.<"]
 |===
-| 物件： | 識別碼： | 屬性： | 資料點： 
+| 目的： | 標識符： | 屬性： | 數據點： 
 
 
-| memcached | 命名空間伺服器 | 節點IP節點名稱 | 接受連線已處理驗證要求失敗驗證已使用位元組已讀取（每秒）寫入位元組（每秒）CAS Badval CAS命中數CAs未清空要求（每秒）取得要求（每秒）設定要求（每秒）觸控要求（每秒）連線產生量（每秒） 連線結構開啟連線目前儲存的項目取消要求命中次數（每秒）取消要求未命中次數（每秒）刪除要求命中次數（每秒）刪除要求未命中次數（每秒）項目已逐出有效遷離過期項目取得命中次數（每秒）獲取未命中次數（每秒） 使用的雜湊位元組雜湊正在擴充雜湊電力層級、其中包含要求命中次數（每秒）、包含要求未命中次數（每秒）伺服器最大位元組偵聽已停用的已回收工作執行緒數總計已開啟的連線總數已儲存的項目接觸命中次數接觸未達到伺服器正常運作 
+| Memcached | 命名空間伺服器 | 節點IP 節點名稱 | 正在接受的連線已處理的驗證請求失敗的身份驗證已使用的位元組數讀取的位元組數（每秒）寫入的位元組數（每秒）CAS BadvalCAS 命中CAS未命中刷新請求（每秒）獲取請求（每秒）設定請求（每秒）觸摸請求（每秒）連接產量（每秒）連接結構打開的連接當前存儲的項目遞減請求命中數（每秒）遞減請求未命中數（每秒）刪除請求命中數（每秒）刪除請求未命中數（每秒）驅逐的項目有效驅逐過期的項目獲取命中數（每秒）獲取未命中數（每秒）已使用的哈希字節數哈希正在擴展哈希功率級別遞增請求命中數（每秒）遞增請求未命中數（每秒）伺服器最大字節數偵聽已禁用已回收工作線程數總計打開的連接數儲存的項目總數 觸控命中數 觸碰未命中數 伺服器正常運作時間 
 |===
 
 
-== 疑難排解
+== 故障排除
 
-您可以在頁面中找到其他資訊link:concept_requesting_support.html["支援"]。
+更多資訊可從link:concept_requesting_support.html["支援"]頁。

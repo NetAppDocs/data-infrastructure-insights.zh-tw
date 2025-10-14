@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: task_dc_na_cloud_volumes.html 
-summary: 設定適用於AWS資料收集器的NetApp Cloud Volumes Services 
+summary: 為 AWS 資料收集器設定NetApp Cloud Volumes Services 
 keywords: data collector, NetApp, Cloud, AWS 
 ---
-= 適用於AWS資料收集器的NetApp Cloud Volumes服務
+= 適用於 AWS 資料收集器的NetApp Cloud Volumes Services
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,47 +14,47 @@ keywords: data collector, NetApp, Cloud, AWS
 
 
 [role="lead"]
-此資料收集器支援從NetApp Cloud Volumes Services收集AWS組態的庫存。
+此資料收集器支援從NetApp Cloud Volumes Services 收集 AWS 配置的庫存。
 
 
 
-== 組態
-
-[cols="2*"]
-|===
-| 欄位 | 說明 
-
-
-| 雲端Volume區域 | 適用於AWS的NetApp Cloud Volumes Services區域 
-
-
-| API金鑰 | Cloud Volumes API金鑰 
-
-
-| 秘密金鑰 | Cloud Volumes秘密金鑰 
-|===
-
-
-== 進階組態
+== 配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| 庫存輪詢時間間隔（分鐘） | 預設為60分鐘 
+| Cloud Volumes 區域 | 適用於 AWS 的NetApp Cloud Volumes 服務區域 
+
+
+| API 金鑰 | Cloud Volumes API 金鑰 
+
+
+| 金鑰 | Cloud Volumes 金鑰 
 |===
 
 
-== 疑難排解
-
-如果您在使用此資料收集器時遇到問題、請嘗試下列事項：
+== 進階配置
 
 [cols="2*"]
 |===
-| 問題： | 試用： 
+| 場地 | 描述 
 
 
-| 我收到與此類似的錯誤：「無法執行要求：連線至 <AWS 區域端點 >:8080 [<AWS 區域端點 >/AWS 區域端點 IP>] 失敗：連線逾時：取得 \https://<AWS 區域端點 FQDN>:8080/v1/Storage/IPRanges HTTP/1.1 」 | 這link:task_configure_acquisition_unit.html#proxy-configuration-2["Proxy"]Data Infrastructure Insights用於與採集單元進行通信，Data Infrastructure Insights和資料收集器本身之間不會進行通訊。您可以嘗試以下幾種方法：確保擷取單元能夠解析 fqdn 並到達所需的連接埠。確認不需要代理即可到達錯誤訊息中指定的端點。 Curl 可用於測試採集單元和端點之間的通訊。確保您沒有使用代理進行此測試。範例：root@acquisitionunit# curl -s -H accept:application/json -H "Content-type: application/json" -H api-key:<資料收集器憑證中使用的 api 金鑰 -H secret-key:<資料收集器憑證中使用的終端> -X.P. 
+| 庫存輪詢間隔（分鐘） | 預設為 60 分鐘 
 |===
-有關此資料收集器的其他資訊，請link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]參閱頁面或。
+
+
+== 故障排除
+
+如果您在使用此資料收集器時遇到問題，請嘗試以下操作：
+
+[cols="2*"]
+|===
+| 問題： | 試試一下： 
+
+
+| 我收到了類似這樣的錯誤：“無法執行請求：連接到 <AWS 區域端點>:8080 [<AWS 區域端點>/AWS 區域端點 IP>] 失敗：連接超時：GET \https://<AWS 區域端點 FQDN>:8080/v1/Storage/IPRanges HTTP/1.1” | 這link:task_configure_acquisition_unit.html#proxy-configuration-2["代理人"]Data Infrastructure Insights用於與採集單元進行通信，Data Infrastructure Insights和資料收集器本身之間不會進行通訊。您可以嘗試以下幾種方法：確保擷取單元能夠解析 fqdn 並到達所需的連接埠。確認不需要代理即可到達錯誤訊息中指定的端點。 Curl 可用於測試採集單元和端點之間的通訊。確保您沒有使用代理進行此測試。範例：root@acquisitionunit# curl -s -H accept:application/json -H "Content-type: application/json" -H api-key:<資料收集器憑證中使用的 api 金鑰 -H secret-key:<資料收集器憑證中使用的終端> -X.P. 
+|===
+關於此數據收集器的更多信息，請參閱link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。

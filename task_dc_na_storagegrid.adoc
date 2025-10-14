@@ -1,16 +1,16 @@
 ---
 sidebar: sidebar 
 permalink: task_dc_na_storagegrid.html 
-summary: 設定NetApp StorageGRID 資料收集器 
+summary: 配置NetApp StorageGRID資料收集器 
 keywords: data collector, queries, create, storagegrid 
 ---
-= NetApp StorageGRID 資料收集器
+= NetApp StorageGRID資料收集器
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-NetApp StorageGRID 支援StorageGRID 從VMware支援從VMware組態收集庫存和效能。
+NetApp StorageGRID資料收集器支援從StorageGRID配置收集庫存和效能。
 
 [NOTE]
 ====
@@ -25,71 +25,71 @@ NetApp StorageGRID 支援StorageGRID 從VMware支援從VMware組態收集庫存�
 
 == 術語
 
-Data Infrastructure Insights 會從 NetApp StorageGRID 收集器取得下列庫存資訊。對於所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights從NetApp StorageGRID收集器取得以下庫存資訊。對於所取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | Data Infrastructure Insights 術語 
+| 供應商/型號術語 | Data Infrastructure Insights術語 
 
 
-| StorageGRID | 儲存設備 
+| StorageGRID | 儲存 
 
 
 | 節點 | 節點 
 
 
-| 租戶 | 儲存資源池 
+| 租戶 | 儲存池 
 
 
-| 鏟斗 | 內部Volume 
+| 桶 | 內部體積 
 |===
 
 
-== 需求
+== 要求
 
-以下是設定此資料來源的需求：
+配置此資料來源的要求如下：
 
-* 主機IP位址StorageGRID
-* 已指派「度量查詢」和「租戶存取」角色的使用者使用者名稱和密碼
-* 連接埠 443
-
-
+* StorageGRID主機 IP 位址
+* 已指派「指標查詢」和「租用戶存取」角色的使用者的使用者名稱和密碼
+* 埠 443
 
 
-== 組態
+
+
+== 配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| 主機IP位址StorageGRID | 管理VMware應用裝置的虛擬IP位址StorageGRID 
+| StorageGRID主機 IP 位址 | StorageGRID設備的管理虛擬 IP 位址 
 
 
-| 使用者名稱 | 用來登入StorageGRID 該應用程式的名稱 
+| 使用者名稱 | 用於登入StorageGRID設備的名稱 
 
 
-| 密碼 | 用來登入StorageGRID 該應用程式的密碼 
+| 密碼 | 用於登入StorageGRID設備的密碼 
 |===
 
 
-== 進階組態
+== 進階配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| 庫存輪詢時間間隔（分鐘） | 預設為60分鐘 
+| 庫存輪詢間隔（分鐘） | 預設為 60 分鐘 
 
 
-| 效能意見調查時間間隔（秒） | 預設值為900秒 
+| 效能輪詢間隔（秒） | 預設值為 900 秒 
 |===
 
 
 == 單一登入（SSO）
 
-link:https://docs.netapp.com/sgws-112/index.jsp["StorageGRID"]韌體版本具有對應的 API 版本； 3.0 API 和更新版本支援單一登入（ SSO ）登入。
+這link:https://docs.netapp.com/sgws-112/index.jsp["StorageGRID"]韌體版本有對應的API版本；3.0 API及更新版本支援單一登入（SSO）。
 
 |===
 
@@ -97,7 +97,7 @@ link:https://docs.netapp.com/sgws-112/index.jsp["StorageGRID"]韌體版本具有
 | 韌體版本 | API 版本 | 支援單一登入（SSO） 
 
 
-| 11.1 | 2 | 否 
+| 11.1 | 2 | 不 
 
 
 | 11.2 | 3.0 | 是的 
@@ -107,6 +107,6 @@ link:https://docs.netapp.com/sgws-112/index.jsp["StorageGRID"]韌體版本具有
 |===
 
 
-== 疑難排解
+== 故障排除
 
-有關此資料收集器的其他資訊，請link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]參閱頁面或。
+關於此數據收集器的更多信息，請參閱link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。

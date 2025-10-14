@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: task_cloud_insights_onboarding_1.html 
-summary: 註冊 Data Infrastructure Insights 並建立租戶。 
+summary: 註冊Data Infrastructure Insights並建立您的租戶。 
 keywords: onboarding, new user 
 ---
-= 資料基礎架構洞見入門
+= Data Infrastructure Insights入職
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,50 +14,50 @@ keywords: onboarding, new user
 
 
 [role="lead"]
-在開始使用Data Infrastructure Insights之前，您必須在 * NetApp控制台* 入口網站上註冊。如果您已經擁有NetApp控制台登入名，只需幾個簡單的步驟即可開始免費試用Data Infrastructure Insights。
+在開始使用Data Infrastructure Insights之前，您必須在 * NetApp Console* 入口網站上註冊。如果您已經擁有NetApp Console登入名，只需幾個簡單的步驟即可開始免費試用Data Infrastructure Insights。
 
 
 
-== 建立您的NetApp控制台帳戶
+== 建立您的NetApp Console帳戶
 
-若要開始使用 NetApp 的雲端服務，請造訪link:https://console.netapp.com/["* NetApp控制台*"^]然後點擊*開始*。
+若要開始使用 NetApp 的雲端服務，請造訪link:https://console.netapp.com/["* NetApp Console*"^]然後點擊*開始*。
 
-* 如果您尚未註冊、請選取 * 註冊 *
-* 輸入有效的商業電子郵件地址、然後選擇密碼。
-* 輸入您的公司名稱和全名。
-* 接受條款與條件、然後選擇 * 繼續 * 。
+* 如果您尚未註冊，請選擇“註冊”
+* 輸入有效的企業電子郵件地址並選擇密碼。
+* 輸入您的公司名稱和您的全名。
+* 接受條款和條件並選擇*繼續*。
 * 控制台將引導您完成入門步驟。
 
 
 
 
-=== 如果我已經擁有NetApp控制台登入資訊該怎麼辦？
+=== 如果我已經擁有NetApp Console登入資訊該怎麼辦？
 
-擁有NetApp控制台帳戶後，只需選擇link:https://console.netapp.com/["* NetApp控制台*"^]入口網頁。
+擁有NetApp Console帳戶後，只需選擇link:https://console.netapp.com/["* NetApp Console*"^]入口網頁。
 
-輸入您的電子郵件地址和密碼。接著您將前往NetApp的雲端產品頁面。
+輸入您的電子郵件地址和密碼。然後您將進入 NetApp 的雲端產品頁面。
 
 導航至*分析和控制>可觀察性*以了解Data Infrastructure Insights和/或請求演示。
 
 
 
-== 開始免費試用 Data Infrastructure Insights
+== 開始您的Data Infrastructure Insights免費試用
 
-如果這是您第一次登入 Data Infrastructure Insights 、請在 Data Infrastructure Insights 產品下、按一下 * 開始免費試用 * 。Data Infrastructure Insights 將引導您建立公司的租戶，包括選擇租戶所在的區域。
+如果這是您第一次登入Data Infrastructure Insights，請在Data Infrastructure Insights產品下點擊「*開始免費試用*」。Data Infrastructure Insights將指導您創建公司的租戶，包括選擇您希望租戶所在的區域。
 
-image:trial_region_selector.png["選取您的 Data Infrastructure Insights 租戶所在的區域"]
+image:trial_region_selector.png["選擇託管Data Infrastructure Insights租戶的區域"]
 
 租戶創建完成後，使用控制台憑證登入並開始免費試用 30 天Data Infrastructure Insights。在此試用期間，您可以探索Data Infrastructure Insights所提供的功能。
 
-在免費試用期間、您可以link:concept_subscribing_to_cloud_insights.html["開始訂購"]隨時取得 Data Infrastructure Insights 。訂閱後、您可以根據目前的訂閱內容、使用 Data Infrastructure Insights 功能。
+在免費試用期間，您可以link:concept_subscribing_to_cloud_insights.html["開始訂閱"]隨時了解Data Infrastructure Insights。當您訂閱後，您可以根據目前訂閱使用Data Infrastructure Insights功能。
 
 
 
-== 登入後立即使用
+== Sign in並前往
 
-建立租戶後，您可以隨時登入NetApp控制台入口網站並導航到link:https://services.cloud.netapp.com["雲端服務"]頁面並選擇*前往Data Infrastructure Insights*。
+建立租用戶後，您可以隨時登入NetApp Console網站並導航到link:https://services.cloud.netapp.com["雲端服務"]頁面並選擇*前往Data Infrastructure Insights*。
 
-您也可以直接開啟瀏覽器來存取 Data Infrastructure Insights 租戶 URL ，例如：
+您也可以直接開啟瀏覽器存取Data Infrastructure Insights租用戶 URL，例如：
 
  \https://<tenant-prefix>.c01.cloudinsights.netapp.com/
 該 URL 還將包含在每個使用者的邀請電子郵件中，以便於存取和添加書籤。如果使用者尚未登入控制台，系統將提示他們登入。
@@ -65,11 +65,11 @@ image:trial_region_selector.png["選取您的 Data Infrastructure Insights 租�
 
 NOTE: 新用戶仍必須註冊存取控制台，然後才能存取其租用戶 URL。
 
-第一次登入新租戶時，系統會引導您設定至link:task_getting_started_with_cloud_insights.html["*開始收集資料*"]。
+首次登入新租戶時，系統將引導您完成設置link:task_getting_started_with_cloud_insights.html["*開始收集數據*"]。
 
 
 
-== 登出
+== 註銷
 
 若要退出Data Infrastructure Insights，請點擊您的*使用者名稱*並選擇*登出*。您將返回控制台登入畫面。
 
@@ -78,6 +78,6 @@ NOTE: 註銷Data Infrastructure Insights將使您退出控制台。您也將登�
 
 
 
-=== 閒置逾時
+=== 不活動超時
 
 預設情況下，如果六小時（360 分鐘）內沒有任何活動，控制台將登出使用者。無論活動如何，用戶將在七天後被註銷。

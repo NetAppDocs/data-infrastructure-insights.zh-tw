@@ -1,29 +1,29 @@
 ---
 sidebar: sidebar 
 permalink: concept_cs_integration_with_ontap_arp.html 
-summary: 工作負載安全功能整合ONTAP 了功能不全的勒索軟體保護功能、可改善勒索軟體偵測功能。 
+summary: 工作負載安全與ONTAP自主勒索軟體防護集成，以改善勒索軟體偵測。 
 keywords: ransomware, ARP, Protection, Security 
 ---
-= 整合ONTAP 了功能完善的勒索軟體保護功能
+= 與ONTAP自主勒索軟體防護集成
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-此功能使用NAS（NFS和SMB）環境中的工作負載分析功能ONTAP 、主動偵測及警告可能表示勒索軟體攻擊的異常檔案內活動。
+ONTAP自主勒索軟體防護 (ARP) 功能使用 NAS（NFS 和 SMB）環境中的工作負載分析來主動偵測並警告可能表明勒索軟體攻擊的異常檔案內活動。
 
-有關 ARP link:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["請按這裡"]的其他詳細信息和許可證要求，請參閱。
+關於 ARP 的更多詳細資訊和許可要求可以找到link:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["這裡"]。
 
-工作負載安全功能與ONTAP VMware整合、可接收ARP事件、並提供額外的分析和自動回應層。
+工作負載安全性與ONTAP整合以接收 ARP 事件並提供額外的分析和自動回應層。
 
-工作負載安全性會接收ONTAP 來自於Arp的事件、並採取下列行動：
+工作負載安全性從ONTAP接收 ARP 事件並執行下列操作：
 
-. 將磁碟區加密事件與使用者活動建立關聯、以識別造成損害的原因。
-. 實作自動回應原則（若已定義）
-. 提供鑑識功能：
+. 將捲加密事件與使用者活動關聯起來，以識別造成損害的人。
+. 實施自動回應策略（如果定義）
+. 提供取證能力：
 +
 ** 允許客戶進行資料外洩調查。
-** 找出哪些檔案受到影響、有助於更快恢復並進行資料外洩調查。
+** 確定哪些文件受到了影響，幫助更快地恢復並進行資料外洩調查。
 
 
 
@@ -32,54 +32,54 @@ keywords: ransomware, ARP, Protection, Security
 
 == 先決條件
 
-. 最低 ONTAP 版本： 9.11.1
-. 啟用了ARP的磁碟區。有關啓用 ARP 的詳細信息link:https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html["請按這裡"]，請參閱。必須透過OnCommand 「支援系統管理程式」來啟用ARP。工作負載安全性無法啟用ARP。
-. 應透過叢集IP新增工作負載安全收集器。
-. 此功能需要叢集層級認證、才能正常運作。換句話說、新增SVM時必須使用叢集層級認證。
+. 最低ONTAP版本：9.11.1
+. ARP 啟用磁碟區。關於啟用 ARP 的詳細資訊可以找到link:https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html["這裡"]。必須透過OnCommand System Manager啟用 ARP。工作負載安全性無法啟用 ARP。
+. 應透過叢集 IP 新增工作負載安全收集器。
+. 此功能需要集群級憑證才能運作。換句話說，新增 SVM 時必須使用叢集等級憑證。
 
 
 
 
 == 需要使用者權限
 
-如果您使用叢集管理認證、則不需要新的權限。
+如果您使用叢集管理憑證，則不需要新的權限。
 
-如果您使用的自訂使用者（例如、_CsUser_）具有授予使用者的權限、請依照下列步驟授予工作負載安全性權限、以便從ONTAP Sfor收集與Arp相關的資訊。
+如果您使用具有指定權限的自訂使用者（例如 _csuser_），請依照下列步驟授予 Workload Security 從ONTAP收集 ARP 相關資訊的權限。
 
-對於具有叢集認證的_CsUser_、請從ONTAP 下列指令行執行下列動作：
+對於具有叢集憑證的 _csuser_，從ONTAP命令列執行下列操作：
 
 ....
 security login role create -role csrole -cmddirname "volume" -access readonly
 security login role create -role csrole -cmddirname "security anti-ransomware volume" -access readonly
 ....
-瞭解有關配置其他link:task_add_collector_svm.html["權限ONTAP"]的更多信息。
+閱讀有關配置其他內容的更多信息link:task_add_collector_svm.html["ONTAP 權限"]。
 
 
 
-== 警示範例
+== 樣本警報
 
-下列為因ARP事件而產生的警示範例：
+由於 ARP 事件產生的警報示例如下所示：
 
-image:CS_Ransomware_Example_1.png["勒索軟體警示頂端區段"] image:CS_Ransomware_Example_2.png["勒索軟體警示頂端區段"] image:CS_Ransomware_Example_3.png["勒索軟體警示頂端區段"]
+image:CS_Ransomware_Example_1.png["勒索軟體警報頂部"] image:CS_Ransomware_Example_2.png["勒索軟體警報頂部"] image:CS_Ransomware_Example_3.png["勒索軟體警報頂部"]
 
-高可信度橫幅表示攻擊顯示勒索軟體行為及檔案加密活動。加密檔案圖表會指出Arp解決方案偵測到磁碟區加密活動的時間戳記。
+高可信度橫幅表明攻擊已顯示出勒索軟體行為以及檔案加密活動。加密檔案圖表指示 ARP 解決方案偵測到磁碟區加密活動的時間戳記。
 
 
 
 == 限制
 
-如果SVM未受工作負載安全性監控、但ONTAP 有由效益管理系統產生的ARP事件、則工作負載安全系統仍會接收並顯示這些事件。但是、與警示相關的鑑識資訊以及使用者對應將不會被擷取或顯示。
+如果 SVM 未受到 Workload Security 監控，但ONTAP產生了 ARP 事件，則 Workload Security 仍會接收並顯示這些事件。但是，與警報相關的取證資訊以及使用者映射將不會被捕獲或顯示。
 
 
 
-== 疑難排解
+== 故障排除
 
-下表說明已知問題及其解決方法。
+下表描述了已知問題及其解決方法。
 
 [cols="2*"]
 |===
-| 問題： | 解決方法： 
+| 問題： | 解決： 
 
 
-| 偵測到攻擊後24小時內收到電子郵件警示。在 UI 中、警示會在 Data Infrastructure Insights Workload Security 收到電子郵件之前 24 小時顯示。 | 當 ONTAP 將 _r勒索 軟體 Detected_ 事件傳送至資料基礎架構洞見工作負載安全性（即工作負載安全性）時、就會傳送電子郵件。此活動包含攻擊清單及其時間戳記。工作負載安全性UI會顯示第一個受攻擊檔案的警示時間戳記。ONTAP 會在編碼特定數量的檔案時、將「偵測到的勒索軟體」事件傳送至「資料基礎架構洞見」。因此、在UI中顯示警示的時間與電子郵件傳送的時間可能有所不同。 
+| 偵測到攻擊後 24 小時會收到電子郵件警報。在 UI 中，警報會在Data Infrastructure Insights工作負載安全收到電子郵件之前 24 小時顯示。 | 當ONTAP將「偵測到勒索軟體」事件傳送到Data Infrastructure Insights工作負載安全（即工作負載安全）時，就會發送電子郵件。此事件包含攻擊清單及其時間戳記。工作負載安全 UI 顯示第一個受到攻擊的檔案的警報時間戳。當一定數量的文件被編碼時， ONTAP會將「偵測到勒索軟體」事件傳送到Data Infrastructure Insights。因此，警報在 UI 中顯示的時間與電子郵件發送的時間之間可能會有差異。 
 |===

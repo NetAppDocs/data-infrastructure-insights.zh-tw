@@ -11,61 +11,61 @@ settings:
   langs: zh-tw,us-en,de-de,es-es,fr-fr,it-it,pt-br,ja-jp,ko-kr,zh-cn
 sidebar:
   entries:
-  - title: Data Infrastructure Insights 文件
+  - title: Data Infrastructure Insights文檔
     url: "/index.html"
-  - title: 新增功能
+  - title: 什麼是新的
     url: "/concept_whats_new.html"
-  - title: 報名參加 Data Infrastructure Insights
+  - title: 註冊Data Infrastructure Insights
     url: "/task_cloud_insights_onboarding_1.html"
-  - title: 安全性
+  - title: 安全
     entries:
-    - title: 安全實務做法
+    - title: 安全實踐
       url: "/security_overview.html"
-    - title: 我們儲存的內容和地點
+    - title: 我們儲存什麼以及在哪裡存儲
       url: "/security_information_and_region.html"
-    - title: 安全性管理工具
+    - title: 安全管理工具
       url: "/security_admin_tool.html"
-  - title: 快速入門
+  - title: 入門
     entries:
-    - title: 收集資料
+    - title: 收集數據
       entries:
-      - title: 總覽
+      - title: 概況
         url: "/task_getting_started_with_cloud_insights.html"
-      - title: 採購單位需求
+      - title: 採集單元要求
         url: "/concept_acquisition_unit_requirements.html"
-      - title: 設定擷取單位
+      - title: 配置採集單元
         url: "/task_configure_acquisition_unit.html"
-      - title: 在 Windows/Linux 上設定代理程式
+      - title: 在 Windows/Linux 上設定代理
         url: "/task_config_telegraf_agent.html"
-      - title: 設定資料收集器
+      - title: 配置資料收集器
         url: "/task_configure_data_collectors.html"
-      - title: 判斷資料收集器擷取狀態
+      - title: 確定資料收集器採集狀態
         url: "/concept_determining_data_collector_acq_status.html"
-      - title: 管理已設定的資料收集器
+      - title: 管理已配置的資料收集器
         url: "/task_view_configured_data_collectors.html"
       - title: 研究資料收集器錯誤
         url: "/task_research_failed_collector.html"
-    - title: 匯入建議的儀表板
+    - title: 導入推薦的儀表板
       url: "/concept_import_from_dashboard_gallery.html"
-    - title: 使用者帳戶與角色
+    - title: 使用者帳戶和角色
       url: "/concept_user_roles.html"
-  - title: 資料收集器清單
+  - title: 資料收集器列表
     url: "/data_collector_list.html"
-  - title: 訂閱 Data Infrastructure Insights
+  - title: 訂閱Data Infrastructure Insights
     url: "/concept_subscribing_to_cloud_insights.html"
-  - title: 觀察能力
+  - title: 可觀察性
     entries:
     - title: 建立儀表板
       entries:
-      - title: 儀表板總覽
+      - title: 儀表板概述
         url: "/concept_dashboards_overview.html"
-      - title: 儀表板功能
+      - title: 儀表板的功能
         url: "/concept_dashboard_features.html"
       - title: 範例儀表板
         entries:
         - title: 虛擬機器效能
           url: "/task_dashboard_example_VM_performance.html"
-      - title: 儀表板最佳實務做法
+      - title: 儀表板最佳實踐
         url: "/concept_dashboard_best_practices.html"
     - title: 使用查詢
       entries:
@@ -73,55 +73,55 @@ sidebar:
         url: "/concept_querying_assets.html"
       - title: 建立查詢
         url: "/task_create_query.html"
-      - title: 檢視可用的查詢
+      - title: 查看可用查詢
         url: "/task_view_queries.html"
-      - title: 將查詢結果匯出至.CSV
+      - title: 將查詢結果匯出為 .CSV
         url: "/task_export_query_results.html"
       - title: 修改或刪除查詢
         url: "/task_modify_delete_query.html"
-      - title: 為物件指派多個應用程式/註釋
+      - title: 為物件分配多個應用程式/註釋
         url: "/task_query_assign_multiple_applications.html"
-      - title: 將表格值複製到剪貼簿
+      - title: 將表值複製到剪貼簿
         url: "/task_query_copy_table_values.html"
-      - title: 查詢記錄
+      - title: 查詢日誌
         url: "/concept_log_explorer.html"
-      - title: 識別非使用中的裝置
+      - title: 識別非活動設備
         url: "/task_identify_inactive_devices.html"
-    - title: 洞見
+    - title: 洞察
       entries:
-      - title: 總覽
+      - title: 概況
         url: "/insights_overview.html"
-      - title: 共享的資源正承受壓力
+      - title: 共享資源面臨壓力
         url: "/insights_shared_resources_under_stress.html"
-      - title: Kubernetes命名空間不足
+      - title: Kubernetes 命名空間空間不足
         url: "/insights_k8s_namespaces_running_out_of_space.html"
-      - title: 回收 ONTAP Cold Storage
+      - title: 回收ONTAP冷存儲
         url: "/insights_reclaim_ontap_cold_storage.html"
-    - title: 監控與警示
+    - title: 監控和警報
       entries:
       - title: 建立監視器
         url: "/task_create_monitor.html"
-      - title: 檢視及管理警示
+      - title: 查看和管理警報
         url: "/task_view_and_manage_alerts.html"
-      - title: 設定通知收件者
+      - title: 配置通知收件者
         url: "/concept_notifications_email.html"
-      - title: 異常狀況偵測監視器
+      - title: 異常檢測監視器
         url: "/concept_anomaly_detection.html"
       - title: 系統定義的監視器
         url: "/task_system_monitors.html"
-      - title: 設定通知收件者
+      - title: 配置通知收件者
         url: "/concept_notifications_email.html"
-      - title: Webhook通知
+      - title: Webhook 通知
         entries:
-        - title: 設定 Webhooks
+        - title: 配置 Webhook
           url: "/task_create_webhook.html"
-        - title: Webhook 範例 - 不和
+        - title: Webhook 範例 - Discord
           url: "/task_webhook_example_discord.html"
         - title: Webhook 範例 - PagerDuty
           url: "/task_webhook_example_pagerduty.html"
         - title: Webhook 範例 - Slack
           url: "/task_webhook_example_slack.html"
-        - title: Webhook 範例：團隊
+        - title: Webhook 範例 - 團隊
           url: "/task_webhook_example_teams.html"
     - title: 使用註釋
       entries:
@@ -129,39 +129,39 @@ sidebar:
         url: "/task_defining_annotations.html"
       - title: 使用註釋
         url: "/task_create_annotation.html"
-      - title: 使用註釋規則
+      - title: 使用註解規則
         url: "/task_create_annotation_rules.html"
-      - title: 使用API匯入附註
+      - title: 使用 API 導入註釋
         url: "/task_annotation_import.html"
     - title: 使用應用程式
       entries:
       - title: 應用程式概念
         url: "/concept_about_applications.html"
-      - title: 設定應用程式
+      - title: 配置應用程式
         url: "/task_create_application.html"
-    - title: 自動裝置解析
+    - title: 自動設備解析
       entries:
-      - title: 裝置解析度總覽
+      - title: 設備解析度概述
         url: "/concept_device_resolution_overview.html"
-      - title: 裝置解決規則
+      - title: 設備解析規則
         url: "/task_device_resolution_rules.html"
-      - title: Fibre Channel裝置解析度
+      - title: 光纖通道設備解析
         url: "/task_device_resolution_fibre_channel.html"
-      - title: IP裝置解析度
+      - title: IP設備解析
         url: "/task_device_resolution_ip.html"
-      - title: 設定裝置解析度偏好設定
+      - title: 設定裝置解析度首選項
         url: "/task_device_resolution_preferences.html"
-      - title: 規則運算式範例
+      - title: 正規表示式範例
         url: "/concept_device_resolution_regex_examples.html"
-    - title: 資產頁面資訊
+    - title: 資產頁面訊息
       entries:
-      - title: 資產頁面總覽
+      - title: 資產頁面概覽
         url: "/concept_asset_page_overview.html"
-      - title: 物件的關聯中篩選
+      - title: 物件的上下文過濾
         url: "/concept_in_context_filters.html"
       - title: 儲存虛擬化
         url: "/concept_storage_virtualization.html"
-      - title: 搜尋資產的提示與秘訣
+      - title: 搜尋資產的提示和技巧
         url: "/concept_searching_assets.html"
     - title: 分析數據
       entries:
@@ -173,13 +173,13 @@ sidebar:
         url: "/monitor_infrastructure_health.html"
     - title: 報告
       entries:
-      - title: 報告總覽
+      - title: 報告概述
         url: "/reporting_overview.html"
       - title: 報告使用者角色
         url: "/reporting_user_roles.html"
-      - title: 使用預先定義的報告
+      - title: 使用預定義報告
         url: "/reporting_predefined_reports.html"
-      - title: Storage Manager儀表板
+      - title: 儲存管理器儀表板
         url: "/reporting_storage_manager_dashboard.html"
       - title: 建立範例報告
         url: "/reporting_create_example.html"
@@ -189,141 +189,141 @@ sidebar:
         url: "/reporting_creating_custom_reports.html"
       - title: 資料模型
         url: "/reporting_creating_custom_reports.html#reporting-data-models"
-      - title: 報告資料庫API
+      - title: 報告資料庫 API
         url: "/reporting_querying_database.html"
       - title: 資料保留
         url: "/reporting_data_retention.html"
-      - title: 架構圖表
+      - title: 架構圖
         url: "/reporting_schema_diagrams.html"
-      - title: 架構表格
+      - title: 模式表
         url: "/reference_schemas.html"
   - title: Kubernetes
     entries:
-    - title: Kubernetes總覽頁面
+    - title: Kubernetes 概覽頁面
       url: "/kubernetes_landing_page.html"
-    - title: 安裝或升級操作員之前
+    - title: 安裝或升級 Operator 之前
       url: "/pre-requisites_for_k8s_operator.html"
     - title: 安裝監控操作員
       url: "/task_config_telegraf_agent_k8s.html"
-    - title: 監控話務員選項
+    - title: 監控操作員選項
       url: "/telegraf_agent_k8s_config_options.html"
-    - title: Kubernetes叢集頁面
+    - title: Kubernetes 叢集頁面
       url: "/kubernetes_cluster_detail.html"
-    - title: 網路監控與地圖
+    - title: 網路監控和地圖
       url: "/concept_kubernetes_network_monitoring_and_map.html"
     - title: 變更分析
       url: "/kubernetes_change_analytics.html"
-  - title: 精選資訊ONTAP
+  - title: ONTAP基礎知識
     url: "/concept_ontap_essentials.html"
-  - title: 管理和其他工作
+  - title: 管理和其他任務
     entries:
-    - title: 使用API
+    - title: 使用 API
       url: "/API_Overview.html"
-    - title: 監控環境
+    - title: 監控您的環境
       entries:
-      - title: 稽核事件
+      - title: 審計事件
         url: "/concept_audit.html"
-      - title: TTL和減取樣
+      - title: TTL 和下採樣
         url: concept_ttl_and_downsampling.html
       - title: Active IQ
         url: "/concept_activeiq.html"
   - title: 工作負載安全
     entries:
-    - title: 關於工作負載安全性
+    - title: 關於工作負載安全
       url: "/cs_intro.html"
-    - title: 快速入門
+    - title: 入門
       entries:
       - title: 工作負載安全入門
         url: "/task_cs_getting_started.html"
-      - title: 工作負載安全代理程式需求
+      - title: 工作負載安全代理要求
         url: "/concept_cs_agent_requirements.html"
-      - title: 設定工作負載安全代理程式
+      - title: 配置工作負載安全代理
         url: "/task_cs_add_agent.html"
-      - title: 刪除工作負載安全代理程式
+      - title: 刪除工作負載安全代理
         url: "/task_cs_delete_agent.html"
-      - title: 設定AD目錄收集器
+      - title: 配置 AD 目錄收集器
         url: "/task_config_user_dir_connect.html"
-      - title: 設定LDAP目錄收集器
+      - title: 配置 LDAP 目錄收集器
         url: "/task_config_user_dir_connect_ldap.html"
-      - title: 設定ONTAP SVM Data Collector
+      - title: 配置ONTAP SVM 資料收集器
         url: "/task_add_collector_svm.html"
-      - title: SVM 收集器疑難排解
+      - title: SVM 收集器故障排除
         url: "/troubleshooting_collector_svm.html"
-      - title: 設定Cloud ONTAP Data Collector
+      - title: 配置 Cloud ONTAP資料收集器
         url: "/task_config_cs_incloud.html"
-      - title: 工作負載安全性使用者管理
+      - title: 工作負載安全用戶管理
         url: "/task_cs_user_management.html"
-      - title: 事件率檢查器（代理程式規模調整指南）
+      - title: 事件率檢查器（代理規模指南）
         url: "/concept_cs_event_rate_checker.html"
-    - title: 警示
+    - title: 警報
       url: "/cs_alert_data.html"
-    - title: 鑑識
+    - title: 法醫
       entries:
-      - title: 活動鑑識：所有活動
+      - title: 活動取證 - 所有活動
         url: "/forensic_activity_history.html"
       - title: 使用者
         url: "/forensic_user_overview.html"
-    - title: 自動化回應原則
+    - title: 自動回應策略
       url: "/cs_automated_response_policies.html"
-    - title: 允許的檔案類型原則
+    - title: 允許的文件類型策略
       url: "/ws_allowed_file_types.html"
-    - title: 不受依賴的勒索軟體保護整合ONTAP
+    - title: ONTAP自主勒索軟體防護集成
       url: "/concept_cs_integration_with_ontap_arp.html"
-    - title: ONTAP 存取遭拒整合
+    - title: ONTAP存取被拒絕集成
       url: "/concept_ws_integration_with_ontap_access_denied.html"
-    - title: 封鎖使用者存取
+    - title: 阻止用戶訪問
       url: "/cs_restrict_user_access.html"
     - title: 模擬勒索軟體攻擊
       url: "/concept_cs_attack_simulator.html"
     - title: 電子郵件通知
       url: "/cs_notifications_email.html"
-    - title: Webhook通知
+    - title: Webhook 通知
       entries:
-      - title: 正在建立 Webhooks
+      - title: 建立 Webhook
         url: "/ws_notifications_using_webhooks.html"
-      - title: 不和 Webhook 範例
+      - title: Discord Webhook 範例
         url: "/ws_webhook_example_discord.html"
       - title: PagerDuty Webhook 範例
         url: "/ws_webhook_example_pagerduty.html"
-      - title: 鬆弛 Webhook 範例
+      - title: Slack Webhook 範例
         url: "/ws_webhook_example_slack.html"
       - title: 團隊 Webhook 範例
         url: "/ws_webhook_example_teams.html"
-    - title: 工作負載安全API
+    - title: 工作負載安全 API
       url: "/concept_cs_api.html"
-    - title: SVM 收集器疑難排解
+    - title: SVM 收集器故障排除
       url: "/troubleshooting_collector_svm.html"
-  - title: 疑難排解
+  - title: 故障排除
     entries:
-    - title: 一般疑難排解
+    - title: 常規故障排除
       url: "/task_troubleshooting_general_problems.html"
-    - title: 疑難排解Linux擷取單元問題
+    - title: Linux 擷取單元故障排除
       url: "/task_troubleshooting_linux_acquisition_unit_problems.html"
-    - title: 疑難排解Windows接收單元問題
+    - title: 排除 Windows 擷取單元故障
       url: "/task_troubleshooting_windows_acquisition_unit_problems.html"
     - title: 研究資料收集器錯誤
       url: "/task_research_failed_collector.html"
-  - title: 資料收集器支援對照表
+  - title: 數據收集器支援矩陣
     url: "/reference_data_collector_support_matrix.html"
-  - title: 參考與支援
+  - title: 參考與支持
     entries:
-    - title: 正在申請支援
+    - title: 請求支持
       url: "/concept_requesting_support.html"
-    - title: 資料收集器參考資料-基礎架構
+    - title: 資料收集器參考 - 基礎設施
       entries:
-      - title: 廠商參考總覽
+      - title: 供應商參考概述
         url: "/concept_data_collector_reference.html"
       - title: AWS
         url: "/task_dc_amazon_ec2.html"
-      - title: Amazon FSX for NetApp ONTAP 產品
+      - title: Amazon FSx for NetApp ONTAP
         url: "/task_dc_na_amazon_fsx.html"
       - title: Azure
         url: "/task_dc_ms_azure.html"
-      - title: Broadcom
+      - title: 博通
         entries:
         - title: Brocade網路顧問
           url: "/task_dc_brocade_bna.html"
-        - title: Fibre Channel交換器
+        - title: 光纖通道交換機
           url: "/task_dc_brocade_fc_switch.html"
         - title: Brocade FOS REST
           url: "/task_dc_brocade_rest.html"
@@ -331,83 +331,83 @@ sidebar:
         url: "/task_dc_cisco_fc_switch.html"
       - title: Cohesity SmartfFiles
         url: "/task_dc_cohesity_smartfiles.html"
-      - title: Dell
+      - title: 戴爾
         entries:
-        - title: 產品系列XC
+        - title: XC系列
           url: "/task_dc_dell_xc_series.html"
-      - title: Dell EMC
+      - title: 戴爾 EMC
         entries:
-        - title: 資料網域
+        - title: 資料域
           url: "/task_dc_emc_datadomain.html"
-        - title: ECS
+        - title: 彈性雲端伺服器
           url: "/task_dc_emc_ecs.html"
         - title: PowerScale
           url: "/task_dc_emc_isilon.html"
-        - title: Isilon / PowerScale REST
+        - title: Isilon/PowerScale REST
           url: "/task_dc_emc_isilon_rest.html"
         - title: PowerStore
           url: "/task_dc_emc_powerstore.html"
-        - title: RecoverPoint
+        - title: 恢復點
           url: "/task_dc_emc_recoverpoint.html"
         - title: ScaleIO
           url: "/task_dc_emc_scaleio.html"
-        - title: Unity（VNXe）
+        - title: 統一 (VNXe)
           url: "/task_dc_emc_unity.html"
-        - title: Vmax /最大PowerMax
+        - title: VMAX/PowerMax
           url: "/task_dc_emc_vmax_powermax.html"
-        - title: VNX區塊（Clariion）
+        - title: VNX 塊（Clariion）
           url: "/task_dc_emc_vnx_block.html"
-        - title: VNX檔案（Celerra）
+        - title: VNX 檔案（Celerra）
           url: "/task_dc_emc_vnx_file.html"
-        - title: VNX統一化
+        - title: VNX Unified
           url: "/task_dc_emc_vnx_unified.html"
         - title: VPLEX
           url: "/task_dc_emc_vplex.html"
         - title: XtremIO
           url: "/task_dc_emc_xio.html"
-      - title: Fujitsu
+      - title: 富士通
         url: "/task_dc_fujitsu_eternus.html"
       - title: Google
         url: "/task_dc_google_cloud.html"
       - title: Google Cloud NetApp Volumes
         url: "/task_dc_google_cloud_netapp_volumes.html"
-      - title: HP企業
+      - title: 惠普企業
         entries:
-        - title: HP Alletra 9000與Primera
+        - title: HP Alletra 9000 和 Primera
           url: "/task_dc_hp_3par.html"
         - title: HP Command View AE
           url: "/task_dc_hpe_commandview.html"
         - title: HPE Alletra 6000
           url: "/task_dc_hpe_nimble.html"
-      - title: Hitachi Data Systems
+      - title: 日立資料系統
         entries:
-        - title: HDS Command Suite
+        - title: HDS 命令套件
           url: "/task_dc_hds_commandsuite.html"
-        - title: HDS HNAS
+        - title: HDS 海南航空
           url: "/task_dc_hds_nas.html"
-        - title: HDS Ops Center
+        - title: HDS 營運中​​心
           url: "/task_dc_hds_ops_center.html"
-      - title: Infinidat
+      - title: 無限
         url: "/task_dc_infinidat_infinibox.html"
-      - title: Huawei
+      - title: 華為
         url: "/task_dc_huawei_oceanstor.html"
       - title: IBM
         entries:
-        - title: 無所不安全
+        - title: Cleversafe
           url: "/task_dc_ibm_cleversafe.html"
-        - title: 支援CS
+        - title: CS系列
           url: "/task_dc_ibm_cs.html"
-        - title: 系統儲存設備DS8000系列
+        - title: 系統儲存 DS8000 系列
           url: "/task_dc_ibm_ds.html"
         - title: PowerVM
           url: "/task_dc_ibm_powervm.html"
-        - title: SAN Volume控制器（SVC）
+        - title: San 磁碟區控制器 (SVC)
           url: "/task_dc_ibm_svc.html"
         - title: XIV/A9000
           url: "/task_dc_ibm_xiv.html"
       - title: 聯想
         url: "/task_dc_lenovo.html"
-      - title: Microsoft
+      - title: 微軟
         entries:
         - title: Azure NetApp Files
           url: "/task_dc_ms_anf.html"
@@ -417,21 +417,21 @@ sidebar:
         entries:
         - title: Cloud Volumes ONTAP
           url: "/task_dc_na_cloud_volumes_ontap.html"
-        - title: 適用於AWS的Cloud Volumes Services
+        - title: 適用於 AWS 的 Cloud Volumes 服務
           url: "/task_dc_na_cloud_volumes.html"
         - title: ONTAP ASA （全 SAN 陣列）r2
           url: "/task_dc_na_ontap_all_san_array.html"
-        - title: 資料管理軟體ONTAP
+        - title: ONTAP資料管理軟體
           url: "/task_dc_na_cdot.html"
         - title: ONTAP REST 收集器
           url: "/task_dc_na_ontap_rest.html"
-        - title: 流程7模式Data ONTAP
+        - title: Data ONTAP 7 模式
           url: "/task_dc_na_7mode.html"
         - title: E系列
           url: "/task_dc_na_eseries.html"
-        - title: E 系列 REST
+        - title: E系列REST
           url: "/task_dc_netapp_eseries_rest.html"
-        - title: 解決方案管理伺服器的問題NetApp HCI
+        - title: NetApp HCI管理伺服器
           url: "/task_dc_na_hci.html"
         - title: SolidFire
           url: "/task_dc_na_solidfire.html"
@@ -439,25 +439,25 @@ sidebar:
           url: "/task_dc_na_storagegrid.html"
       - title: Nutanix
         url: "/task_dc_nutanix.html"
-      - title: Oracle
+      - title: 甲骨文
         url: "/task_dc_oracle_zfs.html"
-      - title: 純
+      - title: 純的
         url: "/task_dc_pure_flasharray.html"
-      - title: Red Hat
+      - title: 紅帽
         url: "/task_dc_redhat_virtualization.html"
-      - title: RRubrik CDM
+      - title: Rubrik CDM
         url: "/task_dc_rubrik_cdm.html"
       - title: VMware
         url: "/task_dc_vmware.html"
-    - title: 資料收集器參考資料-服務
+    - title: 資料收集器參考 - 服務
       entries:
       - title: 主機/節點
         url: "/task_config_telegraf_node.html"
       - title: ActiveMQ
         url: "/task_config_telegraf_activemq.html"
-      - title: Apache
+      - title: 阿帕契
         url: "/task_config_telegraf_apache.html"
-      - title: 駐港總領事
+      - title: 領事
         url: "/task_config_telegraf_consul.html"
       - title: Couchbase
         url: "/task_config_telegraf_couchbase.html"
@@ -465,7 +465,7 @@ sidebar:
         url: "/task_config_telegraf_couchdb.html"
       - title: Docker
         url: "/task_config_telegraf_docker.html"
-      - title: 彈性搜尋
+      - title: Elasticsearch
         url: "/task_config_telegraf_elasticsearch.html"
       - title: Flink
         url: "/task_config_telegraf_flink.html"
@@ -477,35 +477,35 @@ sidebar:
         url: "/task_config_telegraf_jvm.html"
       - title: 卡夫卡
         url: "/task_config_telegraf_kafka.html"
-      - title: Kapacitor
+      - title: 卡帕西托
         url: task_config_telegraf_kapacitor.html
-      - title: Kibana
+      - title: 基巴納
         url: "/task_config_telegraf_kibana.html"
       - title: Kubernetes
         url: "/task_config_telegraf_agent_k8s.html"
-      - title: memcached
+      - title: Memcached
         url: "/task_config_telegraf_memcached.html"
       - title: MongoDB
         url: "/task_config_telegraf_mongodb.html"
       - title: MySQL
         url: "/task_config_telegraf_mysql.html"
-      - title: Netstat
+      - title: 網路狀態
         url: "/task_config_telegraf_netstat.html"
-      - title: 恩靈思
+      - title: Nginx
         url: "/task_config_telegraf_nginx.html"
       - title: OpenZFS
         url: task_config_telegraf_openzfs.html
       - title: PostgreSQL
         url: "/task_config_telegraf_postgresql.html"
-      - title: Puppet
+      - title: 木偶
         url: "/task_config_telegraf_puppetagent.html"
-      - title: 紅皮
+      - title: Redis
         url: "/task_config_telegraf_redis.html"
-      - title: RethinkDB
+      - title: 重新思考資料庫
         url: task_config_telegraf_rethinkdb.html
-      - title: Zookkeeper
+      - title: Zookeeper
         url: task_config_telegraf_zookeeper.html
-    - title: 物件圖示參考
+    - title: 物件圖標參考
       url: "/reference_object_icons.html"
   - title: 法律聲明
     url: "/legal-notices.html"

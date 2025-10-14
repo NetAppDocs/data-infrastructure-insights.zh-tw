@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: ws_webhook_example_discord.html 
 keywords: webhook, notification, Discord, integration 
-summary: 建立工作負載安全網路攔截器，讓不和的人能夠警示安全性 
+summary: 為 Discord 建立 Workload Security webhook 以發出安全警報 
 ---
-= 工作負載安全 Webhook 不和範例
+= Discord 的工作負載安全性 Webhook 範例
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,47 +14,47 @@ summary: 建立工作負載安全網路攔截器，讓不和的人能夠警示�
 
 
 [role="lead"]
-Webhooks可讓使用者使用自訂的Webhooks通道、將警示通知傳送至各種應用程式。本頁提供設定Webhooks以解決不和的範例。
+Webhook 允許使用者使用自訂的 webhook 通道向各種應用程式發送警報通知。本頁提供了為 Discord 設定 webhook 的範例。
 
 
-NOTE: 本頁面是指第三方指示，這些指示可能會有所變更。如需最新資訊，請參閱link:https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks["不和文件"]。
-
-
-
-== 不和設定：
-
-* 在不和中、選取伺服器、在「Text Channeling（文字頻道）」下、選取「Edit Channel（齒輪圖示）」。
-* 選擇*整合>檢視Webhook*、然後按一下*新Webhook*
-* 複製Webhook URL。您需要將此內容貼到 Workload Security Webhook 組態中。
+NOTE: 本頁引用第三方說明，這些說明可能會有所變更。請參閱link:https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks["Discord 文件"]以獲取最新資訊。
 
 
 
+== Discord 設定：
 
-== 建立工作負載安全 Webhook ：
-
-. 瀏覽至管理 > 通知，然後選取 _Workload Security Webhooks_ 標籤。按一下「 + Webhook 」以建立新的 Webhook 。
-. 為 Webhook 命名有意義的名稱。
-. 在_範本類型_下拉式清單中、選取*不和*。
-. 將上述的不和 URL 貼到 _url_ 欄位。
-
-
-image:ws_webhook_discord_example.png["工作負載安全網路攔截不和範例"]
-
-為了測試 Webhook ，請暫時將訊息本文中的 URL 值取代為任何有效的 URL （例如 https://netapp.com_) ，然後按一下 _Test Webhook _ 按鈕。不和需要提供有效的 URL ，才能使用測試 Webhook 功能。
-
-測試完成後、請務必將訊息本文設回。
+* 在 Discord 中，選擇伺服器，在文字頻道下，選擇編輯頻道（齒輪圖示）
+* 選擇“整合”>“查看 Webhook”，然後按一下“新 Webhook”
+* 複製 Webhook URL。您需要將其貼上到 Workload Security webhook 設定中。
 
 
 
-== 透過Webhook通知
 
-若要透過 Webhook 通知事件，請瀏覽至 _Workload Security > Policies 。按一下「攻擊原則」或「警示原則」。
+== 建立工作負載安全性 Webhook：
 
-* 輸入有意義的原則名稱。
-* 選取所需的攻擊類型，應附加原則的裝置，以及必要的動作。
-* 在 _webhooks Notifications_ 下拉式清單下，選取所需的不和 Webhooks 並儲存。
+. 導覽至“管理”>“通知”，然後選擇“_Workload Security Webhooks_”標籤。點擊“+ Webhook”以建立一個新的 webhook。
+. 為 webhook 賦予一個有意義的名稱。
+. 在“模板類型”下拉式選單中，選擇“Discord”。
+. 將上面的 Discord URL 貼到 _URL_ 欄位中。
 
 
-附註： Webhooks 也可透過編輯方式附加至現有原則。
+image:ws_webhook_discord_example.png["工作負載安全 webhook discord 範例"]
 
-image:ws_add_attack_policy.png["顯示網路攔截下拉式清單的攻擊原則對話方塊"]
+為了測試 webhook，請暫時將訊息正文中的 URL 值替換為任何有效的 URL（例如 _https://netapp.com_），然後按一下 _測試 Webhook_ 按鈕。  Discord 要求提供有效的 URL 才能讓測試 Webhook 功能正常運作。
+
+測試完成後，請務必將訊息正文重新設定。
+
+
+
+== 透過 Webhook 發送通知
+
+若要透過 webhook 通知事件，請導覽至_工作負載安全性 > 策略_。按一下“+攻擊策略”或“+警告策略”。
+
+* 輸入一個有意義的策略名稱。
+* 選擇所需的攻擊類型、應附加策略的設備以及所需的操作。
+* 在「Webhooks Notifications」下拉式功能表下，選擇所需的 Discord webhook 並儲存。
+
+
+注意：也可以透過編輯將 Webhook 附加到現有策略。
+
+image:ws_add_attack_policy.png["顯示 webhook 下拉選單的攻擊策略對話框"]

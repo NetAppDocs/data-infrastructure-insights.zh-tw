@@ -2,39 +2,39 @@
 sidebar: sidebar 
 permalink: insights_overview.html 
 keywords: insight, greedy, degraded, impacted, impacting, impactful, impact, resources, consuming, workload, ttf, time to full, k8s, kubernetes, namespace 
-summary: Insights可讓您深入瞭解資源使用量和趨勢。 
+summary: 洞察讓您了解資源使用情況和趨勢。 
 ---
-= 洞見
+= 洞察
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-Insights可讓您深入瞭解資源使用量、以及資源使用量對其他資源的影響、或是完整分析的時間。
+透過洞察，您可以了解資源使用及其對其他資源的影響，或完成分析的時間。
 
-我們提供多種見解。瀏覽至 * 儀表板 > Insights （ Insights ） * ，開始深入探討。您可以在主索引標籤上檢視 Active Insights （目前正在發生的 Insights ），或在 _ Inactive Insights （ _ 非使用中 Insights ）索引標籤上檢視 Inactive Insights （非使用中 Insights ）非使用中Insights是指先前已啟用但不再出現的Insights。
-
-
-
-== Insight類型
+有許多見解可供參考。導覽至 *儀表板 > 洞察* 開始深入了解。您可以在主標籤上查看活動洞察（目前正在發生的洞察），或在_非活動洞察_標籤上查看非活動洞察。非活動洞察是指那些之前處於活動狀態但不再發生的洞見。
 
 
 
-=== 共享的資源正承受壓力
-
-高影響力的工作負載可能會降低共享資源中其他工作負載的效能。這會使共享資源承受壓力。Data Infrastructure Insights 提供的工具可協助您調查資源飽和度，以及對租戶的影響。link:insights_shared_resources_under_stress.html["深入瞭解"]
+== 洞察類型
 
 
 
-=== Kubernetes命名空間不足
+=== 共享資源面臨壓力
 
-Kubernetes 命名空間不足 Insight 可讓您檢視 Kubernetes 命名空間上有可能用盡空間的工作負載，並預估每個空間滿之前的剩餘天數。link:insights_k8s_namespaces_running_out_of_space.html["深入瞭解"]
-
-
-
-=== 回收 ONTAP Cold Storage
-
-回收 ONTAP Cold Storage_ Insight 可提供冷容量，潛在成本 / 電力節約的相關資料，以及 ONTAP 系統上 Volume 的建議行動項目。link:insights_reclaim_ontap_cold_storage.html["深入瞭解"]
+高影響的工作負載可能會降低共享資源中其他工作負載的效能。這給共享資源帶來了壓力。Data Infrastructure Insights提供工具來幫助您調查資源飽和度及其對租戶的影響。link:insights_shared_resources_under_stress.html["了解更多"]
 
 
-NOTE: 這是_預覽_功能、可能會隨著時間而改變、因為已進行改善。link:/concept_preview_features.html["深入瞭解"] 關於 Data Infrastructure Insights Preview 功能。
+
+=== Kubernetes 命名空間空間不足
+
+Kubernetes 命名空間空間耗盡洞察讓您可以查看 Kubernetes 命名空間中面臨空間耗盡風險的工作負載，並估算每個空間耗盡之前剩餘的天數。link:insights_k8s_namespaces_running_out_of_space.html["了解更多"]
+
+
+
+=== 回收ONTAP冷存儲
+
+_Reclaim ONTAP Cold Storage_ Insight 提供有關冷容量、潛在成本/電力節省以及ONTAP系統上捲的建議操作項目的資料。link:insights_reclaim_ontap_cold_storage.html["了解更多"]
+
+
+NOTE: 這是一個_預覽_功能，隨著改進可能隨時改變。link:/concept_preview_features.html["了解更多"]關於Data Infrastructure Insights預覽功能。

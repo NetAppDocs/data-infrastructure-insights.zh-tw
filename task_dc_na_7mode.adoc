@@ -2,83 +2,83 @@
 sidebar: sidebar 
 permalink: task_dc_na_7mode.html 
 keywords: data collector, 7-mode, NetApp 
-summary: 設定NetApp 7-mode資料收集器。 
+summary: 配置NetApp 7 模式資料收集器。 
 ---
-= NetApp Data ONTAP 支援7-Mode資料收集器
+= NetApp Data ONTAP在 7-模式資料收集器中運行
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-若儲存系統使用Data ONTAP 以7-Mode運作的VMware軟體、您可以使用7-mode資料收集器來取得容量和效能資料。
+對於使用以 7 模式運作的Data ONTAP軟體的儲存系統，您可以使用 7 模式資料收集器，它使用 CLI 來取得容量和效能資料。
 
 
 
 == 術語
 
-Data Infrastructure Insights 會從 NetApp 7-mode 資料收集器取得下列庫存資訊。對於所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights從NetApp 7 模式資料收集器取得以下庫存資訊。對於所取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
 
-NOTE: 此資料收集器為link:task_getting_started_with_cloud_insights.html#useful-definitions["已過時"]。
+NOTE: 此數據收集器link:task_getting_started_with_cloud_insights.html#useful-definitions["已棄用"]。
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | Data Infrastructure Insights 術語 
+| 供應商/型號術語 | Data Infrastructure Insights術語 
 
 
 | 磁碟 | 磁碟 
 
 
-| RAID群組 | 磁碟群組 
+| 突襲小組 | 磁碟組 
 
 
-| 檔案管理器 | 儲存設備 
+| 文件管理器 | 儲存 
 
 
-| 檔案管理器 | 儲存節點 
+| 文件管理器 | 儲存節點 
 
 
-| Aggregate | 儲存資源池 
+| 總計的 | 儲存池 
 
 
-| LUN | Volume 
+| 邏輯單元號 | 體積 
 
 
-| Volume | 內部Volume 
+| 體積 | 內部體積 
 |===
-附註：這些只是通用的術語對應、可能不代表此資料收集器的每個案例。
+注意：這些只是常見的術語映射，可能並不代表此資料收集器的所有情況。
 
 
 
-== 需求
+== 要求
 
-您需要下列項目才能設定及使用此資料收集器：
+您需要以下內容來配置和使用此資料收集器：
 
-* 知識區儲存控制器和FAS 合作夥伴的IP位址。
-* 連接埠 443
-* 控制器和合作夥伴控制器的自訂管理層級使用者名稱和密碼、具有7-Mode的下列角色功能：
+* FAS儲存控制器及其合作夥伴的 IP 位址。
+* 埠 443
+* 控制器和合作夥伴控制器的自訂管理員等級使用者名稱和密碼，具有 7-模式的以下角色功能：
 +
-** 「API-*」：使用此選項可OnCommand Insight 讓效益管理程式執行所有NetApp儲存API命令。
-** 「login-http-admin」：使用此選項可透過OnCommand Insight HTTP連線至NetApp儲存設備。
-** 「安全性-API-vFilerTM」：使用此功能可OnCommand Insight 讓效益管理系統執行NetApp儲存API命令、以擷取vFiler單元資訊。
-** 「CLI選項」：使用此選項可讀取儲存系統選項。
-** 「CLI/LUN」：存取這些命令來管理LUN。顯示特定LUN或LUN類別的狀態（LUN路徑、大小、線上/離線狀態及共用狀態）。
-** "CLI/df"：使用此選項可顯示可用磁碟空間。
-** "CLI/ifconfig"：使用此選項可顯示介面和IP位址。
+** “api-*”：使用此項目允許OnCommand Insight執行所有NetApp儲存 API 命令。
+** 「login-http-admin」：使用此項目允許OnCommand Insight透過 HTTP 連接到NetApp儲存。
+** 「security-api-vfiler」：使用此功能可讓OnCommand Insight執行NetApp儲存 API 指令來擷取 vFiler 單元資訊。
+** “cli-options”：使用它來讀取儲存系統選項。
+** “cli-lun”：存取這些命令來管理 LUN。顯示給定 LUN 或 LUN 類別的狀態（LUN 路徑、大小、線上/離線狀態和共用狀態）。
+** “cli-df”：使用此功能顯示可用磁碟空間。
+** “cli-ifconfig”：使用它來顯示介面和 IP 位址。
 
 
 
 
 
 
-== 組態
+== 配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| 儲存系統位址 | NetApp儲存系統的IP位址或完整網域名稱 
+| 儲存系統位址 | NetApp儲存系統的 IP 位址或完全限定域名 
 
 
 | 使用者名稱 | NetApp儲存系統的使用者名稱 
@@ -87,124 +87,124 @@ NOTE: 此資料收集器為link:task_getting_started_with_cloud_insights.html#us
 | 密碼 | NetApp儲存系統的密碼 
 
 
-| 叢集中HA合作夥伴的地址 | HA合作夥伴的IP位址或完整網域名稱 
+| 集群中 HA 合作夥伴的地址 | HA 合作夥伴的 IP 位址或完全限定域名 
 
 
-| 叢集中HA合作夥伴的使用者名稱 | HA合作夥伴的使用者名稱 
+| 叢集中 HA 合作夥伴的使用者名 | HA 合作夥伴的用戶名 
 
 
-| 叢集中HA合作夥伴Filer的密碼 | HA合作夥伴的密碼 
+| 集群中 HA 合作夥伴文件管理器的密碼 | HA 合作夥伴的密碼 
 |===
 
 
-== 進階組態
+== 進階配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| 庫存輪詢時間間隔（分鐘） | 庫存輪詢之間的時間間隔。預設值為 20 分鐘。 
+| 庫存輪詢間隔（分鐘） | 庫存調查之間的間隔。預設值為 20 分鐘。 
 
 
-| 連線類型 | HTTPS或HTTP也會顯示預設連接埠 
+| 連接類型 | HTTPS 或 HTTP，也顯示預設端口 
 
 
-| 置換連線連接埠 | 如果空白、請使用「連線類型」欄位中的預設連接埠、否則請輸入要使用的連線連接埠 
+| 覆蓋連接埠 | 如果為空，則在連接類型欄位中使用預設端口，否則輸入要使用的連接端口 
 
 
-| 效能意見調查時間間隔（秒） | 效能輪詢之間的時間間隔。預設值為 300 秒。 
+| 效能輪詢間隔（秒） | 效能輪詢之間的間隔。預設值為 300 秒。 
 |===
 
 
-== 儲存系統連線
+== 儲存系統連接
 
-除了使用此資料收集器的預設管理使用者之外、您也可以直接在NetApp儲存系統上設定具有管理權限的使用者、以便此資料收集器從NetApp儲存系統取得資料。
+作為使用此資料收集器的預設管理用戶的替代方法，您可以直接在NetApp儲存系統上配置具有管理權限的用戶，以便此資料收集器可以從NetApp儲存系統中取得資料。
 
-連線至NetApp儲存系統時、需要在取得主pFiler（儲存系統所在）時指定的使用者符合下列條件：
+連接到NetApp儲存系統要求取得主 pfiler（儲存系統所在的位置）時指定的使用者符合以下條件：
 
-* 使用者必須位於vfiler0（根Filer/pFiler0）上。
+* 使用者必須位於 vfiler0（根檔案管理器/pfiler）上。
 +
-擷取主要pFiler時、會擷取儲存系統。
+在取得主 pfiler 時會取得儲存系統。
 
-* 下列命令定義使用者角色功能：
+* 以下指令定義使用者角色能力：
 +
-** 「 API-* 」：使用此選項可讓 Data Infrastructure Insights 執行所有 NetApp 儲存 API 命令。
+** “api-*”：使用此功能允許Data Infrastructure Insights執行所有NetApp儲存 API 命令。
 +
-使用ZAPI時需要使用此命令。
+使用 ZAPI 需要此命令。
 
-** 「 login-http-admin 」：使用此選項可讓 Data Infrastructure Insights 透過 HTTP 連線至 NetApp 儲存設備。使用ZAPI時需要使用此命令。
-** 「 security-API-vFiler 」：使用此選項可讓 Data Infrastructure Insights 執行 NetApp 儲存 API 命令、以擷取 vFiler 單元資訊。
-** 「CLI選項」：用於「選項」命令、用於合作夥伴IP和啟用的授權。
-** 「CLI/LUN」：存取以下命令以管理LUN。顯示特定LUN或LUN類別的狀態（LUN路徑、大小、線上/離線狀態及共用狀態）。
-** "CLI/df"：適用於"df -s"、"df -r"、"df -A -r"命令、用於顯示可用空間。
-** "CLI/ifconfig"：用於執行「ifconfig-A」命令、用於取得檔案管理器IP位址。
-** CLI字節：用於「rdfile /etc/netgroup」命令、用於取得netgroup。
-** 「CLI/date」：適用於「date」命令、用於取得Snapshot複本的完整日期。
-** 「CLCLI抓取」：適用於「快照清單」命令、可用於取得Snapshot複本。
-
-
-
-
-如果未提供CLI日期或CLI快照權限、則擷取作業可以完成、但不會報告Snapshot複本。
-
-若要成功取得7-Mode資料來源、且不會在儲存系統上產生任何警告、您應該使用下列其中一個命令字串來定義使用者角色。此處列出的第二個字串是第一個的精簡版本：
-
-* login-http-admin,api-*、安全API vfile、cli - rdfile、cli選項、cli - df、cli - LUN、cli - ifconfig、cli日期、cli - snap、_
-* login-http-admin,API-*、資訊安全API-vfile、CLI-
+** 「login-http-admin」：使用此功能允許Data Infrastructure Insights透過 HTTP 連接到NetApp儲存。使用 ZAPI 需要此命令。
+** 「security-api-vfiler」：使用此功能可讓Data Infrastructure Insights執行NetApp儲存 API 命令來檢索 vFiler 單元資訊。
+** “cli-options”：用於“options”命令並用於合作夥伴 IP 和啟用的許可證。
+** “cli-lun”：存取這些命令來管理 LUN。顯示給定 LUN 或 LUN 類別的狀態（LUN 路徑、大小、線上/離線狀態和共用狀態）。
+** “cli-df”：用於“df -s”、“df -r”、“df -A -r”指令，顯示可用空間。
+** “cli-ifconfig”：用於“ifconfig -a”命令，取得檔案伺服器 IP 位址。
+** “cli-rdfile”：用於“rdfile /etc/netgroup”指令，取得網路群組。
+** 「cli-date」：用於「date」指令，取得 Snapshot 副本的完整日期。
+** 「cli-snap」：用於「snap list」指令並取得 Snapshot 副本。
 
 
 
 
-== 疑難排解
+如果未提供 cli-date 或 cli-snap 權限，則可以完成獲取，但不會報告 Snapshot 副本。
 
-如果您在使用此資料收集器時遇到問題、請嘗試下列事項：
+要成功取得 7-模式資料來源並且不會在儲存系統上產生警告，您應該使用下列命令字串之一來定義您的使用者角色。這裡列出的第二個字串是第一個字串的精簡版本：
+
+* 登入 http 管理員、api-*、安全性 api-vfile、cli-rdfile、cli-options、cli-df、cli-lun、cli-ifconfig、cli-date、cli-snap、_
+* 登入-http-admin，api-*，安全-api-vfile，cli-
 
 
 
-=== 庫存
+
+== 故障排除
+
+如果您在使用此資料收集器時遇到問題，請嘗試以下操作：
+
+
+
+=== 存貨
 
 [cols="2*"]
 |===
-| 問題： | 試用： 
+| 問題： | 試試一下： 
 
 
-| 接收401 HTTP回應或13003 ZAPI錯誤代碼、且ZAPI傳回「權限不足」或「未授權使用此命令」 | 檢查使用者名稱和密碼、以及使用者權限/權限。 
+| 收到 401 HTTP 回應或 13003 ZAPI 錯誤代碼，並且 ZAPI 返回“權限不足”或“未授權執行此命令” | 檢查使用者名稱和密碼以及使用者權限/許可。 
 
 
-| 「無法執行命令」錯誤 | 檢查使用者是否具有下列裝置權限：• API* • CLI- 日期• CLI- df • CLI- ifconfig • CLI- LUN • CLI 操作• CLI - rdfile • CLI- SNAP • login-http-admin • security-API-vFiler 也會檢查資料基礎架構 Insights 是否支援 ONTAP 版本、並確認使用的認證是否符合裝置認證 
+| “無法執行命令”錯誤 | 檢查使用者是否具有裝置的以下權限： • api-* • cli-date • cli-df • cli-ifconfig • cli-lun • cli-operations • cli-rdfile • cli-snap • login-http-admin • security-api-vfiler 也要檢查Data Infrastructure Insights ，是否支援與使用ONTAP 
 
 
-| 叢集版本低於8.1 | 叢集支援的最低版本為8.1。升級至支援的最低版本。 
+| 叢集版本小於 8.1 | 集群最低支援版本為 8.1。升級到最低支援版本。 
 
 
-| ZAPI傳回「叢集角色不是叢集管理LIF」 | AU需要與叢集管理IP對話。檢查IP並視需要變更為不同的IP 
+| ZAPI 傳回“群集角色不是 cluster_mgmt LIF” | AU 需要與叢集管理 IP 對話。檢查 IP 並在必要時更改為其他 IP 
 
 
-| 錯誤：「不支援7模式檔案管理器」 | 如果您使用此資料收集器來探索7模式檔案管理器、就可能發生這種情況。改為將IP變更為指向cDOT檔案管理器。 
+| 錯誤：“不支援 7 模式文件管理器” | 如果您使用此資料收集器來發現 7 模式檔案管理器，就會發生這種情況。將 IP 變更為指向 cdot filer。 
 
 
-| ZAPI命令在重試後失敗 | AU與叢集發生通訊問題。檢查網路、連接埠號碼和IP位址。使用者也應該嘗試從AU機器的命令列執行命令。 
+| 重試後 ZAPI 指令失敗 | AU 與集群有通訊問題。檢查網路、連接埠號碼和 IP 位址。使用者還應該嘗試從 AU 機器的命令列運行命令。 
 
 
-| AU無法連線至ZAPI | 檢查IP /連接埠連線能力、並宣告ZAPI組態。 
+| AU 無法連線到 ZAPI | 檢查 IP/連接埠連線並確認 ZAPI 配置。 
 
 
-| AU無法透過HTTP連線至ZAPI | 檢查ZAPI連接埠是否接受純文字。如果AU嘗試傳送純文字到SSL通訊端、通訊就會失敗。 
+| AU 無法透過 HTTP 連線到 ZAPI | 檢查 ZAPI 連接埠是否接受純文字。如果 AU 嘗試向 SSL 套接字發送純文本，則通訊失敗。 
 
 
-| 通訊失敗、出現SSLException | AU正在嘗試將SSL傳送至檔案管理器上的純文字連接埠。檢查ZAPI連接埠是否接受SSL、或使用不同的連接埠。 
+| 通訊失敗並出現 SSLException | AU 正在嘗試將 SSL 傳送到檔案總管上的純文字連接埠。檢查 ZAPI 連接埠是否接受 SSL，或使用其他連接埠。 
 
 
-| 其他連線錯誤：ZAPI回應的錯誤代碼為13001、「資料庫未開啟」ZAPI錯誤代碼為60、回應包含「API未按時完成」ZAPI回應包含「initialize_session（）傳回的空環境」ZAPI錯誤代碼為14007、回應包含「節點不健全」 | 檢查網路、連接埠號碼和IP位址。使用者也應該嘗試從AU機器的命令列執行命令。 
+| 其他連接錯誤： ZAPI 回應的錯誤代碼為 13001，“資料庫未開啟” ZAPI 錯誤代碼為 60，回應包含“API 未按時完成” ZAPI 回應包含“initialize_session() 傳回 NULL 環境” ZAPI 錯誤代碼為 14007，回應包含“節點不健康” | 檢查網路、連接埠號碼和 IP 位址。使用者還應該嘗試從 AU 機器的命令列運行命令。 
 
 
-| ZAPI的套接字逾時錯誤 | 檢查檔案管理器連線能力及/或增加逾時時間。 
+| ZAPI 套接字逾時錯誤 | 檢查檔案連接和/或增加逾時。 
 
 
-| 「C模式叢集不受7模式資料來源支援」錯誤 | 檢查IP並將IP變更為7模式叢集。 
+| 「7 模式資料來源不支援 C 模式叢集」錯誤 | 檢查 IP 並將 IP 變更為 7 模式叢集。 
 
 
-| 「無法連線至vFiler」錯誤 | 請檢查取得的使用者功能至少包括下列項目：API-* SECNTIA-API-VFiler login-http-admin確認檔案管理器執行的是最小ONTAPI 1.7版。 
+| “無法連接到 vFiler”錯誤 | 檢查取得使用者功能至少包含以下內容：api-* security-api-vfiler login-http-admin 確認檔案管理器執行的是最低 ONTAPI 版本 1.7。 
 |===
-您可以在頁面或中找到其他link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]資訊。
+更多資訊可從link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。

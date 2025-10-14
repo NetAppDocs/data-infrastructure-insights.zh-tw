@@ -2,131 +2,131 @@
 sidebar: sidebar 
 permalink: task_dc_hp_3par.html 
 keywords: data collector, 3PAR, HP, HP 3PAR, HPE, 
-summary: 設定HP Enterprise Alletra 9000 / Primera（前身為3PAR）資料收集器。 
+summary: 配置 HP Enterprise Alletra 9000 / Primera（以前稱為 3PAR）資料收集器。 
 ---
-= HP Enterprise Alletra 9000 / Primera儲存資料收集器
+= HP Enterprise Alletra 9000 / Primera Storage 資料收集器
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-Data Infrastructure Insights 使用 HP Enterprise Alletra 9000 / HP Enterprise Primera （先前為 3PAR ）資料收集器來探索庫存和效能。
+Data Infrastructure Insights使用 HP Enterprise Alletra 9000 / HP Enterprise Primera（以前稱為 3PAR）資料收集器來發現庫存和效能。
 
 
 
 == 術語
 
-Data Infrastructure Insights 會從這個資料收集器取得下列庫存資訊。對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights從該數據收集器獲取以下庫存資訊。對於Data Infrastructure Insights取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| 實體磁碟 | 磁碟 
+| 物理磁碟 | 磁碟 
 
 
-| 儲存系統 | 儲存設備 
+| 儲存系統 | 儲存 
 
 
-| 控制器節點 | 儲存節點 
+| 控制節點 | 儲存節點 
 
 
-| 通用資源配置群組 | 儲存資源池 
+| 通用配置組 | 儲存池 
 
 
-| 虛擬Volume | Volume 
+| 虛擬磁碟區 | 體積 
 |===
-附註：這些只是通用的術語對應、可能不代表此資料收集器的每個案例。
+注意：這些只是常見的術語映射，可能並不代表此資料收集器的所有情況。
 
 
 
-== 需求
+== 要求
 
-設定此資料收集器需要下列項目：
+配置此資料收集器需要以下內容：
 
-* InServ叢集的IP位址或FQDN
-* 若為庫存、則為StoreServ伺服器的唯讀使用者名稱和密碼
-* 若要獲得效能、請將使用者名稱和密碼讀寫至StoreServ伺服器
-* 連接埠需求：22（庫存收集）、5988或5989（效能收集）[附註：StoreServ OS 3.x+支援效能]
-* 若要收集效能、請透過SSH登入陣列、確認SMI-S已啟用。
-
-
+* InServ 叢集的 IP 位址或 FQDN
+* 對於庫存，StoreServ Server 的唯讀使用者名稱和密碼
+* 為了提高效能，請將使用者名稱和密碼讀取寫到 StoreServ Server
+* 連接埠需求：22（庫存收集）、5988 或 5989（效能收集）[注意：StoreServ OS 3.x+ 支援效能]
+* 對於效能收集，請透過 SSH 登入陣列來確認 SMI-S 已啟用。
 
 
-== 組態
+
+
+== 配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| 儲存IP位址 | StoreServ叢集的儲存IP位址或完整網域名稱 
+| 儲存 IP 位址 | StoreServ 叢集的儲存 IP 位址或完全限定域名 
 
 
-| 使用者名稱 | StoreServ伺服器的使用者名稱 
+| 使用者名稱 | StoreServ 伺服器的使用者名稱 
 
 
-| 密碼 | StoreServ伺服器使用的密碼 
+| 密碼 | StoreServ 伺服器使用的密碼 
 
 
-| SMI-S使用者名稱 | SMI-S Provider主機的使用者名稱 
+| SMI-S 使用者名稱 | SMI-S 提供程式主機的使用者名 
 
 
-| SMI-S密碼 | SMI-S Provider主機使用的密碼 
+| SMI-S 密碼 | SMI-S Provider Host 所使用的密碼 
 |===
 
 
-== 進階組態
+== 進階配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| 庫存輪詢時間間隔（分鐘） | 庫存輪詢之間的時間間隔。預設值為 40 分鐘。 
+| 庫存輪詢間隔（分鐘） | 庫存調查之間的間隔。預設值為 40 分鐘。 
 
 
-| SMI-S連線能力 | 用於連線至SMI-S供應商的傳輸協定 
+| SMI-S 連接 | 用於連接 SMI-S 提供者的協議 
 
 
-| 置換SMI-S預設連接埠 | 如果空白、請使用SMI-S連線的預設連接埠、否則請輸入要使用的連線連接埠 
+| 覆蓋 SMI-S 預設端口 | 如果為空，則使用 SMI-S Connectivity 的預設端口，否則輸入要使用的連接端口 
 
 
-| 效能意見調查時間間隔（秒） | 效能輪詢之間的時間間隔。預設值為 300 秒。 
+| 效能輪詢間隔（秒） | 效能輪詢之間的間隔。預設值為 300 秒。 
 |===
 
 
-== 疑難排解
+== 故障排除
 
-如果您在使用此資料收集器時遇到問題、請嘗試下列事項：
+如果您在使用此資料收集器時遇到問題，請嘗試以下操作：
 
 
 
-=== 庫存
+=== 存貨
 
 [cols="2*"]
 |===
-| 問題： | 試用： 
+| 問題： | 試試一下： 
 
 
-| 「showsys」命令不會傳回任何結果。 | 從命令列執行「showsys」和「showversion -A」、檢查陣列是否支援該版本。 
+| “showsys”指令沒有回傳任何結果。 | 從命令列執行“showsys”和“showversion -a”並檢查陣列是否支援該版本。 
 |===
 
 
-=== 效能
+=== 表現
 
 [cols="2*"]
 |===
-| 問題： | 試用： 
+| 問題： | 試試一下： 
 
 
-| 無法連線或登入。供應商初始化失敗。 | 全數字陣列名稱可能會導致SMI-S伺服器發生問題。請嘗試變更陣列名稱。 
+| 連線或登入失敗。提供者初始化失敗。 | 全數字數組名稱可能會導致 SMI-S 伺服器出現問題。嘗試更改數組名稱。 
 
 
-| 設定的SMI-S使用者沒有任何網域 | 將適當的網域權限授予已設定的SMI-S使用者 
+| 配置的 SMI-S 使用者沒有任何網域 | 向已配置的 SMI-S 使用者授予適當的網域權限 
 
 
-| Data Infrastructure Insights 表示無法連線 / 登入 SMI-S 服務。 | 確認CI AU與陣列之間沒有防火牆、無法封鎖CI AU與5988或5989之間的TCP連線。完成後、如果您確認沒有防火牆、您應該向陣列SSH、然後使用「showcim」命令進行確認。驗證：*服務已啟用* HTTPS已啟用* HTTPS連接埠應為5989如果全部啟用、您可以嘗試「stopcim」、然後使用「startcim」重新啟動CIM（例如 SMI-S服務）。 
+| Data Infrastructure Insights指出它無法連接/登入 SMI-S 服務。 | 確認 CI AU 和陣列之間沒有防火牆，以阻止 CI AU 與 5988 或 5989 建立 TCP 連線。完成後，如果您確認沒有防火牆，則應透過 SSH 連接到陣列，並使用「showcim」命令進行確認。驗證：* 服務已啟用* HTTPS 已啟用* HTTPS 連接埠應為 5989 如果全部都是這樣，您可以嘗試“stopcim”，然後嘗試“startcim”以重新啟動 CIM（即 SMI-S 服務）。 
 |===
-您可以在頁面或中找到其他link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]資訊。
+更多資訊可從link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。

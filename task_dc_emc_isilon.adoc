@@ -2,103 +2,103 @@
 sidebar: sidebar 
 permalink: task_dc_emc_isilon.html 
 keywords: data collector, isilon, EMC, DELL, PowerScale 
-summary: 設定Dell EMC PowerScale（前身為Isilon）資料收集器。 
+summary: 配置 Dell EMC PowerScale（以前稱為 Isilon）資料收集器。 
 ---
-= Dell EMC PowerScale資料收集器
+= Dell EMC PowerScale 資料收集器
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-Data Infrastructure Insights 使用 Dell EMC PowerScale （前身為 Isilon ） SSH 資料收集器、從 PowerScale 橫向擴充 NAS 儲存設備取得庫存和效能資料。
+Data Infrastructure Insights使用 Dell EMC PowerScale（以前稱為 Isilon）SSH 資料收集器從 PowerScale 橫向擴充 NAS 儲存空間取得庫存和效能資料。
 
 
 
 == 術語
 
-Data Infrastructure Insights 會從這個資料收集器取得下列庫存資訊。對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights從該數據收集器獲取以下庫存資訊。對於Data Infrastructure Insights取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | Data Infrastructure Insights 術語 
+| 供應商/型號術語 | Data Infrastructure Insights術語 
 
 
-| 磁碟機 | 磁碟 
+| 駕駛 | 磁碟 
 
 
-| 叢集 | 儲存設備 
+| 簇 | 儲存 
 
 
 | 節點 | 儲存節點 
 
 
-| 檔案系統 | 內部Volume 
+| 檔案系統 | 內部體積 
 |===
-附註：這些只是通用的術語對應、可能不代表此資料收集器的每個案例。
+注意：這些只是常見的術語映射，可能並不代表此資料收集器的所有情況。
 
 
 
-== 需求
+== 要求
 
-您需要下列資訊來設定此資料收集器：
+您需要以下資訊來設定此資料收集器：
 
-* PowerScale儲存設備的系統管理員權限
+* PowerScale 儲存的管理員權限
 * PowerScale叢集的IP位址
-* SSH存取連接埠22
+* SSH 存取連接埠 22
 
 
 
 
-== 組態
-
-[cols="2*"]
-|===
-| 欄位 | 說明 
-
-
-| IP 位址 | PowerScale叢集的IP位址或完整網域名稱 
-
-
-| 使用者名稱 | PowerScale叢集的使用者名稱 
-
-
-| 密碼 | 用於PowerScale叢集的密碼 
-|===
-
-
-== 進階組態
+== 配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| 庫存輪詢時間間隔（分鐘） | 庫存輪詢之間的時間間隔。預設值為 20 。 
+| IP 位址 | PowerScale 叢集的 IP 位址或完全限定域名 
 
 
-| 效能意見調查時間間隔（秒） | 效能輪詢之間的時間間隔。預設值為 300 。 
+| 使用者名稱 | PowerScale 叢集的使用者名稱 
 
 
-| SSH 連接埠 | SSH服務連接埠。預設值為 22 。 
+| 密碼 | PowerScale 叢集使用的密碼 
 |===
 
 
-== 疑難排解
-
-如果您在使用此資料收集器時遇到問題、請嘗試下列事項：
-
-
-
-=== 庫存
+== 進階配置
 
 [cols="2*"]
 |===
-| 問題： | 試用： 
+| 場地 | 描述 
 
 
-| 「無效的登入認證」、並顯示錯誤訊息「未啟用角色型管理的命令需要root使用者存取」 | *確認使用者有權限在裝置上執行下列命令：> ISI version osrelease > ISI STATUS -q > ISI STATUS -n > ISI DEVICE -d %s > ISI授權*驗證精靈中使用的認證資料是否符合裝置認證資料 
+| 庫存輪詢間隔（分鐘） | 庫存調查之間的間隔。預設值為 20。 
 
 
-| 出現錯誤訊息「Command <your command> run f失敗with permissions:<your current permission>（命令<您的命令>運行失敗並取得許可：<您目前的權限>）」的「InternalSudo命令執行權限問題」 | 確認使用者具有Sudo權限、可在裝置上執行下列命令 
+| 效能輪詢間隔（秒） | 效能輪詢之間的間隔。預設值為 300。 
+
+
+| SSH 連接埠 | SSH服務連接埠。預設值為 22。 
 |===
-您可以在頁面或中找到其他link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]資訊。
+
+
+== 故障排除
+
+如果您在使用此資料收集器時遇到問題，請嘗試以下操作：
+
+
+
+=== 存貨
+
+[cols="2*"]
+|===
+| 問題： | 試試一下： 
+
+
+| “登入憑證無效”，錯誤訊息為“未啟用基於角色的管理的命令需要 root 使用者存取權限” | * 驗證使用者是否有權在裝置上執行以下指令：> isi version osrelease > isi status -q > isi status -n > isi devices -d %s > isi license * 驗證精靈中使用的憑證是否與裝置憑證相符 
+
+
+| “內部錯誤”，錯誤訊息為“命令<您的命令>運行失敗，權限為：<您目前的權限>。  Sudo 命令運行權限問題” | 驗證使用者是否具有 sudo 權限，以便在裝置上執行以下命令 
+|===
+更多資訊可從link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。

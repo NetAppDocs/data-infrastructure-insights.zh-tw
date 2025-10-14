@@ -2,147 +2,147 @@
 sidebar: sidebar 
 permalink: task_dc_na_amazon_fsx.html 
 keywords: 'data collector, stout, fsx, fsx-netapp, Amazon, AWS, cluster, volume, share, LUN"' 
-summary: 適用於NetApp ONTAP 的Amazon FSX資料蒐集器 
+summary: Amazon FSx for NetApp ONTAP 
 ---
-= 適用於NetApp ONTAP 的Amazon FSX資料收集器
+= Amazon FSx for NetApp ONTAP資料收集器
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-此資料收集器會從Amazon FSX for NetApp ONTAP 獲取庫存與效能資料。此資料收集器將在 Data Infrastructure Insights 服務區域中逐步提供使用。如果您在 Data Infrastructure Insights 環境中沒有看到此收集器的圖示、請聯絡您的銷售人員。
+此資料收集器從Amazon FSx for NetApp ONTAP取得庫存和效能資料。此資料收集器將逐步在整個Data Infrastructure Insights服務區域內提供。如果您在Data Infrastructure Insights環境中沒有看到此收集器的圖標，請聯絡您的銷售人員。
 
 
-NOTE: 此 Data Infrastructure Insights 收集器需要 ONTAP 使用者具備 _Filesystem-roculs_ 角色。請參閱 AWS link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/roles-and-users.html["角色和規則"] 文件以瞭解可用的選項。目前 AWS 只支援一種檔案系統範圍的使用者角色、即 _fsxadmin_ 。這是用於 Data Infrastructure Insights 收集器的適當角色。使用者也應該指派這三個應用程式： HTTP 、 ontapi 、 ssh 。
+NOTE: 此Data Infrastructure Insights收集器需要具有_Filesystem-Scoped_角色的ONTAP使用者。請查看 AWSlink:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/roles-and-users.html["角色和規則"]可用選項的文件。目前 AWS 僅支援一種具有檔案系統範圍的使用者角色，即 _fsxadmin_。這是適合Data Infrastructure Insights收集器使用的角色。用戶還應該分配以下三個應用程式：http、ontapi、ssh。
 
 
 
 == 術語
 
-Data Infrastructure Insights 會從 NetApp 資料收集器取得庫存與效能資料。對於所取得的每種資產類型、都會顯示該資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights從 FSx- NetApp資料收集器取得庫存和效能資料。對於所取得的每種資產類型，都會顯示該資產最常用的術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | Data Infrastructure Insights 術語 
+| 供應商/型號術語 | Data Infrastructure Insights術語 
 
 
-| 叢集 | 儲存設備 
+| 簇 | 儲存 
 
 
-| LUN | Volume 
+| 邏輯單元號 | 體積 
 
 
-| Volume | 內部Volume 
+| 體積 | 內部體積 
 |===
 
 
-== FSx-NetApp術語
+== FSx- NetApp術語
 
-以下術語適用於您在FSx-NetApp儲存資產登陸頁面上可能找到的物件或參考資料。其中許多術語也適用於其他資料收集器。
-
-
-
-=== 儲存設備
-
-* 模型–此叢集中唯一、獨立模型名稱的以逗號分隔的清單。
-* 廠商：AWS
-* 序號–陣列序號。
-* IP–通常是在資料來源中設定的IP或主機名稱。
-* 原始容量：指派給FSX檔案系統之所有SSD儲存設備的基礎2總和。
-* 延遲：代表主機面對的工作負載在讀取和寫入過程中所經歷的情況。在理想情況下、 Data Infrastructure Insights 會直接取得這項價值、但通常情況並非如此。資料基礎架構 Insights 通常會執行從個別內部磁碟區統計資料衍生的 IOPs 加權計算、而不是提供這項功能的陣列。
-* 處理量：從內部磁碟區集合而來。管理：這可能包含裝置管理介面的超連結。由 Data Infrastructure Insights 資料來源以程式設計方式建立、作為庫存報告的一部分。
+以下術語適用於您可能在 FSx- NetApp儲存資產登入頁面上找到的物件或參考。其中許多術語也適用於其他資料收集器。
 
 
 
+=== 儲存
 
-=== 儲存資源池
-
-* 儲存設備：此資源池所使用的儲存陣列。必填。
-* 類型–從列舉的可能性清單清單中選取一個描述性值。最常見的是「Aggregate」或「RAID Group」。
-* 容量：此處的值是已用邏輯容量、可用容量和邏輯總容量、以及這些容量使用的百分比。
-* IOPS：此儲存集區上所有已配置磁碟區的IOPS總和。
-* 處理量：此儲存資源池上所有已配置磁碟區的總處理量。
+* 模型 – 此叢集內唯一、離散的模型名稱的逗號分隔清單。
+* 供應商 – AWS
+* 序號 – 陣列序號。
+* IP – 通常是資料來源中配置的 IP 或主機名稱。
+* 原始容量 – 分配給 FSx 檔案系統的所有 SSD 儲存的以 2 為底的總和。
+* 延遲－表示主機在讀取和寫入過程中所面臨的工作負載的情況。理想情況下，Data Infrastructure Insights會直接取得該數值，但事實往往並非如此。取代提供此功能的陣列，Data Infrastructure Insights通常會執行根據各個內部卷的統計資料得出的 IOP 加權計算。
+* 吞吐量－從內部磁碟區聚合而成。管理－這可能包含裝置管理介面的超連結。由Data Infrastructure Insights資料來源以程式設計方式創建，作為庫存報告的一部分。
 
 
 
 
-== 需求
+=== 儲存池
 
-以下是設定及使用此資料收集器的需求：
-
-* 您必須具有「 fsxadmin 」角色的帳戶存取權、並指派三個應用程式： ssh 、 ontapi 、 http
-* 帳戶詳細資料包括使用者名稱和密碼。
-* 連接埠需求： 443
-
-
+* 儲存－該池位於哪個儲存陣列上。強制的。
+* 類型－來自可能性枚舉清單的描述性值。最常見的是「聚合」或「RAID 群組」」。
+* 容量－這裡的值是邏輯已使用容量、可用容量和邏輯總容量，以及這些容量中使用的百分比。
+* IOPS – 此儲存池上指派的所有磁碟區的 IOP 總和。
+* 吞吐量－此儲存池上指派的所有磁碟區的總吞吐量。
 
 
-== 組態
+
+
+== 要求
+
+以下是配置和使用此資料收集器的要求：
+
+* 您必須具有「fsxadmin」角色的帳戶存取權限，並為其分配三個應用程式 - ssh、ontapi、http
+* 帳戶詳細資訊包括使用者名稱和密碼。
+* 連接埠要求：443
+
+
+
+
+== 配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| NetApp管理IP | NetApp叢集的IP位址或完整網域名稱 
+| NetApp管理 IP | NetApp叢集的 IP 位址或完全限定域名 
 
 
 | 使用者名稱 | NetApp叢集的使用者名稱 
 
 
-| 密碼 | NetApp叢集的密碼 
+| 密碼 | NetApp叢集密碼 
 |===
 
 
-== 進階度量
+== 進階指標
 
-此資料收集器會從FSXfor NetApp ONTAP Sfor Storage收集下列進階度量資料：
+此資料收集器從 FSx for NetApp ONTAP儲存收集以下進階指標：
 
-* fpolicy
+* 政策
 * nfsv3
-* NFSv3：節點
+* nfsv3：節點
 * nfsv4
 * nfsv4_1
-* NFSv1_1：節點
-* NFSv4：節點
-* policy_group
-* qtree
-* Volume
-* 工作負載磁碟區
+* nfsv4_1:節點
+* nfsv4：節點
+* 策略組
+* 配額樹
+* 體積
+* 工作負載量
 
 
-請注意、 FSX CLI 和 API 命令會擷取 Data Infrastructure Insights ZAPI 未收集的一些容量值、因此資料基礎架構 Insights 中的某些容量值（例如儲存集區的容量值）可能與 FSX 本身不同。
-
-
-
-== 疑難排解
-
-如果您在使用此資料收集器時遇到問題、請嘗試下列事項：
+請注意，FSx CLI 和 API 指令會擷取Data Infrastructure Insights ZAPI 未收集的一些容量值，因此Data Infrastructure Insights中的某些容量值（例如儲存池的容量值）可能與 FSx 本身上的容量值不同。
 
 
 
-=== 庫存
+== 故障排除
+
+如果您在使用此資料收集器時遇到問題，請嘗試以下操作：
+
+
+
+=== 存貨
 
 [cols="2*"]
 |===
-| 問題： | 試用： 
+| 問題： | 試試一下： 
 
 
-| 接收401 HTTP回應或13003 ZAPI錯誤代碼、且ZAPI傳回「權限不足」或「未授權使用此命令」 | 檢查使用者名稱和密碼、以及使用者權限/權限。 
+| 收到 401 HTTP 回應或 13003 ZAPI 錯誤代碼，並且 ZAPI 返回“權限不足”或“未授權執行此命令” | 檢查使用者名稱和密碼以及使用者權限/許可。 
 
 
-| ZAPI傳回「叢集角色不是叢集管理LIF」 | AU需要與叢集管理IP對話。檢查IP並視需要變更為不同的IP 
+| ZAPI 傳回“群集角色不是 cluster_mgmt LIF” | AU 需要與叢集管理 IP 對話。檢查 IP 並在必要時更改為其他 IP 
 
 
-| ZAPI命令在重試後失敗 | AU與叢集發生通訊問題。檢查網路、連接埠號碼和IP位址。使用者也應該嘗試從AU機器的命令列執行命令。 
+| 重試後 ZAPI 指令失敗 | AU 與集群有通訊問題。檢查網路、連接埠號碼和 IP 位址。使用者還應該嘗試從 AU 機器的命令列運行命令。 
 
 
-| AU無法透過HTTP連線至ZAPI | 檢查ZAPI連接埠是否接受純文字。如果AU嘗試傳送純文字到SSL通訊端、通訊就會失敗。 
+| AU 無法透過 HTTP 連線到 ZAPI | 檢查 ZAPI 連接埠是否接受純文字。如果 AU 嘗試向 SSL 套接字發送純文本，則通訊失敗。 
 
 
-| 通訊失敗、出現SSLException | AU正在嘗試將SSL傳送至檔案管理器上的純文字連接埠。檢查ZAPI連接埠是否接受SSL、或使用不同的連接埠。 
+| 通訊失敗並出現 SSLException | AU 正在嘗試將 SSL 傳送到檔案總管上的純文字連接埠。檢查 ZAPI 連接埠是否接受 SSL，或使用其他連接埠。 
 
 
-| 其他連線錯誤：ZAPI回應的錯誤代碼為13001、「資料庫未開啟」ZAPI錯誤代碼為60、回應包含「API未按時完成」ZAPI回應包含「initialize_session（）傳回的空環境」ZAPI錯誤代碼為14007、回應包含「節點不健全」 | 檢查網路、連接埠號碼和IP位址。使用者也應該嘗試從AU機器的命令列執行命令。 
+| 其他連接錯誤： ZAPI 回應的錯誤代碼為 13001，“資料庫未開啟” ZAPI 錯誤代碼為 60，回應包含“API 未按時完成” ZAPI 回應包含“initialize_session() 傳回 NULL 環境” ZAPI 錯誤代碼為 14007，回應包含“節點不健康” | 檢查網路、連接埠號碼和 IP 位址。使用者還應該嘗試從 AU 機器的命令列運行命令。 
 |===
-您可以在頁面或中找到其他link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]資訊。
+更多資訊可從link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。

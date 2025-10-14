@@ -2,107 +2,107 @@
 sidebar: sidebar 
 permalink: task_dc_pure_flasharray.html 
 keywords: data collector, Pure Storage, pure 
-summary: 設定Pure Storage資料收集器。 
+summary: 配置 Pure Storage 資料收集器。 
 ---
-= Pure Storage FlashArray資料收集器
+= Pure Storage FlashArray 資料收集器
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-Data Infrastructure Insights 使用 Pure Storage FlashArray 資料收集器來收集庫存和效能資料。
+Data Infrastructure Insights使用 Pure Storage FlashArray 資料收集器來收集庫存和效能資料。
 
 
 
 == 術語
 
-對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示最常用的資產術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+對於Data Infrastructure Insights所取得的每種資產類型，都會顯示該資產最常用的術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | Data Infrastructure Insights 術語 
+| 供應商/型號術語 | Data Infrastructure Insights術語 
 
 
-| 磁碟機（SSD） | 磁碟 
+| 驅動器（SSD） | 磁碟 
 
 
-| 陣列 | 儲存設備 
+| 大批 | 儲存 
 
 
 | 控制器 | 儲存節點 
 
 
-| Volume | Volume 
+| 體積 | 體積 
 
 
-| LUN對應 | Volume Map 
+| LUN 映射 | 體積圖 
 
 
-| 啟動器、目標 | Volume遮罩 
+| 發起者，目標 | 體積遮罩 
 |===
-附註：這些只是通用的術語對應、可能不代表此資料收集器的每個案例。
+注意：這些只是常見的術語映射，可能並不代表此資料收集器的所有情況。
 
 
 
-== 需求
+== 要求
 
 * 儲存系統IP位址
-* Pure儲存系統管理員帳戶的使用者名稱和密碼。
+* Pure儲存系統管理員帳號的使用者名稱和密碼。
 * 連接埠需求：HTTP/HTTPS 80/443
 
 
 
 
-== 組態
+== 配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| FlashArray主機IP位址 | 儲存系統的IP位址 
+| FlashArray 主機 IP 位址 | 儲存系統的IP位址 
 
 
-| 使用者名稱 | 具有管理權限的使用者名稱 
+| 使用者名稱 | 具有管理員權限的使用者名稱 
 
 
-| 管理員權限帳戶的密碼 | 密碼 
+| 管理者特權帳戶的密碼 | 密碼 
 |===
 
 
-== 進階組態
+== 進階配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| 連線類型 | 選擇HTTP或HTTPS。也會顯示預設連接埠。 
+| 連接類型 | 選擇 HTTP 或 HTTPS。也顯示預設連接埠。 
 
 
-| 置換TCP連接埠 | 如果空白、請使用「連線類型」欄位中的預設連接埠、否則請輸入要使用的連線連接埠 
+| 覆蓋 TCP 連接埠 | 如果為空，則在連接類型欄位中使用預設端口，否則輸入要使用的連接端口 
 
 
-| 庫存輪詢時間間隔（分鐘） | 預設值為60分鐘 
+| 庫存輪詢間隔（分鐘） | 預設值為 60 分鐘 
 
 
-| 效能意見調查時間間隔（秒） | 預設值為 300 
+| 效能輪詢間隔（秒） | 預設值為 300 
 |===
 
 
-== 疑難排解
+== 故障排除
 
-如果您在使用此資料收集器時遇到問題、請嘗試下列事項：
+如果您在使用此資料收集器時遇到問題，請嘗試以下操作：
 
 
 
-=== 庫存
+=== 存貨
 
 [cols="2*"]
 |===
-| 問題： | 試用： 
+| 問題： | 試試一下： 
 
 
-| 「無效的登入認證資料」、並顯示錯誤訊息「Policy Not Allow（原則不允許）」或「you are not authorized（您未獲授權）」 | 透過Pure http介面驗證Pure使用者帳戶和密碼 
+| “登入憑證無效”，錯誤訊息為“政策不允許”或“您無權” | 透過 Pure http 介面驗證 Pure 使用者帳號和密碼 
 |===
-您可以在頁面或中找到其他link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]資訊。
+更多資訊可從link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。

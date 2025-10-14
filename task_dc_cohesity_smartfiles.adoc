@@ -2,52 +2,52 @@
 sidebar: sidebar 
 permalink: task_dc_cohesity_smartfiles.html 
 keywords: data collector, cohesity 
-summary: 設定「Colesity SmartFiles資料收集器」。 
+summary: 配置 Cohesity SmartFiles 資料收集器。 
 ---
-= Co猶豫不決 的SmartFiles資料收集器
+= Cohesity SmartFiles 資料收集器
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-此 REST API 型收集器將會取得 Coesity 叢集、探索「檢視」（即「 Data Infrastructure Insights Internal Volumes 」（資料基礎架構洞見內部磁碟區）、各種節點、並收集效能指標。
+這個基於 REST API 的收集器將獲取一個 Cohesity 集群，發現「視圖」（作為Data Infrastructure Insights內部卷）、各個節點，以及收集效能指標。
 
 
 
-== 組態
-
-[cols="2*"]
-|===
-| 欄位 | 說明 
-
-
-| Co猶豫不決 叢集IP | Co猶豫不決 叢集的IP位址 
-
-
-| 使用者名稱 | Cohesity叢集的使用者名稱 
-
-
-| 密碼 | 用於Co猶豫不決 叢集的密碼 
-|===
-
-
-== 進階組態
+== 配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| TCP 連接埠 | 連接埠用於與Co猶豫不決 叢集進行TCP通訊 
+| Cohesity 叢集 IP | Cohesity 叢集的 IP 位址 
 
 
-| 庫存輪詢時間間隔（分鐘） | 庫存輪詢之間的時間間隔。預設值為 60 分鐘。 
+| 使用者名稱 | Cohesity 叢集的使用者名 
 
 
-| 效能意見調查時間間隔（分鐘） | 效能輪詢之間的時間間隔。預設值為 900 秒。 
+| 密碼 | Cohesity 叢集使用的密碼 
 |===
 
 
-== 疑難排解
+== 進階配置
 
-您可以在頁面或中找到其他link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]資訊。
+[cols="2*"]
+|===
+| 場地 | 描述 
+
+
+| TCP 連接埠 | 用於與 Cohesity 叢集進行 TCP 通訊的連接埠 
+
+
+| 庫存輪詢間隔（分鐘） | 庫存調查之間的間隔。預設值為 60 分鐘。 
+
+
+| 效能輪詢間隔（分鐘） | 效能輪詢之間的間隔。預設值為 900 秒。 
+|===
+
+
+== 故障排除
+
+更多資訊可從link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。

@@ -4,45 +4,45 @@ permalink: infrastructure_change_analytics.html
 keywords: changes, management, analysis, infra, infrastructure 
 summary: Data Infrastructure Insights追蹤基礎設施的變化，以便於分析和故障排除。 
 ---
-= 基礎架構變更分析
+= 基礎設施變化分析
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-「基礎架構變更分析」可讓您一體化檢視租戶基礎架構（儲存設備，交換器等）最近的變更。使用變更分析，您可以追蹤組態變更，並深入探討預期和非預期的問題。
+基礎架構變更分析為您提供租戶基礎架構（儲存、交換器等）最新變更的一體化視圖。透過變更分析，您可以追蹤配置變更並深入了解預期和意外的問題。
 
 
 
-== 基礎架構變更分析有何幫助？
+== 基礎設施變化分析有何幫助？
 
-在任何環境中，資源可能會因為設定不當，電力中斷等而發生變更。變更分析提供單一窗格來檢視資源的健全狀況，並將其與停機或計畫性變更建立關聯，因此有助於改善資源狀況。變更會隨每個庫存輪詢一起計算（在新收集器的第一次輪詢之後）。
+在任何環境中，您的資源都可能會因配置錯誤的變更、斷電等原因而變更。變更分析透過提供單一窗格來查看資源的健康狀況並將其與中斷或計劃的變更關聯起來，從而提供協助。每次庫存輪詢都會計算變化（在對新收集器進行第一次輪詢之後）。
 
-若要分析基礎架構變更、請瀏覽至 * 可服務性 > 變更分析 * 。會列出目前時間範圍的警示和組態變更。警示列會顯示目前警示狀態（作用中或已解決）。
+若要分析基礎設施變化，請導航至*可觀察性>變化分析*。列出了當前時間範圍內的警報和配置變更。警報行顯示目前警報狀態（活動或已解決）。
 
-您也可以瀏覽至資源的登陸頁面。如果該資源或相關資源發生變更，這些變更將顯示在頁面的「專家檢視」區段中。放大以調查個別變更，或是將檢視範圍保持在較寬的範圍內，以查看所選時間範圍內的所有變更。將游標移至變更上方，即可獲得變更摘要。按一下該變更，專家就會將焦點放在該變更的時間上。
+您也可以導覽至資源的登入頁面。如果該資源或相關資源發生了變化，這些變化將顯示在頁面的效能部分。放大以調查個別變化，或保持視圖寬以查看選定時間範圍內的所有變化。將滑鼠懸停在變更處將顯示變更的摘要。單擊該更改將關注更改時的效能。
 
-image:change_analysis_on_a_landing_page.png["登陸頁面上的變更分析"]
+image:change_analysis_on_a_landing_page.png["著陸頁上的變化分析"]
 
-選取清單中的項目將會開啟滑出窗格、提供警示或變更的詳細資訊。
-
-
-
-== 篩選
-
-如同 Cloud Insights 的所有功能一樣、篩選變更清單是直覺式的：在頁面頂端、您可以根據特定資產類型（ _ 觸發於：類型 _ ）進行篩選、以及 / 或僅針對具有特定名稱的資產進行篩選（ _ 觸發於：名稱 _ ）、或是選取 ｛ + ）按鈕來新增您自己的篩選條件。
-
-image:infraChange_filter_dropdown.png["基礎架構變更篩選下拉式功能表"]
-
-您也可以直接前往「重要警示」或篩選設定下方的狀態區段變更、包括目前三大資源中警示最多的資源。
-
-image:Change_Analysis_filters_and_status.png["警示和變更的狀態和快速連結"]
+選擇清單中的某個項目將開啟一個滑出窗格，提供有關警報或變更的更多詳細資訊。
 
 
 
-== 分析哪些物件以進行變更？
+== 濾
 
-下表列出基礎架構變更分析所包含的物件和屬性。
+與Cloud Insights的所有功能一樣，過濾變更清單非常直觀：在頁面頂部，您可以過濾特定的資產類型（_Triggered On:type_），和/或根據需要僅過濾具有特定名稱的資產（_Triggered On:name_），或透過選擇 {+] 按鈕添加您自己的篩選器。
+
+image:infraChange_filter_dropdown.png["基礎設施變更過濾下拉式選單"]
+
+您也可以從過濾器設定下方的狀態部分直接轉到關鍵警報或更改，包括目前警報最多的前三個資源。
+
+image:Change_Analysis_filters_and_status.png["狀態以及警報和更改的快速鏈接"]
+
+
+
+== 分析哪些對像有變化？
+
+下表列出了基礎設施變更分析中包含的物件和屬性。
 
 |===
 
@@ -50,46 +50,46 @@ image:Change_Analysis_filters_and_status.png["警示和變更的狀態和快速�
 | 物件類型 | 屬性 
 
 
-| 磁碟 | disksize.total isVirtual diskGroup 速度類型位置 serialNumber 角色狀態廠商模式 storage.name storagePools.name 名稱 isEncrypted 
+| 磁碟 | diskSize.total 是虛擬磁碟組速度類型位置序號角色狀態供應商型號storage.name storagePools.name 名稱是加密的 
 
 
-| 儲存設備 | Family IP IsActive microcodeVersion 模型名稱傳輸協定 serialNumber 廠商 
+| 儲存 | 系列 ip 是否活動 微碼版本 型號名稱 協定 序號 供應商 
 
 
-| StorageNode | 名稱 storage.name nodeVersion model serialNumber OfProcessors 狀態為 partner.name 快取記憶體管理 IpAddresses parentSerialNumber SiteName 
+| 儲存節點 | 名稱儲存.名稱節點版本模型序號處理器數量狀態合作夥伴.名稱快取記憶體管理IP位址父序號站點名稱 
 
 
-| StoragePool | 名稱類型 isAutoTiering isVirtual 備援廠商使用 FlashPools store.vendor store.ip store.model store.family storage.name storageNodes.name capable.total （動態屬性） isCompactionSavingsEnabled isEncrypted objectStoreName objectStoreProviderType objectStoreSizeLimit objectStoreTieringFullnessThreshold objectStoreS3Name objectStoreServer 
+| 儲存池 | 名稱類型 isAutoTiering isVirtual 冗餘 vendorTier 使用 FlashPools storage.vendor storage.ip storage.model storage.family storage.name storageNodes.name capacity.total（動態屬性） isCompactionSavingsEnabled EnectCob​​idem​​dobect​​obft objectStoreTieringFullnessThreshold objectStoreS3Name objectStoreServer 
 
 
-| qtree | 鍵入 securityStyle isoplocksEnabled shares.name storage.name internalVolume.name storageVirtualMachine.name simpleName 狀態 Text 名稱 
+| qtree | 類型 securityStyle isOplocksEnabled 共用名稱 儲存名稱 internalVolume 名稱 儲存虛擬機器名稱 simpleName 狀態文字名稱 
 
 
-| StorageVirtualMachine | 名稱 storage.name 狀態類型 IPSpace 通訊協定 internalVolumeLimit 
+| 儲存虛擬機 | 名稱儲存名稱狀態類型ipSpace協定內部磁碟區限制 
 
 
-| Volume | 名稱 simpleName 標籤類型 storage.name storage.vendor storage.ip storage.model storage.family isAutoTiering isThinProvisioned diskGroup isMainframe Ismaeta isReplicaSource isReplicaTarget isSnapshot isVirtual internalVolume.name internalVolume.virtualStorage storageNodes.name storageNodes.partner.name storagePools.name storageVirtualMachine.name storageGroups isEncrypted iscomposts 啟用 qosBurstIOPS qoslimitIOPS qoslimitIOPS qoslimitMBoslimitMBqimplateps Minospos 營運策略 
+| 體積 | 名稱 simpleName 標籤類型 storage.name storage.vendor storage.ip storage.model storage.family isAutoTiering isThinProvisioned diskGroup isMainframe isMeta isReplicaSource isReplicaTarget isSnapshott interfacename interface. storageNodes.partner.name storagePools.name storageVirtualMachine.name storageGroups isEncrypted isCompressionEnabled qosBurstIOPS qosLimitIOPS qosLimitMBPS qosMinIOPS qosPolicy qosLimitRaw 
 
 
-| 內部Volume | FlashPoolEligibility 名稱 simpleName spaceGuarantee 狀態類型 virtualStorage replicaSources.name storageNodes.name storageNodes.partner.name storage.name storage.vendor storage.IP storage.model storage.family storageVirtualMachine.name storagePool.name capacity.isThinProvisioned qosPolicy qosLimitRaw qosLimitIOPS qosLimitMBPS isEncrypted adaptiveQosPolicy issionPath objectStoreTieringPolicy TieringMinimumCoolingDays 
+| 內部容積 | flashPoolEligibility 名稱 simpleName spaceGuarantee 狀態型別 virtualStorage replicaSources.name storageNodes.name storageNodes.partner.name storage.name storage.vendor storage.ip storage.model storage.family storagenamecipku. qosLimitRaw qosLimitIOPS qosLimitMBPS isEncrypted adaptiveQosPolicy junctionPath objectStoreTieringPolicy tieringMinimumCoolingDays 
 
 
-| 虛擬機器 | 名稱 dnsName IP OS 記憶體處理器 guestState powernatehost.name host.clustername host.ip host.os datastore.name instanceType publicIps securityGroups virtualCenterIp 
+| 虛擬機 | 名稱 dnsName ip os 記憶體處理器 guestState powerState host.name host.clusterName host.ip host.os dataStore.name 執行個體類型 publicIps 安全群組 virtualCenterIp 
 
 
-| 資料存放區 | 名稱 virtualCenterIp 類型 
+| 資料儲存 | 名稱 virtualCenterIp 類型 
 
 
-| 主機 | 名稱模式 IP IsActive OS 製造商 CPUCount 記憶體 isHypervisor 叢集名稱 virtualCenterIp 
+| 主持人 | 名稱 型號 ip isActive os 製造商 cpuCount 記憶體 isHypervisor clusterName virtualCenterIp 
 
 
-| VMDK （虛擬機器磁碟） | 名稱類型 datastore.name isRdm virtualMachine.host.name virtualMachine.name isSnapshot 
+| vmdk（虛擬機器磁碟） | 姓名類型dataStore.name isRdmvirtualMachine.host.namevirtualMachine.name isSnapshot 
 
 
-| 連接埠 | 名稱 IsActive WWN 類型 portIndex 刀鋒速度 gbicType connectedPorts.device.name connectedPorts.device.type connectedPorts.name connectedPorts.nodeWwn connectedPorts.WWN 控制器 device.name device.type fabrics.name Fabrics.vsanId nodeWn 說明 
+| 港口 | 名稱 isActive wwn 類型 portIndex blade 速度 gbicType connectedPorts.device.name connectedPorts.device.type connectedPorts.name connectedPorts.nodeWwn connectedPorts.wwn 控制器 device.name device.namenicswn. 
 |===
-「變更分析」會追蹤下列案例的警示：
+「變更分析」追蹤以下情況的警報：
 
-* 記錄監控的警示，記錄類型為 _logs.vmware.events _ 和 NetApp 。
-* 來自上述物件類型的度量監控器警示；必須在 _ 群組依據 _ 欄位中選取這些警示，變更分析才能追蹤這些警示。
+* 來自日誌監視器的日誌類型 _logs.vmware.events_ 和 _logs.netapp.ems_ 的警報。
+* 來自上述物件類型的指標監視器的警報；必須在「Group By」欄位中選擇這些警報，以便變更分析能夠追蹤它們。
 

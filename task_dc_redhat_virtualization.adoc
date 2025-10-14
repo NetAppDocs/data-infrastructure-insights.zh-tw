@@ -2,85 +2,85 @@
 sidebar: sidebar 
 permalink: task_dc_redhat_virtualization.html 
 keywords: data collector, Red Hat Virtualization 
-summary: 設定Red Hat虛擬化資料收集器。 
+summary: 配置 Red Hat Virtualization 資料收集器。 
 ---
-= Red Hat虛擬化資料收集器
+= Red Hat 虛擬化資料收集器
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-Data Infrastructure Insights 使用 Red Hat 虛擬化資料收集器、從虛擬化的 Linux 和 Microsoft Windows 工作負載收集庫存資料。
+Data Infrastructure Insights使用 Red Hat Virtualization 資料收集器從虛擬化 Linux 和 Microsoft Windows 工作負載收集庫存資料。
 
 
 
 == 術語
 
-對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示最常用的資產術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+對於Data Infrastructure Insights所取得的每種資產類型，都會顯示該資產最常用的術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | Data Infrastructure Insights 術語 
+| 供應商/型號術語 | Data Infrastructure Insights術語 
 
 
 | 磁碟 | 虛擬磁碟 
 
 
-| 主機 | 主機 
+| 主持人 | 主持人 
 
 
-| 虛擬機器 | 虛擬機器 
+| 虛擬機 | 虛擬機 
 
 
-| 儲存網域 | 資料儲存區 
+| 儲存域 | 資料儲存 
 
 
-| 邏輯單元 | LUN 
+| 邏輯單元 | 邏輯單元號 
 |===
-附註：這些只是通用的術語對應、可能不代表此資料收集器的每個案例。
+注意：這些只是常見的術語映射，可能並不代表此資料收集器的所有情況。
 
 
 
-== 需求
+== 要求
 
-* 透過REST API透過連接埠443的RHEV伺服器IP位址
-* 唯讀使用者名稱和密碼
-* RHEV版本3.0+
-
-
+* 透過 REST API 透過連接埠 443 取得 RHEV 伺服器的 IP 位址
+* 只讀使用者名稱和密碼
+* RHEV 版本 3.0+
 
 
-== 組態
+
+
+== 配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
 | RHEV 伺服器 IP 位址 | 儲存系統的IP位址 
 
 
-| 使用者名稱 | 具有管理權限的使用者名稱 
+| 使用者名稱 | 具有管理員權限的使用者名稱 
 
 
-| 管理員權限帳戶的密碼 | 密碼 
+| 管理者特權帳戶的密碼 | 密碼 
 |===
 
 
-== 進階組態
+== 進階配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| HTTPS通訊連接埠 | 用於HTTPS通訊至RHEV的連接埠 
+| HTTPS 通訊埠 | 用於與 RHEV 進行 HTTPS 通訊的端口 
 
 
-| 庫存輪詢時間間隔（分鐘） | 預設值為 20 分鐘。 
+| 庫存輪詢間隔（分鐘） | 預設值為 20 分鐘。 
 |===
 
 
-== 疑難排解
+== 故障排除
 
-有關此資料收集器的其他資訊，請link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]參閱頁面或。
+關於此數據收集器的更多信息，請參閱link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。

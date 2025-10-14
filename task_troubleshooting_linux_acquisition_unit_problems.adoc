@@ -1,90 +1,90 @@
 ---
 sidebar: sidebar 
 permalink: task_troubleshooting_linux_acquisition_unit_problems.html 
-summary: 擷取設備問題的疑難排解秘訣。 
+summary: 採集單元問題的故障排除提示。 
 keywords: AU, acquisition unit, trioubleshooting 
 ---
-= 疑難排解Linux上的擷取單元問題
+= Linux 上的擷取單元故障排除
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-您可在此處找到Linux伺服器擷取單元疑難排解問題的建議。
+在這裡您可以找到有關解決 Linux 伺服器上的擷取單元問題的建議。
 
 |===
 
 
-| *問題：* | *試用：* 
+| *問題：* | *試試這個：* 
 
 
-| 在 *Acquisition Units* 標籤的 *Observe > Collectors* 頁面上的 AU 狀態顯示 "Certificate Expired " （證書已過期）或 "Certificate Recalled （證書已撤銷） " 。 | 按一下AU右側的功能表、然後選取*還原連線*。請依照指示還原您的擷取設備：1.停止擷取單元（AU）服務。您可以按一下「_複製停止命令_」按鈕、將命令快速複製到剪貼簿、然後將此命令貼到擷取單元機器上的命令提示字元中。2.在 NetApp AU 的 /var/lib/lovardses/acq/conf_ 資料夾中建立名為「 token 」的檔案。3.按一下 _ 複製權杖 _ 按鈕，然後將此權杖貼到您建立的檔案中。4.重新啟動 AU 服務。按一下「_複製重新啟動命令_」按鈕、然後將命令貼到AU的命令提示字元中。 
+| *可觀察性 > 收集器* 頁面上的 *擷取單元* 標籤上的 AU 狀態顯示「憑證已過期」或「憑證已撤銷」。 | 點擊 AU 右側的選單並選擇 *恢復連線*。依照指示恢復您的採集單元：1.停止採集單元 (AU) 服務。您可以按一下「複製停止命令」按鈕快速將命令複製到剪貼簿，然後將該命令貼上到採集單元機器上的命令提示字元中。2.在 AU 上的 _/var/lib/netapp/cloudinsights/acq/conf_ 資料夾中建立一個名為「token」的檔案。3.按一下「複製令牌」按鈕，然後將此令牌貼上到您建立的檔案中。4.重新啟動 AU 服務。按一下「複製重啟命令」按鈕，然後將命令貼到 AU 上的命令提示字元中。 
 
 
-| 啟動擷取單元伺服器服務時、權限遭拒 | 當 AU 安裝在 SELINUX 上時，SE 應設定為 _permissive_ 模式。不支援_Enforcing_模式。將SELINUX設定為寬容模式後，重新啟動AU服務。 
+| 啟動採集單元伺服器服務時權限被拒絕 | 當 AU 安裝在 SELINUX 上時，SE 應設定為 _permissive_ 模式。不支援_Enforcing_模式。將SELINUX設定為寬容模式後，重新啟動AU服務。 
 
 
-| 伺服器需求未達到 | 確保您的擷取單元伺服器或 VM 符合要求link:concept_acquisition_unit_requirements.html["需求"] 
+| 未滿足伺服器要求 | 確保您的採集單元伺服器或虛擬機器滿足link:concept_acquisition_unit_requirements.html["要求"] 
 
 
-| 未符合網路需求 | 確保您的採購單位伺服器 /VM 可透過連接埠 443 上的 SSL 連線、存取您的資料基礎架構洞見環境（ <environment-name> 。 NetApp .com ）。請嘗試下列命令： _ping <environment-name> 。 C01 。 cloudinsights 。 NetApp 。 com_ _traceroute <environment-name> NetApp 。 C01 。 cloudsights 。 NetApp 。 com_ _curl \https ： <environment-name> 。 C01 。 cloudentses.com_ _wGET \https ： <environment-name> 。 NetApp 。注意：需要從 AU 開啟連接埠 443 、以進行輸出資料。 
+| 未滿足網路要求 | 確保您的採集單元伺服器/VM 可以透過連接埠 443 上的 SSL 連線存取您的Data Infrastructure Insights環境 (<environment-name>.c01.cloudinsights.netapp.com)。嘗試以下指令： _ping <environment-name>.c01.cloudinsights.netapp.com_ _traceroute <environment-name>.c01.cloudinsights.netapp.com_ _curl \https://<environment-name>.c01.cloudinsights.netapp. \https://<environment-name>.c01.cloudinsights.netapp.com_ 請注意，需要從 AU 到Data Infrastructure Insights 的「出站」連接埠 443 開放。 
 
 
-| Proxy伺服器設定不正確 | 驗證您的Proxy設定、並視需要解除安裝/重新安裝接收裝置軟體、以輸入正確的Proxy設定。1.嘗試「捲曲」。請參閱「man curl」代理伺服器相關資訊/文件：--preproxy,--proxy-*（這是萬用字元「*」、因為cURL支援許多代理伺服器設定）。2.請嘗試「 wGet 」。請參閱文件以取得Proxy選項。 
+| 代理伺服器配置不正確 | 驗證您的代理設置，並在必要時卸載/重新安裝採集單元軟體以輸入正確的代理設定。1.嘗試“捲曲”。請參閱有關代理的“man curl”資訊/文件：--preproxy，--proxy-*（這是一個通配符“*”，因為 curl 支援許多代理設定）。2.嘗試“wget”。檢查代理選項的文件。 
 
 
-| 在 Data Infrastructure Insights 中、擷取單元安裝失敗、並在啟動擷取服務時出現認證錯誤（可在 acq.log 中看到）。 | 這可能是因為在Proxy認證中加入特殊字元所致。解除安裝AU（_Sudo cloudinsose-uninstall.sh_）、然後重新安裝、不需使用特殊字元。 
+| 啟動採集服務時，Data Infrastructure Insights中的採集單元安裝失敗，出現憑證錯誤（在 acq.log 中可見）。 | 這可能是由於代理憑證中包含特殊字元造成的。卸載 AU（_sudo cloudinsights-uninstall.sh_）並重新安裝，不要使用特殊字元。 
 
 
-| Linux：找不到程式庫/檔案 | 確保您的Linux擷取單元伺服器/VM擁有所有必要的程式庫。例如、您必須在伺服器上安裝_unzip程式庫。若要安裝_unzip程式庫、請在執行擷取單元安裝指令碼之前、執行命令_* Sudo yum install unzip * 
+| Linux：缺少函式庫/未找到文件 | 確保您的 Linux 採集單元伺服器/VM 具有所有必要的程式庫。例如，您必須在伺服器上安裝_unzip_庫。若要安裝 _unzip_ 函式庫，請在執行擷取單元安裝腳本之前執行指令 _*sudo yum install unzip*_ 
 
 
-| 權限問題 | 請確定您以使用者的身分登入、並具有_Susu_權限 
+| 權限問題 | 確保您以具有_sudo_權限的使用者登入 
 
 
-| 擷取未執行： | 從/opt/NetApp/cloudinses/acq/logs（Linux）收集acq.log重新啟動擷取服務：Sudo cloudinsights-service.sh重新啟動擷取 
+| 採集未運行： | 從 /opt/netapp/cloudinsights/acq/logs (Linux) 收集 acq.log 重新啟動擷取服務：sudo cloudinsights-service.sh restart acquisition 
 
 
-| 資料收集問題： | 按一下「傳送錯誤報告」按鈕、從資料收集器登陸頁傳送錯誤報告 
+| 資料收集問題： | 點擊「傳送錯誤報告」按鈕，從資料收集器登入頁面發送錯誤報告 
 
 
-| 狀態：活動訊號失敗 | 採購單位（ AU ）每 60 秒向 Data Infrastructure Insights 傳送一次活動訊號、以續約。如果活動訊號通話因網路問題或 Data Infrastructure Insights 無回應而失敗、 AU 的租用時間將不會更新。當 AU 的租用時間到期時、 Data Infrastructure Insights 會顯示「心跳失敗」狀態。疑難排解步驟：檢查擷取單元伺服器與CloudInsights之間的網路連線。檢查擷取單元服務是否正在執行。如果服務未執行、請啟動服務。查看擷取設備記錄（/var/log/NetApp/cloudinss/acq/acq.log）、查看是否有任何錯誤。 
+| 狀態：心跳失敗 | 採集單元 (AU) 每 60 秒向Data Infrastructure Insights發送一次心跳以續訂其租約。如果因網路問題或Data Infrastructure Insights無回應而導致心跳呼叫失敗，則 AU 的租用時間不會更新。當 AU 的租賃時間到期時，Data Infrastructure Insights將顯示「心跳失敗」狀態。故障排除步驟：檢查擷取單元伺服器和 CloudInsights 之間的網路連線。檢查採集單元服務是否正在運作。如果服務未運行，請啟動服務。檢查採集單元日誌（/var/log/netapp/cloudinsights/acq/acq.log）以查看是否有任何錯誤。 
 
 
-| 我看到「心跳錯誤：」訊息 | 如果網路中斷導致擷取單元和 Data Infrastructure Insights 環境之間的通訊中斷超過一分鐘、就可能發生此錯誤。確認 AU 與 Data Infrastructure Insights 之間的連線穩定且有效。 
+| 我看到“心跳錯誤：”訊息 | 如果網路中斷導致擷取單元和Data Infrastructure Insights環境之間的通訊中斷超過一分鐘，則可能會發生此錯誤。驗證 AU 和Data Infrastructure Insights之間的連接是否穩定且活躍。 
 
 
-| 重新安裝擷取單元時，我看到「 ValueError: File context for /opt/oracle/cloudims(//.*)? already NetApp defined 」。 | 在採用 SELinux 的系統上，執行並重新安裝擷取單元之後，可能會出現此錯誤訊息 `cloudinsights-uninstall.sh -p`。執行命令 `semanage fcontext -d -t usr_t "/opt/netapp/cloudinsights(/.*)?"`應可修正問題並移除訊息。 
+| 重新安裝採集單元時，我看到「ValueError：/opt/netapp/cloudinsights(/.*) 的檔案上下文？已定義」。 | 在裝有 SELinux 的系統上，此錯誤訊息可能會出現在 `cloudinsights-uninstall.sh -p`已執行並且要重新安裝採集單元。運行命令 `semanage fcontext -d -t usr_t "/opt/netapp/cloudinsights(/.*)?"`應該糾正問題並刪除該訊息。 
 |===
 
 
-== 有關代理和防火牆的考量
+== 關於代理商和防火牆的注意事項
 
-如果您的組織需要使用代理伺服器來存取網際網路、您可能需要瞭解組織的代理伺服器行為、並尋求特定例外情況、才能讓 Data Infrastructure Insights 運作。請謹記下列事項：
+如果您的組織需要使用代理來存取互聯網，您可能需要了解組織的代理行為並尋求某些例外以使Data Infrastructure Insights能夠發揮作用。請記住以下幾點：
 
-* 首先、貴組織是否預設會封鎖存取、而且只允許例外存取特定網站/網域？如果是、您需要將下列網域新增至例外清單：
+* 首先，您的組織是否預設阻止訪問，並且僅允許例外訪問特定網站/網域？如果是這樣，您需要將以下網域新增至例外清單：
 +
  *.cloudinsights.netapp.com
 +
-您的 Data Infrastructure Insights 擷取單元、以及您在網頁瀏覽器中與 Data Infrastructure Insights 的互動、都會移至具有該網域名稱的主機。
+您的Data Infrastructure Insights採集單元以及您在 Web 瀏覽器中與Data Infrastructure Insights的互動都將轉到具有該網域的主機。
 
-* 其次、有些 Proxy 會嘗試以非由 NetApp 產生的數位憑證來模擬 Data Infrastructure Insights 網站、以執行 TLS/SSL 檢查。Data Infrastructure Insights Acquisition Unit 的安全模式與這些技術完全不相容。您也需要上述網域名稱（此功能除外）、才能讓 Data Infrastructure Insights Acquisition Unit 成功登入 Data Infrastructure Insights 並協助進行資料探索。
+* 其次，一些代理程式嘗試透過使用非NetApp產生的數位憑證冒充Data Infrastructure Insights網站來執行 TLS/SSL 檢查。Data Infrastructure Insights獲取單元的安全模型與這些技術根本不相容。您還需要將上述網域排除在此功能之外，以便Data Infrastructure Insights獲取單元能夠成功登入Data Infrastructure Insights並促進資料發現。
 
 
-如果將 Proxy 設定為用於流量檢查、則必須將 Data Infrastructure Insights 環境新增至 Proxy 組態的例外清單。此例外清單的格式和設定會因您的 Proxy 環境和工具而異、但一般而言、您必須將 Data Infrastructure Insights 伺服器的 URL 新增至此例外清單、以便讓 AU 能夠與這些伺服器正確通訊。
+如果設定代理程式進行流量檢查，則必須將Data Infrastructure Insights環境新增至代理設定中的例外清單。此例外清單的格式和設定會根據您的代理環境和工具而有所不同，但通常您必須將Data Infrastructure Insights伺服器的 URL 新增至此例外清單中，以允許 AU 正確與這些伺服器通訊。
 
-最簡單的方法是將 Data Infrastructure Insights 網域本身新增至例外清單：
+最簡單的方法是將Data Infrastructure Insights域本身添加到例外列表中：
 
  *.cloudinsights.netapp.com
-若未設定Proxy進行流量檢查、則可能需要例外清單、也可能不需要例外清單。如果您不確定是否需要將 Data Infrastructure Insights 新增至例外清單、或是因為 Proxy 和 / 或防火牆組態而在安裝或執行 Data Infrastructure Insights 時遇到困難、請洽詢您的 Proxy 管理團隊、以設定 Proxy 處理 SSL 攔截的方式。
+如果沒有設定代理進行流量檢查，則可能需要或不需要例外清單。如果您不確定是否需要將Data Infrastructure Insights新增至例外清單中，或因代理程式和/或防火牆配置而遇到安裝或執行Data Infrastructure Insights的困難，請與您的代理管理團隊聯絡以設定代理程式對 SSL 攔截的處理。
 
 
 
-=== 檢視Proxy端點
+=== 查看代理端點
 
-您可以在就職期間選擇資料收集器時、按一下* Proxy設定*連結來檢視Proxy端點、或按一下*說明>支援*頁面上「_Proxy設定_」下的連結。隨即顯示如下表格。如果您的環境具有工作負載安全性、則已設定的端點URL也會顯示在此清單中。
+您可以在入職期間選擇資料收集器時點擊“*代理設定*”鏈接，或點擊“*幫助 > 支援*”頁面上“代理設定”下的連結以查看您的代理端點。將顯示如下表。如果您的環境中有工作負載安全，則設定的端點 URL 也會顯示在此清單中。
 
-image:ProxyEndpoints_NewTable.png["Proxy端點表格"]
+image:ProxyEndpoints_NewTable.png["代理端點表"]
 
 
 
@@ -92,4 +92,4 @@ image:ProxyEndpoints_NewTable.png["Proxy端點表格"]
 
 更多故障排除技巧可在link:https://kb.netapp.com/Cloud/ncds/nds/dii/dii_kbs["NetApp知識庫"]（需要支援登入）。
 
-如需其他支援資訊、請參閱 Data Infrastructure Insights link:concept_requesting_support.html["支援"] 頁面。
+可以從Data Infrastructure Insights中找到其他支援資訊link:concept_requesting_support.html["支援"]頁。

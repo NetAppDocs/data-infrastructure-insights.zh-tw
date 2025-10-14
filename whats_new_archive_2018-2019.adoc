@@ -4,7 +4,7 @@ permalink: whats_new_archive_2018-2019.html
 summary: 2018-2019 年Data Infrastructure Insights中的新特性與功能 
 keywords: features 
 ---
-= Data Infrastructure Insights 的新功能
+= Data Infrastructure Insights的新功能
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,272 +14,272 @@ keywords: features
 
 
 [role="lead"]
-NetApp持續改善及強化其產品與服務。以下是 Data Infrastructure Insights （前身為 Cloud Insights ）提供的一些最新功能。
+NetApp不斷改進和增強其產品和服務。以下是Data Infrastructure Insights（以前稱為Cloud Insights）中的一些最新特性和功能。
 
 
 
-== 2019 年 12 月
+== 2019年12月
 
 
 
-=== 營業實體可用於篩選器
+=== 業務實體可以在過濾器中使用
 
-企業實體附註可用於篩選查詢、小工具、效能原則和登陸頁面。
+業務實體註解可用於查詢、小工具、效能策略和登入頁面的篩選器。
 
 
 
-=== 可針對單一值與量表小工具、以及「全部」套用的任何小工具進行向下切入
+=== 可對單值和儀表小部件以及按“全部”滾動的任何小部件進行下鑽
 
-按一下單一值或量表Widget中的值、即可開啟查詢頁面、顯示Widget中使用的第一個查詢結果。此外、按一下任何以「All（全部）」彙總資料的Widget圖例、也會開啟查詢頁面、顯示Widget中使用的第一個查詢結果。
+點擊單值或儀表小部件中的值將開啟一個查詢頁面，顯示小部件中使用的第一個查詢的結果。此外，點擊任何按「全部」匯總資料的小部件的圖例也會開啟一個查詢頁面，顯示小部件中使用的第一個查詢的結果。
 
 
 
 === 試用期延長
 
-註冊免費試用Cloud Insights 版的新進使用者現在有30天時間可以評估產品。這比前14天試用期增加。
+註冊Cloud Insights免費試用的新用戶現在有 30 天的時間來評估產品。這比之前的 14 天試用期有所增加。
 
 
 
-=== 託管單位計算
+=== 管理單位計算
 
-在功能方面、對受管理單元（MU）的計算Cloud Insights 已變更為下列項目：
+Cloud Insights中託管單位 (MU) 的計算已變更為以下內容：
 
-* 1個受管理單元= 2個主機（任何虛擬或實體機器）
-* 1受管理單元= 4 TB未格式化的實體或虛擬磁碟容量
+* 1 個託管單元 = 2 個主機（任何虛擬機器或實體機器）
+* 1 個託管單元 = 4 TB 未格式化的實體或虛擬磁碟容量
 
 
-這項變更可有效增加使用現有Cloud Insights 的版本資訊訂閱監控環境容量的兩倍。
+這項變更有效地使您可以使用現有Cloud Insights訂閱監控的環境容量增加了一倍。
 
 '''
 
 
-== 2019 年 11 月
+== 2019年11月
 
 
 
-== 2019 年 10 月
+== 2019年10月
 
 
 
 === 報告
 
-link:reporting_overview.html["*《報告》* Cloud Insights"]是一種商業智慧工具，可讓您檢視預先定義的報告或建立自訂報告。有了「報告」、您可以執行下列工作：
+link:reporting_overview.html["*Cloud Insights報告*"]是一種商業智慧工具，可讓您查看預先定義的報告或建立自訂報告。使用報告您可以執行以下任務：
 
-* 執行預先定義的報告
+* 運行預定義報告
 * 建立自訂報告
-* 自訂報告格式和交付方法
-* 排程報告以自動執行
+* 自訂報告格式和交付方式
+* 安排報告自動運行
 * 電子郵件報告
-* 使用色彩來表示資料的臨界值
+* 使用顏色表示資料閾值
 
 
-支援範圍包括計費、消費分析和預測、並可針對下列問題、產生自訂報告：Cloud Insights
+Cloud Insights Reporting 可為退款、消費分析和預測等領域產生自訂報告，並可協助回答以下問題：
 
-* 我有什麼庫存？
+* 我有哪些庫存？
 * 我的庫存在哪裡？
 * 誰在使用我們的資產？
-* 分配給業務單位的儲存設備的計費方式為何？
-* 需要多長時間才能取得額外的儲存容量？
-* 業務單位是否與適當的儲存層一致？
-* 儲存設備配置如何在一個月、一季或一年內改變？
+* 為業務部門分配的儲存空間的退款是多少？
+* 我多久之後才需要獲得額外的儲存容量？
+* 業務部門是否依照適當的儲存層進行排列？
+* 儲存分配在一個月、一個季度或一年內如何變化？
 
 
-提供Cloud Insights 報告功能、僅供參考* Premium版*。
-
-
-
-=== 功能強化Active IQ
-
-link:concept_activeiq.html["風險Active IQ"]現在可做為可查詢的物件，以及用於儀表板表格 Widget 中。包括下列風險物件屬性：*類別*緩解類別*潛在影響*風險詳細資料*嚴重性*來源*儲存設備*儲存節點* UI類別
-
-'''
-
-
-== 2019 年 9 月
+Cloud Insights *Premium Edition* 提供報告功能。
 
 
 
-=== 全新的儀表小工具
+=== Active IQ增強功能
 
-有兩個新的小工具可根據您指定的臨界值、在儀表板上以醒目的色彩顯示單一值資料。您可以使用*實體量表*或*項目符號量表*來顯示值。位於「警告」範圍內的值會以橘色顯示。臨界範圍內的值會以紅色顯示。低於警告臨界值的值會以綠色顯示。
-
-image:Gauge-Solid.png["固態/傳統量表"] image:Gauge-Bullet.png["項目符號"]
-
-
-
-=== 單一值Widget的設定格式化色彩條件
-
-您現在可以根據所設定的臨界值、以彩色背景顯示單值Widget。
-
-image:Single-Value Widgets - Formatted.png["具有格式化功能的單值小工具"]
-
-
-
-=== 在就職期間邀請使用者
-
-在就職程序期間、您可以隨時按一下「管理」>「使用者管理」>「+使用者」、邀請更多使用者加入Cloud Insights 您的不合格環境。請注意、擁有_Guest或_User_角色的使用者在就職完成並收集資料後、將會獲得更大效益。
-
-
-
-=== Data Collector詳細資料頁面改善
-
-資料收集器詳細資料頁面已經過改良、可以更易讀取的格式顯示錯誤。現在、錯誤會顯示在頁面上的個別表格中、每個錯誤會顯示在不同的行中、以防資料收集器發生多個錯誤。
+link:concept_activeiq.html["Active IQ風險"]現在可以作為可查詢的物件以及在儀表板表小工具中使用。包含以下風險物件屬性：* 類別* 緩解類別* 潛在影響* 風險詳情* 嚴重性* 來源* 儲存* 儲存節點* UI 類別
 
 '''
 
 
-== 2019 年 8 月
+== 2019年9月
 
 
 
-=== All 與 Available Data Collector
+=== 新的儀表小部件
 
-將資料收集器新增至環境時、您可以設定篩選條件、根據訂閱層級或所有資料收集器、僅顯示可用的資料收集器。
+有兩個新的小部件可用於根據您指定的閾值以醒目的顏色在儀表板上顯示單值資料。您可以使用*Solid Gauge*或*Bullet Gauge*顯示值。處於警告範圍內的值顯示為橘色。臨界範圍內的值顯示為紅色。低於警告閾值的值顯示為綠色。
 
-
-
-=== ActiveIQ整合
-
-NetApp ActiveIQ會收集資料、為NetApp客戶及其硬體/軟體系統提供一系列視覺化、分析及其他支援相關服務。Cloud Insights與支援的資料管理系統整合。Cloud Insights ONTAP如需詳細資訊、請參閱 link:concept_activeiq.html["Active IQ"] 。
-
-'''
-
-
-== 2019 年 7 月
+image:Gauge-Solid.png["實心/傳統規格"] image:Gauge-Bullet.png["子彈量規"]
 
 
 
-=== 儀表板改良
+=== 單值小部件的條件顏色格式
 
-儀表板和小工具已經過下列變更改善：
+現在，您可以根據設定的閾值顯示具有彩色背景的單值小工具。
 
-* 除了Sum、Min、Max和Avg之外、* Count*現在是彙總單值小工具的選項。使用「Count」進行捲動時Cloud Insights 、此功能會檢查物件是否處於作用中狀態、並只將作用中的物件新增至計數。產生的數字取決於集合體和篩選器。
-* 在單值小工具中、您現在可以選擇顯示0、1、2、3或4個小數位數的結果數字。
-* 折線圖會在繪製單一計數器時、顯示座標軸標籤和單位。
-* * Transform*選項適用於所有指標的所有時間系列小工具中的服務整合資料。對於時間系列 Widget （ Line ， Spline ， Area ， Stacked Area ）中的任何服務整合（ Telegraf ）計數器或度量，您可以選擇想要的方式link:concept_telegraf_display_options.html["轉換價值"]。無（依現值顯示）、總和、差異、累計等
+image:Single-Value Widgets - Formatted.png["具有格式的單值小工具"]
 
 
 
+=== 在入職期間邀請用戶
 
-=== 降級至基本版
-
-如果在過去7天內沒有設定成功完成輪詢的可用NetApp裝置、降級至Basic Edition將會失敗並顯示錯誤訊息。
-
+在入職過程中的任何時候，您都可以點擊「管理」>「使用者管理」>「+使用者」來邀請其他使用者加入您的Cloud Insights環境。請注意，一旦入職完成並收集了數據，具有_Guest_或_User_角色的使用者將獲得更大的好處。
 
 
-=== 正在收集Kube-State-Metrics
 
-現在會link:task_config_telegraf_kubernetes.html["Kubernetes資料收集器"]從 kube 狀態度量外掛程式收集物件和計數器，大幅擴充 Cloud Insights 中可用於監控的度量數量和範圍。
+=== 數據收集器詳細資訊頁面改進
+
+資料收集器詳細資訊頁面已改進，以更易讀的格式顯示錯誤。現在，錯誤顯示在頁面上的單獨表格中，如果資料收集器出現多個錯誤，則每個錯誤顯示在單獨的行上。
 
 '''
 
 
-== 2019 年 6 月
+== 2019年8月
 
 
 
-=== 版本Cloud Insights
+=== 所有數據收集器與可用數據收集器
 
-各種版本均提供以符合您的預算和業務需求。Cloud Insights擁有有效NetApp支援帳戶的現有NetApp客戶可享有7天的資料保留、免費*基本版*存取NetApp資料收集器、或是享有更高的資料保留率、存取所有受支援的資料收集器、專家技術支援及*標準版*的更多資訊。如需可用功能的詳細資訊，請參閱 NetApp link:https://www.netapp.com/cloud-services/cloud-insights/["Cloud Insights"]網站。
-
-
-
-=== 全新基礎架構資料收集器NetApp HCI
-
-* link:task_dc_na_hci.html["虛擬中心NetApp HCI"]已新增為基礎架構資料收集器。HCI Virtual Center資料收集器會收集NetApp HCI 有關「支援主機」的資訊、並要求對Virtual Center內的所有物件擁有唯讀權限。
+將資料收集器新增至您的環境時，您可以設定篩選器以僅顯示根據您的訂閱等級可用的資料收集器，或顯示所有資料收集器。
 
 
-請注意、HCI資料收集器僅從HCI Virtual Center取得。若要從儲存系統收集資料，您也必須設定 NetApp link:task_dc_na_solidfire["SolidFire"]資料收集器。
+
+=== ActiveIQ 集成
+
+Cloud Insights從NetApp ActiveIQ 收集數據，為NetApp客戶及其硬體/軟體系統提供一系列視覺化、分析和其他支援相關服務。 Cloud Insights與ONTAP資料管理系統整合。看link:concept_activeiq.html["Active IQ"]了解更多。
 
 '''
 
 
-== 2019 年 5 月
+== 2019年7月
 
 
 
-=== 全新服務資料收集器：Kapacitor
+=== 儀表板改進
 
-* link:task_config_telegraf_kapacitor.html["Kapacitor"]已新增為服務的資料收集器。
+儀表板和小部件已改進，具體變化如下：
+
+* 除了 Sum、Min、Max 和 Avg 之外，*Count* 現在是單值小部件中匯總的選項。按「計數」匯總時， Cloud Insights會檢查物件是否處於活動狀態，並且僅將活動物件新增至計數中。得到的數字需要經過聚合和過濾。
+* 在單值小工具中，您現在可以選擇顯示具有 0、1、2、3 或 4 個小數位的結果數字。
+* 當繪製單一計數器時，折線圖會顯示軸標籤和單位。
+* 現在，所有指標的所有時間序列小部件中的服務整合資料均可使用*轉換*選項。對於任何服務整合（Telegraf）計數器或時間序列小工具（線、樣條線、區域、堆疊區域）中的指標，您可以選擇如何link:concept_telegraf_display_options.html["轉換價值觀"]。無（原樣顯示數值）、總和、增量、累積等。
 
 
 
 
-=== 透過Telegraf與服務整合
+=== 降級到基礎版
 
-除了從交換器和儲存設備等基礎架構裝置取得資料外， Cloud Insights 現在還會從各種作業系統和服務收集資料，以link:task_config_telegraf_agent.html["Telegraf是其代理程式"]收集整合資料。Telegraf是外掛程式導向的代理程式、可用來收集和報告指標。輸入外掛程式可透過直接存取系統/作業系統、呼叫協力廠商API或聆聽已設定的串流、將所需的資訊收集到代理程式中。
+如果在過去 7 天內沒有配置已成功完成輪詢的可用NetApp設備，則降級到基本版將失敗並顯示錯誤訊息。
 
-目前支援的整合文件可在左側*參考與支援*下的功能表中找到。
+
+
+=== 收集 Kube-State-Metrics
+
+這link:task_config_telegraf_kubernetes.html["Kubernetes 資料收集器"]現在從 kube-state-metrics 插件收集物件和計數器，大大擴展了Cloud Insights中可供監控的指標的數量和範圍。
+
+'''
+
+
+== 2019年6月
+
+
+
+=== Cloud Insights版本
+
+Cloud Insights有不同的版本，以滿足您的預算和業務需求。擁有有效NetApp支援帳戶的現有NetApp客戶可以透過免費的 *基本版* 享受 7 天的資料保留和對NetApp資料收集器的訪問，或透過 *標準版* 獲得更高的資料保留時間、對所有受支援的資料收集器的存取、專家技術支援等。有關可用功能的更多信息，請參閱 NetApp 的link:https://www.netapp.com/cloud-services/cloud-insights/["Cloud Insights"]地點。
+
+
+
+=== 新的基礎設施資料收集器： NetApp HCI
+
+* link:task_dc_na_hci.html["NetApp HCI虛擬中心"]已被加入為基礎設施資料收集器。  HCI 虛擬中心資料收集器收集NetApp HCI主機訊息，並要求對虛擬中心內的所有物件具有唯讀權限。
+
+
+請注意，HCI 資料收集器僅從 HCI 虛擬中心取得資料。要從儲存系統收集數據，還必須配置NetApplink:task_dc_na_solidfire["SolidFire"]數據收集器。
+
+'''
+
+
+== 2019年5月
+
+
+
+=== 新的服務資料收集器：Kapacitor
+
+* link:task_config_telegraf_kapacitor.html["卡帕西托"]已被加入為服務的資料收集器。
+
+
+
+
+=== 透過 Telegraf 與服務集成
+
+除了從交換器和儲存等基礎設施設備獲取數據外， Cloud Insights現在還從各種作業系統和服務收集數據，使用link:task_config_telegraf_agent.html["Telegraf 作為其代理"]用於收集集成數據。 Telegraf 是外掛程式驅動的代理，可用於收集和報告指標。輸入插件用於透過直接存取系統/作業系統、呼叫第三方 API 或監聽配置的流將所需資訊收集到代理中。
+
+目前支援的整合的文件可以在左側選單的*參考和支援*下找到。
 
 
 
 === 儲存虛擬機器資產
 
-* 儲存虛擬機器（SVM）可做為Cloud Insights VMware的資產。SVM有自己的資產登陸頁面、可在搜尋、查詢和篩選中顯示及使用。SVM也可用於儀表板小工具、以及與附註相關的項目。
+* 儲存虛擬機器 (SVM) 可作為Cloud Insights中的資產使用。  SVM 有自己的資產登陸頁面，可以在搜尋、查詢和篩選器中顯示和使用。  SVM 也可以用於儀表板小部件並與註釋相關聯。
 
 
 
 
-=== 降低採購單位系統需求
+=== 降低採集單元系統需求
 
-* 擷取單元（AU）軟體的系統CPU和記憶體需求已經降低。新的要求如下：
+* 採集單元 (AU) 軟體的系統 CPU 和記憶體需求已經降低。新要求如下：
 
 
 |===
 
 
-| *元件* | *舊需求* | *新需求* 
+| *成分* | *舊要求* | *新要求* 
 
 
-| CPU核心 | 4 | 2 
+| CPU 核心 | 4 | 2 
 
 
-| 記憶體 | 16GB | 8GB 
+| 記憶 | 16GB | 8GB 
 |===
 
 
 === 支援的其他平台
 
-* 以下平台已新增至目前的平台link:https://docs.netapp.com/us-en/cloudinsights/concept_acquisition_unit_requirements.html["支援Cloud Insights 的支援功能"]：
+* 現有平台中已新增以下平台link:https://docs.netapp.com/us-en/cloudinsights/concept_acquisition_unit_requirements.html["支援Cloud Insights"]：
 
 
 |===
 
 
-| Linux | Windows 
+| Linux | 視窗 
 
 
-| CentOS 7.364位元CentOS 7.464位元CentOS 7.664位元DEBIAN9 64位元Red Hat Enterprise Linux 7.364位元Red Hat Enterprise Linux 7.464位元Red Hat Enterprise Linux 7.664位元Ubuntu Server 18.04 LTS | Microsoft Windows 10 64位元Microsoft Windows Server 2008 R2 Microsoft Windows Server 2019 
+| CentOS 7.3 64 位元 CentOS 7.4 64 位元 CentOS 7.6 64 位元 Debian 9 64 位元 Red Hat Enterprise Linux 7.3 64 位元 Red Hat Enterprise Linux 7.4 64 位元 Red Hat Enterprise Linux 7.6 64 位元 Ubuntu Server 18.04 LTS | Microsoft Windows 10 64 位元 Microsoft Windows Server 2008 R2 Microsoft Windows Server 2019 
 |===
 '''
 
 
-== 2019 年 4 月
+== 2019年4月
 
 
 
-=== 依標記篩選虛擬機器
+=== 按標籤過濾虛擬機
 
-設定下列資料收集器時、您可以根據其標記或標籤、篩選以將虛擬機器納入或排除在資料收集範圍之外。
+配置以下資料收集器時，您可以根據虛擬機器的標記或標籤進行過濾，以將虛擬機器納入資料收集或從資料收集中排除。
 
-* link:task_dc_amazon_ec2.html#advanced-configuration["Amazon EC2"]
+* link:task_dc_amazon_ec2.html#advanced-configuration["亞馬遜 EC2"]
 * link:task_dc_ms_azure.html#advanced-configuration["Azure"]
-* link:task_dc_google_cloud.html#advanced-configuration["Google Cloud Platform"]
+* link:task_dc_google_cloud.html#advanced-configuration["谷歌雲端平台"]
 
 
 '''
 
 
-== 2019 年 3 月
+== 2019年3月
 
 
 
 === 訂閱相關事件的電子郵件通知
 
-* 您可以在發生訂閱相關事件（例如即將到期的試用或訂閱的帳戶變更）時，選擇電子郵件收件者link:concept_notifications_email.html["通知"]。您可以從下列選項中選擇這些通知的收件者：
+* 您可以選擇電子郵件的收件人link:concept_notifications_email.html["通知"]當發生與訂閱相關的事件時，例如試用期即將到期或訂閱的帳戶發生變更。您可以從以下選項中選擇這些通知的收件者：
 +
-** 所有帳戶擁有者
-** 所有系統管理員
+** 所有帳戶所有者
+** 所有管理員
 ** 您指定的其他電子郵件地址
 
 
@@ -287,12 +287,12 @@ NetApp ActiveIQ會收集資料、為NetApp客戶及其硬體/軟體系統提供�
 
 
 
-=== 其他儀表板
+=== 附加儀表板
 
-* 下列以 AWS 為焦點的新功能已新link:concept_import_from_dashboard_gallery.html["儀表板"]增至圖庫，可供匯入：
+* 以下新的以 AWS 為重點link:concept_import_from_dashboard_gallery.html["儀表板"]已新增至圖庫並可供匯入：
 +
-** AWS管理：哪一種EC2是高需求的？
-** AWS EC2執行個體效能（依地區）
+** AWS 管理員 - 哪些 EC2 需求量很大？
+** AWS EC2 執行個體各區域效能
 
 
 
@@ -300,120 +300,120 @@ NetApp ActiveIQ會收集資料、為NetApp客戶及其硬體/軟體系統提供�
 '''
 
 
-== 2019 年 2 月
+== 2019年2月
 
 
 
-=== 從AWS子帳戶收集
+=== 從 AWS 子帳戶收集
 
-* Cloud Insights 支援link:task_dc_amazon_ec2.html#collecting-from-aws-child-accounts["從AWS子帳戶收集"]單一資料收集器。您的AWS環境必須設定為允許Cloud Insights 從子帳戶收集資訊。
+* Cloud Insights支持link:task_dc_amazon_ec2.html#collecting-from-aws-child-accounts["從 AWS 子帳戶收集"]在單一資料收集器內。您的 AWS 環境必須配置為允許Cloud Insights從子帳戶收集資料。
 
 
 
 
 === 資料收集器命名
 
-* Data Collector名稱現在除了可以包含字母、數字和下劃線之外、也可以包含句點（.）、連字號（-）和空格（）。名稱不得以空格、句點或連字號開頭或結尾。
+* 資料收集器名稱現在除了字母、數字和底線外，還可以包含句點 (.)、連字號 (-) 和空格 ( )。名稱不得以空格、句點或連字符開頭或結尾。
 
 
 
 
-=== Windows採購單位
+=== Windows 擷取單元
 
-* 您可以在Cloud Insights Windows伺服器/ VM上設定一個「靜態擷取單元」。安裝之前請先檢閱 Windows link:concept_acquisition_unit_requirements.html["先決條件"]link:task_configure_acquisition_unit.html["採購單位軟體"]。
-
-
-'''
-
-
-== 2019 年 1 月
-
-
-
-=== 「擁有者」欄位更易讀取
-
-* 在儀表板和查詢清單中、「擁有者」欄位的資料先前是授權ID字串、而非使用者友好的擁有者名稱。「擁有者」欄位現在會顯示更簡單、更易讀取的擁有者名稱。
-
-
-
-
-=== 訂購頁面上的託管設備明細
-
-* 對於「*管理>訂閱*」頁面上列出的每個資料收集器、您現在可以看到主機和儲存設備的受管理單元（MU）計數明細、以及總計。
+* 您可以在 Windows 伺服器/VM 上設定Cloud Insights Acquisition Unit。檢視 Windowslink:concept_acquisition_unit_requirements.html["先決條件"]在安裝之前link:task_configure_acquisition_unit.html["採集單元軟體"]。
 
 
 '''
 
 
-== 2018 年 12 月
+== 2019年1月
 
 
 
-=== 改善UI載入時間
+=== 「所有者」欄位更具可讀性
 
-* 初始載入功能已大幅改善、以利Cloud Insights 使用者介面（UI）。使用者介面的重新整理時間、也因為在載入中繼資料的情況下有所改善而受益。
+* 在儀表板和查詢清單中，「所有者」欄位的資料以前是授權 ID 字串，而不是使用者友好的所有者名稱。  「所有者」欄位現在顯示更簡單、更易讀的擁有者名稱。
+
+
+
+
+=== 訂閱頁面上的管理單位細分
+
+* 對於*管理>訂閱*頁面上列出的每個資料收集器，您現在可以看到主機和儲存的託管單元（MU）數量的細分以及總數。
+
+
+'''
+
+
+== 2018年12月
+
+
+
+=== 改善 UI 載入時間
+
+* Cloud Insights使用者介面 (UI) 的初始載入時間已顯著改善。在載入元資料的情況下，UI 的刷新時間也受益於這種改進。
 
 
 
 
 === 大量編輯資料收集器
 
-* 您可以同時編輯多個資料收集器的資訊。在 * 可伺服 > 收集器 * 頁面上、勾選每個收集器左側的方塊、選取要修改的資料收集器、然後按一下 * 大量動作 * 按鈕。選擇*編輯*並修改必要欄位。
+* 您可以同時編輯多個資料收集器的資訊。在*可觀察性 > 收集器*頁面上，透過選取每個左側的方塊來選擇要修改的資料收集器，然後按一下*批次操作*按鈕。選擇*編輯*並修改必要的欄位。
 +
-所選的資料收集器必須是相同的廠商和機型、並位於相同的擷取設備上。
+所選數據採集器必須是同一供應商和型號，並且位於同一採集單元上。
 
 
 
 
 
-=== 在就職期間可取得支援與訂閱頁面
+=== 支援和訂閱頁面在入職期間可用
 
-* 在就職工作流程中、您可以瀏覽至*「說明」>「支援」*和*「管理」>「訂閱」*頁面。如果您尚未關閉瀏覽器索引標籤、從這些頁面返回後、您將返回就職工作流程。
+* 在入職工作流程期間，您可以導覽至*幫助>支援*和*管理>訂閱*頁面。從這些頁面返回後，您將返回入職工作流程，前提是您尚未關閉瀏覽器標籤。
 
 
 '''
 
 
-== 2018 年 11 月
+== 2018年11月
 
 
 
-=== 透過NetApp銷售或AWS Marketplace訂閱
+=== 透過NetApp銷售或 AWS Marketplace 訂閱
 
-* 現在可透過NetApp直接訂購和計費。Cloud Insights除了透過AWS Marketplace提供的自助服務訂閱之外、「*管理>訂閱*」頁面上會顯示一個新的*聯絡銷售*連結。對於環境中有或預期有1、000個以上託管單元（MU）的客戶、建議透過「聯絡銷售」連結聯絡NetApp銷售人員。
-
-
-
-
-=== 文字附註超連結
-
-* 文字類型註釋現在可以包含超連結。
+* 現在可以直接透過NetApp取得Cloud Insights訂閱和計費。這是透過 AWS Marketplace 提供的自助訂閱服務的補充。 *管理 > 訂閱* 頁面上顯示了一個新的 *聯絡銷售* 連結。對於環境中擁有或預計擁有 1,000 個或更多託管單元 (MU) 的客戶，建議透過聯絡銷售連結聯絡NetApp銷售人員。
 
 
 
 
-=== 就職演練
+=== 文字註釋超連結
 
-* 目前、首位使用者（系統管理員或帳戶擁有者）登入新環境時、可透過內部作業逐步完成。Cloud Insights逐步解說會引導您安裝擷取單元、設定初始資料收集器、以及選取一或多個有用的儀表板。
-
-
+* 文字類型的註解現在可以包含超連結。
 
 
-=== 從圖庫匯入儀表板
 
-* 除了在就職期間選取儀表板之外、您也可以透過*儀表板>顯示所有儀表板*匯入儀表板、然後按一下*+從圖片庫*匯入儀表板。
+
+=== 入職演練
+
+* Cloud Insights現在為第一個使用者（管理員或帳戶擁有者）登入新環境提供了入門指南。本演練將引導您安裝採集單元、設定初始資料收集器以及選擇一個或多個有用的儀表板。
+
+
+
+
+=== 從圖庫導入儀表板
+
+* 除了在入職期間選擇儀表板之外，您還可以透過*儀表板 > 顯示所有儀表板*並點擊*+來自圖庫*來匯入儀表板。
 
 
 
 
 === 複製儀表板
 
-* 儀表板的複製功能已新增至儀表板清單頁面、做為每個儀表板選項功能表的選項、以及儀表板主頁面本身的_Save_功能表。
+* 複製儀表板的功能已新增至儀表板清單頁面，作為每個儀表板選項功能表中的選項，以及儀表板主頁本身的「儲存」功能表中的選項。
 
 
 
 
-=== Cloud Central產品功能表
+=== Cloud Central 產品選單
 
-* 可讓您切換至其他NetApp Cloud Central產品的功能表已移至畫面右上角。
+* 允許您切換到其他NetApp Cloud Central 產品的選單已移至螢幕的右上角。
 

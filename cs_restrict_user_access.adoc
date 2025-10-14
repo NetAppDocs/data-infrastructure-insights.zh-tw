@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: cs_restrict_user_access.html 
 keywords: alert, snapshot,  attack 
-summary: 有了工作負載安全功能、您就能在疑似遭破壞的情況下限制使用者存取權限 
+summary: 借助工作負載安全，您可以在懷疑發生破壞行為時限制用戶訪問 
 ---
-= 封鎖使用者存取
+= 阻止用戶訪問
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,27 +14,27 @@ summary: 有了工作負載安全功能、您就能在疑似遭破壞的情況�
 
 
 [role="lead"]
-一旦偵測到攻擊、工作負載安全功能就能封鎖使用者存取檔案系統、藉此阻止攻擊。您可以使用自動回應原則、或從警示或使用者詳細資料頁面手動封鎖存取。
+一旦偵測到攻擊，Workload Security 可以透過阻止使用者存取檔案系統來阻止攻擊。可以使用自動回應策略自動阻止訪問，也可以從警報或使用者詳細資料頁面手動阻止訪問。
 
-當封鎖使用者存取時、您應該定義封鎖時間段。在所選期間結束後、使用者存取權會自動還原。SMB和NFS傳輸協定均支援存取封鎖。
+當阻止使用者存取時，應該定義一個阻止時間段。選定的時間段結束後，使用者存取權限將自動恢復。  SMB 和 NFS 協定均支援存取阻止。
 
-直接封鎖使用者的SMB位址、導致NFS封鎖攻擊的主機機器IP位址。這些機器IP位址將會遭到封鎖、無法存取工作負載安全性所監控的任何儲存虛擬機器（SVM）。
+使用者的 SMB 存取將直接被阻止，而引發攻擊的主機的 IP 位址的 NFS 存取將被阻止。這些機器 IP 位址將被阻止存取由工作負載安全監控的任何儲存虛擬機器 (SVM)。
 
-例如、假設工作負載安全性管理10個SVM、而自動回應原則則是針對其中四個SVM進行設定。如果攻擊源自四個SVM之一、則使用者的存取將會在所有10個SVM中遭到封鎖。仍會在原始SVM上執行Snapshot。
+例如，假設工作負載安全管理 10 個 SVM，並且為其中 4 個 SVM 配置了自動回應策略。如果攻擊源自四個 SVM 中的一個，則使用者的存取將在所有 10 個 SVM 中被封鎖。仍在原始 SVM 上拍攝快照。
 
-如果有四個SVM、其中一個SVM設定為SMB、一個設定為NFS、其餘兩個設定為NFS和SMB、則如果攻擊源自四個SVM中的任一VM、則所有SVM都會遭到封鎖。
+如果有四個 SVM，其中一個 SVM 配置為 SMB，一個 SVM 配置為 NFS，其餘兩個 SVM 同時配置為 NFS 和 SMB，則如果攻擊源自四個 SVM 中的任何一個，則所有 SVM 都會被阻止。
 
 
 
-== 使用者存取封鎖的先決條件
+== 使用者存取阻止的先決條件
 
-此功能需要叢集層級認證、才能正常運作。
+此功能需要集群級憑證才能運作。
 
-如果您使用叢集管理認證、則不需要新的權限。
+如果您使用叢集管理憑證，則不需要新的權限。
 
-如果您使用的自訂使用者（例如、_CsUser_）具有授予使用者的權限、請依照下列步驟授予工作負載安全性權限、以封鎖使用者。
+如果您正在使用具有指定權限的自訂使用者（例如，_csuser_），請依照下列步驟向 Workload Security 授予封鎖使用者的權限。
 
-對於具有叢集認證的CsUser、請從ONTAP 下列功能執行：
+對於具有叢集憑證的 csuser，請從ONTAP命令列執行下列操作：
 
 ....
 security login role create -role csrole -cmddirname "vserver export-policy rule" -access all
@@ -43,68 +43,68 @@ security login role create -role csrole -cmddirname "vserver cifs session" -acce
 security login role create -role csrole -cmddirname "vserver services access-check authentication translate" -access all
 security login role create -role csrole -cmddirname "vserver name-mapping" -access all
 ....
-請務必同時檢閱頁面的「權限」區段link:task_add_collector_svm.html["設定ONTAP SVM Data Collector"]。
+請務必查看link:task_add_collector_svm.html["配置ONTAP SVM 資料收集器"]頁面也是如此。
 
 
 
-== 如何啟用此功能？
+== 如何啟用該功能？
 
-* 在工作負載安全性中、瀏覽至 * 工作負載安全性 > 原則 > 自動回應原則 * 。選擇 *+ 攻擊政策 * 。
-* 選取（勾選） _ 封鎖使用者檔案存取 _ 。
-
-
-
-
-== 如何設定自動使用者存取封鎖？
-
-* 建立新的攻擊原則或編輯現有的攻擊原則。
-* 選取應監控攻擊原則的SVM。
-* 按一下「封鎖使用者檔案存取」核取方塊。此功能會在選取時啟用。
-* 在「Time Period」（時間期間）下、選取應套用封鎖的時間。
-* 若要測試自動封鎖使用者，您可以透過模擬攻擊link:concept_cs_attack_simulator.html["模擬指令碼"]。
+* 在工作負載安全性中，導覽至*工作負載安全性>策略>自動回應策略*。選擇*+攻擊策略*。
+* 選擇（選取）_阻止使用者檔案存取_。
 
 
 
 
-== 如何知道系統中是否有封鎖的使用者？
+== 如何設定自動用戶存取阻止？
 
-* 在警示清單頁面中、如果任何使用者遭到封鎖、畫面頂端會顯示橫幅。
-* 按一下橫幅將會帶您前往「使用者」頁面、您可以在頁面上看到封鎖的使用者清單。
-* 在「Users」（使用者）頁面中、有一欄名為「User/IP Access」（使用者/IP存取）。在該欄中、會顯示使用者封鎖的目前狀態。
-
-
-
-
-== 手動限制及管理使用者存取
-
-* 您可以前往警示詳細資料或使用者詳細資料畫面、然後從這些畫面手動封鎖或還原使用者。
+* 建立新的攻擊策略或編輯現有的攻擊策略。
+* 選擇應監控攻擊策略的 SVM。
+* 點選複選框「阻止使用者檔案存取」。選擇此項目後，該功能將會啟用。
+* 在「時間段」下選擇套用封鎖的時間。
+* 若要測試自動用戶阻止，您可以透過以下方式模擬攻擊link:concept_cs_attack_simulator.html["類比腳本"]。
 
 
 
 
-== 使用者存取限制歷程記錄
+== 如何知道系統中是否有被封鎖的使用者？
 
-在警示詳細資料與使用者詳細資料頁面的使用者面板中、您可以檢視使用者存取限制歷程記錄的稽核：時間、動作（區塊、取消區塊）、持續時間、採取的行動、 NFS的手動/自動及受影響IP。
-
-
-
-== 如何停用此功能？
-
-您可以隨時停用此功能。如果系統中有受限的使用者、您必須先還原他們的存取權限。
-
-* 在工作負載安全性中、瀏覽至 * 工作負載安全性 > 原則 > 自動回應原則 * 。選擇 *+ 攻擊政策 * 。
-* 取消選取（取消勾選） _ 封鎖使用者檔案存取 _ 。
-
-
-所有頁面都會隱藏此功能。
+* 在警報清單頁面中，如果有任何使用者被封鎖，螢幕頂部將顯示橫幅。
+* 點擊橫幅將帶您進入「使用者」頁面，您可以在此查看被封鎖使用者的清單。
+* 在「使用者」頁面中，有一個名為「使用者/IP存取」的欄位。在該欄位中將顯示使用者封鎖的目前狀態。
 
 
 
-== 手動還原NFS的IP
 
-如果您的工作負載安全性試用期到期、或代理程式/收集器當機、請使用下列步驟手動還原ONTAP 任何來自VMware的IP。
+== 手動限制和管理用戶訪問
 
-. 列出SVM上的所有匯出原則。
+* 您可以轉到警報詳細資訊或使用者詳細資料螢幕，然後從這些螢幕手動封鎖或還原使用者。
+
+
+
+
+== 使用者存取限制歷史記錄
+
+在警報詳細資訊和使用者詳細資料頁面的使用者面板中，您可以查看使用者存取限制歷史記錄的審核：時間、操作（封鎖、解除封鎖）、持續時間、採取的操作、手動/自動以及受影響的 NFS IP。
+
+
+
+== 如何停用該功能？
+
+您可以隨時停用該功能。如果系統中有受限用戶，則必須先恢復他們的存取權限。
+
+* 在工作負載安全性中，導覽至*工作負載安全性>策略>自動回應策略*。選擇*+攻擊策略*。
+* 取消選擇（取消選取）_阻止使用者檔案存取_。
+
+
+該功能將在所有頁面中隱藏。
+
+
+
+== 手動恢復 NFS 的 IP
+
+如果您的 Workload Security 試用版已過期，或代理程式/收集器已關閉，請依照下列步驟從ONTAP手動復原任何 IP。
+
+. 列出 SVM 上的所有匯出策略。
 +
 ....
 contrail-qa-fas8020:> export-policy rule show -vserver <svm name>
@@ -124,10 +124,10 @@ svm3        test            3       cifs,    0.0.0.0/0             any
                                     flexcache
 4 entries were displayed.
 ....
-. 在SVM上、將「cloudsecure_rRule」做為用戶端比對的所有原則中刪除規則、方法是指定其各自的規則索引。工作負載安全性規則通常為1。
+. 透過指定對應的 RuleIndex，刪除 SVM 上所有將「cloudsecure_rule」作為客戶端相符的策略中的規則。工作負載安全規則通常為 1。
 +
  contrail-qa-fas8020:*> export-policy rule delete -vserver <svm name> -policyname * -ruleindex 1
-. 確保工作負載安全規則已刪除（可選步驟確認）。
+. 確保工作負載安全規則已被刪除（選用步驟確認）。
 +
 ....
 contrail-qa-fas8020:*> export-policy rule show -vserver <svm name>
@@ -145,14 +145,14 @@ svm2         test            3       cifs,    0.0.0.0/0             any
 
 
 
-== 手動還原SMB的使用者
+== 手動恢復 SMB 用戶
 
-如果您的工作負載安全性試用版過期、或代理程式/收集器當機、請使用下列步驟手動還原ONTAP 任何來自VMware的使用者。
+如果您的 Workload Security 試用版已過期，或代理程式/收集器已關閉，請依照下列步驟從ONTAP手動恢復任何使用​​者。
 
-您可以從使用者清單頁面取得工作負載安全性中封鎖的使用者清單。
+您可以從使用者清單頁面取得工作負載安全性中被封鎖的使用者清單。
 
-. 使用ONTAP 叢集_admin_認證登入到32個叢集（您想要解除封鎖使用者的位置）。（若為Amazon FSX、請使用FSX認證登入）。
-. 執行下列命令、列出所有SVM中所有被SMB工作負載安全性封鎖的使用者：
+. 使用群集_admin_憑證登入ONTAP叢集（您想要解除使用者封鎖的位置）。  （對於Amazon FSx，使用 FSx 憑證登入）。
+. 執行下列命令列出所有 SVM 中被 Workload Security for SMB 封鎖的所有使用者：
 +
  vserver name-mapping show -direction win-unix -replacement " "
 +
@@ -169,37 +169,37 @@ Position Hostname         IP Address/Mask
 ....
 
 
-在上述輸出中、有2位使用者被網域CSLAB封鎖（US030、US040）。
+在上面的輸出中，有 2 個使用者（US030、US040）被域 CSLAB 封鎖。
 
-. 當我們從上述輸出中找出位置後、請執行下列命令以解除封鎖使用者：
+. 一旦我們從上面的輸出中識別出位置，請執行以下命令來解除對使用者的封鎖：
 +
  vserver name-mapping delete -direction win-unix -position <position>
-. 執行下列命令、確認使用者已解除封鎖：
+. 透過執行以下命令確認用戶已解除封鎖：
 +
  vserver name-mapping show -direction win-unix -replacement " "
 
 
-不應針對先前封鎖的使用者顯示任何項目。
+對於先前被封鎖的用戶，不應顯示任何條目。
 
 
 
-== 疑難排解
+== 故障排除
 
 |===
-| 問題 | 試試看 
+| 問題 | 嘗試一下 
 
 
-| 有些使用者並未受到限制、但仍有攻擊。 | 1.確定 SVM 的資料收集器和代理程式處於 _Running 狀態。如果停止資料收集器和代理程式、工作負載安全功能將無法傳送命令。2.這是因為使用者可能已從具有新 IP 的機器存取儲存設備，而此前並未使用過。使用者透過其存取儲存設備的主機IP位址進行限制。請查看UI（警示詳細資料>此使用者的存取限制歷程記錄>受影響的IP）、以取得受限的IP位址清單。如果使用者從IP與受限IP不同的主機存取儲存設備、則使用者仍可透過不受限IP存取儲存設備。如果使用者嘗試從IP受限的主機存取、則儲存設備將無法存取。 
+| 儘管發生了攻擊，但一些用戶並未受到限制。 | 1.確保 SVM 的資料收集器和代理程式處於_正在運行_狀態。如果資料收集器和代理停止，工作負載安全性將無法發送命令。2.這是因為用戶可能從具有以前未使用過的新 IP 的機器存取了儲存。限制是透過使用者存取儲存的主機的 IP 位址進行的。在 UI（警報詳細資訊 > 此使用者的存取限制歷史記錄 > 受影響的 IP）中檢查受限制的 IP 位址清單。如果使用者從具有不同於受限 IP 的 IP 的主機存取存儲，則使用者仍然能夠透過非受限 IP 存取存儲。如果使用者嘗試從 IP 受限的主機進行訪問，則儲存將無法存取。 
 
 
-| 手動按一下「限制存取」會顯示「此使用者的IP位址已受到限制」。 | 要限制的IP已受到其他使用者的限制。 
+| 手動點選「限制存取」會出現「此使用者的 IP 位址已被限制」的情況。 | 需要限制的 IP 已被其他使用者限制。 
 
 
-| 無法修改原則。原因：未授權使用該命令。 | 請檢查是否使用CsUser、是否會如上所述授予使用者權限。 
+| 無法修改策略。原因：未授權執行該指令。 | 檢查是否使用 csuser，是否如上所述授予使用者權限。 
 
 
-| NFS的使用者（IP位址）封鎖正常運作、但對於SMB / CIFS、我看到錯誤訊息：「從SID到網域名稱的轉換失敗。原因逾時：通訊端未建立」 | 這種情況可能發生於_CsUser_沒有執行ssh的權限。（請確保叢集層級的連線、然後確定使用者可以執行ssh）。_CsUser_角色需要這些權限。 https://docs.netapp.com/us-en/cloudinsights/cs_restrict_user_access.html#prerequisites-for-user-access-blocking[]對於具有叢集認證的 _CsUser_ ，請從 ONTAP 命令列執行下列動作：安全性登入角色 create -role csrole -cmddirname "vserver 輸出原則規則 " -access all 安全性登入角色 create -role csrole -cmddirname "vserver cifle -cmddirname -access all 安全性登入角色並非使用者角色 ONTAP 。 
+| NFS 的使用者（IP 位址）阻止有效，但對於 SMB/CIFS，我看到一條錯誤訊息：「SID 到網域轉換失敗。原因超時：套接字未建立” | 如果 _csuser_ 沒有執行 ssh 的權限，則可能會發生這種情況。  （確保叢集層級的連接，然後確保使用者可以執行 ssh）。 _csuser_ 角色需要這些權限。 https://docs.netapp.com/us-en/cloudinsights/cs_restrict_user_access.html#prerequisites-for-user-access-blocking[]對於具有群集憑證的 _csuser_，請從ONTAP命令列執行以下操作： security login role create -role csrole -cmddirname "vserver export-policy rule" -access all security login role create -role cole -cmcm firname - vi^cm none kkd -cmFiial f55 -cmi fir fFald -cmFirname -vvi nv "vserver cifs session" -access all security login role create -role csrole -cmddirname "vserver services access-check authentication translate" -access all security login role create -role csrole -cmirname"vserver_cmirname "vserver_cmirc​​c -Fat_cmircoat_Flu_cmirname"vserver_cmirname"vserver_cmirc​​c -Fat_cmirname s fat_cmirFvserver_cmdirFvserver_cmirc -Fat_cmirc -Fat_cmirname n_vv.並且使用叢集層級的管理員用戶，請確保管理員用戶具有ONTAP的 ssh 權限。 
 
 
-| 我收到錯誤訊息 _SID 轉譯失敗。 _ 原因： 255 ：錯誤：命令失敗：未獲得該命令的授權錯誤：當使用者應該遭到封鎖時、「存取檢查」不是可辨識的命令 _ 。 | 當 _CsUser_ 沒有正確的權限時、可能會發生這種情況。如需詳細資訊、請參閱 link:cs_restrict_user_access.html#prerequisites-for-user-access-blocking["使用者存取封鎖的先決條件"] 。套用權限之後、建議您重新啟動 ONTAP 資料收集器和使用者目錄資料收集器。所需的權限命令如下所列。--- 安全登入角色 create -role csrole -cmddirname "vserver 匯出原則規則 " -access all security 登入角色 create -role csrole -cmddirname set -access all security 登入角色 create -role csrole -cmddirname "vserver CIFS 工作階段 " -access all security 登入 角色 create -role csrole -cmddirname "vserver name-mapping" -access all --- 
+| 我收到錯誤訊息 _SID 轉換失敗。 _ _原因：255：錯誤：命令失敗：未授權執行該命令錯誤：「access-check」不是可識別的命令_，而使用者應該被阻止。 | 當 _csuser_ 沒有正確的權限時，就會發生這種情況。看link:cs_restrict_user_access.html#prerequisites-for-user-access-blocking["使用者存取阻止的先決條件"]了解更多。應用權限後，建議重新啟動ONTAP資料收集器和使用者目錄資料收集器。所需的權限命令如下圖所示。  ---- 安全登入角色建立 -role csrole -cmddirname「vserver export-policy rule」-access all 安全登入角色建立 -role csrole -cmddirname 設定 -access all 安全登入角色建立 -role csrole -cmddirname「vserver accvsession 」服務安全登入角色建立 -role csrole -cmddirname「vserver accvsession)」服務-安全登入角色 - 安全性」 authentication translate”-access all 安全登入角色建立 -role csrole -cmddirname“vserver name-mapping”-access all ---- 
 |===

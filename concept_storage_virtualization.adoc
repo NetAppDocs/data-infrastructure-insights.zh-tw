@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept_storage_virtualization.html 
-summary: Data Infrastructure Insights 可提供前端和後端虛擬化儲存設備的檢視。 
+summary: Data Infrastructure Insights可以提供前端和後端虛擬化儲存的視圖。 
 keywords: storage, virtual, virtualized, virtualization, 
 ---
 = 儲存虛擬化
@@ -10,34 +10,34 @@ keywords: storage, virtual, virtualized, virtualization,
 
 
 [role="lead"]
-Data Infrastructure Insights 可區分擁有本機儲存或其他儲存陣列虛擬化的儲存陣列。這可讓您將成本與效能與前端完全關聯到基礎架構後端。
+Data Infrastructure Insights可以區分具有本地儲存的儲存陣列或其他儲存陣列的虛擬化。這使您能夠關聯成本並區分從基礎設施前端到後端的效能。
 
 
 
-=== 表 Widget 中的虛擬化
+=== 表格小工具中的虛擬化
 
-開始檢視儲存虛擬化的最簡單方法之一、就是建立顯示虛擬化類型的儀表板表 Widget 。建立 Widget 的查詢時、只要將「 virtualizedType 」新增至您的群組或篩選器即可。
+開始查看儲存虛擬化的最簡單方法之一是建立一個顯示虛擬化類型的儀表板表小工具。在為小工具建立查詢時，只需將「virtualizedType」新增至分組或篩選器。
 
 image:StorageVirtualization_TableWidgetSettings.png["顯示儲存虛擬化類型的基本查詢"]
 
-產生的表格 Widget 會顯示租戶上的 _Standard_ ， _Backend_ 和 _Virtual_ 儲存。
+產生的表格小工具會向您顯示租用戶上的_標準_、_後端_和_虛擬_儲存。
 
 image:StorageVirtualization_TableWidgetShowingVirtualizedTypes.png["顯示虛擬化類型的表格"]
 
 
 
-=== 登陸頁面顯示虛擬化資訊
+=== 登陸頁面顯示虛擬化訊息
 
-在儲存、磁碟區、內部磁碟區或磁碟登陸頁面上、您可以看到相關的虛擬化資訊。例如、查看下方的儲存登陸頁面、您可以看到這是虛擬儲存設備、以及適用的後端儲存系統。登陸頁面上的任何相關表格也會視情況顯示虛擬化資訊。
+在儲存、磁碟區、內部磁碟區或磁碟登入頁面上，您可以看到相關的虛擬化資訊。例如，查看下面的儲存登陸頁面，您可以看到這是一個虛擬存儲，以及適用哪個後端儲存系統。登陸頁面上的任何相關表格也將顯示適用的虛擬化資訊。
 
-image:StorageVirtualization_StorageSummary.png["顯示虛擬與備份儲存資訊的儲存設備登陸頁面"]
+image:StorageVirtualization_StorageSummary.png["顯示虛擬和備份儲存資訊的儲存登陸頁面"]
 
 
 
-=== 現有的登陸頁面和儀表板
+=== 現有的登陸頁和儀表板
 
-請注意，如果您目前在租戶上有自訂的登錄頁面或儀表板，這些頁面或儀表板在預設情況下不會自動顯示所有虛擬化資訊。不過、您可以 _ 恢復為預設 _ 任何自訂儀表板或登陸頁面（您必須重新實作自訂）、或修改相關的 Widget 來納入所需的虛擬化屬性或指標。
+請注意，如果您目前在租戶上有自訂的登入頁面或儀表板，則預設情況下這些頁面或儀表板不會自動顯示所有虛擬化資訊。但是，您可以將任何自訂儀表板或登入頁面_還原為預設_（您必須重新實作自訂），或修改相關小工具以包含所需的虛擬化屬性或指標。
 
-自訂儀表板或登陸頁畫面的右上角提供 _ 恢復為預設 _ 。
+_恢復預設_位於自訂儀表板或登入頁面畫面的右上角。
 
-image:RevertToDefault.png["恢復為預設按鈕"]
+image:RevertToDefault.png["恢復預設按鈕"]

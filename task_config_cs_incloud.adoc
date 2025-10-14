@@ -2,84 +2,84 @@
 sidebar: sidebar 
 permalink: task_config_cs_incloud.html 
 keywords: Cloud, Storage, AWS, Cloud Volumes, Cloud ONTAP, firewall, VPC, Subnet,  cloud secure 
-summary: 「工作負載安全性」使用資料收集器從裝置收集檔案和使用者存取資料。 
+summary: 工作負載安全使用資料收集器從設備收集文件和使用者存取資料。 
 ---
-= 設定Cloud Volumes ONTAP 適用於NetApp ONTAP 的支援NetApp的支援功能、包括支援功能
+= 設定Cloud Volumes ONTAP和Amazon FSx for NetApp ONTAP收集器
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-「工作負載安全性」使用資料收集器從裝置收集檔案和使用者存取資料。
+工作負載安全使用資料收集器從設備收集文件和使用者存取資料。
 
 
 
-== 儲存組態Cloud Volumes ONTAP
+== Cloud Volumes ONTAP儲存配置
 
-請參閱 OnCommand Cloud Volumes ONTAP 說明文件，以設定單一節點 / HA AWS 執行個體來主控工作負載安全性代理程式：https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/index.html[]
+請參閱OnCommand Cloud Volumes ONTAP文檔，以配置單節點/HA AWS 執行個體來託管工作負載安全代理：https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/index.html[]
 
-完成組態設定後，請依照下列步驟設定 SVM ：https://docs.netapp.com/us-en/cloudinsights/task_add_collector_svm.html[]
+配置完成後，請按照以下步驟設定您的 SVM：https://docs.netapp.com/us-en/cloudinsights/task_add_collector_svm.html[]
 
 
 
 == 支援的平台
 
-* 支援所有雲端服務供應商（無論有何種情況）Cloud Volumes ONTAP 。例如：Amazon、Azure、Google Cloud。
-* Amazon FSX ONTAP
+* Cloud Volumes ONTAP，在所有可用的雲端服務供應商處均受支援。例如：Amazon、Azure、Google Cloud。
+* ONTAPAmazon FSx
 
 
 
 
-== 代理機器組態
+== 代理機器配置
 
-代理機器必須在雲端服務供應商各自的子網路中進行設定。如需網路存取的詳細資訊、請參閱[Agent Requirements（代理程式需求）]。
+代理機器必須在雲端服務提供者的各自子網路中配置。在[代理要求]中閱讀有關網路存取的更多資訊。
 
-以下是AWS中的代理程式安裝步驟。您可在Azure或Google Cloud中遵循適用於雲端服務供應商的同等步驟進行安裝。
+以下是在 AWS 中安裝代理程式的步驟。可以在 Azure 或 Google Cloud 中依照適用於雲端服務供應商的等效步驟進行安裝。
 
-在AWS中、請使用下列步驟設定要用作工作負載安全代理程式的機器：
+在 AWS 中，使用下列步驟將機器配置為用作工作負載安全代理：
 
-請使用下列步驟、將機器設定為工作負載安全代理程式：
+使用下列步驟將機器配置為工作負載安全代理程式：
 
 .步驟
-. 登入AWS主控台並瀏覽至EC2-instances頁面、然後選取_Launch instance_。
-. 請依照本頁所述，選擇適當版本的 RHEL 或 CentOS AMI ：https://docs.netapp.com/us-en/cloudinsights/concept_cs_agent_requirements.html[]
-. 選取Cloud ONTAP 實例所在的VPC和子網路。
-. 選取「_t2.xlarge」（4個vCPU和16 GB RAM）作為配置資源。
+. 登入 AWS 控制台並導覽至 EC2-Instances 頁面並選擇_啟動執行個體_。
+. 選擇具有此頁面中提到的適當版本的 RHEL 或 CentOS AMI：https://docs.netapp.com/us-en/cloudinsights/concept_cs_agent_requirements.html[]
+. 選擇 Cloud ONTAP個體所在的 VPC 和子網路。
+. 選擇 _t2.xlarge_（4 vcpus 和 16 GB RAM）作為分配的資源。
 +
-.. 建立EC2執行個體。
+.. 建立 EC2 執行個體。
 
 
-. 使用YUM套件管理程式安裝所需的Linux套件：
+. 使用 YUM 套件管理器安裝所需的 Linux 套件：
 +
-.. 安裝_wGet_和_unzip _原生Linux套件。
+.. 安裝 _wget_ 和 _unzip_ 本機 Linux 套件。
 
 
 
 
 
 
-== 安裝工作負載安全代理程式
+== 安裝工作負載安全代理
 
-. 以管理員或帳戶擁有者身分登入您的 Data Infrastructure Insights 環境。
-. 瀏覽至 Workload Security * Collector* 、然後按一下 * Agents* 標籤。
-. 按一下「*+代理程式*」、並將RHEL指定為目標平台。
-. 複製代理程式安裝命令。
-. 將「代理程式安裝」命令貼到您登入的RHEL EC2執行個體中。這會安裝工作負載安全代理程式，只要符合所有link:concept_cs_agent_requirements.html["代理程式先決條件"]要求即可。
-
-
-如需詳細步驟，請參閱此連結： https://docs 。 NetApp 。 com/us-en/cloudimses/task_cs_add_agent.html#Steps to 安裝代理程式
+. 以管理員或帳戶擁有者的身分登入您的Data Infrastructure Insights環境。
+. 導覽至工作負載安全*收集器*並點選*代理*標籤。
+. 點選 *+Agent* 並指定 RHEL 作為目標平台。
+. 複製代理安裝指令。
+. 將代理安裝指令貼到您登入的 RHEL EC2 執行個體中。這將安裝 Workload Security 代理，提供所有link:concept_cs_agent_requirements.html["代理先決條件"]均已滿足。
 
 
+有關詳細步驟，請參閱此連結： https://docs.netapp.com/us-en/cloudinsights/task_cs_add_agent.html#steps-to-install-agent
 
-== 疑難排解
 
-下表說明已知問題及其解決方法。
+
+== 故障排除
+
+下表描述了已知問題及其解決方法。
 
 |===
 
 
-| 問題 | 解決方案 
+| 問題 | 解決 
 
 
-| Data Collector會顯示「工作負載安全性：無法判斷ONTAP Amazon FxSN資料收集器的支援類型」錯誤。客戶無法將新的Amazon FSxN資料收集器新增至工作負載安全性。從代理程式連接埠443連線至FSxN叢集的連線逾時。防火牆和AWS安全性群組已啟用必要的規則、以允許通訊。代理程式已經部署、而且也位於相同的AWS帳戶中。此相同的代理程式可用來連接及監控其餘的NetApp裝置（且所有裝置均正常運作）。 | 將fsxadmin LIF網路區段新增至代理程式的安全性規則、即可解決此問題。如果您不確定連接埠、則允許所有連接埠。 
+| 資料收集器顯示「工作負載安全：無法確定 Amazon FxSN 資料收集器的ONTAP類型」錯誤。客戶無法將新的 Amazon FSxN 資料收集器新增至 Workload Security 中。從代理程式到連接埠 443 上的 FSxN 叢集的連線逾時。防火牆和 AWS 安全群組已啟用所需規則以允許通訊。代理程式已部署並且也位於同一個 AWS 帳戶中。同一代理用於連接和監控其餘的NetApp設備（並且所有設備都在運行）。 | 透過將 fsxadmin LIF 網路段新增至代理程式的安全規則來解決此問題。如果您不確定端口，請允許所有端口。 
 |===

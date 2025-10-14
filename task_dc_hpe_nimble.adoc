@@ -2,97 +2,97 @@
 sidebar: sidebar 
 permalink: task_dc_hpe_nimble.html 
 keywords: data collector, HP Nimble, HP, HPE, Alletra 6000 
-summary: 設定HP Enterprise Alletra 6000（前身為Nimble）資料收集器。 
+summary: 配置 HP Enterprise Alletra 6000（以前稱為 Nimble）資料收集器。 
 ---
-= HPE Alletra 6000資料收集器
+= HPE Alletra 6000 資料收集器
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-HP Enterprise Alletra 6000（先前稱為Nimble）資料收集器可支援Alletra 6000儲存陣列的庫存與效能資料。
+HP Enterprise Alletra 6000（以前稱為 Nimble）資料收集器支援 Alletra 6000 儲存陣列的庫存和效能資料。
 
 
 
 == 術語
 
-Data Infrastructure Insights 會從這個收集器取得下列庫存資訊。對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights從此收集器獲取以下庫存資訊。對於Data Infrastructure Insights取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | Data Infrastructure Insights 術語 
+| 供應商/型號術語 | Data Infrastructure Insights術語 
 
 
-| 陣列 | 儲存設備 
+| 大批 | 儲存 
 
 
 | 磁碟 | 磁碟 
 
 
-| Volume | Volume 
+| 體積 | 體積 
 
 
-| 資源池 | 儲存資源池 
+| 水池 | 儲存池 
 
 
-| 啟動器 | 儲存主機別名 
+| 發起者 | 儲存主機別名 
 
 
 | 控制器 | 儲存節點 
 
 
-| Fibre Channel介面 | 控制器 
+| 光纖通道介面 | 控制器 
 |===
-附註：這些只是通用的術語對應、可能不代表此資料收集器的每個案例。
+注意：這些只是常見的術語映射，可能並不代表此資料收集器的所有情況。
 
 
 
-== 需求
+== 要求
 
-您必須具備下列條件、才能從儲存陣列收集庫存和組態資料：
+您必須具備以下條件才能從儲存陣列收集庫存和設定資料：
 
-* 陣列必須經過安裝和設定、並可從用戶端透過完整網域名稱（FQDN）或陣列管理IP位址進行存取。
-* 陣列必須執行NimibleOS 2.3.x或更新版本。
-* 您必須擁有陣列的有效使用者名稱和密碼、且該陣列必須具備至少「營運者」層級的角色。「來賓」角色沒有足夠的存取權限來瞭解啟動器組態。
-* 陣列上的連接埠5392必須開啟。
-
-
-您必須具備下列條件、才能從儲存陣列收集效能資料：
-
-* 陣列必須執行NimibleOS 4.0.0或更新版本
-* 陣列必須設定磁碟區。唯一的效能 API NimblibleOS 是針對 Volume 、而任何統計資料基礎架構洞見報告都是從 Volume 的統計資料中衍生而來
+* 必須安裝並配置陣列，並且可以透過其完全限定網域名稱 (FQDN) 或陣列管理 IP 位址從用戶端存取。
+* 陣列必須運行 NimbleOS 2.3.x 或更高版本。
+* 您必須擁有有效的使用者名稱和密碼才能進入陣列並至少具有“操作員”等級的角色。  「來賓」角色沒有足夠的存取權限來了解啟動器配置。
+* 陣列上必須開啟連接埠 5392。
 
 
+為了從儲存陣列收集效能數據，您必須具備以下條件：
+
+* 陣列必須運行 NimbleOS 4.0.0 或更高版本
+* 陣列必須配置磁碟區。  NimbleOS 唯一的性能 API 是針對卷的，並且任何統計Data Infrastructure Insights報告都來自卷的統計數據
 
 
-== 組態
+
+
+== 配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| 陣列管理IP位址 | 完整網域名稱（FQDN）或陣列管理IP位址。 
+| 陣列管理 IP 位址 | 完全限定網域名稱 (FQDN) 或陣列管理 IP 位址。 
 
 
 | 使用者名稱 | 陣列的使用者名稱 
 
 
-| 密碼 | 陣列密碼 
+| 密碼 | 陣列的密碼 
 |===
 
 
-== 進階組態
+== 進階配置
 
 |===
 
 
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| 連接埠 | Nimble REST API所使用的連接埠。預設值為 5392 。 
+| 港口 | Nimble REST API 使用的連接埠。預設值為 5392。 
 
 
-| 庫存輪詢時間間隔（分鐘） | 庫存輪詢之間的時間間隔。預設值為 60 分鐘。 
+| 庫存輪詢間隔（分鐘） | 庫存調查之間的間隔。預設值為 60 分鐘。 
 |===
-附註：預設的效能輪詢時間間隔為300秒、無法變更。這是HPE Alletra 6000唯一支援的時間間隔。
+注意：預設效能輪詢間隔為 300 秒，無法變更。這是 HPE Alletra 6000 支援的唯一間隔。

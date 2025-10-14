@@ -1,58 +1,58 @@
 ---
 sidebar: sidebar 
 permalink: reporting_overview.html 
-summary: 利用 Data Infrastructure Insights 預先定義及自訂資料報告。 
+summary: 使用Data Infrastructure Insights對您的數據進行預先定義和自訂報告。 
 keywords: reporting, cognos, data warehouse, dwh 
 ---
-= 資料基礎架構洞見報告總覽
+= Data Infrastructure Insights報告概述
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-Data Infrastructure Insights 報告是一種商業智慧工具、可讓您檢視預先定義的報告或建立自訂報告。
+Data Infrastructure Insights報告是一種商業智慧工具，可讓您查看預先定義的報告或建立自訂報告。
 
 
-NOTE: 報告功能可在 Data Infrastructure Insights link:concept_subscribing_to_cloud_insights.html["Premium Edition"]中找到。報告功能的可用性取決於最低佔用空間要求。link:https://www.netapp.com/forms/cloud-insights-contact-us/["聯絡您的 NetApp 銷售代表"]了解更多。
+NOTE: 報告功能可在Data Infrastructure Insights中使用link:concept_subscribing_to_cloud_insights.html["高級版"]。報告功能的可用性取決於最低佔用空間要求。link:https://www.netapp.com/forms/cloud-insights-contact-us/["聯絡您的NetApp銷售代表"]了解更多。
 
-透過 Data Infrastructure Insights 報告、您可以執行下列工作：
+透過Data Infrastructure Insights報告，您可以執行以下任務：
 
-* 執行預先定義的報告
+* 運行預定義報告
 * 建立自訂報告
-* 自訂報告的格式和交付方法
-* 排程報告以自動執行
+* 自訂報告的格式和交付方式
+* 安排報告自動運行
 * 電子郵件報告
-* 使用色彩來表示資料的臨界值
+* 使用顏色表示資料閾值
 
 
-Data Infrastructure Insights Reporting 可針對計費、消費分析和預測等領域產生自訂報告、並可協助回答下列問題：
+Data Infrastructure Insights報告可以為退款、消費分析和預測等領域產生自訂報告，並可協助回答以下問題：
 
-* 我有什麼庫存？
+* 我有哪些庫存？
 * 我的庫存在哪裡？
 * 誰在使用我們的資產？
-* 分配給業務單位的儲存設備的計費方式為何？
-* 需要多長時間才能取得額外的儲存容量？
-* 業務單位是否與適當的儲存層一致？
-* 儲存設備配置如何在一個月、一季或一年內改變？
+* 為業務部門分配的儲存空間的退款是多少？
+* 我多久之後才需要獲得額外的儲存容量？
+* 業務部門是否依照適當的儲存層進行排列？
+* 儲存分配在一個月、一個季度或一年內如何變化？
 
 
 
 
-== 存取 Data Infrastructure Insights 報告
+== 存取Data Infrastructure Insights報告
 
-您可以按一下功能表中的 * 報告 * 連結來存取 Data Infrastructure Insights Reporting 。
+您可以透過點擊選單中的「報告」連結來存取Data Infrastructure Insights報告。
 
-您將會進入報告介面。Data Infrastructure Insights 使用 IBM Cognos Analytics 來提供報告引擎。
+您將進入報告介面。  Data Infrastructure Insights使用 IBM Cognos Analytics 作為其報表引擎。
 
 
 
-== 什麼是ETL？
+== 什麼是 ETL？
 
-使用「報告」時、您會聽到「資料倉儲」和「ETL」等詞彙。ETL代表「擷取、轉換及載入」。ETL 程序會擷取在 Data Infrastructure Insights 中收集的資料、並將資料轉換成用於報告的格式。「資料倉儲」是指可用於報告的收集資料。
+在處理報表時，您會聽到術語「資料倉儲」和「ETL」。  ETL 代表「提取、轉換和載入」。  ETL 流程會擷取Data Infrastructure Insights中收集的數據，並將資料轉換為可用於報告的格式。  「資料倉儲」指可用於報表的收集資料。
 
-ETL程序包括下列個別程序：
+ETL 過程包括以下單獨的過程：
 
-* * 擷取 * ：從 Data Infrastructure Insights 取得資料。
-* * 轉換 * ：從 Data Infrastructure Insights 擷取資料時、將商業邏輯規則或功能套用至資料。
-* *負載*：將轉換後的資料儲存至資料倉儲、以供報告使用。
+* *擷取*：從Data Infrastructure Insights取得資料。
+* *轉換*：將業務邏輯規則或功能應用於從Data Infrastructure Insights中提取的資料。
+* *載入*：將轉換後的資料儲存到資料倉儲以供報表使用。
 

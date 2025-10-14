@@ -1,40 +1,40 @@
 ---
 sidebar: sidebar 
 permalink: index.html 
-summary: 歡迎使用 Data Infrastructure Insights 文件入口網站。 
+summary: 歡迎來到Data Infrastructure Insights文件入口網站。 
 keywords:  
 ---
-= Data Infrastructure Insights 文件
+= Data Infrastructure Insights文檔
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-NetApp 資料基礎架構洞見（前身為 Cloud Insights ）是一種雲端基礎架構監控工具、可讓您清楚掌握完整的基礎架構。透過 Data Infrastructure Insights 、您可以監控、疑難排解及最佳化所有資源、包括公有雲和私有資料中心。
+NetApp Data Infrastructure Insights （以前稱為Cloud Insights）是一種雲端基礎架構監控工具，可讓您了解整個基礎架構。透過Data Infrastructure Insights，您可以監控、排除故障並優化所有資源，包括公有雲和私有資料中心。
 
 
 
-== Data Infrastructure Insights 對我有何幫助？
+== Data Infrastructure Insights能為我做些什麼？
 
-Data Infrastructure Insights 提供混合式多雲端監控功能、讓您能夠完整觀察基礎架構和工作負載。
+Data Infrastructure Insights提供混合多雲監控，讓您可以全端觀察基礎架構和工作負載。
 
-* 適用於異質基礎架構和工作負載的資料收集器、包括Kubernetes
-* 開放式Telegraf收集器和開放式API、可輕鬆整合
-* 全方位警示與通知
-* 機器學習、提供智慧型洞見
-* 最佳化資源使用率
-* 內建或可自訂的儀表板搭配進階篩選功能、可將回答問題的顯示雜訊降至最低
-* 探索ONTAP 您的不一樣儲存作業的健全狀況 
-* 保護您最寶貴的商業資產（資料）、防範勒索軟體或資料毀損攻擊
+* 異質基礎設施和工作負載的資料收集器，包括 Kubernetes
+* 開放 Telegraf 收集器和開放 API，方便集成
+* 全面的警報和通知
+* 機器學習帶來智慧洞察
+* 優化資源利用率
+* 內建或可自訂的儀表板，配有高級過濾器，可最大限度地減少顯示噪音，從而回答問題
+* 了解ONTAP儲存作業的健康狀況 
+* 保護您最寶貴的商業資產——數據——免受勒索軟體或資料破壞攻擊
 
 
 '''
 
 
-== 快速入門
+== 入門
 
-* 如何link:task_cloud_insights_onboarding_1.html["*入門*"]運用 Data Infrastructure Insights ？
-* 我已註冊。現在該怎麼辦？link:task_getting_started_with_cloud_insights.html["取得資料"] link:concept_user_roles.html["設定使用者"]
-* 太棒了！接下來呢？link:task_defining_annotations.html["準備資產：註釋"] link:concept_querying_assets.html["尋找您想要的資產：查詢"] link:concept_dashboards_overview.html["查看您想要的資料：儀表板"] link:task_create_monitor.html["監控與警示"] link:task_cs_getting_started.html["保護資料安全"]
-* 這是一件很棒的事！我準備好了link:concept_subscribing_to_cloud_insights.html["*訂閱*"]。
+* 我該如何link:task_cloud_insights_onboarding_1.html["*開始*"]具有Data Infrastructure Insights？
+* 我已經報名了。現在我該怎麼辦？link:task_getting_started_with_cloud_insights.html["取得數據"] link:concept_user_roles.html["設定用戶"]
+* 驚人的！下一步是什麼？link:task_defining_annotations.html["準備資產：註釋"] link:concept_querying_assets.html["尋找所需資產：查詢"] link:concept_dashboards_overview.html["查看您想要的數據：儀表板"] link:task_create_monitor.html["監控和警報"] link:task_cs_getting_started.html["保護資料"]
+* 這是很棒的東西！我準備好了link:concept_subscribing_to_cloud_insights.html["*訂閱*"]。
 

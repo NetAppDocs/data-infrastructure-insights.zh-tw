@@ -2,52 +2,52 @@
 sidebar: sidebar 
 permalink: task_config_telegraf_hadoop.html 
 keywords: telegraf, installation, install, Hadoop 
-summary: Hadoop資料收集器組態 
+summary: Hadoop資料收集器配置 
 ---
-= Hadoop Data Collector
+= Hadoop資料收集器
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-Data Infrastructure Insights 使用此資料收集器從 Hadoop 收集指標。
+Data Infrastructure Insights使用此資料收集器從 Hadoop 收集指標。
 
 
 
 == 安裝
 
-. 從 * 可伺服 > 收集器 * 、按一下 * + 資料收集器 * 。選擇 Hadoop 。
+. 從*可觀察性 > 收集器*中，按一下*+資料收集器*。選擇 Hadoop。
 +
-選取安裝Telegraf代理程式的作業系統或平台。
+選擇安裝 Telegraf 代理程式的作業系統或平台。
 
-. 如果您尚未安裝 Agent 進行收集，或想要為不同的作業系統或平台安裝 Agent ，請按一下 _ 顯示指示 _ 以展開指示link:task_config_telegraf_agent.html["代理程式安裝"]。
-. 選取要搭配此資料收集器使用的代理程式存取金鑰。您可以按一下「*+代理程式存取金鑰*」按鈕來新增代理存取金鑰。最佳實務做法：只有當您想要將資料收集器分組時、才使用不同的代理程式存取金鑰、例如依作業系統/平台。
-. 請依照組態步驟設定資料收集器。這些指示會因您用來收集資料的作業系統或平台類型而有所不同。
+. 如果您尚未安裝用於收集的代理，或者您希望為不同的作業系統或平台安裝代理，請按一下「顯示說明」以展開link:task_config_telegraf_agent.html["代理安裝"]指示。
+. 選擇用於此資料收集器的代理存取金鑰。您可以透過點擊 *+ 代理存取金鑰* 按鈕新增新的代理存取金鑰。最佳實務：只有當您想要對資料收集器進行分組（例如按作業系統/平台）時才使用不同的代理存取金鑰。
+. 依照設定步驟配置資料收集器。說明根據您用於收集資料的作業系統或平台的類型而有所不同。
 
 
-image:HadoopDCConfigLinux-1.png["Hadoop組態"] image:HadoopDCConfigLinux-2.png["Hadoop組態"]
+image:HadoopDCConfigLinux-1.png["Hadoop配置"] image:HadoopDCConfigLinux-2.png["Hadoop配置"]
 
 
 
 == 設定
 
-完整的Hadoop部署包含下列元件：
+完整的 Hadoop 部署涉及以下元件：
 
-* NameNode：Hadoop分散式檔案系統（HDFS）主要系統。協調一系列DataNode。
-* 次要NameNode：主NameNode的暖容錯移轉。在Hadoop中、不會自動升級至NameNode。次要NameNode會從NameNode收集資訊、以便在需要時隨時升級。
-* DataNode：資料的實際擁有者。
-* 資源管理器：運算主系統（Yarn）。協調一系列的NodeManager。
-* NodeManager：運算資源。執行應用程式的實際位置。
-* JobhistoryServer：負責服務所有工作歷程記錄相關要求。
+* NameNode：Hadoop 分散式檔案系統 (HDFS) 主系統。協調一系列 DataNode。
+* 輔助 NameNode：主 NameNode 的溫故障轉移。在 Hadoop 中，向 NameNode 的提升不會自動發生。輔助 NameNode 收集來自 NameNode 的訊息，以便在需要時進行提升。
+* DataNode：資料的實際所有者。
+* ResourceManager：計算主系統（Yarn）。協調一系列 NodeManager。
+* NodeManager：用於計算的資源。應用程式運行的實際位置。
+* JobHistoryServer：負責服務所有與作業歷史相關的請求。
 
 
-Hadoop外掛程式是以Telewraf的Jolokia外掛程式為基礎。例如、需要從所有Hadoop元件收集資訊、需要在所有元件上透過Jolokia設定和公開的JMX。
+Hadoop插件基於telegraf的Jolokia插件。由於需要從所有 Hadoop 元件收集信息，因此需要在所有元件上配置並透過 Jolokia 公開 JMX。
 
 
 
 === 相容性
 
-組態是根據Hadoop 2.2.9版開發而成。
+配置是針對 Hadoop 版本 2.9.2 開發的。
 
 
 
@@ -55,17 +55,17 @@ Hadoop外掛程式是以Telewraf的Jolokia外掛程式為基礎。例如、需�
 
 
 
-==== Jolokia代理程式Jar
+==== 鬼椒特效罐
 
-對於所有個別元件、必須下載Jolokia代理程式Jar檔案的版本。測試的版本是link:https://jolokia.org/download.html["約洛基亞代理商1.6.0"]。
+對於所有單一元件，必須下載 Jolokia 代理程式 jar 檔案的版本。測試的版本是link:https://jolokia.org/download.html["Jolokia代理 1.6.0"]。
 
-以下說明假設下載的Jar檔案（jolokia -jvm-1.6.0-agent.jar）位於「/op/Hadoop /lib/」位置。
+以下說明假設下載的 jar 檔案（jolokia-jvm-1.6.0-agent.jar）位於「/opt/hadoop/lib/」位置下。
 
 
 
-==== NameNode
+==== 名稱節點
 
-若要設定NameNode以公開Jolokia API、您可以在<Hadoop主頁>/etc/Hadoop / Hadoop -env.sh中設定下列項目：
+若要設定 NameNode 以公開 Jolokia API，您可以在 <HADOOP_HOME>/etc/hadoop/hadoop-env.sh 中設定以下內容：
 
 [listing]
 ----
@@ -74,9 +74,9 @@ You can choose a different port for JMX (8000 above) and Jolokia (7800). If you 
 ----
 
 
-==== 次要NameNode
+==== 輔助 NameNode
 
-若要將次要NameNode設定為公開Jolokia API、您可以在<Hadoop主目錄>/etc/Hadoop / Hadoop -env.sh中設定下列項目：
+若要設定輔助 NameNode 以公開 Jolokia API，您可以在 <HADOOP_HOME>/etc/hadoop/hadoop-env.sh 中設定以下內容：
 
 [listing]
 ----
@@ -85,9 +85,9 @@ You can choose a different port for JMX (8002 above) and Jolokia (7802). If you 
 ----
 
 
-==== DataNode
+==== 資料節點
 
-若要將DataNode設定為公開Jolokia API、您可以在<Hadoop主頁>/etc/Hadoop / Hadoop -env.sh中設定下列項目：
+若要設定 DataNode 以公開 Jolokia API，您可以在 <HADOOP_HOME>/etc/hadoop/hadoop-env.sh 中設定以下內容：
 
 [listing]
 ----
@@ -96,9 +96,9 @@ You can choose a different port for JMX (8001 above) and Jolokia (7801). If you 
 ----
 
 
-==== 資源管理程式
+==== 資源管理器
 
-若要設定資源管理程式以公開Jolokia API、您可以在<Hadoop主頁>/etc/Hadoop / Hadoop -env.sh中設定下列項目：
+若要設定 ResourceManager 以公開 Jolokia API，您可以在 <HADOOP_HOME>/etc/hadoop/hadoop-env.sh 中設定以下內容：
 
 [listing]
 ----
@@ -107,9 +107,9 @@ You can choose a different port for JMX (8003 above) and Jolokia (7803). If you 
 ----
 
 
-==== NodeManager
+==== 節點管理器
 
-若要設定NodeManager以公開Jolokia API、您可以在<Hadoop主頁>/etc/Hadoop / Hadoop -env.sh中設定下列項目：
+若要設定 NodeManagers 以公開 Jolokia API，您可以在 <HADOOP_HOME>/etc/hadoop/hadoop-env.sh 中設定以下內容：
 
 [listing]
 ----
@@ -120,7 +120,7 @@ You can choose a different port for JMX (8004 above) and Jolokia (7804). If you 
 
 ==== 作業歷史伺服器
 
-若要將JobHistoryServer設定為公開Jolokia API、您可以在<Hadoop主頁>/etc/Hadoop / Hadoop -env.sh中設定下列項目：
+若要設定 JobHistoryServer 以公開 Jolokia API，您可以在 <HADOOP_HOME>/etc/hadoop/hadoop-env.sh 中設定以下內容：
 
 [listing]
 ----
@@ -129,34 +129,34 @@ You can choose a different port for JMX (8005 above) and Jolokia (7805). If you 
 ----
 
 
-== 物件與計數器
+== 物體和計數器
 
-收集下列物件及其計數器：
+收集以下物件及其計數器：
 
 [cols="<.<,<.<,<.<"]
 |===
-| 物件： | 識別碼： | 屬性： 
+| 目的： | 標識符： | 屬性： 
 
 
-| Hadoop次要NameNode | 叢集命名空間伺服器 | 節點名稱節點IP編譯資訊版本 
+| Hadoop 輔助 NameNode | 叢集命名空間伺服器 | 節點名稱 節點IP 編譯資訊 版本 
 
 
-| Hadoop NodeManager | 叢集命名空間伺服器 | 節點名稱節點IP 
+| Hadoop 節點管理器 | 叢集命名空間伺服器 | 節點名稱 節點IP 
 
 
-| Hadoop資源管理程式 | 叢集命名空間伺服器 | 節點名稱節點IP 
+| Hadoop資源管理器 | 叢集命名空間伺服器 | 節點名稱 節點IP 
 
 
-| Hadoop DataNode | 叢集命名空間伺服器 | 節點名稱節點IP叢集ID版本 
+| Hadoop 資料節點 | 叢集命名空間伺服器 | 節點名稱 節點 IP 叢集 ID 版本 
 
 
-| Hadoop NameNode | 叢集命名空間伺服器 | 節點名稱節點IP交易ID上次載入後的寫入時間HA狀態檔案系統狀態區塊集區ID叢集ID編譯資訊不同版本計數版本 
+| Hadoop 名稱節點 | 叢集命名空間伺服器 | 節點名稱節點 IP 事務 ID 上次寫入時間自上次載入編輯 HA 狀態檔案系統狀態區塊池 ID 叢集 ID 編譯資訊不同版本計數版本 
 
 
-| Hadoop作業歷史伺服器 | 叢集命名空間伺服器 | 節點名稱節點IP 
+| Hadoop 作業歷史伺服器 | 叢集命名空間伺服器 | 節點名稱 節點IP 
 |===
 
 
-== 疑難排解
+== 故障排除
 
-您可以在頁面中找到其他資訊link:concept_requesting_support.html["支援"]。
+更多資訊可從link:concept_requesting_support.html["支援"]頁。

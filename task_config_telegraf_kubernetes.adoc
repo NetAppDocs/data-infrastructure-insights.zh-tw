@@ -4,7 +4,7 @@ permalink: task_config_telegraf_kubernetes.html
 keywords: telegraf 
 summary: Kubernetes 的資料收集器 
 ---
-= 資料收集器： Kubernetes
+= 資料收集器：Kubernetes
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,33 +14,33 @@ summary: Kubernetes 的資料收集器
 
 
 [role="lead"]
-Data Infrastructure Insights 使用此資料收集器來收集 Kubernetes Pod 、節點和 Container 指標。
+Data Infrastructure Insights使用此資料收集器來收集 Kubernetes Pod、節點和容器指標。
 
 
 
 == 安裝
 
-如需 Kubernetes 安裝說明，請參閱link:task_config_telegraf_agent_k8s.html["Kubernetes 監控營運者"]頁面。
+有關 Kubernetes 安裝說明，請參閱link:task_config_telegraf_agent_k8s.html["Kubernetes 監控操作員"]頁。
 
 
 
-== 關於Kube-state指標
+== 關於 Kube-state-metrics
 
-Kubernetes Monitoring Operator 會自動安裝 kube-state 度量、不需要使用者互動。
+Kubernetes Monitoring Operator 自動安裝 kube-state-metrics；無需使用者互動。
 
 
 
-=== Kube-state 度量計數器
+=== Kube-state-metrics 計數器
 
-NetApp Kubernetes 監控營運者會擷取下列 kube-state 度量計數器。有關每個計數器的詳細信息，請訪問 https://github.com/kubernetes/kube-state-metrics/tree/main/docs#exposed-metrics[]：。
+NetApp Kubernetes Monitoring Operator 擷取下面列出的 kube-state-metrics 計數器。有關每個櫃檯的更多詳細信息，請訪問： https://github.com/kubernetes/kube-state-metrics/tree/main/docs#exposed-metrics[] 。
 
-. 示範設定指標
+. DaemonSet 指標
 . 部署指標
-. 命名空間度量
-. 節點度量
-. 持續Volume指標
-. 持續 Volume Claim Metrics
-. Pod指標
+. 命名空間指標
+. 節點指標
+. 持久卷指標
+. 持久卷聲明指標
+. Pod 指標
 . ReplicaSet 指標
 . 服務指標
 . StatefulSet 指標

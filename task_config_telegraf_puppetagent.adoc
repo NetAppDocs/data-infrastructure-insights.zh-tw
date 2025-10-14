@@ -2,54 +2,54 @@
 sidebar: sidebar 
 permalink: task_config_telegraf_puppetagent.html 
 keywords: telegraf, installation, install, Puppet 
-summary: Puppet資料收集器組態 
+summary: Puppet 資料收集器配置 
 ---
-= Puppet Agent資料收集器
+= Puppet代理程式資料收集器
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-Data Infrastructure Insights 使用此資料收集器從 Puppet Agent 收集指標。
+Data Infrastructure Insights使用此資料收集器從 Puppet Agent 收集指標。
 
 
 
 == 安裝
 
-. 從 * 可伺服 > 收集器 * 、按一下 * + 資料收集器 * 。選擇 Puppet 。
+. 從*可觀察性 > 收集器*中，按一下*+資料收集器*。選擇 Puppet。
 +
-選取安裝Telegraf代理程式的作業系統或平台。
+選擇安裝 Telegraf 代理程式的作業系統或平台。
 
-. 如果您尚未安裝 Agent 進行收集，或想要為不同的作業系統或平台安裝 Agent ，請按一下 _ 顯示指示 _ 以展開指示link:task_config_telegraf_agent.html["代理程式安裝"]。
-. 選取要搭配此資料收集器使用的代理程式存取金鑰。您可以按一下「*+代理程式存取金鑰*」按鈕來新增代理存取金鑰。最佳實務做法：只有當您想要將資料收集器分組時、才使用不同的代理程式存取金鑰、例如依作業系統/平台。
-. 請依照組態步驟設定資料收集器。這些指示會因您用來收集資料的作業系統或平台類型而有所不同。
+. 如果您尚未安裝用於收集的代理，或者您希望為不同的作業系統或平台安裝代理，請按一下「顯示說明」以展開link:task_config_telegraf_agent.html["代理安裝"]指示。
+. 選擇用於此資料收集器的代理存取金鑰。您可以透過點擊 *+ 代理存取金鑰* 按鈕新增新的代理存取金鑰。最佳實務：只有當您想要對資料收集器進行分組（例如按作業系統/平台）時才使用不同的代理存取金鑰。
+. 依照設定步驟配置資料收集器。說明根據您用於收集資料的作業系統或平台的類型而有所不同。
 
 
-image:PuppetDCConfigWindows.png["Puppet組態"]
+image:PuppetDCConfigWindows.png["Puppet 配置"]
 
 
 
 == 設定
 
-如需詳細資訊，請參閱 https://puppet.com/docs["Puppet文件"]
+資訊可以在 https://puppet.com/docs["Puppet 文檔"]
 
 
 
-== 物件與計數器
+== 物體和計數器
 
-收集下列物件及其計數器：
+收集以下物件及其計數器：
 
 [cols="<.<,<.<,<.<,<.<"]
 |===
 
 
-| 物件： | 識別碼： | 屬性： | 資料點： 
+| 目的： | 標識符： | 屬性： | 數據點： 
 
 
-| Puppet代理程式 | 命名空間節點UUID | 節點名稱位置節點IP版本組態字串版本Puppet | 變更事件總數失敗事件成功事件總計資源變更資源失敗資源重新啟動資源結束同步資源重新啟動資源已排程資源跳過資源總計時間固定時間配置擷取時間實時執行時間檔案時間檔案儲存區時間暫停時間套件時間排程時間服務時間沙努索密鑰時間總計 時間使用者 
+| 傀儡代理 | 命名空間節點 UUID | 節點名稱 位置 節點 IP 版本 設定字串版本 Puppet | 變更總數 事件數 失敗事件數 成功事件數 總資源數 已變更資源數 失敗資源數 重新啟動失敗資源數 不同步資源數 重新啟動資源數 已排程資源數 跳過資源數 總時間 錨點時間 設定檢索時間 Cron 時間 執行時間 時間資料桶時間 時間執行時間 包時間 排程時間 服務時間 Suthorizo​​rizedized 的時間資料庫時間 
 |===
 
 
-== 疑難排解
+== 故障排除
 
-您可以在頁面中找到其他資訊link:concept_requesting_support.html["支援"]。
+更多資訊可從link:concept_requesting_support.html["支援"]頁。

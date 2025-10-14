@@ -2,78 +2,78 @@
 sidebar: sidebar 
 permalink: task_dc_ms_azure.html 
 keywords: data collector, azure, 
-summary: 設定Azure運算資料收集器。 
+summary: 配置 Azure 計算資料收集器。 
 ---
-= 設定Azure運算資料收集器
+= 配置 Azure 計算資料收集器
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-Data Infrastructure Insights 使用 Azure 運算資料收集器從 Azure 運算執行個體取得庫存和效能資料。
+Data Infrastructure Insights使用 Azure 運算資料收集器從 Azure 運算實例取得庫存和效能資料。
 
 
 
-== 需求
+== 要求
 
-您需要下列資訊來設定此資料收集器。
+您需要以下資訊來設定此資料收集器。
 
 * 連接埠需求：443 HTTPS
-* Azure Oauth 2.0重新導向URI（login.microsoftonline.com）
-* Azure管理REST IP（management.azure.com）
-* Azure Resource Manager IP（management.core.windows.net）
-* Azure服務主要應用程式（用戶端）ID（需具備讀取器角色）
-* Azure服務主要驗證金鑰（使用者密碼）
-* 您必須設定 Azure 帳戶、才能進行 Data Infrastructure Insights 探索。
+* Azure OAuth 2.0 重定向 URI (login.microsoftonline.com)
+* Azure 管理 Rest IP (management.azure.com)
+* Azure 資源管理器 IP (management.core.windows.net)
+* Azure 服務主體應用程式（客戶端）ID（需要讀者角色）
+* Azure 服務主體驗證金鑰（使用者密碼）
+* 您需要設定一個 Azure 帳戶來發現Data Infrastructure Insights。
 +
-一旦帳戶設定正確、且您在 Azure 中註冊應用程式、您就會擁有使用 Data Infrastructure Insights 探索 Azure 執行個體所需的認證。下列連結說明如何設定帳戶以進行探索。https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal[]
+一旦正確配置了帳戶並在 Azure 中註冊了應用程序，您將擁有使用Data Infrastructure Insights發現 Azure 執行個體所需的憑證。以下連結說明如何設定發現帳戶。https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal[]
 
 
 
 
 
-== 組態
+== 配置
 
-根據下表、將資料輸入資料收集器欄位：
-
-[cols="2*"]
-|===
-| 欄位 | 說明 
-
-
-| Azure服務主要應用程式（用戶端）ID（需具備讀取器角色） | Azure的登入ID。需要讀取器角色存取權。 
-
-
-| Azure租戶ID | Microsoft租戶ID 
-
-
-| Azure服務主要驗證金鑰 | 登入驗證金鑰 
-
-
-| 我瞭解Microsoft向我索取API要求 | 請勾選此選項、確認您瞭解Microsoft會針對Insight Polling所提出的API要求向您提出帳單。 
-|===
-
-
-== 進階組態
+根據下表將資料輸入資料收集器欄位：
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| 庫存輪詢時間間隔（分鐘） | 預設值為 60 
+| Azure 服務主體應用程式（客戶端）ID（需要讀者角色） | Azure 的登入 ID。需要讀者角色存取權限。 
 
 
-| 選擇「排除」或「包含」以套用至依標記篩選虛擬機器 | 指定在收集資料時、是否要加入或排除VM的by Tags。如果選取「Include」（包含）、則「Tag Key」（標記金鑰）欄位不可為空白。 
+| Azure 租用戶 ID | Microsoft 租用戶 ID 
 
 
-| 標記要篩選虛擬機器的金鑰和值 | 按一下「*+ Filter Tag*（*+篩選標籤*）」、選擇要納入/排除的VM（及相關磁碟）、方法是篩選符合VM上標籤的機碼和值。標記金鑰為必填、標記值為選用項目。當標記值為空白時、只要VM符合標記金鑰、就會進行篩選。 
+| Azure 服務主體驗證金鑰 | 登入認證金鑰 
 
 
-| 效能意見調查時間間隔（秒） | 預設值為 300 
+| 我了解 Microsoft 會向我收取 API 請求費用 | 勾選此項目以驗證您是否瞭解 Microsoft 會針對 Insight 輪詢發出的 API 請求向您收費。 
 |===
 
 
-== 疑難排解
+== 進階配置
 
-有關此資料收集器的其他資訊，請link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]參閱頁面或。
+[cols="2*"]
+|===
+| 場地 | 描述 
+
+
+| 庫存輪詢間隔（分鐘） | 預設值為 60 
+
+
+| 選擇“排除”或“包含”以按標籤過濾虛擬機 | 指定收集資料時是否透過標籤包含或排除虛擬機器。如果選擇‘包含’，則標籤鍵欄位不能為空。 
+
+
+| 用於篩選虛擬機器的標籤鍵和值 | 按一下“*+ 過濾標籤*”，透過過濾與虛擬機器上的標籤的鍵和值相符的鍵和值來選擇要包含/排除的虛擬機器（和相關磁碟）。標籤鍵是必填項，標籤值是可選的。當Tag Value為空時，只要與Tag Key匹配，則過濾該VM。 
+
+
+| 效能輪詢間隔（秒） | 預設值為 300 
+|===
+
+
+== 故障排除
+
+關於此數據收集器的更多信息，請參閱link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。

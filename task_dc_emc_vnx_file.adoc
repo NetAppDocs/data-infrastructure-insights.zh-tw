@@ -2,100 +2,100 @@
 sidebar: sidebar 
 permalink: task_dc_emc_vnx_file.html 
 keywords: data collector, Celerra, EMC, DELL, VNX File 
-summary: 設定Dell EMC Celerra資料收集器。 
+summary: 配置 DELL EMC Celerra 資料收集器。 
 ---
-= Dell EMC VNX檔案（前身為Celerra統一化儲存系統）資料收集器
+= DELL EMC VNX File（以前稱為 Celerra 統一儲存系統）資料收集器
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-此資料收集器會從VNX檔案儲存系統取得庫存資訊。對於組態、此資料收集器需要儲存處理器的IP位址、以及唯讀使用者名稱和密碼。
+此資料收集器從 VNX 檔案儲存系統取得庫存資訊。為了進行配置，此資料收集器需要儲存處理器的 IP 位址以及唯讀使用者名稱和密碼。
 
 
 
 == 術語
 
-Data Infrastructure Insights 會從 VNX 檔案資料收集器取得下列庫存資訊。對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights從 VNX 檔案資料收集器取得以下清單資訊。對於Data Infrastructure Insights取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | Data Infrastructure Insights 術語 
+| 供應商/型號術語 | Data Infrastructure Insights術語 
 
 
-| Celerra網路伺服器/ Celerra儲存資源池 | 儲存資源池 
+| Celerra 網路伺服器/Celerra 儲存池 | 儲存池 
 
 
-| 檔案系統 | 內部Volume 
+| 檔案系統 | 內部體積 
 
 
-| 資料移轉 | 控制器 
+| 資料移動器 | 控制器 
 
 
-| 掛載於資料移動工具上的檔案系統 | 檔案共用 
+| 數據移動器上安裝的檔案系統 | 文件共享 
 
 
-| CIFS與NFS匯出 | 分享 
+| CIFS 和 NFS 導出 | 分享 
 
 
-| 磁碟區 | 後端LUN 
+| 磁碟卷 | 後端 LUN 
 |===
-附註：這些只是通用的術語對應、可能不代表此資料收集器的每個案例。
+注意：這些只是常見的術語映射，可能並不代表此資料收集器的所有情況。
 
 
 
-== 需求
+== 要求
 
-您需要下列項目來設定此資料收集器：
+您需要以下內容來設定此資料收集器：
 
-* 儲存處理器的IP位址
-* 唯讀使用者名稱和密碼
-* SSH連接埠22.
-
-
+* 儲存處理器的 IP 位址
+* 只讀使用者名稱和密碼
+* SSH 連接埠 22
 
 
-== 組態
+
+
+== 配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| VNX檔案IP位址 | VNX檔案裝置的IP位址或完整網域名稱 
+| VNX 檔案 IP 位址 | VNX File 設備的 IP 位址或完全限定域名 
 
 
-| 使用者名稱 | 用於登入VNX檔案裝置的名稱 
+| 使用者名稱 | 用於登入 VNX File 設備的名稱 
 
 
-| 密碼 | 用於登入VNX檔案裝置的密碼 
+| 密碼 | 用於登入 VNX File 設備的密碼 
 |===
 
 
-== 進階組態
+== 進階配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| 庫存輪詢時間間隔（分鐘） | 庫存輪詢之間的時間間隔。預設值為 20 分鐘。 
+| 庫存輪詢間隔（分鐘） | 庫存調查之間的間隔。預設值為 20 分鐘。 
 |===
 
 
-== 疑難排解
+== 故障排除
 
-如果您在使用此資料收集器時遇到問題、請嘗試下列事項：
+如果您在使用此資料收集器時遇到問題，請嘗試以下操作：
 
 
 
-=== 庫存
+=== 存貨
 
 [cols="2*"]
 |===
-| 問題： | 試用： 
+| 問題： | 試試一下： 
 
 
-| 錯誤：DART更新進行中無法繼續 | 可能的解決方案：暫停資料收集器、等待DART升級完成、再嘗試另一個擷取要求。 
+| 錯誤：DART 更新正在進行中，無法繼續 | 可能的解決方案：暫停資料收集器並等待 DART 升級完成後再嘗試另一個採集請求。 
 |===
-您可以在頁面或中找到其他link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]資訊。
+更多資訊可從link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。

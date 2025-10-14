@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concept_cs_attack_simulator.html 
 keywords: ransomware, simulation, simulator, restrict, attack 
-summary: 您可以使用指令碼來模擬勒索軟體攻擊、以測試或展示工作負載安全性 
+summary: 使用腳本，您可以模擬勒索軟體攻擊來測試或演示工作負載安全性 
 ---
-= 工作負載安全性：模擬攻擊
+= 工作負載安全：模擬攻擊
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,27 +14,27 @@ summary: 您可以使用指令碼來模擬勒索軟體攻擊、以測試或展�
 
 
 [role="lead"]
-您可以使用本頁上的指示、模擬攻擊、以便使用隨附的勒索軟體模擬指令碼來測試或示範工作負載安全性。
+您可以按照此頁面上的說明，使用隨附的勒索軟體模擬腳本來模擬攻擊，以測試或演示工作負載安全性。
 
 
 
-== 開始之前要注意的事項
+== 開始前需要注意的事項
 
-* 勒索軟體模擬指令碼僅適用於Linux。如果使用者將 ONTAP ARP 與 Workload Security 集成，模擬腳本也應產生高置信度警報。
-* 只有當 ONTAP 版本為 9.15 或更高版本時，工作負載安全才會偵測使用 NFS 4.1 產生的事件和警報。
-* 此指令碼隨工作負載安全代理程式安裝檔案一起提供。它適用於任何已安裝工作負載安全性代理程式的機器。
-* 您可以在工作負載安全代理程式機器上執行指令碼、不需要準備其他Linux機器。不過、如果您偏好在其他系統上執行指令碼、只要複製指令碼並在該處執行即可。
+* 勒索軟體模擬腳本僅在 Linux 上運行。如果使用者將ONTAP ARP 與 Workload Security 集成，模擬腳本也應產生高置信度警報。
+* 只有當ONTAP版本為 9.15 或更高版本時，工作負載安全才會偵測使用 NFS 4.1 產生的事件和警報。
+* 此腳本隨工作負載安全代理安裝檔一起提供。它可以在安裝了工作負載安全代理程式的任何機器上使用。
+* 您可以在工作負載安全代理機器本身上執行該腳本；無需準備另一台 Linux 機器。但是，如果您希望在另一個系統上運行該腳本，只需複製該腳本並在那裡運行即可。
 * 使用者可以根據自己的喜好和系統需求選擇 Python 或 shell 腳本。
-* Python 腳本需要先安裝。如果您不想使用 Python，請使用 Shell 腳本。
+* Python 腳本具有先決條件安裝。如果不想使用python，就使用shell腳本。
 
 
 
 
 == 指南：
 
-此腳本應在包含大量待加密檔案（包括子資料夾中的檔案）的 SVM 上執行。理想情況下，加密檔案數量應為 100 個或更多。請確保文件不為空。
+該腳本應在包含大量需要加密的檔案（理想情況下為 100 個或更多，包括子資料夾中的檔案）的資料夾的 SVM 上執行。確保文件不為空。
 
-若要產生警報，請在建立測試資料之前暫時暫停收集器。產生範例檔案後，恢復收集器並啟動加密過程。
+若要產生警報，請在建立測試資料之前暫時暫停收集器。一旦產生範例文件，恢復收集器並啟動加密過程。
 
 
 
@@ -44,18 +44,18 @@ summary: 您可以使用指令碼來模擬勒索軟體攻擊、以測試或展�
 
 === 準備系統：
 
-首先，將目標卷掛載到機器上。您可以掛載 NFS 或 CIFS 匯出。
+首先，將目標磁碟區安裝到機器上。您可以掛載 NFS 或 CIFS 匯出。
 
 
 
-==== 若要在Linux中掛載NFS匯出：
+==== 要在 Linux 中掛載 NFS 導出：
 
 [listing]
 ----
 mount -t nfs -o vers=4.0 10.193.177.158:/svmvol1 /mntpt
 mount -t nfs -o vers=4.0 Vserver data IP>:/nfsvol /destinationlinuxfolder
 ----
-請勿掛載NFS 4.1版、Fpolicy不支援。
+請勿掛載 NFS 版本 4.1；Fpolicy 不支援它。
 
 
 
@@ -67,14 +67,14 @@ mount -t cifs //10.193.77.91/sharedfolderincluster /root/destinationfolder/ -o u
 ----
 
 
-==== 啟用 ONTAP Autonomous 勒索軟體防護（可選）：
+==== 啟用ONTAP Autonomous 勒索軟體防護（可選）：
 
-如果您的 ONTAP 叢集版本為 9.11.1 或更高版本，您可以透過在 ONTAP 命令控制台上執行下列命令來啟用 ONTAP 勒索軟體防護服務。
+如果您的ONTAP叢集版本是 9.11.1 或更高版本，您可以透過在ONTAP命令控制台上執行以下命令來啟用ONTAP勒索軟體防護服務。
 
  security anti-ransomware volume enable -volume [volume_name] -vserver [svm_name]
-接下來、設定資料收集器：
+接下來，設定資料收集器：
 
-. 如果尚未設定工作負載安全性代理程式、請加以設定。
+. 如果尚未完成，請設定工作負載安全代理程式。
 . 如果尚未完成，請設定 SVM 資料收集器。
 . 確保在配置資料收集器時選擇了安裝協定。
 
@@ -85,7 +85,7 @@ mount -t cifs //10.193.77.91/sharedfolderincluster /root/destinationfolder/ -o u
 
 在建立文件之前，您必須先停止或link:task_add_collector_svm.html#play-pause-data-collector["暫停資料收集器"]加工。
 
-在執行模擬之前、您必須先新增要加密的檔案。您可以手動將待加密的檔案複製到目標資料夾，也可以使用內建腳本以程式設計方式建立檔案。無論使用哪種方法，請確保至少有 100 個檔案需要加密。
+在運行模擬之前，您必須先新增要加密的檔案。您可以手動將要加密的檔案複製到目標資料夾中，也可以使用其中的腳本以程式設計方式建立檔案。無論使用哪種方法，請確保至少有 100 個檔案需要加密。
 
 如果您選擇以程式設計方式建立文件，則可以使用 Shell 或 Python：
 
@@ -93,9 +93,9 @@ mount -t cifs //10.193.77.91/sharedfolderincluster /root/destinationfolder/ -o u
 
 === 殼：
 
-. 登入值機員方塊。
-. 將 NFS 或 CIFS 共用從檔案管理器的 SVM 掛載到代理電腦。CD至該資料夾。
-. 將腳本從代理安裝目錄 (%AGENT_INSTALL_DIR/agent/install/ransomware_simulation/shell/create_dataset.sh) 複製到目標掛載位置。
+. 登入代理箱。
+. 將 NFS 或 CIFS 共用從檔案管理器的 SVM 掛載到代理電腦。轉到該資料夾。
+. 將腳本從代理安裝目錄（%AGENT_INSTALL_DIR/agent/install/ransomware_simulation/shell/create_dataset.sh）複製到目標安裝位置。
 . 使用掛載目錄（例如 /root/demo）中的腳本執行以下命令來建立測試資料集資料夾和檔案：
 +
  './create_dataset.sh'
@@ -110,25 +110,25 @@ mount -t cifs //10.193.77.91/sharedfolderincluster /root/destinationfolder/ -o u
 
 ==== Python 腳本先決條件：
 
-* 安裝 Python（如果尚未安裝。）
+* 安裝 Python（如果尚未安裝）。
 +
-** 從下列位置下載 Python 3.5.2 或更高版本 https://www.python.org/[] 。
-** 若要檢查 Python 安裝，請執行 `python --version` 。
-** Python 腳本已在 3.5.2 版本上進行測試。
+** 從下列位置下載 Python 3.5.2 或更高版本 https://www.python.org/[]。
+** 若要檢查 Python 安裝，請執行 `python --version`。
+** 該 Python 腳本已在最早 3.5.2 版本上進行測試。
 
 
 * 如果尚未安裝 pip，請安裝：
 +
-** 從以下位置下載 get-pip.py 腳本 https://bootstrap.pypa.io/[] 。
-** 使用以下方式安裝 pip  `python get-pip.py` 。
-** 使用以下命令驗證 pip 安裝 `pip --version` 。
+** 從以下位置下載 get-pip.py 腳本 https://bootstrap.pypa.io/[]。
+** 使用以下方式安裝 pip `python get-pip.py` 。
+** 使用以下命令驗證 pip 安裝 `pip --version`。
 
 
 * PyCryptodome 庫：
 +
 ** 該腳本使用 PyCryptodome 庫。
-** 使用以下方式安裝 PyCryptodome  `pip install pycryptodome` 。
-** 透過運行確認 PyCryptodome 安裝 `pip show pycryptodome` 。
+** 使用以下方式安裝 PyCryptodome `pip install pycryptodome` 。
+** 透過運行確認 PyCryptodome 安裝 `pip show pycryptodome`。
 
 
 
@@ -137,10 +137,10 @@ mount -t cifs //10.193.77.91/sharedfolderincluster /root/destinationfolder/ -o u
 
 ==== Python建立檔案腳本：
 
-. 登入值機員方塊。
-. 將 NFS 或 CIFS 共用從檔案管理器的 SVM 掛載到代理電腦。CD至該資料夾。
+. 登入代理箱。
+. 將 NFS 或 CIFS 共用從檔案管理器的 SVM 掛載到代理電腦。轉到該資料夾。
 . 將腳本從代理安裝目錄（%AGENT_INSTALL_DIR/agent/install/ransomware_simulation/python/create_dataset.py）複製到目標安裝位置。
-. 使用已掛載目錄（例如 /root/demo）中的腳本執行以下命令來建立測試資料集資料夾和檔案：
+. 使用已安裝目錄（例如 /root/demo）中的腳本執行以下命令來建立測試資料集資料夾和檔案：
 +
  'python create_dataset.py'
 . 這將在名為“test_dataset”的目錄下的掛載資料夾中建立 100 個具有各種副檔名的非空文件
@@ -168,7 +168,7 @@ mount -t cifs //10.193.77.91/sharedfolderincluster /root/destinationfolder/ -o u
 . 使用掛載目錄（例如 /root/demo）中的腳本執行以下命令來加密測試資料集：
 +
  './simulate_attack.sh'
-. 這將加密“t​​est_dataset”目錄下建立的範例檔案。
+. 這將加密在“test_dataset”目錄下建立的範例檔案。
 
 
 
@@ -180,7 +180,7 @@ mount -t cifs //10.193.77.91/sharedfolderincluster /root/destinationfolder/ -o u
 . 使用掛載目錄（例如 /root/demo）中的腳本執行以下命令來加密測試資料集：
 +
  'python simulate_attack.py'
-. 這將加密“t​​est_dataset”目錄下建立的範例檔案。
+. 這將加密在“test_dataset”目錄下建立的範例檔案。
 
 
 
@@ -191,12 +191,12 @@ mount -t cifs //10.193.77.91/sharedfolderincluster /root/destinationfolder/ -o u
 
 注意：如果滿足以下所有條件，則會產生高置信度警報。
 
-. 監控的 SVM 的 ONTAP 版本高於 9.11.1
-. ONTAP 自主勒索軟體防護已配置
+. 監控的 SVM 的ONTAP版本高於 9.11.1
+. ONTAP自主勒索軟體防護已配置
 . 在叢集模式下新增了工作負載安全資料收集器。
 
 
-Workload Security 會根據使用者行為偵測勒索軟體模式，而 ONTAP ARP 則會根據檔案中的加密活動偵測勒索軟體活動。
+Workload Security 根據使用者行為偵測勒索軟體模式，而ONTAP ARP 會根據檔案中的加密活動偵測勒索軟體活動。
 
 如果滿足條件，Workload Security 會將警報標記為高可信度警報。
 
@@ -212,6 +212,6 @@ image:ws_high_confidence_alert_detail.png["高置信度警報範例，詳細資�
 
 == 多次觸發警報
 
-Workload Security 會學習使用者行為，並且不會對同一使用者在 24 小時內重複的勒索軟體攻擊發出警報。
+Workload Security 會了解使用者行為，並且不會對同一使用者在 24 小時內重複遭受勒索軟體攻擊發出警報。
 
 若要使用不同的使用者產生新的警報，請再次執行相同的步驟（建立測試數據，然後加密測試數據）。

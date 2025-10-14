@@ -1,42 +1,42 @@
 ---
 sidebar: sidebar 
 permalink: security_admin_tool.html 
-summary: Data Infrastructure Insights 在整個版本生命週期中遵循安全性最佳實務做法。 
+summary: Data Infrastructure Insights在整個發布生命週期中遵循安全最佳實踐。 
 keywords: security, risk, protection 
 ---
-= 安全性管理工具
+= 安全管理工具
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-Data Infrastructure Insights 包含安全功能、可讓您的環境以增強的安全性運作。這些功能包括增強加密、密碼雜湊、變更內部使用者密碼的能力、以及加密和解密密碼的金鑰配對。
+Data Infrastructure Insights包括安全功能，可讓您的環境以增強的安全性運作。這些功能包括加密、密碼雜湊的改進，以及更改內部使用者密碼以及加密和解密密碼的金鑰對的能力。
 
-為保護敏感資料、 NetApp 建議您在安裝或升級後變更預設金鑰和 _Acquisition 使用者密碼。
+為了保護敏感數據， NetApp建議您在安裝或升級後變更預設金鑰和_Acquisition_使用者密碼。
 
-資料來源加密密碼儲存在 Data Infrastructure Insights 中、當使用者在資料收集器組態頁面中輸入密碼時、會使用公開金鑰來加密密碼。Data Infrastructure Insights 沒有解密資料收集器密碼所需的私密金鑰；只有擷取單元（ Aus ）具有解密資料收集器密碼所需的資料收集器私密金鑰。
-
-
-
-== 升級與安裝考量
-
-如果Insight系統包含非預設的安全性組態（亦即您有重新輸入的密碼）、則必須備份安全性組態。安裝新軟體、或在某些情況下升級軟體、會將系統還原為預設的安全組態。當系統恢復為預設組態時、您必須還原非預設組態、系統才能正常運作。
+資料來源加密密碼儲存在Data Infrastructure Insights中，當使用者在資料收集器設定頁面輸入密碼時，它會使用公鑰對密碼進行加密。Data Infrastructure Insights沒有解密資料收集器密碼所需的私鑰；只有採集單元 (AU) 才具有解密資料收集器密碼所需的資料收集器私鑰。
 
 
 
-== 管理採購單位的安全性
+== 升級和安裝注意事項
 
-安全管理工具可讓您管理 Data Infrastructure Insights 的安全選項、並可在採購單元系統上執行。安全管理包括管理金鑰和密碼、儲存及還原您建立的安全組態、或將組態還原為預設設定。
+當您的 Insight 系統包含非預設安全性配置（即您已重新輸入密碼）時，您必須備份您的安全性設定。安裝新軟體，或在某些情況下升級軟體，會將您的系統還原為預設安全性配置。當您的系統恢復到預設配置時，您必須恢復非預設配置才能使系統正常運作。
+
+
+
+== 管理採集單元的安全
+
+SecurityAdmin 工具可讓您管理Data Infrastructure Insights的安全選項，並在擷取單元系統上執行。安全管理包括管理金鑰和密碼、儲存和還原您建立的安全性配置或將設定還原為預設值。
 
 
 
 == 開始之前
 
-* 您必須在 AU 系統上擁有管理權限、才能安裝擷取單元軟體（包括安全管理工具）。
-* 如果您的非管理員使用者之後需要存取安全性管理工具、則必須將其新增至 _cisys 群組。_cisys_ 群組是在 AU 安裝期間建立。
+* 您必須擁有 AU 系統的管理員權限才能安裝 Acquisition Unit 軟體（其中包括 SecurityAdmin 工具）。
+* 如果您有非管理員使用者隨後需要存取 SecurityAdmin 工具，則必須將他們新增至 _cisys_ 群組。  _cisys_ 群組是在 AU 安裝期間建立的。
 
 
-AU 安裝之後、您可以在下列任一位置的採購單元系統上找到 securityadmin 工具：
+安裝 AU 後，可以在擷取單元系統的下列任一位置找到 SecurityAdmin 工具：
 
 ....
 Windows - <install_path>\Cloud Insights\Acquisition Unit\acq\securityadmin\bin\securityadmin.bat
@@ -44,20 +44,20 @@ Linux - /bin/oci-securityadmin.sh
 ....
 
 
-== 使用 securityadmin Tool
+== 使用 SecurityAdmin 工具
 
-以互動模式（ -I ）啟動安全管理工具。
+以互動模式（-i）啟動 SecurityAdmin 工具。
 
 
-NOTE: 建議您在互動模式中使用 securityadmin 工具、以避免在命令列上傳遞機密、而這些機密可以擷取在記錄中。
+NOTE: 建議以互動模式使用 SecurityAdmin 工具，以避免在命令列上傳遞可以在日誌中擷取的機密。
 
-畫面會顯示下列選項：
+將顯示以下選項：
 
-image:SecurityAdminMenuChoices.png["安全性管理工具選項（ Linux ）"]
+image:SecurityAdminMenuChoices.png["SecurityAdmin 工具的選項（Linux）"]
 
 . *備份*
 +
-建立包含所有密碼和金鑰的資料保險箱備份壓縮檔、並將檔案放置在使用者指定的位置、或是下列預設位置：
+建立包含所有密碼和金鑰的保險庫備份 zip 文件，並將文件放置在使用者指定的位置或以下預設位置：
 
 +
 ....
@@ -65,92 +65,92 @@ Windows - <install_path>\Cloud Insights\Acquisition Unit\acq\securityadmin\backu
 Linux - /var/log/netapp/oci/backup/vault
 ....
 +
-建議您將資料保險箱備份保存在安全的位置、因為其中包含敏感資訊。
+建議妥善保管保險庫備份，因為它們包含敏感資訊。
 
-. *還原*
+. *恢復*
 +
-還原所建立之資料保存庫的壓縮備份。還原之後、所有密碼和金鑰都會還原為建立備份時的現有值。
-
-+
-還原可用於同步多部伺服器上的密碼和金鑰、例如使用下列步驟： 1 ）變更 AU 上的加密金鑰。2) 建立資料保險箱的備份。3) 將資料保險箱備份還原至每個 Aus 。
-
-. * 註冊 / 更新外部金鑰擷取指令碼 *
-+
-使用外部指令碼來登錄或變更用於加密或解密裝置密碼的 AU 加密金鑰。
+還原已建立的保管庫的 zip 備份。一旦恢復，所有密碼和金鑰都將恢復為備份建立時存在的值。
 
 +
-變更加密金鑰時、您應該備份新的安全性組態、以便在升級或安裝之後還原。
+復原可用於同步多台伺服器上的密碼和金鑰，例如使用下列步驟：1）變更 AU 上的加密金鑰。  2）創建保險庫的備份。  3) 將保管庫備份還原到每個 AU。
+
+. *註冊/更新外部金鑰檢索腳本*
++
+使用外部腳本註冊或變更用於加密或解密裝置密碼的 AU 加密金鑰。
 
 +
-請注意、此選項僅適用於 Linux 。
+當您變更加密金鑰時，您應該備份新的安全配置，以便在升級或安裝後還原它。
 
 +
-將您自己的金鑰擷取指令碼搭配 securityadmin 工具使用時、請謹記下列事項：
+請注意，此選項僅在 Linux 上可用。
 
 +
-** 目前支援的演算法是 RSA 、至少 2048 位元。
-** 指令碼必須以純文字傳回私密金鑰和公開金鑰。指令碼不得傳回加密的私密金鑰和公開金鑰。
-** 指令碼應傳回原始編碼內容（僅限 PEM 格式）。
-** 外部指令碼必須具有 _executive_ 權限。
+當使用您自己的金鑰檢索腳本和 SecurityAdmin 工具時，請記住以下幾點：
 
-
-. * 旋轉加密金鑰 *
 +
-旋轉您的加密金鑰（取消登錄目前金鑰並登錄新金鑰）。若要使用外部金鑰管理系統的金鑰、您必須指定公開金鑰 ID 和私密金鑰 ID 。
+** 目前支援的演算法是最小 2048 位元的 RSA。
+** 該腳本必須以純文字形式傳回私鑰和公鑰。該腳本不得傳回加密的私鑰和公鑰。
+** 該腳本應傳回原始的編碼內容（僅限 PEM 格式）。
+** 外部腳本必須具有_執行_權限。
 
 
-
-. * 重設為預設金鑰 *
+. *輪換加密金鑰*
 +
-將擷取使用者密碼和擷取使用者加密金鑰重設為預設值、預設值為安裝期間提供的值。
+輪換您的加密金鑰（取消註冊當前金鑰並註冊新金鑰）。若要使用來自外部金鑰管理系統的金鑰，您必須指定公鑰 ID 和私鑰 ID。
 
-. * 變更信任儲存密碼 *
+
+
+. *重設為預設鍵*
 +
-變更信任存放區的密碼。
+將取得使用者密碼和取得使用者加密金鑰重設為預設值，預設值是安裝期間提供的。
 
-. * 變更 Keystore 密碼 *
+. *更改信任庫密碼*
 +
-變更 Keystore 的密碼。
+更改信任庫的密碼。
 
-. * 加密收集器密碼 *
+. *更改金鑰庫密碼*
++
+更改密鑰庫的密碼。
+
+. *加密收集器密碼*
 +
 加密資料收集器密碼。
 
-. *退出*
+. *出口*
 +
-結束安全性管理工具。
+退出 SecurityAdmin 工具。
 
 
 
-選擇您要設定的選項、然後依照提示進行。
+選擇您想要配置的選項並按照提示進行操作。
 
 
 
-== 指定要執行工具的使用者
+== 指定使用者來運行該工具
 
-如果您處於受控且注重安全性的環境中、您可能沒有 _cisys 群組、但仍可能需要特定使用者執行安全性管理工具。
+如果您處於受控的、注重安全的環境中，您可能沒有_cisys_群組，但仍可能希望特定使用者執行 SecurityAdmin 工具。
 
-您可以手動安裝 AU 軟體、並指定您要存取的使用者 / 群組來達成此目標。
+您可以透過手動安裝 AU 軟體並指定您想要存取的使用者/群組來實現這一點。
 
-* 使用 API 、將 CI Installer 下載至 AU 系統、然後將其解壓縮。
+* 使用 API，將 CI 安裝程式下載到 AU 系統並解壓縮。
 +
-** 您需要一次性授權權杖。請參閱 API Swagger 文件（ _Admin > API Access_ 、然後選取 _API Documentation （ _API 說明文件）連結）、並找到 _get /au/oneTimeToken_ API 一節。
-** 擁有權杖後、請使用 _get /au/installer/｛ platform ｝ / ｛ version ｝ _ API 下載安裝程式檔案。您需要提供平台（ Linux 或 Windows ）和安裝程式版本。
+** 您將需要一次性授權令牌。查看 API Swagger 文件（_Admin > API Access_ 並選擇 _API Documentation_ 連結）並找到 _GET /au/oneTimeToken_ API 部分。
+** 取得令牌後，使用 _GET /au/installers/{platform}/{version}_ API 下載安裝程式檔案。您需要提供平台（Linux 或 Windows）以及安裝程式版本。
 
 
-* 將下載的安裝程式檔案複製到 AU 系統、然後將其解壓縮。
-* 瀏覽至包含檔案的資料夾、並以 root 身分執行安裝程式、指定使用者和群組：
+* 將下載的安裝程式檔案複製到AU系統並解壓縮。
+* 導覽至包含檔案的資料夾，並以 root 身分執行安裝程序，指定使用者和群組：
 +
  ./cloudinsights-install.sh <User> <Group>
 
 
-如果指定的使用者和 / 或群組不存在、將會建立這些使用者和 / 或群組。使用者將可存取安全管理工具。
+如果指定的使用者和/或群組不存在，則將建立它們。使用者將有權存取 SecurityAdmin 工具。
 
 
 
-== 更新或移除 Proxy
+== 更新或刪除代理
 
-securityadmin 工具可用來設定或移除擷取單元的 Proxy 資訊、方法是使用 _ pr_ 參數執行工具：
+可以使用 SecurityAdmin 工具設定或刪除採集單元的代理訊息，方法是運行帶有 _-pr_ 參數的工具：
 
 [listing]
 ----
@@ -184,70 +184,70 @@ Documentation.
                              Note: domain is required if the proxy auth
                              scheme is NTLM.)
 ----
-例如、若要移除 Proxy 、請執行下列命令：
+例如，要刪除代理，請執行以下命令：
 
  [root@ci-eng-linau bin]# ./securityadmin -pr -rp
-執行命令後、您必須重新啟動擷取單元。
+運行該指令後必須重新啟動採集單元。
 
-若要更新 Proxy 、命令是
+要更新代理，命令是
 
  ./securityadmin -pr -upr <arg>
 
 
-== 外部金鑰擷取
+== 外部密鑰檢索
 
-如果您提供 UNIX Shell 指令碼、擷取單元可以執行該指令碼、從金鑰管理系統擷取 * 私密金鑰 * 和 * 公開金鑰 * 。
+如果您提供 UNIX shell 腳本，則取得單元可以執行該腳本從您的金鑰管理系統中擷取 *私鑰* 和 *公鑰*。
 
-為了擷取關鍵資料、 Data Infrastructure Insights 將會執行指令碼、傳入兩個參數： _key id_ 和 _key type_ 。_Key ID_ 可用於識別金鑰管理系統中的金鑰。_Key 類型 _ 為「公開」或「私人」。當金鑰類型為「公開」時、指令碼必須傳回公開金鑰。當金鑰類型為「私密」時、必須傳回私密金鑰。
+為了檢索金鑰， Data Infrastructure Insights將執行腳本，並傳遞兩個參數：_key id_ 和 _key type_。  _Key id_ 可用來識別金鑰管理系統中的金鑰。 _密鑰類型_可以是「公共」或「私人」。當密鑰類型為“公共”時，腳本必須傳回公鑰。當金鑰類型為“private”時，必須傳回私鑰。
 
-若要將金鑰傳回擷取單元、指令碼必須將金鑰列印至標準輸出。指令碼必須列印 _ 僅 _ 標準輸出金鑰；不得將其他文字列印至標準輸出。一旦要求的金鑰列印至標準輸出、指令碼必須以 0 結束代碼結束、任何其他傳回代碼都會被視為錯誤。
+若要將密鑰傳回採集單元，腳本必須將密鑰列印到標準輸出。腳本必須僅將密鑰列印到標準輸出；不得將任何其他文字列印到標準輸出。一旦請求的鍵被列印到標準輸出，腳本必須以退出代碼 0 退出；任何其他返回代碼都被視為錯誤。
 
-指令碼必須使用 securityadmin 工具在擷取單元中登錄、該工具會執行指令碼和擷取單元。指令碼必須具有 root 和「 cisys 」使用者的 _read_ 和 _executive_ 權限。如果在登錄後修改 Shell 指令碼、則必須重新在擷取單元中登錄修改後的 Shell 指令碼。
+該腳本必須使用 SecurityAdmin 工具向採集單元註冊，該工具將與採集單元一起執行該腳本。該腳本必須具有 root 和「cisys」使用者的_read_和_execute_權限。如果註冊後shell腳本被修改，則必須將修改後的shell腳本重新向採集單位註冊。
 
 |===
 
 
-| 輸入參數：金鑰 ID | 用於識別客戶金鑰管理系統中金鑰的金鑰識別碼。 
+| 輸入參數：密鑰ID | 密鑰標識符用於在客戶密鑰管理系統中識別密鑰。 
 
 
-| 輸入參數：金鑰類型 | 公有或私有。 
+| 輸入參數：密鑰類型 | 公共或私人。 
 
 
-| 輸出 | 要求的金鑰必須列印至標準輸出。目前支援 2048 位元 RSA 金鑰。金鑰必須以下列格式進行編碼及列印：私密金鑰格式 - PEM ， DER 編碼的 PKCS8 Private KeyInfo RFC 5958 公開金鑰格式 - PEM ， DER 編碼的 X.509 SubjectPublicKeyInfo RFC 5280 
+| 輸出 | 必須將請求的密鑰列印到標準輸出。目前支援 2048 位元 RSA 金鑰。密鑰必須按照以下格式進行編碼和列印 - 私鑰格式 - PEM、DER 編碼的 PKCS8 PrivateKeyInfo RFC 5958 公鑰格式 - PEM、DER 編碼的 X.509 SubjectPublicKeyInfo RFC 5280 
 
 
-| 結束代碼 | 結束碼為零、以取得成功。所有其他跳出值都視為失敗。 
+| 退出代碼 | 退出代碼為零表示成功。所有其他退出值均視為失敗。 
 
 
-| 指令碼權限 | 指令碼必須具有 root 和「 cisys 」使用者的讀取和執行權限。 
+| 腳本權限 | 腳本必須具有 root 和「cisys」使用者的讀取和執行權限。 
 
 
-| 記錄 | 記錄指令碼執行。記錄可在 - NetApp /var/log/oracle/cloudinses/securityadmin/securityadmin.log NetApp /var/log/oracle/cloudses/acq/acq.log 中找到 
+| 紀錄 | 腳本執行被記錄。日誌可以在以下位置找到 - /var/log/netapp/cloudinsights/securityadmin/securityadmin.log /var/log/netapp/cloudinsights/acq/acq.log 
 |===
 
 
 == 加密用於 API 的密碼
 
-選項 8 可讓您加密密碼、然後透過 API 將密碼傳遞給資料收集器。
+選項 8 允許您加密密碼，然後您可以透過 API 將其傳遞給資料收集器。
 
-以互動模式啟動安全性管理工具、然後選取選項 8 ： _ 加密密碼 _ 。
+以互動模式啟動 SecurityAdmin 工具並選擇選項 8：_加密密碼_。
 
  securityadmin.sh -i
-系統會提示您輸入要加密的密碼。請注意、您輸入的字元不會顯示在畫面上。出現提示時、請重新輸入密碼。
+系統會提示您輸入要加密的密碼。請注意，您鍵入的字元不會顯示在螢幕上。出現提示時重新輸入密碼。
 
-或者、如果您要在指令碼中使用命令、請在命令列上使用 _securityadmin.sh_ 搭配 "-enc" 參數、並傳入未加密的密碼：
+或者，如果您要在腳本中使用該命令，請在命令列上使用帶有「-enc」參數的_securityadmin.sh_，傳遞未加密的密碼：
 
  securityadmin -enc mypassword
 image:SecurityAdmin_Encrypt_Key_API_CLI_Example.png["CLI 範例"]
 
-加密的密碼會顯示在畫面上。複製整個字串、包括任何前置或結尾符號。
+加密的密碼顯示在螢幕上。複製整個字串，包括任何前導或尾隨符號。
 
-image:SecurityAdmin_Encrypt_Key_1.png["互動模式加密密碼、寬度 =640"]
+image:SecurityAdmin_Encrypt_Key_1.png["交互模式加密密碼，寬度=640"]
 
-若要將加密密碼傳送至資料收集器、您可以使用資料收集 API 。此 API 的瀏覽器可在 * 管理 > API 存取 * 中找到、然後按一下「 API 文件」連結。選取「資料收集」 API 類型。在 _data_collection.data_collector 標題下、為此範例選擇 __collector / datasources_POST API 。
+若要將加密的密碼傳送給資料收集器，您可以使用資料收集 API。可以在 *管理 > API 存取* 中找到此 API 的 swagger，然後按一下「API 文件」連結。選擇「資料收集」API 類型。在 _data_collection.data_collector_ 標題下，為本範例選擇 _/collector/datasources_ POST API。
 
-image:SecurityAdmin_Encrypt_Key_Swagger_API.png["用於資料收集的 API"]
+image:SecurityAdmin_Encrypt_Key_Swagger_API.png["資料收集API"]
 
-如果您將 _preEncrypted_ 選項設為 _Tru_ 、則任何您透過 API 命令傳遞的密碼都會被視為 * 已加密 * ； API 將不會重新加密密碼。建置 API 時、只要將先前加密的密碼貼到適當的位置即可。
+如果將 _preEncrypted_ 選項設為 _True_，則透過 API 指令傳遞的任何密碼都將被視為*已加密*；API 不會重新加密密碼。建置 API 時，只需將先前加密的密碼貼到適當的位置。
 
-image:SecurityAdmin_Encrypt_Key_API_Example.png["API 範例、 width=600"]
+image:SecurityAdmin_Encrypt_Key_API_Example.png["API 範例，寬度=600"]

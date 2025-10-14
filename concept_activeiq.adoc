@@ -2,49 +2,49 @@
 sidebar: sidebar 
 permalink: concept_activeiq.html 
 keywords: Active IQ, risks, svm, AIQ, risk, ADigital Advisor 
-summary: Data Infrastructure Insights 會從 NetApp Active IQ 數位顧問（也稱為數位顧問）收集風險資料 
+summary: Data Infrastructure Insights從NetApp Active IQ Digital Advisor （也稱為Digital Advisor）收集風險數據 
 ---
-= Active IQ Digital Advisor
+= Active IQDigital Advisor
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
 
 
 [role="lead"]
-NetApp link:https://docs.netapp.com/us-en/active-iq/["Active IQ Digital Advisor"]（也稱為數位顧問）為 NetApp 客戶的硬體 / 軟體系統提供一系列視覺化，分析及其他支援相關服務。Digital Advisor 所報告的資料可加強系統問題的疑難排解，並可深入瞭解與您的裝置相關的最佳化與預測分析。
+NetApplink:https://docs.netapp.com/us-en/active-iq/["Active IQDigital Advisor"] （也稱為Digital Advisor）為NetApp客戶的硬體/軟體系統提供一系列視覺化、分析和其他支援相關服務。  Digital Advisor報告的資料可增強系統問題的故障排除，並提供與您的裝置相關的最佳化和預測分析的見解。
 
-Data Infrastructure Insights 會針對任何由數位顧問監控和報告的 NetApp 叢集式 Data ONTAP 儲存系統，收集 * 風險 * 。Data Infrastructure Insights 會自動收集儲存系統回報的風險、作為從這些裝置收集資料的一部分。您必須將適當的資料收集器新增至 Data Infrastructure Insights ，以收集 Digital Advisor 風險資訊。
+Data Infrastructure Insights收集由Digital Advisor監控和報告的任何NetApp Clustered Data ONTAP儲存系統的*風險*。Data Infrastructure Insights會在從這些設備收集資料時自動收集儲存系統報告的風險。您必須為Data Infrastructure Insights新增適當的資料收集器來收集Digital Advisor風險資訊。
 
-資料基礎架構洞見不會顯示 ONTAP 系統的風險資料，這些系統並未受到數位顧問監控和回報。
+Data Infrastructure Insights不會顯示未經Digital Advisor監控和報告的ONTAP系統的風險資料。
 
-報告的風險會顯示在「風險」表的資料基礎架構洞見（位於 _storage _ 和 _ 儲存節點 _ 資產登陸頁面）中。下表顯示風險詳細資料，風險類別及風險的潛在影響，並提供數位顧問頁面的連結，其中摘要說明儲存節點的所有風險（需要 NetApp 支援帳戶登入）。
+報告的風險顯示在「Data Infrastructure Insights」的「儲存」和「儲存節點」資產登陸頁面的「風險」表中。該表顯示了風險詳情、風險類別和風險的潛在影響，還提供了Digital Advisor頁面的鏈接，該頁面總結了存儲節點的所有風險（需要登入NetApp支援帳戶）。
 
-image:AIQ_Risks_Table_Example.png["數位顧問風險表"]
+image:AIQ_Risks_Table_Example.png["Digital Advisor風險表"]
 
-登陸頁的「摘要」小工具中也會顯示回報的風險計數，並提供適當的「數位顧問」頁面連結。在_storage登陸頁面上、此計數是所有基礎儲存節點的風險總和。
+已報告風險的數量也會顯示在登入頁面的「摘要」小工具中，並帶有指向相應Digital Advisor頁面的連結。在儲存登陸頁面上，計數是來自所有底層儲存節點的風險總和。
 
 image:AIQ_Summary_Example.png["儲存頁面摘要"]
 
 
 
-== 開啟「數位顧問」頁面
+== 打開Digital Advisor頁面
 
-按一下「數位顧問」頁面的連結時，如果您目前尚未登入「數位顧問」帳戶，則必須執行下列步驟，才能檢視儲存節點的「數位顧問」頁面。
+當您按一下「Digital Advisor」頁面的連結時，如果您目前尚未登入您的Digital Advisor帳戶，則必須執行以下步驟來查看儲存節點的Digital Advisor頁面。
 
-. 在 Data Infrastructure Insights Summary Widget 或風險表中，按一下「 Digital Advisor 」連結。
-. 登入您的NetApp支援帳戶。您將直接進入 Digital Advisor 的儲存節點頁面。
+. 在Data Infrastructure Insights摘要小工具或風險表中，按一下「Digital Advisor」連結。
+. Sign in您的NetApp支援帳戶。您將直接進入Digital Advisor中的儲存節點頁面。
 
 
 
 
 == 查詢風險
 
-在 Data Infrastructure Insights 中、您可以將 * monitoring.count* 欄新增至儲存或儲存節點查詢。如果傳回的結果包括由數位顧問監控的儲存系統，則 Monitoring.count 欄會顯示儲存系統或節點的風險數。
+在Data Infrastructure Insights中，您可以將 *monitoring.count* 欄位新增至儲存或儲存節點查詢。如果傳回結果包含Digital Advisor-Monitored 儲存系統，則 monitoring.count 欄位將顯示該儲存系統或節點的風險數量。
 
 
 
 == 儀表板
 
-您可以建置 Widget （例如圓形圖，表格 Widget ，長條圖，直條圖，散佈圖和單值 Widget ），以視覺化 NetApp 叢集 Data ONTAP 系統（由數位顧問監控）的儲存和儲存節點的物件風險。在這些小工具中、「物件風險」可選取為欄或度量、其中「儲存或儲存節點」是焦點物件。
+您可以建立小工具（例如圓餅圖、表格小工具、長條圖、長條圖、散佈圖和單值小工具），以便視覺化由Digital Advisor監控的NetApp Clustered Data ONTAP系統的儲存和儲存節點的物件風險。在這些小部件中，可以選擇「物件風險」作為列或指標，其中儲存或儲存節點是關注的物件。
 
-image:ObjectRiskWidgets.png["小工具中的物件風險"]
+image:ObjectRiskWidgets.png["小部件中的物件風險"]

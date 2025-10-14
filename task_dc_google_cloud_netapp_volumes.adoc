@@ -14,65 +14,65 @@ keywords: data collector, queries, create, google, cloud, volumes,
 
 
 [role="lead"]
-此資料收集器支援從Google Cloud NetApp Volumes配置中收集清單和效能資訊。它能夠發現 Google 組織內所有專案中的NetApp磁碟區和儲存資源。如果您希望使用Data Infrastructure Insights監控多個 Google 組織，請為每個組織部署一個收集器。
+此資料收集器支援從Google Cloud NetApp Volumes配置收集庫存和效能。收集器發現 Google 組織內所有專案的NetApp磁碟區和儲存資源。如果您有多個想要使用Data Infrastructure Insights進行監控的 Google 組織，請為每個組織部署一個收集器。
 
 
 
-== 服務帳戶需求
+== 服務帳戶要求
 
-* 您必須依照中的指示建立服務帳戶link:https://cloud.google.com/iam/docs/creating-managing-service-accounts["建立 / 管理服務帳戶"]。此服務帳戶由唯一 ID（稱為 _clientId_）標識，該 ID 將用作使用者名稱。
-* 此外，請依照中的指示建立服務帳戶金鑰link:https://cloud.google.com/iam/docs/creating-managing-service-account-keys["建立 / 管理服務帳戶金鑰"]。此金鑰可下載為 json 檔案、其內容將用作密碼。
-* 服務帳戶的範圍必須為 _compuing.readonly_ 、 _monitoring.read_ 和 _Cloud 平台 _ 。
-
-
+* 您必須按照link:https://cloud.google.com/iam/docs/creating-managing-service-accounts["建立/管理服務帳戶"]。此服務帳戶由唯一 ID（稱為 _clientId_）標識，該 ID 將用作使用者名稱。
+* 此外，請按照以下說明建立服務帳戶金鑰：link:https://cloud.google.com/iam/docs/creating-managing-service-account-keys["建立/管理服務帳戶金鑰"] 。該密鑰可以作為 json 檔案下載，其內容將用作密碼。
+* 服務帳戶的範圍必須為 _compute.readonly_、_monitoring.read_ 和 _cloud-platform_。
 
 
-== 組態
-
-[cols="50,50"]
-|===
-| 欄位 | 說明 
 
 
-| 組織ID | 您要使用此收集器探索的組織ID。如果您的服務帳戶能夠查看多個組織、則此欄位為必填欄位 
-
-
-| 選擇「排除」或「包含」，依「地點」篩選 GCNV 資產 | 此預設為「排除」，因為此收集器預設會探索貴組織全球的所有 GCNV Volume 。 
-
-
-| GCNV 排除 / 包含位置 | 預設為空，與「選擇『排除』或『包含』選項」一起使用。如果您只想發現特定區域內的資產，請使用這兩個選項來限制此收集器的範圍。 
-
-
-| 專案ID | 根據「選擇「排除」...值的值、您要在探索中或從探索中篩選的專案ID清單。預設清單為空白 
-
-
-| 用戶端 ID | Google Cloud Platform組態的用戶端ID 
-
-
-| 請在此複製並貼上Google認證檔案的內容 | 將雲端平台帳戶的Google認證資料複製到此欄位 
-|===
-
-
-== 進階組態
+== 配置
 
 [cols="50,50"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| 庫存輪詢時間間隔（分鐘） | 預設為60分鐘 
+| 組織 ID | 您想要使用此收集器發現的組織 ID。如果您的服務帳戶能夠查看多個組織，則此欄位為必填項 
 
 
-| 使用 AU Proxy 進行 REST API 呼叫 | 選擇此選項可讓收集器使用與其所在的採集單元相同的代理程式。預設情況下，此選項處於停用狀態，這表示收集器會嘗試直接向 Google 發送 HTTPS API 呼叫。 
+| 選擇「排除」或「包含」以按位置過濾 GCNV 資產 | 預設為排除，因為此收集器預設旨在發現組織內全球所有的 GCNV 磁碟區。 
 
 
-| 標示要篩選虛擬機器的金鑰和值 | 按一下「*+篩選標籤*」、即可篩選符合VM機碼和標籤值的機碼和值、以選擇要包含/排除的VM（及相關磁碟）。「標籤金鑰」為必填、「標籤值」為選用項目。當Label值為空白時、只要VM符合Label Key、就會進行篩選。 
+| GCNV 排除/包含位置 | 預設為空，與「選擇『排除』或『包含』選項」結合使用。如果您只想發現特定區域內的資產，請使用這兩個選項來限制此收集器的範圍。 
 
 
-| 效能意見調查時間間隔（秒） | 預設值為300秒 
+| 項目 ID | 根據「選擇『排除』...」的值，您想要從發現中篩選掉或剔除的項目 ID 清單。預設列表為空 
+
+
+| 客戶端 ID | Google Cloud Platform 配置的用戶端 ID 
+
+
+| 將您的 Google 憑證檔案的內容複製並貼上到此處 | 將 Cloud Platform 帳戶的 Google 憑證複製到此字段 
 |===
 
 
-== 疑難排解
+== 進階配置
 
-有關此資料收集器的其他資訊，請link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]參閱頁面或。
+[cols="50,50"]
+|===
+| 場地 | 描述 
+
+
+| 庫存輪詢間隔（分鐘） | 預設為 60 分鐘 
+
+
+| 使用 AU 代理進行 REST API 呼叫 | 選擇此選項可讓收集器使用與其所在的採集單元相同的代理程式。預設情況下，此功能是停用的，這表示收集器嘗試直接向 Google 發送 HTTPS API 呼叫。 
+
+
+| 用於篩選虛擬機器的標籤鍵和值 | 按一下“*+ 過濾標籤*”，透過過濾與虛擬機器上的標籤的鍵和值相符的鍵和值來選擇要包含/排除的虛擬機器（和相關磁碟）。標籤鍵是必需的，標籤值是可選的。當 Label Value 為空時，只要與 Label Key 匹配，則過濾該 VM。 
+
+
+| 效能輪詢間隔（秒） | 預設值為 300 秒 
+|===
+
+
+== 故障排除
+
+關於此數據收集器的更多信息，請參閱link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。

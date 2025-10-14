@@ -2,43 +2,43 @@
 sidebar: sidebar 
 permalink: task_config_telegraf_docker.html 
 keywords: telegraf, installation, install, docker 
-summary: Docker資料收集器組態 
+summary: Docker 資料收集器配置 
 ---
-= Docker Data Collector
+= Docker 資料收集器
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-Data Infrastructure Insights 使用此資料收集器從 Docker 收集指標。
+Data Infrastructure Insights使用此資料收集器從 Docker 收集指標。
 
 
 
 == 安裝
 
-. 從 * 可伺服 > 收集器 * 、按一下 * + 資料收集器 * 。選擇 Docker 。
+. 從*可觀察性 > 收集器*中，按一下*+資料收集器*。選擇 Docker。
 +
-如果您尚未設定值機員以進行集合，系統會在租戶上提示您link:task_config_telegraf_agent.html["安裝代理程式"]。
+如果您尚未設定用於收集的代理，系統會提示您link:task_config_telegraf_agent.html["安裝代理"]您的租戶。
 
 +
-如果您已設定代理程式、請選取適當的作業系統或平台、然後按一下*繼續*。
+如果您已經配置了代理，請選擇適當的作業系統或平台，然後按一下「繼續」。
 
-. 請依照Docker組態畫面中的指示來設定資料收集器。這些指示會因您用來收集資料的作業系統或平台類型而有所不同。
+. 請依照 Docker 配置畫面中的說明配置資料收集器。說明根據您用於收集資料的作業系統或平台的類型而有所不同。
 
 
-image:DockerDCConfigLinux.png["Docker組態"]
+image:DockerDCConfigLinux.png["Docker 配置"]
 
 
 
 == 設定
 
-適用於Docker的Telegraf輸入外掛程式會透過指定的UNIX通訊端或TCP端點收集度量資料。
+Docker 的 Telegraf 輸入插件透過指定的 UNIX 套接字或 TCP 端點收集指標。
 
 
 
 === 相容性
 
-組態是根據Docker 1.12.6版開發而成。
+配置是針對 Docker 版本 1.12.6 開發的。
 
 
 
@@ -46,12 +46,12 @@ image:DockerDCConfigLinux.png["Docker組態"]
 
 
 
-=== 透過UNIX套接字存取Docker
+=== 透過 UNIX 套接字存取 Docker
 
-如果Telegraf代理程式是在裸機上執行、請執行下列命令、將Telegraf Unix使用者新增至Docker Unix群組：
+如果 Telegraf 代理程式在裸機上執行，請透過執行以下命令將 telegraf Unix 使用者新增至 docker Unix 群組：
 
  sudo usermod -aG docker telegraf
-如果Telegraf代理程式是在Kubernetes Pod內執行、請將套接字對應至Pod中的Volume、然後將該磁碟區安裝至/var/run / Docker。例如、將下列項目新增至Podcast規格：
+如果 Telegraf 代理程式在 Kubernetes pod 中執行，則透過將套接字作為磁碟區對應到 pod 中，然後將該磁碟區掛載到 /var/run/docker.sock 來公開 Docker Unix 套接字。例如，將以下內容新增至 PodSpec：
 
 [listing]
 ----
@@ -62,7 +62,7 @@ hostPath:
 path: /var/run/docker.sock
 type: File
 ----
-然後、將下列項目新增至Container：
+然後，將以下內容新增至容器：
 
 [listing]
 ----
@@ -71,48 +71,48 @@ volumeMounts:
 - name: docker-sock
 mountPath: /var/run/docker.sock
 ----
-請注意、 Kubernetes 平台提供的 Data Infrastructure Insights 安裝程式會自動處理此對應。
+請注意，為 Kubernetes 平台提供的Data Infrastructure Insights安裝程式會自動處理此對應。
 
 
 
-=== 透過TCP端點存取Docker
+=== 透過 TCP 端點存取 Docker
 
-根據預設、Docker會使用連接埠2375進行未加密存取、而連接埠2376則用於加密存取。
+預設情況下，Docker 使用連接埠 2375 進行未加密訪問，使用連接埠 2376 進行加密訪問。
 
 
 
-== 物件與計數器
+== 物體和計數器
 
-收集下列物件及其計數器：
+收集以下物件及其計數器：
 
 [cols="<.<,<.<,<.<,<.<"]
 |===
-| 物件： | 識別碼： | 屬性： | 資料點： 
+| 目的： | 標識符： | 屬性： | 數據點： 
 
 
-| Docker引擎 | 命名空間Docker引擎 | 節點名稱節點IP節點UUID節點OS Kubernetes叢集Docker版本單元 | 執行Container的記憶體容器已暫停容器已停止CPU執行常式映像接聽程式事件已使用檔案描述元資料可用的總資料已使用中繼資料可用的總中繼資料已使用的總中繼資料區大小 
+| Docker 引擎 | 命名空間 Docker 引擎 | 節點名稱 節點 IP 節點 UUID 節點 OS Kubernetes 叢集 Docker 版本 單元 | 記憶體容器 已暫停的容器 正在運行的容器 已停止的容器 CPU Go 例程 映像 偵聽器事件 已使用的檔案描述符 可用資料 已使用的資料總量 可用元資料 元資料 已使用的總元資料 池 區塊大小 
 
 
-| Docker Container | 命名空間Container Name Docker Engine | Kubernetes Container Hash Kubernetes Container連接埠Kubernetes Container重新啟動計數Kubernetes Container終止訊息路徑Kubernetes Container終止訊息原則Kubernetes Pod終止寬限期Container影像Container狀態Container版本節點名稱Kubernetes Container記錄路徑Kubernetes Container名稱Kubernetes Docker Type Kubernetes Pod名稱Kubernetes Pod命名空間 Pod UID Kubernetes沙箱ID節點IP節點UUID Docker版本Kubernetes IO Config可見Kubernetes IO組態來源OpenShift IO SCC Kubernetes說明Kubernetes顯示名稱OpenShift標記Kompy Service Pod範本雜湊控制器修訂版雜湊Pod範本產生授權架構建置日期架構授權架構名稱架構URL 架構VCS URL架構廠商架構版本架構架構版本維護者客戶Pod Kubernetes StatefulSet Pod名稱租戶WebCONSOSE架構權威來源URL建置日期右側建置主機右側元件發佈範圍安裝版本執行摘要解除安裝VCS參考VCS類型廠商版本健全狀況狀態Container ID | 記憶體作用中匿名記憶體作用中檔案記憶體快取記憶體階層式限制記憶體非作用中匿名記憶體非作用中檔案記憶體限制記憶體對應檔案記憶體最大使用量記憶體頁面故障記憶體頁面主要故障記憶體分頁記憶體分頁記憶體分頁記憶體分頁記憶體分頁記憶體分頁記憶體分頁 匿名記憶體作用中檔案記憶體總計快取記憶體總計非作用中匿名記憶體總計非作用中檔案記憶體總計對應檔案記憶體總計頁面故障記憶體總計頁面主要故障記憶體總分頁記憶體總分頁記憶體總分頁記憶體總常駐集大小記憶體總常駐集大小龐大記憶體總計 Unevicable Memory Unevicable Memory使用量記憶體使用率結束程式碼OOM在失敗的連續資料時啟動PID終止 
+| Docker容器 | 命名空間容器名稱 Docker 引擎 | Kubernetes 容器雜湊 Kubernetes 容器連接埠 Kubernetes 容器重開機計數 Kubernetes 容器終止訊息路徑 Kubernetes 容器終止訊息策略 Kubernetes Pod 終止寬限期 容器映像 容器狀態 容器版本 節點名稱 Kubernetes 容器終止站 Kubernet 容器名稱 Knetuber 容器名稱 Knetnetfnet net1沙盒 ID 節點 IP 節點 UUID Docker 版本 Kubernetes IO 配置可見 Kubernetes IO 配置來源 OpenShift IO SCC Kubernetes 描述 Kubernetes 顯示名稱 OpenShift 標籤 Kompose 服務 Pod 模板雜湊 控制器修訂StatefulSet Pod 名稱 租用戶 Web 控制台 架構 權威來源 URL 建置日期 RH 建置主機 RH 元件分佈範圍 安裝發佈運作摘要 解除安裝 VCS 引用 VCS 類型 供應商版本 健康狀況 容器 ID | 記憶體活動匿名記憶體活動檔案記憶體快取記憶體層級限制記憶體非活動匿名記憶體非活動檔案記憶體限制記憶體對應檔案記憶體最大使用量記憶體頁面錯誤記憶體頁面嚴重錯誤記憶體分頁傳入記憶體分頁傳出記憶體駐留集大小記憶體駐留集大小巨大記憶體總活動匿名記憶體總活動檔案記憶體總快取記憶體總非活動匿名記憶體總非活動檔案記憶體總映射檔案記憶體總頁錯誤記憶體總頁面嚴重錯誤記憶體總分頁傳入記憶體總分頁傳出記憶體總駐留集大小記憶體總駐留集大小巨大記憶體總不可清除記憶體不可清除記憶體使用量記憶體使用率退出程式碼OOM 終止 PID 啟動於失敗連勝 
 
 
-| Docker Container IO | 命名空間容器名稱裝置Docker引擎 | Kubernetes Container Hash Kubernetes Container連接埠Kubernetes Container重新啟動計數Kubernetes Container終止訊息路徑Kubernetes Container終止訊息原則Kubernetes Pod終止寬限期Container影像Container狀態Container版本節點名稱Kubernetes Container記錄路徑Kubernetes Container名稱Kubernetes Docker Type Kubernetes Pod名稱Kubernetes Pod命名空間 Pod UID Kubernetes沙箱ID節點IP節點UUID Docker版本Kubernetes組態可見Kubernetes組態來源OpenShift SCC Kubernetes說明Kubernetes顯示名稱OpenShift標籤架構架構版本Pod範本雜湊控制器修訂版雜湊Pod範本產生Kompay服務架構建置日期架構授權架構名稱架構廠商客戶 Pod Kubernetes StatefulSet Pod名稱Tenant WebCONSOLEE建置日期授權廠商架構驗證來源URL Rh建置主機Rh元件發佈範圍安裝維護者版本執行摘要解除安裝VCS參考VCS類型版本架構URL架構VCS URL架構版本Container ID | IO服務位元組循環非同步IO服務位元組循環讀取IO服務位元組循環同步IO服務位元組循環總計IO服務位元組循環寫入IO服務循環非同步IO服務循環讀取IO服務循環IO服務循環總計IO服務循環寫入 
+| Docker 容器區塊 IO | 命名空間容器名稱裝置Docker引擎 | Kubernetes 容器雜湊 Kubernetes 容器連接埠 Kubernetes 容器重開機計數 Kubernetes 容器終止訊息路徑 Kubernetes 容器終止訊息策略 Kubernetes Pod 終止寬限期 容器映像 容器狀態 容器版本 節點名稱 Kubernetes 容器終止站 Kubernet 容器名稱 Knetuber 容器名稱 Knetnetfnet net1沙盒 ID 節點 IP 節點 UUID Docker 版本 Kubernetes 配置可見 Kubernetes 配置來源 OpenShift SCC Kubernetes 說明 Kubernetes 顯示名稱 OpenShift 標籤 架構 架構版本 Pod 範本雜湊 控制器修訂雜湊 Pod 範本產生 Kompose 服務服務架構權威來源 URL RH 建置主機 RH 元件分佈範圍 安裝 維護者 發佈 運行摘要 解除安裝 VCS 引用 VCS 類型 版本 架構 URL 架構 VCS URL 架構版本 容器 ID | IO 服務位元組數 遞歸異步 IO 服務位元組數 遞歸讀取 IO 服務位元組數 遞歸同步 IO 服務位元組數 遞歸總計 IO 服務位元組數 遞歸寫入 IO 服務 遞歸異步 IO 服務 遞歸 IO 服務位元組數 遞歸寫入 IO 服務 遞歸 
 
 
-| Docker Container Network | 命名空間Container Name Network Docker Engine | Container Image Container狀態Container版本節點名稱節點IP節點UUID節點OS K8s叢集Docker版本Container ID | 接收捨棄的RX位元組數處理錯誤接收封包傳輸捨棄的傳輸字節數傳輸錯誤傳輸的傳輸封包數 
+| Docker容器網路 | 命名空間容器名稱網路Docker引擎 | 容器映像 容器狀態 容器版本 節點名稱 節點IP 節點UUID 節點OS K8s叢集 Docker版本 容器ID | RX 丟棄 RX 位元組數 RX 錯誤數 RX 封包數 TX 丟棄 TX 位元組數 TX 錯誤數 TX 封包數 
 
 
-| Docker Container CPU | 命名空間容器名稱CPU Docker Engine | Kubernetes Container Hash Kubernetes Container連接埠Kubernetes Container重新啟動計數Kubernetes Container終止訊息路徑Kubernetes Container終止訊息原則Kubernetes Pod終止寬限期Kubernetes Config查看Kubernetes Config來源OpenShift SCC Container Image Container Image Container Status Container版本Node Name Kubernetes Container Path Kubernetes Container Container Name Kubernetes Container Container Container Container Name Kubernetes Container Container Container Container Name Kubernetes Container Container Container Container Container Container Container Container 鍵入Kubernetes Pod名稱Kubernetes Pod命名空間Kubernetes Pod UID Kubernetes Sandbox ID Node IP Node UUID Node OS Kubernetes Cluster Docker Version Kubernetes說明Kubernetes顯示名稱OpenShift標記架構版本Pod範本雜湊控制器修訂版雜湊Pod範本世代服務架構建置日期架構授權架構名稱 架構廠商客戶Pod Kubernetes StatefulSet Pod名稱Tenant WebCONSOLEE建置日期授權廠商架構授權來源URL Rh建置主機Rh元件發佈範圍安裝維護者版本執行摘要解除安裝VCS參考VCS類型版本架構URL架構VCS URL架構版本Container ID | 節流期間節流節流期間節流節流核心模式使用中的節流時間使用量使用量使用量百分比系統使用量總計 
+| Docker 容器 CPU | 命名空間容器名稱CPU Docker引擎 | Kubernetes 容器雜湊 Kubernetes 容器連接埠 Kubernetes 容器重新啟動計數 Kubernetes 容器終止訊息路徑 Kubernetes 容器終止訊息策略 Kubernetes Pod 終止寬限期 Kubernetes 設定可見 Kubernetes 設定來源 OpenShift SCC 容器映像 容器狀態 容器版本 節點配置可見 Kubernetes 設定來源 OpenShift SCC 容器映像 netuber 容器版本 節點代碼Kubernetes Pod 命名空間 Kubernetes Pod UID Kubernetes 沙盒 ID 節點 IP 節點 UUID 節點作業系統 Kubernetes 叢集 Docker 版本 Kubernetes 說明 Kubernetes 顯示名稱 OpenShift 標籤 架構版本 Pod 範本雜湊 控制器修訂版 Pod設定 客戶端架構 Kompose 服務授權服務授權控制台許可證供應商架構權威來源 URL RH 建置主機 RH 元件分佈範圍安裝維護者發佈運行摘要卸載 VCS 引用 VCS 類型版本架構 URL 架構 VCS URL 架構版本容器 ID | 限制週期限制限制週期限制限制時間核心模式使用率使用者模式使用率使用率百分比系統使用率總計 
 |===
 
 
-== 疑難排解
+== 故障排除
 
 [cols="2*"]
 |===
-| 問題： | 試用： 
+| 問題： | 試試一下： 
 
 
-| 我遵循組態頁面上的指示、在 Data Infrastructure Insights 中看不到 Docker 指標。 | 檢查Telegraf代理程式記錄、查看是否報告下列錯誤：e! 外掛程式[inports.dDocker中發生錯誤：嘗試連線至Docker精靈套接字時、取得權限遭拒（若有）、請採取必要步驟、提供Telegraf代理程式存取上述Docker Unix套接字。 
+| 在按照配置頁面上的說明操作後，我沒有在Data Infrastructure Insights中看到我的 Docker 指標。 | 檢查 Telegraf 代理程式日誌，看它是否報告以下錯誤：E！插件 [inputs.docker] 中的錯誤：嘗試連接到 Docker 守護程式套接字時權限被拒絕如果確實如此，請採取必要的步驟，以便按照上面指定的方式為 Telegraf 代理提供對 Docker Unix 套接字的訪問權限。 
 |===
-您可以在頁面中找到其他資訊link:concept_requesting_support.html["支援"]。
+更多資訊可從link:concept_requesting_support.html["支援"]頁。

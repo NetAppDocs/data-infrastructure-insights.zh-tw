@@ -2,114 +2,114 @@
 sidebar: sidebar 
 permalink: task_dc_emc_vnxe.html 
 keywords: data collector, VNXe, EMC 
-summary: 設定VNXe資料收集器。 
+summary: 配置 VNXe 資料收集器。 
 ---
-= 設定EMC VNXe資料收集器
+= 配置 EMC VNXe 資料收集器
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-Dell EMC VNXe資料收集器可為VNXe統一化儲存陣列提供庫存支援。Data Infrastructure Insights 目前支援 iSCSI 和 NAS 傳輸協定。
+DELL EMC VNXe 資料收集器為 VNXe 統一儲存陣列提供庫存支援。Data Infrastructure Insights目前支援 iSCSI 和 NAS 協定。
 
 
 
-== 需求
+== 要求
 
-* VNXe資料收集器是以CLI為基礎；您必須將Unaeris for VNXe CLI（uemcli．exe）安裝到VNXe資料收集器所在的擷取單元上。
-* uemcli.exe使用HTTPS作為傳輸傳輸傳輸傳輸協定、因此擷取單位必須能夠啟動HTTPS連線至VNXe。
-* VNXe裝置的IP位址或完整網域名稱
-* 您至少必須有唯讀使用者、才能供資料收集器使用。
-* 管理解決方案促成者伺服器的IP位址。
-* 連接埠443需要HTTPS
-* EMC VNXe 資料收集器可為庫存提供 NAS 和 iSCSI 支援；將會探索光纖通道磁碟區、但 Data Infrastructure Insights 並未報告 FC 對應、遮罩或儲存連接埠。
+* VNXe 資料收集器是基於 CLI；您必須將 Unisphere for VNXe CLI (uemcli.exe) 安裝到 VNXe 資料收集器所在的擷取單元上。
+* uemcli.exe 使用 HTTPS 作為傳輸協議，因此擷取單元需要能夠啟動與 VNXe 的 HTTPS 連線。
+* VNXe 設備的 IP 位址或完全限定域名
+* 您必須至少擁有一個只讀使用者以供資料收集器使用。
+* 管理解決方案啟用伺服器的 IP 位址。
+* 在連接埠 443 上需要 HTTPS
+* EMC VNXe 資料收集器為庫存提供 NAS 和 iSCSI 支援；將發現光纖通道卷，但Data Infrastructure Insights不會報告 FC 映射、屏蔽或儲存連接埠。
 
 
 
 
 == 術語
 
-Data Infrastructure Insights 會從 VNXe 資料收集器取得下列庫存資訊。對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights從 VNXe 資料收集器取得以下庫存資訊。對於Data Infrastructure Insights取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | Data Infrastructure Insights 術語 
+| 供應商/型號術語 | Data Infrastructure Insights術語 
 
 
 | 磁碟 | 磁碟 
 
 
-| 儲存陣列 | 儲存設備 
+| 儲存陣列 | 儲存 
 
 
 | 處理器 | 儲存節點 
 
 
-| 儲存資源池 | 儲存資源池 
+| 儲存池 | 儲存池 
 
 
-| 一般 iSCSI 區塊資訊、 VMware VMFS | 分享 
+| 常規 iSCSI 塊信息，VMware VMFS | 分享 
 
 
-| 複寫遠端系統 | 同步 
+| 複製遠端系統 | 同步 
 
 
-| iSCSI節點 | iSCSI目標節點 
+| iSCSI 節點 | iSCSI 目標節點 
 
 
-| iSCSI啟動器 | iSCSI目標啟動器 
+| iSCSI 發起程序 | iSCSI 目標啟動器 
 |===
-附註：這些只是通用的術語對應、可能不代表此資料來源的每個案例。
+注意：這些只是常用術語映射，可能並不代表此資料來源的所有情況。
 
 
 
-== 組態
+== 配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| VNXe儲存設備 | VNXe裝置的IP位址或完整網域名稱 
+| VNXe 存儲 | VNXe 設備的 IP 位址或完全限定域名 
 
 
-| 使用者名稱 | VNXe裝置的使用者名稱 
+| 使用者名稱 | VNXe 裝置的使用者名稱 
 
 
-| 密碼 | VNXe裝置的密碼 
+| 密碼 | VNXe 設備的密碼 
 |===
 
 
-== 進階組態
+== 進階配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| 庫存輪詢時間間隔（分鐘） | 庫存輪詢之間的時間間隔。預設值為40分鐘 
+| 庫存輪詢間隔（分鐘） | 庫存調查之間的間隔。預設值為 40 分鐘 
 
 
-| CLI 連接埠 | 用於VNXe CLI的連接埠 
+| CLI 連接埠 | 用於 VNXe CLI 的端口 
 
 
-| 效能意見調查時間間隔（秒） | 預設值為 300 。 
+| 效能輪詢間隔（秒） | 預設值為 300。 
 |===
 
 
-== 疑難排解
+== 故障排除
 
-如果您在使用此資料收集器時遇到問題、請嘗試下列事項：
+如果您在使用此資料收集器時遇到問題，請嘗試以下操作：
 
 
 
-=== 庫存
+=== 存貨
 
 [cols="2*"]
 |===
-| 問題： | 試用： 
+| 問題： | 試試一下： 
 
 
-| 「無法執行外部公用程式」、並顯示錯誤訊息「無法找到Unefactable uemcli」 | * 驗證正確的 IP 位址、使用者名稱和密碼 * 確認 Data Infrastructure Insights Acquisition Unit 上已安裝 Un主動 式介面卡 CLI * 確認資料來源組態中的 Un主動 式介面卡 CLI 安裝目錄正確 * 確認 VNXe 的 IP 在資料來源組態中是否正確。從 Data Infrastructure Insights 擷取單元中、開啟 CMD 並變更至設定的安裝目錄： $ ｛ INSTALLDIR 。輸入uemcli -d <your ip>-u <your ID>/sys/aproomed show、嘗試連線VNXe裝置 
+| “無法執行外部實用程式”，錯誤訊息為“無法找到 Unisphere 可執行檔 uemcli” | * 驗證正確的 IP 位址、使用者名稱和密碼 * 確認 Unisphere CLI 已安裝在Data Infrastructure Insights擷取單元上 * 確認資料來源設定中的 Unisphere CLI 安裝目錄正確 * 確認資料來源設定中的 VNXe 的 IP 正確。從Data Infrastructure Insights採集單元開啟 CMD 並變更為配置的安裝目錄：${INSTALLDIR.嘗試鍵入以下內容與 VNXe 裝置建立連線：uemcli -d <Your IP> -u <Your ID> /sys/general show 
 |===
-您可以在頁面或中找到其他link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]資訊。
+更多資訊可從link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。

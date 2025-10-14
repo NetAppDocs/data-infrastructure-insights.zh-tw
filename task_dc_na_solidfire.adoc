@@ -1,113 +1,113 @@
 ---
 sidebar: sidebar 
 permalink: task_dc_na_solidfire.html 
-summary: 設定NetApp SolidFire 資料收集器 
+summary: 配置NetApp SolidFire資料收集器 
 keywords: data collector, queries, create 
 ---
-= NetApp SolidFire 《全快閃陣列資料收集器》（All Flash Array Data Collector）
+= NetApp SolidFire全快閃陣列資料收集器
 :hardbreaks:
 :allow-uri-read: 
 
 
 [role="lead"]
-NetApp SolidFire 推出的「全快閃全快閃陣列資料收集器」可同時支援從iSCSI SolidFire 和Fibre Channel之間收集庫存與效能。
+NetApp SolidFire全快閃陣列資料收集器支援從 iSCSI 和光纖通道SolidFire配置進行庫存和效能收集。
 
-此資料收集器採用了REST API。SolidFire SolidFire資料收集器所在的擷取單元、必須能夠啟動HTTPS連線至SolidFire 叢集管理IP位址上的TCP連接埠443。資料收集器需要認證資料、以便在SolidFire 支援REST的API上查詢整個叢集。
+SolidFire資料收集器利用SolidFire REST API。資料收集器所在的採集單元需要能夠啟動與SolidFire叢集管理 IP 位址上的 TCP 連接埠 443 的 HTTPS 連線。資料收集器需要能夠在SolidFire叢集上進行 REST API 查詢的憑證。
 
 
 
 == 術語
 
-Data Infrastructure Insights 會從 NetApp SolidFire All Flash Array 資料收集器取得下列庫存資訊。對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights從NetApp SolidFire All-Flash 陣列資料收集器取得下列庫存資訊。對於Data Infrastructure Insights取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | Data Infrastructure Insights 術語 
+| 供應商/型號術語 | Data Infrastructure Insights術語 
 
 
-| 磁碟機 | 磁碟 
+| 駕駛 | 磁碟 
 
 
-| 叢集 | 儲存設備 
+| 簇 | 儲存 
 
 
 | 節點 | 儲存節點 
 
 
-| Volume | Volume 
+| 體積 | 體積 
 
 
-| 光纖通道連接埠 | 連接埠 
+| 光纖通道連接埠 | 港口 
 
 
-| Volume存取群組、LUN指派 | Volume Map 
+| 卷訪問群組、LUN 分配 | 體積圖 
 
 
-| iSCSI工作階段 | Volume遮罩 
+| iSCSI 會話 | 體積遮罩 
 |===
-附註：這些只是通用的術語對應、可能不代表此資料收集器的每個案例。
+注意：這些只是常見的術語映射，可能並不代表此資料收集器的所有情況。
 
 
 
-== 需求
+== 要求
 
-以下是設定此資料收集器的需求：
+以下是配置此資料收集器的要求：
 
-* 管理虛擬IP位址
-* 唯讀使用者名稱和認證
-* 連接埠 443
-
-
+* 管理虛擬 IP 位址
+* 只讀使用者名稱和憑證
+* 埠 443
 
 
-== 組態
+
+
+== 配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| 管理虛擬IP位址（MVIP） | 管理VMware叢集的虛擬IP位址SolidFire 
+| 管理虛擬 IP 位址 (MVIP) | SolidFire叢集的管理虛擬 IP 位址 
 
 
-| 使用者名稱 | 用來登入SolidFire 到Isname叢集的名稱 
+| 使用者名稱 | 用於登入SolidFire集群的名稱 
 
 
-| 密碼 | 用於登入SolidFire 到故障叢集的密碼 
+| 密碼 | 用於登入SolidFire集群的密碼 
 |===
 
 
-== 進階組態
+== 進階配置
 
 [cols="2*"]
 |===
-| 欄位 | 說明 
+| 場地 | 描述 
 
 
-| 連線類型 | 選擇連線類型 
+| 連接類型 | 選擇連線類型 
 
 
-| 通訊連接埠 | 用於NetApp API的連接埠 
+| 通訊埠 | 用於NetApp API 的連接埠 
 
 
-| 庫存輪詢時間間隔（分鐘） | 預設為20分鐘 
+| 庫存輪詢間隔（分鐘） | 預設為 20 分鐘 
 
 
-| 效能意見調查時間間隔（秒） | 預設值為300秒 
+| 效能輪詢間隔（秒） | 預設值為 300 秒 
 |===
 
 
-== 疑難排解
+== 故障排除
 
-當 SolidFire 回報錯誤時、資料基礎架構洞見會顯示如下：
+當SolidFire報告錯誤時，它會在Data Infrastructure Insights中顯示如下：
 
-_ SolidFire 在嘗試擷取資料時、收到來自於某個不檢設備的錯誤訊息。此呼叫是<method>（<參數 字串>）。裝置的錯誤訊息為（請參閱裝置手冊）：_
+_嘗試檢索資料時收到來自SolidFire設備的錯誤訊息。呼叫的是 <method> (<parameterString> )。設備發出的錯誤訊息是（檢查設備手冊）：<message>_
 
-其中：
+在哪裡：
 
-* 方法是HTTP方法、例如GET或PUT。
-* 參數字串>是以逗號分隔的參數清單、包含在REST呼叫中。
-* 此為傳回的錯誤訊息。
+* <method> 是一種 HTTP 方法，例如 GET 或 PUT。
+* <parameterString> 是 REST 呼叫中包含的參數的逗號分隔清單。
+* <message> 是裝置傳回的錯誤訊息。
 
 
-有關此資料收集器的其他資訊，請link:concept_requesting_support.html["支援"]link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]參閱頁面或。
+關於此數據收集器的更多信息，請參閱link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。

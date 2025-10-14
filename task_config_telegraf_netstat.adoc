@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task_config_telegraf_netstat.html 
 keywords: telegraf, installation, install, netstat 
-summary: Netstat資料收集器組態 
+summary: Netstat 資料收集器配置 
 ---
 = Netstat資料收集器
 :hardbreaks:
@@ -10,22 +10,22 @@ summary: Netstat資料收集器組態
 
 
 [role="lead"]
-Data Infrastructure Insights 使用此資料收集器來收集 Netstat 指標。
+Data Infrastructure Insights使用此資料收集器來收集 Netstat 指標。
 
 
 
 == 安裝
 
-. 從 * 可伺服 > 收集器 * 、按一下 * + 資料收集器 * 。選擇 Netstat 。
+. 從*可觀察性 > 收集器*中，按一下*+資料收集器*。選擇 Netstat。
 +
-選取安裝Telegraf代理程式的作業系統或平台。
+選擇安裝 Telegraf 代理程式的作業系統或平台。
 
-. 如果您尚未安裝 Agent 進行收集，或想要為不同的作業系統或平台安裝 Agent ，請按一下 _ 顯示指示 _ 以展開指示link:task_config_telegraf_agent.html["代理程式安裝"]。
-. 選取要搭配此資料收集器使用的代理程式存取金鑰。您可以按一下「*+代理程式存取金鑰*」按鈕來新增代理存取金鑰。最佳實務做法：只有當您想要將資料收集器分組時、才使用不同的代理程式存取金鑰、例如依作業系統/平台。
-. 請依照組態步驟設定資料收集器。這些指示會因您用來收集資料的作業系統或平台類型而有所不同。
+. 如果您尚未安裝用於收集的代理，或者您希望為不同的作業系統或平台安裝代理，請按一下「顯示說明」以展開link:task_config_telegraf_agent.html["代理安裝"]指示。
+. 選擇用於此資料收集器的代理存取金鑰。您可以透過點擊 *+ 代理存取金鑰* 按鈕新增新的代理存取金鑰。最佳實務：只有當您想要對資料收集器進行分組（例如按作業系統/平台）時才使用不同的代理存取金鑰。
+. 依照設定步驟配置資料收集器。說明根據您用於收集資料的作業系統或平台的類型而有所不同。
 
 
-image:NetstatDCConfigWindows.png["Windows Netstat組態"]
+image:NetstatDCConfigWindows.png["Windows Netstat 設定"]
 
 
 
@@ -33,21 +33,21 @@ image:NetstatDCConfigWindows.png["Windows Netstat組態"]
 
 
 
-== 物件與計數器
+== 物體和計數器
 
-收集下列物件及其計數器：
+收集以下物件及其計數器：
 
 [cols="<.<,<.<,<.<,<.<"]
 |===
 
 
-| 物件： | 識別碼： | 屬性： | 資料點： 
+| 目的： | 標識符： | 屬性： | 數據點： 
 
 
-| Netstat | 節點 UUID | 節點IP節點名稱 |  
+| 網路狀態 | 節點UUID | 節點IP 節點名稱 |  
 |===
 
 
-== 疑難排解
+== 故障排除
 
-您可以在頁面中找到其他資訊link:concept_requesting_support.html["支援"]。
+更多資訊可從link:concept_requesting_support.html["支援"]頁。
