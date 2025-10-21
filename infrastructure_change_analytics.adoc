@@ -7,6 +7,10 @@ summary: Data Infrastructure Insights追蹤基礎設施的變化，以便於分�
 = 基礎設施變化分析
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]
@@ -37,6 +41,12 @@ image:infraChange_filter_dropdown.png["基礎設施變更過濾下拉式選單"]
 您也可以從過濾器設定下方的狀態部分直接轉到關鍵警報或更改，包括目前警報最多的前三個資源。
 
 image:Change_Analysis_filters_and_status.png["狀態以及警報和更改的快速鏈接"]
+
+
+
+== 關於長期警報的說明
+
+請注意，保持活動狀態超過 24 小時的警報將每 24 小時在「警報和變更」清單中顯示一次，因此您可能會注意到同一警報被列出多次。每個警報都具有相同的警報 ID、相同的開始時間等，並且狀態為“警報中”，直到警報得到解決。
 
 
 

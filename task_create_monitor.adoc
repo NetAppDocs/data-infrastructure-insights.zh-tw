@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task_create_monitor.html 
 keywords: monitors, alerts, log, metric, system-defined, system, metric, 
-summary: 建立監視器來對效能或庫存閾值以及指標或日誌條件發出警報。 
+summary: 建立自訂指標和日誌監視器，以透過自動警報和通知主動追蹤基礎設施效能、容量閾值和關鍵事件。 
 ---
 = 使用監視器發出警報
 :hardbreaks:
@@ -67,8 +67,19 @@ image:MonitorMetricFilter.png["指標過濾"]
 
 處理整合資料（Kubernetes、 ONTAP Advanced Data 等）時，指標過濾會從繪製的資料系列中刪除單一/不匹配的資料點，這與基礎設施資料（儲存、VM、連接埠等）不同，其中篩選器會對資料系列的聚合值進行處理，並可能從圖表中刪除整個物件。
 
+指標監視器適用於儲存、交換器、主機、虛擬機器等庫存對象，以及ONTAP Advanced 或 Kubernetes 資料等整合指標。監控庫存物件時，請注意不能選擇「分組依據」方法。但是，監控整合資料時允許分組。
 
-TIP: 若要建立多條件監視器（例如，IOPS > X 和延遲 > Y），請將第一個條件定義為閾值，將第二個條件定義為篩選器。
+
+
+==== 多條件監視器
+
+您可以選擇透過新增第二個條件來進一步最佳化您的指標監視器。只需展開“+新增次要指標條件”提示並配置附加條件。
+
+image:multi-condition_monitor_second_condition.png["設定第二個條件"]
+
+如果兩個條件都滿足，監視器就會發出警報。
+
+請注意，您只能「AND」第二個條件；您不能選擇在一個條件「OR」另一個條件上發出警報。
 
 
 

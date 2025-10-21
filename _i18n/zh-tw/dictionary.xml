@@ -5577,7 +5577,6 @@
   <block id="6a0fb4ccd9df37a4928d666f900fc111" category="list-text">9.11.1P7</block>
   <block id="ee297c3ee4d46f935bc45d0d064be8f4" category="list-text">9.11.1P8</block>
   <block id="ac844c749ee94b582ae244c828b00311" category="list-text">9.11.1P9</block>
-  <block id="b50ef0c82f2cb86e10106d6dcf4be872" category="list-text">9.11.1X12</block>
   <block id="eba1f3287bdc33dfa25c084b5e15a4c5" category="list-text">9.12.1</block>
   <block id="b5c4301816e6af2bf88c788518733eb7" category="list-text">9.12.1P1</block>
   <block id="8f54fbf368765fd506959c0f94135922" category="list-text">9.12.1P10</block>
@@ -5630,9 +5629,6 @@
   <block id="ebbe4cbae17517c84e54eba083c8da4b" category="list-text">9.14.1P8</block>
   <block id="d73363717d834d4a2ab99eeb68453131" category="list-text">9.14.1P8D5</block>
   <block id="f8a8cd0923816d5b6d78f88100eeeb74" category="list-text">9.14.1P9</block>
-  <block id="86259c42e39aca9d604557fc0df7cdfd" category="list-text">9.14.1X14</block>
-  <block id="e2a6950e117d892956cab85ead3b8f5f" category="list-text">9.14.1X20</block>
-  <block id="2f550d4ca52f3cf0205b3dc3813685a1" category="list-text">9.14.1X24</block>
   <block id="d9df468f7ec059062fe27406e7e15237" category="list-text">9.15.0P1</block>
   <block id="d8fde17f7482290d3fc56b981fe6e5f3" category="list-text">9.15.0P2</block>
   <block id="120ae360daecd24b580b71f9f2766bbc" category="list-text">9.15.1</block>
@@ -5646,15 +5642,9 @@
   <block id="a94def7bd8645fffeb7856a0b730acfb" category="list-text">9.15.1P7</block>
   <block id="cc1e51f6714a9a4de877bfe5d6abc663" category="list-text">9.15.1P7D4</block>
   <block id="fd43304224fcabc307d59c5ec05b2dec" category="list-text">9.15.1P8</block>
-  <block id="988a2f8f75724c92369ef7cf6c1af9c3" category="list-text">9.15.1X19</block>
-  <block id="398a2f5fbfe6d752b77067052fc148f5" category="list-text">9.15.1X27</block>
   <block id="0bd0e673df4c14cae45a11fac30c530b" category="list-text">9.16.1</block>
   <block id="5329b0514f6808bed8f7ea91aa5dfffe" category="list-text">9.16.1P1</block>
-  <block id="38581ea3df1d6327e2ef6aa30a992d3d" category="list-text">9.16.1X16</block>
-  <block id="309cc4b6e6becf1dabfbf424307d63a3" category="list-text">9.16.1X26</block>
-  <block id="abcfd7456fda735d64d7072f1f14b7a9" category="list-text">9.16.1X29</block>
   <block id="81e76ca235a16e1d875f94529d326de0" category="list-text">9.17.1</block>
-  <block id="c4e97bb93085dd52655d04ae6039f80d" category="list-text">9.17.1X7</block>
   <block id="ede0f5d55262ef3a8fefabdc493d497d" category="list-text">9.2.0P3</block>
   <block id="db3defc5982e5a3ab1c7c23c3b9bd186" category="list-text">9.2.0P4</block>
   <block id="b7cc677864a8a148a8f6712077c927d6" category="list-text">9.3.0P15</block>
@@ -5707,7 +5697,6 @@
   <block id="300af83339932c117e40a26058e99342" category="list-text">9.7.0P7</block>
   <block id="7bf36aff015b9cae71de886282513b8d" category="list-text">9.7.0P8</block>
   <block id="ce901682465ebe915d94307190f673c8" category="list-text">9.7.0P9</block>
-  <block id="3944340f50ba82bd002202199d7abe5e" category="list-text">9.7.0X17</block>
   <block id="b986ed6de4db8c07091d6f0b537ea702" category="list-text">9.8.0</block>
   <block id="da6f3108688381d819a41aa913cf1e19" category="list-text">9.8.0P1</block>
   <block id="deb8a9119a167f8fa049b82613624fbc" category="list-text">9.8.0P10</block>
@@ -5715,7 +5704,6 @@
   <block id="85c61f496ad4ea3c959fecea506ac58e" category="list-text">9.8.0P12</block>
   <block id="3c92472032750ed4a2c0e27d1800b25e" category="list-text">9.8.0P13</block>
   <block id="7f9b4710e7cd1de83b1d2aacebadcc53" category="list-text">9.8.0P14</block>
-  <block id="0125e3652c60c88a180594ab60564bba" category="list-text">9.8.0P14X5</block>
   <block id="8c5f541323d4aa6813a524fbf9dd59a8" category="list-text">9.8.0P15</block>
   <block id="4a6dae456f8b918b4c60072a72969636" category="list-text">9.8.0P16</block>
   <block id="8a3155dbb9a7e427a5aefa328145b791" category="list-text">9.8.0P17</block>
@@ -5745,7 +5733,6 @@
   <block id="f42881361c9c6865d49fd05bf347146a" category="list-text">9.9.1P2</block>
   <block id="d4960421bee21c61ebf8d27b38d6080a" category="list-text">9.9.1P20</block>
   <block id="7d6a08d11ebcd453bf13060310fcfeeb" category="list-text">9.9.1P3</block>
-  <block id="f9d157259fbe48b272c368d76bb54049" category="list-text">9.9.1P5X2</block>
   <block id="baf935f699cf2fba569f01e21467a7d7" category="list-text">9.9.1P6</block>
   <block id="5c5ab1439f6ac62d53efee3758d3c999" category="list-text">9.9.1P7</block>
   <block id="f6d334c5abfc986211c0472ba79714a7" category="list-text">9.9.1P9</block>
@@ -5787,9 +5774,6 @@
   <block id="7fdbd16e1ff751fad04600d723d8011d" category="list-text">NetApp版本 9.16.1：2025 年 1 月 18 日星期六 19:31:15 UTC</block>
   <block id="88021ecf50f7541d3d24492a191e471b" category="list-text">NetApp版本 9.16.1P1：2025 年 2 月 14 日星期五 03:53:50 UTC</block>
   <block id="652755e90249a76ef63d7204d6ab39ec" category="list-text">NetApp版本 9.16.1RC1：2024 年 11 月 4 日星期一 10:39:46 UTC</block>
-  <block id="e47d8be37475d6721d2595b43299102a" category="list-text">NetApp版本 9.16.1X26：2024 年 12 月 9 日星期一 10:27:42 UTC</block>
-  <block id="7faf1c14f22abc4af287a0938e0e11d4" category="list-text">NetApp版本 9.16.1X29：2025 年 1 月 12 日星期日 11:18:25 UTC</block>
-  <block id="047366cbe3a752b392b76ee3de5a0693" category="list-text">NetApp版本 9.17.1X7：2025 年 2 月 14 日星期五 11:21:52 UTC</block>
   <block id="7012035b5539239acce1eeb19262a908" category="list-text">NetApp發佈 Clawhammer__9.14.1：2024 年 5 月 18 日星期六 09:23:49 UTC</block>
   <block id="85d028d27872290fedf829049ad47f51" category="list-text">NetApp發佈 Cloudstream__9.16.1：2024 年 11 月 4 日星期一 05:51:46 UTC</block>
   <block id="efb74c609c847e1c896c8b72027c2404" category="list-text">NetApp發佈 Cloudstream__9.16.1：2025 年 3 月 13 日星期四 20:55:54 UTC</block>
@@ -8235,7 +8219,6 @@
   <block id="46152eb4e0d7febe5ed5ec5aa51b068f" category="admonition">對於具有大量相關資產的環境，將應用程式指派繼承到這些資產可能需要幾分鐘。如果您擁有許多相關資產，請留出更多時間進行繼承。</block>
   <block id="f64880272c45a077dc9152ab7dd2f24a" category="paragraph">將主機分配給應用程式後，您可以將剩餘資產分配給應用程式。若要存取應用程式的登入頁面，請點擊*管理&gt;應用程式*並選擇您建立的應用程式。</block>
   <block id="91771bf0d5be307a250d706e57df1eb1" category="summary">建立監視器來對效能或庫存閾值以及指標或日誌條件發出警報。</block>
-  <block id="3c86c080f12d925b5a5ec1ad14563f65" category="paragraph">配置監視器以追蹤基礎設施資源的效能閾值、日誌事件和異常。為節點寫入延遲、儲存容量或應用程式效能等指標建立自訂警報，並在滿足這些條件時接收通知。</block>
   <block id="3f5fb2a45a144339f9591a104342f79b" category="paragraph">監視器可讓您設定由「基礎設施」物件（例如儲存、VM、EC2 和連接埠）產生的指標的閾值，以及「整合」資料（例如為 Kubernetes、 ONTAP進階指標和 Telegraf 外掛程式收集的資料）。當超過警告等級或臨界等級閾值時，這些_metric_監視器會向您發出警報。</block>
   <block id="e730b9c349889018dc9deaccaa5a438b" category="paragraph">您也可以建立監視器，當偵測到指定的日誌事件時觸發警告、嚴重或資訊等級的警報。</block>
   <block id="b18c8095ec7b7cd0c63a4e28b715f6c1" category="inline-link-macro">系統定義的監視器</block>
@@ -8257,13 +8240,11 @@
   <block id="313acdf9633421e44aea4a9be12b5071" category="list-text">在下拉式選單中，搜尋並選擇要監控的物件類型和指標。</block>
   <block id="0afd1ac0e8283e24d8739752316dccba" category="paragraph">您可以設定篩選器來縮小要監控的物件屬性或指標的範圍。</block>
   <block id="02421e310193c48e3a305e97cbba58c2" category="paragraph"><block ref="02421e310193c48e3a305e97cbba58c2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8ce06b1a529052723e1fb36a1c2f1a25" category="admonition">若要建立多條件監視器（例如，IOPS &gt; X 和延遲 &gt; Y），請將第一個條件定義為閾值，將第二個條件定義為篩選器。</block>
   <block id="9ef1d5830a24b9e150ec53e978038289" category="section-title">定義監視器的條件。</block>
   <block id="2e75e9aa28dbca090ee157cf8d539e66" category="list-text">選擇要監控的物件和指標後，設定警告等級和/或臨界等級閾值。</block>
   <block id="734f668bd72716899c84bbaedc8d2564" category="list-text">對於“警告”級別，在我們的範例中輸入 200。範例圖中顯示了表示此警告等級的虛線。</block>
   <block id="a86a316c20ed3c30474a8a9bcbca7f2f" category="list-text">對於“_Critical_”級別，輸入 400。範例圖中顯示了表示此臨界水平的虛線。</block>
   <block id="d00ff899ed7e3bcc490e418870ed0ce4" category="paragraph">此圖表顯示歷史數據。圖表上的警告和嚴重等級線是監視器的直觀表示，因此您可以輕鬆看到監視器在每種情況下何時可能觸發警報。</block>
-  <block id="390f4b7f0b6066d4e61aa66cd61b3e6c" category="list-text">對於發生間隔，選擇「連續」且週期為「15 分鐘」。</block>
   <block id="750f553c0f9776809a020b980f3dc25a" category="paragraph">您可以選擇在超出閾值時立即觸發警報，或等到閾值持續超出一段時間後再觸發警報。在我們的範例中，我們不希望每次總 IOPS 峰值超過警告或嚴重等級時都收到警報，而僅當監控對象連續超過其中一個等級至少 15 分鐘時才收到警報。</block>
   <block id="812faed524486085f300f8e0bdba77fe" category="inline-image-macro">定義監視器的條件</block>
   <block id="be0ee88944c0674ffaad4c460224553f" category="paragraph"><block ref="be0ee88944c0674ffaad4c460224553f" category="inline-image-macro-rx" type="image"></block></block>
@@ -12791,4 +12772,18 @@
   <block id="399bd1ee587245ecac6f39beaa99886f" category="sidebar">PostgreSQL</block>
   <block id="14590850b4107a6f92feb1af739b82eb" category="sidebar">木偶</block>
   <block id="15ec8934d96530d4c5f4a3b0f701f745" category="sidebar">重新思考資料庫</block>
+  <block id="b6c4679bc199e5db8f88b60803f5ca85" category="section-title">關於長期警報的說明</block>
+  <block id="83e49813b50f1fc5e03ffde57c985102" category="paragraph">請注意，保持活動狀態超過 24 小時的警報將每 24 小時在「警報和變更」清單中顯示一次，因此您可能會注意到同一警報被列出多次。每個警報都具有相同的警報 ID、相同的開始時間等，並且狀態為“警報中”，直到警報得到解決。</block>
+  <block id="079090a1dc96bbd4e45426ceeedd592f" category="summary">建立自訂指標和日誌監視器，以透過自動警報和通知主動追蹤基礎設施效能、容量閾值和關鍵事件。</block>
+  <block id="883d09869adb0b8fae6c4387af23b6d4" category="paragraph">配置監視器以追蹤基礎設施資源的效能閾值、日誌事件和異常。為節點寫入延遲、儲存容量或應用程式效能等指標建立自訂警報，並在滿足這些條件時接收通知。</block>
+  <block id="a7cd6a99f9ca0fccc58590218d395239" category="paragraph">指標監視器適用於儲存、交換器、主機、虛擬機器等庫存對象，以及ONTAP Advanced 或 Kubernetes 資料等整合指標。監控庫存物件時，請注意不能選擇「分組依據」方法。但是，監控整合資料時允許分組。</block>
+  <block id="70b37ea4cf45e401178bb71faa1e50fe" category="section-title">多條件監視器</block>
+  <block id="6e8d7620a4a0bc7614ae9936242cc79e" category="paragraph">您可以選擇透過新增第二個條件來進一步最佳化您的指標監視器。只需展開“+新增次要指標條件”提示並配置附加條件。</block>
+  <block id="c7c9e436435c4770e86c98098336f9a2" category="inline-image-macro">設定第二個條件</block>
+  <block id="8047e4ba43998007d5db74d70e51011b" category="paragraph"><block ref="8047e4ba43998007d5db74d70e51011b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="53cd31c5f3906e17dd7f8643c332ec08" category="paragraph">如果兩個條件都滿足，監視器就會發出警報。</block>
+  <block id="440695f7e9d74e3d3294a5cd9405bf75" category="paragraph">請注意，您只能「AND」第二個條件；您不能選擇在一個條件「OR」另一個條件上發出警報。</block>
+  <block id="f5efcf93de96054f67b29d58662ad5c6" category="list-text">對於發生間隔，選擇「連續」且週期為「15 分鐘」。</block>
+  <block id="95e94216ef8b85a76727809c3dfcbcc0" category="inline-link-macro">ONTAP資料管理</block>
+  <block id="2520cfbb37bc8bbd2fc91278c73eb838" category="list-text">請注意， ONTAP REST 收集器不支援 Fpolicy 指標（工作負載安全資料收集器使用 FPolicy 伺服器，而 FPolicy 指標可讓您監控工作負載安全資料收集活動）。若要支援 Fpolicy 指標，請使用 <block ref="5887f651a571af9233df120cb7d32347" category="inline-link-macro-rx"></block> 集電極。</block>
 </blocks>
