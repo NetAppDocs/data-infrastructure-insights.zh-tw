@@ -1,12 +1,16 @@
 ---
 sidebar: sidebar 
 permalink: data_collector_list.html 
-summary: 支援的數據收集器列表。 
+summary: Data Infrastructure Insights支援的所有數據收集器的字母順序參考列表，按基礎設施和服務類型組織。 
 keywords: data collector, vendor, infrastructure, integration, service 
 ---
-= Data Infrastructure Insights數據收集器列表
+= Data Infrastructure Insights數據收集器參考列表
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]
@@ -218,9 +222,6 @@ Data Infrastructure Insights支援的數據收集器的字母列表：
 
 
 | link:task_dc_na_cloud_volumes_ontap.html["NetApp Cloud Volumes ONTAP"] | 基礎設施 
-
-
-| link:task_dc_na_cloud_volumes.html["適用於 AWS 的NetApp Cloud Volumes 服務"] | 基礎設施 
 
 
 | link:task_dc_na_cloud_connection.html["適用於ONTAP 9.9+ 的NetApp雲端連接"] | 基礎設施 
