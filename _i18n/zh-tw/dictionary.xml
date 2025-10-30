@@ -12784,4 +12784,13 @@
   <block id="a7cd6a99f9ca0fccc58590218d395239" category="paragraph">指標監視器適用於儲存、交換器、主機、虛擬機器等庫存對象，以及ONTAP Advanced 或 Kubernetes 資料等整合指標。監控庫存物件時，請注意不能選擇「分組依據」方法。但是，監控整合資料時允許分組。</block>
   <block id="c712dc09bb9c9243894a5127306517ba" category="paragraph">NetApp E 系列 REST 資料收集器收集庫存、日誌和效能資料。收集器支援使用相同配置並報告相同資料的韌體 7.x+。  REST 收集器監控儲存池、磁碟和磁碟區的加密狀態、儲存節點 CPU 使用率以及舊版SANtricity E 系列收集器未提供的日誌功能。</block>
   <block id="e997ccbcc3dc041951b04d1a57ba2999" category="paragraph">Data Infrastructure Insights使用 REST 從NetApp E 系列取得以下庫存資訊。對於所取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：</block>
+  <block id="57e1771ce1e6d595e42a3b886ca50109" category="section-title">2025年11月</block>
+  <block id="62a254ee95eae896e983f0fa134680f4" category="section-title">設定您的個人化主頁</block>
+  <block id="090655f61ce1a2016b2b1f7d8a300b0d" category="paragraph">將任意Data Infrastructure Insights頁面設定為您的個人化主頁，從而簡化您的日常監控工作流程。每個使用者都可以選擇不同的主頁，以便專注於對他們來說重要的內容：關鍵儀表板、警報、基礎設施健康狀況、工作負載安全等等。</block>
+  <block id="7ddd781b2ae78fc386e83cd8e2c0692e" category="inline-image-macro">設定首頁寬度=300</block>
+  <block id="55cc3fafb7135c031d4e8b64565d201a" category="paragraph"><block ref="55cc3fafb7135c031d4e8b64565d201a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7cbf92f9cdc81c507070533c182c6855" category="section-title">利用自動儀錶板分組功能保持井然有序</block>
+  <block id="344e2ec56c6114e245d66d3978073950" category="paragraph">利用智慧分組功能，自動將匯入的圖庫儀表板整理成邏輯類別，從而改變您的儀表板體驗。新的分組功能使匯入儀表板變得輕而易舉，並根據每個儀表板的功能及其與您環境的相關性，將其放置在相應的群組中。</block>
+  <block id="251972b93cab79073298e6ad6678a0be" category="inline-image-macro">導入期間的圖庫組，寬度=500</block>
+  <block id="99d6cc3c987c34af31c72d3213e5e764" category="paragraph"><block ref="99d6cc3c987c34af31c72d3213e5e764" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
