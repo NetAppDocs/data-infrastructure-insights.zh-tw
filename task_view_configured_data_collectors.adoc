@@ -7,6 +7,10 @@ summary: 摘要。
 = 管理已配置的資料收集器
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]
