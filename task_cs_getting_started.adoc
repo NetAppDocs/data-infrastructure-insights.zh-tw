@@ -1,16 +1,20 @@
 ---
 sidebar: sidebar 
 permalink: task_cs_getting_started.html 
-keywords: collectors, data collectors, configure, introduction, browsers , Cloud Secure 
-summary: 只需幾個簡單的步驟即可開始使用 Workload Security 
+keywords: collectors, data collectors, configure, introduction, browsers, Cloud Secure 
+summary: 部署工作負載安全代理程式和資料收集器，以監控使用者活動並偵測安全威脅。 
 ---
 = 工作負載安全入門
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]
-在開始使用 Workload Security 監控使用者活動之前，需要完成一些設定任務。
+工作負載安全功能可協助您監控使用者活動並偵測儲存環境中的潛在安全威脅。在開始監控之前，您需要設定代理程式、資料收集器和目錄服務，為全面的安全監控奠定基礎。
 
 工作負載安全系統使用代理從儲存系統收集存取資料並從目錄服務伺服器收集使用者資訊。
 
@@ -28,19 +32,14 @@ link:concept_cs_agent_requirements.html["代理要求"]
 
 link:task_cs_add_agent.html["新增代理"]
 
-link:https://netapp.hubs.vidyard.com/watch/Lce7EaGg7NZfvCUw4Jwy5P?["*視訊*：代理部署"]
 
 
+| 配置使用者目錄連接器 | link:task_config_user_dir_connect.html["新增使用者目錄連接器"] 
 
-| 配置使用者目錄連接器 | link:task_config_user_dir_connect.html["新增使用者目錄連接器"] link:https://netapp.hubs.vidyard.com/watch/NEmbmYrFjCHvPps7QMy8me?["*影片*：Active Directory 連接"] 
 
-
-| 配置資料收集器 | 按一下*工作負載安全性>收集器*點選要設定的資料收集器。請參閱文件的資料收集器供應商參考部分。link:https://netapp.hubs.vidyard.com/watch/YSQrcYA7DKXbj1UGeLYnSF?["*視訊*： ONTAP SVM 連接"] 
+| 配置資料收集器 | 按一下*工作負載安全性>收集器*點選要設定的資料收集器。有關收集器信息，請參閱文件中的“資料收集器供應商參考”部分。 
 
 
 | 建立使用者帳戶 | link:concept_user_roles.html["管理用戶帳戶"] 
-
-
-| 故障排除 | link:https://netapp.hubs.vidyard.com/watch/Fs8N2w9wBtsFGrhRH9X85U?["*影片*：故障排除"] 
 |===
 工作負載安全也可以與其他工具整合。例如，link:http://docs.netapp.com/us-en/cloudinsights/CloudInsights_CloudSecure_Splunk_integration_guide.pdf["請參閱本指南"]與 Splunk 整合。

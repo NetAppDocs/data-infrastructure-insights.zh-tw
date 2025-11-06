@@ -954,26 +954,14 @@
   <block id="33b013de46ebfe3f233e12e26bb762a4" category="paragraph">查詢和篩選器傳回的物件與下圖所示的物件類似。分配有「標籤」的物件是註釋，而沒有標籤的物件是效能計數器或物件屬性。</block>
   <block id="3424b9554ebd571fa4ee62bd540c81dd" category="inline-image-macro">過濾器傳回的對象</block>
   <block id="5ffcd444715146c4b8ef3c2e14e25859" category="paragraph"><block ref="5ffcd444715146c4b8ef3c2e14e25859" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d7eb8ab1e688454eec9d83c8277b00fe" category="section-title">分組和聚合</block>
   <block id="3d0486264987eff198cb8489a591c919" category="section-title">分組（匯總）</block>
-  <block id="e251f9ae37a0914ac3ed0861aee9d003" category="paragraph">小部件中顯示的數據是根據採集期間收集的底層數據點分組（有時稱為匯總）的。例如，如果您有一個顯示隨時間變化的儲存 IOPS 的折線圖小部件，您可能希望看到每個資料中心的單獨線條，以便快速比較。您可以選擇透過以下幾種方式之一對這些資料進行分組：</block>
   <block id="fec05a93bc2859fa296e20fb09a6d339" category="list-text">*平均值*：將每一行顯示為基礎資料的平均值。</block>
   <block id="c4006c924bdf8bc80ddcd09bd46d0666" category="list-text">*最大值*：將每一行顯示為基礎資料的_最大值_。</block>
   <block id="fdf509d52d13201cead39e938712c689" category="list-text">*最小值*：將每一行顯示為基礎資料的_最小值_。</block>
   <block id="1a284984e082a2cc2ceecd12b5c25e50" category="list-text">*總和*：將每一行顯示為基礎資料的總和。</block>
-  <block id="fada1c7705d134b1361677f79eef7e6a" category="list-text">*計數*：顯示在指定時間範圍內報告資料的物件的數量。您可以選擇由儀表板時間範圍決定的_整個時間視窗_。</block>
-  <block id="d186cba97a995601fc12d97defd879c7" category="paragraph">若要設定分組方法，請執行下列操作。</block>
-  <block id="0886591e8bd637066947802b2c681da8" category="list-text">在小部件的查詢中，選擇資產類型和指標（例如，_儲存_）和指標（例如_效能 IOPS 總計_）。</block>
-  <block id="843784684ad8439aa0ddfe813cac8e16" category="list-text">對於*群組*，選擇一種匯總方法（例如_平均值_），並選擇用於匯總資料的屬性或指標（例如，_資料中心_）。</block>
-  <block id="5545e86f2a092d7eeeeae79320003a7a" category="paragraph">該小部件會自動更新並顯示每個資料中心的資料。</block>
-  <block id="9b3328ae96bacd8c344b3f781d9113c0" category="paragraph">您也可以選擇將所有基礎資料分組到圖表或表格中。在這種情況下，您將在小部件中獲得每個查詢的一行，它將顯示所有基礎資產的所選指標的平均值、最小值、最大值、總和或計數。</block>
-  <block id="28c428ed363d0e9575a830fcfb080fe3" category="paragraph">點擊任何按「全部」分組資料的小部件的圖例，將開啟一個查詢頁面，顯示小部件中使用的第一個查詢的結果。</block>
   <block id="12d9c21e855587068144e1be92c3bc96" category="paragraph">如果您為查詢設定了篩選器，則資料將根據篩選後的資料分組。</block>
-  <block id="4bb74590cbf2f4d72c628f06e53c55b9" category="paragraph">請注意，當您選擇按任何欄位（例如，_Model_）對小部件進行分組時，您仍然需要按該欄位進行過濾，以便在圖表或表格上正確顯示該欄位的資料。</block>
   <block id="d86c1c1f96efbca023a6312f2655cdd2" category="section-title">聚合數據</block>
-  <block id="757a30a76f00d417fdea69085d4444a4" category="paragraph">您可以透過將資料點聚合到分鐘、小時或天的儲存桶中來進一步調整時間序列圖表（線、區域等），然後按屬性匯總資料（如果選擇）。您可以選擇根據資料點的「平均值」、「最大值」、「最小值」、「總和」或「計數」來聚合資料點。</block>
   <block id="a10dce4cf3b20fcc81ffdd73fff68459" category="paragraph">較小的間隔與較長的時間範圍相結合可能會導致“聚合間隔導致數據點過多。”警告。如果您的間隔較小並且將儀表板時間範圍增加到 7 天，您可能會看到這種情況。在這種情況下，Insight 將暫時增加聚合間隔，直到您選擇較小的時間範圍。</block>
-  <block id="6d984d3ac5f53bc70c9ce3bedb56f658" category="paragraph">您也可以在長條圖小工具和單值小工具中聚合資料。</block>
   <block id="abbc6ae3194254cb0a6cd47c50a20631" category="paragraph">大多數資產計數器預設聚合為_平均值_。某些計數器預設聚合為_Max、Min_或_Sum_。例如，連接埠錯誤預設聚合為_Sum_，而儲存 IOPS 聚合為_Average_。</block>
   <block id="806da624ec9d79eaa05cce82c4860377" category="section-title">顯示頂部/底部結果</block>
   <block id="30481770dde0dcefc7b5810b7184ac11" category="paragraph">在圖表小工​​具中，您可以顯示匯總資料的*頂部*或*底部*結果，並從提供的下拉清單中選擇顯示的結果數。在表格小工具中，您可以按任意列進行排序。</block>
@@ -1526,9 +1514,7 @@
   <block id="d7ea4828749f5ad072aad31fed4a03a1" category="paragraph">*主機名稱：*US-BV-M11</block>
   <block id="6d7440617347d4c460f065f3f403cc7e" category="paragraph">*正規表示式：*SRV_USBV([A-Za-z0-9]+)_F[12]</block>
   <block id="bf3f7ef872246f009e37d0a4c0951049" category="paragraph">*格式：* US-BV-\1</block>
-  <block id="08b3c5691f5c3cb584dc1a3ec5321962" category="summary">Data Infrastructure Insights有教程向您展示如何執行許多任務。</block>
   <block id="5b425cd08035f29c3dad5d45f1d2ea6e" category="doc">功能教學</block>
-  <block id="f96c0cb8e557b8c2286592a385c5fd6e" category="paragraph">Data Infrastructure Insights具有許多實用功能，可讓您快速輕鬆地解決問題，並深入了解您的企業環境。使用強大的查詢功能輕鬆找到數據，在儀表板中可視化數據，並針對您設定的數據閾值發送電子郵件警報。</block>
   <block id="7dc1d63676b307452b778906ec63a727" category="section-title">清單和影片教程</block>
   <block id="9a3ddb6d99b9ffb5f7473690abc9fb52" category="paragraph">Data Infrastructure Insights租戶上顯示的*啟動清單*包含幾個有用的任務和概念的清單。選擇清單中的一項將帶您進入適合該概念的Data Infrastructure Insights頁面。例如，點擊「建立儀表板」項目將開啟Data Infrastructure Insights「儀表板」頁面。</block>
   <block id="06bc4be9452f8162d26f7cb4b4d2e0b2" category="inline-image-macro">教學清單進度</block>
@@ -8541,9 +8527,7 @@
   <block id="874db297b2254479eeb702a2d7fa8dab" category="list-text">按一下“*刪除*”。</block>
   <block id="e08b25c0c2d46e96d0ac5d6faca80bbf" category="paragraph">系統顯示「刪除代理」頁面。</block>
   <block id="bd69c8c7685e8cb8cbe42da9c5c9d5e0" category="list-text">點選“*刪除*”確認刪除。</block>
-  <block id="3e68378ba1d3b7f2245578e342bed0be" category="summary">只需幾個簡單的步驟即可開始使用 Workload Security</block>
   <block id="bba50a707846a3806736dc01f6354532" category="doc">工作負載安全入門</block>
-  <block id="0506b86e6f0cdfab05c9570568f031d8" category="paragraph">在開始使用 Workload Security 監控使用者活動之前，需要完成一些設定任務。</block>
   <block id="f827ca5aa861a4bddcbc872872858f88" category="paragraph">工作負載安全系統使用代理從儲存系統收集存取資料並從目錄服務伺服器收集使用者資訊。</block>
   <block id="b69df43565e372517a8522587f62a492" category="paragraph">在開始收集資料之前，您需要配置以下內容：</block>
   <block id="eaeb30f9f18e0c50b178676f3eaef45f" category="cell">任務</block>
@@ -8552,20 +8536,12 @@
   <block id="7db04bd496cdb9ab394c662c3f00f7ed" category="paragraph"><block ref="7db04bd496cdb9ab394c662c3f00f7ed" category="inline-link-macro-rx"></block></block>
   <block id="0e46a6bad3878362e846c7b92d82bf81" category="inline-link-macro">新增代理</block>
   <block id="8a48ba26234a2f9778b42b78c443e637" category="paragraph"><block ref="8a48ba26234a2f9778b42b78c443e637" category="inline-link-macro-rx"></block></block>
-  <block id="5b9de2c90171387a124d93a9f2da96f0" category="inline-link-macro">*視訊*：代理部署</block>
-  <block id="4e7bc63fc55f6e0ea38b5aaf46f782fa" category="paragraph"><block ref="4e7bc63fc55f6e0ea38b5aaf46f782fa" category="inline-link-macro-rx"></block></block>
   <block id="ea7a70b573d06d2b749ceca1ebd27807" category="cell">配置使用者目錄連接器</block>
   <block id="3989712b3613cd2576d0059b20b345ce" category="inline-link-macro">新增使用者目錄連接器</block>
-  <block id="938c31c8b36e8eb1b4defe3caa95717e" category="inline-link-macro">*影片*：Active Directory 連接</block>
-  <block id="8946e54a232a494e5ad35eb956c130ee" category="cell"><block ref="d49a8da0de1eee7dc793284699bb0bab" category="inline-link-macro-rx"></block> <block ref="e2ee1872ae14f9b079a5e15b45b85992" category="inline-link-macro-rx"></block></block>
   <block id="6e043661fa5856f26501d44b41838596" category="cell">配置資料收集器</block>
-  <block id="9a588e9b6b88f5c90c86bde96fc3f0c1" category="inline-link-macro">*視訊*： ONTAP SVM 連接</block>
-  <block id="b0bdf1289c168696fcf69f90ddc82ab2" category="cell">按一下*工作負載安全性&gt;收集器*點選要設定的資料收集器。請參閱文件的資料收集器供應商參考部分。<block ref="49902fc743c67e64ddcf4901ef2c69bf" category="inline-link-macro-rx"></block></block>
   <block id="a1d0a98f6922d21edbc391782fbb69e3" category="cell">建立使用者帳戶</block>
   <block id="8e9fceaaf84bd1591dc11726965a5b35" category="inline-link-macro">管理用戶帳戶</block>
   <block id="a6fe30cef6ad189dc3685c855c858b10" category="cell"><block ref="a6fe30cef6ad189dc3685c855c858b10" category="inline-link-macro-rx"></block></block>
-  <block id="82cb9bc9a2d4a2705c91af9df596adb3" category="inline-link-macro">*影片*：故障排除</block>
-  <block id="23911ec6737c5f573a24c330a412e271" category="cell"><block ref="23911ec6737c5f573a24c330a412e271" category="inline-link-macro-rx"></block></block>
   <block id="100c37ccf9bdbedac2e35d90d41d3be9" category="inline-link-macro">請參閱本指南</block>
   <block id="2e51f9cf2f419fb083d896473cf49193" category="paragraph">工作負載安全也可以與其他工具整合。例如，<block ref="4ccd3ce9fc5ce8804b14aeb0860cf515" category="inline-link-macro-rx"></block>與 Splunk 整合。</block>
   <block id="90fbffa9ff3e21a719cc9451531fc673" category="summary">工作負載安全用戶帳戶透過Data Infrastructure Insights用戶管理進行管理</block>
@@ -9788,13 +9764,7 @@
   <block id="ad99b83e7b10ea825777161cb8f5594b" category="cell">* 驗證輸入的憑證和 IP 位址。 * 嘗試透過 Web 管理主控台 \https://&lt;ip&gt;:8452/DS8000/Console 與陣列通訊。將 &lt;ip&gt; 替換為資料收集器配置的 IP。</block>
   <block id="b18a21f855b9b4e7ca0fae5355812eb5" category="cell">錯誤：* 無法執行程式 * 執行指令時出錯</block>
   <block id="79766e839f35eb1cc1188445059bba75" category="cell">* 從Data Infrastructure Insights單元開啟一個 CMD * 在 CLI 的主目錄/lib 中開啟 CLI.CFG 檔案並檢查屬性 JAVA_INSTALL，編輯該值以符合您的環境 * 顯示此機器上安裝的 Java 版本，輸入：「java -version」 * 對發出的 CLI 指令中指定的 IBM 儲存裝置的 IP 位址進行 Ping 位址的操作。  * 如果以上所有操作都正常，則手動執行 CLI 命令</block>
-  <block id="c5c601f0f7513cb66c54f7740aebd769" category="summary">IBM TotalStorage DS4000資料收集器</block>
-  <block id="bb368e45192fd41360b40a61c441bbf7" category="paragraph">此資料收集器從 IBM DS4000 儲存系統取得庫存和效能資訊。有兩種可能的配置（韌體 6.x 和韌體 7.x+），它們都具有相同的值。</block>
-  <block id="f8defa21a7abf462d74f023cc11be1db" category="paragraph">Data Infrastructure Insights從 IBM DS4000 資料收集器取得以下庫存資訊。對於所取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：</block>
   <block id="0951a6690e5dc87411346792c9f941c7" category="cell">卷組</block>
-  <block id="d9dc66c5dd0daf41b61af8de89a60066" category="list-text">每個 DS5 或 FAStT 陣列的 IP 位址</block>
-  <block id="90708586f8afae2670c5e389c5b3df37" category="list-text">透過 ping 陣列上兩個控制器的 IP 位址進行存取驗證</block>
-  <block id="d0ad61d8d4e1d5d38bb6b0cb90a5d934" category="list-text">連接埠要求：2463</block>
   <block id="86c00393c5a1dba7b670a90d957d105e" category="cell">陣列SANtricity控制器 IP 的逗號分隔列表</block>
   <block id="f9cba995b86ac6c96d9d30c9ced7c828" category="cell">陣列控制器的 IP 位址和/或完全限定域名</block>
   <block id="123823c1c5909eba4c00c4d8585c250f" category="cell">預設為 30 分鐘</block>
@@ -12793,4 +12763,33 @@
   <block id="344e2ec56c6114e245d66d3978073950" category="paragraph">利用智慧分組功能，自動將匯入的圖庫儀表板整理成邏輯類別，從而改變您的儀表板體驗。新的分組功能使匯入儀表板變得輕而易舉，並根據每個儀表板的功能及其與您環境的相關性，將其放置在相應的群組中。</block>
   <block id="251972b93cab79073298e6ad6678a0be" category="inline-image-macro">導入期間的圖庫組，寬度=500</block>
   <block id="99d6cc3c987c34af31c72d3213e5e764" category="paragraph"><block ref="99d6cc3c987c34af31c72d3213e5e764" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5ec1b38643878459e136106056fc3081" category="section-title">分組、識別和聚合</block>
+  <block id="dc185a282a5cd3225e8cc57b4b6b6aa1" category="paragraph">小部件中顯示的數據是根據採集期間收集的底層數據點分組（有時稱為匯總）的。例如，如果您有一個顯示隨時間變化的儲存 IOPS 的折線圖小部件，您可能希望看到每個資料中心的單獨線條，以便快速比較。在「分組依據」欄位中，選擇物件類型本身，以查看每個物件的各個線條、區域、長條圖、欄位等（取決於控制項類型）。您可以選擇按該物件清單中可用的任何屬性進行分組。例如，在查看內部磁碟區的資料時，您可能會想要按儲存名稱對資料進行分組。</block>
+  <block id="fa0e168aa1b39e8090932eea11026412" category="paragraph">若要查看匯總數據，請刪除任何「分組依據」屬性，該屬性將預設按「全部」分組。</block>
+  <block id="fbcd269f31c4ab263533f3645a1a728a" category="paragraph">您可以選擇以下幾種方式之一來匯總這些數據：</block>
+  <block id="06156308540648c4641a0a9cb567eaed" category="paragraph">在查看儀表板時，選擇任何資料按「全部」分組的小部件的圖例，將開啟一個查詢頁面，顯示該小部件中使用的第一個查詢的結果。</block>
+  <block id="6882d2460edb6d055bfb008888648c98" category="section-title">識別自訂數據</block>
+  <block id="66cbbbe1e48b5652dacf30cdc0a8c109" category="paragraph">當您建立或修改基於自訂資料建構的小部件時，如果沒有標識屬性，您的資料可能無法在小部件中正確表示。如果 DII 無法辨識您為小工具選擇的對象，則會在「分組依據」區域中顯示「進階配置」連結。展開此選項，選擇您希望用來識別資料的屬性。</block>
+  <block id="d489c8cc0112182e1e9478e7c22dd3f8" category="inline-image-macro">透過下拉式選單識別未知數據</block>
+  <block id="355bd56539964e29708b9c4df7942fc1" category="paragraph"><block ref="355bd56539964e29708b9c4df7942fc1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6aa8e407f2a6d45ee7e0e895bfb9b4c6" category="paragraph">您可以先將數據點按分鐘、小時或天進行聚合，然後再按屬性（如果選擇）匯總數據，從而進一步調整圖表。您可以選擇根據資料點的「平均值」、「最大值」、「最小值」、「總和」或「計數」來聚合資料點。</block>
+  <block id="64e6afd71183834ff1036fd74f3e716e" category="summary">逐步的影片教學可協助您掌握Data Infrastructure Insights功能，例如儀表板、查詢、監控和故障排除。</block>
+  <block id="2ad37fcdfb757474e55b13972a8ba843" category="doc">影片教學入門指南</block>
+  <block id="606714bccc97b2ecd8ce8598c5298ddd" category="paragraph">透過我們的功能教程，您可以有效率地學習Data Infrastructure Insights洞察，教程包含逐步影片指南和進度清單。透過實作教程，掌握創建儀錶板、建立查詢、設定監控和解決問題等基本技能，幫助您快速提高工作效率。</block>
+  <block id="1ca1d3208fe70423d28d5346749bf725" category="section-title">影片教學</block>
+  <block id="f21521c513fcb8f1320750785f983ea4" category="paragraph">觀看以下影片以了解更多資訊。</block>
+  <block id="efaefb91e104bcd35299c23da0236416" category="inline-link-macro">將原始數據轉化為可執行的洞察</block>
+  <block id="ae64c1ecf9b0637af4d421aec17b6b0f" category="paragraph"><block ref="ae64c1ecf9b0637af4d421aec17b6b0f" category="inline-link-macro-rx"></block></block>
+  <block id="260eb4e78ceb606b62c775c5fb398a50" category="inline-link-macro">使用NetApp建立強大的儀表板</block>
+  <block id="765364e45c00e9c6747f8f72be907378" category="paragraph"><block ref="765364e45c00e9c6747f8f72be907378" category="inline-link-macro-rx"></block></block>
+  <block id="da2548febb74b05443083a5c4cb3bb98" category="inline-link-macro">使用 VM Analyzer 簡化故障排除</block>
+  <block id="15235b29b13942ecccd882101e412b45" category="paragraph"><block ref="15235b29b13942ecccd882101e412b45" category="inline-link-macro-rx"></block></block>
+  <block id="b8563bbbe56bf52b001d27bc746ae8f7" category="inline-link-macro">Data Infrastructure Insights中的查詢進行探索和分析</block>
+  <block id="cd85347613a114ab9748f0f1a561065c" category="paragraph"><block ref="cd85347613a114ab9748f0f1a561065c" category="inline-link-macro-rx"></block></block>
+  <block id="77354ced7e95147c4c951948901aa87b" category="inline-link-macro">主動式基礎設施監控，具備警報和監控功能</block>
+  <block id="08e9d4de145fab52e35be03578b2cb95" category="paragraph"><block ref="08e9d4de145fab52e35be03578b2cb95" category="inline-link-macro-rx"></block></block>
+  <block id="bc0e5d8878e85d65aed637113d5bef42" category="summary">部署工作負載安全代理程式和資料收集器，以監控使用者活動並偵測安全威脅。</block>
+  <block id="f6bd61a684c7e1301e78da3db50d1837" category="paragraph">工作負載安全功能可協助您監控使用者活動並偵測儲存環境中的潛在安全威脅。在開始監控之前，您需要設定代理程式、資料收集器和目錄服務，為全面的安全監控奠定基礎。</block>
+  <block id="d49a8da0de1eee7dc793284699bb0bab" category="cell"><block ref="d49a8da0de1eee7dc793284699bb0bab" category="inline-link-macro-rx"></block></block>
+  <block id="adf5d1319b5bafa4d304b195ab11a3ac" category="cell">按一下*工作負載安全性&gt;收集器*點選要設定的資料收集器。有關收集器信息，請參閱文件中的“資料收集器供應商參考”部分。</block>
 </blocks>
