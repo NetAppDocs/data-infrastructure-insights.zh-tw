@@ -27,12 +27,12 @@ sidebar:
       url: "/security_admin_tool.html"
   - title: 入門
     entries:
+    - title: 功能教學
+      url: "/concept_feature_tutorials.html"
     - title: 收集數據
       entries:
       - title: 概況
         url: "/task_getting_started_with_cloud_insights.html"
-      - title: 功能教學
-        url: "/concept_feature_tutorials.html"
       - title: 採集單元要求
         url: "/concept_acquisition_unit_requirements.html"
       - title: 配置採集單元
