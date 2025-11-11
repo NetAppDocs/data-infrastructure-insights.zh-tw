@@ -173,9 +173,6 @@ Data Infrastructure Insights支援的數據收集器的字母列表：
 | link:task_dc_ibm_cs.html["IBM CS系列"] | 基礎設施 
 
 
-| link:task_dc_ibm_powervm.html["IBM PowerVM"] | 基礎設施 
-
-
 | link:task_dc_ibm_svc.html["IBM SAN磁碟區控制器（SVC）"] | 基礎設施 
 
 

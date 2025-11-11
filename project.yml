@@ -401,8 +401,6 @@ sidebar:
           url: "/task_dc_ibm_cs.html"
         - title: 系統儲存 DS8000 系列
           url: "/task_dc_ibm_ds.html"
-        - title: PowerVM
-          url: "/task_dc_ibm_powervm.html"
         - title: San 磁碟區控制器 (SVC)
           url: "/task_dc_ibm_svc.html"
         - title: XIV/A9000
