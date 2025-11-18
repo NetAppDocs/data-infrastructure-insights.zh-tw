@@ -3972,8 +3972,6 @@
   <block id="8ead9b1e3d8a8ae6dd97994254f22aef" category="cell"><block ref="8ead9b1e3d8a8ae6dd97994254f22aef" category="inline-link-macro-rx"></block></block>
   <block id="f4fd42a4467b5d1ddf8fdc417a705f73" category="inline-link-macro">IBM CS系列</block>
   <block id="6d68ae79b933142e523ce27606072862" category="cell"><block ref="6d68ae79b933142e523ce27606072862" category="inline-link-macro-rx"></block></block>
-  <block id="a28db741133d18e1d32e35bca1c7f7e4" category="inline-link-macro">IBM PowerVM</block>
-  <block id="8e0ab8fae77934642062640f9035c178" category="cell"><block ref="8e0ab8fae77934642062640f9035c178" category="inline-link-macro-rx"></block></block>
   <block id="eab41551e85a734b8fcd8f21fd17280d" category="inline-link-macro">IBM SAN磁碟區控制器（SVC）</block>
   <block id="335af56c3dfc9c59b9251b7197f10bf1" category="cell"><block ref="335af56c3dfc9c59b9251b7197f10bf1" category="inline-link-macro-rx"></block></block>
   <block id="8a3bb12d5107ef2125a14b505446d6ee" category="inline-link-macro">IBM 系統儲存 DS8000 系列</block>
@@ -6774,7 +6772,6 @@
   <block id="eaf8ac7783e69f8aba13d1bece2acbd5" category="paragraph">您可以查看 NetApp 的可用安全公告<block ref="c748e422d42ad69f84a6f8d804551466" category="inline-link-macro-rx"></block>。</block>
   <block id="16d7c89b47f259f2ff68b2ae7532fad6" category="summary">新增工作負載安全資料收集器</block>
   <block id="babe60c38b9af7eae2a65400f72c52c7" category="paragraph">ONTAP SVM 資料收集器使工作負載安全能夠監控NetApp ONTAP儲存虛擬機器 (SVM) 上的檔案和使用者存取活動。本指南將引導您完成 SVM 資料收集器的設定和管理，以便為您的ONTAP環境提供全面的安全監控。</block>
-  <block id="097b5088c2a3d7584f939f2bcd00152f" category="admonition">全域變化可能會對您的ONTAP系統產生潛在影響。強烈建議在非尖峰時段進行影響大量資料收集器的變更。</block>
   <block id="6b6a5e540baae01020db6abcb69752a2" category="list-text">此數據收集器支援以下功能：</block>
   <block id="b497cf0f1b1568d837947f6ad7ece7af" category="list-text">Data ONTAP 9.2 及更高版本。為了獲得最佳效能，請使用高於 9.13.1 的Data ONTAP版本。</block>
   <block id="343a405f2f06197f662e42373c7fb059" category="list-text">SMB 協定版本 3.1 及更早版本。</block>
@@ -8418,9 +8415,6 @@
   <block id="1fe1b6cf4f52930c301b03e5a69c42c2" category="inline-link-macro">團隊</block>
   <block id="8f5cc6430613f1c12f36965050bb7197" category="inline-link-macro">不和諧</block>
   <block id="d277b1caec042177f4e38daf4ba9c735" category="paragraph">Webhook 適用於<block ref="d38416df564b8fab0d5bf94bcee43e7f" category="inline-link-macro-rx"></block>Webhook 適用於<block ref="95ac5170c5012e9551d08ea594650d6e" category="inline-link-macro-rx"></block>Webhook 適用於<block ref="973c3eb9f830c62535e232e5f5d9c6dc" category="inline-link-macro-rx"></block>Webhook 適用於<block ref="864c30ce6045ed450c74103c83df4646" category="inline-link-macro-rx"></block></block>
-  <block id="a70d68072b5d5451925d557ed5fc3b10" category="summary">新增工作負載安全代理</block>
-  <block id="b68323a5af32b2326c99a99a76c02d39" category="doc">工作負載安全代理安裝</block>
-  <block id="254c60df709b81dd397a7f53fffca95c" category="paragraph">工作負載安全性（以前稱為Cloud Secure）使用一個或多個代理程式收集使用者活動資料。代理連接到租戶上的設備並收集發送到工作負載安全 SaaS 層進行分析的資料。看<block ref="7db04bd496cdb9ab394c662c3f00f7ed" category="inline-link-macro-rx"></block>配置代理虛擬機器。</block>
   <block id="2ccb9ffac0ed017ddb6e68683bb0b7d5" category="list-text">安裝、執行腳本和解除安裝都需要 sudo 權限。</block>
   <block id="a00b5aaaee55b7761231c3b425e0aebd" category="list-text">安裝代理程式時，會在機器上建立本機使用者_cssys_和本機群組_cssys_。如果權限設定不允許建立本機用戶，而是需要 Active Directory，則必須在 Active Directory 伺服器中建立使用者名為 _cssys_ 的使用者。</block>
   <block id="bac72f43adf1b3cc10ff0028305b93cf" category="list-text">您可以閱讀有關Data Infrastructure Insights安全性的文章<block ref="543da5bd260d801b98cf781252e71d7c" category="inline-link-macro-rx"></block>。</block>
@@ -8429,7 +8423,6 @@
   <block id="d6f8e9ba9cfb77dee7f1eacdddd32143" category="list-text">選擇*收藏家&gt;代理商&gt;+代理商*</block>
   <block id="f9eb6ee79f8b49445d9d7860e9a080c0" category="paragraph">系統顯示「新增代理」頁面：</block>
   <block id="732ce6294370d77834ecc9c30e5bfc82" category="inline-image-macro">新增工作負載安全代理</block>
-  <block id="d2b98171b3e920dab4bb3e92ccf4e89a" category="paragraph"><block ref="d2b98171b3e920dab4bb3e92ccf4e89a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="212db90a8b360d05f82119713ca87853" category="list-text">驗證代理伺服器是否符合最低系統要求。</block>
   <block id="3214e3b147ee224c2ddc92c7445e5bd4" category="list-text">若要驗證代理伺服器是否正在執行支援的 Linux 版本，請按一下_支援的版本 (i)_。</block>
   <block id="8bb9382589d54088894314b485b4650a" category="list-text">如果您的網路使用代理伺服器，請按照代理程式部分中的說明設定代理伺服器詳細資訊。</block>
@@ -8439,7 +8432,6 @@
   <block id="635c6559744a9cbe13ef48ca6179175e" category="list-text">在終端機視窗中執行安裝命令。</block>
   <block id="80f1bbe9e042c14f0ea154b144e49635" category="list-text">安裝成功完成後系統顯示以下訊息：</block>
   <block id="f488844908bcd6752dde5e2291a4a5b8" category="inline-image-macro">代理安裝成功訊息</block>
-  <block id="feacd3cef81abfcdbf59bda9ba5b97fd" category="paragraph"><block ref="feacd3cef81abfcdbf59bda9ba5b97fd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="580afeaa1b1ac5a8f6d1db7819e9a5df" category="list-title">完成後</block>
   <block id="04d29c3c4604f72fc55618d9d893779a" category="inline-link-macro">使用者目錄收集器</block>
   <block id="efb42161e6d534718356bdb292677612" category="list-text">您需要配置一個<block ref="a207b7d2a96200a9b4b411f4896b3d1d" category="inline-link-macro-rx"></block>。</block>
@@ -9769,29 +9761,7 @@
   <block id="f9cba995b86ac6c96d9d30c9ced7c828" category="cell">陣列控制器的 IP 位址和/或完全限定域名</block>
   <block id="123823c1c5909eba4c00c4d8585c250f" category="cell">預設為 30 分鐘</block>
   <block id="28d14a9ee241f7011a6670c176790bf0" category="cell">效能輪詢間隔最長 3600 秒</block>
-  <block id="95af42a33b3caafac3bc1a54d266a2d2" category="summary">配置 IBM PowerVM 資料收集器。</block>
-  <block id="ba18c7f6265d13c449068915ad8f4e96" category="doc">配置 IBM PowerVM 資料收集器</block>
-  <block id="b089f5adc7d97f0c62b9c4b3186b03c7" category="paragraph">IBM PowerVM (SSH) 資料收集器用於收集由硬體管理控制台 (HMC) 管理的 IBM POWER 硬體實例上執行的虛擬分區的資訊。</block>
-  <block id="73fe4a9a6561934965036eaccbb0fac9" category="paragraph">Data Infrastructure Insights從 IBM POWER 硬體實例上執行的虛擬分區取得庫存資訊。對於所取得的每種資產類型，都會顯示該資產最常用的術語。當查看或排除此資料收集器的故障時，請記住以下術語：</block>
-  <block id="b7cc91287fc99a8937a55e79376c6f54" category="cell">硬碟</block>
-  <block id="b6956df0fe7b37d880928f7246bb98a0" category="cell">管理系統</block>
-  <block id="8d10e7fe4e3123daebe23a6310469d3b" category="cell">LPAR、VIO 伺服器</block>
-  <block id="abe36030da27edb3be135fd2451fa9fa" category="cell">物理體積</block>
   <block id="ffa6e58bcf969ef54c7666445b079b36" category="paragraph">配置和使用此資料收集器必須滿足以下要求：</block>
-  <block id="6634ba62ecd606708eafb141593e4653" category="list-text">硬體管理控制台 (HMC) 的 IP 位址</block>
-  <block id="1436a67f32b067c32fbe5c92814a32f7" category="list-text">透過 SSH 存取硬體管理控制台 (HMC) 的使用者名稱和密碼</block>
-  <block id="5e87ac896dc78fd77e4ab546560bdd8f" category="list-text">連接埠要求 SSH-22</block>
-  <block id="13f24af9e083061f6926a7409ab6941e" category="list-text">所有管理系統和邏輯分割區安全域的檢視權限</block>
-  <block id="3f9f03ffb7edb45ef6c15a07ef5c9901" category="paragraph">使用者還必須具有查看 HMC 配置的權限以及收集 HMC 控制台安全分組的 VPD 資訊的能力。還必須允許使用者在邏輯分區安全性群組下存取虛擬 IO 伺服器命令。最佳做法是從操作員的角色開始，然後刪除所有角色。  HMC 上的唯讀使用者沒有在 AIX 主機上執行代理命令的權限。</block>
-  <block id="7e6e02e14b7de7333dd485d3abef050a" category="list-text">IBM 的最佳實務是讓兩個或多個 HMC 監控設備。請注意，這可能會導致OnCommand Insight報告重複的設備，因此強烈建議將冗餘設備新增至此資料收集器的高級配置中的「排除設備」清單。</block>
-  <block id="5d8107e43f3d12a73db8fdf144a472e8" category="cell">硬體管理控制台 (HMC) IP 位址</block>
-  <block id="836b85d6ec6b5e11fdafcbc07c5e2680" category="cell">PowerVM 硬體管理控制台的 IP 位址或完全限定域名</block>
-  <block id="1e45d14260d1a97392408643e8e3b747" category="cell">HMC 用戶</block>
-  <block id="b3901b38c85524bdf39d3e5dc096631d" category="cell">硬體管理控制台的使用者名</block>
-  <block id="9f5731b9b367d86426518b5495518bed" category="cell">用於硬體管理控制台的密碼</block>
-  <block id="ec1d1ddf9ba1be27926f61b61d8ec74e" category="cell">用於 SSH 到 PowerVM 的端口</block>
-  <block id="096c5fdd65d5b1ca85c28357788d6e36" category="cell">庫存重試次數</block>
-  <block id="f898c70cb805b23cff78a911fac16f85" category="cell">要排除的裝置 ID 或顯示名稱的逗號分隔列表</block>
   <block id="0aa04a5b5b1e3ffc8303b00b5128b15e" category="summary">配置 IBM SAN Volume Controller 資料收集器。</block>
   <block id="270f27e942c8d1359faa87daf859de63" category="doc">配置 IBM SAN Volume Controller 資料收集器</block>
   <block id="3583830a94579c1af37135c5c0b6f6c2" category="paragraph">IBM SAN Volume Controller (SVC) 數據收集器使用 SSH 收集庫存和效能數據，支援運行 SVC 作業系統的各種設備。</block>
@@ -12689,7 +12659,6 @@
   <block id="032fb03337b916400761cd8770bff8bf" category="sidebar">Cleversafe</block>
   <block id="13fdad6ee27b8d46394c880e4c299601" category="sidebar">CS系列</block>
   <block id="51918e1822f2d98b7fb7e4f2e035cb69" category="sidebar">系統儲存 DS8000 系列</block>
-  <block id="c791b15d48a2be7d8c6a9c0b2badc362" category="sidebar">PowerVM</block>
   <block id="439f81d6181ac93c0f0cbfd7ff44a5d3" category="sidebar">San 磁碟區控制器 (SVC)</block>
   <block id="087aee354d68fbd7eaebf3271c0615e1" category="sidebar">XIV/A9000</block>
   <block id="57040fe2fe7a0a1e9ab043ae1f5d9845" category="sidebar">聯想</block>
@@ -12792,4 +12761,16 @@
   <block id="f6bd61a684c7e1301e78da3db50d1837" category="paragraph">工作負載安全功能可協助您監控使用者活動並偵測儲存環境中的潛在安全威脅。在開始監控之前，您需要設定代理程式、資料收集器和目錄服務，為全面的安全監控奠定基礎。</block>
   <block id="d49a8da0de1eee7dc793284699bb0bab" category="cell"><block ref="d49a8da0de1eee7dc793284699bb0bab" category="inline-link-macro-rx"></block></block>
   <block id="adf5d1319b5bafa4d304b195ab11a3ac" category="cell">按一下*工作負載安全性&gt;收集器*點選要設定的資料收集器。有關收集器信息，請參閱文件中的“資料收集器供應商參考”部分。</block>
+  <block id="a893b5195474a4c9b110269be2b309ef" category="summary">工作負載安全代理程式會監控使用者活動並偵測儲存環境中的安全威脅。</block>
+  <block id="9997d0de04e698d72bb27c409e5255ee" category="doc">部署工作負載安全代理</block>
+  <block id="c3c0e3736c092f9f194505694468ca8b" category="inline-link-macro">系統需求</block>
+  <block id="9d604ddbc2f20e3c4cd0e75c950e6c53" category="paragraph">工作負載安全代理程式對於監控使用者活動和偵測儲存基礎架構中潛在的安全威脅至關重要。本指南提供在您的環境中部署代理程式的逐步說明。在開始之前，請確保您的代理伺服器符合以下條件： <block ref="e9ae60f62ad52c07bed4d959ac93cbbc" category="inline-link-macro-rx"></block>。</block>
+  <block id="cd47dd01745339787e4c7300389401f2" category="section-title">最佳實踐</block>
+  <block id="5f1d8e43e03545d4e832f35d2653f7ff" category="paragraph">在配置工作負載安全代理之前，請記住以下事項。</block>
+  <block id="1d0bcc6be95579ec1173901dc82ecc6d" category="cell">暫停和恢復</block>
+  <block id="d8b609992e3e10356da66aeda51a629f" category="cell">暫停：從ONTAP移除 fpolicies。通常用於客戶執行可能需要大量時間的長時間維護活動，例如代理虛擬機器重新啟動或儲存更換。恢復：將 fpolicies 重新加入到ONTAP。</block>
+  <block id="641ecca688e4bd0c010c1c93fd129f35" category="cell">別針和拔針</block>
+  <block id="0fecddcef7cb9bf719d20552ae0cfc62" category="cell">Unpin 會立即取得最新版本（如果可用），並升級代理程式和收集器。在此升級過程中，fpolicies 將斷開連接並重新連接。此功能專為希望控制自動升級時間的客戶而設計。</block>
+  <block id="4dbd8dc2117b7cd83dcfbfa371f664d8" category="cell">推薦方法</block>
+  <block id="436a369022361cd01a3accb909d81ab5" category="cell">對於大型配置，建議使用引腳和引腳斷開操作，而不是暫停集電極。使用 unpin 和 unpin 時無需暫停和恢復。客戶可以保留其代理商和收款員，並在收到有關新版本的電子郵件通知後，有 30 天的時間逐個選擇性地升級代理商。這種方法最大限度地減少了對 fpolicies 的延遲影響，並提供了對升級過程的更大控制。</block>
 </blocks>

@@ -2,15 +2,19 @@
 sidebar: sidebar 
 permalink: task_cs_add_agent.html 
 keywords: agent, Workload Security, installation, Cloud Secure 
-summary: 新增工作負載安全代理 
+summary: 工作負載安全代理程式會監控使用者活動並偵測儲存環境中的安全威脅。 
 ---
-= 工作負載安全代理安裝
+= 部署工作負載安全代理
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]
-工作負載安全性（以前稱為Cloud Secure）使用一個或多個代理程式收集使用者活動資料。代理連接到租戶上的設備並收集發送到工作負載安全 SaaS 層進行分析的資料。看link:concept_cs_agent_requirements.html["代理要求"]配置代理虛擬機器。
+工作負載安全代理程式對於監控使用者活動和偵測儲存基礎架構中潛在的安全威脅至關重要。本指南提供在您的環境中部署代理程式的逐步說明。在開始之前，請確保您的代理伺服器符合以下條件： link:concept_cs_agent_requirements.html["系統需求"]。
 
 
 
@@ -22,8 +26,23 @@ summary: 新增工作負載安全代理
 
 
 
-NOTE: 全域變化可能會對您的ONTAP系統產生潛在影響。強烈建議在非尖峰時段進行影響大量資料收集器的變更。
 
+== 最佳實踐
+
+在配置工作負載安全代理之前，請記住以下事項。
+
+[cols="1,3"]
+|===
+
+
+| 暫停和恢復 | 暫停：從ONTAP移除 fpolicies。通常用於客戶執行可能需要大量時間的長時間維護活動，例如代理虛擬機器重新啟動或儲存更換。恢復：將 fpolicies 重新加入到ONTAP。 
+
+
+| 別針和拔針 | Unpin 會立即取得最新版本（如果可用），並升級代理程式和收集器。在此升級過程中，fpolicies 將斷開連接並重新連接。此功能專為希望控制自動升級時間的客戶而設計。 
+
+
+| 推薦方法 | 對於大型配置，建議使用引腳和引腳斷開操作，而不是暫停集電極。使用 unpin 和 unpin 時無需暫停和恢復。客戶可以保留其代理商和收款員，並在收到有關新版本的電子郵件通知後，有 30 天的時間逐個選擇性地升級代理商。這種方法最大限度地減少了對 fpolicies 的延遲影響，並提供了對升級過程的更大控制。 
+|===
 
 
 == 安裝代理的步驟
@@ -34,7 +53,7 @@ NOTE: 全域變化可能會對您的ONTAP系統產生潛在影響。強烈建議
 系統顯示「新增代理」頁面：
 
 +
-image:Add-agent-1.png["新增工作負載安全代理"]
+image::Add-agent-1.png[新增工作負載安全代理]
 
 . 驗證代理伺服器是否符合最低系統要求。
 . 若要驗證代理伺服器是否正在執行支援的 Linux 版本，請按一下_支援的版本 (i)_。
@@ -46,7 +65,7 @@ image:CloudSecureAgentWithProxy_Instructions.png["使用代理安裝代理注意
 . 在終端機視窗中執行安裝命令。
 . 安裝成功完成後系統顯示以下訊息：
 +
-image:new-agent-detect.png["代理安裝成功訊息"]
+image::new-agent-detect.png[代理安裝成功訊息]
 
 
 
