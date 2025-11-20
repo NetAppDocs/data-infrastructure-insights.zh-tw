@@ -12770,7 +12770,8 @@
   <block id="1d0bcc6be95579ec1173901dc82ecc6d" category="cell">暫停和恢復</block>
   <block id="d8b609992e3e10356da66aeda51a629f" category="cell">暫停：從ONTAP移除 fpolicies。通常用於客戶執行可能需要大量時間的長時間維護活動，例如代理虛擬機器重新啟動或儲存更換。恢復：將 fpolicies 重新加入到ONTAP。</block>
   <block id="641ecca688e4bd0c010c1c93fd129f35" category="cell">別針和拔針</block>
-  <block id="0fecddcef7cb9bf719d20552ae0cfc62" category="cell">Unpin 會立即取得最新版本（如果可用），並升級代理程式和收集器。在此升級過程中，fpolicies 將斷開連接並重新連接。此功能專為希望控制自動升級時間的客戶而設計。</block>
   <block id="4dbd8dc2117b7cd83dcfbfa371f664d8" category="cell">推薦方法</block>
-  <block id="436a369022361cd01a3accb909d81ab5" category="cell">對於大型配置，建議使用引腳和引腳斷開操作，而不是暫停集電極。使用 unpin 和 unpin 時無需暫停和恢復。客戶可以保留其代理商和收款員，並在收到有關新版本的電子郵件通知後，有 30 天的時間逐個選擇性地升級代理商。這種方法最大限度地減少了對 fpolicies 的延遲影響，並提供了對升級過程的更大控制。</block>
+  <block id="751c3e0cbbd3c7bba533140abe0f0dde" category="inline-xref">插針/拔針說明</block>
+  <block id="55f4b0c8991710156e1d9a114af60fe1" category="cell">Unpin 會立即取得最新版本（如果可用），並升級代理程式和收集器。在此升級過程中，fpolicies 將斷開連接並重新連接。此功能專為希望控制自動升級時間的客戶而設計。請見下文<block ref="2271de46efd5da417e9db9f2ab23550b" category="inline-xref-macro-rx"></block>。</block>
+  <block id="2a0a2208c984d848c76e3dc480d25f5a" category="cell">對於大型配置，建議使用引腳和引腳斷開操作，而不是暫停集電極。使用固定和取消固定功能時，無需暫停和恢復。客戶可以保留其代理商和收款員，並在收到有關新版本的電子郵件通知後，有 30 天的時間逐個選擇性地升級代理商。這種方法最大限度地減少了對 fpolicies 的延遲影響，並提供了對升級過程的更大控制。</block>
 </blocks>
