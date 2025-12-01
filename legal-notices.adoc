@@ -47,6 +47,6 @@ link:https://www.netapp.com/company/legal/privacy-policy/["https://www.netapp.co
 
 通知文件提供有關NetApp軟體中使用的第三方版權和許可的資訊。
 
-link:media/DII_ON-PREM_Notice_Nov2025.pdf["Data Infrastructure Insights(以前稱為Cloud Insights) 通知"]
+link:media/DII_ON-PREM_Notice_Nov2025.pdf["Data Infrastructure Insights（原Cloud Insights）通知，視窗=_blank"]
 
-link:media/DII_WS_Notice_Nov2025.pdf["工作負載安全（原Cloud Secure）通知"]
+link:media/DII_WS_Notice_Nov2025.pdf["工作負載安全通知（原Cloud Secure），window=_blank"]

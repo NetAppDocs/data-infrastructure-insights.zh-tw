@@ -4623,8 +4623,6 @@
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">開源</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知文件提供有關NetApp軟體中使用的第三方版權和許可的資訊。</block>
-  <block id="c7f50a9f133f1f71a9f91fe12f7c7f7e" category="inline-link-macro">Data Infrastructure Insights(以前稱為Cloud Insights) 通知</block>
-  <block id="4d8cd5134c1193f4d301c7e6bcaa38a7" category="inline-link-macro">工作負載安全（原Cloud Secure）通知</block>
   <block id="65be717dc296d58230cdf6471cf551c6" category="summary">根據效能、容量、配置和組件警報透過統一評分來監控基礎設施健康狀況，以便主動解決問題。</block>
   <block id="48f51aa9a5737857bbd298bfb874281e" category="doc">監控基礎設施健康狀況</block>
   <block id="9af3e29dc9d4dd7c03ed034e837cae19" category="paragraph">Data Infrastructure Insights提供全面的基礎設施健康監控，可追蹤儲存環境的效能、容量、配置和元件狀態。健康分數是根據這些類別的監控警報計算得出的，為您提供系統健康狀況的統一視圖並實現主動解決問題。</block>
@@ -12772,6 +12770,8 @@
   <block id="2a0a2208c984d848c76e3dc480d25f5a" category="cell">對於大型配置，建議使用引腳和引腳斷開操作，而不是暫停集電極。使用固定和取消固定功能時，無需暫停和恢復。客戶可以保留其代理商和收款員，並在收到有關新版本的電子郵件通知後，有 30 天的時間逐個選擇性地升級代理商。這種方法最大限度地減少了對 fpolicies 的延遲影響，並提供了對升級過程的更大控制。</block>
   <block id="4c4482e1695529fa7b313efe35876587" category="cell">執行下列任一正版作業系統的電腦： * Microsoft Windows 11 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022 * Microsoft Windows Server 2025 此電腦不應執行任何其他應用程式層級軟體。建議使用專用伺服器。</block>
   <block id="96e0bc41f601636412c93ccf60fffb89" category="cell">需要從收購單元到 *.cloudinsights.netapp.com 或您的Data Infrastructure Insights租戶（即 \https://&lt;tenant_id&gt;.c01.cloudinsights.netapp.com）的 100 Mbps/1 Gbps 乙太網路連接、靜態 IP 位址和連接埠 80 或 443（出站）連接。有關採集單元與各資料擷取器之間的要求，請參閱相關說明。<block ref="be56515064596049a4b61d9d1a149cf9" category="inline-link-macro-rx"></block> 。如果您的組織需要使用代理來存取互聯網，您可能需要了解組織的代理行為並尋求某些例外以使Data Infrastructure Insights能夠發揮作用。例如，您的組織是否預設阻止訪問，並且僅允許例外訪問特定網站/網域？如果需要，您需要將以下網域新增至例外清單：*.cloudinsights.netapp.com。更多信息，請閱讀代理相關內容。<block ref="05c875968683001fc59f206218314b72" category="inline-link-macro-rx"></block>或者<block ref="554efdd06704a764ab0a7e3947e279ff" category="inline-link-macro-rx"></block>。</block>
-  <block id="122dd1e429ff23356474c1c076ac2789" category="paragraph"><block ref="122dd1e429ff23356474c1c076ac2789" category="inline-link-macro-rx"></block></block>
-  <block id="a4c2ef5fd8277b59eacc9e5d6fd74bfa" category="paragraph"><block ref="a4c2ef5fd8277b59eacc9e5d6fd74bfa" category="inline-link-macro-rx"></block></block>
+  <block id="94499aafaf5e10a6f782117dd504af80" category="inline-link-macro">Data Infrastructure Insights（原Cloud Insights）通知，視窗=_blank</block>
+  <block id="15944853c960b4d108dec6e022392050" category="paragraph"><block ref="15944853c960b4d108dec6e022392050" category="inline-link-macro-rx"></block></block>
+  <block id="7d7c3dfbfa0b1113cc98af5bc93293c2" category="inline-link-macro">工作負載安全通知（原Cloud Secure），window=_blank</block>
+  <block id="c69944d365e084328c890394ddd7fec5" category="paragraph"><block ref="c69944d365e084328c890394ddd7fec5" category="inline-link-macro-rx"></block></block>
 </blocks>
