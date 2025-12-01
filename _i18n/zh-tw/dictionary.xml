@@ -166,7 +166,6 @@
   <block id="033d64e0352a24070b4d6ba6e37207af" category="cell">Windows 要求</block>
   <block id="696c660ff8d9323e55146a6dbd4e4088" category="cell">作業系統</block>
   <block id="cd016f59e3bce345c5a22a0c73b84bc2" category="cell">執行下列任一授權版本的電腦：* AlmaLinux 9.3 至 9.5 * Centos（64 位元）：7.2 至 7.9、8.1 至 8.4、Stream 8、Stream 9 * Debian（64 位元）：9 到 12 * OpenSUSE Leap 15.1 至 Linux 15.64 位元 15.62 * . 8.10、9.3 至 9.6 * Red Hat（64 位元）：7.2 至 7.9、8.1 至 8.10、9.1 至 9.6 * Rocky 9.0 至 9.5 * SUSE Linux Enterprise Server 15、15 SP2 至 15 SP6 * SELinux這台電腦不應執行其他應用程式級軟體。建議使用專用伺服器。如果您使用 SELinux 執行，建議在擷取單元系統上執行下列指令：sudo semanage fcontext -a -t usr_t "/opt/netapp/cloudinsights(/.*)?" sudo restorecon -R /opt/netapp/cloudinsights</block>
-  <block id="31192200d4ffdcb773965b28dbfbe0fd" category="cell">執行下列任一授權版本的電腦：* Microsoft Windows 10 64 位元* Microsoft Windows 11* Microsoft Windows Server 2012* Microsoft Windows Server 2012 R2* Microsoft Windows Server 2016* Microsoft Windows Server 2019* Microsoft Windows Server 2022* Microsoft Windows Server 2025 此電腦級軟體不應執行任何其他應用程式層級軟體。建議使用專用伺服器。</block>
   <block id="2b55387dd066c5bac646ac61543d152d" category="cell">中央處理器</block>
   <block id="36b415ace97b614344903d1d039cc60d" category="cell">2 個 CPU 核心</block>
   <block id="c90a13d8ec8fe53c6bb33fe10af6f2fe" category="cell">相同的</block>
@@ -179,7 +178,6 @@
   <block id="2f704538f6c9d6459a97314be98124e2" category="inline-link-macro">數據收集器</block>
   <block id="fcf3c8b7073234871f47a3a68559837a" category="inline-link-macro">這裡（Linux）</block>
   <block id="5543adb6f73fddb3a3944d6d35b0de3e" category="inline-link-macro">這裡（Windows）</block>
-  <block id="937199d3845aa27dde279d09f7d4c2fb" category="cell">需要 100 Mbps/1 Gbps 乙太網路連接、靜態 IP 位址以及從擷取單元到 *.cloudinsights.netapp.com 或您的Data Infrastructure Insights租戶（即 \https://&lt;tenant_id&gt;.c01.cloudinsights.netapp.com）的連接埠 80 或 443（出站）連接。對於採集單元和每個資料收集器之間的要求，請參閱<block ref="be56515064596049a4b61d9d1a149cf9" category="inline-link-macro-rx"></block>。如果您的組織需要使用代理來存取互聯網，您可能需要了解組織的代理行為並尋求某些例外以使Data Infrastructure Insights能夠發揮作用。例如，您的組織是否預設阻止訪問，並且僅允許例外訪問特定網站/網域？如果是這樣，您需要將以下網域添加到例外列表中：*.cloudinsights.netapp.com 有關更多信息，請閱讀有關代理的信息<block ref="05c875968683001fc59f206218314b72" category="inline-link-macro-rx"></block>或者<block ref="554efdd06704a764ab0a7e3947e279ff" category="inline-link-macro-rx"></block>。請注意，必須從 AU 到Data Infrastructure Insights「出站」開啟連接埠 443。</block>
   <block id="d08ccf52b4cdd08e41cfb99ec42e0b29" category="cell">權限</block>
   <block id="b121d11a2c041b51e1c63a940169fc95" category="cell">採集單元伺服器上的 Sudo 權限。  /tmp 必須以 exec 功能掛載。</block>
   <block id="f2675114c7e961125e58746739ce868e" category="cell">採集單元伺服器上的管理員權限</block>
@@ -12774,4 +12772,6 @@
   <block id="751c3e0cbbd3c7bba533140abe0f0dde" category="inline-xref">插針/拔針說明</block>
   <block id="55f4b0c8991710156e1d9a114af60fe1" category="cell">Unpin 會立即取得最新版本（如果可用），並升級代理程式和收集器。在此升級過程中，fpolicies 將斷開連接並重新連接。此功能專為希望控制自動升級時間的客戶而設計。請見下文<block ref="2271de46efd5da417e9db9f2ab23550b" category="inline-xref-macro-rx"></block>。</block>
   <block id="2a0a2208c984d848c76e3dc480d25f5a" category="cell">對於大型配置，建議使用引腳和引腳斷開操作，而不是暫停集電極。使用固定和取消固定功能時，無需暫停和恢復。客戶可以保留其代理商和收款員，並在收到有關新版本的電子郵件通知後，有 30 天的時間逐個選擇性地升級代理商。這種方法最大限度地減少了對 fpolicies 的延遲影響，並提供了對升級過程的更大控制。</block>
+  <block id="4c4482e1695529fa7b313efe35876587" category="cell">執行下列任一正版作業系統的電腦： * Microsoft Windows 11 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022 * Microsoft Windows Server 2025 此電腦不應執行任何其他應用程式層級軟體。建議使用專用伺服器。</block>
+  <block id="96e0bc41f601636412c93ccf60fffb89" category="cell">需要從收購單元到 *.cloudinsights.netapp.com 或您的Data Infrastructure Insights租戶（即 \https://&lt;tenant_id&gt;.c01.cloudinsights.netapp.com）的 100 Mbps/1 Gbps 乙太網路連接、靜態 IP 位址和連接埠 80 或 443（出站）連接。有關採集單元與各資料擷取器之間的要求，請參閱相關說明。<block ref="be56515064596049a4b61d9d1a149cf9" category="inline-link-macro-rx"></block> 。如果您的組織需要使用代理來存取互聯網，您可能需要了解組織的代理行為並尋求某些例外以使Data Infrastructure Insights能夠發揮作用。例如，您的組織是否預設阻止訪問，並且僅允許例外訪問特定網站/網域？如果需要，您需要將以下網域新增至例外清單：*.cloudinsights.netapp.com。更多信息，請閱讀代理相關內容。<block ref="05c875968683001fc59f206218314b72" category="inline-link-macro-rx"></block>或者<block ref="554efdd06704a764ab0a7e3947e279ff" category="inline-link-macro-rx"></block>。</block>
 </blocks>

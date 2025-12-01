@@ -5,8 +5,17 @@ summary: 您用作採集單元的伺服器或虛擬機器必須符合最低要�
 keywords: AU, acquisition unit, requirements, sizing 
 ---
 = 採集單元要求
+:toc: macro
 :hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]
@@ -22,7 +31,7 @@ keywords: AU, acquisition unit, requirements, sizing
 | 成分 | Linux 需求 | Windows 要求 
 
 
-| 作業系統 | 執行下列任一授權版本的電腦：* AlmaLinux 9.3 至 9.5 * Centos（64 位元）：7.2 至 7.9、8.1 至 8.4、Stream 8、Stream 9 * Debian（64 位元）：9 到 12 * OpenSUSE Leap 15.1 至 Linux 15.64 位元 15.62 * . 8.10、9.3 至 9.6 * Red Hat（64 位元）：7.2 至 7.9、8.1 至 8.10、9.1 至 9.6 * Rocky 9.0 至 9.5 * SUSE Linux Enterprise Server 15、15 SP2 至 15 SP6 * SELinux這台電腦不應執行其他應用程式級軟體。建議使用專用伺服器。如果您使用 SELinux 執行，建議在擷取單元系統上執行下列指令：sudo semanage fcontext -a -t usr_t "/opt/netapp/cloudinsights(/.*)?" sudo restorecon -R /opt/netapp/cloudinsights | 執行下列任一授權版本的電腦：* Microsoft Windows 10 64 位元* Microsoft Windows 11* Microsoft Windows Server 2012* Microsoft Windows Server 2012 R2* Microsoft Windows Server 2016* Microsoft Windows Server 2019* Microsoft Windows Server 2022* Microsoft Windows Server 2025 此電腦級軟體不應執行任何其他應用程式層級軟體。建議使用專用伺服器。 
+| 作業系統 | 執行下列任一授權版本的電腦：* AlmaLinux 9.3 至 9.5 * Centos（64 位元）：7.2 至 7.9、8.1 至 8.4、Stream 8、Stream 9 * Debian（64 位元）：9 到 12 * OpenSUSE Leap 15.1 至 Linux 15.64 位元 15.62 * . 8.10、9.3 至 9.6 * Red Hat（64 位元）：7.2 至 7.9、8.1 至 8.10、9.1 至 9.6 * Rocky 9.0 至 9.5 * SUSE Linux Enterprise Server 15、15 SP2 至 15 SP6 * SELinux這台電腦不應執行其他應用程式級軟體。建議使用專用伺服器。如果您使用 SELinux 執行，建議在擷取單元系統上執行下列指令：sudo semanage fcontext -a -t usr_t "/opt/netapp/cloudinsights(/.*)?" sudo restorecon -R /opt/netapp/cloudinsights | 執行下列任一正版作業系統的電腦： * Microsoft Windows 11 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022 * Microsoft Windows Server 2025 此電腦不應執行任何其他應用程式層級軟體。建議使用專用伺服器。 
 
 
 | 中央處理器 | 2 個 CPU 核心 | 相同的 
@@ -34,7 +43,7 @@ keywords: AU, acquisition unit, requirements, sizing
 | 可用磁碟空間 | 50 GB（建議 100 GB） 對於 Linux，應按以下方式分配磁碟空間： /opt/netapp 10 GB（大型環境為 20 GB） /var/log/netapp 40 GB（大型環境為 80 GB） /tmp 至少 1 GB 在安裝期間可用 | 50GB 
 
 
-| 網路 | 需要 100 Mbps/1 Gbps 乙太網路連接、靜態 IP 位址以及從擷取單元到 *.cloudinsights.netapp.com 或您的Data Infrastructure Insights租戶（即 \https://<tenant_id>.c01.cloudinsights.netapp.com）的連接埠 80 或 443（出站）連接。對於採集單元和每個資料收集器之間的要求，請參閱link:data_collector_list.html["數據收集器"]。如果您的組織需要使用代理來存取互聯網，您可能需要了解組織的代理行為並尋求某些例外以使Data Infrastructure Insights能夠發揮作用。例如，您的組織是否預設阻止訪問，並且僅允許例外訪問特定網站/網域？如果是這樣，您需要將以下網域添加到例外列表中：*.cloudinsights.netapp.com 有關更多信息，請閱讀有關代理的信息link:task_troubleshooting_linux_acquisition_unit_problems.html#considerations-about-proxies-and-firewalls["這裡（Linux）"]或者link:task_troubleshooting_windows_acquisition_unit_problems.html#considerations-about-proxies-and-firewalls["這裡（Windows）"]。請注意，必須從 AU 到Data Infrastructure Insights「出站」開啟連接埠 443。 | 相同的 
+| 網路 | 需要從收購單元到 *.cloudinsights.netapp.com 或您的Data Infrastructure Insights租戶（即 \https://<tenant_id>.c01.cloudinsights.netapp.com）的 100 Mbps/1 Gbps 乙太網路連接、靜態 IP 位址和連接埠 80 或 443（出站）連接。有關採集單元與各資料擷取器之間的要求，請參閱相關說明。link:data_collector_list.html["數據收集器"] 。如果您的組織需要使用代理來存取互聯網，您可能需要了解組織的代理行為並尋求某些例外以使Data Infrastructure Insights能夠發揮作用。例如，您的組織是否預設阻止訪問，並且僅允許例外訪問特定網站/網域？如果需要，您需要將以下網域新增至例外清單：*.cloudinsights.netapp.com。更多信息，請閱讀代理相關內容。link:task_troubleshooting_linux_acquisition_unit_problems.html#considerations-about-proxies-and-firewalls["這裡（Linux）"]或者link:task_troubleshooting_windows_acquisition_unit_problems.html#considerations-about-proxies-and-firewalls["這裡（Windows）"]。 | 相同的 
 
 
 | 權限 | 採集單元伺服器上的 Sudo 權限。  /tmp 必須以 exec 功能掛載。 | 採集單元伺服器上的管理員權限 
