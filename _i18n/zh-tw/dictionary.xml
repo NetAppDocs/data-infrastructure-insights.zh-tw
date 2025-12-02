@@ -2211,7 +2211,6 @@
   <block id="e3afed0047b08059d0fada10f400c1e5" category="cell">行政</block>
   <block id="305de530147912d72a50568ee4d65d26" category="cell">帳戶所有者</block>
   <block id="ab0ef3e5340f5400b9f95e43d3b79222" category="cell">與管理員相同</block>
-  <block id="631b24afac365e771fc775aeb7fec0ad" category="cell">與管理員相同，以及管理 SSO 身份驗證和身份聯合配置。也可以指定其他所有者。</block>
   <block id="7b7bc2512ee1fedcd76bdc68926d4f7b" category="cell">行政人員</block>
   <block id="3e2b646677d9c80b1923b7be8d77407e" category="cell">可以執行所有可觀察性功能，以及資料收集器的管理。</block>
   <block id="364b5d76e543eea85436eecd771ddf9b" category="cell">可以執行所有安全功能，包括警報、取證、資料收集器、自動回應策略和安全 API 令牌。管理員也可以邀請其他用戶，但只能指派安全角色。</block>
@@ -12774,4 +12773,5 @@
   <block id="15944853c960b4d108dec6e022392050" category="paragraph"><block ref="15944853c960b4d108dec6e022392050" category="inline-link-macro-rx"></block></block>
   <block id="7d7c3dfbfa0b1113cc98af5bc93293c2" category="inline-link-macro">工作負載安全通知（原Cloud Secure），window=_blank</block>
   <block id="c69944d365e084328c890394ddd7fec5" category="paragraph"><block ref="c69944d365e084328c890394ddd7fec5" category="inline-link-macro-rx"></block></block>
+  <block id="f17c7e32a4fcdb4c787f412cf3181bea" category="cell">與管理員相同，以及管理 SSO 身份驗證和身份聯合配置。也可以為託管服務提供者 (MSP) 主租戶分配其他所有者以及新增客戶。</block>
 </blocks>
