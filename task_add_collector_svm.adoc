@@ -35,8 +35,12 @@ ONTAP SVM 資料收集器使工作負載安全能夠監控NetApp ONTAP儲存虛�
 * SVM 有幾種子類型。其中，僅支援_default_、_sync_source_和_sync_destination_。
 * 一名特務link:task_cs_add_agent.html["必須配置"]然後才可以配置資料收集器。
 * 確保您具有正確配置的使用者目錄連接器，否則事件將在「活動取證」頁面中顯示編碼的使用者名稱而不是使用者的實際名稱（儲存在 Active Directory 中）。
-* • 從 9.14.1 開始支援ONTAP持久性儲存。
+* ONTAP持久性儲存從 9.14.1 版本開始支援。
 * 為了獲得最佳效能，您應該將 FPolicy 伺服器配置為與儲存系統位於相同子網路。
+
+
+[[fpolicy-best-practices]]
+* 有關工作負載安全性原則配置的全面最佳實務和建議，請參閱link:https://kb.netapp.com/on-prem/ontap/da/NAS/NAS-KBs/DII_Storage_Workload_Security__Fpolicy_Best_Practice_and_Recommendations["知識庫文章：FPolicy最佳實踐"^]。
 * 您必須使用以下兩種方法之一新增 SVM：
 +
 ** 透過使用叢集 IP、SVM 名稱以及叢集管理使用者名稱和密碼。  *_這是推薦的方法。 _*
@@ -47,7 +51,7 @@ ONTAP SVM 資料收集器使工作負載安全能夠監控NetApp ONTAP儲存虛�
 ** 使用 SVM Vserver 管理 IP、使用者名稱和密碼
 ** 如果您無法或不願意使用完整的管理員叢集/SVM 管理使用者名稱和密碼，您可以建立一個具有較低權限的自訂用戶，如<<a-note-about-permissions,“關於權限的說明”>>下面的部分。可以為 SVM 或叢集存取權建立此自訂使用者。
 +
-*** o 您也可以使用具有至少具有 csrole 權限的角色的 AD 用戶，如下面「關於權限的說明」部分所述。另請參閱link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.pow-adm-auth-rbac%2FGUID-0DB65B04-71DB-43F4-9A0F-850C93C4896C.html["ONTAP 文件"]。
+*** 您也可以使用具有至少 csrole 權限的角色的 AD 用戶，如下面的「關於權限的說明」部分所述。另請參閱link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.pow-adm-auth-rbac%2FGUID-0DB65B04-71DB-43F4-9A0F-850C93C4896C.html["ONTAP 文件"]。
 
 
 

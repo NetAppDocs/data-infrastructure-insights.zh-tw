@@ -24,10 +24,8 @@ image:CS_Data_Collector_Error.png["工作負載安全收集器錯誤更多詳細
 
 已知問題及其解決方案如下所述。
 
-****
-*問題：*資料收集器運作一段時間後在隨機時間後停止，並發生故障：「錯誤訊息：連接器處於錯誤狀態。服務名稱：審計。失敗原因：外部 fpolicy 伺服器超載。 」
-
-*試試看：* ONTAP的事件率遠高於代理盒可以處理的事件率。因此連線被終止。
+'''
+*問題：*資料收集器運作一段時間後在隨機時間後停止，並發生故障：「錯誤訊息：連接器處於錯誤狀態。服務名稱：審計。失敗原因：外部 fpolicy 伺服器超載。 」*試試看：* ONTAP的事件率遠高於代理盒可以處理的事件率。因此連線被終止。
 
 檢查斷開連接時 CloudSecure 中的峰值流量。您可以從 *CloudSecure > Activity Forensics > All Activity* 頁面進行檢查。
 
@@ -42,7 +40,10 @@ sysctl -p
 ....
 調整大小後從 UI 重新啟動收集器。
 
+{空的}
+
 ****
+
 ****
 *問題：*收集器報告錯誤訊息：「在連接器上找不到可以到達 SVM 資料介面的本機 IP 位址」。 *試試看：*這很可能是由於ONTAP端的網路問題造成的。請依照以下步驟操作：
 
@@ -76,16 +77,18 @@ sysctl -p
 . 如果以上方法都無法解決問題，請提交案例link:concept_requesting_support.html["Netapp 支持"]以獲得進一步的幫助。
 
 
-****
-****
+{空的}
+
+'''
 *問題：*訊息：「無法確定 [主機名稱：<IP 位址>] 的ONTAP類型。原因：與儲存系統 <IP 位址> 的連線錯誤：主機無法存取（主機無法存取）」*嘗試此操作：*
 
 . 驗證是否提供了正確的 SVM IP 管理位址或叢集管理 IP。
 . 透過 SSH 連接到您要連接的 SVM 或叢集。連接後，請確保 SVM 或叢集名稱正確。
 
 
-****
-****
+{空的}
+
+'''
 *問題：*錯誤訊息：「連接器處於錯誤狀態。服務名稱：審計。失敗原因：外部 fpolicy 伺服器終止。 」  *試試這個：*
 
 . 最有可能的是防火牆阻止了代理機器中的必要連接埠。驗證連接埠範圍 35000-55000/tcp 是否已打開，以便代理電腦從 SVM 進行連線。也要確保ONTAP端沒有啟用防火牆來阻止與代理機器的通訊。
@@ -120,8 +123,9 @@ link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-cm-nm
 . 如果服務策略配置不正確，也可能會出現此錯誤。使用ONTAP 9.8 或更高版本時，為了連接到資料來源收集器，需要 data-fpolicy-client 服務以及資料服務 data-nfs 和/或 data-cifs 。此外，data-fpolicy-client 服務必須與受監控 SVM 的資料生命週期相關聯。
 
 
-****
-****
+{空的}
+
+'''
 *問題：*活動頁面中未顯示任何事件。  *試試這個：*
 
 . 檢查ONTAP收集器是否處於「正在運作」狀態。如果是，則透過開啟一些檔案確保在 cifs 用戶端虛擬機器上產生一些 cifs 事件。
@@ -139,7 +143,10 @@ link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-cm-nm
 
 
 
+{空的}
+
 ****
+
 ****
 *問題：* SVM 資料收集器處於錯誤狀態，錯誤訊息為「代理無法連線到收集器」 *嘗試下列操作：*
 
@@ -149,8 +156,9 @@ link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-cm-nm
 . 如果每秒的活動數量非常高，請安裝另一個代理並將一些資料來源收集器移至新的代理程式。
 
 
-****
-****
+{空的}
+
+'''
 *問題：* SVM 資料收集器顯示錯誤訊息為「fpolicy.server.connectError：節點無法與 FPolicy 伺服器「12.195.15.146」建立連線（原因：「選擇逾時」）」 *嘗試此操作：* SVM/Cluster 中啟用了防火牆。因此 fpolicy 引擎無法連接到 fpolicy 伺服器。  ONTAP中可用於取得更多資訊的 CLI 包括：
 
 ....
@@ -159,12 +167,16 @@ event log show -source fpolicy -fields event,action,description which shows more
 ....
 link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-cm-nmg%2FGUID-969851BB-4302-4645-8DAC-1B059D81C5B2.html["檢查防火牆命令"]在ONTAP方面。
 
+{空的}
+
 ****
+
 ****
 *問題：*錯誤訊息：「連接器處於錯誤狀態。服務名稱：審計。失敗原因：在 SVM 上找不到有效的資料介面（角色：資料、資料協定：NFS 或 CIFS 或兩者、狀態：啟動）。  *試試看：*確保有一個操作介面（具有資料角色和 CIFS/NFS 資料協定）。
 
-****
-****
+{空的}
+
+'''
 *問題：*資料收集器進入錯誤狀態，一段時間後進入運作狀態，然後再次傳回錯誤狀態。如此循環往復。  *試試看：*這通常發生在以下場景：
 
 . 新增了多個數據收集器。
@@ -173,14 +185,16 @@ link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-cm-nm
 . 刪除連接到相同 SVM 的其他資料收集器。
 
 
-****
-****
+{空的}
+
+'''
 *問題：*連接器處於錯誤狀態。服務名稱：審計。失敗原因：無法設定（SVM svmname 上的策略）。原因：在「fpolicy.policy.scope-modify: “Federal”中為“shares-to-include”元素指定的值無效*嘗試此操作：* *共享名稱需要不帶任何引號。編輯ONTAP SVM DSC 配置以更正共享名稱。
 
 _包括和排除共享_不適用於較長的共享名稱清單。如果您需要包含或排除大量股票，請使用按數量過濾。
 
-****
-****
+{空的}
+
+'''
 *問題：*集群中存在未使用的現有 fpolicies。在安裝 Workload Security 之前該做什麼？ *試試看：*建議刪除所有現有的未使用的 fpolicy 設置，即使它們處於斷開連接狀態。工作負載安全性將建立帶有前綴“cloudsecure_”的 fpolicy。所有其他未使用的 fpolicy 配置都可以刪除。
 
 顯示 fpolicy 清單的 CLI 指令：
@@ -195,36 +209,40 @@ fpolicy policy delete -vserver <svmname> -policy-name <policy_name>
 fpolicy policy event delete -vserver <svmname> -event-name <event_list>
 fpolicy policy external-engine delete -vserver <svmname> -engine-name <engine_name>
 ....
-|啟用工作負載安全後， ONTAP效能會受到影響：延遲偶爾會變高，IOP 偶爾會變低。 |將ONTAP與工作負載安全結合使用時，有時會在ONTAP中看到延遲問題。造成這種情況的可能原因有很多，如下所示：link:https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1372994["1372994"] ， https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1415152["1415152"] ， https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1438207["1438207"] ， https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1479704["1479704"] ， https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1354659["1354659"] 。所有這些問題均已在ONTAP 9.13.1 及更高版本中修復；強烈建議使用其中一個更高版本。
+{空的}
 
-****
-****
-*問題：*資料收集器出錯，顯示此錯誤訊息。 「錯誤：連接器處於錯誤狀態。服務名稱：審計。失敗原因：無法在 SVM svm_test 上設定策略。原因：zapi 欄位缺少值：事件。  「*試試這個：*
+'''
+*問題：*啟用工作負載安全後， ONTAP效能受到影響：延遲偶爾會升高，IOPS 偶爾會降低。 *試試看這個：*在使用ONTAP和工作負載安全時，有時會在ONTAP中看到延遲問題。造成這種情況可能有以下幾個原因：link:https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1372994["1372994"] ， https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1415152["1415152"] ， https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1438207["1438207"] ， https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1479704["1479704"] ， https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1354659["1354659"] 。所有這些問題均已在ONTAP 9.13.1 及更高版本中修復；強烈建議使用其中一個更高版本。
 
-. 從僅配置了 NFS 服務的新 SVM 開始。
-. 在工作負載安全性中新增ONTAP SVM 資料收集器。在工作負載安全性中新增ONTAP SVM 資料收集器時，CIFS 配置為 SVM 允許的協定。
-. 等到工作負載安全性中的資料收集器顯示錯誤。
-. 由於 SVM 上未配置 CIFS 伺服器，因此左側所示的錯誤由 Workload Security 顯示。
-. 編輯ONTAP SVM 資料收集器並取消選取 CIF 作為允許的協定。儲存資料收集器。它將僅啟用 NFS 協定開始運行。
+{空的}
 
-
-****
-****
+'''
 *問題：*資料收集器顯示錯誤訊息：「錯誤：兩次重試後無法確定收集器的健康狀況，請嘗試重新啟動收集器（錯誤代碼：AGENT008）」。  *試試這個：*
 
 . 在資料收集器頁面上，捲動到出現錯誤的資料收集器的右側，然後按一下 3 個點選單。選擇“編輯”。再次輸入資料擷取器的密碼。按下「儲存」按鈕儲存資料收集器。數據收集器將重新啟動並且錯誤應該解決。
 . 代理機器可能沒有足夠的 CPU 或 RAM 空間，這就是 DSC 失敗的原因。請檢查機器中新增到代理程式的資料收集器的數量。如果超過20，請增加Agent機器的CPU和RAM容量。一旦 CPU 和 RAM 增加，DSC 將自動進入初始化狀態，然後進入運作狀態。查看尺寸指南link:concept_cs_event_rate_checker.html["本頁"]。
 
 
-****
-****
+{空的}
+
+'''
 *問題：*選擇 SVM 模式時資料收集器發生錯誤。 *試試看：*在 SVM 模式下連接時，如果使用叢集管理 IP 而不是 SVM 管理 IP 進行連接，則連接將會出錯。確保使用正確的 SVM IP。
 
-****
-****
+{空的}
+
+'''
 *問題：*啟用「拒絕存取」功能時，資料收集器顯示錯誤訊息：「連接器處於錯誤狀態。服務名稱：審計。失敗原因：無法在 SVM test_svm 上配置 fpolicy。原因：用戶未獲得授權。 」 *試試看：*使用者可能缺少「拒絕存取」功能所需的 REST 權限。請按照link:concept_ws_integration_with_ontap_access_denied.html["本頁"]設定權限。
 
 設定權限後重新啟動收集器。
 
-****
+{空的}
+
+'''
+*問題：* 收集器處於錯誤狀態，訊息為：連接器處於錯誤狀態。 失敗原因：無法在 SVM <SVM 名稱> 上配置持久性儲存。 原因：無法在 SVM“<SVM Name>”中找到磁碟區“<volumeName>”的合適聚合。 原因：聚合「<aggregateName>」的效能資訊目前不可用。 請稍等幾分鐘，然後再次嘗試該命令。服務名稱：審計。失敗原因：無法在 SVM <SVM Name> 上設定持久性儲存區。原因：無法在 SVM "<SVM Name>" 中找到適合的集合體以用於磁碟區 "<volumeName>"。原因：目前無法取得集合體 "<aggregateName>" 的效能資訊。請稍候幾分鐘，然後再次嘗試該指令。
+
+*試試這個方法：*等待幾分鐘，然後重新啟動收集器。
+
+{空的}
+
+'''
 如果您仍然遇到問題，請聯絡*幫助>支援*頁面中提到的支援連結。

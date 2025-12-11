@@ -6778,7 +6778,6 @@
   <block id="3f1a7a2048c619e7b3997ddc8b02ae5e" category="inline-link-macro">必須配置</block>
   <block id="6c1006735c24c4966ad5668af1361000" category="list-text">一名特務<block ref="a64dfb2e19772579ec5e757e77e2d502" category="inline-link-macro-rx"></block>然後才可以配置資料收集器。</block>
   <block id="3db922049dfe42d0844cfa65ca213434" category="list-text">確保您具有正確配置的使用者目錄連接器，否則事件將在「活動取證」頁面中顯示編碼的使用者名稱而不是使用者的實際名稱（儲存在 Active Directory 中）。</block>
-  <block id="b8667da3102e0adbbd2fe25017f00394" category="list-text">• 從 9.14.1 開始支援ONTAP持久性儲存。</block>
   <block id="1c0d6e11904414aa4c18ec80cc712c68" category="list-text">為了獲得最佳效能，您應該將 FPolicy 伺服器配置為與儲存系統位於相同子網路。</block>
   <block id="94a83cc87aa6db24b6f7e05b3ab3031d" category="list-text">您必須使用以下兩種方法之一新增 SVM：</block>
   <block id="f27bbbf5360c428e454f91df4646ca7c" category="list-text">透過使用叢集 IP、SVM 名稱以及叢集管理使用者名稱和密碼。  *_這是推薦的方法。 _*</block>
@@ -6787,7 +6786,6 @@
   <block id="4f063ab303b475997c571fed2a4d2d7e" category="inline-xref">“關於權限的說明”</block>
   <block id="63d71c9c8919be72ed5d5d19a3aea524" category="list-text">如果您無法或不願意使用完整的管理員叢集/SVM 管理使用者名稱和密碼，您可以建立一個具有較低權限的自訂用戶，如<block ref="00e97c40bcd2b78ce8600bf90267e3e7" category="inline-xref-macro-rx"></block>下面的部分。可以為 SVM 或叢集存取權建立此自訂使用者。</block>
   <block id="eb75aeb3b4b2b9734ba3e52f5483f0b2" category="inline-link-macro">ONTAP 文件</block>
-  <block id="af3222f57064502de0a6067116f97f3e" category="list-text">o 您也可以使用具有至少具有 csrole 權限的角色的 AD 用戶，如下面「關於權限的說明」部分所述。另請參閱<block ref="d4aa194db895e3203d834756bc431bad" category="inline-link-macro-rx"></block>。</block>
   <block id="af53996a121bcf0b43c612a8465b5398" category="list-text">透過執行以下命令確保為 SVM 設定了正確的應用程式：</block>
   <block id="cce32d87b6a1e3cf5567d9c84f96be3f" category="inline-image-macro">SVM 命令輸出範例</block>
   <block id="d056d5eb1e184e9c1ac10b7b898406c4" category="paragraph">範例輸出：<block ref="c5dea5ffbc3dcabd33992848de2142cc" category="inline-image-macro-rx" type="image"></block></block>
@@ -11967,8 +11965,6 @@
   <block id="9308a4a251c0b6f099fc32506e41c24d" category="inline-image-macro">工作負載安全收集器錯誤更多詳細資訊鏈接</block>
   <block id="6a6fcf99d83d56b2429dfa3ef83b50a0" category="paragraph"><block ref="6a6fcf99d83d56b2429dfa3ef83b50a0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="182ce87180fe5b09fa1710d1b249ecf0" category="paragraph">已知問題及其解決方案如下所述。</block>
-  <block id="23d35f04a6305a542c62e0793452c9ad" category="paragraph">*問題：*資料收集器運作一段時間後在隨機時間後停止，並發生故障：「錯誤訊息：連接器處於錯誤狀態。服務名稱：審計。失敗原因：外部 fpolicy 伺服器超載。 」</block>
-  <block id="85501d33ecd840c5761971c7b55e894c" category="paragraph">*試試看：* ONTAP的事件率遠高於代理盒可以處理的事件率。因此連線被終止。</block>
   <block id="6cbdb7b222e25139b815f11a8bf316b0" category="paragraph">檢查斷開連接時 CloudSecure 中的峰值流量。您可以從 *CloudSecure &gt; Activity Forensics &gt; All Activity* 頁面進行檢查。</block>
   <block id="fb318561d723fea4bf5cfc32c9f76869" category="paragraph">如果峰值聚合流量高於代理箱可以處理的流量，請參閱事件速率檢查器頁面，以了解如何確定代理箱中收集器的部署規模。</block>
   <block id="df5d9f6706ba32a91dad936fdd8c31ec" category="paragraph">如果代理程式是在 2021 年 3 月 4 日之前安裝在代理框中的，請在代理框中執行以下命令：</block>
@@ -12035,13 +12031,6 @@
   <block id="1728bd23561a7ad8c0a5ece1af1fc9e1" category="inline-link">1438207</block>
   <block id="36e30a439910e67f76754ab0874aef1b" category="inline-link">1479704</block>
   <block id="7e18cc81c15bd72df03b7461c26d6e4a" category="inline-link">1354659</block>
-  <block id="fde38d88f8244f8a7b724b900bd7e422" category="paragraph">|啟用工作負載安全後， ONTAP效能會受到影響：延遲偶爾會變高，IOP 偶爾會變低。 |將ONTAP與工作負載安全結合使用時，有時會在ONTAP中看到延遲問題。造成這種情況的可能原因有很多，如下所示：<block ref="5b7caa0ef6cc830703e594488c525913" category="inline-link-macro-rx"></block> ，<block ref="b861ec6ca06b8e18b9d090dd75b00a26" category="inline-link-rx"></block> ，<block ref="a5fade3ab29d18b9b976189fcb9919ed" category="inline-link-rx"></block> ，<block ref="8899da2205eee6e62b28641da3533e12" category="inline-link-rx"></block> ，<block ref="c9d1d03c1b92a8bbffc617ad493e8619" category="inline-link-rx"></block> 。所有這些問題均已在ONTAP 9.13.1 及更高版本中修復；強烈建議使用其中一個更高版本。</block>
-  <block id="392c3c278e79c8048452de58dff9fd56" category="paragraph">*問題：*資料收集器出錯，顯示此錯誤訊息。 「錯誤：連接器處於錯誤狀態。服務名稱：審計。失敗原因：無法在 SVM svm_test 上設定策略。原因：zapi 欄位缺少值：事件。  「*試試這個：*</block>
-  <block id="bcb838cbc5adbbb585ffd4e501e4b07b" category="list-text">從僅配置了 NFS 服務的新 SVM 開始。</block>
-  <block id="55007273037aed04d07e70999d5153b2" category="list-text">在工作負載安全性中新增ONTAP SVM 資料收集器。在工作負載安全性中新增ONTAP SVM 資料收集器時，CIFS 配置為 SVM 允許的協定。</block>
-  <block id="c5e48108c2128269b181c77142f6e2c0" category="list-text">等到工作負載安全性中的資料收集器顯示錯誤。</block>
-  <block id="bc71f49bfafa6a1dbe64216acd61b88e" category="list-text">由於 SVM 上未配置 CIFS 伺服器，因此左側所示的錯誤由 Workload Security 顯示。</block>
-  <block id="10b2e2acac1b3fff1d033229848652e2" category="list-text">編輯ONTAP SVM 資料收集器並取消選取 CIF 作為允許的協定。儲存資料收集器。它將僅啟用 NFS 協定開始運行。</block>
   <block id="8202c6a36256606217ad100be587d707" category="paragraph">*問題：*資料收集器顯示錯誤訊息：「錯誤：兩次重試後無法確定收集器的健康狀況，請嘗試重新啟動收集器（錯誤代碼：AGENT008）」。  *試試這個：*</block>
   <block id="f2e1c8f11a6d114e56889c093ddb4738" category="list-text">在資料收集器頁面上，捲動到出現錯誤的資料收集器的右側，然後按一下 3 個點選單。選擇“編輯”。再次輸入資料擷取器的密碼。按下「儲存」按鈕儲存資料收集器。數據收集器將重新啟動並且錯誤應該解決。</block>
   <block id="96f9921aa76d3057450b4f8f037c88c6" category="list-text">代理機器可能沒有足夠的 CPU 或 RAM 空間，這就是 DSC 失敗的原因。請檢查機器中新增到代理程式的資料收集器的數量。如果超過20，請增加Agent機器的CPU和RAM容量。一旦 CPU 和 RAM 增加，DSC 將自動進入初始化狀態，然後進入運作狀態。查看尺寸指南<block ref="830ad31fe88c5bf31dcfcc5f15ccdf0e" category="inline-link-macro-rx"></block>。</block>
@@ -12774,4 +12763,13 @@
   <block id="7d7c3dfbfa0b1113cc98af5bc93293c2" category="inline-link-macro">工作負載安全通知（原Cloud Secure），window=_blank</block>
   <block id="c69944d365e084328c890394ddd7fec5" category="paragraph"><block ref="c69944d365e084328c890394ddd7fec5" category="inline-link-macro-rx"></block></block>
   <block id="f17c7e32a4fcdb4c787f412cf3181bea" category="cell">與管理員相同，以及管理 SSO 身份驗證和身份聯合配置。也可以為託管服務提供者 (MSP) 主租戶分配其他所有者以及新增客戶。</block>
+  <block id="6794662d08bc33fcbd95c93345331eb3" category="list-text">ONTAP持久性儲存從 9.14.1 版本開始支援。</block>
+  <block id="19d46baa06f3b8d834f231a48a441888" category="inline-link-macro">知識庫文章：FPolicy最佳實踐</block>
+  <block id="0623520805216507062e9d9ca05fa78b" category="list-text">有關工作負載安全性原則配置的全面最佳實務和建議，請參閱<block ref="97c620a93781a0c1a84d537888788cd2" category="inline-link-macro-rx"></block>。</block>
+  <block id="12e43e942c5c37f57af4651b24d50099" category="list-text">您也可以使用具有至少 csrole 權限的角色的 AD 用戶，如下面的「關於權限的說明」部分所述。另請參閱<block ref="d4aa194db895e3203d834756bc431bad" category="inline-link-macro-rx"></block>。</block>
+  <block id="17783c6591a255b301970d912178040b" category="paragraph">*問題：*資料收集器運作一段時間後在隨機時間後停止，並發生故障：「錯誤訊息：連接器處於錯誤狀態。服務名稱：審計。失敗原因：外部 fpolicy 伺服器超載。 」*試試看：* ONTAP的事件率遠高於代理盒可以處理的事件率。因此連線被終止。</block>
+  <block id="2e67c3e48e3cc19256e526889902b06c" category="paragraph">{空的}</block>
+  <block id="cd013bdb6b746502669588c8bf28fe47" category="paragraph">*問題：*啟用工作負載安全後， ONTAP效能受到影響：延遲偶爾會升高，IOPS 偶爾會降低。 *試試看這個：*在使用ONTAP和工作負載安全時，有時會在ONTAP中看到延遲問題。造成這種情況可能有以下幾個原因：<block ref="5b7caa0ef6cc830703e594488c525913" category="inline-link-macro-rx"></block> ，<block ref="b861ec6ca06b8e18b9d090dd75b00a26" category="inline-link-rx"></block> ，<block ref="a5fade3ab29d18b9b976189fcb9919ed" category="inline-link-rx"></block> ，<block ref="8899da2205eee6e62b28641da3533e12" category="inline-link-rx"></block> ，<block ref="c9d1d03c1b92a8bbffc617ad493e8619" category="inline-link-rx"></block> 。所有這些問題均已在ONTAP 9.13.1 及更高版本中修復；強烈建議使用其中一個更高版本。</block>
+  <block id="c8a935e32ab223552b7728caf4cbcd40" category="paragraph">*問題：* 收集器處於錯誤狀態，訊息為：連接器處於錯誤狀態。 失敗原因：無法在 SVM &lt;SVM 名稱&gt; 上配置持久性儲存。 原因：無法在 SVM“&lt;SVM Name&gt;”中找到磁碟區“&lt;volumeName&gt;”的合適聚合。 原因：聚合「&lt;aggregateName&gt;」的效能資訊目前不可用。 請稍等幾分鐘，然後再次嘗試該命令。服務名稱：審計。失敗原因：無法在 SVM &lt;SVM Name&gt; 上設定持久性儲存區。原因：無法在 SVM "&lt;SVM Name&gt;" 中找到適合的集合體以用於磁碟區 "&lt;volumeName&gt;"。原因：目前無法取得集合體 "&lt;aggregateName&gt;" 的效能資訊。請稍候幾分鐘，然後再次嘗試該指令。</block>
+  <block id="807b576f46b09baeb51689a411fd7e90" category="paragraph">*試試這個方法：*等待幾分鐘，然後重新啟動收集器。</block>
 </blocks>
