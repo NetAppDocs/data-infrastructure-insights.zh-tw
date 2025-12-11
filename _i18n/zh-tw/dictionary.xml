@@ -12772,4 +12772,33 @@
   <block id="cd013bdb6b746502669588c8bf28fe47" category="paragraph">*問題：*啟用工作負載安全後， ONTAP效能受到影響：延遲偶爾會升高，IOPS 偶爾會降低。 *試試看這個：*在使用ONTAP和工作負載安全時，有時會在ONTAP中看到延遲問題。造成這種情況可能有以下幾個原因：<block ref="5b7caa0ef6cc830703e594488c525913" category="inline-link-macro-rx"></block> ，<block ref="b861ec6ca06b8e18b9d090dd75b00a26" category="inline-link-rx"></block> ，<block ref="a5fade3ab29d18b9b976189fcb9919ed" category="inline-link-rx"></block> ，<block ref="8899da2205eee6e62b28641da3533e12" category="inline-link-rx"></block> ，<block ref="c9d1d03c1b92a8bbffc617ad493e8619" category="inline-link-rx"></block> 。所有這些問題均已在ONTAP 9.13.1 及更高版本中修復；強烈建議使用其中一個更高版本。</block>
   <block id="c8a935e32ab223552b7728caf4cbcd40" category="paragraph">*問題：* 收集器處於錯誤狀態，訊息為：連接器處於錯誤狀態。 失敗原因：無法在 SVM &lt;SVM 名稱&gt; 上配置持久性儲存。 原因：無法在 SVM“&lt;SVM Name&gt;”中找到磁碟區“&lt;volumeName&gt;”的合適聚合。 原因：聚合「&lt;aggregateName&gt;」的效能資訊目前不可用。 請稍等幾分鐘，然後再次嘗試該命令。服務名稱：審計。失敗原因：無法在 SVM &lt;SVM Name&gt; 上設定持久性儲存區。原因：無法在 SVM "&lt;SVM Name&gt;" 中找到適合的集合體以用於磁碟區 "&lt;volumeName&gt;"。原因：目前無法取得集合體 "&lt;aggregateName&gt;" 的效能資訊。請稍候幾分鐘，然後再次嘗試該指令。</block>
   <block id="807b576f46b09baeb51689a411fd7e90" category="paragraph">*試試這個方法：*等待幾分鐘，然後重新啟動收集器。</block>
+  <block id="1da664a432a920207ac67730bfcf1104" category="summary">了解如何發布和取消發布註釋，以便在報告中使用。</block>
+  <block id="d0f8afd8d5b97350096da4410f6ef70a" category="doc">發布和取消發布報告註釋</block>
+  <block id="13e4b27f5005e5c64c5a41690660de1d" category="paragraph">了解如何發布註釋以在報表和資料倉儲中使用，以及如何在不再需要註釋時正確地取消發布註釋。</block>
+  <block id="f3b7c338e6a3f535c74857d42d70a81c" category="section-title">發布報告註釋</block>
+  <block id="327b3bc4d967a2317701d7010944307f" category="paragraph">在Data Infrastructure Insights中建立註釋後，您可以將其發布以在報表中使用。</block>
+  <block id="0caee252e5487de862dbefa3eec1a462" category="section-title">發布註釋的步驟</block>
+  <block id="29f6016632227f8bf6976c7869bc72c3" category="list-text">導覽至「可觀測性 &gt; 豐富 &gt; 註解」頁面，然後選擇「報表註解」標籤。</block>
+  <block id="9e504f94b5be9a2b018e55cf728ac22a" category="list-text">找到要發布的註釋。</block>
+  <block id="35e76d3e8b05c29f4ff6b2da44ea4921" category="list-text">選擇註釋，然後選擇「發佈到報表」。您也可以選擇將其套用至歷史數據，以便在執行歷史報表時使用該註解。</block>
+  <block id="30931bf6e020a646ad57086874ca6074" category="list-text">發布後，註釋即可在報告中使用。</block>
+  <block id="396e1f080d09a5d2f02eb4001ac6fc8c" category="list-text">註釋將在下次 ETL 運行後發布，以便在報告中使用。</block>
+  <block id="5717734bfc2f355942edbd3696406818" category="paragraph">任何引用該註釋的報告都將使用已發布的值。如果在發布後修改了註釋，則可能需要重新發布才能使這些變更在報告中生效。</block>
+  <block id="ebcb6aeee3884fde3993f0df7ebca547" category="section-title">取消發布報告註釋</block>
+  <block id="161b2f38480450dbc7b8b35dc2e547c6" category="paragraph">有時您可能需要刪除或取消發布註釋，以便它們不再用於報表。例如，某個註釋可能不再需要，或者它可能包含不應出現在報告中的過時資訊。</block>
+  <block id="52de2e815a8847eed14eefcdb8df04e2" category="section-title">取消發布註解的步驟</block>
+  <block id="56b5e5aeff1cd3d66dfa9e7aae2e1fb8" category="paragraph">在取消發布註釋之前，請注意此操作將影響使用該註釋的任何現有報告。報告可能需要編輯或專業服務協助才能刪除註釋參考資訊。</block>
+  <block id="537ba4575bf20a44a021d6a6c2160c2f" category="list-text">在Data Infrastructure Insights使用者介面中，導覽至「報告註釋」標籤。</block>
+  <block id="0baff86dba25c761b8e10de5e631d2da" category="list-text">找到要取消發布的註釋。</block>
+  <block id="f4f03ad26635dcdf26cd79ebbdf3f095" category="list-text">對於每個已發布註釋的對象，取消選擇註釋並選擇「儲存」。</block>
+  <block id="1e45f500f939c3c6933da32b0094ed0c" category="list-text">刪除所有仍引用該註釋的查詢或規則，以確保它不會被標記為「正在使用」。</block>
+  <block id="612361128d3425b6d566099c3a73e114" category="list-text">下次 ETL 運行後，註解將被取消發布。</block>
+  <block id="80186bee24a1384dd0fdcbe103ad297a" category="list-text">ETL 完成後，如果租用戶端不再需要該註解，則可以將其從註解清單中刪除。</block>
+  <block id="69ba397c22afed002692190d13724b2e" category="paragraph">註釋將繼續顯示在資料倉儲中，直到被正確取消發佈為止。如果未先取消發布，直接從「註釋」頁面刪除註釋，則會留下過時的數據，這些數據可能會出現在現有報告中。請按照上述取消發布步驟操作，以確保徹底刪除。</block>
+  <block id="fde5f00a6e30ac6f54a7295f2e712c69" category="section-title">對現有報告的影響</block>
+  <block id="046dafc771f597ba528c92397d5f99e6" category="paragraph">刪除或取消發布註釋可能需要修改引用這些註釋的現有報告。請考慮以下情況：</block>
+  <block id="3c26ba7c1113869b4804e6a406f52ba7" category="list-text">使用註釋作為篩選條件或維度的報告需要更新。</block>
+  <block id="c77b295eb8d3480880ff044a7823cdd9" category="list-text">如果在未更新依賴報告的情況下刪除註釋，則這些報告可能會傳回錯誤或意外結果。</block>
+  <block id="3da85052d2ffffd1cb6352186fe0393a" category="list-text">在複雜情況下，可能需要專業服務來協助進行報告修改。</block>
+  <block id="4f9b9c5804f57ab98a1eb0bbdc93ee28" category="paragraph">建議在取消發布註釋之前，先檢查所有依賴該註釋的報告。</block>
 </blocks>
