@@ -7,6 +7,10 @@ summary: Telegraf 數據顯示選項
 = 轉換指標
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]
