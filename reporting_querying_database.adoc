@@ -7,6 +7,10 @@ keywords: reporting, cognos, data warehouse, dwh, API
 = 透過 API 存取報告資料庫
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]

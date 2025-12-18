@@ -55,7 +55,7 @@ keywords: onboarding, new user
 
 == Sign in並前往
 
-建立租用戶後，您可以隨時登入NetApp Console網站並導航到link:https://services.cloud.netapp.com["雲端服務"]頁面並選擇*前往Data Infrastructure Insights*。
+租戶建立完成後，您可以隨時登入NetApp BlueXP Portal 並導航至以下位置： link:https://services.cloud.netapp.com["雲端服務"] 頁面並選擇「前往Data Infrastructure Insights」。
 
 您也可以直接開啟瀏覽器存取Data Infrastructure Insights租用戶 URL，例如：
 

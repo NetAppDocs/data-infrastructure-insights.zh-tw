@@ -6986,12 +6986,10 @@
   <block id="a46b8a484704b65f978247cb9b3901aa" category="paragraph">輸入您的電子郵件地址和密碼。然後您將進入 NetApp 的雲端產品頁面。</block>
   <block id="4ec4e4954d48db50650c5ec49007cf27" category="paragraph">導航至*分析和控制&gt;可觀察性*以了解Data Infrastructure Insights和/或請求演示。</block>
   <block id="eeecd13aa136e65aaedc64374c7415bc" category="section-title">開始您的Data Infrastructure Insights免費試用</block>
-  <block id="13d2916279db639fea18a00088e8cb21" category="paragraph">租戶創建完成後，使用控制台憑證登入並開始免費試用 30 天Data Infrastructure Insights。在此試用期間，您可以探索Data Infrastructure Insights所提供的功能。</block>
   <block id="3b1f676d06286548e11b332567f42bbd" category="inline-link-macro">開始訂閱</block>
   <block id="b48d78927dd619cab2e6b7fde5ffb6b1" category="paragraph">在免費試用期間，您可以<block ref="822a67eb96671d13fff372a75b259713" category="inline-link-macro-rx"></block>隨時了解Data Infrastructure Insights。當您訂閱後，您可以根據目前訂閱使用Data Infrastructure Insights功能。</block>
   <block id="2c4bb88652ba26d23266d851053ba465" category="section-title">Sign in並前往</block>
   <block id="27e0956311428740c19b40a7a971c7ef" category="inline-link-macro">雲端服務</block>
-  <block id="d97af656d080e05ccc035b1948ac30b8" category="paragraph">建立租用戶後，您可以隨時登入NetApp Console網站並導航到<block ref="37a150e92f05332b5bc5a56046c3177c" category="inline-link-macro-rx"></block>頁面並選擇*前往Data Infrastructure Insights*。</block>
   <block id="206cb1224c200bbbd73cfa4118ad7c1e" category="paragraph">您也可以直接開啟瀏覽器存取Data Infrastructure Insights租用戶 URL，例如：</block>
   <block id="9834a50024d1c9eb92d1d75e4f1fc3fa" category="paragraph">該 URL 還將包含在每個使用者的邀請電子郵件中，以便於存取和添加書籤。如果使用者尚未登入控制台，系統將提示他們登入。</block>
   <block id="955402d5e1e7fb2ed3dc9cdbbcb35826" category="admonition">新用戶仍必須註冊存取控制台，然後才能存取其租用戶 URL。</block>
@@ -12680,4 +12678,19 @@
   <block id="84782b0fddf642f36f6d0ca7585d8709" category="paragraph">如果您是第一次登入Data Infrastructure Insights，請閱讀有關Data Infrastructure Insights所能提供的一切信息，當您_準備好開始使用_時，點擊*申請試用*並填寫您的資訊。</block>
   <block id="513dc3996a984c81efa261ee7da82ea7" category="paragraph">作為試用租用戶設定的一部分，您將選擇託管租用戶的區域，以及您希望將租用戶部署在 AWS 還是 Azure 上。</block>
   <block id="29ecb4e96ebb9048c6e2055bd8edfec9" category="paragraph">下面是一個範例 _AgentConfiguration_ 文件，其中包含每個選項的說明。</block>
+  <block id="0a511b85d77f15f39fbbd23442b32001" category="section-title">2025年12月</block>
+  <block id="02c6c8e70973eaa6f06450fcaad33a5f" category="section-title">使用共用查詢控制查詢存取權限</block>
+  <block id="2432d631102e473d4b496edccabf444a" category="paragraph">共用您建立的查詢，並設定精細的權限控制。選擇唯讀檢視器模式以防止修改，或選擇編輯模式以允許變更。私有查詢可供建立者使用，而共用查詢可在註解規則中使用，或複製用於特殊用例，讓您可以完全控制查詢在整個組織中的使用和修改方式。</block>
+  <block id="867eb02418c63590934857d7248297ed" category="inline-image-macro">設定查詢權限，寬度=200</block>
+  <block id="1001d997566a254eb622fa8e13c87f5d" category="paragraph"><block ref="1001d997566a254eb622fa8e13c87f5d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ca03196cfb39c0ee19d1e348fea01c6d" category="paragraph">此外，具有_Guest_角色的使用者現在可以建立和管理自己的私有查詢。</block>
+  <block id="793292eddcb4bfdfa889302640316870" category="section-title">更好地篩選監控器</block>
+  <block id="de71fd4a5b1b28ac72eda2e9287c745a" category="paragraph">對監控清單和群組的篩選功能進行了改進，增加了通配符支援、多個篩選器、包含/排除功能等。</block>
+  <block id="b1dd7c1a42d0a77cdb3443ba1c0f97c3" category="inline-image-macro">新顯示器篩選，寬度=500</block>
+  <block id="7bf60aa4367d13bdf4be42c9055afecc" category="paragraph"><block ref="7bf60aa4367d13bdf4be42c9055afecc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f3dd02ae7c2c35817a35bc27eb8af50f" category="section-title">更清晰的儀錶板視覺化效果</block>
+  <block id="6838668755c364765b40cf38648de55f" category="paragraph">改進後的儀錶板設計可協助您查看最重要的資訊。透過陰影邊框分隔小部件，並移除分隔線，增強視覺清晰度，減少雜亂，讓您可以專注於資料洞察。這些改進創造了更簡潔、更直觀的儀錶板體驗，使用戶能夠更快、更容易地發現趨勢和異常情況。</block>
+  <block id="d388ca982366ad7a8a7a165d21919f84" category="paragraph">租戶創建完成後，使用控制台憑證登入並開始免費試用 30 天Data Infrastructure Insights。在此試用期間，您可以探索Data Infrastructure Insights所提供的功能。</block>
+  <block id="a361d4c5b26cab224e5aad972ef9f92f" category="paragraph">租戶建立完成後，您可以隨時登入NetApp BlueXP Portal 並導航至以下位置： <block ref="37a150e92f05332b5bc5a56046c3177c" category="inline-link-macro-rx"></block> 頁面並選擇「前往Data Infrastructure Insights」。</block>
+  <block id="ed35afa558b996b37265533db9af5399" category="sidebar">在報告中發布註釋</block>
 </blocks>
