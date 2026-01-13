@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: cs_automated_response_policies.html 
-keywords: alert, snapshot, ransomware, attack 
-summary: 您可以針對潛在攻擊（例如勒索軟體）和/或活動警告設定自動回應策略 
+keywords: alert, snapshot, ransomware, attack, tampering 
+summary: 配置自動回應策略，以便在發生安全事件時立即採取行動，包括快照、使用者存取限制以及針對威脅和可疑行為的 webhook 通知。 
 ---
 = 自動回應策略
 :hardbreaks:

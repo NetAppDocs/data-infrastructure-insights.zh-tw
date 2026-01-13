@@ -2,15 +2,19 @@
 sidebar: sidebar 
 permalink: task_config_cs_incloud.html 
 keywords: Cloud, Storage, AWS, Cloud Volumes, Cloud ONTAP, firewall, VPC, Subnet,  cloud secure 
-summary: 工作負載安全使用資料收集器從設備收集文件和使用者存取資料。 
+summary: 為Cloud Volumes ONTAP和Amazon FSx for NetApp ONTAP設定工作負載安全資料收集器，以監控檔案存取、使用者活動並偵測整個雲端儲存基礎架構中的威脅。 
 ---
 = 設定Cloud Volumes ONTAP和Amazon FSx for NetApp ONTAP收集器
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]
-工作負載安全使用資料收集器從設備收集文件和使用者存取資料。
+透過為Cloud Volumes ONTAP和Amazon FSx for NetApp ONTAP設定 Workload Security 資料收集器，監控整個雲端儲存基礎架構中的檔案和使用者存取。本指南提供了在 AWS 中部署代理並將其連接到雲端儲存實例的逐步說明。
 
 
 

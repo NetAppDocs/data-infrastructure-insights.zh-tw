@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: cs_alert_data.html 
-keywords: alert, attack, ransomware, activity, security, abnormal 
+keywords: alert, attack, ransomware, activity, security, abnormal, tampering 
 summary: 當出現異常用戶活動或潛在攻擊時，工作負載安全性會發出警報。警報頁面列出了這些活動，以便快速輕鬆地進行調查。 
 ---
 = 警報
@@ -14,7 +14,7 @@ summary: 當出現異常用戶活動或潛在攻擊時，工作負載安全性�
 
 
 [role="lead"]
-工作負載安全警報頁面顯示最近攻擊和/或警告的時間線，並允許您查看每個問題的詳細資訊。
+工作負載安全警報頁面提供了已偵測到的威脅和警告的完整時間線，以及詳細的調查工具。查看警報詳情、管理狀態更新、按條件篩選、追蹤使用者活動，以便有效率地調查和應對安全事件。
 
 image:CloudSecureAlertsListPage.png["警報列表"]
 
@@ -102,9 +102,9 @@ image:CloudSecureChangeAlertStatus.png["更改警報狀態"]
 
 此部分顯示有關參與潛在攻擊的用戶的詳細信息，包括用戶的熱門活動圖表。
 
-警報頁面（此範例顯示潛在的勒索軟體攻擊）：image:RansomwareAlertExample.png["勒索軟體警報範例"]
+警報頁面（此範例顯示了潛在的文件篡改攻擊）： image:RansomwareAlertExample.png["文件篡改警報範例"]
 
-詳細資訊頁面（此範例顯示了潛在的勒索軟體攻擊）：image:RansomwareDetailPageExample.png["勒索軟體詳情頁面範例"]
+詳情頁面（此範例展示了潛在的文件篡改攻擊）： image:RansomwareDetailPageExample.png["文件竄改詳情頁範例"]
 
 
 
@@ -112,7 +112,7 @@ image:CloudSecureChangeAlertStatus.png["更改警報狀態"]
 
 工作負載安全性會在偵測到惡意活動時自動拍攝快照來保護您的數據，確保您的資料已安全備份。
 
-您可以定義link:cs_automated_response_policies.html["自動回應策略"]當偵測到勒索軟體攻擊或其他異常使用者活動時拍攝快照。您也可以從警報頁面手動拍攝快照。
+你可以定義 link:cs_automated_response_policies.html["自動回應策略"] 當偵測到檔案竄改攻擊或其他異常使用者活動時，會拍攝快照。您也可以從警報頁面手動截取快照。
 
 自動拍攝快照：image:AlertActionsAutomaticExample.png["警報行動螢幕，1000"]
 

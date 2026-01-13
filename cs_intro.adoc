@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: cs_intro.html 
 keywords: CloudSecure, Cloud Secure 
-summary: 概況 
+summary: 利用儲存工作負載安全功能的內部威脅檢測、跨混合環境的集中可見性以及用於異常檢測和合規性的高級機器學習來保護您的資料。 
 ---
 = 關於儲存工作負載安全
 :hardbreaks:

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task_cs_add_agent.html 
 keywords: agent, Workload Security, installation, Cloud Secure 
-summary: 工作負載安全代理程式會監控使用者活動並偵測儲存環境中的安全威脅。 
+summary: 部署工作負載安全代理程式來監控使用者活動、偵測安全威脅並保護您的儲存基礎架構。 
 ---
 = 部署工作負載安全代理
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 工作負載安全代理程式會監控使用者活動並偵測儲存�
 
 
 [role="lead"]
-工作負載安全代理程式對於監控使用者活動和偵測儲存基礎架構中潛在的安全威脅至關重要。本指南提供在您的環境中部署代理程式的逐步說明。在開始之前，請確保您的代理伺服器符合以下條件： link:concept_cs_agent_requirements.html["系統需求"]。
+工作負載安全代理程式對於監控使用者活動和偵測儲存基礎架構中潛在的安全威脅至關重要。本指南提供逐步安裝說明、代理管理最佳實務（包括暫停/恢復和固定/取消固定功能）以及部署後設定要求。在開始之前，請確保您的代理伺服器符合以下條件： link:concept_cs_agent_requirements.html["系統需求"]。
 
 
 

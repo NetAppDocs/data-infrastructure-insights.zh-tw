@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concept_cs_attack_simulator.html 
 keywords: ransomware, simulation, simulator, restrict, attack 
-summary: 使用腳本，您可以模擬勒索軟體攻擊來測試或演示工作負載安全性 
+summary: 透過使用隨附的模擬腳本模擬攻擊來測試和驗證工作負載安全偵測能力，以驗證警報產生和回應策略。 
 ---
-= 工作負載安全：模擬攻擊
+= 工作負載安全：模擬異常檔案篡改
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,13 +14,13 @@ summary: 使用腳本，您可以模擬勒索軟體攻擊來測試或演示工�
 
 
 [role="lead"]
-您可以按照此頁面上的說明，使用隨附的勒索軟體模擬腳本來模擬攻擊，以測試或演示工作負載安全性。
+您可以按照本頁上的說明，使用隨附的文件篡改模擬腳本來模擬文件篡改，以測試或演示工作負載安全性。
 
 
 
 == 開始前需要注意的事項
 
-* 勒索軟體模擬腳本僅在 Linux 上運行。如果使用者將ONTAP ARP 與 Workload Security 集成，模擬腳本也應產生高置信度警報。
+* 此檔案篡改模擬腳本僅適用於 Linux 系統。如果使用者已將ONTAP ARP 與工作負載安全性集成，則模擬腳本也應產生高置信度警報。
 * 只有當ONTAP版本為 9.15 或更高版本時，工作負載安全才會偵測使用 NFS 4.1 產生的事件和警報。
 * 此腳本隨工作負載安全代理安裝檔一起提供。它可以在安裝了工作負載安全代理程式的任何機器上使用。
 * 您可以在工作負載安全代理機器本身上執行該腳本；無需準備另一台 Linux 機器。但是，如果您希望在另一個系統上運行該腳本，只需複製該腳本並在那裡運行即可。
@@ -158,7 +158,7 @@ mount -t cifs //10.193.77.91/sharedfolderincluster /root/destinationfolder/ -o u
 
 在建立文件之前，您必須先停止或link:task_add_collector_svm.html#play-pause-data-collector["暫停資料收集器"]加工。
 
-要產生勒索軟體警報，您可以執行包含的腳本，該腳本將在工作負載安全中模擬勒索軟體警報。
+若要產生檔案篡改警報，您可以執行隨附的腳本，該腳本將在工作負載安全中模擬檔案篡改警報。
 
 
 
@@ -196,7 +196,7 @@ mount -t cifs //10.193.77.91/sharedfolderincluster /root/destinationfolder/ -o u
 . 在叢集模式下新增了工作負載安全資料收集器。
 
 
-Workload Security 根據使用者行為偵測勒索軟體模式，而ONTAP ARP 會根據檔案中的加密活動偵測勒索軟體活動。
+Workload Security 根據使用者行為偵測檔案竄改模式，而ONTAP ARP 則會根據檔案中的加密活動偵測檔案竄改活動。
 
 如果滿足條件，Workload Security 會將警報標記為高可信度警報。
 
@@ -212,6 +212,6 @@ image:ws_high_confidence_alert_detail.png["高置信度警報範例，詳細資�
 
 == 多次觸發警報
 
-Workload Security 會了解使用者行為，並且不會對同一使用者在 24 小時內重複遭受勒索軟體攻擊發出警報。
+工作負載安全功能會學習使用者行為，對於同一使用者在 24 小時內重複發生的檔案竄改攻擊，不會發出警報。
 
 若要使用不同的使用者產生新的警報，請再次執行相同的步驟（建立測試數據，然後加密測試數據）。

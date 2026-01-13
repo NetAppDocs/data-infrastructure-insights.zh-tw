@@ -573,7 +573,6 @@
   <block id="710c77cfc8d2136c51aad6a8316043b9" category="cell">*試試這個：*</block>
   <block id="3e31734df6f02c9ad9cd0dc7c1f65a98" category="cell">我看到審計訊息告訴我監視器已被匯出。</block>
   <block id="256a0ce1cb9ac99794371e404aa7446e" category="cell">NetApp工程師通常在開發和測試新功能時使用自訂監視器配置的匯出。如果您沒有預料到會看到此訊息，請考慮探究審核操作中提到的使用者的操作或聯絡支援人員。</block>
-  <block id="03b8f305db2c82bc6a850a57ec12d044" category="summary">用作代理的伺服器或虛擬機器必須滿足最低要求</block>
   <block id="a7ef8f0bed1d94220b7abd3877b10643" category="doc">工作負載安全代理要求</block>
   <block id="bee347f35c7a237c1f2d5d7193252244" category="inline-link-macro">安裝工作負載安全代理</block>
   <block id="1de0df19f89310a1407a7686c6dcad7c" category="paragraph">你必須<block ref="588188a9e8b5d243fbdbf4e2ce1c4421" category="inline-link-macro-rx"></block>以便從資料收集者那裡獲取資訊。在安裝代理之前，請確保您的環境符合作業系統、CPU、記憶體和磁碟空間要求。</block>
@@ -626,7 +625,6 @@
   <block id="46a1d0dbde96d466dadd916b9b7a7d65" category="section-title">系統規模</block>
   <block id="b81e4f797b30e131d43ea14e3bc8322c" category="inline-link-macro">事件發生率檢查器</block>
   <block id="1a46e02a3754d0daf83001fffc7c7c46" category="paragraph">查看<block ref="fd6f609b977fb641a06defa631019934" category="inline-link-macro-rx"></block>有關尺寸的資訊的文件。</block>
-  <block id="dda85f45002252de774eae20d8d3bb21" category="summary">工作負載安全性包括一個強大的 API，可與其他應用程式（如 CMDB）整合。</block>
   <block id="0865b3ed9f5211e6fe35eddac5b1aaa3" category="doc">工作負載安全 API</block>
   <block id="1b1fb3360bd2eea985279f6fcc2ef45f" category="paragraph">工作負載安全 API 使NetApp客戶和獨立軟體供應商 (ISV) 能夠將工作負載安全性與其他應用程式（例如 CMDB 或其他票務系統）整合。</block>
   <block id="1a152a606ca16a6eef5f2e9ac9b4c824" category="paragraph">API 存取要求：</block>
@@ -647,11 +645,7 @@
   <block id="9691b74510440e767ebe140708556d4a" category="paragraph">該腳本位於 _/opt/netapp/cloudsecure/agent/export-script_。同一目錄中的 README 檔案提供了使用說明。</block>
   <block id="b33ce51cf90f2cebc1848ee9bdd86a73" category="paragraph">以下是呼叫腳本的範例命令：</block>
   <block id="4cee2cbc95e55efcd827954ec63679ef" category="paragraph">關鍵參數：-<block ref="86768c9197497f61803d2cccda886c2b" prefix=" " category="inline-code"></block> ：將請求的時間範圍分成 12 小時的間隔。  -<block ref="90bf4ae9a260a1dab39cf85f9b78e62f" prefix=" " category="inline-code"></block> ：使用 3 個執行緒並行取得這些間隔。</block>
-  <block id="d26ec9bd59920d141e6767082f0524dc" category="summary">使用腳本，您可以模擬勒索軟體攻擊來測試或演示工作負載安全性</block>
-  <block id="fca4fedbe53af4420a279beead573bdf" category="doc">工作負載安全：模擬攻擊</block>
-  <block id="85bec7dd725b26542ae7c0d1c759836a" category="paragraph">您可以按照此頁面上的說明，使用隨附的勒索軟體模擬腳本來模擬攻擊，以測試或演示工作負載安全性。</block>
   <block id="c8722d0a5f0f718756806afb0f63faf3" category="section-title">開始前需要注意的事項</block>
-  <block id="ee817f2b2a73b759041de15700c640ab" category="list-text">勒索軟體模擬腳本僅在 Linux 上運行。如果使用者將ONTAP ARP 與 Workload Security 集成，模擬腳本也應產生高置信度警報。</block>
   <block id="61622ea1d4086909bd90c0efc1d6a2e5" category="list-text">只有當ONTAP版本為 9.15 或更高版本時，工作負載安全才會偵測使用 NFS 4.1 產生的事件和警報。</block>
   <block id="16fa78539f96944e79f64b961036e74d" category="list-text">此腳本隨工作負載安全代理安裝檔一起提供。它可以在安裝了工作負載安全代理程式的任何機器上使用。</block>
   <block id="749376c343309b5abf1f8bc2f1e6e9f7" category="list-text">您可以在工作負載安全代理機器本身上執行該腳本；無需準備另一台 Linux 機器。但是，如果您希望在另一個系統上運行該腳本，只需複製該腳本並在那裡運行即可。</block>
@@ -703,7 +697,6 @@
   <block id="9adc0908c00f75ca29814b238088a0cd" category="list-text">這將在名為“test_dataset”的目錄下的掛載資料夾中建立 100 個具有各種副檔名的非空文件</block>
   <block id="155946ddf8d31167ae2abad50439caac" category="section-title">恢復收集器</block>
   <block id="58d83dc1e6706a52cd311f9c66f193d5" category="paragraph">如果您在執行這些步驟之前暫停了收集器，請確保在建立範例檔案後恢復收集器。</block>
-  <block id="e6e76755f42136002c51ecb7c7acc410" category="paragraph">要產生勒索軟體警報，您可以執行包含的腳本，該腳本將在工作負載安全中模擬勒索軟體警報。</block>
   <block id="210e93b8c7253e00f2206b155a242c53" category="list-text">將腳本從代理安裝目錄（%AGENT_INSTALL_DIR/agent/install/ransomware_simulation/shell/simulate_attack.sh）複製到目標安裝位置。</block>
   <block id="66a8eca27475656430ae411ce0277447" category="list-text">使用掛載目錄（例如 /root/demo）中的腳本執行以下命令來加密測試資料集：</block>
   <block id="71242fab4b4978991a34104b8fa81ff5" category="list-text">這將加密在“test_dataset”目錄下建立的範例檔案。</block>
@@ -715,7 +708,6 @@
   <block id="bb37a91d3a7d038f7f196d7f342f5d41" category="list-text">監控的 SVM 的ONTAP版本高於 9.11.1</block>
   <block id="9ce553df4934ac43b957143d21b265ff" category="list-text">ONTAP自主勒索軟體防護已配置</block>
   <block id="ea7f417542fef98806d54f7dcd8a2d26" category="list-text">在叢集模式下新增了工作負載安全資料收集器。</block>
-  <block id="7a59fff38776feaa8a27e18c15f3f839" category="paragraph">Workload Security 根據使用者行為偵測勒索軟體模式，而ONTAP ARP 會根據檔案中的加密活動偵測勒索軟體活動。</block>
   <block id="59c0cecf99f5b7877b7f320da1734140" category="paragraph">如果滿足條件，Workload Security 會將警報標記為高可信度警報。</block>
   <block id="560a82b95d26c61a25e2894422b4eec0" category="paragraph">警報清單頁面上的高可信度警報範例：</block>
   <block id="dfbab6292d93300a244b9e81de9798af" category="inline-image-macro">高置信度警報範例，清單頁</block>
@@ -724,9 +716,7 @@
   <block id="4864e30f3543ce6ffefe6866cd4df439" category="inline-image-macro">高置信度警報範例，詳細資訊頁面</block>
   <block id="8901b7a1034f6e31fa7c2f5929bdd211" category="paragraph"><block ref="8901b7a1034f6e31fa7c2f5929bdd211" category="inline-image-macro-rx" type="image"></block></block>
   <block id="36aed75d347e158fecfc525dc1d66a22" category="section-title">多次觸發警報</block>
-  <block id="95d269995653ffa8a24d0a028366adbc" category="paragraph">Workload Security 會了解使用者行為，並且不會對同一使用者在 24 小時內重複遭受勒索軟體攻擊發出警報。</block>
   <block id="7000a55791f1de1983f9adc601ad2e4e" category="paragraph">若要使用不同的使用者產生新的警報，請再次執行相同的步驟（建立測試數據，然後加密測試數據）。</block>
-  <block id="b3431d54476e0f70ea6fc00bae48572b" category="summary">在安裝ONTAP SVM DSC 之前，可以執行此腳本來檢查 SVM 中的事件速率</block>
   <block id="2723c4d559ff96bb42870d86c109708e" category="doc">SVM 事件率檢查器（代理程式規模指南）</block>
   <block id="0a2bd44573247d8e7748ce7d2d2a4b8f" category="paragraph">事件速率檢查器用於在安裝ONTAP SVM 資料收集器之前檢查 SVM 中的 NFS/SMB 組合事件速率，以查看一台代理機器能夠監控多少個 SVM。使用事件率檢查器作為規模指南來幫助規劃您的安全環境。</block>
   <block id="40202f910a40e1ff8a02506c288b507e" category="paragraph">一個代理程式最多可以支援 50 個資料收集器。</block>
@@ -779,9 +769,7 @@
   <block id="ecb5fa18c7cd0623faea3969f936f4c3" category="cell">不會。即使 SVM 的數量增加，該腳本最多也會運作 5 分鐘。</block>
   <block id="ce3d712deda180dd445bfed60562d712" category="cell">如果我使用現有代理程式運行事件率檢查器會發生什麼情況？</block>
   <block id="697ee668360d1c19e858e5fdd25062e6" category="cell">針對已存在的代理程式運行事件率檢查器可能會導致 SVM 上的延遲增加。當事件率檢查器運作時，這種增加將是暫時的。</block>
-  <block id="e885f70b36e77978775e5bda02528ac9" category="summary">工作負載安全與ONTAP自主勒索軟體防護集成，以改善勒索軟體偵測。</block>
   <block id="c296d8324f9fa4f890b4ead0f69bfac3" category="doc">與ONTAP自主勒索軟體防護集成</block>
-  <block id="d444ab62db0a690e837242dfd8b87acc" category="paragraph">ONTAP自主勒索軟體防護 (ARP) 功能使用 NAS（NFS 和 SMB）環境中的工作負載分析來主動偵測並警告可能表明勒索軟體攻擊的異常檔案內活動。</block>
   <block id="6c92285fa6d3e827b198d120ea3ac674" category="inline-link-macro">這裡</block>
   <block id="383c3a61ab1ee0baf884d10441d965bd" category="paragraph">關於 ARP 的更多詳細資訊和許可要求可以找到<block ref="aaf4977c10e4402f9516d11af3df8368" category="inline-link-macro-rx"></block>。</block>
   <block id="ff6fdbfb37dfe403ad9c574855ccdb01" category="paragraph">工作負載安全性與ONTAP整合以接收 ARP 事件並提供額外的分析和自動回應層。</block>
@@ -806,7 +794,6 @@
   <block id="e0e1895e03a77da5552db43fbdeaeea6" category="paragraph">由於 ARP 事件產生的警報示例如下所示：</block>
   <block id="b83a60c5de546ea3d085bb1ce6636d9a" category="inline-image-macro">勒索軟體警報頂部</block>
   <block id="ed862f710faf8808be6c0eb3e9619e30" category="paragraph"><block ref="4f633f9ad87e78d3d93ed9f152d5549a" category="inline-image-macro-rx" type="image"></block> <block ref="45e1a131f383b4a3d591b6b7f4008d87" category="inline-image-macro-rx" type="image"></block> <block ref="1fc0e7df8bd287d2b4b5569c861bc29d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="333fa709635d0e011dd99c908e02bd40" category="paragraph">高可信度橫幅表明攻擊已顯示出勒索軟體行為以及檔案加密活動。加密檔案圖表指示 ARP 解決方案偵測到磁碟區加密活動的時間戳記。</block>
   <block id="e646e16bee8b32e6ea29e30d01970a6c" category="section-title">限制</block>
   <block id="56684562f1f82eb99e69650845acd6ad" category="paragraph">如果 SVM 未受到 Workload Security 監控，但ONTAP產生了 ARP 事件，則 Workload Security 仍會接收並顯示這些事件。但是，與警報相關的取證資訊以及使用者映射將不會被捕獲或顯示。</block>
   <block id="1f8b585533464977d763d893abd63588" category="paragraph">下表描述了已知問題及其解決方法。</block>
@@ -3678,7 +3665,6 @@
   <block id="fb4e4dc5cb185934a7a50a8b788d9a18" category="inline-image-macro">存取被拒絕事件範例</block>
   <block id="ad7abfbe23406b97a783bcc153795841" category="paragraph"><block ref="ad7abfbe23406b97a783bcc153795841" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f765e14da4a389313572532a2db01804" category="summary">當出現異常用戶活動或潛在攻擊時，工作負載安全性會發出警報。警報頁面列出了這些活動，以便快速輕鬆地進行調查。</block>
-  <block id="42dbd44948498b2c6399cada3f8bce3c" category="paragraph">工作負載安全警報頁面顯示最近攻擊和/或警告的時間線，並允許您查看每個問題的詳細資訊。</block>
   <block id="ec463f286fdd66eb02ef994e465aa5ef" category="inline-image-macro">警報列表</block>
   <block id="710f7e812945643ee105a9bd2d01a01f" category="paragraph"><block ref="710f7e812945643ee105a9bd2d01a01f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b92071d61c88498171928745ca53078b" category="section-title">警報</block>
@@ -3723,12 +3709,9 @@
   <block id="98d65924ba5e4c9e08f01233aceb15b8" category="list-text">顯示攻擊期間文件活動的圖表</block>
   <block id="150371e71cf9ac0249f420076a2e5358" category="section-title">相關使用者部分：</block>
   <block id="db67b2fbfe663dec3bafb30754f82043" category="paragraph">此部分顯示有關參與潛在攻擊的用戶的詳細信息，包括用戶的熱門活動圖表。</block>
-  <block id="7cbf4ba3df1c84539924c37da16db19b" category="paragraph">警報頁面（此範例顯示潛在的勒索軟體攻擊）：<block ref="5ff4dcf9689ef64057d8e82508557b5f" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6c9d686a827f50aa2feb7087b665c481" category="paragraph">詳細資訊頁面（此範例顯示了潛在的勒索軟體攻擊）：<block ref="9d19bd7639e249113839e28d2fea9963" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6baf1e00d599761ac0cdbee221c4569c" category="section-title">_拍攝快照_動作</block>
   <block id="37fa3057780441193fd46b687aef4974" category="paragraph">工作負載安全性會在偵測到惡意活動時自動拍攝快照來保護您的數據，確保您的資料已安全備份。</block>
   <block id="7683f342a6f18a36645f19f6332de56e" category="inline-link-macro">自動回應策略</block>
-  <block id="d27b2fb629cc2c24086da7257eb32814" category="paragraph">您可以定義<block ref="5def0187ac3a4d928905bc1e2b8dece3" category="inline-link-macro-rx"></block>當偵測到勒索軟體攻擊或其他異常使用者活動時拍攝快照。您也可以從警報頁面手動拍攝快照。</block>
   <block id="bf69429297f9f42186bf9ad016e6efd6" category="section-title">警報通知</block>
   <block id="8c8959fb2c9aef71d75a9af4ab87c3ee" category="paragraph">對於針對警報採取的每個操作，都會向警報收件者清單發送警報的電子郵件通知。若要設定警報收件人，請按一下*管理&gt;通知*並輸入每個收件人的電子郵件地址。</block>
   <block id="2c4a65782f3fcd193e8e3aab503fa515" category="section-title">保留政策</block>
@@ -3745,7 +3728,6 @@
   <block id="1e325041509ea982dbf0cb285dc1f84d" category="cell">這是一種罕見的情況。如果您遇到這種情況，請登入ONTAP並手動為舊警報拍攝快照。</block>
   <block id="7490716e612a9644196d7f0a4d26b1fe" category="cell">在「警報詳情」頁面中，「拍攝快照」按鈕下方顯示「上次嘗試失敗」錯誤訊息。將滑鼠懸停在錯誤上會顯示「對於具有 id 的資料收集器，呼叫 API 命令已逾時」。</block>
   <block id="f538ceb4d07ca88305f431846ed6973f" category="cell">如果 SVM 的 LIF 在ONTAP中處於 _disabled_ 狀態，則當透過 SVM 管理 IP 將資料收集器新增至工作負載安全性時，可能會發生這種情況。在ONTAP中啟用特定的 LIF，並從工作負載安全觸發_手動拍攝快照_。快照操作將會成功。</block>
-  <block id="5439b902968ffabf767c31e6ae62e61b" category="summary">您可以針對潛在攻擊（例如勒索軟體）和/或活動警告設定自動回應策略</block>
   <block id="df6a21f670066b82b5409a049dec0efe" category="doc">自動回應策略</block>
   <block id="e5da02c738b911c42fb0a45a5b76c8d9" category="paragraph">回應策略會在發生攻擊或異常使用者行為時觸發諸如拍攝快照或限制使用者存取等操作。</block>
   <block id="8816114441548a7f4d390de764f25ad9" category="paragraph">您可以針對特定裝置或所有裝置設定策略。若要設定回應策略，請選擇*管理 &gt; 自動回應策略*，然後按一下對應的*+策略*按鈕。您可以建立針對攻擊或警告的策略。</block>
@@ -3772,9 +3754,7 @@
   <block id="b979e86b9a609c9d9015d0b66fb3475b" category="paragraph">透過先進的機器學習和使用者行為異常檢測，向您發出任何異常資料存取警報。</block>
   <block id="9c0408c775a2b61052a2e700a89f396f" category="section-title">遵守</block>
   <block id="8e1e51e30cfb4cb618e7ad56db2cefcd" category="paragraph">透過審核用戶對儲存在本地或雲端中的關鍵公司資料的存取來確保公司合規性。</block>
-  <block id="cf10c2b301ad472a4aba146a0e505098" category="summary">新增用於接收工作負載安全警報通知的電子郵件地址。</block>
   <block id="12c5785c0da06ba105803155a192752d" category="doc">配置警報、警告和代理/資料來源收集器健康狀況的電子郵件通知</block>
-  <block id="9491cdf060c59bf0f883c94db8cfe73d" category="paragraph">若要設定工作負載安全警報收件人，請按一下*管理&gt;通知*，然後在每個收件人的相應部分輸入電子郵件地址。</block>
   <block id="d788a1b203813004b96af5724b63cb70" category="section-title">潛在攻擊警報和警告</block>
   <block id="0913d37e3bac65fbe05c7263d286ef60" category="paragraph">若要傳送_潛在攻擊_警報通知，請在_傳送潛在攻擊警報_部分輸入收件者的電子郵件地址。對於警報上的每個操作，都會向警報收件者清單發送電子郵件通知。</block>
   <block id="971a81b1c11c1b1948e93ef28402c3f4" category="paragraph">若要傳送_警告_通知，請在_傳送警告警報_部分輸入收件者的電子郵件地址。</block>
@@ -3784,7 +3764,6 @@
   <block id="cfbd8d8f411f08c4641b2905bdc80139" category="list-text">僅當代理商/收集者停止報告至少一小時後才會發送健康警報。</block>
   <block id="c973f23a4328dc0e33a2614912736bb0" category="list-text">即使代理程式或資料收集器長時間斷開連接，在給定的 24 小時內也只會向預期收件者發送一封電子郵件通知。</block>
   <block id="30a17963216c2665ef68b2a0cba05de6" category="list-text">如果代理程式發生故障，則會發送警報（而不是每個收集器發送警報）。該電子郵件將包含所有受影響的 SVM 的清單。</block>
-  <block id="6aa9d0b40df0476a0e5d6cba51a44816" category="list-text">活動目錄收集失敗被報告為警告；它不會影響勒索軟體偵測。</block>
   <block id="1c694b0b295603bad9f0fa0c7f151567" category="list-text">入門設定清單現在包括一個新的「設定電子郵件通知」階段。</block>
   <block id="3b1c56e7c6b15724089ac1fbd8291af2" category="section-title">接收代理程式和資料收集器升級通知</block>
   <block id="1f56a492ab24b15ab7bdf4b716067acd" category="list-text">在「資料收集健康警報」中輸入電子郵件 ID。</block>
@@ -3792,10 +3771,7 @@
   <block id="f7e530357a9fe13372b34f49bcbf5513" category="list-text">代理程式和資料收集器升級電子郵件通知將在計劃升級前一天發送到電子郵件 ID。</block>
   <block id="be8e3ac01b05912cba21f26369a5a852" category="cell">電子郵件 ID 出現在「資料收集器健康警報」中，但我沒有收到通知。</block>
   <block id="3cd7d46a06774e1cc6f2ece4407891a3" category="cell">通知電子郵件從NetApp Data Infrastructure Insights網域發送，即從 _accounts@service.cloudinsights.netapp.com_ 發送。有些公司會封鎖來自外部網域的來電電子郵件。確保來自NetApp Data Infrastructure Insights網域的外部通知已列入白名單。</block>
-  <block id="392b73413f817556c91d974c59c48d26" category="summary">借助工作負載安全，您可以在懷疑發生破壞行為時限制用戶訪問</block>
   <block id="680aba4527b5f65899e6a3d8b5ef2457" category="doc">阻止用戶訪問</block>
-  <block id="54fc3d93cd49948e1764882084d106cc" category="paragraph">一旦偵測到攻擊，Workload Security 可以透過阻止使用者存取檔案系統來阻止攻擊。可以使用自動回應策略自動阻止訪問，也可以從警報或使用者詳細資料頁面手動阻止訪問。</block>
-  <block id="7aedbe09972610c1d6a6d90587580682" category="paragraph">當阻止使用者存取時，應該定義一個阻止時間段。選定的時間段結束後，使用者存取權限將自動恢復。  SMB 和 NFS 協定均支援存取阻止。</block>
   <block id="036ce35e40fa3fbcc9c9e500c29c6bf9" category="paragraph">使用者的 SMB 存取將直接被阻止，而引發攻擊的主機的 IP 位址的 NFS 存取將被阻止。這些機器 IP 位址將被阻止存取由工作負載安全監控的任何儲存虛擬機器 (SVM)。</block>
   <block id="f19379ce165a902f81548ae9d7b2e07c" category="paragraph">例如，假設工作負載安全管理 10 個 SVM，並且為其中 4 個 SVM 配置了自動回應策略。如果攻擊源自四個 SVM 中的一個，則使用者的存取將在所有 10 個 SVM 中被封鎖。仍在原始 SVM 上拍攝快照。</block>
   <block id="7dd607950e587603a00a1a965723c7c1" category="paragraph">如果有四個 SVM，其中一個 SVM 配置為 SMB，一個 SVM 配置為 NFS，其餘兩個 SVM 同時配置為 NFS 和 SMB，則如果攻擊源自四個 SVM 中的任何一個，則所有 SVM 都會被阻止。</block>
@@ -7000,7 +6976,6 @@
   <block id="c4207c205277b5cad1577163a6bae022" category="admonition">註銷Data Infrastructure Insights將使您退出控制台。您也將登出使用控制台登入的其他NetApp雲端服務。</block>
   <block id="8463a61dd94ff5934036d4c8a8936e32" category="section-title">不活動超時</block>
   <block id="db8ff6a5dfcebcb4f9f3077c3acd8c0a" category="paragraph">預設情況下，如果六小時（360 分鐘）內沒有任何活動，控制台將登出使用者。無論活動如何，用戶將在七天後被註銷。</block>
-  <block id="5b5f6636f455e00151ff6c4d5e1be19c" category="summary">工作負載安全使用資料收集器從設備收集文件和使用者存取資料。</block>
   <block id="fde8afa3fd65a9f38d9b11377453846e" category="doc">設定Cloud Volumes ONTAP和Amazon FSx for NetApp ONTAP收集器</block>
   <block id="c45671a9389f697917f0b33d12822c51" category="section-title">Cloud Volumes ONTAP儲存配置</block>
   <block id="2ffc6472f9d6abaf761bbe2e6a0385ce" category="paragraph">請參閱OnCommand Cloud Volumes ONTAP文檔，以配置單節點/HA AWS 執行個體來託管工作負載安全代理：<block ref="caca64b8e9927e0ea8e8b0158b9e47cd" category="inline-link-rx"></block></block>
@@ -12076,11 +12051,8 @@
   <block id="5e0f4fcd8e020652408a2ed8c1c6513d" category="list-text">允許您切換到其他NetApp Cloud Central 產品的選單已移至螢幕的右上角。</block>
   <block id="f998abe6d6e1433185e617432fa562a7" category="summary">將檔案副檔名新增至允許的檔案類型清單以減少警報。</block>
   <block id="2b38e4e9371e68c324f4d975aeec0b8b" category="doc">允許的文件類型策略</block>
-  <block id="3a0a3011be8f34f267c24177c748de10" category="paragraph">如果偵測到已知檔案副檔名的勒索軟體攻擊，並且在警報畫面上產生警報，則可以將該檔案副檔名新增至_允許的檔案類型_清單中，以防止不必要的警報。</block>
   <block id="66c0454949e8e45058f66b8dbe1d1a38" category="paragraph">導覽至*工作負載安全性&gt;策略*並前往_允許的檔案類型原則_標籤。</block>
   <block id="8c06b62ca830efbad93bfb2ce294e0ef" category="paragraph"><block ref="8c06b62ca830efbad93bfb2ce294e0ef" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="bdf27b4c983630ae6531f89136fe0963" category="paragraph">一旦新增到「允許的檔案類型」列表，就不會針對該允許的檔案類型產生勒索軟體攻擊警報。請注意，「允許的檔案類型」策略僅適用於勒索軟體偵測。</block>
-  <block id="492f463a35ea215d77ae021c64cddb64" category="paragraph">例如，如果將名為 _test.txt_ 的檔案重新命名為 _test.txt.abc_，且 Workload Security 由於 _.abc_ 副檔名而偵測到勒索軟體攻擊，則可以將 _.abc_ 副檔名新增至 _允許的檔案類型_ 清單中。加入此清單後，將不再針對以_.abc_為副檔名的檔案產生勒索攻擊。</block>
   <block id="b778d3252b5cc52999f0c844a033362f" category="paragraph">允許的檔案類型可以是完全符合（例如“ .abc”）或表達式（例如“ .*type”、“ .type*”或“ *type*”）。不支援「.a*c」、「.p*f」類型的表達式。</block>
   <block id="3ee2ba16702e3b406dd125b347f5f30b" category="summary">可以手動安裝或更新工作負載安全代理，從而更好地控制租用戶上安裝的軟體。</block>
   <block id="5ecfbb1f5f3536161517dc33155eaa58" category="doc">手動安裝工作負載安全代理程式和收集器</block>
@@ -12468,9 +12440,7 @@
   <block id="abc492c54ab99cf963d50d67acb42565" category="sidebar">事件率檢查器（代理規模指南）</block>
   <block id="a8df87f53c1b831dfc886e69dec19144" category="sidebar">活動取證 - 所有活動</block>
   <block id="f9aae5fda8d810a29f12d1e61b4ab25f" category="sidebar">使用者</block>
-  <block id="9b5911ec569b49f0ae81ecb2c9067806" category="sidebar">ONTAP自主勒索軟體防護集成</block>
   <block id="1c31d515d2e78422350a8dfc6a331a38" category="sidebar">ONTAP存取被拒絕集成</block>
-  <block id="c52c39354f4ad29d5eea2036eb6bf8a9" category="sidebar">模擬勒索軟體攻擊</block>
   <block id="c836566b25407f9b00af0ee750a250a6" category="sidebar">建立 Webhook</block>
   <block id="8c4223ab469f8b3e9d1aa30d51cf4390" category="sidebar">Discord Webhook 範例</block>
   <block id="9129ee5b293413b88d69268ce77a5a06" category="sidebar">PagerDuty Webhook 範例</block>
@@ -12617,10 +12587,8 @@
   <block id="f6bd61a684c7e1301e78da3db50d1837" category="paragraph">工作負載安全功能可協助您監控使用者活動並偵測儲存環境中的潛在安全威脅。在開始監控之前，您需要設定代理程式、資料收集器和目錄服務，為全面的安全監控奠定基礎。</block>
   <block id="d49a8da0de1eee7dc793284699bb0bab" category="cell"><block ref="d49a8da0de1eee7dc793284699bb0bab" category="inline-link-macro-rx"></block></block>
   <block id="adf5d1319b5bafa4d304b195ab11a3ac" category="cell">按一下*工作負載安全性&gt;收集器*點選要設定的資料收集器。有關收集器信息，請參閱文件中的“資料收集器供應商參考”部分。</block>
-  <block id="a893b5195474a4c9b110269be2b309ef" category="summary">工作負載安全代理程式會監控使用者活動並偵測儲存環境中的安全威脅。</block>
   <block id="9997d0de04e698d72bb27c409e5255ee" category="doc">部署工作負載安全代理</block>
   <block id="c3c0e3736c092f9f194505694468ca8b" category="inline-link-macro">系統需求</block>
-  <block id="9d604ddbc2f20e3c4cd0e75c950e6c53" category="paragraph">工作負載安全代理程式對於監控使用者活動和偵測儲存基礎架構中潛在的安全威脅至關重要。本指南提供在您的環境中部署代理程式的逐步說明。在開始之前，請確保您的代理伺服器符合以下條件： <block ref="e9ae60f62ad52c07bed4d959ac93cbbc" category="inline-link-macro-rx"></block>。</block>
   <block id="cd47dd01745339787e4c7300389401f2" category="section-title">最佳實踐</block>
   <block id="5f1d8e43e03545d4e832f35d2653f7ff" category="paragraph">在配置工作負載安全代理之前，請記住以下事項。</block>
   <block id="1d0bcc6be95579ec1173901dc82ecc6d" category="cell">暫停和恢復</block>
@@ -12693,4 +12661,40 @@
   <block id="d388ca982366ad7a8a7a165d21919f84" category="paragraph">租戶創建完成後，使用控制台憑證登入並開始免費試用 30 天Data Infrastructure Insights。在此試用期間，您可以探索Data Infrastructure Insights所提供的功能。</block>
   <block id="a361d4c5b26cab224e5aad972ef9f92f" category="paragraph">租戶建立完成後，您可以隨時登入NetApp BlueXP Portal 並導航至以下位置： <block ref="37a150e92f05332b5bc5a56046c3177c" category="inline-link-macro-rx"></block> 頁面並選擇「前往Data Infrastructure Insights」。</block>
   <block id="ed35afa558b996b37265533db9af5399" category="sidebar">在報告中發布註釋</block>
+  <block id="d19e16fd482ca29d2c0ef4fb8523357a" category="summary">確保工作負載安全代理部署環境符合最低作業系統、CPU、記憶體和磁碟空間要求，以獲得最佳效能和資料收集。</block>
+  <block id="c4942feafc272d7da2ce90634dc0120d" category="summary">透過 REST API 存取工作負載安全數據，並採用基於令牌的安全性身份驗證，以便與 CMDB、工單系統和其他企業應用程式整合。</block>
+  <block id="3dec3952c02d73a04d326f3624f668f6" category="summary">透過使用隨附的模擬腳本模擬攻擊來測試和驗證工作負載安全偵測能力，以驗證警報產生和回應策略。</block>
+  <block id="c7ea3cec531081ee09f563d84422d157" category="doc">工作負載安全：模擬異常檔案篡改</block>
+  <block id="3e350b01c804205b973dbd44adc54728" category="paragraph">您可以按照本頁上的說明，使用隨附的文件篡改模擬腳本來模擬文件篡改，以測試或演示工作負載安全性。</block>
+  <block id="67f556940660f0bafe2738969d389877" category="list-text">此檔案篡改模擬腳本僅適用於 Linux 系統。如果使用者已將ONTAP ARP 與工作負載安全性集成，則模擬腳本也應產生高置信度警報。</block>
+  <block id="6465f8a9b5dccc316104b56b41de2db0" category="paragraph">若要產生檔案篡改警報，您可以執行隨附的腳本，該腳本將在工作負載安全中模擬檔案篡改警報。</block>
+  <block id="2a9bccccecd980381e18178287c921b4" category="paragraph">Workload Security 根據使用者行為偵測檔案竄改模式，而ONTAP ARP 則會根據檔案中的加密活動偵測檔案竄改活動。</block>
+  <block id="a68622796ba5ea9694219b0cbfbae6b0" category="paragraph">工作負載安全功能會學習使用者行為，對於同一使用者在 24 小時內重複發生的檔案竄改攻擊，不會發出警報。</block>
+  <block id="d1de6a785681750f7fd87d382642893e" category="paragraph">r--- 側邊欄：側邊欄永久連結：concept_cs_event_rate_checker.html 摘要：使用 SVM 事件速率檢查器測量 NFS/SMB 事件速率，並在部署工作負載安全資料收集器之前確定最佳代理程式大小。關鍵字：事件、檢查器、速率、大小、雲端安全 ---</block>
+  <block id="8013d871b4070a5d3848e4faa21e67d9" category="summary">透過將工作負載安全與ONTAP自主保護集成，增強攻擊偵測能力，實現關聯分析、自動回應和取證調查功能。</block>
+  <block id="0ed52d2d20f5fbf80a330283d4aa9a72" category="paragraph">ONTAP自主保護功能利用 NAS（NFS 和 SMB）環境中的工作負載分析，主動偵測並警告可能表明惡意攻擊或未經授權的資料修改的異常檔案內活動。</block>
+  <block id="8ec1d8886c9b4b48a45eb683d80b184e" category="paragraph">高置信度橫幅表示攻擊已顯示文件篡改行為以及文件加密活動。加密檔案圖表顯示了 ARP 解決方案偵測到磁碟區加密活動的時間戳記。</block>
+  <block id="56adf418335195f68828ddd83fd50548" category="paragraph">工作負載安全警報頁面提供了已偵測到的威脅和警告的完整時間線，以及詳細的調查工具。查看警報詳情、管理狀態更新、按條件篩選、追蹤使用者活動，以便有效率地調查和應對安全事件。</block>
+  <block id="3ba65a7b57bde3d2f95e6dad96e575d5" category="inline-image-macro">文件篡改警報範例</block>
+  <block id="f1f63c95d00cc2549a1787fe41e36715" category="paragraph">警報頁面（此範例顯示了潛在的文件篡改攻擊）： <block ref="6a7e65573e881b5b52bf16119aa9b16d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="41a5a43c24278078d3b80a7578a3a1c3" category="inline-image-macro">文件竄改詳情頁範例</block>
+  <block id="4a4a4b8fd74bec537d778837186d3eec" category="paragraph">詳情頁面（此範例展示了潛在的文件篡改攻擊）： <block ref="0c605ac34e65472f084a8e37ac3dc156" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4b4fbdbe248fc035585aeb5a0e8087c0" category="paragraph">你可以定義 <block ref="5def0187ac3a4d928905bc1e2b8dece3" category="inline-link-macro-rx"></block> 當偵測到檔案竄改攻擊或其他異常使用者活動時，會拍攝快照。您也可以從警報頁面手動截取快照。</block>
+  <block id="a9996cbd4cac46323215dfb495845c42" category="summary">配置自動回應策略，以便在發生安全事件時立即採取行動，包括快照、使用者存取限制以及針對威脅和可疑行為的 webhook 通知。</block>
+  <block id="1d78ee56ccc2ec0a973d6c1b8dc3539f" category="summary">利用儲存工作負載安全功能的內部威脅檢測、跨混合環境的集中可見性以及用於異常檢測和合規性的高級機器學習來保護您的資料。</block>
+  <block id="271be754535c9ed78f2f75d64082cbe9" category="summary">設定電子郵件通知，以便即時接收有關潛在攻擊、安全警告和代理程式/資料收集器運作狀況的警報。</block>
+  <block id="b149bcf300f96b3d1dca583412de6c8a" category="paragraph">電子郵件通知使您能夠及時了解潛在攻擊、安全警告和基礎設施健康狀況問題。在「管理 &gt; 通知」設定中設定收件人電子郵件地址，以接收根據每個收件人的職責量身定制的即時警報。</block>
+  <block id="94563d75d3a246c950039b0a255e3ddb" category="list-text">Active Directory 資料收集失敗會被報告為警告；它不會影響威脅偵測。</block>
+  <block id="44b44dae2990432b7bd93090c41c82f9" category="summary">立即阻止偵測到的攻擊，透過自動或手動限制受感染使用者的存取權限，防止對多個儲存磁碟區上的檔案系統造成進一步損害。</block>
+  <block id="3ae0920baa189ad91236ecb40a2f8386" category="doc">阻止用戶訪問以阻止攻擊</block>
+  <block id="f5e00f5f92f705e11a73ffc71d728163" category="paragraph">立即阻止偵測到的攻擊，阻止受感染用戶的訪問，以防止進一步的資料損壞或外洩。工作負載安全功能既可以透過自動回應策略實現自動阻止，也可以透過警報或使用者詳細資訊頁面進行手動幹預，從而讓您靈活控制安全回應。存取限制會自動套用於所有受監控的儲存卷，並且有時間限制，以便自動復原。</block>
+  <block id="686e492758f398a51b847e4945a5c465" category="summary">為Cloud Volumes ONTAP和Amazon FSx for NetApp ONTAP設定工作負載安全資料收集器，以監控檔案存取、使用者活動並偵測整個雲端儲存基礎架構中的威脅。</block>
+  <block id="5afd7fa5e62c2403ed8182f2954c6011" category="paragraph">透過為Cloud Volumes ONTAP和Amazon FSx for NetApp ONTAP設定 Workload Security 資料收集器，監控整個雲端儲存基礎架構中的檔案和使用者存取。本指南提供了在 AWS 中部署代理並將其連接到雲端儲存實例的逐步說明。</block>
+  <block id="c2ba90ec94460d090816ee7ba6a3ed97" category="summary">部署工作負載安全代理程式來監控使用者活動、偵測安全威脅並保護您的儲存基礎架構。</block>
+  <block id="515af4442237a2919b0f5a1e82922445" category="paragraph">工作負載安全代理程式對於監控使用者活動和偵測儲存基礎架構中潛在的安全威脅至關重要。本指南提供逐步安裝說明、代理管理最佳實務（包括暫停/恢復和固定/取消固定功能）以及部署後設定要求。在開始之前，請確保您的代理伺服器符合以下條件： <block ref="e9ae60f62ad52c07bed4d959ac93cbbc" category="inline-link-macro-rx"></block>。</block>
+  <block id="db1a2df035e9cd0bcdfb55db52e3e64b" category="paragraph">如果偵測到已知檔案副檔名的檔案竄改攻擊，並且在「警報」畫面上產生警報，則可以將該檔案副檔名新增至_允許的檔案類型_清單中，以防止不必要的警報。</block>
+  <block id="8d791b80cd3ffee28fe92eaeb570182d" category="paragraph">一旦新增到_允許的檔案類型_清單中，就不會針對該允許的檔案類型產生檔案篡改攻擊警報。請注意，_允許的檔案類型_策略僅適用於檔案篡改偵測。</block>
+  <block id="7af3f2f9c8eaa3a8ff61f839001e8ca0" category="paragraph">例如，如果將名為 _test.txt_ 的檔案重新命名為 _test.txt.abc_，且工作負載安全系統因 _.abc_ 副檔名而偵測到檔案篡改攻擊，則可以將 _.abc_ 副檔名新增至 _允許的檔案類型_ 清單中。新增至清單後，將不再針對副檔名為 _.abc_ 的檔案產生檔案篡改攻擊。</block>
+  <block id="374bdbda42629b3859daec6506078b36" category="sidebar">ONTAP自主保護集成</block>
+  <block id="5273cec606b6768f8394e2ae1566c7f6" category="sidebar">模擬攻擊</block>
 </blocks>

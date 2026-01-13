@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: ws_allowed_file_types.html 
-keywords: workload security, cloud secure, include list, allowed, file types, ransomware 
+keywords: workload security, cloud secure, include list, allowed, file types, ransomware, tampering 
 summary: 將檔案副檔名新增至允許的檔案類型清單以減少警報。 
 ---
 = 允許的文件類型策略
@@ -9,14 +9,14 @@ summary: 將檔案副檔名新增至允許的檔案類型清單以減少警報�
 
 
 [role="lead"]
-如果偵測到已知檔案副檔名的勒索軟體攻擊，並且在警報畫面上產生警報，則可以將該檔案副檔名新增至_允許的檔案類型_清單中，以防止不必要的警報。
+如果偵測到已知檔案副檔名的檔案竄改攻擊，並且在「警報」畫面上產生警報，則可以將該檔案副檔名新增至_允許的檔案類型_清單中，以防止不必要的警報。
 
 導覽至*工作負載安全性>策略*並前往_允許的檔案類型原則_標籤。
 
 image:WS_Allowed_File_Type_Policies.png["允許的文件類型策略"]
 
-一旦新增到「允許的檔案類型」列表，就不會針對該允許的檔案類型產生勒索軟體攻擊警報。請注意，「允許的檔案類型」策略僅適用於勒索軟體偵測。
+一旦新增到_允許的檔案類型_清單中，就不會針對該允許的檔案類型產生檔案篡改攻擊警報。請注意，_允許的檔案類型_策略僅適用於檔案篡改偵測。
 
-例如，如果將名為 _test.txt_ 的檔案重新命名為 _test.txt.abc_，且 Workload Security 由於 _.abc_ 副檔名而偵測到勒索軟體攻擊，則可以將 _.abc_ 副檔名新增至 _允許的檔案類型_ 清單中。加入此清單後，將不再針對以_.abc_為副檔名的檔案產生勒索攻擊。
+例如，如果將名為 _test.txt_ 的檔案重新命名為 _test.txt.abc_，且工作負載安全系統因 _.abc_ 副檔名而偵測到檔案篡改攻擊，則可以將 _.abc_ 副檔名新增至 _允許的檔案類型_ 清單中。新增至清單後，將不再針對副檔名為 _.abc_ 的檔案產生檔案篡改攻擊。
 
 允許的檔案類型可以是完全符合（例如“ .abc”）或表達式（例如“ .*type”、“ .type*”或“ *type*”）。不支援「.a*c」、「.p*f」類型的表達式。

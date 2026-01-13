@@ -7,6 +7,10 @@ summary: 新增資料收集器
 = 配置NetApp ONTAP資料收集器
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]

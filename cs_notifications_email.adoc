@@ -1,16 +1,20 @@
 ---
 sidebar: sidebar 
 permalink: cs_notifications_email.html 
-summary: 新增用於接收工作負載安全警報通知的電子郵件地址。 
+summary: 設定電子郵件通知，以便即時接收有關潛在攻擊、安全警告和代理程式/資料收集器運作狀況的警報。 
 keywords: email, notifications, alerts, warnings, attacks 
 ---
 = 配置警報、警告和代理/資料來源收集器健康狀況的電子郵件通知
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]
-若要設定工作負載安全警報收件人，請按一下*管理>通知*，然後在每個收件人的相應部分輸入電子郵件地址。
+電子郵件通知使您能夠及時了解潛在攻擊、安全警告和基礎設施健康狀況問題。在「管理 > 通知」設定中設定收件人電子郵件地址，以接收根據每個收件人的職責量身定制的即時警報。
 
 
 
@@ -33,7 +37,7 @@ keywords: email, notifications, alerts, warnings, attacks
 * 僅當代理商/收集者停止報告至少一小時後才會發送健康警報。
 * 即使代理程式或資料收集器長時間斷開連接，在給定的 24 小時內也只會向預期收件者發送一封電子郵件通知。
 * 如果代理程式發生故障，則會發送警報（而不是每個收集器發送警報）。該電子郵件將包含所有受影響的 SVM 的清單。
-* 活動目錄收集失敗被報告為警告；它不會影響勒索軟體偵測。
+* Active Directory 資料收集失敗會被報告為警告；它不會影響威脅偵測。
 * 入門設定清單現在包括一個新的「設定電子郵件通知」階段。
 
 

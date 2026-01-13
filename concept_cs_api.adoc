@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_cs_api.html 
 keywords: api, access, token, swagger 
-summary: 工作負載安全性包括一個強大的 API，可與其他應用程式（如 CMDB）整合。 
+summary: 透過 REST API 存取工作負載安全數據，並採用基於令牌的安全性身份驗證，以便與 CMDB、工單系統和其他企業應用程式整合。 
 ---
 = 工作負載安全 API
 :hardbreaks:

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept_cs_agent_requirements.html 
-summary: 用作代理的伺服器或虛擬機器必須滿足最低要求 
+summary: 確保工作負載安全代理部署環境符合最低作業系統、CPU、記憶體和磁碟空間要求，以獲得最佳效能和資料收集。 
 keywords: agent, Linux, requirements, docker, browsers, permissions, Network, Cloud Secure 
 ---
 = 工作負載安全代理要求

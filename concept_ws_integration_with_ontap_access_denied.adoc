@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_ws_integration_with_ontap_access_denied.html 
 summary: 工作負載安全性與ONTAP整合以接收存取被拒絕事件並提供額外的分析和自動回應層。 
-keywords: ransomware, ARP, Protection, Security, access 
+keywords: ransomware, ARP, Protection, Security, access, tampering 
 ---
 = 與ONTAP整合存取被拒絕
 :hardbreaks:
