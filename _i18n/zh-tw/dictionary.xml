@@ -3671,7 +3671,6 @@
   <block id="7397074a443dab350a0b46b445bd42b6" category="paragraph">警報清單顯示一個圖表，顯示在選定時間範圍內發生的潛在攻擊和/或警告的總數，後面是該時間範圍內發生的攻擊和/或警告的清單。您可以透過調整圖表中的開始時間和結束時間滑桿來變更時間範圍。</block>
   <block id="183537e26fed4b4329d37cb02da5ae53" category="paragraph">每個警報都會顯示以下內容：</block>
   <block id="0a36ca304e21eb8063b7869dea7a355b" category="paragraph">*潛在攻擊：*</block>
-  <block id="8a684cc8084b02b93384f0bfc436d63c" category="list-text">_潛在攻擊_類型（例如，勒索軟體或破壞）</block>
   <block id="b81879140b6197b1eee86a1d325a0a81" category="list-text">偵測到潛在攻擊的日期和時間</block>
   <block id="5efe06a62d35c2fe7354ce05b69e8db6" category="list-text">警報的_狀態_：</block>
   <block id="f0617472d6b597b6d93003c4c1003ad6" category="list-text">*新*：這是新警報的預設設定。</block>
@@ -3697,9 +3696,7 @@
   <block id="95951a9f2b55d55d45a17decd61a620c" category="list-text">_攻擊/警告_的類型</block>
   <block id="3cd43e4673aa76de346f402ec291bd4a" category="list-text">其操作觸發警報/警告的_用戶_</block>
   <block id="f5d13b5070432d74ba3be2fb78559747" category="section-title">警報詳細資訊頁面</block>
-  <block id="acd90b04487305df2bc9ead72d1b4d5b" category="paragraph">您可以點擊警報清單頁面上的警報連結來開啟該警報的詳細資訊頁面。警報詳細資訊可能會根據攻擊或警報的類型而有所不同。例如，勒索軟體攻擊詳細資訊頁面可能會顯示以下資訊：</block>
   <block id="328e24be37340d63de24fd6618cca8e1" category="section-title">摘要部分：</block>
-  <block id="8771316aacd1c4b06854e0e9f30a545c" category="list-text">攻擊類型（勒索軟體、破壞）和警報 ID（由 Workload Security 指派）</block>
   <block id="d5a18d6d3a7fe43fabf57a19bb702f39" category="list-text">偵測到攻擊的日期和時間</block>
   <block id="9edcf7f99dfc7a9e521c7ad085287595" category="list-text">採取的行動（例如，拍攝了自動快照）。快照時間顯示在摘要部分正下方）</block>
   <block id="680ed5ca6ba49d9bc8a5ffda83850464" category="list-text">狀態（新、進行中等）</block>
@@ -12664,13 +12661,11 @@
   <block id="d19e16fd482ca29d2c0ef4fb8523357a" category="summary">確保工作負載安全代理部署環境符合最低作業系統、CPU、記憶體和磁碟空間要求，以獲得最佳效能和資料收集。</block>
   <block id="c4942feafc272d7da2ce90634dc0120d" category="summary">透過 REST API 存取工作負載安全數據，並採用基於令牌的安全性身份驗證，以便與 CMDB、工單系統和其他企業應用程式整合。</block>
   <block id="3dec3952c02d73a04d326f3624f668f6" category="summary">透過使用隨附的模擬腳本模擬攻擊來測試和驗證工作負載安全偵測能力，以驗證警報產生和回應策略。</block>
-  <block id="c7ea3cec531081ee09f563d84422d157" category="doc">工作負載安全：模擬異常檔案篡改</block>
   <block id="3e350b01c804205b973dbd44adc54728" category="paragraph">您可以按照本頁上的說明，使用隨附的文件篡改模擬腳本來模擬文件篡改，以測試或演示工作負載安全性。</block>
   <block id="67f556940660f0bafe2738969d389877" category="list-text">此檔案篡改模擬腳本僅適用於 Linux 系統。如果使用者已將ONTAP ARP 與工作負載安全性集成，則模擬腳本也應產生高置信度警報。</block>
   <block id="6465f8a9b5dccc316104b56b41de2db0" category="paragraph">若要產生檔案篡改警報，您可以執行隨附的腳本，該腳本將在工作負載安全中模擬檔案篡改警報。</block>
   <block id="2a9bccccecd980381e18178287c921b4" category="paragraph">Workload Security 根據使用者行為偵測檔案竄改模式，而ONTAP ARP 則會根據檔案中的加密活動偵測檔案竄改活動。</block>
   <block id="a68622796ba5ea9694219b0cbfbae6b0" category="paragraph">工作負載安全功能會學習使用者行為，對於同一使用者在 24 小時內重複發生的檔案竄改攻擊，不會發出警報。</block>
-  <block id="d1de6a785681750f7fd87d382642893e" category="paragraph">r--- 側邊欄：側邊欄永久連結：concept_cs_event_rate_checker.html 摘要：使用 SVM 事件速率檢查器測量 NFS/SMB 事件速率，並在部署工作負載安全資料收集器之前確定最佳代理程式大小。關鍵字：事件、檢查器、速率、大小、雲端安全 ---</block>
   <block id="8013d871b4070a5d3848e4faa21e67d9" category="summary">透過將工作負載安全與ONTAP自主保護集成，增強攻擊偵測能力，實現關聯分析、自動回應和取證調查功能。</block>
   <block id="0ed52d2d20f5fbf80a330283d4aa9a72" category="paragraph">ONTAP自主保護功能利用 NAS（NFS 和 SMB）環境中的工作負載分析，主動偵測並警告可能表明惡意攻擊或未經授權的資料修改的異常檔案內活動。</block>
   <block id="8ec1d8886c9b4b48a45eb683d80b184e" category="paragraph">高置信度橫幅表示攻擊已顯示文件篡改行為以及文件加密活動。加密檔案圖表顯示了 ARP 解決方案偵測到磁碟區加密活動的時間戳記。</block>
@@ -12697,4 +12692,9 @@
   <block id="7af3f2f9c8eaa3a8ff61f839001e8ca0" category="paragraph">例如，如果將名為 _test.txt_ 的檔案重新命名為 _test.txt.abc_，且工作負載安全系統因 _.abc_ 副檔名而偵測到檔案篡改攻擊，則可以將 _.abc_ 副檔名新增至 _允許的檔案類型_ 清單中。新增至清單後，將不再針對副檔名為 _.abc_ 的檔案產生檔案篡改攻擊。</block>
   <block id="374bdbda42629b3859daec6506078b36" category="sidebar">ONTAP自主保護集成</block>
   <block id="5273cec606b6768f8394e2ae1566c7f6" category="sidebar">模擬攻擊</block>
+  <block id="5da98f5c78418524ecf144084929f19e" category="doc">工作負載安全：模擬文件篡改</block>
+  <block id="e192cb4cca3f754a1b50fdf853ce74a4" category="summary">使用 SVM 事件速率檢查器測量 NFS/SMB 事件速率，並在部署工作負載安全資料收集器之前確定最佳代理程式大小。</block>
+  <block id="ec054c68e1c4c037a34f69b34cbcf8ae" category="list-text">潛在攻擊類型（例如，文件篡改或破壞）</block>
+  <block id="5d6d5d308daaaae7ed88d035f629ea81" category="paragraph">您可以點擊警報列表頁面上的警報鏈接，打開該警報的詳細資訊頁面。根據攻擊或警報的類型，警報詳情可能會有所不同。例如，文件竄改攻擊詳情頁面可能顯示以下資訊：</block>
+  <block id="a93ee3ea015fa995d5cf6a3a088e6f7b" category="list-text">攻擊類型（檔案篡改、破壞）和警報 ID（由工作負載安全分配）</block>
 </blocks>

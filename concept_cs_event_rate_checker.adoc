@@ -1,12 +1,17 @@
+---
+sidebar: sidebar 
+permalink: concept_cs_event_rate_checker.html 
+summary: 使用 SVM 事件速率檢查器測量 NFS/SMB 事件速率，並在部署工作負載安全資料收集器之前確定最佳代理程式大小。 
+keywords: event, checker, rate, sizing, cloud secure 
+---
 = SVM 事件率檢查器（代理程式規模指南）
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
-
-r--- 側邊欄：側邊欄永久連結：concept_cs_event_rate_checker.html 摘要：使用 SVM 事件速率檢查器測量 NFS/SMB 事件速率，並在部署工作負載安全資料收集器之前確定最佳代理程式大小。關鍵字：事件、檢查器、速率、大小、雲端安全 ---
-
-
-
-= SVM 事件率檢查器（代理程式規模指南）
 
 [role="lead"]
 事件速率檢查器用於在安裝ONTAP SVM 資料收集器之前檢查 SVM 中的 NFS/SMB 組合事件速率，以查看一台代理機器能夠監控多少個 SVM。使用事件率檢查器作為規模指南來幫助規劃您的安全環境。
