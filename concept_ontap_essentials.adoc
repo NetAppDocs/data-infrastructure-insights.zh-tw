@@ -7,6 +7,10 @@ keywords: dashboard, widget, ontap, overview, insight
 = ONTAP基礎知識
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]
@@ -72,9 +76,9 @@ image:DataProtectionDashboard_ClusterList.png["資料保護叢集列表"]
 
 == 安全
 
-安全儀表板可讓您即時查看目前的安全狀況，顯示硬體和軟體磁碟區加密、反勒索軟體狀態和叢集身分驗證方法的圖表。安全標準是根據link:https://www.netapp.com/pdf.html?item=/media/10674-tr4569.pdf["* NetApp ONTAP 9 安全強化指南*"]。
+安全儀表板可讓您即時了解目前的安全狀況，顯示硬體和軟體磁碟區加密、防檔案竄改狀態以及叢集身分驗證方法的圖表。安全標準根據link:https://www.netapp.com/pdf.html?item=/media/10674-tr4569.pdf["* NetApp ONTAP 9 安全強化指南*"]中定義的建議進行評估。
 
-選擇任何加密或反勒索軟體計數來深入了解您的環境。
+選擇任何加密或防檔案竄改計數，以深入了解您的環境。
 
 image:OE_SecurityDashboard.png["ONTAP Essentials 安全儀表板"]
 

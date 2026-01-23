@@ -4,7 +4,7 @@ permalink: cs_alert_data.html
 keywords: alert, attack, ransomware, activity, security, abnormal, tampering 
 summary: 當出現異常用戶活動或潛在攻擊時，工作負載安全性會發出警報。警報頁面列出了這些活動，以便快速輕鬆地進行調查。 
 ---
-= 警報
+= 了解和調查警示
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -1,18 +1,22 @@
 ---
 sidebar: sidebar 
 permalink: concept_querying_assets.html 
-summary: 查詢概述 
+summary: 查詢庫存資產和整合指標，以監控、疑難排解和分析整個基礎架構（包括儲存、運算和網路資源）的效能。 
 keywords: query, queries, Application, Datastore, Disk, Fabric, Generic Device, Host, Internal Volume, iSCSI, Network, Portal, Path, Port, Qtree, Quota, Share, Storage, Node, Pool, SVM, Switch, Tape, VMDK, Virtual Machine, VM, Volume, Zone, Member 
 ---
-= 查詢中使用的資產
+= 查詢資產和指標
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]
-透過查詢，您可以根據使用者選擇的條件（例如，註釋）在粒度層級上搜尋租戶上的資產和指標，從而監控和排除網路故障。
+查詢基礎架構的實體和虛擬資產，以監控效能、排查問題並根據自訂條件（例如註釋）執行精細化搜尋。Data Infrastructure Insights 支援跨多種資產類型（從儲存陣列和主機到應用程式和虛擬機器）的查詢，並整合來自 Kubernetes、Docker 和 ONTAP Advanced Data 的指標，從而實現全面的可視性。
 
-請注意，註釋規則會自動將註釋指派給資產，需要查詢。
+請注意，自動為資產指派註釋的註釋規則需要與所有人共用的查詢。有關共用查詢的更多資訊，請參閱下文。
 
 您可以查詢租戶上的實體或虛擬庫存資產（及其相關指標），或查詢 Kubernetes 或ONTAP Advanced Data 等整合所提供的指標。
 
@@ -20,34 +24,7 @@ keywords: query, queries, Application, Datastore, Disk, Fabric, Generic Device, 
 
 == 庫存資產
 
-以下資產類型可用於查詢、儀表板小工具和自訂資產登入頁面。可用於篩選器、表達式和顯示的欄位和計數器將因資產類型而異。並非所有資產都可以在所有小部件類型中使用。
-
-* 應用
-* 資料儲存
-* 磁碟
-* 織物
-* 一般裝置
-* 主持人
-* 內部體積
-* iSCSI 會話
-* iSCSI 網路門戶
-* 小路
-* 港口
-* qtree
-* 配額
-* 分享
-* 儲存
-* 儲存節點
-* 儲存池
-* 儲存虛擬機器 (SVM)
-* 轉變
-* 磁帶
-* VMDK
-* 虛擬機
-* 體積
-* 區
-* 區域成員
-
+所有庫存（也稱為基礎架構）資產類型（儲存、交換器、VM、Application 等）均可用於查詢、儀表板小工具和自訂資產登入頁面。可用於篩選、表達式和顯示的欄位和計數器會因資產類型而異。
 
 
 
@@ -56,3 +33,14 @@ keywords: query, queries, Application, Datastore, Disk, Fabric, Generic Device, 
 除了查詢庫存資產及其相關效能指標之外，您還可以查詢*整合資料*指標，例如 Kubernetes 或 Docker 產生的指標，或ONTAP進階指標提供的指標。
 
 image:QueryPageFilter.png["整合查詢過濾器範例"]
+
+
+
+== 分享查詢
+
+透過選擇誰可以檢視和編輯您的查詢來控制對查詢的存取權限。預設情況下，新查詢是私有的，只有您自己可見，您可以選擇與特定使用者或整個組織共用查詢，並設定靈活的權限等級（唯讀或編輯）。
+
+您可以選擇將查詢分享給所有人或選定的使用者，並授予編輯或唯讀權限。
+
+
+NOTE: 擁有帳戶擁有者權限的使用者可以查看所有查詢，無論隱私設定為何。
