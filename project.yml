@@ -15,8 +15,6 @@ sidebar:
     url: "/index.html"
   - title: 什麼是新的
     url: "/concept_whats_new.html"
-  - title: 註冊Data Infrastructure Insights
-    url: "/task_cloud_insights_onboarding_1.html"
   - title: 安全
     entries:
     - title: 安全實踐
