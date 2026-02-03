@@ -1,0 +1,19 @@
+---
+sidebar: sidebar 
+permalink: task_cloud_insights_onboarding_1.html 
+summary: 註冊Data Infrastructure Insights並建立您的租戶。 
+keywords: onboarding, new user 
+---
+= Data Infrastructure Insights入職
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+在開始使用Data Infrastructure Insights之前，您必須在 * NetApp Console* 入口網站上註冊。如果您已經擁有NetApp Console登入名，只需幾個簡單的步驟即可開始免費試用Data Infrastructure Insights。
+
+這些說明正在更新中。請稍後查看。
