@@ -5,17 +5,12 @@ summary: 您用作採集單元的伺服器或虛擬機器必須符合最低要�
 keywords: AU, acquisition unit, requirements, sizing 
 ---
 = 採集單元要求
-:toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
@@ -31,7 +26,7 @@ keywords: AU, acquisition unit, requirements, sizing
 | 成分 | Linux 需求 | Windows 要求 
 
 
-| 作業系統 | 執行下列任一授權版本的電腦：* AlmaLinux 9.3 至 9.5 * Centos（64 位元）：7.2 至 7.9、8.1 至 8.4、Stream 8、Stream 9 * Debian（64 位元）：9 到 12 * OpenSUSE Leap 15.1 至 Linux 15.64 位元 15.62 * . 8.10、9.3 至 9.6 * Red Hat（64 位元）：7.2 至 7.9、8.1 至 8.10、9.1 至 9.6 * Rocky 9.0 至 9.5 * SUSE Linux Enterprise Server 15、15 SP2 至 15 SP6 * SELinux這台電腦不應執行其他應用程式級軟體。建議使用專用伺服器。如果您使用 SELinux 執行，建議在擷取單元系統上執行下列指令：sudo semanage fcontext -a -t usr_t "/opt/netapp/cloudinsights(/.*)?" sudo restorecon -R /opt/netapp/cloudinsights | 執行下列任一正版作業系統的電腦： * Microsoft Windows 11 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022 * Microsoft Windows Server 2025 此電腦不應執行任何其他應用程式層級軟體。建議使用專用伺服器。 
+| 作業系統 | 執行下列任一正版授權版本的電腦：* AlmaLinux 9.5、10 * Centos（64 位元）：Stream 9 * Debian（64 位元）：11 至 13 * OpenSUSE Leap 15.2 至 15.6、16 * Oracle Enterprise Linux（64 位元）：8.10、9.2、9.4、9.6、10 * Red Hat（64 位元）：8.10、9.2、9.4、9.6、10 * Rocky 9.2 至 9.6 * SUSE Linux Enterprise Server 15 SP4 至 15 SP7、16 * Ubuntu Server：20.04、22.04、24.04 LTS * 上述平台上的 SELinux 此電腦不應執行任何其他應用程式層級軟體。建議使用專用伺服器。如果您正在執行 SELinux，建議在擷取單元系統上執行下列命令：sudo semanage fcontext -a -t usr_t "/opt/netapp/cloudinsights(/.*)?" sudo restorecon -R /opt/netapp/cloudinsights | 執行下列任一正版作業系統的電腦： * Microsoft Windows 11 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022 * Microsoft Windows Server 2025 此電腦不應執行任何其他應用程式層級軟體。建議使用專用伺服器。 
 
 
 | 中央處理器 | 2 個 CPU 核心 | 相同的 
