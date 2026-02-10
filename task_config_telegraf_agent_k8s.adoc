@@ -93,10 +93,10 @@ cosign copy <DII container registry>/netapp-monitoring:<image version> <private 
 
 === 手動升級
 
-確定現有 Operator 是否存在 AgentConfiguration（如果您的命名空間不是預設的 _netapp-monitoring_，請替換為適當的命名空間）：
+確定現有 Operator 是否存在 _AgentConfiguration_（如果您的命名空間不是預設的 _netapp-monitoring_、請替換為對應的命名空間）：
 
  kubectl -n netapp-monitoring get agentconfiguration netapp-ci-monitoring-configuration
-如果存在 AgentConfiguration：
+如果存在 _AgentConfiguration_：
 
 * <<installing-the-kubernetes-monitoring-operator,安裝>>最新的 Operator 優於現有的 Operator。
 +
@@ -105,7 +105,7 @@ cosign copy <DII container registry>/netapp-monitoring:<image version> <private 
 
 
 
-如果 AgentConfiguration 不存在：
+如果 _AgentConfiguration_ 不存在：
 
 * 記下Data Infrastructure Insights識別的叢集名稱（如果您的命名空間不是預設的 netapp-monitoring，請替換為適當的命名空間）：
 +
@@ -117,7 +117,7 @@ cosign copy <DII container registry>/netapp-monitoring:<image version> <private 
 * <<installing-the-kubernetes-monitoring-operator,安裝>>最新的操作員。
 +
 ** 使用相同的叢集名稱。
-** 下載最新的 Operator YAML 檔案後，在部署之前將 agent_backup.yaml 中找到的任何自訂內容移植到下載的 operator-config.yaml 中。
+** 下載最新的 Operator YAML 檔案後，在部署之前，將 _agent_backup.yaml_ 中找到的任何自訂項目移植到下載的 _operator-config.yaml_。
 ** 確保您<<using-a-custom-or-private-docker-repository,拉取最新的容器鏡像>>如果您使用自訂儲存庫。
 
 
@@ -191,7 +191,7 @@ NetApp Kubernetes Monitoring Operator 安裝自己的 kube-state-metrics 以避�
 您也可以在部署操作員後使用以下命令編輯此資源：
 
  kubectl -n netapp-monitoring edit AgentConfiguration
-若要確定您部署的操作員版本是否支援 AgentConfiguration，請執行下列命令：
+若要確定已部署的 operator 版本是否支援 _AgentConfiguration_，請執行下列命令：
 
  kubectl get crd agentconfigurations.monitoring.netapp.com
 如果您看到「伺服器錯誤（未找到）」訊息，則必須先升級您的操作員才能使用 AgentConfiguration。
@@ -226,7 +226,7 @@ NetApp Kubernetes Monitoring Operator 安裝自己的 kube-state-metrics 以避�
 
 對於用於 Kubernetes 叢集與Data Infrastructure Insights環境通訊的代理，請在閱讀所有這些說明後安裝 Kubernetes 監控操作員。
 
-在部署 Kubernetes Monitoring Operator 之前，請先設定 operator-config.yaml 中 AgentConfiguration 的代理程式部分。
+在部署 Kubernetes Monitoring Operator 之前，請先設定 _operator-config.yaml_ 中 _AgentConfiguration_ 的 proxy 區段。
 
 [listing]
 ----
@@ -286,7 +286,7 @@ agent:
 image: <docker repo of the enterprise/corp docker repo>/ci-kube-rbac-proxy:<ci-kube-rbac-proxy version>
 image: <docker repo of the enterprise/corp docker repo>/netapp-monitoring:<version>
 ....
-編輯 operator-config.yaml 中的 AgentConfiguration 以反映新的 docker repo 位置。為您的私人儲存庫建立一個新的 imagePullSecret，有關更多詳細信息，請參閱 _https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/_
+編輯 _operator-config.yaml_ 中的 _AgentConfiguration_，以反映新的 docker repo 位置。為您的私人儲存庫建立新的 imagePullSecret，更多詳細資訊請參閱 _https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/_
 
 [listing]
 ----
@@ -300,9 +300,25 @@ agent:
 ----
 
 
+==== 長期密碼的 API 存取權杖
+
+某些環境（例如 Proxy 儲存庫）需要 Data Infrastructure Insights docker 儲存庫的長期密碼。安裝時在 UI 中提供的密碼僅有效 24 小時。您可以使用 API Access Token 作為 docker 儲存庫密碼，而不使用該密碼。只要 API Access Token 有效，此密碼就會一直有效。您可以為此特定目的產生新的 API Access Token，或使用現有的 API Access Token。
+
+link:task_config_telegraf_agent.html#manually-create-an-api-access-token["在此閱讀"] 以取得建立新 API 存取權杖的說明。
+
+若要從下載的 _operator-secrets.yaml_ 檔案中提取現有的 API 存取令牌，使用者可以執行下列命令：
+
+`grep '\.dockerconfigjson' operator-secrets.yaml |sed 's/.*\.dockerconfigjson: //g' |base64 -d |jq`
+
+若要從正在執行的 operator 安裝中提取現有的 API 存取令牌，使用者可以執行以下命令：
+
+`kubectl -n netapp-monitoring get secret netapp-ci-docker -o jsonpath='{.data.\.dockerconfigjson}' |base64 -d |jq`
+
+
+
 === OpenShift 說明
 
-如果您在 OpenShift 4.6 或更高版本上執行，則必須編輯 _operator-config.yaml_ 中的 AgentConfiguration 以啟用 _runPrivileged_ 設定：
+如果您執行的是 OpenShift 4.6 或更高版本，則必須編輯 _operator-config.yaml_ 中的 _AgentConfiguration_ 以啟用 _runPrivileged_ 設定：
 
 ....
 # Set runPrivileged to true SELinux is enabled on your kubernetes nodes
@@ -437,7 +453,7 @@ The following checks were performed on each of these signatures:
 | 我確實沒有看到針對我的叢集中存在的 Kubernetes CronJobs 收集任何指標。 | 驗證你的 Kubernetes 版本（即 `kubectl version`）。如果是 v1.20.x 或更低版本，這是一個預期的限制。使用 Kubernetes Monitoring Operator 部署的 kube-state-metrics 版本僅支援 v1.CronJob。在 Kubernetes 1.20.x 及以下版本中，CronJob 資源位於 v1beta.CronJob。因此，kube-state-metrics 無法找到 CronJob 資源。 
 
 
-| 安裝操作員後，telegraf-ds pod 進入 CrashLoopBackOff，pod 日誌顯示「su: Authentication failed」。 | 編輯_AgentConfiguration_中的telegraf部分，並將_dockerMetricCollectionEnabled_設定為false。欲了解更多詳情，請參閱運營商的link:telegraf_agent_k8s_config_options.html["配置選項"]。  ... 規格：... 電報：...            - 名稱：docker 運作模式： - DaemonSet 取代： - 鍵：DOCKER_UNIX_SOCK_PLACEHOLDER 值：unix:///run/docker.sock ...  … 
+| 安裝操作員後，telegraf-ds pod 進入 CrashLoopBackOff，pod 日誌顯示「su: Authentication failed」。 | 編輯 _AgentConfiguration_ 中的 telegraf 區段，並將 _dockerMetricCollectionEnabled_ 設為 false。如需更多詳細資訊，請參閱 operator 的link:telegraf_agent_k8s_config_options.html["配置選項"]。... spec: ... telegraf: ...- name: docker run-mode: - DaemonSet substitutions: - key: DOCKER_UNIX_SOCK_PLACEHOLDER value: unix:///run/docker.sock ...... 
 
 
 | 我在 Telegraf 日誌中看到類似以下內容的重複錯誤訊息：E！  [agent] 寫入輸出時發生錯誤。 http：發佈「\https://<tenant_url>/rest/v1/lake/ingest/influxdb」：超出上下文截止時間（等待標頭時超出 Client.Timeout） | 編輯_AgentConfiguration_中的telegraf部分，並將_outputTimeout_增加到10秒。欲了解更多詳情，請參閱運營商的link:telegraf_agent_k8s_config_options.html["配置選項"]。 
@@ -484,7 +500,7 @@ fluent-bit:
 | Telegraf 因可鎖定記憶體不足而發出警告或崩潰。 | 嘗試增加底層作業系統/節點中 Telegraf 可鎖定記憶體的限制。如果無法增加限制，請修改 NKMO 代理程式配置並將 _unprotected_ 設為 _true_。這將指示 Telegraf 不要嘗試保留鎖定的記憶體頁面。雖然這可能會帶來安全風險，因為解密的秘密可能會被交換到磁碟，但它允許在無法保留鎖定記憶體的環境中執行。有關 _unprotected_ 配置選項的更多詳細信息，請參閱link:telegraf_agent_k8s_config_options.html["配置選項"]頁。 
 
 
-| 我看到來自 Telegraf 的類似以下內容的警告訊息：_W！  [inputs.diskio] 無法收集「vdc」的磁碟名稱：讀取 /dev/vdc 時發生錯誤：沒有此檔案或目錄_ | 對於 Kubernetes 監控操作員來說，這些警告訊息是良性的，可以安全地忽略。  或者，編輯 AgentConfiguration 中的 telegraf 部分，並將 _runDsPrivileged_ 設為 true。如欲了解更多詳情，請參閱link:telegraf_agent_k8s_config_options.html["操作員的配置選項"]。 
+| 我看到來自 Telegraf 的類似以下內容的警告訊息：_W！  [inputs.diskio] 無法收集「vdc」的磁碟名稱：讀取 /dev/vdc 時發生錯誤：沒有此檔案或目錄_ | 對於 Kubernetes Monitoring Operator 而言，這些警告訊息是良性的，可以安全地忽略。或者，在 AgentConfiguration 中編輯 telegraf 區段，並將 _runDsPrivileged_ 設為 true。如需更多詳細資訊，請參閱 link:telegraf_agent_k8s_config_options.html["操作員的配置選項"]。 
 
 
 | 我的 fluent-bit pod 出現以下錯誤：[2024/10/16 14:16:23] [錯誤] [/src/fluent-bit/plugins/in_tail/tail_fs_inotify.c:360 errno=24] 開啟的檔案太多 [2024/10/1tail. [2024/10/16 14:16:23] [錯誤] [引擎] 輸入初始化失敗  a| 
@@ -512,5 +528,8 @@ fluent-bit:
 
 
 | telegraf DS pods 報告與 kubernetes 輸入外掛程式相關的錯誤，由於無法驗證 TLS 憑證而無法發出 HTTP 要求。例如：E！  [inputs.kubernetes] 外掛程式錯誤：向下列物件發出 HTTP 請求時發生錯誤"https://<kubelet_IP>:10250/stats/summary":[]得到"https://<kubelet_IP>:10250/stats/summary":[]tls：無法驗證證書：x509：無法驗證 <kubelet_IP> 的證書，因為它不包含任何 IP SAN | 如果 kubelet 使用自簽名證書，和/或指定的證書未在證書_Subject Alternative Name_ 清單中包含 <kubelet_IP>，則會發生這種情況。為了解決這個問題，使用者可以修改link:telegraf_agent_k8s_config_options.html["代理配置"]，並將 _telegraf:insecureK8sSkipVerify_ 設為 _true_。這將配置 telegraf 輸入插件以跳過驗證。或者，使用者可以設定 kubeletlink:https://kubernetes.io/docs/reference/config-api/kubelet-config.v1beta1/["伺服器TLSBootstrap"] ，這將觸發來自「certificates.k8s.io」API 的憑證請求。 
+
+
+| 我在 Fluent-bit Pod 中收到以下錯誤，且 Pod 無法啟動：026/01/12 20:20:32] [error] [sqldb] error=unable to open database file [2026/01/12 20:20:32] [error] [input:tail:tail.0] db: could not create 'in_tail_files' table [2026/01/12 20:20:32] [error] [input:tail:tail.0] could not open/create database [2026/01/12 20:20:32] [error] failed initialize input tail.0 [2026/01/12 20:20:32] [error] [engine] input initialization failed | 確保資料庫檔案所在的主機目錄具有適當的讀取 / 寫入權限。更具體地說、主機目錄應授予非 root 使用者讀取 / 寫入權限。預設的資料庫檔案位置為 /var/log/ 、除非被 fluent-bit-dbFile _agentconfiguration_ 選項覆寫。如果啟用 SELinux 、請嘗試將 fluent-bit-seLinuxOptionsType agentconfiguration 選項設為 'spc_t' 
 |===
 更多資訊可從link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。

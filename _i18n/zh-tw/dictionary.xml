@@ -7181,20 +7181,16 @@
   <block id="3e70b4412d3a3b92cd10a9e1453fc282" category="section-title">回滾到之前運行的版本</block>
   <block id="4d8704d77f12b96a935cdf09de6c94be" category="paragraph">如果您使用按鈕升級功能進行升級，並且在升級後七天內遇到當前版本的操作員的任何困難，則可以使用升級過程中建立的快照降級到先前執行的版本。按一下要回滾的叢集旁邊的選單，然後選擇「回滾」。</block>
   <block id="95168a3a05a80c7b596b36a7ec8218c4" category="section-title">手動升級</block>
-  <block id="59f9e8b92a6bc55e991031f0b5fea324" category="paragraph">確定現有 Operator 是否存在 AgentConfiguration（如果您的命名空間不是預設的 _netapp-monitoring_，請替換為適當的命名空間）：</block>
-  <block id="bb5c0afa0b80550de02b1ac19c1226b4" category="paragraph">如果存在 AgentConfiguration：</block>
   <block id="349838fb1d851d3e2014b9fe39203275" category="inline-xref">安裝</block>
   <block id="47a3c2ef85d7b8f59098e0a3e25e7fed" category="list-text"><block ref="69b3420fb24fd81786681a7bce7bbc4d" category="inline-xref-macro-rx"></block>最新的 Operator 優於現有的 Operator。</block>
   <block id="f60428f53f8ec06db7eeb3c6dc8a3ec1" category="inline-xref">拉取最新的容器鏡像</block>
   <block id="727021f9728a61f5f57027c22e99ed17" category="list-text">確保您<block ref="70886476cda3a9669d1d2ba99218e076" category="inline-xref-macro-rx"></block>如果您使用自訂儲存庫。</block>
-  <block id="a7e8df3295c386ff0d7a33ebd0ce4762" category="paragraph">如果 AgentConfiguration 不存在：</block>
   <block id="7c2ea0e402732ba1c1013065d22d7297" category="list-text">記下Data Infrastructure Insights識別的叢集名稱（如果您的命名空間不是預設的 netapp-monitoring，請替換為適當的命名空間）：</block>
   <block id="af43624bdc80303ec074448a745b7a3c" category="list-text">建立現有 Operator 的備份（如果您的命名空間不是預設的 netapp-monitoring，請替換為適當的命名空間）：</block>
   <block id="a27dfe771799a09fd55fea73286eb6ab" category="inline-xref">解除安裝</block>
   <block id="68a0b7243f029dd3130a0fb114a7ca00" category="list-text"><block ref="4cb6ecff5b560ef65768b9939bfe491e" category="inline-xref-macro-rx"></block>現有的營運商。</block>
   <block id="a87371c8f3e6091825251b0817597ab0" category="list-text"><block ref="69b3420fb24fd81786681a7bce7bbc4d" category="inline-xref-macro-rx"></block>最新的操作員。</block>
   <block id="4c42e83b5a46ef16402aa2bea7ab525e" category="list-text">使用相同的叢集名稱。</block>
-  <block id="9e274d61eab1c1a3b088854ed50639ff" category="list-text">下載最新的 Operator YAML 檔案後，在部署之前將 agent_backup.yaml 中找到的任何自訂內容移植到下載的 operator-config.yaml 中。</block>
   <block id="bf4f601d0ebbcc54c415c3eb689c82f3" category="section-title">停止並啟動 Kubernetes 監控操作員</block>
   <block id="ac3978dbb1caac278e3d6b9932b85966" category="paragraph">要停止 Kubernetes Monitoring Operator：</block>
   <block id="faf3019197a41959b7aba9bcfa3023da" category="paragraph">啟動 Kubernetes Monitoring Operator：</block>
@@ -7216,14 +7212,12 @@
   <block id="cac54dc379f23a7aed8745bde8386662" category="inline-link-macro">可用設定</block>
   <block id="8baa15e22ac6c7ee4ce4e0a88da9798e" category="paragraph">最常修改的設定可以在_AgentConfiguration_自訂資源中配置。您可以在部署操作員之前透過編輯 _operator-config.yaml_ 檔案來編輯此資源。該文件包含已註解掉的設定範例。查看列表<block ref="d0a687c4569dc784e63f3960b33ab7c7" category="inline-link-macro-rx"></block>以取得最新版本的操作員。</block>
   <block id="27aa502b8f8f23143b77f0800d6dd42f" category="paragraph">您也可以在部署操作員後使用以下命令編輯此資源：</block>
-  <block id="3ab04e244a91c8a73c48633c62ac613a" category="paragraph">若要確定您部署的操作員版本是否支援 AgentConfiguration，請執行下列命令：</block>
   <block id="51ba9262aad7e83aa5f74ed6dc93a039" category="paragraph">如果您看到「伺服器錯誤（未找到）」訊息，則必須先升級您的操作員才能使用 AgentConfiguration。</block>
   <block id="7a7f1dddc2fef7ed16175a3e2e424b3f" category="paragraph">您可以在租戶的兩個地方使用代理程式來安裝 Kubernetes Monitoring Operator。這些可能是相同或獨立的代理系統：</block>
   <block id="92caa6668b03ccf88ed2c1dbef632933" category="paragraph">如果您對其中一個或兩個都使用代理，為了安裝 Kubernetes 操作監視器，您必須先確保您的代理程式配置為允許與您的Data Infrastructure Insights環境進行良好的通訊。如果您有代理並且可以從您希望安裝 Operator 的伺服器/VM 存取Data Infrastructure Insights，那麼您的代理可能配置正確。</block>
   <block id="4cf131cb570986a48574d0708d4c8b35" category="paragraph">對於用於安裝 Kubernetes Operating Monitor 的代理，在安裝 Operator 之前，請設定 _http_proxy/https_proxy_ 環境變數。對於某些代理環境，您可能還需要設定 _no_proxy environment_ 變數。</block>
   <block id="e25c898cccd50c035eb1941a8411ba8b" category="paragraph">若要設定變量，請在安裝 Kubernetes Monitoring Operator*之前*在系統上執行下列步驟：</block>
   <block id="8abad16925d189288490bd9d8b5e034c" category="paragraph">對於用於 Kubernetes 叢集與Data Infrastructure Insights環境通訊的代理，請在閱讀所有這些說明後安裝 Kubernetes 監控操作員。</block>
-  <block id="6b883170f6284320691d7cfefa3f48e3" category="paragraph">在部署 Kubernetes Monitoring Operator 之前，請先設定 operator-config.yaml 中 AgentConfiguration 的代理程式部分。</block>
   <block id="e79dbc8635cd754ff3943b0362cd5a36" category="paragraph">預設情況下，Kubernetes Monitoring Operator 將從Data Infrastructure Insights儲存庫中提取容器映像。如果您有 Kubernetes 叢集作為監控目標，且該叢集配置為僅從自訂或私人 Docker 儲存庫或容器註冊表中提取容器映像，則必須配置對 Kubernetes 監控操作員所需容器的存取權。</block>
   <block id="b1dbe9124bd000f8918a20bf61bc24f6" category="list-text">ci-kube-rbac-代理</block>
   <block id="67efe5df179f0f50a5a5e82fd46a07fc" category="list-text">ci-ksm</block>
@@ -7282,7 +7276,6 @@
   <block id="02230bab9788e4843408e124331bb1ca" category="cell">我確實沒有看到針對我的叢集中存在的 Kubernetes CronJobs 收集任何指標。</block>
   <block id="b3b6bea000b13acbfcb412bad49ee494" category="cell">驗證你的 Kubernetes 版本（即<block ref="4fc58818ca77fb3a60cbd34a7f7d5071" prefix=" " category="inline-code"></block>）。如果是 v1.20.x 或更低版本，這是一個預期的限制。使用 Kubernetes Monitoring Operator 部署的 kube-state-metrics 版本僅支援 v1.CronJob。在 Kubernetes 1.20.x 及以下版本中，CronJob 資源位於 v1beta.CronJob。因此，kube-state-metrics 無法找到 CronJob 資源。</block>
   <block id="45698e13b1c2f7241751839133834506" category="cell">安裝操作員後，telegraf-ds pod 進入 CrashLoopBackOff，pod 日誌顯示「su: Authentication failed」。</block>
-  <block id="e77701e8957afb414a45ca434ef7f000" category="cell">編輯_AgentConfiguration_中的telegraf部分，並將_dockerMetricCollectionEnabled_設定為false。欲了解更多詳情，請參閱運營商的<block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。  ... 規格：... 電報：...            - 名稱：docker 運作模式： - DaemonSet 取代： - 鍵：DOCKER_UNIX_SOCK_PLACEHOLDER 值：unix:///run/docker.sock ...  …</block>
   <block id="802997bcb8e9581226b3000b8b611b1c" category="cell">我在 Telegraf 日誌中看到類似以下內容的重複錯誤訊息：E！  [agent] 寫入輸出時發生錯誤。 http：發佈「\https://&lt;tenant_url&gt;/rest/v1/lake/ingest/influxdb」：超出上下文截止時間（等待標頭時超出 Client.Timeout）</block>
   <block id="5a581223d2fea6c45a7ac1278334f8c1" category="cell">編輯_AgentConfiguration_中的telegraf部分，並將_outputTimeout_增加到10秒。欲了解更多詳情，請參閱運營商的<block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。</block>
   <block id="4f05106cca363b0f3c492314ab777534" category="cell">我缺少某些事件日誌的_involvedobject_資料。</block>
@@ -7310,7 +7303,6 @@
   <block id="9953ac1176fec4ceef2b233ecd286c7b" category="cell">嘗試增加底層作業系統/節點中 Telegraf 可鎖定記憶體的限制。如果無法增加限制，請修改 NKMO 代理程式配置並將 _unprotected_ 設為 _true_。這將指示 Telegraf 不要嘗試保留鎖定的記憶體頁面。雖然這可能會帶來安全風險，因為解密的秘密可能會被交換到磁碟，但它允許在無法保留鎖定記憶體的環境中執行。有關 _unprotected_ 配置選項的更多詳細信息，請參閱<block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>頁。</block>
   <block id="d2402cb2e8bc53d6f0ea3a592a927071" category="cell">我看到來自 Telegraf 的類似以下內容的警告訊息：_W！  [inputs.diskio] 無法收集「vdc」的磁碟名稱：讀取 /dev/vdc 時發生錯誤：沒有此檔案或目錄_</block>
   <block id="d167beea70a778e86c7a57bc2bd4338a" category="inline-link-macro">操作員的配置選項</block>
-  <block id="1f3c6b9eb496e3586cb89ac14caca626" category="cell">對於 Kubernetes 監控操作員來說，這些警告訊息是良性的，可以安全地忽略。  或者，編輯 AgentConfiguration 中的 telegraf 部分，並將 _runDsPrivileged_ 設為 true。如欲了解更多詳情，請參閱<block ref="ebda7113c4f0b0fd6090a6c2a6162dc1" category="inline-link-macro-rx"></block>。</block>
   <block id="828b70096630fbae314b6b8a4022c2d3" category="cell">我的 fluent-bit pod 出現以下錯誤：[2024/10/16 14:16:23] [錯誤] [/src/fluent-bit/plugins/in_tail/tail_fs_inotify.c:360 errno=24] 開啟的檔案太多 [2024/10/1tail. [2024/10/16 14:16:23] [錯誤] [引擎] 輸入初始化失敗</block>
   <block id="4c7e0efe737f180965ee5c651fc247df" category="paragraph">嘗試更改叢集中的 _fsnotify_ 設定：</block>
   <block id="354078bb27a2ab00cc965db863bbe682" category="paragraph">重新啟動 Fluent-bit。</block>
@@ -12676,4 +12668,29 @@
   <block id="ad616b1714b32991576ec7cd2b8832a8" category="sidebar">管理儀表板存取權限</block>
   <block id="1a69a00931f550995a9d19745f714169" category="paragraph">這些說明正在更新中。請稍後查看。</block>
   <block id="ab5cb6794af58d6cd4132b44aa3d3d04" category="sidebar">註冊 Data Infrastructure Insights</block>
+  <block id="017db8357e64ddb2e41630e07c556c17" category="paragraph">確定現有 Operator 是否存在 _AgentConfiguration_（如果您的命名空間不是預設的 _netapp-monitoring_、請替換為對應的命名空間）：</block>
+  <block id="71e56d8dc562ba6525c8592046f68012" category="paragraph">如果存在 _AgentConfiguration_：</block>
+  <block id="aea7876c0fcf2d6bb3bd4df2f60ff442" category="paragraph">如果 _AgentConfiguration_ 不存在：</block>
+  <block id="6d98d6fa93fab92d887e8cbba88bb3c9" category="list-text">下載最新的 Operator YAML 檔案後，在部署之前，將 _agent_backup.yaml_ 中找到的任何自訂項目移植到下載的 _operator-config.yaml_。</block>
+  <block id="a2c5c9ed2cfd796e2fa991e3ec4d2ed6" category="paragraph">若要確定已部署的 operator 版本是否支援 _AgentConfiguration_，請執行下列命令：</block>
+  <block id="2d216b955180b5366a46ab13cea76c79" category="paragraph">在部署 Kubernetes Monitoring Operator 之前，請先設定 _operator-config.yaml_ 中 _AgentConfiguration_ 的 proxy 區段。</block>
+  <block id="23dd082c5fae705a8ae3f5e2a44d157d" category="paragraph">編輯 _operator-config.yaml_ 中的 _AgentConfiguration_，以反映新的 docker repo 位置。為您的私人儲存庫建立新的 imagePullSecret，更多詳細資訊請參閱 _https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/_</block>
+  <block id="21d198dbb991af1db5069bb51d22d506" category="section-title">長期密碼的 API 存取權杖</block>
+  <block id="0b55a8de0fa7e236b1e898699fd950d6" category="paragraph">某些環境（例如 Proxy 儲存庫）需要 Data Infrastructure Insights docker 儲存庫的長期密碼。安裝時在 UI 中提供的密碼僅有效 24 小時。您可以使用 API Access Token 作為 docker 儲存庫密碼，而不使用該密碼。只要 API Access Token 有效，此密碼就會一直有效。您可以為此特定目的產生新的 API Access Token，或使用現有的 API Access Token。</block>
+  <block id="8acc82c66b1534666593df5e46ba9b51" category="inline-link-macro">在此閱讀</block>
+  <block id="2db1dc28cb10f0bacd2dfe2a2502521e" category="paragraph"><block ref="80163dfb712919489c1440e1af1ce80c" category="inline-link-macro-rx"></block> 以取得建立新 API 存取權杖的說明。</block>
+  <block id="3a92af63fb0dbfb3fb4c50844d4e6226" category="paragraph">若要從下載的 _operator-secrets.yaml_ 檔案中提取現有的 API 存取令牌，使用者可以執行下列命令：</block>
+  <block id="17b15ada08a59825a040f1bfd86330d9" category="paragraph"><block ref="dcbd6d0a6636d4e728bacac25d8ec372" prefix="" category="inline-code"></block></block>
+  <block id="8907a57d03f024ba26a5ed6588ca4877" category="paragraph">若要從正在執行的 operator 安裝中提取現有的 API 存取令牌，使用者可以執行以下命令：</block>
+  <block id="9ca564a2b84b7e6b27df5be0b6a657cd" category="paragraph"><block ref="7dabc26725e27da4827b9fe642dd2038" prefix="" category="inline-code"></block></block>
+  <block id="c2c2ad2d6b726995fdb32dbf29d2189e" category="paragraph">如果您執行的是 OpenShift 4.6 或更高版本，則必須編輯 _operator-config.yaml_ 中的 _AgentConfiguration_ 以啟用 _runPrivileged_ 設定：</block>
+  <block id="566ab1672deaaeddb8f73b03838f0642" category="cell">編輯 _AgentConfiguration_ 中的 telegraf 區段，並將 _dockerMetricCollectionEnabled_ 設為 false。如需更多詳細資訊，請參閱 operator 的<block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。... spec: ... telegraf: ...- name: docker run-mode: - DaemonSet substitutions: - key: DOCKER_UNIX_SOCK_PLACEHOLDER value: unix:///run/docker.sock ......</block>
+  <block id="f706cf0f0319c0d8a1756d4dd2efaa5e" category="cell">對於 Kubernetes Monitoring Operator 而言，這些警告訊息是良性的，可以安全地忽略。或者，在 AgentConfiguration 中編輯 telegraf 區段，並將 _runDsPrivileged_ 設為 true。如需更多詳細資訊，請參閱 <block ref="ebda7113c4f0b0fd6090a6c2a6162dc1" category="inline-link-macro-rx"></block>。</block>
+  <block id="8a398765d9480ef0a8dec93952d8eba6" category="cell">我在 Fluent-bit Pod 中收到以下錯誤，且 Pod 無法啟動：026/01/12 20:20:32] [error] [sqldb] error=unable to open database file [2026/01/12 20:20:32] [error] [input:tail:tail.0] db: could not create 'in_tail_files' table [2026/01/12 20:20:32] [error] [input:tail:tail.0] could not open/create database [2026/01/12 20:20:32] [error] failed initialize input tail.0 [2026/01/12 20:20:32] [error] [engine] input initialization failed</block>
+  <block id="19df898e84b2a11ee6e02ec8d86ac84e" category="cell">確保資料庫檔案所在的主機目錄具有適當的讀取 / 寫入權限。更具體地說、主機目錄應授予非 root 使用者讀取 / 寫入權限。預設的資料庫檔案位置為 /var/log/ 、除非被 fluent-bit-dbFile _agentconfiguration_ 選項覆寫。如果啟用 SELinux 、請嘗試將 fluent-bit-seLinuxOptionsType agentconfiguration 選項設為 'spc_t'</block>
+  <block id="1e8789eeeafc6f5cded0b8e336c55e66" category="section-title">使用 Adaptive Card 範本建立 Teams 通知的步驟</block>
+  <block id="77cefe808c0d0437a2a44f1685a4dec9" category="list-text">請將郵件內文替換為以下範本：</block>
+  <block id="32d27ad98b4b043c62f61de16291608e" category="list-text">如果您使用的是 Power Automate Flows，URL 中的查詢參數採用編碼格式。您必須先解碼 URL 才能輸入。</block>
+  <block id="3771b23dadd43c39046622dbcb4c17e4" category="list-text">點擊「測試 Webhook」以確保沒有錯誤。</block>
+  <block id="c20e86538672d1ab3ab8e3a5c2961e28" category="list-text">儲存 webhook。</block>
 </blocks>
