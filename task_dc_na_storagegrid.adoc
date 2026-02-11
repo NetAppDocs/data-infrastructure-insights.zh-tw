@@ -7,6 +7,10 @@ keywords: data collector, queries, create, storagegrid
 = NetApp StorageGRID資料收集器
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]
@@ -51,7 +55,7 @@ Data Infrastructure Insights從NetApp StorageGRID收集器取得以下庫存資�
 
 * StorageGRID主機 IP 位址
 * 已指派「指標查詢」和「租用戶存取」角色的使用者的使用者名稱和密碼
-* 埠 443
+* 連接埠 443（或 8443，如果已配置）
 
 
 

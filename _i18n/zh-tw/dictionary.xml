@@ -12693,4 +12693,5 @@
   <block id="c20e86538672d1ab3ab8e3a5c2961e28" category="list-text">儲存 webhook。</block>
   <block id="beda12a678062ce581606c88344f4e06" category="sidebar">Teams Webhook 範例</block>
   <block id="e18f38a263784d686e9a0d45d5416285" category="cell">執行下列任一正版授權版本的電腦：* AlmaLinux 9.5、10 * Centos（64 位元）：Stream 9 * Debian（64 位元）：11 至 13 * OpenSUSE Leap 15.2 至 15.6、16 * Oracle Enterprise Linux（64 位元）：8.10、9.2、9.4、9.6、10 * Red Hat（64 位元）：8.10、9.2、9.4、9.6、10 * Rocky 9.2 至 9.6 * SUSE Linux Enterprise Server 15 SP4 至 15 SP7、16 * Ubuntu Server：20.04、22.04、24.04 LTS * 上述平台上的 SELinux 此電腦不應執行任何其他應用程式層級軟體。建議使用專用伺服器。如果您正在執行 SELinux，建議在擷取單元系統上執行下列命令：sudo semanage fcontext -a -t usr_t "/opt/netapp/cloudinsights(/.*)?" sudo restorecon -R /opt/netapp/cloudinsights</block>
+  <block id="ddb78a0715fab46562d8ee8102cea78c" category="list-text">連接埠 443（或 8443，如果已配置）</block>
 </blocks>
