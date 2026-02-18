@@ -13878,4 +13878,5 @@
   <block id="7a1fe47a1aa444b45e1475e2c2b156bc" category="cell">StorageGRID （Grid Manager）的管理 IP 位址</block>
   <block id="0eb50b790bd551aaef2bbefbd077cd1b" category="cell">用於登入 StorageGRID （ Grid Manager ）的名稱</block>
   <block id="9730a2702facd53c375d1f62e4d662a2" category="cell">用於登入 StorageGRID （ Grid Manager ）的密碼</block>
+  <block id="749045de0e520f5ad8cff4d4635dd0d8" category="admonition">DII 站點將與選定的 Console Organization 關聯。如果您有多個 Organization，請務必選擇正確的 Organization 與 DII 租戶關聯。</block>
 </blocks>
