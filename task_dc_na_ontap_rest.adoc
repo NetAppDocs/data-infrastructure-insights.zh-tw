@@ -44,7 +44,7 @@ NOTE: ONTAP REST 收集器可用作先前基於 ONTAPI 的收集器的替代品�
 若要在叢集層級為Data Infrastructure Insights建立本機帳戶，請使用叢集管理管理員使用者名稱/密碼登入ONTAP ，然後在ONTAP伺服器上執行下列命令：
 
 . 在開始之前，您必須使用_管理員_帳戶登入ONTAP ，並且必須啟用_診斷級命令_。
-. 檢索 _admin_ 類型的虛擬伺服器的名稱。您將在後續命令中使用此名稱。
+. 取得類型為 _admin_ 的 vserver 名稱。您將在後續命令中使用此名稱。
 +
  vserver show -type admin
 . 使用以下命令建立角色：
@@ -104,7 +104,7 @@ restUser       http        password      restRole         no     none
 . 新增 REST 收集器。建議輸入與先前收集器配置的使用者不同的使用者的資訊。例如，使用上述權限部分中註明的使用者。
 . 暫停前一個收集器，這樣它就不會繼續收集資料。
 . 讓新的 REST 收集器取得資料至少 30 分鐘。忽略在此期間任何看起來不「正常」的資料。
-. 休息一段時間後，隨著 REST 收集器繼續獲取數據，您應該會看到數據趨於穩定。
+. 休息期結束後，隨著 REST 收集器繼續獲取數據，您應該會看到數據趨於穩定。
 
 
 如果您願意，可以使用相同的程序返回到先前的收集器。
@@ -113,7 +113,7 @@ restUser       http        password      restRole         no     none
 
 == 配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -130,7 +130,7 @@ restUser       http        password      restRole         no     none
 
 == 進階配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -155,7 +155,7 @@ restUser       http        password      restRole         no     none
 
 Data Infrastructure Insights從ONTAP資料收集器取得庫存、日誌和效能資料。對於所取得的每種資產類型，都會顯示該資產最常用的術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 供應商/型號術語 | Data Infrastructure Insights術語 
 
@@ -200,7 +200,8 @@ Data Infrastructure Insights從ONTAP資料收集器取得庫存、日誌和效�
 * 微碼版本 – 韌體。
 * 原始容量－系統中所有實體磁碟的以 2 為底的總和，無論其作用為何。
 * 延遲－表示主機在讀取和寫入過程中所面臨的工作負載的情況。理想情況下，Data Infrastructure Insights會直接取得該數值，但事實往往並非如此。取代提供此功能的陣列，Data Infrastructure Insights通常會執行根據各個內部卷的統計資料得出的 IOP 加權計算。
-* 吞吐量－從內部磁碟區聚合而成。管理－這可能包含裝置管理介面的超連結。由Data Infrastructure Insights資料來源以程式設計方式創建，作為庫存報告的一部分。
+* 處理量 – 從內部磁碟區彙總而來。
+* 管理 – 此處可能包含指向裝置管理介面的超連結。由 Data Infrastructure Insights 資料來源以程式設計方式建立，作為庫存報告的一部分。
 
 
 
@@ -262,7 +263,7 @@ FAS2620 FAS3250 FAS3270 FAS500f FAS6280 FAS/ AFF 8020 FAS/ AFF 8040 FAS/ AFF 806
 | 問題： | 試試一下： 
 
 
-| 嘗試建立ONTAP REST 資料收集器時，會出現以下錯誤：設定：10.193.70.14：10.193.70.14 上的ONTAP rest API 不可用：10.193.70.14 無法取得 /api/cluster：400 錯誤請求 | 這可能是由於較舊的ONTAP陣列（例如ONTAP 9.6）沒有 REST API 功能。 ONTAP 9.14.1 是ONTAP REST 收集器支援的最低ONTAP版本。在 REST ONTAP之前的版本中應該會出現「400 Bad Request」回應。對於支援 REST 但不是 9.14.1 或更高ONTAP的ONTAP版本，您可能會看到以下類似訊息：配置：10.193.98.84：10.193.98.84 上的ONTAP rest API 不可用：10.193.98.84：10.193.98. 9.10.1 a3cb3247-3d3c-11ee-8ff3-005056b364a7 但不是最低版本 9.14.1。 
+| 嘗試建立ONTAP REST 資料收集器時，會出現以下錯誤：設定：10.193.70.14：10.193.70.14 上的ONTAP rest API 不可用：10.193.70.14 無法取得 /api/cluster：400 錯誤請求 | 這可能是由於 ONTAP 陣列版本過舊（例如 ONTAP 9.6）導致的，該版本不具備 REST API 功能。ONTAP 9.14.1 是 ONTAP REST 收集器支援的最低 ONTAP 版本。在不支援 REST 的 ONTAP 版本上，可能會收到「400 Bad Request」回應。對於支援 REST 但不是 9.14.1 或更高版本的 ONTAP 版本，您可能會看到以下類似訊息：Configuration: 10.193.98.84: ONTAP rest API at 10.193.98.84 is not available: 10.193.98.84: ONTAP rest API at 10.193.98.84 is available: cheryl5-cluster-2 9.10.1 a3cb3247-3d3c-11ee-8ff3-005056b364a7 but is not of minimum version 9.14.1. 
 
 
 | 我在ONTAP ontapi 收集器顯示資料的地方看到空的或「0」指標。 | ONTAP REST 不會報告僅在ONTAP系統內部使用的指標。例如， ONTAP REST 不會收集系統聚合，而只會收集「資料」類型的 SVM。 ONTAP REST 指標的其他範例可能會報告零或空資料：InternalVolumes：REST 不再報告 vol0。聚合：REST 不再報告 aggr0。儲存：大多數指標都是內部卷指標的總和，並且會受到上述指標的影響。儲存虛擬機器：REST 不再報告除「資料」類型之外的 SVM（例如「叢集」、「管理」、「節點」）。您可能還會注意到，由於預設效能輪詢週期從 15 分鐘變為 5 分鐘，包含資料的圖表的外觀也發生了變化。更頻繁的輪詢意味著需要繪製更多的數據點。 

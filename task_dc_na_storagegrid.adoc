@@ -67,13 +67,13 @@ Data Infrastructure Insights從NetApp StorageGRID收集器取得以下庫存資�
 | 場地 | 描述 
 
 
-| StorageGRID主機 IP 位址 | StorageGRID設備的管理虛擬 IP 位址 
+| StorageGRID主機 IP 位址 | StorageGRID （Grid Manager）的管理 IP 位址 
 
 
-| 使用者名稱 | 用於登入StorageGRID設備的名稱 
+| 使用者名稱 | 用於登入 StorageGRID （ Grid Manager ）的名稱 
 
 
-| 密碼 | 用於登入StorageGRID設備的密碼 
+| 密碼 | 用於登入 StorageGRID （ Grid Manager ）的密碼 
 |===
 
 

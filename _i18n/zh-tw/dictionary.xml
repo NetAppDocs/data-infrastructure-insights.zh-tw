@@ -4675,8 +4675,6 @@
   <block id="4511f2a211688512da3a86b3400de7ff" category="paragraph">本數據採集器支援的型號及版本：</block>
   <block id="25ac429f9072293d27a836ee2a148f47" category="cell">模型</block>
   <block id="798084429970e88fa1f49f12b5f60f32" category="cell">韌體版本</block>
-  <block id="8892f0f7118a4e14ceef9a37218a5a33" category="cell">HPE Alletra 9080 HPE_3PAR 20450 HPE_3PAR 20800 HPE_3PAR 20850 HPE_3PAR 7200 HPE_3PAR 7200c HPE_3PAR 7400 HPE_3PAR 7400c HPE_3 HPE_3PAR 7400 HPE_3PAR 7400c HPE_3 HPE_3PAR 7400 HPE_3PAR 7400c HPE_3 HPAR_7450 HPAR_PAR_PARc HPAR_M HPE_3PAR 8400 HPE_3PAR 8440 HPE_3PAR 8450 HPE_3PAR 9450 HPE_3PAR A630 HPE_3PAR A650 HPE_3PAR A670 HP_3PAR 20800 HP_3PAR 720003 0720003 PAR_8 HP_3PAR 7440c HP_3PAR 7450c HP_3PAR 8200 HP_3PAR 8400 HP_3PAR 8440 InServ F200 InServ F400 InServ T400 InServ T800 InServ V400 InServ F400 InServ T400 InServ T800 InServ V400 InServ F400000 InServ</block>
-  <block id="7676d746a6b2036f8764b1e1250213d3" category="cell">3.1.1 (MU1) 3.1.2 (MU3) 3.1.3 (MU1) 3.1.3 (MU2) 3.2.1 (MU2) 3.2.1 (MU3) 3.2.1 (MU5) 3.2.2 (MU4) 3.2.2 (MU13) 3.3. 3.3.1 (MU3) 3.3.1 (MU5) 3.3.2 (MU1) 4.3.1 4.3.3 4.4.1 版本類型：標準支援版本 4.5.15 版本類型：擴充支援版本 4.5.18 版本類型：擴充版本支援版本 4.5.21 版本類型：擴充支援版本 4.5.18 版本類型：擴充版本支援版本 4.5.21 版本 4.5. 4.6.1 版本類型：擴充支援版本9.5.15 版本類型：擴充支援版本 9.5.8 版本類型：擴充支援版本 9.6.1 版本類型：擴充支援版本</block>
   <block id="e9f6271a49020907aa1e305c5f6b83d2" category="paragraph">此數據收集器支援的產品：</block>
   <block id="deb10517653c255364175796ace3553f" category="cell">產品</block>
   <block id="14c3221394982b060bb874fd101a4564" category="cell">特徵/屬性</block>
@@ -4723,7 +4721,6 @@
   <block id="4059b0251f66a18cb56f544728796875" category="cell">資訊</block>
   <block id="0696b0b7a79fe810767fc56d100fe9be" category="cell">API 名稱</block>
   <block id="938e0f491e66c780a2d952df0fccdf90" category="cell">API 版本</block>
-  <block id="c822c1b63853ed273b89687ac505f9fa" category="cell">Google</block>
   <block id="0c158178daa0ba003e3212e295331f88" category="cell">資料來源名稱</block>
   <block id="44749712dbec183e983dcd78a7736c41" category="cell">日期</block>
   <block id="2ea3b0f6afbc5d22bca6c482c0bf54ca" category="cell">發起者 ID</block>
@@ -4963,8 +4960,6 @@
   <block id="b440fbb86ede4987364f36c681bd291c" category="cell">此特定共享的權限</block>
   <block id="bcd25ddbd80c9ca3be75c1b216585709" category="cell">Azure Netapp 檔案 REST API</block>
   <block id="cc4856057eb6a162f1fd9a2b32c845e0" category="section-title">Brocade光纖通道交換機</block>
-  <block id="6f558f34dcdd934f1ac4e3ce9d73b963" category="cell">176.51 183.0 Brocade 200E Brocade 300E Brocade 4024 嵌入式Brocade 5000 Brocade 5100 Brocade 5300 Brocade 5480 嵌入式Brocade Brocade Brocade Brocade Brocade Brocade Brocade 6558 Brocade 7800 Brocade 7810 擴充交換器Brocade 7840 Brocade DCX Brocade DCX - BrocadeBrocade網Brocade DCX8510-4 Brocade Brocade Brocade G610 Brocade G620 Brocade G630 Brocade X6-4 Brocade X6-8 Brocade X7-4 Brocade X7-8</block>
-  <block id="1e449740fd4d0553a426bc62f0a54ecf" category="cell">v6.2.2b v6.2.2f v6.2.2g v6.4.1b v6.4.2a v6.4.3 v6.4.3d v6.4.3f3 v7.0.1 v7.0.1b v7.0.2 v7.0.2b1 v7.0.2b1 v7.217.07. v7.1.0b v7.2.0a v7.2.0d v7.2.1 v7.2.1c v7.2.1c1 v7.2.1d v7.3.0a v7.3.0c v7.3.1 v7.3.1c v7.3.1d v7.3.2a v7.3.1 v7.3.1c v7.3.1d v7.3.a v.7. v7.4.2 v7.4.2a v7.4.2a4 v7.4.2c v7.4.2d v7.4.2e v7.4.2f v7.4.2g v7.4.2g_cvr_824494_01 v7.4.2g v7.4.2g_cvr_824494_01 v7.4.2h v7.4.2j188. v8.1.0b v8.1.1a v8.1.2a v8.1.2d v8.1.2f v8.1.2g v8.1.2h v8.1.2j v8.1.2k v8.2.0 v8.2.0a v8.2.0a1 v8.2.0b8.2.0 v8.2.0a v8.2.0a1 v8.2.0b8. v8.2.2a v8.2.2b v8.2.2c v8.2.2d v8.2.2d4 v8.2.3 v8.2.3a v8.2.3a1 v8.2.3a_cvr_855776_01 v8.2.3b v8.2.3c. v8.2.3e1 v8.2.3e2 v9.0.0a v9.0.1a v9.0.1b v9.0.1b4 v9.0.1c v9.0.1d v9.0.1e v9.0.1e1 v9.1.0b v9.1d v9.0.1e v9.0.1e1 v9.1.0b v9.1.19.1e v9.0.1e1 v9.1.0b v9.1.19.1.w v9.1.1d v9.1.1d1 v9.1.1d2 v9.1.1d2_lw v9.1.1d5 v9.2.0a v9.2.0b v9.2.0b1_lw v9.2.0c v9.2.0c1 v9.2.1a v9.</block>
   <block id="22b991799b8241e1ade0192865f9b429" category="cell">FC 名稱伺服器條目</block>
   <block id="f8696d8889d2d13a878e3b5aa8768789" category="cell">足球俱樂部編號</block>
   <block id="53c6fd08130593d1c56a7122fc0d697e" category="cell">Nx 端口 WWN</block>
@@ -5061,12 +5056,8 @@
   <block id="e7ae8eefc55ebbce4c2ae493458c9511" category="cell">Brocade網路顧問 REST API</block>
   <block id="c59814c5745505a7a040fa82a314dad7" category="cell">80/443</block>
   <block id="9187ca9a7b77e8c1f820196faa5e17aa" category="section-title">Brocade FOS REST</block>
-  <block id="b0bd9ec55b40493b14c0bd6ecbff1533" category="cell">183.0 184.0 190.0 Brocade 6505 Brocade 6510 Brocade 6520 Brocade Brocade擴充交換BrocadeBrocade 7840 Brocade Brocade Brocade Brocade Brocade G610 Brocade Brocade X6-8 Brocade X7-4 Brocade X7-8</block>
-  <block id="62e42484aab6829c40d4a601fe0112ca" category="cell">v8.2.2a v8.2.2d v8.2.2d4 v8.2.3 v8.2.3a v8.2.3b v8.2.3c v8.2.3c1 v8.2.3d v8.2.3e v8.2.3e1 v9.0.0b9.0 v8.2.3e v8.2.3e1 v9.0.0b9.0. v9.0.1d v9.0.1e v9.0.1e1 v9.1.0b v9.1.1a v9.1.1b v9.1.1c v9.1.1c3 v9.1.1d v9.1.1d1 v9.1.1d1_lw v9.1.1d v9.1.1d1 v9.1.1d1_lw v9.1.1d v9.1.1d1 v9.1.1d1_lw v9.1.1d v v9.2.0a v9.2.0b v9.2.0b1 v9.2.0b_cvr_857687_01 v9.2.0c v9.2.0c3 v9.2.1 v9.2.1a v9.2.1b v9.2.2</block>
   <block id="8c88bd5f8f9a952cd4f079a84aa8cf0b" category="cell">Brocade FOS REST API</block>
   <block id="bf2e398e4b4a71557453fba2eb1e54fe" category="section-title">Cisco MDS 和 Nexus 結構交換機</block>
-  <block id="0c53c13f49489638439ba5dac60da36e" category="cell">DS-C9124-2-K9 DS-C9124-K9 DS-C9132T-K9 DS-C9148-16P-K9 DS-C9148-32P-K9 DS-C9148-48P-K9 DS-C9148S-K9 DS-C9148-48P-K9 DS-C9148S.K DS-C9220I-K9 DS-C9222I-K9 DS-C9250I-K9 DS-C9396S-K9 DS-C9396T-K9 DS-C9396V-K9 DS-C9506 DS-C9509 DS-C9509-DSC DS-C9718 DS-HP-8GFC-K9 DS-HP-FC-K9 N5K-C5548UP N5K-C5596UP N5K-C5696Q UCS-FI-6248UP UCS-FI-6296UP UCS-FI-6332 UCS-FI-6332641629632 UCS-FI-6332 UCS-FI-6332141 UCS-FI-6454</block>
-  <block id="520d20af3a455a4e51cc788869066cb8" category="cell">3.3(1c) 4.1(3a) 4.2(1a) 5.0(1a) 5.0(3)N2(3.11e) 5.0(3)N2(4.01d) 5.0(3)N2(4.13i) 5.0(3)N2(4.j. 5.0(3)N2(4.21k) 5.0(3)N2(4.22c) 5.0(3)N2(4.23f) 5.0(3)N2(4.23g) 5.0(3)N2(4.34a) 5.0(8) 5.2(2)5.25(a)5. 5.2(8c) 5.2(8d) 5.2(8f) 5.2(8g) 5.2(8h) 5.2(8i) 6.2(11) 6.2(11b) 6.2(11c) 6.2(13) 6.2(11b) 6.2(11c) 6.2(13) 6.2(13a) 6.2(11c) 6.2(13) 6.2(13). 6.2(21) 6.2(23) 6.2(25) 6.2(27) 6.2(29) 6.2(31) 6.2(33) 6.2(5a) 6.2(7) 6.2(9) 6.2(9a) 6.2(9a) 6.2(9) 7.0(3)N2(4.13b) 7.0(3)N2(4.13g) 7.3(0)D1(1) 7.3(1)DY(1) 7.3(13)N1(1) 7.3(8)N1(1) 8.1(1) 8.1(1) 8.1(8) 2. 8.3(2) 8.4(1) 8.4(1a) 8.4(2) 8.4(2a) 8.4(2b) 8.4(2c) 8.4(2d) 8.4(2e) 8.4(2f) 8.5(1) 9.2(1a)(2e) 8.4(2f) 8.5(1) 9.2(1a)(3) . 9.3(2a) 9.3(5)I42(1b) 9.3(5)I42(1g) 9.3(5)I42(1j) 9.3(5)I42(1k) 9.3(5)I42(3f) 9.3(5)I43(4b). 9.4(2a) 9.4(3)</block>
   <block id="0d1da8be32a393e6c2b527cbe79d7cf8" category="cell">DomainId 類型</block>
   <block id="502996d9790340c5fd7b86a5b93b1c9f" category="cell">優先事項</block>
   <block id="a49b6b6027788b76ff58b7cd4e63deca" category="cell">SANRoute 已啟用</block>
@@ -5101,9 +5092,6 @@
   <block id="2eb6f9c791d4456e610437be53a864bc" category="cell">儲存的 CPU 數量</block>
   <block id="5d626be8921bba852f30e8f7b76b6c4f" category="cell">Celerra 命令列介面</block>
   <block id="6bffb0a09ef4822cf14de5c78f72857b" category="section-title">EMC CLARiiON（NaviCLI）</block>
-  <block id="ba1ce7f7c942af2296bc6475c4cd669f" category="cell">6.26 6.28 7.32 7.33</block>
-  <block id="c0a59cec42b6b73f082568d84a5b62ce" category="cell">CX3-40f CX4-480 VNX5100 VNX5200 VNX5300 VNX5400 VNX5500 VNX5600 VNX5700 VNX5800 VNX7600</block>
-  <block id="05f4d84e2e82ebb184b9b043520fc436" category="cell">04.28.000.5.710 05.32.000.5.206 05.32.000.5.218 05.32.000.5.219 05.32.000.5.221 05.32250.5. 05.33.000.5.074 05.33.008.5.119 05.33.009.5.155 05.33.009.5.184 05.33.009.5.186 05.33.009. 05.33.021.5.256 05.33.021.5.266 05.33.021.5.322 3.26.40.5.029</block>
   <block id="91af5705f16502125e8b2187e64202c0" category="cell">命令列介面</block>
   <block id="03937134cedab9078be39a77ee3a48a0" category="cell">團體</block>
   <block id="54821ac5da4d26f36fcf925593467491" category="cell">客戶端 API 名稱</block>
@@ -5127,8 +5115,6 @@
   <block id="e33d9a21974ff6bdd21be69d55902b46" category="cell">Navi 命令列介面</block>
   <block id="a12becc8af138ab4fa60fa13e0d34585" category="cell">6389,2162,2163,443(HTTPS)/80(HTTP)</block>
   <block id="61d005913edc6d572aca506d0732d8e2" category="section-title">EMC 資料域 (SSH)</block>
-  <block id="6e97680381b6e91b87d325b8c675a870" category="cell">DD VE DD2500 DD3300 DD4200 DD6300 DD6400 DD6800 DD6900 DD7200 DD9300 DD9400 DD9410 DD9500 DD9800 DD990 99100</block>
-  <block id="e4e628632b9ed88d15f10ef8bc5e806c" category="cell">6.0.2.30-606339 6.1.2.051-633576 6.1.2.20-606786 6.2.1.30-663869 6.2.1.40-671977 6.2.1.60-68625-16. 7.10.1.0-1042928 7.10.1.1-1049892 7.10.1.10-1068159 7.10.1.15-1078832 7.10.1.20-1090468 7.10. 7.10.1.40-1126469 7.10.1.50-1146826 7.11.0.0-1035502 7.13.0.20-1082704 7.2.0.20-6580297.2. 7.2.0.70-686759 7.2.0.90-692270 7.7.4.0-1017976 7.7.5.1-1040473 7.7.5.11-1046187 7.7.5.25-107.50107. 8.0.0.10-1097914 8.1.0.10-1127744</block>
   <block id="44877c6aa8e93fa5a91c9361211464fb" category="cell">速度</block>
   <block id="fc104690076528afbc53ac5662460473" category="cell">磁碟速度（RPM）</block>
   <block id="2974ee84ee6098a6cbbb0a39f3ed689a" category="cell">資料域 CLI</block>
@@ -5147,8 +5133,6 @@
   <block id="2e24a64f661bb25d79cdb67855a0d38d" category="cell">儲存節點數據</block>
   <block id="47b75ba86bc9631012976f9c3bbab804" category="cell">EMC ECS REST API</block>
   <block id="52a1f74f20562906f006eb2ca90b4227" category="section-title">Dell EMC Isilon 與 PowerScale Rest</block>
-  <block id="fdfa563cf7dba4df0816de8880847d9f" category="cell">A100 A200 A2000 A300 A3000 F200 F600 F800 F900 H400 H500 H5600 H600 H700 NL410 S210 X210 X410</block>
-  <block id="d757fa379cef63edd0e00f69ff032974" category="cell">9.1.0.10 9.1.0.6 9.1.0.9 9.2.1.10 9.2.1.11 9.2.1.12 9.2.1.13 9.2.1.19 9.2.1.4 9.2.1.9 9.2.1.19 9.2.1.4 9.2.1.9 9.4.0.0. 9.4.0.15 9.4.0.16 9.4.0.17 9.4.0.18 9.5.0.3 9.5.0.5 9.5.0.6 9.5.0.7 9.5.0.8 9.5.1.0.6 9.5.0.7 9.5.0.8 9.5.1.0 9.5.1.19.19. 9.7.1.3 9.7.1.4 9.7.1.5 v8.0.0.4 v8.0.0.6 v8.0.0.7 v8.1.0.4 v8.1.2.0 v9.0.0.0</block>
   <block id="4ba8649862a0113bf0990d4564064285" category="cell">供應商磁碟組類型</block>
   <block id="cd4221ee8d901dbd43eb91164d6bcf33" category="cell">供應商指定的磁碟組類型</block>
   <block id="fae8f9203bd2bb47a79ab914ec61fbf6" category="cell">硬文件限制</block>
@@ -5170,12 +5154,8 @@
   <block id="911d26b7250324e4f58bb2fec8a90659" category="cell">檔案系統吞吐量寫入</block>
   <block id="1637df9cd961b86fbeb0fabf80ba05a6" category="cell">EMC Isilon 與 PowerScale REST API</block>
   <block id="e1c3c69291771830d53f0b78396c9230" category="section-title">Dell EMC Isilon/PowerScale（命令列介面）</block>
-  <block id="251ae20eab71f33cfbf49fe6181dc759" category="cell">A200 H400 H500 NL400 NL410 S210 回溯（最近一次呼叫）：X200 X400 X410</block>
-  <block id="9f270014d5084f590ec4690f6f5a08dc" category="cell">9.1.0.18 9.1.0.19 9.2.1.12 9.2.1.13 9.2.1.15 9.4.0.17 9.5.0.3 9.5.0.6 9.5.0.8 9.7.1.2 9.8.0. v7.2.1.6 v8.0.0.4 v8.0.0.6 v8.0.0.7 v8.0.1.1 v8.1.2.0</block>
   <block id="58ebcd17c13c92b031d8870f4360619f" category="cell">Isilon SSH</block>
   <block id="45a62a8ae256e48199c3cb271a260e21" category="section-title">EMC PowerStore REST</block>
-  <block id="66aa2fcb097faf5bc8feeeb94d697a67" category="cell">PowerStore 1000T PowerStore 1200T PowerStore 3000T PowerStore 3200T PowerStore 5000T PowerStore 5200T PowerStore 9000T PowerStore 9200T</block>
-  <block id="1e92c315f181b75ce95608f0a8b64e2a" category="cell">2.1.0.1 2.1.1.0 3.2.0.1 3.2.1.0 3.2.1.1 3.5.0.1 3.5.0.2 3.6.0.0 3.6.1.0 3.6.1.1 3.6.1.2 3.6.1.3.3. 4.0.0.2 4.0.1.0</block>
   <block id="86a8fb3f5dbc54a1ddb9e4e66ada2915" category="cell">合作夥伴節點 UUID</block>
   <block id="b4f161c8fe26c799d33016c385f6fb33" category="cell">HA 對的 UUID</block>
   <block id="4f7de25ed8f099cc30aa75bbb3b896de" category="cell">父序號</block>
@@ -5194,9 +5174,6 @@
   <block id="1cb3a4910aebba077a5922621afe7466" category="cell">主機 IP</block>
   <block id="ef2bf1c7f778e627ac9f8b235393cefc" category="cell">EMC ScaleIO 與 PowerFlex REST API</block>
   <block id="305f24249d52ff8168d1b27f40c147f2" category="section-title">EMC Symmetrix CLI</block>
-  <block id="2c78f616287b9995f25da6e17e294fce" category="cell">V10.0.0.0 V10.0.1.1 V10.1.0.0 V10.1.0.1 V10.1.0.3 V10.1.0.5 V10.2.0.0 V8.3.0.6 V8.4.0.7 V8.4.0.959.1. V9.2.2.0 V9.2.3.0 V9.2.3.1 V9.2.3.4 V9.2.3.6 V9.2.4.1 V9.2.4.2 V9.2.4.3 V9.2.4.6 V9.2.4.7 V9.2.4.8</block>
-  <block id="62caaf784d1b997bda3e7c9e6791dc32" category="cell">PMax8000 PowerMax_2000 PowerMax_8000 VMAX-1 VMAX100K VMAX10K VMAX200K VMAX250F VMAX400K VMAX40K VMAX450F VMAX850F VMAX950F</block>
-  <block id="cce45f959b36630f91ce8810a2cc05ce" category="cell">5876.286.194(16F40000) 版本 115 5876.309.196(16F40000) 版本 153 5876.309.196(16F40000) 版本 162 5876.306F40606F 版本5977.1151.1151(17590000) 版本 45 5977.1151.1151(17590000) 版本 60 5977.1151.1151(17590000) 版本 9 5978. 5978.711.711(175A0000) 版本 335 5978.711.711(175A0000) 版本 365 5978.711.711(175A0000) 版本 416 5978.71.750175263001 版本5978.711.711(175A0000) 版本 438 5978.711.711(175A0000) 版本 448 5978.711.711(175A0000) 版本 484 5978.7175017525750201750201 月5978.711.711(175A0000) 版本 581 5978.714.714(175A0000) 版本 1 5978.714.714(175A0000) 版本 101 5978.714. 5978.714.714(175A0000) 版本 117 5978.714.714(175A0000) 版本 137 5978.714.714(175A0000) 版本 145 5978.714.741 版本5978.714.714(175A0000) 版本49 5978.714.714(175A0000) 版本 53 5978.714.714(175A0000) 版本 79</block>
   <block id="ce160a2c5bc8a350f1079c835c90b0b6" category="cell">ISCSI節點圖</block>
   <block id="11617eafbdb7381c8096b2c1bb8435bf" category="cell">網路管道</block>
   <block id="5d740945f9ed116dbef1c8fe27c6cac8" category="cell">自動恢復</block>
@@ -5222,9 +5199,6 @@
   <block id="65f2a94c8c2d56d5b43a1a3d9d811102" category="cell">2707</block>
   <block id="2291f088bb6260a7b8f29b4966d2ee58" category="cell">Symmetrix SMI-S</block>
   <block id="48ffcee6e99f3e10a7e5934acb136202" category="section-title">Dell Unisphere REST</block>
-  <block id="3896a9ea5e8a48270d88421a4c8209f9" category="cell">V10.0.0.5 V10.0.1.5 V10.1.0.1 V10.1.0.5 V10.1.0.6 V10.1.0.8 V10.2.0.1 V10.2.0.2 V9.2.3.15 V9.2.3.2010.2.3.2 V9.2.3.15 V9.2.3.2019. V9.2.4.10 V9.2.4.11 V9.2.4.12 V9.2.4.3 V9.2.4.6 V9.2.4.7 V9.2.4.9</block>
-  <block id="05e526f18c753002274aba5ebe5067b6" category="cell">PowerMax_2000 PowerMax_2500 PowerMax_8000 PowerMax_8500 VMAX200K VMAX250F VMAX400K VMAX450F VMAX950F</block>
-  <block id="5fb79d910a23aae4d2add551c1a6fcd8" category="cell">5977.1131.1131 構建 615 5977.1151.1151 構建 60 構建 60 5978.711.711 構建 205 5978.711.711 構建 335 構建 335 598.711.711 構建 335 構建 335 59711. 5978.711.711 建構 416 5978.711.711 建構 436 建構 436 5978.711.711 建構 438 5978.711.711 建構 448 5978.7111717. 484 5978.711.711 建置 484 建置 484 5978.711.711 版本 542 5978.711.711 版本 542 版本 542 5978.711.711.711 版本 542 版本 542 5978.711.711 版本 581 5978.715978.版本 8 版本 8 5978.714.711 版本 49 5978.714.714 版本 1 版本 1 5978.714.714 版本 101 版本 101 5978.714.714 版本 108 5978.71 5978.714.714 版本 108 5978.714.75. 117 版本 117 5978.714.714 版本 131 版本 131 5978.714.714 版本 137 5978.714.714 版本 137 版本 137 5978.714.714.714 版本 137 版本 137 5978.714.714.714 版本 137 版本 137 5978.714.714 版本 1455 版本 57. 5978.714.714 版本 34 5978.714.714 版本 49 5978.714.714 版本 49 版本 49 5978.714.714 版本 79 5978.714.714 版本 791 版本 714 版本 191.714 版本 791. 6079.175.0 版本 259 版本 259 6079.225.0 版本 127 版本 127 6079.225.0 版本 216 版本 216 6079.225.0 版本 218 版本 216 版本 216 6079.225.0 版本 218 版本 218 6079.25.25 版本 25. 331 版本 331 6079.225.0 版本 86 版本 86 6079.275.0 版本 221 版本 221</block>
   <block id="120097aae43f642350aa4ea6b7db5bbc" category="cell">替換磁碟讀取總量</block>
   <block id="41d5b2ba273c2ea7c2cebca8fcd494f7" category="cell">壓縮節省空間</block>
   <block id="248a2ada600649dd9a0defecae5a2871" category="cell">Dell Unisphere API</block>
@@ -5233,26 +5207,18 @@
   <block id="a1a04267bb4b66c81cf9a52365537563" category="cell">05.32.000.5.216 05.32.000.5.221 05.32.000.5.249 7.1.76-4 7.1.80-3</block>
   <block id="f043a08758706c0551863a8b0cfc84cd" category="cell">VNX SSH 和 CLI</block>
   <block id="d805560a2796d5cb8d0b7d6d581b5c63" category="section-title">EMC VNXe 與 Unity Unisphere（CLI）</block>
-  <block id="b3ae5a9b7b965216bc213b1d85691618" category="cell">Unity 300 Unity 300F Unity 350F Unity 380 Unity 380F Unity 400 Unity 400F Unity 450F Unity 480 Unity 480F Unity 500 Unity 550F Unity 480 Unity 480F Unity 500 Unity 550F Unity 600F Unity 650F Unity Unity Uni VNXe3200</block>
-  <block id="784d5dc4fdb40de52793d2359c1891d4" category="cell">3.1.17.10229825 4.1.2.9257522 5.0.6.0.5.008 5.0.8.0.5.007 5.1.2.0.5.007 5.2.1.0.5.013 5.2.0.5.007 5.2.1.0.5.013 5.2.0.50.0. 5.3.1.0.5.008 5.3.1.0.6.028 5.4.0.0.5.094 5.4.1.0.5.006</block>
   <block id="b758b39f4fe981ffd4124309d84e2703" category="cell">容量軟限制</block>
   <block id="68d13764f7761df0def3e72de99042be" category="cell">VNXe 和 Unisphere CLI</block>
   <block id="0d0679d541823c0d0d5fa3f8521a681e" category="section-title">EMC VPLEX</block>
   <block id="9a82bc7d59b7ff440c08c1e56c857ad4" category="cell">VPLEX</block>
-  <block id="fcc2873cc95b86a3af5562ff18d19fa7" category="cell">6.2.0.04.00.07 6.2.0.07.00.02 6.2.1.0.0.519</block>
   <block id="6b46051fc6711bf70599ead288d0a90a" category="cell">EMC VPLEX 命令列介面</block>
   <block id="dfaab1339734d2399b253d2c86d08a0a" category="cell">EMC VPLEX API</block>
   <block id="cecc3b667dcb6cfacfe39e7910093e18" category="section-title">EMC XtremIO（HTTP）</block>
-  <block id="81f0ef41fcb5779c39155416e75ba62b" category="cell">6.2.1 6.3.2 6.3.3 6.4.0 6.4.1 6.4.2</block>
-  <block id="5b1a6e317032b3a35e9e9db32de7f912" category="cell">1 個磚塊和 125TB 1 個磚塊和 24TB 1 個磚塊和 31TB 1 個磚塊和 8TB 1X10TB 1X20TB 1X40TB 2 個磚塊和 83TB 3 個磚塊和 146TB 3 個磚塊和 251TB 3 個磚塊和 283TB 4 個磚塊和 628TB 4個磚塊和 754TB 4X20TB 6X40TB</block>
-  <block id="088d5fa2842780807160373c1c16385a" category="cell">4.0.27-1 4.0.31-11 6.3.3-8_X2 6.4.0-36_hotfix_2_X2</block>
   <block id="a3b822e9b7fc9153f5593ec750cb7443" category="cell">潛在轉移率</block>
   <block id="91ce008b7da13548c83365a5eb07e063" category="cell">尋道時間</block>
   <block id="a83c1eefc7fca7514ddc960021a3dc7f" category="cell">以逗號分隔的磁碟速度清單（rpm）</block>
   <block id="6cacc8dd39dbd60947aaa200f1f574d4" category="cell">EMC XtremIO REST API</block>
   <block id="3f0ca6a8202a9018ed738eb7d458ac5a" category="section-title">NetApp E系列</block>
-  <block id="2995f3cde2b725d866e511ecf43484f4" category="cell">2660 2680 2702 2704 2800B 2804 2806 3000 4000 5486 5488 5504 5564 5600 5700 5700B 6000 7999</block>
-  <block id="78db958e7063b21a4ec6e975fb868216" category="cell">08.40.60.01 08.80.00.00 7.84.46.0 8.20.16.0 8.20.27.0 8.20.30.0 8.20.8.0 8.25.14.0 8.25.0.0. 8.40.30.4 8.40.40.0 8.40.50.0 8.40.60.1 8.40.60.2 8.40.60.3 8.42.30.5 8.50.0.4 8.51.3 8.42.30.5 8.50.0.4 8.51.0.0 1.5.5.0. 8.53.0.4 8.62.0.0 8.62.0.2 8.63.0.2 8.70.0.2 8.70.0.3 8.71.2.0 8.71.3.0 8.72.0.0 8.71.2.0 8.71.3.0 8.72.0.0 8.73.0.0 8.71.0.08. 8.74.3.0 8.75.0.0 8.75.0.1 8.75.1.0 8.80.0.0 8.80.1.0 8.81.0.3 8.81.1.0 8.81.2.0 8.81.3 8.81.1.0 8.81.2.0 8.81.3.0 8.</block>
   <block id="ab7c13788cae2eff01d1255b815725d7" category="cell">RMI</block>
   <block id="40391a3671202eba588cf010846ee33e" category="cell">快取大小</block>
   <block id="113c69aaaeb7806c3953bbc1398afc81" category="cell">裝置快取大小（MB）</block>
@@ -5270,7 +5236,6 @@
   <block id="2898df5d15763ce1242bdb86080785b9" category="cell">安排等待時間</block>
   <block id="2aa98e56a4891f5ce93860830b676b4f" category="cell">等待調度時間百分比</block>
   <block id="ea7563d4b814fae4d35a0657be6ed685" category="cell">Google 運算平台 REST API</block>
-  <block id="6755455d4b017941c77ac47ecc006c5f" category="section-title">Google Cloud Netapp 卷</block>
   <block id="d5b3f55cf578ad75b136acb2a4d422df" category="cell">安全類型</block>
   <block id="59c3fdf35bd621ae2f98d332917d6736" category="cell">防護類型</block>
   <block id="dc7afaf38fa4dea9f74e9986fa6639de" category="cell">分層最低冷氣天數</block>
@@ -5282,17 +5247,12 @@
   <block id="8ba5a01a291075248a9fb648699c4b8b" category="cell">HDS HCP REST API</block>
   <block id="38f629170ac3ab74b9d6d2cc411c2f3c" category="cell">9090</block>
   <block id="a2099e963cf5983d81dc9e12f00afe22" category="section-title">HiCommand 設備管理器</block>
-  <block id="2b4b288cb9726df4dc219bfcd8b9cd6e" category="cell">7.6.1 8.0 8.7.1 8.7.3 8.7.6 8.8.3</block>
-  <block id="c38b186c37788cc3b996afe54bf91eef" category="cell">DF850MH DF850S HM800 HM850 P9500 RAID800 VSP5000 XP24000 XP8</block>
-  <block id="9903b07d64b5ee9501ff2d07deb88ea1" category="cell">0983/AH 0984/BH 0985/BS 0986/AH 0988/HS DKC:60-08-22 DKC:60-08-65 DKC:70-06-43 DKC:80-06-80-65 DKC:70-06-43 DKC:80-06-80-00/00K1K DKC:80-06-96-00/00 DKC:83-05-46-60/00 DKC:83-05-50-60/00 DKC:83-05-53-60/00 DKC:88-08-08-60800K DKC：88-08-12-60/00 DKC:88-08-13-60/00 DKC:88-08-13-60/01 DKC:90-08-81-00/00 DKC:90-09-21-00/00KK DKC:90-09-24-00/00 DKC:90-09-24-00/01 DKC:90-09-25 SVP:60-08-21/00 SVP:60-08-54/00 SVP:70-06-30/0 SVP:60-08-54/00 SVP:70-06-30/00 SVP02020:000 SVP0:70-06-3060 SVP0:700 SVP0:70-06-3060 SVP0:700 SVP0:700 SVP8 SVP:80-06-91/00資深副總裁：83-05-50-60/00資深副總裁:83-05-54-60/00 資深副總裁:83-05-57-60/00 資深副總裁:88-08-10-60/00 資深副總裁:88-08-10-60/00 資深副總裁資深副總裁:88-08-14-60/00 資深副總裁:88-08-15-60/00 資深副總裁:90-08-81/0008-15-60/00 資深副總裁:90-08-81/0023/00-09-21/00 資深副總裁：90-09-23/00 資深副總裁：90-90-900 資深副總裁</block>
   <block id="054d32c5203253d8f851a6d5a2c67159" category="cell">HDS XML API</block>
   <block id="2f412c240cac35e48beb96e1bb550342" category="cell">導出/CLI</block>
   <block id="b173eaa0fda50923922975250a698acd" category="cell">出口實用程式 (USPV) / SNM CLI (AMS)</block>
   <block id="fa88c9439486746e95052c570d09f290" category="cell">HiCommand 裝置管理員 XML API</block>
   <block id="d0fb963ff976f9c37fc81fe03c21ea7b" category="cell">2001</block>
   <block id="e906da4bbfc8c7a9d24cbac652ab8fdd" category="section-title">日立營運中心</block>
-  <block id="8829fa767af7710678363d8745f0d521" category="cell">VSP 5100 VSP 5500 VSP 5600 VSP 5600H VSP E1090 VSP E590 VSP E790 VSP E790H VSP F1500 VSP F400 VSP F900 VSP G1000 VSP F1500 VSP F400 VSP F900 VSP G1000 VSP G1500 VSP</block>
-  <block id="00736879f0a8fc69a9e17b389b2320c0" category="cell">80-06-91-00/00:01-71-03/02 80-06-94-00/00:01-70-03/04 80-06-96-00/00:01-71-03/02 80-06-96-00/00:01-71-03/02 80-06-96-00/001-0 83-05-49-40/01:01-69-03/02 83-05-49-60/01:01-65-03/05 83-05-49-60/01:01-69-03/02 83-05-49-60/01:01-69-03/02 83-05-51-40/01-40 83-05-51-40/00:01-71-03/02 83-05-51-40/00:01-76-03/03 88-08-08-60/00:01-65-03/05 88-08-08-60/008-65-03/05 88-08-08-60/0 88-08-11-60/00:01-65-03/05 88-08-11-60/00:01-70-03/04 88-08-13-60/00:01-65-03/05 88-08-13-60/00:01-65-03/05 88-08-13-60/013-6 88-08-13-60/01:01-70-03/04 88-08-13-60/01:01-71-03/02 88-08-13-60/01:01-76-03/03 90-08-82-00/001-065 90-08-82:01.70.04 90-09-01-00/01:01-65-03/05 90-09-22-00/00:01-65-03/05 90-09-22-00/00:01-65-03/05 90-09-22-00/00:01-74 90-09-22-00/00:01-71-03/02 90-09-24-00/01:01-65-03/05 90-09-24-00/01:01-71-03/02 90-09-24-00/01:01-71-03/02 90-09-24-00/013 90-09-24:01.65.05 90-09-25-00/00:01-76-03/03 90-09-25:01.70.04 90-09-26-00/00:01-65-03/05 90-09-26-00/00:01-65-03/05 90-013 90-09-26-00/00:01-76-03/03 93-07-01-80/00:01-70-03/04 93-07-22-40/00:01-65-03/05 93-07-22-40/00:01-65-03/05 93-07-2-40/002-65 93-07-22-80/00:01-70-03/04 93-07-22-80/00:01-71-03/02 93-07-23-80/00:01-71-03/02 93-07-23-80/00:01-71-03/02 93-07-23-80/011-80 93-07-24-40/00:01-76-03/03 93-07-24-80/00:01-70-03/04 空:空</block>
   <block id="d5f04824c2ba6327572c872cf8533e07" category="cell">日立營運中心 REST API</block>
   <block id="b47d5567b66b2c2d7d44a9625a934052" category="section-title">HDS HNAS（命令列）</block>
   <block id="1888967ab4defb152c0d9e8ea1087907" category="cell">文件 34 G600 G800 HNAS 4060 HNAS 4080 HNAS 4100 N800</block>
@@ -5315,7 +5275,6 @@
   <block id="86c360de1ccb0f40138c8d34b463e1f5" category="cell">IBM Cleversafe REST API</block>
   <block id="3c488986c63ec1eef9b3352d99db04b9" category="section-title">IBM DS 8K（DSCLI）</block>
   <block id="c87309179da826a7812bff35008be5d7" category="cell">2107-951 2107-961 2107-993 2107-994 2107-996 2107-A05</block>
-  <block id="eaaa8261960470fa56e091d6438096bf" category="cell">- 7.10.1.8 7.6.31.4250 7.7.51.1400 7.9.32.101 7.9.33.132 7.9.33.95 7.9.40.251 7.9.41.65</block>
   <block id="4bbd202d856380ac051d143247ae5632" category="cell">國家安全部</block>
   <block id="90dea4c56274bea868949696515087e2" category="cell">IBM DS 命令列介面</block>
   <block id="0a84dda610dbad21765736406b7a838c" category="section-title">IBM PowerVM（SSH）</block>
@@ -5332,8 +5291,6 @@
   <block id="1cf34a855e141c48fbc42273e5748ab9" category="cell">平台類型</block>
   <block id="7b5236651c205cb5069ecb1a5bd445bb" category="cell">IBM 硬體管理控制台 SSH 訪問</block>
   <block id="f10ebf10385784ef6c531e432c6747e5" category="section-title">IBM SVC（命令列介面）</block>
-  <block id="a7a6599d6afb722185a6452bd00a9897" category="cell">2072-12F 2072-12G 2072-224 2072-24C 2072-24E 2072-24F 2072-24G 2072-2N4 2072-324 2072-24G 2072-2N4 2072-324 2072-3H4 2072-32F 20722F 2072-3H4 20720 2072-92G 2076-124 2076-12F 2076-224 2076-24F 2076-24G 2076-524 2076-624 2076-724 2076-524 2076-624 2076-724 2076-824 2076- AFF 2076-20F 2076 2077-24G 2077-424 2077-4H4 2078-12F 2078-12G 2078-224 2078-24C 2078-24F 2078-24G 2078-24C 2078-24F 2078-24G 2078-324 2078-24G 20720H 207 2078-AF3 4657-24G 4657-924 4662-12G 4662-24G 4662-6H2 4666-AH8 4666-UH8 4680-24H 4680-2P4666-UH8 4680-24H 4680-2P4666-UH8 4680-24H 4680-2P468468038 9843-AE2 9843-AE3 9846-AG8 9848-AF7 9848-AF8 9848-AG8 9848-UG8 伺服驅動器</block>
-  <block id="88ebb9efffaf4c4c5cd0a62088cdf031" category="cell">1.5.2.7 1.6.1.2 1.6.1.4 1.6.1.5 7.7.1.8 7.8.1.11 7.8.1.12 7.8.1.13 7.8.1.14 7.8.1.12 7.8.1.13 7.8.1.14 7.8.1.16 7.8.1.168.1. 8.2.1.10 8.2.1.8 8.2.1.9 8.3.1.10 8.3.1.2 8.3.1.5 8.3.1.6 8.3.1.7 8.3.1.8 8.3.1.9 8.4.0.1.7 8.3.1.8 8.3.1.9 8.4.0.1.7 8.4.011 11. 8.4.0.2 8.4.0.5 8.4.0.6 8.4.0.9 8.4.2.0 8.5.0.10 8.5.0.11 8.5.0.12 8.5.0.13 8.5.0.11 8.5.0.12 8.5.0.13 8.5.0.14 8.5.0. 8.5.0.9 8.6.0.0 8.6.0.2 8.6.0.3 8.6.0.4 8.6.0.5 8.7.0.0 8.7.0.1 8.7.0.2 8.7.0.3</block>
   <block id="0f151f12e5bfc4508260d20ebc5fef43" category="cell">使用 FlashPools</block>
   <block id="03a52eb6b4bc772c112d1ab81b7dc2f0" category="cell">指示此儲存池是否使用 Flash Pools（NetApp特定）</block>
   <block id="98921133d10fbdb0fb6dbb7b2648befe" category="cell">頭</block>
@@ -5442,7 +5399,6 @@
   <block id="096fbdc80c146b3b29d148259155197a" category="cell">部分保留（包含在資料分配容量中）</block>
   <block id="502de0ca02b6a1c74a8a9c374793c768" category="cell">NetApp ONTAP API</block>
   <block id="9faca164fbcd544d1981957d0b4e8fef" category="section-title">NetApp叢集Data ONTAP 8.1.1+</block>
-  <block id="25a770769b90c7d4a93cdc2b4a58aae2" category="cell">AFF-A150 AFF-A1K AFF-A20 AFF-A200 AFF-A220 AFF-A250 AFF-A300 AFF-A320 AFF-A400 AFF-A70 AFF -A700 AFF-A700s AFF-A800 AFFA70 AFF-A700 AFF-A700s AFF-A800 AFF AFF-C400 AFF-C60 AFF-C80 AFF-C800 AFF AFF8040 AFF8060 ASA ASA ASA ASA ASA ASA ？ DM7100F FAS2240-2 FAS2520 FAS2552 FAS2620 FAS2650 FAS2720 FAS2750 FAS2820 FAS2820 FAS500f FAS3250 FAS3270 FAS500fAS62100 FAS8200 FAS8200 FAS8300 FAS8700 FAS9000 FAS9500 FASDvM300 SIMBOX</block>
   <block id="e8480a6701cc4ae6b1c7d5a8984a48fc" category="list-text">8.2.3P4</block>
   <block id="ac52b448fcf26ad499c2c41a2601dc65" category="list-text">8.2.3P5</block>
   <block id="b4542454d9f0fe3ae175c9f5476bb7dd" category="list-text">8.3.1P2</block>
@@ -5646,8 +5602,6 @@
   <block id="9f4478aaba51d401f2aa6f72291db2c4" category="list-text">9.8.0P7</block>
   <block id="0040df68d204b4266db9420b2bd9165c" category="list-text">9.8.0P8</block>
   <block id="5ccc1d7c927ab6348c87a26b1d4df138" category="list-text">9.8.0P9</block>
-  <block id="cf5f238fca8b6e155078aa41c175743a" category="list-text">9.0</block>
-  <block id="796d3a90e43ce105cbf37298c5065f7e" category="list-text">9.1</block>
   <block id="3a4b029b3c2e71cb6764a2c18e652488" category="list-text">9.9.1P10</block>
   <block id="46e5a6ca96917b5474029bbaac860801" category="list-text">9.9.1P11</block>
   <block id="203468c884044389db8d0082e97d7fdb" category="list-text">9.9.1P12</block>
@@ -5680,7 +5634,6 @@
   <block id="6d7dd3ca2962ef69238056e606102287" category="cell">NetApp版本 9.16.1：2025 年 1 月 18 日星期六 19:31:15 UTC NetApp版本 9.16.1RC1：2024 年 11 月 4 日星期一 10:39:46 UTC</block>
   <block id="679634d7c4ed7b140ef10a84bc89db37" category="cell">NetApp ASA API</block>
   <block id="7c11c8b7cb2bb03933f57c7d02b47490" category="section-title">NetApp ONTAP REST</block>
-  <block id="b186a55ab6e895af5dbbc598dba3d2c9" category="cell">AFF-A150 AFF-A220 AFF-A250 AFF-A300 AFF-A400 AFF-A70 AFF-A700 AFF -A700s AFF-A800 AFF-A90 AFF-A900 AFF-C190 AFF -C250 AFF-A90 AFF-A900 AFF-C190 AFF-C250 ASA-A400 ASA-A800 ASA-C250 ASA-C800 ASA FAS2720 FAS2750 FAS2820 FAS8200 FAS8300 FAS8700 FAS9000 FAS9500 FASDvM300BOXSD</block>
   <block id="851951ec8aafc5b6103bcc711e5b146d" category="list-text">NetApp版本 9.14.1P10：2024 年 11 月 28 日星期四 12:32:16 UTC</block>
   <block id="b6e4769ffc3c304cb0e244469eb5a2a3" category="list-text">NetApp版本 9.14.1P11：2025 年 1 月 22 日星期三 11:55:28 UTC</block>
   <block id="c4b1caf1883df9f205cef4582c354690" category="list-text">NetApp版本 9.14.1P1：2024 年 2 月 15 日星期四 00:45:21 UTC</block>
@@ -5722,17 +5675,13 @@
   <block id="df6f3a88081da957cb9d0f6ea6b6a978" category="list-text">NetApp發佈 Tropicallightning__9.18.0：2025 年 1 月 29 日星期三 08:34:06 UTC</block>
   <block id="e07be06c315f09b3ca98301b790f4053" category="cell">NetApp ONTAP REST API</block>
   <block id="e90757a1a3f3e8a4b40daae00fcc1b61" category="section-title">NetApp SolidFire 8.1+</block>
-  <block id="12017dd49435719b25983ccf8856826d" category="cell">H410S-2 H610S-2 H610S-4 SF19210 SF2405 SF4805 SF9605 SF9608 H410S-0 H410S-1 H410S-2 H500S H610S-1 H610S-2 H610S-2 H500S H610S-1 H610S-2 H6100S-2 H6100009 SF9608</block>
-  <block id="b8fe9bf283a2aa8fb31a26d93fefe962" category="cell">11.1.0.72 11.7.0.76 12.0.0.333 12.2.0.777 12.3.0.958 12.3.1.103 12.3.1.165 12.3.2.3.1.103 12.3.1.165 12.3.2.3 12.5.0.</block>
   <block id="af0a5cd61b6efca604f162ab970d4ecf" category="cell">帳戶標識符</block>
   <block id="5d55785a871474b5490ecc8da433a32d" category="cell">帳戶名稱</block>
   <block id="642a34dc59e1f45b52246e81378e86e6" category="cell">QoS 突發 IOPS</block>
   <block id="7816688caa253ba9627537f17066fb4c" category="cell">QoS 最小 IOPS</block>
   <block id="e2448c89743cd1dd4759858e0b83ae4f" category="cell">SolidFire REST API</block>
   <block id="cdae224de44c7ca9779763280e90b457" category="section-title">NetAppStorageGRID(HTTPS)</block>
-  <block id="4405ffb87bb4bb624a1e4d02b219ce09" category="cell">3.2 3.3 3.4 3.5 4.0 4.1</block>
   <block id="9b421b4d46417a513776e234031691c1" category="cell">網路規模</block>
-  <block id="fc8e016a41c4109eeb75bb9795abff5c" category="cell">11.4.0 11.5.0.11 11.5.0.6 11.5.0.7 11.5.0.9 11.6.0 11.6.0.10 11.6.0.11 11.6.0.12 11.6.0.11. 11.6.0.16 11.6.0.4 11.6.0.5 11.6.0.7 11.6.0.8 11.6.0.9 11.7.0 11.7.0.11 11.7.0.12 11.7.0 11.7.0.11 11.7.0.12 11.7.0.13 13.0. 11.7.0.5 11.7.0.6 11.7.0.8 11.7.0.9 11.8.0 11.8.0.1 11.8.0.2 11.8.0.3 11.8.0.5 11.8.0.2 11.8.0.3 11.8.0.5 11.8.0.6 11.8.8.11. 11.9.0 11.9.0.1 11.9.0.2 11.9.0.3 11.9.0.4</block>
   <block id="dfd2bfc8d7a5d7d3f94a57b772ffb204" category="cell">節點容量利用率允許元資料（MB）</block>
   <block id="1dd3a78893ed38f568415e1e82060632" category="cell">節點容量利用率已用元資料（MB）</block>
   <block id="668445f09da337d276dc852bb6a0dbb3" category="cell">網站名稱</block>
@@ -5743,17 +5692,10 @@
   <block id="cac44aec078c05aec937bc2feff6642c" category="cell">NX-3170-G7 NX-8155-G7 HPE DX380 12LFF G11 HPE DX380-24 G10 HPE DX385-12 Gen10 Plus NX-3060-G6 NX-3060-G7 NX-3060-3060-G6 NX-3060-G7 NX-306015 NX-3170-G6 NX-8035-G8 NX-8150-G7 NX-8150-G8 NX-8155-G8 XF3070 XF8050-核心</block>
   <block id="3c9c0c0c3366e317d29608c6dfb05799" category="cell">5.20.1.1 6.10 6.10.1 6.5.3.7 6.5.4 6.5.5.1 6.5.5.7 6.5.6 6.5.6.5 6.5.6.6 6.5.6.7 6.7.1.6 7.</block>
   <block id="5833254d196e4a1b64f41ef17f3948c3" category="cell">Nutanix REST API</block>
-  <block id="5ae0ae5f7d8a52fd8d8b0c9920771343" category="section-title">OpenStack（REST API/SSH）</block>
-  <block id="9a49bf4f2da6cbfd867175d49a9d97e1" category="cell">OpenStack REST API</block>
-  <block id="bf17d59a145a73aabf6bd6a5b8e6fdc7" category="cell">OpenStack SSH</block>
   <block id="a5a401d1937bde9ceea96e2345f7c9d8" category="section-title">Oracle ZFS（HTTPS）</block>
-  <block id="d56a859f3f85129a821911cfe0f89751" category="cell">Sun ZFS 儲存 7120 Sun ZFS 儲存 7320 Sun ZFS 儲存 7330 Sun ZFS 儲存 7335 Sun ZFS 儲存 7350 Sun ZFS 儲存 7370 Sun ZFS 儲存 7390 Sun ZFS 儲存 7420</block>
-  <block id="545835744cbde5a39d1d8b85f8938af6" category="cell">1-1.1 1-1.2 1-1.3 1-1.34 1-1.4 2013.06.05.6.12 2013.06.05.6.15 2013.06.05.7.21 2013.6.05.75.75. 2013.06.05.7.26 2013.06.05.7.29 2013.06.05.8.0 2013.06.05.8.26 2013.06.05.8.29 2013.8.05.83. 2013.06.05.8.50 2013.06.05.8.53 2013.06.05.8.56 2013.06.05.8.6 2013.06.05.8.61 2013.06.0.78. 2013.06.05.8.72 2013.06.05.8.74 2013.06.05.8.76</block>
   <block id="55799eddc9f10f989c2583f4b951cf96" category="cell">Oracle ZFS REST API</block>
   <block id="3b8a614226a953a8cd9526fca6fe9ba5" category="cell">215</block>
   <block id="9425abd0b36053580d0284f0d9fbe9a2" category="section-title">Pure Storage FlashArray（HTTP）</block>
-  <block id="35784b4a82fd374c7ec3369fbb1e8df8" category="cell">DFSC1 FA-450 FA-C40R3 FA-C50R4 FA-C60 FA-C60R3 FA-C70R4 FA-C90R4 FA-X10R2 FA-X10R3 FA-X20R2 FA-X20R3 FAX FA-X50R4 FA-X70R2 FA-X70R3 FA-X70R4 FA-X90R2 FA-X90R3 FA-X90R4 FA-XL130 FA-XL170 FA-m20 FA-m20r2 FA-m70 FA-XL170 FA-m20 FA-m20r2 FAm</block>
-  <block id="26afa4c35d66d6b9853371100d3a6cb3" category="cell">5.3.14 5.3.20 6.1.10 6.1.14 6.1.18 6.1.19 6.1.21 6.1.22 6.1.23 6.2.10 6.3.10 6.3.11 6.3.1265.3 126. 6.3.16 6.3.17 6.3.18 6.3.3 6.3.6 6.3.7 6.3.9 6.4.10 6.4.2 6.4.3 6.4.7 6.4.8 6.4.9 6.5.0 6.5.5.5. 6.5.6 6.5.7 6.5.8 6.5.9 6.6.10 6.6.11 6.6.5 6.6.6 6.6.7 6.7.0 6.7.1 6.8.1 6.8.2 6.8.3</block>
   <block id="f7ade9e282e08c1d6d53cd5f4fc13a47" category="cell">Pure Storage REST API</block>
   <block id="e7fa2f0f68f6e6823354c3bdca9c5e37" category="section-title">紅帽 RHV（REST）</block>
   <block id="d5c43e381bdc06ed4b571374caed0944" category="cell">紅帽 RHEV REST API</block>
@@ -6927,7 +6869,6 @@
   <block id="7b855521b65fe198b7fa8deffb44b477" category="paragraph">若要從一個或多個對像中刪除業務實體，請查詢並選擇對象，按一下*批次操作*並選擇_刪除註釋_。選擇業務實體註解並點擊*刪除*。</block>
   <block id="28bfcc900291ea8fe66d8be36f439a1b" category="summary">註冊Data Infrastructure Insights並建立您的租戶。</block>
   <block id="9be58f2fc8b11ec837406376ca6b3e2a" category="doc">Data Infrastructure Insights入職</block>
-  <block id="549ae8b6dea4926a2af206c5d7300fc5" category="paragraph">在開始使用Data Infrastructure Insights之前，您必須在 * NetApp Console* 入口網站上註冊。如果您已經擁有NetApp Console登入名，只需幾個簡單的步驟即可開始免費試用Data Infrastructure Insights。</block>
   <block id="fde8afa3fd65a9f38d9b11377453846e" category="doc">設定Cloud Volumes ONTAP和Amazon FSx for NetApp ONTAP收集器</block>
   <block id="c45671a9389f697917f0b33d12822c51" category="section-title">Cloud Volumes ONTAP儲存配置</block>
   <block id="2ffc6472f9d6abaf761bbe2e6a0385ce" category="paragraph">請參閱OnCommand Cloud Volumes ONTAP文檔，以配置單節點/HA AWS 執行個體來託管工作負載安全代理：<block ref="caca64b8e9927e0ea8e8b0158b9e47cd" category="inline-link-rx"></block></block>
@@ -10204,9 +10145,6 @@
   <block id="71939180bcd43cc6a5d2266fda82622f" category="paragraph">配置此資料來源的要求如下：</block>
   <block id="dec626793e98f182a08746891f5a6433" category="list-text">StorageGRID主機 IP 位址</block>
   <block id="53bcb5f0d3c52187126d86687f62b4e7" category="list-text">已指派「指標查詢」和「租用戶存取」角色的使用者的使用者名稱和密碼</block>
-  <block id="de64e1b6f19d9436c5f973e94dd8b226" category="cell">StorageGRID設備的管理虛擬 IP 位址</block>
-  <block id="e26509250deb2501f718f286ad02123b" category="cell">用於登入StorageGRID設備的名稱</block>
-  <block id="57f1597c01a4d01531d7aa4e6d122b52" category="cell">用於登入StorageGRID設備的密碼</block>
   <block id="dcc8da9a702e26cfc2b4214098866802" category="cell">效能輪詢間隔（秒）</block>
   <block id="09dbc445e39eaaa3cef7962d56b08f19" category="cell">預設值為 900 秒</block>
   <block id="0bfb50a0552ccf17a4166a9abdafb026" category="paragraph">這<block ref="a9b9d59e51662993864626821229ad2d" category="inline-link-macro-rx"></block>韌體版本有對應的API版本；3.0 API及更新版本支援單一登入（SSO）。</block>
@@ -12664,7 +12602,6 @@
   <block id="7143e0c9aefa0103fd7fde4a2b1f1e3c" category="doc">了解和調查警示</block>
   <block id="a760de6056552c07e9447d9e4aa8ddd8" category="list-text">保護您最寶貴的業務資產 – 資料 - 免受檔案篡改或資料銷毀攻擊</block>
   <block id="ad616b1714b32991576ec7cd2b8832a8" category="sidebar">管理儀表板存取權限</block>
-  <block id="1a69a00931f550995a9d19745f714169" category="paragraph">這些說明正在更新中。請稍後查看。</block>
   <block id="ab5cb6794af58d6cd4132b44aa3d3d04" category="sidebar">註冊 Data Infrastructure Insights</block>
   <block id="017db8357e64ddb2e41630e07c556c17" category="paragraph">確定現有 Operator 是否存在 _AgentConfiguration_（如果您的命名空間不是預設的 _netapp-monitoring_、請替換為對應的命名空間）：</block>
   <block id="71e56d8dc562ba6525c8592046f68012" category="paragraph">如果存在 _AgentConfiguration_：</block>
@@ -12694,4 +12631,1251 @@
   <block id="beda12a678062ce581606c88344f4e06" category="sidebar">Teams Webhook 範例</block>
   <block id="e18f38a263784d686e9a0d45d5416285" category="cell">執行下列任一正版授權版本的電腦：* AlmaLinux 9.5、10 * Centos（64 位元）：Stream 9 * Debian（64 位元）：11 至 13 * OpenSUSE Leap 15.2 至 15.6、16 * Oracle Enterprise Linux（64 位元）：8.10、9.2、9.4、9.6、10 * Red Hat（64 位元）：8.10、9.2、9.4、9.6、10 * Rocky 9.2 至 9.6 * SUSE Linux Enterprise Server 15 SP4 至 15 SP7、16 * Ubuntu Server：20.04、22.04、24.04 LTS * 上述平台上的 SELinux 此電腦不應執行任何其他應用程式層級軟體。建議使用專用伺服器。如果您正在執行 SELinux，建議在擷取單元系統上執行下列命令：sudo semanage fcontext -a -t usr_t "/opt/netapp/cloudinsights(/.*)?" sudo restorecon -R /opt/netapp/cloudinsights</block>
   <block id="ddb78a0715fab46562d8ee8102cea78c" category="list-text">連接埠 443（或 8443，如果已配置）</block>
+  <block id="6e7162cfd0e31a7db490a51939253ab9" category="list-text">HPE Alletra 9080</block>
+  <block id="193eabb9a17fd246abfc9b708de0fb7f" category="list-text">HPE_3PAR 20450</block>
+  <block id="bc528b9699ef34fd979ebefa65bbdd95" category="list-text">HPE_3PAR 20800</block>
+  <block id="02f91c1639bfb03711c978f4cc31aeae" category="list-text">HPE_3PAR 20850</block>
+  <block id="cd042514de78adf4442fc6799f5b553e" category="list-text">HPE_3PAR 7200</block>
+  <block id="ac451ee1e2e71152b81b0ca72b6ab374" category="list-text">HPE_3PAR 7200c</block>
+  <block id="7f19f1bd6d160d9e5fe50e86f8eefc0f" category="list-text">HPE_3PAR 7400</block>
+  <block id="72c20fab0bb0cd7aa38c1a1ff4c108fc" category="list-text">HPE_3PAR 7400c</block>
+  <block id="7a95bf5b3e8f8e4cd67a732033715d5e" category="list-text">HPE_3PAR 7440c</block>
+  <block id="76dc7015f050db4722eb099f38a41a3d" category="list-text">HPE_3PAR 7450c</block>
+  <block id="fa60d2a84c4fdf3cba78983cc796f05f" category="list-text">HPE_3PAR 8200</block>
+  <block id="308b4bd6bef4cbd6e8f6076a69432f7b" category="list-text">HPE_3PAR 8400</block>
+  <block id="df60b98b3397c90964235d804e26bbe7" category="list-text">HPE_3PAR 8440</block>
+  <block id="6ab3b6cf50bf9c0d660416ed780c145b" category="list-text">HPE_3PAR 8450</block>
+  <block id="39cf56a391c3100ffdc492470d271e39" category="list-text">HPE_3PAR 9450</block>
+  <block id="c652a80dc472fc65dd496b41f9076c86" category="list-text">HPE_3PAR A630</block>
+  <block id="c66fae0e13ce30afc195186f226884bb" category="list-text">HPE_3PAR A650</block>
+  <block id="34de596f8ebf678dc7557717ac3eb69b" category="list-text">HPE_3PAR A670</block>
+  <block id="bcbec0b712ad38fb9e91108d0ed0f519" category="list-text">HP_3PAR 20800</block>
+  <block id="d19191274aace7a9b730415cbfb8c2db" category="list-text">HP_3PAR 7200</block>
+  <block id="428723e4317c126d78c31666a66fcb12" category="list-text">HP_3PAR 7200c</block>
+  <block id="fff851d23dbad15541bd34f233b00ac4" category="list-text">HP_3PAR 7400</block>
+  <block id="6ba5ea1698365d86d74ab69e273fc109" category="list-text">HP_3PAR 7400c</block>
+  <block id="f912c4893ac372097a34a21374189a36" category="list-text">HP_3PAR 7440c</block>
+  <block id="cb79c054dffff78fb8c364e29bd1d246" category="list-text">HP_3PAR 7450c</block>
+  <block id="bd9a96a7720ffd88d124afb1b45e1fc2" category="list-text">HP_3PAR 8200</block>
+  <block id="e469c49ada3cc9813c16c8c5d303c267" category="list-text">HP_3PAR 8400</block>
+  <block id="671a7178b0c1d99e60345c1167817c86" category="list-text">HP_3PAR 8440</block>
+  <block id="23964b61641bd06e529e29b3917f18f5" category="list-text">InServ F200</block>
+  <block id="513d91e956259a4a6b116fa4be00b083" category="list-text">InServ F400</block>
+  <block id="dd9a273dce3d71cb319eb02e5fe5d7ea" category="list-text">InServ T400</block>
+  <block id="2a03653d4241f0d5aaf92abd042a19c4" category="list-text">InServ T800</block>
+  <block id="c9f49914a2bcaf719258c231b8f68aa8" category="list-text">InServ V400</block>
+  <block id="e8ef6cff550bef15c8f2652db9742ec4" category="list-text">InServ V800</block>
+  <block id="d73b2b4d9543e00e19a39a806f87a315" category="list-text">3.1.1（MU1）</block>
+  <block id="fe55b0fb232aa66f7d031e43c93a6357" category="list-text">3.1.2（MU3）</block>
+  <block id="1001965b868150147d37a03883fe46c5" category="list-text">3.1.3（MU1）</block>
+  <block id="293935d2d1cd4d9eb898bb369fb32e20" category="list-text">3.1.3（MU2）</block>
+  <block id="3d0085789ab7ecb3dbd978e4404de86c" category="list-text">3.2.1（MU2）</block>
+  <block id="3f3cfb537b4a724202dae0501f6be953" category="list-text">3.2.1（MU3）</block>
+  <block id="f9e18cb866670458cd7fcaf648272b3c" category="list-text">3.2.1（MU5）</block>
+  <block id="b6294a6c57167751e4cf1979a6f04d2a" category="list-text">3.2.2（MU4）</block>
+  <block id="c4896f018900d9a9d0902713c01c3a4a" category="list-text">3.2.2（MU6）</block>
+  <block id="1dd785e1de9a32e236b624ae268bb803" category="list-text">3.3.1</block>
+  <block id="420fca29a83552c9ab0f4056fd2d6105" category="list-text">3.3.1（MU1）</block>
+  <block id="e7d8b92e4239938b0e577e30b6b52f45" category="list-text">3.3.1（MU2）</block>
+  <block id="946f1505248befb435d0aeb1c5c14bd5" category="list-text">3.3.1（MU3）</block>
+  <block id="9ef4208913595d1672a193e61b13729e" category="list-text">3.3.1（MU5）</block>
+  <block id="c4a2e10c2ae8e8929d699c9c83d9bffc" category="list-text">3.3.2（MU1）</block>
+  <block id="63715b63ee49d5fe4844c2ecae071373" category="list-text">4.3.1</block>
+  <block id="59cec5977bb7309e6511c6199e67082e" category="list-text">4.3.3</block>
+  <block id="3ab6954babd95c1a09164ff093346f3d" category="list-text">4.4.1 版本類型：標準支援版本</block>
+  <block id="94c6c262c9830fd7b5359d0fe209814b" category="list-text">4.5.15 Release Type ：擴充支援版本</block>
+  <block id="f00974ec46dc51681816ad26d835ee45" category="list-text">4.5.18 版本類型：Extended Support Release</block>
+  <block id="d769905d6266af94199e3b170be81f34" category="list-text">4.5.21 Release Type：Extended Support Release</block>
+  <block id="4356570c7aa525d3ac1152c5a2ecb690" category="list-text">4.5.24 版本類型：Extended Support Release</block>
+  <block id="bc48dd4d7c5762c3b71c065260a41688" category="list-text">4.5.7 版本類型：延伸支援版本</block>
+  <block id="d3513e366299b22301bb993eeee8366a" category="list-text">4.6.1 版本類型：延伸支援版本</block>
+  <block id="76ec7e5443c2ab532234d28f65116a82" category="list-text">9.5.15 發行類型：延伸支援發行版本</block>
+  <block id="70a1556c6b7e4d50ca6555f3123f05ec" category="list-text">9.5.8 版本類型：延伸支援版本</block>
+  <block id="cfcdb810d86de75ea243f24dcc21d4f4" category="list-text">9.6.1 版本類型：延伸支援版本</block>
+  <block id="72e946534f4bfc7d5bb70cb1faabf0dc" category="list-text">176.51</block>
+  <block id="ee72d35c01b8f73bcadcafa87f0a43cf" category="list-text">183.0</block>
+  <block id="158d969cd9158bbc1ae235dbf59b2a99" category="list-text">Brocade 200E</block>
+  <block id="bcfc6f763a0cef66b8bb0b474e592e6e" category="list-text">Brocade 300E</block>
+  <block id="356927a77028fb32a957ff2e3f3a871d" category="list-text">Brocade 4024 嵌入式</block>
+  <block id="5db4d60848531555eaeba772c2403bdc" category="list-text">Brocade 5000</block>
+  <block id="04ba2257658402bf075648d21eb04fb9" category="list-text">Brocade 5100</block>
+  <block id="a74730bfeb3f852fb72fef7b2a728b32" category="list-text">Brocade 5300</block>
+  <block id="8d1faf11bba846e59c3f7eb265c1cc7a" category="list-text">Brocade 5480 嵌入式</block>
+  <block id="0c5f7a25ae2c9ff27c891a0954af8b50" category="list-text">Brocade 6505</block>
+  <block id="813a305fd70f4862aee889950c31f869" category="list-text">Brocade 6510</block>
+  <block id="d5f5f490a3cccca8c5b838e6c295ef55" category="list-text">Brocade 6520</block>
+  <block id="9dd01e5f9f194ed40a31778487619db5" category="list-text">Brocade 6546</block>
+  <block id="8a3f4894da82410c852b35c17639e910" category="list-text">Brocade 6547 嵌入式</block>
+  <block id="1ff62bd768c36d472093b3866dfbf341" category="list-text">Brocade 6548</block>
+  <block id="57129d12b5cb4c66412e7f7adf114e26" category="list-text">Brocade 6558</block>
+  <block id="ace7c4c18f7ce574079cd93b50004667" category="list-text">Brocade 7800</block>
+  <block id="e24caec29046f263ebb5d2d6e81707e6" category="list-text">Brocade 7810 擴充交換器</block>
+  <block id="eeccf7f36c3dfb3972605d539dced738" category="list-text">Brocade 7840</block>
+  <block id="32b129781bdaa86117f3adaa475341d7" category="list-text">Brocade DCX</block>
+  <block id="0b2c5e6b72bddc0e49f76bd5c5047433" category="list-text">Brocade DCX-4S Backbone</block>
+  <block id="67d61e5de757dbdb62a6fbcef1047244" category="list-text">Brocade DCX8510-4</block>
+  <block id="d2781bdaf22d1d5d68c3ad6d9ec6b6d5" category="list-text">Brocade DCX8510-8</block>
+  <block id="12bb1d11ead6c73227745725e5d0bfd7" category="list-text">Brocade G610</block>
+  <block id="1dde0a938f669adb0ba03f105ef1eb58" category="list-text">Brocade G620</block>
+  <block id="0df6785d5da501ba31bbeb3f6ee67c24" category="list-text">Brocade G630</block>
+  <block id="28a10d033b1d3ddabdc7ea7efd63b531" category="list-text">Brocade G720</block>
+  <block id="74fa841e72aa29dd6583666f9d470801" category="list-text">Brocade G730</block>
+  <block id="26f3966c63a03a64a09f3737ab158daf" category="list-text">Brocade M5424 嵌入式</block>
+  <block id="84cd74577f69fb1358ca63fbd7c10d94" category="list-text">Brocade VA-40FC</block>
+  <block id="ae3eae4c7787cc070d264097983640a2" category="list-text">Brocade X6-4</block>
+  <block id="d6672b221f4b985fcc6269d33e99bf2b" category="list-text">Brocade X6-8</block>
+  <block id="8f074ac8caab22feb4718abec825f93c" category="list-text">Brocade X7-4</block>
+  <block id="7f837ff15c4e70717c23d6b513d46ad0" category="list-text">Brocade X7-8</block>
+  <block id="43f78824e034f7ef995d6a47186884cb" category="list-text">v6.2.2b</block>
+  <block id="612675b52cab79807f4516b7a7e29a77" category="list-text">v6.2.2f</block>
+  <block id="10b35d3076493d8b236b1c07d007aa1b" category="list-text">v6.2.2g</block>
+  <block id="4720147724f606897ae1dbded1a30c00" category="list-text">v6.4.1b</block>
+  <block id="89d7cc2a5c59c9b3ed087c066bec8b59" category="list-text">v6.4.2a</block>
+  <block id="ec442231a79c04e79a11e298a0bf681a" category="list-text">v6.4.3</block>
+  <block id="28192ae1ecdbf5b4d4c32ee24999382d" category="list-text">v6.4.3d</block>
+  <block id="4770712f93f437e46151700435005382" category="list-text">v6.4.3f3</block>
+  <block id="60c6e3788b0630ca68ccae845f6cbbf5" category="list-text">v7.0.1</block>
+  <block id="3a148135d6a679234efc18a27bc7e79c" category="list-text">v7.0.1b</block>
+  <block id="2457bd9902750d1350d5b6e59d9d4774" category="list-text">v7.0.2</block>
+  <block id="c92e8d6f7ecf3ea6e39961bce1262927" category="list-text">v7.0.2b1</block>
+  <block id="aac179b9bbafd5a554784e3bfc78301e" category="list-text">v7.0.2c</block>
+  <block id="5c3d5e0bfb7a33765f873a828b7c84f9" category="list-text">v7.0.2e</block>
+  <block id="7bd82bbb727b9e25df951fc5f5aaf7f7" category="list-text">v7.0.2e1</block>
+  <block id="7ba208d68923a49f10e72a71dd6c5789" category="list-text">v7.1.0a</block>
+  <block id="bb710c30dcc9f914a64656835c487b01" category="list-text">v7.1.0b</block>
+  <block id="2eff85534e2e5cb237b946cfb413ebea" category="list-text">v7.2.0a</block>
+  <block id="e147650d246987f8f4b540dc7e71118d" category="list-text">v7.2.0d</block>
+  <block id="1612d825054eeb3016cbb8abfb986dea" category="list-text">v7.2.1</block>
+  <block id="12c2405b3caf24ea2bb238d385d978fc" category="list-text">v7.2.1c</block>
+  <block id="8d6067a39e65cad42f22f8d264d672c3" category="list-text">v7.2.1c1</block>
+  <block id="b4284c7e5f7c36e3df5109f96daa53cd" category="list-text">v7.2.1d</block>
+  <block id="7b241e5b30b7cc71f287ca6cb12e23b3" category="list-text">v7.3.0a</block>
+  <block id="bbbb9b0a761ef9f4f6db79a064695fa5" category="list-text">v7.3.0c</block>
+  <block id="491f09204cb7e139cdbe2c6fe5acebda" category="list-text">v7.3.1</block>
+  <block id="b4907a25873aa73350ff59acafd793b2" category="list-text">v7.3.1c</block>
+  <block id="81395dbf589fb1d98061dcfdaa5256f1" category="list-text">v7.3.1d</block>
+  <block id="c49788f549765da59c69256de8a6df19" category="list-text">v7.3.2a</block>
+  <block id="9752d63a0198ff3f3f3dcab1e8644100" category="list-text">v7.4.0a</block>
+  <block id="a25bcffb5b0037b9c3e9edbfed8d235d" category="list-text">v7.4.1</block>
+  <block id="b6fc0d29602a7b81639fb3a288421a2e" category="list-text">v7.4.1d</block>
+  <block id="3ea30de5fb620169cd1ced9dc71e88be" category="list-text">v7.4.1e</block>
+  <block id="616dc29535fac34c418a6fc662421c7f" category="list-text">v7.4.2</block>
+  <block id="3eca6cb49ff415378384e7a1c1d8fc8a" category="list-text">v7.4.2a</block>
+  <block id="b41de07b5a1cea14bf155386494f721b" category="list-text">v7.4.2a4</block>
+  <block id="64f6f95654d8caa6341fb6d039614609" category="list-text">v7.4.2c</block>
+  <block id="71372f3782b3df2239138e572d9ca101" category="list-text">v7.4.2d</block>
+  <block id="cdef904f7c47c8e6040145f47340b7c9" category="list-text">v7.4.2e</block>
+  <block id="a17a7d67d55dc995c3ea83546bc1c213" category="list-text">v7.4.2f</block>
+  <block id="0ad97d6e3dbc2a6103d1a4781fa767bb" category="list-text">v7.4.2g</block>
+  <block id="8a73e7e1b3032402312b35ec032ed91e" category="list-text">v7.4.2g_cvr_824494_01</block>
+  <block id="b6677dda5f035379857bc98dcbd71e66" category="list-text">v7.4.2h</block>
+  <block id="450369ddd66605a1a0bafca432b4e883" category="list-text">v7.4.2j1</block>
+  <block id="e1bfd63d979b62591b734dca347bf8b0" category="list-text">v8.0.2c</block>
+  <block id="e43f967af28014841a1449164026fed5" category="list-text">v8.0.2d</block>
+  <block id="0075a7feca7a259f3c0e441041469b8b" category="list-text">v8.0.2f</block>
+  <block id="eeaf082cb76bc1b93cb0df487eb85df7" category="list-text">v8.1.0b</block>
+  <block id="0ed21c1b8667696c136f50d1db0f5e81" category="list-text">v8.1.1a</block>
+  <block id="c4dae41ba99a41ba6beb5f77b9879072" category="list-text">v8.1.2a</block>
+  <block id="5ab0618d0c74a7ca3a882f745684ea84" category="list-text">v8.1.2d</block>
+  <block id="c237126820034e6270c73ce2ed1db18c" category="list-text">v8.1.2f</block>
+  <block id="4842c9783c3b7f42902759d50e3f65e9" category="list-text">v8.1.2g</block>
+  <block id="6a9e962078cb23dc25a8425ab030312c" category="list-text">v8.1.2h</block>
+  <block id="1f849f0c9f9a337198a396fdeed91e5b" category="list-text">v8.1.2j</block>
+  <block id="f1411201059ed0b83cf80309b19156e2" category="list-text">v8.1.2k</block>
+  <block id="4672a89560f67f59e7701d9a97af58ba" category="list-text">v8.2.0</block>
+  <block id="7e89b0b1587d2dd1c77c0e064cb94f96" category="list-text">v8.2.0a</block>
+  <block id="4837c4b0f2d49d923c45ccdc30d6d4ac" category="list-text">v8.2.0a1</block>
+  <block id="ef6fc4bb56b98484e13bbcb7a4f27a67" category="list-text">v8.2.0b</block>
+  <block id="7a5027bfac28f6520afe77e2588f7651" category="list-text">v8.2.1</block>
+  <block id="e1c33233fc71a71ca90ce13fe8545cbc" category="list-text">v8.2.1a</block>
+  <block id="a4ca6dff131f4f5d84de9603934c4904" category="list-text">v8.2.1c</block>
+  <block id="f13efbc0f0f89a33abe85b18fd22ea11" category="list-text">v8.2.1d</block>
+  <block id="450839f6090c6c4ee32e2ad995ba4506" category="list-text">v8.2.2a</block>
+  <block id="d93e3d94580653399872aba2ac97873e" category="list-text">v8.2.2b</block>
+  <block id="c399105267451dd9785d751cebd4adea" category="list-text">v8.2.2c</block>
+  <block id="e01b54f8a63802cde3eaa9dcd809dbce" category="list-text">v8.2.2d</block>
+  <block id="b3850882e0f07fc65b2a5414695a1a4f" category="list-text">v8.2.2d4</block>
+  <block id="528893e5b4078d90de37a421ed1a00ad" category="list-text">v8.2.3</block>
+  <block id="4cc51f4a34eb140fe1788f55041f7c1c" category="list-text">v8.2.3a</block>
+  <block id="5b53326ab8f2e5158d6a4e2dd48a0e27" category="list-text">v8.2.3a1</block>
+  <block id="8fe17838e054e7bf58475ef86a976ba7" category="list-text">v8.2.3a_cvr_855776_01</block>
+  <block id="0342aaacd0370282c162c05d670932a2" category="list-text">v8.2.3b</block>
+  <block id="bf45d2ca9a9e5d86de12a67c36a9ae2d" category="list-text">v8.2.3c</block>
+  <block id="bfab2a450658123f11a51e55ceaa8064" category="list-text">v8.2.3c1</block>
+  <block id="dbea33b42fe5426945112da62fde00ae" category="list-text">v8.2.3d</block>
+  <block id="f9e4b8895fc6339c036a6a0edc24f752" category="list-text">v8.2.3e</block>
+  <block id="0114815d9573e1a5e2879f71acc31dd8" category="list-text">v8.2.3e1</block>
+  <block id="f2592f46cdf2cfa7696423ca9f0f11ee" category="list-text">v8.2.3e2</block>
+  <block id="7ace7a4b837cf458486463982e869145" category="list-text">v9.0.0a</block>
+  <block id="ae398c32c98f82a3b6bc038ebfdcbeb9" category="list-text">v9.0.1a</block>
+  <block id="ac2fbeff7de7a18613f2c2289c8b4ab7" category="list-text">v9.0.1b</block>
+  <block id="8741ee274a299075a95b823e0b00301e" category="list-text">v9.0.1b4</block>
+  <block id="4ea90b1e5528acc680cfac6dfd0bb8be" category="list-text">v9.0.1c</block>
+  <block id="58638ce2a0ea617d8d0701741f4f2c2f" category="list-text">v9.0.1d</block>
+  <block id="0e1d5fd7eb2a9f9460025ed15e6e0b03" category="list-text">v9.0.1e</block>
+  <block id="2da2aa1c5f8c77455df5c4e2353eb0a1" category="list-text">v9.0.1e1</block>
+  <block id="3f6b1fe3beb4c0c180bf23c9341338d3" category="list-text">v9.1.0b</block>
+  <block id="a0edbbadedbce61ba6d0a848c7145027" category="list-text">v9.1.1</block>
+  <block id="b4f1f93cac527210df124eeb851ab80e" category="list-text">v9.1.1a</block>
+  <block id="6407b48fd524ffbd0a79eb841eeffa92" category="list-text">v9.1.1b</block>
+  <block id="0ad77aa9c9ad70cda40db7284371b1e9" category="list-text">v9.1.1b_lw</block>
+  <block id="954ecce2ecb80325ab7882047f455307" category="list-text">v9.1.1c</block>
+  <block id="cd29a509e3a404c21debc79dfc171622" category="list-text">v9.1.1d</block>
+  <block id="b8d68e36cdaa7c66f64161712cc92234" category="list-text">v9.1.1d1</block>
+  <block id="e9efd8f16f55599bb3b22c15ed1828c7" category="list-text">v9.1.1d2</block>
+  <block id="3ee5ab84814296a3a79122c75cb08b1e" category="list-text">v9.1.1d2_lw</block>
+  <block id="6867ca6ddeb28e0cd2df59f1483cbf65" category="list-text">v9.1.1d5</block>
+  <block id="aa2f0e7383dd999348342932433e3886" category="list-text">v9.2.0a</block>
+  <block id="bafda278c132395c2e8ea2ab85830046" category="list-text">v9.2.0b</block>
+  <block id="fc7c257fea7e30f5d0f8d4817c743c04" category="list-text">v9.2.0b1_lw</block>
+  <block id="dd018fb6db7ac504615d85f60d31c735" category="list-text">v9.2.0c</block>
+  <block id="47329fba972c15f3751365c24cc027df" category="list-text">v9.2.0c1</block>
+  <block id="3e25a3df5f141191931de2949299caf9" category="list-text">v9.2.1a</block>
+  <block id="02a031ebf7085817b98789e19189d64a" category="list-text">v9.2.1a1</block>
+  <block id="d53425ca557ff3d94f00668fe53f3dd9" category="list-text">v9.2.2</block>
+  <block id="2fd13e3b7dcd78f770aa190c534d6342" category="list-text">184.0</block>
+  <block id="130e210cc9587fdfd9f2aad3c1139058" category="list-text">190.0</block>
+  <block id="0d3478044ba05894cf72bf6284e7d281" category="list-text">v9.0.0b</block>
+  <block id="f086d800c69b13c441ee2a33fa72b962" category="list-text">v9.1.1c3</block>
+  <block id="3c54b3428388e3e266a75b7c137d2f72" category="list-text">v9.1.1d1_lw</block>
+  <block id="0e52c3abf09a8b900c7bda8afad2f672" category="list-text">v9.1.1d3_cvr_861742_01</block>
+  <block id="be27677b2d8448c44ae368a83917e29e" category="list-text">v9.2.0b1</block>
+  <block id="72ad913dcdb79ad5c69db0d60131038a" category="list-text">v9.2.0b_cvr_857687_01</block>
+  <block id="7023422bd920f7fcb24c9b95e43ae9f6" category="list-text">v9.2.0c3</block>
+  <block id="66d6235fd63746027bd438e8ed417e41" category="list-text">v9.2.1</block>
+  <block id="62f8bc89bb0f6a96e60daf2e3c46b4cc" category="list-text">v9.2.1b</block>
+  <block id="6a470711d337ea161eed877b1de060a9" category="list-text">DS-C9124-2-K9</block>
+  <block id="e4cb81ff79ac6d79ba30653073341bc9" category="list-text">DS-C9124-K9</block>
+  <block id="b84629b51f8a510c15a54159d6146364" category="list-text">DS-C9132T-K9</block>
+  <block id="5651cfb46ac46e0897785f8fb4c52d91" category="list-text">DS-C9148-16P-K9</block>
+  <block id="6d85a4f33b1820179f396316dce1073a" category="list-text">DS-C9148-32P-K9</block>
+  <block id="80c31e21a7f052f35124f8ec42d87375" category="list-text">DS-C9148-48P-K9</block>
+  <block id="21df30ac86d20feac0dcc465f0cee54d" category="list-text">DS-C9148S-K9</block>
+  <block id="bd1b6a5ddcbfac6f3500a5a053b5f696" category="list-text">DS-C9148T-K9</block>
+  <block id="109f31bca8f1d9878e46646ad486e21d" category="list-text">DS-C9148V-K9</block>
+  <block id="25515225b2d9f4a832bc4009af7073a3" category="list-text">DS-C9220I-K9</block>
+  <block id="af98dfd434929d4a09ff874368d738b7" category="list-text">DS-C9222I-K9</block>
+  <block id="90da220f347063162d8ae19918264926" category="list-text">DS-C9250I-K9</block>
+  <block id="460a3e96b1f7f445843a360a643450a3" category="list-text">DS-C9396S-K9</block>
+  <block id="6a0404d2133d92795a2440524bdc37d4" category="list-text">DS-C9396T-K9</block>
+  <block id="91d29f3aaf4386fcb206f2ea12ec6415" category="list-text">DS-C9396V-K9</block>
+  <block id="150b918a3fabda11a4b3b44ea7bd1dfc" category="list-text">DS-C9506</block>
+  <block id="71f56df01798b757a2b19ef85e64d066" category="list-text">DS-C9509</block>
+  <block id="980aacbb193cfc9d7f276f006eb9c0e8" category="list-text">DS-C9513</block>
+  <block id="fdbafce026f1d852daa09fbc67b77d5f" category="list-text">DS-C9706</block>
+  <block id="217a107a3ba30b5c721ee39bb1ac53c8" category="list-text">DS-C9710</block>
+  <block id="ae0c45b81661446d74243f263ffd408e" category="list-text">DS-C9718</block>
+  <block id="6d7331efd52e869242ea42cad6e58eb8" category="list-text">DS-HP-8GFC-K9</block>
+  <block id="c56d10439cdb6d0aa77a4b01f1d96a1e" category="list-text">DS-HP-FC-K9</block>
+  <block id="84553922910a621487565fa39903d263" category="list-text">N5K-C5548UP</block>
+  <block id="a2e5a129a850d47b2de20bcc61c1c163" category="list-text">N5K-C5596UP</block>
+  <block id="56edd55b126710a451d4f7f191556ddc" category="list-text">N5K-C5696Q</block>
+  <block id="a60c7b9a80bd9eeecafdf2d067e305b2" category="list-text">UCS-FI-6248UP</block>
+  <block id="f27822e464d86cd034850f1e653ea2fd" category="list-text">UCS-FI-6296UP</block>
+  <block id="3a729b49bf0c1c3ad18fde4c6af4348e" category="list-text">UCS-FI-6332</block>
+  <block id="22051e10688c5958bd8ec11a669f21db" category="list-text">UCS-FI-6332-16UP</block>
+  <block id="f82f6b9a819365233da6412a308430a3" category="list-text">UCS-FI-64108</block>
+  <block id="d35204e07e6755db6741d9a7fa53a32a" category="list-text">UCS-FI-6454</block>
+  <block id="06295c3622b6570e83b5f76b83797d4c" category="list-text">3.3(1c)</block>
+  <block id="ac203132494f2fc5d0742a9e0a9f7b52" category="list-text">4.1(3a)</block>
+  <block id="f4c9cd425f118c9eba72a44f86964588" category="list-text">4.2（1a）</block>
+  <block id="66b98260fd027bc60cd8194c8ea96971" category="list-text">5.0(1a)</block>
+  <block id="419b973025a2b4fe1650da75c4d65d9b" category="list-text">5.0(3)N2(3.11e)</block>
+  <block id="51b160f401411bab90b214ee5d8a0a79" category="list-text">5.0(3)N2(4.01d)</block>
+  <block id="455876424b7c84faba5877f357daa68a" category="list-text">5.0(3)N2(4.13i)</block>
+  <block id="00ef81ade22750b17f78e4b27699717b" category="list-text">5.0(3)N2(4.21e)</block>
+  <block id="f6b0ce6d5205242e951c8631ab87fd39" category="list-text">5.0(3)N2(4.21j)</block>
+  <block id="b964e771ecc3034f4f37f3a617aed943" category="list-text">5.0(3)N2(4.21k)</block>
+  <block id="4f3fcaf884a75a90518297bc921cf25a" category="list-text">5.0(3)N2(4.22c)</block>
+  <block id="2e932391c9e975e580f6a4ef2e01e34f" category="list-text">5.0(3)N2(4.23f)</block>
+  <block id="c70ad53ea40c43faf64f2be247741e1e" category="list-text">5.0(3)N2(4.23g)</block>
+  <block id="b49bd201e88846aee81cbe70b4e70d44" category="list-text">5.0(3)N2(4.34a)</block>
+  <block id="7cb56823e822632b759ca35ce84f0333" category="list-text">5.0(8)</block>
+  <block id="dc28f1c2150fdd4f8e4db0d8eb8009e1" category="list-text">5.2(2d)</block>
+  <block id="826d406de58110656cbc011243229fef" category="list-text">5.2(8)</block>
+  <block id="25c13cb6f71b4ed4a9a5347f69c45023" category="list-text">5.2(8a)</block>
+  <block id="1e0a5600c13ef4ffa8574c9eb2983dd2" category="list-text">5.2(8b)</block>
+  <block id="5e2dff1d21433a30793314f7b66869bc" category="list-text">5.2(8c)</block>
+  <block id="d80ad80c54f14491291b628b592374a5" category="list-text">5.2(8d)</block>
+  <block id="9ae935fa2f2bdac31b70e5926d073321" category="list-text">5.2(8f)</block>
+  <block id="34d4e38ab69bef7888f356a87def4bd5" category="list-text">5.2 (8g)</block>
+  <block id="caef5d305fd78c2a72b860f7621521a6" category="list-text">5.2 (8h)</block>
+  <block id="02c3addba1a4bef5d7842c534bb102b0" category="list-text">5.2(8i)</block>
+  <block id="f7ddd38cab052271b30feca4f3514cac" category="list-text">6.2(11)</block>
+  <block id="677204cd91b010d2ce28466b1fb18e28" category="list-text">6.2(11b)</block>
+  <block id="c46dee18ca9b6a00bfbeaf4036bb3847" category="list-text">6.2(11c)</block>
+  <block id="3e1d3eedabc12ba372f69121405726f3" category="list-text">6.2(13)</block>
+  <block id="9a52525f0749a53f6bdd89e212e53ffb" category="list-text">6.2（13a）</block>
+  <block id="de4fa9ab36d03957d73ae4a424db4688" category="list-text">6.2(15)</block>
+  <block id="778a6da02b099328821c90e4b260daef" category="list-text">6.2(17)</block>
+  <block id="f0f8384d50719fdd4289ec71ac229e65" category="list-text">6.2(19)</block>
+  <block id="25e1c6e5c009e2cb64549688cbe4427e" category="list-text">6.2(21)</block>
+  <block id="9f44ff43a6122600a37dc271c1010854" category="list-text">6.2(23)</block>
+  <block id="85d83e1fdead2ac7a9ce2977d793f4c4" category="list-text">6.2(25)</block>
+  <block id="d8065c89a77a2102d326000c1db94119" category="list-text">6.2(27)</block>
+  <block id="bd16920dd8955e6321258b80e95acb29" category="list-text">6.2(29)</block>
+  <block id="4ed130aadb1218ea10590188bd0cd0bb" category="list-text">6.2(31)</block>
+  <block id="c3a6ff92684883a1d7ad0288c02a852a" category="list-text">6.2(33)</block>
+  <block id="c179c13950e851791dc74bc57612fd5d" category="list-text">6.2(5a)</block>
+  <block id="8ded156aea6f5c0a741bc593279fa1a7" category="list-text">6.2(7)</block>
+  <block id="c8d6b0eb680681a9118c089455c85793" category="list-text">6.2(9)</block>
+  <block id="bcbeeb63000dac919ef8453039e269a4" category="list-text">6.2(9a)</block>
+  <block id="2cc857ce00bf90db05db824608f9618f" category="list-text">6.2(9b)</block>
+  <block id="e0a27b5286eff9a3d2578cd1acb9a126" category="list-text">7.0(3)N2(4.04e)</block>
+  <block id="8857acacc3315ea06b8e5b35738f18af" category="list-text">7.0(3)N2(4.13b)</block>
+  <block id="b4d61ef4c174dbce643b3c6ecbaef366" category="list-text">7.0(3)N2(4.13g)</block>
+  <block id="e17b24327e0453abb822648e064fc20d" category="list-text">7.3(0)D1(1)</block>
+  <block id="116dcae7df63b9dd4a0671b7be643603" category="list-text">7.3(1)DY(1)</block>
+  <block id="3bb2ee26ddce5df3361476f2a881511b" category="list-text">7.3(13)N1(1)</block>
+  <block id="d07325bbbc5361dcc2671367103fa753" category="list-text">7.3(8)N1(1)</block>
+  <block id="331bdaa5f2e8e6662b18f655cc9b7162" category="list-text">8.1(1)</block>
+  <block id="357d4857fedae7a7a161c0b60c896652" category="list-text">8.1(1a)</block>
+  <block id="c1da3be806183723cf907193dba74e09" category="list-text">8.2(1)</block>
+  <block id="8318994c4a60d776e9144a146aeca1d5" category="list-text">8.2(2)</block>
+  <block id="7f334b4ab4faed581cc6cdc66894e285" category="list-text">8.3(1)</block>
+  <block id="20108c15b7a815d1b2682ed2998edefd" category="list-text">8.3(2)</block>
+  <block id="9dca8251bef82e16f3f2b87eda619144" category="list-text">8.4(1)</block>
+  <block id="830e5fe772c15abe76cfe6b88a5eda53" category="list-text">8.4(1a)</block>
+  <block id="fd421e61ae365faf7ca1282f8d607c69" category="list-text">8.4(2)</block>
+  <block id="cd17e31181f73258c01799bdad30ec0b" category="list-text">8.4(2a)</block>
+  <block id="bf524a76ab6ab5cc4b30e50de462439a" category="list-text">8.4（2b）</block>
+  <block id="7230a2d075573ad4da70c0400158190f" category="list-text">8.4(2c)</block>
+  <block id="f76b9a7aa6e93d8dc63cd38837995dd9" category="list-text">8.4(2d)</block>
+  <block id="a0d451fed5d0b19dc9a050be776ddf45" category="list-text">8.4(2e)</block>
+  <block id="d7a5dbbd85847568690e1dc0f083aeca" category="list-text">8.4(2f)</block>
+  <block id="4af9c6287f4705a0d7a2f70ac6564e90" category="list-text">8.5(1)</block>
+  <block id="130cddb6d79db186633717200f76d289" category="list-text">9.2(1a)</block>
+  <block id="8cd95f215aa88b60729a74fa003db130" category="list-text">9.2(2)</block>
+  <block id="5e1b93116b4835d45289ace0f9208681" category="list-text">9.3(1)</block>
+  <block id="0a2496af957cb14aa5383998f2543682" category="list-text">9.3(2)</block>
+  <block id="69a686af74ba25e96b50542833800d00" category="list-text">9.3(2a)</block>
+  <block id="9c80f950aa970ae9ffa7bdc84af211d9" category="list-text">9.3(5)I42(1b)</block>
+  <block id="71edb12869eec806341052ed63d892d7" category="list-text">9.3(5)I42(1g)</block>
+  <block id="76b8422e6e2a0aa1b72715d745501405" category="list-text">9.3(5)I42(1j)</block>
+  <block id="ac16533a12793226ebc30a0e03704379" category="list-text">9.3(5)I42(1k)</block>
+  <block id="02d7f6b32ae150d750aa0f7e9bc750d0" category="list-text">9.3(5)I42(3f)</block>
+  <block id="afb3405e26b0f008f5a6f30aa52f7a39" category="list-text">9.3(5)I43(4b)</block>
+  <block id="592d3fe76aaec2c43e367eda7c629a7d" category="list-text">9.4(1)</block>
+  <block id="b2218a2d1f74821668085026b8f076da" category="list-text">9.4(1a)</block>
+  <block id="95d8129c18464c35bba13060da882f75" category="list-text">9.4(2)</block>
+  <block id="d8ff83a2064f60cbae868d87f424d9ff" category="list-text">9.4(2a)</block>
+  <block id="c8fbe0683bdb0f68059b511c52460389" category="list-text">9.4(3)</block>
+  <block id="9c5598c8436ad9e8b4bafaf04068e1ba" category="list-text">6.26</block>
+  <block id="b2589f51c5a6653154503ba63c2d4ce3" category="list-text">6.28</block>
+  <block id="2ddda33d35d953800e9d3ede59bc8a44" category="list-text">7.32</block>
+  <block id="f0c1b54a4b5e9544133998379e2385aa" category="list-text">7.33</block>
+  <block id="e74fd7607d43c3d63d343e1c08f8a3f9" category="list-text">CX3-40f</block>
+  <block id="8aff95ffb817e50491f778c5f9d37240" category="list-text">CX4-480</block>
+  <block id="ebffe3ac34f8fcb1b09b50f4dad34b31" category="list-text">VNX5100</block>
+  <block id="17d7d9629a60350781376aa19fb0becb" category="list-text">VNX5200</block>
+  <block id="260ac182e61ec89df50e99b1b4d4ad31" category="list-text">VNX5300</block>
+  <block id="e51bf0cad5d4d929eb996e99fdfbf878" category="list-text">VNX5400</block>
+  <block id="824c00151155e3701e90d1f6ba32b390" category="list-text">VNX5500</block>
+  <block id="5a5b843d2ef59570e475c11c40c7999f" category="list-text">VNX5600</block>
+  <block id="24ad0c58200c19012f87467171ab50ca" category="list-text">VNX5700</block>
+  <block id="42f2aff375f7cbf3b17c0ac380d4240e" category="list-text">VNX5800</block>
+  <block id="fa4b1563990b6e09df925cbcdeaacfe3" category="list-text">VNX7600</block>
+  <block id="f7857f1396978816aa7021cd6de9e748" category="list-text">04.28.000.5.710</block>
+  <block id="96b0396f6aa29b4e1686c9f4d19ab0f9" category="list-text">05.32.000.5.206</block>
+  <block id="0321f5274bd7211902348f0903df5620" category="list-text">05.32.000.5.218</block>
+  <block id="93ec994c9a68e4ac6e04a1b6a17344c0" category="list-text">05.32.000.5.219</block>
+  <block id="2a211e20d901b7724da7371636edcabc" category="list-text">05.32.000.5.221</block>
+  <block id="22c0707628be9a767ad5de13a63c131c" category="list-text">05.32.000.5.225</block>
+  <block id="a8600877dbab659dbdcc1c3259dc8872" category="list-text">05.32.000.5.249</block>
+  <block id="cf9bf386c1d820bb3a31b290fff794e2" category="list-text">05.33.000.5.074</block>
+  <block id="b6cd000bacfb53dca3fb76a0d76655fc" category="list-text">05.33.008.5.119</block>
+  <block id="eb631ec7db3b7fc4de0671f547c7ea6e" category="list-text">05.33.009.5.155</block>
+  <block id="85537b41bf15816798778004c9b0b378" category="list-text">05.33.009.5.184</block>
+  <block id="1310c0005239a8a7953af1067b884a32" category="list-text">05.33.009.5.186</block>
+  <block id="c717de7c2480c207b9043a8873264c14" category="list-text">05.33.009.5.231</block>
+  <block id="ab7618221620fef9803a0399c9b4c6db" category="list-text">05.33.009.5.238</block>
+  <block id="ac86b9cb0cb759394290a5fd08c4be38" category="list-text">05.33.021.5.256</block>
+  <block id="db89104e55309f201d1b7f414fabe010" category="list-text">05.33.021.5.266</block>
+  <block id="c3112b50543c5d885793c3a9dc7e44f5" category="list-text">05.33.021.5.322</block>
+  <block id="69f987f023c4f7d465da2a1b7e8477d3" category="list-text">3.26.40.5.029</block>
+  <block id="21ff7b9b6d32a5af495e2e762def82de" category="list-text">DD VE</block>
+  <block id="5427dd67b9cee92a30aab273ead5da30" category="list-text">DD2500</block>
+  <block id="2e5838ba23e8e1d81a25d3d287232e8d" category="list-text">DD3300</block>
+  <block id="c9ff53d6b471bec835311eb040189047" category="list-text">DD4200</block>
+  <block id="029979b6690bb97017bb9f718cff6459" category="list-text">DD6300</block>
+  <block id="df36fef36214f15ec332b3844ea0882b" category="list-text">DD6400</block>
+  <block id="11da7a538fa36ee0b8255dd6b1c50f76" category="list-text">DD6800</block>
+  <block id="63e8aafad475597a16950981871871a3" category="list-text">DD6900</block>
+  <block id="13b6e59e2f2d4475fb4e0eb53facb368" category="list-text">DD7200</block>
+  <block id="9edfb429df5503349d73c224e027c498" category="list-text">DD9300</block>
+  <block id="56edf5d0296c30b148df3087ef3ee06f" category="list-text">DD9400</block>
+  <block id="2238b6a5342514556c9b5481bd1953b7" category="list-text">DD9410</block>
+  <block id="bbb774d3e0dedae09a2e942721e4dfea" category="list-text">DD9500</block>
+  <block id="db0cd00d2dc029c5247b303cb5c4d7bf" category="list-text">DD9800</block>
+  <block id="2d220987bab39bf74bd1d3e61b5da5a3" category="list-text">DD990</block>
+  <block id="4d21dd2566c1152c57fc960cf7a0e4ca" category="list-text">DD9900</block>
+  <block id="a54cc89634a3dc6fa4f0591e2db68779" category="list-text">DD9910</block>
+  <block id="1df3f685ffd9d0f5220180a19986fa7f" category="list-text">6.0.2.30-606339</block>
+  <block id="57568a6974628d2d8edd943015017b36" category="list-text">6.1.2.051-633576</block>
+  <block id="aa5630ef7dbc75bfc861de6f115e1c60" category="list-text">6.1.2.20-606786</block>
+  <block id="7c4425bd9140f33b4f3a848b56bc1f83" category="list-text">6.2.1.30-663869</block>
+  <block id="686a95b189179df6e8673a51c5eebcae" category="list-text">6.2.1.40-671977</block>
+  <block id="4b039b8470e3dad75f959572386fb32b" category="list-text">6.2.1.60-686365</block>
+  <block id="19dba8f2722a158fc419ebba72020710" category="list-text">7.10.0.20-1023227</block>
+  <block id="1e35ba3039ed6fec7e6d8228873be07a" category="list-text">7.10.1.0-1042928</block>
+  <block id="eeeb483645e21c95fa4fb2f1354dcf8c" category="list-text">7.10.1.1-1049892</block>
+  <block id="fb1e2e5b6fa7e0eeb9618094106699e6" category="list-text">7.10.1.10-1068159</block>
+  <block id="2d142e044b5261c6537e2ae0e296b95d" category="list-text">7.10.1.15-1078832</block>
+  <block id="1042d668acf81478abcf74644a90d30a" category="list-text">7.10.1.20-1090468</block>
+  <block id="f7b7c077277e156514441ae4eb45598d" category="list-text">7.10.1.30-1105324</block>
+  <block id="eeec85fa5e67526f87478e5d2fde86fc" category="list-text">7.10.1.40-1126469</block>
+  <block id="241b8d9b9d3abf2db726544646ad0719" category="list-text">7.10.1.50-1146826</block>
+  <block id="22bd92a6b971b5f8cfd2f57b2489302a" category="list-text">7.11.0.0-1035502</block>
+  <block id="afc2f7a36a663ce1d6a15ae15f984a55" category="list-text">7.13.0.20-1082704</block>
+  <block id="01a9001cd87164de0c49ce51739eaed1" category="list-text">7.2.0.20-658029</block>
+  <block id="16897dd1b9bf0c717ad1642b5da3b22f" category="list-text">7.2.0.60-682124</block>
+  <block id="12358d50a6aad60667549a5d813bb5b2" category="list-text">7.2.0.70-686759</block>
+  <block id="6ec06c0961ef0e92262dbf7f0e36acda" category="list-text">7.2.0.90-692270</block>
+  <block id="9bbaa6ed3cec556aa32785c6bdc15167" category="list-text">7.7.4.0-1017976</block>
+  <block id="898035611cc35f20dec5f2f1d7fe870b" category="list-text">7.7.5.1-1040473</block>
+  <block id="21f10bb52a099087b74f67c667f7a735" category="list-text">7.7.5.11-1046187</block>
+  <block id="a3de9239faca3e87b3f636304394814e" category="list-text">7.7.5.25-1078970</block>
+  <block id="5e1dc95998beed5460db74c6c829ef55" category="list-text">7.7.5.30-1091295</block>
+  <block id="bc031ba5a7793fb53a807a1b9ee451c9" category="list-text">8.0.0.10-1097914</block>
+  <block id="1c7e3f16a4952c8f14a4d961cbf74b3b" category="list-text">8.1.0.10-1127744</block>
+  <block id="7eb80d6dd7e1ed19dad78773a5ada74b" category="list-text">A100</block>
+  <block id="cc96dbfd2d85f2096c9bbe8ea7f9968e" category="list-text">A200</block>
+  <block id="39b233964265ab07d418a79307e4d255" category="list-text">A2000</block>
+  <block id="fe392b3a6f83320865ecf16cc38ebef5" category="list-text">A300</block>
+  <block id="3e2d2338534779010ed8eb0e620357d4" category="list-text">A3000</block>
+  <block id="81f916626efd492751bc7081559d0dc9" category="list-text">F200</block>
+  <block id="38a302701e7d07b88ec2b9e071a00823" category="list-text">F600</block>
+  <block id="c103bf6862f6ed3b1a5b3dd0b2fd619a" category="list-text">F800</block>
+  <block id="19512d00c38db3932b2581477161d30b" category="list-text">F900</block>
+  <block id="8dd248a7d268c48a7a8756ee52a123c8" category="list-text">H400</block>
+  <block id="d33658ab25cf9d17f73b098ac64dc7fc" category="list-text">H500</block>
+  <block id="342c1ffe4d445339bccfa0f991c14fdc" category="list-text">H5600</block>
+  <block id="9e66d7f849eef6a48a659e37dcd00eb5" category="list-text">H600</block>
+  <block id="1266ad9d549e5e4a676f9e21ef8de025" category="list-text">H700</block>
+  <block id="e22f853a2c156d2575e3b79111afef67" category="list-text">NL410</block>
+  <block id="0ffb3aa77f6992e7744897b6d5e93f0b" category="list-text">S210</block>
+  <block id="a095781ac70e618a4af5f0acc205dda6" category="list-text">X210</block>
+  <block id="224cf04bef152970bd6f45c0dde8ddf0" category="list-text">X410</block>
+  <block id="acb02ac2333be17282cce0816297aff4" category="list-text">9.1.0.10</block>
+  <block id="b14d50a7b9848606502f36f710ac47e5" category="list-text">9.1.0.6</block>
+  <block id="7cbe0b802401e790f817a5c45b4686c5" category="list-text">9.1.0.9</block>
+  <block id="ec19328635f816ca0041df86580b73c1" category="list-text">9.2.1.10</block>
+  <block id="7d1474d623f8277da88ccc50433d169a" category="list-text">9.2.1.11</block>
+  <block id="bee579acc97872398a269fc0ead44e34" category="list-text">9.2.1.12</block>
+  <block id="d79532a1397edfcdf3e5f04e43135093" category="list-text">9.2.1.13</block>
+  <block id="f7e8ace8f39f46bd12013a1f0c5c2f1f" category="list-text">9.2.1.19</block>
+  <block id="0b6c30e797572725aaab9a110dd322d2" category="list-text">9.2.1.4</block>
+  <block id="63c6f07bbfcdc5d3c8bc195166e36b34" category="list-text">9.2.1.9</block>
+  <block id="9bb0e55b2bdf16f17f4ddbd4670e0842" category="list-text">9.4.0.11</block>
+  <block id="0b6679e56850dc574f6dbec29e7d07a5" category="list-text">9.4.0.13</block>
+  <block id="816534cbe8d846e77bd3778f973d0d4f" category="list-text">9.4.0.14</block>
+  <block id="b99f2e90c9148c8c456267e47106559e" category="list-text">9.4.0.15</block>
+  <block id="0048d48728212595ad4c9494a0ee9076" category="list-text">9.4.0.16</block>
+  <block id="7e1910f13a1534f9bf3e44fed9a01cd1" category="list-text">9.4.0.17</block>
+  <block id="fa4891d5cb0fa757c5cb4f5cd1710208" category="list-text">9.4.0.18</block>
+  <block id="8f1db9c15f76b64b7ac8a1c030d0d3af" category="list-text">9.5.0.3</block>
+  <block id="87df1ea4710da7eacf925799f28aae72" category="list-text">9.5.0.5</block>
+  <block id="a2d5e378a745a5d1440b7e61fa2bad1b" category="list-text">9.5.0.6</block>
+  <block id="45d63c5e6892c4065fd346308acbb9a2" category="list-text">9.5.0.7</block>
+  <block id="a0e3d2704c6cc6dfa59d3f0e16439fe3" category="list-text">9.5.0.8</block>
+  <block id="67bc3b2e4de05b100d2957039c4a97d3" category="list-text">9.5.1.0</block>
+  <block id="4e67e43d4afe95551ce70ff663813027" category="list-text">9.5.1.1</block>
+  <block id="fcf1bd700fe4f317c00f547f3f0ea500" category="list-text">9.5.1.2</block>
+  <block id="3cd002d1063742b1eaa11c338d45da89" category="list-text">9.7.1.0</block>
+  <block id="c65bc6e3b8bd09004beecac6d3916cd2" category="list-text">9.7.1.2</block>
+  <block id="4e2197ad8001c57fda569e3584a117e3" category="list-text">9.7.1.3</block>
+  <block id="94af5441badd2b422a9415fca4f2cf66" category="list-text">9.7.1.4</block>
+  <block id="0039e4128e1be55b5094f950cc90f99e" category="list-text">9.7.1.5</block>
+  <block id="6ee6bb1f06527f61879596499c5f0066" category="list-text">v8.0.0.4</block>
+  <block id="231ce775e215f1dca42bf7ee5a32dccc" category="list-text">v8.0.0.6</block>
+  <block id="ab6d59a392a249e1b5c309d27862e98c" category="list-text">v8.0.0.7</block>
+  <block id="959e633c664dbe819809fa20a948af36" category="list-text">v8.1.0.4</block>
+  <block id="4b3a8777f0dbfd0041c612f9b2f48077" category="list-text">v8.1.2.0</block>
+  <block id="039c14c69ff141e1c8a9d35ce17957c6" category="list-text">v9.0.0.0</block>
+  <block id="4a6a0383ec62ae23106255c2cb89f757" category="list-text">NL400</block>
+  <block id="d0113d1c6d045a9cf6651205ec9e0ef8" category="list-text">X200</block>
+  <block id="fc387527ab54a1e8cfff39fe52cf8c25" category="list-text">X400</block>
+  <block id="fcb2c05953820e0a868de42a9e46497f" category="list-text">9.1.0.18</block>
+  <block id="63c9aac3c85f9b20349abbbe39d26125" category="list-text">9.1.0.19</block>
+  <block id="94567fbf1db4f1d7debe551791fd7d7f" category="list-text">9.2.1.15</block>
+  <block id="709c623ca952115a2ba62ff9ac70a57d" category="list-text">9.8.0.2</block>
+  <block id="d939487b7a34f0eaa0686d519783445b" category="list-text">v7.2.0.5</block>
+  <block id="eb9e525d13bcde305c8ac4f47d47d4a2" category="list-text">v7.2.1.3</block>
+  <block id="ba73e7c67577d6a24c8a7e39a228b5a5" category="list-text">v7.2.1.6</block>
+  <block id="4af52c93234608b0fd5de59ab0b030eb" category="list-text">v8.0.1.1</block>
+  <block id="d7d2ce016f666aae5a875148a83a20a6" category="list-text">PowerStore 1000T</block>
+  <block id="0581d9b1cf2b58265b8fb09b7303221e" category="list-text">PowerStore 1200T</block>
+  <block id="db5b7fd3e585205204170ddc8c734411" category="list-text">PowerStore 3000T</block>
+  <block id="7e7e32c6a3a13f8a7baa596b7cd55296" category="list-text">PowerStore 3200T</block>
+  <block id="a4a9f786bbb9f3235259bb4ce0e6b96c" category="list-text">PowerStore 5000T</block>
+  <block id="53d023e8018f41f4d948df99807fa0a2" category="list-text">PowerStore 5200T</block>
+  <block id="5cd4f6b10a76132c755eac717538d493" category="list-text">PowerStore 9000T</block>
+  <block id="f41137f0eecc14b8c32797f61cc99297" category="list-text">PowerStore 9200T</block>
+  <block id="c065b86a7adc94f26cc7913d61ac2ae5" category="list-text">2.1.0.1</block>
+  <block id="2c36d27cdc218cd0e1b1a4d37687d8e6" category="list-text">2.1.1.0</block>
+  <block id="e1d94b2821a95f3f6550e7f3694b77b3" category="list-text">3.2.0.1</block>
+  <block id="b675f9913ab1089ab434d5c2d394d3b7" category="list-text">3.2.1.0</block>
+  <block id="1c1bff3322976dbc63da080425616368" category="list-text">3.2.1.1</block>
+  <block id="d77238bbfb15e9dfa4b08067ecd174f5" category="list-text">3.5.0.1</block>
+  <block id="0c6cd73c0ebba76469f9fcd556b594bb" category="list-text">3.5.0.2</block>
+  <block id="42b12adc896b673050984c8269ad19a5" category="list-text">3.6.0.0</block>
+  <block id="de2499f98884600917fe67e09663e856" category="list-text">3.6.1.0</block>
+  <block id="b3a806218f035122e3a0d6319430a39f" category="list-text">3.6.1.1</block>
+  <block id="b38a803072f2f2e5f37df73d9fbb34ba" category="list-text">3.6.1.2</block>
+  <block id="3c1218e376e43148b1cb944b3539914a" category="list-text">3.6.1.3</block>
+  <block id="7b40e06ca4988a2a223a4521a04719a3" category="list-text">3.6.1.4</block>
+  <block id="80c5f203f94e0d872e183431d86065f1" category="list-text">4.0.0.1</block>
+  <block id="0ce508aed84f16167be48d94acd1a508" category="list-text">4.0.0.2</block>
+  <block id="dc4af399a71a659ea5a523a4dfe6acf2" category="list-text">4.0.1.0</block>
+  <block id="6d7bec6ec3efcfd270fb370c4bd1b813" category="list-text">V10.0.0.0</block>
+  <block id="d265b1e5e35250273cb52c3326a3dc8f" category="list-text">V10.0.1.1</block>
+  <block id="0a870825cfea5ad56634d439d6ebfb06" category="list-text">V10.1.0.0</block>
+  <block id="977511b87cbb41d2059840d0c4fed10f" category="list-text">V10.1.0.1</block>
+  <block id="067a41f0cbb86e038aa51c9aa804d84d" category="list-text">V10.1.0.3</block>
+  <block id="a757c21b148d0efdab9d9faa57aa018b" category="list-text">V10.1.0.5</block>
+  <block id="0f28eee0c4a5dfd96d10c47947516e7f" category="list-text">V10.2.0.0</block>
+  <block id="3f560a795803d53a1c4d68541d044f4f" category="list-text">V8.3.0.6</block>
+  <block id="d6434ed4c11820b852abe9add7984770" category="list-text">V8.4.0.7</block>
+  <block id="e516e5b6d2d1e31bc1ca3451b1e2c622" category="list-text">V8.4.0.9</block>
+  <block id="7267dc1be6aa19dd340fd7591df1d431" category="list-text">V9.1.0.5</block>
+  <block id="98ac22baf08b5bd382a501664e5cab57" category="list-text">V9.1.0.6</block>
+  <block id="fe3d333894a152b7ee2fbc6b03a37152" category="list-text">V9.2.1.0</block>
+  <block id="5469a17a65c08e1b41580eab48b457ad" category="list-text">V9.2.2.0</block>
+  <block id="bf57e887839081da22af619d01a69123" category="list-text">V9.2.3.0</block>
+  <block id="92280376447f51778ac85efd46103712" category="list-text">V9.2.3.1</block>
+  <block id="ff04669a709182d8bdcdf3308ea775cc" category="list-text">V9.2.3.4</block>
+  <block id="317aa70e6888d76b35955f3e6c3ea1ac" category="list-text">V9.2.3.6</block>
+  <block id="db7d6bdbcab0ec497c21ec5b8c325f04" category="list-text">V9.2.4.1</block>
+  <block id="3cbfd883ce8121fc96567dfa1a908ecd" category="list-text">V9.2.4.2</block>
+  <block id="252266e4f5a2c6dc787db3480263c1c9" category="list-text">V9.2.4.3</block>
+  <block id="ce006dfbdec0fb691f3b3f48c8b83510" category="list-text">V9.2.4.6</block>
+  <block id="157d5a16cb594c3f5da1ab4529c43695" category="list-text">V9.2.4.7</block>
+  <block id="30f1b704bd903bb3657152267282d350" category="list-text">V9.2.4.8</block>
+  <block id="dedbb478a2082d0d827ebe53ac1e06c9" category="list-text">PMax8000</block>
+  <block id="c3cb274e69fd9213b34de5154ea121b4" category="list-text">PowerMax_2000</block>
+  <block id="c1efc6aa666272ff9957c937addd644f" category="list-text">PowerMax_8000</block>
+  <block id="633361de58659c437fef3333b02cd0cd" category="list-text">VMAX-1</block>
+  <block id="484ed45684826b42e3df2b806004669f" category="list-text">VMAX100K</block>
+  <block id="4abc70d5c61f3b2386f9846f7d5c1ac7" category="list-text">VMAX10K</block>
+  <block id="173f8897ddb23920fd0c7b2f09d7cd6b" category="list-text">VMAX200K</block>
+  <block id="4d1bfa2152dd8fa5695315ed23bb3a60" category="list-text">VMAX250F</block>
+  <block id="52b579f2267372476bf7616ece6ab388" category="list-text">VMAX400K</block>
+  <block id="a680b795cb8ca52ce8b54259b609e4e4" category="list-text">VMAX40K</block>
+  <block id="c433f90ef035c65ba04ac02956f66c7c" category="list-text">VMAX450F</block>
+  <block id="b88c7a3deb46029ed2bd6d99c1416cbd" category="list-text">VMAX850F</block>
+  <block id="baafd7977af1d0e1f280494dcd38d366" category="list-text">VMAX950F</block>
+  <block id="1c5a5f0e75e5698c8a2595c0db362ded" category="list-text">5876.286.194（16F40000）build 115</block>
+  <block id="12ff6e7a167749444578dc215545c6f8" category="list-text">5876.309.196（16F40000） build 153</block>
+  <block id="46dfd5a8b0e1a7819b45974afa90352b" category="list-text">5876.309.196（16F40000） build 162</block>
+  <block id="b96cfee1b1f1f2f432588a3960cfe2e3" category="list-text">5876.309.196（16F40000） build 94</block>
+  <block id="76e021e76b65b9620424c4e868f90396" category="list-text">5977.1151.1151 （17590000） build 45</block>
+  <block id="c16eac3c3309ab922802d88fe25d1cdb" category="list-text">5977.1151.1151 （17590000） build 60</block>
+  <block id="6e75c5efbe0ded9227f121607bb531eb" category="list-text">5977.1151.1151 （17590000） build 9</block>
+  <block id="ae93feface8bf8513fb6dc3223845040" category="list-text">5978.711.711（175A0000） build 320</block>
+  <block id="20a01e16441e6fbb7f5be8b81f5bcda4" category="list-text">5978.711.711（175A0000） build 335</block>
+  <block id="9eb2da52c90ad4a633fcb0fefa831dbe" category="list-text">5978.711.711（175A0000）build 365</block>
+  <block id="b7676a30cc54483c2a9866f3db0fc71e" category="list-text">5978.711.711（175A0000） build 416</block>
+  <block id="6e84b2eca74f26439ca34eb70d92b9a5" category="list-text">5978.711.711（175A0000）build 436</block>
+  <block id="e29c939d22154260a65084d41d129de7" category="list-text">5978.711.711（175A0000）build 438</block>
+  <block id="dcb70a35c2d538266d0bc1905619417f" category="list-text">5978.711.711（175A0000）build 448</block>
+  <block id="d2d3c875e3e1b9b7fc5a181e4a48fcf0" category="list-text">5978.711.711（175A0000）build 484</block>
+  <block id="037929a427883acc216c830c525e6cc1" category="list-text">5978.711.711（175A0000） build 542</block>
+  <block id="992989a9d19cdb7955b1fdc4c4452acd" category="list-text">5978.711.711（175A0000）build 581</block>
+  <block id="eed647804b0f1496edb12401f9570a92" category="list-text">5978.714.714（175A0000）build 1</block>
+  <block id="6941eb9715497c128c3f62ad975fcf46" category="list-text">5978.714.714（175A0000）build 101</block>
+  <block id="5fa465550b1faeb1d606278b5bed6ef0" category="list-text">5978.714.714（175A0000）build 108</block>
+  <block id="b9def371ccb8321e26b610376fcd98e1" category="list-text">5978.714.714（175A0000）build 117</block>
+  <block id="4483e2fe9fb835623e71672ad71fbcc9" category="list-text">5978.714.714（175A0000）build 137</block>
+  <block id="f14b22e220306b92ac2d79ede8b855ae" category="list-text">5978.714.714（175A0000） build 145</block>
+  <block id="892ddf509bdcf747e5065d17ec1997ab" category="list-text">5978.714.714（175A0000）build 34</block>
+  <block id="60d02b14abf3f69c5c9ec9c644b127e9" category="list-text">5978.714.714（175A0000） build 49</block>
+  <block id="cd24e1f3769307a3e919ff0e9fada027" category="list-text">5978.714.714（175A0000）build 53</block>
+  <block id="a0d2cc5c9b63231a6ed14cfd0d9a6e10" category="list-text">5978.714.714（175A0000） build 79</block>
+  <block id="3ee7cd1d8e0eafae450b568d4bcec972" category="list-text">V10.0.0.5</block>
+  <block id="353f4167a710eff7d4b52bcbab83388b" category="list-text">V10.0.1.5</block>
+  <block id="c48fdb46d7a8091ff246625023fade6e" category="list-text">V10.1.0.6</block>
+  <block id="276165f034f4076abfc7a14ab853e30d" category="list-text">V10.1.0.8</block>
+  <block id="8e6fd27d043b312ac73d73d94fd18338" category="list-text">V10.2.0.1</block>
+  <block id="9635b41c512693f2786cd0b5e69d0f8f" category="list-text">V10.2.0.2</block>
+  <block id="b4df1a863b172e3dbb40e77f408edcdd" category="list-text">V9.2.3.15</block>
+  <block id="628d62fa5626388156379d0b66d7ae83" category="list-text">V9.2.3.20</block>
+  <block id="a17e00f7360d355d4f348e5e10303638" category="list-text">V9.2.3.22</block>
+  <block id="def05934d7dbe39ec77c4d3ac1dba9c9" category="list-text">V9.2.4.10</block>
+  <block id="768fd37c0deffbd3339372c6db14d65e" category="list-text">V9.2.4.11</block>
+  <block id="ee70a7859a4ba9d8d8a085b977f6a5fd" category="list-text">V9.2.4.12</block>
+  <block id="1f5a328b68d9562a9814dc49f6b25173" category="list-text">V9.2.4.9</block>
+  <block id="9f525848e4710f1bc788d089e47e7fa1" category="list-text">PowerMax_2500</block>
+  <block id="a2f2b7db3698ee03e41c545b049aedb5" category="list-text">PowerMax_8500</block>
+  <block id="39815fc86a6b3f6b5bda641febe0eac3" category="list-text">5977.1131.1131 build 615</block>
+  <block id="3d94dd549bb1d34f52179d2ed3ae8f3d" category="list-text">5977.1151.1151 build 60 build 60</block>
+  <block id="6341055f4d38e8370ce148aec4e4790c" category="list-text">5978.711.711 build 205</block>
+  <block id="3d6a8ede12234d5fe88eaa3fff1aef6c" category="list-text">5978.711.711 build 335 build 335</block>
+  <block id="aee02d9ff02f334066105d36ed6d03f7" category="list-text">5978.711.711 build 365</block>
+  <block id="10b44d1abde90c8f5d8e2285721f33c8" category="list-text">5978.711.711 build 416</block>
+  <block id="d3c166694c03871ef6764e354d962ee2" category="list-text">5978.711.711 build 436 build 436</block>
+  <block id="5ca24d9cd20efd0212e4afd33dfc9e89" category="list-text">5978.711.711 build 438</block>
+  <block id="30d4c80e2ba9b5b80e71c4529e65793b" category="list-text">5978.711.711 build 448</block>
+  <block id="76e14e222ef3e9a06b58f6e882fb67b3" category="list-text">5978.711.711 build 471</block>
+  <block id="d4e022940e8844cefbb97c43b50fef56" category="list-text">5978.711.711 build 484</block>
+  <block id="3d20c6798acd1e31c610ebc15e27daed" category="list-text">5978.711.711 build 484 build 484</block>
+  <block id="2491be3461b36642151c262d580abe82" category="list-text">5978.711.711 build 542</block>
+  <block id="10c62929ff32cd67c6f5e6336c43a387" category="list-text">5978.711.711 build 542 build 542</block>
+  <block id="f657a4bb053aa3e719dce07d403749aa" category="list-text">5978.711.711 build 581</block>
+  <block id="5c583189418fbc9ee1f3ee41489354b3" category="list-text">5978.711.711 build 75</block>
+  <block id="b66a309a34186a4a24dd0be2ac27906f" category="list-text">5978.711.711 build 8 build 8</block>
+  <block id="2cf6e43db7beca5eebcd13b8a6fbcd07" category="list-text">5978.714.711 build 49</block>
+  <block id="39f86810e3c4d53c8d5fcf12b1de61c5" category="list-text">5978.714.714 build 1 build 1</block>
+  <block id="309f143450f8ee935955f8989f4c0dbe" category="list-text">5978.714.714 build 101 build 101</block>
+  <block id="8d9e86754f11b7a9d77f8b006be87a41" category="list-text">5978.714.714 build 108</block>
+  <block id="dec057346f94982e507c65b47db4848a" category="list-text">5978.714.714 build 117</block>
+  <block id="adaa71d9b4a9641d7914aa05fe70d925" category="list-text">5978.714.714 build 117 build 117</block>
+  <block id="4c01704e9405434d1042106f32bd1337" category="list-text">5978.714.714 build 131 build 131</block>
+  <block id="f592008acc227b8894570c3465d53974" category="list-text">5978.714.714 build 137</block>
+  <block id="244b1360dece53b4d004463aab34720d" category="list-text">5978.714.714 build 137 build 137</block>
+  <block id="366f882a69688e69438ce15a08367426" category="list-text">5978.714.714 build 145</block>
+  <block id="b9ced95c2d755a0bd5bc6ec78d9ef3d9" category="list-text">5978.714.714 build 149 build 149</block>
+  <block id="dac4e6181517f1742fb1545aa457a541" category="list-text">5978.714.714 build 34</block>
+  <block id="f79877323616fcd1df4004bd6459acf0" category="list-text">5978.714.714 build 49</block>
+  <block id="bec0016c71bbbb470863af278e53d968" category="list-text">5978.714.714 build 49 build 49</block>
+  <block id="22ca0b53eba515588d80c4df3a7ac40b" category="list-text">5978.714.714 build 79</block>
+  <block id="ab1a2c373e2929d0551db7a1f5d5096a" category="list-text">5978.714.714 build 79 build 79</block>
+  <block id="04aefe97c6bd5b3fea5f77207dc4f45f" category="list-text">6079.175.0 build 161 build 161</block>
+  <block id="5408b122bda87918540660ea7dd85521" category="list-text">6079.175.0 build 259 build 259</block>
+  <block id="da32bf8d9a147b675d4cf94b0e43b1b7" category="list-text">6079.225.0 build 127 build 127</block>
+  <block id="3f28d53c4a39b04bd2c215a700ffd1c6" category="list-text">6079.225.0 build 216 build 216</block>
+  <block id="cc51b32849eda39fe1963eb7f5f8ddcc" category="list-text">6079.225.0 build 218 build 218</block>
+  <block id="72515c6ff57eec32989a487a191be3c9" category="list-text">6079.225.0 build 291 build 291</block>
+  <block id="d1be544c1f2b904f0e6b30f993fa00f6" category="list-text">6079.225.0 build 331 build 331</block>
+  <block id="208ac98103133b492d12ff1a46d26822" category="list-text">6079.225.0 build 86 build 86</block>
+  <block id="0265da70f3dc57b0cef12ba5837764e9" category="list-text">6079.275.0 build 221 build 221</block>
+  <block id="62a5be2bc90fece1c5d047aa56083599" category="list-text">Unity 300</block>
+  <block id="bc9ce42e2444499a8fda8c1334849373" category="list-text">Unity 300F</block>
+  <block id="02606a5bed219a83f7774e7836776555" category="list-text">Unity 350F</block>
+  <block id="1d3a7b89922be02470ddd70200b3a94e" category="list-text">Unity 380</block>
+  <block id="905ac34cc83f40618b75172975cf66ea" category="list-text">Unity 380F</block>
+  <block id="c5c85458d5617aac31b4a20cf47c7cf7" category="list-text">Unity 400</block>
+  <block id="fd4e23f36f45c2f212cef34f28390881" category="list-text">Unity 400F</block>
+  <block id="e69cbaaf60b9269d1b8e3f4e66cf3e9a" category="list-text">Unity 450F</block>
+  <block id="6ba28c9230b9516f312eec4be57b9d3e" category="list-text">Unity 480</block>
+  <block id="2bfbf12e3a7627df1f6039c18ee9f11a" category="list-text">Unity 480F</block>
+  <block id="c5e4ac6836d32df55365677fc851ff89" category="list-text">Unity 500</block>
+  <block id="f861b47797c88d43861f604b9120dce6" category="list-text">Unity 550F</block>
+  <block id="c5c68a76e88c51a260030d595656ef35" category="list-text">Unity 600F</block>
+  <block id="0ceb8277d53ed4097acf85afb5dba5ce" category="list-text">Unity 650F</block>
+  <block id="8577b370983060ccfec017dc8a0324b4" category="list-text">Unity 680F</block>
+  <block id="3863164746ff1b6c1af5a118b7a7b98e" category="list-text">Unity 880</block>
+  <block id="5cc3d5dbebdf96cfebf04126d6f75cc3" category="list-text">Unity 880F</block>
+  <block id="103262c86c1dffc55293de166c93cd35" category="list-text">UnityVSA</block>
+  <block id="9c489d0f442cc62bd95893d3cbffbd47" category="list-text">VNXe3200</block>
+  <block id="9f419df68443c776b60d7ae8e3cb1771" category="list-text">3.1.17.10229825</block>
+  <block id="13c6ca41ec8bd90e542881af776149b2" category="list-text">4.1.2.9257522</block>
+  <block id="b94b202348b7f2432302d14f941908c0" category="list-text">5.0.6.0.5.008</block>
+  <block id="a1d00c0645e2c1774fdff7a2fdf22052" category="list-text">5.0.8.0.5.007</block>
+  <block id="9386584c3138d087236614ac0a777d4a" category="list-text">5.1.2.0.5.007</block>
+  <block id="a0906acfb7532895e0a5772a36668608" category="list-text">5.2.1.0.5.013</block>
+  <block id="34499346fb8712056ba7ab7edf283514" category="list-text">5.2.2.0.5.004</block>
+  <block id="bcb6e898388f84479b4511b8e6e8db17" category="list-text">5.3.0.0.5.120</block>
+  <block id="5d6a3ca47e4b7ed8bda1943553760fdb" category="list-text">5.3.1.0.5.008</block>
+  <block id="365997cc753c43a753c08725ddcd0fe9" category="list-text">5.3.1.0.6.028</block>
+  <block id="9b37845721c68425d9aed0f21480d528" category="list-text">5.4.0.0.5.094</block>
+  <block id="17888ff6deebaecf5f21063636219951" category="list-text">5.4.1.0.5.006</block>
+  <block id="5aae26cfc631423a28ee9f3eea8618b0" category="list-text">6.2.1</block>
+  <block id="0621ff1d1a7a69c31fa9c0bd192756a5" category="list-text">6.3.2</block>
+  <block id="744376ce98fd6547e7e5d7f382cc3c80" category="list-text">6.3.3</block>
+  <block id="e7cfb9ec830984d637c4aed91cd725c5" category="list-text">6.4.0</block>
+  <block id="bb270fba1988038f5680f75b7475565e" category="list-text">6.4.1</block>
+  <block id="4fd0f5bc13853fae144764d9c4a67c2c" category="list-text">6.4.2</block>
+  <block id="8b1b5a6d4e79bf00b8f66efe489e307a" category="list-text">1 個 Brick 與 125TB</block>
+  <block id="530cbaceffaa10b5ea061683a0377c5c" category="list-text">1 個 Brick 與 24TB</block>
+  <block id="f942f4380e807948c0ab4d2179e887be" category="list-text">1 Bricks 與 31TB</block>
+  <block id="d93695857b84e4f26bc6ee6171e3589e" category="list-text">1 Bricks 與 8TB</block>
+  <block id="175d4b399a5fd6e436fdeefdb87f0e25" category="list-text">1X10TB</block>
+  <block id="4752db26085e65fa772400b16158cec0" category="list-text">1X20TB</block>
+  <block id="502375604d2546bf16af8caa4076cde3" category="list-text">1X40TB</block>
+  <block id="95ddd40ca919e6513cf012c46a5d164c" category="list-text">2 個 Brick 與 83TB</block>
+  <block id="3ff5cf29c2cd988e3b0f0c70a1dc7d06" category="list-text">3 Bricks ＆ 146TB</block>
+  <block id="8aece3b710578805f87c6637fa8457ce" category="list-text">3 個 Brick 與 251TB</block>
+  <block id="fd43e4f9b408ac9be99cca5c5bdad5ab" category="list-text">3 個 Brick 與 283TB</block>
+  <block id="974ec17a84d01669ad439c42cb83a8df" category="list-text">4 個 Brick 與 628TB</block>
+  <block id="2645fe1a5cd7898e53075ccbf5b2b2a2" category="list-text">4 個 Brick 和 754TB</block>
+  <block id="fdc5747549c51c8f14427ac5cd0ac572" category="list-text">4X20TB</block>
+  <block id="8526fbe2701e03462626fd63982cbf63" category="list-text">6X40TB</block>
+  <block id="63a119eb06279d918af3c3ff0d357fa2" category="list-text">4.0.27-1</block>
+  <block id="1de2425f736def390f370af19ac27f47" category="list-text">4.0.31-11</block>
+  <block id="71ad4a2fb54299d26df8593f0011f350" category="list-text">6.3.3-8_X2</block>
+  <block id="1ce8f37269567ddc6ba8c8ae6e0a8af9" category="list-text">6.4.0-36_hotfix_2_X2</block>
+  <block id="1b9812b99fe2672af746cefda86be5f9" category="list-text">2660</block>
+  <block id="220a7f49d42406598587a66f02584ac3" category="list-text">2680</block>
+  <block id="2e7ceec8361275c4e31fee5fe422740b" category="list-text">2702</block>
+  <block id="81c2f886f91e18fe16d6f4e865877cb6" category="list-text">2704</block>
+  <block id="97c8fe0ac6903d46f2be49013acbf54f" category="list-text">2800B</block>
+  <block id="4ab52371762b735317125e6446a51e8f" category="list-text">2804</block>
+  <block id="c0f971d8cd24364f2029fcb9ac7b71f5" category="list-text">2806</block>
+  <block id="e93028bdc1aacdfb3687181f2031765d" category="list-text">3000</block>
+  <block id="1bd69c7df3112fb9a584fbd9edfc6c90" category="list-text">4000</block>
+  <block id="1f5f5b265100daad35b3a491e1c55351" category="list-text">5486</block>
+  <block id="56c3b2c6ea3a83aaeeff35eeb45d700d" category="list-text">5488</block>
+  <block id="fdaa09fc5ed18d3226b3a1a00f1bc48c" category="list-text">5504</block>
+  <block id="853bb47a93581ead37b1bcd749d34787" category="list-text">5564</block>
+  <block id="7ea4e7fcdc6aff2777bd594a3754e02a" category="list-text">5600</block>
+  <block id="84f5ddd735176becc72c3b1ff424149e" category="list-text">5700</block>
+  <block id="222711b98739a6ced8c9d74266daff93" category="list-text">5700B</block>
+  <block id="a8c6dd982010fce8701ce1aef8a2d40a" category="list-text">6000</block>
+  <block id="fa183ba81b8f82c988245d8d4e701366" category="list-text">7999</block>
+  <block id="4a989b8e44632cfc775843a7cd09c9e4" category="list-text">08.40.60.01</block>
+  <block id="389ea9d9ad523847eb38b86a8e846334" category="list-text">08.80.00.00</block>
+  <block id="75aa33a056a1d3e5a8c7efa0e81ed891" category="list-text">7.84.46.0</block>
+  <block id="183be3075cc3c8f43f3c686d7b389e34" category="list-text">8.20.16.0</block>
+  <block id="7b3fbb9c0b293b08cf63193c0cbfd6a5" category="list-text">8.20.27.0</block>
+  <block id="88bd733c159e41e737cc7f15ea6fe3e3" category="list-text">8.20.30.0</block>
+  <block id="a740b9ecd357a3b9f720fe92eac8b966" category="list-text">8.20.8.0</block>
+  <block id="13b9be1865388616900fb4f47029d255" category="list-text">8.25.14.0</block>
+  <block id="c3bb0f2ceb1023b846a19b906754244a" category="list-text">8.25.6.0</block>
+  <block id="d7024ec8aec268f430bb762692b92b33" category="list-text">8.40.0.1</block>
+  <block id="731375ed466c9670a919be38a09a2278" category="list-text">8.40.20.0</block>
+  <block id="a6ca6abfeb311b41da8c6c22488e9f23" category="list-text">8.40.30.4</block>
+  <block id="ef26caf3673d29e88d660abfd4dadde9" category="list-text">8.40.40.0</block>
+  <block id="a7b9eb54f4e3ab59e86ff9fb17776cbb" category="list-text">8.40.50.0</block>
+  <block id="1d6ea1c6c26572d52976f4ffdcdb689c" category="list-text">8.40.60.1</block>
+  <block id="3da886429c25998392b7949de83cc990" category="list-text">8.40.60.2</block>
+  <block id="77d67e648f07888284a30f9aeb76be0d" category="list-text">8.40.60.3</block>
+  <block id="16b998eb4dd4f7eb33bea140204e33f8" category="list-text">8.42.30.5</block>
+  <block id="f7952975988ac75071eb7c9099553d28" category="list-text">8.50.0.4</block>
+  <block id="3e63fa50a35f13756ea0c773a2f4f400" category="list-text">8.51.0.0</block>
+  <block id="89bb456b31c6e17225a0828329b0b684" category="list-text">8.52.0.0</block>
+  <block id="54f6ed933c316099e76730e595660adc" category="list-text">8.52.0.1</block>
+  <block id="ec536c632279dfba07706ba821c696e5" category="list-text">8.53.0.1</block>
+  <block id="a3e4e46aa7c3b0997c3641c4c07e9499" category="list-text">8.53.0.4</block>
+  <block id="8904b0bc6486488ed2e4ad42f24d24b6" category="list-text">8.62.0.0</block>
+  <block id="87fb9c7cdbcc453f87831432dad3ff9d" category="list-text">8.62.0.2</block>
+  <block id="5b1b0806b889a386d33e57b1d95265f2" category="list-text">8.63.0.2</block>
+  <block id="d7ba0c1f55cb810372396afe3423e597" category="list-text">8.70.0.2</block>
+  <block id="03338b2e98194ca27c7df81ee86c66e4" category="list-text">8.70.0.3</block>
+  <block id="35da617bf323481d951c02278abb51d5" category="list-text">8.71.2.0</block>
+  <block id="dac9ea6ec75b88b0668777b1c70ea390" category="list-text">8.71.3.0</block>
+  <block id="9928f6ca7b75bb788531e28ba369b79a" category="list-text">8.72.0.0</block>
+  <block id="2c38719552833bd7b080e78e677a0cd9" category="list-text">8.73.0.0</block>
+  <block id="d8a2a18646fcbf3a60c379248d1afa08" category="list-text">8.74.0.0</block>
+  <block id="b117b26320470afe55be5513e2bcb7ee" category="list-text">8.74.1.0</block>
+  <block id="5ee98d2b85d709b6e96658e89e59dda6" category="list-text">8.74.2.0</block>
+  <block id="dda74b8a068ada449dcbc5e87b5ab3c0" category="list-text">8.74.3.0</block>
+  <block id="d8afd7210c8a65c452d42c40c218dd41" category="list-text">8.75.0.0</block>
+  <block id="bb1e721cfa98c8a9269aae353c7c5633" category="list-text">8.75.0.1</block>
+  <block id="15a74a5b170adca06b24e7c1f719b5ba" category="list-text">8.75.1.0</block>
+  <block id="6ce8414d7a0e38c56b9f1e09b2e035ff" category="list-text">8.80.0.0</block>
+  <block id="b02ac618e2e25638004ddbd8c071f0b7" category="list-text">8.80.1.0</block>
+  <block id="ca4d781a60a5ceac27a4d3ad6550e95b" category="list-text">8.81.0.3</block>
+  <block id="58bf77a1b4462234e563a3dd9afdfc66" category="list-text">8.81.1.0</block>
+  <block id="e26dceee3f46b290c9f87acdce40eab5" category="list-text">8.81.2.0</block>
+  <block id="cc93776388afda1252c48451ea35f9dd" category="list-text">8.81.3.0</block>
+  <block id="9409aa5a98fac24b8235768358881d5e" category="list-text">8.90.0.0</block>
+  <block id="5a4881ae7592524a6ac5f15957d5f9cd" category="list-text">7.6.1</block>
+  <block id="585375c1448bfa3494298bdd79408081" category="list-text">8.0</block>
+  <block id="783dfb5b160d8f13069878c641ecb960" category="list-text">8.7.1</block>
+  <block id="2b54063f9adc41d638f1aa906f7cb35e" category="list-text">8.7.3</block>
+  <block id="f7a5a80b2c2ab08c365a6d2768dd9788" category="list-text">8.7.6</block>
+  <block id="63bb1a6312eca63f7e95ece59e88dac7" category="list-text">8.8.3</block>
+  <block id="d2adfdbdf70e90dce35ed26598ee9a6c" category="list-text">DF850MH</block>
+  <block id="7fb4f3e61b1e778a6d7049d583dd0314" category="list-text">DF850S</block>
+  <block id="4ede4243e9a0a2496cc852d3f4f57ce6" category="list-text">HM800</block>
+  <block id="717f39128fafee88912a4b27d5a25695" category="list-text">HM850</block>
+  <block id="3deb6e61aaa9d8e94a7751ce45172bad" category="list-text">P9500</block>
+  <block id="7b19a93b2d6700f16a49877c720ccd84" category="list-text">RAID800</block>
+  <block id="ec415a01cb89b53cbb6e21cd58af7c1b" category="list-text">VSP5000</block>
+  <block id="7a8cda51ef43b7ce40368c4172b9f6f3" category="list-text">XP24000</block>
+  <block id="57713cc22d8a70a5a1638e15ec131f97" category="list-text">XP8</block>
+  <block id="0f7a9a7b5e6cb26036ffc0be02e34ce9" category="list-text">0983/A-H</block>
+  <block id="36165a83b9661aac0948cfcc7a816ce2" category="list-text">0984/B-H</block>
+  <block id="3d280465270e75e81f34e422a4a9f9a8" category="list-text">0985/B-S</block>
+  <block id="559604dd286fd8702761b92ff6ab84bc" category="list-text">0986/A-H</block>
+  <block id="fa47ebb4b8b129d173da483ecb0a5dd4" category="list-text">0988/H-S</block>
+  <block id="e8c1b4c2e951b90ec38b3ad7ae0a3e7d" category="list-text">DKC:60-08-22</block>
+  <block id="6197566a96944440f06d1594ecb081a6" category="list-text">DKC:60-08-65</block>
+  <block id="6f14919a3a953f452f1a08c380f147ee" category="list-text">DKC:70-06-43</block>
+  <block id="a49e53b1e4d66cc27343b3ce460f04cd" category="list-text">DKC:80-06-80-00/02</block>
+  <block id="8753cbc46267311d1eb3e7de3f83981e" category="list-text">DKC:80-06-91-00/00</block>
+  <block id="e1899ba3b4d72451f4144eb0ab3e7662" category="list-text">DKC:80-06-96-00/00</block>
+  <block id="61d5ea4be1e317e679bd293d439a96be" category="list-text">DKC:83-05-46-60/00</block>
+  <block id="ffc54d6be911b014a4abe16b73f12fd3" category="list-text">DKC:83-05-50-60/00</block>
+  <block id="449972575e3247c9e893ef0fc85fb779" category="list-text">DKC:83-05-53-60/00</block>
+  <block id="bd2fe449e7ac748560c031d659ef218c" category="list-text">DKC:88-08-08-60/00</block>
+  <block id="51cec8c2f3eaa859094389e34a6110c1" category="list-text">DKC:88-08-10-60/00</block>
+  <block id="d09a4699d59f29a33caaca0d1fc9594a" category="list-text">DKC:88-08-12-60/00</block>
+  <block id="0e4a66e2704a53b674487a98a0bfac26" category="list-text">DKC:88-08-13-60/00</block>
+  <block id="42ed8ad8d8a5159a9c757e6fca9b3bd9" category="list-text">DKC:88-08-13-60/01</block>
+  <block id="ca7a42648873cf6269188db4f38a646e" category="list-text">DKC:90-08-81-00/00</block>
+  <block id="538b4b3179285e1e1bd858cd36284145" category="list-text">DKC:90-09-21-00/00</block>
+  <block id="137b92e5e9a97f5a7135160317283013" category="list-text">DKC:90-09-23-00/00</block>
+  <block id="0ab69f32e3348853c63040fb6060fb46" category="list-text">DKC:90-09-24-00/00</block>
+  <block id="aa6586044285fea0fe7a1a942205d309" category="list-text">DKC:90-09-24-00/01</block>
+  <block id="7ed6f433b66fca79397488f82bfd9700" category="list-text">DKC:90-09-25</block>
+  <block id="ca91f27f564cec014f54e10e6eff9b74" category="list-text">SVP:60-08-21/00</block>
+  <block id="5be98e7a002c7da050fca6a549f37182" category="list-text">SVP:60-08-54/00</block>
+  <block id="1ec3aed050b18c7f95a221436a20ae54" category="list-text">SVP:70-06-30/00</block>
+  <block id="a57ec5c6a0ae8ea1b1c112b62cedf8bd" category="list-text">SVP:80-06-76/02</block>
+  <block id="81b25c7b5a4dbe7e85fc0184a6df2f69" category="list-text">SVP:80-06-86/00</block>
+  <block id="09bb91b42c30e230c03fa63b8e774189" category="list-text">SVP:80-06-91/00</block>
+  <block id="23fd93299a89b9aa5ad6e709f83a6fee" category="list-text">SVP:83-05-50-60/00</block>
+  <block id="59713ed95fc0f241b5f52aa0eca5ba3a" category="list-text">SVP:83-05-54-60/00</block>
+  <block id="277f64345517296bfedef07a477956f6" category="list-text">SVP:83-05-57-60/00</block>
+  <block id="55d393386da48f05861e6455ac216e18" category="list-text">SVP:88-08-10-60/00</block>
+  <block id="926fe1f032462f027340f5e86a4e992c" category="list-text">SVP:88-08-12-60/00</block>
+  <block id="4ee7235676050944337cd895d0047349" category="list-text">SVP:88-08-14-60/00</block>
+  <block id="d6609076726d87f6fad701cebd8e01ce" category="list-text">SVP:88-08-15-60/00</block>
+  <block id="ab9b0ed40117607a84f61bdd456c0860" category="list-text">SVP:90-08-81/00</block>
+  <block id="678c95b66239877d0fcce5bc38d37edc" category="list-text">SVP:90-09-21/00</block>
+  <block id="06a358451338cc95512e22e7f4e50fca" category="list-text">SVP:90-09-23/00</block>
+  <block id="048bea5a5ffd8c3d1d9a9190895305aa" category="list-text">SVP:90-09-24/00</block>
+  <block id="66be0bd272593735cbe0e89aced6b6a3" category="list-text">SVP:90-09-25/00</block>
+  <block id="0cf1ce6cfd1615b7856b2dab1d120adc" category="list-text">VSP 5100</block>
+  <block id="db8514e024b771e60acb5ec18586f658" category="list-text">VSP 5500</block>
+  <block id="eb0e02b79d11e22495651c6e0ebb2260" category="list-text">VSP 5600</block>
+  <block id="d55f9252490bd5a3723db52a691944e4" category="list-text">VSP 5600H</block>
+  <block id="a0980a1d9198a7cf298d90888e7803e5" category="list-text">VSP E1090</block>
+  <block id="91badae98824d41dc983060eb4f01bc7" category="list-text">VSP E590</block>
+  <block id="22aac3590655d05194171dd41e7577ef" category="list-text">VSP E790</block>
+  <block id="992213ab6c571a8d2604ac7fac8031d6" category="list-text">VSP E790H</block>
+  <block id="d0f5526a660b4cf61f95b217e062d783" category="list-text">VSP F1500</block>
+  <block id="9e2396314e6e2b55419e08d3ef2b7f54" category="list-text">VSP F400</block>
+  <block id="0c3fb66744b70cfa7ac674d87104fc07" category="list-text">VSP F900</block>
+  <block id="9b2d197757b6e4d26dc8f20d227763d0" category="list-text">VSP G1000</block>
+  <block id="9d0fd099faad25495e6d5fd247bf2ff4" category="list-text">VSP G1500</block>
+  <block id="d0877656e3a4586246f6009d99438f13" category="list-text">VSP G600</block>
+  <block id="c2b711a6b72c8523cecb4d3864d374f3" category="list-text">VSP G800</block>
+  <block id="c4d28af95a316481731bc701f002e368" category="list-text">VSP G900</block>
+  <block id="3986403a3897aefdebfabb630738c3e4" category="list-text">80-06-91-00/00:01-71-03/02</block>
+  <block id="b0ea6368ea52453ac68600d83862e917" category="list-text">80-06-94-00/00:01-70-03/04</block>
+  <block id="3972fa2747e3e9fb7336a11166b231fb" category="list-text">80-06-96-00/00:01-71-03/02</block>
+  <block id="488e715ddb3a0e75c81b4541dd4e0163" category="list-text">80-06-96-00/00:01-76-03/03</block>
+  <block id="691215821e790bfb66f161aa4dd3a386" category="list-text">83-05-49-40/01:01-69-03/02</block>
+  <block id="022f94def3745c994683e7183084b0c5" category="list-text">83-05-49-60/01:01-65-03/05</block>
+  <block id="9ec407aec962f52fd090d95863be6d92" category="list-text">83-05-49-60/01:01-69-03/02</block>
+  <block id="71317b8a915891727ad90f009ca1d0ba" category="list-text">83-05-51-40/00:01-70-03/04</block>
+  <block id="aca1d30178009e111649ece4928ae813" category="list-text">83-05-51-40/00:01-71-03/02</block>
+  <block id="2c33c5eb6fcfe22629dc934a1ad1bf13" category="list-text">83-05-51-40/00:01-76-03/03</block>
+  <block id="5c94dd6a1655552d279e2852694d0042" category="list-text">88-08-08-60/00:01-65-03/05</block>
+  <block id="d9854fd1cf1a5f8b3f3d65b090e950ed" category="list-text">88-08-08-60/00:01-70-03/04</block>
+  <block id="90aedeabd85f1225dea821b955dcc877" category="list-text">88-08-11-60/00:01-65-03/05</block>
+  <block id="abf0a815dcf37b6b7e274afc4ef4c5e7" category="list-text">88-08-11-60/00:01-70-03/04</block>
+  <block id="d67cf5800c8babb17a18ef1aa0ea80ea" category="list-text">88-08-13-60/00:01-65-03/05</block>
+  <block id="440d7e69ff8e3b782c194aff8b116cc3" category="list-text">88-08-13-60/01:01-65-03/05</block>
+  <block id="fe14fd75f39ad0a6fb53cbb060f0f588" category="list-text">88-08-13-60/01:01-70-03/04</block>
+  <block id="d590d884dd6f070a27f50661dbbd9171" category="list-text">88-08-13-60/01:01-71-03/02</block>
+  <block id="8cc4878588bfa3e0a42dc86a66c6ca62" category="list-text">88-08-13-60/01:01-76-03/03</block>
+  <block id="5059f9e35a9f9faa3ca99bdcc3b6a988" category="list-text">90-08-82-00/00:01-65-03/05</block>
+  <block id="0bf789a311d7e87f48f1fc12b496e44c" category="list-text">90-08-82:01.70.04</block>
+  <block id="50b95d48477d22daa3707c0ebe8a004e" category="list-text">90-09-01-00/01:01-65-03/05</block>
+  <block id="54e1f1d95d52ea1769bc690a22ec1456" category="list-text">90-09-22-00/00:01-65-03/05</block>
+  <block id="b661ecb64cd39085efc8bff9fc20f144" category="list-text">90-09-22-00/00:01-70-03/04</block>
+  <block id="34467c5640dcd724d644a43404dad228" category="list-text">90-09-22-00/00:01-71-03/02</block>
+  <block id="f9614c247488d6eded4cf2b190d6271d" category="list-text">90-09-24-00/01:01-65-03/05</block>
+  <block id="ea7c8a777459b843a9ce8f0ef9dfe25f" category="list-text">90-09-24-00/01:01-71-03/02</block>
+  <block id="c5159448d5f5b3ba8da9c66ba2367002" category="list-text">90-09-24-00/01:01-76-03/03</block>
+  <block id="438fa87b5239793e66aa4a1b679d3f9f" category="list-text">90-09-24:01.65.05</block>
+  <block id="b11920b7b157b62b07c1edc11a5ef5b2" category="list-text">90-09-25-00/00:01-76-03/03</block>
+  <block id="c1a3d124949f6b69f7207d898777c64e" category="list-text">90-09-25:01.70.04</block>
+  <block id="a384a09833b62c0c76183cb5f3a79ace" category="list-text">90-09-26-00/00:01-65-03/05</block>
+  <block id="b164e21a4b66c6a0281e757642123ba6" category="list-text">90-09-26-00/00:01-71-03/02</block>
+  <block id="f489c1aebcd13db8cfd3cbf99b45339a" category="list-text">90-09-26-00/00:01-76-03/03</block>
+  <block id="5fa844b56511edaf464932327d47ae20" category="list-text">93-07-01-80/00:01-70-03/04</block>
+  <block id="425fffc26c20edb5e5871adb2948b04c" category="list-text">93-07-22-40/00:01-65-03/05</block>
+  <block id="841d59bfd53e02fe8e2964a8a6856b6b" category="list-text">93-07-22-40/00:01-69-03/02</block>
+  <block id="8da89935135fe7748daca6245f42692e" category="list-text">93-07-22-80/00:01-70-03/04</block>
+  <block id="ee53f777251487f42d34e5cfa2fc0d01" category="list-text">93-07-22-80/00:01-71-03/02</block>
+  <block id="e8f51e99873e2c4956c3b8005682f4cf" category="list-text">93-07-23-80/00:01-71-03/02</block>
+  <block id="b3be675e11e05bff8a55fa5659d65926" category="list-text">93-07-23-80/01:01-71-03/02</block>
+  <block id="ce4b9508a38ada466ddda2f3a27920e1" category="list-text">93-07-24-40/00:01-76-03/03</block>
+  <block id="b2190aa200cd1caba364bf0107e1f8ec" category="list-text">93-07-24-80/00:01-70-03/04</block>
+  <block id="41be696f8779463fc553149401bf18d5" category="list-text">null:null</block>
+  <block id="9c62a08240b0bb095a97dcc01e74ee09" category="cell">7.10.1.8 7.6.31.4250 7.7.51.1400 7.9.32.101 7.9.33.132 7.9.33.95 7.9.40.251 7.9.41.65</block>
+  <block id="6a4f5c9dad1fa000b1d1186826d2ae9b" category="list-text">2072-12F</block>
+  <block id="9bab1e32cb7e769f3cca8b616512af4b" category="list-text">2072-12G</block>
+  <block id="2ea05aaa68e841e69b44d1e3931169bc" category="list-text">2072-224</block>
+  <block id="55c2f6c55fddcf6abb029e3beeb31d5e" category="list-text">2072-24C</block>
+  <block id="109ed33857ce35a7707838de668e1c2f" category="list-text">2072-24E</block>
+  <block id="47f8512859af04ae3978629d80613914" category="list-text">2072-24F</block>
+  <block id="95055f8df905d2f2204095e8d5922e77" category="list-text">2072-24G</block>
+  <block id="da35f909c9de7db922eb6dbf4364576c" category="list-text">2072-2N4</block>
+  <block id="af7cac473f03d95c9cbef97065867378" category="list-text">2072-324</block>
+  <block id="3a45eddfad82f6e32e530267f9a0c10d" category="list-text">2072-3H4</block>
+  <block id="00f476b0508299c46f9f7c839f1e4515" category="list-text">2072-3N2</block>
+  <block id="f93a89fb5bc1956f6f56ebb8f6db5b80" category="list-text">2072-3N4</block>
+  <block id="fb2f1c24dcd7aa656b2e47e7aece9a14" category="list-text">2072-92F</block>
+  <block id="ce8e9e46e3f5ca218e25c5a9e368cd6c" category="list-text">2072-92G</block>
+  <block id="14aec3e660397b348b670312c7b92145" category="list-text">2076-124</block>
+  <block id="d14ae9db63313beebb2b3ccaf2d5cbaa" category="list-text">2076-12F</block>
+  <block id="b2379484c8fb8d8f39b810098fc468fb" category="list-text">2076-224</block>
+  <block id="cf82cb5a5d2366b41654a0caced931c5" category="list-text">2076-24F</block>
+  <block id="ae7f643ccf535317711c82090ffbb805" category="list-text">2076-24G</block>
+  <block id="0159cb209f0f3582909974cf66037616" category="list-text">2076-524</block>
+  <block id="7afe34aff0f63e6a2ff3a634394f90d1" category="list-text">2076-624</block>
+  <block id="4e84b565b5e1c69be3a42d41acde97b5" category="list-text">2076-724</block>
+  <block id="5aa9e0c55489440723e02dbac4a02d4d" category="list-text">2076-824</block>
+  <block id="8c4685c15f83962ab7a5b67c2963876e" category="list-text">2076-AF6</block>
+  <block id="c3b6fb0a29188567c1568f5557c7f4f5" category="list-text">2076-AFF</block>
+  <block id="67805f857c2a96e5d5454b19ed078748" category="list-text">2077-24F</block>
+  <block id="5798adc9d50b80c8d2670ffd8ca54177" category="list-text">2077-24G</block>
+  <block id="3a08d85ec5043ee1e4a41f2314ab2d5c" category="list-text">2077-424</block>
+  <block id="0716028a19d9bed3c8010b06461da7d5" category="list-text">2077-4H4</block>
+  <block id="d20406f92947d08a75a50d78602508bc" category="list-text">2078-12F</block>
+  <block id="255884539ea6737e5929042e2df5a742" category="list-text">2078-12G</block>
+  <block id="2d24693372bf99b383da1a1649fbb03f" category="list-text">2078-224</block>
+  <block id="51ac6ff0bb34bbe1207561de28fc9a6b" category="list-text">2078-24C</block>
+  <block id="5f096be183fa787a6aa07bfcf709fc48" category="list-text">2078-24F</block>
+  <block id="f33be12e3ffce17331cd6abab75976c0" category="list-text">2078-24G</block>
+  <block id="0ea645bb18f33fad60ca6d6b598726e9" category="list-text">2078-324</block>
+  <block id="f1a72b3827c62de943d691d2d08caf8e" category="list-text">2078-424</block>
+  <block id="fce0cb291bd49b3ae65c4de9c0a04ac2" category="list-text">2078-4H4</block>
+  <block id="0905436131b07f54563bd067be6dece9" category="list-text">2078-92G</block>
+  <block id="663337c1e2741130700c5e125ac793c1" category="list-text">2078-AF3</block>
+  <block id="08bc766372ce8e502a6c26e3fc4d99c4" category="list-text">4657-24G</block>
+  <block id="01a7646c2b95ce18f48dcaeae427c860" category="list-text">4657-924</block>
+  <block id="4f0564fdab79eb496460210b78c386a9" category="list-text">4662-12G</block>
+  <block id="2a24add760632e90dca8c9de86a42303" category="list-text">4662-24G</block>
+  <block id="7b3f1b705c2a2dc804aac914ab58b5c2" category="list-text">4662-6H2</block>
+  <block id="03169ba8380290c23b74cdbf8f89031f" category="list-text">4666-AH8</block>
+  <block id="51a15d772404b79ec531b0263025503e" category="list-text">4666-UH8</block>
+  <block id="d3f11074bdfc2ebacfc2ac89366e4bc6" category="list-text">4680-24H</block>
+  <block id="c0f8ed502c9aa95c3ff5157197d793fd" category="list-text">4680-2P4</block>
+  <block id="04a137923557735338cff3c64bc4564c" category="list-text">4680-3P4</block>
+  <block id="39197b8d5766c8f3bf9994d58418b369" category="list-text">4680-92H</block>
+  <block id="ff195d9e6d37675b9627c2ca61453bbb" category="list-text">4983-AH8</block>
+  <block id="358c9922b339ad26db3858b17a6460de" category="list-text">9843-AE2</block>
+  <block id="895fcccfe2de6ee34921ad69d1858041" category="list-text">9843-AE3</block>
+  <block id="8846f145638e99980f7350fb27fbce73" category="list-text">9846-AG8</block>
+  <block id="0073fa43e7c405832e9373743a00b379" category="list-text">9848-AF7</block>
+  <block id="a78f317426a9a0a11e782ce8d82d87e6" category="list-text">9848-AF8</block>
+  <block id="c133553a6af751aa3995cde915661a09" category="list-text">9848-AG8</block>
+  <block id="d49ae7ba5ee15436f955682904e8808b" category="list-text">9848-UG8</block>
+  <block id="8d813facc43727812b2979fc265e4cad" category="list-text">SVC</block>
+  <block id="1d305e6b089aacaa3658762b3cfe3173" category="list-text">1.5.2.7</block>
+  <block id="a20c650d627e4f985529ce107ec3633b" category="list-text">1.6.1.2</block>
+  <block id="15f341089cfbd68d6eba108a920d63db" category="list-text">1.6.1.4</block>
+  <block id="e98fd4c9e722b9a19e893a3d1bd5a4e2" category="list-text">1.6.1.5</block>
+  <block id="63cec2c0ea2973f8789d969af9739c20" category="list-text">7.7.1.8</block>
+  <block id="b4f0e0df9903440bb2ee75d703cf3d78" category="list-text">7.8.1.11</block>
+  <block id="76705b11c0b3959951906da7e5a1b404" category="list-text">7.8.1.12</block>
+  <block id="ff6581b53fd7304e6efbdc7cbdbaf213" category="list-text">7.8.1.13</block>
+  <block id="9a45f7222679cb71583e1aef1d40c83a" category="list-text">7.8.1.14</block>
+  <block id="9af8bf522fd2f7a89e3bee9659cb611b" category="list-text">7.8.1.16</block>
+  <block id="7a17c69e458908c2387ab0bb2d0af8f6" category="list-text">7.8.1.5</block>
+  <block id="e370c7213ca134975616ecddfbb8b387" category="list-text">7.8.1.6</block>
+  <block id="b0407d1cd7268e772e02d7eb1eaee0d5" category="list-text">7.8.1.7</block>
+  <block id="b84d5adb8a98feb70d8a710ca32b853e" category="list-text">7.8.1.8</block>
+  <block id="d48cdd3f155706e0d9808b9c329a68d3" category="list-text">8.2.1.10</block>
+  <block id="fb27bd09f6f3960c0a4554c516871afe" category="list-text">8.2.1.8</block>
+  <block id="ad358fe4a075849d9c549ad6e4881e78" category="list-text">8.2.1.9</block>
+  <block id="2c7b62aacc7e0efe468744680b0d3420" category="list-text">8.3.1.10</block>
+  <block id="0a3e548d42d81ac9aefd804801864e1b" category="list-text">8.3.1.2</block>
+  <block id="d96ebc655644638440c23d9597769e8c" category="list-text">8.3.1.5</block>
+  <block id="0843c9fa57eeb05f8a4af3627f2b41f6" category="list-text">8.3.1.6</block>
+  <block id="9bc8292997ae33c354ea64a77f54e481" category="list-text">8.3.1.7</block>
+  <block id="57320ecaae5cc73857fe2931ad53a896" category="list-text">8.3.1.8</block>
+  <block id="ef97812a265a5ff3f439d79437008e86" category="list-text">8.3.1.9</block>
+  <block id="8aa5eed12a51647d9f861f803ad16c82" category="list-text">8.4.0.10</block>
+  <block id="689c5c48c2741a50667f73e84b71e60d" category="list-text">8.4.0.11</block>
+  <block id="a2e373ee2b5974b601b94148083d5091" category="list-text">8.4.0.13</block>
+  <block id="390bd63c84fc2edb9c906bc7061c263f" category="list-text">8.4.0.15</block>
+  <block id="e35b72982d9f8cc05177af963d38bd75" category="list-text">8.4.0.2</block>
+  <block id="635a101f60d0915a07a8003c22a7eaf0" category="list-text">8.4.0.5</block>
+  <block id="dbdf97f0f83a824d6eb218ebf1848621" category="list-text">8.4.0.6</block>
+  <block id="fe76b10fa75a4e013af052fb21783718" category="list-text">8.4.0.9</block>
+  <block id="4f8369558b035827513e41f728e6495a" category="list-text">8.4.2.0</block>
+  <block id="03abc7eee1048f2fa973b4a288e66e8a" category="list-text">8.5.0.10</block>
+  <block id="f4df216ad1a085d836f83997ae05d5b9" category="list-text">8.5.0.11</block>
+  <block id="592031afeb528d5fa554fd4c546cf7fe" category="list-text">8.5.0.12</block>
+  <block id="43bb4a49c5065475ddb2fc449bd80eed" category="list-text">8.5.0.13</block>
+  <block id="dd42e004d5c3da9f197b1c3331371850" category="list-text">8.5.0.14</block>
+  <block id="daac251c4a723a9bc638eb7ab8f05fa1" category="list-text">8.5.0.5</block>
+  <block id="924b808d1e0a30aba28d6d4c0fd2992a" category="list-text">8.5.0.6</block>
+  <block id="770d0f676003f786aef695a592614264" category="list-text">8.5.0.7</block>
+  <block id="0643dfd397c3af7b42cc40abe91743c9" category="list-text">8.5.0.8</block>
+  <block id="e90bcf9c91d9a25d5465f8890503f0db" category="list-text">8.5.0.9</block>
+  <block id="49bb58459b20a16abed5761786b075bb" category="list-text">8.6.0.0</block>
+  <block id="542d04ac44fe3e886bc7d97e829650b7" category="list-text">8.6.0.2</block>
+  <block id="c3239eacd1897b33019b1715f5cc907f" category="list-text">8.6.0.3</block>
+  <block id="9d08cabe05de115664b1f1abc1b6a516" category="list-text">8.6.0.4</block>
+  <block id="f13ebdff25d9273a50ef14b76f4377fc" category="list-text">8.6.0.5</block>
+  <block id="bf8c8e0e675fe11058739885b54cc15f" category="list-text">8.7.0.0</block>
+  <block id="f4409dc795fc05e890fa6f9ad1c0b46b" category="list-text">8.7.0.1</block>
+  <block id="efd3d5c3f2e6b1bddd61dfb0f73ed414" category="list-text">8.7.0.2</block>
+  <block id="486e7b816c0d98d050f781a409f252bd" category="list-text">8.7.0.3</block>
+  <block id="e4786817b3a6174beb89c705dc7f0f95" category="list-text">AFF-A150</block>
+  <block id="4ab4918bc399080391e3c7baf77b30c3" category="list-text">AFF-A1K</block>
+  <block id="03ec231ec8aeafb7344808fb84c97ae4" category="list-text">AFF-A20</block>
+  <block id="0ed76ef20359124c15a8d78a14c4d14f" category="list-text">AFF-A200</block>
+  <block id="79fa118e6043b1f46a8a5ed1ffd005eb" category="list-text">AFF-A220</block>
+  <block id="56d1a7afac2e5eb7b375580e124de67f" category="list-text">AFF-A250</block>
+  <block id="59aec3e961065b4d5e033dc704b5c641" category="list-text">AFF-A300</block>
+  <block id="300d6f521a64bf9a44c1199150c22c0e" category="list-text">AFF-A320</block>
+  <block id="af9711413abdf6edb1cd7511475958ba" category="list-text">AFF-A400</block>
+  <block id="7a6d7e89e5352eac29dbdb1b92364449" category="list-text">AFF-A70</block>
+  <block id="eeafb6bbab8156cf924a4a601c265da4" category="list-text">AFF-A700</block>
+  <block id="9536ec377ad821beaea15121285e8d78" category="list-text">AFF-A700s</block>
+  <block id="535bdb31f8aeea160971ec41a09f453e" category="list-text">AFF-A800</block>
+  <block id="202d0ef79c760d2dc1ce4b0aad3c01c9" category="list-text">AFF-A90</block>
+  <block id="c61d427aa27e194bb9a19d999326bd1c" category="list-text">AFF-A900</block>
+  <block id="1c4ddb0ab71e239c064832f87683b6b6" category="list-text">AFF-C190</block>
+  <block id="4949ffe06e5f77d365bc8a994b1b58ce" category="list-text">AFF-C250</block>
+  <block id="25eff93a96bb444af5b8b2f2429e11b1" category="list-text">AFF-C400</block>
+  <block id="984e3597a67f9f44b1f693bf0d275201" category="list-text">AFF-C60</block>
+  <block id="c7d87f1e47d7065b56fb6f856a6a7eaf" category="list-text">AFF-C80</block>
+  <block id="fe69d5bef0cea6d41835492f2900d926" category="list-text">AFF-C800</block>
+  <block id="2ab3418e8f9c256bb5ed34bf58e9799c" category="list-text">AFF8020</block>
+  <block id="7ed1d182ff398f5cf8b3db6d332102b8" category="list-text">AFF8040</block>
+  <block id="94869c0e3d68936a54ce1ef1d7459f3e" category="list-text">AFF8060</block>
+  <block id="23ec9249d03285a513eaaf182a7bcd49" category="list-text">AFF8080</block>
+  <block id="f7304a940606ee61490f628cb9bfbace" category="list-text">ASA-A250</block>
+  <block id="cc218c2dd9bb781c2653bece20fd4e71" category="list-text">ASA-A400</block>
+  <block id="62c5d4331dbbeef003290660aa9b1844" category="list-text">ASA-A800</block>
+  <block id="ba17d71e7e215ed6434e0c561578de86" category="list-text">ASA-A900</block>
+  <block id="ea78b2c388682b9b63ddda5d1017bf12" category="list-text">ASA-C250</block>
+  <block id="eee09bb25298e57921e1a59c6446ae55" category="list-text">ASA-C400</block>
+  <block id="dd0b80573dee9c547d9a21a490502732" category="list-text">ASA-C800</block>
+  <block id="369c295e5dc41fbe1e5a098c61b4af7a" category="list-text">CDvM100</block>
+  <block id="bce2f69d289f9f879560c1782741679a" category="list-text">CDvM200</block>
+  <block id="f4e5ccaf593a5885cf490134f9b49df6" category="list-text">DM5000H</block>
+  <block id="d2c462330dfa1f54911c82f04fd1dad2" category="list-text">DM7100F</block>
+  <block id="122c125f34d8a458ac44006140bc0d1e" category="list-text">FAS2240-2</block>
+  <block id="4247005aaf340f598d33b33d7b3a81f6" category="list-text">FAS2520</block>
+  <block id="524687ef12e7ec7ff5ded51f645e1cb0" category="list-text">FAS2552</block>
+  <block id="d46f1e45b01663f24d7f5e4634150f69" category="list-text">FAS2554</block>
+  <block id="489c8707e7f92883a9ec4c6edf2f6a9a" category="list-text">FAS2620</block>
+  <block id="8541975335a64aeefea980107946fbbf" category="list-text">FAS2650</block>
+  <block id="16327cd02ebd080bd4ab1439ff960ddc" category="list-text">FAS2720</block>
+  <block id="3eab1bbd4a3f05ea0803f3bcf5fac9e5" category="list-text">FAS2750</block>
+  <block id="cac76ada4fbfca68ed190eb21810e1af" category="list-text">FAS2820</block>
+  <block id="8131ff626c040575c28fc14015111ae6" category="list-text">FAS3220</block>
+  <block id="7f53e1726f3ac9da24f7286287a35cc5" category="list-text">FAS3250</block>
+  <block id="245943df026fe4248fc17e7ca29eee71" category="list-text">FAS3270</block>
+  <block id="9cce52969ddef317310e7d9d1c259895" category="list-text">FAS500f</block>
+  <block id="9882387fdc338b0e97c3a4e247a85488" category="list-text">FAS6210</block>
+  <block id="83f119142847adbdca70cbff3603d283" category="list-text">FAS8020</block>
+  <block id="e51bc1e4b973f1407bfb93d70fa004b1" category="list-text">FAS8040</block>
+  <block id="edbeb952c4054f67ce1836afbda00903" category="list-text">FAS8060</block>
+  <block id="8ed24dd5fb292ecefe76fe92a5fc3988" category="list-text">FAS8080</block>
+  <block id="c37feb3492d999b3f216448183986be2" category="list-text">FAS8200</block>
+  <block id="1752b126dd5e4219fbf53c09ee63d51e" category="list-text">FAS8300</block>
+  <block id="0588c4f1b58eac9f5062dc1da6e8435a" category="list-text">FAS8700</block>
+  <block id="649e9f4912bcf4af7efe489c6866eb1d" category="list-text">FAS90</block>
+  <block id="ec5c696a4bc57321a5a79c91b886d5ff" category="list-text">FAS9000</block>
+  <block id="756d409209ace98589705774b5011aa0" category="list-text">FAS9500</block>
+  <block id="9affb5e0d0b8d09eee7a7742598eab1c" category="list-text">FASDvM300</block>
+  <block id="75a443478fbfb37c7182f2e07a9fb24a" category="list-text">SIMBOX</block>
+  <block id="214f5cb6ee4c43e9856f8c8c4a4497fa" category="list-text">9.9.0</block>
+  <block id="67c6ecbcd91c613e8659b3f0c4b01510" category="list-text">9.9.1</block>
+  <block id="9ec2c94d69cf5d8fc28d648a3b0db2d8" category="list-text">H410S-0</block>
+  <block id="8aacc641780d9064f8332d56e86426d6" category="list-text">H410S-1</block>
+  <block id="e5f16d30b549daa7f369b4b37b3b5c3d" category="list-text">H410S-2</block>
+  <block id="0d09603b1db1ab4c82e06c339e077a2f" category="list-text">H500S</block>
+  <block id="b95a1e9d21e5d6c71e18caae97340d8a" category="list-text">H610S-1</block>
+  <block id="ecf45d0ce9aa1bd86b54cd82d1ab2b09" category="list-text">H610S-2</block>
+  <block id="98a3ed0e9b89d407fe04ad112c7f8d3a" category="list-text">H610S-4</block>
+  <block id="7b5e83e2423f5086af4ba007715765db" category="list-text">SF19210</block>
+  <block id="3213cdc02c0b56e93e5544ddd0462c94" category="list-text">SF2405</block>
+  <block id="74ae298853500f583134c29bd0dd7b5f" category="list-text">SF38410</block>
+  <block id="2b924fae6e59a1dec88e2d5b20cc9db3" category="list-text">SF4805</block>
+  <block id="99d56cb11be3c57fe4d953d2504a7726" category="list-text">SF9605</block>
+  <block id="ce4244ef7d36b2d40eec1c71287eaeea" category="list-text">SF9608</block>
+  <block id="dffc3c5a56eda20cca6e7420595d8248" category="list-text">11.1.0.72</block>
+  <block id="19d841689c5c60c8917aa90baac3ce4b" category="list-text">11.7.0.76</block>
+  <block id="ca76f78e731d8ab94af9e8a2cf93bbf7" category="list-text">12.0.0.333</block>
+  <block id="9b9d66a220e006b8034fd8c4faa0393f" category="list-text">12.2.0.777</block>
+  <block id="88e9b1e48c0cac1a79aeb681cfc57597" category="list-text">12.3.0.958</block>
+  <block id="4e2b52f97822518193698b27c53df75a" category="list-text">12.3.1.103</block>
+  <block id="fd30c3fe37bb18b3ab777f9a7c1f04a9" category="list-text">12.3.1.165</block>
+  <block id="ec369126f8e1086d3b84bc34b19b07d0" category="list-text">12.3.2.3</block>
+  <block id="d96b47fefd98f2a786e8b4fcd19a3799" category="list-text">12.5.0.897</block>
+  <block id="52e54a07535f3e831b41af80c0bb2cfe" category="list-text">12.7.0.380</block>
+  <block id="acff46b161a3b7d6ed01ba79a032acc9" category="list-text">3.2</block>
+  <block id="31053ad0506e935470ca21b43cae98cf" category="list-text">3.4</block>
+  <block id="804066a6a5042090a2a0b25c55f38e72" category="list-text">3.5</block>
+  <block id="07078a97d66756f213dbca3e379bf084" category="list-text">4.0</block>
+  <block id="895a074a5b216322121b5f76bc831927" category="list-text">4.1</block>
+  <block id="86fb40f74065628551d7b9612d244430" category="list-text">11.4.0</block>
+  <block id="27f860af4e7dc8e90d38b7d677f77275" category="list-text">11.5.0.11</block>
+  <block id="674c829e0163f9e5783535b7b71c510b" category="list-text">11.5.0.6</block>
+  <block id="ba515f08f36bdbef3a73abf3d9822059" category="list-text">11.5.0.7</block>
+  <block id="9ab85f45e946128cd76623768f222570" category="list-text">11.5.0.9</block>
+  <block id="eb0ecbdf20891e5963990e2643405555" category="list-text">11.6.0</block>
+  <block id="f872af3d983bbc8ec784cc15fcec4aaf" category="list-text">11.6.0.10</block>
+  <block id="eeda9a181ddd13dbdb8888ba667ed514" category="list-text">11.6.0.11</block>
+  <block id="5d2be7d998e45c7a4e637e2d8b2423fb" category="list-text">11.6.0.12</block>
+  <block id="ebf1d3990c3335f08bae72d06f79f472" category="list-text">11.6.0.13</block>
+  <block id="62d8c7348d496c01b825599681356222" category="list-text">11.6.0.14</block>
+  <block id="62367d65c289322faa0a45c6c478e5fc" category="list-text">11.6.0.15</block>
+  <block id="e54904c0f963ed767098785d064f1ee5" category="list-text">11.6.0.16</block>
+  <block id="5cf10544974fbd4758181c8e35be903a" category="list-text">11.6.0.4</block>
+  <block id="6b0fec5c4bd7dd1fba1890f3fb165391" category="list-text">11.6.0.5</block>
+  <block id="143cfedf8f4d3e933a8c55b8729efc32" category="list-text">11.6.0.7</block>
+  <block id="f7f3ebb1995e82696821f0713e9b8855" category="list-text">11.6.0.8</block>
+  <block id="1cde4ba997dcb1435c86877ac60d2dd1" category="list-text">11.6.0.9</block>
+  <block id="4d0143ce100f2a4d750c5e4a4c89eedd" category="list-text">11.7.0</block>
+  <block id="8ebd81f8e189b1b2a9934d056d79894c" category="list-text">11.7.0.11</block>
+  <block id="e1c627f6d9bea6250b0ca06cc5df7a7b" category="list-text">11.7.0.12</block>
+  <block id="4f31d3db385fb82d90980a2d793af59c" category="list-text">11.7.0.13</block>
+  <block id="c36d188980143c2c34d2b06dda195faa" category="list-text">11.7.0.3</block>
+  <block id="9a109f0d2db7a14d6522b7a3cc6ce598" category="list-text">11.7.0.4</block>
+  <block id="ad261b996f67c5e24ef0142c3d3bbf1e" category="list-text">11.7.0.5</block>
+  <block id="0f1ea17d044e2f8572fe181dcd0477a8" category="list-text">11.7.0.6</block>
+  <block id="b72053a12f3b094f7324d06c615fd623" category="list-text">11.7.0.8</block>
+  <block id="3d755bc478611b9f92eadb9b3fa9ca0d" category="list-text">11.7.0.9</block>
+  <block id="e45bd75b9cd2b034c45fee88a011b82b" category="list-text">11.8.0</block>
+  <block id="bc7ee8d85191bd38df8f879f73cd58f6" category="list-text">11.8.0.1</block>
+  <block id="b1daa9960ca6b3a31f507a29d47b2c7f" category="list-text">11.8.0.2</block>
+  <block id="5aaceeed1aec905104027ce834e2cbb5" category="list-text">11.8.0.3</block>
+  <block id="075309851015f6738ea72552135aa912" category="list-text">11.8.0.5</block>
+  <block id="473b5959db3b942571387aa579a0698d" category="list-text">11.8.0.6</block>
+  <block id="0e22eab3937276c946549bf3075935c8" category="list-text">11.8.0.7</block>
+  <block id="0e4046e4c7de61a1eedb62b8bf85f2c5" category="list-text">11.8.0.8</block>
+  <block id="40a986948dcf993f5f7a6d91482cc95a" category="list-text">11.8.0.9</block>
+  <block id="8f79e73474db27d3f915ee4dfaed0ed8" category="list-text">11.9.0</block>
+  <block id="64f983cbd395bcd80f0eec288150b314" category="list-text">11.9.0.1</block>
+  <block id="a89b29671a8dad00a4de79e444259dc6" category="list-text">11.9.0.2</block>
+  <block id="25da4a1e9fa4c616872546d53bbb1577" category="list-text">11.9.0.3</block>
+  <block id="42a51144d74b45eb78dc527b0ead5d58" category="list-text">11.9.0.4</block>
+  <block id="731191f863e30c2cf3d9c63902cd2054" category="list-text">Sun ZFS Storage 7120</block>
+  <block id="f94c2ddeb158e9f38b93908a53cafd2d" category="list-text">Sun ZFS Storage 7320</block>
+  <block id="dd2d56527008cdc31b4ebba2e489b87d" category="list-text">Sun ZFS Storage 7330</block>
+  <block id="9264a4a53c4b75bfb44d6eab2202cec4" category="list-text">Sun ZFS Storage 7335</block>
+  <block id="869d2aa48a40aaa844e4e126176a99db" category="list-text">Sun ZFS Storage 7350</block>
+  <block id="e68440bca6529f10a340b3ec1d1befed" category="list-text">Sun ZFS Storage 7370</block>
+  <block id="5e185d617c2d4483ea63a6a8cdd8fd60" category="list-text">Sun ZFS Storage 7390</block>
+  <block id="af7a1cd36c55fee915db57922625a6f0" category="list-text">Sun ZFS Storage 7420</block>
+  <block id="c6bd20ef7e1644234be108d728aa846b" category="list-text">1-1.1</block>
+  <block id="3e3eb2248f0b65d46a5740bff76667d4" category="list-text">1-1.2</block>
+  <block id="05bb74ab5f8f7eaa95a5e21733ecd97c" category="list-text">1-1.3</block>
+  <block id="4058ca8e92987394c96e4e5790171bfe" category="list-text">1-1.34</block>
+  <block id="049af000eeb40dee56ad97aa6a22cab7" category="list-text">1-1.4</block>
+  <block id="184262e7aef955263307d2079d227b7c" category="list-text">2013.06.05.6.12</block>
+  <block id="4ec8a28c379541d090e73aed79e2e45a" category="list-text">2013.06.05.6.15</block>
+  <block id="a51db0895c1d6ae8f6b5f107f7abd039" category="list-text">2013.06.05.7.21</block>
+  <block id="d87d3b6f89a592e51041eae84260ad31" category="list-text">2013.06.05.7.24</block>
+  <block id="b235f8508a4fc6189a8f3a27e55a613a" category="list-text">2013.06.05.7.25</block>
+  <block id="9e504e42c64d2fa78f55029699bd48ef" category="list-text">2013.06.05.7.26</block>
+  <block id="50d76a60e60eb1bd46d25572fbfa5c64" category="list-text">2013.06.05.7.29</block>
+  <block id="fc57ab37d16e7b3b053a35ffa3228501" category="list-text">2013.06.05.8.0</block>
+  <block id="5f61e18ba80cea3170ab6bbfc72f8c74" category="list-text">2013.06.05.8.26</block>
+  <block id="b6bc2393f286b5d896464162ca9a491a" category="list-text">2013.06.05.8.29</block>
+  <block id="f1e2720629ec578d4fd2e01bcfe5d8ba" category="list-text">2013.06.05.8.37</block>
+  <block id="e0ab3144e3ea36f9bd14a9d5eb3f5b1b" category="list-text">2013.06.05.8.44</block>
+  <block id="71226e32744e83555fd976fefc338e9f" category="list-text">2013.06.05.8.50</block>
+  <block id="d026c672d1f78cc3c3735148f4eb7cae" category="list-text">2013.06.05.8.53</block>
+  <block id="09a80f943bb3abea19f3c2848912aedb" category="list-text">2013.06.05.8.56</block>
+  <block id="9abb8da9989512d9b84d14303e25d6d4" category="list-text">2013.06.05.8.6</block>
+  <block id="7ffc849450c3f963e7b398490b3329b0" category="list-text">2013.06.05.8.61</block>
+  <block id="034a29eaa95cf6158d0227d4b17d1b72" category="list-text">2013.06.05.8.65</block>
+  <block id="4dcb7578232ae706a90c40aac6c4cc7b" category="list-text">2013.06.05.8.7</block>
+  <block id="ac83038e027bd975c3dabe5c944cb980" category="list-text">2013.06.05.8.72</block>
+  <block id="bfdcef5c205ba7515a25dea52978a439" category="list-text">2013.06.05.8.74</block>
+  <block id="2c3d2c72278631cf725b09ee76c48f4e" category="list-text">2013.06.05.8.76</block>
+  <block id="4d913a79f913652050240860ab5a4056" category="list-text">DFSC1</block>
+  <block id="40bb0a7811aa7ca1900f3f15a47920f1" category="list-text">FA-450</block>
+  <block id="7a302ade20591450a2b844fc71840db5" category="list-text">FA-C40R3</block>
+  <block id="4d14d8ce0109acc0e7a87fc11d598652" category="list-text">FA-C50R4</block>
+  <block id="d454d39e6869f2f398b3f7016429d913" category="list-text">FA-C60</block>
+  <block id="1c5a290a1a32b75b97eb91dd4145ddb8" category="list-text">FA-C60R3</block>
+  <block id="a0979d7925ac7d67e72cf1a7371cba5e" category="list-text">FA-C70R4</block>
+  <block id="1c387769ab617376e7b9d2a8ee922f3d" category="list-text">FA-C90R4</block>
+  <block id="321c67aa6af1b9c905ffc067f582b706" category="list-text">FA-X10R2</block>
+  <block id="24a02e1789f5aecc4c45bc93fc221673" category="list-text">FA-X10R3</block>
+  <block id="12d4d53f8741b4c3d56fd92d0869afbc" category="list-text">FA-X20R2</block>
+  <block id="ac76f29f913138f48dc5625d4819b564" category="list-text">FA-X20R3</block>
+  <block id="4584f6cfa95fe34e45a3cc404782dc8d" category="list-text">FA-X20R4</block>
+  <block id="c4b20194abf1005221ca49ccc9d22381" category="list-text">FA-X50R2</block>
+  <block id="004c2e8ed78bd4dd39e8e1bc8755cf6f" category="list-text">FA-X50R3</block>
+  <block id="29244b8f8520201607a0cbfa7e242938" category="list-text">FA-X50R4</block>
+  <block id="ed4f82d194eeb24fef9f5c3c8d32ea72" category="list-text">FA-X70R2</block>
+  <block id="2c335ac7a33d82303808f94b628ae4da" category="list-text">FA-X70R3</block>
+  <block id="faf3cb054c0259c2fd864c08f280fb29" category="list-text">FA-X70R4</block>
+  <block id="79efacc42d7528dd8e5c13dbb0a70e1a" category="list-text">FA-X90R2</block>
+  <block id="38ec2fce3acd1e7eecdcd495ebca8d3a" category="list-text">FA-X90R3</block>
+  <block id="c1092fd4242535c6cda2c108676153f5" category="list-text">FA-X90R4</block>
+  <block id="a4597bb039f27132c1a72c55a1484960" category="list-text">FA-XL130</block>
+  <block id="27d4601630c2e4fce9a3acbfaf1ccc2d" category="list-text">FA-XL170</block>
+  <block id="0df9d1f3d625ba1b7c6bd4e1f6d21511" category="list-text">FA-m20</block>
+  <block id="33b5b3a0f14631fca6b7e0031b4c733e" category="list-text">FA-m20r2</block>
+  <block id="c541292b482b4dd2501b0e30dd0792ca" category="list-text">FA-m50</block>
+  <block id="eb9cfca82f928f86d32ef8e090d1409d" category="list-text">FA-m70</block>
+  <block id="1edaacc3c6ae479810937a73ffd31223" category="list-text">FA-m70r2</block>
+  <block id="b29e2234a9590929c50d9d7335138e7b" category="list-text">OXYGEN</block>
+  <block id="f4b55b3dd474b975c4a1558f2f962202" category="list-text">5.3.14</block>
+  <block id="3f54b418b2357237d3c38e175d53b67e" category="list-text">5.3.20</block>
+  <block id="71dc27c4c678a5e251f912316e815896" category="list-text">6.1.10</block>
+  <block id="d740092106e69ec6bdb77dfc420f17db" category="list-text">6.1.14</block>
+  <block id="b08e2ba5709a6dd4dddb65dc6c60f17c" category="list-text">6.1.18</block>
+  <block id="d9ec4da5114bc54e04f06395cc9f6539" category="list-text">6.1.19</block>
+  <block id="e272eab006becfcd6674e4d525c408cc" category="list-text">6.1.21</block>
+  <block id="7ac1e6b9b9a1fa46e3fedca9a99f205b" category="list-text">6.1.22</block>
+  <block id="2f8ad7401e4a6c711fd6fb112132dff7" category="list-text">6.1.23</block>
+  <block id="7b4e2b701aaddd6912785cdc31963ca6" category="list-text">6.2.10</block>
+  <block id="357789956d5027e91df80f750f46c7d0" category="list-text">6.3.10</block>
+  <block id="b8ddb8daf7b76322c50079c813c79a96" category="list-text">6.3.11</block>
+  <block id="875eda3046bcc830d37e3761e964fa8d" category="list-text">6.3.12</block>
+  <block id="3254542cd0a8833bec0b3ae95d24ec21" category="list-text">6.3.13</block>
+  <block id="282f5ebf8aaa7a0d11b13efbac05d56b" category="list-text">6.3.14</block>
+  <block id="680d5f01dabe609209ce9c1172410778" category="list-text">6.3.15</block>
+  <block id="fe302addbd12b0e0c84972c1c51cbd88" category="list-text">6.3.16</block>
+  <block id="ed96f92a4ebc7bcaa0ae2a0cda252c3f" category="list-text">6.3.17</block>
+  <block id="2ba565a75b6eaa9213380d4d96d03bda" category="list-text">6.3.18</block>
+  <block id="b1c3bd065d3b59fe7a90186159dba8d5" category="list-text">6.3.6</block>
+  <block id="312b2a9403bc50e9202aa24e5d3de228" category="list-text">6.3.7</block>
+  <block id="8c6b6f0fc06a751aad2ebe71c257baba" category="list-text">6.3.9</block>
+  <block id="1a9e26ba9151714843a5b0a21a86738f" category="list-text">6.4.10</block>
+  <block id="16deef10eec1da75df3353b91a8c8e45" category="list-text">6.4.3</block>
+  <block id="0613eb8bd67fabad33d7033fcd7224d7" category="list-text">6.4.7</block>
+  <block id="91ab485031dd9331d8b47c983bded138" category="list-text">6.4.8</block>
+  <block id="7ec5e0875851fcc0df576fbdf5a37562" category="list-text">6.4.9</block>
+  <block id="c6147ab144c603bff1d3acfaf701af15" category="list-text">6.5.0</block>
+  <block id="d98553506d4393860db8a633e4842ead" category="list-text">6.5.1</block>
+  <block id="eb6ec3dc02f6ad9d87db49b44d35cef2" category="list-text">6.5.2</block>
+  <block id="86beb8a3ec316cc7007dd297e635a6cc" category="list-text">6.5.3</block>
+  <block id="2373adf098a5b50db1ef6d627c929037" category="list-text">6.5.4</block>
+  <block id="d9df1a11952db441a83d70fd670f3827" category="list-text">6.5.5</block>
+  <block id="bf3635deb8a02c01bde87b1da5d338da" category="list-text">6.5.6</block>
+  <block id="85044a843e08a4051a230da59b9d6206" category="list-text">6.5.7</block>
+  <block id="e55efea64686dcc135940cbdec50b303" category="list-text">6.5.8</block>
+  <block id="260e60aa2c64dc837d029573e8b0631a" category="list-text">6.5.9</block>
+  <block id="41aa59121ed03ed7a68f116584fbb519" category="list-text">6.6.10</block>
+  <block id="e0d9f4d777508f435c601b535b732b0b" category="list-text">6.6.11</block>
+  <block id="e8e746c7acd54e10d9f9eaf79b7e5630" category="list-text">6.6.5</block>
+  <block id="dfe64279fc80bb7f119276b9ca5691e2" category="list-text">6.6.6</block>
+  <block id="8c0e55dbb60c2a61ce17745435f22792" category="list-text">6.6.7</block>
+  <block id="22df91a964c1a33e741fe7d3a53f3fec" category="list-text">6.7.0</block>
+  <block id="13908f40b13e4182da4171947b016423" category="list-text">6.7.1</block>
+  <block id="dd729a76290a9fce851b662f9624edd0" category="list-text">6.8.1</block>
+  <block id="51a8bd4ca1ce4a6b2781f18486520bc8" category="list-text">6.8.2</block>
+  <block id="f50672604b394c4d01405a1d1d8cc9d8" category="list-text">6.8.3</block>
+  <block id="29554ffdf3c05c4bc946314d1bd2683a" category="paragraph">在使用 Data Infrastructure Insights 之前，您必須先在 NetApp Console 入口網站註冊。如果您已有 NetApp Console 登入帳號，只需幾個簡單的步驟即可開始 Data Infrastructure Insights 的免費試用。</block>
+  <block id="bb793de9cdfd6b52adc5dea5b6228679" category="section-title">建立您的 NetApp Console 帳戶</block>
+  <block id="b4e0df93660adc2e97f2f5484451c415" category="paragraph">若要開始使用 NetApp 雲端服務，請造訪 <block ref="5b0deb840231d6f2646d7cf25956c35a" category="inline-link-macro-rx"></block> 並點擊 *Get Started* 。</block>
+  <block id="1e26781b207fa848ce81c7268cf016a7" category="list-text">如果您尚未註冊，請選擇 *Sign Up*</block>
+  <block id="05d2a837df7692f0d65e4466b2fb05bd" category="list-text">請輸入有效的企業電子郵件地址並選擇密碼。</block>
+  <block id="ad66d403ef43ddd58a7b527874c51878" category="list-text">請輸入您的公司名稱和您的全名。</block>
+  <block id="895a961645c5f6456e2cc43102e1de8a" category="list-text">接受條款和條件，然後選擇 *Continue* 。</block>
+  <block id="4dafb713d5cbc6f47c7df604dd80889f" category="list-text">Console 將引導您完成入門工作流程。</block>
+  <block id="f691976da142019af74f673d9e988d66" category="section-title">如果我已經有 NetApp Console 登入帳號怎麼辦？</block>
+  <block id="3c031b939f6ec312ee601d021e7a6644" category="inline-link-macro">NetApp Console</block>
+  <block id="aa99f612845c50e799a938639ffbe9b0" category="paragraph">擁有 NetApp Console 帳號後，只需在 <block ref="4bf47f571824eb2397af1375bc95f952" category="inline-link-macro-rx"></block> 入口網頁上選擇*登入*即可。</block>
+  <block id="374e5abc3e8b0a1991f729c5b715ccf3" category="paragraph">請從螢幕頂部的下拉式選單中選擇您的 Organization。</block>
+  <block id="cacaacaade1d3ee4968b4d5c3810187e" category="paragraph">從左上角的主選單中選擇 *Governance &gt; Data Infrastructure Insights* 。</block>
+  <block id="eeecd13aa136e65aaedc64374c7415bc" category="section-title">開始您的 Data Infrastructure Insights 免費試用</block>
+  <block id="cf878d147f6085e862e27c14f151fd8a" category="paragraph">準備好後，請選擇 *Start 30-day free trial*。選擇網站託管區域，並按照其他提示操作。</block>
+  <block id="2119f1b8f17e7946ad578d51cf784b7a" category="paragraph">請注意，您必須擁有「組織管理員」角色才能建立 Data Infrastructure Insights 網站。</block>
+  <block id="1322330f6958a7e6c6470334a07f8bd6" category="paragraph">NetApp Console 會在您的 Data Infrastructure Insights （DII）網站準備好進行入駐時通知您。選擇 *Start onboarding* 按鈕即可設定您的網站。</block>
+  <block id="a2d332e40d2199577e948520eff55f73" category="paragraph">如果在入職流程完成之前您隨時離開，只需重新登入 Console 即可*完成入職流程*。</block>
+  <block id="02ad86d69f95a15f3b8c0a790baed7b2" category="paragraph">完成入駐流程後、Console 會通知您租用戶已準備就緒。選擇 Launch Data Infrastructure Insights* 即可開始。請注意、部分資料可立即使用（例如庫存資訊）、而其他資料可能需要一段時間才能取得並具有意義（例如效能監控）。</block>
+  <block id="cc580c5eecd9c28053db6de1830561ee" category="section-title">登出</block>
+  <block id="580ad4c649d89edbffcfaa173e6349da" category="paragraph">若要從 Data Infrastructure Insights 登出，請點選您的*使用者名稱*並選擇*登出*。</block>
+  <block id="c4207c205277b5cad1577163a6bae022" category="admonition">登出 Data Infrastructure Insights 會同時登出 Console。您也會從其他使用 Console 登入的 NetApp 雲端服務中登出。</block>
+  <block id="8463a61dd94ff5934036d4c8a8936e32" category="section-title">閒置逾時</block>
+  <block id="db8ff6a5dfcebcb4f9f3077c3acd8c0a" category="paragraph">預設情況下，如果使用者六小時（360 分鐘）沒有任何活動，Console 將自動登出該使用者。無論是否有活動，使用者都將在七天後自動登出。</block>
+  <block id="741e7ebc42af131188a30b71edb016e7" category="list-text">取得類型為 _admin_ 的 vserver 名稱。您將在後續命令中使用此名稱。</block>
+  <block id="7418407cd82ce3c460d2860b829fc4c8" category="list-text">休息期結束後，隨著 REST 收集器繼續獲取數據，您應該會看到數據趨於穩定。</block>
+  <block id="a47be998ba619fe96d10c7e2795cb56b" category="list-text">處理量 – 從內部磁碟區彙總而來。</block>
+  <block id="d4ecbc71f26bb806fe3e004ecfb2089e" category="list-text">管理 – 此處可能包含指向裝置管理介面的超連結。由 Data Infrastructure Insights 資料來源以程式設計方式建立，作為庫存報告的一部分。</block>
+  <block id="735b15b5437cc957c5ba713c31d536e6" category="cell">這可能是由於 ONTAP 陣列版本過舊（例如 ONTAP 9.6）導致的，該版本不具備 REST API 功能。ONTAP 9.14.1 是 ONTAP REST 收集器支援的最低 ONTAP 版本。在不支援 REST 的 ONTAP 版本上，可能會收到「400 Bad Request」回應。對於支援 REST 但不是 9.14.1 或更高版本的 ONTAP 版本，您可能會看到以下類似訊息：Configuration: 10.193.98.84: ONTAP rest API at 10.193.98.84 is not available: 10.193.98.84: ONTAP rest API at 10.193.98.84 is available: cheryl5-cluster-2 9.10.1 a3cb3247-3d3c-11ee-8ff3-005056b364a7 but is not of minimum version 9.14.1.</block>
+  <block id="7a1fe47a1aa444b45e1475e2c2b156bc" category="cell">StorageGRID （Grid Manager）的管理 IP 位址</block>
+  <block id="0eb50b790bd551aaef2bbefbd077cd1b" category="cell">用於登入 StorageGRID （ Grid Manager ）的名稱</block>
+  <block id="9730a2702facd53c375d1f62e4d662a2" category="cell">用於登入 StorageGRID （ Grid Manager ）的密碼</block>
 </blocks>
