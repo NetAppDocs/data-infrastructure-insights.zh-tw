@@ -18,6 +18,66 @@ NetApp不斷改進和增強其產品和服務。以下是Data Infrastructure Ins
 
 
 
+== 2026 年 2 月
+
+
+
+=== 關於您的基礎架構的即時智慧解答
+
+隆重介紹您基礎設施的全新智慧夥伴：*Data Infrastructure Insights AI 助理*將徹底改變您與資料的互動方式，把複雜的查詢轉化為簡單的對話。即時發現隱藏模式、加速故障排除，並自信地做出數據驅動的決策。立即取得以下問題的答案：
+
+* 如何設定監控器以針對持續無法接受的延遲發出警示？
+* 環境中利用率最高的儲存池有哪些？
+* 過去一小時內產生了多少警示？
+
+
+DII AI Assistant Preview 現已開放給大多數在 AWS 區域託管服務的客戶；Azure 區域即將推出。link:concept_preview_features.html["了解更多"]關於 Data Infrastructure Insights Preview 功能。image:ai_assistant_icon.png["AI 助理圖示"]
+
+
+
+=== 監控改善情況
+
+
+
+==== 更快地自訂系統監控器，無需重複操作
+
+您可以直接修改預設系統監控器以滿足您的需求—在一個地方即可變更名稱、篩選器和分組。無需為簡單的調整建立重複的監控器。一個醒目的橫幅會提醒您哪些監控器已被自訂，讓您對監控配置一目了然。
+
+
+
+==== 利用大量操作簡化監控管理
+
+透過批次操作同時管理多個監控器。快速調整多組監控器的 Health Monitoring 設定，節省時間並降低複雜性。只需幾秒鐘即可全面更新您的監控策略，無需等待數分鐘。
+
+
+
+==== 將基礎架構健全狀況評分重點放在最重要的事項上
+
+從基礎架構健全狀況評分中排除特定物件，以維持準確性和相關性。檢視基礎架構健全狀況儀表板時，可立即移除您想要降低優先順序的物件，而無需修改監控組態。這會將警示重點放在推動業務優先順序的基礎架構元素上。
+
+image:health_monitoring_exclude_object.png["從健康監測中排除物件"]
+
+
+
+=== 作業系統支援
+
+Data Infrastructure Insights link:concept_acquisition_unit_requirements.html["擷取單元"] 目前支援下列 Linux 作業系統：
+
+* AlmaLinux 9.5 和 10
+* CentOS (64 位元)：Stream 9
+* Debian（64 位）：11 至 13
+* OpenSUSE Leap 15.2 至 15.6 、 16
+* Oracle Enterprise Linux（64 位元）：8.10、9.2、9.4、9.6、10
+* Red Hat（64 位元）：8.10、9.2、9.4、9.6、10
+* Rocky 9.2 至 9.6
+* SUSE Linux Enterprise Server 15 SP4 至 15 SP7 、 16
+* Ubuntu Server ： 20.04 、 22.04 、 24.04 LTS
+* 上述平台上的 SELinux
+
+
+'''
+
+
 == 2025年12月
 
 

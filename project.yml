@@ -15,16 +15,6 @@ sidebar:
     url: "/index.html"
   - title: 什麼是新的
     url: "/concept_whats_new.html"
-  - title: 註冊 Data Infrastructure Insights
-    url: "/task_cloud_insights_onboarding_1.html"
-  - title: 安全
-    entries:
-    - title: 安全實踐
-      url: "/security_overview.html"
-    - title: 我們儲存什麼以及在哪裡存儲
-      url: "/security_information_and_region.html"
-    - title: 安全管理工具
-      url: "/security_admin_tool.html"
   - title: 入門
     entries:
     - title: 功能教學
@@ -51,6 +41,18 @@ sidebar:
       url: "/concept_import_from_dashboard_gallery.html"
     - title: 使用者帳戶和角色
       url: "/concept_user_roles.html"
+  - title: 註冊 Data Infrastructure Insights
+    url: "/task_cloud_insights_onboarding_1.html"
+  - title: 安全
+    entries:
+    - title: 安全實踐
+      url: "/security_overview.html"
+    - title: 我們儲存什麼以及在哪裡存儲
+      url: "/security_information_and_region.html"
+    - title: 安全管理工具
+      url: "/security_admin_tool.html"
+  - title: AI 助理
+    url: "/ai_for_dii_overview.html"
   - title: 資料收集器列表
     url: "/data_collector_list.html"
   - title: 訂閱Data Infrastructure Insights

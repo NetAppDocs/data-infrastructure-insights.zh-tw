@@ -1,0 +1,83 @@
+---
+sidebar: sidebar 
+permalink: ai_for_dii_overview.html 
+keywords: ai, 
+summary: 您可以使用 Data Infrastructure Insights 的 AI 助理來總結數據、探索見解、疑難排解問題並規劃資源。 
+---
+= Data Infrastructure Insights AI 助理
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+*Data Infrastructure Insights AI 助理*旨在幫助您更有效率地處理基礎設施數據。它可以幫助您分析資訊、發現洞察、解決營運難題，並就資源利用做出明智的決策。
+
+[NOTE]
+====
+DII AI 助理目前以有限的預覽版形式提供。link:/concept_preview_features.html["了解更多"] 關於 Data Infrastructure Insights 預覽功能。
+
+AI 助理僅適用於部署在 AWS 上的 Data Infrastructure Insights 租戶。
+
+====
+image:ai_assistant_sample_question.png["AI Assistant 範例問題"]
+
+
+
+== 認識您基礎架構的全新智慧合作夥伴
+
+AI 助理徹底改變了您與資料的互動方式，將複雜的查詢轉化為簡單的對話。您可以即時發現隱藏的模式，加速故障排除，並自信地做出數據驅動的決策。立即獲得以下問題的答案：
+
+* 如何設定監控器以針對持續無法接受的延遲發出警示？
+* 環境中利用率最高的儲存池有哪些？
+* 過去一小時內產生了多少警示？
+* 收集的最常見記錄類型有哪些？
+* 哪些主機的 CPU 使用率最高？
+* 環境中可以監控哪些類型的資產？
+* 目前是否有任何重要警示處於作用中狀態？
+* 儲存系統的整體健全狀況如何？
+* 哪些虛擬機器消耗的記憶體最多？
+* 系統中配置了多少台監視器？
+
+
+
+
+== 在使用 AI Assistant 之前
+
+* AI Assistant 旨在為您提供協助。雖然它力求準確，但為了獲得最佳效果，強烈建議您透過人工監督來驗證其輸出結果。
+* 為了您和同事的安全和隱私，請不要輸入個人識別資訊 （PII）。
+* 為保障您的資料安全，請勿輸入敏感或機密資訊。
+* 閱讀 link:https://www.netapp.com/pdf.html?item=/media/71584-netapp-data-processing-addendum.pdf["NetApp Data Processing 附錄"] 和 link:https://www.netapp.com/company/legal/privacy-policy/["NetApp 隱私權政策"]。
+
+
+
+
+== AI 助理與您一起工作
+
+Data Infrastructure Insights AI 助理可以幫助您解答有關 IT 基礎架構資料的問題。為了有效地完成這項任務，它需要理解您的請求以及回應請求所需的特定資料。
+
+DII 系統包含多種類型的資料，其中包括：
+
+* 資產遙測（主機、儲存設備、 VM 等）
+* 資料湖指標（Kubernetes、NetApp 儲存、VMware）
+* 來自不同系統的日誌
+* 可能表示異常情況的警示
+
+
+為了獲得最佳體驗，請向 Assistant 提供以下具體資訊：
+
+* 您想要分析的資料類型（例如特定資產、指標或系統）、
+* 您感興趣的時間範圍，以及
+* 您具體關注哪些問題類型（效能問題、容量問題、錯誤等）
+
+
+
+
+== 存取助理
+
+要呼叫 Data Infrastructure Insights AI 助手，只需選擇螢幕左下角的貓頭鷹圖示即可。擁有「所有者」角色的使用者必須先接受條款和條件，其他使用者才能在您的租戶上使用 AI 助手。
+
+image:ai_assistant_icon.png["dii_ai_assistant_icon"]

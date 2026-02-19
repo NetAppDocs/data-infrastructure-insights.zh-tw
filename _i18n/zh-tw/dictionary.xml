@@ -13879,4 +13879,72 @@
   <block id="0eb50b790bd551aaef2bbefbd077cd1b" category="cell">用於登入 StorageGRID （ Grid Manager ）的名稱</block>
   <block id="9730a2702facd53c375d1f62e4d662a2" category="cell">用於登入 StorageGRID （ Grid Manager ）的密碼</block>
   <block id="749045de0e520f5ad8cff4d4635dd0d8" category="admonition">DII 站點將與選定的 Console Organization 關聯。如果您有多個 Organization，請務必選擇正確的 Organization 與 DII 租戶關聯。</block>
+  <block id="d55e67726729808ea6f67b165600c105" category="summary">您可以使用 Data Infrastructure Insights 的 AI 助理來總結數據、探索見解、疑難排解問題並規劃資源。</block>
+  <block id="accab30482cee85eb4e017db64428cad" category="doc">Data Infrastructure Insights AI 助理</block>
+  <block id="6804300f32b2dfd7358cbef13acc4c27" category="paragraph">*Data Infrastructure Insights AI 助理*旨在幫助您更有效率地處理基礎設施數據。它可以幫助您分析資訊、發現洞察、解決營運難題，並就資源利用做出明智的決策。</block>
+  <block id="e7cc6c745169e0af46fdfb09b867c22c" category="paragraph">DII AI 助理目前以有限的預覽版形式提供。<block ref="ee58f03d7eaea0665aa8a572992ca1b8" category="inline-link-macro-rx"></block> 關於 Data Infrastructure Insights 預覽功能。</block>
+  <block id="b6ed013ce4b16673bae45126733837ff" category="paragraph">AI 助理僅適用於部署在 AWS 上的 Data Infrastructure Insights 租戶。</block>
+  <block id="01a593a05ec8086d16c6d465263a2f9f" category="inline-image-macro">AI Assistant 範例問題</block>
+  <block id="18aabc8cd51ce3494b256e8195526a85" category="paragraph"><block ref="18aabc8cd51ce3494b256e8195526a85" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f58b0ee974430595788a16d0bcde2c33" category="section-title">認識您基礎架構的全新智慧合作夥伴</block>
+  <block id="ac512591ec703428212f282a69b68d6b" category="paragraph">AI 助理徹底改變了您與資料的互動方式，將複雜的查詢轉化為簡單的對話。您可以即時發現隱藏的模式，加速故障排除，並自信地做出數據驅動的決策。立即獲得以下問題的答案：</block>
+  <block id="87c323a02eb373f2f5154a593236b49a" category="list-text">如何設定監控器以針對持續無法接受的延遲發出警示？</block>
+  <block id="d7bd01231d44983bd6370a499a124481" category="list-text">環境中利用率最高的儲存池有哪些？</block>
+  <block id="6901ef6009bc5d9c00833c9090aa30cf" category="list-text">過去一小時內產生了多少警示？</block>
+  <block id="48cc458fd1657654f64c60bae2b12c3e" category="list-text">收集的最常見記錄類型有哪些？</block>
+  <block id="88058d05eae2bfa31ce1daf9f1af8607" category="list-text">哪些主機的 CPU 使用率最高？</block>
+  <block id="d4b43c6c4b6712eb880da1176352d222" category="list-text">環境中可以監控哪些類型的資產？</block>
+  <block id="05ce505287e46580b1958ceda1a48f14" category="list-text">目前是否有任何重要警示處於作用中狀態？</block>
+  <block id="f8575cf3234d3a71bfcac8fe3ec655d0" category="list-text">儲存系統的整體健全狀況如何？</block>
+  <block id="56fdc89bcfb8177ae27782f7803cbcdb" category="list-text">哪些虛擬機器消耗的記憶體最多？</block>
+  <block id="0b8904f678a37d1153da26510caeac05" category="list-text">系統中配置了多少台監視器？</block>
+  <block id="7acf2c0112bebac877a33b61ec96b56a" category="section-title">在使用 AI Assistant 之前</block>
+  <block id="01ea9d4395c142fe0a85fffdc8bdcd12" category="list-text">AI Assistant 旨在為您提供協助。雖然它力求準確，但為了獲得最佳效果，強烈建議您透過人工監督來驗證其輸出結果。</block>
+  <block id="efff4d34a730a1682b1f44faa2d952cb" category="list-text">為了您和同事的安全和隱私，請不要輸入個人識別資訊 （PII）。</block>
+  <block id="3e776ea9184366df6cf82ba01ee389e8" category="list-text">為保障您的資料安全，請勿輸入敏感或機密資訊。</block>
+  <block id="25568be837cb00c81f49c6c7f14323d4" category="inline-link-macro">NetApp Data Processing 附錄</block>
+  <block id="20b24ff87bebf48817d3f0121617e88d" category="inline-link-macro">NetApp 隱私權政策</block>
+  <block id="12e699559691bd3a438e052cd6bf3f5f" category="list-text">閱讀 <block ref="fd543e73e84ebd55cfd7b33f3155d2e7" category="inline-link-macro-rx"></block> 和 <block ref="e0be5a78043215130ed137b894ec3c29" category="inline-link-macro-rx"></block>。</block>
+  <block id="26a90de31f36fc014c8ad8737de2d220" category="section-title">AI 助理與您一起工作</block>
+  <block id="3f0c43a14bf5fb33649094a9127d5db0" category="paragraph">Data Infrastructure Insights AI 助理可以幫助您解答有關 IT 基礎架構資料的問題。為了有效地完成這項任務，它需要理解您的請求以及回應請求所需的特定資料。</block>
+  <block id="20f949a09d10cfcaeafc3c460bd995f9" category="paragraph">DII 系統包含多種類型的資料，其中包括：</block>
+  <block id="8ad781265b3547e99c943175d79a179f" category="list-text">資產遙測（主機、儲存設備、 VM 等）</block>
+  <block id="b5af341d46ef69cb0af57ccb7bd5720c" category="list-text">資料湖指標（Kubernetes、NetApp 儲存、VMware）</block>
+  <block id="cce75571d6535c6e46ca8316dc56b78a" category="list-text">來自不同系統的日誌</block>
+  <block id="491b6830a2d7e3da393bd35fe1d674bd" category="list-text">可能表示異常情況的警示</block>
+  <block id="8b535ff38c9b852fd885033ac8638d2a" category="paragraph">為了獲得最佳體驗，請向 Assistant 提供以下具體資訊：</block>
+  <block id="6249360bea48aa600de4eaaceaecabb1" category="list-text">您想要分析的資料類型（例如特定資產、指標或系統）、</block>
+  <block id="81bba36ecc862e80fc8fba5830993041" category="list-text">您感興趣的時間範圍，以及</block>
+  <block id="747f32611560f7ea60cbda274f04ef16" category="list-text">您具體關注哪些問題類型（效能問題、容量問題、錯誤等）</block>
+  <block id="45610fa97924ab075b8ebed42722b019" category="section-title">存取助理</block>
+  <block id="629c55deaa1b75250df975fe5485d218" category="paragraph">要呼叫 Data Infrastructure Insights AI 助手，只需選擇螢幕左下角的貓頭鷹圖示即可。擁有「所有者」角色的使用者必須先接受條款和條件，其他使用者才能在您的租戶上使用 AI 助手。</block>
+  <block id="f67a424fefeb5e523fcbb4c9247bc6d9" category="inline-image-macro">dii_ai_assistant_icon</block>
+  <block id="a48b93c62e0c2ec4c09405cadd96b7da" category="paragraph"><block ref="a48b93c62e0c2ec4c09405cadd96b7da" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="be90349da04be71a620e68314d810f7f" category="section-title">2026 年 2 月</block>
+  <block id="ad3362691040d433cbf22ab397dc84aa" category="section-title">關於您的基礎架構的即時智慧解答</block>
+  <block id="28cae4dd9c57dbe8a35cbe00a743a292" category="paragraph">隆重介紹您基礎設施的全新智慧夥伴：*Data Infrastructure Insights AI 助理*將徹底改變您與資料的互動方式，把複雜的查詢轉化為簡單的對話。即時發現隱藏模式、加速故障排除，並自信地做出數據驅動的決策。立即取得以下問題的答案：</block>
+  <block id="7e83213ae37d2231b72b1f96b096ddeb" category="inline-image-macro">AI 助理圖示</block>
+  <block id="14f7de7f8564e731023379f8117cae1b" category="paragraph">DII AI Assistant Preview 現已開放給大多數在 AWS 區域託管服務的客戶；Azure 區域即將推出。<block ref="b77b95325de7e3e625a811db4f47869c" category="inline-link-macro-rx"></block>關於 Data Infrastructure Insights Preview 功能。<block ref="ef81c0041379574a84edd0f82a7689e7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0fd9a21defe0a1ec8e4b10c890230f25" category="section-title">監控改善情況</block>
+  <block id="a94b18666f4037c59ea76567b7b3779c" category="section-title">更快地自訂系統監控器，無需重複操作</block>
+  <block id="b4092a4b68e89ab9df5e0a783d45fda3" category="paragraph">您可以直接修改預設系統監控器以滿足您的需求—在一個地方即可變更名稱、篩選器和分組。無需為簡單的調整建立重複的監控器。一個醒目的橫幅會提醒您哪些監控器已被自訂，讓您對監控配置一目了然。</block>
+  <block id="1249738b40c3ebf7497218f6b63980ac" category="section-title">利用大量操作簡化監控管理</block>
+  <block id="6f7d5936fb01283fdfc635ef0c2b2b11" category="paragraph">透過批次操作同時管理多個監控器。快速調整多組監控器的 Health Monitoring 設定，節省時間並降低複雜性。只需幾秒鐘即可全面更新您的監控策略，無需等待數分鐘。</block>
+  <block id="7c9a169da8415e07b317a279fd557d57" category="section-title">將基礎架構健全狀況評分重點放在最重要的事項上</block>
+  <block id="2d749cca30ef1dad32e18ba4441c474d" category="paragraph">從基礎架構健全狀況評分中排除特定物件，以維持準確性和相關性。檢視基礎架構健全狀況儀表板時，可立即移除您想要降低優先順序的物件，而無需修改監控組態。這會將警示重點放在推動業務優先順序的基礎架構元素上。</block>
+  <block id="aa4ad094ae1edb87ffb733fcc22144c0" category="inline-image-macro">從健康監測中排除物件</block>
+  <block id="ebf03326dfbf7b48fe4575709f8c1a51" category="paragraph"><block ref="ebf03326dfbf7b48fe4575709f8c1a51" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="838a5b6e1cef2988995345837447f129" category="inline-link-macro">擷取單元</block>
+  <block id="d9131ac4f67c5c616f8658f3be927811" category="paragraph">Data Infrastructure Insights <block ref="9d197753af39cfa8d0f06175517b0833" category="inline-link-macro-rx"></block> 目前支援下列 Linux 作業系統：</block>
+  <block id="bf1f59b62cdf29b442b8079907309a26" category="list-text">AlmaLinux 9.5 和 10</block>
+  <block id="73d72c578d3f5b335b55d421ee4be972" category="list-text">CentOS (64 位元)：Stream 9</block>
+  <block id="78f4d8f51d34ee0c324e6a5277f9b2b3" category="list-text">Debian（64 位）：11 至 13</block>
+  <block id="f8d1a8371bb39357a8e0e8d82da3efcc" category="list-text">OpenSUSE Leap 15.2 至 15.6 、 16</block>
+  <block id="2ce49b2756d6dcfc59bbf06cc1611bd8" category="list-text">Oracle Enterprise Linux（64 位元）：8.10、9.2、9.4、9.6、10</block>
+  <block id="3aad8ee25a3f60436baf6335487f32f6" category="list-text">Red Hat（64 位元）：8.10、9.2、9.4、9.6、10</block>
+  <block id="421505a482a3fad0342e2d00218e3a10" category="list-text">Rocky 9.2 至 9.6</block>
+  <block id="93cdc222b02604a207a8fe61cdd802b0" category="list-text">SUSE Linux Enterprise Server 15 SP4 至 15 SP7 、 16</block>
+  <block id="254437ac6c40fc16c31d2f215400e44f" category="list-text">Ubuntu Server ： 20.04 、 22.04 、 24.04 LTS</block>
+  <block id="ecf8fabbb23da2c68f49fe920a05137b" category="list-text">上述平台上的 SELinux</block>
+  <block id="3542743c69e8fceb06c77e5e17299c89" category="sidebar">AI 助理</block>
 </blocks>
