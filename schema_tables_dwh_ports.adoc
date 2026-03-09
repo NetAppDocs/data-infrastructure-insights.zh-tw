@@ -1,0 +1,351 @@
+---
+sidebar: sidebar 
+permalink: schema_tables_dwh_ports.html 
+summary: dwh_ports 資料庫的架構表和關係 
+keywords: dwh, data warehouse, schema, reporting 
+---
+= dwh_ports 資料庫架構參考
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+本參考資料提供了 dwh_ports 資料庫的詳細架構資訊，包括表格結構、欄位定義、資料類型和關係。
+
+
+
+== 表格和檢視
+
+
+
+=== 紅雀隊
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| 數字 | 整數 | 介於 0 和 99 之間的數字 
+|===
+'''
+
+
+=== 連線裝置維度
+
+*主鍵：* tk
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| tk | 整數 | 技術金鑰 
+
+
+| 姓名 | 字串 | 設備名稱 
+
+
+| 製造商 | 字串 | 裝置的製造商 
+
+
+| 模型 | 字串 | 設備型號 
+
+
+| 類型 | 字串 | 設備類型 
+
+
+| 韌體 | 字串 | 裝置上執行的韌體版本 
+
+
+| id | 長 | 裝置的 ID 
+
+
+| 最新 | 字串 | 最新旗標 
+|===
+*關係：*
+
+* ports_fact （一對多）
+
+
+'''
+
+
+=== 日期維度
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| tk | 整數 | 技術金鑰 
+
+
+| fullDate | DateTimeOffset | 完整日期 
+
+
+| dayInMonth | 位元組 | 月中的日期 
+
+
+| dayInYear | 整數 | 一年中的某一天 
+
+
+| dateYear | 整數 | 年 
+
+
+| yearLabel | 字串 | 年份標籤 
+
+
+| monthNum | 位元組 | 月份編號 
+
+
+| monthLabel | 字串 | 月份標籤 
+
+
+| dayInWeekNum | 位元組 | 星期幾 
+
+
+| 四分之一 | 位元組 | 季度 
+
+
+| quarterLabel | 字串 | 季度標籤 
+
+
+| dayInQuarter | 整數 | 季度中的日期 
+
+
+| repQuarter | 位元組 | 代表季度 
+
+
+| repMonth | 位元組 | 代表月份 
+
+
+| repWeek | 位元組 | 代表週 
+
+
+| repDay | 位元組 | 代表日 
+
+
+| repMonthOrLatest | 位元組 | 代表月份或最新 
+
+
+| sspFlag | 位元組 | SSP 標誌 
+
+
+| 最新 | 字串 | 最新旗標 
+
+
+| 未來 | 字串 | 未來旗幟 
+|===
+*關係：*
+
+* ports_fact （一對多）
+
+
+'''
+
+
+=== 連接埠維度
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| tk | 整數 | 技術金鑰 
+
+
+| wwn | 字串 | 全球名稱 
+
+
+| 姓名 | 字串 | 連接埠名稱 
+
+
+| gbicType | 字串 | GBIC 類型 
+
+
+| 類型 | 字串 | 連接埠類型 
+
+
+| 速度 | 字串 | 連接埠速度 
+
+
+| isGenerated | 字串 | 產生的旗標 
+
+
+| url | 字串 | 參考 URL 
+
+
+| id | 長 | 唯一識別碼 
+
+
+| 最新 | 字串 | 最新旗標 
+
+
+| dateTk | 整數 | 日期技術金鑰 
+|===
+*關係：*
+
+* ports_fact （一對多）
+
+
+'''
+
+
+=== 連接埠事實
+
+*主鍵：* tk
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| tk | 整數 | 技術金鑰 
+
+
+| dateTk | 整數 | 日期技術金鑰 
+
+
+| switchTk | 整數 | 切換技術金鑰 
+
+
+| connectedDeviceTk | 整數 | 連線裝置技術金鑰 
+
+
+| portTk | 整數 | 連接埠技術金鑰 
+
+
+| 網狀架構 | 字串 | 網狀架構名稱或 WWN 
+
+
+| 速度 | 字串 | 連接埠速度 
+
+
+| connectivityType | 字串 | 連線類型 
+
+
+| 類型 | 字串 | 連接埠類型 
+
+
+| 狀態 | 字串 | 連接埠狀態 
+|===
+*關係：*
+
+* connected_device_dimension （多對一）
+* port_dimension （多對一）
+* date_dimension （多對一）
+* switch_dimension （多對一）
+
+
+'''
+
+
+=== 目前埠事實
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| tk | 整數 | 技術金鑰 
+
+
+| dateTk | 整數 | 日期技術金鑰 
+
+
+| switchTk | 整數 | 切換技術金鑰 
+
+
+| connectedDeviceTk | 整數 | 連線裝置技術金鑰 
+
+
+| portTk | 整數 | 連接埠技術金鑰 
+
+
+| 網狀架構 | 字串 | 網狀架構名稱或 WWN 
+
+
+| 速度 | 字串 | 連接埠速度 
+
+
+| connectivityType | 字串 | 連線類型 
+
+
+| 類型 | 字串 | 連接埠類型 
+
+
+| 狀態 | 字串 | 連接埠狀態 
+|===
+'''
+
+
+=== 切換維度
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| tk | 整數 | 技術金鑰 
+
+
+| wwn | 字串 | 全球名稱 
+
+
+| 姓名 | 字串 | 交換器名稱 
+
+
+| 識別符 | 字串 | 交換器識別碼 
+
+
+| ip | 字串 | IP 位址 
+
+
+| 模型 | 字串 | 交換器機型 
+
+
+| 製造商 | 字串 | 製造商 
+
+
+| 韌體 | 字串 | 韌體版本 
+
+
+| serialNumber | 字串 | 序號 
+
+
+| 淨現值 | 字串 | NPV 模式標誌 
+
+
+| isGenerated | 字串 | 產生的旗標 
+
+
+| 類型 | 字串 | 交換器類型 
+
+
+| url | 字串 | 參考 URL 
+
+
+| id | 長 | 唯一識別碼 
+
+
+| 最新 | 字串 | 最新旗標 
+
+
+| dateTk | 整數 | 日期技術金鑰 
+
+
+| dataCenter | 字串 | 資料中心位置 
+
+
+| switchLevel | 字串 | 切換層級 
+|===
+*關係：*
+
+* ports_fact （一對多）
+
+
+'''

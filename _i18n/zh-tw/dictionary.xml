@@ -5846,11 +5846,6 @@
   <block id="680bf29e063b6b3133c4881cb55b6d34" category="paragraph"><block ref="680bf29e063b6b3133c4881cb55b6d34" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ef3aa6b9d2f782f33da5b73b27fa7356" category="summary">用於報表的資料倉儲模式圖和表格</block>
   <block id="868ca7ff0a3ea94cc065e46e777bd1fe" category="doc">用於報告的Data Infrastructure Insights模式</block>
-  <block id="985a16c17a2f18f7ef3d4d062e921104" category="paragraph">這些模式表和圖表在此提供，作為Data Infrastructure Insights報告的參考。</block>
-  <block id="68c06a3aaa437cbc889730a84299608a" category="inline-link-macro">*模式表*</block>
-  <block id="b87490ec259e802346f5e7df5b91062a" category="paragraph"><block ref="73132d77bb27426db0a42572dd9db4fb" category="inline-link-macro-rx"></block>.PDF格式。點擊連結打開，或右鍵單擊並選擇“另存為...”進行下載。</block>
-  <block id="4d96a583eb48d3637742ec104f386477" category="inline-link-macro">*架構圖*</block>
-  <block id="4d54eb69a3854b602bfb9614a2088d55" category="paragraph"><block ref="4d54eb69a3854b602bfb9614a2088d55" category="inline-link-macro-rx"></block></block>
   <block id="1e2b97b9f5693b80ed092b9f3c74335d" category="inline-link-macro">高級版</block>
   <block id="064b9bf9161e77d5021baa839568d72f" category="admonition">報告功能可在Data Infrastructure Insights中使用<block ref="e53fcfe2d8e430963458770e616738bd" category="inline-link-macro-rx"></block>。</block>
   <block id="0b9304249ee74bce06fd227d0491e15c" category="summary">使用此流程使用預先定義的Data Infrastructure Insights報告建立報告。</block>
@@ -13842,7 +13837,6 @@
   <block id="dd729a76290a9fce851b662f9624edd0" category="list-text">6.8.1</block>
   <block id="51a8bd4ca1ce4a6b2781f18486520bc8" category="list-text">6.8.2</block>
   <block id="f50672604b394c4d01405a1d1d8cc9d8" category="list-text">6.8.3</block>
-  <block id="29554ffdf3c05c4bc946314d1bd2683a" category="paragraph">在使用 Data Infrastructure Insights 之前，您必須先在 NetApp Console 入口網站註冊。如果您已有 NetApp Console 登入帳號，只需幾個簡單的步驟即可開始 Data Infrastructure Insights 的免費試用。</block>
   <block id="bb793de9cdfd6b52adc5dea5b6228679" category="section-title">建立您的 NetApp Console 帳戶</block>
   <block id="b4e0df93660adc2e97f2f5484451c415" category="paragraph">若要開始使用 NetApp 雲端服務，請造訪 <block ref="5b0deb840231d6f2646d7cf25956c35a" category="inline-link-macro-rx"></block> 並點擊 *Get Started* 。</block>
   <block id="1e26781b207fa848ce81c7268cf016a7" category="list-text">如果您尚未註冊，請選擇 *Sign Up*</block>
@@ -13878,7 +13872,6 @@
   <block id="d55e67726729808ea6f67b165600c105" category="summary">您可以使用 Data Infrastructure Insights 的 AI 助理來總結數據、探索見解、疑難排解問題並規劃資源。</block>
   <block id="accab30482cee85eb4e017db64428cad" category="doc">Data Infrastructure Insights AI 助理</block>
   <block id="6804300f32b2dfd7358cbef13acc4c27" category="paragraph">*Data Infrastructure Insights AI 助理*旨在幫助您更有效率地處理基礎設施數據。它可以幫助您分析資訊、發現洞察、解決營運難題，並就資源利用做出明智的決策。</block>
-  <block id="e7cc6c745169e0af46fdfb09b867c22c" category="paragraph">DII AI 助理目前以有限的預覽版形式提供。<block ref="ee58f03d7eaea0665aa8a572992ca1b8" category="inline-link-macro-rx"></block> 關於 Data Infrastructure Insights 預覽功能。</block>
   <block id="b6ed013ce4b16673bae45126733837ff" category="paragraph">AI 助理僅適用於部署在 AWS 上的 Data Infrastructure Insights 租戶。</block>
   <block id="01a593a05ec8086d16c6d465263a2f9f" category="inline-image-macro">AI Assistant 範例問題</block>
   <block id="18aabc8cd51ce3494b256e8195526a85" category="paragraph"><block ref="18aabc8cd51ce3494b256e8195526a85" category="inline-image-macro-rx" type="image"></block></block>
@@ -13918,9 +13911,7 @@
   <block id="a48b93c62e0c2ec4c09405cadd96b7da" category="paragraph"><block ref="a48b93c62e0c2ec4c09405cadd96b7da" category="inline-image-macro-rx" type="image"></block></block>
   <block id="be90349da04be71a620e68314d810f7f" category="section-title">2026 年 2 月</block>
   <block id="ad3362691040d433cbf22ab397dc84aa" category="section-title">關於您的基礎架構的即時智慧解答</block>
-  <block id="28cae4dd9c57dbe8a35cbe00a743a292" category="paragraph">隆重介紹您基礎設施的全新智慧夥伴：*Data Infrastructure Insights AI 助理*將徹底改變您與資料的互動方式，把複雜的查詢轉化為簡單的對話。即時發現隱藏模式、加速故障排除，並自信地做出數據驅動的決策。立即取得以下問題的答案：</block>
   <block id="7e83213ae37d2231b72b1f96b096ddeb" category="inline-image-macro">AI 助理圖示</block>
-  <block id="14f7de7f8564e731023379f8117cae1b" category="paragraph">DII AI Assistant Preview 現已開放給大多數在 AWS 區域託管服務的客戶；Azure 區域即將推出。<block ref="b77b95325de7e3e625a811db4f47869c" category="inline-link-macro-rx"></block>關於 Data Infrastructure Insights Preview 功能。<block ref="ef81c0041379574a84edd0f82a7689e7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0fd9a21defe0a1ec8e4b10c890230f25" category="section-title">監控改善情況</block>
   <block id="a94b18666f4037c59ea76567b7b3779c" category="section-title">更快地自訂系統監控器，無需重複操作</block>
   <block id="b4092a4b68e89ab9df5e0a783d45fda3" category="paragraph">您可以直接修改預設系統監控器以滿足您的需求—在一個地方即可變更名稱、篩選器和分組。無需為簡單的調整建立重複的監控器。一個醒目的橫幅會提醒您哪些監控器已被自訂，讓您對監控配置一目了然。</block>
@@ -13945,4 +13936,726 @@
   <block id="3542743c69e8fceb06c77e5e17299c89" category="sidebar">AI 助理</block>
   <block id="f7836ca926de84b06b0b4bcbe4b8b756" category="inline-link-macro">Data Infrastructure Insights（包括 Workload Security）通知，window=_blank</block>
   <block id="135e17e82c7d3d3d83bd8b0737be432e" category="paragraph"><block ref="135e17e82c7d3d3d83bd8b0737be432e" category="inline-link-macro-rx"></block></block>
+  <block id="58e3397ecaf63f320f4993fc5844d736" category="paragraph">DII AI 助理目前以有限的預覽版形式提供。<block ref="b77b95325de7e3e625a811db4f47869c" category="inline-link-macro-rx"></block> 關於 Data Infrastructure Insights 預覽功能。</block>
+  <block id="b6b93d34f92b439117e54d9343c7efda" category="section-title">目前預覽：</block>
+  <block id="559de301b9b7af9f5b932d860f605701" category="list-text"><block ref="7a32ab5261b86b8c9a5d88b540c79f2d" category="inline-link-macro-rx"></block> 預覽。</block>
+  <block id="ca39a60f24fda5dbbda8809fbd3fe717" category="inline-link-macro">*Data Infrastructure Insights AI 助理*</block>
+  <block id="85f89770aa87faa9242644601468d87f" category="paragraph">隆重介紹您基礎架構的全新智慧夥伴：<block ref="37fa9dc25a183d7b450c31be3880157f" category="inline-link-macro-rx"></block> 徹底改變您與資料的互動方式，並將複雜的查詢轉化為簡單的對話。即時發現隱藏模式，加速故障排除，並自信地做出數據驅動的決策。立即取得以下問題的答案：</block>
+  <block id="2c09f18a119cafd15b4e4e3ad9f3dc97" category="paragraph">DII AI Assistant Preview 現已開放給大多數在 AWS 區域託管服務的客戶；Azure 區域即將推出。<block ref="b77b95325de7e3e625a811db4f47869c" category="inline-link-macro-rx"></block> 關於 Data Infrastructure Insights 預覽功能。</block>
+  <block id="ef81c0041379574a84edd0f82a7689e7" category="paragraph"><block ref="ef81c0041379574a84edd0f82a7689e7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="572853c8b7b9a6c723cd1469d10f32ad" category="paragraph">此處提供這些架構表作為 Data Infrastructure Insights Reporting 的參考。</block>
+  <block id="84e7e0d2bed3b189ff0ca501b5e50fc2" category="inline-link-macro">架構表 - 容量</block>
+  <block id="96b577df857a2943def0600a7b033580" category="inline-link-macro">架構表 - 容量效率</block>
+  <block id="9e967515627ceb5d2c9c9f099c43a591" category="inline-link-macro">架構表 - 檔案系統使用率</block>
+  <block id="fd6c95a06252686775c515e6143bf3f2" category="inline-link-macro">架構表 - 庫存</block>
+  <block id="ecd1b5f31c28de0c631ee58c6b41b0ce" category="inline-link-macro">架構表 - 效能</block>
+  <block id="641194ba8e9eb6bea72a6c8555dba312" category="inline-link-macro">結構描述表 - 連接埠</block>
+  <block id="30447449adfd6d4aba37ceff8ad6d44c" category="paragraph"><block ref="d7f4229ab5b0a23fc5733709f009bb9e" category="inline-link-macro-rx"></block> <block ref="cc065afde5664e2223ba0976d7427c1a" category="inline-link-macro-rx"></block> <block ref="743d4aaaedfa5c8a24d5ae2d7eb2fd6f" category="inline-link-macro-rx"></block> <block ref="c26959329d694ba673ccce22300f912c" category="inline-link-macro-rx"></block> <block ref="bb4b6081cd653f5a71a0887c16d1a9a1" category="inline-link-macro-rx"></block> <block ref="a84fddf1b8ccb11a0434fc30c7af2a6a" category="inline-link-macro-rx"></block></block>
+  <block id="5ea22d2e8fc28ebb23d6c57d502666b3" category="paragraph">本文件提供報表資料庫的架構表。</block>
+  <block id="88bf9a2e65ee5333fd86a914ed4d4dac" category="inline-link-macro">容量架構</block>
+  <block id="9f8e620c6fad8108bd9d954d0fa14a52" category="paragraph"><block ref="9f8e620c6fad8108bd9d954d0fa14a52" category="inline-link-macro-rx"></block></block>
+  <block id="e0f595cb2362f95f18d132f94d406cc4" category="summary">dwh_capacity 資料庫的架構表和關係</block>
+  <block id="896f40a8060d15f9a22064d62506f2e6" category="doc">dwh_capacity 資料庫架構參考</block>
+  <block id="3ebfabfdba61057b0445ee6ad62e9bbc" category="paragraph">本參考資料提供了 dwh_capacity 資料庫的詳細架構資訊，包括表格結構、欄位定義、資料類型和關係。</block>
+  <block id="79a5a50759496277e44e4096aab5c08f" category="section-title">表格和檢視</block>
+  <block id="b87b4e9cf11990127f48c685fa3416c4" category="section-title">應用程式維度</block>
+  <block id="b6717b91c7595cc07f30aa9a784e6390" category="cell">tk</block>
+  <block id="a0faef0851b4294c06f2b94bb1cb2044" category="cell">整數</block>
+  <block id="e8d740eb0c624d8d97eacf5b3f1e7f44" category="cell">技術金鑰</block>
+  <block id="27118326006d3829667a400ad23d5d98" category="cell">字串</block>
+  <block id="ac49daab4d351391b3d544fb182c3074" category="cell">應用程式名稱</block>
+  <block id="67daf92c833c41c95db874e18fcb2786" category="cell">描述</block>
+  <block id="efe74a46bf40916ff3801eb1cfebcf0e" category="cell">應用程式說明</block>
+  <block id="b988295c268025b49dfb3df26171ddc3" category="cell">優先順序</block>
+  <block id="5d74c5f5f0a089b033dbe4e998b49a97" category="cell">優先順序</block>
+  <block id="572d4e421e5e6b9bc11d815e8a027112" category="cell">url</block>
+  <block id="9a0c93a453987dc964c17c4603cf48d8" category="cell">參考 URL</block>
+  <block id="b80bb7740288fda1f201890375a60c8f" category="cell">id</block>
+  <block id="8394f0347c184cf156ac5924dccb773b" category="cell">長</block>
+  <block id="c1c123990faa9bf28b9d93bac9fb4e95" category="cell">唯一識別碼</block>
+  <block id="71ccb7a35a452ea8153b6d920f9f190e" category="cell">最新</block>
+  <block id="f1474a078152a9494e70e822bf7166d3" category="cell">最新旗標</block>
+  <block id="aef448460559bcbef1cb9a7628918e28" category="cell">dateTk</block>
+  <block id="78b10cb0c06814c33778f451b291fac7" category="cell">日期技術金鑰</block>
+  <block id="908110d1895231149a2a8ab11cc73513" category="paragraph">*關係：*</block>
+  <block id="cbda7cd61cc17dd36467c9c2142afabf" category="list-text">internal_volume_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="e57428f717d15fcacbfc599357a86212" prefix=" " category="inline-code"></block></block>
+  <block id="476de578969b29fd85f998930808b943" category="list-text">chargeback_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="3aa2a292bd00fb497430aac774fe29d9" prefix=" " category="inline-code"></block></block>
+  <block id="d4cc1692e9ffea76f2dcaf00e53418ad" category="list-text">vm_capacity_fact（一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="beb3aa5c6c08b74f22b5353652678167" prefix=" " category="inline-code"></block></block>
+  <block id="ea81b3dbff375d0621a4c910276b7e92" category="list-text">qtree_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="dc768b1a0d6d84eb3381f3a2363f9243" prefix=" " category="inline-code"></block></block>
+  <block id="2662c52898cb3f00fcd0a45a9b5a2874" category="section-title">應用程式群組橋接</block>
+  <block id="597a1b4b49716900f5f105af5139d35a" category="cell">appGroupTk</block>
+  <block id="bea170206273ba05d38b2da9b4167108" category="cell">應用程式群組技術金鑰</block>
+  <block id="bf63df30331536657019120358b4f055" category="cell">appTk</block>
+  <block id="8eec2f8573e68fdaeaace0be4df41547" category="cell">應用程式技術金鑰</block>
+  <block id="94d05fa0825c8b0b34f0b1d8620e635a" category="cell">isRep</block>
+  <block id="6408bf2c15503bf72060dc73b90437d6" category="cell">代表旗幟</block>
+  <block id="082d6a5153a80f6e965ba648a54bb46b" category="section-title">應用程式群組維度</block>
+  <block id="e944f6857cdfba2e4fdce50fd3bc95f7" category="cell">repApp</block>
+  <block id="841a064ecf487f8e0ef9b7d2129c0874" category="cell">代表性應用程式</block>
+  <block id="1dc372af9fef661f68f588876e75455b" category="cell">repAppTk</block>
+  <block id="26cc2dc7a6fc14783ab8b88ebbaa0f13" category="cell">代表性應用技術金鑰</block>
+  <block id="e104ca7eb18dfbb74fae31fe985b4bb9" category="cell">基數</block>
+  <block id="8b99945f35997ba403feda30be072380" category="cell">群組基數</block>
+  <block id="0315c4a7cb384933faa99642b2f5f409" category="list-text">internal_volume_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="b7787bd389b3addab8cf99f7d296f1f2" prefix=" " category="inline-code"></block></block>
+  <block id="95f03efbcce901c82005f772befa11d9" category="list-text">chargeback_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="ed22043f57cb2f29f9d535e4777b096f" prefix=" " category="inline-code"></block></block>
+  <block id="ff16f8f7563338894e58a9ce0d393305" category="list-text">vm_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="91ac6d27b823adbddc38acc62d74bdb7" prefix=" " category="inline-code"></block></block>
+  <block id="a7f24cf38afff01658f6db771b18373c" category="list-text">qtree_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="1eaae5db93ffb66cfb0241865f910194" prefix=" " category="inline-code"></block></block>
+  <block id="deb1f1eeb547134cb14d6e52f0cb1865" category="section-title">business_entity_dimension</block>
+  <block id="c315cc04ecbdbc749a09addc62016d54" category="cell">全名</block>
+  <block id="d162f4b57ad6d271cdface798065bf67" category="cell">完整實體名稱</block>
+  <block id="adfb689897b2b5255adcaee72945c791" category="cell">租戶</block>
+  <block id="e22f8f0bb5a29b16c38f9cb92f11dddd" category="cell">租戶名稱</block>
+  <block id="3fcf32676bb2478e2758650f43478b44" category="cell">lob</block>
+  <block id="da87b387a2d7d0a4385e28fb9f220a6e" category="cell">業務線</block>
+  <block id="ab4fe7f67b4180ac021b31277cbd93f6" category="cell">businessUnit</block>
+  <block id="4acf95a233fb839c492377b7f234f241" category="cell">業務單位</block>
+  <block id="46f86faa6bbf9ac94a7e459509a20ed0" category="cell">專案</block>
+  <block id="7adea0d9c77aabccd8bb67ae0a832d59" category="cell">專案名稱</block>
+  <block id="f530c66d0fce5183606ade57e7ae72a8" category="list-text">internal_volume_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="ad1b95d974d0afb332e09a95eaa23c51" prefix=" " category="inline-code"></block></block>
+  <block id="dd3cb74c50cfe8d9cfbf399fc4a3fee9" category="list-text">chargeback_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="5359783900ba526dc75b063d308c11e3" prefix=" " category="inline-code"></block></block>
+  <block id="ab1ea6caf65b17da90369971be8a3ff6" category="list-text">vm_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="79f2eb87adff5594bd94da990e9287a1" prefix=" " category="inline-code"></block></block>
+  <block id="0b82808e88d7ef2bea414b6263ff12de" category="list-text">qtree_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="7254d116b93fb3dc8884d9b0483126a7" prefix=" " category="inline-code"></block></block>
+  <block id="9f234b7fd75adc1450dd73e76cf9f8ea" category="section-title">容量類型</block>
+  <block id="259e642fb84ad0bc6cd4467f88d394f6" category="paragraph">*主鍵：* type</block>
+  <block id="599dcce2998a6b40b1e38e8c6006cb0a" category="cell">類型</block>
+  <block id="de958482d03869226b0aed454842ad6a" category="cell">容量類型</block>
+  <block id="1aec9c5d0644e11fd9dd0f9fb36009fb" category="cell">已使用</block>
+  <block id="b09cbd357ca6ba7a8e532650c6ba2da9" category="cell">已使用標誌</block>
+  <block id="e3737a0fa8bf5f118237079ccf43671f" category="cell">vmSpecific</block>
+  <block id="fb54bbdb8e921dbaaba18e6ec7d6211e" category="cell">VM 特定旗標</block>
+  <block id="13f76a670527f78bc3e60b800582ef53" category="cell">replicationSpecific</block>
+  <block id="03e8180923e065c3aceb5f45e8da0e26" category="cell">複寫特定旗標</block>
+  <block id="f99f75b7bb62d0590f9d539214d30487" category="list-text">vm_capacity_fact（一對多）：<block ref="599dcce2998a6b40b1e38e8c6006cb0a" prefix=" " category="inline-code"></block> &lt;-<block ref="ae5c0b0fc0d0bb8a2f046e951ae56ff6" prefix=" " category="inline-code"></block></block>
+  <block id="8aa3d7ed97d6793c87fe821585838a4a" category="section-title">紅雀隊</block>
+  <block id="29a1470067b045281deaf936a75d8c06" category="cell">數字</block>
+  <block id="01644c680173db829c51a77663273bd2" category="cell">基數</block>
+  <block id="face94ee05cdc162cab87149c318974c" category="section-title">退款事實</block>
+  <block id="d410541fdb310c959ea1f48b5d6b6ae2" category="paragraph">*主鍵：* tk、dateTk</block>
+  <block id="df1e28269a0762d36f1e6340d662a367" category="cell">storageTk</block>
+  <block id="64e2919d58bf24b2cc5551de2e7d73e4" category="cell">儲存技術金鑰</block>
+  <block id="146fac67308f9f675971e17e623f2ce1" category="cell">storagePoolTk</block>
+  <block id="92ebd60eb88b0d34d2e140c4ad751975" category="cell">儲存資源池技術金鑰</block>
+  <block id="d8d388888803024d294802e40c570666" category="cell">internalVolumeTk</block>
+  <block id="2075bfdcb81cf0686de499760d0f8742" category="cell">內部容量技術金鑰</block>
+  <block id="d769fab3613728bd61d383a4993a75a1" category="cell">qtreeTk</block>
+  <block id="7366f7727ddf72366c78322ccd9366f2" category="cell">Qtree 技術金鑰</block>
+  <block id="c3a6651b09af5582729c911efcbc78df" category="cell">hostTk</block>
+  <block id="73f4f15703c071168cdc8889178978c3" category="cell">主機技術金鑰</block>
+  <block id="f3695b70cde86039ccacf16daf63daa9" category="cell">hostGroupTk</block>
+  <block id="78939ba25ebfbd0080a5da31d1dcd01c" category="cell">主機群組技術金鑰</block>
+  <block id="686ce98c5849c0c89abb56cfff5000d8" category="cell">applicationTk</block>
+  <block id="b59b542cca0d693c2eaa3d7c04ee6992" category="cell">applicationGroupTk</block>
+  <block id="4623060a9136c85c908c98e431797862" category="cell">tierTk</block>
+  <block id="1f736fb3e9168f4915dc6b49d6809b8e" category="cell">層級技術金鑰</block>
+  <block id="50a0b45e6e41c951cc4668714704a82b" category="cell">serviceLevelTk</block>
+  <block id="c7912d50b4cbbe61c4d214abab979b47" category="cell">服務層級技術金鑰</block>
+  <block id="6f8f19b05775c27764188cf8b0768bfc" category="cell">businessEntityTk</block>
+  <block id="32040cabec661a0c83e7ee0342c6b44e" category="cell">業務實體技術金鑰</block>
+  <block id="e438ce8eba25ec496aa4d717c49d47db" category="cell">k8sNamespaceTk</block>
+  <block id="716d7dee41a0eab8f8fdd02610deb2fd" category="cell">Kubernetes 命名空間技術金鑰</block>
+  <block id="b448d395a624d3d9566f2491d9796ab2" category="cell">k8sNamespaceGroupTk</block>
+  <block id="8b93ce1f780884bffb950137dbe79c2a" category="cell">Kubernetes 命名空間群組技術金鑰</block>
+  <block id="9092d11b9e6aae4303581f2b540c297e" category="cell">protectionType</block>
+  <block id="c4a6840fb3d43a21880eb5b594a615c1" category="cell">保護類型</block>
+  <block id="efd2c6b87f6f1411d9c65a29ce61f414" category="cell">storageAccessType</block>
+  <block id="b4a79945ae716da5eb70962ec9dd65f3" category="cell">儲存存取類型</block>
+  <block id="8faf06e45c46259bf19965503e274807" category="cell">resourceName</block>
+  <block id="42dedd14635643a71561501c61f04077" category="cell">資源名稱</block>
+  <block id="6f4747111234dff4c7bcdf083b346a94" category="cell">resourceType</block>
+  <block id="53a002434dc37d0a5f8e2aac58da6296" category="cell">資源類型</block>
+  <block id="9b0d3185d18717e489943695d9f59a52" category="cell">mappedByVM</block>
+  <block id="127ed8d882a607eb6851fe5d5317c83d" category="cell">由 VM 標誌映射</block>
+  <block id="fb92fbb0840877264b669b6eb6d53fa5" category="cell">virtualStorage</block>
+  <block id="333a05ad54147def9e8960c236f992e1" category="cell">虛擬儲存標誌</block>
+  <block id="fb0c7c4013da643ce3852500052bd4e2" category="cell">已配置容量 MB</block>
+  <block id="fd59e145678491de6a28fe4871cbf24d" category="cell">已配置容量 (MB)</block>
+  <block id="fede3105b635123aab204f2b87124873" category="cell">已用容量 MB</block>
+  <block id="fffde5f5fd6e5cfdf3005163499237d6" category="cell">已用容量 (MB)</block>
+  <block id="5be5723b5b7c785d0ddceaaf0add6980" category="list-text">volume_fact_current （一對一）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> -&gt;<block ref="aec9227101a17c1b470613c3c8cb3ba4" prefix=" " category="inline-code"></block></block>
+  <block id="82c18d40c922510ed0e2cded676321ee" category="list-text">volume_history_capacity_fact（一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="dd95076b9a30791c5d6b8861321a093d" prefix=" " category="inline-code"></block></block>
+  <block id="9a6ef1d258f4963d6c1596577d689fb0" category="list-text">internal_volume_dimension （多對一）：<block ref="d8d388888803024d294802e40c570666" prefix=" " category="inline-code"></block> -&gt;<block ref="f00596fb562090f866d9a7b439741134" prefix=" " category="inline-code"></block></block>
+  <block id="d95bc164c1497a75c9707acbc0bd4f22" category="list-text">storage_dimension（多對一）：<block ref="df1e28269a0762d36f1e6340d662a367" prefix=" " category="inline-code"></block> -&gt;<block ref="be6836e89893e8dd28bd65ab2be36211" prefix=" " category="inline-code"></block></block>
+  <block id="01350b48e71ee9fca992bbc93fb123c2" category="list-text">business_entity_dimension （多對一）：<block ref="6f8f19b05775c27764188cf8b0768bfc" prefix=" " category="inline-code"></block> -&gt;<block ref="78d019893a55342627284e7b6098a710" prefix=" " category="inline-code"></block></block>
+  <block id="d08b008cba15381cdb6f6ae29829e079" category="list-text">host_group_dimension （多對一）：<block ref="f3695b70cde86039ccacf16daf63daa9" prefix=" " category="inline-code"></block> -&gt;<block ref="d7a64aa47e3a77c3f80960c0f4d4ec88" prefix=" " category="inline-code"></block></block>
+  <block id="fbf230586425338c2088033033fad3a5" category="list-text">k8s_namespace_group_dimension（多對一）：<block ref="b448d395a624d3d9566f2491d9796ab2" prefix=" " category="inline-code"></block> -&gt;<block ref="aa0b095ed554f437cccbd691128a3ef4" prefix=" " category="inline-code"></block></block>
+  <block id="57da4483153001d3159778385ac5dfa7" category="list-text">application_group_dimension （多對一）：<block ref="b59b542cca0d693c2eaa3d7c04ee6992" prefix=" " category="inline-code"></block> -&gt;<block ref="f17775b7ce7f3cda1304bca65019c88b" prefix=" " category="inline-code"></block></block>
+  <block id="1870bb2a6dd6531d12c57095ba2530d0" category="list-text">k8s_namespace_dimension（多對一）：<block ref="e438ce8eba25ec496aa4d717c49d47db" prefix=" " category="inline-code"></block> -&gt;<block ref="315e6d1866e56233c6979df29e002ac7" prefix=" " category="inline-code"></block></block>
+  <block id="4474eeacb98d8baefe162b80c60d8664" category="list-text">service_level_dimension （多對一）：<block ref="50a0b45e6e41c951cc4668714704a82b" prefix=" " category="inline-code"></block> -&gt;<block ref="7a1ace42c26df892e50eece9b6979bda" prefix=" " category="inline-code"></block></block>
+  <block id="3cc7cc4c1d9436e0408acf079f1404d4" category="list-text">tier_dimension（多對一）：<block ref="4623060a9136c85c908c98e431797862" prefix=" " category="inline-code"></block> -&gt;<block ref="d8055df0a595365889b88a986d17bc92" prefix=" " category="inline-code"></block></block>
+  <block id="0ac4208dd52d7e1d21e765e324df6969" category="list-text">application_dimension（多對一）：<block ref="686ce98c5849c0c89abb56cfff5000d8" prefix=" " category="inline-code"></block> -&gt;<block ref="96b82e72a194224661693f62a819b4f9" prefix=" " category="inline-code"></block></block>
+  <block id="d90363efde2219370d1da64e6323caae" category="list-text">qtree_dimension （多對一）：<block ref="d769fab3613728bd61d383a4993a75a1" prefix=" " category="inline-code"></block> -&gt;<block ref="d564657130e7f9c3c580bfed896c7c21" prefix=" " category="inline-code"></block></block>
+  <block id="d75b616ee5a9764a201428989b7c8f72" category="list-text">storage_pool_dimension （多對一）：<block ref="146fac67308f9f675971e17e623f2ce1" prefix=" " category="inline-code"></block> -&gt;<block ref="bf2e2c75c6879b86cb865a99a625c741" prefix=" " category="inline-code"></block></block>
+  <block id="c2035bf33a0b2573e43ebab054ed94ab" category="list-text">host_dimension（多對一）：<block ref="c3a6651b09af5582729c911efcbc78df" prefix=" " category="inline-code"></block> -&gt;<block ref="41ab091be14d59175d2c18f31b5dda82" prefix=" " category="inline-code"></block></block>
+  <block id="5aa355ca1c4998f1b1e262ec338cbe47" category="list-text">date_dimension （多對一）：<block ref="aef448460559bcbef1cb9a7628918e28" prefix=" " category="inline-code"></block> -&gt;<block ref="f198ecb3cecf42cf92ba5a051c4b001d" prefix=" " category="inline-code"></block></block>
+  <block id="2ef3a3653b8642aea005880303a2d64a" category="section-title">資料儲存維度</block>
+  <block id="fe79c61f37717c9cd33ef958c082e389" category="cell">naturalKey</block>
+  <block id="40ff616260543cf49137f3f0aeff0a58" category="cell">自然鍵</block>
+  <block id="02dc05740dd95ec7dcb34f77aca1c852" category="cell">資料儲存名稱</block>
+  <block id="a38ba7d3409312235f420b8d305f9cf4" category="cell">moid</block>
+  <block id="ca20827f541747564ef2bee937167b5d" category="cell">託管物件 ID</block>
+  <block id="b794217d3ee3c8ed6935fef3569befb9" category="cell">virtualCenterIp</block>
+  <block id="5991ccf52a2d511815f4c5f13a0f8e66" category="cell">vCenter IP 位址</block>
+  <block id="4109096adaf09404f825f88991268317" category="list-text">vm_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="3cf5edfa1a454cbfc2aaf47352094bb7" prefix=" " category="inline-code"></block></block>
+  <block id="73087f8d1c09bbada89ff7020402df79" category="section-title">日期維度</block>
+  <block id="7c3398dc78a5af4cdd6604e9d0081556" category="cell">fullDate</block>
+  <block id="7d33952db900c473f3877bf92316b90a" category="cell">完整日期</block>
+  <block id="61f5fa9de8c61501db5b6569f4e45e40" category="cell">dayInMonth</block>
+  <block id="d118da3e6a56e510df8bd9b46b29c8e9" category="cell">月中的日期</block>
+  <block id="8c859f24e710418ede182d7ae9f72dca" category="cell">dayInYear</block>
+  <block id="2e3b314f588e04184e4b9e69806922b4" category="cell">一年中的某一天</block>
+  <block id="cf0d23cfa41d8974e1569134df3aa669" category="cell">dateYear</block>
+  <block id="537c66b24ef5c83b7382cdc3f34885f2" category="cell">年</block>
+  <block id="5eede2f580c421650a4bead5053e2b88" category="cell">yearLabel</block>
+  <block id="876f6242a493980df76b1f33cbedacb7" category="cell">年份標籤</block>
+  <block id="2db93bacc77cd9cfd70464cd11dcb150" category="cell">monthNum</block>
+  <block id="bcf9f3a93c0bf70c8f1b6350d0367ac2" category="cell">月份編號</block>
+  <block id="f71d69c20b0f2ad84807a8c54ebe3a83" category="cell">monthLabel</block>
+  <block id="de24eed168d885e20bead20a731aebce" category="cell">月份標籤</block>
+  <block id="a9766eec17c636314920e0abafa8997f" category="cell">dayInWeekNum</block>
+  <block id="96d93a6dc593eede68145c7e6b7a4be8" category="cell">星期幾</block>
+  <block id="ac9e2504b3cf2cadf8ca121523b110b4" category="cell">四分之一</block>
+  <block id="b25cde1e74f3d27f678c2e309e06102e" category="cell">季度</block>
+  <block id="b6b7117465b84acd4e89dc222aacf7f2" category="cell">quarterLabel</block>
+  <block id="6bfa752cf4671726d8bf8b5a66246f45" category="cell">季度標籤</block>
+  <block id="4f363b0ed2efc8a9a1899d775774243b" category="cell">dayInQuarter</block>
+  <block id="fd79507caf44fdb95e816267ad026da2" category="cell">季度中的日期</block>
+  <block id="9a9de6c19fb3076bec49cb1c5108dd97" category="cell">repQuarter</block>
+  <block id="c6c7e799b9ad0851a01527bda52160ce" category="cell">代表季度</block>
+  <block id="a5251ff5fec55dd4d8aeeb8f5fafc7f0" category="cell">repMonth</block>
+  <block id="8a18f209704b2908b574cb98b3275d17" category="cell">代表月份</block>
+  <block id="fe1efcbce8c254554c0df3910c04484e" category="cell">repWeek</block>
+  <block id="a5e8af56ddfec14aff79fa6e89ef8a49" category="cell">代表週</block>
+  <block id="0783637d87216c20dd476d7a64c5b115" category="cell">repDay</block>
+  <block id="8632dc8e1985242721f3681979fe4acf" category="cell">代表日</block>
+  <block id="39dfe81832e1be9c6c46540b8a3c2fa0" category="cell">repMonthOrLatest</block>
+  <block id="effc34937305951dbfdb8871900525ff" category="cell">代表月份或最新</block>
+  <block id="9c4bdbb48aa799d3020138300fff42c4" category="cell">sspFlag</block>
+  <block id="66fec09fb38c042214726937424b5879" category="cell">SSP 標誌</block>
+  <block id="da907a1b8f74e6922d93b025eecfb852" category="cell">未來</block>
+  <block id="f992e62236a2fbf508ad8304f80ef1ef" category="cell">未來旗幟</block>
+  <block id="22b5854d4bffb57cb715085162b1743e" category="list-text">internal_volume_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="ba372dc8dda8c5c3476619ac96d67d53" prefix=" " category="inline-code"></block></block>
+  <block id="4e791159c078c79a826c3adfb048fa7c" category="list-text">chargeback_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="50ff557f827915b116b2f6746ab72095" prefix=" " category="inline-code"></block></block>
+  <block id="e86ccda72bb21d711297c04be4146220" category="list-text">disk_group_capacity_fact（一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="e073c286a5a69fa18963bf2551f1a986" prefix=" " category="inline-code"></block></block>
+  <block id="cc8db326836c76fff3b5e36118eeddc9" category="list-text">vm_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="5cfbd4016113aec27c146ee73c3744c9" prefix=" " category="inline-code"></block></block>
+  <block id="5ec3eff43d6e662c9be9b929bef936b2" category="list-text">disk_group_capacity_future_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="b56f627b6c98a4fc133939d6c3e7ecc5" prefix=" " category="inline-code"></block></block>
+  <block id="58f02f62741129c7f0333f62f4b97dca" category="list-text">qtree_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="496ea2f22833f7bda135c5a55d37fc1c" prefix=" " category="inline-code"></block></block>
+  <block id="bbde17edbfdcb2824d219aff1f333aba" category="list-text">k8s_pvc_capacity_fact（一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="9fa1060977918958c7d6aac9112f8382" prefix=" " category="inline-code"></block></block>
+  <block id="1c492cc47d10782d9a419f4ade3ee6ad" category="list-text">storage_and_storage_pool_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="3c7d35c9203adacce5dfea75e26f01b7" prefix=" " category="inline-code"></block></block>
+  <block id="8795f86c9bc05881082b62132429e88c" category="list-text">volume_history_capacity_fact（一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="9a55c0eff23688e468d0cf44f089fba5" prefix=" " category="inline-code"></block></block>
+  <block id="caccd85e66b9f91fa542639763271ffe" category="list-text">storage_and_storage_pool_capacity_future_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="7f8f6844fc0e0326df6d8f4a952bc5c1" prefix=" " category="inline-code"></block></block>
+  <block id="ace0fb1ebedd92ec619583bb028316cf" category="list-text">storage_node_capacity_fact（一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="ec309471f645a32d2d786913fe7ee242" prefix=" " category="inline-code"></block></block>
+  <block id="f47d06d4d9c2480e6f246f4c43a7b7ae" category="section-title">磁碟群組容量事實</block>
+  <block id="730a9f6cb3e3a5f00369705dd5ba6c23" category="cell">diskGroupTk</block>
+  <block id="f24214a2c0540676581711b851e4e030" category="cell">磁碟群組技術金鑰</block>
+  <block id="949c518ddfea2a9f436db1c3de9d4922" category="cell">容量 MB</block>
+  <block id="7aad1b4851869b2baee955195dbcc628" category="cell">總容量 (MB)</block>
+  <block id="0b075c98ffb6e7ec31e02abc9b458dfa" category="cell">實體磁碟容量 MB</block>
+  <block id="b77155c15f98234eeb0df0ddd0ddc07b" category="cell">實體磁碟容量 (MB)</block>
+  <block id="6f93eb701591660ec757d4a52805ab9c" category="list-text">disk_group_dimension （多對一）：<block ref="730a9f6cb3e3a5f00369705dd5ba6c23" prefix=" " category="inline-code"></block> -&gt;<block ref="1277d30192d634e2b8e217ca57747c46" prefix=" " category="inline-code"></block></block>
+  <block id="3f291676297a15cdfb7628bed9a3e68a" category="section-title">磁碟群組容量未來事實</block>
+  <block id="714180d84cb74b2eef4a6da0a64102db" category="cell">預計容量 (MB)</block>
+  <block id="cb32348995e93f8da54fceb4eb168f37" category="cell">預計使用容量 (MB)</block>
+  <block id="5f0b45a809b6f3def43f3b7a2bbc81a2" category="section-title">磁碟群組維度</block>
+  <block id="8adb25a0ac6bc5c555981809d6a18645" category="cell">磁碟群組名稱</block>
+  <block id="f393f3f5e496869a15bc72cbfd56f541" category="cell">識別符</block>
+  <block id="8625f56443220fc9523a8f26b397ec42" category="cell">磁碟群組識別碼</block>
+  <block id="38964a804cedd14772943e958db91ca2" category="cell">vendorDiskGroupType</block>
+  <block id="2445a0e2c69bcf45b9491fc6b1d735e9" category="cell">供應商磁碟群組類型</block>
+  <block id="fe24e6b822c08d7afcc47c04be977e32" category="cell">diskType</block>
+  <block id="3d0bf05155f3dfd0eeccf9e953d46156" category="cell">磁碟類型</block>
+  <block id="9acb44549b41563697bb490144ec6258" category="cell">狀態</block>
+  <block id="a5065f91897d963ddfecd874bc2e1afe" category="cell">備援</block>
+  <block id="2329489282b5366a6cc6f27c8598b072" category="cell">isVirtual</block>
+  <block id="4c86386c38be9b03552277245afb31f2" category="cell">虛擬旗標</block>
+  <block id="2e987a12c4924f5aa3c0cc4daaadeb55" category="cell">vendorTier</block>
+  <block id="afb3b7d7d7a2da5063cc4c7e0aa45dd9" category="cell">供應商級別</block>
+  <block id="dfaa71d604eb4d3fef36a818e2e31f2a" category="list-text">disk_group_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="53e91144adf255f3b0fb184fd610a1a7" prefix=" " category="inline-code"></block></block>
+  <block id="a17b7bc0a4a50febf9c578616fd9fc56" category="list-text">disk_group_capacity_future_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="4753e580e6ad38551615cb1111b6a813" prefix=" " category="inline-code"></block></block>
+  <block id="ec66a9c766b9d880cb8524d131e489bb" category="section-title">主機維度</block>
+  <block id="dae4a538d4ca7b6c0789932062fe718d" category="cell">主機名稱</block>
+  <block id="349804e26b4f24331a5417595504e39a" category="cell">主機識別符</block>
+  <block id="957b527bcfbad2e80f58d20683931435" category="cell">ip</block>
+  <block id="dd302f94682dbd2a114d63b0433602e0" category="cell">作業系統</block>
+  <block id="20f35e630daf44dbfa4c3f68f5399d8c" category="cell">模型</block>
+  <block id="5ea5ff5cfe1070b17466e3c5072a208e" category="cell">硬體型號</block>
+  <block id="c2904bca62b22443d6cf5e9d89cab204" category="cell">製造商</block>
+  <block id="18c5f4eaedc87f0bd4fb6a7a628cb00e" category="cell">dataCenter</block>
+  <block id="14441074ed94dda7b853cf055e09c13f" category="cell">資料中心位置</block>
+  <block id="10572a455a14f75b92284a19e8bbc20c" category="cell">主機別名</block>
+  <block id="b3bdbc03b12128c3d25327d4cac85dbd" category="cell">VM 每月授權費用</block>
+  <block id="bd44e4c625920bc11f205c9216d81988" category="cell">每月 VM 授權費用</block>
+  <block id="7db440b7cd375d974d7122ce4ba8fb80" category="cell">商業實體</block>
+  <block id="4059bb2ae4dedd052874885bfae7fb9c" category="cell">商業實體</block>
+  <block id="6d59be48f566a73e053e12167b279be5" category="cell">服務等級</block>
+  <block id="33504a6e278db362e11588a5e7322f51" category="list-text">chargeback_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="76492bca8a4db1e5a480e0659eed3cb9" prefix=" " category="inline-code"></block></block>
+  <block id="e488bb99e64d4cc8d1076b6baf682f69" category="list-text">vm_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="abefd6117bc754be96c4988668533a57" prefix=" " category="inline-code"></block></block>
+  <block id="728b6cd814426d8315b6ed8778956883" category="list-text">volume_history_capacity_fact（一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="f58a4302535824bf974cdf5a9102d274" prefix=" " category="inline-code"></block></block>
+  <block id="06e28148f96aa2bd85a38a4ce8d774b9" category="section-title">主機群組橋接</block>
+  <block id="5d636e6bcfd678b8168a589cc62aa76a" category="section-title">主機群組維度</block>
+  <block id="931407ad0fd8194d1392d35e2a58f3f1" category="cell">repHost</block>
+  <block id="61a7a982e66a241ff2cd43b8dadbdf11" category="cell">代表主機</block>
+  <block id="76b3534a04ed5ce1725e4c41b72c71b8" category="cell">repHostTk</block>
+  <block id="79573ab79d7c49751d13585ba69688c9" category="cell">代表主機技術金鑰</block>
+  <block id="5dd6999d8fc128f30bf778109e91f9bf" category="list-text">chargeback_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="d64f98054092f17498988bff205f88f7" prefix=" " category="inline-code"></block></block>
+  <block id="e7b31ccd3f1310341a52070e320bf4ff" category="list-text">vm_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="00db084a2ecc65f274a66ca99054664b" prefix=" " category="inline-code"></block></block>
+  <block id="c9c8fc6c35d72ba2a4492a1ba4593755" category="list-text">volume_history_capacity_fact（一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="9b36f9947f2ad1b8d18f8e035f6f0fc2" prefix=" " category="inline-code"></block></block>
+  <block id="3fd702f39fc9f7b0b298f9b3e17a4f58" category="section-title">內部容量事實</block>
+  <block id="af05a90c8121f450f850d5dc968f418d" category="cell">virtualStorageTk</block>
+  <block id="e2fd91a8f8e106d405ed7978f8a477b0" category="cell">虛擬儲存技術金鑰</block>
+  <block id="87dc12ad1ec3160152a8b1944a8a7eed" category="cell">已分配容量 MB</block>
+  <block id="27ffbd1359a2b35b7944d21f6d94fe26" category="cell">已消耗容量 MB</block>
+  <block id="89b633908a94f53acfcc318740a7d445" category="cell">已用容量（MB）</block>
+  <block id="4ceedd6071d0f87b74f5174fa7ed6dce" category="cell">已用資料容量 MB</block>
+  <block id="1133d31fdedb14c10b431848ad1cb555" category="cell">資料使用容量 (MB)</block>
+  <block id="82c0e6f2777de6095fa634a3bb28b074" category="cell">未使用容量 MB</block>
+  <block id="afa18422bb7b408f80354a61581cc1d8" category="cell">未使用的資料容量 (MB)</block>
+  <block id="29b444e736d6a245accd873ab1260fd3" category="cell">snapshotAllocatedCapacityMB</block>
+  <block id="7c98192cffdaad548931b8a754fc803d" category="cell">快照已分配容量（MB）</block>
+  <block id="6fb9c726391fc6e070e3b8faf29c54ff" category="cell">快照已用容量 MB</block>
+  <block id="64c2d54d043834a5a9f59142b8675ea8" category="cell">快照已用容量（MB）</block>
+  <block id="7ae940146c5c6d7b752dca0ef56f91c8" category="cell">總複製已儲存容量 MB</block>
+  <block id="2e960a2ef0041dd45ca3414b61eb2387" category="cell">總克隆節省容量（MB）</block>
+  <block id="38cba688529ea5b1033017cfc52586a1" category="cell">dedupeRatio</block>
+  <block id="56a862d3e7cdd93b76c74e010897ce95" category="cell">重複資料刪除率</block>
+  <block id="240f95ee5ab8b93da159b3ea692acc05" category="cell">重複資料刪除節省空間 GB</block>
+  <block id="eb7b92bbfc4c0cd3240171dfe757a7ce" category="cell">重複資料刪除節省空間 (GB)</block>
+  <block id="6031b492c8005498d912ecb75aa03601" category="cell">rawToUsableRatio</block>
+  <block id="6f88dd4feb7924d93a8cc9a1274f746f" category="cell">原始容量與可用容量比率</block>
+  <block id="f4457475223d3a43068eab8122aba921" category="cell">snapshotCount</block>
+  <block id="a0da5113de038fc31de9d406f2f3698a" category="cell">快照數量</block>
+  <block id="c8be74e24ed6202c29ed63f902db2223" category="cell">lastSnapshotTime</block>
+  <block id="2798a2291831f3cbf467496c9fd10857" category="cell">DateTimeOffset</block>
+  <block id="bd35a86a2e5464841787c1923e821503" category="cell">上次快照時間戳記</block>
+  <block id="2e85b545e464c0c1023837c88a62ebd7" category="cell">compressionRatio</block>
+  <block id="88e8e13daa79bfee2c46a9eb06628bd4" category="cell">壓縮比</block>
+  <block id="863b8db96d12c3334ae9d0311d618871" category="cell">壓縮節省 GB</block>
+  <block id="9e3fd3524894492e09f2b4424d9fd678" category="cell">壓縮節省量 (GB)</block>
+  <block id="d2517eb6ef80668c90db7bf943fbe6f4" category="cell">compressionSavingsPercent</block>
+  <block id="e23a7bb35d6b704129ae2d8d0ae7e7ab" category="cell">壓縮節省率（%）</block>
+  <block id="dbfdbea12feaa705c08df1c2c616788e" category="cell">objectStore 已用空間 GB</block>
+  <block id="0a4def9197c0628e780eae376bec2e44" category="cell">物件儲存已用空間 (GB)</block>
+  <block id="66e16b60c4d027269d6051936ac25347" category="section-title">內部體積尺寸</block>
+  <block id="7ffce295d6c61cb38fd76a4e505cdb33" category="cell">磁碟區名稱</block>
+  <block id="4951ce951bf2c145af70e4cf80f2763a" category="cell">磁碟區識別碼</block>
+  <block id="87cfd504c1ba3090ac83bbf55b7e4cd2" category="cell">storagePoolIdentifier</block>
+  <block id="c11040a547ad4ac02b9fde14d4fb1b3b" category="cell">儲存池識別碼</block>
+  <block id="adfc12377686b75408da951849188a6f" category="cell">storageName</block>
+  <block id="24cb56ee62b800097061f6683e0c2765" category="cell">儲存名稱</block>
+  <block id="f8708e862b2b8c727ad73841bb09a6f5" category="cell">storageIP</block>
+  <block id="fc18634852d4299cd5f8c7ad55ddefbe" category="cell">磁碟區類型</block>
+  <block id="8d0513c550bc3f79fe6d7726d66d9c5a" category="cell">虛擬儲存設備</block>
+  <block id="adc03d16c5984fc1448ee356274c6f94" category="cell">spaceGuarantee</block>
+  <block id="7420b76eb6276efbe1211f3a42108fa9" category="cell">空間保證</block>
+  <block id="f0135eb1f6aa295d26a44ed9b6b8f480" category="cell">thinProvisioningSupported</block>
+  <block id="3bbc602a4e53b0d904f58ff2861e2e7f" category="cell">精簡配置支援旗標</block>
+  <block id="fc91dacb73fec4a29d6cab6066ebaa24" category="cell">thinProvisioned</block>
+  <block id="69aa046d4981df06e41fbf34c3120595" category="cell">精簡配置標誌</block>
+  <block id="ef7c876f00f3acddd00fa671f52d0b1f" category="cell">uuid</block>
+  <block id="6ba2c08b7e2761a9b86a170af935cc5f" category="cell">flexGroupIdentifier</block>
+  <block id="a80cba7272a026ffd80a4bec0837f40d" category="cell">FlexGroup 識別符</block>
+  <block id="c74143a4f4f9bbc4e69fb1f6da27507f" category="list-text">internal_volume_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="4a5c3347b552c2d7ce017c6debc2b1ea" prefix=" " category="inline-code"></block></block>
+  <block id="46c1b9f4ace540075ebd368d252794e5" category="list-text">chargeback_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="726473b1ea85be974b16c2117a59eb4c" prefix=" " category="inline-code"></block></block>
+  <block id="05ade79bcfd4b650afd3301053133466" category="list-text">vm_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="6a34c3f1e12cbdd9c23639dd18e878a1" prefix=" " category="inline-code"></block></block>
+  <block id="5f4d6a421c58ad862b9a255e959f5333" category="list-text">qtree_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="40bb6425ed52e34ce98ed84a26f405fb" prefix=" " category="inline-code"></block></block>
+  <block id="93d7536d6bfa5cf81b1102f25793fd1e" category="list-text">volume_history_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="1307d509eb868a9e8bdad3761a97994a" prefix=" " category="inline-code"></block></block>
+  <block id="f679a1da2e90a11db546fd47659a4088" category="section-title">k8s_cluster_dimension</block>
+  <block id="83226168f6703173a6f41521f74e5e6d" category="cell">叢集識別碼</block>
+  <block id="4b3f64418f16889a8f8212d0da4bc590" category="list-text">k8s_pvc_capacity_fact（一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="69b6f3e4c1c379ebe58fad16443fa9a4" prefix=" " category="inline-code"></block></block>
+  <block id="b155aeebc4b3fcb38997cd2b4c2ad4c1" category="section-title">k8s_namespace_dimension</block>
+  <block id="ac9b9a27ab880ba6f9669e4ac78dc54f" category="cell">命名空間識別碼</block>
+  <block id="0a4593e32b4ea9e42929aa55725a122f" category="cell">命名空間名稱</block>
+  <block id="343d28c140c3f5ce20a1ac3f8f7dae2c" category="cell">clusterName</block>
+  <block id="452ca137aa3b1509c633817dc56e21c8" category="list-text">internal_volume_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="4a2a46cbb6fb5b5e5925a996a86f6b97" prefix=" " category="inline-code"></block></block>
+  <block id="03837ed233e560a2c79e8b14521b4479" category="list-text">chargeback_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="065196d4e227f46f74f300ec4ae695d7" prefix=" " category="inline-code"></block></block>
+  <block id="1abe1b2e50c9605fd683ce77e03bcd2f" category="list-text">qtree_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="6b6a0379380a25ae25eca6e4b91c6f5f" prefix=" " category="inline-code"></block></block>
+  <block id="8f351f9a8efe8dd1b2e31ae694a354ab" category="list-text">k8s_pvc_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="04d613b53bf72c3ab10896d31be910a2" prefix=" " category="inline-code"></block></block>
+  <block id="23983d240a3e3562b51b59c523fd32a8" category="section-title">k8s_namespace_group_bridge</block>
+  <block id="2cda761d9b84e5400bdd35734f333009" category="cell">命名空間群組技術金鑰</block>
+  <block id="97d8c905cc55485d6a14cebbe8d1e5f6" category="cell">命名空間技術金鑰</block>
+  <block id="a8627d3a23b26799fdf628254759f7a1" category="section-title">k8s_namespace_group_dimension</block>
+  <block id="3d1e06e295b4aee5112466d3f2019a9e" category="cell">repK8sNamespace</block>
+  <block id="6fd7f367bed87dcb8eb1a8519ba21dd4" category="cell">代表性命名空間</block>
+  <block id="293425be481c0d7dafd921ab92b6d08f" category="cell">repK8sNamespaceTk</block>
+  <block id="98e7f81a0a5f7bbe7d88dc85ce3dcf63" category="cell">代表性命名空間技術金鑰</block>
+  <block id="5f5d89a2bde091dc65551e695bcfff2b" category="list-text">internal_volume_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="2fd8685916ae14695635032baa4716ac" prefix=" " category="inline-code"></block></block>
+  <block id="565cbab14be8b73323d093e9be9c5d1e" category="list-text">chargeback_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="c5d4e48e1c65d4efc4b6b6528e80631d" prefix=" " category="inline-code"></block></block>
+  <block id="b87859e461180ccd3e6aca5fea187c82" category="list-text">qtree_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="66971f8f16611ce4bbd9925e77a4aa4a" prefix=" " category="inline-code"></block></block>
+  <block id="84942391eeb9fb87d330a11be4c9d889" category="list-text">volume_history_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="d4b513a8a17a1e136a7346047fc5cf34" prefix=" " category="inline-code"></block></block>
+  <block id="ddddb65365d5c22186eb290525263d07" category="section-title">k8s_node_dimension</block>
+  <block id="1e64edfa54c534cdd3eab5eafafdc723" category="cell">節點標識符</block>
+  <block id="e2358a45034b3a050d9665621da62d1e" category="cell">節點名稱</block>
+  <block id="daf13852b2fe8bbe1a26f8f9e99fb183" category="cell">internalIp</block>
+  <block id="c21d20aece73606410ffac31dc43f38f" category="cell">內部 IP 位址</block>
+  <block id="d4bcf6b0615c39e7e71f8dad60712cd2" category="cell">osImage</block>
+  <block id="b699e68cbb9b5ec0d33979f245d99653" category="cell">作業系統映像</block>
+  <block id="547d995596a2f6e15c3e62369e4d47d5" category="list-text">vm_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="d7d8f0288f29499d3f0380650d968a60" prefix=" " category="inline-code"></block></block>
+  <block id="8e74645ac4ffb1cca2b4a307566f0e08" category="section-title">k8s_pv_dimension</block>
+  <block id="a4b7aef7c39645eda99347dba7162b8c" category="cell">PV 標識符</block>
+  <block id="f487b43a1e59c614e444acb1e8df2fc5" category="cell">PV 名稱</block>
+  <block id="7ee7184c970537ea83afe7f9bae4c61f" category="cell">階段</block>
+  <block id="a6d5033c4efcb5038ae617e94c274fc8" category="cell">PV 階段</block>
+  <block id="58f6db5ff990512d14314698eafffc7a" category="cell">pvcName</block>
+  <block id="4be0dc57aa41370b14a3bdef13cd305e" category="cell">PVC 名稱</block>
+  <block id="78ec9b60245b46a4f05158076962ace9" category="cell">storageClass</block>
+  <block id="dd8c5eff0fd4dd0b3760e41db59bfb3a" category="cell">儲存類別</block>
+  <block id="17fdd98f1097b67351052669b9ec05a5" category="list-text">k8s_pvc_capacity_fact（一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="8f5ed969f2aab119e3d32d0d4063ba31" prefix=" " category="inline-code"></block></block>
+  <block id="d008eda338db8c36588ee1322a9cfa46" category="section-title">k8s_pvc_capacity_fact</block>
+  <block id="4b0d80be4323c8594922edf2767d170c" category="cell">pvcTk</block>
+  <block id="6ead237cd0810280fef245eed3bdf691" category="cell">PVC 技術金鑰</block>
+  <block id="e29a92d415b4533eaa5df63e8d222f10" category="cell">clusterTk</block>
+  <block id="302a9e34f24ce495c173a697fb9f2795" category="cell">叢集技術金鑰</block>
+  <block id="b5170c87a1acee6dca8380f5bbec1237" category="cell">namespaceTk</block>
+  <block id="cd1669edae044b5a50b8747e5a43e12c" category="cell">pvTk</block>
+  <block id="05638bdadfeec01e4657b425f9b9adca" category="cell">PV 技術金鑰</block>
+  <block id="7bac5c70c3e4c721e938d622d2ba6408" category="cell">pvSizeBytes</block>
+  <block id="0ef1e78d8171c1762fc50d80c5d67ba6" category="cell">PV 大小（位元組）</block>
+  <block id="96d3c9f167ef8f6167f04ec0c2ff6936" category="cell">pvcSizeBytes</block>
+  <block id="a90fbd5de910113a327f6159ca09c225" category="cell">PVC 尺寸（位元組）</block>
+  <block id="fdf09e3e1a72e818ca168c4dca587e20" category="list-text">k8s_pvc_dimension （多對一）：<block ref="4b0d80be4323c8594922edf2767d170c" prefix=" " category="inline-code"></block> -&gt;<block ref="f62109b8d628d849b2c56dcfce885a86" prefix=" " category="inline-code"></block></block>
+  <block id="0c69e0046d67bb45f9a87f4e3c1e296b" category="list-text">k8s_cluster_dimension （多對一）：<block ref="e29a92d415b4533eaa5df63e8d222f10" prefix=" " category="inline-code"></block> -&gt;<block ref="27139483c1f3b4b25567cd3650b2f5d5" prefix=" " category="inline-code"></block></block>
+  <block id="3961a296e7a23dad43d72fc66498ad54" category="list-text">k8s_namespace_dimension (many-to-one)：<block ref="b5170c87a1acee6dca8380f5bbec1237" prefix=" " category="inline-code"></block> -&gt;<block ref="315e6d1866e56233c6979df29e002ac7" prefix=" " category="inline-code"></block></block>
+  <block id="b62361660e76b1ee8cecadfc0a8d8682" category="list-text">k8s_pv_dimension （多對一）：<block ref="cd1669edae044b5a50b8747e5a43e12c" prefix=" " category="inline-code"></block> -&gt;<block ref="1b72eb92e0ac38ea7d3c945c0e78a609" prefix=" " category="inline-code"></block></block>
+  <block id="a1f651f27713c969dbdeedc1f877d547" category="section-title">k8s_pvc_dimension</block>
+  <block id="8f2ca0d3fc79305bc9ee6c999b5b3c6e" category="cell">PVC 標識符</block>
+  <block id="12950831b21cd0c28295bb6abea6d9c0" category="cell">namespaceName</block>
+  <block id="83ed4d73ecbd587c1dfb98fbcc990225" category="cell">pvName</block>
+  <block id="7a8b68c13a237db02feb85c82ec6a653" category="cell">PVC 階段</block>
+  <block id="e6c008c5c06cb3cffa73e348b88f5d7e" category="list-text">k8s_pvc_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="a02ae31984134d685d8c69200356f392" prefix=" " category="inline-code"></block></block>
+  <block id="3d2bea506a3ce7278f2eb3aaf77f5cad" category="section-title">k8s_workload_dimension</block>
+  <block id="215139002bafc2e1d6f22b13730b211a" category="cell">工作負載識別碼</block>
+  <block id="d75412b8b9738ae1c1ebf28afef115d7" category="cell">工作負載名稱</block>
+  <block id="427af860f9733f0c5427a1408195bb2b" category="cell">工作負載類型</block>
+  <block id="264edf7b6ed9fc831d1e0d952fbceb06" category="section-title">qtree_capacity_fact</block>
+  <block id="06115986fb9381d02a230da3f63eeea9" category="cell">硬限制容量 MB</block>
+  <block id="ee6daac6f135fe454826acd219953d68" category="cell">硬性容量限制 (MB)</block>
+  <block id="23bdab825f9f179c08a8db5eece37dfc" category="cell">softLimitCapacityMB</block>
+  <block id="9c1fb8b4375297b27b243cd62142c2ef" category="cell">軟限制容量 (MB)</block>
+  <block id="dd3d4e1c62b527b07488ea4ffb726f6c" category="cell">missingQuotaLimits</block>
+  <block id="3eb5ce8515e6ede4e44c47d8cf21f2a0" category="cell">缺少配額限制標誌</block>
+  <block id="dfcfe6eb29eb457aa81a4ba766b48838" category="section-title">qtree_dimension</block>
+  <block id="cf93d24f6148e9e1ee5789e2b1a06de6" category="cell">Qtree 名稱</block>
+  <block id="dc1b844093eee4cd87554ef78ceec806" category="cell">Qtree 識別碼</block>
+  <block id="79bc0ed0fb00aa3904c995b73180b100" category="cell">storageIdentifier</block>
+  <block id="ee8cc3a4f171dc8eb2643ba705351a80" category="cell">儲存識別碼</block>
+  <block id="b09e1d1cb9b6a837f5a422332f082023" category="cell">Qtree 類型</block>
+  <block id="23f6c56fdd0e24820c9f0c9d6fb35f07" category="cell">層級註釋</block>
+  <block id="491bd4eb92252fd73d5ff00213e68414" category="list-text">chargeback_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="2b8aa6ec9ee3db6267e7545a2387fa25" prefix=" " category="inline-code"></block></block>
+  <block id="b4247f04b7016db4d55c0aff4db8d82f" category="list-text">vm_capacity_fact（一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block>&lt;-<block ref="8622e6504903c425a28dc2877d97e516" prefix=" " category="inline-code"></block></block>
+  <block id="caef7ab323bb772326f1f5b339d7d0e6" category="list-text">qtree_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="fe97babb9b478a55e6a2fa096c690a1e" prefix=" " category="inline-code"></block></block>
+  <block id="ba74a1d623c0d0a394657eca9314385e" category="list-text">volume_history_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="ed9bc51ea7283a1408a8c264cdb5d490" prefix=" " category="inline-code"></block></block>
+  <block id="a535f7c2d2745a2a5e2a95888d551774" category="section-title">服務等級維度</block>
+  <block id="90bcc4f4e077fea28752644f214b25b4" category="cell">服務等級名稱</block>
+  <block id="fa1c731ead93e333a9180e16f968c01e" category="cell">順序</block>
+  <block id="3ff39d3acb327553070a64ef0cb321d5" category="cell">順序</block>
+  <block id="4e1566f0798fb3d6f350720cacd74446" category="cell">成本</block>
+  <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="cell">成本</block>
+  <block id="987bb4bfec4702b9ccbe84532f0385a7" category="list-text">internal_volume_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="61ac693692e07b94ff1789a920f1ea3b" prefix=" " category="inline-code"></block></block>
+  <block id="b5bce4506b5b506b86dabfb189d48491" category="list-text">chargeback_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="2be2dbcb94e75d909b1ae095bd41fb82" prefix=" " category="inline-code"></block></block>
+  <block id="b12902c02e213cd596bcd83e5a0eebae" category="list-text">vm_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="78ba4b899a4f4fb425f3073ee7e8af26" prefix=" " category="inline-code"></block></block>
+  <block id="87142349cdec97bbb23b9de6eac7c85d" category="list-text">qtree_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="84295e9881aa98db1b8c61c04c47077d" prefix=" " category="inline-code"></block></block>
+  <block id="bef7b66a5c7cfac1062b378ac692e74b" category="list-text">volume_history_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="3e2e5d7388508378a4a052b1b554591d" prefix=" " category="inline-code"></block></block>
+  <block id="29c8d50d55a71cffaa44a6549f938919" category="section-title">sp_time_to_fill</block>
+  <block id="8fbec4dc8e5eca7861ad1c6b6991e72d" category="paragraph">*主鍵：* saspFactTk</block>
+  <block id="3e3c3cb8a042be99b6388228de27ef85" category="cell">saspFactTk</block>
+  <block id="bfeb743fd50c2b7ce141a3bb889e34e8" category="cell">儲存資源池事實技術金鑰</block>
+  <block id="eb7fee976f2ed6d83d43eb9e1bdb3974" category="cell">daysToStoragePoolFull</block>
+  <block id="d6df9366d2055820732a67febefda30a" category="cell">距離儲存資源池已滿還有幾天</block>
+  <block id="ccdc4030a84e17404e706b4c51e33515" category="cell">dateAtStoragePoolFull</block>
+  <block id="ca4266bed8c2b26c5a7c1d15c5eae50b" category="cell">資料儲存池將滿的日期</block>
+  <block id="c1e0106427d0d5863cf363e6edc9b1dc" category="list-text">storage_and_storage_pool_capacity_fact （一對一）：<block ref="3e3c3cb8a042be99b6388228de27ef85" prefix=" " category="inline-code"></block> -&gt;<block ref="69cd5a88a497737647440bdccdcd7c67" prefix=" " category="inline-code"></block></block>
+  <block id="d1f8032e182813fa8496d36a7f5296ae" category="section-title">儲存和儲存池容量事實</block>
+  <block id="416a9271cacd3f80346767d5c5041255" category="cell">後端標誌</block>
+  <block id="f0034c016ef11f2922499f19095d862d" category="cell">原始容量 MB</block>
+  <block id="0a0f8fc7258365967a936e2deb38be32" category="cell">原始容量 (MB)</block>
+  <block id="c4e19217ebb8b5624a706692d0bccdee" category="cell">已用原始容量 MB</block>
+  <block id="970deb68164328b4ae56b316f34d649b" category="cell">已用原始容量 (MB)</block>
+  <block id="cc9d908ef2b5837adb7609f1df1cedec" category="cell">快照已使用原始容量 MB</block>
+  <block id="d24c08d7d39f942440e952c706ea83e6" category="cell">快照使用的原始容量 (MB)</block>
+  <block id="7431ea04505d8a034cb3ecf64fa6d4b0" category="cell">未配置原始容量 MB</block>
+  <block id="705cfd346d7417a9d68748c5a7111a39" category="cell">未配置的原始容量 (MB)</block>
+  <block id="0b5abf568a9d3509bed4bd5aa320d30e" category="cell">備用原始容量 MB</block>
+  <block id="3e835eec1fe6b849adef1174a9ce9363" category="cell">剩餘原始容量 (MB)</block>
+  <block id="0643b715304aabed5667713ce7280007" category="cell">失敗原始容量 MB</block>
+  <block id="55f21cf379a49ad10e15d9caab1a1cbc" category="cell">故障原始容量（MB）</block>
+  <block id="28d7bfcf8c3c9ac4185cfd2c91bd76b5" category="cell">volumeCapacityMB</block>
+  <block id="907c737f0db56d1f834f790b29d2b713" category="cell">磁碟區容量（MB）</block>
+  <block id="b8c330d514c54e9bd95c2739caad9bb4" category="cell">未使用的磁碟區容量 MB</block>
+  <block id="b0cc1120ce7186e630da41e788a96d71" category="cell">未使用的磁碟區容量 (MB)</block>
+  <block id="48482845988dc0f25e438e176b8a0c9c" category="cell">volumeConsumedCapacityMB</block>
+  <block id="bce107f21847c8d3e2d08ec79caee42b" category="cell">磁碟區已用容量（MB）</block>
+  <block id="9c2513da40ceedbacbb53038bdd266a9" category="cell">已映射的磁碟區容量 MB</block>
+  <block id="802ba5b723f023346cc1503a1854e3d7" category="cell">已映射磁碟區容量 （MB）</block>
+  <block id="e4f5fc1b4af4ee1631840e08e9a6502e" category="cell">maskedVolumeCapacityMB</block>
+  <block id="7aec792ba79cedf9608fe53b7644cdd3" category="cell">遮罩磁碟區容量 (MB)</block>
+  <block id="04c8d3ef4bafd7bc2128765b092990cb" category="cell">internalVolumeAllocatedCapacityMB</block>
+  <block id="9891388e9b123b3fe98a79553fa2c188" category="cell">內部磁碟區已分配容量 (MB)</block>
+  <block id="1b64dffc0bc7d25e3bc662d5eb54412c" category="cell">internalVolumeUsedCapacityMB</block>
+  <block id="463a36570d2edfd0f954cc0ae0d20702" category="cell">內部磁碟區已用容量 (MB)</block>
+  <block id="954532b714e94470a1e6253e0babb4da" category="cell">internalVolumeConsumedCapacityMB</block>
+  <block id="51f3dd31def3b2bb739c5df795497371" category="cell">內部磁碟區已使用容量 (MB)</block>
+  <block id="2f893b5205be6627b5b1dffa12ac5f81" category="cell">provisionedIops</block>
+  <block id="82516047de4f6d3bf13a4aea62bd6916" category="cell">此儲存設備上已佈建的 IOPS</block>
+  <block id="56b8c33b19d836bbcb9c88fe12ae31a4" category="cell">provisionedThroughput</block>
+  <block id="9898050a364a0f67169e32b1e9bbdea5" category="cell">此儲存設備上的佈建處理量 (MiB/s)</block>
+  <block id="bb7e8687bc1c6208ebd2ef2e112786b7" category="cell">compactionRatio</block>
+  <block id="bbebd108692d6152a627f6b49aa594fb" category="cell">壓縮比</block>
+  <block id="a3ba12d7cb7e1740a0dcab863b52c8b7" category="cell">壓縮節省空間 GB</block>
+  <block id="6fabb3ebb0d44d63db4069d44f626a10" category="cell">壓縮節省 (GB)</block>
+  <block id="0b62464467e217c88854197f4d0e3f8a" category="list-text">sp_time_to_fill （一對一）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="c9c087a59c417a3b05ef24373e891ce1" prefix=" " category="inline-code"></block></block>
+  <block id="c3a0f28a76bf4168dace8da9d578e4f1" category="list-text">volume_history_capacity_fact (一對多):<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="c9e4bf37391d1b6bd6ce3754f0ae59e7" prefix=" " category="inline-code"></block></block>
+  <block id="2612576ad04261b9263e713abd8268f4" category="section-title">儲存和儲存池容量未來事實</block>
+  <block id="2431ea7186417d161fe56540eef7c8f1" category="cell">預計原始容量 (MB)</block>
+  <block id="6d8910af5a74522086e638d0467d1c8a" category="cell">預計已用原始容量 (MB)</block>
+  <block id="b91639934e9cbff7185123b98f9b5cdd" category="section-title">儲存空間_維度</block>
+  <block id="abc8ecbaf21edb403c06a6cf86d8596c" category="cell">儲存模型</block>
+  <block id="071878f85c90e53e15aac400b22e48b5" category="cell">serialNumber</block>
+  <block id="3460276ef9eb483d13aa31b870077a0d" category="cell">序號</block>
+  <block id="1b3556ee0b9424631d64b1d1d195cd15" category="cell">microcodeVersion</block>
+  <block id="21d984f7d79a93749b86106966861898" category="cell">微碼版本</block>
+  <block id="0d3fda0bdbb9d619e09cdf3eecba7999" category="cell">家庭</block>
+  <block id="34364036fee2436835d83c8cb545b90b" category="cell">儲存系列</block>
+  <block id="a757bd6142121243ddebd150ef643440" category="list-text">internal_volume_capacity_fact（一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="70eea6d1bec6099c1513dc17e0cf654f" prefix=" " category="inline-code"></block></block>
+  <block id="a1460febc5f2bd36e32fc9bb6e016ca3" category="list-text">chargeback_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="503418265b52f84614b08c1d42d0f101" prefix=" " category="inline-code"></block></block>
+  <block id="617b813669429ad8971fe2427c50c227" category="list-text">disk_group_capacity_fact（一對多）:<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="7221a991393f5fa9733b0f2138b2c834" prefix=" " category="inline-code"></block></block>
+  <block id="c285879df8f3fdabbfb5a9230de34e52" category="list-text">vm_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="ccb80d6d878a7ed719398ea880602be7" prefix=" " category="inline-code"></block></block>
+  <block id="6948eafa54869d30a920a925bea02c39" category="list-text">disk_group_capacity_future_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="e7659fd45f72b390e90924c36d185cc0" prefix=" " category="inline-code"></block></block>
+  <block id="9a3a46ca707cf302caa8e0316c948d99" category="list-text">qtree_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="f6f302840a0952d1c58840fa70167ba3" prefix=" " category="inline-code"></block></block>
+  <block id="25f7d7754a49d226131e93349dba57a1" category="list-text">storage_and_storage_pool_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="ed19e4143b5cc70b5d458695c0dfd0d0" prefix=" " category="inline-code"></block></block>
+  <block id="c795d67861ea763c979658fbbc10ff78" category="list-text">volume_history_capacity_fact (一對多):<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="a366e035a243a12588b3f40a30c10d24" prefix=" " category="inline-code"></block></block>
+  <block id="bb59575140f4f2a06d385c9acc341d1d" category="list-text">storage_and_storage_pool_capacity_future_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="be44acf5c74d0fa3945abad7d2dea8bb" prefix=" " category="inline-code"></block></block>
+  <block id="f6c9492fce3f0636d36b692bef70338e" category="list-text">storage_node_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="24fed26313da5c33276f80f83e1b8a2c" prefix=" " category="inline-code"></block></block>
+  <block id="2a3c50a0a64b4b7f4c9b15655877ba53" category="section-title">storage_node_capacity_fact</block>
+  <block id="a14fb9bec2dbfeb21bcee96ec0d71174" category="cell">storageNodeTk</block>
+  <block id="b4b80991f53c4b0dec52359c8815922a" category="cell">儲存節點技術金鑰</block>
+  <block id="ed3a8dda1f4f71d0447c98d99add682a" category="cell">totalNodeCapacityUtilizationMB</block>
+  <block id="66378ee889a8d9b6747f4cb331114fcb" category="cell">總節點容量使用率 (MB)</block>
+  <block id="7c5fc0677df7a5e6a5b16d29c1781043" category="cell">可用節點容量利用率 MB</block>
+  <block id="aede42dbb99022eeecb32d63f451e75e" category="cell">可用節點容量使用率（MB）</block>
+  <block id="c0462276beaba28f204441af19f4b83a" category="cell">已用節點容量利用率 MB</block>
+  <block id="ef3fd04dafc0625596aba5000bb99a05" category="cell">已用節點容量使用率 (MB)</block>
+  <block id="e040c42d055a40e97dbf6f7be8a29adb" category="cell">已用元資料節點容量使用率 MB</block>
+  <block id="183741b2c47a8058a8f684112b13e261" category="cell">已用元資料容量使用率 (MB)</block>
+  <block id="9b28a884d7f7c8a9eafc80fb0ffcd559" category="cell">允許的 MetaData Node 容量使用量 MB</block>
+  <block id="3282872eef688bac158e3142c6a8664a" category="cell">允許的中繼資料容量使用率 (MB)</block>
+  <block id="55f49cd1411f0d3e1650d8f795d00731" category="list-text">storage_node_dimension （多對一）：<block ref="a14fb9bec2dbfeb21bcee96ec0d71174" prefix=" " category="inline-code"></block> -&gt;<block ref="1f6340749d5962cdec1af157531a2b5e" prefix=" " category="inline-code"></block></block>
+  <block id="7027a4bad4e70ac82427f7b3d4b69067" category="section-title">儲存節點維度</block>
+  <block id="2af72f100c356273d46284f6fd1dfc08" category="cell">版本</block>
+  <block id="be48a90162ae81a2810f0dec089d0573" category="cell">Node 版本</block>
+  <block id="b8631564cbe5bfc4b586cf29c225968c" category="cell">節點模型</block>
+  <block id="f418892c852ccf5c86998e89045e8063" category="cell">siteName</block>
+  <block id="816667a2fb049f8788d7058d81c09f9d" category="cell">網站名稱</block>
+  <block id="1408b7e0acb11cfa7574b383b70715b9" category="cell">ActiveIQ</block>
+  <block id="ebff1efb2b7d205a6deb9b9c8d968fdd" category="cell">ActiveIQ 註釋</block>
+  <block id="202547272669c2aff59eb064e6b13c70" category="list-text">storage_node_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="e98074305e4baeccd05d4c45bfb46c31" prefix=" " category="inline-code"></block></block>
+  <block id="bfac7a7d0b4cf8779fb73062b50f69c8" category="section-title">儲存池維度</block>
+  <block id="6edbe97ee22944c3f34848068437f664" category="cell">集區識別碼</block>
+  <block id="c931e064dd64a38adddc55cf37391292" category="cell">資源池名稱</block>
+  <block id="dbc7f5bd401ce78c24749d6c2a29fb42" category="cell">儲存 IP</block>
+  <block id="b29b2912969bbcb0900e97508d61076a" category="cell">資源池類型</block>
+  <block id="dbb02542db808461c0048dded1a99597" category="cell">usesFlashPools</block>
+  <block id="49fb720f6c58bdad2597810a15aafec0" category="cell">使用 flash pools 標誌</block>
+  <block id="c6b5d0bb9a0c3f077863fdaef9773f7c" category="cell">省</block>
+  <block id="fb8ffaf50b4638b31e6e438e1a641e9d" category="cell">省註釋</block>
+  <block id="69d1a05b873707cc1c66a8eaa0c955c6" category="list-text">internal_volume_capacity_fact（一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="dcdd30199ad0689545c0fbf533823ec1" prefix=" " category="inline-code"></block></block>
+  <block id="0d8d268d1d64b30e08c2c858f59237bd" category="list-text">chargeback_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="cdf68d9d42bfc023a727ce84d33bed65" prefix=" " category="inline-code"></block></block>
+  <block id="3715032b9f39b2836549695b868fdcb9" category="list-text">disk_group_capacity_fact（一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="57a1407aaa4eee1b31987c947d94c499" prefix=" " category="inline-code"></block></block>
+  <block id="8d6e73a26bef0b6a9d7143738756602a" category="list-text">disk_group_capacity_future_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="ec39a6a5f16c53b6cdd4a161cfa12ca7" prefix=" " category="inline-code"></block></block>
+  <block id="f700e7d9ca1e33b5238ea1caebfe7bd2" category="list-text">qtree_capacity_fact（一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="fc6f0baf8ed567f6990d6becd870d1a7" prefix=" " category="inline-code"></block></block>
+  <block id="56b015be3f860a135e867680c8ea0519" category="list-text">storage_and_storage_pool_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="c5a62a80ee0a44aaf8a7fab21774a618" prefix=" " category="inline-code"></block></block>
+  <block id="dcd3e8dead899296321206b84fbc922e" category="list-text">volume_history_capacity_fact (一對多):<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="26f87b36bc23ae37b11611a37a055dcb" prefix=" " category="inline-code"></block></block>
+  <block id="cd223a83f505979ee2c78e7612aefed7" category="list-text">storage_and_storage_pool_capacity_future_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="2ecca89df1b2eb85d40ce083b26e07ec" prefix=" " category="inline-code"></block></block>
+  <block id="b388b7ad1475413a62a445d8e770d114" category="section-title">層級維度</block>
+  <block id="a77efef45b53c0e68aeafff127226d69" category="cell">層級名稱</block>
+  <block id="291eae8188cbf5e9e03f270b8d4df4a4" category="list-text">internal_volume_capacity_fact（一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="cbb8abb0eec5975ef074bbc54b888be6" prefix=" " category="inline-code"></block></block>
+  <block id="33c0781b78226e08e634335fa019db14" category="list-text">chargeback_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="8ac96a0aca22992d00db00619c6effb1" prefix=" " category="inline-code"></block></block>
+  <block id="926cad0e9214702193e750bc373ce327" category="list-text">vm_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="324beb098321a42f98d9f3df072d8006" prefix=" " category="inline-code"></block></block>
+  <block id="f8b2bb292d2c17c77c2117c195221b05" category="list-text">qtree_capacity_fact（一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="9f59372cc92a46c26aa3f4832f6e2081" prefix=" " category="inline-code"></block></block>
+  <block id="6db8ec8bfd98ebe90b18571bf91503c4" category="list-text">storage_and_storage_pool_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="c51ff4fccb00aaa6ecef43da8cac94c6" prefix=" " category="inline-code"></block></block>
+  <block id="6d167eb1e0f9f355a199900239222848" category="list-text">volume_history_capacity_fact（一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="d52658eb07bfa3579a4fcc784508fb62" prefix=" " category="inline-code"></block></block>
+  <block id="6296a51343d0fd66180bd7d537f90c6f" category="list-text">storage_and_storage_pool_capacity_future_fact（一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="41df6c4843017073070dbe94d05d70ac" prefix=" " category="inline-code"></block></block>
+  <block id="db2a3cbc9e8fb3ce038f4da3be92cdfd" category="list-text">storage_node_capacity_fact （一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="6fd3e6299c27fb58c65ebdf3471b8b4e" prefix=" " category="inline-code"></block></block>
+  <block id="995999f8513737d2607e7528ca62772a" category="section-title">vm_capacity_fact</block>
+  <block id="1fdb4458d44bb4f695dc1ddd70d671fa" category="cell">vmTk</block>
+  <block id="620858336f6ebdd79059e2b9b6f6a831" category="cell">VM 技術金鑰</block>
+  <block id="fdf99c7dff270e077dc7bffdc514e764" category="cell">dataStoreTk</block>
+  <block id="d5012ddc04a13a8287e5a9699b9bf504" category="cell">資料存放區技術金鑰</block>
+  <block id="f24822a15481b3b9f6af5f5bb0999509" category="cell">dataStoreName</block>
+  <block id="065f11791b6704e82b5b1772743906b5" category="cell">dataStoreId</block>
+  <block id="f1c73a2c0ef921c07400e638403a0cab" category="cell">資料儲存區 ID</block>
+  <block id="8011b540330c21d66ddf1ca785f8c844" category="cell">vCenter IP 位址</block>
+  <block id="fc037a3fb6515b2ed2d264d466fa0f79" category="cell">k8sNodeTk</block>
+  <block id="58557b2f4e195139f25e3f512b080125" category="cell">Kubernetes 節點技術金鑰</block>
+  <block id="0cde3542ccb05d12a95a354ab2129123" category="cell">capacityType</block>
+  <block id="d2be0a805e630604bab5d2e38e301a1b" category="cell">實際 MB</block>
+  <block id="eb6a7efa527d52637ad15122b25170de" category="cell">實際容量 (MB)</block>
+  <block id="28bac8c7ef763ce6abe642f7957daa62" category="cell">已配置 MB</block>
+  <block id="a5dae39e0c1992ffb87273a722b77bb6" category="list-text">k8s_node_dimension（多對一）：<block ref="fc037a3fb6515b2ed2d264d466fa0f79" prefix=" " category="inline-code"></block> -&gt;<block ref="be6d32fd73f2af2f5f813aa43db53969" prefix=" " category="inline-code"></block></block>
+  <block id="95603cdece2c1e0cbbebd59486b944a0" category="list-text">vm_dimension （多對一）：<block ref="1fdb4458d44bb4f695dc1ddd70d671fa" prefix=" " category="inline-code"></block> -&gt;<block ref="5941074bbe8cb7efaa9423a6c3c35aaf" prefix=" " category="inline-code"></block></block>
+  <block id="74856f69440e24372607cf00bcfd1cc1" category="list-text">capacity_type （多對一）： <block ref="0cde3542ccb05d12a95a354ab2129123" prefix=" " category="inline-code"></block> -&gt;<block ref="c2e8f5e518c3b6b1e8f108c858a08cf7" prefix=" " category="inline-code"></block></block>
+  <block id="7e1664b5db76dee269eb0c101c5786de" category="list-text">datastore_dimension（多對一）：<block ref="fdf99c7dff270e077dc7bffdc514e764" prefix=" " category="inline-code"></block> -&gt;<block ref="0f34c232c3d1c32e922b5cc6a38d6c19" prefix=" " category="inline-code"></block></block>
+  <block id="9b1688376f0f41b6c23aa8e618b20b59" category="section-title">vm_dimension</block>
+  <block id="ccb87330d11d127f4e1691116f8e3d05" category="cell">虛擬機器名稱</block>
+  <block id="de56be8fa19339d679efa6232455f342" category="cell">ips</block>
+  <block id="1d9e509ddb93a176b7d369a91ad7deaf" category="cell">IP 位址</block>
+  <block id="e2e1ba7e8c1862f4b8a50f75cffdc6f8" category="list-text">vm_capacity_fact（一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="87b85720d27456d0f1d0c4687c8bbaa0" prefix=" " category="inline-code"></block></block>
+  <block id="c6509014d7f4f4e33e9b20030bedecaf" category="section-title">Volume 容量事實</block>
+  <block id="1f1b1c8ac44ab3ee9eaa5992e50e0a39" category="cell">volumeTk</block>
+  <block id="b15d835528bc6b1f4f71323ab821f65c" category="cell">Volume 技術金鑰</block>
+  <block id="d7efb6715660c829db64434587ab5919" category="cell">chargebackFactTk</block>
+  <block id="519e7f8f7ee696ce9f816a51e6793ff7" category="cell">退款事實技術金鑰</block>
+  <block id="363d6ec8ebe16e44b3a1043ac7cfb4d6" category="cell">storageAndSpFactTk</block>
+  <block id="bb79d6f75e114516dac853a95d573af7" category="cell">儲存和資源池事實技術金鑰</block>
+  <block id="c06bfbd2e9e0ec475dc21621222b6f66" category="cell">isBackend</block>
+  <block id="8374af05bfec23246484cdbd95f038ab" category="cell">isAccessed</block>
+  <block id="70bf8b691fe5835ae2d8a022f3742737" category="cell">已存取旗標</block>
+  <block id="49215ccae277330a73f7bf805d7cb6b0" category="cell">isOrphaned</block>
+  <block id="bde03f3b322ac8dd98001ec5c776ace2" category="cell">孤立旗標</block>
+  <block id="eb6e7840bae62df845410e6547e177cd" category="cell">isProtection</block>
+  <block id="9c2b1da0ba3032ac80cab64ae10ec998" category="cell">保護標誌</block>
+  <block id="636c46ba862c0cbb0f1350f5f552ca48" category="cell">isUnused</block>
+  <block id="3a517f73415b4e89f0a731fd53122b66" category="cell">未使用的標誌</block>
+  <block id="ef57e6558a88c7c25aed9c7333efcdc4" category="cell">已存取容量 MB</block>
+  <block id="93237464937d8869f6e6081eef782562" category="cell">已訪問容量 (MB)</block>
+  <block id="2bb1393a76aeddf317b4f82de1fe6a2e" category="cell">孤立容量 MB</block>
+  <block id="a5eb133267b152c273bfbc5060f15f06" category="cell">孤立容量 (MB)</block>
+  <block id="599c757d7262b90ef316f88b205b9198" category="cell">保護容量 MB</block>
+  <block id="61d43a5f9dd23790e180dd0621e38863" category="cell">保護容量 (MB)</block>
+  <block id="5e843fc18aa1b6e101610fe898aa813e" category="cell">未使用容量 MB</block>
+  <block id="b5ba1881c2f0441fa92d4356270eba64" category="cell">未使用的容量 (MB)</block>
+  <block id="1877fdfe6061996600b2daeb4224d9f2" category="cell">daysSinceLastAccessed</block>
+  <block id="25688b31983bb9aaaeda5ecbbdd81197" category="cell">上次存取後的天數</block>
+  <block id="01278dfaa9737cf36e704f35c0504f75" category="section-title">volume_dimension</block>
+  <block id="d304ba20e96d87411588eeabac850e34" category="cell">標籤</block>
+  <block id="4f0dbbd4761dc25e461d953cdd839278" category="cell">磁碟區標籤</block>
+  <block id="e9a23cbc455158951716b440c3d165e0" category="cell">中繼資料</block>
+  <block id="12a293529f9ab33b65dee8b8f6b8a314" category="cell">中繼資料旗標</block>
+  <block id="c322d3de29d2b0c5e2e011dad5e77df2" category="cell">快照</block>
+  <block id="5b905edafa5ff09d5a51546af16a1e7b" category="cell">快照標誌</block>
+  <block id="83b31db2298a479ae34ed981e7942f4a" category="cell">technologyType</block>
+  <block id="22d0d50c922599cd6bbac58e7a7ebaf3" category="cell">技術類型</block>
+  <block id="97f3f7323ed895eb406e97afa60f1eb4" category="cell">isMainframe</block>
+  <block id="8a313cbb2cf0b0f4086531abc4b5d606" category="cell">大型主機旗標</block>
+  <block id="40789fd31cb9599054d53fdb0c68e036" category="cell">業務實體註釋</block>
+  <block id="0dcf90c3f3f40d2c5865c73d440101f0" category="list-text">volume_history_capacity_fact（一對多）：<block ref="b6717b91c7595cc07f30aa9a784e6390" prefix=" " category="inline-code"></block> &lt;-<block ref="d5c613fb28d257a69ab5fdeec117ec8d" prefix=" " category="inline-code"></block></block>
+  <block id="56b54c90516da06816c4085138f2fce5" category="section-title">目前容量事實</block>
+  <block id="b35804c63b9c6622ed16308c0cabfb02" category="paragraph">*主鍵：* volumeId</block>
+  <block id="20040178e091c11b1f719c163d5e3fc0" category="cell">volumeId</block>
+  <block id="cccc95b62282240886ee975a3f122adb" category="cell">磁碟區 ID</block>
+  <block id="4473f0cb084f3f5c6d5cec323a842fba" category="cell">storageId</block>
+  <block id="bea3026c1218ceb73f4bedf56a3b594f" category="cell">儲存 ID</block>
+  <block id="617a43eb0446f84414df73cce2997fa1" category="cell">volumeName</block>
+  <block id="bb1b4f7725f7820547a54f9240ff1f4f" category="cell">volumeType</block>
+  <block id="4e01beeb30c6f6936674a2bde5417e35" category="cell">實體可用 MB</block>
+  <block id="e60105c9e003a61fd3be63393451b591" category="cell">物理可用容量 (MB)</block>
+  <block id="865935cdf6eaad5ffae85f5b48a70b97" category="cell">實體原始 MB</block>
+  <block id="e96a4449ce03bcfe02e21c7d629899fd" category="cell">物理原始容量 (MB)</block>
+  <block id="814d4218c77254614d0a0d9a566a27a9" category="cell">已配置可用 MB</block>
+  <block id="69004d5b52813fb534fa5cffcf86815a" category="cell">已配置可用容量 (MB)</block>
+  <block id="b3c4c03ad2d713a950b689ae8fe998f6" category="cell">已配置的原始 MB</block>
+  <block id="46b26541dd275b92af020754c34b57ab" category="cell">已配置原始容量 (MB)</block>
+  <block id="f52d7b2599dcc075f2546fbf4fcdf849" category="list-text">chargeback_fact （多對一）：<block ref="d7efb6715660c829db64434587ab5919" prefix=" " category="inline-code"></block> -&gt;<block ref="ae36f0b096e69829bfdfe5a907aa9470" prefix=" " category="inline-code"></block></block>
+  <block id="8122c24ec3ac2a52f724a649e3d2545c" category="section-title">volume_history_capacity_fact</block>
+  <block id="889a35a5907d7820beb721621649bf74" category="cell">isMasked</block>
+  <block id="a4f3a8b715fe7de07f7922d9aaad2ae0" category="cell">遮罩旗標</block>
+  <block id="66ca6208a29137d8034ed70e634a1646" category="cell">isMapped</block>
+  <block id="18187216d75ac28c9c8786e9a50929fc" category="cell">映射標誌</block>
+  <block id="05749f44beb71ebef085d9f9c1d547b9" category="list-text">storage_and_storage_pool_capacity_fact （多對一）：<block ref="363d6ec8ebe16e44b3a1043ac7cfb4d6" prefix=" " category="inline-code"></block> -&gt;<block ref="69cd5a88a497737647440bdccdcd7c67" prefix=" " category="inline-code"></block></block>
+  <block id="74fb8a8afa661f5a87db23765f8cf20c" category="list-text">volume_dimension（多對一）：<block ref="1f1b1c8ac44ab3ee9eaa5992e50e0a39" prefix=" " category="inline-code"></block> -&gt;<block ref="28f1879bf4917a90172edc61637508b1" prefix=" " category="inline-code"></block></block>
+  <block id="7961e2618f19b3186520b5e80b6bcc47" category="section-title">volume_last_accessed_time</block>
+  <block id="1297bab76f52eaf87c4bead6d91c5747" category="paragraph">*主鍵：* volumeName、storageIdentifier</block>
+  <block id="a19ba3643626c0da85c3de321b7fb564" category="cell">lastAccessed</block>
+  <block id="5215d51f00cbd59bd4f5379564dd2607" category="cell">最後存取時間戳記</block>
+  <block id="7786ae506eee52b626dcc8402f829f17" category="paragraph"><block ref="7786ae506eee52b626dcc8402f829f17" category="inline-link-macro-rx"></block></block>
+  <block id="649d30b7cac0604fb3207f769101f157" category="list-text">internal_volume_capacity_fact （一對多）</block>
+  <block id="22c529c0f957ddcd1f77511e82dfbfc4" category="list-text">chargeback_fact (一對多)</block>
+  <block id="5dd9e2d63020dda622b0aab04bb64243" category="list-text">vm_capacity_fact （一對多）</block>
+  <block id="48829e3ddf6b2080932e5983e8922168" category="list-text">qtree_capacity_fact （一對多）</block>
+  <block id="456876962cebf0ccff4192d6babb22d5" category="list-text">volume_fact_current （一對一）</block>
+  <block id="5a21cff324234ed7ef27e7f31850c1d9" category="list-text">volume_history_capacity_fact （一對多）</block>
+  <block id="6da478d54ffdc3295a57eba0916b757d" category="list-text">internal_volume_dimension （多對一）</block>
+  <block id="f888ee9bd16d3f10b4dd5ae7167bec76" category="list-text">storage_dimension （多對一）</block>
+  <block id="d31587def8a79e6b6c1d414857a387db" category="list-text">business_entity_dimension （多對一）</block>
+  <block id="54aac06a16aabcfae08bb6fc8f01ccf8" category="list-text">host_group_dimension （多對一）</block>
+  <block id="cbf5e42362faa5ef282703c8ca515e60" category="list-text">k8s_namespace_group_dimension （多對一）</block>
+  <block id="46b5a63038d8ea9dd522820dd8a320a0" category="list-text">application_group_dimension （多對一）</block>
+  <block id="28b1f2a0b40dfcd788680c4b77d677bf" category="list-text">k8s_namespace_dimension （多對一）</block>
+  <block id="abfa589b59c97f15736c82f06c887939" category="list-text">service_level_dimension（多對一）</block>
+  <block id="798fa60240054c19c2a073c29064298d" category="list-text">tier_dimension（多對一）</block>
+  <block id="dcfe552f137518f0559a76fc0d1cb321" category="list-text">application_dimension （多對一）</block>
+  <block id="fc9288c59342839291ab8a8c3577a364" category="list-text">qtree_dimension （多對一）</block>
+  <block id="7cf8e854d53141b81a78b13f6d5bc67d" category="list-text">storage_pool_dimension （多對一）</block>
+  <block id="281c98ae516ef8a49c2a31f06d6c7369" category="list-text">host_dimension （多對一）</block>
+  <block id="587810c7b7b9d643e28cc4b50782dc9c" category="list-text">date_dimension （多對一）</block>
+  <block id="8faa169f4761b0b0599cd2ae6127fbc3" category="list-text">disk_group_capacity_fact （一對多）</block>
+  <block id="f4cab8890b939d778aad57299924bd8f" category="list-text">disk_group_capacity_future_fact （一對多）</block>
+  <block id="7b12ad2964aea902919559e637c4c9bb" category="list-text">k8s_pvc_capacity_fact （一對多）</block>
+  <block id="ad7864e1ceea45af4a7ad24e2b656df4" category="list-text">storage_and_storage_pool_capacity_fact （一對多）</block>
+  <block id="c3c68bbbf4fb5601fe39d1707552e81d" category="list-text">storage_and_storage_pool_capacity_future_fact （一對多）</block>
+  <block id="f6b821dc8cdf9186d45a30dad6c01bd8" category="list-text">storage_node_capacity_fact （一對多）</block>
+  <block id="2627565cd54086134ad070c4a7787719" category="list-text">disk_group_dimension (多對一)</block>
+  <block id="04da9ae34145b09d9a0344d497a598c0" category="list-text">k8s_pvc_dimension （多對一）</block>
+  <block id="bc1b3f894f6170972c83f1021d701e17" category="list-text">k8s_cluster_dimension （多對一）</block>
+  <block id="56e93d0b1ffe1af5930d9183f5197246" category="list-text">k8s_pv_dimension （多對一）</block>
+  <block id="f76b17c6e3cbed61b6e0afec5f1464ae" category="list-text">storage_and_storage_pool_capacity_fact （一對一）</block>
+  <block id="a064b1c47f6c96a016edd7e7d1af0b13" category="list-text">sp_time_to_fill （一對一）</block>
+  <block id="fa3054f31e628ea1d944b176d19eb0cc" category="list-text">storage_node_dimension （多對一）</block>
+  <block id="e1d6463efda8edd554cb101ea6330488" category="list-text">k8s_node_dimension （多對一）</block>
+  <block id="74363f01893ae0e1d811b5ff87c6e776" category="list-text">vm_dimension （多對一）</block>
+  <block id="3c96901cb4cbfaf51d9b673cacae8412" category="list-text">capacity_type (多對一)</block>
+  <block id="89b199a95fc8aa4eb3aedf0c02c16b33" category="list-text">datastore_dimension （多對一）</block>
+  <block id="4329e09708e1d6abbee5722bb5282473" category="list-text">chargeback_fact (多對一)</block>
+  <block id="66774b6cc3ea010793eb7ce57827322f" category="list-text">storage_and_storage_pool_capacity_fact （多對一）</block>
+  <block id="19aaa51e1b1a2f5d199732566d3f0e28" category="list-text">volume_dimension（多對一）</block>
+  <block id="d2481122ac31f319625b51a8b58342a4" category="summary">dwh_ports 資料庫的架構表和關係</block>
+  <block id="3583621cb4d713b7adcbd0a2f5b78e2c" category="doc">dwh_ports 資料庫架構參考</block>
+  <block id="108d629154d922860b9b160cacda77e5" category="paragraph">本參考資料提供了 dwh_ports 資料庫的詳細架構資訊，包括表格結構、欄位定義、資料類型和關係。</block>
+  <block id="ff156dbaab4db86a380fc06051873c3d" category="cell">介於 0 和 99 之間的數字</block>
+  <block id="6696acb411f2b05aa84b0c85b60679f2" category="section-title">連線裝置維度</block>
+  <block id="1e6202f28d4ae8ba79f3dada1932d32e" category="paragraph">*主鍵：* tk</block>
+  <block id="ca688e31a20d73179173ed5a2dd3d8d8" category="cell">設備名稱</block>
+  <block id="102a0783f5d382a2844e3db9ae31d7cb" category="cell">裝置的製造商</block>
+  <block id="2b5464c38a8e0f5ab35e3be2cc5ebc95" category="cell">設備型號</block>
+  <block id="e38531f061d31a4b3491cc97e0edadde" category="cell">設備類型</block>
+  <block id="74b5b5e9570efc5c0553bb327cd41940" category="cell">韌體</block>
+  <block id="9d83eb807f4402f55aa9ebf31924b5b9" category="cell">裝置上執行的韌體版本</block>
+  <block id="505a9a666dca0bc07108ce40aa82aeb3" category="cell">裝置的 ID</block>
+  <block id="3c64a5f3961c975df4deb99af4ba2593" category="list-text">ports_fact （一對多）</block>
+  <block id="a245c3230debe5c956484ecc6fa93877" category="cell">位元組</block>
+  <block id="46851fac623391a9374fb976f646f1a4" category="section-title">連接埠維度</block>
+  <block id="e98d0fd89b5d30f49a3fa0297cc90882" category="cell">wwn</block>
+  <block id="6450b7095029e347979df59694a77907" category="cell">全球名稱</block>
+  <block id="6168d7429aa4773f59a02579cdd2a749" category="cell">連接埠名稱</block>
+  <block id="71594862bd18892a2179dd465a06c2d7" category="cell">gbicType</block>
+  <block id="cdc6b8c00502d480c076865de3fb185d" category="cell">GBIC 類型</block>
+  <block id="182aeb116dd563a6020ec9b2d5b6595e" category="cell">連接埠類型</block>
+  <block id="ce4ef3ec98443ed10da505114b58f153" category="cell">速度</block>
+  <block id="0cf18d635363289b9e7befc3b0fc04e2" category="cell">連接埠速度</block>
+  <block id="64b2d4dfdf1613374d4eab1d0fc4028b" category="cell">isGenerated</block>
+  <block id="307c3f26913f0ce101dd622f6fa3fd4d" category="cell">產生的旗標</block>
+  <block id="0fd6ab921b94d1e4b2ad40ff56ed8d88" category="section-title">連接埠事實</block>
+  <block id="45fd213974256ed4ef573b742841d138" category="cell">switchTk</block>
+  <block id="e84a2bdfc67d1953c74d7d5e11c3f0ba" category="cell">切換技術金鑰</block>
+  <block id="d3d0e9e95cf269fd3b4aaa5301f55eae" category="cell">connectedDeviceTk</block>
+  <block id="0fb61c9dd25e8b636553513b9369f954" category="cell">連線裝置技術金鑰</block>
+  <block id="05c008e3af3d7ec041407f18f6444819" category="cell">portTk</block>
+  <block id="a7c1307ff80acbe4d9f1fec6ba251c4e" category="cell">連接埠技術金鑰</block>
+  <block id="6218832562965f9e1a11f138eb84e52b" category="cell">網狀架構</block>
+  <block id="f2685fa0fec38eaec1fbd10c1a5e37b0" category="cell">網狀架構名稱或 WWN</block>
+  <block id="3115e41f95c342ec2e8613db36b6d8a5" category="cell">connectivityType</block>
+  <block id="d6436bf02959d2fec2ef65e8c6802ff2" category="cell">連線類型</block>
+  <block id="b671d49b3e3c0ec1879e45af4a1a452a" category="cell">連接埠狀態</block>
+  <block id="4678d5e4d93805c507d14d3ad0c1ebb8" category="list-text">connected_device_dimension （多對一）</block>
+  <block id="569898282cf2fd890d5fdba7adbe820d" category="list-text">port_dimension （多對一）</block>
+  <block id="08589969f7f4c86143f41948503fa761" category="list-text">switch_dimension （多對一）</block>
+  <block id="a67b55ee357fcc481a355581dea06071" category="section-title">目前埠事實</block>
+  <block id="884fb47b4ccf68b095bbef4e0d94498f" category="section-title">切換維度</block>
+  <block id="fd9e565a205d3a9bdcf8f0ad5751385a" category="cell">交換器名稱</block>
+  <block id="1a880415e08fb2af5c4662fee209e196" category="cell">交換器識別碼</block>
+  <block id="e71a6bc9da9d285c521501e596936972" category="cell">交換器機型</block>
+  <block id="59879eabe96b11dd938393add67d2a32" category="cell">淨現值</block>
+  <block id="ed817cddf7821cea1b713bc3ef694693" category="cell">NPV 模式標誌</block>
+  <block id="ec101ec8f4300c01b3e83ccb567aa413" category="cell">交換器類型</block>
+  <block id="e30ec09a4c79b55e1ccfc1955c76c379" category="cell">switchLevel</block>
+  <block id="e10c8c70fc9c70d82df6e3c2ea10ceed" category="cell">切換層級</block>
+  <block id="549ae8b6dea4926a2af206c5d7300fc5" category="paragraph">在使用 Data Infrastructure Insights 之前，您必須先在 *NetApp Console* 入口網站註冊。如果您已有 NetApp Console 登入帳號，只需幾個簡單的步驟即可開始 Data Infrastructure Insights 的免費試用。</block>
 </blocks>

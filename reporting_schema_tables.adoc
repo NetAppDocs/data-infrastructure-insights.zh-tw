@@ -1,0 +1,22 @@
+---
+sidebar: sidebar 
+permalink: reporting_schema_tables.html 
+summary: 用於報表的資料倉儲模式圖和表格 
+keywords: dwh, data warehouse, schema, reporting 
+---
+= 用於報告的Data Infrastructure Insights模式
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+本文件提供報表資料庫的架構表。
+
+
+NOTE: 報告功能可在Data Infrastructure Insights中使用link:concept_subscribing_to_cloud_insights.html["高級版"]。
+
+link:media/capacity_schema_documentation.html["容量架構"]

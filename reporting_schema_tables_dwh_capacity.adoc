@@ -1,0 +1,2352 @@
+---
+sidebar: sidebar 
+permalink: reporting_schema_tables_dwh_capacity.html 
+summary: dwh_capacity 資料庫的架構表和關係 
+keywords: dwh, data warehouse, schema, reporting 
+---
+= dwh_capacity 資料庫架構參考
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+本參考資料提供了 dwh_capacity 資料庫的詳細架構資訊，包括表格結構、欄位定義、資料類型和關係。
+
+
+
+== 表格和檢視
+
+
+
+=== 應用程式維度
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| tk | 整數 | 技術金鑰 
+
+
+| 姓名 | 字串 | 應用程式名稱 
+
+
+| 描述 | 字串 | 應用程式說明 
+
+
+| 優先順序 | 字串 | 優先順序 
+
+
+| url | 字串 | 參考 URL 
+
+
+| id | 長 | 唯一識別碼 
+
+
+| 最新 | 字串 | 最新旗標 
+
+
+| dateTk | 整數 | 日期技術金鑰 
+|===
+*關係：*
+
+* internal_volume_capacity_fact （一對多）： `tk` <- `internal_volume_capacity_fact.applicationTk`
+* chargeback_fact （一對多）： `tk` <- `chargeback_fact.applicationTk`
+* vm_capacity_fact（一對多）： `tk` <- `vm_capacity_fact.applicationTk`
+* qtree_capacity_fact （一對多）： `tk` <- `qtree_capacity_fact.applicationTk`
+
+
+'''
+
+
+=== 應用程式群組橋接
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| appGroupTk | 整數 | 應用程式群組技術金鑰 
+
+
+| appTk | 整數 | 應用程式技術金鑰 
+
+
+| isRep | 字串 | 代表旗幟 
+|===
+'''
+
+
+=== 應用程式群組維度
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| tk | 整數 | 技術金鑰 
+
+
+| repApp | 字串 | 代表性應用程式 
+
+
+| repAppTk | 整數 | 代表性應用技術金鑰 
+
+
+| 基數 | 整數 | 群組基數 
+
+
+| dateTk | 整數 | 日期技術金鑰 
+|===
+*關係：*
+
+* internal_volume_capacity_fact （一對多）： `tk` <- `internal_volume_capacity_fact.applicationGroupTk`
+* chargeback_fact （一對多）： `tk` <- `chargeback_fact.applicationGroupTk`
+* vm_capacity_fact （一對多）： `tk` <- `vm_capacity_fact.applicationGroupTk`
+* qtree_capacity_fact （一對多）： `tk` <- `qtree_capacity_fact.applicationGroupTk`
+
+
+'''
+
+
+=== business_entity_dimension
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| tk | 整數 | 技術金鑰 
+
+
+| 全名 | 字串 | 完整實體名稱 
+
+
+| 租戶 | 字串 | 租戶名稱 
+
+
+| lob | 字串 | 業務線 
+
+
+| businessUnit | 字串 | 業務單位 
+
+
+| 專案 | 字串 | 專案名稱 
+
+
+| id | 長 | 唯一識別碼 
+
+
+| 最新 | 字串 | 最新旗標 
+
+
+| dateTk | 整數 | 日期技術金鑰 
+|===
+*關係：*
+
+* internal_volume_capacity_fact （一對多）： `tk` <- `internal_volume_capacity_fact.businessEntityTk`
+* chargeback_fact （一對多）： `tk` <- `chargeback_fact.businessEntityTk`
+* vm_capacity_fact （一對多）： `tk` <- `vm_capacity_fact.businessEntityTk`
+* qtree_capacity_fact （一對多）： `tk` <- `qtree_capacity_fact.businessEntityTk`
+
+
+'''
+
+
+=== 容量類型
+
+*主鍵：* type
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| 類型 | 字串 | 容量類型 
+
+
+| 已使用 | 字串 | 已使用標誌 
+
+
+| vmSpecific | 字串 | VM 特定旗標 
+
+
+| replicationSpecific | 字串 | 複寫特定旗標 
+
+
+| 描述 | 字串 | 描述 
+|===
+*關係：*
+
+* vm_capacity_fact（一對多）： `type` <- `vm_capacity_fact.capacityType`
+
+
+'''
+
+
+=== 紅雀隊
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| 數字 | 整數 | 基數 
+|===
+'''
+
+
+=== 退款事實
+
+*主鍵：* tk、dateTk
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| tk | 整數 | 技術金鑰 
+
+
+| dateTk | 整數 | 日期技術金鑰 
+
+
+| storageTk | 整數 | 儲存技術金鑰 
+
+
+| storagePoolTk | 整數 | 儲存資源池技術金鑰 
+
+
+| internalVolumeTk | 整數 | 內部容量技術金鑰 
+
+
+| qtreeTk | 整數 | Qtree 技術金鑰 
+
+
+| hostTk | 整數 | 主機技術金鑰 
+
+
+| hostGroupTk | 整數 | 主機群組技術金鑰 
+
+
+| applicationTk | 整數 | 應用程式技術金鑰 
+
+
+| applicationGroupTk | 整數 | 應用程式群組技術金鑰 
+
+
+| tierTk | 整數 | 層級技術金鑰 
+
+
+| serviceLevelTk | 整數 | 服務層級技術金鑰 
+
+
+| businessUnit | 字串 | 業務單位 
+
+
+| businessEntityTk | 整數 | 業務實體技術金鑰 
+
+
+| k8sNamespaceTk | 整數 | Kubernetes 命名空間技術金鑰 
+
+
+| k8sNamespaceGroupTk | 整數 | Kubernetes 命名空間群組技術金鑰 
+
+
+| protectionType | 字串 | 保護類型 
+
+
+| storageAccessType | 字串 | 儲存存取類型 
+
+
+| resourceName | 字串 | 資源名稱 
+
+
+| resourceType | 字串 | 資源類型 
+
+
+| mappedByVM | 字串 | 由 VM 標誌映射 
+
+
+| virtualStorage | 字串 | 虛擬儲存標誌 
+
+
+| 已配置容量 MB | 長 | 已配置容量 (MB) 
+
+
+| 已用容量 MB | 長 | 已用容量 (MB) 
+|===
+*關係：*
+
+* volume_fact_current （一對一）： `tk` -> `volume_fact_current.chargebackFactTk`
+* volume_history_capacity_fact（一對多）： `tk` <- `volume_history_capacity_fact.chargebackFactTk`
+* internal_volume_dimension （多對一）： `internalVolumeTk` -> `internal_volume_dimension.tk`
+* storage_dimension（多對一）： `storageTk` -> `storage_dimension.tk`
+* business_entity_dimension （多對一）： `businessEntityTk` -> `business_entity_dimension.tk`
+* host_group_dimension （多對一）： `hostGroupTk` -> `host_group_dimension.tk`
+* k8s_namespace_group_dimension（多對一）： `k8sNamespaceGroupTk` -> `k8s_namespace_group_dimension.tk`
+* application_group_dimension （多對一）： `applicationGroupTk` -> `application_group_dimension.tk`
+* k8s_namespace_dimension（多對一）： `k8sNamespaceTk` -> `k8s_namespace_dimension.tk`
+* service_level_dimension （多對一）： `serviceLevelTk` -> `service_level_dimension.tk`
+* tier_dimension（多對一）： `tierTk` -> `tier_dimension.tk`
+* application_dimension（多對一）： `applicationTk` -> `application_dimension.tk`
+* qtree_dimension （多對一）： `qtreeTk` -> `qtree_dimension.tk`
+* storage_pool_dimension （多對一）： `storagePoolTk` -> `storage_pool_dimension.tk`
+* host_dimension（多對一）： `hostTk` -> `host_dimension.tk`
+* date_dimension （多對一）： `dateTk` -> `date_dimension.tk`
+
+
+'''
+
+
+=== 資料儲存維度
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| tk | 整數 | 技術金鑰 
+
+
+| naturalKey | 字串 | 自然鍵 
+
+
+| 姓名 | 字串 | 資料儲存名稱 
+
+
+| moid | 字串 | 託管物件 ID 
+
+
+| virtualCenterIp | 字串 | vCenter IP 位址 
+
+
+| url | 字串 | 參考 URL 
+
+
+| id | 長 | 唯一識別碼 
+
+
+| 最新 | 字串 | 最新旗標 
+
+
+| dateTk | 整數 | 日期技術金鑰 
+|===
+*關係：*
+
+* vm_capacity_fact （一對多）： `tk` <- `vm_capacity_fact.dataStoreTk`
+
+
+'''
+
+
+=== 日期維度
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| tk | 整數 | 技術金鑰 
+
+
+| fullDate | 日期 | 完整日期 
+
+
+| dayInMonth | 整數 | 月中的日期 
+
+
+| dayInYear | 整數 | 一年中的某一天 
+
+
+| dateYear | 整數 | 年 
+
+
+| yearLabel | 字串 | 年份標籤 
+
+
+| monthNum | 整數 | 月份編號 
+
+
+| monthLabel | 字串 | 月份標籤 
+
+
+| dayInWeekNum | 整數 | 星期幾 
+
+
+| 四分之一 | 整數 | 季度 
+
+
+| quarterLabel | 字串 | 季度標籤 
+
+
+| dayInQuarter | 整數 | 季度中的日期 
+
+
+| repQuarter | 字串 | 代表季度 
+
+
+| repMonth | 字串 | 代表月份 
+
+
+| repWeek | 字串 | 代表週 
+
+
+| repDay | 字串 | 代表日 
+
+
+| repMonthOrLatest | 字串 | 代表月份或最新 
+
+
+| sspFlag | 字串 | SSP 標誌 
+
+
+| 最新 | 字串 | 最新旗標 
+
+
+| 未來 | 字串 | 未來旗幟 
+|===
+*關係：*
+
+* internal_volume_capacity_fact （一對多）： `tk` <- `internal_volume_capacity_fact.dateTk`
+* chargeback_fact （一對多）： `tk` <- `chargeback_fact.dateTk`
+* disk_group_capacity_fact（一對多）： `tk` <- `disk_group_capacity_fact.dateTk`
+* vm_capacity_fact （一對多）： `tk` <- `vm_capacity_fact.dateTk`
+* disk_group_capacity_future_fact （一對多）： `tk` <- `disk_group_capacity_future_fact.dateTk`
+* qtree_capacity_fact （一對多）： `tk` <- `qtree_capacity_fact.dateTk`
+* k8s_pvc_capacity_fact（一對多）： `tk` <- `k8s_pvc_capacity_fact.dateTk`
+* storage_and_storage_pool_capacity_fact （一對多）： `tk` <- `storage_and_storage_pool_capacity_fact.dateTk`
+* volume_history_capacity_fact（一對多）： `tk` <- `volume_history_capacity_fact.dateTk`
+* storage_and_storage_pool_capacity_future_fact （一對多）： `tk` <- `storage_and_storage_pool_capacity_future_fact.dateTk`
+* storage_node_capacity_fact（一對多）： `tk` <- `storage_node_capacity_fact.dateTk`
+
+
+'''
+
+
+=== 磁碟群組容量事實
+
+*主鍵：* tk、dateTk
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| tk | 整數 | 技術金鑰 
+
+
+| dateTk | 整數 | 日期技術金鑰 
+
+
+| storageTk | 整數 | 儲存技術金鑰 
+
+
+| storagePoolTk | 整數 | 儲存資源池技術金鑰 
+
+
+| diskGroupTk | 整數 | 磁碟群組技術金鑰 
+
+
+| 容量 MB | 長 | 總容量 (MB) 
+
+
+| 已用容量 MB | 長 | 已用容量 (MB) 
+
+
+| 實體磁碟容量 MB | 長 | 實體磁碟容量 (MB) 
+|===
+*關係：*
+
+* disk_group_dimension （多對一）： `diskGroupTk` -> `disk_group_dimension.tk`
+* storage_dimension（多對一）： `storageTk` -> `storage_dimension.tk`
+* storage_pool_dimension （多對一）： `storagePoolTk` -> `storage_pool_dimension.tk`
+* date_dimension （多對一）： `dateTk` -> `date_dimension.tk`
+
+
+'''
+
+
+=== 磁碟群組容量未來事實
+
+*主鍵：* tk、dateTk
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| tk | 整數 | 技術金鑰 
+
+
+| dateTk | 整數 | 日期技術金鑰 
+
+
+| storageTk | 整數 | 儲存技術金鑰 
+
+
+| storagePoolTk | 整數 | 儲存資源池技術金鑰 
+
+
+| diskGroupTk | 整數 | 磁碟群組技術金鑰 
+
+
+| 容量 MB | 長 | 預計容量 (MB) 
+
+
+| 已用容量 MB | 長 | 預計使用容量 (MB) 
+|===
+*關係：*
+
+* disk_group_dimension （多對一）： `diskGroupTk` -> `disk_group_dimension.tk`
+* storage_dimension（多對一）： `storageTk` -> `storage_dimension.tk`
+* storage_pool_dimension （多對一）： `storagePoolTk` -> `storage_pool_dimension.tk`
+* date_dimension （多對一）： `dateTk` -> `date_dimension.tk`
+
+
+'''
+
+
+=== 磁碟群組維度
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| tk | 整數 | 技術金鑰 
+
+
+| 姓名 | 字串 | 磁碟群組名稱 
+
+
+| 識別符 | 字串 | 磁碟群組識別碼 
+
+
+| vendorDiskGroupType | 字串 | 供應商磁碟群組類型 
+
+
+| diskType | 字串 | 磁碟類型 
+
+
+| 狀態 | 字串 | 地位 
+
+
+| 備援 | 字串 | 冗餘級別 
+
+
+| isVirtual | 字串 | 虛擬旗標 
+
+
+| vendorTier | 字串 | 供應商級別 
+
+
+| id | 長 | 唯一識別碼 
+
+
+| 最新 | 字串 | 最新旗標 
+
+
+| dateTk | 整數 | 日期技術金鑰 
+|===
+*關係：*
+
+* disk_group_capacity_fact （一對多）： `tk` <- `disk_group_capacity_fact.diskGroupTk`
+* disk_group_capacity_future_fact （一對多）： `tk` <- `disk_group_capacity_future_fact.diskGroupTk`
+
+
+'''
+
+
+=== 主機維度
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| tk | 整數 | 技術金鑰 
+
+
+| 姓名 | 字串 | 主機名稱 
+
+
+| 識別符 | 字串 | 主機識別符 
+
+
+| ip | 字串 | IP 位址 
+
+
+| 作業系統 | 字串 | 作業系統 
+
+
+| 模型 | 字串 | 硬體型號 
+
+
+| 製造商 | 字串 | 製造商 
+
+
+| url | 字串 | 參考 URL 
+
+
+| id | 長 | 唯一識別碼 
+
+
+| 最新 | 字串 | 最新旗標 
+
+
+| dateTk | 整數 | 日期技術金鑰 
+
+
+| dataCenter | 字串 | 資料中心位置 
+
+
+| 別名 | 字串 | 主機別名 
+
+
+| VM 每月授權費用 | 字串 | 每月 VM 授權費用 
+
+
+| 商業實體 | 字串 | 商業實體 
+
+
+| 服務水準 | 字串 | 服務等級 
+|===
+*關係：*
+
+* chargeback_fact （一對多）： `tk` <- `chargeback_fact.hostTk`
+* vm_capacity_fact （一對多）： `tk` <- `vm_capacity_fact.hostTk`
+* volume_history_capacity_fact（一對多）： `tk` <- `volume_history_capacity_fact.hostTk`
+
+
+'''
+
+
+=== 主機群組橋接
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| hostGroupTk | 整數 | 主機群組技術金鑰 
+
+
+| hostTk | 整數 | 主機技術金鑰 
+
+
+| isRep | 字串 | 代表旗幟 
+|===
+'''
+
+
+=== 主機群組維度
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| tk | 整數 | 技術金鑰 
+
+
+| repHost | 字串 | 代表主機 
+
+
+| repHostTk | 整數 | 代表主機技術金鑰 
+
+
+| 基數 | 整數 | 群組基數 
+
+
+| dateTk | 整數 | 日期技術金鑰 
+|===
+*關係：*
+
+* chargeback_fact （一對多）： `tk` <- `chargeback_fact.hostGroupTk`
+* vm_capacity_fact （一對多）： `tk` <- `vm_capacity_fact.hostGroupTk`
+* volume_history_capacity_fact（一對多）： `tk` <- `volume_history_capacity_fact.hostGroupTk`
+
+
+'''
+
+
+=== 內部容量事實
+
+*主鍵：* tk、dateTk
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| tk | 整數 | 技術金鑰 
+
+
+| dateTk | 整數 | 日期技術金鑰 
+
+
+| storageTk | 整數 | 儲存技術金鑰 
+
+
+| storagePoolTk | 整數 | 儲存資源池技術金鑰 
+
+
+| internalVolumeTk | 整數 | 內部容量技術金鑰 
+
+
+| virtualStorageTk | 整數 | 虛擬儲存技術金鑰 
+
+
+| tierTk | 整數 | 層級技術金鑰 
+
+
+| applicationTk | 整數 | 應用程式技術金鑰 
+
+
+| applicationGroupTk | 整數 | 應用程式群組技術金鑰 
+
+
+| serviceLevelTk | 整數 | 服務層級技術金鑰 
+
+
+| businessUnit | 字串 | 業務單位 
+
+
+| businessEntityTk | 整數 | 業務實體技術金鑰 
+
+
+| k8sNamespaceTk | 整數 | Kubernetes 命名空間技術金鑰 
+
+
+| k8sNamespaceGroupTk | 整數 | Kubernetes 命名空間群組技術金鑰 
+
+
+| storageAccessType | 字串 | 儲存存取類型 
+
+
+| protectionType | 字串 | 保護類型 
+
+
+| 已分配容量 MB | 長 | 已分配容量（MB） 
+
+
+| 已消耗容量 MB | 長 | 已用容量（MB） 
+
+
+| 已用容量 MB | 長 | 已用容量 (MB) 
+
+
+| 已用資料容量 MB | 長 | 資料使用容量 (MB) 
+
+
+| 未使用容量 MB | 長 | 未使用的資料容量 (MB) 
+
+
+| snapshotAllocatedCapacityMB | 長 | 快照已分配容量（MB） 
+
+
+| 快照已用容量 MB | 長 | 快照已用容量（MB） 
+
+
+| 總複製已儲存容量 MB | 長 | 總克隆節省容量（MB） 
+
+
+| dedupeRatio | 十進位 | 重複資料刪除率 
+
+
+| 重複資料刪除節省空間 GB | 十進位 | 重複資料刪除節省空間 (GB) 
+
+
+| rawToUsableRatio | 十進位 | 原始容量與可用容量比率 
+
+
+| snapshotCount | 整數 | 快照數量 
+
+
+| lastSnapshotTime | DateTimeOffset | 上次快照時間戳記 
+
+
+| compressionRatio | 十進位 | 壓縮比 
+
+
+| 壓縮節省 GB | 十進位 | 壓縮節省量 (GB) 
+
+
+| compressionSavingsPercent | 十進位 | 壓縮節省率（%） 
+
+
+| objectStore 已用空間 GB | 十進位 | 物件儲存已用空間 (GB) 
+|===
+*關係：*
+
+* service_level_dimension （多對一）： `serviceLevelTk` -> `service_level_dimension.tk`
+* internal_volume_dimension （多對一）： `internalVolumeTk` -> `internal_volume_dimension.tk`
+* storage_dimension（多對一）： `storageTk` -> `storage_dimension.tk`
+* tier_dimension（多對一）： `tierTk` -> `tier_dimension.tk`
+* business_entity_dimension （多對一）： `businessEntityTk` -> `business_entity_dimension.tk`
+* application_dimension（多對一）： `applicationTk` -> `application_dimension.tk`
+* storage_pool_dimension （多對一）： `storagePoolTk` -> `storage_pool_dimension.tk`
+* date_dimension （多對一）： `dateTk` -> `date_dimension.tk`
+* k8s_namespace_group_dimension（多對一）： `k8sNamespaceGroupTk` -> `k8s_namespace_group_dimension.tk`
+* application_group_dimension （多對一）： `applicationGroupTk` -> `application_group_dimension.tk`
+* k8s_namespace_dimension（多對一）： `k8sNamespaceTk` -> `k8s_namespace_dimension.tk`
+
+
+'''
+
+
+=== 內部體積尺寸
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| tk | 整數 | 技術金鑰 
+
+
+| 姓名 | 字串 | 磁碟區名稱 
+
+
+| 識別符 | 字串 | 磁碟區識別碼 
+
+
+| storagePoolIdentifier | 字串 | 儲存池識別碼 
+
+
+| storageName | 字串 | 儲存名稱 
+
+
+| storageIP | 字串 | 儲存 IP 位址 
+
+
+| 類型 | 字串 | 磁碟區類型 
+
+
+| virtualStorage | 字串 | 虛擬儲存設備 
+
+
+| spaceGuarantee | 字串 | 空間保證 
+
+
+| thinProvisioningSupported | 字串 | 精簡配置支援旗標 
+
+
+| thinProvisioned | 字串 | 精簡配置標誌 
+
+
+| uuid | 字串 | 唯一識別符 
+
+
+| flexGroupIdentifier | 字串 | FlexGroup 識別符 
+
+
+| url | 字串 | 參考 URL 
+
+
+| id | 長 | 唯一識別碼 
+
+
+| 最新 | 字串 | 最新旗標 
+
+
+| dateTk | 整數 | 日期技術金鑰 
+|===
+*關係：*
+
+* internal_volume_capacity_fact （一對多）： `tk` <- `internal_volume_capacity_fact.internalVolumeTk`
+* chargeback_fact （一對多）： `tk` <- `chargeback_fact.internalVolumeTk`
+* vm_capacity_fact （一對多）： `tk` <- `vm_capacity_fact.internalVolumeTk`
+* qtree_capacity_fact （一對多）： `tk` <- `qtree_capacity_fact.internalVolumeTk`
+* volume_history_capacity_fact （一對多）： `tk` <- `volume_history_capacity_fact.internalVolumeTk`
+
+
+'''
+
+
+=== k8s_cluster_dimension
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| tk | 整數 | 技術金鑰 
+
+
+| 識別符 | 字串 | 叢集識別碼 
+
+
+| 姓名 | 字串 | 叢集名稱 
+
+
+| id | 長 | 唯一識別碼 
+
+
+| 最新 | 字串 | 最新旗標 
+
+
+| dateTk | 整數 | 日期技術金鑰 
+|===
+*關係：*
+
+* k8s_pvc_capacity_fact（一對多）： `tk` <- `k8s_pvc_capacity_fact.clusterTk`
+
+
+'''
+
+
+=== k8s_namespace_dimension
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| tk | 整數 | 技術金鑰 
+
+
+| 識別符 | 字串 | 命名空間識別碼 
+
+
+| 姓名 | 字串 | 命名空間名稱 
+
+
+| clusterName | 字串 | 叢集名稱 
+
+
+| id | 長 | 唯一識別碼 
+
+
+| 最新 | 字串 | 最新旗標 
+
+
+| dateTk | 整數 | 日期技術金鑰 
+|===
+*關係：*
+
+* internal_volume_capacity_fact （一對多）： `tk` <- `internal_volume_capacity_fact.k8sNamespaceTk`
+* chargeback_fact （一對多）： `tk` <- `chargeback_fact.k8sNamespaceTk`
+* qtree_capacity_fact （一對多）： `tk` <- `qtree_capacity_fact.k8sNamespaceTk`
+* k8s_pvc_capacity_fact （一對多）： `tk` <- `k8s_pvc_capacity_fact.namespaceTk`
+
+
+'''
+
+
+=== k8s_namespace_group_bridge
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| k8sNamespaceGroupTk | 整數 | 命名空間群組技術金鑰 
+
+
+| k8sNamespaceTk | 整數 | 命名空間技術金鑰 
+
+
+| isRep | 字串 | 代表旗幟 
+|===
+'''
+
+
+=== k8s_namespace_group_dimension
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| tk | 整數 | 技術金鑰 
+
+
+| repK8sNamespace | 字串 | 代表性命名空間 
+
+
+| repK8sNamespaceTk | 整數 | 代表性命名空間技術金鑰 
+
+
+| 基數 | 整數 | 群組基數 
+
+
+| dateTk | 整數 | 日期技術金鑰 
+|===
+*關係：*
+
+* internal_volume_capacity_fact （一對多）： `tk` <- `internal_volume_capacity_fact.k8sNamespaceGroupTk`
+* chargeback_fact （一對多）： `tk` <- `chargeback_fact.k8sNamespaceGroupTk`
+* qtree_capacity_fact （一對多）： `tk` <- `qtree_capacity_fact.k8sNamespaceGroupTk`
+* volume_history_capacity_fact （一對多）： `tk` <- `volume_history_capacity_fact.k8sNamespaceGroupTk`
+
+
+'''
+
+
+=== k8s_node_dimension
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| tk | 整數 | 技術金鑰 
+
+
+| 識別符 | 字串 | 節點標識符 
+
+
+| 姓名 | 字串 | 節點名稱 
+
+
+| clusterName | 字串 | 叢集名稱 
+
+
+| internalIp | 字串 | 內部 IP 位址 
+
+
+| osImage | 字串 | 作業系統映像 
+
+
+| id | 長 | 唯一識別碼 
+
+
+| 最新 | 字串 | 最新旗標 
+
+
+| dateTk | 整數 | 日期技術金鑰 
+|===
+*關係：*
+
+* vm_capacity_fact （一對多）： `tk` <- `vm_capacity_fact.k8sNodeTk`
+
+
+'''
+
+
+=== k8s_pv_dimension
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| tk | 整數 | 技術金鑰 
+
+
+| 識別符 | 字串 | PV 標識符 
+
+
+| 姓名 | 字串 | PV 名稱 
+
+
+| clusterName | 字串 | 叢集名稱 
+
+
+| 階段 | 字串 | PV 階段 
+
+
+| pvcName | 字串 | PVC 名稱 
+
+
+| storageClass | 字串 | 儲存類別 
+
+
+| id | 長 | 唯一識別碼 
+
+
+| 最新 | 字串 | 最新旗標 
+
+
+| dateTk | 整數 | 日期技術金鑰 
+|===
+*關係：*
+
+* k8s_pvc_capacity_fact（一對多）： `tk` <- `k8s_pvc_capacity_fact.pvTk`
+
+
+'''
+
+
+=== k8s_pvc_capacity_fact
+
+*主鍵：* tk、dateTk
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| tk | 整數 | 技術金鑰 
+
+
+| dateTk | 整數 | 日期技術金鑰 
+
+
+| pvcTk | 整數 | PVC 技術金鑰 
+
+
+| clusterTk | 整數 | 叢集技術金鑰 
+
+
+| namespaceTk | 整數 | 命名空間技術金鑰 
+
+
+| pvTk | 整數 | PV 技術金鑰 
+
+
+| pvSizeBytes | 長 | PV 大小（位元組） 
+
+
+| pvcSizeBytes | 長 | PVC 尺寸（位元組） 
+|===
+*關係：*
+
+* k8s_pvc_dimension （多對一）： `pvcTk` -> `k8s_pvc_dimension.tk`
+* k8s_cluster_dimension （多對一）： `clusterTk` -> `k8s_cluster_dimension.tk`
+* k8s_namespace_dimension (many-to-one)： `namespaceTk` -> `k8s_namespace_dimension.tk`
+* date_dimension （多對一）： `dateTk` -> `date_dimension.tk`
+* k8s_pv_dimension （多對一）： `pvTk` -> `k8s_pv_dimension.tk`
+
+
+'''
+
+
+=== k8s_pvc_dimension
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| tk | 整數 | 技術金鑰 
+
+
+| 識別符 | 字串 | PVC 標識符 
+
+
+| 姓名 | 字串 | PVC 名稱 
+
+
+| clusterName | 字串 | 叢集名稱 
+
+
+| namespaceName | 字串 | 命名空間名稱 
+
+
+| pvName | 字串 | PV 名稱 
+
+
+| 階段 | 字串 | PVC 階段 
+
+
+| id | 長 | 唯一識別碼 
+
+
+| 最新 | 字串 | 最新旗標 
+
+
+| dateTk | 整數 | 日期技術金鑰 
+|===
+*關係：*
+
+* k8s_pvc_capacity_fact （一對多）： `tk` <- `k8s_pvc_capacity_fact.pvcTk`
+
+
+'''
+
+
+=== k8s_workload_dimension
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| tk | 整數 | 技術金鑰 
+
+
+| 識別符 | 字串 | 工作負載識別碼 
+
+
+| 姓名 | 字串 | 工作負載名稱 
+
+
+| clusterName | 字串 | 叢集名稱 
+
+
+| namespaceName | 字串 | 命名空間名稱 
+
+
+| 類型 | 字串 | 工作負載類型 
+
+
+| id | 長 | 唯一識別碼 
+
+
+| 最新 | 字串 | 最新旗標 
+
+
+| dateTk | 整數 | 日期技術金鑰 
+|===
+'''
+
+
+=== qtree_capacity_fact
+
+*主鍵：* tk、dateTk
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| tk | 整數 | 技術金鑰 
+
+
+| dateTk | 整數 | 日期技術金鑰 
+
+
+| storageTk | 整數 | 儲存技術金鑰 
+
+
+| storagePoolTk | 整數 | 儲存資源池技術金鑰 
+
+
+| internalVolumeTk | 整數 | 內部容量技術金鑰 
+
+
+| qtreeTk | 整數 | Qtree 技術金鑰 
+
+
+| virtualStorageTk | 整數 | 虛擬儲存技術金鑰 
+
+
+| tierTk | 整數 | 層級技術金鑰 
+
+
+| serviceLevelTk | 整數 | 服務層級技術金鑰 
+
+
+| applicationTk | 整數 | 應用程式技術金鑰 
+
+
+| applicationGroupTk | 整數 | 應用程式群組技術金鑰 
+
+
+| businessUnit | 字串 | 業務單位 
+
+
+| businessEntityTk | 整數 | 業務實體技術金鑰 
+
+
+| k8sNamespaceTk | 整數 | Kubernetes 命名空間技術金鑰 
+
+
+| k8sNamespaceGroupTk | 整數 | Kubernetes 命名空間群組技術金鑰 
+
+
+| storageAccessType | 字串 | 儲存存取類型 
+
+
+| protectionType | 字串 | 保護類型 
+
+
+| 硬限制容量 MB | 長 | 硬性容量限制 (MB) 
+
+
+| softLimitCapacityMB | 長 | 軟限制容量 (MB) 
+
+
+| 已用容量 MB | 長 | 已用容量 (MB) 
+
+
+| rawToUsableRatio | 十進位 | 原始容量與可用容量比率 
+
+
+| missingQuotaLimits | 字串 | 缺少配額限制標誌 
+|===
+*關係：*
+
+* internal_volume_dimension （多對一）： `internalVolumeTk` -> `internal_volume_dimension.tk`
+* storage_dimension（多對一）： `storageTk` -> `storage_dimension.tk`
+* business_entity_dimension （多對一）： `businessEntityTk` -> `business_entity_dimension.tk`
+* k8s_namespace_group_dimension（多對一）： `k8sNamespaceGroupTk` -> `k8s_namespace_group_dimension.tk`
+* application_group_dimension （多對一）： `applicationGroupTk` -> `application_group_dimension.tk`
+* k8s_namespace_dimension（多對一）： `k8sNamespaceTk` -> `k8s_namespace_dimension.tk`
+* service_level_dimension （多對一）： `serviceLevelTk` -> `service_level_dimension.tk`
+* tier_dimension（多對一）： `tierTk` -> `tier_dimension.tk`
+* application_dimension（多對一）： `applicationTk` -> `application_dimension.tk`
+* qtree_dimension （多對一）： `qtreeTk` -> `qtree_dimension.tk`
+* storage_pool_dimension （多對一）： `storagePoolTk` -> `storage_pool_dimension.tk`
+* date_dimension （多對一）： `dateTk` -> `date_dimension.tk`
+
+
+'''
+
+
+=== qtree_dimension
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| tk | 整數 | 技術金鑰 
+
+
+| 姓名 | 字串 | Qtree 名稱 
+
+
+| 識別符 | 字串 | Qtree 識別碼 
+
+
+| storageIdentifier | 字串 | 儲存識別碼 
+
+
+| 類型 | 字串 | Qtree 類型 
+
+
+| url | 字串 | 參考 URL 
+
+
+| id | 長 | 唯一識別碼 
+
+
+| 最新 | 字串 | 最新旗標 
+
+
+| dateTk | 整數 | 日期技術金鑰 
+
+
+| 層級 | 字串 | 層級註釋 
+|===
+*關係：*
+
+* chargeback_fact （一對多）： `tk` <- `chargeback_fact.qtreeTk`
+* vm_capacity_fact（一對多）： `tk`<- `vm_capacity_fact.qtreeTk`
+* qtree_capacity_fact （一對多）： `tk` <- `qtree_capacity_fact.qtreeTk`
+* volume_history_capacity_fact （一對多）： `tk` <- `volume_history_capacity_fact.qtreeTk`
+
+
+'''
+
+
+=== 服務等級維度
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| tk | 整數 | 技術金鑰 
+
+
+| 姓名 | 字串 | 服務等級名稱 
+
+
+| 順序 | 整數 | 順序 
+
+
+| 成本 | 十進位 | 成本 
+
+
+| id | 長 | 唯一識別碼 
+
+
+| 最新 | 字串 | 最新旗標 
+
+
+| dateTk | 整數 | 日期技術金鑰 
+|===
+*關係：*
+
+* internal_volume_capacity_fact （一對多）： `tk` <- `internal_volume_capacity_fact.serviceLevelTk`
+* chargeback_fact （一對多）： `tk` <- `chargeback_fact.serviceLevelTk`
+* vm_capacity_fact （一對多）： `tk` <- `vm_capacity_fact.serviceLevelTk`
+* qtree_capacity_fact （一對多）： `tk` <- `qtree_capacity_fact.serviceLevelTk`
+* volume_history_capacity_fact （一對多）： `tk` <- `volume_history_capacity_fact.serviceLevelTk`
+
+
+'''
+
+
+=== sp_time_to_fill
+
+*主鍵：* saspFactTk
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| saspFactTk | 整數 | 儲存資源池事實技術金鑰 
+
+
+| daysToStoragePoolFull | 整數 | 距離儲存資源池已滿還有幾天 
+
+
+| dateAtStoragePoolFull | 日期 | 資料儲存池將滿的日期 
+|===
+*關係：*
+
+* storage_and_storage_pool_capacity_fact （一對一）： `saspFactTk` -> `storage_and_storage_pool_capacity_fact.tk`
+
+
+'''
+
+
+=== 儲存和儲存池容量事實
+
+*主鍵：* tk、dateTk
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| tk | 整數 | 技術金鑰 
+
+
+| dateTk | 整數 | 日期技術金鑰 
+
+
+| storagePoolTk | 整數 | 儲存資源池技術金鑰 
+
+
+| storageTk | 整數 | 儲存技術金鑰 
+
+
+| tierTk | 整數 | 層級技術金鑰 
+
+
+| 後端 | 字串 | 後端標誌 
+
+
+| isVirtual | 字串 | 虛擬旗標 
+
+
+| 容量 MB | 長 | 總容量 (MB) 
+
+
+| 原始容量 MB | 長 | 原始容量 (MB) 
+
+
+| 已用容量 MB | 長 | 已用容量 (MB) 
+
+
+| 已用原始容量 MB | 長 | 已用原始容量 (MB) 
+
+
+| 快照已用容量 MB | 長 | 快照已用容量（MB） 
+
+
+| 快照已使用原始容量 MB | 長 | 快照使用的原始容量 (MB) 
+
+
+| softLimitCapacityMB | 長 | 軟限制容量 (MB) 
+
+
+| 未配置原始容量 MB | 長 | 未配置的原始容量 (MB) 
+
+
+| 備用原始容量 MB | 長 | 剩餘原始容量 (MB) 
+
+
+| 失敗原始容量 MB | 長 | 故障原始容量（MB） 
+
+
+| volumeCapacityMB | 長 | 磁碟區容量（MB） 
+
+
+| 未使用的磁碟區容量 MB | 長 | 未使用的磁碟區容量 (MB) 
+
+
+| volumeConsumedCapacityMB | 長 | 磁碟區已用容量（MB） 
+
+
+| 已映射的磁碟區容量 MB | 長 | 已映射磁碟區容量 （MB） 
+
+
+| maskedVolumeCapacityMB | 長 | 遮罩磁碟區容量 (MB) 
+
+
+| internalVolumeAllocatedCapacityMB | 長 | 內部磁碟區已分配容量 (MB) 
+
+
+| internalVolumeUsedCapacityMB | 長 | 內部磁碟區已用容量 (MB) 
+
+
+| internalVolumeConsumedCapacityMB | 長 | 內部磁碟區已使用容量 (MB) 
+
+
+| dedupeRatio | 十進位 | 重複資料刪除率 
+
+
+| 重複資料刪除節省空間 GB | 十進位 | 重複資料刪除節省空間 (GB) 
+
+
+| compressionRatio | 十進位 | 壓縮比 
+
+
+| 壓縮節省 GB | 十進位 | 壓縮節省量 (GB) 
+
+
+| compressionSavingsPercent | 十進位 | 壓縮節省率（%） 
+
+
+| objectStore 已用空間 GB | 十進位 | 物件儲存已用空間 (GB) 
+
+
+| provisionedIops | 長 | 此儲存設備上已佈建的 IOPS 
+
+
+| provisionedThroughput | 長 | 此儲存設備上的佈建處理量 (MiB/s) 
+
+
+| compactionRatio | 十進位 | 壓縮比 
+
+
+| 壓縮節省空間 GB | 十進位 | 壓縮節省 (GB) 
+|===
+*關係：*
+
+* sp_time_to_fill （一對一）： `tk` <- `sp_time_to_fill.saspFactTk`
+* volume_history_capacity_fact (一對多): `tk` <- `volume_history_capacity_fact.storageAndSpFactTk`
+* storage_dimension（多對一）： `storageTk` -> `storage_dimension.tk`
+* tier_dimension（多對一）： `tierTk` -> `tier_dimension.tk`
+* storage_pool_dimension （多對一）： `storagePoolTk` -> `storage_pool_dimension.tk`
+* date_dimension （多對一）： `dateTk` -> `date_dimension.tk`
+
+
+'''
+
+
+=== 儲存和儲存池容量未來事實
+
+*主鍵：* tk、dateTk
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| tk | 整數 | 技術金鑰 
+
+
+| dateTk | 整數 | 日期技術金鑰 
+
+
+| storagePoolTk | 整數 | 儲存資源池技術金鑰 
+
+
+| storageTk | 整數 | 儲存技術金鑰 
+
+
+| tierTk | 整數 | 層級技術金鑰 
+
+
+| 後端 | 字串 | 後端標誌 
+
+
+| isVirtual | 字串 | 虛擬旗標 
+
+
+| 容量 MB | 長 | 預計容量 (MB) 
+
+
+| 原始容量 MB | 長 | 預計原始容量 (MB) 
+
+
+| 已用容量 MB | 長 | 預計使用容量 (MB) 
+
+
+| 已用原始容量 MB | 長 | 預計已用原始容量 (MB) 
+|===
+*關係：*
+
+* storage_dimension（多對一）： `storageTk` -> `storage_dimension.tk`
+* tier_dimension（多對一）： `tierTk` -> `tier_dimension.tk`
+* storage_pool_dimension （多對一）： `storagePoolTk` -> `storage_pool_dimension.tk`
+* date_dimension （多對一）： `dateTk` -> `date_dimension.tk`
+
+
+'''
+
+
+=== 儲存空間_維度
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| tk | 整數 | 技術金鑰 
+
+
+| 姓名 | 字串 | 儲存名稱 
+
+
+| 識別符 | 字串 | 儲存識別碼 
+
+
+| ip | 字串 | IP 位址 
+
+
+| 模型 | 字串 | 儲存模型 
+
+
+| 製造商 | 字串 | 製造商 
+
+
+| serialNumber | 字串 | 序號 
+
+
+| microcodeVersion | 字串 | 微碼版本 
+
+
+| 家庭 | 字串 | 儲存系列 
+
+
+| url | 字串 | 參考 URL 
+
+
+| id | 長 | 唯一識別碼 
+
+
+| 最新 | 字串 | 最新旗標 
+
+
+| dateTk | 整數 | 日期技術金鑰 
+|===
+*關係：*
+
+* internal_volume_capacity_fact（一對多）： `tk` <- `internal_volume_capacity_fact.storageTk`
+* chargeback_fact （一對多）： `tk` <- `chargeback_fact.storageTk`
+* disk_group_capacity_fact（一對多）: `tk` <- `disk_group_capacity_fact.storageTk`
+* vm_capacity_fact （一對多）： `tk` <- `vm_capacity_fact.storageTk`
+* disk_group_capacity_future_fact （一對多）： `tk` <- `disk_group_capacity_future_fact.storageTk`
+* qtree_capacity_fact （一對多）： `tk` <- `qtree_capacity_fact.storageTk`
+* storage_and_storage_pool_capacity_fact （一對多）： `tk` <- `storage_and_storage_pool_capacity_fact.storageTk`
+* volume_history_capacity_fact (一對多): `tk` <- `volume_history_capacity_fact.storageTk`
+* storage_and_storage_pool_capacity_future_fact （一對多）： `tk` <- `storage_and_storage_pool_capacity_future_fact.storageTk`
+* storage_node_capacity_fact （一對多）： `tk` <- `storage_node_capacity_fact.storageTk`
+
+
+'''
+
+
+=== storage_node_capacity_fact
+
+*主鍵：* tk、dateTk
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| tk | 整數 | 技術金鑰 
+
+
+| dateTk | 整數 | 日期技術金鑰 
+
+
+| storageTk | 整數 | 儲存技術金鑰 
+
+
+| storageNodeTk | 整數 | 儲存節點技術金鑰 
+
+
+| tierTk | 整數 | 層級技術金鑰 
+
+
+| totalNodeCapacityUtilizationMB | 長 | 總節點容量使用率 (MB) 
+
+
+| 可用節點容量利用率 MB | 長 | 可用節點容量使用率（MB） 
+
+
+| 已用節點容量利用率 MB | 長 | 已用節點容量使用率 (MB) 
+
+
+| 已用元資料節點容量使用率 MB | 長 | 已用元資料容量使用率 (MB) 
+
+
+| 允許的 MetaData Node 容量使用量 MB | 長 | 允許的中繼資料容量使用率 (MB) 
+|===
+*關係：*
+
+* storage_node_dimension （多對一）： `storageNodeTk` -> `storage_node_dimension.tk`
+* storage_dimension（多對一）： `storageTk` -> `storage_dimension.tk`
+* tier_dimension（多對一）： `tierTk` -> `tier_dimension.tk`
+* date_dimension （多對一）： `dateTk` -> `date_dimension.tk`
+
+
+'''
+
+
+=== 儲存節點維度
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| tk | 整數 | 技術金鑰 
+
+
+| 姓名 | 字串 | 節點名稱 
+
+
+| 識別符 | 字串 | 節點標識符 
+
+
+| 版本 | 字串 | Node 版本 
+
+
+| 模型 | 字串 | 節點模型 
+
+
+| serialNumber | 字串 | 序號 
+
+
+| siteName | 字串 | 網站名稱 
+
+
+| url | 字串 | 參考 URL 
+
+
+| id | 長 | 唯一識別碼 
+
+
+| 最新 | 字串 | 最新旗標 
+
+
+| dateTk | 整數 | 日期技術金鑰 
+
+
+| ActiveIQ | 字串 | ActiveIQ 註釋 
+|===
+*關係：*
+
+* storage_node_capacity_fact （一對多）： `tk` <- `storage_node_capacity_fact.storageNodeTk`
+
+
+'''
+
+
+=== 儲存池維度
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| tk | 整數 | 技術金鑰 
+
+
+| 識別符 | 字串 | 集區識別碼 
+
+
+| 姓名 | 字串 | 資源池名稱 
+
+
+| storageName | 字串 | 儲存名稱 
+
+
+| storageIP | 字串 | 儲存 IP 
+
+
+| 類型 | 字串 | 資源池類型 
+
+
+| 備援 | 字串 | 冗餘級別 
+
+
+| thinProvisioningSupported | 字串 | 精簡配置支援旗標 
+
+
+| isVirtual | 字串 | 虛擬旗標 
+
+
+| usesFlashPools | 字串 | 使用 flash pools 標誌 
+
+
+| url | 字串 | 參考 URL 
+
+
+| id | 長 | 唯一識別碼 
+
+
+| 最新 | 字串 | 最新旗標 
+
+
+| dateTk | 整數 | 日期技術金鑰 
+
+
+| 層級 | 字串 | 層級註釋 
+
+
+| 省 | 字串 | 省註釋 
+|===
+*關係：*
+
+* internal_volume_capacity_fact（一對多）： `tk` <- `internal_volume_capacity_fact.storagePoolTk`
+* chargeback_fact （一對多）： `tk` <- `chargeback_fact.storagePoolTk`
+* disk_group_capacity_fact（一對多）： `tk` <- `disk_group_capacity_fact.storagePoolTk`
+* disk_group_capacity_future_fact （一對多）： `tk` <- `disk_group_capacity_future_fact.storagePoolTk`
+* qtree_capacity_fact（一對多）： `tk` <- `qtree_capacity_fact.storagePoolTk`
+* storage_and_storage_pool_capacity_fact （一對多）： `tk` <- `storage_and_storage_pool_capacity_fact.storagePoolTk`
+* volume_history_capacity_fact (一對多): `tk` <- `volume_history_capacity_fact.storagePoolTk`
+* storage_and_storage_pool_capacity_future_fact （一對多）： `tk` <- `storage_and_storage_pool_capacity_future_fact.storagePoolTk`
+
+
+'''
+
+
+=== 層級維度
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| tk | 整數 | 技術金鑰 
+
+
+| 姓名 | 字串 | 層級名稱 
+
+
+| 順序 | 整數 | 順序 
+
+
+| 成本 | 十進位 | 成本 
+
+
+| id | 長 | 唯一識別碼 
+
+
+| 最新 | 字串 | 最新旗標 
+
+
+| dateTk | 整數 | 日期技術金鑰 
+|===
+*關係：*
+
+* internal_volume_capacity_fact（一對多）： `tk` <- `internal_volume_capacity_fact.tierTk`
+* chargeback_fact （一對多）： `tk` <- `chargeback_fact.tierTk`
+* vm_capacity_fact （一對多）： `tk` <- `vm_capacity_fact.tierTk`
+* qtree_capacity_fact（一對多）： `tk` <- `qtree_capacity_fact.tierTk`
+* storage_and_storage_pool_capacity_fact （一對多）： `tk` <- `storage_and_storage_pool_capacity_fact.tierTk`
+* volume_history_capacity_fact（一對多）： `tk` <- `volume_history_capacity_fact.tierTk`
+* storage_and_storage_pool_capacity_future_fact（一對多）： `tk` <- `storage_and_storage_pool_capacity_future_fact.tierTk`
+* storage_node_capacity_fact （一對多）： `tk` <- `storage_node_capacity_fact.tierTk`
+
+
+'''
+
+
+=== vm_capacity_fact
+
+*主鍵：* tk、dateTk
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| tk | 整數 | 技術金鑰 
+
+
+| dateTk | 整數 | 日期技術金鑰 
+
+
+| hostTk | 整數 | 主機技術金鑰 
+
+
+| storageTk | 整數 | 儲存技術金鑰 
+
+
+| virtualStorageTk | 整數 | 虛擬儲存技術金鑰 
+
+
+| internalVolumeTk | 整數 | 內部容量技術金鑰 
+
+
+| qtreeTk | 整數 | Qtree 技術金鑰 
+
+
+| hostGroupTk | 整數 | 主機群組技術金鑰 
+
+
+| applicationTk | 整數 | 應用程式技術金鑰 
+
+
+| applicationGroupTk | 整數 | 應用程式群組技術金鑰 
+
+
+| tierTk | 整數 | 層級技術金鑰 
+
+
+| serviceLevelTk | 整數 | 服務層級技術金鑰 
+
+
+| vmTk | 整數 | VM 技術金鑰 
+
+
+| dataStoreTk | 整數 | 資料存放區技術金鑰 
+
+
+| dataStoreName | 字串 | 資料儲存名稱 
+
+
+| dataStoreId | 長 | 資料儲存區 ID 
+
+
+| virtualCenterIp | 字串 | vCenter IP 位址 
+
+
+| businessUnit | 字串 | 業務單位 
+
+
+| businessEntityTk | 整數 | 業務實體技術金鑰 
+
+
+| k8sNodeTk | 整數 | Kubernetes 節點技術金鑰 
+
+
+| storageAccessType | 字串 | 儲存存取類型 
+
+
+| capacityType | 字串 | 容量類型 
+
+
+| 實際 MB | 長 | 實際容量 (MB) 
+
+
+| 已配置 MB | 長 | 已配置容量 (MB) 
+|===
+*關係：*
+
+* internal_volume_dimension （多對一）： `internalVolumeTk` -> `internal_volume_dimension.tk`
+* storage_dimension（多對一）： `storageTk` -> `storage_dimension.tk`
+* business_entity_dimension （多對一）： `businessEntityTk` -> `business_entity_dimension.tk`
+* k8s_node_dimension（多對一）： `k8sNodeTk` -> `k8s_node_dimension.tk`
+* host_group_dimension （多對一）： `hostGroupTk` -> `host_group_dimension.tk`
+* vm_dimension （多對一）： `vmTk` -> `vm_dimension.tk`
+* application_group_dimension （多對一）： `applicationGroupTk` -> `application_group_dimension.tk`
+* service_level_dimension （多對一）： `serviceLevelTk` -> `service_level_dimension.tk`
+* capacity_type （多對一）：  `capacityType` -> `capacity_type.type`
+* tier_dimension（多對一）： `tierTk` -> `tier_dimension.tk`
+* application_dimension（多對一）： `applicationTk` -> `application_dimension.tk`
+* datastore_dimension（多對一）： `dataStoreTk` -> `datastore_dimension.tk`
+* qtree_dimension （多對一）： `qtreeTk` -> `qtree_dimension.tk`
+* host_dimension（多對一）： `hostTk` -> `host_dimension.tk`
+* date_dimension （多對一）： `dateTk` -> `date_dimension.tk`
+
+
+'''
+
+
+=== vm_dimension
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| tk | 整數 | 技術金鑰 
+
+
+| 姓名 | 字串 | 虛擬機器名稱 
+
+
+| naturalKey | 字串 | 自然鍵 
+
+
+| 作業系統 | 字串 | 作業系統 
+
+
+| virtualCenterIp | 字串 | vCenter IP 位址 
+
+
+| ips | 字串 | IP 位址 
+
+
+| url | 字串 | 參考 URL 
+
+
+| id | 長 | 唯一識別碼 
+
+
+| 最新 | 字串 | 最新旗標 
+
+
+| dateTk | 整數 | 日期技術金鑰 
+|===
+*關係：*
+
+* vm_capacity_fact（一對多）： `tk` <- `vm_capacity_fact.vmTk`
+
+
+'''
+
+
+=== Volume 容量事實
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| volumeTk | 整數 | Volume 技術金鑰 
+
+
+| chargebackFactTk | 整數 | 退款事實技術金鑰 
+
+
+| storageAndSpFactTk | 整數 | 儲存和資源池事實技術金鑰 
+
+
+| hostTk | 整數 | 主機技術金鑰 
+
+
+| storageTk | 整數 | 儲存技術金鑰 
+
+
+| hostGroupTk | 整數 | 主機群組技術金鑰 
+
+
+| tierTk | 整數 | 層級技術金鑰 
+
+
+| serviceLevelTk | 整數 | 服務層級技術金鑰 
+
+
+| storagePoolTk | 整數 | 儲存資源池技術金鑰 
+
+
+| internalVolumeTk | 整數 | 內部容量技術金鑰 
+
+
+| qtreeTk | 整數 | Qtree 技術金鑰 
+
+
+| k8sNamespaceTk | 整數 | Kubernetes 命名空間技術金鑰 
+
+
+| k8sNamespaceGroupTk | 整數 | Kubernetes 命名空間群組技術金鑰 
+
+
+| isVirtual | 字串 | 虛擬旗標 
+
+
+| isBackend | 字串 | 後端標誌 
+
+
+| protectionType | 字串 | 保護類型 
+
+
+| isAccessed | 字串 | 已存取旗標 
+
+
+| isOrphaned | 字串 | 孤立旗標 
+
+
+| isProtection | 字串 | 保護標誌 
+
+
+| isUnused | 字串 | 未使用的標誌 
+
+
+| 已配置容量 MB | 長 | 已配置容量 (MB) 
+
+
+| 已存取容量 MB | 長 | 已訪問容量 (MB) 
+
+
+| 孤立容量 MB | 長 | 孤立容量 (MB) 
+
+
+| 保護容量 MB | 長 | 保護容量 (MB) 
+
+
+| 未使用容量 MB | 長 | 未使用的容量 (MB) 
+
+
+| daysSinceLastAccessed | 整數 | 上次存取後的天數 
+|===
+'''
+
+
+=== volume_dimension
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| tk | 整數 | 技術金鑰 
+
+
+| storageIdentifier | 字串 | 儲存識別碼 
+
+
+| 姓名 | 字串 | 磁碟區名稱 
+
+
+| 標籤 | 字串 | 磁碟區標籤 
+
+
+| thinProvisioned | 字串 | 精簡配置標誌 
+
+
+| 類型 | 字串 | 磁碟區類型 
+
+
+| isVirtual | 字串 | 虛擬旗標 
+
+
+| 中繼資料 | 字串 | 中繼資料旗標 
+
+
+| 快照 | 字串 | 快照標誌 
+
+
+| technologyType | 字串 | 技術類型 
+
+
+| uuid | 字串 | 唯一識別符 
+
+
+| isMainframe | 字串 | 大型主機旗標 
+
+
+| url | 字串 | 參考 URL 
+
+
+| id | 長 | 唯一識別碼 
+
+
+| 最新 | 字串 | 最新旗標 
+
+
+| dateTk | 整數 | 日期技術金鑰 
+
+
+| 商業實體 | 字串 | 業務實體註釋 
+
+
+| 層級 | 字串 | 層級註釋 
+|===
+*關係：*
+
+* volume_history_capacity_fact（一對多）： `tk` <- `volume_history_capacity_fact.volumeTk`
+
+
+'''
+
+
+=== 目前容量事實
+
+*主鍵：* volumeId
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| chargebackFactTk | 整數 | 退款事實技術金鑰 
+
+
+| volumeId | 長 | 磁碟區 ID 
+
+
+| storageId | 長 | 儲存 ID 
+
+
+| volumeName | 字串 | 磁碟區名稱 
+
+
+| volumeType | 字串 | 磁碟區類型 
+
+
+| thinProvisioned | 字串 | 精簡配置標誌 
+
+
+| isVirtual | 字串 | 虛擬旗標 
+
+
+| 快照 | 字串 | 快照標誌 
+
+
+| technologyType | 字串 | 技術類型 
+
+
+| 實體可用 MB | 長 | 物理可用容量 (MB) 
+
+
+| 實體原始 MB | 長 | 物理原始容量 (MB) 
+
+
+| 已配置可用 MB | 長 | 已配置可用容量 (MB) 
+
+
+| 已配置的原始 MB | 長 | 已配置原始容量 (MB) 
+|===
+*關係：*
+
+* chargeback_fact （多對一）： `chargebackFactTk` -> `chargeback_fact.tk`
+
+
+'''
+
+
+=== volume_history_capacity_fact
+
+*主鍵：* tk、dateTk
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| tk | 整數 | 技術金鑰 
+
+
+| dateTk | 整數 | 日期技術金鑰 
+
+
+| volumeTk | 整數 | Volume 技術金鑰 
+
+
+| chargebackFactTk | 整數 | 退款事實技術金鑰 
+
+
+| storageAndSpFactTk | 整數 | 儲存和資源池事實技術金鑰 
+
+
+| hostTk | 整數 | 主機技術金鑰 
+
+
+| storageTk | 整數 | 儲存技術金鑰 
+
+
+| hostGroupTk | 整數 | 主機群組技術金鑰 
+
+
+| tierTk | 整數 | 層級技術金鑰 
+
+
+| serviceLevelTk | 整數 | 服務層級技術金鑰 
+
+
+| storagePoolTk | 整數 | 儲存資源池技術金鑰 
+
+
+| internalVolumeTk | 整數 | 內部容量技術金鑰 
+
+
+| qtreeTk | 整數 | Qtree 技術金鑰 
+
+
+| k8sNamespaceTk | 整數 | Kubernetes 命名空間技術金鑰 
+
+
+| k8sNamespaceGroupTk | 整數 | Kubernetes 命名空間群組技術金鑰 
+
+
+| isVirtual | 字串 | 虛擬旗標 
+
+
+| isBackend | 字串 | 後端標誌 
+
+
+| protectionType | 字串 | 保護類型 
+
+
+| isAccessed | 字串 | 已存取旗標 
+
+
+| isOrphaned | 字串 | 孤立旗標 
+
+
+| isProtection | 字串 | 保護標誌 
+
+
+| isUnused | 字串 | 未使用的標誌 
+
+
+| isMasked | 字串 | 遮罩旗標 
+
+
+| isMapped | 字串 | 映射標誌 
+
+
+| 已配置容量 MB | 長 | 已配置容量 (MB) 
+
+
+| 已存取容量 MB | 長 | 已訪問容量 (MB) 
+
+
+| 孤立容量 MB | 長 | 孤立容量 (MB) 
+
+
+| 保護容量 MB | 長 | 保護容量 (MB) 
+
+
+| 未使用容量 MB | 長 | 未使用的容量 (MB) 
+
+
+| 已消耗容量 MB | 長 | 已用容量（MB） 
+
+
+| daysSinceLastAccessed | 整數 | 上次存取後的天數 
+|===
+*關係：*
+
+* chargeback_fact （多對一）： `chargebackFactTk` -> `chargeback_fact.tk`
+* internal_volume_dimension （多對一）： `internalVolumeTk` -> `internal_volume_dimension.tk`
+* storage_dimension（多對一）： `storageTk` -> `storage_dimension.tk`
+* storage_and_storage_pool_capacity_fact （多對一）： `storageAndSpFactTk` -> `storage_and_storage_pool_capacity_fact.tk`
+* host_group_dimension （多對一）： `hostGroupTk` -> `host_group_dimension.tk`
+* k8s_namespace_group_dimension（多對一）： `k8sNamespaceGroupTk` -> `k8s_namespace_group_dimension.tk`
+* service_level_dimension （多對一）： `serviceLevelTk` -> `service_level_dimension.tk`
+* tier_dimension（多對一）： `tierTk` -> `tier_dimension.tk`
+* storage_pool_dimension （多對一）： `storagePoolTk` -> `storage_pool_dimension.tk`
+* qtree_dimension （多對一）： `qtreeTk` -> `qtree_dimension.tk`
+* host_dimension（多對一）： `hostTk` -> `host_dimension.tk`
+* date_dimension （多對一）： `dateTk` -> `date_dimension.tk`
+* volume_dimension（多對一）： `volumeTk` -> `volume_dimension.tk`
+
+
+'''
+
+
+=== volume_last_accessed_time
+
+*主鍵：* volumeName、storageIdentifier
+
+[cols="1,1,2"]
+|===
+| 場地 | 類型 | 描述 
+
+
+| volumeId | 長 | 磁碟區 ID 
+
+
+| volumeName | 字串 | 磁碟區名稱 
+
+
+| storageIdentifier | 字串 | 儲存識別碼 
+
+
+| lastAccessed | DateTimeOffset | 最後存取時間戳記 
+|===
+'''

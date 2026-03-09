@@ -17,3 +17,10 @@ keywords: coming soon, preview,
 Data Infrastructure Insights以預覽的方式突出顯示新特性和功能。預覽功能在有限的環境或有限的容量下可用。
 
 如果您有興趣預覽其中一個或多個功能，請聯絡NetApp銷售團隊以取得更多資訊。
+
+
+
+== 目前預覽：
+
+* link:ai_for_dii_overview.html["Data Infrastructure Insights AI 助理"] 預覽。
+
