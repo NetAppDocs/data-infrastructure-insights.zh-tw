@@ -47,9 +47,6 @@ Data Infrastructure Insights支援的數據收集器的字母列表：
 | link:task_dc_ms_azure.html["Azure VM 和 VHD"] | 基礎設施 
 
 
-| link:task_dc_brocade_bna.html["Brocade網路顧問 (BNA)"] | 基礎設施 
-
-
 | link:task_dc_brocade_fc_switch.html["Brocade光纖通道交換機"] | 基礎設施 
 
 
@@ -126,9 +123,6 @@ Data Infrastructure Insights支援的數據收集器的字母列表：
 
 
 | link:task_config_telegraf_flink.html["Flink"] | 服務 
-
-
-| link:task_dc_fujitsu_eternus.html["富士通 ETERNUS DX"] | 基礎設施 
 
 
 | link:task_dc_google_cloud.html["Google 運算與儲存"] | 基礎設施 
@@ -221,12 +215,6 @@ Data Infrastructure Insights支援的數據收集器的字母列表：
 | link:task_dc_na_cloud_volumes_ontap.html["NetApp Cloud Volumes ONTAP"] | 基礎設施 
 
 
-| link:task_dc_na_cloud_connection.html["適用於ONTAP 9.9+ 的NetApp雲端連接"] | 基礎設施 
-
-
-| link:task_dc_na_7mode.html["NetApp Data ONTAP 7-Mode"] | 基礎設施 
-
-
 | link:task_dc_na_eseries.html["NetApp E系列"] | 基礎設施 
 
 
@@ -282,6 +270,9 @@ Data Infrastructure Insights支援的數據收集器的字母列表：
 
 
 | link:task_config_telegraf_puppetagent.html["傀儡代理"] | 服務 
+
+
+| link:task_dc_pure_flashblade.html["Pure FlashBlade"] | 基礎設施 
 
 
 | link:task_dc_pure_flasharray.html["Pure Storage FlashArray"] | 基礎設施 

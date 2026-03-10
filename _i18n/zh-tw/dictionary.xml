@@ -3841,8 +3841,6 @@
   <block id="c570274e8fb013719523945c6aff02f1" category="cell"><block ref="c570274e8fb013719523945c6aff02f1" category="inline-link-macro-rx"></block></block>
   <block id="4f24197d0503e262d29c81199ac0627c" category="inline-link-macro">Azure VM 和 VHD</block>
   <block id="e00ad4181c9c1bb044b8dda82a2eb37c" category="cell"><block ref="e00ad4181c9c1bb044b8dda82a2eb37c" category="inline-link-macro-rx"></block></block>
-  <block id="c3dc9f108879520f071bfe791b64d931" category="inline-link-macro">Brocade網路顧問 (BNA)</block>
-  <block id="72981d1d7e5b9b8d922639718df6b13d" category="cell"><block ref="72981d1d7e5b9b8d922639718df6b13d" category="inline-link-macro-rx"></block></block>
   <block id="0491f979e459c21ca1a650d5bee1bedf" category="inline-link-macro">Brocade光纖通道交換機</block>
   <block id="6ae88aee808190aba1b5e4acb58392b7" category="cell"><block ref="6ae88aee808190aba1b5e4acb58392b7" category="inline-link-macro-rx"></block></block>
   <block id="764f447ccb3bf87ad75ec71c633b9966" category="inline-link-macro">Brocade FOS REST</block>
@@ -3895,8 +3893,6 @@
   <block id="3a1038b8fbe1e88b4f3c1b247da07798" category="cell"><block ref="3a1038b8fbe1e88b4f3c1b247da07798" category="inline-link-macro-rx"></block></block>
   <block id="39ba7675313c799c9b706c8928b535f6" category="inline-link-macro">Flink</block>
   <block id="f1161d8aad902843d64ca7e6b3db0f14" category="cell"><block ref="f1161d8aad902843d64ca7e6b3db0f14" category="inline-link-macro-rx"></block></block>
-  <block id="0ac136d62167ae2749430a7b083e6d88" category="inline-link-macro">富士通 ETERNUS DX</block>
-  <block id="99a28d8d1439c7da877285fec312185a" category="cell"><block ref="99a28d8d1439c7da877285fec312185a" category="inline-link-macro-rx"></block></block>
   <block id="12087a5da9bcdb90a9ac3a7931c38b46" category="inline-link-macro">Google 運算與儲存</block>
   <block id="8e0a555918ddd0d3171e923d8ec8927b" category="cell"><block ref="8e0a555918ddd0d3171e923d8ec8927b" category="inline-link-macro-rx"></block></block>
   <block id="1215f8190533dfdf63d2224a6d88266f" category="inline-link-macro">Google Cloud NetApp Volumes</block>
@@ -3957,10 +3953,6 @@
   <block id="4d9746bceefe2b6bd2586d1c3e4d2733" category="cell"><block ref="4d9746bceefe2b6bd2586d1c3e4d2733" category="inline-link-macro-rx"></block></block>
   <block id="b988e43525055930d8d214d3116d4c04" category="inline-link-macro">NetApp Cloud Volumes ONTAP</block>
   <block id="ecf8390ebf4bfbf85b7308b7ca58aaa1" category="cell"><block ref="ecf8390ebf4bfbf85b7308b7ca58aaa1" category="inline-link-macro-rx"></block></block>
-  <block id="acb242e4a47b7f1537825e1c4eacc87a" category="inline-link-macro">適用於ONTAP 9.9+ 的NetApp雲端連接</block>
-  <block id="32b322f0c18e116c5d878598d8fedae2" category="cell"><block ref="32b322f0c18e116c5d878598d8fedae2" category="inline-link-macro-rx"></block></block>
-  <block id="995d9995da501d3734932d95524f1a35" category="inline-link-macro">NetApp Data ONTAP 7-Mode</block>
-  <block id="2e59af567907cf6ad1ae87c0cac8e6dd" category="cell"><block ref="2e59af567907cf6ad1ae87c0cac8e6dd" category="inline-link-macro-rx"></block></block>
   <block id="0311befd4f8a4eb64d5f02957a8b1d99" category="inline-link-macro">NetApp E系列</block>
   <block id="263caec9c413672e1829ba1b317a5b42" category="cell"><block ref="263caec9c413672e1829ba1b317a5b42" category="inline-link-macro-rx"></block></block>
   <block id="8fd194517d64c215a9c8b5e2b8d0f67e" category="inline-link-macro">NetApp E系列REST</block>
@@ -9156,7 +9148,6 @@
   <block id="b9249fd328314d6a7d2f42e8e3c6b5d4" category="summary">配置 VPLEX 資料收集器。</block>
   <block id="60681db287042fdbd55c4c2ed95ce0f0" category="doc">配置 EMC VPLEX 資料收集器</block>
   <block id="dbbc7759d6fa847682027ce2d68707f9" category="paragraph">此資料收集器從 EMC VPLEX 儲存系統取得庫存和效能資料。對於配置，資料收集器需要 VPLEX 伺服器的 IP 位址和管理層級的網域帳戶。</block>
-  <block id="8f3f7ce90dce9ce91bcc07b31bdc1b6b" category="admonition">Data Infrastructure Insights從 Vplex 叢集進行效能收集需要效能存檔服務正常運行，以便填充Data Infrastructure Insights透過基於 SCP 的檔案副本檢索的 .CSV 檔案和日誌。 NetApp發現許多 Vplex 韌體升級/管理站更新將導致此功能無法運作。計劃進行此類升級的客戶可能希望主動詢問 Dell/EMC，他們的計劃升級是否會導致此功能無法運行，如果是，他們如何重新啟用它以最大限度地減少性能可見性的差距？  Cloud Insight 的 Vplex 效能程式碼將在每次輪詢時評估所有預期檔案是否存在，以及它們是否正確更新；如果它們遺失或過時， Data Infrastructure Insights將記錄效能收集失敗。</block>
   <block id="b9e79e40b10e4cd3212004f5560b2da1" category="paragraph">Data Infrastructure Insightst 從 VPLEX 資料收集器取得以下清單資訊。對於所取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：</block>
   <block id="7bfa30721c5e726ff17e3f972237a82c" category="cell">引擎</block>
   <block id="4aa531638ba8a3023953a131c634e8d1" category="cell">設備、系統範圍</block>
@@ -10222,7 +10213,6 @@
   <block id="755b12aafe5dc12ab98be034e0bc593a" category="cell">“登入憑證無效”，錯誤訊息為“政策不允許”或“您無權”</block>
   <block id="e3023c7402b94962861565244cb9f3d0" category="cell">透過 Pure http 介面驗證 Pure 使用者帳號和密碼</block>
   <block id="ea0b91ea0d8c2da2db5e90fb9a4e9e26" category="doc">Pure Storage FlashBlade資料收集器</block>
-  <block id="0dc4fd6064fea67266d1837f3d33b6e0" category="paragraph">Data Infrastructure Insights使用 Pure Storage FlashBlade 資料收集器從公開其 REST API 版本 2 的 FlashBlade 叢集收集庫存和效能數據</block>
   <block id="26c7e129f928f6ba8485b8308659b929" category="cell">物件儲存桶</block>
   <block id="c307e1b8edd2b5d784d81d211f67c2e5" category="list-text">儲存系統 IP 位址或完全限定域名</block>
   <block id="ae4fab3dbcbe018dadb4c33b8b70b2e8" category="list-text">API 令牌，理想情況下具有無限的生命週期。只讀等級的使用者就足夠了。</block>
@@ -12376,7 +12366,6 @@
   <block id="bb88c75c573c51be16c7d85804e7a9fe" category="sidebar">Nutanix</block>
   <block id="30162ed78b6c10f731411f2fc440c24f" category="sidebar">甲骨文</block>
   <block id="d30973809f2e4238b7eb2bac9241674c" category="sidebar">純的</block>
-  <block id="1d9fc183665bd1e195391190be506894" category="sidebar">紅帽</block>
   <block id="38d38399d4a7514463d665125ae50a4a" category="sidebar">Rubrik CDM</block>
   <block id="56079badd056a19303cc26e6a4fcc7e0" category="sidebar">VMware</block>
   <block id="8683de0aa24eead7d9ee8d3fdaa00cbc" category="sidebar">資料收集器參考 - 服務</block>
@@ -14658,4 +14647,10 @@
   <block id="e30ec09a4c79b55e1ccfc1955c76c379" category="cell">switchLevel</block>
   <block id="e10c8c70fc9c70d82df6e3c2ea10ceed" category="cell">切換層級</block>
   <block id="549ae8b6dea4926a2af206c5d7300fc5" category="paragraph">在使用 Data Infrastructure Insights 之前，您必須先在 *NetApp Console* 入口網站註冊。如果您已有 NetApp Console 登入帳號，只需幾個簡單的步驟即可開始 Data Infrastructure Insights 的免費試用。</block>
+  <block id="93e49907cf8d9ecec89d856c3d49fb2f" category="inline-link-macro">Pure FlashBlade</block>
+  <block id="f92f77015be3ec66c79ba43a2aec5f69" category="cell"><block ref="f92f77015be3ec66c79ba43a2aec5f69" category="inline-link-macro-rx"></block></block>
+  <block id="52e4ed377cdb874dec547eb79615f673" category="admonition">Data Infrastructure Insights 從 VPLEX 叢集收集效能資料需要效能歸檔服務正常運行，以便填充 Data Infrastructure Insights 透過基於 SCP 的檔案副本擷取的 .CSV 檔案和日誌。NetApp 觀察到，許多 VPLEX 韌體升級/管理站更新會導致此功能失效。計劃進行此類升級的客戶可能需要主動詢問 Dell/EMC，其計劃的升級是否會導致此功能失效，如果失效，如何重新啟用該功能以最大程度地減少效能可見性方面的不足？Cloud Insight 的 VPLEX 效能程式碼會在每次輪詢時評估所有預期檔案是否存在以及它們是否正在正確更新；如果缺少檔案或檔案已過期，Data Infrastructure Insights 將記錄效能收集失敗。</block>
+  <block id="de9fcff157c3fd05f707a7b227a45275" category="summary">配置 Pure FlashBlade Storage 資料收集器</block>
+  <block id="c0c126a33a6cd3661eae0fb5eca89c2d" category="paragraph">Data Infrastructure Insights 使用 Pure Storage FlashBlade 資料收集器從公開其 REST API 版本 2 的 FlashBlade 叢集收集庫存和效能資料。</block>
+  <block id="80e910f35b12e9c61335fa88de36edd0" category="sidebar">Red Hat Virtualization</block>
 </blocks>

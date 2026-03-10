@@ -447,7 +447,7 @@ sidebar:
         url: "/task_dc_oracle_zfs.html"
       - title: 純的
         url: "/task_dc_pure_flasharray.html"
-      - title: 紅帽
+      - title: Red Hat Virtualization
         url: "/task_dc_redhat_virtualization.html"
       - title: Rubrik CDM
         url: "/task_dc_rubrik_cdm.html"

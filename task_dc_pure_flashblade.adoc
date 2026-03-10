@@ -1,16 +1,20 @@
 ---
 sidebar: sidebar 
 permalink: task_dc_pure_flashblade.html 
-keywords: data collector, Pure Storage, pure, FlashBlade 
-summary: 配置 Pure Storage 資料收集器。 
+keywords: data collector, Pure Storage, pure, FlashBlade, flashblade 
+summary: 配置 Pure FlashBlade Storage 資料收集器 
 ---
 = Pure Storage FlashBlade資料收集器
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]
-Data Infrastructure Insights使用 Pure Storage FlashBlade 資料收集器從公開其 REST API 版本 2 的 FlashBlade 叢集收集庫存和效能數據
+Data Infrastructure Insights 使用 Pure Storage FlashBlade 資料收集器從公開其 REST API 版本 2 的 FlashBlade 叢集收集庫存和效能資料。
 
 
 
@@ -18,7 +22,7 @@ Data Infrastructure Insights使用 Pure Storage FlashBlade 資料收集器從公
 
 對於Data Infrastructure Insights所取得的每種資產類型，都會顯示該資產最常用的術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 供應商/型號術語 | Data Infrastructure Insights術語 
 
@@ -55,7 +59,7 @@ Data Infrastructure Insights使用 Pure Storage FlashBlade 資料收集器從公
 
 == 配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -72,7 +76,7 @@ Data Infrastructure Insights使用 Pure Storage FlashBlade 資料收集器從公
 
 == 進階配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -98,7 +102,7 @@ Data Infrastructure Insights使用 Pure Storage FlashBlade 資料收集器從公
 
 === 存貨
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 問題： | 試試一下： 
 

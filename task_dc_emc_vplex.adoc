@@ -1,19 +1,23 @@
 ---
 sidebar: sidebar 
 permalink: task_dc_emc_vplex.html 
-keywords: data collector, VPLEX, EMC 
+keywords: data collector, VPLEX, EMC, vplex, 
 summary: 配置 VPLEX 資料收集器。 
 ---
 = 配置 EMC VPLEX 資料收集器
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]
 此資料收集器從 EMC VPLEX 儲存系統取得庫存和效能資料。對於配置，資料收集器需要 VPLEX 伺服器的 IP 位址和管理層級的網域帳戶。
 
 
-NOTE: Data Infrastructure Insights從 Vplex 叢集進行效能收集需要效能存檔服務正常運行，以便填充Data Infrastructure Insights透過基於 SCP 的檔案副本檢索的 .CSV 檔案和日誌。 NetApp發現許多 Vplex 韌體升級/管理站更新將導致此功能無法運作。計劃進行此類升級的客戶可能希望主動詢問 Dell/EMC，他們的計劃升級是否會導致此功能無法運行，如果是，他們如何重新啟用它以最大限度地減少性能可見性的差距？  Cloud Insight 的 Vplex 效能程式碼將在每次輪詢時評估所有預期檔案是否存在，以及它們是否正確更新；如果它們遺失或過時， Data Infrastructure Insights將記錄效能收集失敗。
+NOTE: Data Infrastructure Insights 從 VPLEX 叢集收集效能資料需要效能歸檔服務正常運行，以便填充 Data Infrastructure Insights 透過基於 SCP 的檔案副本擷取的 .CSV 檔案和日誌。NetApp 觀察到，許多 VPLEX 韌體升級/管理站更新會導致此功能失效。計劃進行此類升級的客戶可能需要主動詢問 Dell/EMC，其計劃的升級是否會導致此功能失效，如果失效，如何重新啟用該功能以最大程度地減少效能可見性方面的不足？Cloud Insight 的 VPLEX 效能程式碼會在每次輪詢時評估所有預期檔案是否存在以及它們是否正在正確更新；如果缺少檔案或檔案已過期，Data Infrastructure Insights 將記錄效能收集失敗。
 
 
 
