@@ -14542,4 +14542,9 @@
   <block id="e62768229563f11ca5fd49a1482ae7a8" category="list-text">透過 REST API 經由連接埠 443 取得 Red Hat OpenShift Virtualization 伺服器的 IP 位址</block>
   <block id="07bc27033bbe069dd4fcfa7e7287df66" category="cell">用於與 RHOV 進行 HTTPS 通訊的連接埠</block>
   <block id="db2f9342403e0e147464a85b899ec12c" category="sidebar">Red Hat OpenShift Virtualization</block>
+  <block id="cc7e5505fa4bc50f5457fa8f8b55f94f" category="section-title">2026 年 3 月</block>
+  <block id="c62d7b96ff17fd52f5c5b5957d12ce47" category="section-title">DII 的 AI 助手開放給所有人！</block>
+  <block id="dd0f9294fa313d494966ae16cbe89435" category="paragraph">Data Infrastructure Insights AI 助理現已推出預覽版，並包含以下增強功能：</block>
+  <block id="e609c64ff8e8c15f1ce845903ca2db7e" category="list-text">Azure 區域可用性：對於 DII 網站託管在 Azure 上的客戶，Data Infrastructure Insights 助理現在已準備好為您提供協助。</block>
+  <block id="056a97d89a4b6d30acf8e9b86d3ed172" category="list-text">最多可取得 7 天的資料：Assistant 現在可以存取最多 7 天的高解析度指標，從而實現更廣泛的資料分析和洞察。</block>
 </blocks>

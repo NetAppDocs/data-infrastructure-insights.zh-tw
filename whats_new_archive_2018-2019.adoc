@@ -18,6 +18,577 @@ NetApp不斷改進和增強其產品和服務。以下是Data Infrastructure Ins
 
 
 
+== 2020年12月
+
+
+
+=== 更簡單的 Kubernetes 安裝
+
+Kubernetes Agent 安裝已簡化，需要更少的使用者互動。link:task_config_telegraf_agent_k8s.html["安裝 Kubernetes 代理"]現在包括 Kubernetes 資料收集。
+
+'''
+
+
+== 2020年11月
+
+
+
+=== 附加儀表板
+
+以下新的以ONTAP為中心的儀表板已新增至圖庫並可供匯入：
+
+* ONTAP：整體效能和容量
+* ONTAP FAS/ AFF - 容量利用率
+* ONTAP FAS/ AFF - 叢集容量
+* ONTAP FAS/ AFF - 效率
+* ONTAP FAS/ AFF - FlexVol效能
+* ONTAP FAS/ AFF - 節點操作/最佳點
+* ONTAP FAS/ AFF - 預處理容量效率
+* ONTAP：網路連接埠活動
+* ONTAP：節點協定效能
+* ONTAP：節點工作負載效能（前端）
+* ONTAP：處理器
+* ONTAP：SVM 工作負載效能（前端）
+* ONTAP：磁碟區工作負載效能（前端）
+
+
+
+
+=== 表格小工具中的列重命名
+
+您可以透過在編輯模式下開啟表格小工具並點擊列頂部的選單來重新命名表格小工具的_Metrics and Attributes_部分中的欄位。輸入新名稱並按一下“儲存”，或按一下“重設”將列設定回原始名稱。
+
+請注意，這只會影響表格小工具中列的顯示名稱；度量/屬性名稱在底層資料本身中不會改變。
+
+image:Table_Widget_Column_Rename.png["表格小工具重命名列"]
+
+'''
+
+
+== 2020年10月
+
+
+
+=== 集成資料的預設擴展
+
+表格小部件分組現在允許 Kubernetes、 ONTAP高級資料和代理節點指標的預設擴展。例如，如果您按「_Cluster_」將 Kubernetes「_Nodes_」分組，您將在表格中看到每個叢集的一行。然後，您可以展開每個叢集行來查看節點物件的清單。
+
+
+
+=== 基礎版技術支持
+
+除標準版和高級版外， Cloud Insights基本版的訂閱者現在還可以獲得技術支援。此外， Cloud Insights簡化了建立NetApp支援票證的工作流程。
+
+
+
+=== Cloud Secure公用 API
+
+Cloud Secure支持link:concept_cs_api.html["REST API"]用於存取活動和警報資訊。這是透過使用透過Cloud Secure Admin UI 建立的 API 存取令牌來實現的，然後使用這些令牌來存取 REST API。這些 REST API 的 Swagger 文件與Cloud Secure整合。
+
+'''
+
+
+== 2020年9月
+
+
+
+=== 整合資料查詢頁面
+
+Cloud Insights查詢頁面支援整合資料（即來自 Kubernetes、 ONTAP Advanced Metrics 等）。處理整合資料時，查詢結果表顯示「分割畫面」視圖，左側顯示物件/分組，右側顯示物件資料（屬性/指標）。您也可以選擇多個屬性來將整合資料分組。
+
+image:QueryPageIntegrationData.png["顯示集成資料的查詢"]
+
+
+
+=== 表格小工具中的單位顯示格式
+
+現在，表格小工具中可以對顯示指標/計數器資料（例如，千兆位元組、MB/秒等）的欄位使用單位顯示格式。若要變更指標的顯示單位，請按一下列標題中的「三個點」選單，然後選擇「單位顯示」。您可以從任何可用的單位中進行選擇。可用單位將根據顯示列中的度量資料類型而有所不同。
+
+image:TableWidgetUnitManagement1.png["表格部件單元管理"]
+
+
+
+=== 採集單元詳情頁面
+
+採購單位現在有自己的登陸頁面，為每個 AU 提供有用的詳細資訊以及有助於排除故障的資訊。這link:task_configure_acquisition_unit.html#viewing-au-details["AU 詳情頁面"]提供 AU 資料收集器的連結以及有用的狀態資訊。
+
+
+
+=== 已刪除Cloud Secure Docker 依賴項
+
+Cloud Secure 對 Docker 的依賴已被消除。  Cloud Secure代理安裝不再需要 Docker。
+
+
+
+=== 報告使用者角色
+
+如果您擁有帶有報告功能的Cloud Insights Premium 版本，則您環境中的每個Cloud Insights用戶也都擁有到報告應用程式（即 Cognos）的單一登入 (SSO)；透過點擊選單中的 *報告* 鏈接，他們將自動登入報告。
+
+他們在Cloud Insights中的使用者角色決定了他們的link:reporting_user_roles.html["報告使用者角色"]：
+
+|===
+
+
+| Cloud Insights角色 | 報告角色 | 報告權限 
+
+
+| 客人 | 消費者 | 可以查看、排程和執行報表並設定個人偏好，例如語言和時區。消費者無法建立報告或執行管理任務。 
+
+
+| 使用者 | 作者 | 可以執行所有消費者功能以及建立和管理報告和儀表板。 
+
+
+| 行政人員 | 行政人員 | 可以執行所有作者功能以及所有管理任務，例如報告配置以及報告任務的關閉和重新啟動。 
+|===
+
+NOTE: Cloud Insights報告適用於 500 個 MU 或更多的環境。
+
+
+IMPORTANT: 如果您是高級版的現有客戶，並希望保留您的報告，請閱讀此內容link:reporting_user_roles.html["現有客戶須知"]。
+
+
+
+=== 資料擷取的新 API 類別
+
+Cloud Insights新增了 *資料擷取* API 類別，讓您可以更好地控制自訂資料和代理程式。可以在Cloud Insights中透過導覽至 *管理 > API 存取* 並點擊 _API 文件_ 連結來找到此 API 類別和其他 API 類別的詳細文件。您也可以在註釋欄位中為 AU 附加註釋，該註釋會顯示在 AU 詳細資料頁面和 AU 清單頁面上。
+
+'''
+
+
+== 2020年8月
+
+
+
+=== 監控和警報
+
+除了目前為儲存物件、虛擬機器、EC2 和連接埠設定效能策略的功能外， Cloud Insights標準版現在還包含以下功能link:task_create_monitor.html["配置監視器"]用於 Kubernetes、 ONTAP高階指標和 Telegraf 外掛程式的整合資料閾值。您只需為想要觸發警報的每個物件指標建立監視器，設定警告等級或嚴重等級閾值的條件，並指定每個等級所需的電子郵件收件者。然後你可以link:task_view_and_manage_alerts.html["查看和管理警報"]追蹤趨勢或解決問題。
+
+image:define_monitor_conditions_2.png["監控條件"]
+
+'''
+
+
+== 2020年7月
+
+
+
+=== Cloud Secure_拍攝快照_操作
+
+當偵測到惡意活動時， Cloud Secure會自動拍攝快照來保護您的數據，確保您的資料安全備份。
+
+您可以定義自動回應策略，當偵測到勒索軟體攻擊或其他異常使用者活動時拍攝快照。您也可以從警報頁面手動拍攝快照。
+
+自動拍攝快照：image:AlertActionsAutomaticExample.png["警報行動螢幕，1000"]
+
+手動快照：image:AlertActionsExample.png["警報行動螢幕，1000"]
+
+
+
+=== 指標/計數器更新
+
+以下容量計數器可用於Cloud Insights UI 和 REST API。以前這些計數器僅適用於資料倉儲/報表。
+
+[cols="2*"]
+|===
+| 物件類型 | 櫃檯 
+
+
+| 儲存 | 容量 - 備用原容量 - 故障原始容量 
+
+
+| 儲存池 | 資料容量 - 已使用資料容量 - 其他總容量 - 已使用其他容量 - 總容量 - 原始容量 - 軟限制 
+
+
+| 內部體積 | 資料容量 - 已使用 資料容量 - 總計 其他容量 - 已使用 其他容量 - 總計 複製保存容量 - 總計 
+|===
+
+
+=== Cloud Secure潛在攻擊偵測
+
+Cloud Secure現在可以偵測勒索軟體等潛在攻擊。按一下警報清單頁面中的警報可開啟詳細資訊頁面，其中顯示以下內容：
+
+* 攻擊時間
+* 關聯使用者和文件活動
+* 採取的行動
+* 幫助追蹤可能的安全漏洞的附加資訊
+
+
+顯示潛在勒索軟體攻擊的警報頁面：image:RansomwareAlertExample.png["勒索軟體警報範例"]
+
+潛在勒索軟體攻擊的詳細頁面：image:RansomwareDetailPageExample.png["勒索軟體詳情頁面範例"]
+
+
+
+=== 透過 AWS 訂閱高級版
+
+在Cloud Insights試用期間，您可以link:concept_subscribing_to_cloud_insights.html["自行訂閱"]透過 AWS Marketplace 升級至Cloud Insights標準版或進階版。以前，您只能透過 AWS Marketplace 自行訂閱標準版。
+
+
+
+=== 增強型表格小工具
+
+儀表板/資產頁面表格小工具包括以下增強功能：
+
+* 「分割畫面」檢視：表格小工具在左側顯示物件/分組，在右側顯示物件資料（屬性/指標）。
++
+image:TableWidgetLeftRightPanes.png["顯示左右窗格的表格小工具"]
+
+* 多屬性分組：對於整合資料（Kubernetes、 ONTAP Advanced Metrics、Docker 等），您可以選擇多個屬性進行分組。資料根據您選擇的分組屬性顯示。
++
+使用整合資料分組（在編輯模式下顯示）：image:TableWidgetIntegrationEditMode.png["表格小部件中的整合資料分組"]
+
+* 基礎設施資料（儲存、EC2、VM、連接埠等）的分組與先前一樣，都是透過單一屬性進行的。當按非物件的屬性分組時，表格將允許您展開群組行以查看群組內的所有物件。
++
+使用基礎設施資料分組（以顯示模式顯示）：image:TableWidgetPerformanceData.png["表格小部件中的基礎設施資料分組"]
+
+
+
+
+
+=== 指標過濾
+
+除了在小部件中過濾物件的屬性之外，您現在還可以過濾指標。
+
+image:MetricsFiltering.png["指標過濾"]
+
+處理整合資料（Kubernetes、 ONTAP Advanced Data 等）時，指標過濾會從繪製的資料系列中刪除單一/不匹配的資料點，這與基礎設施資料（儲存、VM、連接埠等）不同，其中篩選器會對資料系列的聚合值進行處理，並可能從圖表中刪除整個物件。
+
+image:IntegrationMetricFilterExample.png["整合指標過濾"]
+
+
+
+=== ONTAP高級計數器數據
+
+Cloud Insights利用 NetApp 的ONTAP特定的 *進階計數器資料*，它提供了從ONTAP設備收集的大量計數器和指標。 ONTAP進階計數器資料可供所有NetApp ONTAP客戶使用。這些指標支援在Cloud Insights小部件和儀表板中實現客製化和廣泛的視覺化。
+
+可以透過在小部件的查詢中搜尋“netapp_ontap”並從計數器中進行選擇來找到ONTAP高級計數器。
+
+image:netapp_ontap counters.png["搜尋ONTAP進階計數器"]
+
+您可以透過輸入計數器名稱的其他部分來最佳化搜尋。例如：
+
+* _lif_
+* _總計的_
+* _offbox_vscan_server_
+* 以及更多
+
+
+image:ONTAP_Widget_Example2.png["ONTAP小工具範例 - WAFL"] image:ONTAP_Widget_Example1.png["ONTAP小工具範例 - Cp 讀取"]
+
+請注意以下事項：
+
+* 新的ONTAP資料收集器將預設啟用進階資料收集。若要為現有的ONTAP資料收集器啟用進階資料收集，請編輯資料收集器並展開「進階配置」部分。
+* 進階資料收集不適用於 7 模式ONTAP。
+
+
+
+
+=== 進階計數器儀錶盤
+
+Cloud Insights隨附各種預先設計的儀表板，可協助您開始視覺化ONTAP進階計數器，以了解「聚合效能」、「磁碟區工作負載」、「處理器活動」等主題。如果您至少配置了一個ONTAP資料收集器，則可以從任何儀表板清單頁面上的儀表板庫匯入這些資料收集器。
+
+
+
+=== 了解更多
+
+有關ONTAP Advanced Data 的更多信息，請訪問以下連結：
+
+* https://mysupport.netapp.com/site/tools/tool-eula/netapp-harvest[]（注意：您需要登入NetApp支援）
+* https://nabox.org/faq/[]
+
+
+
+
+=== 政策和違規菜單
+
+現在可以在「警報」選單下找到「效能策略和違規行為」。政策和違規功能保持不變。
+
+image:PoliciesMenuChange.png["政策和違規菜單"]
+
+
+
+=== 更新的 Telegraf 代理
+
+Telegraf 整合式資料擷取代理程式已更新為link:https://docs.influxdata.com/telegraf/v1.14/["版本 1.14"]，其中包括錯誤修復、安全修復和新插件。
+
+注意：在 Kubernetes 平台上設定 Kubernetes 資料收集器時，您可能會在日誌中看到「HTTP 狀態 403 Forbidden」錯誤，這是由於「clusterrole」屬性中的權限不足造成的。
+
+若要解決此問題，請將下列反白的行新增至端點存取叢集角色的_rules：_部分，然後重新啟動 Telegraf pod。
+
+[listing]
+----
+rules:
+- apiGroups:
+  - ""
+  - apps
+  - autoscaling
+  - batch
+  - extensions
+  - policy
+  - rbac.authorization.k8s.io
+  attributeRestrictions: null
+  resources:
+  - nodes/metrics
+  - nodes/proxy     <== Add this line
+  - nodes/stats
+  - pods            <== Add this line
+  verbs:
+  - get
+  - list            <== Add this line
+----
+'''
+
+
+== 2020年6月
+
+
+
+=== 簡化的資料收集器錯誤報告
+
+使用資料收集器頁面上的「傳送錯誤報告」按鈕可以更輕鬆地報告資料收集器錯誤。點擊該按鈕會將有關錯誤的基本資訊傳送給NetApp ，並提示對問題進行調查。按下後， Cloud Insights確認NetApp已收到通知，且錯誤報告按鈕已停用，以指示已傳送該資料收集器的錯誤報告。此按鈕保持停用狀態，直到瀏覽器頁面刷新為止。
+
+image:DCErrorReportButton.png["錯誤報告按鈕"]
+
+
+
+=== 小部件改進
+
+儀表板小工具已做出以下改進。這些改進被視為預覽功能，可能並不適用於所有Cloud Insights環境。
+
+* 新的物件/指標選擇器：物件（儲存、磁碟、連接埠、節點等）及其相關指標（IOPS、延遲、CPU 數量等）現在可以在具有強大搜尋功能的單一下拉式選單的小部件中使用。您可以在下拉式選單中輸入多個部分術語， Cloud Insights將列出滿足這些術語的所有物件指標。
+
+
+image:Object_Metric_Chooser.png["物件/指標選擇器"]
+
+* 多標籤分組：處理整合資料（Kubernetes 等）時，您可以按多個標籤/屬性對資料進行分組。例如，按 Kubernetes 命名空間和容器名稱匯總記憶體使用量。
+
+
+image:MultipleGroupsIntegrationLineChart.png["顯示整合資料時進行多重分組"]
+
+'''
+
+
+== 2020年5月
+
+
+
+=== 報告使用者角色
+
+已為報告新增了以下角色：
+
+* Cloud Insights消費者：可以運行和查看報告
+* Cloud Insights作者：可以執行消費者功能以及建立和管理報告和儀表板
+* Cloud Insights管理員：可以執行作者功能以及所有管理任務
+
+
+
+
+=== Cloud Secure更新
+
+Cloud Insights包含以下最近的Cloud Secure變更。
+
+在取證 > 活動取證頁面中，我們提供了兩個視圖來分析和調查使用者活動：
+
+* 活動視圖，關注使用者活動（什麼操作？在哪裡演出？ ）
+* 實體視圖，重點放在使用者存取的文件。
+
+
+image:CSActivityForensicsExample.png["實體頁面範例"]
+
+此外，警報電子郵件通知現在包含指向警報頁面的直接連結。
+
+
+
+=== 儀表板分組
+
+儀表板分組可以更好地link:concept_dashboard_features.html#dashboard-groups["儀表板管理"]與您相關的內容。您可以將相關儀表板新增至群組中，以便對儲存裝置或虛擬機器等進行「一站式」管理。
+
+群組是針對每個使用者量身定制的，因此一個人的群組可能與其他人的群組可能不同。您可以根據需要擁有任意數量的群組，並且每個群組中可以包含任意數量的儀表板。
+
+image:DashboardGroupNoPin.png["儀表板組"]
+
+
+
+=== 儀表板固定
+
+您可以固定儀表板，以便收藏夾始終顯示在清單頂部。
+
+image:DashboardPin.png["儀表板圖釘"]
+
+
+
+=== 電視模式和自動刷新
+
+link:concept_dashboard_features.html#tv-mode-and-auto-refresh["電視模式和自動刷新"]允許在儀表板或資產頁面上近乎即時地顯示資料：
+
+* *電視模式*提供整潔的顯示；導航選單被隱藏，為您的資料顯示提供更多的螢幕空間。
+* 儀表板和資產登陸頁面上的小部件中的資料根據所選儀表板時間範圍（或小部件時間範圍，如果設定為覆蓋儀表板時間）確定的刷新間隔（每 10 秒一次）*自動刷新*。
+
+
+電視模式和自動刷新相結合，可以即時查看您的Cloud Insights數據，非常適合無縫演示或內部監控。
+
+'''
+
+
+== 2020年4月
+
+
+
+=== 新的儀表板時間範圍選擇
+
+儀表板和其他雲端洞察頁面的時間範圍選擇現在包括「最近 1 小時」和「最近 15 分鐘」。
+
+
+
+=== Cloud Secure更新
+
+Cloud Insights包含以下最近的Cloud Secure變更。
+
+* 更好的文件和資料夾元資料變更識別，以檢測使用者是否更改了權限、擁有者或群組所有權。
+* 將使用者活動報告匯出為 CSV。
+
+
+Cloud Secure監控並稽核所有使用者對檔案和資料夾的存取操作。活動審計使您能夠遵守內部安全政策，滿足 PCI、GDPR 和 HIPAA 等外部合規性要求，並進行資料外洩和安全事件調查。
+
+
+
+=== 預設儀表板時間
+
+儀表板的預設時間範圍現在是 3 小時而不是 24 小時。
+
+
+
+=== 優化聚合時間
+
+最佳化link:concept_dashboard_features.html#aggregating-data["時間聚合"]時間序列小部件（折線圖、樣條圖、面積圖和堆積面積圖）中的間隔對於 3 小時和 24 小時儀表板/小部件時間範圍來說更為頻繁，從而可以更快地繪製資料圖表。
+
+* 3 小時時間範圍優化為 1 分鐘聚合間隔。以前是 5 分鐘。
+* 24 小時時間範圍優化為 30 分鐘聚合間隔。以前是 1 小時。
+
+
+您仍然可以透過設定自訂間隔來覆蓋最佳化的聚合。
+
+
+
+=== 顯示單元自動格式化
+
+在大多數小工具中， Cloud Insights知道顯示值的基本單位，例如「兆位元組」、「千」、「百分比」、「毫秒 (ms)」等，現在link:concept_dashboard_features.html#choosing-the-unit-for-displaying-data["自動格式化"]將小部件設定為最易讀的單元。例如，1,234,567,890 位元組的資料值將自動格式化為 1.23 吉比位元組。在許多情況下， Cloud Insights知道所取得資料的最佳格式。如果不知道最佳格式，或者您想要覆蓋自動格式的小部件，您可以選擇所需的格式。
+
+image:used_memory_in_bytes_gb.png["小部件中的自動格式，寬度=480"]
+
+
+
+=== 使用 API 導入註釋
+
+透過Cloud Insights Premium Edition 強大的 API，您現在可以link:task_annotation_import.html["導入註釋"]並使用 .CSV 檔案將它們指派給物件。您也可以以相同的方式匯入應用程式並指派業務實體。
+
+image:api_assets_import.png["導入註釋"]
+
+
+
+=== 更簡單的小工具選擇器
+
+新的小部件選擇器可在單一視圖中一次顯示所有小部件類型，讓用戶更輕鬆地將小部件添加到儀表板和資產登錄頁面，無需再滾動瀏覽小部件類型列表來查找要添加的小部件。在新的選擇器中，相關的小部件將按顏色進​​行協調，並按接近度分組。
+
+image:NewWidgetPicker.png["新的小部件選擇器"]
+
+'''
+
+
+== 2020年2月
+
+
+
+=== 進階版 API
+
+Cloud Insights Premium Edition 附帶link:API_Overview.html["強大的API"]可用於將Cloud Insights與其他應用程式（例如 CMDB 或其他票務系統）整合。
+
+詳細的基於 Swagger 的資訊可以在 *Admin > API Acccess* 中的 *API Documentation* 連結下找到。  Swagger 提供了 API 的簡要描述和使用信息，並允許您在您的環境中嘗試每個 API。
+
+Cloud Insights API 使用訪問令牌來提供基於權限的 API 類別訪問，例如 ASSETS 或 COLLECTION。
+
+image:API_Documentation.png["API 文件"]
+
+
+
+=== 新增資料收集器後的初始輪詢
+
+先前，在配置新的資料收集器後， Cloud Insights會立即輪詢資料收集器以收集_庫存_數據，但會等到配置的效能輪詢間隔（通常為 15 分鐘）來收集初始_效能_資料。然後，它會等待另一個間隔，然後再啟動第二次效能輪詢，這意味著需要最多 30 分鐘才能從新的資料收集器中取得有意義的資料。
+
+數據收集器link:task_configure_data_collectors.html["輪詢"]已經得到了很大的改進，使得初始性能輪詢在庫存輪詢之後立即發生，而第二次性能輪詢在第一次性能輪詢完成後的幾秒鐘內發生。這使得Cloud Insights能夠在很短的時間內開始在儀表板和圖表上顯示有用的資料。
+
+編輯現有資料收集器的配置後也會發生此輪詢行為。
+
+
+
+=== 更輕鬆地複製小部件
+
+在儀表板或登入頁面上建立小部件的副本比以往任何時候都更容易。在儀表板編輯模式下，點擊小工具上的選單並選擇*複製*。小部件編輯器啟動，預先填入原始小部件的配置，並在小部件名稱中帶有「複製」後綴。您可以輕鬆進行任何必要的更改並保存新的小部件。該小部件將放置在儀表板的底部，您可以根據需要定位它。當所有變更完成後，請記住儲存您的儀表板。
+
+image:DuplicateWidget.png["複製小部件"]
+
+
+
+=== 單一登入（SSO）
+
+使用Cloud Insights Premium Edition，管理員可以啟用 *link:concept_user_roles.html#what-is-identity-federation["單一登入"] * （SSO）公司網域內的所有使用者均可存取Cloud Insights ，而無需單獨邀請他們。啟用 SSO 後，任何具有相同網域電子郵件地址的使用者都可以使用其公司憑證登入Cloud Insights 。
+
+
+NOTE: SSO 僅在Cloud Insights Premium Edition 中可用，且必須先進行設定才能為Cloud Insights啟用。 SSO配置包括link:https://services.cloud.netapp.com/misc/federation-support["身分聯合"]透過NetApp Cloud Central。聯合允許單一登入使用者使用公司目錄中的憑證存取您的NetApp Cloud Central 帳戶。
+
+'''
+
+
+== 2020年1月
+
+
+
+=== REST API 的 Swagger 文檔
+
+Swagger 解釋了Cloud Insights中每個可用的 REST API 及其用法和語法。有關Cloud Insights API 的資訊可在link:http://docs.netapp.com/us-en/cloudinsights/API_Overview.html["文件"]。
+
+
+
+=== 功能教學進度條
+
+功能教學清單已移至頂部橫幅，並配有進度指示器。每位用戶均可使用教程，直到關閉，並且始終可在Cloud Insights中查看link:concept_feature_tutorials.html["文件"]。
+
+image:TutorialProgress.png["教學清單進度"]
+
+
+
+=== 收購單位變更
+
+在與已安裝的 AU 同名的主機或 VM 上安裝採集單元 (AU) 時， Cloud Insights會透過在 AU 名稱後面附加「_1」、「_2」等來確保名稱的唯一性。從同一 VM 卸載並重新安裝 AU 時也是如此，而無需先將其從Cloud Insights中刪除。想要一個完全不同的 AU 名稱嗎？沒問題；安裝後可以重命名 AU。
+
+
+
+=== 優化小部件中的時間聚合
+
+在小工具中，您可以選擇_最佳化_時間聚合間隔或您設定的_自訂_間隔。最佳化聚合會根據所選的儀表板時間範圍（或小工具時間範圍，如果覆蓋儀表板時間）自動選擇正確的時間間隔。隨著儀表板或小部件時間範圍的變化，間隔也會動態變化。
+
+
+
+=== 簡化「開始使用Cloud Insights」流程
+
+開始使用Cloud Insights的過程已經簡化，以使您的首次設定更加順暢和輕鬆。只需選擇一個初始資料收集器並按照說明進行操作。 Cloud Insights將引導您配置資料收集器以及所需的任何代理程式或擷取單元。在大多數情況下，它甚至會匯入一個或多個初始儀表板，以便您可以快速開始了解您的環境（但請允許Cloud Insights最多 30 分鐘來收集有意義的資料）。
+
+其他改進：
+
+* 採集單元安裝更簡單，運作速度更快。
+* 按字母順序排列的資料收集器選擇讓您更輕鬆地找到所需的資料收集器。
+* 改進的數據收集器設定說明更容易遵循。
+* 有經驗的用戶只需單擊按鈕即可跳過入門過程。
+* 新的進度條會顯示您目前所處的進度。
++
+image:Onboarding_Progress.png["進度條"]
+
+
+
+'''
+'''
+
+
 == 2019年12月
 
 
