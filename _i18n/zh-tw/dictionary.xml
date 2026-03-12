@@ -34,18 +34,15 @@
   <block id="302f46075983be9c47bafd103c8fbf36" category="paragraph">請參閱 swagger 頁面以取得特定於您希望使用的 API 的範例。</block>
   <block id="45268bdcc9ffe3a5807e75085e768efb" category="section-title">API 類型</block>
   <block id="14b84a3791e7a10fe4d65ea9a7ff7363" category="paragraph">Data Infrastructure InsightsAPI 是基於類別的，目前包含以下類型：</block>
-  <block id="16d532fd527f8b9de1c866f621fb7569" category="list-text">ASSETS 類型包含資產、查詢和搜尋 API。</block>
   <block id="bf9403ca9242451b7ef055feae5711bb" category="list-text">資產：列舉頂級物件並檢索特定物件或物件層次結構。</block>
   <block id="90782e54bcf29265124126b5b3be24ad" category="list-text">查詢：檢索和管理Data Infrastructure Insights查詢。</block>
   <block id="c9de14b5a5af8684e29a00e86f5ea9f1" category="list-text">導入：導入註釋或應用程式並將其指派給對象</block>
   <block id="cfce3085ae85f2087671061798f85476" category="list-text">搜尋：無需知道物件的唯一 ID 或全名即可定位特定物件。</block>
   <block id="c7ff46f17aacbcc8f9caba752c2fd410" category="list-text">資料收集類型用於檢索和管理資料收集器。</block>
-  <block id="c13a40ffc26f5f762f6de126cf232cf5" category="list-text">資料攝取類型用於檢索和管理攝取資料和自訂指標，例如來自 Telegraf 代理程式的資料</block>
   <block id="e2838ba9f29d27f412035bd037388732" category="list-text">LOG INGESTION 用於檢索和管理日誌數據</block>
   <block id="c99f25325f86d3f0c79c43f7e35c908e" category="inline-link-macro">API Swagger 文件</block>
   <block id="133f61531451649a036c6c806600058c" category="paragraph">隨著時間的推移，可能會有更多類型和/或 API 可用。您可以在<block ref="26737cef142923769504b229d3be204d" category="inline-link-macro-rx"></block>。</block>
   <block id="7bc31a95e4a1ee6f8948af20440df0c6" category="inline-link-macro">使用者角色</block>
-  <block id="63c9291ffc47b71cb537e7ecab415dab" category="paragraph">請注意，使用者可以存取的 API 類型也取決於<block ref="ead2141fb682d81a2f0b1deca7bb95c5" category="inline-link-macro-rx"></block>它們在每個Data Infrastructure Insights功能集（監控、工作負載安全、報告）中都有。</block>
   <block id="f62c375c71b04a523593c5019e4aa100" category="section-title">庫存遍歷</block>
   <block id="475ea4ca6d29c1eb379b49090f81aea7" category="paragraph">本節介紹如何遍歷Data Infrastructure Insights物件的層次結構。</block>
   <block id="c22744ffcc9ee65a97cb166bcf41b4f4" category="section-title">頂級對象</block>
@@ -14547,4 +14544,7 @@
   <block id="dd0f9294fa313d494966ae16cbe89435" category="paragraph">Data Infrastructure Insights AI 助理現已推出預覽版，並包含以下增強功能：</block>
   <block id="e609c64ff8e8c15f1ce845903ca2db7e" category="list-text">Azure 區域可用性：對於 DII 網站託管在 Azure 上的客戶，Data Infrastructure Insights 助理現在已準備好為您提供協助。</block>
   <block id="056a97d89a4b6d30acf8e9b86d3ed172" category="list-text">最多可取得 7 天的資料：Assistant 現在可以存取最多 7 天的高解析度指標，從而實現更廣泛的資料分析和洞察。</block>
+  <block id="e43d8f702818ecf5597859f98ff1e993" category="list-text">ASSETS 類型包含資產、查詢和搜尋 API。DII 資產屬性和指標有時被稱為「odata」。這些 API 通常透過 /rest/v1/asset 或 /rest/v1/query 存取。如需詳細資訊，請參閱<block ref="622b990b99495c7072e19eb08becc13e" category="inline-xref-macro-rx"></block>。</block>
+  <block id="627c6b105244e1b95d64a8f71c382473" category="list-text">DATA INGESTION 類型用於擷取和管理擷取資料和自訂指標，例如來自 Telegraf 代理程式的資料。這些有時被稱為「資料湖」或「湖」指標。這些 API 通常透過 /rest/v1/lake 存取。如需詳細資訊，請參閱 <block ref="622b990b99495c7072e19eb08becc13e" category="inline-xref-macro-rx"></block>。</block>
+  <block id="d14a20e4ad37ea89f3a29854e5a1934c" category="paragraph">請注意，使用者可存取的 API 類型還取決於他們在每個 Data Infrastructure Insights 功能集（可觀測性、工作負載安全性、報告）中擁有的<block ref="ead2141fb682d81a2f0b1deca7bb95c5" category="inline-link-macro-rx"></block>。</block>
 </blocks>
