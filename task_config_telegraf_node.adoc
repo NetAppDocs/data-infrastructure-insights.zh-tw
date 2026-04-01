@@ -7,10 +7,17 @@ summary: Flink 資料收集器配置
 = 節點資料收集
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]
 Data Infrastructure Insights從安裝代理程式的節點收集指標。
+
+
+NOTE: 此收集器已棄用。從 2027 年 1 月開始，將不再提供此收集器。
 
 
 

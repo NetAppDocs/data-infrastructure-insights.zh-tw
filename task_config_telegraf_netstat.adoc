@@ -7,10 +7,17 @@ summary: Netstat 資料收集器配置
 = Netstat資料收集器
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]
 Data Infrastructure Insights使用此資料收集器來收集 Netstat 指標。
+
+
+NOTE: 此收集器已棄用。從 2027 年 1 月開始，將不再提供此收集器。
 
 
 

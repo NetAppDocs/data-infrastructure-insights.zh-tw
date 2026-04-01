@@ -7,6 +7,10 @@ summary: 配置VAST Data DataStore儲存資料收集器。
 = VAST DataStore 資料收集器
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]

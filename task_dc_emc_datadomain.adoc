@@ -7,10 +7,14 @@ summary: 配置 DELL EMC Data Domain 資料收集器。
 = DELL EMC Data Domain 資料收集器
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]
-此資料收集器從 DELL EMC Data Domain 重複資料刪除儲存系統收集庫存和效能資訊。若要設定此資料收集器，您必須遵循特定的配置說明和使用建議。
+此資料收集器從 DELL EMC Data Domain 重複資料刪除儲存系統收集庫存資訊。若要設定此資料收集器，您必須遵循特定的組態指示和使用建議。
 
 
 
@@ -40,7 +44,7 @@ Data Infrastructure Insights從 Data Domain 資料收集器取得以下庫存資
 
 | NFS 和 CIFS 共享 | 文件共享 
 |===
-注意：這些只是常見的術語映射，可能並不代表該資料收集器的所有情況。
+注意：這些只是常見的術語映射，可能並不代表此資料收集器的所有情況。
 
 
 

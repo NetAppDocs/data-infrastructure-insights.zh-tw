@@ -168,7 +168,6 @@
   <block id="4789f23283b3a61f858b641a1bef19a3" category="cell">記憶</block>
   <block id="83626eda7582435cdf0eb139d5cc8972" category="cell">8 GB 內存</block>
   <block id="da65b8cea76748b286bd905feef4a5fa" category="cell">可用磁碟空間</block>
-  <block id="e51abfd3fc3e12a9fe8f5f800312a852" category="cell">50 GB（建議 100 GB） 對於 Linux，應按以下方式分配磁碟空間： /opt/netapp 10 GB（大型環境為 20 GB） /var/log/netapp 40 GB（大型環境為 80 GB） /tmp 至少 1 GB 在安裝期間可用</block>
   <block id="6aaa2ffc817cac34a806a149bee36350" category="cell">50GB</block>
   <block id="eec89088ee408b80387155272b113256" category="cell">網路</block>
   <block id="2f704538f6c9d6459a97314be98124e2" category="inline-link-macro">數據收集器</block>
@@ -8686,14 +8685,12 @@
   <block id="ef7830d32fe70ad0f843821a2a4f10e4" category="cell">與 XC 伺服器進行 TCP 通訊所用的端口</block>
   <block id="36188b71a27eabbba08e545a83d62055" category="summary">配置 DELL EMC Data Domain 資料收集器。</block>
   <block id="ffcfe5fed071732290c9355893581d7d" category="doc">DELL EMC Data Domain 資料收集器</block>
-  <block id="bdc3274e97745e1635f0d41c124ddb66" category="paragraph">此資料收集器從 DELL EMC Data Domain 重複資料刪除儲存系統收集庫存和效能資訊。若要設定此資料收集器，您必須遵循特定的配置說明和使用建議。</block>
   <block id="70d1bd7bbccf2d53c6864e712d14cf29" category="paragraph">Data Infrastructure Insights從 Data Domain 資料收集器取得以下庫存資訊。對於Data Infrastructure Insights取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：</block>
   <block id="4410ec34d9e6c1a68100ca0ce033fb17" category="cell">大批</block>
   <block id="b80d18b0b26e4cbb83a956dc537e214f" category="cell">FC埠</block>
   <block id="6c202452e44c42e323204da2a3a3c24a" category="cell">檔案系統</block>
   <block id="5c50d3c1da7fd2f47df616d0d012d1d4" category="cell">NFS 和 CIFS 共享</block>
   <block id="dc496e57d71615841c66e4c990c6f335" category="cell">文件共享</block>
-  <block id="6bc725cd9439cdaa75d76ca867d8a678" category="paragraph">注意：這些只是常見的術語映射，可能並不代表該資料收集器的所有情況。</block>
   <block id="4e086ec2792b9a6a42607af390d811f3" category="list-text">Data Domain 設備的 IP 位址</block>
   <block id="461c620bef9b3a3b77c6117d659fd3e0" category="list-text">Data Domain 儲存的唯讀使用者名稱和密碼</block>
   <block id="85a4f04076ca6c3570fadcf452957688" category="list-text">SSH 連接埠 22</block>
@@ -10143,10 +10140,8 @@
   <block id="51408f1c75ab7bcc90f67b3ab1801733" category="cell">API 令牌</block>
   <block id="0507fa02ffd6a1be1f4496a833b194eb" category="summary">配置 Red Hat Virtualization 資料收集器。</block>
   <block id="6609776175436f74c8fb3530cfff6f27" category="doc">Red Hat 虛擬化資料收集器</block>
-  <block id="5f46815146ffa354dc2f5c63d9854bcc" category="paragraph">Data Infrastructure Insights使用 Red Hat Virtualization 資料收集器從虛擬化 Linux 和 Microsoft Windows 工作負載收集庫存資料。</block>
   <block id="8b60c89058c8a36aacae9d3ecd007639" category="cell">儲存域</block>
   <block id="524c6421ae67a40ab9a2d81082989e67" category="cell">邏輯單元</block>
-  <block id="1252e68ee9820a25a4fa53cba5316613" category="list-text">透過 REST API 透過連接埠 443 取得 RHEV 伺服器的 IP 位址</block>
   <block id="1755c36c6d233fd7d643efcf91b29322" category="list-text">只讀使用者名稱和密碼</block>
   <block id="1f6ab089a965189e0e2e5d53aba2bc6a" category="list-text">RHEV 版本 3.0+</block>
   <block id="6ddc0c44488bfc939598a18e8646face" category="cell">RHEV 伺服器 IP 位址</block>
@@ -12318,8 +12313,6 @@
   <block id="f5efcf93de96054f67b29d58662ad5c6" category="list-text">對於發生間隔，選擇「連續」且週期為「15 分鐘」。</block>
   <block id="95e94216ef8b85a76727809c3dfcbcc0" category="inline-link-macro">ONTAP資料管理</block>
   <block id="2520cfbb37bc8bbd2fc91278c73eb838" category="list-text">請注意， ONTAP REST 收集器不支援 Fpolicy 指標（工作負載安全資料收集器使用 FPolicy 伺服器，而 FPolicy 指標可讓您監控工作負載安全資料收集活動）。若要支援 Fpolicy 指標，請使用 <block ref="5887f651a571af9233df120cb7d32347" category="inline-link-macro-rx"></block> 集電極。</block>
-  <block id="b2422fa602be830d9f1a2469dd70ca20" category="inline-link-macro">NetApp ONTAP AFX</block>
-  <block id="83cd27100a931554f0e05219011edf39" category="cell"><block ref="83cd27100a931554f0e05219011edf39" category="inline-link-macro-rx"></block></block>
   <block id="14ec544dd26342f2315dc51923b34e66" category="summary">ONTAP AFX 收集器</block>
   <block id="aaab7580be4232835e9f12e5691f118f" category="doc">NetApp ONTAP AFX 資料收集器</block>
   <block id="e395c9addcba424f5bda562994dfecbe" category="cell">卷/ FlexVol/ FlexGroup</block>
@@ -12384,7 +12377,6 @@
   <block id="751c3e0cbbd3c7bba533140abe0f0dde" category="inline-xref">插針/拔針說明</block>
   <block id="55f4b0c8991710156e1d9a114af60fe1" category="cell">Unpin 會立即取得最新版本（如果可用），並升級代理程式和收集器。在此升級過程中，fpolicies 將斷開連接並重新連接。此功能專為希望控制自動升級時間的客戶而設計。請見下文<block ref="2271de46efd5da417e9db9f2ab23550b" category="inline-xref-macro-rx"></block>。</block>
   <block id="2a0a2208c984d848c76e3dc480d25f5a" category="cell">對於大型配置，建議使用引腳和引腳斷開操作，而不是暫停集電極。使用固定和取消固定功能時，無需暫停和恢復。客戶可以保留其代理商和收款員，並在收到有關新版本的電子郵件通知後，有 30 天的時間逐個選擇性地升級代理商。這種方法最大限度地減少了對 fpolicies 的延遲影響，並提供了對升級過程的更大控制。</block>
-  <block id="4c4482e1695529fa7b313efe35876587" category="cell">執行下列任一正版作業系統的電腦： * Microsoft Windows 11 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022 * Microsoft Windows Server 2025 此電腦不應執行任何其他應用程式層級軟體。建議使用專用伺服器。</block>
   <block id="96e0bc41f601636412c93ccf60fffb89" category="cell">需要從收購單元到 *.cloudinsights.netapp.com 或您的Data Infrastructure Insights租戶（即 \https://&lt;tenant_id&gt;.c01.cloudinsights.netapp.com）的 100 Mbps/1 Gbps 乙太網路連接、靜態 IP 位址和連接埠 80 或 443（出站）連接。有關採集單元與各資料擷取器之間的要求，請參閱相關說明。<block ref="be56515064596049a4b61d9d1a149cf9" category="inline-link-macro-rx"></block> 。如果您的組織需要使用代理來存取互聯網，您可能需要了解組織的代理行為並尋求某些例外以使Data Infrastructure Insights能夠發揮作用。例如，您的組織是否預設阻止訪問，並且僅允許例外訪問特定網站/網域？如果需要，您需要將以下網域新增至例外清單：*.cloudinsights.netapp.com。更多信息，請閱讀代理相關內容。<block ref="05c875968683001fc59f206218314b72" category="inline-link-macro-rx"></block>或者<block ref="554efdd06704a764ab0a7e3947e279ff" category="inline-link-macro-rx"></block>。</block>
   <block id="f17c7e32a4fcdb4c787f412cf3181bea" category="cell">與管理員相同，以及管理 SSO 身份驗證和身份聯合配置。也可以為託管服務提供者 (MSP) 主租戶分配其他所有者以及新增客戶。</block>
   <block id="6794662d08bc33fcbd95c93345331eb3" category="list-text">ONTAP持久性儲存從 9.14.1 版本開始支援。</block>
@@ -12531,7 +12523,6 @@
   <block id="3771b23dadd43c39046622dbcb4c17e4" category="list-text">點擊「測試 Webhook」以確保沒有錯誤。</block>
   <block id="c20e86538672d1ab3ab8e3a5c2961e28" category="list-text">儲存 webhook。</block>
   <block id="beda12a678062ce581606c88344f4e06" category="sidebar">Teams Webhook 範例</block>
-  <block id="e18f38a263784d686e9a0d45d5416285" category="cell">執行下列任一正版授權版本的電腦：* AlmaLinux 9.5、10 * Centos（64 位元）：Stream 9 * Debian（64 位元）：11 至 13 * OpenSUSE Leap 15.2 至 15.6、16 * Oracle Enterprise Linux（64 位元）：8.10、9.2、9.4、9.6、10 * Red Hat（64 位元）：8.10、9.2、9.4、9.6、10 * Rocky 9.2 至 9.6 * SUSE Linux Enterprise Server 15 SP4 至 15 SP7、16 * Ubuntu Server：20.04、22.04、24.04 LTS * 上述平台上的 SELinux 此電腦不應執行任何其他應用程式層級軟體。建議使用專用伺服器。如果您正在執行 SELinux，建議在擷取單元系統上執行下列命令：sudo semanage fcontext -a -t usr_t "/opt/netapp/cloudinsights(/.*)?" sudo restorecon -R /opt/netapp/cloudinsights</block>
   <block id="ddb78a0715fab46562d8ee8102cea78c" category="list-text">連接埠 443（或 8443，如果已配置）</block>
   <block id="6e7162cfd0e31a7db490a51939253ab9" category="list-text">HPE Alletra 9080</block>
   <block id="193eabb9a17fd246abfc9b708de0fb7f" category="list-text">HPE_3PAR 20450</block>
@@ -14444,8 +14435,6 @@
   <block id="e30ec09a4c79b55e1ccfc1955c76c379" category="cell">switchLevel</block>
   <block id="e10c8c70fc9c70d82df6e3c2ea10ceed" category="cell">切換層級</block>
   <block id="549ae8b6dea4926a2af206c5d7300fc5" category="paragraph">在使用 Data Infrastructure Insights 之前，您必須先在 *NetApp Console* 入口網站註冊。如果您已有 NetApp Console 登入帳號，只需幾個簡單的步驟即可開始 Data Infrastructure Insights 的免費試用。</block>
-  <block id="93e49907cf8d9ecec89d856c3d49fb2f" category="inline-link-macro">Pure FlashBlade</block>
-  <block id="f92f77015be3ec66c79ba43a2aec5f69" category="cell"><block ref="f92f77015be3ec66c79ba43a2aec5f69" category="inline-link-macro-rx"></block></block>
   <block id="52e4ed377cdb874dec547eb79615f673" category="admonition">Data Infrastructure Insights 從 VPLEX 叢集收集效能資料需要效能歸檔服務正常運行，以便填充 Data Infrastructure Insights 透過基於 SCP 的檔案副本擷取的 .CSV 檔案和日誌。NetApp 觀察到，許多 VPLEX 韌體升級/管理站更新會導致此功能失效。計劃進行此類升級的客戶可能需要主動詢問 Dell/EMC，其計劃的升級是否會導致此功能失效，如果失效，如何重新啟用該功能以最大程度地減少效能可見性方面的不足？Cloud Insight 的 VPLEX 效能程式碼會在每次輪詢時評估所有預期檔案是否存在以及它們是否正在正確更新；如果缺少檔案或檔案已過期，Data Infrastructure Insights 將記錄效能收集失敗。</block>
   <block id="de9fcff157c3fd05f707a7b227a45275" category="summary">配置 Pure FlashBlade Storage 資料收集器</block>
   <block id="c0c126a33a6cd3661eae0fb5eca89c2d" category="paragraph">Data Infrastructure Insights 使用 Pure Storage FlashBlade 資料收集器從公開其 REST API 版本 2 的 FlashBlade 叢集收集庫存和效能資料。</block>
@@ -14462,4 +14451,44 @@
   <block id="eeca18d86334ede222257bab8c195d15" category="paragraph">DII 的「Infrastructure Insights」功能，包括「共享資源壓力」、「Kubernetes 命名空間空間不足」和「回收 ONTAP 冷存儲」，已不再在 DII 中提供。</block>
   <block id="b222969a0e0fca1c5ae1f58770c55fd3" category="summary">Data Infrastructure Insights 自 2020 年起提供的新功能</block>
   <block id="3535e34a6ea939a9c4a64fcb08c9f72d" category="doc">Data Infrastructure Insights 新增功能 - 2020 年存檔</block>
+  <block id="627f42d17d7ea3d6e54846b3aac2b49f" category="paragraph">執行下列其中一項授權版本的電腦：</block>
+  <block id="62f84edfc095da652c65bd53d752ae9f" category="list-text">AlmaLinux 9.5、10</block>
+  <block id="e4b10322d174dad1b342b960d4db4a1a" category="paragraph">這台電腦不應執行任何其他應用程式層級軟體。建議使用專用伺服器。</block>
+  <block id="ad1be19da774dae802b440155ce7d99e" category="paragraph">如果您正在執行 SELinux，建議在擷取單元系統上執行下列命令：</block>
+  <block id="c05e480e3f21ed06330149211021128c" category="list-text">Microsoft Windows 11</block>
+  <block id="74dd40aa9a6635d79204e610e8324c38" category="list-text">Microsoft Windows Server 2016</block>
+  <block id="1ee2c5253c485a81cfff8c8e3e23a23f" category="list-text">Microsoft Windows Server 2019</block>
+  <block id="6ed0120f37738e825d889dcb299d9251" category="list-text">Microsoft Windows Server 2022</block>
+  <block id="6e6b7efb9f9c24d5ca212d65430689fd" category="list-text">Microsoft Windows Server 2025</block>
+  <block id="4f9edfe2d639bdf84659ce06867169be" category="paragraph">50 GB（建議使用 100 GB）</block>
+  <block id="cd7b5f0dcf0b21cd4f7309088a390cc0" category="paragraph">對於 Linux 系統，磁碟空間應按以下方式分配：</block>
+  <block id="edad7b7dcf5cc00b2dda3c18951100a2" category="list-text">/opt/netapp 10 GB （大型環境為 20 GB）</block>
+  <block id="bb8581977ca7a9a1f259d38b9862e60a" category="list-text">/var/log/netapp 40 GB （大型環境為 80 GB）</block>
+  <block id="747ac0c92d8f5c3aa0f9c512ce6cddcf" category="list-text">安裝期間 /tmp 至少需要 1 GB 可用空間</block>
+  <block id="c5c33f7f872335cb93ed44e9b04d0a42" category="paragraph">您的檔案系統可能會使用一些空間作為其額外負荷。這些是安裝前應 _可用_ 的最小空間。</block>
+  <block id="f1e2a8b4ad8172c17aa60b03b39227c4" category="inline-link-macro">Pure Storage FlashBlade</block>
+  <block id="6b27f70000f03c5a24fb70b6ed340d8e" category="cell"><block ref="6b27f70000f03c5a24fb70b6ed340d8e" category="inline-link-macro-rx"></block></block>
+  <block id="079cdcfd43abfa5548c437b1a50427fb" category="inline-link-macro">Red Hat OpenShift Virtualization</block>
+  <block id="bd6345d055b68904ea42423102195045" category="cell"><block ref="bd6345d055b68904ea42423102195045" category="inline-link-macro-rx"></block></block>
+  <block id="d818fc83532d27c308cb47649bd5ec02" category="admonition">此收集器已棄用。從 2027 年 1 月開始，將不再提供此收集器。</block>
+  <block id="faf4a8391186fe75061a56efa03cbe77" category="paragraph">此資料收集器從 DELL EMC Data Domain 重複資料刪除儲存系統收集庫存資訊。若要設定此資料收集器，您必須遵循特定的組態指示和使用建議。</block>
+  <block id="8dfbd1afa40d818910ea903f9d52f6ec" category="summary">配置 Red Hat OpenShift Virtualization 資料收集器。</block>
+  <block id="50993793783c5f33ae8f736a95dca1b9" category="doc">Red Hat OpenShift Virtualization 資料收集器</block>
+  <block id="6fd44ae5a42d6b33248d329cbbddaa88" category="paragraph">DII Red Hat OpenShift Virtualization 收集器將嘗試發現運行在 OpenShift Virtualization 環境中的 OSV 運算工作負載，但該收集器無法發現所有 Open Shift pod。這是一個基於 HTTPS REST API 的收集器。建議每個 OSV 叢集建立一個收集器。</block>
+  <block id="0e2f53883090c3b63a953261cdb19325" category="paragraph">此收集器的身份驗證方法是使用綁定到服務帳戶的身份驗證令牌。若要建立使用者帳戶和令牌：</block>
+  <block id="f2c430952fd20f76b24810e2e6f8dace" category="paragraph">執行這 3 個命令並注意是否有任何錯誤。</block>
+  <block id="8a8ad6f9b43737bda614d744a8286cc4" category="paragraph">命令執行完畢後：</block>
+  <block id="9fb84dc506591e78ff3f6f8ac2f00e6e" category="paragraph">這將創建一個與您的用戶綁定的令牌。</block>
+  <block id="0cf40b0b5f29b2928f214370b73c4fac" category="paragraph">最後，您可能還需要 OSV 管理員執行：</block>
+  <block id="7af44018c8c76e698e986a0c0db08e5f" category="paragraph">這將傳回用於管理的主機名稱 / IP 位址。每個 DII OSV 收集器都需要指向該 IP / 主機名稱以進行 OSV 管理。</block>
+  <block id="e62768229563f11ca5fd49a1482ae7a8" category="list-text">透過 REST API 經由連接埠 443 取得 Red Hat OpenShift Virtualization 伺服器的 IP 位址</block>
+  <block id="07bc27033bbe069dd4fcfa7e7287df66" category="cell">用於與 RHOV 進行 HTTPS 通訊的連接埠</block>
+  <block id="6b4e228e21f03e0f137a5d82c17defab" category="paragraph">用於 Red Hat Virtualization 的 DII 資料收集器也支援開源專案 oVirt、以及 Oracle Linux Virtualization Manager。此資料收集器透過 REST API 與管理站上的 HTTPS 介面通訊。</block>
+  <block id="154535c2753f4d1eedc433e63b2e796f" category="list-text">透過 REST API 經由連接埠 443 取得 RHV/oVirt/OLVM 伺服器的 IP 位址/主機名稱</block>
+  <block id="aee702f6738b473d9ebf07b43255af32" category="list-text">RHV 版本 3.0+ / Ovirt 4.0+ / OLVM 4.0+</block>
+  <block id="e4d0cf9093fde0665165a53499aff00b" category="cell">RHV/Ovirt/OLVM 伺服器 IP 位址</block>
+  <block id="cb5cba13a9dcf03bdccf20db87fe2d0c" category="cell">管理站的 IP 位址</block>
+  <block id="c304b6eec4c1c5c3c0517f83640ef6e3" category="cell">啟用效能收集</block>
+  <block id="10558b4f829f071034d968780bb7a36e" category="cell">效能輪詢間隔 （秒）</block>
+  <block id="6f159883a7f482d97fbfbd3597406382" category="cell">預設值為 900</block>
 </blocks>

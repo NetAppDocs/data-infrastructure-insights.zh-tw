@@ -7,10 +7,17 @@ summary: Apache 資料收集器配置
 = Apache 資料收集器
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]
 此資料收集器允許從租戶上的 Apache 伺服器收集資料。
+
+
+NOTE: 此收集器已棄用。從 2027 年 1 月開始，將不再提供此收集器。
 
 .先決條件
 * 您必須設定並正確執行 Apache HTTP 伺服器

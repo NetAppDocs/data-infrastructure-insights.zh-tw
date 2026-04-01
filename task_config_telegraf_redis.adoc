@@ -7,10 +7,17 @@ summary: Redis 資料收集器配置
 = Redis 資料收集器
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]
 Data Infrastructure Insights使用此資料收集器從 Redis 收集指標。  Redis 是一個開源的記憶體資料結構存儲，用作資料庫、快取和訊息代理，支援以下資料結構：字串、哈希、列表、集合等。
+
+
+NOTE: 此收集器已棄用。從 2027 年 1 月開始，將不再提供此收集器。
 
 
 
