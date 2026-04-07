@@ -12462,7 +12462,6 @@
   <block id="db1a2df035e9cd0bcdfb55db52e3e64b" category="paragraph">如果偵測到已知檔案副檔名的檔案竄改攻擊，並且在「警報」畫面上產生警報，則可以將該檔案副檔名新增至_允許的檔案類型_清單中，以防止不必要的警報。</block>
   <block id="8d791b80cd3ffee28fe92eaeb570182d" category="paragraph">一旦新增到_允許的檔案類型_清單中，就不會針對該允許的檔案類型產生檔案篡改攻擊警報。請注意，_允許的檔案類型_策略僅適用於檔案篡改偵測。</block>
   <block id="7af3f2f9c8eaa3a8ff61f839001e8ca0" category="paragraph">例如，如果將名為 _test.txt_ 的檔案重新命名為 _test.txt.abc_，且工作負載安全系統因 _.abc_ 副檔名而偵測到檔案篡改攻擊，則可以將 _.abc_ 副檔名新增至 _允許的檔案類型_ 清單中。新增至清單後，將不再針對副檔名為 _.abc_ 的檔案產生檔案篡改攻擊。</block>
-  <block id="374bdbda42629b3859daec6506078b36" category="sidebar">ONTAP自主保護集成</block>
   <block id="5273cec606b6768f8394e2ae1566c7f6" category="sidebar">模擬攻擊</block>
   <block id="5da98f5c78418524ecf144084929f19e" category="doc">工作負載安全：模擬文件篡改</block>
   <block id="e192cb4cca3f754a1b50fdf853ce74a4" category="summary">使用 SVM 事件速率檢查器測量 NFS/SMB 事件速率，並在部署工作負載安全資料收集器之前確定最佳代理程式大小。</block>
@@ -14491,4 +14490,15 @@
   <block id="c304b6eec4c1c5c3c0517f83640ef6e3" category="cell">啟用效能收集</block>
   <block id="10558b4f829f071034d968780bb7a36e" category="cell">效能輪詢間隔 （秒）</block>
   <block id="6f159883a7f482d97fbfbd3597406382" category="cell">預設值為 900</block>
+  <block id="ea178ff6db0ce95c8cbc3246d6650cb9" category="summary">將檔案副檔名新增至警示排除清單中，以減少警示數量。</block>
+  <block id="d183e2d7c0392d5cf66d1908be8211c1" category="doc">警示排除</block>
+  <block id="ee91b4dd26cc357eaf6f92f8e70239f0" category="paragraph">如果偵測到已知檔案副檔名的檔案竄改攻擊，並且在「警示」畫面上產生了警示，則可以將該檔案副檔名新增至_警示排除_清單中，以防止不必要的警示。這也可以視為_允許的檔案類型_清單，因為 Workload Security 允許這些檔案繞過竄改警示。</block>
+  <block id="44e5ffe8f45ef48f6d55fd323a14ebd5" category="paragraph">導覽至 *Workload Security &gt; Policies*，然後前往 _Alert Exclusions_ 標籤。</block>
+  <block id="b81cf913eebf1b9b3172d1df8992971e" category="inline-image-macro">允許從警示中排除的檔案類型</block>
+  <block id="a7b62f8b775b1075063ceb3d8a408b10" category="paragraph"><block ref="a7b62f8b775b1075063ceb3d8a408b10" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0ca499fad2902c1886076f6a79993648" category="paragraph">將檔案類型新增至允許的檔案類型清單後，系統將不會針對該檔案類型產生檔案篡改攻擊警報。請注意，警報排除策略僅適用於檔案篡改偵測。</block>
+  <block id="c40c4ea70475c0ba0841ba534492332d" category="paragraph">例如，如果將名為 _test.txt_ 的檔案重新命名為 _test.txt.abc_，且 Workload Security 因 _.abc_ 副檔名而偵測到檔案篡改攻擊，則可以將 _.abc_ 副檔名新增至允許的檔案類型清單中。新增至清單後，將不再針對帶有 _.abc_ 副檔名的檔案產生檔案篡改攻擊報告。</block>
+  <block id="670039cd8e2f07d8b36e77f11294bedb" category="paragraph">允許的檔案類型可以是精確比對（例如，「.abc」），也可以是表達式（例如，「*.type」、「.type*」或「.*type*」）。不支援類型為「.a*c」、「.p*f」的表達式。</block>
+  <block id="3720ff11b9d0e04f7fd96e22ff7a745f" category="paragraph">為便於審核，新增了「Set By」和「Set Date」兩個屬性。現有檔案類型將遷移到新格式，這兩個屬性的值將被設定為「migrated」。</block>
+  <block id="9b5911ec569b49f0ae81ecb2c9067806" category="sidebar">ONTAP 自主勒索軟體防護整合</block>
 </blocks>

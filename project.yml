@@ -261,9 +261,9 @@ sidebar:
         url: "/forensic_user_overview.html"
     - title: 自動回應策略
       url: "/cs_automated_response_policies.html"
-    - title: 允許的文件類型策略
-      url: "/ws_allowed_file_types.html"
-    - title: ONTAP自主保護集成
+    - title: 警示排除
+      url: "/ws_alert_exclusions.html"
+    - title: ONTAP 自主勒索軟體防護整合
       url: "/concept_cs_integration_with_ontap_arp.html"
     - title: ONTAP存取被拒絕集成
       url: "/concept_ws_integration_with_ontap_access_denied.html"

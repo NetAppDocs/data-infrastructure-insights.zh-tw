@@ -1,0 +1,24 @@
+---
+sidebar: sidebar 
+permalink: ws_alert_exclusions.html 
+keywords: workload security, cloud secure, include list, allowed, file types, ransomware, tampering, exclusion, alerts 
+summary: 將檔案副檔名新增至警示排除清單中，以減少警示數量。 
+---
+= 警示排除
+:allow-uri-read: 
+
+
+[role="lead"]
+如果偵測到已知檔案副檔名的檔案竄改攻擊，並且在「警示」畫面上產生了警示，則可以將該檔案副檔名新增至_警示排除_清單中，以防止不必要的警示。這也可以視為_允許的檔案類型_清單，因為 Workload Security 允許這些檔案繞過竄改警示。
+
+導覽至 *Workload Security > Policies*，然後前往 _Alert Exclusions_ 標籤。
+
+image:ws_alert_exclusions_list.png["允許從警示中排除的檔案類型"]
+
+將檔案類型新增至允許的檔案類型清單後，系統將不會針對該檔案類型產生檔案篡改攻擊警報。請注意，警報排除策略僅適用於檔案篡改偵測。
+
+例如，如果將名為 _test.txt_ 的檔案重新命名為 _test.txt.abc_，且 Workload Security 因 _.abc_ 副檔名而偵測到檔案篡改攻擊，則可以將 _.abc_ 副檔名新增至允許的檔案類型清單中。新增至清單後，將不再針對帶有 _.abc_ 副檔名的檔案產生檔案篡改攻擊報告。
+
+允許的檔案類型可以是精確比對（例如，「.abc」），也可以是表達式（例如，「*.type」、「.type*」或「.*type*」）。不支援類型為「.a*c」、「.p*f」的表達式。
+
+為便於審核，新增了「Set By」和「Set Date」兩個屬性。現有檔案類型將遷移到新格式，這兩個屬性的值將被設定為「migrated」。
