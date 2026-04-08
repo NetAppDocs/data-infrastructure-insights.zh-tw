@@ -14492,13 +14492,21 @@
   <block id="6f159883a7f482d97fbfbd3597406382" category="cell">預設值為 900</block>
   <block id="ea178ff6db0ce95c8cbc3246d6650cb9" category="summary">將檔案副檔名新增至警示排除清單中，以減少警示數量。</block>
   <block id="d183e2d7c0392d5cf66d1908be8211c1" category="doc">警示排除</block>
-  <block id="ee91b4dd26cc357eaf6f92f8e70239f0" category="paragraph">如果偵測到已知檔案副檔名的檔案竄改攻擊，並且在「警示」畫面上產生了警示，則可以將該檔案副檔名新增至_警示排除_清單中，以防止不必要的警示。這也可以視為_允許的檔案類型_清單，因為 Workload Security 允許這些檔案繞過竄改警示。</block>
-  <block id="44e5ffe8f45ef48f6d55fd323a14ebd5" category="paragraph">導覽至 *Workload Security &gt; Policies*，然後前往 _Alert Exclusions_ 標籤。</block>
-  <block id="b81cf913eebf1b9b3172d1df8992971e" category="inline-image-macro">允許從警示中排除的檔案類型</block>
-  <block id="a7b62f8b775b1075063ceb3d8a408b10" category="paragraph"><block ref="a7b62f8b775b1075063ceb3d8a408b10" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0ca499fad2902c1886076f6a79993648" category="paragraph">將檔案類型新增至允許的檔案類型清單後，系統將不會針對該檔案類型產生檔案篡改攻擊警報。請注意，警報排除策略僅適用於檔案篡改偵測。</block>
-  <block id="c40c4ea70475c0ba0841ba534492332d" category="paragraph">例如，如果將名為 _test.txt_ 的檔案重新命名為 _test.txt.abc_，且 Workload Security 因 _.abc_ 副檔名而偵測到檔案篡改攻擊，則可以將 _.abc_ 副檔名新增至允許的檔案類型清單中。新增至清單後，將不再針對帶有 _.abc_ 副檔名的檔案產生檔案篡改攻擊報告。</block>
-  <block id="670039cd8e2f07d8b36e77f11294bedb" category="paragraph">允許的檔案類型可以是精確比對（例如，「.abc」），也可以是表達式（例如，「*.type」、「.type*」或「.*type*」）。不支援類型為「.a*c」、「.p*f」的表達式。</block>
-  <block id="3720ff11b9d0e04f7fd96e22ff7a745f" category="paragraph">為便於審核，新增了「Set By」和「Set Date」兩個屬性。現有檔案類型將遷移到新格式，這兩個屬性的值將被設定為「migrated」。</block>
   <block id="9b5911ec569b49f0ae81ecb2c9067806" category="sidebar">ONTAP 自主勒索軟體防護整合</block>
+  <block id="1fe01bac09fca89fb6f196d8c95401dc" category="paragraph">警報排除功能可讓您禁止針對特定檔案類型、使用者和目錄路徑產生警報。使用此功能可以排除已知且預期的活動，從而減少誤報，因為這些活動可能與警報模式相符。</block>
+  <block id="3b39eff6bd46ab915c26d8ab9ed7bb91" category="paragraph">警報排除項目依租戶配置，包括以下內容：</block>
+  <block id="1ce4fd7b116c43c936cc8ddbaa51ce99" category="inline-link-macro">檔案副檔名</block>
+  <block id="f49e387bd8ac75fdab8d848695d1de88" category="list-text">檔案類型：抑制特定檔案類型的 File Tampering 警報<block ref="10b52059d1feedcec024042c1bbd1e91" category="inline-link-macro-rx"></block></block>
+  <block id="aa4f2113791c12393a66ffe706420102" category="list-text">使用者：隱藏由選定使用者觸發的警示。</block>
+  <block id="ecfbace61ab4dd6175d43a276330b05d" category="list-text">路徑：抑制所選目錄路徑上活動的警示（最多四個目錄層級，從交接路徑開始）。</block>
+  <block id="099aaf46fa32549a39916446ecf1fe7e" category="inline-link-macro">允許的檔案類型</block>
+  <block id="0dd69cce6b9e3a8a53769caf0047d503" category="paragraph">檔案類型排除 （也稱為「允許的檔案類型策略」） 已更新，並在<block ref="38cbb5c947813aa64b0054e34231a6d7" category="inline-link-macro-rx"></block>中進行了描述。</block>
+  <block id="70c2babfc037807dc9d1d94e48e6b818" category="paragraph">使用者排除清單支援自動補全功能，管理員可以選擇要從警示中排除的使用者。</block>
+  <block id="ab217818a7f8d6405dd619210434e25f" category="paragraph">目錄排除最多支援四級目錄路徑，從 junction 路徑開始。</block>
+  <block id="33b828c8fb435b67f3a4a321adbc89c1" category="paragraph">可以將個別使用者和目錄路徑新增至個別排除清單或從中移除。每個清單中的每個項目都會包含新增至清單的時間和新增者資訊，這些資訊將用於稽核目的。</block>
+  <block id="b2bc711706213f5680535c284278fd8a" category="section-title">管理排除項目和稽核</block>
+  <block id="4cc0f970741fc7eef05a2f6890f15228" category="list-text">管理員可以隨時新增或移除檔案副檔名、個別使用者或路徑。</block>
+  <block id="49a160591030eb82ba36b624f5514398" category="list-text">每個排除項目都會記錄設定該項目的管理員姓名和設定日期。此資訊將保留以供稽核。</block>
+  <block id="430f66c61c1d6e05ef92945c7107306f" category="paragraph"><block ref="430f66c61c1d6e05ef92945c7107306f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4d06e3dd77aaee13a5d969e19fc7acf6" category="paragraph"><block ref="4d06e3dd77aaee13a5d969e19fc7acf6" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
