@@ -14495,12 +14495,9 @@
   <block id="9b5911ec569b49f0ae81ecb2c9067806" category="sidebar">ONTAP 自主勒索軟體防護整合</block>
   <block id="1fe01bac09fca89fb6f196d8c95401dc" category="paragraph">警報排除功能可讓您禁止針對特定檔案類型、使用者和目錄路徑產生警報。使用此功能可以排除已知且預期的活動，從而減少誤報，因為這些活動可能與警報模式相符。</block>
   <block id="3b39eff6bd46ab915c26d8ab9ed7bb91" category="paragraph">警報排除項目依租戶配置，包括以下內容：</block>
-  <block id="1ce4fd7b116c43c936cc8ddbaa51ce99" category="inline-link-macro">檔案副檔名</block>
-  <block id="f49e387bd8ac75fdab8d848695d1de88" category="list-text">檔案類型：抑制特定檔案類型的 File Tampering 警報<block ref="10b52059d1feedcec024042c1bbd1e91" category="inline-link-macro-rx"></block></block>
   <block id="aa4f2113791c12393a66ffe706420102" category="list-text">使用者：隱藏由選定使用者觸發的警示。</block>
   <block id="ecfbace61ab4dd6175d43a276330b05d" category="list-text">路徑：抑制所選目錄路徑上活動的警示（最多四個目錄層級，從交接路徑開始）。</block>
   <block id="099aaf46fa32549a39916446ecf1fe7e" category="inline-link-macro">允許的檔案類型</block>
-  <block id="0dd69cce6b9e3a8a53769caf0047d503" category="paragraph">檔案類型排除 （也稱為「允許的檔案類型策略」） 已更新，並在<block ref="38cbb5c947813aa64b0054e34231a6d7" category="inline-link-macro-rx"></block>中進行了描述。</block>
   <block id="70c2babfc037807dc9d1d94e48e6b818" category="paragraph">使用者排除清單支援自動補全功能，管理員可以選擇要從警示中排除的使用者。</block>
   <block id="ab217818a7f8d6405dd619210434e25f" category="paragraph">目錄排除最多支援四級目錄路徑，從 junction 路徑開始。</block>
   <block id="33b828c8fb435b67f3a4a321adbc89c1" category="paragraph">可以將個別使用者和目錄路徑新增至個別排除清單或從中移除。每個清單中的每個項目都會包含新增至清單的時間和新增者資訊，這些資訊將用於稽核目的。</block>
@@ -14509,4 +14506,12 @@
   <block id="49a160591030eb82ba36b624f5514398" category="list-text">每個排除項目都會記錄設定該項目的管理員姓名和設定日期。此資訊將保留以供稽核。</block>
   <block id="430f66c61c1d6e05ef92945c7107306f" category="paragraph"><block ref="430f66c61c1d6e05ef92945c7107306f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4d06e3dd77aaee13a5d969e19fc7acf6" category="paragraph"><block ref="4d06e3dd77aaee13a5d969e19fc7acf6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="147e7f8d7d8064d51ff49f93c07adfeb" category="paragraph">導覽至 *Workload Security &gt; Policies*，然後選擇 *Alert Exclusions* 標籤。</block>
+  <block id="9bf079c262098280af19e475b460e655" category="list-text">檔案類型：抑制特定檔案類型的 File Tampering 警報<block ref="e9fd5a7947ff579f7dabe8508e9cb8cd" category="inline-xref-macro-rx"></block></block>
+  <block id="3596850f01f0deb9d5aecf72b1462619" category="paragraph">可以將檔案副檔名新增至_允許的檔案類型_清單中，以防止不必要的警示。</block>
+  <block id="c6b621c33fa4f966db8e8fc0013ade5e" category="paragraph">選擇 *+File Type* 可將檔案類型新增至警報允許的檔案類型清單中。</block>
+  <block id="a29d1a88246db4532c1e6dec57fad276" category="inline-image-macro">新增允許的檔案類型</block>
+  <block id="e805eed5e1733a26a8b20a94b4a681d5" category="paragraph"><block ref="e805eed5e1733a26a8b20a94b4a681d5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="492f463a35ea215d77ae021c64cddb64" category="paragraph">例如，如果名為 _test.txt_ 的檔案被重新命名為 _test.txt.abc_，而 Workload Security 由於 _.abc_ 副檔名偵測到勒索軟體攻擊，則可以將 _.abc_ 副檔名新增至 _allowed file types_ 清單中。新增至清單後，系統將不再針對具有 _.abc_ 副檔名的檔案產生勒索軟體攻擊。</block>
+  <block id="318685a1827ca5f4280e59d71f7d1438" category="paragraph">允許的檔案類型可以是精確匹配（例如「.abc」），也可以是表達式（例如 ++.*type++、++.type*++ 或 ++.*type*++）。不支援 .a*c 和 .p*f 類型的表達式。</block>
 </blocks>
