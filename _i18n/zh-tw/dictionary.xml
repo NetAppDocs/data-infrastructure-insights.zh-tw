@@ -3830,8 +3830,6 @@
   <block id="8b71307bde3e4b16765dbb61a626d4d2" category="cell">基礎設施</block>
   <block id="d0dbaa8b32b0761ae3d382c5f69eec7e" category="inline-link-macro">Amazon FSx for NetApp ONTAP</block>
   <block id="29528f054166735f3e8a10f7fc97f3dd" category="cell"><block ref="29528f054166735f3e8a10f7fc97f3dd" category="inline-link-macro-rx"></block></block>
-  <block id="dd57e20cd92616b296702d64e87157c5" category="inline-link-macro">阿帕契</block>
-  <block id="cdabe8157e2d526c86c5a9f42bb64196" category="cell"><block ref="cdabe8157e2d526c86c5a9f42bb64196" category="inline-link-macro-rx"></block></block>
   <block id="c2ba7e785c49050f48da9aacc45c2b85" category="cell">服務</block>
   <block id="5b84ca419c785f62e8188c3f45b8c047" category="inline-link-macro">Azure NetApp Files</block>
   <block id="c570274e8fb013719523945c6aff02f1" category="cell"><block ref="c570274e8fb013719523945c6aff02f1" category="inline-link-macro-rx"></block></block>
@@ -3843,12 +3841,6 @@
   <block id="882354c20e5e22e1c581f6c0c24ef8f3" category="cell"><block ref="882354c20e5e22e1c581f6c0c24ef8f3" category="inline-link-macro-rx"></block></block>
   <block id="751c56d4bc32408c8b9a749fde003348" category="inline-link-macro">CiscoMDS 光纖交換機</block>
   <block id="2f3138d0aac5600187c6f65f57b477fb" category="cell"><block ref="2f3138d0aac5600187c6f65f57b477fb" category="inline-link-macro-rx"></block></block>
-  <block id="945c02f6d5f273e491007dc000803f2b" category="inline-link-macro">領事</block>
-  <block id="92776125f8fcfc83b8be3669f03e1d65" category="cell"><block ref="92776125f8fcfc83b8be3669f03e1d65" category="inline-link-macro-rx"></block></block>
-  <block id="a7208c8a668149dcf89f029181253a3a" category="inline-link-macro">Couchbase</block>
-  <block id="d55c8cd95cdac92d4c178b4fd279818f" category="cell"><block ref="d55c8cd95cdac92d4c178b4fd279818f" category="inline-link-macro-rx"></block></block>
-  <block id="910171730f703b2a74781b9a60f4d722" category="inline-link-macro">CouchDB</block>
-  <block id="ffc3a04dc6c4bfb92811e130a88c26ac" category="cell"><block ref="ffc3a04dc6c4bfb92811e130a88c26ac" category="inline-link-macro-rx"></block></block>
   <block id="fed2b89570c5c27f515afdba0f485a51" category="inline-link-macro">Cohesity 智慧型文件</block>
   <block id="114e1ad704707526c811f7952ae68dac" category="cell"><block ref="114e1ad704707526c811f7952ae68dac" category="inline-link-macro-rx"></block></block>
   <block id="89ca80bcecfdda81a3f7dd5bbeade8e0" category="inline-link-macro">Dell EMC 資料域</block>
@@ -3883,20 +3875,10 @@
   <block id="ea3c92725757cbb010390789bba2f55f" category="cell"><block ref="ea3c92725757cbb010390789bba2f55f" category="inline-link-macro-rx"></block></block>
   <block id="469e8e26b0503dd087b56d4f4b5dd4ee" category="inline-link-macro">戴爾XC系列</block>
   <block id="00fa997499e236483733c1406625ee4f" category="cell"><block ref="00fa997499e236483733c1406625ee4f" category="inline-link-macro-rx"></block></block>
-  <block id="ae9d27f42457beac1bfe6e70497a90b5" category="inline-link-macro">Docker</block>
-  <block id="653e8a033ab3b5f6f67f2ce35d708714" category="cell"><block ref="653e8a033ab3b5f6f67f2ce35d708714" category="inline-link-macro-rx"></block></block>
-  <block id="192764775ba7120e77ee75a73096a928" category="inline-link-macro">Elasticsearch</block>
-  <block id="3a1038b8fbe1e88b4f3c1b247da07798" category="cell"><block ref="3a1038b8fbe1e88b4f3c1b247da07798" category="inline-link-macro-rx"></block></block>
-  <block id="39ba7675313c799c9b706c8928b535f6" category="inline-link-macro">Flink</block>
-  <block id="f1161d8aad902843d64ca7e6b3db0f14" category="cell"><block ref="f1161d8aad902843d64ca7e6b3db0f14" category="inline-link-macro-rx"></block></block>
   <block id="12087a5da9bcdb90a9ac3a7931c38b46" category="inline-link-macro">Google 運算與儲存</block>
   <block id="8e0a555918ddd0d3171e923d8ec8927b" category="cell"><block ref="8e0a555918ddd0d3171e923d8ec8927b" category="inline-link-macro-rx"></block></block>
   <block id="1215f8190533dfdf63d2224a6d88266f" category="inline-link-macro">Google Cloud NetApp Volumes</block>
   <block id="3b2e5f3c488708db173b7fd97e0aec26" category="cell"><block ref="3b2e5f3c488708db173b7fd97e0aec26" category="inline-link-macro-rx"></block></block>
-  <block id="acb8200ee9d222d44b844f3f6ab17edd" category="inline-link-macro">Hadoop</block>
-  <block id="80158babf2e718b60d89ecb491c7d72d" category="cell"><block ref="80158babf2e718b60d89ecb491c7d72d" category="inline-link-macro-rx"></block></block>
-  <block id="f0a62e21e31a88d32ac29f1de37f4040" category="inline-link-macro">HAProxy</block>
-  <block id="923c2b7b6bf8434f014fa9867397df18" category="cell"><block ref="923c2b7b6bf8434f014fa9867397df18" category="inline-link-macro-rx"></block></block>
   <block id="62dd5c1e27983ad17b7254c4cc306f53" category="inline-link-macro">日立內容平台（HCP）</block>
   <block id="8e139263b721acc0c596309c52dfbf3f" category="cell"><block ref="8e139263b721acc0c596309c52dfbf3f" category="inline-link-macro-rx"></block></block>
   <block id="f7baa79dfa525f00a6e9ea9201563d3f" category="inline-link-macro">Hitachi Vantara 指令套件</block>
@@ -3925,28 +3907,14 @@
   <block id="aefade54e98cd7371f59451e66e87772" category="cell"><block ref="aefade54e98cd7371f59451e66e87772" category="inline-link-macro-rx"></block></block>
   <block id="7bb9ab9ce759d6128f8287d6341a6cc7" category="inline-link-macro">Infinidat InfiniBox</block>
   <block id="9f81139458ddf1ff4b43e369e44bccf1" category="cell"><block ref="9f81139458ddf1ff4b43e369e44bccf1" category="inline-link-macro-rx"></block></block>
-  <block id="223066c3f7784272f091f021b3219e37" category="inline-link-macro">Java</block>
-  <block id="f19051436c1e47891328604e2b4136f4" category="cell"><block ref="f19051436c1e47891328604e2b4136f4" category="inline-link-macro-rx"></block></block>
-  <block id="7e1a6b1b3e5bead0d381dda0b3e60144" category="inline-link-macro">卡夫卡</block>
-  <block id="fdcc9e9c235185bfe7c27a319b11562d" category="cell"><block ref="fdcc9e9c235185bfe7c27a319b11562d" category="inline-link-macro-rx"></block></block>
-  <block id="c9d4149e950dd13f5d01136a3b3dc2ad" category="inline-link-macro">卡帕西托</block>
-  <block id="7acb3e28f57b502428d14c300b1b0a35" category="cell"><block ref="7acb3e28f57b502428d14c300b1b0a35" category="inline-link-macro-rx"></block></block>
-  <block id="00a674292851f68b1b3f085a4bff1de6" category="inline-link-macro">基巴納</block>
-  <block id="48047e4c3f58331228bccfbfdf20f816" category="cell"><block ref="48047e4c3f58331228bccfbfdf20f816" category="inline-link-macro-rx"></block></block>
   <block id="b00f8bc92c87c005a66b8f84aa943f22" category="inline-link-macro">Kubernetes</block>
   <block id="c74bfaee9dd9d6bc97968a50b9386641" category="cell"><block ref="c74bfaee9dd9d6bc97968a50b9386641" category="inline-link-macro-rx"></block></block>
   <block id="9c213cb7b5d19c2f29b16c443a8abfd6" category="inline-link-macro">聯想HX系列</block>
   <block id="cb794264bdd8eabce9d96fe3669eb8ba" category="cell"><block ref="cb794264bdd8eabce9d96fe3669eb8ba" category="inline-link-macro-rx"></block></block>
-  <block id="fa836c8f852703c79e684718602d15f3" category="inline-link-macro">Memcached</block>
-  <block id="126d3fe0d1082a69b5d94b09b5bc3c76" category="cell"><block ref="126d3fe0d1082a69b5d94b09b5bc3c76" category="inline-link-macro-rx"></block></block>
   <block id="b10bdb60d29ba046adcdfada8800a230" category="inline-link-macro">Microsoft Azure NetApp Files</block>
   <block id="5896ee18dcf26df71e901a9e205503e0" category="cell"><block ref="5896ee18dcf26df71e901a9e205503e0" category="inline-link-macro-rx"></block></block>
   <block id="6f1a3043874f52a650659582deddb01d" category="inline-link-macro">微軟 Hyper-V</block>
   <block id="28a188dda210d6eebb45f569e96ce7b9" category="cell"><block ref="28a188dda210d6eebb45f569e96ce7b9" category="inline-link-macro-rx"></block></block>
-  <block id="0962588ff732485386c4aa04082a9722" category="inline-link-macro">MongoDB</block>
-  <block id="56577342da99ae2000bb389a5006c3f7" category="cell"><block ref="56577342da99ae2000bb389a5006c3f7" category="inline-link-macro-rx"></block></block>
-  <block id="270085566d6200c501fde2aada153de2" category="inline-link-macro">MySQL</block>
-  <block id="4d9746bceefe2b6bd2586d1c3e4d2733" category="cell"><block ref="4d9746bceefe2b6bd2586d1c3e4d2733" category="inline-link-macro-rx"></block></block>
   <block id="b988e43525055930d8d214d3116d4c04" category="inline-link-macro">NetApp Cloud Volumes ONTAP</block>
   <block id="ecf8390ebf4bfbf85b7308b7ca58aaa1" category="cell"><block ref="ecf8390ebf4bfbf85b7308b7ca58aaa1" category="inline-link-macro-rx"></block></block>
   <block id="0311befd4f8a4eb64d5f02957a8b1d99" category="inline-link-macro">NetApp E系列</block>
@@ -3969,30 +3937,14 @@
   <block id="57040b5a97b9c3f914160c530c365368" category="cell"><block ref="57040b5a97b9c3f914160c530c365368" category="inline-link-macro-rx"></block></block>
   <block id="8124f78b3dc0adc61f125a212506e7c5" category="inline-link-macro">NetAppStorageGRID</block>
   <block id="bccb4b0afd740bce8564f30b1575abc3" category="cell"><block ref="bccb4b0afd740bce8564f30b1575abc3" category="inline-link-macro-rx"></block></block>
-  <block id="2ce86ca668360cd5a4aa994b023607f3" category="inline-link-macro">網路狀態</block>
-  <block id="e83beef99ed3a882a508ed6758b0623f" category="cell"><block ref="e83beef99ed3a882a508ed6758b0623f" category="inline-link-macro-rx"></block></block>
-  <block id="2791ea973ba9d17f5ed1e60cab074d80" category="inline-link-macro">Nginx</block>
-  <block id="10ed695aba947068c6448f4978433b94" category="cell"><block ref="10ed695aba947068c6448f4978433b94" category="inline-link-macro-rx"></block></block>
-  <block id="afa2c3f8ad15d9cebdd7a4ec402fef17" category="inline-link-macro">節點</block>
-  <block id="d4df4178129288e74d306d474f41121d" category="cell"><block ref="d4df4178129288e74d306d474f41121d" category="inline-link-macro-rx"></block></block>
   <block id="c7a56e9ede426bcb6ef8adebfa167f5b" category="inline-link-macro">Nutanix NX系列</block>
   <block id="9935d13e4384b8045cffd7789defe14c" category="cell"><block ref="9935d13e4384b8045cffd7789defe14c" category="inline-link-macro-rx"></block></block>
-  <block id="a1b8b82e2c6dab4ba2762641402e6184" category="inline-link-macro">OpenZFS</block>
-  <block id="f5a800ee25a815f4c8c0d66efcf7438d" category="cell"><block ref="f5a800ee25a815f4c8c0d66efcf7438d" category="inline-link-macro-rx"></block></block>
   <block id="a2c92312bc8a9e692141bc61305782f3" category="inline-link-macro">Oracle ZFS 儲存設備</block>
   <block id="1200463c4d08a49769827a1407d750e3" category="cell"><block ref="1200463c4d08a49769827a1407d750e3" category="inline-link-macro-rx"></block></block>
-  <block id="20a028628edbb3462400721ddac09b9f" category="inline-link-macro">PostgreSQL</block>
-  <block id="a99e7bf172e9f9cad573a6eccf1f6b3b" category="cell"><block ref="a99e7bf172e9f9cad573a6eccf1f6b3b" category="inline-link-macro-rx"></block></block>
-  <block id="c56cf944a36c7c467f5b32e38638dde8" category="inline-link-macro">傀儡代理</block>
-  <block id="797515f3104ba80d886d48d24d2aab59" category="cell"><block ref="797515f3104ba80d886d48d24d2aab59" category="inline-link-macro-rx"></block></block>
   <block id="071bddc95331ea2a83a84067c9ea3dc0" category="inline-link-macro">Pure Storage FlashArray</block>
   <block id="1d29dde92dfd9ff8aa72e5cff1570a88" category="cell"><block ref="1d29dde92dfd9ff8aa72e5cff1570a88" category="inline-link-macro-rx"></block></block>
   <block id="f1e6b16c09bc292a11105dad6f4b2535" category="inline-link-macro">紅帽虛擬化</block>
   <block id="18870213d2b666f7b3e3e4922f4a98dd" category="cell"><block ref="18870213d2b666f7b3e3e4922f4a98dd" category="inline-link-macro-rx"></block></block>
-  <block id="f18b7f183f4e2ffd054a4b8637eb8724" category="inline-link-macro">Redis</block>
-  <block id="8f645d4f33d73ca131939a5353f98b16" category="cell"><block ref="8f645d4f33d73ca131939a5353f98b16" category="inline-link-macro-rx"></block></block>
-  <block id="6ddfc154397b4f05bf5f59d9b7edcb8e" category="inline-link-macro">重新思考資料庫</block>
-  <block id="b41f4fbf577e2b28e9db4c12eb10170c" category="cell"><block ref="b41f4fbf577e2b28e9db4c12eb10170c" category="inline-link-macro-rx"></block></block>
   <block id="dd7cb846f0c18d2c70eb7fb867bb16dd" category="inline-link-macro">RHEL 和 CentOS</block>
   <block id="e6b9c6f19de5724debafb44fc09ed89a" category="cell"><block ref="948fe3d28a4982dcd7133abf332f6f3c" category="inline-link-macro-rx"></block></block>
   <block id="d270a242787fdce58a1a0b666e5deafd" category="inline-link-macro">Rubrik CDM 存儲</block>
@@ -4005,8 +3957,6 @@
   <block id="18751bc06b492c14cf67d2591909671a" category="cell"><block ref="18751bc06b492c14cf67d2591909671a" category="inline-link-macro-rx"></block></block>
   <block id="630fa195499141eb0b6a3bd30e6b23b9" category="inline-link-macro">視窗</block>
   <block id="380d7094b74149f5b3436c1d1fad9e76" category="cell"><block ref="380d7094b74149f5b3436c1d1fad9e76" category="inline-link-macro-rx"></block></block>
-  <block id="eaa7024d6bed491bbaada5e2818c012a" category="inline-link-macro">ZooKeeper</block>
-  <block id="e00d8ef6824afbc3eb164b885bda2e98" category="cell"><block ref="e00d8ef6824afbc3eb164b885bda2e98" category="inline-link-macro-rx"></block></block>
   <block id="b33554a1697b5000df418d400a57bdd1" category="doc">配置和支援的設備</block>
   <block id="c20c853d46783b4e2e2c99d4f7100988" category="paragraph">此常見問題解答了有關Data Infrastructure Insights配置和支援設備的常見問題。</block>
   <block id="afeb548cda0a56b9f61559376e4c221d" category="section-title">Data Infrastructure Insights是否會改變我的環境？</block>
@@ -7159,280 +7109,7 @@
   <block id="006f752e44410388cadd8f8a37ce069f" category="inline-link-macro">代理配置</block>
   <block id="e7367bd1ec175ef5c58d982c52bc4348" category="inline-link-macro">伺服器TLSBootstrap</block>
   <block id="eb693e07b3c7e38a77aa691eee254db7" category="cell">如果 kubelet 使用自簽名證書，和/或指定的證書未在證書_Subject Alternative Name_ 清單中包含 &lt;kubelet_IP&gt;，則會發生這種情況。為了解決這個問題，使用者可以修改<block ref="1ff2a3d734af6ebdb77c417baa3479b1" category="inline-link-macro-rx"></block>，並將 _telegraf:insecureK8sSkipVerify_ 設為 _true_。這將配置 telegraf 輸入插件以跳過驗證。或者，使用者可以設定 kubelet<block ref="9ed8afe3c99331fa3d23c13414b98aba" category="inline-link-macro-rx"></block> ，這將觸發來自「certificates.k8s.io」API 的憑證請求。</block>
-  <block id="1914b55914b6ee44bc0dcd84cc7caeb3" category="summary">Apache 資料收集器配置</block>
-  <block id="a2c447b19901c50472d86c46b78e4269" category="doc">Apache 資料收集器</block>
-  <block id="8c8f719781e45e8796bf00085394a1ca" category="paragraph">此資料收集器允許從租戶上的 Apache 伺服器收集資料。</block>
-  <block id="1194c1f585884540788ba8946023cc33" category="list-text">您必須設定並正確執行 Apache HTTP 伺服器</block>
-  <block id="6b1dbef46026830edbb8a38bb35f7c07" category="list-text">您必須在代理主機/虛擬機器上擁有 sudo 或管理員權限</block>
-  <block id="c16390c8cf2123acd316f38a743628ab" category="list-text">通常，Apache _mod_status_ 模組會配置為在 Apache 伺服器的「/server-status?auto」位置顯示一個頁面。必須啟用_ExtendedStatus_選項才能收集所有可用欄位。有關如何設定伺服器的信息，請參閱 Apache 模組文件：<block ref="7174f93683616a9a4040d970e3c6eb19" category="inline-link-rx"></block></block>
-  <block id="b0896396e0f3a7aa981b2ef8957b9208" category="list-text">從*可觀察性 &gt; 收集器*中，按一下*+資料收集器*。選擇 Apache。</block>
-  <block id="db3b3ca5f6c31a760f5aa49a9a809802" category="inline-image-macro">Apache 設定</block>
-  <block id="5ec6fd62051ccff5584535e6108b55ba" category="paragraph"><block ref="5ec6fd62051ccff5584535e6108b55ba" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ed6e8b2146d5bd121cfea083307611f3" category="paragraph">Telegraf 的 Apache HTTP 伺服器外掛程式依賴「mod_status」模組的啟用。啟用此功能後，Apache 的 HTTP 伺服器將公開一個 HTML 端點，您可以在瀏覽器上查看該端點，也可以抓取該端點以提取所有 Apache 的 HTTP 伺服器配置的狀態。</block>
-  <block id="427a02dad880facfe9fb816312194295" category="section-title">相容性:</block>
-  <block id="8461c6dd6dfb26c96b75667840908e25" category="paragraph">配置是針對 Apache 的 HTTP 伺服器版本 2.4.38 開發的。</block>
-  <block id="5e35671340e6c9c7b25787ff637f0d95" category="section-title">啟用 mod_status：</block>
-  <block id="0f3bcff634f4d3862c37ca9068d609a1" category="paragraph">啟用和公開“mod_status”模組涉及兩個步驟：</block>
-  <block id="efb59b39eb3bfe8e4da0936bb46519fc" category="list-text">啟用模組</block>
-  <block id="3b817156f776bb94b972cf7a91ba3184" category="list-text">從模組中公開統計數據</block>
-  <block id="27c3a633e4b056a5469dc8064c89f668" category="section-title">啟用模組：</block>
-  <block id="44371abdc5e441e96423652f2b9d834b" category="paragraph">模組的載入由“/usr/local/apache/conf/httpd.conf”下的設定檔控制。編輯設定檔並取消註解以下行：</block>
-  <block id="5096c93091356730cc76dca2451a6d0c" category="section-title">從模組公開統計資料：</block>
-  <block id="553822327e85ab49367d681e24c3df28" category="paragraph">'mod_status' 的公開由 '/usr/local/apache2/conf/extra/httpd-info.conf' 下的設定檔控制。確保該設定檔中包含以下內容（至少其他指令也會存在）：</block>
-  <block id="bc34f8d241b1e1bccaf9d0575c5b92b3" category="inline-link-macro">Apache 文件</block>
-  <block id="7727bb6b0739435252f5c813bbbdb290" category="paragraph">有關“mod_status”模組的詳細說明，請參閱<block ref="1384449c324b5981491fad302f32d968" category="inline-link-macro-rx"></block></block>
-  <block id="e9713ae04a02a810d6f33dd956f42794" category="cell">阿帕契</block>
-  <block id="f69f559468f0eeb001c1c4ac7e03ba16" category="cell">命名空間伺服器</block>
-  <block id="aaba4d734bb5c6c1cd828a66a204028f" category="cell">節點 IP 節點名稱 連接埠 父伺服器設定產生 父伺服器 MPM 產生伺服器正常運作時間正在停止</block>
-  <block id="af40aea2350db56f2ccf87bd2e878384" category="cell">繁忙工作者 每個請求的位元組數 每秒位元組數 CPU 子進程 系統 CPU 子進程 使用者 CPU 負載 CPU 系統 CPU 用戶 非同步連接 關閉非同步連接 保持活動異步連接 寫入連接 每個請求的總持續時間 空閒工作者 平均負載（最近 1 分鐘） 平均負載（最近記 15 分鐘） 持續時間總數 5 分鐘）關閉記分板 DNS 尋找記分板 完成記分板 空閒清理記分板 保持活動記分板 記錄記分板 開啟記分板 讀取記分板 發送記分板 啟動記分板 等待</block>
-  <block id="1da80b1336c0c9594d16e3d3dab10d20" category="summary">Consul 資料收集器配置</block>
-  <block id="c4079b6998dfb2e5f02a35b303e1acce" category="doc">Consul 資料收集器</block>
-  <block id="95ae5733481d5e944eb9c76463e035e8" category="paragraph">Data Infrastructure Insights使用此資料收集器從 Consul 收集指標。</block>
-  <block id="6ed4f0f0b93d3def9b1fe51a22e44d7a" category="list-text">從*可觀察性 &gt; 收集器*中，按一下*+資料收集器*。選擇 Consul。</block>
-  <block id="90b5256380802f2feaca144a438190c3" category="inline-link-macro">安裝代理</block>
-  <block id="44c442d3e78a8d192000c14c74f3d018" category="paragraph">如果您尚未設定用於收集的代理，系統會提示您<block ref="a1b69a79c96be75135c991d76ebf15bb" category="inline-link-macro-rx"></block>您的租戶。</block>
-  <block id="bfd9f9769236435b451e6625d2b38cd5" category="paragraph">如果您已經配置了代理，請選擇適當的作業系統或平台，然後按一下「繼續」。</block>
-  <block id="bddbdda6ad83151063cda71734d4faf4" category="list-text">請依照 Consul 設定畫面中的指示配置資料收集器。說明根據您用於收集資料的作業系統或平台的類型而有所不同。</block>
-  <block id="488f9e22c68fcc3e89060d2f5f537744" category="inline-link-macro">Consul 文件</block>
-  <block id="a47b0fae235ee24589e1075c2fe0daeb" category="paragraph">資訊可以在<block ref="209f85ad7011f70864ffdec527911e92" category="inline-link-macro-rx"></block>。</block>
-  <block id="058912364976efe3be18dc926c430355" category="section-title">領事的物件和計數器</block>
-  <block id="52668346d353c3e6fdee1d0c1b711981" category="cell">領事</block>
-  <block id="24a1a9023bf78f02042ebc02aae1acda" category="cell">命名空間檢查ID服務節點</block>
-  <block id="4cbed0b534c83a56e07762ba4b9a62f4" category="cell">節點 IP 節點 OS 節點 UUID 節點名稱 服務名稱 檢查名稱 服務 ID 狀態</block>
-  <block id="701fda79498070ea91a9c98bbdd1dd4e" category="cell">關鍵超車警告</block>
-  <block id="8250aff5bf291c0fd6c60d86a94af326" category="summary">Couchbase資料收集器配置</block>
-  <block id="c85700224d4de4029d47e8f7419f121a" category="doc">Couchbase資料收集器</block>
-  <block id="c636deef9a34de19dc92f69ff80b6569" category="paragraph">Data Infrastructure Insights使用此資料收集器從 Couchbase 收集指標。</block>
-  <block id="80502f098bcf776c1d9ceec1ba9d636a" category="list-text">從*可觀察性 &gt; 收集器*中，按一下*+資料收集器*。選擇 Couchbase。</block>
-  <block id="d7712cfab308e47f5bb1445e9fbcb070" category="inline-image-macro">Couchbase 配置</block>
-  <block id="64fffda04d6b10150c8c8726100e6239" category="paragraph"><block ref="64fffda04d6b10150c8c8726100e6239" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="41bdcd289793051395a360769595211c" category="inline-link-macro">Couchbase 文檔</block>
-  <block id="f2b2ffbd53b392b14604a492426ea7ac" category="paragraph">資訊可以在<block ref="6a0d18e0abc795e5bc07d2ebcfb2d123" category="inline-link-macro-rx"></block>。</block>
-  <block id="c3a20296fdda109e5a387244bb33fbf6" category="cell">Couchbase 節點</block>
-  <block id="e4ef366ae6be226c757b37e27fcb263c" category="cell">命名空間叢集 Couchbase 節點主機名</block>
-  <block id="8439f36077726e546877845c0ee98c4a" category="cell">節點名稱 節點IP</block>
-  <block id="5c89437098c8abb0c4893d4e1c655f2c" category="cell">記憶體可用記憶體總計</block>
-  <block id="a852fa80ca1bc5024319d7b5d7d84b6d" category="cell">Couchbase 桶</block>
-  <block id="d62c713a51121af573c0ef402ab3a282" category="cell">命名空間 儲存桶 集群</block>
-  <block id="4e6556682c31b5913aa78d687bb53082" category="cell">已用資料 資料擷取 已使用磁碟 專案計數 已用記憶體 每秒運算元 已用配額</block>
-  <block id="170ac79db4abf3af53c36b5ba23d297a" category="summary">CouchDB 資料收集器配置</block>
-  <block id="1aa7fb61fdaf60c81a318c790c7e545e" category="doc">CouchDB資料收集器</block>
-  <block id="c259e9eefdbf037435516cfb262f6880" category="paragraph">Data Infrastructure Insights使用此資料收集器從 CouchDB 收集指標。</block>
-  <block id="c3dba9c80e9fa5a82c71abb7fa5cf37f" category="list-text">從*可觀察性 &gt; 收集器*中，按一下*+資料收集器*。選擇 CouchDB。</block>
-  <block id="9d3601e78c51a4b184d2fe86128539e4" category="inline-image-macro">CouchDB 配置</block>
-  <block id="61d7e3da551b2e4c1549750fbb518e22" category="paragraph"><block ref="61d7e3da551b2e4c1549750fbb518e22" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8a7006055e2291f0b9e46ee915f0ad0c" category="inline-link-macro">CouchDB 文件</block>
-  <block id="bc781ab763b71df7b975bbfe7c860bba" category="paragraph">資訊可以在<block ref="3147fac008aa304c440ef0d367c93828" category="inline-link-macro-rx"></block>。</block>
-  <block id="dea8b0c01ac3c8f22d85423d187ec3d2" category="cell">CouchDB</block>
-  <block id="64f2993184c14c565d6ba3100a20ca05" category="cell">驗證快取命中 驗證快取未命中 資料庫讀取 資料庫寫入 開啟資料庫 開啟作業系統檔案 最大請求時間 最小請求時間 Httpd 請求方法 複製 Httpd 請求方法 刪除 Httpd 請求方法 取得 Httpd 請求方法 頭部 Httpd 請求方法 發布 Httpd 請求方法 取得 Httpd 請求方法 頭部 Httpd 請求方法 發布 Httpd 請求方法 取得 Httpd 請求方法 頭 20120 狀態狀態代碼 304 狀態代碼 400 狀態代碼 401 狀態代碼 403 狀態代碼 404 狀態代碼 405 狀態代碼 409 狀態代碼 412 狀態代碼 500</block>
-  <block id="0982f7ddf38c72531e91321d3b4e198e" category="summary">Docker 資料收集器配置</block>
-  <block id="d80788e8d22d139775039533ead6bae8" category="doc">Docker 資料收集器</block>
-  <block id="7ab1583e1a436a4f564958859dce5c00" category="paragraph">Data Infrastructure Insights使用此資料收集器從 Docker 收集指標。</block>
-  <block id="9ee6c12aac4505f529c285b136202ce5" category="list-text">從*可觀察性 &gt; 收集器*中，按一下*+資料收集器*。選擇 Docker。</block>
-  <block id="0f4a5a5b8072d8e43816253b9197d0f1" category="list-text">請依照 Docker 配置畫面中的說明配置資料收集器。說明根據您用於收集資料的作業系統或平台的類型而有所不同。</block>
-  <block id="4ed4e51db0aa02d2ed7e8fb292cc39c8" category="inline-image-macro">Docker 配置</block>
-  <block id="ee96e45eed0143814810825fc37d2fa8" category="paragraph"><block ref="ee96e45eed0143814810825fc37d2fa8" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2622d06a8a5a13f122149c79381978f8" category="paragraph">Docker 的 Telegraf 輸入插件透過指定的 UNIX 套接字或 TCP 端點收集指標。</block>
-  <block id="df9c715f20aaf58fb3926cc02b08ec53" category="section-title">相容性</block>
-  <block id="047938f8b934d1717dddfdf0dbb9f6bc" category="paragraph">配置是針對 Docker 版本 1.12.6 開發的。</block>
-  <block id="0eb08f5b635663822078f16d3fc578db" category="section-title">設定</block>
-  <block id="43d4b6a220eea649b1a53bac845809d2" category="section-title">透過 UNIX 套接字存取 Docker</block>
-  <block id="ce07d3c38928e864e20e82c242ae0f98" category="paragraph">如果 Telegraf 代理程式在裸機上執行，請透過執行以下命令將 telegraf Unix 使用者新增至 docker Unix 群組：</block>
-  <block id="0c38156add26ac675264862ed09bc25d" category="paragraph">如果 Telegraf 代理程式在 Kubernetes pod 中執行，則透過將套接字作為磁碟區對應到 pod 中，然後將該磁碟區掛載到 /var/run/docker.sock 來公開 Docker Unix 套接字。例如，將以下內容新增至 PodSpec：</block>
-  <block id="69821e3ecac0b5542b2dfa0b6083a7be" category="paragraph">然後，將以下內容新增至容器：</block>
-  <block id="8016b54c78dd0d99ee6acbd78462da90" category="paragraph">請注意，為 Kubernetes 平台提供的Data Infrastructure Insights安裝程式會自動處理此對應。</block>
-  <block id="73553149828f2c198e9e7df4807e33bf" category="section-title">透過 TCP 端點存取 Docker</block>
-  <block id="b4f5dd84e7c731654efa53663ef21180" category="paragraph">預設情況下，Docker 使用連接埠 2375 進行未加密訪問，使用連接埠 2376 進行加密訪問。</block>
-  <block id="681992b8581f6d4247af5523a14d0ce4" category="cell">Docker 引擎</block>
-  <block id="f4a3b0c461a1d83562753ce679c373cc" category="cell">命名空間 Docker 引擎</block>
-  <block id="8ab71e8b7ccb8786b890c85e686d1dbf" category="cell">節點名稱 節點 IP 節點 UUID 節點 OS Kubernetes 叢集 Docker 版本 單元</block>
-  <block id="efb21860adb0899b80a09ed3d53daca5" category="cell">記憶體容器 已暫停的容器 正在運行的容器 已停止的容器 CPU Go 例程 映像 偵聽器事件 已使用的檔案描述符 可用資料 已使用的資料總量 可用元資料 元資料 已使用的總元資料 池 區塊大小</block>
-  <block id="c4d05fe785e9118926263f1d8d731968" category="cell">Docker容器</block>
-  <block id="ef6673f2b613d194f98744f7a7d34b5d" category="cell">命名空間容器名稱 Docker 引擎</block>
-  <block id="85251df3c314f73ff378bbb53d0cbb1f" category="cell">Kubernetes 容器雜湊 Kubernetes 容器連接埠 Kubernetes 容器重開機計數 Kubernetes 容器終止訊息路徑 Kubernetes 容器終止訊息策略 Kubernetes Pod 終止寬限期 容器映像 容器狀態 容器版本 節點名稱 Kubernetes 容器終止站 Kubernet 容器名稱 Knetuber 容器名稱 Knetnetfnet net1沙盒 ID 節點 IP 節點 UUID Docker 版本 Kubernetes IO 配置可見 Kubernetes IO 配置來源 OpenShift IO SCC Kubernetes 描述 Kubernetes 顯示名稱 OpenShift 標籤 Kompose 服務 Pod 模板雜湊 控制器修訂StatefulSet Pod 名稱 租用戶 Web 控制台 架構 權威來源 URL 建置日期 RH 建置主機 RH 元件分佈範圍 安裝發佈運作摘要 解除安裝 VCS 引用 VCS 類型 供應商版本 健康狀況 容器 ID</block>
-  <block id="5ff8370214b985307753a0ff9465c15b" category="cell">記憶體活動匿名記憶體活動檔案記憶體快取記憶體層級限制記憶體非活動匿名記憶體非活動檔案記憶體限制記憶體對應檔案記憶體最大使用量記憶體頁面錯誤記憶體頁面嚴重錯誤記憶體分頁傳入記憶體分頁傳出記憶體駐留集大小記憶體駐留集大小巨大記憶體總活動匿名記憶體總活動檔案記憶體總快取記憶體總非活動匿名記憶體總非活動檔案記憶體總映射檔案記憶體總頁錯誤記憶體總頁面嚴重錯誤記憶體總分頁傳入記憶體總分頁傳出記憶體總駐留集大小記憶體總駐留集大小巨大記憶體總不可清除記憶體不可清除記憶體使用量記憶體使用率退出程式碼OOM 終止 PID 啟動於失敗連勝</block>
-  <block id="213eaa882abd038ecefb94d1c9ad53dd" category="cell">Docker 容器區塊 IO</block>
-  <block id="b6c8eb0e1f3a075790a46177f5f664a9" category="cell">命名空間容器名稱裝置Docker引擎</block>
-  <block id="a8ca9934ba37964ab75dc00b1fa3e8fe" category="cell">Kubernetes 容器雜湊 Kubernetes 容器連接埠 Kubernetes 容器重開機計數 Kubernetes 容器終止訊息路徑 Kubernetes 容器終止訊息策略 Kubernetes Pod 終止寬限期 容器映像 容器狀態 容器版本 節點名稱 Kubernetes 容器終止站 Kubernet 容器名稱 Knetuber 容器名稱 Knetnetfnet net1沙盒 ID 節點 IP 節點 UUID Docker 版本 Kubernetes 配置可見 Kubernetes 配置來源 OpenShift SCC Kubernetes 說明 Kubernetes 顯示名稱 OpenShift 標籤 架構 架構版本 Pod 範本雜湊 控制器修訂雜湊 Pod 範本產生 Kompose 服務服務架構權威來源 URL RH 建置主機 RH 元件分佈範圍 安裝 維護者 發佈 運行摘要 解除安裝 VCS 引用 VCS 類型 版本 架構 URL 架構 VCS URL 架構版本 容器 ID</block>
-  <block id="34792b46d5f4d118993b97dc65a3ed9b" category="cell">IO 服務位元組數 遞歸異步 IO 服務位元組數 遞歸讀取 IO 服務位元組數 遞歸同步 IO 服務位元組數 遞歸總計 IO 服務位元組數 遞歸寫入 IO 服務 遞歸異步 IO 服務 遞歸 IO 服務位元組數 遞歸寫入 IO 服務 遞歸</block>
-  <block id="c19b7a0868fcc8b657cf119904c8f4ee" category="cell">Docker容器網路</block>
-  <block id="831c5d0c57dec418323ed2d160458d81" category="cell">命名空間容器名稱網路Docker引擎</block>
-  <block id="6fcf9c483cfa3017433456584bcd7f8f" category="cell">容器映像 容器狀態 容器版本 節點名稱 節點IP 節點UUID 節點OS K8s叢集 Docker版本 容器ID</block>
-  <block id="3fcbd1f352221dab310964db15bbae4d" category="cell">RX 丟棄 RX 位元組數 RX 錯誤數 RX 封包數 TX 丟棄 TX 位元組數 TX 錯誤數 TX 封包數</block>
-  <block id="e11e2314917505f9b82d06bdd3c6e4b2" category="cell">Docker 容器 CPU</block>
-  <block id="722c21d9c801a7b062bf40cd7bd5ae06" category="cell">命名空間容器名稱CPU Docker引擎</block>
-  <block id="51accef59e0d9b09555ad4a6b152e847" category="cell">Kubernetes 容器雜湊 Kubernetes 容器連接埠 Kubernetes 容器重新啟動計數 Kubernetes 容器終止訊息路徑 Kubernetes 容器終止訊息策略 Kubernetes Pod 終止寬限期 Kubernetes 設定可見 Kubernetes 設定來源 OpenShift SCC 容器映像 容器狀態 容器版本 節點配置可見 Kubernetes 設定來源 OpenShift SCC 容器映像 netuber 容器版本 節點代碼Kubernetes Pod 命名空間 Kubernetes Pod UID Kubernetes 沙盒 ID 節點 IP 節點 UUID 節點作業系統 Kubernetes 叢集 Docker 版本 Kubernetes 說明 Kubernetes 顯示名稱 OpenShift 標籤 架構版本 Pod 範本雜湊 控制器修訂版 Pod設定 客戶端架構 Kompose 服務授權服務授權控制台許可證供應商架構權威來源 URL RH 建置主機 RH 元件分佈範圍安裝維護者發佈運行摘要卸載 VCS 引用 VCS 類型版本架構 URL 架構 VCS URL 架構版本容器 ID</block>
-  <block id="01515237e5a51a70ac5f1a57ab2c74a5" category="cell">限制週期限制限制週期限制限制時間核心模式使用率使用者模式使用率使用率百分比系統使用率總計</block>
-  <block id="4031806f96c482bc76bbf0a4187237a1" category="cell">在按照配置頁面上的說明操作後，我沒有在Data Infrastructure Insights中看到我的 Docker 指標。</block>
-  <block id="905bf4f9d8189256f8247dcef263d5cb" category="cell">檢查 Telegraf 代理程式日誌，看它是否報告以下錯誤：E！插件 [inputs.docker] 中的錯誤：嘗試連接到 Docker 守護程式套接字時權限被拒絕如果確實如此，請採取必要的步驟，以便按照上面指定的方式為 Telegraf 代理提供對 Docker Unix 套接字的訪問權限。</block>
-  <block id="29f2c433c8324679db838494d114ace0" category="summary">Elasticsearch 資料收集器配置</block>
-  <block id="b254328dbad8d7bef169a1d38f1b1bec" category="doc">Elasticsearch 資料收集器</block>
-  <block id="a052d0784224035ede1bb9a2623993e6" category="paragraph">Data Infrastructure Insights使用此資料收集器從 Elasticsearch 收集指標。</block>
-  <block id="c22bbce40f7866184fc5238e4cf0526d" category="list-text">從*可觀察性 &gt; 收集器*中，按一下*+資料收集器*。選擇 Elasticsearch。</block>
-  <block id="8dc7af6f97dac4ac46d66b12e0c86974" category="inline-image-macro">Elasticsearch 配置</block>
-  <block id="5b3344ac5bf291f59c070db863943014" category="paragraph"><block ref="5b3344ac5bf291f59c070db863943014" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7423bcb1039be167bcf002d43ee6670e" category="inline-link-macro">Elasticsearch 文件</block>
-  <block id="1cd7a99f1b7abd82e5c52da438eb8098" category="paragraph">資訊可以在<block ref="bcfb5ea01b37890a7134cc470707e795" category="inline-link-macro-rx"></block>。</block>
-  <block id="824ae3473df67a0ffcc2e7213c8155ab" category="cell">Elasticsearch 集群</block>
-  <block id="b47ef76054c94c60d8ded4d3bf1ca5ae" category="cell">命名空間集群</block>
-  <block id="89fc526a8bc54d6b35b9f537497ad12b" category="cell">節點IP 節點名稱 叢集狀態</block>
-  <block id="dc74b66d0fe6a965e5a23640119f3c60" category="cell">Elasticsearch 節點</block>
-  <block id="673731fc48d3aeb518baecf281fb2c22" category="cell">命名空間 叢集 ES 節點 ID ES 節點 IP ES 節點</block>
-  <block id="ca7086c6ed2859db76f290c9cc1ed037" category="cell">區域 ID</block>
-  <block id="f23d43a2f8827bf71755047f9233d1d7" category="summary">Flink 資料收集器配置</block>
-  <block id="760f80f90fb384d40bb66a9f0b4823fd" category="doc">Flink 資料收集器</block>
-  <block id="f02b243a6c4f4340ac08b1de80e1c9c0" category="paragraph">Data Infrastructure Insights使用此資料收集器從 Flink 收集指標。</block>
-  <block id="b9edb2d8cbff35711b7021f32a2692dd" category="list-text">從*可觀察性 &gt; 收集器*中，按一下*+資料收集器*。選擇 Flink。</block>
-  <block id="c1a584a645c5a21efa505b7deca25b2b" category="inline-image-macro">Flink 配置</block>
-  <block id="2462dee15f2229ca8b824af60aa5037f" category="paragraph"><block ref="2462dee15f2229ca8b824af60aa5037f" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="88f3c1a97fbc332ad9adb7ff5179d0f5" category="paragraph">完整的 Flink 部署涉及以下元件：</block>
-  <block id="5ec659a1960f3ec4bb0ed146c2fe29e8" category="paragraph">JobManager：Flink 主系統。協調一系列 TaskManager。在高可用性設定中，系統將有多個 JobManager。  TaskManager：這是執行 Flink 運算子的地方。 Flink插件基於telegraf的Jolokia插件。由於需要從所有 Flink 組件收集信息，因此需要在所有組件上配置並透過 Jolokia 公開 JMX。</block>
-  <block id="56b6a44368589d2180398c17050693ba" category="paragraph">配置是針對 Flink 版本 1.7.0 開發的。</block>
-  <block id="74f1c760151734cb26fb8795538faefc" category="section-title">鬼椒特效罐</block>
-  <block id="788386447f3336a53e1c2ce1bfe69253" category="inline-link-macro">Jolokia代理 1.6.0</block>
-  <block id="12b5a09ab5184ab662baeccbd4410892" category="paragraph">對於所有單一元件，必須下載 Jolokia 代理程式 jar 檔案的版本。測試的版本是<block ref="adb2184741946d946bb10cd791c6089f" category="inline-link-macro-rx"></block>。</block>
-  <block id="0fafe075396c21ab32ba5bed2f6b04cb" category="paragraph">以下說明假設下載的 jar 檔案（jolokia-jvm-1.6.0-agent.jar）位於「/opt/flink/lib/」位置下。</block>
-  <block id="d6625a003ca97117da4294ef2332bec8" category="section-title">作業管理器</block>
-  <block id="ac48db67fd50d761b0cc801e21516f81" category="paragraph">若要設定 JobManager 以公開 Jolokia API，您可以在節點上設定以下環境變量，然後重新啟動 JobManager：</block>
-  <block id="be858081216aea340977594f6274fe6e" category="paragraph">您可以為 Jolokia (8778) 選擇不同的連接埠。如果您有一個內部 IP 來鎖定 Jolokia，您可以用自己的 IP 替換「catch all」 0.0.0.0。請注意，此 IP 需要可從 telegraf 插件存取。</block>
-  <block id="dad4668bc0b8e79cd460bf9f0e0a9700" category="section-title">工作管理員</block>
-  <block id="239187f7984607b4dbabb4a154679050" category="paragraph">若要設定 TaskManager 以公開 Jolokia API，您可以在節點上設定下列環境變量，然後重新啟動 TaskManager：</block>
-  <block id="fed9c829468f01ad78cb54dd7cce7c1e" category="cell">Flink 任務管理器</block>
-  <block id="cc4f08bdf048f36eae4a37c7b9b75ba1" category="cell">叢集命名空間伺服器</block>
-  <block id="4a6c9bd53c6d064a543027eaa563c583" category="cell">節點名稱 任務管理器ID 節點IP</block>
-  <block id="4fd8a1981a5b46d96897012d9e9b9168" category="cell">網路可用記憶體段 網路總記憶體段 垃圾收集 PS 標記清除計數 垃圾收集 PS 標記清除時間 垃圾收集 PS 清除計數 垃圾收集 PS 清除時間 堆內存 已提交堆內存 初始化堆內存 最大堆內存已用線程數 守護程序線程數 峰值線程數 已啟動線程數</block>
-  <block id="e5bcf79e43b1cb79fa38d8773f5c9876" category="cell">Flink 作業</block>
-  <block id="846a72770c317ead4062aedae5f893c8" category="cell">叢集命名空間伺服器作業 ID</block>
-  <block id="6a2c2989b258eae68f76754fa5d41c6f" category="cell">節點名稱 作業名稱 節點 IP 上次檢查點 外部路徑 重新啟動時間</block>
-  <block id="5cada8907c93eaad28b0ddd4ec957602" category="cell">停機時間 完全重啟 上次檢查點對齊 緩衝的上次檢查點持續時間 上次檢查點大小 已完成檢查點的數量 失敗的檢查點的數量 正在進行的檢查點的數量 檢查點數量 正常運行時間</block>
-  <block id="3d7a81a763fb0e456c06be07d13566ea" category="cell">Flink 作業管理器</block>
-  <block id="97f03473b1053f9ddc2ebac96e570fbf" category="cell">垃圾收集 PS 標記清除計數 垃圾收集 PS 標記清除時間 垃圾收集 PS 清除計數 垃圾收集 PS 清除時間 堆內存 已提交堆內存 初始化堆內存 最大堆內存 已使用已註冊任務管理器數量 正在運行的作業數量 可用的任務槽數量 任務槽總數 守護線程數 峰值線程數 已啟動線程數</block>
-  <block id="4c6db84f5a8ecb130c48fbe482bd0407" category="cell">Flink 任務</block>
-  <block id="d14c367e94317a3e6e27568781bb8c3c" category="cell">叢集命名空間作業 ID 任務 ID</block>
-  <block id="5843feb1d224110026d8762d7faffc66" category="cell">伺服器節點名稱作業名稱子任務索引任務嘗試ID任務嘗試次數任務名稱任務管理器ID節點IP目前輸入浮水印</block>
-  <block id="fd3f7cc527e3ec659d722c45c30e0117" category="cell">緩衝區入池使用情況緩衝區入佇列長度緩衝區出池使用情況緩衝區出佇列長度本地緩衝區數量本地每秒緩衝區入計數本地每秒緩衝區入計數速率遠端緩衝區數量遠端每秒緩衝區入計數遠端每秒緩衝區入計數速率緩衝區出數量緩衝區出計數每秒緩衝區出計數速率本地位元組數本地每秒位元組數本地每秒位元組數本地每秒位元組數速率遠端位元組數遠端每秒位元組數計數遠端每秒位元組數速率出位元組數每秒位元組數計數每秒出位元組數速率記錄入數每秒記錄入數計數每秒記錄入數速率記錄出數每秒記錄出數</block>
-  <block id="612f6074a0c92f40ddbce389e1bcf2fc" category="cell">Flink 任務運算符</block>
-  <block id="efa07c862dd433cfd3278ef665cd62bf" category="cell">叢集命名空間作業 ID 操作員 ID 任務 ID</block>
-  <block id="2aa96940f26ed9cf171b1aba30346ffa" category="cell">伺服器節點名稱作業名稱操作員名稱子任務索引任務嘗試ID任務嘗試次數任務名稱任務管理器ID節點IP</block>
-  <block id="36492bf47ea19332301e1b80a8878538" category="cell">目前輸入浮水印 目前輸出浮水印 輸入記錄數 每秒輸入記錄數 計數 每秒輸入記錄數速率 輸出記錄數 每秒輸出記錄數 計數 每秒輸出記錄數速率 延遲記錄數 已分配分區 消耗位元組數 速率 提交延遲 平均提交延遲 最大提交速率 提交失敗 提交成功 獲取速率 獲取延遲 取得速率 取得速率限制連接時間值最大心跳速率 傳入位元組速率 IO 比率 平均 IO 時間（奈秒） IO 等待比率 平均 IO 等待時間（奈秒） 加入速率 加入時間 上次心跳前的平均時間 網路 IO 速率 傳出位元組速率 消耗記錄數 速率 記錄延遲同步後的最大速度 要求最大值</block>
-  <block id="13b9b5c6c0fb1445ca79a2155f4dc602" category="summary">Hadoop資料收集器配置</block>
-  <block id="38af629ca8cce22e7b7e641b96f8197b" category="doc">Hadoop資料收集器</block>
-  <block id="41c6db2c8c29025e6e8a1b8f52dbea6e" category="paragraph">Data Infrastructure Insights使用此資料收集器從 Hadoop 收集指標。</block>
-  <block id="65f4403a1570898156c13c0053e0d957" category="list-text">從*可觀察性 &gt; 收集器*中，按一下*+資料收集器*。選擇 Hadoop。</block>
-  <block id="e844ff1ebc3eef465aed7960b58160c3" category="inline-image-macro">Hadoop配置</block>
-  <block id="026b451ea6f45b0c92de7f54611efaf2" category="paragraph"><block ref="47353d83abd9981302d8e2ae7057d5b3" category="inline-image-macro-rx" type="image"></block> <block ref="7afda35c9e63e32c054b3ad27f5a4ccb" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f420dce044ac00b84abcfafd6e9f994a" category="paragraph">完整的 Hadoop 部署涉及以下元件：</block>
-  <block id="d713d040466c91cefd2167bcebd60062" category="list-text">NameNode：Hadoop 分散式檔案系統 (HDFS) 主系統。協調一系列 DataNode。</block>
-  <block id="da8ea8d009db4b0c889dc3686a8d9638" category="list-text">輔助 NameNode：主 NameNode 的溫故障轉移。在 Hadoop 中，向 NameNode 的提升不會自動發生。輔助 NameNode 收集來自 NameNode 的訊息，以便在需要時進行提升。</block>
-  <block id="a4c57bdec853ab95919855b4747bfa32" category="list-text">DataNode：資料的實際所有者。</block>
-  <block id="9c600745fb11557034d343ea8107d75a" category="list-text">ResourceManager：計算主系統（Yarn）。協調一系列 NodeManager。</block>
-  <block id="39f4bb6feff48cfe7b9520c7318f9767" category="list-text">NodeManager：用於計算的資源。應用程式運行的實際位置。</block>
-  <block id="f95e602d74c2ca81c1416dbb467a0df7" category="list-text">JobHistoryServer：負責服務所有與作業歷史相關的請求。</block>
-  <block id="c1917bdd072d470e050bd2c06f83e344" category="paragraph">Hadoop插件基於telegraf的Jolokia插件。由於需要從所有 Hadoop 元件收集信息，因此需要在所有元件上配置並透過 Jolokia 公開 JMX。</block>
-  <block id="0f37fe3dfe5894ca54f816b3a822ab75" category="paragraph">配置是針對 Hadoop 版本 2.9.2 開發的。</block>
-  <block id="cdd86f53b4b8b0d623b6a8ee7a48c7bc" category="paragraph">以下說明假設下載的 jar 檔案（jolokia-jvm-1.6.0-agent.jar）位於「/opt/hadoop/lib/」位置下。</block>
-  <block id="32b6eea89ffa772d5a299a3fa2ae0f4e" category="section-title">名稱節點</block>
-  <block id="232e93d6785b24d7d392240ca50f3ae2" category="paragraph">若要設定 NameNode 以公開 Jolokia API，您可以在 &lt;HADOOP_HOME&gt;/etc/hadoop/hadoop-env.sh 中設定以下內容：</block>
-  <block id="9bc82d5913c313160e8e66d24078bba0" category="section-title">輔助 NameNode</block>
-  <block id="f18509f1fb2f9a71f232159773b2fd87" category="paragraph">若要設定輔助 NameNode 以公開 Jolokia API，您可以在 &lt;HADOOP_HOME&gt;/etc/hadoop/hadoop-env.sh 中設定以下內容：</block>
-  <block id="315104928eaa5842590c6ce58545354d" category="section-title">資料節點</block>
-  <block id="45fef23823b56451d4fe53fc6c8d98c7" category="paragraph">若要設定 DataNode 以公開 Jolokia API，您可以在 &lt;HADOOP_HOME&gt;/etc/hadoop/hadoop-env.sh 中設定以下內容：</block>
-  <block id="ed760e01ef8cb789b502ad1c9a3829a2" category="section-title">資源管理器</block>
-  <block id="b475783ddb9124cc9510e5e42cf8e80f" category="paragraph">若要設定 ResourceManager 以公開 Jolokia API，您可以在 &lt;HADOOP_HOME&gt;/etc/hadoop/hadoop-env.sh 中設定以下內容：</block>
-  <block id="1acfb853dd9d284090a1f6804f68d238" category="section-title">節點管理器</block>
-  <block id="08dc29be4fde03fbd2b992b1227f2990" category="paragraph">若要設定 NodeManagers 以公開 Jolokia API，您可以在 &lt;HADOOP_HOME&gt;/etc/hadoop/hadoop-env.sh 中設定以下內容：</block>
-  <block id="ff3d03ec141ab7e4f5faa0c83687126c" category="section-title">作業歷史伺服器</block>
-  <block id="4087664a919c61abae79b6d518148613" category="paragraph">若要設定 JobHistoryServer 以公開 Jolokia API，您可以在 &lt;HADOOP_HOME&gt;/etc/hadoop/hadoop-env.sh 中設定以下內容：</block>
-  <block id="bfa0ceac01bc6e1226697171b0d5b352" category="cell">Hadoop 輔助 NameNode</block>
-  <block id="fe1a99e660c022ae82cc4f285f9c1fae" category="cell">節點名稱 節點IP 編譯資訊 版本</block>
-  <block id="7c1a0861b825b536f9d829a1bb1e2d51" category="cell">Hadoop 節點管理器</block>
-  <block id="df6174495390f87b029379629c6f2b33" category="cell">Hadoop資源管理器</block>
-  <block id="569b69985a3ba9860b112ed47851e6f3" category="cell">Hadoop 資料節點</block>
-  <block id="8751de48b6635b7a5598ab69137093dc" category="cell">節點名稱 節點 IP 叢集 ID 版本</block>
-  <block id="5a0c1fdf2f2b483f386886e066dfae1b" category="cell">Hadoop 名稱節點</block>
-  <block id="637b504f65b25d54361a662bf71a4164" category="cell">節點名稱節點 IP 事務 ID 上次寫入時間自上次載入編輯 HA 狀態檔案系統狀態區塊池 ID 叢集 ID 編譯資訊不同版本計數版本</block>
-  <block id="0460c951ea9c38503a35b138121da86c" category="cell">Hadoop 作業歷史伺服器</block>
-  <block id="3af2b23a1e0e5c8f8f71ba7f0645e753" category="summary">HAProxy 資料收集器配置</block>
-  <block id="d7f6334a8fd2ef6e012df8e7d1bc1840" category="doc">HAProxy 資料收集器</block>
-  <block id="b433045739b63e44c767aaa4ea1d5681" category="paragraph">Data Infrastructure Insights使用此資料收集器從 HAProxy 收集指標。</block>
-  <block id="419697cbdba3ded9f042d2b7a045a7be" category="list-text">從*可觀察性 &gt; 收集器*中，按一下*+資料收集器*。選擇 HAProxy。</block>
-  <block id="6c1dacdba2adca5cfa22ff19b2d327fe" category="inline-image-macro">HAProxy 配置</block>
-  <block id="00f9d91055267fed1b468bf28bbfbb04" category="paragraph"><block ref="00f9d91055267fed1b468bf28bbfbb04" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="cb69e07b7e1dc3bc5864b07b79bba857" category="paragraph">Telegraf 的 HAProxy 外掛程式依賴 HAProxy Stats 的支援。這是 HAProxy 內建的配置，但它並非開箱即用。啟用後，HAProxy 將公開一個 HTML 端點，您可以在瀏覽器上查看該端點，也可以抓取該端點以提取所有 HAProxy 配置的狀態。</block>
-  <block id="4be336e5cd4f5bf12e0746a849c25857" category="paragraph">配置是針對 HAProxy 版本 1.9.4 開發的。</block>
-  <block id="0c3983f3904b2dc8bf6ac988603783d3" category="section-title">設定:</block>
-  <block id="376c8f5141386640268a2d2c2187ca53" category="paragraph">要啟用統計訊息，請編輯您的 haproxy 設定檔並在「預設」部分後添加以下行，使用您自己的使用者/密碼和/或 haproxy URL：</block>
-  <block id="06e964df53203dd063d51650b2e750c1" category="paragraph">以下是啟用統計資訊的簡化範例設定檔：</block>
-  <block id="c3236962a66f7a46e03d64979b9d1600" category="inline-link-macro">HAProxy 文檔</block>
-  <block id="b4ba6dee394cc6642974efbba5297a9a" category="paragraph">有關完整和最新的說明，請參閱<block ref="5a379a5f4fc2aff325e2186c5a680899" category="inline-link-macro-rx"></block>。</block>
-  <block id="cd1ff811c7eb5c250dc81f6a5286cf43" category="cell">HAProxy 前端</block>
-  <block id="8dea80f14c6104c5733a52c154ef935e" category="cell">命名空間地址代理</block>
-  <block id="c45e1928ae65186fbbe90a9be80ee483" category="cell">節點 IP 節點名稱 代理 ID 模式 進程 ID 會話速率限制 伺服器 ID 會話限制狀態</block>
-  <block id="958c01b1efd28326ab76cd02bbd1597e" category="cell">傳入位元組數 傳出位元組數 快取命中數 快取查找數 壓縮 繞過的位元組數 傳入壓縮 傳出位元組數 快取命中數 快取查找數 壓縮 繞過的位元組數 傳入壓縮 傳出位元組數 壓縮回應數 連線速率 連線速率 最大連線數 連線規則拒絕的請求總數 安全性考慮拒絕的請求數為 5其他請求 攔截的會話速率 會話速率 最大請求速率 請求速率 最大請求速率 總會話數 會話數 最大會話數 總請求數 重寫</block>
-  <block id="dada9c5c3057d3996c71c414bb95f293" category="cell">HAProxy 伺服器</block>
-  <block id="b79b9d688e7feb386a427ddee600bf90" category="cell">命名空間位址代理伺服器</block>
-  <block id="5576d0777cc9aa03fb396cdae277dc93" category="cell">節點IP 節點名稱 檢查完成時間 檢查下降配置 檢查健康值 檢查上升配置 檢查狀態 代理ID 上次更改時間 上次會話時間 模式 進程ID 伺服器ID 狀態權重</block>
-  <block id="7eb59f1dcd9a062c8263f5e4b2ebeb69" category="cell">活動伺服器 備份伺服器 輸入位元組數 輸出位元組數 檢查停機數 檢查失敗數 用戶端中止連線數 連線平均時間 停機時間 拒絕回應總數 連線錯誤數 回應錯誤數 回應 1xx 數 回應 2xx 數 回應 3xx 數 工作階段 4xx 數位回應 5 數 佇列時間佇列其他數位伺服器最大連線重用數 回應時間 平均會話數 最大會話數 伺服器傳輸中止數 會話總數 會話總數 總時間 平均請求數 重新分派數 請求數 重試數 請求數 重寫數</block>
-  <block id="f7e484ed281631da8383d690f4eddd80" category="cell">HAProxy 後端</block>
-  <block id="97147057d2a68260221e7116c41c9222" category="cell">節點IP 節點名稱 代理ID 上次更改時間 上次會話時間 模式 進程ID 伺服器ID 會話限制 狀態 權重</block>
-  <block id="9a0ea7807c7dd21ed7a14f4f90d3e5ba" category="cell">活動伺服器 備份伺服器 傳入位元組數 傳出位元組數 快取命中數 快取查找數 檢查失敗數 用戶端中止數 壓縮 繞過的位元組數 壓縮傳入位元組數 壓縮傳出位元組數 壓縮回應數 連線數 連線平均時間 停機時間 因安全問題拒絕回應數回應數 5xx 回應數 選定的其他伺服器 總計 佇列數 目前佇列數 最大佇列數 平均時間 每秒會話數 每秒會話數 最大請求數 總連線重用數 回應時間 平均會話數 最大會話數 伺服器傳送中止數 會話數 會話總數 時間 平均請求數 重新分派數 最大會話數 伺服器傳送中止數 會話數 會話總數</block>
-  <block id="3ed1623d8dee972d71ef8f8f97d1e7b7" category="summary">JVM資料收集器配置</block>
-  <block id="83940d42e25b16f92792429af8696c02" category="doc">JVM資料收集器</block>
-  <block id="ae66f07e640486b639a49dbc44b0f921" category="paragraph">Data Infrastructure Insights使用此資料收集器從 JVM 收集指標。</block>
-  <block id="2f646a2871ea4aa3befe55d29f178062" category="list-text">從*可觀察性 &gt; 收集器*中，按一下*+資料收集器*。選擇 JVM。</block>
-  <block id="cfc15582c99f2d93d641ceef808c0dea" category="inline-image-macro">JVM 配置</block>
-  <block id="a1a11aab15942415d5fa3dbff92e14bd" category="paragraph"><block ref="a1a11aab15942415d5fa3dbff92e14bd" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1d4d54ae01b1b207ad71b19545e065d0" category="inline-link-macro">JVM 文檔</block>
-  <block id="a6915e59acb56cb585cb472961b7fcf4" category="paragraph">資訊可以在<block ref="d6ec76238b83ccbfb02cd8a51ed9fed7" category="inline-link-macro-rx"></block>。</block>
-  <block id="18b5a217c4dad25662d3a05edb0e39d7" category="cell">JVM</block>
-  <block id="ba34515ac828f8372a3b624324d6c279" category="cell">命名空間 JVM</block>
-  <block id="803c4a5e4b5f34cadc25972b0c14aa04" category="cell">作業系統架構 作業系統名稱 作業系統版本 執行階段規格 執行階段規格供應商 執行階段規格版本 正常運作時間 執行階段虛擬機器名稱 執行階段虛擬機器供應商 執行階段虛擬機器版本 節點名稱 節點 IP</block>
-  <block id="a53a32f48009c614f61507a6499dfbf6" category="cell">載入的類別 已載入的類別 卸載的類別總數 記憶體 堆提交的記憶體 堆初始化記憶體 堆已用最大記憶體 堆已用記憶體 非堆提交記憶體 非堆初始化記憶體 非堆最大記憶體 非堆疊已用記憶體 磁碟機台已用記憶體 作業系統可用處理器 作業系統已提交記憶體大小 作業系統作業系統作業系統負載程式 作業系統交換時數作業系統系統平均負載 作業系統總實體記憶體大小 作業系統總交換空間大小 執行緒守護程式數 執行緒峰值數 執行緒數 執行緒總數 已啟動執行緒數 垃圾收集器複製收集數 垃圾收集器複製收集時間 垃圾回收器標記-清除收集數 垃圾收集器標記-清除收集時間 垃圾收集器 G1 老數代垃圾回收數 收集數個垃圾代數數 垃圾收集數垃圾收集器並發標記-清除收集計數垃圾收集器並發標記-清除收集時間垃圾收集器並行收集計數垃圾收集器並行收集時間垃圾收集器並行清除標記-清除收集計數垃圾收集器並行清除標記-清除收集時間垃圾收集器並行清除收集計數垃圾收集器並行清除收集時間</block>
-  <block id="dc1e65eec84ecdddd9d944665f004c81" category="summary">Kafka 資料收集器配置</block>
-  <block id="20c91ea30ac10f88575658fade0888da" category="doc">Kafka 資料收集器</block>
-  <block id="08fd5faf42e95d6a9885f4e6ca1171bc" category="paragraph">Data Infrastructure Insights使用此數據收集器從 Kafka 收集指標。</block>
-  <block id="e71ca37de84258d54f5428c43e7d7278" category="list-text">從*可觀察性 &gt; 收集器*中，按一下*+資料收集器*。選擇 Kafka。</block>
-  <block id="a57380b3846ffa1f0e4bfb5181cdd4cc" category="inline-image-macro">Kafka 配置</block>
-  <block id="581191fc8057a11baa82fdf0c8a4684d" category="paragraph"><block ref="581191fc8057a11baa82fdf0c8a4684d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="13369c33358db64680a157cf34f27d9c" category="paragraph">Kafka插件基於telegraf的Jolokia插件。由於需要從所有 Kafka 代理程式收集信息，因此需要在所有元件上配置並透過 Jolokia 公開 JMX。</block>
-  <block id="85d4881f2910a8efd14957d8ea3ad22f" category="paragraph">配置是針對 Kafka 版本 0.11.0.2 開發的。</block>
-  <block id="c550ee824967bc436f44d06626836b46" category="section-title">設定</block>
-  <block id="842dbc10bf2936a69101c9ada487cfb9" category="paragraph">以下所有說明均假設 kafka 的安裝位置是「/opt/kafka」。您可以調整以下說明以反映您的安裝位置。</block>
-  <block id="56f18825a76309ae6391073aeb14f1b3" category="inline-link-macro">下載</block>
-  <block id="b4492a410e1a2bd30cdf9f247f446872" category="paragraph">Jolokia 代理 jar 檔案必須是<block ref="03eda4c0436e65ce27568c6a2dfc2a07" category="inline-link-macro-rx"></block>。測試的版本是 Jolokia 代理 1.6.0。</block>
-  <block id="9494328c2f532a3a7698d443b58084c9" category="paragraph">以下說明假設下載的 jar 檔案（jolokia-jvm-1.6.0-agent.jar）位於「/opt/kafka/libs/」位置下。</block>
-  <block id="c85a72d841365870905b8d39edf7008f" category="section-title">Kafka 經紀人</block>
-  <block id="952eb44621cfe8be5bf3ffac42243da9" category="paragraph">要設定 Kafka Brokers 以公開 Jolokia API，您可以在 &lt;KAFKA_HOME&gt;/bin/kafka-server-start.sh 中的「kafka-run-class.sh」呼叫之前新增以下內容：</block>
-  <block id="c7a51c522cf686cccad4634633637a98" category="paragraph">請注意，上面的範例使用“hostname -I”來設定“RMI_HOSTNAME”環境變數。在多個 IP 機器中，需要進行調整以收集您關心的 RMI 連線 IP。</block>
-  <block id="a2ca14d29d006aa3bc52960c80f3ec10" category="paragraph">您可以為 JMX（9999 以上）和 Jolokia（8778）選擇不同的連接埠。如果您有一個內部 IP 來鎖定 Jolokia，您可以用自己的 IP 替換「catch all」 0.0.0.0。請注意，此 IP 需要可從 telegraf 插件存取。如果您不想進行身份驗證，可以使用選項「-Dcom.sun.management.jmxremote.authenticate=false」。使用風險自負。</block>
-  <block id="edea81abf1b2e3f44366dbd2866631eb" category="cell">卡夫卡經紀人</block>
-  <block id="80d610f6ec2e0d70bb310ea6b21d8e09" category="cell">叢集命名空間代理</block>
-  <block id="18906ecb044421552f4c94c742621646" category="summary">kapacitor配置</block>
-  <block id="d3761f3a03696694e546430b624f3542" category="doc">Kapacitor資料收集器</block>
-  <block id="78972009c6082dcaba24ce5ccddab4c6" category="paragraph">Data Infrastructure Insights使用此資料收集器從 influxdata Kapacitor 收集指標。</block>
-  <block id="34328c30b9aeceaed8fcff2dfe3eec30" category="list-text">從*可觀察性 &gt; 收集器*中，按一下*+資料收集器*。選擇 Kapacitor。</block>
-  <block id="6501fa3c86462ded7187a4c119d46e5b" category="inline-image-macro">Kapacitor 配置</block>
-  <block id="dbf6b5b2cdedf021b5f438c1d0d94f55" category="paragraph"><block ref="dbf6b5b2cdedf021b5f438c1d0d94f55" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e711cd4bbd4573cce8f56f9019ee69f5" category="inline-link">Kapacitor 文件</block>
-  <block id="613c0ccc72426c675ba16888b7beb75b" category="paragraph">設定資訊可以在<block ref="4a1162f0f136a577fb8e0c35cb055638" category="inline-link-rx"></block></block>
-  <block id="497031794414a552435f90151ac3b54b" category="cell">目的</block>
-  <block id="e2da36de4fe1aaf514aaef4ecca2c8ec" category="cell">識別符</block>
   <block id="496e790e66d36d3bfbadd9eca21b9d6b" category="cell">卡帕西托</block>
-  <block id="8aff22b7ab299e63ad122521b8cce856" category="cell">命名空間節點名稱節點 IP</block>
-  <block id="3f6d224a7b20e18c557bf21bfe5ede71" category="cell">作業系統架構 作業系統名稱 作業系統版本 執行階段規格 執行階段規格供應商 執行階段規格版本 正常運作時間 Kapacitor 版本 執行時間虛擬機器名稱 執行階段虛擬機器供應商 執行階段虛擬機器版本</block>
-  <block id="1d3092a2cd5069209f6c8a3a894f204c" category="cell">已分配位元組數 Buck Hash 系統釋放 GC 系統 GCC PU 分數堆分配堆空閒堆使用堆對象堆釋放堆系統上次 GC（ns）查找 Mallocs Mcache 使用中 Mcache 系統 Mspan 使用中 Mspan 系統下一個 GC（ns）GC 其他暫停系統代碼</block>
-  <block id="f675ac1ea34754aba3279d7f93746721" category="summary">Kibana 資料收集器配置</block>
-  <block id="d6678652208f4e26109690d4ab6151e5" category="doc">Kibana 資料收集器</block>
-  <block id="52a546bca78abda47f87fe032f0c6025" category="paragraph">Data Infrastructure Insights使用此資料收集器從 Kibana 收集指標。</block>
-  <block id="710ec696cccefe4c3faa1d7ebf8fca87" category="list-text">從*可觀察性 &gt; 收集器*中，按一下*+資料收集器*。選擇 Kibana。</block>
-  <block id="ed9f8d76b0ccacc02aa67a13d6c1e9a8" category="inline-image-macro">Kibana 配置</block>
-  <block id="18785da9c6be5397773e5c495dcc23f4" category="paragraph"><block ref="18785da9c6be5397773e5c495dcc23f4" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="3c84e442bbf213b7d0e5047d09d7aef4" category="inline-link-macro">Kibana 文檔</block>
-  <block id="a8bdbad6177ca64d397d863b68fe3fe9" category="paragraph">資訊可以在<block ref="07c833901243190735d960ff17f32792" category="inline-link-macro-rx"></block>。</block>
-  <block id="5228fdd6f613af63fc73ee7c02ef8fb5" category="cell">基巴納</block>
-  <block id="22591bcc5e32570096ba46abc2143b90" category="cell">命名空間位址</block>
-  <block id="a78ce0ccaaa47b18906f1de5d019d817" category="cell">節點IP 節點名稱 版本狀態</block>
-  <block id="159dbe63e44af239ee60fabff2752f0e" category="cell">並發連線數 堆最大堆使用量 每秒請求數 回應時間 平均回應時間 最大正常運作時間</block>
   <block id="8c362b737d9d3a6fff5acfc29aaa5225" category="summary">Kubernetes 的資料收集器</block>
   <block id="3ce5067a26bb6509b15cfb6487590ed5" category="doc">資料收集器：Kubernetes</block>
   <block id="6ffb121d702031b943827f26c164c756" category="paragraph">Data Infrastructure Insights使用此資料收集器來收集 Kubernetes Pod、節點和容器指標。</block>
@@ -7454,147 +7131,7 @@
   <block id="8a971d74114c901e6e49ec38adf35b17" category="list-text">Cronjob 指標</block>
   <block id="9184717578be39d9d8ce4dc4caf1561d" category="list-text">工作指標</block>
   <block id="e68008fca3fcb96a93c82b9cf703aee3" category="list-text">資源配額指標</block>
-  <block id="d500a402a0f4d5ab2dedb2c5a7ec2eaf" category="summary">Memcached 資料收集器配置</block>
-  <block id="0f5c57f0abc7ee69be3379cf9f5ede78" category="doc">Memcached 資料收集器</block>
-  <block id="0bcc6251db330c98836511cffac20f00" category="paragraph">Data Infrastructure Insights使用此數據收集器從 Memcached 收集指標。</block>
-  <block id="589728f32967406f1fdbd032c3fe018d" category="list-text">從*可觀察性 &gt; 收集器*中，按一下*+資料收集器*。選擇 Memcached。</block>
-  <block id="198cd654ded33685760b4676e579ff66" category="inline-image-macro">Memcached 配置</block>
-  <block id="a986c1bc689361d60658b48c116b9bda" category="paragraph"><block ref="a986c1bc689361d60658b48c116b9bda" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e26124564f900a300b66ae6ad54d0791" category="inline-link-macro">Memcached 維基百科</block>
-  <block id="275cfcf9eff65ee82ad249d1a35cadfb" category="paragraph">資訊可以在<block ref="5ded07e322e421e6ecffb5f41bada1c9" category="inline-link-macro-rx"></block>。</block>
-  <block id="05894ba2c918dd33592bf1bd21c347f6" category="cell">Memcached</block>
-  <block id="f3149829d80f1010c9764cf219626e96" category="cell">節點IP 節點名稱</block>
-  <block id="05345376e590de98cc623cdd4392065e" category="cell">正在接受的連線已處理的驗證請求失敗的身份驗證已使用的位元組數讀取的位元組數（每秒）寫入的位元組數（每秒）CAS BadvalCAS 命中CAS未命中刷新請求（每秒）獲取請求（每秒）設定請求（每秒）觸摸請求（每秒）連接產量（每秒）連接結構打開的連接當前存儲的項目遞減請求命中數（每秒）遞減請求未命中數（每秒）刪除請求命中數（每秒）刪除請求未命中數（每秒）驅逐的項目有效驅逐過期的項目獲取命中數（每秒）獲取未命中數（每秒）已使用的哈希字節數哈希正在擴展哈希功率級別遞增請求命中數（每秒）遞增請求未命中數（每秒）伺服器最大字節數偵聽已禁用已回收工作線程數總計打開的連接數儲存的項目總數 觸控命中數 觸碰未命中數 伺服器正常運作時間</block>
-  <block id="3e647ef93d862cebdd7fa80573f126aa" category="summary">MongoDB 資料收集器配置</block>
-  <block id="53e70a8dd3a918a24f705909a168c35c" category="doc">MongoDB 資料收集器</block>
-  <block id="8590f6cbb7236f138392505cbefbc1b8" category="paragraph">Data Infrastructure Insights使用此資料收集器從 MongoDB 收集指標。</block>
-  <block id="c71f6654a45927e285ab22a697438b43" category="list-text">從*可觀察性 &gt; 收集器*中，按一下*+資料收集器*。選擇 MongoDB。</block>
-  <block id="06dc92e8ae707ce9c6046e102df5a214" category="inline-image-macro">MongoDB 配置</block>
-  <block id="0f54e55841a24b143c2104aab4935f7b" category="paragraph"><block ref="0f54e55841a24b143c2104aab4935f7b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="38d4b2dc2b4a57b1ac9fd3ffb91a1e4e" category="inline-link-macro">MongoDB 文檔</block>
-  <block id="6d44425175e1033dd7e44ad93e6c1716" category="paragraph">資訊可以在<block ref="03dc511ffabb03f2ed77b5dbe821f120" category="inline-link-macro-rx"></block>。</block>
-  <block id="206e3718af092fd1d12f80cae771ccac" category="cell">MongoDB</block>
-  <block id="7c33c5b9bc17f5cdef2a6e9af34ec2ba" category="cell">命名空間主機名</block>
-  <block id="03a2f43be2bb9fe29ee41afceec0ffcd" category="cell">MongoDB 資料庫</block>
-  <block id="53de6191c5a3773a175198e9140b6c2b" category="cell">命名空間 主機名稱 資料庫名稱</block>
-  <block id="d5712dd84650ff1cb4915da1c121ffbb" category="paragraph">資訊可以從<block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block>頁。</block>
-  <block id="4c35289465431b7541002dd365bad198" category="summary">MySQL資料收集器配置</block>
-  <block id="d1f43c925400e37adcd15285deaac430" category="doc">MySQL資料收集器</block>
-  <block id="dab29b360fb10ec7c8ac636229bf61b4" category="paragraph">Data Infrastructure Insights使用此資料收集器從 MySQL 收集指標。</block>
-  <block id="53a22ff7bf05343afd43baa85e5c7883" category="list-text">從*可觀察性 &gt; 收集器*中，按一下*+資料收集器*。選擇 MySQL。</block>
-  <block id="cfe3b09f39613d05db4ca7532b374386" category="inline-image-macro">MySQL 設定</block>
-  <block id="acd86359b435b0d32d73a66fa03be887" category="paragraph"><block ref="acd86359b435b0d32d73a66fa03be887" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0281cf739776a9c6b7c6cb01c1accf40" category="inline-link-macro">MySQL 文檔</block>
-  <block id="6292388c6e8693ea6c73e72a49ab4655" category="paragraph">資訊可以在<block ref="4319c63c14adb8b966feb7239cf0a2bb" category="inline-link-macro-rx"></block>。</block>
-  <block id="62a004b95946bb97541afa471dcca73a" category="cell">MySQL</block>
-  <block id="7b13a5e1284d961b045ce256aaf8121b" category="cell">命名空間 MySQL 伺服器</block>
-  <block id="aa0de5a29cbb206ae9a2819913271064" category="cell">中止的客戶端（每秒）中止的連線（每秒）RX 位元組（每秒）TX 位元組（每秒）命令管理（每秒）命令修改事件命令修改函數命令修改實例命令修改過程命令修改伺服器命令修改表命令修改表空間命令修改用戶命令分析命令分配給密鑰快取命令開始命令 Binlog密鑰快取命令開始命令 命令調用過程命令更改數據庫命令更改主命令更改複製過濾器命令檢查命令校驗和命令提交命令創建數據庫命令創建事件命令創建函數命令創建索引命令創建過程命令創建服務器命令創建表命令創建觸發器命令創建 UDF 命令創建用戶命令創建視圖命令釋放 SQL 連接錯誤接受已創建的臨時磁盤表延遲錯誤刷新命令處理程序提交 Innodb緩衝池位元組資料未刷新的密鑰區塊密鑰讀取請求密鑰寫入請求密鑰寫入最大執行次數超出時間最大使用連接打開檔案效能模式帳戶丟失準備好的語句計數 Qcache 空閒區塊查詢問題選擇完全連接選擇全範圍連接選擇範圍檢查選擇掃描表鎖立即</block>
-  <block id="57e45a1f550d7e2a276b57b6bca05dca" category="summary">Netstat 資料收集器配置</block>
-  <block id="38fe3e3fc1af1752c621d2c58ca1d537" category="doc">Netstat資料收集器</block>
-  <block id="19bc3a53e6ad865e0a7fd9e242445840" category="paragraph">Data Infrastructure Insights使用此資料收集器來收集 Netstat 指標。</block>
-  <block id="3d0738af358079dc547755789be4774a" category="list-text">從*可觀察性 &gt; 收集器*中，按一下*+資料收集器*。選擇 Netstat。</block>
-  <block id="fbe4c8006ab6084c9caa4749e31a48b2" category="inline-image-macro">Windows Netstat 設定</block>
-  <block id="3b600482a8cf2d80423a46534f251590" category="paragraph"><block ref="3b600482a8cf2d80423a46534f251590" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5640ddf22fd2c345be7dd9bb71023b38" category="cell">網路狀態</block>
-  <block id="c3e78df51911e54e9bf950f6adb83f17" category="cell">節點UUID</block>
-  <block id="3dc395f34d5747fa5d58e08302ab67fd" category="summary">Nginx 資料收集器配置</block>
-  <block id="21a6c8824057335f8e9dc232584c6ea0" category="doc">Nginx 資料收集器</block>
-  <block id="32619dd6aa6fdd5629ada6963279423c" category="paragraph">Data Infrastructure Insights使用此資料收集器從 Nginx 收集指標。</block>
-  <block id="993b018a6d59665db1ee4e45e62026f4" category="list-text">從*可觀察性 &gt; 收集器*中，按一下*+資料收集器*。選擇 Nginx。</block>
-  <block id="e7e86cae130886a78274ae9b77db6f35" category="inline-image-macro">Linux Nginx 設定</block>
-  <block id="de93697b48f7103f9289abf65ca587b4" category="paragraph"><block ref="f310f9809260b458b5b99732eb2d720e" category="inline-image-macro-rx" type="image"></block> <block ref="884ba5b9c64ace436091d4a7d4619c6c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ed8b6bdc341556c944fb012aca6b84d4" category="inline-link-macro">http_stub_status_module</block>
-  <block id="6d1ee9bcac1552cb3e77bfff99ff625e" category="paragraph">Nginx 指標收集需要 Nginx<block ref="9b25bbc6607a95e9c0486769f8ad1d09" category="inline-link-macro-rx"></block>被啟用。</block>
-  <block id="3cbf4d6ad75e10ca79741aee2213bd64" category="inline-link-macro">Nginx 文檔</block>
-  <block id="55c28d13135e5d996f9471516e4d7523" category="paragraph">更多資訊請參閱<block ref="f61e491fe5dc644cc25aa0f3a87b7491" category="inline-link-macro-rx"></block>。</block>
-  <block id="62e0b5b350c9e3d2c19aa801d9442ba9" category="cell">Nginx</block>
-  <block id="b5044973d8a3d9239bbbeaeeee9db4a5" category="cell">節點 IP 節點名稱 連接埠</block>
-  <block id="359d1921d88a2e1a27105eb5a262c103" category="cell">接受活動已處理讀取請求等待寫入</block>
-  <block id="43b4fe530611e0a29d40ae51f1110192" category="doc">節點資料收集</block>
-  <block id="c3aac04f96a07803fc2b8fcce4a7e8b4" category="paragraph">Data Infrastructure Insights從安裝代理程式的節點收集指標。</block>
-  <block id="baaf023f6d75d85198bf4906a1760b9a" category="list-text">從*可觀察性 &gt; 收集器*中選擇一個作業系統/平台。請注意，安裝任何整合資料收集器（Kubernetes、Docker、Apache 等）也將配置節點資料收集。</block>
-  <block id="5f6ce12582c69bad9341e28467c0c0d0" category="list-text">按照說明配置代理。說明根據您用於收集資料的作業系統或平台的類型而有所不同。</block>
-  <block id="c166791fe89a8eb17ee0a37ad809ba2b" category="paragraph">以下物件及其計數器作為節點指標進行收集：</block>
-  <block id="1f8c535824144ce794fd8ac5fdcfe9f1" category="cell">節點檔案系統</block>
-  <block id="8fcdaf1e82ebe454e557f94d0676e94b" category="cell">節點 UUID 設備路徑類型</block>
-  <block id="1f887fd15f6189f871338dd33033cd43" category="cell">節點IP 節點名稱 節點OS模式</block>
-  <block id="ad06ad8b4ea618930277691a7ca85b8a" category="cell">空閒 Inode 空閒 Inode 已使用 Inode 總數 已使用 Inode 總數 已使用 Inode 總數</block>
-  <block id="995a8be8130452c3880f8f3a8efb892f" category="cell">節點磁碟</block>
-  <block id="8d31b98bd62df2c8e71a8ccda6950620" category="cell">節點 UUID 磁碟</block>
-  <block id="395504c5fc3cdba387d8e31a83c56f88" category="cell">節點 IP 節點名稱 節點作業系統</block>
-  <block id="504e0980cd10557e0d0eeeadb727d763" category="cell">IO 時間總 IOPS 進行中讀取位元組數（每秒）讀取時間總讀取次數（每秒）加權 IO 時間總寫入位元組數（每秒）寫入時間總寫入次數（每秒）當前磁碟佇列長度寫入時間讀取時間 IO 時間</block>
-  <block id="9560e0d605d2cc7aa05155382b767318" category="cell">節點CPU</block>
-  <block id="7f0dc83c5502913a601c96af73494913" category="cell">節點 UUID CPU</block>
-  <block id="19e5a412b9d9ce58d147c936a5bf221e" category="cell">系統 CPU 使用率 使用者 CPU 使用率 閒置 CPU 使用率 處理器 CPU 使用率 中斷 CPU 使用率 DPC CPU 使用率</block>
   <block id="6c3a6944a808a7c0bbb6788dbec54a9f" category="cell">節點</block>
-  <block id="16d2c29487805cc97063b63f5f00c68e" category="cell">核心啟動時間內核上下文切換（每秒）內核熵可用內核中斷（每秒）內核程序分叉（每秒）活動記憶體可用記憶體總可用記憶體緩衝記憶體快取記憶體提交限制已提交記憶體記憶體高可用記憶體高總記憶體大頁大小記憶體大頁可用記憶體大頁總記憶體低可用記憶體低總記憶體對頁數記憶體共用記憶體尺寸已用記憶體綁定記憶體寫回總記憶體寫回臨時記憶體快取故障記憶體需求零故障記憶體頁故障記憶體頁記憶體非分頁記憶體分頁記憶體快取核心記憶體待機快取正常記憶體待機快取保留記憶體轉換故障行程阻斷行程系統用戶數量 系統調用</block>
-  <block id="695c8433fb0290581bae584e00feeee4" category="cell">節點網路</block>
-  <block id="0a7c391bbf4a5a2942fabe6c508c95eb" category="cell">網路介面節點 UUID</block>
-  <block id="7e497ea07b0bb26a9fccfea169adadb5" category="cell">節點名稱 節點 IP 節點 OS</block>
-  <block id="228775e556bb7d0b1893a0069479cc55" category="cell">接收位元組數 傳送位元組數 傳出資料包數 丟棄傳出資料包數 錯誤資料包數 接收資料包數 丟棄接收資料包數 錯誤資料包數 傳送資料包數</block>
-  <block id="620f85b913de46972f8dc2d9791d0335" category="inline-link-macro">配置代理</block>
-  <block id="11e9a60bae5c09e0b15ee77e596f4b30" category="paragraph">設定和故障排除資訊可以在<block ref="253f1bddd94d888bccb7868889c4eaa6" category="inline-link-macro-rx"></block>頁。</block>
-  <block id="83fbc11c171008ea835730f7922a6417" category="summary">OpenZFS 資料收集器配置</block>
-  <block id="280698a257edec445fc9d2a3c41f9089" category="doc">OpenZFS 資料收集器</block>
-  <block id="1e170cb26cedac0836068d22c877bb0f" category="paragraph">Data Infrastructure Insights使用此資料收集器從 OpenZFS 收集指標。</block>
-  <block id="5888b2a0267a27f9f34b34863d7a8110" category="list-text">從*可觀察性 &gt; 收集器*中，按一下*+資料收集器*。選擇 OpenZFS。</block>
-  <block id="c5ea32057bfe11187d339d524ccea393" category="inline-image-macro">Linux OpenZFS 配置</block>
-  <block id="252ab915aaf37678f2c31259844d9830" category="paragraph"><block ref="252ab915aaf37678f2c31259844d9830" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b016f6d8b58fbc57dff98ba0460cd713" category="inline-link-macro">OpenZFS 文檔</block>
-  <block id="5f9f2125ea94bc8ee63a894e33ebaf33" category="paragraph">更多資訊請參閱<block ref="0ee1b5ccb1dd9edb24ef60d421e0c18a" category="inline-link-macro-rx"></block>。</block>
-  <block id="a1151f371f1db5ddea0adcadbc49738e" category="summary">PostgreSQL 資料收集器配置</block>
-  <block id="28279ca1d2fa23440d64e252b10c2f2e" category="doc">PostgreSQL 資料收集器</block>
-  <block id="117290c72445e956fad0857c0390badb" category="paragraph">Data Infrastructure Insights使用此資料收集器從 PostgreSQL 收集指標。</block>
-  <block id="0ba3615a02f45b8a7b485192d849f02b" category="list-text">從*可觀察性 &gt; 收集器*中，按一下*+資料收集器*。選擇 PostgreSQL。</block>
-  <block id="9efde47a7f6913de0fa15c50384c3916" category="inline-image-macro">PostgreSQL 配置</block>
-  <block id="ee807d599c86ec0cddb65a95252754a9" category="paragraph"><block ref="ee807d599c86ec0cddb65a95252754a9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="939acd793e013bec3f238716d1e5a1e9" category="inline-link-macro">PostgreSQL 文檔</block>
-  <block id="5d213cdd76206e521a99ee763867f286" category="paragraph">資訊可以在<block ref="3b5af5b1f584ca750656ee54bcf2acd9" category="inline-link-macro-rx"></block>。</block>
-  <block id="b3cba72c5eaf0e9b001ad474d3a7f104" category="cell">PostgreSQL 伺服器</block>
-  <block id="9eb39642e01cf00ecfb6933ae0d8c91e" category="cell">命名空間資料庫伺服器</block>
-  <block id="416d97bf6aa220146cd29e24d4f5ae1f" category="cell">緩衝區 已指派緩衝區 後端緩衝區 後端檔案同步緩衝區 檢查點緩衝區 清理檢查點 同步時間檢查點 寫入時間檢查點 請求檢查點 定時最大寫入清理</block>
-  <block id="f9fa8e4ec8d4dfd8388984164c7cfd07" category="cell">PostgreSQL 資料庫</block>
-  <block id="47587388fb25edfeb337d39473d4183f" category="cell">資料庫 OID 節點名稱 節點 IP</block>
-  <block id="03ccb35e4244ef1cc7ff8662031b0a7f" category="cell">區塊讀取時間區塊寫入時間區塊命中區塊讀取衝突死鎖客戶端數量臨時檔案位元組臨時檔案數量行刪除行取得行插入行返回行更新交易提交事務回滾</block>
-  <block id="4bfbaf73f806e0f2e37658d94bd02b1d" category="summary">Puppet 資料收集器配置</block>
-  <block id="4f3343312b305965c29f8f14046d895c" category="doc">Puppet代理程式資料收集器</block>
-  <block id="8ff544ec5ab30cadc928412e34e62a4c" category="paragraph">Data Infrastructure Insights使用此資料收集器從 Puppet Agent 收集指標。</block>
-  <block id="8a8e72cdfe9e0062f257b6b3af0a66fc" category="list-text">從*可觀察性 &gt; 收集器*中，按一下*+資料收集器*。選擇 Puppet。</block>
-  <block id="f28ce6829aadfe8650a22f9c6a697a20" category="inline-image-macro">Puppet 配置</block>
-  <block id="f02b842ccd15155934dc65921239d4f0" category="paragraph"><block ref="f02b842ccd15155934dc65921239d4f0" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="4c6265f8b688769e31b9b757f9e54749" category="inline-link">Puppet 文檔</block>
-  <block id="1554b3e5df91d78952d35aa9c0ee325f" category="paragraph">資訊可以在<block ref="114b9d35c3c72b635a83707f2087ecd5" category="inline-link-rx"></block></block>
-  <block id="774594156e74c09914941ef11ed2caa5" category="cell">傀儡代理</block>
-  <block id="ff5f20e069b5c2643ec78dffe736ccad" category="cell">命名空間節點 UUID</block>
-  <block id="2d6d04c4d20bee58922505cce875cd62" category="cell">節點名稱 位置 節點 IP 版本 設定字串版本 Puppet</block>
-  <block id="61bb9c3d200381413da5b615c1c8f827" category="cell">變更總數 事件數 失敗事件數 成功事件數 總資源數 已變更資源數 失敗資源數 重新啟動失敗資源數 不同步資源數 重新啟動資源數 已排程資源數 跳過資源數 總時間 錨點時間 設定檢索時間 Cron 時間 執行時間 時間資料桶時間 時間執行時間 包時間 排程時間 服務時間 Suthorizo​​rizedized 的時間資料庫時間</block>
-  <block id="4002c18c39606cdbd9ec7cf8e2a090ad" category="summary">Redis 資料收集器配置</block>
-  <block id="001dce6e76a3b3b754db59e538750dd8" category="doc">Redis 資料收集器</block>
-  <block id="cb98f2921297df26dc76aef2918b37f6" category="paragraph">Data Infrastructure Insights使用此資料收集器從 Redis 收集指標。  Redis 是一個開源的記憶體資料結構存儲，用作資料庫、快取和訊息代理，支援以下資料結構：字串、哈希、列表、集合等。</block>
-  <block id="3c9d727e041ea1596d9e67f7568b3d4b" category="list-text">從*可觀察性 &gt; 收集器*中，按一下*+資料收集器*。選擇 Redis。</block>
-  <block id="602c395372ffc11185f0cc2291099c7f" category="inline-image-macro">Redis 資料收集器配置</block>
-  <block id="5c452c3f36884795da26d34b96db691c" category="paragraph"><block ref="5c452c3f36884795da26d34b96db691c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6f6c7e0bd9df07afbd8f27f303fba934" category="inline-link-macro">Redis 文件</block>
-  <block id="ae042fc4879ccb38022624b37b7c15bd" category="paragraph">資訊可以在<block ref="f84fd6d9d2467b4d3f4dd370ee4175c5" category="inline-link-macro-rx"></block>。</block>
-  <block id="e111446745a1825b862f8727ae63bce4" category="cell">Redis</block>
-  <block id="9d2537f158357c95ae162019d658de08" category="doc">RethinkDB 資料收集器</block>
-  <block id="eb261bdf6f30b5b4dea4bc6dd944a8a9" category="paragraph">Data Infrastructure Insights使用此資料收集器從 RethinkDB 收集指標。</block>
-  <block id="5ccd9dd8e50ca94f3cd4db51f6b42c50" category="list-text">從*可觀察性 &gt; 收集器*中，按一下*+資料收集器*。選擇 RethinkDB。</block>
-  <block id="10e1e1205ffd97adbe671ede9a7d4f2d" category="inline-image-macro">RethinkDB 資料收集器配置</block>
-  <block id="dd379e6631df8e94fe26188b06220cf7" category="paragraph"><block ref="dd379e6631df8e94fe26188b06220cf7" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7fc41d1df644e11b26a2696444f69499" category="inline-link-macro">RethinkDB 文檔</block>
-  <block id="61c63e4b6fa084c1807e368faaf150e4" category="paragraph">資訊可以在<block ref="02af3cecada50a802d68e28a6a325991" category="inline-link-macro-rx"></block>。</block>
-  <block id="689738a624a7f72a8b98c8ed8f1ab58b" category="summary">Apache Zookeeper 資料收集器配置</block>
-  <block id="b640a79fa52794aecc8878f82be8c28e" category="doc">Zookeeper 數據收集器</block>
-  <block id="ac08612fe2f5491fd7994b41201ac8e1" category="paragraph">Data Infrastructure Insights使用此資料收集器從 Apache Zookeeper 收集指標。</block>
-  <block id="6f449010e727da85fc5dba4dc0566129" category="list-text">從*管理 &gt; 資料收集器*中，點選*+資料收集器*。選擇 Apache Zookeeper。</block>
-  <block id="8429b9b7552e9131928dae7613de806c" category="inline-image-macro">Zookeeper 配置</block>
-  <block id="95e6ebb37419864b276c313f8f6c3cbb" category="paragraph"><block ref="95e6ebb37419864b276c313f8f6c3cbb" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="fb4ac192a5f039c2e2c335ba5ced3583" category="inline-link-macro">Zookeeper</block>
-  <block id="c3a641e09298ba4de1409a1510576930" category="paragraph">至少，您需要允許 Zookeeper 四個字母的伺服器命令 _mntr_、_srvr_ 和 _stat_。您可以使用下列格式啟用這些指令：_zoo.cfg_ 檔案中的 _4lw.commands.whitelist=mntr, srvr, stat_。您的配置中可能還需要其他四個字母的命令。查看<block ref="228947e8a732f5af21701eca589dabd2" category="inline-link-macro-rx"></block>文件以取得更多資訊。</block>
-  <block id="acbfb3e07bc6528e76ff58b9441ce7e6" category="cell">ZooKeeper</block>
-  <block id="30cda581f57d507b5c4e7230009bb6ff" category="cell">狀態 節點IP 節點名稱 連接埠</block>
-  <block id="263026a1c82c98e0f26e5963c3c57811" category="cell">近似資料大小 平均延遲 暫時節點數 最大檔案描述符數 最大延遲 最小延遲 活動連線數 開啟檔案描述符數 未完成請求 監視數 Znode 數</block>
   <block id="dee5cfb5319806eabd9b28296b26207a" category="summary">設定工作負載安全性 Active Directory 使用者目錄收集器</block>
   <block id="0352c19ca21d40072aea36bf372abc1d" category="doc">設定 Active Directory (AD) 使用者目錄收集器</block>
   <block id="8dccebe9a8725eed9d49bcce51664895" category="paragraph">可以設定工作負載安全性以從 Active Directory 伺服器收集使用者屬性。</block>
@@ -12285,21 +11822,6 @@
   <block id="d30973809f2e4238b7eb2bac9241674c" category="sidebar">純的</block>
   <block id="38d38399d4a7514463d665125ae50a4a" category="sidebar">Rubrik CDM</block>
   <block id="56079badd056a19303cc26e6a4fcc7e0" category="sidebar">VMware</block>
-  <block id="8683de0aa24eead7d9ee8d3fdaa00cbc" category="sidebar">資料收集器參考 - 服務</block>
-  <block id="d81d51c42424446940b4de6d28139a2d" category="sidebar">主機/節點</block>
-  <block id="6cc02b1b7e5213c9f46103a566d9d0a3" category="sidebar">ActiveMQ</block>
-  <block id="7dd3b0205c0cae0eb0b77da34529a5c5" category="sidebar">Couchbase</block>
-  <block id="c5fd214cdd0d2b3b4272e73b022ba5c2" category="sidebar">Docker</block>
-  <block id="45e23a169652aaf95ce80da844f3df0d" category="sidebar">Elasticsearch</block>
-  <block id="4438f9fa6205bdb2a850e66c2d313d01" category="sidebar">Flink</block>
-  <block id="53eb3dcfbb4c210bcd4fe1a985d7c946" category="sidebar">Hadoop</block>
-  <block id="6a812150273423f1f875479281529d1a" category="sidebar">HAProxy</block>
-  <block id="d52387880e1ea22817a72d3759213819" category="sidebar">Java</block>
-  <block id="51be25b0145a0beca811de24a62b5cb4" category="sidebar">卡夫卡</block>
-  <block id="8b3ef428de31f1ca27980c8b919c862a" category="sidebar">OpenZFS</block>
-  <block id="399bd1ee587245ecac6f39beaa99886f" category="sidebar">PostgreSQL</block>
-  <block id="14590850b4107a6f92feb1af739b82eb" category="sidebar">木偶</block>
-  <block id="15ec8934d96530d4c5f4a3b0f701f745" category="sidebar">重新思考資料庫</block>
   <block id="b6c4679bc199e5db8f88b60803f5ca85" category="section-title">關於長期警報的說明</block>
   <block id="83e49813b50f1fc5e03ffde57c985102" category="paragraph">請注意，保持活動狀態超過 24 小時的警報將每 24 小時在「警報和變更」清單中顯示一次，因此您可能會注意到同一警報被列出多次。每個警報都具有相同的警報 ID、相同的開始時間等，並且狀態為“警報中”，直到警報得到解決。</block>
   <block id="079090a1dc96bbd4e45426ceeedd592f" category="summary">建立自訂指標和日誌監視器，以透過自動警報和通知主動追蹤基礎設施效能、容量閾值和關鍵事件。</block>
@@ -14469,7 +13991,6 @@
   <block id="6b27f70000f03c5a24fb70b6ed340d8e" category="cell"><block ref="6b27f70000f03c5a24fb70b6ed340d8e" category="inline-link-macro-rx"></block></block>
   <block id="079cdcfd43abfa5548c437b1a50427fb" category="inline-link-macro">Red Hat OpenShift Virtualization</block>
   <block id="bd6345d055b68904ea42423102195045" category="cell"><block ref="bd6345d055b68904ea42423102195045" category="inline-link-macro-rx"></block></block>
-  <block id="d818fc83532d27c308cb47649bd5ec02" category="admonition">此收集器已棄用。從 2027 年 1 月開始，將不再提供此收集器。</block>
   <block id="faf4a8391186fe75061a56efa03cbe77" category="paragraph">此資料收集器從 DELL EMC Data Domain 重複資料刪除儲存系統收集庫存資訊。若要設定此資料收集器，您必須遵循特定的組態指示和使用建議。</block>
   <block id="8dfbd1afa40d818910ea903f9d52f6ec" category="summary">配置 Red Hat OpenShift Virtualization 資料收集器。</block>
   <block id="50993793783c5f33ae8f736a95dca1b9" category="doc">Red Hat OpenShift Virtualization 資料收集器</block>
@@ -14498,20 +14019,23 @@
   <block id="aa4f2113791c12393a66ffe706420102" category="list-text">使用者：隱藏由選定使用者觸發的警示。</block>
   <block id="ecfbace61ab4dd6175d43a276330b05d" category="list-text">路徑：抑制所選目錄路徑上活動的警示（最多四個目錄層級，從交接路徑開始）。</block>
   <block id="099aaf46fa32549a39916446ecf1fe7e" category="inline-link-macro">允許的檔案類型</block>
-  <block id="70c2babfc037807dc9d1d94e48e6b818" category="paragraph">使用者排除清單支援自動補全功能，管理員可以選擇要從警示中排除的使用者。</block>
-  <block id="ab217818a7f8d6405dd619210434e25f" category="paragraph">目錄排除最多支援四級目錄路徑，從 junction 路徑開始。</block>
   <block id="33b828c8fb435b67f3a4a321adbc89c1" category="paragraph">可以將個別使用者和目錄路徑新增至個別排除清單或從中移除。每個清單中的每個項目都會包含新增至清單的時間和新增者資訊，這些資訊將用於稽核目的。</block>
   <block id="b2bc711706213f5680535c284278fd8a" category="section-title">管理排除項目和稽核</block>
   <block id="4cc0f970741fc7eef05a2f6890f15228" category="list-text">管理員可以隨時新增或移除檔案副檔名、個別使用者或路徑。</block>
-  <block id="49a160591030eb82ba36b624f5514398" category="list-text">每個排除項目都會記錄設定該項目的管理員姓名和設定日期。此資訊將保留以供稽核。</block>
   <block id="430f66c61c1d6e05ef92945c7107306f" category="paragraph"><block ref="430f66c61c1d6e05ef92945c7107306f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4d06e3dd77aaee13a5d969e19fc7acf6" category="paragraph"><block ref="4d06e3dd77aaee13a5d969e19fc7acf6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="147e7f8d7d8064d51ff49f93c07adfeb" category="paragraph">導覽至 *Workload Security &gt; Policies*，然後選擇 *Alert Exclusions* 標籤。</block>
   <block id="9bf079c262098280af19e475b460e655" category="list-text">檔案類型：抑制特定檔案類型的 File Tampering 警報<block ref="e9fd5a7947ff579f7dabe8508e9cb8cd" category="inline-xref-macro-rx"></block></block>
-  <block id="3596850f01f0deb9d5aecf72b1462619" category="paragraph">可以將檔案副檔名新增至_允許的檔案類型_清單中，以防止不必要的警示。</block>
-  <block id="c6b621c33fa4f966db8e8fc0013ade5e" category="paragraph">選擇 *+File Type* 可將檔案類型新增至警報允許的檔案類型清單中。</block>
-  <block id="a29d1a88246db4532c1e6dec57fad276" category="inline-image-macro">新增允許的檔案類型</block>
-  <block id="e805eed5e1733a26a8b20a94b4a681d5" category="paragraph"><block ref="e805eed5e1733a26a8b20a94b4a681d5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="492f463a35ea215d77ae021c64cddb64" category="paragraph">例如，如果名為 _test.txt_ 的檔案被重新命名為 _test.txt.abc_，而 Workload Security 由於 _.abc_ 副檔名偵測到勒索軟體攻擊，則可以將 _.abc_ 副檔名新增至 _allowed file types_ 清單中。新增至清單後，系統將不再針對具有 _.abc_ 副檔名的檔案產生勒索軟體攻擊。</block>
   <block id="318685a1827ca5f4280e59d71f7d1438" category="paragraph">允許的檔案類型可以是精確匹配（例如「.abc」），也可以是表達式（例如 ++.*type++、++.type*++ 或 ++.*type*++）。不支援 .a*c 和 .p*f 類型的表達式。</block>
+  <block id="664ba14b3efcf7d6e7a9409a24223a79" category="paragraph">請注意，僅抑制事件的警示；事件本身仍會被擷取並可供檢閱。</block>
+  <block id="d01a003326568eee4579a0b14096808a" category="list-text">每個排除項目都會記錄設定該項目的管理員姓名和設定日期。此資訊將保留以供稽核。</block>
+  <block id="502a3077dba0d1ad6f92723157947eb2" category="section-title">使用者和路徑</block>
+  <block id="fbe64a9bdbefe7d8e246dbe4db973fd6" category="list-text">使用者排除清單：新增要從警示中排除的使用者。</block>
+  <block id="7f21f675f8b42bfe63a9f7bf4d897cb0" category="list-text">目錄排除清單：支援最多四級目錄路徑，從 junction 路徑開始。</block>
+  <block id="f12b42eece54a56ffab836a42eb37488" category="section-title">檔案類型</block>
+  <block id="137e136f6b4d96d6452fec8d0ed99197" category="paragraph">將檔案類型新增至檔案類型清單後，系統將不會針對該允許的檔案類型產生檔案篡改攻擊警報。請注意，檔案類型策略僅適用於檔案篡改檢測。</block>
+  <block id="b3e41e2fae7745b697dbed9b6f854aa1" category="inline-image-macro">檔案類型清單</block>
+  <block id="28460fbd00b73b7255d03888d8c1d8e5" category="paragraph"><block ref="28460fbd00b73b7255d03888d8c1d8e5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3720ff11b9d0e04f7fd96e22ff7a745f" category="paragraph">為便於審核，新增了「Set By」和「Set Date」兩個屬性。現有檔案類型將遷移到新格式，這兩個屬性的值將被設定為「migrated」。</block>
 </blocks>
