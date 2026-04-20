@@ -1,0 +1,138 @@
+---
+sidebar: sidebar 
+permalink: ws_audit_events.html 
+summary: Workload Security 中的稽核事件 
+keywords: workload security, audit, events 
+---
+= 稽核 Workload Security 事件
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+識別預期變更（用於追蹤）和非預期變更（用於疑難排解）。檢視 Workload Security 系統事件和使用者活動的稽核追蹤。
+
+
+
+== 查看審計事件
+
+若要檢視稽核頁面，請按一下功能表中的 Admin > Audit。稽核頁面隨即顯示，提供每個稽核項目的下列詳細資料：
+
+* 時間 - 事件或活動的日期和時間
+* 使用者 - 發起活動的使用者
+* 角色 - 使用者在 Workload Security 中的角色（訪客、使用者、管理員）
+* IP - 與事件相關聯的 IP 位址
+* 動作 - 活動類型、例如登入、建立、更新
+* 類別 - 活動的類別。
+* 詳細資料 - 活動的詳細資料
+* 應用程式類型 - 受稽核應用程式的類型：Observability 或 Workload Security。僅用於篩選 Workload Security 稽核。
+
+
+接受稽核的 Workload Security 事件包括但不限於以下事件：
+
+* Workload Security 原則的變更。
+* 建立新的 Data Source Collector（DSC）。
+* DSC 的修改。
+* 建立代理程式。
+* 使用者管理工作。
+* API 權杖工作。
+
+
+
+
+== 顯示審計條目
+
+有多種不同的方法可以查看審計條目：
+
+* 您可以透過選擇特定時段（1 小時、24 小時、3 天等）來顯示稽核項目。
+* 您可以點選欄標題中的箭頭，將項目的排序順序變更為遞增（向上箭頭）或遞減（向下箭頭）。依預設，表格會以遞減時間順序顯示項目。
+* 您可以使用篩選欄位來僅顯示表格中所需的條目。點選[+]按鈕新增其他濾鏡。
+
+
+
+
+== 有關過濾的更多信息
+
+您可以使用以下任何一種方法來最佳化篩選器：
+
+|===
+
+
+| 篩選 | 它的作用 | 例子 | 結果 
+
+
+| *（星號） | 讓您搜尋一切 | 沃爾*雷爾 | 返回以“vol”開頭並以“rhel”結尾的所有資源 
+
+
+| ？  （問號） | 使您能夠搜尋特定數量的字符 | BOS-PRD??-S12 | 傳回 BOS-PRD12-S12、BOS-PRD23-S12 等 
+
+
+| 或者 | 使您能夠指定多個實體 | FAS2240 或 CX600 或 FAS3270 | 傳回 FAS2440、CX600 或 FAS3270 中的任一個 
+
+
+| 不是 | 允許您從搜尋結果中排除文本 | 非 EMC* | 傳回所有不以「EMC」開頭的內容 
+
+
+| 沒有任何 | 在選定的任何欄位中搜尋空白/NULL/無 | 沒有任何 | 傳回目標欄位不為空的結果 
+
+
+| 不是 * | 與上面的 None 類似，您也可以使用此表單在純文字欄位中搜尋 NULL 值 | 不是 * | 傳回目標欄位不為空的結果。 
+
+
+| “” | 搜尋完全匹配 | “NetApp*” | 傳回包含精確字面字串 NetApp* 的結果 
+|===
+如果將過濾字串括在雙引號中，Insight 會將第一個引號和最後一個引號之間的所有內容視為完全匹配。引號內的任何特殊字元或運算符將被視為文字。例如，過濾「*」將傳回文字星號的結果；在這種情況下，星號不會被視為通配符。當運算子 OR 和 NOT 括在雙引號中時，它們也將被視為文字字串。
+
+
+
+== 審計事件和操作
+
+Workload Security 稽核的事件和動作可歸納為以下幾個大類：
+
+* 使用者帳戶：登入、登出、角色變更等。
+* Agent ：建立、刪除、升級、鎖定、取消鎖定等。
++
+範例：_Agent Agent-Boston-1 已刪除。_ _Agent 透過大量作業升級至 1.760.0 版本_
+
+* 資料 / 使用者目錄 Collector ：新增、移除、修改、升級、延後 / 繼續、變更代理程式、重新啟動等。
++
+範例：_Data collector Collector-Boston1 已移除，類型為 ONTAP SVM_ _Agent：Agent-Boston-1，Cluster IP 10.193.88.36，SVM demoGroupShares2_ _Collector ONTAP SVM 升級至版本 1.417.0 由批次操作啟動_
+
+* 自動化回應原則：新增、更新、移除、啟用、停用等。
++
+範例：_自動化攻擊原則 Policy-Boston1 已更新。屬性裝置已更新，舊值：[Device(name=svm_boston1, dataSourceId=39fb3b9c-9dd4-4961-bc27-23eb0b6f9ab7)]，新值：[Device(name=demoGroupShares2, dataSourceId=5b9f5b74-4533-4852-909d-8886582a4359)]_
+
+* 使用者封鎖/解除封鎖：自動或手動使用者封鎖和解除封鎖。
++
+範例：_已對使用者 Safwan Langley 發動封鎖，作為自動回應的一部分，封鎖時間為 2 小時_
+
+* Apikey：新增、刪除等。
++
+範例：_Workload Security API 存取權杖 JPick-SWS 已建立_
+
+* 通知：變更電子郵件等。
++
+範例：_Recipient ci-alerts-notifications-dl created_
+
+
+
+
+
+== 導出審計事件
+
+您可以將稽核顯示的結果匯出至 .CSV 檔案，以便分析資料或將其匯入其他應用程式。步驟 1.在「稽核」頁面上，設定所需的時間範圍和任何篩選條件。Workload Security 將僅匯出符合您所設定篩選條件和時間範圍的稽核項目。2.按一下表格右上角的「匯出」按鈕。顯示的稽核事件將匯出至 .CSV 檔案，最多 10,000 列。
+
+
+
+== 審計資料的保留
+
+Workload Security 保留稽核資料的時間長短取決於您的訂閱：
+
+* 試用環境：審計資料保留 30 天
+* 訂閱環境：審計資料保留 1 年 1 天
+
+
+超過保留時間的審計條目將會自動清除。無需用戶互動。

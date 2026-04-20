@@ -273,6 +273,8 @@ sidebar:
       url: "/concept_cs_attack_simulator.html"
     - title: 電子郵件通知
       url: "/cs_notifications_email.html"
+    - title: 檢視稽核事件
+      url: "/ws_audit_events.html"
     - title: Webhook 通知
       entries:
       - title: 建立 Webhook

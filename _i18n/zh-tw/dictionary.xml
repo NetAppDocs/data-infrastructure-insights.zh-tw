@@ -1906,7 +1906,6 @@
   <block id="8e2e894a8f2d0c798eda10b04a6aae2c" category="inline-link-macro">雲端資料服務支援註冊</block>
   <block id="960807b3a38d77ca1916570b1732dda1" category="inline-xref">啟動支援</block>
   <block id="801ef9b405d4e49db3e3da2aa073e5f6" category="admonition">您必須註冊才能<block ref="5dae4a2b8da6e9eee160d72287b835e3" category="inline-xref-macro-rx"></block>適用於NetApp雲產品。要註冊，請訪問 NetApp 的<block ref="c5b01460a42d58b3ab6bc662dda87194" category="inline-link-macro-rx"></block>。</block>
-  <block id="1674a792a0bf779b22729331c5646696" category="paragraph">強烈建議您勾選該框，以允許NetApp支援工程師在支援會話期間存取您的Data Infrastructure Insights租戶。這將允許工程師排除故障並幫助您快速解決問題。當您的問題解決或您的支援工作階段結束後，您可以取消選取該方塊。</block>
   <block id="26bf81182a5b7a20da27b311cdf97f3d" category="paragraph">您可以透過以下任何一種方式請求支援。您必須擁有有效的Data Infrastructure Insights訂閱才能使用這些支援選項：</block>
   <block id="e145a699aa519b4431527a84030fe1fd" category="inline-link-macro">*電話*</block>
   <block id="d509e88fe0d420e546f838c2bf3149e4" category="list-text"><block ref="d509e88fe0d420e546f838c2bf3149e4" category="inline-link-macro-rx"></block></block>
@@ -14038,4 +14037,57 @@
   <block id="b3e41e2fae7745b697dbed9b6f854aa1" category="inline-image-macro">檔案類型清單</block>
   <block id="28460fbd00b73b7255d03888d8c1d8e5" category="paragraph"><block ref="28460fbd00b73b7255d03888d8c1d8e5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3720ff11b9d0e04f7fd96e22ff7a745f" category="paragraph">為便於審核，新增了「Set By」和「Set Date」兩個屬性。現有檔案類型將遷移到新格式，這兩個屬性的值將被設定為「migrated」。</block>
+  <block id="50910271cc7ffda5c5f9d1e0841741da" category="paragraph">強烈建議您勾選此核取方塊，允許 NetApp 支援工程師在支援工作階段期間存取您的 Data Infrastructure Insights 網站。這將使工程師能夠疑難排解問題並協助您快速解決問題。支援工程師在存取您的網站期間，將能夠執行所有管理員層級的功能。</block>
+  <block id="4568a4a8282d9407a4d8fa1b8e3256db" category="paragraph">當您的問題已解決或您的支援工作階段結束時，您可以取消選取該核取方塊。</block>
+  <block id="fc7d05f9009e90b92a15aad926bca249" category="section-title">2026 年 4 月</block>
+  <block id="7a62dee07c327e2cb645ca3b768833e5" category="section-title">Data Infrastructure Insights 比以往任何時候都更了解您的環境</block>
+  <block id="03f3540edfca404eee2edf4a846ae64c" category="paragraph">我們增強了 Data Infrastructure Insights 中的 AI 對您設定的理解能力。它會在回應之前，利用更豐富的上下文資訊，例如您目前對服務的使用情況、組態以及效能模式。這樣一來，它就能提供更貼合您實際環境的初始指導，而非通用的起點，從而減少後續追蹤，讓您更快獲得有用的答案。</block>
+  <block id="9bbfda6f09499778d37c749e10e5cd09" category="paragraph">例如，導覽至儲存裝置後， AI 助理會一鍵回答諸如以下問題：</block>
+  <block id="5048355a939962882b19e9978c6de9b4" category="list-text">此儲存設備的容量使用率趨勢如何，以及哪些 StoragePools 佔用最多空間？</block>
+  <block id="bd0fc56b14454f1ee18d759d4af08ed3" category="list-text">您能否顯示此裝置在過去 24 小時內的容量使用率趨勢？</block>
+  <block id="aa7271070bccbdb553337d1d11a546e3" category="list-text">此儲存設備上哪些磁碟區佔用的空間最多？</block>
+  <block id="d166bd4cdca169a67a613a26fe8770ce" category="paragraph">'''nt1.png［表格元件單元管理］</block>
+  <block id="3d2f1005746d7db51821bc629f7d4407" category="paragraph">潛在勒索軟體攻擊的詳細資料頁面：-Screen」檢視：表格小工具在左側顯示物件/群組，在右側顯示物件資料（屬性/指標）。</block>
+  <block id="af730d8a2733a784c669eb49b4d22282" category="paragraph">+ <block ref="d39f912f84d3b7c6330ea5e1e4443c8f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e81234c807cc73fff59051e85698456e" category="paragraph">帶格式設定的值小工具] <block ref="ea343c0c42e5fd6968847a90104062ca" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="460cdd4165472896cc30053fb384c428" category="summary">Workload Security 中的稽核事件</block>
+  <block id="7fb266e1b99b0df47eb66e941859d665" category="doc">稽核 Workload Security 事件</block>
+  <block id="fd353ad75bcbf126fad9d6e35df7010e" category="paragraph">識別預期變更（用於追蹤）和非預期變更（用於疑難排解）。檢視 Workload Security 系統事件和使用者活動的稽核追蹤。</block>
+  <block id="b314a4439b8566362801e323965bf155" category="paragraph">若要檢視稽核頁面，請按一下功能表中的 Admin &gt; Audit。稽核頁面隨即顯示，提供每個稽核項目的下列詳細資料：</block>
+  <block id="7067e58a52148d6e3da60108b4cb4632" category="list-text">時間 - 事件或活動的日期和時間</block>
+  <block id="dcf0e3103586dbddc36cc5f26dd6d51b" category="list-text">使用者 - 發起活動的使用者</block>
+  <block id="592d7521568335e69f92257bfd22601a" category="list-text">角色 - 使用者在 Workload Security 中的角色（訪客、使用者、管理員）</block>
+  <block id="d458ab911d522e4254ae9cdb7ea03d01" category="list-text">IP - 與事件相關聯的 IP 位址</block>
+  <block id="cee813c8d86d250fd1721645d6a49210" category="list-text">動作 - 活動類型、例如登入、建立、更新</block>
+  <block id="b778dd43a738838d7aedce9b33722775" category="list-text">類別 - 活動的類別。</block>
+  <block id="bb69c620668e5f23beee0ab1f6d31feb" category="list-text">詳細資料 - 活動的詳細資料</block>
+  <block id="c55f7a21d0556f5e2a47dfadc3db35eb" category="list-text">應用程式類型 - 受稽核應用程式的類型：Observability 或 Workload Security。僅用於篩選 Workload Security 稽核。</block>
+  <block id="d3c127671fefcc305b5b0cd625930c99" category="paragraph">接受稽核的 Workload Security 事件包括但不限於以下事件：</block>
+  <block id="b981e0dae483c1a14d3b270f0e8d681d" category="list-text">Workload Security 原則的變更。</block>
+  <block id="a91253205277455090eab8c5a3e473f7" category="list-text">建立新的 Data Source Collector（DSC）。</block>
+  <block id="8de59a86651a9ded38a04188020fc715" category="list-text">DSC 的修改。</block>
+  <block id="19ad19904ebcc391059146b35ba84e48" category="list-text">建立代理程式。</block>
+  <block id="142aa86c9595fdc63ca5a62c72da36c2" category="list-text">使用者管理工作。</block>
+  <block id="57cf5599ed02e41c904c5aec9626eb8e" category="list-text">API 權杖工作。</block>
+  <block id="dc765b359c5775d41944b793d09a3932" category="list-text">您可以點選欄標題中的箭頭，將項目的排序順序變更為遞增（向上箭頭）或遞減（向下箭頭）。依預設，表格會以遞減時間順序顯示項目。</block>
+  <block id="41c36fad069bf8a1082e9771d559d08a" category="cell">傳回 BOS-PRD12-S12、BOS-PRD23-S12 等</block>
+  <block id="029951cc57b3f3a2cda102ab83d0abd6" category="cell">與上面的 None 類似，您也可以使用此表單在純文字欄位中搜尋 NULL 值</block>
+  <block id="ccfa30aa0938ab67a7679bbea544264c" category="cell">傳回包含精確字面字串 NetApp* 的結果</block>
+  <block id="19cd526896c693b10dc83f3dfdd95e21" category="paragraph">Workload Security 稽核的事件和動作可歸納為以下幾個大類：</block>
+  <block id="db050c29be972955f848d2d9d2dd72e1" category="list-text">使用者帳戶：登入、登出、角色變更等。</block>
+  <block id="1d2e077cee83d150598faec15ea17c00" category="list-text">Agent ：建立、刪除、升級、鎖定、取消鎖定等。</block>
+  <block id="2bc80cebb4c3b4f2d3dd432b71a86e5a" category="paragraph">範例：_Agent Agent-Boston-1 已刪除。_ _Agent 透過大量作業升級至 1.760.0 版本_</block>
+  <block id="6b85b8fcb108efd5eab030cd4d4c1ae2" category="list-text">資料 / 使用者目錄 Collector ：新增、移除、修改、升級、延後 / 繼續、變更代理程式、重新啟動等。</block>
+  <block id="4174f8c445719b2709668eee5bb25e3f" category="paragraph">範例：_Data collector Collector-Boston1 已移除，類型為 ONTAP SVM_ _Agent：Agent-Boston-1，Cluster IP 10.193.88.36，SVM demoGroupShares2_ _Collector ONTAP SVM 升級至版本 1.417.0 由批次操作啟動_</block>
+  <block id="2fc86cef217040ea0a462d14ed05d456" category="list-text">自動化回應原則：新增、更新、移除、啟用、停用等。</block>
+  <block id="05ddd33845ee9d48f9f00fecb4f05c26" category="paragraph">範例：_自動化攻擊原則 Policy-Boston1 已更新。屬性裝置已更新，舊值：[Device(name=svm_boston1, dataSourceId=39fb3b9c-9dd4-4961-bc27-23eb0b6f9ab7)]，新值：[Device(name=demoGroupShares2, dataSourceId=5b9f5b74-4533-4852-909d-8886582a4359)]_</block>
+  <block id="fe9b88cc6db0265d6416e971d1310fa9" category="list-text">使用者封鎖/解除封鎖：自動或手動使用者封鎖和解除封鎖。</block>
+  <block id="284fec9bfe780248e6008075cd114b78" category="paragraph">範例：_已對使用者 Safwan Langley 發動封鎖，作為自動回應的一部分，封鎖時間為 2 小時_</block>
+  <block id="37cfc303a71404ba535148a7f3a71dc8" category="list-text">Apikey：新增、刪除等。</block>
+  <block id="79ab318c3ccfe5611271096aff6f6cc1" category="paragraph">範例：_Workload Security API 存取權杖 JPick-SWS 已建立_</block>
+  <block id="4235fac9f067231cbf0cf4321c23e71c" category="list-text">通知：變更電子郵件等。</block>
+  <block id="5bdbcf91442b859f44c25dd16160394f" category="paragraph">範例：_Recipient ci-alerts-notifications-dl created_</block>
+  <block id="dde532224b6de8f2bcf14526c241e11e" category="paragraph">您可以將稽核顯示的結果匯出至 .CSV 檔案，以便分析資料或將其匯入其他應用程式。步驟 1.在「稽核」頁面上，設定所需的時間範圍和任何篩選條件。Workload Security 將僅匯出符合您所設定篩選條件和時間範圍的稽核項目。2.按一下表格右上角的「匯出」按鈕。顯示的稽核事件將匯出至 .CSV 檔案，最多 10,000 列。</block>
+  <block id="e63e4cacc359b740fa0bc5ab6ea0ba8d" category="paragraph">Workload Security 保留稽核資料的時間長短取決於您的訂閱：</block>
+  <block id="db33137206c4f6b3edeb7dda117f05dd" category="sidebar">檢視稽核事件</block>
 </blocks>
