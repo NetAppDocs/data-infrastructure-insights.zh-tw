@@ -72,6 +72,9 @@ image:KubernetesModifyDeploymentScreen.png["修改部署選項，width=700"]
 您可以透過 DII Kubernetes Collectors 頁面升級 Kubernetes Monitoring Operator。按一下要升級的叢集旁的選單，然後選擇“升級”。操作員將驗證影像簽名，對目前安裝進行快照並執行升級。幾分鐘內，您將看到操作員狀態從「升級進行中」進展到「最新」。如果遇到錯誤，您可以選擇錯誤狀態以了解更多詳細信息，並參考下面的按鈕升級故障排除表。
 
 
+NOTE: 1.2057.0 之前的 operator 版本不支援一鍵升級。請依照以下手動升級說明升級至最新版本。升級完成後，即可使用一鍵升級功能進行後續升級。
+
+
 
 ==== 使用私有儲存庫進行按鈕升級
 

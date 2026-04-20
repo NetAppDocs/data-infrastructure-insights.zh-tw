@@ -14090,4 +14090,5 @@
   <block id="dde532224b6de8f2bcf14526c241e11e" category="paragraph">您可以將稽核顯示的結果匯出至 .CSV 檔案，以便分析資料或將其匯入其他應用程式。步驟 1.在「稽核」頁面上，設定所需的時間範圍和任何篩選條件。Workload Security 將僅匯出符合您所設定篩選條件和時間範圍的稽核項目。2.按一下表格右上角的「匯出」按鈕。顯示的稽核事件將匯出至 .CSV 檔案，最多 10,000 列。</block>
   <block id="e63e4cacc359b740fa0bc5ab6ea0ba8d" category="paragraph">Workload Security 保留稽核資料的時間長短取決於您的訂閱：</block>
   <block id="db33137206c4f6b3edeb7dda117f05dd" category="sidebar">檢視稽核事件</block>
+  <block id="30e34a68b374f1718d077f39f1e4b558" category="admonition">1.2057.0 之前的 operator 版本不支援一鍵升級。請依照以下手動升級說明升級至最新版本。升級完成後，即可使用一鍵升級功能進行後續升級。</block>
 </blocks>
