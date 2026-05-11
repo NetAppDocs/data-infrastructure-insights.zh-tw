@@ -9964,7 +9964,6 @@
   <block id="250a0e817001d5aadc297d9943b4611a" category="list-text">12ep0</block>
   <block id="7fbc2da9d2e5b20105696da7ea4ce3dd" category="list-text">emc3</block>
   <block id="cb0dda161e32cb6fdfcbd71707929167" category="list-text">hba3</block>
-  <block id="ea72e8c9dc8f8b845a6ad19e15b5867a" category="list-text">使用正規表示式的規則需要正規表示式、格式和區分大小寫選擇。</block>
   <block id="669613ed670b6c6c42c39acf0bfee7b0" category="list-text">按一下「*執行 AR*」以執行所有規則，或按一下按鈕中的向下箭頭以執行您建立的規則（以及自上次完整執行 AR 以來建立的任何其他規則）。</block>
   <block id="f5d37dace9a539d56f93b2e2c32704d5" category="paragraph">規則運行的結果顯示在*FC 識別*標籤中。</block>
   <block id="c2c94fa68f8065fa325aff6c260bebfb" category="section-title">啟動自動設備解析度更新</block>
@@ -14091,4 +14090,8 @@
   <block id="e63e4cacc359b740fa0bc5ab6ea0ba8d" category="paragraph">Workload Security 保留稽核資料的時間長短取決於您的訂閱：</block>
   <block id="db33137206c4f6b3edeb7dda117f05dd" category="sidebar">檢視稽核事件</block>
   <block id="30e34a68b374f1718d077f39f1e4b558" category="admonition">1.2057.0 之前的 operator 版本不支援一鍵升級。請依照以下手動升級說明升級至最新版本。升級完成後，即可使用一鍵升級功能進行後續升級。</block>
+  <block id="d0c7c0947ebc2f58067c90be172b88e0" category="list-text">點選 *Observability &gt; Enrich &gt; Device Resolution*</block>
+  <block id="7ecd430509607d1a2c2f3ffad808df91" category="list-text">使用正規表示式的規則需要正規表示式、格式和區分大小寫選項。</block>
+  <block id="9372fa792b7b3d019662b44dd2963355" category="section-title">暫停和繼續規則</block>
+  <block id="716da8f41fd22d5cd56ad74991f757ba" category="paragraph">若要阻止規則運行，請從規則右側選單中選擇「暫停」，或選擇多個規則，然後從「批次操作」下拉式功能表中選擇「暫停」。您可以用同樣的方法恢復規則運行。</block>
 </blocks>
