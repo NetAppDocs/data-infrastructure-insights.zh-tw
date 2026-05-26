@@ -3706,8 +3706,6 @@
   <block id="df6a21f670066b82b5409a049dec0efe" category="doc">自動回應策略</block>
   <block id="e5da02c738b911c42fb0a45a5b76c8d9" category="paragraph">回應策略會在發生攻擊或異常使用者行為時觸發諸如拍攝快照或限制使用者存取等操作。</block>
   <block id="8816114441548a7f4d390de764f25ad9" category="paragraph">您可以針對特定裝置或所有裝置設定策略。若要設定回應策略，請選擇*管理 &gt; 自動回應策略*，然後按一下對應的*+策略*按鈕。您可以建立針對攻擊或警告的策略。</block>
-  <block id="29d142bb0759eaeb3b47bf1809087cc7" category="inline-image-macro">新增顯示 webhook 下拉選單的攻擊策略對話框</block>
-  <block id="9c3cfe368d37e834800103686eba11c1" category="paragraph"><block ref="9c3cfe368d37e834800103686eba11c1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="10519a96ebde07deba902eb606bf97ff" category="paragraph">您必須使用唯一的名稱儲存該策略。</block>
   <block id="168e31fead9fc72274b5723b0c86d27f" category="paragraph">若要停用自動回應操作（例如，拍攝快照），只需取消選取該動作並儲存策略。</block>
   <block id="3218ac0e5f26253bd8724ab98d8f5e02" category="inline-link-macro">警報詳細資訊頁面</block>
@@ -14094,4 +14092,6 @@
   <block id="9372fa792b7b3d019662b44dd2963355" category="section-title">暫停和繼續規則</block>
   <block id="716da8f41fd22d5cd56ad74991f757ba" category="paragraph">若要阻止規則運行，請從規則右側選單中選擇「暫停」，或選擇多個規則，然後從「批次操作」下拉式功能表中選擇「暫停」。您可以用同樣的方法恢復規則運行。</block>
   <block id="baac891fc4329aa8b558fa7560c83369" category="list-text">目錄排除清單：支援最多四級目錄路徑，從 junction 路徑開始。此路徑下的所有子目錄和檔案都將被排除在警示產生之外。目錄路徑不支援萬用字元。</block>
+  <block id="fc6be75876bcdad138173b62e9ab5c17" category="inline-image-macro">新增攻擊策略對話框，顯示 webhook 下拉選單，寬度為 300</block>
+  <block id="7cb01fa627551da61643f2eab2af39fb" category="paragraph"><block ref="7cb01fa627551da61643f2eab2af39fb" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
