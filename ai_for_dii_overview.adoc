@@ -16,13 +16,6 @@ summary: 您可以使用 Data Infrastructure Insights 的 AI 助理來總結數�
 [role="lead"]
 *Data Infrastructure Insights AI 助理*旨在幫助您更有效率地處理基礎設施數據。它可以幫助您分析資訊、發現洞察、解決營運難題，並就資源利用做出明智的決策。
 
-[NOTE]
-====
-DII AI 助理目前以有限的預覽版形式提供。link:concept_preview_features.html["了解更多"] 關於 Data Infrastructure Insights 預覽功能。
-
-AI 助理僅適用於部署在 AWS 上的 Data Infrastructure Insights 租戶。
-
-====
 image:ai_assistant_sample_question.png["AI Assistant 範例問題"]
 
 
@@ -76,8 +69,14 @@ DII 系統包含多種類型的資料，其中包括：
 
 
 
+== 自然聊天
+
+AI 助理現在支援十幾種語言，讓您的團隊能夠用他們偏好的語言進行自然交流。查看完整清單link:https://platform.claude.com/docs/en/build-with-claude/multilingual-support["這裡"]。
+
+
+
 == 存取助理
 
-要呼叫 Data Infrastructure Insights AI 助手，只需選擇螢幕左下角的貓頭鷹圖示即可。擁有「所有者」角色的使用者必須先接受條款和條件，其他使用者才能在您的租戶上使用 AI 助手。
+要呼叫 DII AI Assistant，只需選擇螢幕左下角的貓頭鷹圖示即可。擁有「Owner」或「Admin」角色的使用者必須先接受條款和條件，其他使用者才能在您的租用戶上使用 AI Assistant。
 
 image:ai_assistant_icon.png["dii_ai_assistant_icon"]

@@ -18,6 +18,33 @@ NetApp不斷改進和增強其產品和服務。以下是Data Infrastructure Ins
 
 
 
+== 2026 年 6 月
+
+
+
+=== 適用於全球團隊的更智慧 AI 助理
+
+AI 助理現在支援十幾種語言,讓您的團隊能夠用他們偏好的語言進行自然交流。查看完整清單link:https://platform.claude.com/docs/en/build-with-claude/multilingual-support["這裡"^]。
+
+
+
+=== 基礎架構屬性變更的新監控器
+
+現在可以使用 Attribute Monitors，在資產於資料中心之間移動、儲存資源池未加密或發生任何屬性修改時自動向您的團隊發出警報。這有助於維護組態基準，並確保在新部署或變更期間不會出現任何疏漏。
+
+image:attribute_monitor_in_list.png["屬性監視器已新增至監視器類型"]
+
+
+
+=== 利用動態、富含上下文的訊息建立更聰明的警報和 webhook
+
+建立監控或 webhook 時，只需在警示說明或 webhook URL、標頭或內文中輸入「%」，即可從動態填入的可用物件屬性和註釋清單中進行選擇。為您的警示提供正確的內容，以提高清晰度、增強 webhook 整合並加快回應速度。
+
+image:attribute_list_example.png["監視器描述中的屬性清單，width=400"]
+
+'''
+
+
 == 2026 年 4 月
 
 

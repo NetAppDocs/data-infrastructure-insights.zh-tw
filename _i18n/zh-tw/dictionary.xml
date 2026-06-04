@@ -13291,7 +13291,6 @@
   <block id="d55e67726729808ea6f67b165600c105" category="summary">您可以使用 Data Infrastructure Insights 的 AI 助理來總結數據、探索見解、疑難排解問題並規劃資源。</block>
   <block id="accab30482cee85eb4e017db64428cad" category="doc">Data Infrastructure Insights AI 助理</block>
   <block id="6804300f32b2dfd7358cbef13acc4c27" category="paragraph">*Data Infrastructure Insights AI 助理*旨在幫助您更有效率地處理基礎設施數據。它可以幫助您分析資訊、發現洞察、解決營運難題，並就資源利用做出明智的決策。</block>
-  <block id="b6ed013ce4b16673bae45126733837ff" category="paragraph">AI 助理僅適用於部署在 AWS 上的 Data Infrastructure Insights 租戶。</block>
   <block id="01a593a05ec8086d16c6d465263a2f9f" category="inline-image-macro">AI Assistant 範例問題</block>
   <block id="18aabc8cd51ce3494b256e8195526a85" category="paragraph"><block ref="18aabc8cd51ce3494b256e8195526a85" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f58b0ee974430595788a16d0bcde2c33" category="section-title">認識您基礎架構的全新智慧合作夥伴</block>
@@ -13325,7 +13324,6 @@
   <block id="81bba36ecc862e80fc8fba5830993041" category="list-text">您感興趣的時間範圍，以及</block>
   <block id="747f32611560f7ea60cbda274f04ef16" category="list-text">您具體關注哪些問題類型（效能問題、容量問題、錯誤等）</block>
   <block id="45610fa97924ab075b8ebed42722b019" category="section-title">存取助理</block>
-  <block id="629c55deaa1b75250df975fe5485d218" category="paragraph">要呼叫 Data Infrastructure Insights AI 助手，只需選擇螢幕左下角的貓頭鷹圖示即可。擁有「所有者」角色的使用者必須先接受條款和條件，其他使用者才能在您的租戶上使用 AI 助手。</block>
   <block id="f67a424fefeb5e523fcbb4c9247bc6d9" category="inline-image-macro">dii_ai_assistant_icon</block>
   <block id="a48b93c62e0c2ec4c09405cadd96b7da" category="paragraph"><block ref="a48b93c62e0c2ec4c09405cadd96b7da" category="inline-image-macro-rx" type="image"></block></block>
   <block id="be90349da04be71a620e68314d810f7f" category="section-title">2026 年 2 月</block>
@@ -13355,7 +13353,6 @@
   <block id="3542743c69e8fceb06c77e5e17299c89" category="sidebar">AI 助理</block>
   <block id="f7836ca926de84b06b0b4bcbe4b8b756" category="inline-link-macro">Data Infrastructure Insights（包括 Workload Security）通知，window=_blank</block>
   <block id="135e17e82c7d3d3d83bd8b0737be432e" category="paragraph"><block ref="135e17e82c7d3d3d83bd8b0737be432e" category="inline-link-macro-rx"></block></block>
-  <block id="58e3397ecaf63f320f4993fc5844d736" category="paragraph">DII AI 助理目前以有限的預覽版形式提供。<block ref="b77b95325de7e3e625a811db4f47869c" category="inline-link-macro-rx"></block> 關於 Data Infrastructure Insights 預覽功能。</block>
   <block id="b6b93d34f92b439117e54d9343c7efda" category="section-title">目前預覽：</block>
   <block id="559de301b9b7af9f5b932d860f605701" category="list-text"><block ref="7a32ab5261b86b8c9a5d88b540c79f2d" category="inline-link-macro-rx"></block> 預覽。</block>
   <block id="ca39a60f24fda5dbbda8809fbd3fe717" category="inline-link-macro">*Data Infrastructure Insights AI 助理*</block>
@@ -14094,4 +14091,18 @@
   <block id="baac891fc4329aa8b558fa7560c83369" category="list-text">目錄排除清單：支援最多四級目錄路徑，從 junction 路徑開始。此路徑下的所有子目錄和檔案都將被排除在警示產生之外。目錄路徑不支援萬用字元。</block>
   <block id="fc6be75876bcdad138173b62e9ab5c17" category="inline-image-macro">新增攻擊策略對話框，顯示 webhook 下拉選單，寬度為 300</block>
   <block id="7cb01fa627551da61643f2eab2af39fb" category="paragraph"><block ref="7cb01fa627551da61643f2eab2af39fb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="512346de0e4492551e58519f2ff8f02f" category="section-title">自然聊天</block>
+  <block id="606eca1dc0574688efcace9e5442ec65" category="paragraph">AI 助理現在支援十幾種語言，讓您的團隊能夠用他們偏好的語言進行自然交流。查看完整清單<block ref="7bcc2d9bce066141171b475332938f67" category="inline-link-macro-rx"></block>。</block>
+  <block id="f66b0e86f32ecd67a023b86cf46bdc84" category="paragraph">要呼叫 DII AI Assistant，只需選擇螢幕左下角的貓頭鷹圖示即可。擁有「Owner」或「Admin」角色的使用者必須先接受條款和條件，其他使用者才能在您的租用戶上使用 AI Assistant。</block>
+  <block id="c21446b3ecfb30ed6c2760d686bd4578" category="section-title">2026 年 6 月</block>
+  <block id="c42129b932facb2cf7437f8dda2d1024" category="section-title">適用於全球團隊的更智慧 AI 助理</block>
+  <block id="2cf12b65895eb4c6ea2aa563a3a928c2" category="paragraph">AI 助理現在支援十幾種語言,讓您的團隊能夠用他們偏好的語言進行自然交流。查看完整清單<block ref="76aebc4f8810ba81b56db38cff83be8e" category="inline-link-macro-rx"></block>。</block>
+  <block id="f4651ef2bf0573c7c2ed9812ec1e1a9c" category="section-title">基礎架構屬性變更的新監控器</block>
+  <block id="a8d07c89b5ad1be0c9666289c7c31f2e" category="paragraph">現在可以使用 Attribute Monitors，在資產於資料中心之間移動、儲存資源池未加密或發生任何屬性修改時自動向您的團隊發出警報。這有助於維護組態基準，並確保在新部署或變更期間不會出現任何疏漏。</block>
+  <block id="1077e7a3935b3725c8350a2c88a1253f" category="inline-image-macro">屬性監視器已新增至監視器類型</block>
+  <block id="2a7170fd3e143b93657f08d8a1c590f9" category="paragraph"><block ref="2a7170fd3e143b93657f08d8a1c590f9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3fb1bd69332231cdc75d8db242aaf294" category="section-title">利用動態、富含上下文的訊息建立更聰明的警報和 webhook</block>
+  <block id="ca168714d12ff6410e26984f67b83474" category="paragraph">建立監控或 webhook 時，只需在警示說明或 webhook URL、標頭或內文中輸入「%」，即可從動態填入的可用物件屬性和註釋清單中進行選擇。為您的警示提供正確的內容，以提高清晰度、增強 webhook 整合並加快回應速度。</block>
+  <block id="42bb2765b945bf3e0e9843ba7c1b0426" category="inline-image-macro">監視器描述中的屬性清單，width=400</block>
+  <block id="5c686c3f80c47e575d3c5b2f79e6da4b" category="paragraph"><block ref="5c686c3f80c47e575d3c5b2f79e6da4b" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
