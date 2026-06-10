@@ -14105,4 +14105,8 @@
   <block id="ca168714d12ff6410e26984f67b83474" category="paragraph">建立監控或 webhook 時，只需在警示說明或 webhook URL、標頭或內文中輸入「%」，即可從動態填入的可用物件屬性和註釋清單中進行選擇。為您的警示提供正確的內容，以提高清晰度、增強 webhook 整合並加快回應速度。</block>
   <block id="42bb2765b945bf3e0e9843ba7c1b0426" category="inline-image-macro">監視器描述中的屬性清單，width=400</block>
   <block id="5c686c3f80c47e575d3c5b2f79e6da4b" category="paragraph"><block ref="5c686c3f80c47e575d3c5b2f79e6da4b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e236cc945d03142b030da5f8ca3552ad" category="section-title">更大的工作空間、更少的雜亂</block>
+  <block id="0c57b296d9e6f421b799470406b41595" category="paragraph">DII 導覽功能表煥然一新，現在與 Console 的色彩和行為相符，提供更統一的體驗。先前的靜態主功能表現在預設為摺疊狀態，以提供更專注的工作區，並有效利用螢幕空間。只需按一下左上角的漢堡圖示（☰）即可存取。</block>
+  <block id="638f6b8d99e1422bc23e131d2c84c24d" category="section-title">透過智慧型 AI 助理擴展裝置可見度</block>
+  <block id="8cc9ca78507aef920c11566fc08c38ca" category="paragraph">透過 AI 驅動的裝置識別功能，加速新裝置的上線。Data Infrastructure Insights 會分析您的環境並建議自動裝置解析規則，協助您快速識別和管理更多裝置。您只需審核並核准 AI 產生的規則，DII 即可處理其餘工作，從而提升整個基礎架構的裝置可見度和管理效率。</block>
 </blocks>
