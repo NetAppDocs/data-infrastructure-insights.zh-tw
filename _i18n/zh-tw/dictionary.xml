@@ -13990,8 +13990,6 @@
   <block id="6fd44ae5a42d6b33248d329cbbddaa88" category="paragraph">DII Red Hat OpenShift Virtualization 收集器將嘗試發現運行在 OpenShift Virtualization 環境中的 OSV 運算工作負載，但該收集器無法發現所有 Open Shift pod。這是一個基於 HTTPS REST API 的收集器。建議每個 OSV 叢集建立一個收集器。</block>
   <block id="0e2f53883090c3b63a953261cdb19325" category="paragraph">此收集器的身份驗證方法是使用綁定到服務帳戶的身份驗證令牌。若要建立使用者帳戶和令牌：</block>
   <block id="f2c430952fd20f76b24810e2e6f8dace" category="paragraph">執行這 3 個命令並注意是否有任何錯誤。</block>
-  <block id="8a8ad6f9b43737bda614d744a8286cc4" category="paragraph">命令執行完畢後：</block>
-  <block id="9fb84dc506591e78ff3f6f8ac2f00e6e" category="paragraph">這將創建一個與您的用戶綁定的令牌。</block>
   <block id="0cf40b0b5f29b2928f214370b73c4fac" category="paragraph">最後，您可能還需要 OSV 管理員執行：</block>
   <block id="7af44018c8c76e698e986a0c0db08e5f" category="paragraph">這將傳回用於管理的主機名稱 / IP 位址。每個 DII OSV 收集器都需要指向該 IP / 主機名稱以進行 OSV 管理。</block>
   <block id="e62768229563f11ca5fd49a1482ae7a8" category="list-text">透過 REST API 經由連接埠 443 取得 Red Hat OpenShift Virtualization 伺服器的 IP 位址</block>
@@ -14109,4 +14107,18 @@
   <block id="0c57b296d9e6f421b799470406b41595" category="paragraph">DII 導覽功能表煥然一新，現在與 Console 的色彩和行為相符，提供更統一的體驗。先前的靜態主功能表現在預設為摺疊狀態，以提供更專注的工作區，並有效利用螢幕空間。只需按一下左上角的漢堡圖示（☰）即可存取。</block>
   <block id="638f6b8d99e1422bc23e131d2c84c24d" category="section-title">透過智慧型 AI 助理擴展裝置可見度</block>
   <block id="8cc9ca78507aef920c11566fc08c38ca" category="paragraph">透過 AI 驅動的裝置識別功能，加速新裝置的上線。Data Infrastructure Insights 會分析您的環境並建議自動裝置解析規則，協助您快速識別和管理更多裝置。您只需審核並核准 AI 產生的規則，DII 即可處理其餘工作，從而提升整個基礎架構的裝置可見度和管理效率。</block>
+  <block id="b60f27931c3ae71e254e2b744656329e" category="inline-link-macro">Qumulo REST</block>
+  <block id="d5f6f6770076a4cff24cf687c1f3ce72" category="cell"><block ref="d5f6f6770076a4cff24cf687c1f3ce72" category="inline-link-macro-rx"></block></block>
+  <block id="e11d6c7f4644f952faf6dce5c4b295ad" category="summary">配置 Qumulo REST 資料收集器。</block>
+  <block id="d3b9d1ab118852a73d2b9221ede10370" category="doc">Qumulo REST 資料收集器</block>
+  <block id="a7236bb9d36106126af2861383d145e2" category="paragraph">Data Infrastructure Insights 使用此收集器從 Qumulo 儲存設備取得庫存和效能資料。</block>
+  <block id="b23a87bcdf03ab57cf9c989bf91c2e39" category="list-text">Qumulo 叢集的 IP 位址 / 完全限定域名</block>
+  <block id="6b163e0e6c238a01d0ce91c0c83e4f0c" category="cell">Qumulo IP 位址</block>
+  <block id="0a4db5a5d79afd66b50465ed8b623a2d" category="cell">Qumulo 儲存設備的 IP 位址或完整網域名稱</block>
+  <block id="b011dcc2f56365d26e263f3ed75cdfa7" category="cell">Qumulo 的使用者名稱</block>
+  <block id="f37b44ac7ba2560a5f36f58586dc6502" category="cell">用於 Qumulo 的密碼</block>
+  <block id="77c91f11c388cc00f02f729cfee3aa51" category="cell">庫存輪詢之間的時間間隔。預設值為 30。</block>
+  <block id="10c51e7fed3d0622297f012b6ed375ff" category="cell">效能輪詢之間的時間間隔。預設值為 5。</block>
+  <block id="d08016e5c5be3fa70d21f77cdf152be2" category="paragraph">命令執行完畢後，執行：</block>
+  <block id="6d0f6de7ebc4523de6bfdcd599b62bf1" category="paragraph">這將建立一個與您的使用者繫結的權杖。注意：建議設定權杖持續時間。請注意，權杖過期後，資料收集將失敗，並顯示「連線失敗」錯誤。</block>
 </blocks>

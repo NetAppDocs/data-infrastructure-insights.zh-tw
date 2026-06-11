@@ -209,6 +209,9 @@ Data Infrastructure Insights支援的數據收集器的字母列表：
 | link:task_dc_pure_flashblade.html["Pure Storage FlashBlade"] | 基礎設施 
 
 
+| link:task_dc_qumulo_rest.html["Qumulo REST"] | 基礎設施 
+
+
 | link:task_dc_redhat_virtualization.html["紅帽虛擬化"] | 基礎設施 
 
 

@@ -25,10 +25,10 @@ oc adm policy add-cluster-role-to-user cluster-monitoring-view -z acq-readonly-c
 ....
 執行這 3 個命令並注意是否有任何錯誤。
 
-命令執行完畢後：
+命令執行完畢後，執行：
 
- oc sa new-token acq-readonly-cluster-user
-這將創建一個與您的用戶綁定的令牌。
+ oc create token acq-readonly-cluster-user --duration=8760h
+這將建立一個與您的使用者繫結的權杖。注意：建議設定權杖持續時間。請注意，權杖過期後，資料收集將失敗，並顯示「連線失敗」錯誤。
 
 最後，您可能還需要 OSV 管理員執行：
 
