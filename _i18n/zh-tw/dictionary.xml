@@ -14121,4 +14121,6 @@
   <block id="10c51e7fed3d0622297f012b6ed375ff" category="cell">效能輪詢之間的時間間隔。預設值為 5。</block>
   <block id="d08016e5c5be3fa70d21f77cdf152be2" category="paragraph">命令執行完畢後，執行：</block>
   <block id="6d0f6de7ebc4523de6bfdcd599b62bf1" category="paragraph">這將建立一個與您的使用者繫結的權杖。注意：建議設定權杖持續時間。請注意，權杖過期後，資料收集將失敗，並顯示「連線失敗」錯誤。</block>
+  <block id="90e0071503be9324e2266cfd3368d18a" category="list-text">透過 HTTPS 存取連接埠 8000</block>
+  <block id="bdda6785fe5c26b462fa0a87d4327560" category="cell">預設值為 8000。</block>
 </blocks>
