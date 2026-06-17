@@ -14124,4 +14124,6 @@
   <block id="90e0071503be9324e2266cfd3368d18a" category="list-text">透過 HTTPS 存取連接埠 8000</block>
   <block id="bdda6785fe5c26b462fa0a87d4327560" category="cell">預設值為 8000。</block>
   <block id="606930ccd6550cc24fe845f69572c586" category="list-text">具有至少讀取權限的使用者帳戶和密碼。</block>
+  <block id="38fbce916138020848ac3b594a6648d0" category="section-title">透過登入訊息分享重要更新</block>
+  <block id="7260908f665e8b3c02f0fce13c7ea541" category="paragraph">透過可自訂的登入訊息，讓您的團隊隨時了解最新動態並保持一致。在使用者登入時，直接向他們傳達重要公告、維護計劃或策略更新。透過 Markdown 支援，您可以格式化訊息，使其更加清晰易懂，並確保關鍵訊息能夠傳達給每位 DII 使用者。擁有管理員權限的帳戶可以在「管理」功能表的「通知」下找到相關配置。</block>
 </blocks>
