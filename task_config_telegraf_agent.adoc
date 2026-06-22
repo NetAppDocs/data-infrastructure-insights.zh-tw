@@ -44,7 +44,7 @@ NOTE: 如果您想在安裝代理之前驗證安裝文件，請參閱下面的�
 NOTE: 一旦在主機上安裝了代理，就不需要在該主機上再次安裝代理程式。
 
 
-TIP: 一旦您在伺服器/虛擬機器上安裝了代理，Data Infrastructure Insights除了從您配置的任何資料收集器收集指標外，還會從該系統收集指標。這些指標被收集為link:task_config_telegraf_node.html["「節點」指標"]。
+TIP: 在伺服器/虛擬機器上安裝代理程式後，Data Infrastructure Insights 除了從您設定的任何資料收集器收集指標外，還會從該系統收集指標。這些指標以「節點」指標的形式收集。
 
 
 NOTE: 如果您使用代理，請在安裝 Telegraf 代理之前閱讀適用於您平台的代理說明。

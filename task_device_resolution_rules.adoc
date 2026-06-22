@@ -161,4 +161,48 @@ Data Infrastructure Insights依照方法出現的順序執行主機解析過程�
 
 當遇到適用的規則時，規則名稱會顯示在規則列中並標識為手動。
 
-有關的：link:task_device_resolution_fibre_channel.html["光纖通道設備解析"] link:task_device_resolution_ip.html["IP設備解析"] link:task_device_resolution_preferences.html["設定裝置解析度首選項"]
+
+
+== 人工智慧輔助規則生成
+
+或者，您也可以利用 AI 驅動的裝置識別功能，無需猜測即可快速輕鬆地建立規則。只需執行 AI-Assisted Rule Generator，即可分析您的環境並建議 Device Resolution 規則，幫助您快速識別和管理更多裝置。
+
+
+
+=== 開始使用
+
+要開始使用 AI 產生解析規則，管理員必須先啟用 AI 產生的規則。
+
+image:ahr_ai_get_started.png["開始產生 AI 規則，width=400"]
+
+AI 助理會告訴您光纖通道裝置中未識別裝置的百分比，並提示您允許其產生規則。選擇「Let's Go!」。
+
+image:ahr_ai_lets_go.png["選擇「Let's Go」以產生規則，width=400"]
+
+啟用 AI 產生的規則前，系統會提示您確認網域名稱。您必須包含所有網域名稱，才能有效識別。
+
+
+
+=== 檢查進度
+
+DII 會定期發送通知，告知您有更多裝置可供識別。如果您看到頁面右上角的 Bell 圖示上出現綠點，請點選以查看通知。
+
+image:ahr_ai_notification.png["通知鈴，寬度=400"]
+
+使用鈴鐺圖示也可以查看規則產生狀態，這可能需要幾秒鐘到幾分鐘不等，視您的環境複雜程度而定。
+
+由 AI 產生的規則將在清單中顯示「AI Generated」徽章。
+
+image:ahr_ai_badge.png["人工智慧產生的規則徽章，寬度=400"]
+
+
+
+=== 恢復並繼續
+
+AI 產生的規則預設為「已暫停」狀態。您必須審核每條規則並將其「恢復」後，才能識別裝置。
+
+
+
+== 相關：
+
+link:task_device_resolution_fibre_channel.html["光纖通道設備解析"] link:task_device_resolution_ip.html["IP設備解析"] link:task_device_resolution_preferences.html["設定裝置解析度首選項"]

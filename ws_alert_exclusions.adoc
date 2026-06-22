@@ -17,7 +17,7 @@ summary: 將檔案副檔名新增至警示排除清單中，以減少警示數�
 
 警報排除項目依租戶配置，包括以下內容：
 
-. 檔案類型：抑制特定檔案類型的 File Tampering 警報<<allowed-file-types,允許的檔案類型>>
+. 檔案類型：抑制特定檔案類型的 File Tampering 警報<<file-types,允許的檔案類型>>
 . 使用者：隱藏由選定使用者觸發的警示。
 . 路徑：抑制所選目錄路徑上活動的警示（最多四個目錄層級，從交接路徑開始）。
 
@@ -38,9 +38,9 @@ summary: 將檔案副檔名新增至警示排除清單中，以減少警示數�
 * 目錄排除清單：支援最多四級目錄路徑，從 junction 路徑開始。此路徑下的所有子目錄和檔案都將被排除在警示產生之外。目錄路徑不支援萬用字元。
 
 
-image:ws_alert_exclusions_users.png[""]
+image:ws_alert_exclusions_users.png["警報排除使用者"]
 
-image:ws_alert_exclusions_paths.png[""]
+image:ws_alert_exclusions_paths.png["警報排除路徑"]
 
 可以將個別使用者和目錄路徑新增至個別排除清單或從中移除。每個清單中的每個項目都會包含新增至清單的時間和新增者資訊，這些資訊將用於稽核目的。
 

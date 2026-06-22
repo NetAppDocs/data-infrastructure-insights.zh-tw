@@ -1,0 +1,27 @@
+---
+sidebar: sidebar 
+permalink: login_message_popup.html 
+summary: 為所有使用者設定每日彈出訊息。 
+keywords: notifications, pop-up, banner, motd, message, login 
+---
+= 配置登入訊息
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以配置一則訊息，使其在所有使用者登入時以彈出視窗的形式顯示。您可以選擇僅在下次登入時顯示，或在所有後續登入時顯示。
+
+管理員可以在「管理 > 通知」的「登入橫幅」標籤中設定訊息。
+
+該訊息支援基本的 Markdown 格式，因此您可以套用粗體、斜體、表格等格式。
+
+選擇使用者是在下次登入時看到該訊息，還是在每次後續登入時都看到該訊息。
+
+image:login_banner_settings.png["登入橫幅設定"]
+
+請注意，使用者必須確認登入訊息才能將其關閉。關閉後，任何其他彈出視窗（例如「最新動態」更新、「服務條款」更新等）都會顯示。

@@ -93,7 +93,7 @@ sidebar:
         url: "/concept_log_explorer.html"
       - title: 識別非活動設備
         url: "/task_identify_inactive_devices.html"
-    - title: 監控和警報
+    - title: 監控、警報和通知
       entries:
       - title: 建立監視器
         url: "/task_create_monitor.html"
@@ -117,6 +117,8 @@ sidebar:
           url: "/task_webhook_example_slack.html"
         - title: Webhook 範例 - 團隊
           url: "/task_webhook_example_teams.html"
+      - title: 登入訊息
+        url: "/login_message_popup.html"
     - title: 使用註釋
       entries:
       - title: 定義註釋

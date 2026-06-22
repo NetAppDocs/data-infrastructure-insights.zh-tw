@@ -296,7 +296,7 @@ image: <docker repo of the enterprise/corp docker repo>/netapp-monitoring:<versi
 agent:
   ...
   # An optional docker registry where you want docker images to be pulled from as compared to CI's docker registry
-  # Please see documentation link here: link:task_config_telegraf_agent_k8s.html#using-a-custom-or-private-docker-repository
+  # Please see documentation link here: link:task_config_telegraf_agent_k8s.html#using-a-custom-or-private-docker-repository[Using a custom or private docker repository]
   dockerRepo: your.docker.repo/long/path/to/test
   # Optional: A docker image pull secret that maybe needed for your private docker registry
   dockerImagePullSecret: docker-secret-name
@@ -426,7 +426,7 @@ The following checks were performed on each of these signatures:
 | 我在嘗試部署操作員時遇到了問題，並且我正在使用 PSP/PSA。 | 1.使用以下命令編輯代理程式：kubectl -n <name-space> edit agent 2。將“security-policy-enabled”標記為“false”。這將停用 Pod 安全性原則和 Pod 安全准入並允許操作員部署。使用以下命令確認：kubectl get psp（應該顯示 Pod 安全性策略已刪除）kubectl get all -n <namespace> | grep -i psp（應該顯示未找到任何內容） 
 
 
-| 出現“ImagePullBackoff”錯誤 | 如果您有自訂或私有的 docker 儲存庫，並且尚未配置 Kubernetes Monitoring Operator 以正確識別它，則可能會看到這些錯誤。<<using-a-custom-or-private-docker-repository,閱讀更多>>關於自訂/私人 repo 的配置。 
+| 出現“ImagePullBackoff”錯誤 | 如果您擁有自訂或私人 Docker 倉庫，但尚未配置 Kubernetes Monitoring Operator 以正確識別它，則可能會出現這些錯誤。<<使用自訂或私有的 Docker 倉庫,閱讀更多>>有關配置自訂/私有倉庫的資訊。 
 
 
 | 我的監控操作員部署出現了問題，目前文件無法幫助我解決該問題。  a| 

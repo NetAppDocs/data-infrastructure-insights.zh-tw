@@ -1,12 +1,16 @@
 ---
 sidebar: sidebar 
 permalink: task_dc_na_cloud_connection.html 
-summary: 配置NetApp Cloud Connection for ONTAP 9.9+ 資料收集器 
+summary: 配置 NetApp Cloud Connection for ONTAP 9.9 及更高版本資料收集器 
 keywords: data collector, NetApp, Cloud agent, ONTAP 
 ---
 = NetApp Cloud Connection for ONTAP 9.9+ 資料收集器
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]

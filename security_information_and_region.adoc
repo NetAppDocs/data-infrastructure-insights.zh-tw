@@ -99,7 +99,6 @@ Data Infrastructure Insights根據您創建環境的區域儲存資訊。
 
 * link:https://www.netapp.com/us/company/trust-center/index.aspx["信任中心"]
 * link:https://www.netapp.com/us/company/trust-center/privacy/data-location-cross-border-transfers.aspx["跨境資料傳輸"]
-* link:https://www.netapp.com/us/company/trust-center/privacy/bcr-binding-corporate-rules.aspx["具有約束力的公司規則"]
 * link:https://www.netapp.com/us/company/trust-center/transparency/third-party-data-requests.aspx["回應第三方資料請求"]
 * link:https://www.netapp.com/us/company/trust-center/privacy/privacy-principles-security-safeguards.aspx["NetApp隱私原則"]
 
