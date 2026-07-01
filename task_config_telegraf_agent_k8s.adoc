@@ -281,6 +281,11 @@ agent:
 * ci-net-觀察者
 
 
+變更分析
+
+* ci-k8s-change-observer
+
+
 根據您的公司政策將操作員 docker 映像推送到您的私人/本地/企業 docker 儲存庫。確保儲存庫中這些圖像的圖像標籤和目錄路徑與Data Infrastructure Insights儲存庫中的一致。
 
 編輯 operator-deployment.yaml 中的 monitoring-operator 部署，並修改所有映像引用以使用您的私人 Docker 儲存庫。
@@ -534,5 +539,8 @@ fluent-bit:
 
 
 | 我在 Fluent-bit Pod 中收到以下錯誤，且 Pod 無法啟動：026/01/12 20:20:32] [error] [sqldb] error=unable to open database file [2026/01/12 20:20:32] [error] [input:tail:tail.0] db: could not create 'in_tail_files' table [2026/01/12 20:20:32] [error] [input:tail:tail.0] could not open/create database [2026/01/12 20:20:32] [error] failed initialize input tail.0 [2026/01/12 20:20:32] [error] [engine] input initialization failed | 確保資料庫檔案所在的主機目錄具有適當的讀取 / 寫入權限。更具體地說、主機目錄應授予非 root 使用者讀取 / 寫入權限。預設的資料庫檔案位置為 /var/log/ 、除非被 fluent-bit-dbFile _agentconfiguration_ 選項覆寫。如果啟用 SELinux 、請嘗試將 fluent-bit-seLinuxOptionsType agentconfiguration 選項設為 'spc_t' 
+
+
+| 我看到 Telegraf 返回類似如下的錯誤訊息，但 Telegraf 確實啟動並運行了：E! [inputs.kubernetes] 插件錯誤： https://<IP>>:<port>>/pods[] 返回 HTTP 狀態 403 Forbidden | 如果您執行的是低於 1.33 版本的 Kubernetes，則可能會出現這些訊息。telegraf 使用的「nodes/pods」RBAC 資源在這些版本中不存在。有關舊版本所需的 RBAC 資源，請參閱 operator-additional-permissions.yaml 檔案中「適用於 Kubernetes 版本 < 1.33」部分。 
 |===
 更多資訊可從link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。
