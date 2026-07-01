@@ -14157,4 +14157,5 @@
   <block id="180f4f510f0a043b315312d10faa507e" category="paragraph"><block ref="180f4f510f0a043b315312d10faa507e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="eda220a2d8b65414dd2552b1cc37aca5" category="sidebar">監控、警報和通知</block>
   <block id="b3dd2c9c1ffecc51c5a189f2d6c9d4c6" category="sidebar">登入訊息</block>
+  <block id="241aeccf602b677945fa5597f1832e5e" category="section-title">產生文件篡改警報</block>
 </blocks>
