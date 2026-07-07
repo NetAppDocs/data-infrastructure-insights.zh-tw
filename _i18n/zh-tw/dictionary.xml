@@ -8645,26 +8645,6 @@
   <block id="992a67d3dca96bca02f3f0f78e2a1cfd" category="cell">XtremIO 管理伺服器的密碼</block>
   <block id="a93bcb5a82072c389a3b8a73489512f7" category="cell">TCP 連接埠</block>
   <block id="0787e82546099bff5ac87c0c5d9ce7a3" category="cell">用於連接 XTremIO 管理伺服器的 TCP 連接埠。預設值為 443。</block>
-  <block id="9fa4e650cd8691fa4e931e43145e4dfd" category="summary">配置 Fujitsu Eternus 資料收集器。</block>
-  <block id="76bbf6e63b5bbafbef5f94b1231bc156" category="doc">富士通 Eternus 資料收集器</block>
-  <block id="27baee321a480862e914c0713eed63ca" category="paragraph">富士通 Eternus 資料收集器使用管理層級的儲存系統存取權限來取得庫存資料。</block>
-  <block id="356a176551e40cab7b2346474eb8414b" category="paragraph">Data Infrastructure Insights從富士通 Eternus 儲存中獲取以下庫存資訊。對於Data Infrastructure Insights取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：</block>
-  <block id="9f66700a9e61cc8f9d73ebf3758934dc" category="cell">精簡池、彈性層級池、Raid 組</block>
-  <block id="9a2dd0553643575c114f67eb5af46be9" category="cell">標準磁碟區、快照資料磁碟區 (SDV)、快照資料池磁碟區 (SDPV)、精簡配置磁碟區 (TPV)、彈性層磁碟區 (FTV)、寬條帶磁碟區 (WSV)</block>
-  <block id="7d023b2b798bae1346a6818191492724" category="cell">通道適配器</block>
-  <block id="895e3cd28422f162dfb0a18d997e89c7" category="paragraph">注意：這些只是常見的術語映射，可能並不代表此資料收集器的所有情況。</block>
-  <block id="9d597b15876cd2c5bb9b786f0f4e5ef4" category="list-text">Eternus 儲存的 IP 位址，不能用逗號分隔</block>
-  <block id="46614f5e8cdddc2a44a95b7ec777cc30" category="list-text">SSH 管理層級使用者名稱和密碼</block>
-  <block id="ab557c35881f71a55e4fafded4111238" category="list-text">埠 22</block>
-  <block id="3cfd8b82a08186322b61ebdaff18da99" category="list-text">確保頁面滾動已停用（clientv-show-more-scroll disable）</block>
-  <block id="3073eb22ff046851d2773f6b9b9cccd5" category="cell">Eternus 儲存的 IP 位址</block>
-  <block id="4fa315e5b29dfdb8f82f1868c0a1de5f" category="cell">Eternus 儲存的 IP 位址</block>
-  <block id="e071ed8c236cffb19cf488375af0496c" category="cell">Eternus 儲存的使用者名稱</block>
-  <block id="1dc2d051123dfeb19bf13ffe4f1c7781" category="cell">Eternus 儲存的密碼</block>
-  <block id="883febd6f18d92fba02f341c896a50d2" category="cell">“檢索資料時發生錯誤”，錯誤訊息為“錯誤查找提示 CLI”或“錯誤查找 shell 結果末尾的提示”</block>
-  <block id="1e1dcdf0229ed6e4040c2ded250c7477" category="cell">可能原因：儲存系統已啟用頁面捲動。可能的解決方案：* 嘗試透過執行以下指令來停用頁面捲動：set clienv-show-more -scroll disable</block>
-  <block id="bdaf6ab402ed62b6993826e531f83a19" category="cell">“連線錯誤”，錯誤訊息為“無法實例化與儲存的 SSH 連線”或“無法實例化與 VirtualCenter 的連線”</block>
-  <block id="f5e86717b7f98bd7a5fa01557cb08665" category="cell">可能的原因：* 憑證不正確。  * 不正確的 IP 位址。  * 網路問題。 * 儲存可能已關閉或無回應。可能的解決方案：* 驗證輸入的憑證和 IP 位址。  * 嘗試使用 SSH 用戶端與儲存裝置進行通訊。</block>
   <block id="2af1bc57f00c07afe945f9aa64a9712f" category="summary">配置 Google Compute 資料收集器</block>
   <block id="ed3cd63dd0baae2764478daf8451ac08" category="doc">NetApp Google Compute 資料收集器</block>
   <block id="962baa7c5b677a19767f3eb25401b9a3" category="paragraph">此資料收集器支援從 Google Compute 雲端平台配置收集庫存和效能。該收集器將嘗試發現一個 Google 組織內所有項目內的所有運算資源。如果您想要使用Data Infrastructure Insights發現多個 Google 組織，則需要為每個組織部署一個Data Infrastructure Insights收集器。</block>
@@ -11758,7 +11738,6 @@
   <block id="305d795c0691186d2df68b4fc20ac11c" category="sidebar">VNX 檔案（Celerra）</block>
   <block id="0d72e0c9bde5708a77d39a52ce138dbe" category="sidebar">VNX Unified</block>
   <block id="0f299b4c65ffefdf8b00e0b3345bf685" category="sidebar">XtremIO</block>
-  <block id="053f42c6bae3432cae270ea978f7e638" category="sidebar">富士通</block>
   <block id="8b36e9207c24c76e6719268e49201d94" category="sidebar">Google</block>
   <block id="44cf206eca8a23c81576d1e81a632654" category="sidebar">惠普企業</block>
   <block id="dc20128ad51d4736f32ce4774255be05" category="sidebar">HP Alletra 9000 和 Primera</block>
@@ -14162,4 +14141,16 @@
   <block id="25a317566de430ddfd2c6f4b3fdea612" category="list-text">ci-k8s-change-observer</block>
   <block id="9da5aa79f5375ccea3c84723b5759557" category="cell">我看到 Telegraf 返回類似如下的錯誤訊息，但 Telegraf 確實啟動並運行了：E! [inputs.kubernetes] 插件錯誤：<block ref="6d1752bb8ee46f6164f07ea885d5c072" category="inline-link-rx"></block> 返回 HTTP 狀態 403 Forbidden</block>
   <block id="51635ff11969666db6bdeaf0c68d58b0" category="cell">如果您執行的是低於 1.33 版本的 Kubernetes，則可能會出現這些訊息。telegraf 使用的「nodes/pods」RBAC 資源在這些版本中不存在。有關舊版本所需的 RBAC 資源，請參閱 operator-additional-permissions.yaml 檔案中「適用於 Kubernetes 版本 &lt; 1.33」部分。</block>
+  <block id="55c55b1241c0ea96ea6cef65b10a23e4" category="inline-link-macro">Promox Virtual Environment</block>
+  <block id="9ddb2ce85d3b0c6085884776fe61a596" category="cell"><block ref="9ddb2ce85d3b0c6085884776fe61a596" category="inline-link-macro-rx"></block></block>
+  <block id="66036899193ada3425c77162bf9d742c" category="summary">配置 Promox 虛擬環境資料收集器。</block>
+  <block id="dc8f767a3f6e8f9b98077b7e9a688c5d" category="paragraph">DII Promox 虛擬環境收集器將收集庫存資料。這是一個基於 HTTPS REST API 的收集器。</block>
+  <block id="b720c5170acbb344b34398a9ed4fec4b" category="cell">主機名稱或 IP 位址</block>
+  <block id="32d285f157ad1acefe9dbe844cee7acf" category="cell">儲存系統的主機名稱 IP 位址</block>
+  <block id="606bae1c220a7cd73cdc71a447b328fd" category="cell">API 權杖 ID</block>
+  <block id="1a07b6dc4baf1e102f15f62b2aa13efc" category="cell">存取需要 API Token</block>
+  <block id="9ae9995c158c8b32609b8fd098fa5ff5" category="cell">API Token 秘密金鑰</block>
+  <block id="923e5171366e1120624f5ea15d195544" category="cell">上述令牌的秘密</block>
+  <block id="07d3835e20364558e54bb222fac4e80c" category="cell">用於 HTTPS 通訊的連接埠（預設 8006）</block>
+  <block id="c0dcddaaad9648f13d2e54741430ea94" category="sidebar">Promox VE</block>
 </blocks>

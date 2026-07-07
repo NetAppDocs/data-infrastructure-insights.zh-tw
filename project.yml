@@ -365,8 +365,6 @@ sidebar:
           url: "/task_dc_emc_vplex.html"
         - title: XtremIO
           url: "/task_dc_emc_xio.html"
-      - title: 富士通
-        url: "/task_dc_fujitsu_eternus.html"
       - title: Google
         url: "/task_dc_google_cloud.html"
       - title: Google Cloud NetApp Volumes
@@ -439,6 +437,8 @@ sidebar:
         url: "/task_dc_nutanix.html"
       - title: 甲骨文
         url: "/task_dc_oracle_zfs.html"
+      - title: Promox VE
+        url: "/task_dc_promox_ve.html"
       - title: 純的
         url: "/task_dc_pure_flasharray.html"
       - title: Qumulo REST

@@ -203,6 +203,9 @@ Data Infrastructure Insights支援的數據收集器的字母列表：
 | link:task_dc_oracle_zfs.html["Oracle ZFS 儲存設備"] | 基礎設施 
 
 
+| link:task_dc_promox_ve.html["Promox Virtual Environment"] | 基礎設施 
+
+
 | link:task_dc_pure_flasharray.html["Pure Storage FlashArray"] | 基礎設施 
 
 
