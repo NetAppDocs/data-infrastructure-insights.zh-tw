@@ -14,6 +14,7 @@ Lenovo HX 資料收集器從 Lenovo HX 儲存系統取得庫存和效能資訊�
 
 
 
+[[requirements]]
 == 要求
 
 配置此數據收集器需要以下資訊：
@@ -25,11 +26,12 @@ Lenovo HX 資料收集器從 Lenovo HX 儲存系統取得庫存和效能資訊�
 
 
 
+[[terminology]]
 == 術語
 
 Data Infrastructure Insights從 Lenovo HX 資料收集器獲取以下庫存和效能資訊。對於Data Infrastructure Insights取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 供應商/型號術語 | Data Infrastructure Insights術語 
 
@@ -53,9 +55,10 @@ Data Infrastructure Insights從 Lenovo HX 資料收集器獲取以下庫存和�
 |===
 
 
+[[configuration]]
 == 配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -70,9 +73,10 @@ Data Infrastructure Insights從 Lenovo HX 資料收集器獲取以下庫存和�
 |===
 
 
+[[advanced-configuration]]
 == 進階配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 

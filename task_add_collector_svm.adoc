@@ -18,6 +18,7 @@ ONTAP SVM 資料收集器使工作負載安全能夠監控NetApp ONTAP儲存虛�
 
 
 
+[[before-you-begin]]
 == 開始之前
 
 * 此數據收集器支援以下功能：
@@ -79,6 +80,7 @@ ONTAP SVM 資料收集器使工作負載安全能夠監控NetApp ONTAP儲存虛�
 
 
 
+[[test-connectivity-for-data-collectors]]
 == 測試資料收集器的連通性
 
 測試連線功能（於 2025 年 3 月推出）旨在協助最終用戶在Data Infrastructure Insights(DII) 工作負載安全性中設定資料收集器時識別故障的具體原因。這使得用戶能夠自行修正與網路通訊或缺失角色相關的問題。
@@ -90,6 +92,7 @@ NOTE: 使用者目錄收集器不支援測試連接
 
 
 
+[[prerequisites-for-connection-testing]]
 === 連接測試的先決條件
 
 * 此功能要完全發揮作用，需要集群級憑證。
@@ -104,6 +107,7 @@ image:ws_test_connection_button.png["工作負載安全測試連線按鈕"]
 
 
 
+[[test-the-connection]]
 === 測試連接
 
 使用者可以前往新增/編輯收集器頁面，輸入叢集層級詳細資料（在叢集模式下）或 SVM 層級詳細資料（在 SVM 模式下），然後按一下 *測試連線* 按鈕。然後，工作負載安全性將處理該請求並顯示適當的成功或失敗訊息。
@@ -112,6 +116,7 @@ image:ws_test_connection_success_example.png["工作負載安全性「測試連�
 
 
 
+[[things-to-note-for-ontap-multi-admin-verify-mav]]
 == ONTAP 多重管理員驗證 (MAV) 注意事項
 
 某些功能（例如建立和刪除快照或使用者封鎖（SMB））可能無法運作，這取決於您的 ONTAP 版本中新增的 MAV 命令。
@@ -129,6 +134,7 @@ multi-admin-verify rule modify -operation "volume snapshot delete" -query "-snap
  multi-admin-verify rule delete -operation set
 
 
+[[prerequisites-for-user-access-blocking]]
 == 使用者存取阻止的先決條件
 
 請記住以下幾點link:cs_restrict_user_access.html["使用者存取阻止"]：
@@ -141,10 +147,12 @@ multi-admin-verify rule modify -operation "volume snapshot delete" -query "-snap
 
 
 
+[[a-note-about-permissions]]
 == 關於權限的說明
 
 
 
+[[permissions-when-adding-via-cluster-management-ip]]
 === 透過*群集管理 IP*新增時的權限：
 
 如果您無法使用叢集管理員用戶允許工作負載安全地存取ONTAP SVM 資料收集器，則可以建立名為「csuser」的新用戶，並使用以下命令所示的角色。設定工作負載安全資料收集器以使用叢集管理 IP 時，請使用使用者名稱「csuser」和密碼「csuser」。
@@ -175,6 +183,7 @@ security login create -user-or-group-name csuser -application http -authmethod p
 ....
 
 
+[[permissions-when-adding-via-vserver-management-ip]]
 === 透過 *Vserver 管理 IP* 新增時的權限：
 
 如果您無法使用叢集管理員用戶允許工作負載安全地存取ONTAP SVM 資料收集器，則可以建立名為「csuser」的新用戶，並使用以下命令所示的角色。設定工作負載安全資料收集器以使用 Vserver 管理 IP 時，請使用使用者名稱「csuser」和密碼「csuser」。
@@ -205,6 +214,7 @@ security login create -user-or-group-name csuser -application http -authmethod p
 ....
 
 
+[[protobuf-mode]]
 === Protobuf模式
 
 當在收集器的「進階配置」設定中啟用此選項時，工作負載安全性將在 protobuf 模式下配置 FPolicy 引擎。  ONTAP 9.15 及更高版本支援 Protobuf 模式。
@@ -221,6 +231,7 @@ protobuf 需要特定的權限（其中一些或全部可能已經存在）：
  security login role create -vserver <vservername> -role csrole -cmddirname "vserver fpolicy" -access all
 
 
+[[permissions-for-ontap-autonomous-ransomware-protection-and-ontap-access-denied]]
 === ONTAP自主勒索軟體防護和ONTAP存取的權限被拒絕
 
 如果您使用叢集管理憑證，則不需要新的權限。
@@ -233,6 +244,7 @@ protobuf 需要特定的權限（其中一些或全部可能已經存在）：
 
 
 
+[[configure-the-data-collector]]
 == 配置資料收集器
 
 .設定步驟
@@ -295,6 +307,7 @@ protobuf 需要特定的權限（其中一些或全部可能已經存在）：
 
 
 
+[[recommended-configuration-for-metrocluster]]
 == MetroCluster的推薦配置
 
 以下是針對MetroCluster的建議：
@@ -308,6 +321,7 @@ protobuf 需要特定的權限（其中一些或全部可能已經存在）：
 
 
 
+[[service-policy]]
 == 服務政策
 
 如果使用ONTAP *9.9.1 版或更新版本* 的服務策略，為了連接到資料來源收集器，需要 _data-fpolicy-client_ 服務以及資料服務 _data-nfs_ 和/或 _data-cifs_。
@@ -323,6 +337,7 @@ Testcluster-1:*> net int service-policy create -policy only_data_fpolicy -allowe
 
 
 
+[[play-pause-data-collector]]
 == 播放-暫停數據收集器
 
 如果資料收集器處於_運行_狀態，您可以暫停收集。打開收集器的“三個點”選單並選擇暫停。當收集器暫停時，不會從ONTAP收集任何數據，也不會從收集器向ONTAP發送任何數據。這意味著沒有 Fpolicy 事件會從ONTAP流向資料收集器，再從那裡流向Data Infrastructure Insights。
@@ -345,6 +360,7 @@ NOTE: 如果收集器有限制用戶，則無法暫停收集器。在暫停收�
 
 
 
+[[persistent-store]]
 == 持久性儲存
 
 ONTAP 9.14.1 及更高版本支援持久性儲存。請注意，磁碟區名稱說明從ONTAP 9.14 到 9.15 有所不同。
@@ -371,12 +387,14 @@ security login role create -vserver <vservername> -role csrole -cmddirname "job 
 ....
 
 
+[[migrate-collectors]]
 == 遷移收集器
 
 您可以輕鬆地將工作負載安全收集器從一個代理遷移到另一個代理，從而實現跨代理的收集器的有效負載平衡。
 
 
 
+[[prerequisites]]
 === 先決條件
 
 * 來源代理必須處於_連線_狀態。
@@ -391,6 +409,7 @@ security login role create -vserver <vservername> -role csrole -cmddirname "job 
 
 
 
+[[migrate-collector]]
 === 遷移收集器
 
 若要遷移收集器，請依照下列步驟操作：
@@ -408,6 +427,7 @@ image:ws_migrate_collector_to_another_agent.png["透過選擇另一個代理來�
 
 
 
+[[troubleshooting]]
 == 故障排除
 
 查看link:troubleshooting_collector_svm.html["SVM 收集器故障排除"]頁面以取得故障排除提示。

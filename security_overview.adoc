@@ -14,10 +14,12 @@ keywords: security, risk, protection
 
 
 
+[[security-overview]]
 == 安全概述
 
 
 
+[[physical-security]]
 === 實體安全
 
 Data Infrastructure Insights生產基礎設施託管在 Amazon Web Services (AWS) 中。Data Infrastructure Insights生產伺服器的實體和環境安全相關控制（包括建築物以及門上使用的鎖或鑰匙）由 AWS 管理。根據 AWS 的說法：「專業安全人員利用視訊監控、入侵偵測系統和其他電子手段在周邊和建築物入口處控制實體存取。授權人員利用多因素身份驗證機制存取資料中心樓層。 」
@@ -26,12 +28,14 @@ Data Infrastructure Insights遵循link:https://aws.amazon.com/compliance/shared-
 
 
 
+[[product-security]]
 === 產品安全
 
 Data Infrastructure Insights遵循符合敏捷原則的開發生命週期，因此與較長的發布週期開發方法相比，我們可以更快地解決任何面向安全的軟體缺陷。使用持續整合方法，我們能夠快速回應功能和安全變更。變更管理程序和政策定義了變更發生的時間和方式，並有助於維持生產環境的穩定性。任何有影響的變更在發佈到生產環境之前都會得到正式溝通、協調、適當審查和批准。
 
 
 
+[[network-security]]
 === 網路安全
 
 Data Infrastructure Insights環境中的資源網路存取由基於主機的防火牆控制。每個資源（例如負載平衡器或虛擬機器執行個體）都有一個基於主機的防火牆，將入站流量限製到該資源執行其功能所需的連接埠。
@@ -40,18 +44,21 @@ Data Infrastructure Insights使用包括入侵偵測服務在內的各種機制�
 
 
 
+[[risk-assessment]]
 === 風險評估
 
 Data Infrastructure Insights團隊遵循正式的風險評估流程，提供系統化、可重複的方法來識別和評估風險，以便透過風險處理計劃對其進行適當的管理。
 
 
 
+[[data-protection]]
 === 資料保護
 
 Data Infrastructure Insights生產環境建立在高度冗餘的基礎設施中，利用所有服務和組件的多個可用區域。除了利用高可用性和冗餘的運算基礎設施外，還會定期備份關鍵資料並定期測試復原。正式的備份政策和程序可最大限度地減少業務活動中斷的影響，並保護業務流程免受資訊系統故障或災難的影響，並確保及時、充分地恢復。
 
 
 
+[[authentication-and-access-management]]
 === 身份驗證和存取管理
 
 所有客戶對Data Infrastructure Insights的存取都是透過 https 上的瀏覽器 UI 互動完成的。身份驗證透過第三方服務 Auth0 完成。  NetApp已將其集中作為所有雲端資料服務的身份驗證層。
@@ -60,12 +67,14 @@ Data Infrastructure Insights遵循行業最佳實踐，包括圍繞Data Infrastr
 
 
 
+[[collection-and-protection-of-customer-data]]
 === 客戶資料的收集和保護
 
 所有客戶資料在透過公共網路傳輸時和靜止時均經過加密。Data Infrastructure Insights利用系統各點的加密技術來保護客戶數據，使用的技術包括傳輸層安全性 (TLS) 和行業標準 AES-256 演算法。
 
 
 
+[[customer-deprovisioning]]
 === 客戶取消配置
 
 電子郵件通知會以不同的時間間隔發送，告知客戶他們的訂閱即將到期。訂閱到期後，UI 將受到限制，並且資料收集的寬限期將開始。然後透過電子郵件通知客戶。試用訂閱有 14 天的寬限期，付費訂閱帳號有 28 天的寬限期。寬限期過後，將透過電子郵件通知客戶該帳戶將在 2 天內被刪除。付費客戶也可以直接要求停止服務。
@@ -74,6 +83,7 @@ Data Infrastructure Insights遵循行業最佳實踐，包括圍繞Data Infrastr
 
 
 
+[[security-incident-management]]
 === 安全事件管理
 
 Data Infrastructure Insights與 NetApp 的產品安全事件回應團隊 (PSIRT) 流程集成，以尋找、評估和解決已知漏洞。  PSIRT 從多個管道獲取漏洞訊息，包括客戶報告、內部工程以及 CVE 資料庫等廣泛認可的來源。
@@ -84,24 +94,28 @@ Data Infrastructure Insights客戶或研究人員也可能會發現Data Infrastr
 
 
 
+[[vulnerability-and-penetration-testing]]
 === 漏洞和滲透測試
 
 Data Infrastructure Insights遵循行業最佳實踐，並使用內部和外部安全專業人員和公司定期執行漏洞和滲透測試。
 
 
 
+[[security-awareness-training]]
 === 安全意識培訓
 
 所有Data Infrastructure Insights人員都接受針對各自角色開發的安全培訓，以確保每位員工都能夠應對其角色特定的安全挑戰。
 
 
 
+[[compliance]]
 === 遵守
 
 Data Infrastructure Insights對其安全性、流程和服務進行獨立的第三方稽核和外部持牌 CPA 事務所的驗證，包括完成 SOC 2 稽核。
 
 
 
+[[netapp-security-advisories]]
 === NetApp安全公告
 
 您可以查看 NetApp 的可用安全公告link:https://security.netapp.com/advisory/["這裡"]。

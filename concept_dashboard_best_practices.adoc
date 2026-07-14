@@ -18,6 +18,7 @@ keywords: dashboard, hints, tips, best practice, widgets, metrics,
 
 
 
+[[finding-the-right-metric]]
 == 找到正確的指標
 
 Data Infrastructure Insights使用有時因數據收集器而異的名稱來獲取計數器和指標。
@@ -64,6 +65,7 @@ Data Infrastructure Insights使用有時因數據收集器而異的名稱來獲�
 
 
 
+[[finding-the-right-assets]]
 == 尋找合適的資產
 
 您可以在小部件過濾器和搜尋中引用的資產因資產類型而異。
@@ -96,6 +98,7 @@ Data Infrastructure Insights使用有時因數據收集器而異的名稱來獲�
 
 
 
+[[scatter-plot-example-knowing-your-axis]]
 == 散點圖範例：了解座標軸
 
 變更散佈圖小工具中計數器的順序會改變顯示資料的軸。

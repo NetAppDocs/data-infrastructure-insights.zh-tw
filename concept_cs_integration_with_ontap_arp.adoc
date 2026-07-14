@@ -30,6 +30,7 @@ ONTAP自主保護功能利用 NAS（NFS 和 SMB）環境中的工作負載分析
 
 
 
+[[prerequisites]]
 == 先決條件
 
 . 最低ONTAP版本：9.11.1
@@ -40,6 +41,7 @@ ONTAP自主保護功能利用 NAS（NFS 和 SMB）環境中的工作負載分析
 
 
 
+[[user-permissions-required]]
 == 需要使用者權限
 
 如果您使用叢集管理憑證，則不需要新的權限。
@@ -56,6 +58,7 @@ security login role create -role csrole -cmddirname "security anti-ransomware vo
 
 
 
+[[sample-alert]]
 == 樣本警報
 
 由於 ARP 事件產生的警報示例如下所示：
@@ -66,12 +69,14 @@ image:CS_Ransomware_Example_1.png["勒索軟體警報頂部"] image:CS_Ransomwar
 
 
 
+[[limitations]]
 == 限制
 
 如果 SVM 未受到 Workload Security 監控，但ONTAP產生了 ARP 事件，則 Workload Security 仍會接收並顯示這些事件。但是，與警報相關的取證資訊以及使用者映射將不會被捕獲或顯示。
 
 
 
+[[troubleshooting]]
 == 故障排除
 
 下表描述了已知問題及其解決方法。

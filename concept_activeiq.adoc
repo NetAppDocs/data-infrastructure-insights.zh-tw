@@ -27,6 +27,7 @@ image:AIQ_Summary_Example.png["儲存頁面摘要"]
 
 
 
+[[opening-the-digital-advisor-page]]
 == 打開Digital Advisor頁面
 
 當您按一下「Digital Advisor」頁面的連結時，如果您目前尚未登入您的Digital Advisor帳戶，則必須執行以下步驟來查看儲存節點的Digital Advisor頁面。
@@ -37,12 +38,14 @@ image:AIQ_Summary_Example.png["儲存頁面摘要"]
 
 
 
+[[querying-for-risks]]
 == 查詢風險
 
 在Data Infrastructure Insights中，您可以將 *monitoring.count* 欄位新增至儲存或儲存節點查詢。如果傳回結果包含Digital Advisor-Monitored 儲存系統，則 monitoring.count 欄位將顯示該儲存系統或節點的風險數量。
 
 
 
+[[dashboards]]
 == 儀表板
 
 您可以建立小工具（例如圓餅圖、表格小工具、長條圖、長條圖、散佈圖和單值小工具），以便視覺化由Digital Advisor監控的NetApp Clustered Data ONTAP系統的儲存和儲存節點的物件風險。在這些小部件中，可以選擇「物件風險」作為列或指標，其中儲存或儲存節點是關注的物件。

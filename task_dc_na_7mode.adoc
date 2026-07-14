@@ -14,6 +14,7 @@ summary: 配置NetApp 7 模式資料收集器。
 
 
 
+[[terminology]]
 == 術語
 
 Data Infrastructure Insights從NetApp 7 模式資料收集器取得以下庫存資訊。對於所取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：
@@ -21,7 +22,7 @@ Data Infrastructure Insights從NetApp 7 模式資料收集器取得以下庫存�
 
 NOTE: 此數據收集器link:task_getting_started_with_cloud_insights.html#useful-definitions["已棄用"]。
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 供應商/型號術語 | Data Infrastructure Insights術語 
 
@@ -50,6 +51,7 @@ NOTE: 此數據收集器link:task_getting_started_with_cloud_insights.html#usefu
 
 
 
+[[requirements]]
 == 要求
 
 您需要以下內容來配置和使用此資料收集器：
@@ -71,9 +73,10 @@ NOTE: 此數據收集器link:task_getting_started_with_cloud_insights.html#usefu
 
 
 
+[[configuration]]
 == 配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -97,9 +100,10 @@ NOTE: 此數據收集器link:task_getting_started_with_cloud_insights.html#usefu
 |===
 
 
+[[advanced-configuration]]
 == 進階配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -117,6 +121,7 @@ NOTE: 此數據收集器link:task_getting_started_with_cloud_insights.html#usefu
 |===
 
 
+[[storage-systems-connection]]
 == 儲存系統連接
 
 作為使用此資料收集器的預設管理用戶的替代方法，您可以直接在NetApp儲存系統上配置具有管理權限的用戶，以便此資料收集器可以從NetApp儲存系統中取得資料。
@@ -156,15 +161,17 @@ NOTE: 此數據收集器link:task_getting_started_with_cloud_insights.html#usefu
 
 
 
+[[troubleshooting]]
 == 故障排除
 
 如果您在使用此資料收集器時遇到問題，請嘗試以下操作：
 
 
 
+[[inventory]]
 === 存貨
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 問題： | 試試一下： 
 

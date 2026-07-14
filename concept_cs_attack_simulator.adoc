@@ -18,6 +18,7 @@ summary: 透過使用隨附的模擬腳本模擬攻擊來測試和驗證工作�
 
 
 
+[[things-to-note-before-you-begin]]
 == 開始前需要注意的事項
 
 * 此檔案篡改模擬腳本僅適用於 Linux 系統。如果使用者已將ONTAP ARP 與工作負載安全性集成，則模擬腳本也應產生高置信度警報。
@@ -30,6 +31,7 @@ summary: 透過使用隨附的模擬腳本模擬攻擊來測試和驗證工作�
 
 
 
+[[guidelines]]
 == 指南：
 
 該腳本應在包含大量需要加密的檔案（理想情況下為 100 個或更多，包括子資料夾中的檔案）的資料夾的 SVM 上執行。確保文件不為空。
@@ -38,10 +40,12 @@ summary: 透過使用隨附的模擬腳本模擬攻擊來測試和驗證工作�
 
 
 
+[[steps]]
 == 步驟：
 
 
 
+[[prepare-the-system]]
 === 準備系統：
 
 首先，將目標磁碟區安裝到機器上。您可以掛載 NFS 或 CIFS 匯出。
@@ -81,6 +85,7 @@ mount -t cifs //10.193.77.91/sharedfolderincluster /root/destinationfolder/ -o u
 
 
 
+[[generate-the-sample-files-programmatically]]
 == 以程式設計方式產生範例文件：
 
 在建立文件之前，您必須先停止或link:task_add_collector_svm.html#play-pause-data-collector["暫停資料收集器"]加工。
@@ -91,6 +96,7 @@ mount -t cifs //10.193.77.91/sharedfolderincluster /root/destinationfolder/ -o u
 
 
 
+[[shell]]
 === 殼：
 
 . 登入代理箱。
@@ -104,6 +110,7 @@ mount -t cifs //10.193.77.91/sharedfolderincluster /root/destinationfolder/ -o u
 
 
 
+[[python]]
 === Python：
 
 
@@ -148,18 +155,21 @@ mount -t cifs //10.193.77.91/sharedfolderincluster /root/destinationfolder/ -o u
 
 
 
+[[resume-the-collector]]
 == 恢復收集器
 
 如果您在執行這些步驟之前暫停了收集器，請確保在建立範例檔案後恢復收集器。
 
 
 
+[[generate-file-tampering-alert]]
 == 產生文件篡改警報
 
 若要產生檔案篡改警報，您可以執行隨附的腳本，該腳本將在工作負載安全中模擬檔案篡改警報。
 
 
 
+[[shell]]
 === 殼：
 
 . 將腳本從代理安裝目錄（%AGENT_INSTALL_DIR/agent/install/ransomware_simulation/shell/simulate_attack.sh）複製到目標安裝位置。
@@ -171,6 +181,7 @@ mount -t cifs //10.193.77.91/sharedfolderincluster /root/destinationfolder/ -o u
 
 
 
+[[python]]
 === Python：
 
 . 將腳本從代理安裝目錄（%AGENT_INSTALL_DIR/agent/install/ransomware_simulation/python/simulate_attack.py）複製到目標安裝位置。
@@ -183,6 +194,7 @@ mount -t cifs //10.193.77.91/sharedfolderincluster /root/destinationfolder/ -o u
 
 
 
+[[generate-an-alert-in-workload-security]]
 == 在工作負載安全性中產生警報
 
 模擬器腳本執行完成後，幾分鐘內就會在 Web UI 上看到警報。
@@ -208,6 +220,7 @@ image:ws_high_confidence_alert_detail.png["高置信度警報範例，詳細資�
 
 
 
+[[triggering-alert-multiple-times]]
 == 多次觸發警報
 
 工作負載安全功能會學習使用者行為，對於同一使用者在 24 小時內重複發生的檔案竄改攻擊，不會發出警報。

@@ -18,18 +18,21 @@ Data Infrastructure Insights包括安全功能，可讓您的環境以增強的�
 
 
 
+[[upgrade-and-installation-considerations]]
 == 升級和安裝注意事項
 
 當您的 Insight 系統包含非預設安全性配置（即您已重新輸入密碼）時，您必須備份您的安全性設定。安裝新軟體，或在某些情況下升級軟體，會將您的系統還原為預設安全性配置。當您的系統恢復到預設配置時，您必須恢復非預設配置才能使系統正常運作。
 
 
 
+[[managing-security-on-the-acquisition-unit]]
 == 管理採集單元的安全
 
 SecurityAdmin 工具可讓您管理Data Infrastructure Insights的安全選項，並在擷取單元系統上執行。安全管理包括管理金鑰和密碼、儲存和還原您建立的安全性配置或將設定還原為預設值。
 
 
 
+[[before-you-begin]]
 == 開始之前
 
 * 您必須擁有 AU 系統的管理員權限才能安裝 Acquisition Unit 軟體（其中包括 SecurityAdmin 工具）。
@@ -44,6 +47,7 @@ Linux - /bin/oci-securityadmin.sh
 ....
 
 
+[[using-the-securityadmin-tool]]
 == 使用 SecurityAdmin 工具
 
 以互動模式（-i）啟動 SecurityAdmin 工具。
@@ -126,6 +130,7 @@ Linux - /var/log/netapp/oci/backup/vault
 
 
 
+[[specifying-a-user-to-run-the-tool]]
 == 指定使用者來運行該工具
 
 如果您處於受控的、注重安全的環境中，您可能沒有_cisys_群組，但仍可能希望特定使用者執行 SecurityAdmin 工具。
@@ -148,6 +153,7 @@ Linux - /var/log/netapp/oci/backup/vault
 
 
 
+[[updating-or-removing-proxy]]
 == 更新或刪除代理
 
 可以使用 SecurityAdmin 工具設定或刪除採集單元的代理訊息，方法是運行帶有 _-pr_ 參數的工具：
@@ -194,6 +200,7 @@ Documentation.
  ./securityadmin -pr -upr <arg>
 
 
+[[external-key-retrieval]]
 == 外部密鑰檢索
 
 如果您提供 UNIX shell 腳本，則取得單元可以執行該腳本從您的金鑰管理系統中擷取 *私鑰* 和 *公鑰*。
@@ -226,6 +233,7 @@ Documentation.
 |===
 
 
+[[encrypting-a-password-for-use-in-api]]
 == 加密用於 API 的密碼
 
 選項 8 允許您加密密碼，然後您可以透過 API 將其傳遞給資料收集器。

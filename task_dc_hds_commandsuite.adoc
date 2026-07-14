@@ -14,11 +14,12 @@ Hitachi Vantara Command Suite 資料收集器支援 HiCommand Device Manager 伺
 
 
 
+[[terminology]]
 == 術語
 
 Data Infrastructure Insights從 Hitachi Vantara Command Suite 資料收集器取得以下庫存資訊。對於Data Infrastructure Insights取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 供應商/型號術語 | Data Infrastructure Insights術語 
 
@@ -44,6 +45,7 @@ Data Infrastructure Insights從 Hitachi Vantara Command Suite 資料收集器取
 
 
 
+[[storage]]
 === 儲存
 
 以下術語適用於您可能在 HDS 儲存資產登入頁面上找到的物件或參考。其中許多術語也適用於其他資料收集器。
@@ -58,6 +60,7 @@ Data Infrastructure Insights從 Hitachi Vantara Command Suite 資料收集器取
 
 
 
+[[storage-pool]]
 === 儲存池
 
 以下術語適用於您可能在 HDS 儲存池資產登入頁面上找到的物件或參考。其中許多術語也適用於其他資料收集器。
@@ -84,6 +87,7 @@ Data Infrastructure Insights採取強硬立場，不惜一切代價避免重複�
 
 
 
+[[storage-node]]
 === 儲存節點
 
 以下術語適用於您可能在 HDS 儲存節點資產登入頁面上找到的物件或參考。其中許多術語也適用於其他資料收集器。
@@ -94,6 +98,7 @@ Data Infrastructure Insights採取強硬立場，不惜一切代價避免重複�
 
 
 
+[[inventory-requirements]]
 == 庫存需求
 
 為了收集庫存數據，您必須具備以下條件：
@@ -107,6 +112,7 @@ Data Infrastructure Insights採取強硬立場，不惜一切代價避免重複�
 
 
 
+[[performance-requirements]]
 == 性能要求
 
 為了收集性能數據，必須滿足以下要求：
@@ -130,9 +136,10 @@ Data Infrastructure Insights採取強硬立場，不惜一切代價避免重複�
 
 
 
+[[configuration]]
 == 配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -170,6 +177,7 @@ Data Infrastructure Insights採取強硬立場，不惜一切代價避免重複�
 
 
 
+[[advanced-configuration]]
 == 進階配置
 
 |===
@@ -200,15 +208,17 @@ Data Infrastructure Insights採取強硬立場，不惜一切代價避免重複�
 |===
 
 
+[[troubleshooting]]
 == 故障排除
 
 如果您在使用此資料收集器時遇到問題，請嘗試以下操作：
 
 
 
+[[inventory]]
 === 存貨
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 問題： | 試試一下： 
 
@@ -223,9 +233,10 @@ Data Infrastructure Insights採取強硬立場，不惜一切代價避免重複�
 |===
 
 
+[[performance]]
 === 表現
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 問題： | 試試一下： 
 

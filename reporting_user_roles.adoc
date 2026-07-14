@@ -76,6 +76,7 @@ keywords: reporting, cognos, data warehouse, dwh, users, roles, user roles
 |===
 
 
+[[setting-reporting-cognos-email-preferences]]
 == 設定報表（Cognos）電子郵件首選項
 
 
@@ -83,6 +84,7 @@ NOTE: 如果您在Data Infrastructure Insights報告（即 Cognos 應用程式�
 
 
 
+[[what-steps-should-i-take-to-prepare-my-existing-environment-for-enabling-sso]]
 === 我應該採取哪些步驟來準備現有環境以啟用 SSO？
 
 為確保保留您的報告，請按照以下步驟將所有報告從「我的內容」遷移到「團隊內容」。在租戶上啟用 SSO 之前，您必須執行此操作：

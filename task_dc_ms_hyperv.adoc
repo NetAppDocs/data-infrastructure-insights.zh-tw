@@ -14,11 +14,12 @@ Microsoft Hyper-V 資料收集器從虛擬化伺服器運算環境中取得庫�
 
 
 
+[[terminology]]
 == 術語
 
 Data Infrastructure Insights從 Microsoft Hyper-V (WMI) 取得以下庫存資訊。對於Data Infrastructure Insights取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 供應商/型號術語 | Data Infrastructure Insights術語 
 
@@ -44,6 +45,7 @@ Data Infrastructure Insights從 Microsoft Hyper-V (WMI) 取得以下庫存資訊
 
 
 
+[[requirements]]
 == 要求
 
 配置此資料收集器需要以下內容：
@@ -68,9 +70,10 @@ NOTE: Hyper-V 資料收集器需要 Windows 擷取單元。
 
 
 
+[[configuration]]
 == 配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -88,9 +91,10 @@ NOTE: Hyper-V 資料收集器需要 Windows 擷取單元。
 |===
 
 
+[[advanced-configuration]]
 == 進階配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -99,6 +103,7 @@ NOTE: Hyper-V 資料收集器需要 Windows 擷取單元。
 |===
 
 
+[[troubleshooting]]
 == 故障排除
 
 關於此數據收集器的更多信息，請參閱link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。

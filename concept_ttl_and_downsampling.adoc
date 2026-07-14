@@ -14,6 +14,7 @@ keywords: time-to-live, TTL, downsampling, downsample, retention
 
 
 
+[[data-retention]]
 == 資料保留
 
 Data Infrastructure Insights會保留資料一段時間，該時間由您的訂閱類型決定。
@@ -31,12 +32,14 @@ Data Infrastructure Insights會保留資料一段時間，該時間由您的訂�
 
 
 
+[[downsampling-of-data]]
 == 數據下採樣
 
 *下採樣* 在圖表中提供數據的統計近似值，讓您可以有效地概覽數據，而無需顯示每個數據點，同時保持對收集的數據的準確視圖。
 
 
 
+[[why-is-downsampling-needed]]
 === 為什麼需要下採樣？
 
 由於需要大量的處理來準備圖表和圖形中顯示的數據，為了使圖表能夠快速有效地顯示，可以以保持圖表整體形狀的方式對數據進行下採樣，而無需處理該圖表的每個數據點。
@@ -45,6 +48,7 @@ Data Infrastructure Insights會保留資料一段時間，該時間由您的訂�
 
 
 
+[[how-downsampling-works]]
 === 下採樣的工作原理
 
 在以下條件下對資料進行下採樣：
@@ -76,6 +80,7 @@ NOTE: 由於資料以近似方式進行下採樣，因此在比較下採樣資�
 
 
 
+[[violations-on-downsampled-charts]]
 === 下採樣圖表違規
 
 查看下採樣圖表時，請注意不會顯示違規行為。若要查看違規行為，您可以執行以下兩項操作之一：

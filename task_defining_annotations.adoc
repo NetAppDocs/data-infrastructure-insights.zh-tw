@@ -31,6 +31,7 @@ summary: 使用註釋追蹤資料。
 
 
 
+[[default-annotation-types]]
 == 預設註釋類型
 
 Data Infrastructure Insights提供了一些預設註解類型。這些註釋可用於篩選或分組資料。
@@ -86,6 +87,7 @@ NOTE: 別名、資料中心、熱門、服務等級、日落、交換器等級�
 
 
 
+[[creating-custom-annotations]]
 == 建立自訂註釋
 
 使用註釋，您可以為資產新增符合您的業務需求的自訂業務特定資料。雖然Data Infrastructure Insights提供了一組預設註釋，但您可能會發現您想以其他方式查看資料。自訂註釋中的數據補充了已經收集的設備數據，例如儲存製造商、數量捲和效能統計數據。您使用註釋添加的資料不會被Data Infrastructure Insights發現。

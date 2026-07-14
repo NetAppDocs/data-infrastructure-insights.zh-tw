@@ -18,6 +18,7 @@ summary: Data Infrastructure Insights追蹤基礎設施的變化，以便於分�
 
 
 
+[[how-does-infrastructure-change-analysis-help]]
 == 基礎設施變化分析有何幫助？
 
 在任何環境中，您的資源都可能會因配置錯誤的變更、斷電等原因而變更。變更分析透過提供單一窗格來查看資源的健康狀況並將其與中斷或計劃的變更關聯起來，從而提供協助。每次庫存輪詢都會計算變化（在對新收集器進行第一次輪詢之後）。
@@ -32,6 +33,7 @@ image:change_analysis_on_a_landing_page.png["著陸頁上的變化分析"]
 
 
 
+[[filtering]]
 == 濾
 
 與Cloud Insights的所有功能一樣，過濾變更清單非常直觀：在頁面頂部，您可以過濾特定的資產類型（_Triggered On:type_），和/或根據需要僅過濾具有特定名稱的資產（_Triggered On:name_），或透過選擇 {+] 按鈕添加您自己的篩選器。
@@ -44,12 +46,14 @@ image:Change_Analysis_filters_and_status.png["狀態以及警報和更改的快�
 
 
 
+[[a-note-about-long-term-alerts]]
 == 關於長期警報的說明
 
 請注意，保持活動狀態超過 24 小時的警報將每 24 小時在「警報和變更」清單中顯示一次，因此您可能會注意到同一警報被列出多次。每個警報都具有相同的警報 ID、相同的開始時間等，並且狀態為“警報中”，直到警報得到解決。
 
 
 
+[[which-objects-are-analyzed-for-changes]]
 == 分析哪些對像有變化？
 
 下表列出了基礎設施變更分析中包含的物件和屬性。

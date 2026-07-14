@@ -18,6 +18,7 @@ keywords: onboarding, new user
 
 
 
+[[creating-your-netapp-console-account]]
 == 建立您的 NetApp Console 帳戶
 
 若要開始使用 NetApp 雲端服務，請造訪 link:https://console.netapp.com/["* NetApp Console*"^] 並點擊 *Get Started* 。
@@ -31,6 +32,7 @@ keywords: onboarding, new user
 
 
 
+[[what-if-i-already-have-a-netapp-console-login]]
 === 如果我已經有 NetApp Console 登入帳號怎麼辦？
 
 擁有 NetApp Console 帳號後，只需在 link:https://console.netapp.com/["NetApp Console"] 入口網頁上選擇*登入*即可。
@@ -44,6 +46,7 @@ NOTE: DII 站點將與選定的 Console Organization 關聯。如果您有多個
 
 
 
+[[starting-your-data-infrastructure-insights-free-trial]]
 == 開始您的 Data Infrastructure Insights 免費試用
 
 準備好後，請選擇 *Start 30-day free trial*。選擇網站託管區域，並按照其他提示操作。
@@ -58,6 +61,7 @@ NetApp Console 會在您的 Data Infrastructure Insights （DII）網站準備�
 
 
 
+[[logging-out]]
 == 登出
 
 若要從 Data Infrastructure Insights 登出，請點選您的*使用者名稱*並選擇*登出*。
@@ -67,6 +71,7 @@ NOTE: 登出 Data Infrastructure Insights 會同時登出 Console。您也會從
 
 
 
+[[inactivity-timeout]]
 === 閒置逾時
 
 預設情況下，如果使用者六小時（360 分鐘）沒有任何活動，Console 將自動登出該使用者。無論是否有活動，使用者都將在七天後自動登出。

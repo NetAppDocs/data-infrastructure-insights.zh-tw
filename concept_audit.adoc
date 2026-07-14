@@ -18,6 +18,7 @@ summary: 審計提供了Data Infrastructure Insights系統中系統和使用者�
 
 
 
+[[viewing-audited-events]]
 == 查看審計事件
 
 若要查看稽核頁面，請按一下功能表中的「管理」>「稽核」。將顯示「審計」頁面，其中提供每個審計條目的以下詳細資訊：
@@ -33,6 +34,7 @@ summary: 審計提供了Data Infrastructure Insights系統中系統和使用者�
 
 
 
+[[displaying-audit-entries]]
 == 顯示審計條目
 
 有多種不同的方法可以查看審計條目：
@@ -50,6 +52,7 @@ image:Audit_Filters.png["審計過濾器"]
 
 
 
+[[more-on-filtering]]
 === 有關過濾的更多信息
 
 您可以使用以下任何一種方法來最佳化篩選器：
@@ -84,6 +87,7 @@ image:Audit_Filters.png["審計過濾器"]
 
 
 
+[[audited-events-and-actions]]
 == 審計事件和操作
 
 Data Infrastructure Insights審計的事件和操作可分為以下幾大類：
@@ -121,6 +125,7 @@ Data Infrastructure Insights審計的事件和操作可分為以下幾大類：
 
 
 
+[[exporting-audit-events]]
 == 導出審計事件
 
 您可以將審計顯示的結果匯出到 .CSV 文件，這將允許您分析資料或將其匯入到另一個應用程式中。
@@ -134,6 +139,7 @@ Data Infrastructure Insights審計的事件和操作可分為以下幾大類：
 
 
 
+[[retention-of-audit-data]]
 == 審計資料的保留
 
 Data Infrastructure Insights保留稽核資料的時間取決於您的訂閱：
@@ -148,6 +154,7 @@ Data Infrastructure Insights保留稽核資料的時間取決於您的訂閱：
 
 
 
+[[troubleshooting]]
 == 故障排除
 
 在這裡您可以找到解決審計問題的建議。

@@ -14,6 +14,7 @@ Data Infrastructure Insights提供最多四個使用者帳戶角色：帳戶擁�
 
 
 
+[[permission-levels]]
 == 權限等級
 
 您使用具有管理員權限的帳戶來建立或修改使用者帳戶。每個使用者帳戶都會根據下列權限等級為每個Data Infrastructure Insights功能指派一個角色。
@@ -37,6 +38,7 @@ Data Infrastructure Insights提供最多四個使用者帳戶角色：帳戶擁�
 
 
 
+[[data-infrastructure-insights-permissions-by-user-role]]
 === Data Infrastructure Insights權限（按使用者角色）
 
 下表顯示了授予每個使用者角色的Data Infrastructure Insights權限。
@@ -122,6 +124,7 @@ Data Infrastructure Insights提供最多四個使用者帳戶角色：帳戶擁�
 
 
 
+[[creating-accounts-by-inviting-users]]
 == 透過邀請用戶建立帳戶
 
 透過NetApp Console可以建立新使用者帳戶。用戶可以回覆透過電子郵件發送的邀請，但如果用戶沒有控制台帳戶，則用戶需要註冊才能接受邀請。
@@ -164,6 +167,7 @@ image:UserRoleChoices.png["使用者角色選擇"]
 
 
 
+[[modifying-an-existing-users-role]]
 == 修改現有使用者的角色
 
 若要修改現有使用者的角色，包括將其新增為*二級帳戶擁有者*，請依照下列步驟操作。
@@ -176,6 +180,7 @@ image:UserRoleChoices.png["使用者角色選擇"]
 
 
 
+[[to-assign-a-secondary-account-owner]]
 === 指定二級帳戶所有者
 
 您必須以 Observability 的帳戶擁有者登入才能將帳戶擁有者角色指派給其他使用者。
@@ -192,6 +197,7 @@ image:Assign_Account_Owner.png["顯示帳戶擁有者選擇的使用者變更對
 
 
 
+[[deleting-users]]
 == 刪除用戶
 
 具有管理員角色的使用者可以透過點擊使用者的名稱並點擊對話方塊中的「刪除使用者」來刪除使用者（例如，不再在公司任職的人員）。該用戶將從Data Infrastructure Insights環境中刪除。
@@ -200,10 +206,12 @@ image:Assign_Account_Owner.png["顯示帳戶擁有者選擇的使用者變更對
 
 
 
+[[single-sign-on-sso-and-identity-federation]]
 == 單一登入 (SSO) 和身分聯合
 
 
 
+[[what-is-identity-federation]]
 === 什麼是身份聯合？
 
 使用身份聯合：
@@ -226,6 +234,7 @@ image:Authentication_Federated.png["使用聯合身份驗證"]
 
 
 
+[[enabling-identity-federation]]
 === 啟用身份聯合
 
 控制台使用 Auth0 實作身分合併並與 Active Directory 聯合驗證服務 (ADFS) 和 Microsoft Azure Active Directory (AD) 等服務整合。若要設定聯合身份驗證，請參閱link:https://services.cloud.netapp.com/misc/federation-support["聯邦指令"]。
@@ -241,6 +250,7 @@ NOTE: 您必須先設定身分聯合，然後才能將 SSO 與Data Infrastructur
 
 
 
+[[single-sign-on-sso-user-auto-provisioning]]
 === 單一登入 (SSO) 使用者自動配置
 
 除了邀請使用者之外，管理員還可以為其公司網域中的所有使用者啟用*單一登入 (SSO) 使用者自動設定*存取Data Infrastructure Insights，而無需單獨邀請他們。啟用 SSO 後，任何具有相同網域電子郵件地址的使用者都可以使用其公司憑證登入Data Infrastructure Insights 。
@@ -266,6 +276,7 @@ image:Roles_federation_Banner.png["使用聯合進行使用者管理"]
 
 
 
+[[restricting-access-by-domain]]
 == 按域限制訪問
 
 Data Infrastructure Insights可以限制使用者只能存取您指定的網域。在*管理 > 使用者管理*頁面上，選擇「限制網域」。

@@ -27,11 +27,12 @@ NetApp StorageGRID資料收集器支援從StorageGRID配置收集庫存和效能
 ====
 
 
+[[terminology]]
 == 術語
 
 Data Infrastructure Insights從NetApp StorageGRID收集器取得以下庫存資訊。對於所取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 供應商/型號術語 | Data Infrastructure Insights術語 
 
@@ -49,6 +50,7 @@ Data Infrastructure Insights從NetApp StorageGRID收集器取得以下庫存資�
 |===
 
 
+[[requirements]]
 == 要求
 
 配置此資料來源的要求如下：
@@ -60,9 +62,10 @@ Data Infrastructure Insights從NetApp StorageGRID收集器取得以下庫存資�
 
 
 
+[[configuration]]
 == 配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -77,9 +80,10 @@ Data Infrastructure Insights從NetApp StorageGRID收集器取得以下庫存資�
 |===
 
 
+[[advanced-configuration]]
 == 進階配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -91,6 +95,7 @@ Data Infrastructure Insights從NetApp StorageGRID收集器取得以下庫存資�
 |===
 
 
+[[single-sign-on-sso]]
 == 單一登入（SSO）
 
 這link:https://docs.netapp.com/sgws-112/index.jsp["StorageGRID"]韌體版本有對應的API版本；3.0 API及更新版本支援單一登入（SSO）。
@@ -111,6 +116,7 @@ Data Infrastructure Insights從NetApp StorageGRID收集器取得以下庫存資�
 |===
 
 
+[[troubleshooting]]
 == 故障排除
 
 關於此數據收集器的更多信息，請參閱link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。

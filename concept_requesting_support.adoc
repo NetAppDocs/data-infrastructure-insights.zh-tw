@@ -20,6 +20,7 @@ image:SupportPageExample.png["支援頁面，width=600"]
 
 
 
+[[activating-support-entitlement]]
 == 啟動支持權利
 
 Data Infrastructure Insights在試用模式下提供自助服務和電子郵件支援。一旦您訂閱了服務，強烈建議您啟動支援權利。啟動支援權利後，您可以透過網路票務系統和電話獲得技術支援。在註冊完成之前，預設支援模式是自助服務。看<<obtaining-support-information,細節>>以下。
@@ -32,6 +33,7 @@ Data Infrastructure Insights在試用模式下提供自助服務和電子郵件�
 
 
 
+[[option-1-steps-for-a-user-with-a-pre-existing-netapp-support-site-nss-sso-account]]
 === 選項 1：針對具有預先存在的NetApp支援網站 (NSS) SSO 帳戶的使用者的步驟
 
 .步驟
@@ -50,6 +52,7 @@ image:ExistingCustomerRegExample.png["現有客戶表格"]
 
 
 
+[[option-2-steps-for-a-new-netapp-customer-with-no-pre-existing-netapp-support-site-nss-sso-account]]
 === 選項 2：針對沒有預先存在的NetApp支援網站 (NSS) SSO 帳戶的新NetApp客戶的步驟
 
 .步驟
@@ -70,12 +73,14 @@ image:SupportPage_SN_Section-NA.png["SN_螢幕"]
 
 
 
+[[obtaining-support-information]]
 == 獲取支持訊息
 
 NetApp透過多種方式為Data Infrastructure Insights提供支援。提供全天候的廣泛免費自助支援選項，例如知識庫 (KB) 文章或NetApp社群。對於訂閱Data Infrastructure Insights的用戶，可以透過電話或網路票務獲得技術支援。網路票證和案例管理需要NetApp支援站點 (NSS) SSO 帳戶。
 
 
 
+[[self-service-support]]
 === 自助服務支援：
 
 這些支援選項在試用模式下可用，並且全天候免費提供：
@@ -98,6 +103,7 @@ NetApp透過多種方式為Data Infrastructure Insights提供支援。提供全�
 
 
 
+[[subscription-support]]
 === 訂閱支援
 
 除了上述自助支援選項之外，如果您擁有Data Infrastructure Insights訂閱或對受監控的NetApp產品或服務的付費支持，您可以與NetApp支援工程師合作解決您的問題。
@@ -127,12 +133,14 @@ image:Support_View_SN.png["查看支援序號"]
 
 
 
+[[data-infrastructure-insights-data-collector-support-matrix]]
 == Data Infrastructure Insights數據收集器支援矩陣
 
 您可以在link:reference_data_collector_support_matrix.html["*Data Infrastructure Insights數據收集器支援矩陣*，角色="external""]。
 
 
 
+[[learning-center]]
 === 學習中心
 
 無論您訂閱什麼，*幫助 > 支援* 都會連結到多門NetApp大學課程，幫助您充分利用Data Infrastructure Insights。看看它們！

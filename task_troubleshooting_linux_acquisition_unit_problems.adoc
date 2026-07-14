@@ -58,6 +58,7 @@ keywords: AU, acquisition unit, trioubleshooting
 |===
 
 
+[[considerations-about-proxies-and-firewalls]]
 == 關於代理商和防火牆的注意事項
 
 如果您的組織需要使用代理來存取互聯網，您可能需要了解組織的代理行為並尋求某些例外以使Data Infrastructure Insights能夠發揮作用。請記住以下幾點：
@@ -80,6 +81,7 @@ keywords: AU, acquisition unit, trioubleshooting
 
 
 
+[[viewing-proxy-endpoints]]
 === 查看代理端點
 
 您可以在入職期間選擇資料收集器時點擊“*代理設定*”鏈接，或點擊“*幫助 > 支援*”頁面上“代理設定”下的連結以查看您的代理端點。將顯示如下表。如果您的環境中有工作負載安全，則設定的端點 URL 也會顯示在此清單中。
@@ -88,6 +90,7 @@ image:ProxyEndpoints_NewTable.png["代理端點表"]
 
 
 
+[[resources]]
 == 資源
 
 更多故障排除技巧可在link:https://kb.netapp.com/Cloud/ncds/nds/dii/dii_kbs["NetApp知識庫"]（需要支援登入）。

@@ -14,11 +14,12 @@ HP Enterprise Alletra 6000（以前稱為 Nimble）資料收集器支援 Alletra
 
 
 
+[[terminology]]
 == 術語
 
 Data Infrastructure Insights從此收集器獲取以下庫存資訊。對於Data Infrastructure Insights取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 供應商/型號術語 | Data Infrastructure Insights術語 
 
@@ -47,6 +48,7 @@ Data Infrastructure Insights從此收集器獲取以下庫存資訊。對於Data
 
 
 
+[[requirements]]
 == 要求
 
 您必須具備以下條件才能從儲存陣列收集庫存和設定資料：
@@ -65,9 +67,10 @@ Data Infrastructure Insights從此收集器獲取以下庫存資訊。對於Data
 
 
 
+[[configuration]]
 == 配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -82,6 +85,7 @@ Data Infrastructure Insights從此收集器獲取以下庫存資訊。對於Data
 |===
 
 
+[[advanced-configuration]]
 == 進階配置
 
 |===

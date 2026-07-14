@@ -13,39 +13,46 @@ keywords: features
 :imagesdir: ./media/
 
 
+[[whats-new]]
 [role="lead"]
 NetApp不斷改進和增強其產品和服務。以下是Data Infrastructure Insights（以前稱為Cloud Insights）中的一些最新特性和功能。
 
 
 
+[[june-2026]]
 == 2026 年 6 月
 
 
 
+[[share-important-updates-with-login-messages]]
 === 透過登入訊息分享重要更新
 
 透過可自訂的登入訊息，讓您的團隊隨時了解最新動態並保持一致。在使用者登入時，直接向他們傳達重要公告、維護計劃或策略更新。透過 Markdown 支援，您可以格式化訊息，使其更加清晰易懂，並確保關鍵訊息能夠傳達給每位 DII 使用者。擁有管理員權限的帳戶可以在「管理」功能表的「通知」下找到相關配置。
 
 
 
+[[more-workspace-less-clutter]]
 === 更大的工作空間、更少的雜亂
 
 DII 導覽功能表煥然一新，現在與 Console 的色彩和行為相符，提供更統一的體驗。先前的靜態主功能表現在預設為摺疊狀態，以提供更專注的工作區，並有效利用螢幕空間。只需按一下左上角的漢堡圖示（☰）即可存取。
 
 
 
+[[expand-device-visibility-with-intelligent-ai-assistance]]
 === 透過智慧型 AI 助理擴展裝置可見度
 
 透過 AI 驅動的裝置識別功能，加速新裝置的上線。Data Infrastructure Insights 會分析您的環境並建議自動裝置解析規則，協助您快速識別和管理更多裝置。您只需審核並核准 AI 產生的規則，DII 即可處理其餘工作，從而提升整個基礎架構的裝置可見度和管理效率。
 
 
 
+[[a-smarter-ai-assistant-for-global-teams]]
 === 適用於全球團隊的更智慧 AI 助理
 
 AI 助理現在支援十幾種語言,讓您的團隊能夠用他們偏好的語言進行自然交流。查看完整清單link:https://platform.claude.com/docs/en/build-with-claude/multilingual-support["這裡"^]。
 
 
 
+[[new-monitors-for-infrastructure-attribute-changes]]
 === 基礎架構屬性變更的新監控器
 
 現在可以使用 Attribute Monitors，在資產於資料中心之間移動、儲存資源池未加密或發生任何屬性修改時自動向您的團隊發出警報。這有助於維護組態基準，並確保在新部署或變更期間不會出現任何疏漏。
@@ -54,6 +61,7 @@ image:attribute_monitor_in_list.png["屬性監視器已新增至監視器類型"
 
 
 
+[[build-smarter-alerts-and-webhooks-with-dynamic-context-rich-messages]]
 === 利用動態、富含上下文的訊息建立更聰明的警報和 webhook
 
 建立監控或 webhook 時，只需在警示說明或 webhook URL、標頭或內文中輸入「%」，即可從動態填入的可用物件屬性和註釋清單中進行選擇。為您的警示提供正確的內容，以提高清晰度、增強 webhook 整合並加快回應速度。
@@ -63,10 +71,12 @@ image:attribute_list_example.png["監視器描述中的屬性清單，width=400"
 '''
 
 
+[[april-2026]]
 == 2026 年 4 月
 
 
 
+[[dii-knows-your-environment-better-than-ever]]
 === Data Infrastructure Insights 比以往任何時候都更了解您的環境
 
 我們增強了 Data Infrastructure Insights 中的 AI 對您設定的理解能力。它會在回應之前，利用更豐富的上下文資訊，例如您目前對服務的使用情況、組態以及效能模式。這樣一來，它就能提供更貼合您實際環境的初始指導，而非通用的起點，從而減少後續追蹤，讓您更快獲得有用的答案。
@@ -81,10 +91,12 @@ image:attribute_list_example.png["監視器描述中的屬性清單，width=400"
 '''
 
 
+[[march-2026]]
 == 2026 年 3 月
 
 
 
+[[ai-assistant-is-now-generally-available]]
 === AI Assistant 現已正式上線
 
 Data Infrastructure Insights AI Assistant 現已對所有在 AWS 上託管 DII 站台的客戶全面開放。
@@ -93,16 +105,19 @@ Data Infrastructure Insights AI Assistant 現已對所有在 AWS 上託管 DII �
 
 
 
+[[infrastructure-insights-features-removed]]
 === 已移除的 Infrastructure Insights 功能
 
 DII 的「Infrastructure Insights」功能，包括「共享資源壓力」、「Kubernetes 命名空間空間不足」和「回收 ONTAP 冷存儲」，已不再在 DII 中提供。
 
 
 
+[[february-2026]]
 == 2026 年 2 月
 
 
 
+[[instant-intelligent-answers-about-your-infrastructure]]
 === 關於您的基礎架構的即時智慧解答
 
 隆重介紹您基礎架構的全新智慧夥伴：link:ai_for_dii_overview.html["*Data Infrastructure Insights AI 助理*"] 徹底改變您與資料的互動方式，並將複雜的查詢轉化為簡單的對話。即時發現隱藏模式，加速故障排除，並自信地做出數據驅動的決策。立即取得以下問題的答案：
@@ -118,6 +133,7 @@ image:ai_assistant_icon.png["AI 助理圖示"]
 
 
 
+[[monitor-improvements]]
 === 監控改善情況
 
 
@@ -142,6 +158,7 @@ image:health_monitoring_exclude_object.png["從健康監測中排除物件"]
 
 
 
+[[operating-system-support]]
 === 作業系統支援
 
 Data Infrastructure Insights link:concept_acquisition_unit_requirements.html["擷取單元"] 目前支援下列 Linux 作業系統：
@@ -161,10 +178,12 @@ Data Infrastructure Insights link:concept_acquisition_unit_requirements.html["�
 '''
 
 
+[[december-2025]]
 == 2025年12月
 
 
 
+[[control-query-access-with-shared-queries]]
 === 使用共用查詢控制查詢存取權限
 
 共用您建立的查詢，並設定精細的權限控制。選擇唯讀檢視器模式以防止修改，或選擇編輯模式以允許變更。私有查詢可供建立者使用，而共用查詢可在註解規則中使用，或複製用於特殊用例，讓您可以完全控制查詢在整個組織中的使用和修改方式。
@@ -175,6 +194,7 @@ image:query_sharing_dialog.png["設定查詢權限，寬度=200"]
 
 
 
+[[better-filtering-when-managing-monitors]]
 === 更好地篩選監控器
 
 對監控清單和群組的篩選功能進行了改進，增加了通配符支援、多個篩選器、包含/排除功能等。
@@ -183,6 +203,7 @@ image:monitor_list_filters.png["新顯示器篩選，寬度=500"]
 
 
 
+[[cleaner-dashboard-visualizations]]
 === 更清晰的儀錶板視覺化效果
 
 改進後的儀錶板設計可協助您查看最重要的資訊。透過陰影邊框分隔小部件，並移除分隔線，增強視覺清晰度，減少雜亂，讓您可以專注於資料洞察。這些改進創造了更簡潔、更直觀的儀錶板體驗，使用戶能夠更快、更容易地發現趨勢和異常情況。
@@ -190,10 +211,12 @@ image:monitor_list_filters.png["新顯示器篩選，寬度=500"]
 '''
 
 
+[[november-2025]]
 == 2025年11月
 
 
 
+[[set-your-personalized-home-page]]
 === 設定您的個人化主頁
 
 將任意Data Infrastructure Insights頁面設定為您的個人化主頁，從而簡化您的日常監控工作流程。每個使用者都可以選擇不同的主頁，以便專注於對他們來說重要的內容：關鍵儀表板、警報、基礎設施健康狀況、工作負載安全等等。
@@ -202,6 +225,7 @@ image:home_page_set.png["設定首頁寬度=300"]
 
 
 
+[[stay-organized-with-automatic-dashboard-grouping]]
 === 利用自動儀錶板分組功能保持井然有序
 
 利用智慧分組功能，自動將匯入的圖庫儀表板整理成邏輯類別，從而改變您的儀表板體驗。新的分組功能使匯入儀表板變得輕而易舉，並根據每個儀表板的功能及其與您環境的相關性，將其放置在相應的群組中。
@@ -211,10 +235,12 @@ image:dashboard_gallery_groups.png["導入期間的圖庫組，寬度=500"]
 '''
 
 
+[[october-2025]]
 == 2025年10月
 
 
 
+[[infrastructure-health-instant-visibility-into-storage-and-fabric-risk]]
 === 基礎設施健康：即時了解儲存和結構風險
 
 利用我們全新的「基礎設施健康」功能，您可以即時了解儲存和結構中的潛在風險。單一、顏色編碼的儀表板為您提供統一的風險可見性，幫助您最大限度地減少停機時間並快速減輕收入損失。
@@ -229,6 +255,7 @@ image:infra_health_detailpanel.png["基礎設施健康細節面板，寬度=600"
 
 
 
+[[multi-condition-monitors-for-precise-alerting]]
 === 多條件監控器，實現精確警報
 
 透過為任何指標監視器添加可選的第二個條件，減少警報噪音並提高監視精度。只有同時滿足兩個條件時才會觸發警報，從而為您提供更有針對性的通知，重點關注對您最重要的場景。
@@ -237,6 +264,7 @@ image:multi-condition_monitor_second_condition.png["向監視器新增第二個�
 
 
 
+[[query-improvements-at-a-glance-object-details]]
 === 查詢改進：一目了然的對象詳細信息
 
 選擇物件查詢結果清單中的一行將開啟所選物件的詳細資訊面板。快速查看指標和屬性（物件查詢的預設視圖）、警報和變更、效能和健康評分，或探索相關資源。所有相關對象資訊都觸手可及。
@@ -245,6 +273,7 @@ image:query_slideout_panel.png["查詢滑出面板的插圖，預設為指標和
 
 
 
+[[workload-security-improvements]]
 === 工作負載安全性改進
 
 兩個新的 API 可讓您更好地控制工作負載安全環境：
@@ -258,10 +287,12 @@ image:query_slideout_panel.png["查詢滑出面板的插圖，預設為指標和
 '''
 
 
+[[august-2025]]
 == 2025年8月
 
 
 
+[[focused-widget-data-at-your-fingertips]]
 === 觸手可及的重點小工具數據
 
 大多數小部件中的新*分析*功能可讓您一次仔細查看一個小部件中的資料。只需單擊小部件上的“分析”按鈕即可打開詳細視圖，您可以在其中以交互方式探索底層數據並放大以獲得更深入的見解 - 而無需離開儀表板上下文。
@@ -270,6 +301,7 @@ image:widget_analyze_panel.png["分析線部件的面板，寬度=900"]
 
 
 
+[[export-and-import-dashboards]]
 === 匯出和匯入儀表板
 
 如果您管理多個租戶並開發了一個有用的儀表板，則可以匯出該儀表板並將其匯入到另一個租戶。
@@ -278,18 +310,21 @@ image:dashboard_import_from_file.png["顯示導入的圖像"] image:dashboard_ex
 
 
 
+[[enhanced-cloud-integration-google-cloud-netapp-volumes-gcnv-support]]
 === 增強的雲端整合： Google Cloud NetApp Volumes (GCNV) 支持
 
 * Google Cloud NetApp Volumes* (GCNV) 現已完全支援作為 DII 中的資料收集器，從而完善了我們的混合雲監控生態系統。了解整個基礎架構中的關鍵儲存對象，例如組織、池和磁碟區。現在，您可以從單一平台追蹤所有儲存環境（本地或雲端）。
 
 
 
+[[enhanced-storagegrid-monitoring]]
 === 增強型StorageGRID監控
 
 StorageGRID日誌收集現在預設啟用，為 DII 提供事件追蹤數據，並且我們擴展了 StorageGrid 監控，增加了 50 多個預設警報、即時事件追蹤和新儀表板，以簡化複雜的儲存網格操作。透過深入了解流量策略和儲存桶效能來提前解決問題。
 
 
 
+[[operating-system-support]]
 === 作業系統支援
 
 除了以下作業系統外，Data Infrastructure Insights採集單元現在還支援以下作業系統link:concept_acquisition_unit_requirements.html["已經支持"]：
@@ -301,10 +336,12 @@ StorageGRID日誌收集現在預設啟用，為 DII 提供事件追蹤數據，�
 
 
 
+[[june-2025]]
 == 2025年6月
 
 
 
+[[vm-analyzer-holistic-vm-to-storage-visibility-troubleshooting]]
 === VM Analyzer：全面的虛擬機器到儲存視覺性和故障排除
 
 DII 的 *VM Analyzer* 功能提供了虛擬化環境的全面、端對端視圖。 VM Analyzer 透過對應從虛擬機器到儲存的整個路徑來簡化故障排除，使用戶能夠快速找出虛擬磁碟、虛擬機器、主機、資料儲存區、磁碟區和儲存中的效能問題。透過直覺的拓撲視圖、過濾和詳細的效能指標，管理員可以輕鬆識別瓶頸、分析流量不平衡並優化整體儲存效能。
@@ -313,6 +350,7 @@ image:vm_analyzer_example_with_panel.png["VM Analyzer 儲存系統拓樸圖"]
 
 
 
+[[operating-system-support]]
 === 作業系統支援
 
 除了以下作業系統外，Data Infrastructure Insights採集單元現在還支援以下作業系統link:concept_acquisition_unit_requirements.html["已經支持"]：
@@ -325,10 +363,12 @@ image:vm_analyzer_example_with_panel.png["VM Analyzer 儲存系統拓樸圖"]
 '''
 
 
+[[may-2025]]
 == 2025年5月
 
 
 
+[[new-landing-pages-keep-you-in-the-flow]]
 === 全新登陸頁面幫助您保持流暢
 
 重新設計的登陸頁面在一個視圖中顯示您需要的所有內容 - 摘要資料、效能圖表、相關性、警報和變更以及關鍵資源。
@@ -339,6 +379,7 @@ image:lp_new_design.png["新的登陸頁面設計顯示了摘要和性能以及�
 
 
 
+[[workload-security-improvements]]
 === 工作負載安全性改進
 
 *Webhook 現可用於工作負載安全警報*
@@ -355,6 +396,7 @@ image:ws_migrate_collector_to_another_agent.png["遷移收集器，寬度=500"]
 
 
 
+[[csv-asynchronous-export]]
 === .CSV異步導出
 
 將資料匯出到 .CSV 可能需要幾秒鐘到幾個小時的時間，具體取決於要匯出的資料量。Data Infrastructure Insights現在可以非同步匯出數據，因此您可以在編譯 .CSV 時繼續工作。
@@ -366,10 +408,12 @@ image:csv_export_async.png["帶有可供下載的 .csv 導出列表的鈴鐺圖�
 '''
 
 
+[[april-2025]]
 == 2025年4月
 
 
 
+[[ml-powered-anomaly-bounds-in-line-widgets-for-proactive-issue-resolution]]
 === ML 驅動的線路小部件異常邊界，用於主動解決問題
 
 為了解決折線圖或樣條圖小工具的效能問題，您現在可以顯示預期行為邊界以及實際指標，從而區分正常和異常指標趨勢。
@@ -380,6 +424,7 @@ image:expected_bounds_example_showing_spike.png["預期邊界顯示上方有尖�
 
 
 
+[[optimize-vmware-costs-with-vsan-storage-support]]
 === 利用 VSAN 儲存支援優化 VMware 成本
 
 我們的 VM 最佳化功能現在包括對具有 VSAN 儲存的 VMWare 環境的支援。除了 CPU 和記憶體使用情況之外，分析現在還會考慮本地 VSAN 儲存的回收建議，幫助您進一步降低授權成本。
@@ -388,6 +433,7 @@ image:vm_optimization_with_vsan.png["使用 VSAN 的虛擬機器最佳化範例"
 
 
 
+[[alert-details-at-your-fingertips]]
 === 警報詳情觸手可及
 
 使用新的滑出面板，調查警報比以往更容易。選擇一個警報以查看該警報的詳細信息，並在調查問題時輕鬆在警報之間切換而不會丟失您的位置。
@@ -396,12 +442,14 @@ image:alert_slideout_example.png["警報滑出，導航更輕鬆"]
 
 
 
+[[workload-security-forensics-asynchronous-export]]
 === 工作負載安全取證異步導出
 
 匯出取證資料可能需要幾秒鐘到幾個小時的時間，具體取決於要匯出的資料量。  Workload Security 非同步匯出該數據，因此您可以在編譯 .CSV 時繼續工作。
 
 
 
+[[data-collector-notifications-grouped-into-rules]]
 === 資料收集器通知分組到規則中
 
 如果您已在資料收集器上配置了通知，則從 4 月 15 日開始，這些通知將在通知規則中處理，對於具有相同收件者的收集器使用單一規則。不同收件人的收藏家將有不同的規則。現有的收集器通知已遷移到通知規則。
@@ -409,10 +457,12 @@ image:alert_slideout_example.png["警報滑出，導航更輕鬆"]
 '''
 
 
+[[march-2025]]
 == 2025年3月
 
 
 
+[[enhanced-contextual-navigation-for-efficient-infrastructure-management]]
 === 增強情境導航，實現高效率的基礎架構管理
 
 利用Data Infrastructure Insights實現卓越運營，從而節省時間。我們現在添加了上下文選單鏈接，允許您從任何對象直接跳到資產登錄頁面以獲取設備性能洞察、SAN 分析器以進行網絡拓撲可視化、日誌以進行操作感知或變更分析器以進行配置管理。
@@ -423,6 +473,7 @@ image:contextual_menu_example.png["上下文選單範例，寬度=500"]
 
 
 
+[[preserve-the-history-of-removed-assets]]
 === 保留已移除資產的歷史記錄
 
 我們增強的基礎設施變更功能現在可以保留已刪除資產的歷史記錄，例如已移動且不再可用的 qtree 和磁碟區。
@@ -435,6 +486,7 @@ image:infra_change_removed_assets.png["刪除了基礎設施變更中的資產�
 
 
 
+[[kubernetes-operator-push-button-upgrade]]
 === Kubernetes Operator 一鍵升級
 
 想要確保您擁有最新的 Kubernetes Operator 嗎？從 DII Kubernetes Collectors 叢集選單按需升級操作員。只需從選單中選擇升級，操作員就會驗證圖像簽名，捕獲目前安裝的快照，並執行升級。
@@ -445,6 +497,7 @@ image:dii_push_button_upgrade.png["按鈕操作員從叢集選單升級，寬度
 
 
 
+[[test-connectivity-for-storage-workload-security-data-collectors]]
 === 測試儲存工作負載安全資料收集器的連接
 
 測試連線功能旨在協助最終用戶在Data Infrastructure Insights(DII) 工作負載安全性中設定資料收集器時識別故障的具體原因。這使得用戶能夠自行修正與網路通訊或缺失角色相關的問題。
@@ -453,6 +506,7 @@ image:ws_test_connection_button.png["工作負載安全測試連線按鈕"] imag
 
 
 
+[[operating-system-support]]
 === 作業系統支援
 
 除了以下作業系統外，Data Infrastructure Insights採集單元現在還支援以下作業系統link:https://docs.netapp.com/us-en/cloudinsights/concept_acquisition_unit_requirements.html["已經支持"]：
@@ -470,6 +524,7 @@ image:ws_test_connection_button.png["工作負載安全測試連線按鈕"] imag
 '''
 
 
+[[february-2025]]
 == 2025年二月
 
 ONTAP essentials 現包含最新一代的開箱即用管理功能link:task_dc_na_ontap_all_san_array.html["ASA"]裝置.這包括用於在ONTAP上運行的工作負載的 VM 到 LUN 拓撲的 SAN Analyzer，現在也可作為Data Infrastructure Insights基本版的一部分獲得NetApp支援。
@@ -478,6 +533,7 @@ image:ontap_essentials_asa_views.png["ONTAP Essentials 下拉式選單顯示ASA�
 
 
 
+[[dii-api-usage-tracking-enhance-security-and-efficiency]]
 === DII API 使用情況追蹤：增強安全性和效率
 
 透過增強的 REST API 使用情況追蹤（可供管理員使用者使用）來加強您的安全態勢並簡化資源管理。透過 API 使用情況追蹤，您可以查看正在使用哪些 API 令牌、來自哪些 IP 位址以及它們產生的流量。透過將令牌連結到特定的 IP 位址和使用級別，您將深入了解系統存取和使用趨勢，從而獲得維護安全、高效的環境和保持營運順利進行所需的控制。
@@ -488,6 +544,7 @@ image:api_usage_analytics_screenshot.png["API 使用情況分析範例"]
 
 
 
+[[workload-security-api-to-restrict-users]]
 === 限制使用者的工作負載安全 API
 
 已新增新的 API 來管理工作負載安全性中的使用者限制。使用 API，您可以封鎖或取消封鎖用戶，或變更其受限存取的持續時間。請參閱管理 > API 存取 > API 文件頁面，以了解 _cloudsecure_actions.block_ API。
@@ -495,10 +552,12 @@ image:api_usage_analytics_screenshot.png["API 使用情況分析範例"]
 '''
 
 
+[[january-2025]]
 == 2025年1月
 
 
 
+[[proactively-manage-risk-with-forensics-grouping]]
 === 透過法證分組主動管理風險
 
 介紹我們的最新功能，旨在增強您的安全和資源管理能力！借助高級分組功能和分層多分組支持，您現在可以輕鬆識別訪問特定資料夾的用戶，確定最活躍的用戶和共享，並透過追蹤活躍用戶端 IP 位址主動管理風險。透過精確定位存取最多的檔案和資料夾來優化您的儲存和頻寬使用情況，並透過識別使用者來增強對系統存取的控制。
@@ -507,6 +566,7 @@ image:forensics_activity_example.png["取證活動追蹤範例螢幕"]
 
 
 
+[[dashboard-access-control]]
 === 儀表板存取控制
 
 Data Infrastructure Insights現在可以讓您更好地控制對您建立的儀表板的存取。您可以選擇誰可以修改您的圖表。您可以控制潛在敏感資訊的暴露。仍在處理尚未準備好供一般人查看的儀表板嗎？您可以將其保密，直到您準備好分享它為止。
@@ -516,10 +576,12 @@ image:Dashboard_Sharing_Options.png["儀表板共享選項"]
 '''
 
 
+[[december-2024]]
 == 2024年12月
 
 
 
+[[introducing-san-analyzer-enhanced-visibility-for-block-workloads]]
 === SAN Analyzer 簡介：增強區塊工作負載的可見性
 
 SAN 在處理重要工作負載方面發揮著至關重要的作用，但其複雜性可能會導致嚴重的中斷和客戶中斷。透過 DII 的 *SAN Analyzer*，管理 SAN 變得更簡單、更有效率。這個強大的工具提供了端到端的可視性，將依賴關係從 VM/主機映射到網路、LUN 和儲存。透過提供互動式拓撲圖，SAN Analyzer 使您能夠找出問題、了解變更並增強對資料流的理解。使用 SAN Analyzer 簡化複雜 IT 環境中的 SAN 管理並提高對區塊工作負載的可見度。
@@ -528,6 +590,7 @@ image:san_analyzer_example_with_panel.png["儲存系統的 SAN Analyzer 拓樸�
 
 
 
+[[optimize-vm-costs-with-intelligent-host-decommissioning-and-vm-reclamation]]
 === 透過智慧主機退役和虛擬機器回收優化虛擬機器成本
 
 Data Infrastructure Insights透過分析環境的歷史行為並建立短期和長期預測來幫助您管理基礎設施和許可成本，為主機退役和已關閉和閒置虛擬機的回收產生詳細的建議。這些建議可協助您確保效能穩定性、釋放未使用的容量並減少記憶體和 CPU 分配。
@@ -536,6 +599,7 @@ image:vm_optimization_summary.png["VM 最佳化摘要畫面"]
 
 
 
+[[uncover-log-insights-with-time-charts-and-table-widget-support]]
 === 透過時間圖表和表格小部件支援發現日誌洞察
 
 現在，您可以利用時間圖表（長條圖、折線圖、面積圖）來識別日誌資料中的趨勢和模式，例如重複出現的錯誤或活動高峰，從而提供有關係統隨時間變化的行為的寶貴見解。此外，透過表格，您現在可以將日誌訊息直接包含在儀表板中，從而可以更全面地查看日誌詳細資訊。
@@ -545,10 +609,12 @@ image:log_insights_dashboard_example.png["在儀表板上記錄見解"]
 '''
 
 
+[[november-2024]]
 == 2024年11月
 
 
 
+[[new-workload-security-alerts-api]]
 === 新的工作負載安全警報 API
 
 使用新的工作負載安全功能檢索取證警報詳細信息link:concept_cs_api.html["*cloudsecure_forensics.alerts* API"]。
@@ -557,6 +623,7 @@ image:ws_forensics_alerts_api.png["工作負載安全取證警報 API"]
 
 
 
+[[analyze-configuration-changes-in-your-environment]]
 === 分析環境中的配置更改
 
 配置變更是現代 IT 中最常見的問題原因之一。Data Infrastructure Insights（DII）新link:infrastructure_change_analytics.html["變更分析"]功能可以讓您清楚地了解導致環境中出現問題的變化。透過顯示可能導致問題的設備和相關基礎設施組件的所有變更來加快故障排除時間。此外，當您或您的團隊執行計劃的變更時，您可以快速驗證這些變更並確保在服務等級受到影響之前不會出現意外影響。
@@ -565,6 +632,7 @@ image:Change_Analysis_Example_showing_alert-change_correlation.png["基礎設施
 
 
 
+[[kubevirt-support-monitor-virtual-machine-workloads-running-within-your-kubernetes-cluster]]
 === KubeVirt 支援：監控 Kubernetes 叢集中執行的虛擬機器工作負載
 
 DII 現在完全支援 KubeVirt，這是 OpenShift Virtualization 和 Harvester 等平台使用的 Kubernetes 原生虛擬化解決方案。全面了解 Kubernetes 叢集中虛擬機器和容器工作負載的指標、事件、設定變更和網路流量。
@@ -572,10 +640,12 @@ DII 現在完全支援 KubeVirt，這是 OpenShift Virtualization 和 Harvester 
 '''
 
 
+[[october-2024]]
 == 2024年10月
 
 
 
+[[unlock-new-insights-with-custom-expressions-in-monitors]]
 === 使用監視器中的自訂表達式解鎖新見解
 
 表達式使您能夠在指標和異常檢測監視器中執行算術運算。以下是一些範例：
@@ -590,6 +660,7 @@ image:Expressions_In_Monitors.png["在指標監視器中建立表達式"]
 
 
 
+[[minimize-alert-disruptions-during-maintenance-period]]
 === 最大限度地減少維護期間的警報中斷
 
 維護窗口可讓您在計劃的維護期間抑制警報通知，幫助您避免不必要的中斷。
@@ -602,6 +673,7 @@ image:Maintenance_Windows_example.png["維護視窗範例"]
 
 
 
+[[streamline-alert-management-with-new-alert-notification-rules]]
 === 使用新的警報通知規則簡化警報管理
 
 警報通知規則簡化了跨監視器和團隊的通知管理。
@@ -612,6 +684,7 @@ image:notification_rule_configure.png["設定通知規則的過濾器"]
 
 
 
+[[log-analytics-in-dashboards]]
 === 儀表板中的日誌分析
 
 現在您可以在儀表板中包含日誌事件，以視覺化事件資料並更全面、更貼近上下文地了解您的環境。無需離開儀表板即可調查日誌並查看相關指標！
@@ -620,6 +693,7 @@ image:log_analytics_bar_graph_example.png["日誌分析範例"]
 
 
 
+[[better-vmware-observability-with-vmware-events]]
 === 使用 VMware Events 提高 VMware 可觀察性
 
 利用即時事件主動管理和排除 VMware 環境故障。 VMware 事件提供虛擬機器遷移、資源分配和主機健康狀況的洞察。現在可用於查詢、儀表板和監視器。需要 VMware 8 或更高版本。只需選擇_logs.vmware.events_來源。
@@ -630,6 +704,7 @@ image:vmware_log_events.png["下拉式選單中的 VMware 日誌選擇"]
 
 
 
+[[data-collector-updates]]
 === 資料收集器更新：
 
 * *純 FlashBlade*：此收集器從公開其 REST API 版本 2 的 FlashBlade 叢集中收集庫存和效能資料。
@@ -638,10 +713,12 @@ image:vmware_log_events.png["下拉式選單中的 VMware 日誌選擇"]
 '''
 
 
+[[september-2024]]
 == 2024年9月
 
 
 
+[[introducing-data-infrastructure-insights-formerly-cloud-insights]]
 === 推出Data Infrastructure Insights（以前稱為Cloud Insights）
 
 2024 年 9 月 24 日星期二， NetApp正式將Cloud Insights的名稱更改為 * Data Infrastructure Insights* (DII)。宋海燕在 Insight 用戶大會的主舞台主題演講和 Insight 大會產品新聞稿中宣布了這一消息。
@@ -650,10 +727,12 @@ DII 服務保持不變；沒有任何功能變更或修改。此名稱變更是�
 
 
 
+[[august-2024]]
 == 2024年8月
 
 
 
+[[view-data-specific-to-your-time-range]]
 === 查看特定時間範圍內的數據
 
 正在調查警報？放大圖表了嗎？這些操作會改變這些頁面的時間範圍。現在您可以鎖定該時間範圍，導覽至其他Cloud Insights頁面，並查看特定於該鎖定時間範圍的資料。調查和故障排除變得更加容易！
@@ -662,6 +741,7 @@ image:timerange_lock.png["工具提示，指出按一下圖示可鎖定時間範
 
 
 
+[[change-and-change-ratio-analysis]]
 === 變動及變動率(%)分析
 
 變化率時間聚合可協助您識別指標值隨時間發生的顯著變化和趨勢。這些見解對於理解變化至關重要，例如特定時間內容量的大幅成長或單一連接埠效能的變化。
@@ -674,6 +754,7 @@ image:change_and_change_ratio_bar_chart.png["顯示變化和變化比例聚合�
 
 
 
+[[export-log-query-results-to-csv]]
 === 將日誌查詢結果匯出為 .CSV
 
 查看日誌查詢結果時，請按一下新的「匯出」按鈕，即可輕鬆將最多 10,000 行匯出為 .CSV。這增強了數據可訪問性，簡化了數據分析和報告，並促進了與其他數據處理工具的無縫整合。
@@ -682,6 +763,7 @@ image:csv_export_button.png["日誌查詢頁面上的匯出到 CSV 按鈕"]
 
 
 
+[[resolve-alerts-by-time]]
 === 按時間解決警報
 
 當監控指標在指定時間內保持在可接受範圍內時， Cloud Insights現在為您提供了解決警報的選項。這使您可以專注於真正的問題，透過將多個警報合併為一個警報來減少與指標反覆超過定義閾值相關的噪音。
@@ -691,10 +773,12 @@ image:resolve_alert_by_time_dropdown.png["根據時間解決警報"]
 '''
 
 
+[[july-2024]]
 == 2024年7月
 
 
 
+[[aiops-anomaly-detection]]
 === AIOps：異常檢測
 
 Cloud Insights使用機器學習來偵測環境中資料模式的意外變化，並提供主動警報以幫助您及早發現問題。
@@ -709,6 +793,7 @@ image:anomaly_detection_expert_view.png["顯示檢測到的異常的圖表"]
 
 
 
+[[workload-security-improvements]]
 === 工作負載安全性改進
 
 *NFS 4.1 支持*
@@ -723,6 +808,7 @@ SVM 資料收集器現在支援最高至 *NFS 4.1* 的 NFS 版本以及ONTAP 9.1
 
 
 
+[[easier-dashboard-navigation]]
 === 更簡單的儀表板導航
 
 此功能旨在簡化您的營運工作流程並使團隊之間的協作變得更加容易。
@@ -734,10 +820,12 @@ image:Dashboard_Nav_Group_Dropdown.png["下拉式選單用於選擇與目前儀�
 '''
 
 
+[[june-2024]]
 == 2024年6月
 
 
 
+[[operating-system-support]]
 === 作業系統支援
 
 除了以下作業系統外， Cloud Insights擷取單元還支援以下作業系統link:https://docs.netapp.com/us-en/cloudinsights/concept_acquisition_unit_requirements.html["已經支持"]：
@@ -749,10 +837,12 @@ image:Dashboard_Nav_Group_Dropdown.png["下拉式選單用於選擇與目前儀�
 
 
 
+[[may-2024]]
 == 2024年5月
 
 
 
+[[automatically-resolve-alerts-based-on-time]]
 === 根據時間自動解決警報
 
 現在可以根據時間解決日誌警報；如果警報條件停止發生， Cloud Insights可以在指定時間後自動解決警報。您可以選擇在幾分鐘、幾小時或幾天內解決警報。
@@ -762,10 +852,12 @@ image:alerts_resolve_based_on_time.png["根據時間解決警報"]
 '''
 
 
+[[april-2024]]
 == 2024年4月
 
 
 
+[[iscsi-support-for-kubernetes]]
 === Kubernetes 的 iSCSI 支持
 
 Cloud Insights現在支援映射與 Kubernetes 相關的 iSCSI 存儲，從而可以使用 Kubernetes 網路圖更快地進行故障排除，並能夠透過報告提供退款或返還報告。
@@ -774,6 +866,7 @@ image:pod-to-storage.png["Pod 到儲存範例"]
 
 
 
+[[operating-system-support]]
 === 作業系統支援
 
 除了以下作業系統外， Cloud Insights擷取單元還支援以下作業系統link:https://docs.netapp.com/us-en/cloudinsights/concept_acquisition_unit_requirements.html["已經支持"]：
@@ -788,10 +881,12 @@ image:pod-to-storage.png["Pod 到儲存範例"]
 '''
 
 
+[[march-2024]]
 == 2024年3月
 
 
 
+[[workload-security-agent-details]]
 === 工作負載安全代理詳細信息
 
 每個工作負載安全代理程式都有自己的登入頁面，您可以在其中輕鬆查看有關代理程式的摘要資訊以及與該代理程式關聯的已安裝的資料和使用者目錄收集器。
@@ -800,6 +895,7 @@ image:Agent_Detail_Page.png["代理詳情登陸頁面範例"]
 
 
 
+[[chart-more-data-more-quickly]]
 === 更快地繪製更多數據圖表
 
 在分析資產登陸頁面上的資料時，為專家視圖圖表新增其他資料非常簡單。對於登入頁面上的每個表，如果某個物件類型具有相關數據，則將滑鼠懸停在該物件上以顯示「新增至專家視圖」圖示。選擇此圖示會將該物件新增至附加資源並將其顯示在專家檢視圖表中。
@@ -813,10 +909,12 @@ image:LPTableShowChartIcon.png["顯示圖表圖標"]
 '''
 
 
+[[february-2024]]
 == 2024年2月
 
 
 
+[[usability-improvements]]
 === 可用性改進
 
 從右上角下拉選單中選擇「匯出為影像」來儲存目前儀表板的*快照*。  Cloud Insights建立目前小工具狀態的 .PNG。
@@ -841,6 +939,7 @@ image:TriggeredOnLink.png["TriggeredOn 警報字段中的鏈接"]
 
 
 
+[[see-all-changes-in-your-namespace]]
 === 查看命名空間中的所有更改
 
 Kubernetes 變更分析現在可讓您在選擇叢集和命名空間時查看變更的時間軸。此前，還必須選擇工作負載。當按叢集和命名空間進行過濾時，該命名空間中所有工作負載變化的時間軸都會顯示在一行上。
@@ -849,6 +948,7 @@ image:NamespaceTimeline.png["命名空間時間線"]
 
 
 
+[[related-logs-for-alerts]]
 === 警報的相關日誌
 
 查看日誌警報時，相關日誌條目會顯示在新表中。如果日誌條目與警報出現在相同的來源和時間範圍內，並且受到相同條件的影響，則該日誌條目是相關的。選擇“分析日誌”進行進一步探索。
@@ -857,12 +957,14 @@ image:RelatedLogsTable.png["日誌警報登入頁面上的相關日誌"]
 
 
 
+[[collect-ontap-switch-data]]
 === 收集ONTAP交換器數據
 
 Cloud Insights可以從ONTAP系統的後端交換器收集資料；只需在資料收集器的「進階配置」部分啟用收集功能，並確保ONTAP系統配置為提供link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["交換器資訊"]並有適當的link:task_dc_na_cdot.html#a-note-about-permissions["權限"]放。
 
 
 
+[[workload-security-data-collector-api]]
 === 工作負載安全資料收集器 API
 
 在大型環境中，您可以使用新的資料收集器 API 自動建立工作負載安全收集器。導覽至*管理> API 存取> API 文件*並選擇_工作負載安全性_ API 類型以了解更多資訊。
@@ -870,16 +972,19 @@ Cloud Insights可以從ONTAP系統的後端交換器收集資料；只需在資�
 '''
 
 
+[[january-2024]]
 == 2024年1月
 
 
 
+[[try-cloud-insights-features-you-havent-used-yet]]
 === 嘗試Cloud Insights您尚未使用的功能
 
 除了首次試用Cloud Insights之外，您還可以利用link:concept_subscribing_to_cloud_insights.html#module-evaluation["模組評估"]。例如，如果您訂閱了Cloud Insights並一直在監控儲存和虛擬機，那麼當您將 Kubernetes 新增至您的環境時，您將自動進入 30 天的 Kubernetes Observability 試用版。試用期結束前，Kubernetes Observability 管理單元的使用將不會計入您的訂閱權利。
 
 
 
+[[how-healthy-are-my-workloads]]
 === 我的工作負荷有多健康？
 
 您可以在 *Kubernetes > 探索 > 工作負載* 頁面上一目了然地查看工作負載的健康狀況，因此您可以快速查看哪些工作負載運作良好以及哪些工作負載可能需要一些幫助。輕鬆識別健康問題是否與基礎設施、網路或配置變更有關，並深入分析根本原因。
@@ -888,6 +993,7 @@ image:WorkloadHealth.png["工作負載健康狀況一覽"]
 
 
 
+[[data-collector-updates]]
 === 數據收集器更新
 
 
@@ -898,6 +1004,7 @@ Data Domain 收集器已改進，可更好地識別 HA 系統，以實現跨故�
 
 
 
+[[enhanced-ransomware-detection-ml-algorithm]]
 === 增強型勒索軟體偵測 ML 演算法
 
 Workload Security 包含新的第二代勒索軟體偵測 ML 演算法，可更快、更準確地偵測最複雜的攻擊。
@@ -906,6 +1013,7 @@ Workload Security 包含新的第二代勒索軟體偵測 ML 演算法，可更�
 
 
 
+[[deprecated-functionality]]
 === 已棄用的功能
 
 有時，隨著功能的發展，某些功能會被棄用。以下是Cloud Insights中已棄用的一些特性與功能：
@@ -950,10 +1058,12 @@ _cloudsecure_forensics.activities.v1_ API 已棄用。此 API 傳回與儲存工
 '''
 
 
+[[december-2023]]
 == 2023年12月
 
 
 
+[[change-analytics-at-a-glance]]
 === 變更分析一覽
 
 Kuberneteslink:kubernetes_change_analytics.html["變更分析"]為您提供 Kubernetes 環境最新變化的一體化視圖。警報和部署狀態觸手可及。透過變更分析，您可以追蹤每個部署和配置變更，並將其與 K8s 服務、基礎架構和叢集的健康和效能相關聯。
@@ -962,6 +1072,7 @@ image:ChangeAnalytitcs_Main_Screen.png["變更分析儀表板"]
 
 
 
+[[kubernetes-workload-performance-dashboard]]
 === Kubernetes 工作負載效能儀表板
 
 在全面的 Kubernetes 工作負載效能儀表板中可以一目了然地查看工作負載效能。快速查看容量、吞吐量、延遲和重傳趨勢圖，以及環境中每個命名空間的工作負載流量表。過濾器可以輕鬆聚焦到感興趣的領域。
@@ -972,6 +1083,7 @@ image:K8s_Workload_performance_dashboard.png["工作負載性能儀表板"]
 
 
 
+[[query-details-on-one-screen]]
 === 一屏查詢詳情
 
 在查詢中，選擇一行將打開一個側面板，顯示所選行的屬性、註釋和指標詳細信息，提供有用的信息，而無需深入到對象的登錄頁面。行或側面板中的連結可輕鬆導航。
@@ -980,6 +1092,7 @@ image:MetricQuerySlideoutPanel.png["指標查詢滑出面板"]
 
 
 
+[[data-collector-updates]]
 === 資料收集器更新：
 
 * * Brocade FOS REST*：此收集器已脫離「預覽」階段，現已普遍可用。需要注意的事項：
@@ -994,16 +1107,19 @@ image:MetricQuerySlideoutPanel.png["指標查詢滑出面板"]
 '''
 
 
+[[november-2023]]
 == 2023年11月
 
 
 
+[[workload-security-pauseresume-a-collector]]
 === 工作負載安全：暫停/恢復收集器
 
 在工作負載安全性中，如果收集器處於「運作」狀態，您可以暫停資料收集器。打開收集器的“三個點”選單並選擇暫停。當收集器暫停時，不會從ONTAP收集任何數據，也不會從收集器向ONTAP發送任何數據。選擇“繼續”即可重新開始收集。
 
 
 
+[[storage-node-support-information]]
 === 儲存節點支援資訊
 
 在儲存節點登入頁面上，「使用者資料」部分提供了有關您的支援服務、目前狀態、支援狀態和保固結束日期的概覽資訊。請注意， Cloud Insights目前僅為NetApp設備自動發布此資訊。還要注意，這些支援欄位是註釋，因此它們可以在查詢和儀表板中使用。
@@ -1012,12 +1128,14 @@ image:StorageNodeSupportData.png["儲存節點支援資訊"]
 
 
 
+[[map-vmware-tags-to-cloud-insights-annotations]]
 === 將 VMWare 標籤對應到Cloud Insights註釋
 
 這link:task_dc_vmware.html["VMWare"]資料收集器可讓您使用在 VMWare 上配置的同名標籤填入Cloud Insights文字註解。
 
 
 
+[[brocade-cli-collector-reliability-enhancements-for-fos-9-1-1c-and-higher-firmware]]
 === 針對 FOS 9.1.1c 及更高版本韌體的Brocade CLI 收集器可靠性增強
 
 在某些運行 9.1.1c 韌體的Brocade光纖通道交換器上，某些 CLI 命令的輸出可能會在前面加上“motd”登入橫幅文本，或警告用戶更改預設密碼。  Brocade CLI 收集器已增強，可以忽略這兩種類型的無關文字。
@@ -1027,10 +1145,12 @@ image:StorageNodeSupportData.png["儲存節點支援資訊"]
 '''
 
 
+[[october-2023]]
 == 2023年10月
 
 
 
+[[enhanced-workload-security]]
 === 增強的工作負載安全性
 
 工作負載安全性已得到以下改進：
@@ -1041,12 +1161,14 @@ image:StorageNodeSupportData.png["儲存節點支援資訊"]
 
 
 
+[[module-trials]]
 === 模組試用
 
 除了首次試用Cloud Insights之外，您還可以利用link:concept_subscribing_to_cloud_insights.html#module-evaluation["模組評估"]。例如，如果您已經訂閱了基礎架構可觀察性，但正在將 Kubernetes 新增至您的環境中，您將自動進入 30 天的 Kubernetes 可觀察性試用版。評估期結束時，您只需為 Kubernetes Observability 管理單元的使用付費。
 
 
 
+[[restrict-access-to-specified-domains]]
 === 限制對指定網域的訪問
 
 管理員和帳戶所有者現在可以link:concept_user_roles.html#restricting-access-by-domain["限制Cloud Insights訪問"]發送到他們指定的電子郵箱網域。前往*管理 > 使用者管理*並選擇_限制網域_按鈕。
@@ -1055,6 +1177,7 @@ image:Restrict_Domains_Modal.png["限制域名模式"]
 
 
 
+[[data-collector-updates]]
 === 數據收集器更新
 
 資料收集器/採集單元發生了以下變化：
@@ -1066,10 +1189,12 @@ image:Restrict_Domains_Modal.png["限制域名模式"]
 '''
 
 
+[[september-2023]]
 == 2023年9月
 
 
 
+[[easily-find-what-you-want-in-the-logs]]
 === 在日誌中輕鬆找到您想要的內容
 
 日誌查詢（*可觀察性 > 日誌查詢 > +新日誌查詢*）包括許多link:concept_log_explorer.html#advanced-filtering["增強功能"]讓日誌探索更加輕鬆且更具資訊量。
@@ -1102,6 +1227,7 @@ image:Log_Query_Group_By_Chart.png["日誌查詢分組範例顯示圖表中的�
 
 
 
+[[floating-log-detail-panel]]
 === “浮動”日誌詳細資訊面板
 
 使用日誌查詢瀏覽日誌時，選擇清單中的條目將開啟該條目的詳細資訊面板。現在您可以選擇以「浮動」方式顯示該滑出面板（即顯示在螢幕的其餘部分）或「在頁面中」（即在頁面內顯示為自己的框架）。若要在這些視圖之間切換，請選擇面板右上角的「頁面內/浮動」按鈕。
@@ -1110,6 +1236,7 @@ image:Log_Query_Floating_Detail_Panel.png["反白按鈕的“頁內”滑出面�
 
 
 
+[[collapse-the-menu]]
 === 折疊菜單
 
 您可以透過選擇選單下方的「最小化」按鈕來折疊左側的Cloud Insights導覽選單。當選單最小化時，將滑鼠懸停在圖示上即可查看它打開哪個部分；選擇圖示將打開選單並直接帶您到該部分。
@@ -1118,6 +1245,7 @@ image:CI_Menu_Minimize_Button.png["最小化選單"]
 
 
 
+[[data-collector-improvements]]
 === 數據收集器改進
 
 Cloud Insights使得顯示和尋找資料收集器資訊變得更加容易：
@@ -1131,10 +1259,12 @@ Cloud Insights使得顯示和尋找資料收集器資訊變得更加容易：
 '''
 
 
+[[august-2023]]
 == 2023年8月
 
 
 
+[[collecting-isilonpowerscale-logs-and-advanced-analytics-data]]
 === 收集 Isilon/PowerScale 日誌和進階分析數據
 
 Isilon REST 和 PowerScale REST 收集器包含以下改進：
@@ -1154,6 +1284,7 @@ Isilon REST 和 PowerScale REST 收集器包含以下改進：
 
 
 
+[[improved-workload-map]]
 === 改進的工作負載圖
 
 工作負載圖更加實用且噪音更小；如果所有類似的外部服務與相同的工作負載進行通信，它會將它們分組到一個節點中，從而降低圖的複雜性並更容易理解服務的互連方式。
@@ -1162,6 +1293,7 @@ Isilon REST 和 PowerScale REST 收集器包含以下改進：
 
 
 
+[[kubernetes-managed-unit-usage-adjustment]]
 === Kubernetes 管理單元使用量調整
 
 如果您的 Kubernetes 叢集環境中的運算資源同時被NetApp Kubernetes 監控操作員和底層基礎架構資料收集器（例如 VMware）計數，則您對這些資源的使用將進行調整，以確保最有效地計數託管單元。您可以在「管理」>「訂閱」頁面的「摘要」和「使用情況」標籤中查看 Kubernetes MU 調整。
@@ -1172,6 +1304,7 @@ Isilon REST 和 PowerScale REST 收集器包含以下改進：
 
 
 
+[[collectoracquisition-changes]]
 === 收集器/獲取更改：
 
 資料收集器/採集單元發生了以下變化：
@@ -1181,6 +1314,7 @@ Isilon REST 和 PowerScale REST 收集器包含以下改進：
 
 
 
+[[improved-menus]]
 === 改進的菜單
 
 我們更新了左側導覽選單，以更好地支援客戶的工作流程。新的頂級專案（例如「Kubernetes」）可加速存取客戶所需的內容，並且合併的管理員控制台支援租用戶擁有者角色。
@@ -1240,10 +1374,12 @@ ONTAP基礎知識：
 
 
 
+[[july-2023]]
 == 2023年7月
 
 
 
+[[show-recent-changes]]
 === 顯示最近更改
 
 資料收集器登陸頁面現在包含最近變更的清單。只需點擊任何資料收集器登入頁面底部的「最近更改」按鈕即可顯示最近的資料收集器變更。
@@ -1252,6 +1388,7 @@ image:Recent_Changes_Example.png["最近更改範例"]
 
 
 
+[[operator-improvements]]
 === 操作員改進
 
 已做出以下改進link:telegraf_agent_k8s_config_options.html["Kubernetes 操作員"]部署：
@@ -1262,12 +1399,14 @@ image:Recent_Changes_Example.png["最近更改範例"]
 
 
 
+[[insight-reclaim-cold-storage]]
 === 洞察：回收冷存儲
 
 Reclaim ONTAP Cold Storage Insight 現已支援 FlexGroups，並且現已向所有客戶開放。
 
 
 
+[[operator-image-signature]]
 === 操作員圖像簽名
 
 對於使用私人儲存庫作為NetApp Kubernetes 監控操作員的客戶，您現在可以在操作員安裝期間複製映像簽署公鑰，從而確認下載軟體的真實性。在可選步驟中選擇“複製圖像簽名公鑰”按鈕，將操作員圖像“上傳到您的私人儲存庫”。
@@ -1276,6 +1415,7 @@ image:Operator_Public_Image_Key.png["下載公鑰"]
 
 
 
+[[aggregation-conditional-formatting-and-more-for-queries]]
 === 聚合、條件格式以及更多查詢
 
 聚合、單位選擇、條件格式和列重命名是儀表板表格小工具最有用的功能之一，現在這些功能也可用於link:task_create_query.html["查詢"]。
@@ -1286,6 +1426,7 @@ image:Query_Page_Aggregation_etc.png["查詢頁面結果顯示聚合、條件格
 
 
 
+[[api-for-audit]]
 === 審計 API
 
 現在您可以使用 API 來查詢或匯出審核事件。前往管理 > API 存取並選擇 _API 文件_ 連結以取得資訊。
@@ -1294,6 +1435,7 @@ image:Audit_API_Swagger.png["用於審計的 API Swagger，寬度=400"]
 
 
 
+[[data-collector-trident-economy]]
 === 資料收集器：Trident經濟
 
 Cloud Insights現已支援Trident Economy Driver，可實現以下優勢：
@@ -1306,10 +1448,12 @@ Cloud Insights現已支援Trident Economy Driver，可實現以下優勢：
 '''
 
 
+[[june-2023]]
 == 2023年6月
 
 
 
+[[check-out-your-usage]]
 === 查看您的使用情況
 
 從 2023 年 6 月開始， Cloud Insights將根據功能集提供託管單元使用情況的細分。現在，您可以快速檢視和監控基礎架構的託管單元 (MU) 使用情況以及與 Kubernetes 相關的 MU 使用情況。
@@ -1318,12 +1462,14 @@ image:Metering_Usage.png["計量使用情況明細"]
 
 
 
+[[kubernetes-network-monitoring-and-map-is-available-for-all]]
 === Kubernetes 網路監控和地圖可供所有人使用
 
 這link:concept_kubernetes_network_monitoring_and_map.html["Kubernetes 網路效能與映射"]透過繪製 Kubernetes 工作負載之間的依賴關係來簡化故障排除，提供對 Kubernetes 網路效能延遲和異常的即時可見性，以便在效能問題影響使用者之前識別它們。許多客戶發現它在預覽期間很有用，現在每個人都可以使用它。
 
 
 
+[[collectoracquisition-changes]]
 === 收集器/獲取更改：
 
 資料收集器/採集單元發生了以下變化：
@@ -1334,6 +1480,7 @@ image:Metering_Usage.png["計量使用情況明細"]
 
 
 
+[[new-ontap-essentials-dashboards]]
 === 新的ONTAP Essentials 儀表板
 
 以下ONTAP Essentials 儀表板已在預覽環境中提供，現在可供所有人使用：
@@ -1344,6 +1491,7 @@ image:Metering_Usage.png["計量使用情況明細"]
 
 
 
+[[additional-system-monitors]]
 === 附加系統監視器
 
 Cloud Insights包含以下系統監視器：
@@ -1355,10 +1503,12 @@ Cloud Insights包含以下系統監視器：
 '''
 
 
+[[may-2023]]
 == 2023年5月
 
 
 
+[[improved-kubernetes-monitoring-operator-installation]]
 === 改進的 Kubernetes 監控 Operator 安裝
 
 安裝和配置link:task_config_telegraf_agent_k8s.html["NetApp Kubernetes 監控操作員"]透過以下改進比以往更簡單：
@@ -1372,6 +1522,7 @@ Cloud Insights包含以下系統監視器：
 
 
 
+[[storage-virtualization]]
 === 儲存虛擬化
 
 Cloud Insights可以區分具有本機儲存的儲存陣列或其他儲存陣列的虛擬化。這使您能夠關聯成本並區分從基礎設施前端到後端的效能。
@@ -1380,6 +1531,7 @@ image:StorageVirtualization_StorageSummary.png["顯示虛擬和備份儲存資�
 
 
 
+[[new-webhook-parameters]]
 === 新的 Webhook 參數
 
 當創建一個link:task_create_webhook.html["Webhook"]通知，您現在可以在 webhook 定義中包含這些參數：
@@ -1390,12 +1542,14 @@ image:StorageVirtualization_StorageSummary.png["顯示虛擬和備份儲存資�
 
 
 
+[[reporting-on-kubernetes-data]]
 === Kubernetes 數據報告
 
 Cloud Insights收集的 Kubernetes 資料（包括持久性磁碟區 (PV)、PVC、工作負載、叢集和命名空間）現在可用於報告，支援對 Kubernetes 指標進行退款、趨勢分析、預測、TTF 計算和其他業務報告。
 
 
 
+[[default-ontap-system-monitors-enabled-for-new-customers]]
 === 為新客戶啟用預設ONTAP系統監視器
 
 在新的Cloud Insights環境中，許多ONTAP系統監視器預設為啟用（即_Resumed_）。以前，大多數監視器預設為“暫停”狀態。由於各公司的業務需求各不相同，我們始終建議查看link:task_system_monitors.html["系統監視器"]在您的環境中，並根據您的警報需求暫停或恢復每個警報。
@@ -1403,10 +1557,12 @@ Cloud Insights收集的 Kubernetes 資料（包括持久性磁碟區 (PV)、PVC�
 '''
 
 
+[[april-2023]]
 == 2023年4月
 
 
 
+[[kubernetes-performance-monitoring-and-map]]
 === Kubernetes 效能監控與地圖
 
 這link:concept_kubernetes_network_monitoring_and_map.html["Kubernetes 網路效能與映射"]此功能透過映射 Kubernetes 工作負載之間的依賴關係來簡化故障排除。它提供對 Kubernetes 網路效能延遲和異常的即時可見性，以便在效能問題影響使用者之前識別它們。此功能透過分析和審核 Kubernetes 流量流幫助組織降低整體成本。
@@ -1421,6 +1577,7 @@ Kubernetes 效能監控和地圖可作為link:concept_preview_features.html["預
 
 
 
+[[ontap-essentials-security-dashboard]]
 === ONTAP Essentials 安全儀表板
 
 這link:concept_ontap_essentials.html#security["安全儀表板"]讓您即時查看目前的安全狀況，顯示硬體和軟體磁碟區加密、反勒索軟體狀態和叢集身分驗證方法的圖表。安全儀表板可用作link:concept_preview_features.html["預覽"]特徵。
@@ -1429,6 +1586,7 @@ image:OE_SecurityDashboard.png["ONTAP Essentials 安全儀表板"]
 
 
 
+[[reclaim-ontap-cold-storage]]
 === 回收ONTAP冷存儲
 
 _Reclaim ONTAP Cold Storage_ Insight 提供有關冷容量、潛在成本/電力節省以及ONTAP系統上捲的建議操作項目的資料。
@@ -1446,6 +1604,7 @@ _回收ONTAP冷儲存_ 被認為是link:concept_preview_features.html["_預覽_"
 
 
 
+[[subscription-notification-also-controls-banner-messages]]
 === 訂閱通知還控制橫幅訊息
 
 設定訂閱通知的收件者（管理 > 通知）現在還可以控制誰將看到與訂閱相關的產品內橫幅通知。
@@ -1454,6 +1613,7 @@ image:Subscription_Expiring_Banner.png["訂閱將於 2 天後到期橫幅範例"
 
 
 
+[[reporting-has-a-new-look]]
 === 報告煥然一新
 
 您會注意到Cloud Insights Reporting 畫面有了新的外觀，並且一些選單導航已經發生了變化。這些螢幕和導航變更已在當前link:reporting_overview.html["報告文檔"]。
@@ -1462,12 +1622,14 @@ image:Reporting_Menu.png["新的報告選單外觀"]
 
 
 
+[[monitors-paused-by-default]]
 === 預設暫停監控
 
 對於新的Cloud Insights環境，請注意link:task_system_monitors.html["系統定義的監視器"]預設不發送警報通知。您需要為想要向您發出警報的任何監視器啟用通知，方法是為該監視器新增一種或多種傳送方式。對於現有的Cloud Insights環境，對於目前處於_暫停_狀態的任何系統定義監視器，預設的_全域_通知收件者清單已被刪除。使用者定義的通知保持不變，目前活動的系統定義監視器的通知設定也保持不變。
 
 
 
+[[looking-for-the-api-metering-tab]]
 === 正在尋找 API 計量選項卡？
 
 API 計量已從訂閱頁面移至*管理 > API 存取*頁面。
@@ -1475,10 +1637,12 @@ API 計量已從訂閱頁面移至*管理 > API 存取*頁面。
 '''
 
 
+[[march-2023]]
 == 2023年3月
 
 
 
+[[cloud-connection-for-ontap-9-9-deprecated]]
 === ONTAP 9.9+ 版雲端連線已棄用
 
 ONTAP 9.9+ 資料收集器的雲端連線已被棄用。從 2023 年 4 月 4 日開始，您環境中的雲端連線資料收集器將不再收集數據，而是在輪詢時發生錯誤。在後續更新中，Cloud Connection 資料收集器將從Cloud Insights中完全刪除。
@@ -1488,10 +1652,12 @@ ONTAP 9.9+ 資料收集器的雲端連線已被棄用。從 2023 年 4 月 4 日
 '''
 
 
+[[january-2023]]
 == 2023年1月
 
 
 
+[[new-log-monitors]]
 === 新的日誌監視器
 
 我們增加了近二十個link:task_system_monitors.html["額外的系統監視器"]警告中斷的互連鏈路、心跳問題等。此外，還新增了三個新的資料保護日誌監視器，以對SnapMirror自動重新同步、 MetroCluster鏡像和FabricPool鏡像重新同步變更發出警報。
@@ -1500,6 +1666,7 @@ ONTAP 9.9+ 資料收集器的雲端連線已被棄用。從 2023 年 4 月 4 日
 
 
 
+[[csv-export-for-all-dashboard-table-widgets]]
 === 所有儀表板表格小工具的 .CSV 匯出
 
 確保資料的可存取性至關重要，因此我們為所有指標查詢、儀表板表小部件和物件登入頁面提供了 .CSV 匯出功能，無論您查詢的資料類型（資產或整合）為何。
@@ -1509,16 +1676,19 @@ ONTAP 9.9+ 資料收集器的雲端連線已被棄用。從 2023 年 4 月 4 日
 '''
 
 
+[[december-2022]]
 == 2022年12月
 
 
 
+[[explore-ransomware-protection-and-other-security-features-during-cloud-insights-trial]]
 === 在Cloud Insights試用期間探索勒索軟體防護和其他安全功能
 
 從今天開始，註冊新的Cloud Insights試用版可讓您探索勒索軟體偵測和自動用戶阻止回應策略等安全功能。如果您尚未註冊試用，請立即註冊！
 
 
 
+[[kubernetes-workloads-have-their-own-landing-page]]
 === Kubernetes 工作負載有自己的登陸頁面
 
 工作負載是 Kubernetes 環境的關鍵部分，因此Cloud Insights現在為這些工作負載提供了登入頁面。從這裡，您可以查看、探索和排除影響 Kubernetes 工作負載的問題。
@@ -1527,6 +1697,7 @@ image:Kubernetes_Workload_LP.png["Kubernetes 工作負載登陸頁面範例"]
 
 
 
+[[check-your-checksums]]
 === 檢查你的校驗和
 
 您要求我們在安裝 Windows 和 Linux 代理程式期間向您提供校驗和值，我們認為這是一個好主意。因此它們如下：
@@ -1535,6 +1706,7 @@ image:Agent_Checksum_Instructions.png["安裝期間顯示的代理程式校驗�
 
 
 
+[[log-alerting-improvements]]
 === 日誌警報改進
 
 
@@ -1557,6 +1729,7 @@ image:Log_Monitor_Duplicate.png["複製日誌監視器"]
 
 
 
+[[11-new-default-ontap-monitors-covering-snapmirror-for-business-continuity]]
 === 11 個新的預設ONTAP監視器涵蓋SnapMirror以實現業務連續性
 
 我們增加了近十幾個新的link:task_system_monitors.html#snapmirror-for-business-continuity-smbc-mediator-log-monitors["系統監視器"]適用於SnapMirror for Business Continuity (SMBC)，它會對 SMBC 憑證和ONTAP Mediator 的變更發出警報。
@@ -1564,10 +1737,12 @@ image:Log_Monitor_Duplicate.png["複製日誌監視器"]
 '''
 
 
+[[november-2022]]
 == 2022年11月
 
 
 
+[[more-than-40-new-security-data-collection-and-cvo-monitors]]
 === 超過 40 個新的安全、資料收集和 CVO 監視器！
 
 我們新增了數十個新的系統定義監視器，以提醒您有關雲端磁碟區、安全性和資料保護的潛在問題。了解有關這些顯示器的更多信息link:task_system_monitors.html#security-monitors["這裡"]。
@@ -1575,10 +1750,12 @@ image:Log_Monitor_Duplicate.png["複製日誌監視器"]
 '''
 
 
+[[october-2022]]
 == 2022年10月
 
 
 
+[[better-and-more-accurate-ransomware-detection-with-ontap-autonomous-ransomware-protection-integration]]
 === 透過ONTAP自主勒索軟體防護整合實現更好、更準確的勒索軟體偵測
 
 Cloud Secure透過與ONTAP整合改進勒索軟體偵測link:concept_cs_integration_with_ontap_arp.html["自主勒索軟體防護"]（ARP）。
@@ -1593,22 +1770,26 @@ Cloud Secure接收有關潛在磁碟區檔案加密活動的ONTAP ARP 事件，�
 '''
 
 
+[[september-2022]]
 == 2022年9月
 
 
 
+[[monitors-available-in-basic-edition]]
 === 基礎版中可用的監視器
 
 ONTAPlink:task_system_monitors.html["預設監視器"]現在可以在Cloud Insights Basic Edition 中使用。其中包括 70 多個基礎設施監視器和 30 個工作負載範例。
 
 
 
+[[ontap-power-and-storagegrid-dashboards]]
 === ONTAP Power 和StorageGRID儀表板
 
 儀表板庫包括一個用於ONTAP功率和溫度的新儀表板以及四個用於StorageGRID的儀表板。如果您的環境正在收集ONTAP功率指標和/或StorageGRID數據，請透過選擇 *+From Gallery* 來匯入這些儀表板。
 
 
 
+[[at-a-glance-threshold-visibility-in-tables]]
 === 表格中一目了然的閾值可見性
 
 條件格式可讓您在表格小工具中設定和突出顯示警告等級和臨界等級閾值，從而可以立即看到異常值和異常資料點。
@@ -1617,12 +1798,14 @@ image:ConditionalFormattingExample.png["條件格式範例"]
 
 
 
+[[security-monitor]]
 === 安全監視器
 
 當Cloud Insights偵測到ONTAP系統上停用了 FIPS 模式時，它會向您發出警報。閱讀更多link:task_system_monitors.html#security-monitors["系統監視器"]，並關注此處以獲取更多即將推出的安全監視器！
 
 
 
+[[chat-from-anywhere]]
 === 隨時隨地聊天
 
 透過選擇新的「幫助」>「即時聊天」鏈接，可以從任何Cloud Insights畫面與NetApp支援專家聊天。可透過螢幕右上角的「？」圖示取得協助。
@@ -1631,6 +1814,7 @@ image:Help_LiveChat.png["突出顯示即時聊天的幫助選單"]
 
 
 
+[[new-data-collectors]]
 === 新的數據收集器
 
 * Amazon S3（預覽版可用）
@@ -1640,12 +1824,14 @@ image:Help_LiveChat.png["突出顯示即時聊天的幫助選單"]
 
 
 
+[[other-data-collector-updates]]
 === 其他資料收集器更新
 
 現在，所有資料來源都已最佳化，以便在採集單元更新和/或修補後恢復效能輪詢。
 
 
 
+[[operating-system-support]]
 === 作業系統支援
 
 除了以下作業系統外， Cloud Insights擷取單元還支援以下作業系統link:https://docs.netapp.com/us-en/cloudinsights/concept_acquisition_unit_requirements.html["已經支持"]：
@@ -1656,10 +1842,12 @@ image:Help_LiveChat.png["突出顯示即時聊天的幫助選單"]
 '''
 
 
+[[august-2022]]
 == 2022年8月
 
 
 
+[[cloud-insights-has-a-new-look]]
 === Cloud Insights煥然一新！
 
 從本月開始，「監控和優化」已更名為*可觀察性*。您可以在這裡找到所有您喜歡的功能，例如儀表板、查詢、警報和報告。此外，在新的「安全性」選單下尋找「Cloud Secure」 。請注意，只有菜單發生了變化；功能保持不變。
@@ -1675,6 +1863,7 @@ image:New_Help_Menu_2022.png["幫助選單位於右上角"]
 
 
 
+[[not-sure-where-to-start-check-out-ontap-essentials]]
 === 不知道從哪裡開始？查看ONTAP Essentials！
 
 link:concept_ontap_essentials.html["* ONTAP基礎知識*"]是一組儀表板和工作流程，可提供NetApp ONTAP庫存、工作負載和資料保護的詳細視圖，包括儲存容量和效能的完整預測。您甚至可以看到是否有任何控制器正在高利用率運行。  ONTAP Essentials 是您滿足所有NetApp ONTAP監控需求的理想場所！
@@ -1685,6 +1874,7 @@ image:ONTAP_Essentials_Menu_and_screen.png["ONTAP Essentials 概覽儀表板"]
 
 
 
+[[storage-data-families-are-merged]]
 === 儲存資料系列已合併
 
 您要求了它，現在您已經得到了它。儲存以 2 為基數和以 10 為基數的資料單位現在合併為一個系列，從位元和位元組到太比特和太字節，從而可以更輕鬆地在儀表板上以您的方式顯示資料。數據速率現在也成為一個大家族。
@@ -1693,6 +1883,7 @@ image:DataFamilyMerged.png["下拉式選單顯示二進位和十進位資料系�
 
 
 
+[[how-much-power-is-my-storage-using]]
 === 我的儲存使用了多少電量？
 
 使用 netapp_ontap.storage_shelf、netapp_ontap.system_node 和 netapp_ontap.cluster（僅限功耗）指標顯示和監控您的ONTAP儲存架和節點功耗、溫度和風扇速度。
@@ -1701,6 +1892,7 @@ image:ONTAP_Power_Metrics_1.png["儲存功耗指標"]
 
 
 
+[[features-graduated-from-preview]]
 === 預覽版畢業的功能
 
 以下功能已退出預覽版，現在可供所有客戶使用：
@@ -1721,6 +1913,7 @@ image:ONTAP_Power_Metrics_1.png["儲存功耗指標"]
 |===
 
 
+[[hows-my-data-collection-health]]
 === 我的資料收集狀況如何？
 
 Cloud Insights為您的擷取單元提供了兩個新的心跳監視器，以及兩個監視器來提醒您資料收集器故障。這些可用於快速提醒您資料收集問題。
@@ -1737,24 +1930,28 @@ _資料收集_監控群組中現在有以下監控器可用：
 
 
 
+[[auto-renewing-api-tokens]]
 === 自動更新 API 令牌
 
 現在可以設定 API 存取令牌進行自動更新。透過啟用此功能，將自動為過期的令牌產生新的/刷新的 API 存取令牌。使用過期令牌的Cloud Insights代理程式將自動更新以使用相應的新/刷新的 API 存取令牌，從而使它們能夠繼續無縫運行。建立令牌時只需選取「自動更新令牌」框即可。此功能目前在 Kubernetes 平台上運行的Cloud Insights代理程式上受最新NetApp Kubernetes Monitoring Operator 的支援。
 
 
 
+[[basic-edition-gives-you-more-than-before]]
 === 基礎版為您提供比以前更多的功能
 
 您的試用期即將結束，但您還不確定訂閱是否適合您？基本版始終讓您有機會繼續使用Cloud Insights和您目前的ONTAP資料收集器，但現在您也可以繼續擷取 VMWare 版本、拓撲和 IOPS/吞吐量/延遲資料。在儲存系統上享有進階支援的NetApp客戶也將有權獲得Cloud Insights的支援。
 
 
 
+[[ready-to-learn-more]]
 === 準備好了解更多嗎？
 
 請查看幫助 > 支援頁面的「學習中心」部分，以取得NetApp University Cloud Insights課程的連結！
 
 
 
+[[operating-system-support]]
 === 作業系統支援
 
 除了以下作業系統外， Cloud Insights擷取單元還支援以下作業系統link:https://docs.netapp.com/us-en/cloudinsights/concept_acquisition_unit_requirements.html["已經支持"]：
@@ -1765,10 +1962,12 @@ _資料收集_監控群組中現在有以下監控器可用：
 '''
 
 
+[[june-2022]]
 == 2022年6月
 
 
 
+[[kubernetes-cluster-saturation-and-other-details]]
 === Kubernetes 叢集飽和度及其他細節
 
 Cloud Insights讓您比以往更輕鬆地探索 Kubernetes 環境，其改進的叢集詳細資訊頁面提供飽和度詳細資訊以及對命名空間和工作負載的更清晰的視圖。
@@ -1781,6 +1980,7 @@ image:Kubernetes_List_Page_new.png["顯示飽和度數字的群集清單頁面"]
 
 
 
+[[how-old-is-your-kubernetes-cluster]]
 === 您的 Kubernetes 叢集有多舊？
 
 您的集群是剛在世界上起步，還是已經經歷了漫長的數位化生命？  _Age_ 已被加入為 Kubernetes 節點收集的時間指標。
@@ -1789,6 +1989,7 @@ image:Kubernetes_Table_Showing_Age.png["Kubernetes 節點表顯示節點使用�
 
 
 
+[[capacity-time-to-full-forecasting]]
 === 產能滿載時間預測
 
 Cloud Insights提供了一個儀表板來預測每個受監控的內部磁碟區容量耗盡的天數。這些值有助於顯著降低停電風險。
@@ -1801,6 +2002,7 @@ TTF 計數器也適用於儲存體、儲存池和磁碟區。請繼續關注此�
 
 
 
+[[whats-changed-in-my-environment]]
 === 我的環境發生了什麼變化？
 
 您可以在日誌資源管理器中查看ONTAP變更日誌條目。
@@ -1809,6 +2011,7 @@ image:ChangeLogEntries.png["顯示變更日誌條目範例的圖像"]
 
 
 
+[[operating-system-support]]
 === 作業系統支援
 
 除了以下作業系統外， Cloud Insights擷取單元還支援以下作業系統link:https://docs.netapp.com/us-en/cloudinsights/concept_acquisition_unit_requirements.html["已經支持"]：
@@ -1819,12 +2022,14 @@ image:ChangeLogEntries.png["顯示變更日誌條目範例的圖像"]
 
 
 
+[[updated-telegraf-agent]]
 === 更新的 Telegraf 代理
 
 用於提取 Telegraf 整合資料的代理程式已更新至版本 *1.22.3*，效能和安全性均有所提升。希望更新的使用者可以參考link:task_config_telegraf_agent.html["代理安裝"]文件.代理程式的先前版本將繼續運行，無需用戶採取任何行動。
 
 
 
+[[preview-features]]
 === 預覽功能
 
 Cloud Insights 會定期推出許多令人興奮的全新預覽功能。如果您有興趣預覽其中一項或多項功能，請聯絡您的 NetApp 銷售團隊以了解更多資訊。
@@ -1846,10 +2051,12 @@ Cloud Insights 會定期推出許多令人興奮的全新預覽功能。如果�
 '''
 
 
+[[may-2022]]
 == 2022年5月
 
 
 
+[[chat-live-with-netapp-support]]
 === 與NetApp支援人員即時聊天
 
 現在您可以與NetApp支援人員即時聊天！在說明 > 支援頁面上，只需按一下聊天圖示或按一下「聯絡我們」部分中的_聊天_即可開始聊天會話。標準版和高級版用戶可在美國工作日享受聊天支援。
@@ -1858,6 +2065,7 @@ image:ChatIcon.png["聊天圖示顯示藍色NetApp “N”上方有笑臉"]
 
 
 
+[[kubernetes-operator]]
 === Kubernetes 操作員
 
 我們讓您更輕鬆地使用Cloud Insights的高階 Kubernetes 監控和叢集資源管理器。
@@ -1868,12 +2076,14 @@ image:ChatIcon.png["聊天圖示顯示藍色NetApp “N”上方有笑臉"]
 
 
 
+[[manage-users-and-invites-with-api]]
 === 使用 API 管理用戶和邀請
 
 現在您可以使用Cloud Insights強大的 API 管理使用者和邀請。閱讀更多link:https://docs.netapp.com/us-en/cloudinsights/API_Overview.html["API Swagger 文件"]。
 
 
 
+[[data-collection-alerts]]
 === 數據收集警報
 
 不要因為收集器失敗而錯過關鍵指標！
@@ -1882,6 +2092,7 @@ image:ChatIcon.png["聊天圖示顯示藍色NetApp “N”上方有笑臉"]
 
 
 
+[[alert-on-ontap-storage-changes]]
 === ONTAP儲存變更警報
 
 不要讓意外的儲存變更導致中斷！
@@ -1890,6 +2101,7 @@ image:ChatIcon.png["聊天圖示顯示藍色NetApp “N”上方有笑臉"]
 
 
 
+[[preview-features]]
 === 預覽功能
 
 Cloud Insights 會定期推出許多令人興奮的全新預覽功能。如果您有興趣預覽其中一項或多項功能，請聯絡您的 NetApp 銷售團隊以了解更多資訊。
@@ -1914,16 +2126,19 @@ Cloud Insights 會定期推出許多令人興奮的全新預覽功能。如果�
 '''
 
 
+[[april-2022]]
 == 2022年4月
 
 
 
+[[share-your-feedback]]
 === 分享您的回饋！
 
 我們希望您的意見能幫助塑造Cloud Insights。透過參與 NetApp 的 *Insights to Action* 計畫來贏取積分和獎品。link:https://netapp.co1.qualtrics.com/jfe/form/SV_2aVWcE58J7oIDs1["*立即註冊*"] ！
 
 
 
+[[updated-dashboard-editor]]
 === 更新的儀表板編輯器
 
 我們已經徹底改進了儀表板建立工具，以便您更輕鬆、更快速地實現資料視覺化。導覽至Cloud Insights的「儀表板」頁面來編輯現有儀表板、從我們的儀表板庫中新增儀表板或建立您自己的新儀表板進行檢查。
@@ -1943,12 +2158,14 @@ image:CountAggregationExample1.png["顯示計數的聚合下拉式選單"]
 
 
 
+[[enhanced-monitoring-for-your-kubernetes-infrastructure]]
 === 增強對 Kubernetes 基礎架構的監控
 
 Cloud Insights會在建立或刪除 pod、守護程式集和副本集時以及建立新部署時向您發出警報，讓您隨時掌握 Kubernetes 環境中的變更。  Kubernetes 監視器預設為_暫停_狀態，因此您應該只啟用您需要的特定監視器。
 
 
 
+[[preview-features]]
 === 預覽功能
 
 Cloud Insights 會定期推出許多令人興奮的全新預覽功能。如果您有興趣預覽其中一項或多項功能，請聯絡您的 NetApp 銷售團隊以了解更多資訊。
@@ -1969,6 +2186,7 @@ Cloud Insights 會定期推出許多令人興奮的全新預覽功能。如果�
 |===
 
 
+[[new-data-collector]]
 === 新的數據收集器
 
 * *Cohesity SmartFiles* - 這個基於 REST API 的收集器將獲取一個 Cohesity 集群，發現「視圖」（作為 CI 內部卷）、各個節點，以及收集效能指標。
@@ -1976,6 +2194,7 @@ Cloud Insights 會定期推出許多令人興奮的全新預覽功能。如果�
 
 
 
+[[other-data-collector-updates]]
 === 其他資料收集器更新
 
 以下數據收集器的性能數據收集和顯示已改進：
@@ -1990,16 +2209,19 @@ Cloud Insights 會定期推出許多令人興奮的全新預覽功能。如果�
 '''
 
 
+[[march-2022]]
 == 2022年3月
 
 
 
+[[cloud-connection-for-ontap-9-9]]
 === ONTAP 9.9+ 的雲端連接
 
 這link:task_dc_na_cloud_connection.html["適用於ONTAP 9.9+ 的NetApp雲端連接"]資料擷取器無需安裝外部擷取單元，從而簡化了故障排除、維護和初始部署。
 
 
 
+[[new-fsx-for-netapp-ontap-monitors]]
 === 新的 FSx for NetApp ONTAP監視器
 
 NetApp新的link:task_system_monitors.html["系統定義的監視器"]適用於基礎設施（指標）和工作負載（日誌）。
@@ -2008,6 +2230,7 @@ image:FSx_System_Monitors_Metrics.png["FSx 基礎設施監控器"] image:FSx_Sys
 
 
 
+[[new-cloud-secure-features-available-to-all]]
 === 全新Cloud Secure功能對所有人開放
 
 您的環境比以往更安全，以下Cloud Secure功能現已全面推出：
@@ -2025,12 +2248,14 @@ image:FSx_System_Monitors_Metrics.png["FSx 基礎設施監控器"] image:FSx_Sys
 |===
 
 
+[[updated-telegraf-agent]]
 === 更新的 Telegraf 代理
 
 用於提取 Telegraf 整合資料的代理程式已更新至版本 *1.21.2*，效能和安全性均有所提升。希望更新的使用者可以參考link:task_config_telegraf_agent.html["代理安裝"]文件.代理程式的先前版本將繼續運行，無需用戶採取任何行動。
 
 
 
+[[data-collector-updates]]
 === 數據收集器更新
 
 * Broadcom 光纖通道交換器資料收集器已經最佳化，可以減少每次庫存輪詢時發出的 CLI 命令數量。
@@ -2039,10 +2264,12 @@ image:FSx_System_Monitors_Metrics.png["FSx 基礎設施監控器"] image:FSx_Sys
 '''
 
 
+[[february-2022]]
 == 2022年2月
 
 
 
+[[cloud-insights-addresses-apache-log4j-vulnerabilities]]
 === Cloud Insights修復了 Apache Log4j 漏洞
 
 客戶安全是NetApp的首要任務。  Cloud Insights對其軟體庫進行了更新，以解決最近的 Apache Log4j 漏洞。
@@ -2055,6 +2282,7 @@ link:https://security.netapp.com/advisory/ntap-20211210-0007/["CVE-2021-44228"] 
 
 
 
+[[kubernetes-namespace-detail-page]]
 === Kubernetes 命名空間詳細資料頁面
 
 現在，您可以比以往更好地探索 Kubernetes 環境，並為叢集的命名空間提供資訊豐富的詳細資訊頁面。命名空間詳情頁面提供了命名空間所使用的所有資產的摘要，包括所有後端儲存資源及其容量利用率。
@@ -2064,16 +2292,19 @@ image:Kubernetes_Namespace_Detail_Example_2.png["Kubernetes 命名空間詳細�
 '''
 
 
+[[december-2021]]
 == 2021年12月
 
 
 
+[[deeper-integration-for-ontap-systems]]
 === ONTAP系統的更深層集成
 
 透過與NetApp事件管理系統 (EMS) 的新集成，簡化ONTAP硬體故障等的警報。link:task_system_monitors.html["探索和警報"]基於Cloud Insights中的低階ONTAP訊息來通知和改善故障排除工作流程，並進一步減少對ONTAP元素管理工具的依賴。
 
 
 
+[[querying-logs]]
 === 查詢日誌
 
 對於ONTAP系統， Cloud Insights Queries 包含強大的link:concept_log_explorer.html["日誌瀏覽器"]，讓您輕鬆調查並排除 EMS 日誌條目故障。
@@ -2082,12 +2313,14 @@ image:LogQueryExplorer.png["日誌查詢"]
 
 
 
+[[data-collector-level-notifications]]
 === 資料收集器層級的通知。
 
 除了系統定義和自訂建立的警報監視器之外，您還可以為ONTAP資料收集器設定警報通知，從而允許您指定收集器級警報的接收者，而與其他監視器警報無關。
 
 
 
+[[greater-flexibility-of-cloud-secure-roles]]
 === Cloud Secure角色的靈活性更高
 
 可以根據以下情況授予使用者存取Cloud Secure功能的權限link:concept_user_roles.html#permission-levels["角色"]由管理員設定：
@@ -2108,12 +2341,14 @@ image:LogQueryExplorer.png["日誌查詢"]
 |===
 
 
+[[operating-system-support]]
 === 作業系統支援
 
 CentOS 8.x 支援正在被 *CentOS 8 Stream* 支援取代。  CentOS 8.x 將於 2021 年 12 月 31 日終止服務。
 
 
 
+[[data-collector-updates]]
 === 數據收集器更新
 
 為了反映供應商的變化，我們加入了一些Cloud Insights資料收集器名稱：
@@ -2135,10 +2370,12 @@ CentOS 8.x 支援正在被 *CentOS 8 Stream* 支援取代。  CentOS 8.x 將於 
 '''
 
 
+[[november-2021]]
 == 2021年11月
 
 
 
+[[adaptive-dashboards]]
 === 自適應儀表板
 
 _屬性的新變數和在小部件中使用變數的能力_。
@@ -2149,12 +2386,14 @@ image:Variables_Drop_Down_Showing_Annotations.png["變數中的下拉註釋"] im
 
 
 
+[[access-the-reporting-database-via-api]]
 === 透過 API 存取報告資料庫
 
 增強與第三方報告、ITSM 和自動化工具整合的功能： Cloud Insights強大的link:API_Overview.html["API"]允許使用者直接查詢Cloud Insights Reporting 資料庫，而無需經過 Cognos Reporting 環境。
 
 
 
+[[pod-tables-on-vm-landing-page]]
 === VM 登陸頁上的 Pod 表
 
 VM 和使用它們的 Kubernetes Pod 之間的無縫導航：為了改善故障排除和效能餘裕管理，相關 Kubernetes Pod 的表格現在將出現在 VM 登入頁面上。
@@ -2163,6 +2402,7 @@ image:Kubernetes_Pod_Table_on_VM_Page.png["VM 登入頁面上的 Kubernetes Pod 
 
 
 
+[[data-collector-updates]]
 === 數據收集器更新
 
 * ECS 現在報告儲存和節點的韌體
@@ -2174,6 +2414,7 @@ image:Kubernetes_Pod_Table_on_VM_Page.png["VM 登入頁面上的 Kubernetes Pod 
 
 
 
+[[additional-operating-systems-supported]]
 === 支援的其他作業系統
 
 除了已經支援的作業系統之外， Cloud Insights採集單元還支援以下作業系統：
@@ -2186,10 +2427,12 @@ image:Kubernetes_Pod_Table_on_VM_Page.png["VM 登入頁面上的 Kubernetes Pod 
 '''
 
 
+[[october-2021]]
 == 2021年10月
 
 
 
+[[filters-on-k8s-explorer-pages]]
 === K8S Explorer 頁面上的篩選器
 
 link:kubernetes_landing_page.html["Kubernetes 資源管理器"]頁面過濾器讓您可以集中控制 Kubernetes 叢集、節點和 pod 探索所顯示的資料。
@@ -2198,6 +2441,7 @@ image:Filter_Kubernetes_Explorer.png["Kubernetes Explorer 過濾範例"]
 
 
 
+[[k8s-data-for-reporting]]
 === 用於報告的 K8s 數據
 
 Kubernetes 資料現在可用於報告，讓您可以建立費用分攤或其他報告。為了將 Kubernetes 退款資料傳遞到 Reporting，您必須與 Kubernetes 叢集及其後端儲存建立活動連接，並且Cloud Insights必須從中接收資料。如果沒有從後端儲存收到數據， Cloud Insights就無法將 Kubernetes 物件資料傳送到 Reporting。
@@ -2206,12 +2450,14 @@ image:Kubernetes_ETL_Example.png["退款報告中顯示的 Kubernetes 數據"]
 
 
 
+[[dark-theme-has-arrived]]
 === 黑暗主題已經到來
 
 許多人都要求一個黑暗主題，而Cloud Insights已經給了答案。若要在明暗主題之間切換，請按一下使用者名稱旁的下拉式功能表。image:DarkModeSwitch.png["可在「使用者」下拉式選單中切換到深色主題"] image:DarkModeDashboard.png["深色主題下顯示的典型儀表板影像"]
 
 
 
+[[data-collector-support]]
 === 數據收集器支援
 
 我們對Cloud Insights資料收集器進行了一些改進。以下是一些亮點：
@@ -2222,16 +2468,19 @@ image:Kubernetes_ETL_Example.png["退款報告中顯示的 Kubernetes 數據"]
 '''
 
 
+[[september-2021]]
 == 2021年9月
 
 
 
+[[performance-policies-are-now-monitors]]
 === 績效政策現在成為監視器
 
 監視器和警報已經取代了Cloud Insights中的效能策略和違規行為。link:task_create_monitor.html["使用監視器發出警報"]提供更大的靈活性和對環境中潛在問題或趨勢的洞察力。
 
 
 
+[[autocomplete-suggestions-wildcards-and-expressions-in-monitors]]
 === 監視器中的自動完成建議、通配符和表達式
 
 建立警報監視器時，現在可以預測輸入過濾器，從而讓您輕鬆搜尋並找到監視器的指標或屬性。此外，您也可以選擇根據您鍵入的文字建立通配符過濾器。
@@ -2240,12 +2489,14 @@ image:Type-Ahead_Monitor_1.png["監視器中的預先輸入過濾器"]
 
 
 
+[[updated-telegraf-agent]]
 === 更新的 Telegraf 代理
 
 用於提取 Telegraf 整合資料的代理程式已更新至版本 *1.19.3*，效能和安全性均有所改善。希望更新的使用者可以參考link:task_config_telegraf_agent.html["代理安裝"]文件.代理程式的先前版本將繼續運行，無需用戶採取任何行動。
 
 
 
+[[data-collector-support]]
 === 數據收集器支援
 
 我們對Cloud Insights資料收集器進行了一些改進。以下是一些亮點：
@@ -2271,16 +2522,19 @@ image:Type-Ahead_Monitor_1.png["監視器中的預先輸入過濾器"]
 '''
 
 
+[[august-2021]]
 == 2021年8月
 
 
 
+[[new-audit-page-user-interface]]
 === 新的審計頁面使用者介面
 
 這link:concept_audit.html["審計頁面"]提供更清晰的介面，現在允許將審計事件匯出到.CSV 檔案。
 
 
 
+[[enhanced-user-role-management]]
 === 增強的使用者角色管理
 
 Cloud Insights現在允許更自由地分配使用者角色和存取控制。現在可以分別為使用者分配監控、報告和Cloud Secure的細微權限。
@@ -2292,10 +2546,12 @@ link:https://docs.netapp.com/us-en/cloudinsights/concept_user_roles.html["了解
 '''
 
 
+[[june-2021]]
 == 2021年6月
 
 
 
+[[autocomplete-suggestions-wildcards-and-expressions-in-filters]]
 === 過濾器中的自動完成建議、通配符和表達式
 
 使用此版本的Cloud Insights，您不再需要知道在查詢或小部件中過濾的所有可能的名稱和值。過濾時，您只需開始輸入，Cloud Insights 就會根據您的文字建議值。無需再提前查找應用程式名稱或 Kubernetes 屬性，只需找到您想要在小工具中顯示的內容即可。
@@ -2310,6 +2566,7 @@ image:Type-Ahead-Example-ingest.png["通配符過濾器"]
 
 
 
+[[apis-available-by-edition]]
 === 各版本提供的 API
 
 Cloud Insights強大的 API 比以往更容易訪問，現在標準版和高級版中均提供 Alerts API。每個版本均提供以下 API：
@@ -2335,6 +2592,7 @@ Cloud Insights強大的 API 比以往更容易訪問，現在標準版和高級�
 |===
 
 
+[[kubernetes-pv-and-pod-visibility]]
 === Kubernetes PV 和 Pod 可見性
 
 Cloud Insights可讓您查看 Kubernetes 環境的後端存儲，讓您深入了解 Kubernetes Pod 和持久性磁碟區 (PV)。現在，您可以追蹤 PV 計數器，例如 IOPS、延遲和吞吐量，從單一 Pod 的使用情況，透過 PV 計數器到 PV，一直到後端儲存裝置。
@@ -2347,6 +2605,7 @@ image:Kubernetes_PV_Table.png["Kubernetes PV 表"] image:Kubernetes_Pod_Table.pn
 
 
 
+[[kubernetes-node-to-vm-links]]
 === Kubernetes 節點到虛擬機器的鏈接
 
 在 Kubernetes Node 頁面上，您現在可以按一下開啟 Node 的 VM 頁面。  VM 頁面還包含傳回節點本身的連結。
@@ -2355,18 +2614,21 @@ image:Kubernetes_Node_Page_with_VM_Link.png["顯示虛擬機器連結的 Kuberne
 
 
 
+[[alert-monitors-replacing-performance-policies]]
 === 警報監視器取代效能策略
 
 為了實現多個閾值、webhook 和電子郵件警報傳遞、使用單一介面對所有指標發出警報等額外優勢， Cloud Insights將在 2021 年 7 月和 8 月期間將標準版和高級版客戶從 *性能策略* 轉換為 *監控器*。詳細了解link:https://docs.netapp.com/us-en/cloudinsights/task_create_monitor.html["警報和監視器"]，敬請期待這項令人興奮的變化。
 
 
 
+[[cloud-secure-supports-nfs]]
 === Cloud Secure支援 NFS
 
 Cloud Secure現在支援 NFS for ONTAP資料收集。監控 SMB 和 NFS 使用者存取權以保護您的資料免受勒索軟體攻擊。此外， Cloud Secure支援 Active-Directory 和 LDAP 使用者目錄來收集 NFS 使用者屬性。
 
 
 
+[[cloud-secure-snapshot-purge]]
 === Cloud Secure快照清除
 
 Cloud Secure會根據快照清除設定自動刪除快照，以節省儲存空間並減少手動刪除快照的需要。
@@ -2375,6 +2637,7 @@ image:CloudSecure_SnapshotPurgeSettings.png["清除設定"]
 
 
 
+[[cloud-secure-data-collection-speed]]
 === Cloud Secure資料收集速度
 
 單一資料收集代理系統現在每秒可以向Cloud Secure發布多達 20,000 個事件。
@@ -2382,18 +2645,21 @@ image:CloudSecure_SnapshotPurgeSettings.png["清除設定"]
 '''
 
 
+[[may-2021]]
 == 2021年5月
 
 以下是我們在四月做出的一些改變：
 
 
 
+[[updated-telegraf-agent]]
 === 更新的 Telegraf 代理
 
 用於提取 Telegraf 整合資料的代理程式已更新至 1.17.3 版本，效能和安全性均有所改善。希望更新的使用者可以參考link:https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent.html["代理安裝"]文件.代理程式的先前版本將繼續運行，無需用戶採取任何行動。
 
 
 
+[[add-corrective-actions-to-an-alert]]
 === 向警報添加糾正措施
 
 現在，您可以在建立或修改監視器時透過填寫「新增警報描述」部分來新增可選描述以及其他見解和/或糾正措施。描述將與警報一起發送。  _見解和糾正措施_欄位可以提供處理警報的詳細步驟和指導，並將顯示在警報登陸頁面的摘要部分。
@@ -2402,6 +2668,7 @@ image:Monitors_Alert_Description.png["警報糾正措施和描述"]
 
 
 
+[[cloud-insights-apis-for-all-editions]]
 === 所有版本的Cloud Insights API
 
 現在， Cloud Insights的所有版本均提供 API 存取。基礎版用戶現在可以自動執行採集單元和資料收集器的操作，標準版用戶可以查詢指標並提取自訂指標。進階版繼續允許充分使用所有 API 類別。
@@ -2430,10 +2697,12 @@ image:Monitors_Alert_Description.png["警報糾正措施和描述"]
 '''
 
 
+[[april-2021]]
 == 2021年4月
 
 
 
+[[easier-management-of-monitors]]
 === 更輕鬆地管理監視器
 
 link:task_create_monitor.html#monitor-groups["監視器分組"]簡化您環境中的監視器的管理。現在可以將多個監視器組合在一起並暫停作為一個監視器。例如，如果您在基礎架構堆疊上發生更新，則可以透過按一下暫停所有這些裝置的警報。
@@ -2444,6 +2713,7 @@ image:Monitors_GroupList.png["監視器分組"]
 
 
 
+[[enhanced-alerting-options-using-webhooks]]
 === 使用 Webhook 增強警報選項
 
 許多商業應用程式支援link:task_create_webhook.html["Webhook"]作為標準輸入接口。  Cloud Insights現在支援許多這樣的交付管道，為 Slack、PagerDuty、Teams 和 Discord 提供預設模板，此外還提供可自訂的通用 webhook 來支援許多其他應用程式。
@@ -2452,12 +2722,14 @@ image:Webhooks_Notifications_sm.png["Webhooks 通知"]
 
 
 
+[[improved-device-identification]]
 === 改進的設備識別
 
 為了改善監控和故障排除以及提供準確的報告，了解設備的名稱而不是其 IP 位址或其他識別碼會很有幫助。  Cloud Insights現在採用一種自動方式來識別環境中儲存和實體主機設備的名稱，使用一種基於規則的方法，稱為link:concept_device_resolution_overview.html["*設備解析度*"]，可在*管理*選單中找到。
 
 
 
+[[you-asked-for-more]]
 === 你要求更多！
 
 客戶普遍要求提供更多用於視覺化資料範圍的預設選項，因此我們新增了以下五個新選項，現在可以透過時間範圍選擇器在整個服務中使用：
@@ -2471,18 +2743,21 @@ image:Webhooks_Notifications_sm.png["Webhooks 通知"]
 
 
 
+[[multiple-subscriptions-in-one-cloud-insights-environment]]
 === 一個Cloud Insights環境中的多個訂閱
 
 從 4 月 2 日開始， Cloud Insights支援客戶在單一Cloud Insights實例中訂閱相同版本類型的多個訂閱。這使得客戶能夠將Cloud Insights訂閱的部分內容與基礎設施購買合併在一起。聯絡NetApp銷售人員以取得多個訂閱的協助。
 
 
 
+[[choose-your-path]]
 === 選擇你的道路
 
 在設定Cloud Insights時，您現在可以選擇從監控和警報還是勒索軟體和內部威脅偵測開始。 Cloud Insights將根據您選擇的路徑配置您的起始環境。之後您可以隨時配置其他路徑。
 
 
 
+[[easier-cloud-secure-onboarding]]
 === 更輕鬆的Cloud Secure入職
 
 有了新的分步設定清單，開始使用Cloud Secure比以往任何時候都更容易。
@@ -2494,16 +2769,19 @@ image:CloudSecure_SetupChecklist.png["Cloud Secure檢查清單"]
 '''
 
 
+[[february-2021]]
 == 2021年二月
 
 
 
+[[updated-telegraf-agent]]
 === 更新的 Telegraf 代理
 
 用於提取 Telegraf 整合資料的代理程式已更新至 1.17.0 版本，其中包含漏洞和錯誤修復。
 
 
 
+[[cloud-cost-analyzer]]
 === 雲端成本分析器
 
 體驗NetApp Spot 與 Cloud Cost 的強大功能，它可以提供過去、現在和預計支出的詳細成本分析，讓您可以了解環境中的雲端使用情況。雲端成本儀表板可以清晰地查看雲端費用，並深入了解各個工作負載、帳戶和服務。
@@ -2519,6 +2797,7 @@ image:CloudSecure_SetupChecklist.png["Cloud Secure檢查清單"]
 
 
 
+[[querying-for-objects-having-null-values-using-filters]]
 === 使用篩選器查詢具有空值的對象
 
 Cloud Insights現在允許透過使用篩選器來搜尋具有空/無值的屬性和指標。您可以在以下位置對任何屬性/指標執行此篩選：
@@ -2535,6 +2814,7 @@ image:Filter_Null_Example.png["下拉式選單中的空過濾器"]
 
 
 
+[[multi-region-support]]
 === 多區域支持
 
 從今天開始，我們在全球不同地區提供Cloud Insights服務，這有利於提高美國以外客戶的效能並增強安全性。  Cloud Insights/ Cloud Secure根據您建立環境的區域儲存資訊。
@@ -2544,10 +2824,12 @@ image:Filter_Null_Example.png["下拉式選單中的空過濾器"]
 '''
 
 
+[[january-2021]]
 == 2021年1月
 
 
 
+[[additional-ontap-metrics-renamed]]
 === 已重新命名的其他ONTAP指標
 
 作為我們不斷努力提高ONTAP系統資料收集效率的一部分，以下ONTAP指標已被重新命名。
@@ -2689,6 +2971,7 @@ image:Filter_Null_Example.png["下拉式選單中的空過濾器"]
 |===
 
 
+[[new-kubernetes-explorer]]
 === 新的 Kubernetes 瀏覽器
 
 這link:kubernetes_landing_page.html["Kubernetes 資源管理器"]提供 Kubernetes 叢集的簡單拓撲視圖，即使是非專家也可以快速識別從叢集層級到容器和儲存的問題和依賴關係。
@@ -2701,18 +2984,21 @@ image:Kubernetes_Cluster_Detail_Example.png["Kubernetes 資源管理器"]
 
 
 
+[[acquisition-unit-detail-page]]
 === 採集單元詳情頁面
 
 採購單位現在有自己的登陸頁面，為每個 AU 提供有用的詳細資訊以及有助於排除故障的資訊。這link:task_configure_acquisition_unit.html#viewing-au-details["AU 詳情頁面"]提供 AU 資料收集器的連結以及有用的狀態資訊。
 
 
 
+[[cloud-secure-docker-dependency-removed]]
 === 已刪除Cloud Secure Docker 依賴項
 
 Cloud Secure 對 Docker 的依賴已被消除。  Cloud Secure代理安裝不再需要 Docker。
 
 
 
+[[reporting-user-roles]]
 === 報告使用者角色
 
 如果您擁有帶有報告功能的Cloud Insights Premium 版本，則您環境中的每個Cloud Insights用戶也都擁有到報告應用程式（即 Cognos）的單一登入 (SSO)；透過點擊選單中的 *報告* 鏈接，他們將自動登入報告。
@@ -2741,6 +3027,7 @@ IMPORTANT: 如果您是高級版的現有客戶，並希望保留您的報告，
 
 
 
+[[new-api-category-for-data-ingestion]]
 === 資料擷取的新 API 類別
 
 Cloud Insights新增了 *資料擷取* API 類別，讓您可以更好地控制自訂資料和代理程式。可以在Cloud Insights中透過導覽至 *管理 > API 存取* 並點擊 _API 文件_ 連結來找到此 API 類別和其他 API 類別的詳細文件。您也可以在註釋欄位中為 AU 附加註釋，該註釋會顯示在 AU 詳細資料頁面和 AU 清單頁面上。

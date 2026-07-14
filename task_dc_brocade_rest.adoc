@@ -26,11 +26,12 @@ userConfig --add NetAppCIUser -r 使用者 -l 1-128 -c 使用者 -p Qwerty！
 
 
 
+[[terminology]]
 == 術語
 
 Data Infrastructure Insights從Brocade FOS REST 資料收集器取得以下庫存資訊。對於Data Infrastructure Insights取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 供應商/型號術語 | Data Infrastructure Insights術語 
 
@@ -56,6 +57,7 @@ Data Infrastructure Insights從Brocade FOS REST 資料收集器取得以下庫�
 
 
 
+[[requirements]]
 == 要求
 
 * 結構中的所有交換器都必須具有 TCP 連線。此資料收集器類型將為結構中的每個裝置無縫嘗試 HTTP 和 HTTPS。如果選取「發現結構中的所有交換器」複選框，Data Infrastructure Insights將識別結構中的所有交換器；但是，它需要與這些額外的交換器建立 TCP 連線才能發現它們。
@@ -64,9 +66,10 @@ Data Infrastructure Insights從Brocade FOS REST 資料收集器取得以下庫�
 
 
 
+[[configuration]]
 == 配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -81,9 +84,10 @@ Data Infrastructure Insights從Brocade FOS REST 資料收集器取得以下庫�
 |===
 
 
+[[advanced-configuration]]
 == 進階配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -110,15 +114,17 @@ Data Infrastructure Insights從Brocade FOS REST 資料收集器取得以下庫�
 |===
 
 
+[[troubleshooting]]
 == 故障排除
 
 如果您在使用此資料收集器時遇到問題，請嘗試以下操作：
 
 
 
+[[inventory]]
 === 存貨
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 問題： | 試試一下： 
 

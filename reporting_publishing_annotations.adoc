@@ -10,6 +10,7 @@ keywords: reporting, annotations, publish, unpublish, data warehouse, dwh
 
 
 
+[[publishing-and-unpublishing-annotations-for-reporting]]
 == 發布和取消發布報告註釋
 
 [role="lead"]
@@ -17,12 +18,14 @@ keywords: reporting, annotations, publish, unpublish, data warehouse, dwh
 
 
 
+[[publishing-annotations-for-reporting]]
 == 發布報告註釋
 
 在Data Infrastructure Insights中建立註釋後，您可以將其發布以在報表中使用。
 
 
 
+[[steps-to-publish-annotations]]
 === 發布註釋的步驟
 
 . 導覽至「可觀測性 > 豐富 > 註解」頁面，然後選擇「報表註解」標籤。
@@ -39,12 +42,14 @@ keywords: reporting, annotations, publish, unpublish, data warehouse, dwh
 ====
 
 
+[[unpublishing-annotations-for-reporting]]
 == 取消發布報告註釋
 
 有時您可能需要刪除或取消發布註釋，以便它們不再用於報表。例如，某個註釋可能不再需要，或者它可能包含不應出現在報告中的過時資訊。
 
 
 
+[[steps-to-unpublish-annotations]]
 === 取消發布註解的步驟
 
 在取消發布註釋之前，請注意此操作將影響使用該註釋的任何現有報告。報告可能需要編輯或專業服務協助才能刪除註釋參考資訊。
@@ -64,6 +69,7 @@ keywords: reporting, annotations, publish, unpublish, data warehouse, dwh
 ====
 
 
+[[impact-on-existing-reports]]
 == 對現有報告的影響
 
 刪除或取消發布註釋可能需要修改引用這些註釋的現有報告。請考慮以下情況：

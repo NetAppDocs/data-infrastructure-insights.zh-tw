@@ -19,12 +19,14 @@ image:anomaly_detection_expert_view.png["顯示檢測到的異常的圖表"]
 
 
 
+[[what-is-anomaly-detection]]
 == 什麼是異常檢測？
 
 當某個指標的平均值與前幾週該指標的加權平均值相差若干個標準差，且最近幾週的權重大於前幾週時，就會出現異常。Data Infrastructure Insights提供監控數據並在檢測到異常時發出警報的能力。您可以選擇設定檢測的“靈敏度”等級。例如，當平均值與平均值的標準差較小時，靈敏度會更高，從而導致產生更多警報。相反，敏感度越低 = 平均值的標準差越大 = 警報越少。
 
 
 
+[[anomaly-detection-monitoring-differs-from-threshold-monitoring]]
 === 異常檢測監控不同於閾值監控。
 
 * 當您對特定指標有預定義閾值時，*基於閾值的監控*就會起作用。換句話說，當您清楚地了解預期結果（即在正常範圍內）時。
@@ -39,6 +41,7 @@ image:ADMonitor_blurb.png["異常檢測監視器適用於您想知道峰值或�
 
 
 
+[[when-would-i-need-anomaly-detection]]
 == 我什麼時候需要異常檢測？
 
 異常偵測監控可以為許多情況提供有用的警報，包括以下情況：
@@ -50,6 +53,7 @@ image:ADMonitor_blurb.png["異常檢測監視器適用於您想知道峰值或�
 
 
 
+[[creating-an-anomaly-detection-monitor]]
 == 建立異常檢測監視器
 
 若要對異常發出警報，請透過導覽至 *可觀察性 > 警報 > +監控* 來建立監視器。選擇“異常檢測監視器”作為監視器類型。
@@ -79,6 +83,7 @@ NOTE: 建立監視器時，DII 會查看前一周的任何現有數據，以發�
 
 
 
+[[viewing-the-anomalies]]
 == 查看異常
 
 在警報登陸頁面上，偵測到異常時觸發的警報將在圖表中顯示一個突出顯示的帶，從指標超出預測範圍的時間到移回該範圍之內的時間。

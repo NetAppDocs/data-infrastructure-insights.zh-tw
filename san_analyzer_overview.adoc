@@ -20,6 +20,7 @@ image:san_analyzer_example_with_panel.png["儲存系統的 SAN Analyzer 拓樸�
 
 
 
+[[explore-connections-among-your-assets]]
 == 探索資產之間的聯繫
 
 選擇 *Observability > Analyze > SAN Analyzer* 來查看 SAN Analyzer。為應用程式、主機、結構和/或儲存設定過濾器。顯示物件的地圖，其中顯示了連接的物件。將滑鼠懸停在某個物件上即可查看該連線的流量指標。
@@ -45,6 +46,7 @@ image:san_analyzer_iscsi_traffic.png["反白顯示 iSCSI 流量"]
 
 
 
+[[troubleshooting-tips]]
 == 故障排除提示
 
 如果遇到問題，請嘗試以下方法：

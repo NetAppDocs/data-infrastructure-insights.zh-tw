@@ -14,11 +14,12 @@ Data Infrastructure Insights使用Brocade FC 交換器 (SSH) 資料來源來發�
 
 
 
+[[terminology]]
 == 術語
 
 Data Infrastructure Insights從Brocade FC 交換器資料收集器取得以下庫存資訊。對於Data Infrastructure Insights取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 供應商/型號術語 | Data Infrastructure Insights術語 
 
@@ -47,6 +48,7 @@ Data Infrastructure Insights從Brocade FC 交換器資料收集器取得以下�
 
 
 
+[[requirements]]
 == 要求
 
 * Data Infrastructure Insights採集單元 (AU) 將啟動與Brocade交換器上的 TCP 連接埠 22 的連線以收集庫存資料。  AU 也將啟動與 UDP 連接埠 161 的連線以收集效能資料。
@@ -58,9 +60,10 @@ Data Infrastructure Insights從Brocade FC 交換器資料收集器取得以下�
 
 
 
+[[configuration]]
 == 配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -87,9 +90,10 @@ Data Infrastructure Insights從Brocade FC 交換器資料收集器取得以下�
 |===
 
 
+[[advanced-configuration]]
 == 進階配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -134,15 +138,17 @@ Data Infrastructure Insights從Brocade FC 交換器資料收集器取得以下�
 |===
 
 
+[[troubleshooting]]
 == 故障排除
 
 如果您在使用此資料收集器時遇到問題，請嘗試以下操作：
 
 
 
+[[inventory]]
 === 存貨
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 問題： | 試試一下： 
 
@@ -163,9 +169,10 @@ Data Infrastructure Insights從Brocade FC 交換器資料收集器取得以下�
 |===
 
 
+[[performance]]
 === 表現
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 問題： | 試試一下： 
 

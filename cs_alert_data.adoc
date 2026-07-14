@@ -20,6 +20,7 @@ image:CloudSecureAlertsListPage.png["警報列表"]
 
 
 
+[[alert]]
 == 警報
 
 警報清單顯示一個圖表，顯示在選定時間範圍內發生的潛在攻擊和/或警告的總數，後面是該時間範圍內發生的攻擊和/或警告的清單。您可以透過調整圖表中的開始時間和結束時間滑桿來變更時間範圍。
@@ -61,6 +62,7 @@ image:CloudSecureChangeAlertStatus.png["更改警報狀態"]
 
 
 
+[[filter-options]]
 == 篩選選項
 
 您可以按以下方式過濾警報：
@@ -73,12 +75,14 @@ image:CloudSecureChangeAlertStatus.png["更改警報狀態"]
 
 
 
+[[the-alert-details-page]]
 == 警報詳細資訊頁面
 
 您可以點擊警報列表頁面上的警報鏈接，打開該警報的詳細資訊頁面。根據攻擊或警報的類型，警報詳情可能會有所不同。例如，文件竄改攻擊詳情頁面可能顯示以下資訊：
 
 
 
+[[summary-section]]
 === 摘要部分：
 
 * 攻擊類型（檔案篡改、破壞）和警報 ID（由工作負載安全分配）
@@ -89,6 +93,7 @@ image:CloudSecureChangeAlertStatus.png["更改警報狀態"]
 
 
 
+[[attack-results-section]]
 === 攻擊結果部分：
 
 * 受影響捲和文件的數量
@@ -98,6 +103,7 @@ image:CloudSecureChangeAlertStatus.png["更改警報狀態"]
 
 
 
+[[related-users-section]]
 === 相關使用者部分：
 
 此部分顯示有關參與潛在攻擊的用戶的詳細信息，包括用戶的熱門活動圖表。
@@ -108,6 +114,7 @@ image:CloudSecureChangeAlertStatus.png["更改警報狀態"]
 
 
 
+[[take-a-snapshot-action]]
 == _拍攝快照_動作
 
 工作負載安全性會在偵測到惡意活動時自動拍攝快照來保護您的數據，確保您的資料已安全備份。
@@ -120,18 +127,21 @@ image:CloudSecureChangeAlertStatus.png["更改警報狀態"]
 
 
 
+[[alert-notifications]]
 == 警報通知
 
 對於針對警報採取的每個操作，都會向警報收件者清單發送警報的電子郵件通知。若要設定警報收件人，請按一下*管理>通知*並輸入每個收件人的電子郵件地址。
 
 
 
+[[retention-policy]]
 == 保留政策
 
 警報和警告保留 13 個月。超過 13 個月的警報和警告將被刪除。如果刪除了工作負載安全環境，則與該環境相關的所有資料也將被刪除。
 
 
 
+[[troubleshooting]]
 == 故障排除
 
 |===

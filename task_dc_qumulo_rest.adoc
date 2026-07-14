@@ -18,11 +18,12 @@ Data Infrastructure Insights 使用此收集器從 Qumulo 儲存設備取得庫�
 
 
 
+[[terminology]]
 == 術語
 
 Data Infrastructure Insights從該數據收集器獲取以下庫存資訊。對於Data Infrastructure Insights取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 供應商/型號術語 | Data Infrastructure Insights術語 
 
@@ -39,6 +40,7 @@ Data Infrastructure Insights從該數據收集器獲取以下庫存資訊。對�
 
 
 
+[[requirements]]
 == 要求
 
 您需要以下資訊來設定此資料收集器：
@@ -50,9 +52,10 @@ Data Infrastructure Insights從該數據收集器獲取以下庫存資訊。對�
 
 
 
+[[configuration]]
 == 配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -67,9 +70,10 @@ Data Infrastructure Insights從該數據收集器獲取以下庫存資訊。對�
 |===
 
 
+[[advanced-configuration]]
 == 進階配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -84,6 +88,7 @@ Data Infrastructure Insights從該數據收集器獲取以下庫存資訊。對�
 |===
 
 
+[[troubleshooting]]
 == 故障排除
 
 更多資訊可從link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。

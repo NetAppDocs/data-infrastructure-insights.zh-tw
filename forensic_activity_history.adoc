@@ -18,6 +18,7 @@ summary: 法醫活動歷史數據
 
 
 
+[[examining-all-activity-data]]
 == 檢查所有活動數據
 
 按一下“*取證 > 活動取證*”，然後按一下“*所有活動*”標籤以存取“所有活動”頁面。此頁面概述了租戶上的活動，重點介紹了以下資訊：
@@ -78,6 +79,7 @@ image:ws_forensics_slideout.png["取證頁面顯示滑出式顯示使用者活�
 
 
 
+[[filtering-forensic-activity-history-data]]
 == 過濾取證活動歷史數據
 
 您可以使用兩種方法來過濾資料。
@@ -140,6 +142,7 @@ image:Forensic_Activity_Filter.png["實體檔案管理器，寬度=500"]
 
 
 
+[[activity-forensics-filter-examples]]
 == 活動取證過濾器範例：
 
 |===
@@ -183,22 +186,26 @@ image:Forensic_Activity_Filter.png["實體檔案管理器，寬度=500"]
 
 
 
+[[sorting-forensic-activity-history-data]]
 == 將取證活動歷史資料排序
 
 您可以按時間、使用者、來源 IP、活動、實體類型、第一級資料夾（根）、第二級資料夾、第三層資料夾和第四級資料夾對活動歷史資料進行排序。預設情況下，表格按時間降序排列，這表示最新的數據將首先顯示。  _Device_ 和 _Protocol_ 欄位的排序已停用。
 
 
 
+[[user-guide-for-asynchronous-exports]]
 == 非同步匯出使用者指南
 
 
 
+[[overview]]
 === 概況
 
 儲存工作負載安全性中的非同步導出功能旨在處理大量資料導出。
 
 
 
+[[step-by-step-guide-exporting-data-with-asynchronous-exports]]
 === 逐步指南：使用非同步匯出匯出數據
 
 . *啟動匯出*：選擇所需的匯出時間長度和篩選器，然後按一下匯出按鈕。
@@ -216,6 +223,7 @@ image:Forensic_Activity_Filter.png["實體檔案管理器，寬度=500"]
 
 
 
+[[column-selection-for-all-activity]]
 == 所有活動的列選擇
 
 _所有活動_表預設顯示選定列。若要新增、刪除或變更列，請按一下表格右側的齒輪圖標，然後從可用列清單中進行選擇。
@@ -224,12 +232,14 @@ image:CloudSecure_ActivitySelection.png["活動選擇器，寬度=30%"]
 
 
 
+[[activity-history-retention]]
 == 活動歷史記錄保留
 
 對於活躍的工作負載安全環境，活動記錄將保留 13 個月。
 
 
 
+[[applicability-of-filters-in-forensics-page]]
 == 取證頁面中過濾器的適用性
 
 |===
@@ -252,6 +262,7 @@ image:CloudSecure_ActivitySelection.png["活動選擇器，寬度=30%"]
 |===
 
 
+[[path-search]]
 == 路徑搜尋
 
 有和沒有 / 的搜尋結果會有所不同
@@ -284,6 +295,7 @@ image:CloudSecure_ActivitySelection.png["活動選擇器，寬度=30%"]
 |===
 
 
+[[local-root-svm-user-activity-changes]]
 == 本機根 SVM 使用者活動變化
 
 如果本機根 SVM 使用者正在執行任何活動，現在將在使用者名稱中考慮安裝 NFS 共用的用戶端的 IP，該 IP 將在取證活動和使用者活動頁面中顯示為 root@<ip-address-of-the-client>。
@@ -298,6 +310,7 @@ image:CloudSecure_ActivitySelection.png["活動選擇器，寬度=30%"]
 
 
 
+[[troubleshooting]]
 == 故障排除
 
 |===

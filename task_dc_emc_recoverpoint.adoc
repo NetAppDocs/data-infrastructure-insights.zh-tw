@@ -18,6 +18,7 @@ EMC RecoverPoint 資料收集器收集 RecoverPoint 在其他儲存陣列之間�
 
 
 
+[[requirements]]
 == 要求
 
 配置此數據收集器需要以下資訊：
@@ -29,9 +30,10 @@ EMC RecoverPoint 資料收集器收集 RecoverPoint 在其他儲存陣列之間�
 
 
 
+[[configuration]]
 == 配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -46,9 +48,10 @@ EMC RecoverPoint 資料收集器收集 RecoverPoint 在其他儲存陣列之間�
 |===
 
 
+[[advanced-configuration]]
 == 進階配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -63,6 +66,7 @@ EMC RecoverPoint 資料收集器收集 RecoverPoint 在其他儲存陣列之間�
 |===
 
 
+[[troubleshooting]]
 == 故障排除
 
 關於此數據收集器的更多信息，請參閱link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。

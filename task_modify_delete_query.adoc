@@ -14,6 +14,7 @@ keywords: query, queries, modify, edit, delete, remove
 
 
 
+[[modifying-a-query]]
 == 修改查詢
 
 .步驟
@@ -35,6 +36,7 @@ keywords: query, queries, modify, edit, delete, remove
 
 
 
+[[deleting-a-query]]
 == 刪除查詢
 
 若要刪除查詢，請按一下“查詢”並選擇“顯示所有查詢”，然後執行下列其中一項操作：

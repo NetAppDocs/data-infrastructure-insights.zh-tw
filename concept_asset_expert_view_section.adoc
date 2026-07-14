@@ -18,6 +18,7 @@ keywords: asset page, expert view, metrics, greedy, degraded, correlated, contri
 
 
 
+[[using-the-performance-section]]
 == 使用性能部分
 
 以下是儲存資產頁面中「效能」部分的範例：
@@ -46,6 +47,7 @@ image:asset_page_performance_section.png["表演部分"]
 
 
 
+[[alerts-in-performance-section]]
 == 性能部分中的警報
 
 警報也會顯示在資產登陸頁面的效能部分，顯示警報的時間和持續時間以及觸發警報的監控條件。將滑鼠懸停在警報指示器上即可查看有關警報的詳細資訊。
@@ -54,6 +56,7 @@ image:asset_page_alert_section.png["性能部分中的警報"]
 
 
 
+[[performance-metric-definitions]]
 == 績效指標定義
 
 資產頁面的「效能」部分根據資產選擇的時間段顯示幾個指標。每個指標都顯示在其自己的性能圖表中。您可以根據想要查看的資料在圖表中新增或刪除指標和相關資產。您可以選擇的指標將根據資產類型而有所不同。
@@ -164,6 +167,7 @@ image:asset_page_alert_section.png["性能部分中的警報"]
 |===
 
 
+[[using-the-performance-section]]
 == 使用性能部分
 
 透過「績效」部分，您可以根據所選時間段內的任意數量的適用指標查看資產的績效圖表，並添加相關資產以比較和對比不同時間段內的資產和相關資產績效。

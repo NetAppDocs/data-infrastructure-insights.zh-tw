@@ -37,16 +37,19 @@ image:QuerySelectColumns.png["選擇列"]
 
 
 
+[[see-it-in-action]]
 == 觀看實際操作
 
 link:https://media.netapp.com/video-detail/d0530e0b-a222-52e7-92b1-dbeeee41b712/explore-and-analyze-with-queries-in-data-infrastructure-insights["使用Data Infrastructure Insights中的查詢進行探索和分析（影片）"]
 
 
 
+[[choosing-aggregation-units-conditional-formatting]]
 == 選擇聚合、單位、條件格式
 
 
 
+[[aggregation-and-units]]
 === 聚合和單位
 
 對於「值」列，您可以透過選擇顯示值的聚合方式以及選擇顯示這些值的單位來進一步最佳化查詢結果。透過選擇列頂角的「三個點」選單可以找到這些選項。
@@ -87,16 +90,19 @@ image:Query_Page_Conditional_Formatting.png["查詢頁面上的條件格式"]
 
 
 
+[[save]]
 === 節省
 
 配置查詢以顯示您想要的結果後，您可以按一下「儲存」按鈕儲存查詢以供將來使用。給它一個有意義且獨特的名字。
 
 
 
+[[more-on-filtering]]
 == 有關過濾的更多信息
 
 
 
+[[wildcards-and-expressions]]
 === 通配符和表達式
 
 當您在查詢或儀表板小工具中篩選文字或清單值時，當您開始輸入時，系統會向您顯示基於目前文字建立*通配符篩選器*的選項。選擇此選項將傳回與通配符表達式相符的所有結果。您也可以使用 NOT 或 OR 建立*表達式*，或者您可以選擇「無」選項來過濾欄位中的空值。
@@ -111,6 +117,7 @@ image:Type-Ahead-Example-Wildcard-DirectSelect.png["通配符過濾結果"]
 
 
 
+[[refining-filters]]
 === 精煉過濾器
 
 您可以使用以下內容來優化過濾器：
@@ -142,6 +149,7 @@ image:Type-Ahead-Example-Wildcard-DirectSelect.png["通配符過濾結果"]
 
 
 
+[[filtering-for-boolean-values]]
 === 過濾布林值
 
 當過濾布林值時，您可能會看到以下過濾選項：
@@ -154,6 +162,7 @@ image:Type-Ahead-Example-Wildcard-DirectSelect.png["通配符過濾結果"]
 
 
 
+[[what-do-i-do-now-that-i-have-query-results]]
 == 現在我有了查詢結果，我該做什麼？
 
 查詢提供了一個簡單的地方來添加註釋或將應用程式分配給資產。請注意，您只能將應用程式或註釋分配給您的庫存資產（磁碟、儲存等）。整合指標不能承擔註解或應用程式分配。
@@ -164,6 +173,7 @@ image:QueryVolumeBulkActions.png["查詢批次操作範例"]
 
 
 
+[[annotation-rules-require-query]]
 == 註釋規則需要查詢
 
 如果您正在配置link:task_create_annotation_rules.html["註釋規則"]，每個規則都必須有一個可以使用的底層查詢。但正如您上面所看到的，查詢可以根據需要進行廣泛或狹窄的查詢。

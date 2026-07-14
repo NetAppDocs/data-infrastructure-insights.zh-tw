@@ -24,12 +24,14 @@ Data Infrastructure Insights提供了許多link:task_system_monitors.html["系�
 
 
 
+[[security-best-practice]]
 == 安全最佳實踐
 
 Data Infrastructure Insights警報旨在突出顯示租戶的數據點和趨勢，Data Infrastructure Insights可讓您輸入任何有效的電子郵件地址作為警報收件人。如果您在安全的環境中工作，請特別注意誰接收通知或以其他方式有權存取警報。
 
 
 
+[[metric-or-log-monitor]]
 == 指標還是日誌監控？
 
 . 從“Data Infrastructure Insights”功能表中，按一下“警報”>“管理監視器”
@@ -56,6 +58,7 @@ image:Monitor_log_or_metric.png["選擇系統或日誌監視器"]
 
 
 
+[[metric-monitor]]
 === 指標監控
 
 . 在下拉式選單中，搜尋並選擇要監控的物件類型和指標。
@@ -112,6 +115,7 @@ image:Monitor_metric_conditions.png["定義監視器的條件"]
 
 
 
+[[log-monitor]]
 === 日誌監控
 
 建立*日誌監視器*時，首先從可用日誌清單中選擇要監視的日誌。然後，您可以根據上述可用屬性進行過濾。您也可以選擇一個或多個「分組依據」屬性。
@@ -142,6 +146,7 @@ image:Monitor_log_monitor_resolution.png["警報解決"]
 
 
 
+[[anomaly-detection-monitor]]
 === 異常檢測監視器
 
 . 在下拉式選單中，搜尋並選擇要監控的物件類型和指標。
@@ -169,6 +174,7 @@ image:AnomalyDetectionMonitorDefineConditions.png["定義觸發異常檢測的�
 
 
 
+[[select-notification-type-and-recipients]]
 === 選擇通知類型和收件人
 
 在「設定團隊通知」部分，您可以選擇透過電子郵件或 Webhook 提醒您的團隊。
@@ -192,6 +198,7 @@ NOTE: ONTAP資料收集器通知優先於與叢集/資料收集器相關的任�
 
 
 
+[[setting-corrective-actions-or-additional-information]]
 === 設定糾正措施或附加訊息
 
 您可以透過填寫「新增警報描述」部分來新增可選描述以及其他見解和/或糾正措施。描述最多可以有 1024 個字符，並將與警報一起發送。見解/糾正措施欄位最多可包含 67,000 個字符，並將顯示在警報登陸頁面的摘要部分。
@@ -204,6 +211,7 @@ image:Monitors_Alert_Description.png["警報糾正措施和描述"]
 
 
 
+[[save-your-monitor]]
 === 儲存您的監視器
 
 . 如果需要，您可以新增監視器的描述。
@@ -215,6 +223,7 @@ image:Monitors_Alert_Description.png["警報糾正措施和描述"]
 
 
 
+[[monitor-list]]
 == 監控列表
 
 監視器頁面列出了目前配置的監視器，顯示以下內容：
@@ -233,6 +242,7 @@ image:Monitors_Alert_Description.png["警報糾正措施和描述"]
 
 
 
+[[monitor-groups]]
 == 監控組
 
 透過分組，您可以查看和管理相關的監視器。例如，您可以有一個專門負責租用戶儲存的監視群組，或監視與特定收件者清單相關的監視群組。
@@ -252,12 +262,14 @@ NOTE: 自訂監視器可以暫停、恢復、刪除或移動到另一個群組�
 
 
 
+[[suspended-monitors]]
 === 懸掛式監視器
 
 只有當Data Infrastructure Insights已暫停一個或多個監視器時，才會顯示此群組。如果監視器產生過多或連續的警報，則可能會被暫停。如果監視器是自訂監視器，請修改條件以防止持續警報，然後恢復監視器。當導致暫停的問題解決後，該監視器將從暫停監視器群組中刪除。
 
 
 
+[[system-defined-monitors]]
 === 系統定義的監視器
 
 只要您的環境包含監視器所需的設備和/或日誌可用性，這些群組就會顯示Data Infrastructure Insights提供的監視器。
@@ -268,6 +280,7 @@ NOTE: 自訂監視器可以暫停、恢復、刪除或移動到另一個群組�
 
 
 
+[[custom-monitor-groups]]
 === 自訂監控組
 
 您可以根據需要建立自己的群組來包含監視器。例如，您可能想要為所有與儲存相關的監視器建立一個群組。
@@ -298,6 +311,7 @@ image:Monitors_PauseGroup.png["暫停群組"]
 
 
 
+[[system-defined-monitors]]
 == 系統定義的監視器
 
 Data Infrastructure Insights包括許多系統定義的指標和日誌監視器。可用的系統監視器取決於租戶上的數據收集器。因此，隨著資料收集器的新增或其配置的改變，Data Infrastructure Insights中可用的監視器可能會發生變化。
@@ -306,6 +320,7 @@ Data Infrastructure Insights包括許多系統定義的指標和日誌監視器�
 
 
 
+[[more-information]]
 === 更多資訊
 
 * link:task_view_and_manage_alerts.html["查看和關閉警報"]

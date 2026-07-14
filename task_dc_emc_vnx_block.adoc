@@ -14,11 +14,12 @@ Data Infrastructure Insights使用 Dell EMC VNX Block Storage（NaviSec）資料
 
 
 
+[[terminology]]
 == 術語
 
 Data Infrastructure Insights從 EMC VNX 區塊儲存資料收集器取得以下庫存資訊。對於Data Infrastructure Insights取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 供應商/型號術語 | Data Infrastructure Insights術語 
 
@@ -41,6 +42,7 @@ Data Infrastructure Insights從 EMC VNX 區塊儲存資料收集器取得以下�
 
 
 
+[[requirements]]
 == 要求
 
 為了收集數據，必須滿足以下要求：
@@ -56,15 +58,17 @@ Data Infrastructure Insights從 EMC VNX 區塊儲存資料收集器取得以下�
 
 
 
+[[navisphere-command-line-interface-syntax]]
 == NaviSphere 命令列介面語法
 
 naviseccli.exe -h <IP 位址> -user <使用者> -password <密碼> -scope <範圍，使用 0 表示全域範圍> -port <預設使用 443> 指令
 
 
 
+[[configuration]]
 == 配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -82,9 +86,10 @@ naviseccli.exe -h <IP 位址> -user <使用者> -password <密碼> -scope <範�
 |===
 
 
+[[advanced-configuration]]
 == 進階配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -99,12 +104,14 @@ naviseccli.exe -h <IP 位址> -user <使用者> -password <密碼> -scope <範�
 |===
 
 
+[[troubleshooting]]
 == 故障排除
 
 如果您在使用此資料收集器時遇到問題，請嘗試以下操作：
 
 
 
+[[inventory]]
 === 存貨
 
 [cols="2a, 2a"]

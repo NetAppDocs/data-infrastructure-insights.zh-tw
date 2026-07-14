@@ -45,6 +45,7 @@ summary: Data Infrastructure Insights支援 Telegraf 作為其代理，用於收
 |===
 
 
+[[important-things-to-note-before-you-start]]
 == 開始前需要注意的重要事項
 
 如果你正在跑步<<configuring-proxy-support,代理人>>，有一個<<using-a-custom-or-private-docker-repository,自訂儲存庫>>或正在使用<<openshift-instructions,OpenShift>>，請仔細閱讀以下章節。
@@ -53,6 +54,7 @@ summary: Data Infrastructure Insights支援 Telegraf 作為其代理，用於收
 
 
 
+[[configuring-proxy-support]]
 === 配置代理支援
 
 您可以在租用戶的兩個地方使用代理程式來安裝NetApp Kubernetes 監控操作員。這些可能是相同或獨立的代理系統：
@@ -107,6 +109,7 @@ agent:
 ----
 
 
+[[using-a-custom-or-private-docker-repository]]
 === 使用自訂或私有的 Docker 倉庫
 
 預設情況下， NetApp Kubernetes 監控操作員將從Data Infrastructure Insights儲存庫中提取容器映像。如果您有 Kubernetes 叢集用作監控目標，且此叢集配置為僅從自訂或私人 Docker 儲存庫或容器註冊表中提取容器映像，則必須配置對NetApp Kubernetes 監控操作員所需容器的存取權。
@@ -155,6 +158,7 @@ agent:
 ----
 
 
+[[openshift-instructions]]
 === OpenShift 說明
 
 如果您在 OpenShift 4.6 或更高版本上執行，則必須編輯 _operator-config.yaml_ 中的 AgentConfiguration 以啟用 _runPrivileged_ 設定：
@@ -167,6 +171,7 @@ Openshift 可能會實施額外的安全級別，從而阻止對某些 Kubernete
 
 
 
+[[permissions]]
 === 權限
 
 如果您正在監控的叢集包含沒有 ClusterRole 的自訂資源，link:https://kubernetes.io/docs/reference/access-authn-authz/rbac/#aggregated-clusterroles["要查看的聚合"] ，您將需要手動授予操作員存取這些資源的權限，以便使用事件日誌對其進行監控。

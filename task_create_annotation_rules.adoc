@@ -49,6 +49,7 @@ NOTE: 在大型Data Infrastructure Insights環境中，您可能會注意到執�
 
 
 
+[[modifying-annotation-rules]]
 == 修改註解規則
 
 您可以修改註解規則以變更規則的名稱、註解、註解的值或與規則關聯的查詢。
@@ -72,6 +73,7 @@ NOTE: 在大型Data Infrastructure Insights環境中，您可能會注意到執�
 
 
 
+[[changing-the-order-of-rules]]
 == 更改規則順序
 
 註釋規則從規則清單的頂部到底部進行處理。若要變更規則的處理順序，請執行下列操作：
@@ -85,6 +87,7 @@ NOTE: 在大型Data Infrastructure Insights環境中，您可能會注意到執�
 
 
 
+[[deleting-annotation-rules]]
 == 刪除註解規則
 
 您可能想要刪除不再使用的註解規則。

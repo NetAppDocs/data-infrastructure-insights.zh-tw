@@ -18,10 +18,12 @@ keywords: dwh, data warehouse, schema, reporting
 
 
 
+[[tables-and-views]]
 == 表格和檢視
 
 
 
+[[cardinals]]
 === 紅雀隊
 
 [cols="1,1,2"]
@@ -34,6 +36,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[connecteddevicedimension]]
 === 連線裝置維度
 
 *主鍵：* tk
@@ -74,6 +77,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[datedimension]]
 === 日期維度
 
 [cols="1,1,2"]
@@ -148,6 +152,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[portdimension]]
 === 連接埠維度
 
 [cols="1,1,2"]
@@ -195,6 +200,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[portsfact]]
 === 連接埠事實
 
 *主鍵：* tk
@@ -244,6 +250,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[portsfactcurrent]]
 === 目前埠事實
 
 [cols="1,1,2"]
@@ -283,6 +290,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[switchdimension]]
 === 切換維度
 
 [cols="1,1,2"]

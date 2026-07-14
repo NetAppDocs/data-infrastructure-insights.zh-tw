@@ -18,6 +18,7 @@ summary: 如何建立註釋。
 
 
 
+[[defining-annotations]]
 == 定義註釋
 
 使用註釋，您可以為資產新增符合您的業務需求的自訂業務特定資料。雖然Data Infrastructure Insights提供了一組預設註釋，例如資產生命週期（生日或壽命終止）、建築物或資料中心位置和層級，但您可能會發現您想以其他方式查看資料。
@@ -50,6 +51,7 @@ summary: 如何建立註釋。
 
 
 
+[[manually-assigning-annotations-to-assets]]
 == 手動為資產分配註釋
 
 為資產分配註釋可以幫助您以與您的業務相關的方式對資產進行排序、分組和報告。雖然您可以使用註釋規則自動將註釋指派給特定類型的資產，但您可以使用資產頁面將註釋指派給單一資產。
@@ -81,12 +83,14 @@ summary: 如何建立註釋。
 
 
 
+[[assigning-annotations-using-annotation-rules]]
 == 使用註釋規則指派註釋
 
 若要根據您定義的標準自動將註解指派給資產，請配置註解規則。Data Infrastructure Insights根據這些規則將註釋分配給資產。  Data Infrastructure Insights還提供了兩個預設註解規則，您可以根據需要修改它們，如果不想使用它們，則可以刪除它們。
 
 
 
+[[creating-annotation-rules]]
 === 建立註解規則
 
 作為手動將註釋應用於單一資產的替代方法，您可以使用註釋規則自動將註釋套用至多個資產。當 Insight 評估註釋規則時，在單一資產頁面上手動設定的註釋優先於基於規則的註釋。

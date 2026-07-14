@@ -14,6 +14,7 @@ NetApp非常重視客戶資訊的安全。以下是Data Infrastructure Insights�
 
 
 
+[[what-information-does-data-infrastructure-insights-store]]
 == Data Infrastructure Insights儲存哪些資訊？
 
 Data Infrastructure Insights儲存以下資訊：
@@ -59,6 +60,7 @@ NOTE: 使用者目錄資料是指工作負載安全使用者目錄資料收集�
 
 
 
+[[where-is-my-information-stored]]
 == 我的資訊儲存在哪裡？
 
 Data Infrastructure Insights根據您創建環境的區域儲存資訊。
@@ -82,6 +84,7 @@ Data Infrastructure Insights根據您創建環境的區域儲存資訊。
 
 
 
+[[host-regions]]
 === 主辦地區
 
 主辦地區包括：
@@ -93,6 +96,7 @@ Data Infrastructure Insights根據您創建環境的區域儲存資訊。
 
 
 
+[[more-information]]
 == 更多資訊
 
 您可以透過以下連結了解更多有關 NetApp 隱私和安全性的資訊：

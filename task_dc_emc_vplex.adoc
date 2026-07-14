@@ -21,11 +21,12 @@ NOTE: Data Infrastructure Insights 從 VPLEX 叢集收集效能資料需要效�
 
 
 
+[[terminology]]
 == 術語
 
 Data Infrastructure Insightst 從 VPLEX 資料收集器取得以下清單資訊。對於所取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 供應商/型號術語 | Data Infrastructure Insights術語 
 
@@ -60,6 +61,7 @@ Data Infrastructure Insightst 從 VPLEX 資料收集器取得以下清單資訊�
 
 
 
+[[requirements]]
 == 要求
 
 * VPLEX 管理控制台的 IP 位址
@@ -71,9 +73,10 @@ Data Infrastructure Insightst 從 VPLEX 資料收集器取得以下清單資訊�
 
 
 
+[[configuration]]
 == 配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -97,9 +100,10 @@ Data Infrastructure Insightst 從 VPLEX 資料收集器取得以下清單資訊�
 |===
 
 
+[[advanced-configuration]]
 == 進階配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -120,15 +124,17 @@ Data Infrastructure Insightst 從 VPLEX 資料收集器取得以下清單資訊�
 |===
 
 
+[[troubleshooting]]
 == 故障排除
 
 如果您在使用此資料收集器時遇到問題，請嘗試以下操作：
 
 
 
+[[inventory]]
 === 存貨
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 問題： | 試試一下： 
 
@@ -137,9 +143,10 @@ Data Infrastructure Insightst 從 VPLEX 資料收集器取得以下清單資訊�
 |===
 
 
+[[performance]]
 === 表現
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 問題： | 試試一下： 
 

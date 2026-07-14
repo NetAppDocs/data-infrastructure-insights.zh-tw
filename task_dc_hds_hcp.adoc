@@ -17,11 +17,12 @@ NOTE: 日立內容平台依照不同的原始 TB 與託管單位費率進行計�
 
 
 
+[[terminology]]
 == 術語
 
 Data Infrastructure Insights從 Hitachi HCP 數據收集器獲取以下庫存資訊。對於Data Infrastructure Insights取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 供應商/型號術語 | Data Infrastructure Insights術語 
 
@@ -41,6 +42,7 @@ Data Infrastructure Insights從 Hitachi HCP 數據收集器獲取以下庫存資
 
 
 
+[[inventory-requirements]]
 == 庫存需求
 
 為了收集庫存數據，您必須具備以下條件：
@@ -51,9 +53,10 @@ Data Infrastructure Insights從 Hitachi HCP 數據收集器獲取以下庫存資
 
 
 
+[[configuration]]
 == 配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -74,6 +77,7 @@ Data Infrastructure Insights從 Hitachi HCP 數據收集器獲取以下庫存資
 |===
 
 
+[[advanced-configuration]]
 == 進階配置
 
 |===

@@ -20,6 +20,7 @@ summary: 配置 Dell EMC Unisphere REST 資料收集器。
 
 
 
+[[requirements]]
 == 要求
 
 * Unisphere 伺服器的 IP 位址/完全限定域名
@@ -29,9 +30,10 @@ summary: 配置 Dell EMC Unisphere REST 資料收集器。
 
 
 
+[[configuration]]
 == 配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -49,9 +51,10 @@ summary: 配置 Dell EMC Unisphere REST 資料收集器。
 |===
 
 
+[[advanced-configuration]]
 == 進階配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -72,15 +75,17 @@ summary: 配置 Dell EMC Unisphere REST 資料收集器。
 |===
 
 
+[[troubleshooting]]
 == 故障排除
 
 如果您在使用此資料收集器時遇到問題，請嘗試以下操作：
 
 
 
+[[inventory]]
 === 存貨
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 問題： | 試試一下： 
 

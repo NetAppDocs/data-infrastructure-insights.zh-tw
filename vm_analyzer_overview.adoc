@@ -22,6 +22,7 @@ image:vm_analyzer_example_with_panel_a.png["VM Analyzer 儲存系統拓樸圖"]
 
 
 
+[[explore-connections-among-your-assets]]
 == 探索資產之間的聯繫
 
 選擇 *可觀察性 > 分析 > VM 分析器* 來查看 VM 分析器。為應用程式、虛擬機器、磁碟區、內部磁碟區設定篩選器，或新增您自己的篩選器。顯示物件的地圖，其中顯示了連接的物件。將滑鼠懸停在某個物件上即可查看該連線的流量指標。
@@ -35,6 +36,7 @@ NOTE: 大多數 VM Analyzer 過濾器（包括您可能新增的篩選器）都�
 
 
 
+[[see-it-in-action]]
 == 觀看實際操作
 
 link:https://media.netapp.com/video-detail/0e62b784-8456-5ef7-8879-f0352135a0f1/simplified-troubleshooting-with-vm-analyzer["使用 VM Analyzer 簡化故障排除（影片），window=read-later"]

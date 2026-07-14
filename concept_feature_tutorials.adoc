@@ -18,6 +18,7 @@ keywords: onboarding, getting started, video, tutorial, resolution, dashboard, q
 
 
 
+[[checklist-and-video-tutorials]]
 == 清單和影片教程
 
 Data Infrastructure Insights租戶上顯示的*啟動清單*包含幾個有用的任務和概念的清單。選擇清單中的一項將帶您進入適合該概念的Data Infrastructure Insights頁面。例如，點擊「建立儀表板」項目將開啟Data Infrastructure Insights「儀表板」頁面。
@@ -35,12 +36,14 @@ NOTE: 您可以按照自己喜歡的順序查看教程，並且可以多次查�
 
 
 
+[[dismissing-the-checklist]]
 === 取消清單
 
 啟動檢查表會一直顯示，直到您點擊檢查表底部的「不再顯示」連結為止。即使在關閉清單之後，教程仍然可以在每個適當的Data Infrastructure Insights頁面上找到，直到您從訊息標題列中關閉每個教程。
 
 
 
+[[video-tutorials]]
 == 影片教學
 
 觀看以下影片以了解更多資訊。

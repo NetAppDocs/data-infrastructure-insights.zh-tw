@@ -18,12 +18,14 @@ Data Infrastructure Insights為 Kubernetes 集合提供了 *Kubernetes Monitorin
 
 
 
+[[before-installing-the-kubernetes-monitoring-operator]]
 == 安裝 Kubernetes Monitoring Operator 之前
 
 查看link:pre-requisites_for_k8s_operator.html["先決條件"]在安裝或升級 Kubernetes Monitoring Operator 之前，請先閱讀文件。
 
 
 
+[[installing-the-kubernetes-monitoring-operator]]
 == 安裝 Kubernetes 監控操作員
 
 image:NKMO-Instructions-1.png["監控操作員指令"] image:NKMO-Instructions-2.png["監控操作員指令"]
@@ -43,6 +45,7 @@ image:NKMO-Instructions-1.png["監控操作員指令"] image:NKMO-Instructions-2
 
 
 
+[[kubernetes-monitoring-components]]
 == Kubernetes 監控元件
 
 Data Infrastructure InsightsKubernetes 監控由四個監控元件組成：
@@ -63,10 +66,13 @@ image:KubernetesModifyDeploymentScreen.png["修改部署選項，width=700"]
 
 
 
+[[upgrading-to-the-latest-kubernetes-monitoring-operator]]
+[[upgrading]]
 == 升級到最新的 Kubernetes Monitoring Operator
 
 
 
+[[dii-push-button-upgrades]]
 === DII 按鈕升級
 
 您可以透過 DII Kubernetes Collectors 頁面升級 Kubernetes Monitoring Operator。按一下要升級的叢集旁的選單，然後選擇“升級”。操作員將驗證影像簽名，對目前安裝進行快照並執行升級。幾分鐘內，您將看到操作員狀態從「升級進行中」進展到「最新」。如果遇到錯誤，您可以選擇錯誤狀態以了解更多詳細信息，並參考下面的按鈕升級故障排除表。
@@ -94,6 +100,7 @@ cosign copy <DII container registry>/netapp-monitoring:<image version> <private 
 
 
 
+[[manual-upgrades]]
 === 手動升級
 
 確定現有 Operator 是否存在 _AgentConfiguration_（如果您的命名空間不是預設的 _netapp-monitoring_、請替換為對應的命名空間）：
@@ -128,6 +135,7 @@ cosign copy <DII container registry>/netapp-monitoring:<image version> <private 
 
 
 
+[[stopping-and-starting-the-kubernetes-monitoring-operator]]
 == 停止並啟動 Kubernetes 監控操作員
 
 要停止 Kubernetes Monitoring Operator：
@@ -138,10 +146,12 @@ cosign copy <DII container registry>/netapp-monitoring:<image version> <private 
  kubectl -n netapp-monitoring scale deploy monitoring-operator --replicas=1
 
 
+[[uninstalling]]
 == 解除安裝
 
 
 
+[[to-remove-the-kubernetes-monitoring-operator]]
 === 刪除 Kubernetes Monitoring Operator
 
 請注意，Kubernetes Monitoring Operator 的預設命名空間是「netapp-monitoring」。如果您設定了自己的命名空間，請在這些命令和所有後續命令和檔案中取代該命名空間。
@@ -173,6 +183,7 @@ kubectl delete ns <NAMESPACE>
  kubectl delete scc telegraf-hostaccess
 
 
+[[about-kube-state-metrics]]
 == 關於 Kube-state-metrics
 
 NetApp Kubernetes Monitoring Operator 安裝自己的 kube-state-metrics 以避免與任何其他實例發生衝突。
@@ -181,12 +192,14 @@ NetApp Kubernetes Monitoring Operator 安裝自己的 kube-state-metrics 以避�
 
 
 
+[[configuringcustomizing-the-operator]]
 == 配置/自訂操作員
 
 這些部分包含有關自訂操作員配置、使用代理程式、使用自訂或私人 docker 儲存庫或使用 OpenShift 的資訊。
 
 
 
+[[configuration-options]]
 === 配置選項
 
 最常修改的設定可以在_AgentConfiguration_自訂資源中配置。您可以在部署操作員之前透過編輯 _operator-config.yaml_ 檔案來編輯此資源。該文件包含已註解掉的設定範例。查看列表link:telegraf_agent_k8s_config_options.html["可用設定"]以取得最新版本的操作員。
@@ -201,6 +214,7 @@ NetApp Kubernetes Monitoring Operator 安裝自己的 kube-state-metrics 以避�
 
 
 
+[[configuring-proxy-support]]
 === 配置代理支援
 
 您可以在租戶的兩個地方使用代理程式來安裝 Kubernetes Monitoring Operator。這些可能是相同或獨立的代理系統：
@@ -255,6 +269,7 @@ agent:
 ----
 
 
+[[using-a-custom-or-private-docker-repository]]
 === 使用自訂或私有的 Docker 倉庫
 
 預設情況下，Kubernetes Monitoring Operator 將從Data Infrastructure Insights儲存庫中提取容器映像。如果您有 Kubernetes 叢集作為監控目標，且該叢集配置為僅從自訂或私人 Docker 儲存庫或容器註冊表中提取容器映像，則必須配置對 Kubernetes 監控操作員所需容器的存取權。
@@ -324,6 +339,7 @@ link:task_config_telegraf_agent.html#manually-create-an-api-access-token["在此
 
 
 
+[[openshift-instructions]]
 === OpenShift 說明
 
 如果您執行的是 OpenShift 4.6 或更高版本，則必須編輯 _operator-config.yaml_ 中的 _AgentConfiguration_ 以啟用 _runPrivileged_ 設定：
@@ -336,6 +352,7 @@ Openshift 可能會實施額外的安全級別，從而阻止對某些 Kubernete
 
 
 
+[[tolerations-and-taints]]
 === 容忍度和污點
 
 _netapp-ci-telegraf-ds_、_netapp-ci-fluent-bit-ds_ 和 _netapp-ci-net-observer-l4-ds_ DaemonSet 必須在叢集中的每個節點上安排一個 pod，以便正確收集所有節點上的資料。操作員已配置為容忍一些眾所周知的*污點*。如果您在節點上配置了任何自訂污點，從而阻止 Pod 在每個節點上運行，則可以為這些污點建立 *容忍度*link:telegraf_agent_k8s_config_options.html["在_AgentConfiguration_中"] 。如果您已將自訂污點套用至叢集中的所有節點，則您也必須向操作員部署新增必要的容忍度，以允許調度和執行操作員 pod。
@@ -346,36 +363,7 @@ _netapp-ci-telegraf-ds_、_netapp-ci-fluent-bit-ds_ 和 _netapp-ci-net-observer-
 
 
 
-== 關於秘密的說明
-
-若要刪除 Kubernetes Monitoring Operator 查看叢集範圍機密的權限，請在安裝之前從 _operator-setup.yaml_ 檔案中刪除下列資源：
-
-[listing]
-----
- ClusterRole/netapp-ci<namespace>-agent-secret
- ClusterRoleBinding/netapp-ci<namespace>-agent-secret
-----
-如果這是升級，也請從叢集中刪除資源：
-
-[listing]
-----
- kubectl delete ClusterRole/netapp-ci-<namespace>-agent-secret-clusterrole
- kubectl delete ClusterRoleBinding/netapp-ci-<namespace>-agent-secret-clusterrolebinding
-
-----
-如果啟用了變更分析，請修改 _AgentConfiguration_ 或 _operator-config.yaml_ 以取消註解變更管理部分，並在變更管理部分下包含 _kindsToIgnoreFromWatch: '"secrets"'_。請注意此行中單引號和雙引號的存在和位置。
-
-....
-change-management:
-  ...
-  # # A comma separated list of kinds to ignore from watching from the default set of kinds watched by the collector
-  # # Each kind will have to be prefixed by its apigroup
-  # # Example: '"networking.k8s.io.networkpolicies,batch.jobs", "authorization.k8s.io.subjectaccessreviews"'
-  kindsToIgnoreFromWatch: '"secrets"'
-  ...
-....
-
-
+[[verifying-kubernetes-monitoring-operator-image-signatures]]
 == 驗證 Kubernetes 監控 Operator 鏡像簽名
 
 操作員的映像及其部署的所有相關映像均由NetApp簽署。您可以在安裝前使用 cosign 工具手動驗證映像，或設定 Kubernetes 准入控制器。如欲了解更多詳情，請參閱link:https://kubernetes.io/docs/tasks/administer-cluster/verify-signed-artifacts/#verifying-image-signatures["Kubernetes 文檔"]。
@@ -401,6 +389,7 @@ The following checks were performed on each of these signatures:
 ----
 
 
+[[troubleshooting]]
 == 故障排除
 
 如果您在設定 Kubernetes Monitoring Operator 時遇到問題，請嘗試以下操作：

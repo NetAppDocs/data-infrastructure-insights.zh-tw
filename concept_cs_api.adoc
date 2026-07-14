@@ -24,6 +24,7 @@ API 存取要求：
 
 
 
+[[api-documentation-swagger]]
 == API 文件（Swagger）
 
 透過登入 Workload Security 並導覽至 *Admin > API Access* 可以找到最新的 API 資訊。按一下*API 文件*連結。  API 文件基於 Swagger，提供 API 的簡要描述和使用信息，並允許您在租戶上試用。
@@ -33,6 +34,7 @@ NOTE: 如果呼叫取證活動 API，請使用 cloudsecure_forensics.activities.
 
 
 
+[[api-access-tokens]]
 == API 存取令牌
 
 在使用工作負載安全 API 之前，您必須建立一個或多個 *API 存取權杖*。存取令牌授予讀取權限。您也可以設定每個存取令牌的有效期。
@@ -65,6 +67,7 @@ NOTE: 您的令牌僅可在建立過程中複製到剪貼簿並儲存。令牌�
 
 
 
+[[script-to-extract-data-via-the-api]]
 == 透過 API 提取資料的腳本
 
 工作負載安全代理程式包括一個匯出腳本，透過將請求的時間範圍劃分為更小的批次來促進對 v2 API 的平行呼叫。

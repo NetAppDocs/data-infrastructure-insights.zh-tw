@@ -18,6 +18,7 @@ summary: 部署工作負載安全代理程式來監控使用者活動、偵測�
 
 
 
+[[before-you-begin]]
 == 開始之前
 
 * 安裝、執行腳本和解除安裝都需要 sudo 權限。
@@ -27,6 +28,7 @@ summary: 部署工作負載安全代理程式來監控使用者活動、偵測�
 
 
 
+[[best-practices]]
 == 最佳實踐
 
 在配置工作負載安全代理之前，請記住以下事項。
@@ -45,6 +47,7 @@ summary: 部署工作負載安全代理程式來監控使用者活動、偵測�
 |===
 
 
+[[steps-to-install-agent]]
 == 安裝代理的步驟
 
 . 以管理員或帳戶擁有者的身分登入您的工作負載安全環境。
@@ -76,6 +79,7 @@ image::new-agent-detect.png[代理安裝成功訊息]
 
 
 
+[[network-configuration]]
 == 網路設定
 
 在本機系統上執行下列命令以開啟工作負載安全性將使用的連接埠。如果對連接埠範圍有安全性問題，則可以使用較小的連接埠範圍，例如 _35000:35100_。每個 SVM 使用兩個連接埠。
@@ -105,6 +109,7 @@ CentOS 8.x / RHEL 8.x：
  35000-55000/tcp
 
 
+[[pinning-an-agent-at-the-current-version]]
 == 將代理程式“固定”在目前版本
 
 預設情況下，Data Infrastructure Insights工作負載安全性會自動更新代理程式。一些客戶可能希望暫停自動更新，這將使代理商保持其當前版本，直到發生以下情況之一：
@@ -127,6 +132,7 @@ image:ws_agent_version.png["代理表中顯示的 WS 代理程式版本"]
 
 
 
+[[troubleshooting-agent-errors]]
 == 代理錯誤故障排除
 
 下表描述了已知問題及其解決方法。

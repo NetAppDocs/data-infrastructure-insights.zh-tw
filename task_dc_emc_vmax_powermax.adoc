@@ -14,6 +14,7 @@ Data Infrastructure Insights透過使用 Solutions Enabler symcli 指令結合�
 
 
 
+[[requirements]]
 == 要求
 
 在配置此資料收集器之前，您應該確保Data Infrastructure Insights與現有 Solutions Enabler 伺服器上的連接埠 2707 具有 TCP 連線。Data Infrastructure Insights發現此伺服器的所有「本機」 Symmetrix 陣列，如該伺服器的「symcfg list」輸出所示。
@@ -47,11 +48,12 @@ cisys storapid <all>
 
 
 
+[[terminology]]
 == 術語
 
 Data Infrastructure Insights從 EMC VMAX/PowerMax 資料來源取得以下庫存資訊。對於所取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 供應商/型號術語 | Data Infrastructure Insights術語 
 
@@ -77,11 +79,12 @@ Data Infrastructure Insights從 EMC VMAX/PowerMax 資料來源取得以下庫存
 
 
 
+[[configuration]]
 == 配置
 
 *注意：*如果未啟用 SMI-S 使用者驗證，則會忽略Data Infrastructure Insights資料收集器中的預設值。
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -96,9 +99,10 @@ Data Infrastructure Insights從 EMC VMAX/PowerMax 資料來源取得以下庫存
 |===
 
 
+[[advanced-configuration]]
 == 進階配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -137,11 +141,12 @@ Data Infrastructure Insights從 EMC VMAX/PowerMax 資料來源取得以下庫存
 |===
 
 
+[[troubleshooting]]
 == 故障排除
 
 如果您在使用此資料收集器時遇到問題，請嘗試以下操作：
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 問題： | 試試一下： 
 

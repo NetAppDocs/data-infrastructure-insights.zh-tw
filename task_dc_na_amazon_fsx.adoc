@@ -17,11 +17,12 @@ NOTE: 此Data Infrastructure Insights收集器需要具有_Filesystem-Scoped_角
 
 
 
+[[terminology]]
 == 術語
 
 Data Infrastructure Insights從 FSx- NetApp資料收集器取得庫存和效能資料。對於所取得的每種資產類型，都會顯示該資產最常用的術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 供應商/型號術語 | Data Infrastructure Insights術語 
 
@@ -36,12 +37,14 @@ Data Infrastructure Insights從 FSx- NetApp資料收集器取得庫存和效能�
 |===
 
 
+[[fsx-netapp-terminology]]
 == FSx- NetApp術語
 
 以下術語適用於您可能在 FSx- NetApp儲存資產登入頁面上找到的物件或參考。其中許多術語也適用於其他資料收集器。
 
 
 
+[[storage]]
 === 儲存
 
 * 模型 – 此叢集內唯一、離散的模型名稱的逗號分隔清單。
@@ -55,6 +58,7 @@ Data Infrastructure Insights從 FSx- NetApp資料收集器取得庫存和效能�
 
 
 
+[[storage-pool]]
 === 儲存池
 
 * 儲存－該池位於哪個儲存陣列上。強制的。
@@ -66,6 +70,7 @@ Data Infrastructure Insights從 FSx- NetApp資料收集器取得庫存和效能�
 
 
 
+[[requirements]]
 == 要求
 
 以下是配置和使用此資料收集器的要求：
@@ -77,9 +82,10 @@ Data Infrastructure Insights從 FSx- NetApp資料收集器取得庫存和效能�
 
 
 
+[[configuration]]
 == 配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -94,6 +100,7 @@ Data Infrastructure Insights從 FSx- NetApp資料收集器取得庫存和效能�
 |===
 
 
+[[advanced-metrics]]
 == 進階指標
 
 此資料收集器從 FSx for NetApp ONTAP儲存收集以下進階指標：
@@ -115,15 +122,17 @@ Data Infrastructure Insights從 FSx- NetApp資料收集器取得庫存和效能�
 
 
 
+[[troubleshooting]]
 == 故障排除
 
 如果您在使用此資料收集器時遇到問題，請嘗試以下操作：
 
 
 
+[[inventory]]
 === 存貨
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 問題： | 試試一下： 
 

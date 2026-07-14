@@ -18,6 +18,7 @@ keywords: email, notifications, alerts, warnings, attacks
 
 
 
+[[potential-attack-alerts-and-warnings]]
 == 潛在攻擊警報和警告
 
 若要傳送_潛在攻擊_警報通知，請在_傳送潛在攻擊警報_部分輸入收件者的電子郵件地址。對於警報上的每個操作，都會向警報收件者清單發送電子郵件通知。
@@ -26,6 +27,7 @@ keywords: email, notifications, alerts, warnings, attacks
 
 
 
+[[agent-and-data-collector-health-monitoring]]
 == 代理商和數據收集器健康監控
 
 您可以透過通知監控代理程式和資料來源的健康狀況。
@@ -43,6 +45,7 @@ keywords: email, notifications, alerts, warnings, attacks
 
 
 
+[[receiving-agent-and-data-collector-upgrade-notifications]]
 == 接收代理程式和資料收集器升級通知
 
 * 在「資料收集健康警報」中輸入電子郵件 ID。
@@ -52,6 +55,7 @@ keywords: email, notifications, alerts, warnings, attacks
 
 
 
+[[troubleshooting]]
 == 故障排除
 
 |===

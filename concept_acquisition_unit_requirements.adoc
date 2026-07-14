@@ -18,6 +18,7 @@ keywords: AU, acquisition unit, requirements, sizing
 
 
 
+[[requirements]]
 == 要求
 
 |===
@@ -92,6 +93,7 @@ sudo restorecon -R /opt/netapp/cloudinsights
 |===
 
 
+[[additional-recommendations]]
 == 其他建議
 
 * 為了準確的稽核和數據報告，強烈建議使用*網路時間協定 (NTP)* 或*簡單網路時間協定 (SNTP)* 同步擷取單元機器上的時間。
@@ -99,6 +101,7 @@ sudo restorecon -R /opt/netapp/cloudinsights
 
 
 
+[[regarding-sizing]]
 == 關於尺寸
 
 您可以從僅具有 8GB 記憶體和 50GB 磁碟空間的Data Infrastructure Insights採集單元開始，但是，對於更大的環境，您應該問自己以下問題：

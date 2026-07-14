@@ -19,6 +19,7 @@ image:Notifications_email_list.png["電子郵件通知"]
 
 
 
+[[subscription-notification-recipients]]
 == 訂閱通知收件人
 
 若要設定訂閱相關事件通知的收件人，請前往「訂閱通知收件人」部分。您可以選擇將訂閱相關事件的電子郵件通知傳送給以下任何或所有收件者：
@@ -58,6 +59,7 @@ image:Notifications_email_list.png["電子郵件通知"]
 ====
 
 
+[[global-recipient-list-for-alerts]]
 == 警報的全域收件者列表
 
 對於針對警報採取的每個操作，都會向警報收件者清單發送警報的電子郵件通知。您可以選擇向全球收件人清單發送警報通知。
@@ -71,6 +73,7 @@ NOTE: ONTAP資料收集器通知優先於與叢集/資料收集器相關的任�
 
 
 
+[[editing-notifications-for-ontap]]
 == 編輯ONTAP的通知
 
 您可以從儲存登入頁面右上角的下拉式選單中選擇「編輯通知」來修改ONTAP叢集的通知。

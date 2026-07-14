@@ -18,10 +18,12 @@ keywords: dwh, data warehouse, schema, reporting
 
 
 
+[[tables-and-views]]
 == 表格和檢視
 
 
 
+[[applicationdimension]]
 === 應用程式維度
 
 [cols="1,1,2"]
@@ -63,6 +65,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[applicationgroupbridge]]
 === 應用程式群組橋接
 
 [cols="1,1,2"]
@@ -81,6 +84,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[applicationgroupdimension]]
 === 應用程式群組維度
 
 [cols="1,1,2"]
@@ -113,6 +117,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[businessentitydimension]]
 === business_entity_dimension
 
 [cols="1,1,2"]
@@ -157,6 +162,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[capacitytype]]
 === 容量類型
 
 *主鍵：* type
@@ -188,6 +194,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[cardinals]]
 === 紅雀隊
 
 [cols="1,1,2"]
@@ -200,6 +207,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[chargebackfact]]
 === 退款事實
 
 *主鍵：* tk、dateTk
@@ -303,6 +311,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[datastoredimension]]
 === 資料儲存維度
 
 [cols="1,1,2"]
@@ -344,6 +353,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[datedimension]]
 === 日期維度
 
 [cols="1,1,2"]
@@ -428,6 +438,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[diskgroupcapacityfact]]
 === 磁碟群組容量事實
 
 *主鍵：* tk、dateTk
@@ -471,6 +482,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[diskgroupcapacityfuturefact]]
 === 磁碟群組容量未來事實
 
 *主鍵：* tk、dateTk
@@ -511,6 +523,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[diskgroupdimension]]
 === 磁碟群組維度
 
 [cols="1,1,2"]
@@ -562,6 +575,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[hostdimension]]
 === 主機維度
 
 [cols="1,1,2"]
@@ -626,6 +640,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[hostgroupbridge]]
 === 主機群組橋接
 
 [cols="1,1,2"]
@@ -644,6 +659,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[hostgroupdimension]]
 === 主機群組維度
 
 [cols="1,1,2"]
@@ -675,6 +691,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[internalvolumecapacityfact]]
 === 內部容量事實
 
 *主鍵：* tk、dateTk
@@ -800,6 +817,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[internalvolumedimension]]
 === 內部體積尺寸
 
 [cols="1,1,2"]
@@ -869,6 +887,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[k8sclusterdimension]]
 === k8s_cluster_dimension
 
 [cols="1,1,2"]
@@ -901,6 +920,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[k8snamespacedimension]]
 === k8s_namespace_dimension
 
 [cols="1,1,2"]
@@ -939,6 +959,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[k8snamespacegroupbridge]]
 === k8s_namespace_group_bridge
 
 [cols="1,1,2"]
@@ -957,6 +978,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[k8snamespacegroupdimension]]
 === k8s_namespace_group_dimension
 
 [cols="1,1,2"]
@@ -989,6 +1011,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[k8snodedimension]]
 === k8s_node_dimension
 
 [cols="1,1,2"]
@@ -1030,6 +1053,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[k8spvdimension]]
 === k8s_pv_dimension
 
 [cols="1,1,2"]
@@ -1074,6 +1098,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[k8spvccapacityfact]]
 === k8s_pvc_capacity_fact
 
 *主鍵：* tk、dateTk
@@ -1118,6 +1143,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[k8spvcdimension]]
 === k8s_pvc_dimension
 
 [cols="1,1,2"]
@@ -1162,6 +1188,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[k8sworkloaddimension]]
 === k8s_workload_dimension
 
 [cols="1,1,2"]
@@ -1198,6 +1225,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[qtreecapacityfact]]
 === qtree_capacity_fact
 
 *主鍵：* tk、dateTk
@@ -1291,6 +1319,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[qtreedimension]]
 === qtree_dimension
 
 [cols="1,1,2"]
@@ -1338,6 +1367,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[serviceleveldimension]]
 === 服務等級維度
 
 [cols="1,1,2"]
@@ -1377,6 +1407,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[sptimetofill]]
 === sp_time_to_fill
 
 *主鍵：* saspFactTk
@@ -1402,6 +1433,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[storageandstoragepoolcapacityfact]]
 === 儲存和儲存池容量事實
 
 *主鍵：* tk、dateTk
@@ -1522,6 +1554,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[storageandstoragepoolcapacityfuturefact]]
 === 儲存和儲存池容量未來事實
 
 *主鍵：* tk、dateTk
@@ -1574,6 +1607,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[storagedimension]]
 === 儲存空間_維度
 
 [cols="1,1,2"]
@@ -1636,6 +1670,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[storagenodecapacityfact]]
 === storage_node_capacity_fact
 
 *主鍵：* tk、dateTk
@@ -1685,6 +1720,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[storagenodedimension]]
 === 儲存節點維度
 
 [cols="1,1,2"]
@@ -1735,6 +1771,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[storagepooldimension]]
 === 儲存池維度
 
 [cols="1,1,2"]
@@ -1804,6 +1841,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[tierdimension]]
 === 層級維度
 
 [cols="1,1,2"]
@@ -1846,6 +1884,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[vmcapacityfact]]
 === vm_capacity_fact
 
 *主鍵：* tk、dateTk
@@ -1948,6 +1987,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[vmdimension]]
 === vm_dimension
 
 [cols="1,1,2"]
@@ -1992,6 +2032,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[volumecapacityfact]]
 === Volume 容量事實
 
 [cols="1,1,2"]
@@ -2079,6 +2120,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[volumedimension]]
 === volume_dimension
 
 [cols="1,1,2"]
@@ -2147,6 +2189,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[volumefactcurrent]]
 === 目前容量事實
 
 *主鍵：* volumeId
@@ -2202,6 +2245,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[volumehistorycapacityfact]]
 === volume_history_capacity_fact
 
 *主鍵：* tk、dateTk
@@ -2323,6 +2367,7 @@ keywords: dwh, data warehouse, schema, reporting
 '''
 
 
+[[volumelastaccessedtime]]
 === volume_last_accessed_time
 
 *主鍵：* volumeName、storageIdentifier

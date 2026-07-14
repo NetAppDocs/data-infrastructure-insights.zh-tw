@@ -20,6 +20,7 @@ Data Infrastructure InsightsAPI 使NetApp客戶和獨立軟體供應商 (ISV) �
 
 
 
+[[requirements-for-api-access]]
 == API 存取要求
 
 * API 存取令牌模型用於授予存取權限。
@@ -28,6 +29,7 @@ Data Infrastructure InsightsAPI 使NetApp客戶和獨立軟體供應商 (ISV) �
 
 
 
+[[api-documentation-swagger]]
 == API 文件（Swagger）
 
 透過登入Data Infrastructure Insights並導覽至 *Admin > API Acccess* 可以找到最新的 API 資訊。按一下*API 文件*連結。
@@ -40,6 +42,7 @@ image:API_Swagger_Example.png["API Swagger 範例"]
 
 
 
+[[api-access-tokens]]
 == API 存取令牌
 
 在使用Data Infrastructure InsightsAPI 之前，您必須建立一個或多個 *API 存取權杖*。存取令牌用於指定的 API 類型，並且可以授予讀取和/或寫入權限。您也可以設定每個存取令牌的有效期。指定類型下的所有 API 對於存取令牌均有效。每個令牌都沒有使用者名稱或密碼。
@@ -77,6 +80,7 @@ NOTE: 您的令牌僅可在建立過程中複製到剪貼簿並儲存。令牌�
 
 
 
+[[api-type]]
 == API 類型
 
 Data Infrastructure InsightsAPI 是基於類別的，目前包含以下類型：
@@ -100,12 +104,14 @@ Data Infrastructure InsightsAPI 是基於類別的，目前包含以下類型：
 
 
 
+[[inventory-traversal]]
 == 庫存遍歷
 
 本節介紹如何遍歷Data Infrastructure Insights物件的層次結構。
 
 
 
+[[top-level-objects]]
 === 頂級對象
 
 請求中的各個物件透過唯一的 URL（在 JSON 中稱為「self」）進行標識，並且需要了解物件類型和內部 ID。對於某些頂級物件（主機、儲存體等），REST API 提供對完整集合的存取。
@@ -118,6 +124,7 @@ API URL 的一般格式為：
  https://mysite.c01.cloudinsights.netapp.com/rest/v1/assets/storages
 
 
+[[children-and-related-objects]]
 === 子對象和相關對象
 
 頂級物件（例如儲存）可用於遍歷其他子物件和相關物件。例如，要檢索特定儲存的所有磁碟，請將儲存「self」URL 與「/disks」連接起來，例如：
@@ -125,6 +132,7 @@ API URL 的一般格式為：
  https://<tenant>/rest/v1/assets/storages/4537/disks
 
 
+[[expands]]
 == 擴充
 
 許多 API 命令支援 *expand* 參數，該參數提供有關物件或相關物件的 URL 的更多詳細資訊。
@@ -147,6 +155,7 @@ image:expands.gif["擴充範例"]
 
 
 
+[[performance-data]]
 == 效能數據
 
 性能數據作為單獨的樣本從許多設備上收集。每小時（預設），Data Infrastructure Insights都會匯總並總結效能樣本。
@@ -188,6 +197,7 @@ image:API_Performance.png["API 效能範例"]
 
 
 
+[[object-performance-metrics]]
 == 對象性能指標
 
 API 可以傳回租用戶上物件的詳細指標，例如：
@@ -200,6 +210,7 @@ API 可以傳回租用戶上物件的詳細指標，例如：
 
 
 
+[[performance-history-data]]
 == 效能歷史數據
 
 歷史資料在效能資料中以時間戳記和計數器對映對的列表形式呈現。
@@ -215,12 +226,14 @@ image:DiskPerformanceExample.png["磁碟效能 JSON"]
 
 
 
+[[objects-with-capacity-attributes]]
 == 具有容量屬性的對象
 
 具有容量屬性的物件使用基本資料類型和CapacityItem來表示。
 
 
 
+[[capacityitem]]
 === 容量項目
 
 CapacityItem 是容量的單一邏輯單位。它具有由其父對象定義的單位的“值”和“高閾值”。它還支援可選的細分圖，解釋容量值是如何建構的。例如，100 TB 儲存池的總容量將是值為 100 的 CapacityItem。細分結果可能顯示 60 TB 分配給“資料”，40 TB 分配給“快照”。
@@ -233,6 +246,7 @@ image:StoragePoolCapacity.png["儲存池容量範例"]
 
 
 
+[[using-search-to-look-up-objects]]
 == 使用搜尋查找對象
 
 搜尋 API 是系統的簡單入口點。 API 的唯一輸入參數是自由格式的字串，產生的 JSON 包含分類的結果清單。類型是與庫存不同的資產類型，例如儲存、主機、資料儲存等。每種類型都包含符合搜尋條件的該類型的物件清單。
@@ -243,6 +257,7 @@ Cloud Insight 的 RESTful API 是一個主要的整合點，它允許簡單有�
 
 
 
+[[disabling-or-revoking-an-api-token]]
 == 停用或撤銷 API 令牌
 
 若要暫時停用 API 令牌，請在 API 令牌清單頁面上，按一下 API 的「三個點」選單，然後選擇_停用_。您可以隨時使用相同的選單並選擇“啟用”來重新啟用令牌。
@@ -253,6 +268,7 @@ image:API_Disable_Token.png["停用或撤銷 API 令牌"]
 
 
 
+[[rotating-expired-api-access-tokens]]
 == 輪換過期的 API 存取令牌
 
 API 存取令牌有一個有效期限。當 API 存取令牌過期時，使用者需要產生一個新令牌（類型為“資料提取”，具有讀取/寫入權限）並重新配置 Telegraf 以使用新產生的令牌而不是過期的令牌。以下步驟詳細說明如何執行此操作。

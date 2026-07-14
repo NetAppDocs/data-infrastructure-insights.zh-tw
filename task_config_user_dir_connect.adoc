@@ -111,6 +111,7 @@ summary: 設定工作負載安全性 Active Directory 使用者目錄收集器
 |===
 
 
+[[testing-your-user-directory-collector-configuration]]
 == 測試您的使用者目錄收集器配置
 
 您可以使用下列步驟驗證 LDAP 使用者權限和屬性定義：
@@ -131,6 +132,7 @@ image:cs_ADExample.png["AD 連線"]
 
 
 
+[[troubleshooting-user-directory-collector-configuration-errors]]
 == 排除使用者目錄收集器配置錯誤
 
 下表描述了收集器配置期間可能出現的已知問題和解決方法：

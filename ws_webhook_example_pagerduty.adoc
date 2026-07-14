@@ -21,6 +21,7 @@ NOTE: 本頁引用第三方說明，可能會有變更。請參閱link:https://s
 
 
 
+[[pagerduty-setup]]
 == PagerDuty 設定：
 
 . 在 PagerDuty 中，導覽至 *服務 > 服務目錄* 並點選 *+新服務* 按鈕。
@@ -39,6 +40,7 @@ image:ws_pagerduty_incidents_list.png["pagerduty 事件清單範例，寬度=700
 
 
 
+[[create-workload-security-pagerduty-webhook]]
 == 建立工作負載安全性 PagerDuty Webhook：
 
 * 導覽至“管理”>“通知”，然後選擇“_Workload Security Webhooks_”標籤。選擇“+ Webhook”來建立一個新的 webhook。
@@ -53,6 +55,7 @@ image:ws_webhook_pagerduty_example.png["工作負載安全 pagerduty webhook 範
 
 
 
+[[notifications-via-webhook]]
 == 透過 Webhook 發送通知
 
 * 若要透過 webhook 通知事件，請導覽至_工作負載安全性 > 策略_。選擇“_+攻擊策略_”或“_+警告策略_”。

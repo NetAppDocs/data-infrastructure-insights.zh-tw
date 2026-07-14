@@ -20,6 +20,7 @@ Data Infrastructure Insights工作負載安全性與ONTAP整合以接收存取�
 
 
 
+[[prerequisites]]
 == 先決條件
 
 * 最低ONTAP版本：9.13.0。
@@ -30,6 +31,7 @@ image:WS_Access_Denied_Enable_in_Collector.png["在ONTAP收集器進階配置中
 
 
 
+[[user-permissions-required]]
 == 需要使用者權限
 
 如果使用叢集管理憑證新增資料收集器，則不需要新的權限。
@@ -46,6 +48,7 @@ image:WS_Access_Denied_Enable_in_Collector.png["在ONTAP收集器進階配置中
 
 
 
+[[access-denied-events]]
 == 訪問被拒絕事件
 
 從ONTAP系統取得事件後，「工作負載安全取證」頁面將顯示「存取被拒絕」事件。除了顯示的資訊之外，您還可以透過從齒輪圖示新增「所需活動」欄位來查看特定操作缺少的使用者權限。

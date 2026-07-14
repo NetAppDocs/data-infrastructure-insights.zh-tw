@@ -20,6 +20,7 @@ IMPORTANT: 在變更報告權限或安全性之前，您必須將「我的內容
 
 
 
+[[customizing-a-reports-output-format-and-delivery]]
 == 自訂報告的輸出格式和交付
 
 您可以自訂報告的格式和傳遞方式。
@@ -41,6 +42,7 @@ image:Reporting_Output_and_Delivery.png["報告輸出和交付"]
 
 
 
+[[copying-a-report-to-the-clipboard]]
 == 將報告複製到剪貼簿
 
 使用此程序將報告複製到剪貼簿。
@@ -59,6 +61,7 @@ image:Reporting_Copy_To_Clipboard.png["將報告複製到剪貼簿"]
 
 
 
+[[opening-reports-from-the-clipboard]]
 == 從剪貼簿開啟報告
 
 您可以開啟先前複製到剪貼簿的報告規格。
@@ -80,12 +83,14 @@ image:Reporting_Open_From_Clipboard.png["從剪貼簿開啟報告"]
 
 
 
+[[editing-an-existing-report]]
 == 編輯現有報告
 
 請注意，在預設位置編輯檔案可能會導致這些報告在下次刷新報告目錄時被覆寫。建議將編輯後的報告儲存為新名稱或儲存在非預設位置。
 
 
 
+[[troubleshooting]]
 == 故障排除
 
 在這裡您可以找到有關解決報告問題的建議。

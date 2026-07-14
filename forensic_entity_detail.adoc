@@ -18,6 +18,7 @@ summary: 法醫實體頁面
 
 
 
+[[examining-entity-information]]
 == 檢查實體資訊
 
 按一下“*取證 > 活動取證*”，然後按一下“實體”標籤以存取實體頁面。

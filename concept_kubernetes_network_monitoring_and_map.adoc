@@ -18,6 +18,7 @@ image:workload-map-animated.gif["工作負載圖範例"]
 
 
 
+[[pre-requisites]]
 == 先決條件
 
 在使用 Kubernetes 網路效能監控和映射之前，您必須先設定link:task_config_telegraf_agent_k8s.html["NetApp Kubernetes 監控操作員"]啟用此選項。在部署操作員期間，選擇“網路效能和地圖”複選框以啟用。您也可以透過導覽至 Kubernetes 登入頁面並選擇「修改部署」來啟用此選項。
@@ -26,6 +27,7 @@ image:ServiceMap_NKMO_Deployment_Options.png["在 NKMO 停止期間選擇地圖�
 
 
 
+[[monitors]]
 == 監視器
 
 工作負載圖使用link:task_create_monitor.html["監視器"]來獲取資訊。Data Infrastructure Insights提供了許多預設的 Kubernetes 監視器（請注意，這些監視器預設可能處於_暫停_狀態。您可以_恢復_（即啟用）您想要的監視器），或者您可以為 kubernetes 物件建立自訂監視器，工作負載圖也將使用這些監視器。
@@ -45,6 +47,7 @@ image:ServiceMap_NKMO_Deployment_Options.png["在 NKMO 停止期間選擇地圖�
 
 
 
+[[the-map]]
 == 地圖
 
 地圖顯示服務/工作負載及其相互關係。箭頭顯示交通方向。將滑鼠懸停在工作負載上會顯示該工作負載的摘要訊息，如下例所示：
@@ -63,6 +66,7 @@ image:ServiceMap_Node_and_Connection_Legend.png["圖例顯示了相對圓（節�
 
 
 
+[[workload-details-and-alerts]]
 == 工作負載詳情和警報
 
 彩色圓圈表示工作負載的警告或嚴重程度警報。將滑鼠停留在圓圈上以查看問題摘要，或點擊圓圈可開啟包含更多詳細資訊的滑出面板。
@@ -71,6 +75,7 @@ image:Workload_Map_Slideout_with_Alert.png["帶有警報的工作負載滑出詳
 
 
 
+[[finding-and-filtering]]
 == 尋找和過濾
 
 與其他Data Infrastructure Insights功能一樣，您可以輕鬆設定篩選器以專注於您想要的特定物件或工作負載屬性。
@@ -83,6 +88,7 @@ image:Workload_Map_Find_Highlighting.png["在尋找框中輸入突出顯示工�
 
 
 
+[[workload-labels]]
 == 工作負載標籤
 
 如果您希望地圖識別所顯示的工作負載類型（即圓圈圖示），則工作負載標籤是必要的。標籤的得出方式如下：
@@ -117,6 +123,7 @@ image:Workload_Map_Find_Highlighting.png["在尋找框中輸入突出顯示工�
 
 
 
+[[dive-deep]]
 == 深入探索
 
 右鍵單擊工作負載會顯示更多選項以供進一步探索。例如，您可以從這裡放大查看該工作負載的連線。

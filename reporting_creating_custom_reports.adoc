@@ -34,6 +34,7 @@ NOTE: 報告功能可在Data Infrastructure Insights中使用link:concept_subscr
 
 
 
+[[report-creation-process]]
 == 報表建立流程
 
 建立自訂（也稱為「臨時」）報告的過程涉及幾項任務：
@@ -47,6 +48,7 @@ NOTE: 報告功能可在Data Infrastructure Insights中使用link:concept_subscr
 
 
 
+[[planning-the-results-of-your-custom-report]]
 === 規劃自訂報告的結果
 
 在開啟報告創作工具之前，您可能需要規劃您希望從報告中獲得的結果。使用報告創作工具，您可以輕鬆建立報告，並且可能不需要大量的規劃；但是，從報告請求者那裡了解報告要求是一個好主意。
@@ -72,6 +74,7 @@ NOTE: 報告功能可在Data Infrastructure Insights中使用link:concept_subscr
 
 
 
+[[tips-for-designing-reports]]
 === 設計報告的技巧
 
 在設計報告時，一些技巧可能會有所幫助。
@@ -89,6 +92,7 @@ NOTE: 報告功能可在Data Infrastructure Insights中使用link:concept_subscr
 
 
 
+[[reporting-data-models]]
 == 報告資料模型
 
 Data Infrastructure Insights包括幾個數據模型，您可以從中選擇預先定義的報告或建立自己的自訂報告。
@@ -101,6 +105,7 @@ Data Infrastructure Insights包括幾個數據模型，您可以從中選擇預�
 
 
 
+[[capacity-data-models]]
 === 容量資料模型
 
 使您能夠回答有關儲存容量、檔案系統使用率、內部磁碟區容量、連接埠容量、qtree 容量和虛擬機器 (VM) 容量的問題。容量資料模型是多個容量資料模型的容器。您可以使用此資料模型建立回答各種類型問題的報表：
@@ -199,6 +204,7 @@ VM 容量資料模型中的容量取自虛擬磁碟 (VMDK)。這意味著使用 
 
 
 
+[[chargeback-data-model]]
 === 退款資料模型
 
 使您能夠回答有關儲存資源（磁碟區、內部磁碟區和 qtree）的已使用容量和已指派容量的問題。此資料模型提供主機、應用程式和業務實體的儲存容量退款和責任信息，包括當前資料和歷史資料。報告資料可以按服務等級和儲存層進行分類。
@@ -226,6 +232,7 @@ VM 容量資料模型中的容量取自虛擬磁碟 (VMDK)。這意味著使用 
 
 
 
+[[inventory-data-model]]
 === 庫存資料模型
 
 使您能夠回答有關庫存資源的問題，包括主機、儲存系統、交換器、磁碟、磁帶、qtree、配額、虛擬機器和伺服器以及通用設備。庫存資料模型包括幾個子市場，使您能夠查看有關複製、FC 路徑、iSCSI 路徑、NFS 路徑和違規的資訊。庫存資料模型不包括歷史資料。您可以利用這些數據回答的問題
@@ -247,6 +254,7 @@ VM 容量資料模型中的容量取自虛擬磁碟 (VMDK)。這意味著使用 
 
 
 
+[[performance-data-model]]
 === 性能數據模型
 
 使您能夠回答有關磁碟區、應用程式磁碟區、內部磁碟區、交換器、應用程式、虛擬機器、VMDK、ESX 與虛擬機器、主機和應用程式節點的效能問題。其中許多報告是「每小時」數據、「每日」數據或兩者兼有。使用此資料模型，您可以建立回答多種類型的績效管理問題的報表：
@@ -291,6 +299,7 @@ VM 容量資料模型中的容量取自虛擬磁碟 (VMDK)。這意味著使用 
 
 
 
+[[storage-efficiency-data-model]]
 === 儲存效率資料模型
 
 使您能夠追蹤儲存效率得分和一段時間內的潛力。此資料模型不僅儲存了已配置容量的測量值，還儲存了已使用或消耗的容量（實體測量值）。例如，當啟用精簡配置時，Data Infrastructure Insights指示從設備中獲取了多少容量。您也可以使用此模型來確定啟用重複資料刪除時的效率。您可以使用儲存效率資料集市來回答各種問題：
@@ -304,6 +313,7 @@ VM 容量資料模型中的容量取自虛擬磁碟 (VMDK)。這意味著使用 
 
 
 
+[[data-model-fact-and-dimension-tables]]
 === 資料模型事實表與維度表
 
 每個資料模型都包括事實表和維度表。
@@ -316,6 +326,7 @@ VM 容量資料模型中的容量取自虛擬磁碟 (VMDK)。這意味著使用 
 
 
 
+[[colors-used-in-data-model-elements]]
 === 資料模型元素中使用的顏色
 
 資料模型元素上的顏色有不同的意義。
@@ -326,6 +337,7 @@ VM 容量資料模型中的容量取自虛擬磁碟 (VMDK)。這意味著使用 
 
 
 
+[[using-multiple-data-models-in-one-report]]
 === 在一個報告中使用多個資料模型
 
 通常，每個報告使用一個資料模型。但是，您可以編寫一份包含來自多個資料模型的資料的報告。

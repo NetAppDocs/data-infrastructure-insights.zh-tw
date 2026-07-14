@@ -29,6 +29,7 @@ Data Infrastructure Insights可讓您追蹤與應用程式相關的資產數據�
 
 
 
+[[assigning-applications-to-assets]]
 == 將應用程式分配給資產
 
 此過程以將應用程式指派給主機為例。您可以將主機、虛擬機器、磁碟區或內部磁碟區指派給應用程式。

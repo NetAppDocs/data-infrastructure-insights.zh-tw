@@ -18,6 +18,7 @@ summary: 為Cloud Volumes ONTAP和Amazon FSx for NetApp ONTAP設定工作負載�
 
 
 
+[[cloud-volumes-ontap-storage-configuration]]
 == Cloud Volumes ONTAP儲存配置
 
 請參閱OnCommand Cloud Volumes ONTAP文檔，以配置單節點/HA AWS 執行個體來託管工作負載安全代理：https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/index.html[]
@@ -26,6 +27,7 @@ summary: 為Cloud Volumes ONTAP和Amazon FSx for NetApp ONTAP設定工作負載�
 
 
 
+[[supported-platforms]]
 == 支援的平台
 
 * Cloud Volumes ONTAP，在所有可用的雲端服務供應商處均受支援。例如：Amazon、Azure、Google Cloud。
@@ -34,6 +36,7 @@ summary: 為Cloud Volumes ONTAP和Amazon FSx for NetApp ONTAP設定工作負載�
 
 
 
+[[agent-machine-configuration]]
 == 代理機器配置
 
 代理機器必須在雲端服務提供者的各自子網路中配置。在[代理要求]中閱讀有關網路存取的更多資訊。
@@ -62,6 +65,7 @@ summary: 為Cloud Volumes ONTAP和Amazon FSx for NetApp ONTAP設定工作負載�
 
 
 
+[[install-the-workload-security-agent]]
 == 安裝工作負載安全代理
 
 . 以管理員或帳戶擁有者的身分登入您的Data Infrastructure Insights環境。
@@ -75,6 +79,7 @@ summary: 為Cloud Volumes ONTAP和Amazon FSx for NetApp ONTAP設定工作負載�
 
 
 
+[[troubleshooting]]
 == 故障排除
 
 下表描述了已知問題及其解決方法。

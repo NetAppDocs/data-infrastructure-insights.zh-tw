@@ -14,54 +14,63 @@ summary:
 
 
 
+[[does-data-infrastructure-insights-make-changes-to-my-environment]]
 == Data Infrastructure Insights是否會改變我的環境？
 
 否。Data Infrastructure Insights是一個唯讀工具，用於收集有關您的環境的資訊。Data Infrastructure Insights永遠不會對您的資產或配置進行任何更改。
 
 
 
+[[what-permission-level-access-does-data-infrastructure-insights-need-to-my-devices]]
 == Data Infrastructure Insights需要對我的設備具有什麼權限等級的存取權限？
 
 在設備支援的大多數情況下，只需要只讀存取。有些解決方案不允許唯讀訪問，因此需要適當的提升權限。
 
 
 
+[[how-often-does-data-infrastructure-insights-collect-information]]
 == Data Infrastructure Insights多久收集一次資訊？
 
 Data Infrastructure Insights通常每 5 分鐘收集一次效能數據，每半小時發現一次邏輯和物理結構。Data Infrastructure Insights根據建議的最佳實踐和可擴展性設定預設輪詢間隔，但允許使用者完全控制這些間隔。
 
 
 
+[[what-is-data-infrastructure-insightss-impact-to-my-environment]]
 == 數據基礎設施洞察對我的環境有何影響？
 
 Data Infrastructure Insights 的無代理、帶外和被動 IP 通訊有助於最大限度地減少設定、維護和對資料中心生態系統的影響。 Data Infrastructure Insights 的效能開發團隊在監控效能本身的活動中採取了重大措施，以盡量減少對資料中心效能的影響。在正常操作環境中，影響可以忽略不計，而在利用率高或效能不佳的技術平台中，影響可以放寬或收緊。有關詳細信息，請參閱Data Infrastructure Insights安裝指南。
 
 
 
+[[how-can-i-list-all-the-hostsvms-in-data-infrastructure-insights]]
 == 如何列出Data Infrastructure Insights中的所有主機/虛擬機器？
 
 資料基礎設施洞察的小部件和查詢清單功能可用於提供資料中心資產的庫存樣式清單。虛擬機器清單直至主軸以及其間的眾多構造都可以用於查詢、小部件、儀表板和資料倉儲報告，並且可以透過 RESTful API 存取。
 
 
 
+[[does-data-infrastructure-insights-provide-the-same-type-of-support-for-related-non-hypervisor-hosts-i-e-physical-servers]]
 == Data Infrastructure Insights是否為相關的非虛擬機器管理程式主機（即實體伺服器）提供相同類型的支援？
 
 VMware 等虛擬機器管理程式提供 ESXI 主機及其虛擬機器 (VM) 的詳細資訊。對於實體伺服器，Data Infrastructure Insights會收集主機 HBA 的指標。Data Infrastructure Insights採用一種獨特的方法，使用正在申請專利的技術來發現實體伺服器。一旦發現儲存和/或交換機，實體伺服器的主機名稱就包含在結構別名資訊中。Data Infrastructure Insights選擇這些主機名，在 DNS 中匹配它們，並自動將主機帶入Data Infrastructure Insights。該技術大大減少了手動輸入更新和工具庫存維護的需要。
 
 
 
+[[does-data-infrastructure-insights-provide-the-same-device-metric-depth-parity-across-heterogenous-environments]]
 == Data Infrastructure Insights是否在異質環境中提供相同的設備指標深度（奇偶校驗）？
 
 第三方平台和供應商技術的標準化、通用性和命名法程度各不相同。Data Infrastructure Insights嘗試將容量和性能資訊標準化到一致的框架中。一些容量和效能指標由裝置計數器原生提供，例如 IOP、延遲和原始容量。當未提供計數器時，Data Infrastructure Insights可以嘗試匯總值（例如，透過計算底層磁碟區的 IOP 或容量之和），如果兩者都不可用，Data Infrastructure Insights將嘗試透過各種計算演算法來得出指標值。Data Infrastructure Insights提供了通用的 SNMP 整合功能，以整合當前Data Infrastructure Insights尚未收集的附加指標。
 
 
 
+[[does-data-infrastructure-insights-support-fibre-channel-switches]]
 == Data Infrastructure Insights是否支援光纖通道交換器？
 
 是的，除了從您的儲存資產收集資料之外， Data Infrastructure Insights還從您的租戶上的Cisco、 Brocade和 QLogic 交換器取得庫存和效能資料。
 
 
 
+[[are-topology-views-of-the-whole-infrastructure-available-does-data-infrastructure-insights-show-end-to-end-visibility]]
 == 是否可以提供整個基礎架構的拓樸視圖？Data Infrastructure Insights是否顯示「端到端可見度」？
 
 是的，Data Infrastructure Insights動態發現並繪製邏輯和實體結構，提供運算、結構、虛擬化器和後端儲存的互動式端對端拓撲視圖。拓撲圖示允許快速啟動導航到受影響的資源並有助於識別共享儲存環境中的工作負載和違規行為。

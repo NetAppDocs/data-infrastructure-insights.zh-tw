@@ -20,6 +20,7 @@ image:ai_assistant_sample_question.png["AI Assistant 範例問題"]
 
 
 
+[[meet-your-infrastructures-new-intelligent-partner]]
 == 認識您基礎架構的全新智慧合作夥伴
 
 AI 助理徹底改變了您與資料的互動方式，將複雜的查詢轉化為簡單的對話。您可以即時發現隱藏的模式，加速故障排除，並自信地做出數據驅動的決策。立即獲得以下問題的答案：
@@ -38,6 +39,7 @@ AI 助理徹底改變了您與資料的互動方式，將複雜的查詢轉化�
 
 
 
+[[before-using-the-ai-assistant]]
 == 在使用 AI Assistant 之前
 
 * AI Assistant 旨在為您提供協助。雖然它力求準確，但為了獲得最佳效果，強烈建議您透過人工監督來驗證其輸出結果。
@@ -48,6 +50,7 @@ AI 助理徹底改變了您與資料的互動方式，將複雜的查詢轉化�
 
 
 
+[[the-ai-assistant-works-with-you]]
 == AI 助理與您一起工作
 
 Data Infrastructure Insights AI 助理可以幫助您解答有關 IT 基礎架構資料的問題。為了有效地完成這項任務，它需要理解您的請求以及回應請求所需的特定資料。
@@ -69,12 +72,14 @@ DII 系統包含多種類型的資料，其中包括：
 
 
 
+[[chat-naturally]]
 == 自然聊天
 
 AI 助理現在支援十幾種語言，讓您的團隊能夠用他們偏好的語言進行自然交流。查看完整清單link:https://platform.claude.com/docs/en/build-with-claude/multilingual-support["這裡"]。
 
 
 
+[[accessing-the-assistant]]
 == 存取助理
 
 要呼叫 DII AI Assistant，只需選擇螢幕左下角的貓頭鷹圖示即可。擁有「Owner」或「Admin」角色的使用者必須先接受條款和條件，其他使用者才能在您的租用戶上使用 AI Assistant。

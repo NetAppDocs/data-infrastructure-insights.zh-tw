@@ -14,6 +14,7 @@ keywords: asset page, user data, applications, annotations
 
 
 
+[[using-the-user-data-section-to-assign-or-modify-applications]]
 == 使用用戶資料部分分配或修改應用程式
 
 您可以將租用戶上執行的應用程式指派給某些資產（主機、虛擬機器、磁碟區、內部磁碟區、qtree 和虛擬機器管理程式）。使用者資料部分可讓您新增、變更或刪除指派給資產的應用程式。對於除卷之外的所有這些資產類型，您可以指派多個應用程式。
@@ -37,6 +38,7 @@ keywords: asset page, user data, applications, annotations
 
 
 
+[[using-the-user-data-section-to-assign-or-modify-annotations]]
 == 使用使用者資料部分分配或修改註釋
 
 當客製化Data Infrastructure Insights以追蹤公司需求的資料時，您可以定義稱為註釋的專門註釋，並將其分配給您的資產。資產頁面的使用者資料部分顯示指派給資產的註釋，也允許您變更指派給該資產的註釋。

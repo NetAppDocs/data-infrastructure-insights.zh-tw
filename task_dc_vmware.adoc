@@ -18,11 +18,12 @@ VMware vSphere 的資料收集器收集 VM 用戶機和 ESXi 主機效能和配�
 
 
 
+[[terminology]]
 == 術語
 
 Data Infrastructure Insights從 VMware vSphere 資料收集器取得以下庫存資訊。對於所取得的每種資產類型，都會顯示該資產最常用的術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 供應商/型號術語 | Data Infrastructure Insights術語 
 
@@ -48,6 +49,7 @@ Data Infrastructure Insights從 VMware vSphere 資料收集器取得以下庫存
 
 
 
+[[requirements]]
 == 要求
 
 配置此數據收集器需要以下資訊：
@@ -67,9 +69,10 @@ Data Infrastructure Insights從 VMware vSphere 資料收集器取得以下庫存
 
 
 
+[[setup-and-connection]]
 == 設定和連接
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -81,9 +84,10 @@ Data Infrastructure Insights從 VMware vSphere 資料收集器取得以下庫存
 |===
 
 
+[[configuration]]
 == 配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -98,14 +102,13 @@ Data Infrastructure Insights從 VMware vSphere 資料收集器取得以下庫存
 |===
 
 
+[[advanced-configuration]]
 == 進階配置
 
 在進階配置畫面中，勾選“*VM 效能*”方塊以收集效能資料。預設啟用庫存收集。可以配置以下欄位：
 
-[cols="2*"]
+[cols="50,50"]
 |===
-
-
 | 場地 | 描述 
 
 
@@ -131,6 +134,7 @@ Data Infrastructure Insights從 VMware vSphere 資料收集器取得以下庫存
 |===
 
 
+[[mapping-vmware-tags-to-data-infrastructure-insights-annotations]]
 == 將 VMware 標籤對應到Data Infrastructure Insights註釋
 
 VMware 資料收集器可讓您使用在 VMware 上配置的標籤填入Data Infrastructure Insights註解。 DII 註解名稱必須與 VMware *類別* 名稱相同；然後標籤將套用為與類別同名的 DII 註解的註解值。Data Infrastructure Insights將始終填充同名的文字類型註釋，並將「盡最大努力」填充其他類型（數字、布林值等）的註釋。如果您的註釋屬於不同類型且資料收集器無法填充它，則可能需要刪除該註釋並將其重新建立為文字類型。
@@ -146,15 +150,17 @@ VMware 資料收集器可讓您使用在 VMware 上配置的標籤填入Data Inf
 
 
 
+[[troubleshooting]]
 == 故障排除
 
 如果您在使用此資料收集器時遇到問題，請嘗試以下操作：
 
 
 
+[[inventory]]
 === 存貨
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 問題： | 試試一下： 
 

@@ -27,6 +27,7 @@ ONTAP Essentials 至少需要一台正在運作的ONTAP資料收集器，並且�
 
 
 
+[[overview]]
 == 概況
 
 要開始探索，請從主Data Infrastructure Insights選單中選擇 * ONTAP Essentials*。
@@ -41,6 +42,7 @@ image:OE_Overview.png["ONTAP Essentials 概覽儀表板"]
 
 
 
+[[data-protection]]
 == 資料保護
 
 *資料保護*頁面顯示受*Snapshot 副本*或* SnapMirror策略*保護的磁碟區的狀態。
@@ -74,6 +76,7 @@ image:DataProtectionDashboard_ClusterList.png["資料保護叢集列表"]
 
 
 
+[[security]]
 == 安全
 
 安全儀表板可讓您即時了解目前的安全狀況，顯示硬體和軟體磁碟區加密、防檔案竄改狀態以及叢集身分驗證方法的圖表。安全標準根據link:https://www.netapp.com/pdf.html?item=/media/10674-tr4569.pdf["* NetApp ONTAP 9 安全強化指南*"]中定義的建議進行評估。
@@ -151,6 +154,7 @@ image:OE_Cluster_Compliance_Example.png["集群合規狀態"]
 
 
 
+[[alerts]]
 == 警報
 
 在這裡，您可以查看租戶的活動警報並快速深入了解潛在問題。選擇“已解決”選項卡來查看已解決的警報。
@@ -159,6 +163,7 @@ image:OE_Alerts.png["ONTAP Essentials 警報列表"]
 
 
 
+[[infrastructure]]
 == 基礎設施
 
 ONTAP Essentials *基礎設施*頁面使用所有基本ONTAP物件上的預先建置（但可進一步自訂）查詢，為您提供叢集健康和效能的視圖。選擇您想要探索的物件類型（叢集、儲存池等），並選擇是否要查看健康狀況或效能資訊。設定過濾器以深入了解各個系統。
@@ -169,6 +174,7 @@ image:ONTAP_Essentials_Health_Performance.png["儲存池的基礎架構選擇"]
 
 
 
+[[networking]]
 == 聯網
 
 ONTAP Essentials Networking 讓您可以查看 FC、NVME FC、乙太網路和 iSCSI 基礎架構。在這些頁面上，您可以探索叢集及其節點中的連接埠等內容。
@@ -177,6 +183,7 @@ image:ONTAP_Essentials_Alerts_Menu.png["ONTAP Essentials 網路選單"] image:ON
 
 
 
+[[workloads]]
 == 工作負載
 
 查看並探索租戶上的 LUN/磁碟區、NFS 或 SMB 共用或 Qtree 上的工作負載。

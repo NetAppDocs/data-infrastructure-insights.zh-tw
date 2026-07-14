@@ -14,15 +14,17 @@ summary: 通用資料庫主機解析器收集器
 
 
 
+[[terminology]]
 == 術語
 
 Data Infrastructure Insights從該收集器獲取庫存。
 
 
 
+[[configuration]]
 == 配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -43,9 +45,10 @@ Data Infrastructure Insights從該收集器獲取庫存。
 |===
 
 
+[[advanced-configuration]]
 == 進階配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 

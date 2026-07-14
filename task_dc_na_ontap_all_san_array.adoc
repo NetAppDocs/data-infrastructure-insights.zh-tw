@@ -18,6 +18,7 @@ summary: 'ONTAP全 SAN 陣列資料 (ASA r2 ) 收集器'
 
 
 
+[[requirements]]
 == 要求
 
 以下是配置和使用此資料收集器的要求：
@@ -38,6 +39,7 @@ NOTE: ASA R2 表示ONTAP ASA儲存平台的最新一代型號。這包括陣列�
 
 
 
+[[a-note-about-permissions]]
 == 關於權限的說明
 
 由於許多Data Infrastructure Insights的ONTAP儀表板依賴進階ONTAP計數器，因此您應該在資料收集器的進階配置部分中保持 *啟用進階計數器資料收集* 處於啟用狀態。
@@ -88,6 +90,7 @@ restUser       http        password      restRole         no     none
 ----
 
 
+[[migration]]
 == 遷移
 
 若要從先前的ONTAP （ontapi）資料收集器遷移到較新的ONTAP REST 收集器，請執行以下操作：
@@ -102,9 +105,10 @@ restUser       http        password      restRole         no     none
 
 
 
+[[configuration]]
 == 配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -119,9 +123,10 @@ restUser       http        password      restRole         no     none
 |===
 
 
+[[advanced-configuration]]
 == 進階配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -142,11 +147,12 @@ restUser       http        password      restRole         no     none
 |===
 
 
+[[terminology]]
 == 術語
 
 Data Infrastructure Insights從ONTAP資料收集器取得庫存、日誌和效能資料。對於所取得的每種資產類型，都會顯示該資產最常用的術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 供應商/型號術語 | Data Infrastructure Insights術語 
 
@@ -176,12 +182,14 @@ Data Infrastructure Insights從ONTAP資料收集器取得庫存、日誌和效�
 |===
 
 
+[[ontap-data-management-terminology]]
 == ONTAP資料管理術語
 
 以下術語適用於您可能在ONTAP資料管理儲存資產登入頁面上找到的物件或參考。其中許多術語也適用於其他資料收集器。
 
 
 
+[[storage]]
 === 儲存
 
 * 模型 – 此叢集內唯一、離散節點模型名稱的逗號分隔清單。如果叢集中的所有節點都是相同的模型類型，則只會出現一個模型名稱。
@@ -196,6 +204,7 @@ Data Infrastructure Insights從ONTAP資料收集器取得庫存、日誌和效�
 
 
 
+[[storage-pool]]
 === 儲存池
 
 * 儲存－該池位於哪個儲存陣列上。強制的。
@@ -212,6 +221,7 @@ Data Infrastructure Insights從ONTAP資料收集器取得庫存、日誌和效�
 
 
 
+[[storage-node]]
 === 儲存節點
 
 * 儲存－此節點屬於哪個儲存陣列。強制的。
@@ -230,6 +240,7 @@ Data Infrastructure Insights從ONTAP資料收集器取得庫存、日誌和效�
 
 
 
+[[ontap-power-metrics]]
 == ONTAP功率指標
 
 多種ONTAP模型為Data Infrastructure Insights提供了可用於監控或警報的功率指標。以下的支援和不支援型號清單並不全面，但應該提供一些指導；一般來說，如果某個型號與清單中的型號屬於同一系列，則支援應該是相同的。
@@ -244,11 +255,12 @@ FAS2620 FAS3250 FAS3270 FAS500f FAS6280 FAS/ AFF 8020 FAS/ AFF 8040 FAS/ AFF 806
 
 
 
+[[troubleshooting]]
 == 故障排除
 
 如果您在使用此資料收集器時遇到問題，請嘗試以下操作：
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 問題： | 試試一下： 
 

@@ -24,6 +24,7 @@ summary: 立即阻止偵測到的攻擊，透過自動或手動限制受感染�
 
 
 
+[[prerequisites-for-user-access-blocking]]
 == 使用者存取阻止的先決條件
 
 此功能需要集群級憑證才能運作。
@@ -45,6 +46,7 @@ security login role create -role csrole -cmddirname "vserver name-mapping" -acce
 
 
 
+[[how-to-enable-the-feature]]
 == 如何啟用該功能？
 
 * 在工作負載安全性中，導覽至*工作負載安全性>策略>自動回應策略*。選擇*+攻擊策略*。
@@ -53,6 +55,7 @@ security login role create -role csrole -cmddirname "vserver name-mapping" -acce
 
 
 
+[[how-to-set-up-automatic-user-access-blocking]]
 == 如何設定自動用戶存取阻止？
 
 * 建立新的攻擊策略或編輯現有的攻擊策略。
@@ -64,6 +67,7 @@ security login role create -role csrole -cmddirname "vserver name-mapping" -acce
 
 
 
+[[how-to-know-if-there-are-blocked-users-in-the-system]]
 == 如何知道系統中是否有被封鎖的使用者？
 
 * 在警報清單頁面中，如果有任何使用者被封鎖，螢幕頂部將顯示橫幅。
@@ -73,6 +77,7 @@ security login role create -role csrole -cmddirname "vserver name-mapping" -acce
 
 
 
+[[restrict-and-manage-user-access-manually]]
 == 手動限制和管理用戶訪問
 
 * 您可以轉到警報詳細資訊或使用者詳細資料螢幕，然後從這些螢幕手動封鎖或還原使用者。
@@ -80,12 +85,14 @@ security login role create -role csrole -cmddirname "vserver name-mapping" -acce
 
 
 
+[[user-access-limitation-history]]
 == 使用者存取限制歷史記錄
 
 在警報詳細資訊和使用者詳細資料頁面的使用者面板中，您可以查看使用者存取限制歷史記錄的審核：時間、操作（封鎖、解除封鎖）、持續時間、採取的操作、手動/自動以及受影響的 NFS IP。
 
 
 
+[[how-to-disable-the-feature]]
 == 如何停用該功能？
 
 您可以隨時停用該功能。如果系統中有受限用戶，則必須先恢復他們的存取權限。
@@ -98,6 +105,7 @@ security login role create -role csrole -cmddirname "vserver name-mapping" -acce
 
 
 
+[[manually-restore-ips-for-nfs]]
 == 手動恢復 NFS 的 IP
 
 如果您的 Workload Security 試用版已過期，或代理程式/收集器已關閉，請依照下列步驟從ONTAP手動復原任何 IP。
@@ -143,6 +151,7 @@ svm2         test            3       cifs,    0.0.0.0/0             any
 
 
 
+[[manually-restore-users-for-smb]]
 == 手動恢復 SMB 用戶
 
 如果您的 Workload Security 試用版已過期，或代理程式/收集器已關閉，請依照下列步驟從ONTAP手動恢復任何使用​​者。
@@ -181,6 +190,7 @@ Position Hostname         IP Address/Mask
 
 
 
+[[troubleshooting]]
 == 故障排除
 
 |===

@@ -15,10 +15,12 @@ Data Infrastructure Insights包括許多系統定義的指標和日誌監視器�
 
 NOTE: 許多系統監視器預設處於_暫停_狀態。您可以透過選擇監視器的“_Resume_”選項來啟用系統監視器。確保在資料收集器中啟用了_進階計數器資料收集_和_啟用ONTAP EMS 日誌收集_。這些選項可以在ONTAP資料收集器的「進階配置」下找到：image:Enable_Log_Monitor_Collection.png["為ONTAP啟用進階計數器和 EMS 日誌收集"]
 
+[[top]]
 目錄：[]
 
 
 
+[[monitor-descriptions]]
 == 監視器描述
 
 系統定義的監視器由預先定義的指標和條件以及預設描述和糾正措施組成，這些都無法修改。您可以修改系統定義的監視器的通知收件者清單。若要查看指標、條件、描述和糾正措施，或修改收件者列表，請開啟系統定義的監視器群組並點擊清單中的監視器名稱。
@@ -36,6 +38,7 @@ NOTE: 許多系統監視器預設處於_暫停_狀態。您可以透過選擇監
 
 
 
+[[metric-monitors]]
 === 指標監視器
 
 |===
@@ -122,6 +125,7 @@ NOTE: 許多系統監視器預設處於_暫停_狀態。您可以透過選擇監
 
 
 
+[[log-monitors]]
 === 記錄監視器
 
 |===
@@ -292,6 +296,7 @@ NOTE: 許多系統監視器預設處於_暫停_狀態。您可以透過選擇監
 
 
 
+[[anti-ransomware-log-monitors]]
 === 反勒索軟體日誌監控器
 
 |===
@@ -330,6 +335,7 @@ NOTE: 許多系統監視器預設處於_暫停_狀態。您可以透過選擇監
 
 
 
+[[fsx-for-netapp-ontap-monitors]]
 === FSx for NetApp ONTAP監視器
 
 |===
@@ -359,6 +365,7 @@ NOTE: 許多系統監視器預設處於_暫停_狀態。您可以透過選擇監
 
 
 
+[[k8s-monitors]]
 === K8s 監視器
 
 |===
@@ -484,6 +491,7 @@ NOTE: 許多系統監視器預設處於_暫停_狀態。您可以透過選擇監
 
 
 
+[[change-log-monitors]]
 === 變更日誌監視器
 
 |===
@@ -516,6 +524,7 @@ NOTE: 許多系統監視器預設處於_暫停_狀態。您可以透過選擇監
 
 
 
+[[data-collection-monitors]]
 === 數據收集監視器
 
 |===
@@ -536,6 +545,7 @@ NOTE: 許多系統監視器預設處於_暫停_狀態。您可以透過選擇監
 
 
 
+[[security-monitors]]
 === 安全監視器
 
 |===
@@ -592,6 +602,7 @@ NOTE: 許多系統監視器預設處於_暫停_狀態。您可以透過選擇監
 
 
 
+[[data-protection-monitors]]
 === 資料保護監控器
 
 |===
@@ -609,6 +620,7 @@ NOTE: 許多系統監視器預設處於_暫停_狀態。您可以透過選擇監
 
 
 
+[[cloud-volume-cvo-monitors]]
 === 雲量 (CVO) 監視器
 
 |===
@@ -689,6 +701,7 @@ NOTE: 許多系統監視器預設處於_暫停_狀態。您可以透過選擇監
 
 
 
+[[snapmirror-for-business-continuity-smbc-mediator-log-monitors]]
 === SnapMirror業務連續性 (SMBC) 調解器日誌監視器
 
 |===
@@ -733,6 +746,7 @@ NOTE: 許多系統監視器預設處於_暫停_狀態。您可以透過選擇監
 
 
 
+[[additional-power-heartbeat-and-miscellaneous-system-monitors]]
 === 附加電源、心跳和其他系統監視器
 
 |===
@@ -808,6 +822,7 @@ NOTE: 許多系統監視器預設處於_暫停_狀態。您可以透過選擇監
 
 
 
+[[more-information]]
 == 更多資訊
 
 * link:task_view_and_manage_alerts.html["查看和關閉警報"]

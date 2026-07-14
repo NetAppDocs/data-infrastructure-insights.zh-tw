@@ -14,6 +14,7 @@ summary: 洞察可以讓您了解資源如何影響租戶上的其他資源。
 
 
 
+[[terminology]]
 === 術語
 
 當談論工作量或資源影響時，以下定義很有用。
@@ -32,6 +33,7 @@ summary: 洞察可以讓您了解資源如何影響租戶上的其他資源。
 
 
 
+[[high-consuming-workloads]]
 === 高消耗工作負載
 
 Data Infrastructure Insights檢測到的任何高消耗工作負載都會顯示在《壓力下的共享資源》洞察中。導航至*可觀察性>基礎設施洞察*以查看這些洞察。
@@ -48,6 +50,7 @@ image:Insights_Demanding_Workload_Chart.png["繁重工作量圖表"] image:Insig
 
 
 
+[[what-do-i-do-to-resolve-saturation]]
 === 我該怎麼做才能解決飽和問題？
 
 您可以採取多種措施來減少或消除租戶飽和的可能性。您可以嘗試以下幾種方法。

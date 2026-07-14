@@ -7012,10 +7012,6 @@
   <block id="9680829f0eb82d9736ac7fe477135a87" category="paragraph">了解有關 Kubernetes 的更多信息<block ref="2a69bcb19ea6a4db3f5d1b466ff78e77" category="inline-link-macro-rx"></block>。</block>
   <block id="fbc05142fc5476cd7c2dd603607412ee" category="inline-link-macro">* NetApp Kubernetes 監控操作員安裝* 頁面</block>
   <block id="c425b824281c7958c5622dd1dc041533" category="paragraph">返回<block ref="6f93c3205a564eadff1f05e34704d40c" category="inline-link-macro-rx"></block></block>
-  <block id="d8c9294ea12d1c7d12e34008f3ecee39" category="section-title">關於秘密的說明</block>
-  <block id="bd0f62d92c7b0e5d6e74b4447418c58b" category="paragraph">若要刪除 Kubernetes Monitoring Operator 查看叢集範圍機密的權限，請在安裝之前從 _operator-setup.yaml_ 檔案中刪除下列資源：</block>
-  <block id="1790cdbccc4ddd4389eb90d73e043f4b" category="paragraph">如果這是升級，也請從叢集中刪除資源：</block>
-  <block id="a66e68a20b3b94a700f3a3b9baa06764" category="paragraph">如果啟用了變更分析，請修改 _AgentConfiguration_ 或 _operator-config.yaml_ 以取消註解變更管理部分，並在變更管理部分下包含 _kindsToIgnoreFromWatch: '"secrets"'_。請注意此行中單引號和雙引號的存在和位置。</block>
   <block id="435f137980b3b041bbc191c90260bf28" category="section-title">驗證 Kubernetes 監控 Operator 鏡像簽名</block>
   <block id="d9348d075dc7b3c91cff99d56dfc327b" category="inline-link-macro">Kubernetes 文檔</block>
   <block id="d4f8460ff8f7a6b9a2f0fa99bf9124dd" category="paragraph">操作員的映像及其部署的所有相關映像均由NetApp簽署。您可以在安裝前使用 cosign 工具手動驗證映像，或設定 Kubernetes 准入控制器。如欲了解更多詳情，請參閱<block ref="1aa503106da392b948a493e0ecf5782d" category="inline-link-macro-rx"></block>。</block>
@@ -9566,9 +9562,7 @@
   <block id="483afc2b0c89bbcbc08179996afd1bd3" category="list-text">HTTPS連接埠：預設為8443。</block>
   <block id="9ae1165f709f672a335b55af672fcede" category="cell">E系列控制器IP位址</block>
   <block id="0e8766b280f750325a542b5489199d1e" category="cell">陣列控制器的逗號分隔的 IP 位址和/或完全限定域名</block>
-  <block id="986117227f9af0228b4c8df932185184" category="summary">配置 Nutanix 資料收集器。</block>
   <block id="addafe1dd8efeb72ac99a72ca1ce3052" category="doc">Nutanix NX 資料收集器</block>
-  <block id="0defc2652f6834277735cb3046565bfa" category="paragraph">Data Infrastructure Insights使用 Nutanix 資料收集器來發現 Nutanix NX 儲存系統的庫存和效能資料。</block>
   <block id="1f166cbe19b0fb7c22477b8db8a26668" category="paragraph">Data Infrastructure Insights從 Nutanix 數據收集器獲取以下庫存資訊。對於Data Infrastructure Insights取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：</block>
   <block id="6590f621515d064417bb91bd8f6cb526" category="cell">Nutanix容器</block>
   <block id="5b02fb8f86f33e62862c6886dbbe655e" category="list-text">只讀使用者名稱和密碼，除非正在使用 volume_groups，在這種情況下，需要管理員使用者名稱和密碼</block>
@@ -13941,8 +13935,6 @@
   <block id="f2c430952fd20f76b24810e2e6f8dace" category="paragraph">執行這 3 個命令並注意是否有任何錯誤。</block>
   <block id="0cf40b0b5f29b2928f214370b73c4fac" category="paragraph">最後，您可能還需要 OSV 管理員執行：</block>
   <block id="7af44018c8c76e698e986a0c0db08e5f" category="paragraph">這將傳回用於管理的主機名稱 / IP 位址。每個 DII OSV 收集器都需要指向該 IP / 主機名稱以進行 OSV 管理。</block>
-  <block id="e62768229563f11ca5fd49a1482ae7a8" category="list-text">透過 REST API 經由連接埠 443 取得 Red Hat OpenShift Virtualization 伺服器的 IP 位址</block>
-  <block id="07bc27033bbe069dd4fcfa7e7287df66" category="cell">用於與 RHOV 進行 HTTPS 通訊的連接埠</block>
   <block id="6b4e228e21f03e0f137a5d82c17defab" category="paragraph">用於 Red Hat Virtualization 的 DII 資料收集器也支援開源專案 oVirt、以及 Oracle Linux Virtualization Manager。此資料收集器透過 REST API 與管理站上的 HTTPS 介面通訊。</block>
   <block id="154535c2753f4d1eedc433e63b2e796f" category="list-text">透過 REST API 經由連接埠 443 取得 RHV/oVirt/OLVM 伺服器的 IP 位址/主機名稱</block>
   <block id="aee702f6738b473d9ebf07b43255af32" category="list-text">RHV 版本 3.0+ / Ovirt 4.0+ / OLVM 4.0+</block>
@@ -14148,9 +14140,40 @@
   <block id="b720c5170acbb344b34398a9ed4fec4b" category="cell">主機名稱或 IP 位址</block>
   <block id="32d285f157ad1acefe9dbe844cee7acf" category="cell">儲存系統的主機名稱 IP 位址</block>
   <block id="606bae1c220a7cd73cdc71a447b328fd" category="cell">API 權杖 ID</block>
-  <block id="1a07b6dc4baf1e102f15f62b2aa13efc" category="cell">存取需要 API Token</block>
   <block id="9ae9995c158c8b32609b8fd098fa5ff5" category="cell">API Token 秘密金鑰</block>
   <block id="923e5171366e1120624f5ea15d195544" category="cell">上述令牌的秘密</block>
   <block id="07d3835e20364558e54bb222fac4e80c" category="cell">用於 HTTPS 通訊的連接埠（預設 8006）</block>
   <block id="c0dcddaaad9648f13d2e54741430ea94" category="sidebar">Promox VE</block>
+  <block id="f45a9049372d3cb48c0a5f07d2274d8a" category="inline-link-macro">Nutanix AHV 系列</block>
+  <block id="ad9c1c290afb17645c1abe42082fd356" category="cell"><block ref="ad9c1c290afb17645c1abe42082fd356" category="inline-link-macro-rx"></block></block>
+  <block id="dfc304efa37c8d1373249ddd368bc0be" category="summary">配置 Nutanix NX 資料收集器。</block>
+  <block id="bf674ae2075eb251d7351d4572cb6146" category="paragraph">Data Infrastructure Insights 使用 Nutanix NX 資料收集器來探索 Nutanix NX 儲存系統的庫存和效能資料。</block>
+  <block id="82344ea41e58ba30a6cc73da67f70a0d" category="summary">配置 Nutanix AHV 資料收集器。</block>
+  <block id="409fc16cbc3ffe45ff2652a20b5026af" category="doc">Nutanix AHV 資料收集器</block>
+  <block id="c97ef72e065229daeaf079d3a28102bc" category="paragraph">Nutanix AHV 收集器使用 Prism Central v4 REST API（叢集管理和虛擬機器管理命名空間）從 Nutanix Prism Central 取得 Nutanix Acropolis Hypervisor (AHV) 清單和虛擬化效能資訊。它以虛擬化 OData 模型（VirtualizationRoot 以及相關實體：主機、虛擬機器、資料儲存、虛擬磁碟和關聯）報告資料。</block>
+  <block id="f32ed95de6aa2e535b7b91d8c3117993" category="cell">AHV 節點（主機）</block>
+  <block id="11278cec4d8ea990fd15f6a5c6a67440" category="cell">Prism Central 叢集</block>
+  <block id="4f1cb6638a3cc4b959042237e8410602" category="cell">虛擬機器管理程式（虛擬伺服器）</block>
+  <block id="2198c50a7eb3774599bba516640050f4" category="cell">Acropolis VM</block>
+  <block id="ab4257e4905356d8c38178fb81298672" category="cell">儲存容器</block>
+  <block id="93aad9faf21d772e6638b83df990a5f5" category="cell">ADSF Volume Group</block>
+  <block id="5ccc8ca7259b2e94529827201b7eb255" category="cell">虛擬機器磁碟</block>
+  <block id="59713d7f655f9c892a64a8cfb1bce50f" category="list-text">Prism Central IP 位址或完全限定域名</block>
+  <block id="b4cdc83adeeea6f91bf95fe532871bdd" category="list-text">Prism Central 本地或 LDAP 使用者名稱和密碼（唯讀帳戶足以進行庫存和效能分析；無需管理員帳戶）</block>
+  <block id="305bb684f75dc043415486c2063d46c4" category="list-text">連接埠要求：HTTPS 9440</block>
+  <block id="539110e77db7f1ce573940c3147dbe68" category="list-text">Prism Central 版本 pc.2023.x 或更高版本（v3 API）；建議使用 pc.7.x 或更高版本（v4 API）</block>
+  <block id="74c15fa6625bc3241b81c66466e0ce42" category="list-text">效能指標需要 Prism Central 搭配 API v4.0.b1 或更新版本（pc.7.3+）。在舊版本中，仍會收集庫存資訊，但不會回報效能資料。</block>
+  <block id="fb7d6f6db43d1bb1043df17e264de78a" category="cell">Prism Central IP 位址</block>
+  <block id="b46321a9cb6ebc3023c7b6ae1f3d8b4f" category="cell">Prism Central 實例的 IP 位址或 FQDN</block>
+  <block id="893b253db3bdc1ebfb515f1f1cc09f50" category="cell">Prism Central 使用者名稱</block>
+  <block id="0fc00a87efdbecf33bb1448c3eaa5a73" category="cell">Prism Central 密碼</block>
+  <block id="ac2fad2f282b0e32c75912e363cfb735" category="cell">用於連接 Prism Central 的 TCP 連接埠。預設連接埠為 9440。</block>
+  <block id="834593f1f41ad9180f7c06531584872b" category="cell">HTTP 逾時時間（秒）</block>
+  <block id="b8c5ed136238b59bf386d65bf0787acf" category="cell">HTTP 請求逾時時間。預設值為 60 秒。</block>
+  <block id="625b6c43e9f8c94b5aa84173a04fa961" category="cell">HTTP 重試次數</block>
+  <block id="c8f99bb6092a052b29e43263274e103f" category="cell">瞬態故障時的 HTTP 重試次數。預設值為 3。</block>
+  <block id="4a2e4ff5e220e83407c567779aaf9ba1" category="cell">存取需要 API 令牌</block>
+  <block id="4f23d2244ea630f361d554b54b77bf03" category="list-text">透過 REST API 經由連接埠 6443 取得 Red Hat OpenShift Virtualization 伺服器的 IP 位址</block>
+  <block id="427f91a8692cb3d3ee52ca20ff3b659c" category="cell">用於與 RHOV 進行 HTTPS 通訊的連接埠。預設值為 6443。</block>
+  <block id="635a6e63b01914992d3584137f9e6ba6" category="sidebar">Nutanix AHV</block>
 </blocks>

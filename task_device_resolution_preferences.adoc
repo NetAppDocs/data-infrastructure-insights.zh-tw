@@ -14,6 +14,7 @@ summary:
 
 
 
+[[auto-resolution-schedule]]
 == 自動解決計劃
 
 自動解析計畫可以指定何時執行自動設備解析：
@@ -39,6 +40,7 @@ summary:
 
 
 
+[[dns-processing-options]]
 == DNS 處理選項
 
 DNS 處理選項可讓您選擇以下功能：
@@ -50,6 +52,7 @@ DNS 處理選項可讓您選擇以下功能：
 
 
 
+[[including-or-excluding-specific-storage-and-tape-vendors]]
 === 包括或排除特定的儲存和磁帶供應商
 
 您可以包括或排除特定的儲存和磁帶供應商以實現自動解析。例如，如果您知道某個特定主機將成為舊主機並應從新環境中排除，則您可能想要排除特定供應商。您也可以重新新增先前排除但不再想排除的供應商。

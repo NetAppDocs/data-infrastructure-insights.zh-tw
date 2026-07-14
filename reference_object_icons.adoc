@@ -18,18 +18,21 @@ Data Infrastructure Insights中使用的物件圖示。
 
 
 
+[[infrastructure-icons]]
 == 基礎設施圖示：
 
 image:Icon_Glossary.png["基礎設施圖示參考"]
 
 
 
+[[kubernetes-icons]]
 == Kubernetes 圖示：
 
 image:K8sIconsWithLabels.png["Kubernetes 圖示參考，寬度=180"]
 
 
 
+[[kubernetes-network-performance-monitoring-and-map-icons]]
 == Kubernetes 網路效能監控與地圖圖示：
 
 image:ServiceMap_Icons.png["Kubernetes 網路效能監控及地圖，width=640"]

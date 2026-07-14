@@ -14,11 +14,12 @@ Data Infrastructure Insights使用 Pure Storage FlashArray 資料收集器來收
 
 
 
+[[terminology]]
 == 術語
 
 對於Data Infrastructure Insights所取得的每種資產類型，都會顯示該資產最常用的術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 供應商/型號術語 | Data Infrastructure Insights術語 
 
@@ -44,6 +45,7 @@ Data Infrastructure Insights使用 Pure Storage FlashArray 資料收集器來收
 
 
 
+[[requirements]]
 == 要求
 
 * 儲存系統IP位址
@@ -53,9 +55,10 @@ Data Infrastructure Insights使用 Pure Storage FlashArray 資料收集器來收
 
 
 
+[[configuration]]
 == 配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -70,9 +73,10 @@ Data Infrastructure Insights使用 Pure Storage FlashArray 資料收集器來收
 |===
 
 
+[[advanced-configuration]]
 == 進階配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -90,15 +94,17 @@ Data Infrastructure Insights使用 Pure Storage FlashArray 資料收集器來收
 |===
 
 
+[[troubleshooting]]
 == 故障排除
 
 如果您在使用此資料收集器時遇到問題，請嘗試以下操作：
 
 
 
+[[inventory]]
 === 存貨
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 問題： | 試試一下： 
 

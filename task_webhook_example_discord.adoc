@@ -17,6 +17,7 @@ NOTE: 本頁引用第三方說明，可能會有所變更。請參閱link:https:
 
 
 
+[[discord-setup]]
 == Discord 設定：
 
 * 在 Discord 中，選擇伺服器，在文字頻道下，選擇編輯頻道（齒輪圖示）
@@ -26,6 +27,7 @@ NOTE: 本頁引用第三方說明，可能會有所變更。請參閱link:https:
 
 
 
+[[create-data-infrastructure-insights-webhook]]
 == 創建Data Infrastructure InsightsWebhook：
 
 . 在Data Infrastructure Insights中，導覽至 *管理 > 通知* 並選擇 *Webhooks* 標籤。點選 *+Webhook* 建立一個新 webhook。
@@ -41,6 +43,7 @@ NOTE: 為了測試 webhook，請暫時將訊息正文中的 url 值替換為任�
 
 
 
+[[notifications-via-webhook]]
 == 透過 Webhook 發送通知
 
 若要透過 webhook 通知事件，請在Data Infrastructure Insights中導覽至 *Alerts > Monitors*，然後按一下 *+Monitor* 以建立新的link:task_create_monitor.html["監視器"]。

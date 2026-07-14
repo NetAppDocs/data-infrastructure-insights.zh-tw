@@ -18,6 +18,7 @@ Data Infrastructure Insights提供全面的基礎設施健康監控，可追蹤�
 
 
 
+[[the-infrastructure-health-dashboard]]
 == 基礎設施健康儀表板
 
 
@@ -31,6 +32,7 @@ image:infra_health_main_screen.png["基礎設施健康概覽"]
 
 
 
+[[configure-monitors-to-use-for-infrastructure-health]]
 == 配置用於監控基礎設施健康狀況的監視器
 
 健康分數由配置為納入系統健康計算的警報驅動。
@@ -47,6 +49,7 @@ image:infra_health_monitor_advanced_config.png["監控高級配置以添加到�
 
 
 
+[[health-scores-explained]]
 == 健康評分解釋
 
 分數以 0 到 100 的等級顯示，其中 100 表示完全健康。目前或最近遇到問題的受監控基礎設施物件將根據以下加權平均值降低此分數：

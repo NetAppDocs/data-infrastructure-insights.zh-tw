@@ -18,6 +18,7 @@ Data Infrastructure Insights提供了許多推薦的儀表板，為您的數據�
 
 
 
+[[importing-from-the-dashboard-gallery]]
 == 從儀表板庫導入
 
 若要從庫中匯入儀表板，請執行下列操作：
@@ -36,6 +37,7 @@ Data Infrastructure Insights提供了許多推薦的儀表板，為您的數據�
 
 
 
+[[importing-an-exported-dashboard]]
 == 導入已匯出的儀表板
 
 若要*匯出*儀表板，請在*可觀察性 > 探索 > 所有儀表板*頁面上，按一下儀表板右側的選單並選擇_匯出_。您也可以選擇多個儀表板，然後從「批次操作」下拉式選單中選擇「匯出」。儀表板保存在本機系統上的 .ZIP 檔案中。

@@ -14,6 +14,7 @@ NetApp Data Infrastructure Insights （以前稱為Cloud Insights）是一種雲
 
 
 
+[[what-can-data-infrastructure-insights-do-for-me]]
 == Data Infrastructure Insights能為我做些什麼？
 
 Data Infrastructure Insights提供混合多雲監控，讓您可以全端觀察基礎架構和工作負載。
@@ -31,6 +32,7 @@ Data Infrastructure Insights提供混合多雲監控，讓您可以全端觀察�
 '''
 
 
+[[getting-started]]
 == 入門
 
 * 我該如何link:task_cloud_insights_onboarding_1.html["*開始*"]具有Data Infrastructure Insights？

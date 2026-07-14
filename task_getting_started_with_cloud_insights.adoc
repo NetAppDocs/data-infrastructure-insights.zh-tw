@@ -25,6 +25,7 @@ Data Infrastructure Insights提供三種類型的資料收集器：
 
 
 
+[[install-an-acquisition-unit]]
 == 安裝採集單元
 
 如果您選擇了「基礎設施」資料收集器，則需要一個採集單元將資料注入Data Infrastructure Insights。您需要在要進行收集的資料中心的伺服器或虛擬機器上下載並安裝擷取單元軟體。單一採集單元可用於多個資料收集器。
@@ -40,6 +41,7 @@ image:NewAUDetected.png["偵測到新的 AU"]
 
 
 
+[[configure-the-data-collector-infrastructure]]
 == 配置資料收集器 - 基礎設施
 
 對於_基礎設施_資料收集器，您將被要求填寫所呈現的資料收集器欄位：
@@ -54,10 +56,12 @@ image:NewAUDetected.png["偵測到新的 AU"]
 
 
 
+[[configure-the-data-collector-operating-systems-and-services]]
 == 配置資料收集器 - 作業系統和服務
 
 
 
+[[operating-system]]
 === 作業系統:
 
 對於_作業系統_資料收集器，選擇一個平台（Linux、Windows）來安裝Data Infrastructure Insights代理程式。您必須至少有一個代理來從服務收集資料。該代理還從主機本身收集數據，以供Data Infrastructure Insights使用。該資料在小部件等中被歸類為“節點”資料。
@@ -68,6 +72,7 @@ image:NewAUDetected.png["偵測到新的 AU"]
 
 
 
+[[services]]
 === 服務：
 
 對於_服務_資料收集者，按一下圖塊即可開啟該服務的說明頁面。
@@ -81,6 +86,7 @@ image:NewAUDetected.png["偵測到新的 AU"]
 
 
 
+[[add-dashboards]]
 == 新增儀表板
 
 根據您選擇配置的初始資料收集器的類型（儲存空間、交換器等），將匯入一個或多個相關儀表板。例如，如果您配置了儲存資料收集器，則會匯入一組與儲存相關的儀表板，並將其中一個設定為您的Data Infrastructure Insights主頁。您可以從「*儀表板 > 顯示所有儀表板*」清單變更主頁。
@@ -89,6 +95,7 @@ image:NewAUDetected.png["偵測到新的 AU"]
 
 
 
+[[thats-all-there-is-to-it]]
 == 這就是全部內容
 
 完成初始設定程序後，您的環境將開始收集資料。
@@ -102,6 +109,7 @@ image:NewAUDetected.png["偵測到新的 AU"]
 
 
 
+[[useful-definitions]]
 == 有用的定義
 
 在討論Data Infrastructure Insights資料收集器或功能時，以下定義可能會很有用：

@@ -21,6 +21,7 @@ NOTE: 本頁引用第三方說明，這些說明可能會有所變更。請參�
 
 
 
+[[discord-setup]]
 == Discord 設定：
 
 * 在 Discord 中，選擇伺服器，在文字頻道下，選擇編輯頻道（齒輪圖示）
@@ -30,6 +31,7 @@ NOTE: 本頁引用第三方說明，這些說明可能會有所變更。請參�
 
 
 
+[[create-workload-security-webhook]]
 == 建立工作負載安全性 Webhook：
 
 . 導覽至“管理”>“通知”，然後選擇“_Workload Security Webhooks_”標籤。點擊“+ Webhook”以建立一個新的 webhook。
@@ -46,6 +48,7 @@ image:ws_webhook_discord_example.png["工作負載安全 webhook discord 範例"
 
 
 
+[[notifications-via-webhook]]
 == 透過 Webhook 發送通知
 
 若要透過 webhook 通知事件，請導覽至_工作負載安全性 > 策略_。按一下“+攻擊策略”或“+警告策略”。

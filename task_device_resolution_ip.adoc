@@ -16,6 +16,7 @@ image:Device_Resolution_IP.png["IP設備解析"]
 
 
 
+[[adding-ip-devices-manually]]
 == 手動新增 IP 設備
 
 您可以使用 IP 識別畫面中的手動新增功能將 IP 裝置手動新增至Data Infrastructure Insights。
@@ -36,6 +37,7 @@ image:Device_Resolution_IP.png["IP設備解析"]
 
 
 
+[[importing-ip-device-identification-from-a-csv-file]]
 == 從 .CSV 檔案匯入 IP 設備標識
 
 您可以使用 .CSV 檔案中的設備識別清單手動將 IP 設備識別匯入設備解析功能。
@@ -63,6 +65,7 @@ NOTE: 作為最佳實踐，建議首先將 IP 位址識別資訊匯出到 .CSV �
 
 
 
+[[exporting-ip-device-identification-to-a-csv-file]]
 == 將 IP 設備識別匯出到 .CSV 文件
 
 您可以從Data Infrastructure Insights設備解析功能將現有的 IP 設備識別匯出到 .CSV 檔案。您可能想要匯出裝置標識，以便可以對其進行修改，然後將其匯入回Data Infrastructure Insights，然後使用它來識別與最初符合匯出標識的裝置相似的裝置。

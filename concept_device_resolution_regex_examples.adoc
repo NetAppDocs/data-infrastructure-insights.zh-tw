@@ -14,6 +14,7 @@ summary:
 
 
 
+[[formatting-regular-expressions]]
 == 格式化正規表示式
 
 在為Data Infrastructure Insights自動解析建立正規表示式時，您可以透過在名為 _FORMAT_ 的欄位中輸入值來設定輸出格式。
@@ -52,10 +53,12 @@ hostname4-Raleigh-solaris
 
 
 
+[[examples]]
 == 範例
 
 
 
+[[example-1-showing-zone-names]]
 === 範例 1 顯示區域名稱
 
 在此範例中，您使用正規表示式從區域名稱中提取主機名稱。如果您有類似以下區域名稱的內容，則可以建立正規表示式：
@@ -86,6 +89,7 @@ hostname4-Raleigh-solaris
 
 
 
+[[example-2]]
 === 範例 2
 
 在這個例子中，跳到第一個底線“_”，然後匹配 E 和其後的所有內容直到第二個“_”，然後跳過其後的所有內容。
@@ -98,6 +102,7 @@ hostname4-Raleigh-solaris
 
 
 
+[[example-3]]
 === 範例 3
 
 正規表示式（如下）中最後一部分的括號「（）」標識哪部分是主機名稱。如果您希望 VSAN3 作為主機名，則其名稱為：[a-zA-Z0-9]+_([a-zA-Z0-9]+)。 *
@@ -110,6 +115,7 @@ hostname4-Raleigh-solaris
 
 
 
+[[example-4-showing-a-more-complicated-naming-pattern]]
 === 範例 4 展示了更複雜的命名模式
 
 如果您有類似以下區域名稱的內容，則可以建立正規表示式：
@@ -139,6 +145,7 @@ hostname4-Raleigh-solaris
 
 
 
+[[example-5-showing-zone-names-without-a-pattern]]
 === 範例 5 顯示沒有模式的區域名稱
 
 如果您有類似以下區域名稱的內容，則可以建立正規表示式：
@@ -163,6 +170,7 @@ hostname4-Raleigh-solaris
 
 
 
+[[example-6-showing-computer-names-with-a-pattern]]
 === 範例 6 顯示具有模式的電腦名稱
 
 如果您有類似以下區域名稱的內容，則可以建立正規表示式：
@@ -201,6 +209,7 @@ hostname4-Raleigh-solaris
 
 
 
+[[example-7]]
 === 範例 7
 
 *區域：*myComputerName123_HBA1_Symm1_FA1
@@ -211,6 +220,7 @@ hostname4-Raleigh-solaris
 
 
 
+[[example-8]]
 === 範例 8
 
 此範例查找第一個 _ 之前的所有內容。
@@ -225,6 +235,7 @@ MyComputerName123_HBA1_Symm1_FA1
 
 
 
+[[example-9]]
 === 範例 9
 
 此範例查找第一個 _ 之後到第二個 _ 的所有內容。
@@ -237,6 +248,7 @@ MyComputerName123_HBA1_Symm1_FA1
 
 
 
+[[example-10]]
 === 範例 10
 
 此範例從區域範例中提取“MyComputerName123”。
@@ -253,6 +265,7 @@ Storage3_Switch3_MyComputerName123T_A3_FC3
 
 
 
+[[example-11]]
 === 範例 11
 
 *區域：*Storage1_Switch1_MyComputerName123A_A1_FC1
@@ -263,6 +276,7 @@ Storage3_Switch3_MyComputerName123T_A3_FC3
 
 
 
+[[example-12]]
 === 範例 12
 
 方括號內的 ^（脫字符或插入符號）*用於對表達式進行否定，例如，[^Ff] 表示除大寫或小寫 F 之外的任何字符，[^az] 表示除小寫 a 到 z 之外的所有內容，在上述情況下，表示除 _ 之外的任何字符。格式語句在輸出主機名稱中新增“-”。
@@ -275,6 +289,7 @@ Storage3_Switch3_MyComputerName123T_A3_FC3
 
 
 
+[[example-13]]
 === 範例 13
 
 在這個例子中，儲存別名由“\”分隔，表達式需要使用“\\”來定義字串中實際使用的“\”，並且它們不是表達式本身的一部分。
@@ -287,6 +302,7 @@ Storage3_Switch3_MyComputerName123T_A3_FC3
 
 
 
+[[example-14]]
 === 範例 14
 
 此範例從區域範例中提取“PD-RV-W-AD-2”。
@@ -299,6 +315,7 @@ Storage3_Switch3_MyComputerName123T_A3_FC3
 
 
 
+[[example-15]]
 === 範例 15
 
 在這種情況下，格式設定將“US-BV-”新增至主機名稱。

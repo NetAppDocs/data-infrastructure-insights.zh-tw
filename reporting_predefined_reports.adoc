@@ -23,6 +23,7 @@ NOTE: 報告功能可在Data Infrastructure Insights中使用link:concept_subscr
 
 
 
+[[navigating-to-pre-defined-reports]]
 == 導航至預定義報告
 
 當您開啟報表入口網站時，_團隊內容_資料夾是您在Data Infrastructure Insights報告中選擇所需資訊類型的起點。
@@ -35,18 +36,21 @@ image:Reporting_Menu.png["報告選單"] image:Reporting_Team_Content.png["團�
 
 
 
+[[using-predefined-reports-to-answer-common-questions]]
 == 使用預定義報表來回答常見問題
 
 以下預定義報告可在*團隊內容 > 報告*中找到。
 
 
 
+[[application-service-level-capacity-and-performance]]
 === 應用程式服務等級容量和效能
 
 應用程式服務等級容量和效能報告提供了應用程式的高級概述。您可以使用此資訊進行容量規劃或遷移計劃。
 
 
 
+[[chargeback]]
 === 退款
 
 退款報告提供主機、應用程式和業務實體的儲存容量退款和責任信息，包括當前數據和歷史數據。
@@ -55,60 +59,70 @@ image:Reporting_Menu.png["報告選單"] image:Reporting_Team_Content.png["團�
 
 
 
+[[data-sources]]
 === 資料來源
 
 資料來源報告顯示網站上安裝的所有資料來源、資料來源的狀態（成功/失敗）和狀態訊息。該報告提供了有關從何處開始排除資料來源故障的資訊。失敗的資料來源會影響報告的準確性和產品的整體可用性。
 
 
 
+[[esx-vs-vm-performance]]
 === ESX 與 VM 效能
 
 ESX 與 VM 效能報告提供了 ESX 伺服器和 VM 的比較，顯示了 ESX 伺服器和 VM 的平均和峰值 IOP、吞吐量以及延遲和利用率。為了防止重複運算，請排除 ESX 伺服器；僅包含虛擬機器。此報告的更新版本可在NetApp儲存自動化商店取得。
 
 
 
+[[fabric-summary]]
 === 布料概要
 
 Fabric Summary 報告標識交換器和交換器訊息，包括連接埠數、韌體版本和許可證狀態。此報告不包括 NPV 交換器連接埠。
 
 
 
+[[host-hbas]]
 === 主機 HBA
 
 主機 HBA 報告概述了環境中的主機，並提供了 HBA 的供應商、型號和韌體版本，以及它們所連接的交換器的韌體等級。在規劃交換器或 HBA 的韌體升級時，可以使用此報告來分析韌體相容性。
 
 
 
+[[host-service-level-capacity-and-performance]]
 === 主機服務等級容量和效能
 
 主機服務等級容量和效能報告概述了主機對僅限區塊的應用程式的儲存利用率。
 
 
 
+[[host-summary]]
 === 主機摘要
 
 主機摘要報告概述了每個選定主機的儲存利用率，其中包含光纖通道和 iSCSI 主機的資訊。此報告可讓您比較連接埠和路徑、光纖通道和 ISCSI 容量以及違規計數。
 
 
 
+[[license-details]]
 === 許可證詳細信息
 
 許可證詳細資訊報告顯示您在所有具有有效許可證的網站上獲得許可的資源數量。該報告還顯示了所有擁有有效許可證的站點的實際數量總和。總和可能包括由多個伺服器管理的儲存陣列的重疊。
 
 
 
+[[mapped-but-not-masked-volumes]]
 === 已映射但未屏蔽的捲
 
 已對應但未屏蔽的磁碟區報告列出了邏輯單元號碼 (LUN) 已對應以供特定主機使用但尚未對該主機封鎖的磁碟區。在某些情況下，這些可能是已取消封鎖的已退役 LUN。任何主機都可以存取未屏蔽的捲，這使得它們容易受到資料損壞。
 
 
 
+[[netapp-capacity-and-performance]]
 === NetApp容量和效能
 
 NetApp容量和效能報告提供了已分配、已利用和已承諾容量的全局數據，以及NetApp容量的趨勢和效能數據。
 
 
 
+[[scorecard]]
 === 記分卡
 
 記分卡報告提供了Data Infrastructure Insights所獲取的所有資產的摘要和總體狀況。狀態以綠色、黃色和紅色旗幟表示：
@@ -122,54 +136,63 @@ NetApp容量和效能報告提供了已分配、已利用和已承諾容量的�
 
 
 
+[[storage-summary]]
 === 儲存摘要
 
 儲存摘要報告提供原始、已指派、儲存池和磁碟區的已使用和未使用容量資料的全域摘要。本報告概述了已發現的所有儲存。
 
 
 
+[[vm-capacity-and-performance]]
 === 虛擬機器容量和效能
 
 描述虛擬機器 (VM) 環境及其容量使用。必須啟用 VM 工具才能查看某些數據，例如 VM 何時關閉。
 
 
 
+[[vm-paths]]
 === 虛擬機器路徑
 
 VM 路徑報告提供資料儲存容量資料和效能指標，包括哪個虛擬機器在哪個主機上運作、哪些主機正在存取哪些共用磁碟區、活動存取路徑是什麼以及容量分配和使用情況。
 
 
 
+[[hds-capacity-by-thin-pool]]
 === 按精簡池劃分的 HDS 容量
 
 HDS 容量（按精簡池）報告顯示精簡配置的儲存池中的可用容量。
 
 
 
+[[netapp-capacity-by-aggregate]]
 === NetApp容量（按聚合）
 
 NetApp聚合容量報告顯示聚合的原始總量、總計、已使用空間、可用空間和已提交空間。
 
 
 
+[[symmetrix-capacity-by-thick-array]]
 === Symmetrix 厚陣列容量
 
 Symmetrix 厚陣列容量報告顯示原始容量、可用容量、可用容量、對應容量、屏蔽容量和總可用容量。
 
 
 
+[[symmetrix-capacity-by-thin-pool]]
 === Symmetrix 精簡池容量
 
 Symmetrix 精簡池容量報告顯示原始容量、可用容量、已使用容量、空閒容量、已使用百分比、預訂容量和預訂率。
 
 
 
+[[xiv-capacity-by-array]]
 === XIV 陣列容量
 
 XIV 容量（按陣列）報告顯示陣列的已使用容量和未使用容量。
 
 
 
+[[xiv-capacity-by-pool]]
 === XIV 容量（按池）
 
 XIV Capacity by Pool 報告顯示儲存池的已使用和未使用容量。

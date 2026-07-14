@@ -18,6 +18,7 @@ Data Infrastructure Insights 使用 Pure Storage FlashBlade 資料收集器從�
 
 
 
+[[terminology]]
 == 術語
 
 對於Data Infrastructure Insights所取得的每種資產類型，都會顯示該資產最常用的術語。當查看或排除此資料收集器的故障時，請記住以下術語：
@@ -48,6 +49,7 @@ Data Infrastructure Insights 使用 Pure Storage FlashBlade 資料收集器從�
 
 
 
+[[requirements]]
 == 要求
 
 * 儲存系統 IP 位址或完全限定域名
@@ -57,6 +59,7 @@ Data Infrastructure Insights 使用 Pure Storage FlashBlade 資料收集器從�
 
 
 
+[[configuration]]
 == 配置
 
 [cols="50,50"]
@@ -74,6 +77,7 @@ Data Infrastructure Insights 使用 Pure Storage FlashBlade 資料收集器從�
 |===
 
 
+[[advanced-configuration]]
 == 進階配置
 
 [cols="50,50"]
@@ -94,12 +98,14 @@ Data Infrastructure Insights 使用 Pure Storage FlashBlade 資料收集器從�
 |===
 
 
+[[troubleshooting]]
 == 故障排除
 
 如果您在使用此資料收集器時遇到問題，請嘗試以下操作：
 
 
 
+[[inventory]]
 === 存貨
 
 [cols="50,50"]

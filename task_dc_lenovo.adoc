@@ -16,6 +16,7 @@ Data Infrastructure Insights使用聯想資料收集器來發現聯想 HX 儲存
 
 
 
+[[requirements]]
 == 要求
 
 * Prism 外部 IP 位址
@@ -25,9 +26,10 @@ Data Infrastructure Insights使用聯想資料收集器來發現聯想 HX 儲存
 
 
 
+[[configuration]]
 == 配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -42,9 +44,10 @@ Data Infrastructure Insights使用聯想資料收集器來發現聯想 HX 儲存
 |===
 
 
+[[advanced-configuration]]
 == 進階配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -59,6 +62,7 @@ Data Infrastructure Insights使用聯想資料收集器來發現聯想 HX 儲存
 |===
 
 
+[[troubleshooting]]
 == 故障排除
 
 關於此數據收集器的更多信息，請參閱link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。

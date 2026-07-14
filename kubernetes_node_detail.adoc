@@ -16,6 +16,7 @@ image:KubernetesNodeFiltering.png["顯示過濾的 Kubernetes 節點詳細資訊
 
 
 
+[[exploring-the-nodes-pods-and-persistent-volumes]]
 == 探索節點的 Pod 和持久卷
 
 Data Infrastructure Insights可讓您了解 Kubernetes 環境的後端存儲，讓您深入了解 Kubernetes Pod 和持久性磁碟區 (PV)。您可以追蹤 PV 計數器，例如 IOPS、延遲和吞吐量，從單一 Pod 的使用情況通過 PV 計數器到 PV，一直到後端儲存裝置。
@@ -33,6 +34,7 @@ NOTE: 如果您自訂了磁碟區或內部磁碟區登入頁面，則可能無�
 
 
 
+[[kubernetes-node-to-vm-links]]
 == Kubernetes 節點到虛擬機器的鏈接
 
 在 Kubernetes Node 頁面上，您可以按一下 開啟 Node 的 VM 頁面。  VM 頁面還包含傳回節點本身的連結。

@@ -21,6 +21,7 @@ NOTE: 為了準確的稽核和數據報告，強烈建議使用*網路時間協�
 
 
 
+[[adding-a-linux-acquisition-unit]]
 == 新增 Linux 擷取單元
 
 .開始之前
@@ -61,6 +62,7 @@ image:NewLinuxAUInstall.png["Linux AU 說明"]
 
 
 
+[[setting-proxy-environment-variables]]
 === 設定代理環境變數
 
 對於使用代理程式的環境，您必須在新增採集單元之前設定代理環境變數。在「新增採集單元」對話方塊中提供了配置代理程式的說明。
@@ -76,6 +78,7 @@ image:NewLinuxAUInstall.png["Linux AU 說明"]
 
 
 
+[[proxy-configuration]]
 === 代理配置
 
 採集單元使用雙向/相互身份驗證連接到Data Infrastructure Insights伺服器。必須將客戶端憑證傳遞給Data Infrastructure Insights伺服器進行身份驗證。為此，必須設定代理以將 https 請求轉送到Data Infrastructure Insights伺服器而不解密資料。
@@ -100,6 +103,7 @@ image:ProxyEndpoints_NewTable.png["代理端點表"]
 
 
 
+[[adding-a-windows-acquisition-unit]]
 == 新增 Windows 擷取單元
 
 .Windows 擷取單元安裝步驟
@@ -133,6 +137,7 @@ image:NewWindowsAUInstall.png["Windows AU 安裝"]
 
 
 
+[[proxy-configuration]]
 === 代理配置
 
 採集單元使用雙向/相互身份驗證連接到Data Infrastructure Insights伺服器。必須將客戶端憑證傳遞給Data Infrastructure Insights伺服器進行身份驗證。為此，必須設定代理以將 https 請求轉送到Data Infrastructure Insights伺服器而不解密資料。
@@ -157,6 +162,7 @@ image:ProxyEndpoints_NewTable.png["代理端點表"]
 
 
 
+[[uninstalling-an-acquisition-unit]]
 == 卸載採集單元
 
 若要卸載採集單元軟體，請執行下列操作：
@@ -201,6 +207,7 @@ image:AU_for_Device_Resolution.png["用於裝置解析的 AU"]
 
 
 
+[[reinstalling-an-acquisition-unit]]
 == 重新安裝採集單元
 
 若要在同一台伺服器/虛擬機器上重新安裝採集單元，您必須遵循以下步驟：
@@ -223,6 +230,7 @@ image:AU_for_Device_Resolution.png["用於裝置解析的 AU"]
 
 
 
+[[viewing-au-details]]
 == 查看 AU 詳細信息
 
 採集單元 (AU) 詳細資訊頁面提供了有關 AU 的有用詳細資訊以及有助於故障排除的資訊。  AU 詳細資訊頁麵包含以下部分：

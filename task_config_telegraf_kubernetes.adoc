@@ -18,18 +18,21 @@ Data Infrastructure Insights使用此資料收集器來收集 Kubernetes Pod、�
 
 
 
+[[installation]]
 == 安裝
 
 有關 Kubernetes 安裝說明，請參閱link:task_config_telegraf_agent_k8s.html["Kubernetes 監控操作員"]頁。
 
 
 
+[[about-kube-state-metrics]]
 == 關於 Kube-state-metrics
 
 Kubernetes Monitoring Operator 自動安裝 kube-state-metrics；無需使用者互動。
 
 
 
+[[kube-state-metrics-counters]]
 === Kube-state-metrics 計數器
 
 NetApp Kubernetes Monitoring Operator 擷取下面列出的 kube-state-metrics 計數器。有關每個櫃檯的更多詳細信息，請訪問： https://github.com/kubernetes/kube-state-metrics/tree/main/docs#exposed-metrics[] 。

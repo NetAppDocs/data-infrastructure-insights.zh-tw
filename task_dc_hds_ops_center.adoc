@@ -14,11 +14,12 @@ summary: 配置 HDS Ops Center 資料收集器。
 
 
 
+[[terminology]]
 == 術語
 
 Data Infrastructure Insights從該數據收集器獲取以下庫存資訊。對於Data Infrastructure Insights取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 供應商/型號術語 | Data Infrastructure Insights術語 
 
@@ -53,6 +54,7 @@ Data Infrastructure Insights從該數據收集器獲取以下庫存資訊。對�
 
 
 
+[[inventory-requirements]]
 == 庫存需求
 
 為了收集庫存數據，您必須具備以下條件：
@@ -63,6 +65,7 @@ Data Infrastructure Insights從該數據收集器獲取以下庫存資訊。對�
 
 
 
+[[performance-requirements]]
 == 性能要求
 
 為了收集性能數據，必須滿足以下要求：
@@ -71,9 +74,10 @@ Data Infrastructure Insights從該數據收集器獲取以下庫存資訊。對�
 
 
 
+[[configuration]]
 == 配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -88,6 +92,7 @@ Data Infrastructure Insights從該數據收集器獲取以下庫存資訊。對�
 |===
 
 
+[[advanced-configuration]]
 == 進階配置
 
 |===

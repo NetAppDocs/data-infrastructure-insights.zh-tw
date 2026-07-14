@@ -14,11 +14,12 @@ Data Infrastructure Insights使用Brocade Network Advisor 資料收集器從Broc
 
 
 
+[[terminology]]
 == 術語
 
 Data Infrastructure Insights從Brocade Network Advisor 資料收集器取得以下庫存資訊。對於Data Infrastructure Insights取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 供應商/型號術語 | Data Infrastructure Insights術語 
 
@@ -38,6 +39,7 @@ Data Infrastructure Insights從Brocade Network Advisor 資料收集器取得以�
 
 
 
+[[requirements]]
 == 要求
 
 配置此資料收集器需要以下內容：
@@ -50,9 +52,10 @@ Data Infrastructure Insights從Brocade Network Advisor 資料收集器取得以�
 
 
 
+[[configuration]]
 == 配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -70,9 +73,10 @@ Data Infrastructure Insights從Brocade Network Advisor 資料收集器取得以�
 |===
 
 
+[[advanced-configuration]]
 == 進階配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -96,15 +100,17 @@ Data Infrastructure Insights從Brocade Network Advisor 資料收集器取得以�
 |===
 
 
+[[troubleshooting]]
 == 故障排除
 
 如果您在使用此資料收集器時遇到問題，請嘗試以下操作：
 
 
 
+[[inventory]]
 === 存貨
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 問題： | 試試一下： 
 

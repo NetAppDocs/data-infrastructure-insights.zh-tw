@@ -14,6 +14,7 @@ summary: 可以手動安裝或更新工作負載安全代理，從而更好地�
 
 
 
+[[before-you-begin]]
 == 開始之前
 
 . 在 swagger 中驗證名為「cloudsecure_installers.agent」和「cloudsecure_installers.collector」的 API 類別是否可用。如果沒有，則不支援手動代理安裝。請聯絡NetApp支援以啟用該功能。
@@ -25,6 +26,7 @@ image:ws_manual_install_APIs.png["手動安裝 API"]
 
 
 
+[[installing-a-new-agent]]
 == 安裝新代理
 
 . 建立一個新的工作負載安全 API 存取令牌。
@@ -197,6 +199,7 @@ image:ws_agentsPageShowingConnected.png["顯示已連接代理程式的 UI"]
 
 
 
+[[installing-a-new-data-collector]]
 == 安裝新的資料收集器。
 
 注意：本文檔包含安裝「ONTAP SVM 資料收集器」的說明。相同的步驟適用於「Cloud Volumes ONTAP資料收集器」和「Amazon FSx for NetApp ONTAP資料收集器」。
@@ -289,6 +292,7 @@ image:ws_collectorPageList.png["顯示收藏家的 UI 清單頁面"]
 
 
 
+[[installing-a-new-user-directory-collector]]
 == 安裝新的使用者目錄收集器
 
 注意：在本文檔中，我們提到了安裝 LDAP 收集器的步驟。安裝 AD 收集器也適用相同的步驟。
@@ -401,6 +405,7 @@ image:ws_LDAP_collector_list.png["UI 中的 LDAP 收集器列表"]
 
 
 
+[[upgrading-an-agent]]
 == 升級代理
 
 當代理/收集器有新版本可用時，將會發送電子郵件通知。
@@ -487,6 +492,7 @@ image:ws_agentsPageShowingConnected.png["顯示已連接代理程式的 UI"]
 
 
 
+[[upgrading-collectors]]
 == 升級收集器
 
 注意：所有類型的收集器的升級步驟都是相同的。我們將在本文檔中示範「ONTAP SVM」收集器升級。
@@ -570,6 +576,7 @@ image:ws_svm_ontap_collector_upgrade_example_json.png["Swagger UI 中的 SVM 升
 
 
 
+[[commons-issues-and-fixes]]
 == 常見問題和修復。
 
 . AGENT014 錯誤

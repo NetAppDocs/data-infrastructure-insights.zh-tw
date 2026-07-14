@@ -14,6 +14,7 @@ DELL EMC VNXe 資料收集器為 VNXe 統一儲存陣列提供庫存支援。Dat
 
 
 
+[[requirements]]
 == 要求
 
 * VNXe 資料收集器是基於 CLI；您必須將 Unisphere for VNXe CLI (uemcli.exe) 安裝到 VNXe 資料收集器所在的擷取單元上。
@@ -27,11 +28,12 @@ DELL EMC VNXe 資料收集器為 VNXe 統一儲存陣列提供庫存支援。Dat
 
 
 
+[[terminology]]
 == 術語
 
 Data Infrastructure Insights從 VNXe 資料收集器取得以下庫存資訊。對於Data Infrastructure Insights取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 供應商/型號術語 | Data Infrastructure Insights術語 
 
@@ -63,9 +65,10 @@ Data Infrastructure Insights從 VNXe 資料收集器取得以下庫存資訊。�
 
 
 
+[[configuration]]
 == 配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -80,9 +83,10 @@ Data Infrastructure Insights從 VNXe 資料收集器取得以下庫存資訊。�
 |===
 
 
+[[advanced-configuration]]
 == 進階配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -97,15 +101,17 @@ Data Infrastructure Insights從 VNXe 資料收集器取得以下庫存資訊。�
 |===
 
 
+[[troubleshooting]]
 == 故障排除
 
 如果您在使用此資料收集器時遇到問題，請嘗試以下操作：
 
 
 
+[[inventory]]
 === 存貨
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 問題： | 試試一下： 
 

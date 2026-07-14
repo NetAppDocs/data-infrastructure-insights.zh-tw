@@ -18,6 +18,7 @@ Linux 和 Windows 的流程類似。
 
 
 
+[[performing-a-new-au-install-on-linux]]
 == 在 Linux 上執行新的 AU 安裝：
 
 . 在Data Infrastructure Insights中，建立一個 API 令牌。
@@ -103,6 +104,7 @@ image:Manual_AU_one_time_token.png["建立一次性 API 令牌"] image:Manual_AU
 
 
 
+[[manually-installing-data-collectors]]
 == 手動安裝資料收集器
 
 使用 /collector/patch/datasourceswar/latest API 下載最新的 datasources.war：
@@ -146,6 +148,7 @@ drwxrwx--- 2 test-user2 test-group-1  4096 Feb 16 10:10 datasources-war-<version
 
 
 
+[[downloading-a-patch]]
 == 下載補丁
 
 使用 /collector/patch/file/{version} API 下載補丁：
@@ -189,6 +192,7 @@ drwxrwx--- 2 test-user2 test-group-1  4096 Feb 16 10:10 <patch_file_name>.zip
 
 
 
+[[external-key-retrieval]]
 == 外部密鑰檢索
 
 如果您提供 UNIX shell 腳本，則取得單元可以執行該腳本從您的金鑰管理系統中擷取 *私鑰* 和 *公鑰*。

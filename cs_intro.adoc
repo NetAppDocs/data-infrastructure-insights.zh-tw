@@ -14,6 +14,7 @@ Data Infrastructure Insights儲存工作負載安全（以前稱為Cloud Secure�
 
 
 
+[[visibility]]
 == 能見度
 
 取得對使用者存取本機或雲端中儲存的關鍵公司資料的集中可見性和控制。
@@ -22,6 +23,7 @@ Data Infrastructure Insights儲存工作負載安全（以前稱為Cloud Secure�
 
 
 
+[[protection]]
 == 保護
 
 透過先進的機器學習和異常檢測保護組織資料不被惡意或受感染的使用者濫用。
@@ -30,6 +32,7 @@ Data Infrastructure Insights儲存工作負載安全（以前稱為Cloud Secure�
 
 
 
+[[compliance]]
 == 遵守
 
 透過審核用戶對儲存在本地或雲端中的關鍵公司資料的存取來確保公司合規性。

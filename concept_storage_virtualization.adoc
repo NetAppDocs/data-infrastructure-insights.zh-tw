@@ -14,6 +14,7 @@ Data Infrastructure Insights可以區分具有本地儲存的儲存陣列或其�
 
 
 
+[[virtualization-in-a-table-widget]]
 === 表格小工具中的虛擬化
 
 開始查看儲存虛擬化的最簡單方法之一是建立一個顯示虛擬化類型的儀表板表小工具。在為小工具建立查詢時，只需將「virtualizedType」新增至分組或篩選器。
@@ -26,6 +27,7 @@ image:StorageVirtualization_TableWidgetShowingVirtualizedTypes.png["顯示虛擬
 
 
 
+[[landing-pages-show-virtualized-information]]
 === 登陸頁面顯示虛擬化訊息
 
 在儲存、磁碟區、內部磁碟區或磁碟登入頁面上，您可以看到相關的虛擬化資訊。例如，查看下面的儲存登陸頁面，您可以看到這是一個虛擬存儲，以及適用哪個後端儲存系統。登陸頁面上的任何相關表格也將顯示適用的虛擬化資訊。
@@ -34,6 +36,7 @@ image:StorageVirtualization_StorageSummary.png["顯示虛擬和備份儲存資�
 
 
 
+[[existing-landing-pages-and-dashboards]]
 === 現有的登陸頁和儀表板
 
 請注意，如果您目前在租戶上有自訂的登入頁面或儀表板，則預設情況下這些頁面或儀表板不會自動顯示所有虛擬化資訊。但是，您可以將任何自訂儀表板或登入頁面_還原為預設_（您必須重新實作自訂），或修改相關小工具以包含所需的虛擬化屬性或指標。

@@ -20,6 +20,7 @@ Data Infrastructure Insights以預覽的方式突出顯示新特性和功能。�
 
 
 
+[[current-previews]]
 == 目前預覽：
 
 * link:ai_for_dii_overview.html["Data Infrastructure Insights AI 助理"] 預覽。

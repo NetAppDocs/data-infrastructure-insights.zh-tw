@@ -38,6 +38,7 @@ Data Infrastructure Insights報告可以為退款、消費分析和預測等領�
 
 
 
+[[accessing-data-infrastructure-insights-reporting]]
 == 存取Data Infrastructure Insights報告
 
 您可以透過點擊選單中的「報告」連結來存取Data Infrastructure Insights報告。
@@ -46,6 +47,7 @@ Data Infrastructure Insights報告可以為退款、消費分析和預測等領�
 
 
 
+[[what-is-etl]]
 == 什麼是 ETL？
 
 在處理報表時，您會聽到術語「資料倉儲」和「ETL」。  ETL 代表「提取、轉換和載入」。  ETL 流程會擷取Data Infrastructure Insights中收集的數據，並將資料轉換為可用於報告的格式。  「資料倉儲」指可用於報表的收集資料。

@@ -18,6 +18,7 @@ image:Kubernetes_List_Page_new.png["Kubernetes 清單頁面"]
 
 
 
+[[cluster-list]]
 === 集群列表
 
 集群清單顯示租戶上每個集群的以下資訊：
@@ -32,6 +33,7 @@ image:Kubernetes_List_Page_new.png["Kubernetes 清單頁面"]
 
 
 
+[[refining-the-filter]]
 == 優化過濾器
 
 當您進行篩選時，當您開始輸入時，系統會向您顯示基於目前文字建立*通配符過濾器*的選項。選擇此選項將傳回與通配符表達式相符的所有結果。您也可以使用 NOT 或 AND 建立*表達式*，或者您可以選擇「無」選項來過濾欄位中的空值。

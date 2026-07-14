@@ -16,6 +16,7 @@ keywords: troubleshooting, problems, browser, login, log in, accessing, access t
 
 
 
+[[login-issues]]
 == 登入問題
 
 |===
@@ -44,6 +45,7 @@ keywords: troubleshooting, problems, browser, login, log in, accessing, access t
 |===
 
 
+[[other-issues]]
 == 其他問題
 
 |===
@@ -62,6 +64,7 @@ keywords: troubleshooting, problems, browser, login, log in, accessing, access t
 |===
 
 
+[[resources]]
 == 資源
 
 更多故障排除技巧可在link:https://kb.netapp.com/Cloud/ncds/nds/dii/dii_kbs["NetApp知識庫"]（需要支援登入）。

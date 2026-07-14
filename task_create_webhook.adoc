@@ -47,6 +47,7 @@ Webhook 通道實例由下列元素組成：
 |===
 
 
+[[creating-a-webhook]]
 == 建立 Webhook
 
 若要建立Data Infrastructure Insightswebhook，請前往 *管理 > 通知* 並選擇 *Webhooks* 標籤。
@@ -65,6 +66,7 @@ image:Webhook_Default_Parameters.png["Data Infrastructure Insights預設 Webhook
 
 
 
+[[parameters-what-are-they-and-how-do-i-use-them]]
 === 參數：它們是什麼以及如何使用它們？
 
 警報參數是每個警報填充的動態值。例如，_%%TriggeredOn%%_ 參數將被替換為觸發警報的物件。
@@ -75,18 +77,21 @@ image:Webhook_Default_Parameters.png["Data Infrastructure Insights預設 Webhook
 
 
 
+[[custom-parameters-and-secrets]]
 === 自訂參數和機密
 
 在本節中，您可以新增任何您想要的自訂參數和/或秘密。出於安全原因，如果定義了機密，則只有 webhook 建立者可以修改此 webhook 通道。對其他人來說它是唯讀的。您可以在 URL/Headers 中使用秘密作為 _%%<secret_name>%%_。
 
 
 
+[[webhooks-list-page]]
 === Webhook 列表頁面
 
 Webhooks 清單頁面顯示名稱、建立者、建立日期、狀態、安全性和上次報告欄位。
 
 
 
+[[choosing-webhook-notification-in-a-monitor]]
 == 在監視器中選擇 Webhook 通知
 
 若要選擇 webhook 通知link:task_create_monitor.html["監視器"]，轉到*警報>管理監視器*並選擇所需的監視器，或新增新的監視器。在「設定團隊通知」部分，選擇「Webhook」作為傳送方式。選擇警報等級（嚴重、警告、已解決），然後選擇所需的 webhook。
@@ -95,6 +100,7 @@ image:Webhook_Monitor_Notify.png["Webhook 監控通知"]
 
 
 
+[[webhook-examples]]
 == Webhook 範例：
 
 Webhook 適用於link:task_webhook_example_slack.html["鬆弛"]Webhook 適用於link:task_webhook_example_pagerduty.html["PagerDuty"]Webhook 適用於link:task_webhook_example_teams.html["團隊"]Webhook 適用於link:task_webhook_example_discord.html["不和諧"]

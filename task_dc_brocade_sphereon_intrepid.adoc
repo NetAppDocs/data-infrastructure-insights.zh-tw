@@ -14,6 +14,7 @@ Data Infrastructure Insights使用Brocade Sphereon/Intrepid Switch (SNMP) 資料
 
 
 
+[[requirements]]
 == 要求
 
 為了配置此數據收集器，必須滿足以下要求：
@@ -26,9 +27,10 @@ Data Infrastructure Insights使用Brocade Sphereon/Intrepid Switch (SNMP) 資料
 
 
 
+[[configuration]]
 == 配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -49,9 +51,10 @@ Data Infrastructure Insights使用Brocade Sphereon/Intrepid Switch (SNMP) 資料
 |===
 
 
+[[advanced-configuration]]
 == 進階配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -81,6 +84,7 @@ Data Infrastructure Insights使用Brocade Sphereon/Intrepid Switch (SNMP) 資料
 |===
 
 
+[[troubleshooting]]
 == 故障排除
 
 關於此數據收集器的更多信息，請參閱link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。

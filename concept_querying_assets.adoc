@@ -22,12 +22,14 @@ keywords: query, queries, Application, Datastore, Disk, Fabric, Generic Device, 
 
 
 
+[[inventory-assets]]
 == 庫存資產
 
 所有庫存（也稱為基礎架構）資產類型（儲存、交換器、VM、Application 等）均可用於查詢、儀表板小工具和自訂資產登入頁面。可用於篩選、表達式和顯示的欄位和計數器會因資產類型而異。
 
 
 
+[[integration-metrics]]
 == 整合指標
 
 除了查詢庫存資產及其相關效能指標之外，您還可以查詢*整合資料*指標，例如 Kubernetes 或 Docker 產生的指標，或ONTAP進階指標提供的指標。
@@ -36,6 +38,7 @@ image:QueryPageFilter.png["整合查詢過濾器範例"]
 
 
 
+[[sharing-queries]]
 == 分享查詢
 
 透過選擇誰可以檢視和編輯您的查詢來控制對查詢的存取權限。預設情況下，新查詢是私有的，只有您自己可見，您可以選擇與特定使用者或整個組織共用查詢，並設定靈活的權限等級（唯讀或編輯）。

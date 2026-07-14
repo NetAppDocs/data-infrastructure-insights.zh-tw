@@ -21,6 +21,7 @@ NOTE: 本文檔涉及Data Infrastructure Insights報告功能，該功能在Data
 
 
 
+[[odata]]
 == 奧達塔
 
 Data Infrastructure Insights報告 API 遵循link:https://www.odata.org/["OData v4"]（開放資料協定）標準用於查詢報告資料庫。如需了解更多信息或了解更多信息，請查看link:https://www.odata.org/getting-started/basic-tutorial/["本教程"]在 OData 上。
@@ -29,6 +30,7 @@ Data Infrastructure Insights報告 API 遵循link:https://www.odata.org/["OData 
 
 
 
+[[generating-an-apikey]]
 == 產生 APIKey
 
 閱讀更多link:API_Overview.html["Data Infrastructure InsightsAPI"]。
@@ -48,6 +50,7 @@ APIkey 適用於<<synchronous-or-asynchronous,_Sync_ 或 _Async_>>。
 
 
 
+[[direct-query-of-tables]]
 == 直接查詢表
 
 有了 API 金鑰，現在就可以直接查詢報告資料庫。為了顯示目的，長 URL 可能會簡化為 \https://.../odata/ 而不是完整的 \https://< Data Infrastructure Insights URL>/rest/v1/dwh-management/odata/
@@ -63,6 +66,7 @@ APIkey 適用於<<synchronous-or-asynchronous,_Sync_ 或 _Async_>>。
 
 
 
+[[rest-api-examples]]
 == REST API 範例
 
 所有呼叫的 URL 為 _\https://< Data Infrastructure Insights URL>/rest/v1/dwh-management/odata_。
@@ -107,6 +111,7 @@ APIkey 適用於<<synchronous-or-asynchronous,_Sync_ 或 _Async_>>。
 ....
 
 
+[[helpful-hints]]
 == 有用的提示
 
 使用報告 API 查詢時請記住以下幾點。
@@ -133,6 +138,7 @@ APIkey 適用於<<synchronous-or-asynchronous,_Sync_ 或 _Async_>>。
 
 
 
+[[synchronous-or-asynchronous]]
 == 同步還是異步？
 
 預設情況下，API 命令將以同步模式運行，這表示您發送請求並立即回傳回應。但是，有時查詢可能需要很長時間才能執行，這可能導致請求逾時。為了解決這個問題，您可以非同步執行請求。在非同步模式下，請求將傳回一個URL，可以透過該URL監控執行情況。  URL 準備就緒後將傳回結果。

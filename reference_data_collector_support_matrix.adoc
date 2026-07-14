@@ -18,6 +18,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 
 
 
+[[hp-enterprise-3par-alletra-9000-primera-storeserv-storage]]
 == HP Enterprise 3PAR / Alletra 9000 / Primera StoreServ 存儲
 
 本數據採集器支援的型號及版本：
@@ -828,6 +829,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[amazon-aws-ec2]]
 == 亞馬遜 AWS EC2
 
 本資料擷取器支援的型號及版本：API版本：
@@ -1102,6 +1104,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[amazon-aws-s3]]
 == 亞馬遜 AWS S3
 
 本數據採集器支援的型號及版本：
@@ -1265,6 +1268,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[microsoft-azure-netapp-files]]
 == Microsoft Azure NetApp Files
 
 本數據採集器支援的型號及版本：
@@ -1587,6 +1591,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[brocade-fibre-channel-switches]]
 == Brocade光纖通道交換機
 
 本數據採集器支援的型號及版本：
@@ -2162,6 +2167,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[brocade-network-advisor-http]]
 == Brocade網路顧問 HTTP
 
 本數據採集器支援的型號及版本：
@@ -2418,6 +2424,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[brocade-fos-rest]]
 == Brocade FOS REST
 
 本數據採集器支援的型號及版本：
@@ -2898,6 +2905,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[cisco-mds-nexus-fabric-switches]]
 == Cisco MDS 和 Nexus 結構交換機
 
 本數據採集器支援的型號及版本：
@@ -3412,6 +3420,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[cohesity]]
 == 凝聚力
 
 本數據採集器支援的型號及版本：
@@ -3683,6 +3692,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[emc-celerra-ssh]]
 == EMC Celerra (SSH)
 
 本數據採集器支援的型號及版本：
@@ -3963,6 +3973,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[emc-clariion-navicli]]
 == EMC CLARiiON（NaviCLI）
 
 本數據採集器支援的型號及版本：
@@ -4576,6 +4587,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[emc-data-domain-ssh]]
 == EMC 資料域 (SSH)
 
 本數據採集器支援的型號及版本：
@@ -4929,6 +4941,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[emc-ecs]]
 == EMC ECS
 
 本數據採集器支援的型號及版本：
@@ -5260,6 +5273,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[dell-emc-isilon-powerscale-rest]]
 == Dell EMC Isilon 與 PowerScale Rest
 
 本數據採集器支援的型號及版本：
@@ -5982,6 +5996,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[dell-emc-isilon-powerscale-cli]]
 == Dell EMC Isilon/PowerScale（命令列介面）
 
 本數據採集器支援的型號及版本：
@@ -6549,6 +6564,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[emc-powerstore-rest]]
 == EMC PowerStore REST
 
 本數據採集器支援的型號及版本：
@@ -7184,6 +7200,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[emc-recoverpoint-http]]
 == EMC 恢復點 (HTTP)
 
 本數據採集器支援的型號及版本：
@@ -7311,6 +7328,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[emc-scaleio-powerflex-rest]]
 == EMC ScaleIO 與 PowerFlex REST
 
 本數據採集器支援的型號及版本：
@@ -7525,6 +7543,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[emc-symmetrix-cli]]
 == EMC Symmetrix CLI
 
 本數據採集器支援的型號及版本：
@@ -8388,6 +8407,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[dell-unisphere-rest]]
 == Dell Unisphere REST
 
 本數據採集器支援的型號及版本：
@@ -9111,6 +9131,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[emc-vnx-ssh]]
 == EMC VNX（SSH）
 
 本數據採集器支援的型號及版本：
@@ -9796,6 +9817,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[emc-vnxe-unity-unisphere-cli]]
 == EMC VNXe 與 Unity Unisphere（CLI）
 
 本數據採集器支援的型號及版本：
@@ -10390,6 +10412,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[emc-vplex]]
 == EMC VPLEX
 
 |===
@@ -10469,6 +10492,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[emc-xtremio-http]]
 == EMC XtremIO（HTTP）
 
 本數據採集器支援的型號及版本：
@@ -11026,6 +11050,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[netapp-e-series]]
 == NetApp E系列
 
 本數據採集器支援的型號及版本：
@@ -11672,6 +11697,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[pure-storage-flashblade-rest]]
 == Pure Storage FlashBlade REST
 
 本數據採集器支援的型號及版本：
@@ -12045,6 +12071,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[google-cloud-compute]]
 == Google雲端運算
 
 本資料擷取器支援的型號及版本：API版本：
@@ -12277,6 +12304,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[hds-hcp-https]]
 == HDS HCP（HTTPS）
 
 本數據採集器支援的型號及版本：
@@ -12461,6 +12489,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[hicommand-device-manager]]
 == HiCommand 設備管理器
 
 本數據採集器支援的型號及版本：
@@ -13135,6 +13164,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[hitachi-ops-center]]
 == 日立營運中心
 
 本數據採集器支援的型號及版本：
@@ -13822,6 +13852,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[hds-hnas-cli]]
 == HDS HNAS（命令列）
 
 本數據採集器支援的型號及版本：
@@ -14108,6 +14139,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[hpe-nimble-alletra-6000-storage]]
 == HPE Nimble/Alletra 6000 存儲
 
 本數據採集器支援的型號及版本：
@@ -14598,6 +14630,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[huawei-oceanstor-resthttps]]
 == 華為 OceanStor (REST/HTTPS)
 
 本數據採集器支援的型號及版本：
@@ -15322,6 +15355,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[ibm-cleversafe]]
 == IBM Cleversafe
 
 |===
@@ -15512,6 +15546,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[ibm-ds-8k-dscli]]
 == IBM DS 8K（DSCLI）
 
 本數據採集器支援的型號及版本：
@@ -16011,6 +16046,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[ibm-powervm-ssh]]
 == IBM PowerVM（SSH）
 
 |===
@@ -16192,6 +16228,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[ibm-svc-cli]]
 == IBM SVC（命令列介面）
 
 本數據採集器支援的型號及版本：
@@ -16939,6 +16976,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[ibm-xiv-a9000-xivcli]]
 == IBM XIV 與 A9000 (XIVCLI)
 
 本數據採集器支援的型號及版本：
@@ -17171,6 +17209,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[infinidat-infinibox-http]]
 == Infinidat Infinibox (HTTP)
 
 本數據採集器支援的型號及版本：
@@ -17520,6 +17559,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[microsoft-azure-compute]]
 == Microsoft Azure 運算
 
 本資料擷取器支援的型號及版本：API版本：
@@ -17776,6 +17816,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[microsoft-hyper-v]]
 == 微軟 Hyper-V
 
 |===
@@ -18257,6 +18298,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[netapp-7-mode]]
 == NetApp 7 模式
 
 本數據採集器支援的型號及版本：
@@ -19239,6 +19281,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[netapp-e-series-rest]]
 == NetApp E系列REST
 
 本數據採集器支援的型號及版本：
@@ -19609,6 +19652,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[amazon-fsx-for-netapp-ontap]]
 == Amazon FSx for NetApp ONTAP
 
 本數據採集器支援的型號及版本：
@@ -20534,6 +20578,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[netapp-clustered-data-ontap-8-1-1]]
 == NetApp叢集Data ONTAP 8.1.1+
 
 本數據採集器支援的型號及版本：
@@ -22289,6 +22334,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[asa]]
 == ASA
 
 本數據採集器支援的型號及版本：
@@ -22917,6 +22963,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[netapp-ontap-rest]]
 == NetApp ONTAP REST
 
 本數據採集器支援的型號及版本：
@@ -23775,6 +23822,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[netapp-solidfire-8-1]]
 == NetApp SolidFire 8.1+
 
 本數據採集器支援的型號及版本：
@@ -24520,6 +24568,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[netapp-storagegrid-https]]
 == NetAppStorageGRID(HTTPS)
 
 本數據採集器支援的型號及版本：
@@ -24903,6 +24952,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[nutanix-storage-rest]]
 == Nutanix 存儲 (REST)
 
 本數據採集器支援的型號及版本：
@@ -25414,6 +25464,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[oracle-zfs-https]]
 == Oracle ZFS（HTTPS）
 
 本數據採集器支援的型號及版本：
@@ -25964,6 +26015,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[pure-storage-flasharray-http]]
 == Pure Storage FlashArray（HTTP）
 
 本數據採集器支援的型號及版本：
@@ -26573,6 +26625,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[red-hat-rhv-rest]]
 == 紅帽 RHV（REST）
 
 |===
@@ -26817,6 +26870,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[rubrik-storage]]
 == Rubrik 存儲
 
 本資料擷取器支援的型號及版本：韌體版本：
@@ -27159,6 +27213,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[vast-datastore]]
 == VAST 資料存儲
 
 本數據採集器支援的型號及版本：
@@ -27571,6 +27626,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[netapp-hci-virtual-center]]
 == NetApp HCI虛擬中心
 
 本資料擷取器支援的型號及版本：API版本：
@@ -28119,6 +28175,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[vmware-cloud-on-aws]]
 == AWS 上的 VMware Cloud
 
 本資料擷取器支援的型號及版本：API版本：
@@ -28461,6 +28518,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 |===
 
 
+[[vmware-vsphere-web-services]]
 == VMware vSphere（Web 服務）
 
 本資料擷取器支援的型號及版本：API版本：

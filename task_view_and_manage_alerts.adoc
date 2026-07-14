@@ -17,6 +17,7 @@ TIP: 監控和警報功能可在Data Infrastructure Insights標準版及更高�
 
 
 
+[[viewing-and-managing-alerts]]
 == 查看和管理警報
 
 若要查看和管理警報，請執行下列操作。
@@ -52,6 +53,7 @@ TIP: 監控和警報功能可在Data Infrastructure Insights標準版及更高�
 
 
 
+[[alert-detail-panel]]
 == 警報詳細資訊面板
 
 選擇任意警報行以開啟警報的詳細資訊面板。警報詳細資訊面板提供有關警報的更多詳細信息，包括_摘要_、顯示與物件資料相關的圖表的_性能_部分、任何_相關資產_以及警報調查員輸入的_評論_。
@@ -60,6 +62,7 @@ image:metric_alert_detail_pane.png["指標警報詳細資訊面板"]
 
 
 
+[[alerts-when-data-is-missing]]
 == 資料遺失時發出警報
 
 在諸如Data Infrastructure Insights之類的即時系統中，為了觸發監視器的分析以決定是否應產生警報，我們依賴以下兩件事之一：
@@ -74,6 +77,7 @@ image:metric_alert_detail_pane.png["指標警報詳細資訊面板"]
 
 
 
+[[permanently-active-alerts]]
 == 「永久活動」警報
 
 可以以這樣的方式配置監視器，使條件*始終*存在於監視物件上 - 例如，IOPS > 1 或延遲 > 0。這些通常被創建為“測試”監視器，然後就被遺忘了。此類監視器會在組成物件上建立永久開啟的警報，隨著時間的推移，這可能會導致系統壓力和穩定性問題。

@@ -18,11 +18,12 @@ DII Promox 虛擬環境收集器將收集庫存資料。這是一個基於 HTTPS
 
 
 
+[[terminology]]
 == 術語
 
 對於Data Infrastructure Insights所取得的每種資產類型，都會顯示該資產最常用的術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 供應商/型號術語 | Data Infrastructure Insights術語 
 
@@ -45,9 +46,10 @@ DII Promox 虛擬環境收集器將收集庫存資料。這是一個基於 HTTPS
 
 
 
+[[configuration]]
 == 配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -55,16 +57,17 @@ DII Promox 虛擬環境收集器將收集庫存資料。這是一個基於 HTTPS
 | 主機名稱或 IP 位址 | 儲存系統的主機名稱 IP 位址 
 
 
-| API 權杖 ID | 存取需要 API Token 
+| API 權杖 ID | 存取需要 API 令牌 
 
 
 | API Token 秘密金鑰 | 上述令牌的秘密 
 |===
 
 
+[[advanced-configuration]]
 == 進階配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -76,6 +79,7 @@ DII Promox 虛擬環境收集器將收集庫存資料。這是一個基於 HTTPS
 |===
 
 
+[[troubleshooting]]
 == 故障排除
 
 關於此數據收集器的更多信息，請參閱link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。

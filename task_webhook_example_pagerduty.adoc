@@ -21,6 +21,7 @@ NOTE: 本頁引用第三方說明，可能會有所變更。請參閱link:https:
 
 
 
+[[pagerduty-setup]]
 == PagerDuty 設定：
 
 . 在 PagerDuty 中，導覽至 *服務 > 服務目錄*，然後按一下 *+新服務* 按鈕
@@ -48,6 +49,7 @@ image:webhook-pagerduty-4.png["PagerDuty 整合選擇畫面，寬度=500"]
 
 
 
+[[create-data-infrastructure-insights-webhook]]
 == 創建Data Infrastructure InsightsWebhook：
 
 . 在Data Infrastructure Insights中，導覽至 *管理 > 通知* 並選擇 *Webhooks* 標籤。點選 *+Webhook* 建立一個新 webhook。
@@ -63,6 +65,7 @@ image:Webhooks_Custom_Secret_Routing_Key.png["設定路由鍵"]
 
 
 
+[[pagerduty-to-data-infrastructure-insights-field-mapping]]
 == PagerDutyData Infrastructure Insights欄位映射
 
 下表和圖片顯示了 PagerDuty 和Data Infrastructure Insights之間的欄位對應：
@@ -90,6 +93,7 @@ image:Webhooks-PagerDuty_Fields.png["CI 中的 PagerDuty 字段"]
 
 
 
+[[notifications-via-webhook]]
 == 透過 Webhook 發送通知
 
 若要透過 webhook 通知事件，請在Data Infrastructure Insights中導覽至 *Alerts > Monitors*，然後按一下 *+Monitor* 以建立新的link:task_create_monitor.html["監視器"]。

@@ -29,6 +29,7 @@ NetApp根磁碟區包含用於管理儲存系統的目錄和設定檔。當查�
 
 
 
+[[creating-a-query-to-identify-netapp-root-aggregates]]
 == 建立查詢以識別NetApp根聚合
 
 查詢根據使用者選擇的條件提供細粒度的搜尋。使用查詢，您可以搜尋租用戶中包含NetApp根聚合的內部磁碟區。
@@ -54,6 +55,7 @@ NetApp根磁碟區包含用於管理儲存系統的目錄和設定檔。當查�
 
 
 
+[[create-an-annotation-for-the-root-volumes-returned-by-your-queries]]
 == 為查詢傳回的根磁碟區建立註釋
 
 註釋是您分配給資產的專門註釋，允許您透過註釋過濾資產。您建立的註釋將用於識別租用戶上的NetApp根聚合，並確保它們不包含在特定報告中。
@@ -75,6 +77,7 @@ NetApp根磁碟區包含用於管理儲存系統的目錄和設定檔。當查�
 
 
 
+[[create-an-annotation-rule-to-automate-excluding-specific-aggregates-from-your-io-density-report]]
 == 建立註釋規則以自動從 I/O 密度報表中排除特定聚合
 
 作為手動將註釋應用於單一資產的替代方法，您可以使用註釋規則自動將註釋套用至多個資產。註釋規則是基於您建立的查詢，當在系統上執行時，它們會將新資產新增至現有資產集中。當這些資產集從報告中排除時，新資產也會自動被排除。

@@ -21,6 +21,7 @@ NOTE: Data Infrastructure InsightsAPI 在 *Data Infrastructure Insights高級版
 
 
 
+[[importing]]
 == 輸入
 
 *管理 > API 存取* 連結包含link:API_Overview.html["文件"]用於*Assets/Import* API。本文檔包含有關 .CSV 文件格式的資訊。
@@ -29,6 +30,7 @@ image:api_assets_import.png["導入 API"]
 
 
 
+[[csv-file-format]]
 == .CSV 檔案格式
 
 CSV檔案的一般格式如下。該文件的第一行定義導入欄位並指定欄位的順序。接下來是每個註解或應用程式的單獨行。您不需要定義每個欄位。但是，後續註解行必須遵循與定義行相同的順序。
@@ -42,6 +44,7 @@ image:api_assets_import_assign.png["導入和分配"]
 
 
 
+[[import-behavior]]
 == 導入行為
 
 在匯入作業期間，將根據匯入的物件和物件類型新增、合併或取代資料。導入時，請記住以下行為。

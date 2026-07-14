@@ -45,6 +45,7 @@ Webhook 通道實例由下列元素組成
 |===
 
 
+[[creating-a-webhook]]
 == 創建 webhook
 
 若要建立工作負載安全性 Webhook，請前往管理 > 通知並選擇「工作負載安全性 Webhook」標籤。下圖顯示了 Slack webhook 建立畫面的範例。
@@ -60,6 +61,7 @@ image:ws_webhook_slack_example.png["工作負載安全的 webhook slack 範例�
 
 
 
+[[parameters-what-are-they-and-how-to-use-them]]
 == 參數：它們是什麼以及如何使用它們？
 
 警報參數是每個警報填充的動態值。例如，_%%severity%%_ 參數將被替換為警報的嚴重性類型。
@@ -68,6 +70,7 @@ image:ws_webhook_slack_example.png["工作負載安全的 webhook slack 範例�
 
 
 
+[[custom-parameters-and-secrets]]
 === 自訂參數和機密
 
 在本節中，您可以新增任何您想要的自訂參數和/或秘密。自訂參數或秘密可以位於 URL 或訊息正文中。秘密允許使用者配置安全的自訂參數，如密碼、apiKey 等。
@@ -78,6 +81,7 @@ image:ws_webhook_parameters_example.png["帶參數的工作負載安全 webhook�
 
 
 
+[[workload-security-webhooks-list-page]]
 == 工作負載安全 Webhook 清單頁面
 
 Webhooks 清單頁面顯示名稱、建立者、建立日期、狀態、安全性和上次報告欄位。注意：'status' 欄位的值會根據最後一個 webhook 觸發結果不斷變化。以下是狀態結果的範例。
@@ -115,6 +119,7 @@ Webhooks 清單頁面顯示名稱、建立者、建立日期、狀態、安全�
 
 
 
+[[configure-webhook-notification-in-alert-policy]]
 == 在警報策略中設定 Webhook 通知
 
 若要將 webhook 通知新增至警報策略，請前往“工作負載安全性”>“策略”，然後選擇現有策略或新增策略。在「動作」部分 > “Webhook 通知」下拉式功能表中，選擇所需的 webhook。
@@ -131,6 +136,7 @@ Webhook 通知與策略相關。當攻擊（RW/DD/WARN）發生時，將採取�
 
 
 
+[[workload-security-webhook-examples]]
 === 工作負載安全性 Webhook 範例
 
 Webhook 適用於link:ws_webhook_example_slack.html["鬆弛"]

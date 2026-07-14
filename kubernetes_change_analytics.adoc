@@ -25,6 +25,7 @@ image:ChangeAnalytitcs_Main_Screen.png["Kubernetes Change Analytics 主螢幕，
 
 
 
+[[filtering]]
 == 濾
 
 與Data Infrastructure Insights的所有功能一樣，過濾變更清單非常直觀：在頁面頂部，輸入或選擇 Kubernetes 叢集、命名空間或工作負載的值，或透過選擇 {+] 按鈕來新增您自己的濾鏡。
@@ -35,6 +36,7 @@ image:ChangeAnalytitcs_Filtered_Timeline.png["工作負載時間軸範例"]
 
 
 
+[[quick-status]]
 == 快速狀態
 
 過濾區域下方是一些進階指標。左側是警報的數量（警告和嚴重）。此數字包括_活動_警報以及_已解決_警報。若要僅查看“活動”警報，請設定“狀態”過濾器並選擇“活動”。
@@ -51,6 +53,7 @@ image:ChangeAnalytitcs_ExploreWorkloadAlerts.png["變更分析工作負載探索
 
 
 
+[[detail-panel]]
 == 詳細資訊面板
 
 選擇清單中的一項變更將開啟一個面板，更詳細地描述該變更。例如，選擇失敗的部署會顯示部署的摘要，包括開始和結束時間、持續時間以及觸發部署的位置，以及探索這些資源的連結。它還顯示失敗的原因、任何相關變更以及任何相關事件。

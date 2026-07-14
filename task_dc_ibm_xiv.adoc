@@ -14,9 +14,10 @@ IBM XIV 和 A9000 (CLI) 資料收集器使用 XIV 命令列介面收集庫存數
 
 
 
+[[terminology]]
 == 術語
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 供應商/型號術語 | Data Infrastructure Insights術語 
 
@@ -34,6 +35,7 @@ IBM XIV 和 A9000 (CLI) 資料收集器使用 XIV 命令列介面收集庫存數
 |===
 
 
+[[requirements]]
 == 要求
 
 配置和使用此資料收集器必須滿足以下要求：
@@ -45,6 +47,7 @@ IBM XIV 和 A9000 (CLI) 資料收集器使用 XIV 命令列介面收集庫存數
 
 
 
+[[performance-requirements]]
 == 性能要求
 
 績效收集的要求如下：
@@ -59,9 +62,10 @@ IBM XIV 和 A9000 (CLI) 資料收集器使用 XIV 命令列介面收集庫存數
 
 
 
+[[configuration]]
 == 配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -82,9 +86,10 @@ IBM XIV 和 A9000 (CLI) 資料收集器使用 XIV 命令列介面收集庫存數
 |===
 
 
+[[advanced-configuration]]
 == 進階配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -108,6 +113,7 @@ IBM XIV 和 A9000 (CLI) 資料收集器使用 XIV 命令列介面收集庫存數
 |===
 
 
+[[troubleshooting]]
 == 故障排除
 
 關於此數據收集器的更多信息，請參閱link:concept_requesting_support.html["支援"]頁面或在link:reference_data_collector_support_matrix.html["數據收集器支援矩陣"]。

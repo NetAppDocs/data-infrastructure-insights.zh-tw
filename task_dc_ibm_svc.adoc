@@ -16,11 +16,12 @@ IBM SAN Volume Controller (SVC) 數據收集器使用 SSH 收集庫存和效能�
 
 
 
+[[terminology]]
 == 術語
 
 Data Infrastructure Insights從 IBM SVC 資料收集器取得以下庫存資訊。對於Data Infrastructure Insights取得的每種資產類型，都會顯示用於該資產的最常用術語。當查看或排除此資料收集器的故障時，請記住以下術語：
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 供應商/型號術語 | Data Infrastructure Insights術語 
 
@@ -46,6 +47,7 @@ Data Infrastructure Insights從 IBM SVC 資料收集器取得以下庫存資訊�
 
 
 
+[[inventory-requirements]]
 === 庫存需求
 
 * 每個SVC叢集的IP位址
@@ -55,6 +57,7 @@ Data Infrastructure Insights從 IBM SVC 資料收集器取得以下庫存資訊�
 
 
 
+[[performance-requirements]]
 === 性能要求
 
 * SVC 控制台，對於任何 SVC 叢集都是必需的，並且是 SVC 發現基礎包所必需的。
@@ -67,9 +70,10 @@ Data Infrastructure Insights從 IBM SVC 資料收集器取得以下庫存資訊�
 
 
 
+[[configuration]]
 == 配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -84,9 +88,10 @@ Data Infrastructure Insights從 IBM SVC 資料收集器取得以下庫存資訊�
 |===
 
 
+[[advanced-configuration]]
 == 進階配置
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 場地 | 描述 
 
@@ -101,11 +106,12 @@ Data Infrastructure Insights從 IBM SVC 資料收集器取得以下庫存資訊�
 |===
 
 
+[[troubleshooting]]
 == 故障排除
 
 如果您在使用此資料收集器時遇到問題，請嘗試以下操作：
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 問題： | 試試一下： 
 
@@ -114,7 +120,7 @@ Data Infrastructure Insights從 IBM SVC 資料收集器取得以下庫存資訊�
 |===
 如果您在使用此資料收集器時遇到問題，請嘗試以下操作：
 
-[cols="2*"]
+[cols="50,50"]
 |===
 | 問題： | 試試一下： 
 
