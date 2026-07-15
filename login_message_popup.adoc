@@ -22,6 +22,6 @@ keywords: notifications, pop-up, banner, motd, message, login
 
 選擇使用者是在下次登入時看到該訊息，還是在每次後續登入時都看到該訊息。
 
-image:login_banner_settings.png["登入橫幅設定"]
+image:login_banner_settings.png["登入橫幅設定，寬度=400"]
 
 請注意，使用者必須確認登入訊息才能將其關閉。關閉後，任何其他彈出視窗（例如「最新動態」更新、「服務條款」更新等）都會顯示。

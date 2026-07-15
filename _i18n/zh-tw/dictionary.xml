@@ -14072,8 +14072,6 @@
   <block id="810bac3bcbfe61628b10fe3df2e0ea96" category="paragraph">管理員可以在「管理 &gt; 通知」的「登入橫幅」標籤中設定訊息。</block>
   <block id="22f60aff39394bad553a00e2940bdf11" category="paragraph">該訊息支援基本的 Markdown 格式，因此您可以套用粗體、斜體、表格等格式。</block>
   <block id="6a46079dd2d659655fc832470519e71a" category="paragraph">選擇使用者是在下次登入時看到該訊息，還是在每次後續登入時都看到該訊息。</block>
-  <block id="6a5f1dd41e7d3fa22fbd71d29b46cea4" category="inline-image-macro">登入橫幅設定</block>
-  <block id="bd6c3bd0a46b9e6da4828acea4a9e315" category="paragraph"><block ref="bd6c3bd0a46b9e6da4828acea4a9e315" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1ef61a1b7e25b910ec7beca0741bd208" category="paragraph">請注意，使用者必須確認登入訊息才能將其關閉。關閉後，任何其他彈出視窗（例如「最新動態」更新、「服務條款」更新等）都會顯示。</block>
   <block id="38f64824b0d19083b9c439a8b4af41e4" category="admonition">在伺服器/虛擬機器上安裝代理程式後，Data Infrastructure Insights 除了從您設定的任何資料收集器收集指標外，還會從該系統收集指標。這些指標以「節點」指標的形式收集。</block>
   <block id="7fa36585f976625a51b4f3be0f46f0b5" category="cell">如果您擁有自訂或私人 Docker 倉庫，但尚未配置 Kubernetes Monitoring Operator 以正確識別它，則可能會出現這些錯誤。<block ref="2d47cbc88497421e2fe69677ce7d4cef" category="inline-xref-macro-rx"></block>有關配置自訂/私有倉庫的資訊。</block>
@@ -14176,4 +14174,29 @@
   <block id="4f23d2244ea630f361d554b54b77bf03" category="list-text">透過 REST API 經由連接埠 6443 取得 Red Hat OpenShift Virtualization 伺服器的 IP 位址</block>
   <block id="427f91a8692cb3d3ee52ca20ff3b659c" category="cell">用於與 RHOV 進行 HTTPS 通訊的連接埠。預設值為 6443。</block>
   <block id="635a6e63b01914992d3584137f9e6ba6" category="sidebar">Nutanix AHV</block>
+  <block id="a257f7f4b2f6e07845ce567df142ad00" category="section-title">2026 年 7 月</block>
+  <block id="8014692a31dc15996a299cb6c0683d99" category="section-title">新 AI 助理起始頁</block>
+  <block id="217f492cb52cc14d717c54a81afbacfe" category="paragraph">DII AI 助理現在擁有專用的起始頁面，將至能基礎架構分析置於核心位置。您可以立即開始新的對話，一鍵恢復上次工作階段，或透過建議提示快速入門。</block>
+  <block id="dac1263103d1a0aa0f29eb002af291af" category="inline-image-macro">AI 儀表板預設，寬度=800</block>
+  <block id="6c78ab210f62dbc85fe22910374ff62b" category="paragraph"><block ref="6c78ab210f62dbc85fe22910374ff62b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7bd22707614b54a5cb3a8b8f12117bb9" category="paragraph">您可以透過導覽功能表中的「AI Assistant」存取起始頁面，或使用左上角的「星形」圖示從任意位置開啟 AI Assistant。</block>
+  <block id="8946b454436a3b11aac461eaa734adfe" category="inline-image-macro">AI Assistant Nav Menu, width=600</block>
+  <block id="2c8265bfd753072f003bc24b1df77111" category="inline-image-macro">隨時隨地存取 AI 助手，寬度=300</block>
+  <block id="9f6f73922ecce265167332ab3cf87f92" category="paragraph"><block ref="f633ce7b4fef8820f87a799ad31a7cb5" category="inline-image-macro-rx" type="image"></block> <block ref="fefcd3a065be75939d8d47b234d9d0c0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="94187d26105df3824bea268e9ae25535" category="inline-image-macro">登入橫幅設定，寬度=400</block>
+  <block id="d1e27aaece77e53fc070c0b0ce490e10" category="paragraph"><block ref="d1e27aaece77e53fc070c0b0ce490e10" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="58b6e1ec0b6ec5b4a454251805124640" category="section-title">維護所需時間</block>
+  <block id="3f3ec1c35b7249f193c068e0a8c036d3" category="paragraph">透過維護所需時間，您可以為選定的物件和計量安排特定的維護週期，並在這些週期內抑制警報通知。例如，您可以抑制特定儲存設備在計劃升級期間觸發的警報通知。</block>
+  <block id="df24d8acd06534f618230d46637d6d1b" category="paragraph">您可以選擇在維護所需時間內同時抑制警示和通知，或僅抑制通知但繼續偵測警示。</block>
+  <block id="1aed277c750cbbf8c2859dca8664dada" category="inline-image-macro">維護所需時間視窗範例，寬度=400</block>
+  <block id="8f42f88b31e1b4f22f40e0ae5ecd38fb" category="paragraph"><block ref="8f42f88b31e1b4f22f40e0ae5ecd38fb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="82bc146aadfdab0e3c7443c79b7f4c8b" category="section-title">建立維護所需時間</block>
+  <block id="4def5c59958a122e22c3d06a018c9ef0" category="paragraph">建立維護所需時間：</block>
+  <block id="2b2323dddeb141b098fbcd705e90e359" category="list-text">導覽至 *Observability &gt; Alerts &gt; Maintenance Windows* ，然後按一下 *+ Maintenance Window* 。</block>
+  <block id="610844a278d3d0601b4bc4c27665563e" category="list-text">請為維護所需時間輸入*名稱*。為獲得最佳效果，請確保名稱有意義且具體。</block>
+  <block id="c74ae4bc562a9f2edcf63aa39e8fac31" category="list-text">選擇*儲存設備*或*物件屬性*。</block>
+  <block id="5760cc9b0c4d4910c5b80c7479b3f2a3" category="list-text">篩選 *監控或多個監控*。接受萬用字元。</block>
+  <block id="ea10176408e9b54a867b0e298e4b4bc2" category="list-text">請選擇維護所需時間的*開始時間*和*結束時間*。</block>
+  <block id="de3fd64c52ab8fa6a72c862f6f638fb0" category="list-text">選擇是否抑制*警報和通知*，或*僅抑制通知*（在維護所需時間內仍會偵測到警報）。</block>
+  <block id="35d71e914a221fd7fa5e2e2d8c813a2a" category="list-text">按一下「儲存」以建立維護所需時間。</block>
 </blocks>

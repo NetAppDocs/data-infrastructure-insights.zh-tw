@@ -19,6 +19,25 @@ NetApp不斷改進和增強其產品和服務。以下是Data Infrastructure Ins
 
 
 
+[[july-2026]]
+== 2026 年 7 月
+
+
+
+[[new-ai-assistant-starting-page]]
+=== 新 AI 助理起始頁
+
+DII AI 助理現在擁有專用的起始頁面，將至能基礎架構分析置於核心位置。您可以立即開始新的對話，一鍵恢復上次工作階段，或透過建議提示快速入門。
+
+image:AI_dashboard_page_default.png["AI 儀表板預設，寬度=800"]
+
+您可以透過導覽功能表中的「AI Assistant」存取起始頁面，或使用左上角的「星形」圖示從任意位置開啟 AI Assistant。
+
+image:AI_dashboard_page_menu.png["AI Assistant Nav Menu, width=600"] image:AI_assistant_access_button.png["隨時隨地存取 AI 助手，寬度=300"]
+
+'''
+
+
 [[june-2026]]
 == 2026 年 6 月
 
