@@ -245,4 +245,21 @@ fpolicy policy external-engine delete -vserver <svmname> -engine-name <engine_na
 {空的}
 
 '''
+*問題：* 在新增或升級 ONTAP SVM 資料收集器（工作負載安全）後，租戶顯示過度資源配置或訂閱違規警報。即使未新增任何新硬體，原始儲存容量也增加了。
+
+*試試這個：*同一個儲存設備可能會被計數兩次——一次是由 Observability ONTAP 叢集收集器計數，另一次是由同一叢集上的 Workload Security SVM 收集器計數。
+
+比較 Observability ONTAP 收集器和 Workload Security SVM 收集器所報告的原始儲存容量。對於每個 SVM 收集器，檢查其父叢集是否已由 Observability ONTAP 收集器監控。如果已由其監控，則只有叢集容量才應計入訂閱使用量。
+
+確認近期是否發生了跨叢集的 SVM 移轉。SVM 移轉後，容量計量可能仍與先前的叢集關聯，直到 Workload Security 從收集器收到更新資訊。
+
+確保已移轉 SVM 的 ONTAP SVM 資料收集器處於 RUNNING 狀態。如有必要，重新啟動收集器，以便 Workload Security 在移轉後能夠收集正確的叢集和容量計量。
+
+如果叢集容量和 SVM 容量都出現在總容量中，則很可能是容量被重複計算了。這種情況通常發生在新增、升級、重新啟動 SVM 收集器或在叢集之間移轉 SVM 之後不久。
+
+如果使用量仍然超過您的訂閱，請開啟 NetApp Support 案例，提供警報前後的訂閱使用情況，以及可觀測性和 SVM 收集器及其報告的原始儲存容量清單。
+
+{空的}
+
+'''
 如果您仍然遇到問題，請聯絡*幫助>支援*頁面中提到的支援連結。

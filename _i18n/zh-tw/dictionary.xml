@@ -14199,4 +14199,11 @@
   <block id="ea10176408e9b54a867b0e298e4b4bc2" category="list-text">請選擇維護所需時間的*開始時間*和*結束時間*。</block>
   <block id="de3fd64c52ab8fa6a72c862f6f638fb0" category="list-text">選擇是否抑制*警報和通知*，或*僅抑制通知*（在維護所需時間內仍會偵測到警報）。</block>
   <block id="35d71e914a221fd7fa5e2e2d8c813a2a" category="list-text">按一下「儲存」以建立維護所需時間。</block>
+  <block id="0a59582ce4c43ad9d8e979980a15c132" category="paragraph">*問題：* 在新增或升級 ONTAP SVM 資料收集器（工作負載安全）後，租戶顯示過度資源配置或訂閱違規警報。即使未新增任何新硬體，原始儲存容量也增加了。</block>
+  <block id="2e6ad606c623766795c1fa0e576fed30" category="paragraph">*試試這個：*同一個儲存設備可能會被計數兩次——一次是由 Observability ONTAP 叢集收集器計數，另一次是由同一叢集上的 Workload Security SVM 收集器計數。</block>
+  <block id="13cb22c80c1185588a0cd56b404eb572" category="paragraph">比較 Observability ONTAP 收集器和 Workload Security SVM 收集器所報告的原始儲存容量。對於每個 SVM 收集器，檢查其父叢集是否已由 Observability ONTAP 收集器監控。如果已由其監控，則只有叢集容量才應計入訂閱使用量。</block>
+  <block id="29945491ade2d90cbd800cb34575fef0" category="paragraph">確認近期是否發生了跨叢集的 SVM 移轉。SVM 移轉後，容量計量可能仍與先前的叢集關聯，直到 Workload Security 從收集器收到更新資訊。</block>
+  <block id="ed499d4afa165aaf800d50911ee0d6b7" category="paragraph">確保已移轉 SVM 的 ONTAP SVM 資料收集器處於 RUNNING 狀態。如有必要，重新啟動收集器，以便 Workload Security 在移轉後能夠收集正確的叢集和容量計量。</block>
+  <block id="01ee0a41b7ba80a315acf774bca95831" category="paragraph">如果叢集容量和 SVM 容量都出現在總容量中，則很可能是容量被重複計算了。這種情況通常發生在新增、升級、重新啟動 SVM 收集器或在叢集之間移轉 SVM 之後不久。</block>
+  <block id="d1d2aacb054348275b14473a1f1f31f2" category="paragraph">如果使用量仍然超過您的訂閱，請開啟 NetApp Support 案例，提供警報前後的訂閱使用情況，以及可觀測性和 SVM 收集器及其報告的原始儲存容量清單。</block>
 </blocks>
