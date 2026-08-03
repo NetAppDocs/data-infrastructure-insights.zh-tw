@@ -14131,17 +14131,12 @@
   <block id="25a317566de430ddfd2c6f4b3fdea612" category="list-text">ci-k8s-change-observer</block>
   <block id="9da5aa79f5375ccea3c84723b5759557" category="cell">我看到 Telegraf 返回類似如下的錯誤訊息，但 Telegraf 確實啟動並運行了：E! [inputs.kubernetes] 插件錯誤：<block ref="6d1752bb8ee46f6164f07ea885d5c072" category="inline-link-rx"></block> 返回 HTTP 狀態 403 Forbidden</block>
   <block id="51635ff11969666db6bdeaf0c68d58b0" category="cell">如果您執行的是低於 1.33 版本的 Kubernetes，則可能會出現這些訊息。telegraf 使用的「nodes/pods」RBAC 資源在這些版本中不存在。有關舊版本所需的 RBAC 資源，請參閱 operator-additional-permissions.yaml 檔案中「適用於 Kubernetes 版本 &lt; 1.33」部分。</block>
-  <block id="55c55b1241c0ea96ea6cef65b10a23e4" category="inline-link-macro">Promox Virtual Environment</block>
-  <block id="9ddb2ce85d3b0c6085884776fe61a596" category="cell"><block ref="9ddb2ce85d3b0c6085884776fe61a596" category="inline-link-macro-rx"></block></block>
-  <block id="66036899193ada3425c77162bf9d742c" category="summary">配置 Promox 虛擬環境資料收集器。</block>
-  <block id="dc8f767a3f6e8f9b98077b7e9a688c5d" category="paragraph">DII Promox 虛擬環境收集器將收集庫存資料。這是一個基於 HTTPS REST API 的收集器。</block>
   <block id="b720c5170acbb344b34398a9ed4fec4b" category="cell">主機名稱或 IP 位址</block>
   <block id="32d285f157ad1acefe9dbe844cee7acf" category="cell">儲存系統的主機名稱 IP 位址</block>
   <block id="606bae1c220a7cd73cdc71a447b328fd" category="cell">API 權杖 ID</block>
   <block id="9ae9995c158c8b32609b8fd098fa5ff5" category="cell">API Token 秘密金鑰</block>
   <block id="923e5171366e1120624f5ea15d195544" category="cell">上述令牌的秘密</block>
   <block id="07d3835e20364558e54bb222fac4e80c" category="cell">用於 HTTPS 通訊的連接埠（預設 8006）</block>
-  <block id="c0dcddaaad9648f13d2e54741430ea94" category="sidebar">Promox VE</block>
   <block id="f45a9049372d3cb48c0a5f07d2274d8a" category="inline-link-macro">Nutanix AHV 系列</block>
   <block id="ad9c1c290afb17645c1abe42082fd356" category="cell"><block ref="ad9c1c290afb17645c1abe42082fd356" category="inline-link-macro-rx"></block></block>
   <block id="dfc304efa37c8d1373249ddd368bc0be" category="summary">配置 Nutanix NX 資料收集器。</block>
@@ -14157,17 +14152,12 @@
   <block id="93aad9faf21d772e6638b83df990a5f5" category="cell">ADSF Volume Group</block>
   <block id="5ccc8ca7259b2e94529827201b7eb255" category="cell">虛擬機器磁碟</block>
   <block id="59713d7f655f9c892a64a8cfb1bce50f" category="list-text">Prism Central IP 位址或完全限定域名</block>
-  <block id="b4cdc83adeeea6f91bf95fe532871bdd" category="list-text">Prism Central 本地或 LDAP 使用者名稱和密碼（唯讀帳戶足以進行庫存和效能分析；無需管理員帳戶）</block>
   <block id="305bb684f75dc043415486c2063d46c4" category="list-text">連接埠要求：HTTPS 9440</block>
   <block id="539110e77db7f1ce573940c3147dbe68" category="list-text">Prism Central 版本 pc.2023.x 或更高版本（v3 API）；建議使用 pc.7.x 或更高版本（v4 API）</block>
-  <block id="74c15fa6625bc3241b81c66466e0ce42" category="list-text">效能指標需要 Prism Central 搭配 API v4.0.b1 或更新版本（pc.7.3+）。在舊版本中，仍會收集庫存資訊，但不會回報效能資料。</block>
-  <block id="fb7d6f6db43d1bb1043df17e264de78a" category="cell">Prism Central IP 位址</block>
   <block id="b46321a9cb6ebc3023c7b6ae1f3d8b4f" category="cell">Prism Central 實例的 IP 位址或 FQDN</block>
   <block id="893b253db3bdc1ebfb515f1f1cc09f50" category="cell">Prism Central 使用者名稱</block>
   <block id="0fc00a87efdbecf33bb1448c3eaa5a73" category="cell">Prism Central 密碼</block>
-  <block id="ac2fad2f282b0e32c75912e363cfb735" category="cell">用於連接 Prism Central 的 TCP 連接埠。預設連接埠為 9440。</block>
   <block id="834593f1f41ad9180f7c06531584872b" category="cell">HTTP 逾時時間（秒）</block>
-  <block id="b8c5ed136238b59bf386d65bf0787acf" category="cell">HTTP 請求逾時時間。預設值為 60 秒。</block>
   <block id="625b6c43e9f8c94b5aa84173a04fa961" category="cell">HTTP 重試次數</block>
   <block id="c8f99bb6092a052b29e43263274e103f" category="cell">瞬態故障時的 HTTP 重試次數。預設值為 3。</block>
   <block id="4a2e4ff5e220e83407c567779aaf9ba1" category="cell">存取需要 API 令牌</block>
@@ -14206,4 +14196,18 @@
   <block id="ed499d4afa165aaf800d50911ee0d6b7" category="paragraph">確保已移轉 SVM 的 ONTAP SVM 資料收集器處於 RUNNING 狀態。如有必要，重新啟動收集器，以便 Workload Security 在移轉後能夠收集正確的叢集和容量計量。</block>
   <block id="01ee0a41b7ba80a315acf774bca95831" category="paragraph">如果叢集容量和 SVM 容量都出現在總容量中，則很可能是容量被重複計算了。這種情況通常發生在新增、升級、重新啟動 SVM 收集器或在叢集之間移轉 SVM 之後不久。</block>
   <block id="d1d2aacb054348275b14473a1f1f31f2" category="paragraph">如果使用量仍然超過您的訂閱，請開啟 NetApp Support 案例，提供警報前後的訂閱使用情況，以及可觀測性和 SVM 收集器及其報告的原始儲存容量清單。</block>
+  <block id="e0a90db369f87ae02adeb16a86201742" category="inline-link-macro">Proxmox Virtual Environment</block>
+  <block id="4a90aaa80c9f510a7ceb078daedd5635" category="cell"><block ref="4a90aaa80c9f510a7ceb078daedd5635" category="inline-link-macro-rx"></block></block>
+  <block id="bf88a9906139e4cb81937529ce5737f7" category="list-text">Prism Central 本機或 LDAP 使用者名稱和密碼（唯讀帳戶即可）</block>
+  <block id="616363ce8a56d3faec8ac114ed04d83b" category="list-text">效能計量需要 Prism Central 搭配 API v4.0.b1 或更新版本（pc.7.3+）。在舊版本中，系統會收集庫存資訊，但不會報告效能資料。</block>
+  <block id="0c215c7eb97b422d3fbcb651a59480b7" category="cell">Prism Central IP / 主機名稱</block>
+  <block id="6cb3b4061cdb7e049999801ce8d1d445" category="cell">用於連接 Prism Central 的 TCP 連接埠。預設值為 9440。</block>
+  <block id="19b47095e2b176e478290ba0ddfcbdbc" category="cell">庫存輪詢間隔時間。預設值為 60 分鐘。</block>
+  <block id="d9ac9c87b6001203eb8b39a253943bd2" category="cell">效能輪詢間隔。預設值為 300 秒。</block>
+  <block id="8626d73b80be039d958752c296fa4e7c" category="cell">HTTP 請求逾時時間。預設值為 60。</block>
+  <block id="33c9cb93144548bfcc912b99d1b2555c" category="summary">配置 Proxmox 虛擬環境資料收集器。</block>
+  <block id="b37138a3b3b3fcd2958e4e6cc5c5c61b" category="doc">Proxmox Virtual Environment 資料收集器</block>
+  <block id="91a0d06a30de7119cf7ba6773ce38416" category="paragraph">DII Proxmox 虛擬環境收集器將收集基於 PVE 的虛擬機器（而非 LXC 容器）和主機/虛擬機器管理程式的清單和效能資料。這是一個基於 HTTPS REST API 的收集器，需要與監聽 TCP 8006 連接埠的 pveproxy 服務/守護程式提供的 Proxmox REST API 通訊。</block>
+  <block id="7bd4738e9b2442fc6fa7415e88a3298d" category="paragraph">此資料收集器使用使用者 + 權杖驗證。您需要在每個 Proxmox 叢集上建立一個服務帳戶，並為該使用者指派對應的權限，然後產生一個具有相同權限的 API 權杖。請附註，特定 Proxmox 使用者的權杖不一定擁有與該使用者相同的權限。DII 通常需要全域稽核/監控層級的權限——如果您透過 Proxmox UI 建立服務帳戶，請將 PathPermision 的起始路徑設定為「/」，將「傳播」設定為「是」，並至少解除鎖定 Datastore Audit、Mapping Audit、Pool Audit、SDN Audit、Sys Audit、VM Audit、VM Monitor 權限。建立使用者後，即可為其建立存取權杖。強烈建議將權杖的過期時間設為 0，以確保權杖永不過期。</block>
+  <block id="57e13573114577b3af8a0a24aa24d576" category="sidebar">Proxmox VE</block>
 </blocks>

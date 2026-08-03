@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task_dc_nutanix_ahv.html 
-keywords: data collector, Nutanix, AHV Series 
+keywords: data collector, Nutanix, AHV Series , Acropolis, hypervisor 
 summary: 配置 Nutanix AHV 資料收集器。 
 ---
 = Nutanix AHV 資料收集器
@@ -51,10 +51,10 @@ Nutanix AHV 收集器使用 Prism Central v4 REST API（叢集管理和虛擬機
 == 要求
 
 * Prism Central IP 位址或完全限定域名
-* Prism Central 本地或 LDAP 使用者名稱和密碼（唯讀帳戶足以進行庫存和效能分析；無需管理員帳戶）
+* Prism Central 本機或 LDAP 使用者名稱和密碼（唯讀帳戶即可）
 * 連接埠要求：HTTPS 9440
 * Prism Central 版本 pc.2023.x 或更高版本（v3 API）；建議使用 pc.7.x 或更高版本（v4 API）
-* 效能指標需要 Prism Central 搭配 API v4.0.b1 或更新版本（pc.7.3+）。在舊版本中，仍會收集庫存資訊，但不會回報效能資料。
+* 效能計量需要 Prism Central 搭配 API v4.0.b1 或更新版本（pc.7.3+）。在舊版本中，系統會收集庫存資訊，但不會報告效能資料。
 
 
 
@@ -67,7 +67,7 @@ Nutanix AHV 收集器使用 Prism Central v4 REST API（叢集管理和虛擬機
 | 場地 | 描述 
 
 
-| Prism Central IP 位址 | Prism Central 實例的 IP 位址或 FQDN 
+| Prism Central IP / 主機名稱 | Prism Central 實例的 IP 位址或 FQDN 
 
 
 | 使用者名稱 | Prism Central 使用者名稱 
@@ -85,16 +85,16 @@ Nutanix AHV 收集器使用 Prism Central v4 REST API（叢集管理和虛擬機
 | 場地 | 描述 
 
 
-| TCP 連接埠 | 用於連接 Prism Central 的 TCP 連接埠。預設連接埠為 9440。 
+| TCP 連接埠 | 用於連接 Prism Central 的 TCP 連接埠。預設值為 9440。 
 
 
-| 庫存輪詢間隔（分鐘） | 庫存調查之間的間隔。預設值為 60 分鐘。 
+| 庫存輪詢間隔（分鐘） | 庫存輪詢間隔時間。預設值為 60 分鐘。 
 
 
-| 效能輪詢間隔（秒） | 效能輪詢之間的間隔。預設值為 300 秒。 
+| 效能輪詢間隔（秒） | 效能輪詢間隔。預設值為 300 秒。 
 
 
-| HTTP 逾時時間（秒） | HTTP 請求逾時時間。預設值為 60 秒。 
+| HTTP 逾時時間（秒） | HTTP 請求逾時時間。預設值為 60。 
 
 
 | HTTP 重試次數 | 瞬態故障時的 HTTP 重試次數。預設值為 3。 
