@@ -52,4 +52,4 @@ link:https://www.netapp.com/company/legal/privacy-policy/["https://www.netapp.co
 
 通知文件提供有關NetApp軟體中使用的第三方版權和許可的資訊。
 
-link:media/DII_Notice_Feb_2026.pdf["Data Infrastructure Insights（包括 Workload Security）通知，window=_blank"]
+link:media/DII_Notice_Jun_2026.pdf["Data Infrastructure Insights（包括 Workload Security）通知，window=_blank"^]

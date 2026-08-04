@@ -13298,7 +13298,6 @@
   <block id="ecf8fabbb23da2c68f49fe920a05137b" category="list-text">上述平台上的 SELinux</block>
   <block id="3542743c69e8fceb06c77e5e17299c89" category="sidebar">AI 助理</block>
   <block id="f7836ca926de84b06b0b4bcbe4b8b756" category="inline-link-macro">Data Infrastructure Insights（包括 Workload Security）通知，window=_blank</block>
-  <block id="135e17e82c7d3d3d83bd8b0737be432e" category="paragraph"><block ref="135e17e82c7d3d3d83bd8b0737be432e" category="inline-link-macro-rx"></block></block>
   <block id="b6b93d34f92b439117e54d9343c7efda" category="section-title">目前預覽：</block>
   <block id="559de301b9b7af9f5b932d860f605701" category="list-text"><block ref="7a32ab5261b86b8c9a5d88b540c79f2d" category="inline-link-macro-rx"></block> 預覽。</block>
   <block id="ca39a60f24fda5dbbda8809fbd3fe717" category="inline-link-macro">*Data Infrastructure Insights AI 助理*</block>
@@ -14210,4 +14209,5 @@
   <block id="91a0d06a30de7119cf7ba6773ce38416" category="paragraph">DII Proxmox 虛擬環境收集器將收集基於 PVE 的虛擬機器（而非 LXC 容器）和主機/虛擬機器管理程式的清單和效能資料。這是一個基於 HTTPS REST API 的收集器，需要與監聽 TCP 8006 連接埠的 pveproxy 服務/守護程式提供的 Proxmox REST API 通訊。</block>
   <block id="7bd4738e9b2442fc6fa7415e88a3298d" category="paragraph">此資料收集器使用使用者 + 權杖驗證。您需要在每個 Proxmox 叢集上建立一個服務帳戶，並為該使用者指派對應的權限，然後產生一個具有相同權限的 API 權杖。請附註，特定 Proxmox 使用者的權杖不一定擁有與該使用者相同的權限。DII 通常需要全域稽核/監控層級的權限——如果您透過 Proxmox UI 建立服務帳戶，請將 PathPermision 的起始路徑設定為「/」，將「傳播」設定為「是」，並至少解除鎖定 Datastore Audit、Mapping Audit、Pool Audit、SDN Audit、Sys Audit、VM Audit、VM Monitor 權限。建立使用者後，即可為其建立存取權杖。強烈建議將權杖的過期時間設為 0，以確保權杖永不過期。</block>
   <block id="57e13573114577b3af8a0a24aa24d576" category="sidebar">Proxmox VE</block>
+  <block id="48c0a89dc87860e6c3b42a70bbd13c53" category="paragraph"><block ref="48c0a89dc87860e6c3b42a70bbd13c53" category="inline-link-macro-rx"></block></block>
 </blocks>
