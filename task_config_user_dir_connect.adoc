@@ -46,7 +46,7 @@ summary: 設定工作負載安全性 Active Directory 使用者目錄收集器
 | 森林名稱 | 目錄結構的森林層級。森林名稱允許以下兩種格式：_x.y.z_ => 直接域名，與您在 SVM 上的一樣。  [範例：hq.companyname.com] _DC=x,DC=y,DC=z_ => 相對可分辨名稱 [範例：DC=hq,DC= companyname,DC=com] 或您可以指定如下： _OU=engineering,DC=hq,DC= companyname=DC=com_ [按特定 name eng DC=netapp, DC=com_ [從 OU <engineering> 取得具有 <username> 的特定使用者] _CN=Acrobat Users,CN=Users,DC=hq,DC=companyname,DC=com,O= companyname,L=Boston,Scro=MA 的 
 
 
-| 綁定 DN | 允許使用者搜尋目錄。例如：_username@companyname.com_ 或 _username@domainname.com_ 另外，還需要網域唯讀權限。使用者必須是安全性群組「只讀網域控制站」的成員。 
+| 綁定 DN | 使用者有權搜尋目錄。例如：_username@companyname.com_ 或 _username@domainname.com_ 
 
 
 | 綁定密碼 | 目錄伺服器密碼（即綁定 DN 中使用的使用者名稱的密碼） 

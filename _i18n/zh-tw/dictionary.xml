@@ -7126,7 +7126,6 @@
   <block id="592b09bd3291d67037bc036b0c714470" category="cell">森林名稱</block>
   <block id="7d29f1962bf2529a2067967e962ee3dd" category="cell">目錄結構的森林層級。森林名稱允許以下兩種格式：_x.y.z_ =&gt; 直接域名，與您在 SVM 上的一樣。  [範例：hq.companyname.com] _DC=x,DC=y,DC=z_ =&gt; 相對可分辨名稱 [範例：DC=hq,DC= companyname,DC=com] 或您可以指定如下： _OU=engineering,DC=hq,DC= companyname=DC=com_ [按特定 name eng DC=netapp, DC=com_ [從 OU &lt;engineering&gt; 取得具有 &lt;username&gt; 的特定使用者] _CN=Acrobat Users,CN=Users,DC=hq,DC=companyname,DC=com,O= companyname,L=Boston,Scro=MA 的</block>
   <block id="58384d924f3205aaac5f4a09d3b33801" category="cell">綁定 DN</block>
-  <block id="6dd0ae1f18b7c9b4d5e3b4eec7ff6352" category="cell">允許使用者搜尋目錄。例如：_username@companyname.com_ 或 _username@domainname.com_ 另外，還需要網域唯讀權限。使用者必須是安全性群組「只讀網域控制站」的成員。</block>
   <block id="7066ea6d497311d6e3c4be6a9523999c" category="cell">綁定密碼</block>
   <block id="0d91a6f24e197b2dbd20b358e4f84785" category="cell">目錄伺服器密碼（即綁定 DN 中使用的使用者名稱的密碼）</block>
   <block id="aebd636047453941f5450b96d44c3195" category="cell">ldap、ldaps、ldap-start-tls</block>
@@ -14210,4 +14209,5 @@
   <block id="7bd4738e9b2442fc6fa7415e88a3298d" category="paragraph">此資料收集器使用使用者 + 權杖驗證。您需要在每個 Proxmox 叢集上建立一個服務帳戶，並為該使用者指派對應的權限，然後產生一個具有相同權限的 API 權杖。請附註，特定 Proxmox 使用者的權杖不一定擁有與該使用者相同的權限。DII 通常需要全域稽核/監控層級的權限——如果您透過 Proxmox UI 建立服務帳戶，請將 PathPermision 的起始路徑設定為「/」，將「傳播」設定為「是」，並至少解除鎖定 Datastore Audit、Mapping Audit、Pool Audit、SDN Audit、Sys Audit、VM Audit、VM Monitor 權限。建立使用者後，即可為其建立存取權杖。強烈建議將權杖的過期時間設為 0，以確保權杖永不過期。</block>
   <block id="57e13573114577b3af8a0a24aa24d576" category="sidebar">Proxmox VE</block>
   <block id="48c0a89dc87860e6c3b42a70bbd13c53" category="paragraph"><block ref="48c0a89dc87860e6c3b42a70bbd13c53" category="inline-link-macro-rx"></block></block>
+  <block id="c84f7a37a2691cf36f1774d52de72e5c" category="cell">使用者有權搜尋目錄。例如：_username@companyname.com_ 或 _username@domainname.com_</block>
 </blocks>
