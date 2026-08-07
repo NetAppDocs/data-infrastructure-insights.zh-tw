@@ -14210,4 +14210,19 @@
   <block id="57e13573114577b3af8a0a24aa24d576" category="sidebar">Proxmox VE</block>
   <block id="48c0a89dc87860e6c3b42a70bbd13c53" category="paragraph"><block ref="48c0a89dc87860e6c3b42a70bbd13c53" category="inline-link-macro-rx"></block></block>
   <block id="c84f7a37a2691cf36f1774d52de72e5c" category="cell">使用者有權搜尋目錄。例如：_username@companyname.com_ 或 _username@domainname.com_</block>
+  <block id="6327e373cb9d0fbf371b2256065e27ee" category="paragraph">*問題*：一個或多個資料收集器顯示「已降級」而非「正在執行」，即使收集器服務已啟動。</block>
+  <block id="055eb384fa852b687767bb268c418c28" category="paragraph">*試試這個*：當節點上的一個或多個 FPolicy 連線中斷時，SWS 會報告「效能降級」。這並非停電——收集器仍在運作——但來自這些節點的稽核事件可能會遺失，直到連線恢復為止。</block>
+  <block id="5871b970a58be1158700074b636e1c5f" category="paragraph">ONTAP 會從每個擁有 SVM 運作資料 LIF 的節點建立 FPolicy 控制通道連線。沒有本機資料 LIF 的節點無法連線。參見：</block>
+  <block id="39475af1c92345ffc68386ed4b1a0a0f" category="inline-link-macro">節點到外部 ONTAP FPolicy 伺服器的通訊程序</block>
+  <block id="7d7a6ac9f8b0b4a140566200f8cc41c3" category="list-text"><block ref="7d7a6ac9f8b0b4a140566200f8cc41c3" category="inline-link-macro-rx"></block></block>
+  <block id="a8586bcde30f3a7086e92d68b265c18d" category="inline-link-macro">ONTAP FPolicy 如何與外部 FPolicy 伺服器協同運作</block>
+  <block id="985934cbe9028d56b65bfa3b21aad963" category="list-text"><block ref="985934cbe9028d56b65bfa3b21aad963" category="inline-link-macro-rx"></block></block>
+  <block id="f682e452dc85bb2174061cf42fd8868a" category="inline-link-macro">設定 ONTAP FPolicy 的需求、考量事項及最佳實務做法</block>
+  <block id="351ae455f2a730183e8897803e2cc1ad" category="list-text"><block ref="351ae455f2a730183e8897803e2cc1ad" category="inline-link-macro-rx"></block></block>
+  <block id="4381f5d310695f16c64a241811aa950c" category="paragraph">在使用者介面中，記下哪些節點已中斷連線，然後檢查這些節點是否具有 SVM 的資料 LIF。</block>
+  <block id="145d6a54d6a8818e67b1777aef9dfd9c" category="inline-link-macro">知識庫：由於「no local lif present」，Fpolicy 伺服器未連線</block>
+  <block id="c76035114caecd573a508cd95e8d8d6d" category="list-text">列出的節點上沒有資料 LIF：忽略「降級」狀態。當本地資料 LIF 不存在時，ONTAP 可能會顯示 FPolicy 已中斷連線，原因為「沒有本地 LIF 可連線至 FPolicy 伺服器」；這是預期行為。請參閱 <block ref="17a696575179b878a537e91ff06ec3c2" category="inline-link-macro-rx"></block>。未來的 SWS 版本將不再於此情況下將收集器標記為「降級」。</block>
+  <block id="4f6c09f8f53defdd48fed140cd4550f9" category="list-text">列出的節點上存在資料 LIF：調查 FPolicy 斷線原因（LIF 關閉/缺少 data-fpolicy-client、網路/防火牆或暫時重新啟動/容錯移轉）。</block>
+  <block id="10fcc85a32e000abd9a522eb086aa8b9" category="list-text">附註：代理程式安裝程式應下載到與正在執行的代理程式所在資料夾不同的資料夾。</block>
+  <block id="323d0a1ff366ae52ecb4199bd4c94bcc" category="paragraph">例如，如果代理程式執行在"/test_user/apps"目錄下，則命令為：</block>
 </blocks>
