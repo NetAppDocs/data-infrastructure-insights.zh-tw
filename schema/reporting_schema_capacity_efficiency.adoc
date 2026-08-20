@@ -1,0 +1,262 @@
+---
+sidebar: sidebar 
+permalink: reporting_schema_capacity_efficiency.html 
+summary: 容量效率資料倉儲的綱要表 
+keywords: dwh, data warehouse, schema, reporting, capacity efficiency 
+---
+= 容量效率方案
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+資料來源：*dwh_capacity_efficiency* OData 端點 — Data Infrastructure Insights
+
+找到的表：*3* | 關聯：*2*
+
+
+
+[[key-relationships-between-tables]]
+== 表格間的關鍵關係
+
+
+
+[[efficiencyfact]]
+=== 效率事實
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-date_dimension["日期維度"] | dateTk | tk 
+
+
+| link:#entity-storage_dimension["儲存空間_維度"] | storageTk | tk 
+|===
+
+
+[[tables-fields]]
+== 表格與欄位
+
+PK（主鍵） FK（外鍵） NOT NULL 必填字段
+
+
+
+[[datedimension]]
+=== 日期維度
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：date_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 日期物件的 TK。 
+
+
+| fullDate | DateTimeOffset | 是的 | 日期物件的日期。 
+
+
+| dayInMonth | 位元組 | 是的 | 日期物件的月份中的日期。每月的第一天值為 1。 
+
+
+| dayInYear | Int32 | 是的 | 日期物件中某一年中的第幾天。一年中的第一天的值為 1。 
+
+
+| dateYear | Int32 | 是的 | 日期物件的年份。 
+
+
+| yearLabel | 字串 | 是的 | 年格式為字串 
+
+
+| monthNum | 位元組 | 是的 | 日期物件的月份。一月的值為 1。 
+
+
+| monthLabel | 字串 | 是的 | 月份格式為字串 
+
+
+| dayInWeekNum | 位元組 | 是的 | 日期物件的星期幾。星期日的值為 1。 
+
+
+| 四分之一 | 位元組 | 是的 | 日期物件的季度。第一季的值為 1。 
+
+
+| quarterLabel | 字串 | 是的 | 季度格式為字串 
+
+
+| dayInQuarter | Int32 | 是的 | 日期物件中季度內的日期。季度的第一天值為 1。 
+
+
+| repQuarter | 位元組 | 是的 | 表示該日期是否為該季度的第一個可用日期。 
+
+
+| repMonth | 位元組 | 是的 | 表示該日期是否為該月的第一個可用日期。 
+
+
+| repWeek | 位元組 | 是的 | 表示該日期是否為該週內的第一個可用日期。 
+
+
+| repDay | 位元組 | 是的 | 表示該日期是否為當天可用的第一個日期。 
+
+
+| repMonthOrLatest | 位元組 | 是的 | 指示此日期是當月代表日期還是最新日期。此標誌供按月代表資料處理的資料集市使用。唯一的區別在於，對於當前月份，它是最新日期。 
+
+
+| sspFlag | 位元組 | 是的 | 指示此日期是否用於儲存設備和儲存資源池資料集市。對於月份代表值以及組態中定義的最後天數，此值為真。 
+
+
+| 最新 | 字串 | 是的 | 指示該日期是否為表中可用的最後一個日期。 
+
+
+| 未來 | 字串 | 是的 | 指示該日期是未來日期（預測日期）還是實際日期。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 效率事實 | link:#entity-efficiency_fact["效率事實"] | 許多 
+|===
+
+
+[[efficiencyfact]]
+=== 效率事實
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：efficiency_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int32 | 是的 | 知道這件事。 
+
+
+| dateTk *[FK]* →link:#entity-date_dimension["日期維度"].tk | Int32 | 是的 | 日期 TK。 
+
+
+| storageTk *[FK]* →link:#entity-storage_dimension["儲存空間_維度"].tk | Int32 | 是的 | 儲存容量所在的儲存設備的 TK。 
+
+
+| 原始容量 MB | Int64 | 是的 | 儲存設備原始容量（以 MB 為單位）。指定技術時為 0（非 NULL）。 
+
+
+| backendCapacityMB | Int64 | 是的 | 虛擬陣列中後端 LUN 的總容量，以 MB 為單位。指定技術時為 0（非 NULL）。 
+
+
+| storageTechnology | 字串 | 是的 | 儲存效率和保護技術，例如重複資料刪除、精簡配置、Snapshot 快照技術和 RAID。表示儲存設備的原始容量和後端容量時為 NULL （每行代表一個儲存設備）。 
+
+
+| gainMB | Int64 | 是的 | 使用該技術所獲得的容量。當未指定技術時，為 0（NULL）。 
+
+
+| lossMB | Int64 | 是的 | 使用該技術所造成的容量遺失。當未指定技術時，為 0（NULL）。 
+
+
+| potentialGainMB | Int64 | 是的 | 充分利用該技術所能獲得的潛在容量。當未指定技術時（NULL），值為 0。 
+
+
+| 潛在遺失 MB | Int64 | 是的 | 充分利用該技術可能造成的容量遺失。當未指定技術時（NULL），值為 0。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 儲存空間_維度 | link:#entity-storage_dimension["儲存空間_維度"] | 一個 JOIN：storageTk=link:#entity-storage_dimension["儲存空間_維度"].tk 
+
+
+| 日期維度 | link:#entity-date_dimension["日期維度"] | 一個 JOIN：dateTk=link:#entity-date_dimension["日期維度"].tk 
+|===
+
+
+[[storagedimension]]
+=== 儲存空間_維度
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：storage_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此儲存陣列行的 TK。 
+
+
+| 姓名 | 字串 | 是的 | 儲存陣列的名稱。 
+
+
+| 識別符 | 字串 | 是的 | 設備識別符。 
+
+
+| ip | 字串 | 是的 | 儲存陣列的 IP 位址。 
+
+
+| 模型 | 字串 | 是的 | 儲存陣列的型號。 
+
+
+| 製造商 | 字串 | 是的 | 儲存陣列製造商。 
+
+
+| serialNumber | 字串 | 是的 | 儲存陣列的序號。 
+
+
+| microcodeVersion | 字串 | 是的 | 儲存陣列上執行的韌體版本。 
+
+
+| 家庭 | 字串 | 是的 | 儲存陣列的系列名稱（例如 Clariion、Symmetrix 等）。 
+
+
+| url | 字串 | 是的 | Insight Server 中此儲存設備的 URL。 
+
+
+| id | Int64 | 是的 | dwh_inventory.storage 中儲存陣列的 GUID。 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該儲存設備的最新行。 
+
+
+| dateTk | Int32 | 是的 | 此儲存陣列行建立日期的 TK。 
+
+
+| dataCenter | 字串 | 是的 | dataCenter 指派給 dwh_dimensions.storage_dimension 的註解值 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 效率事實 | link:#entity-efficiency_fact["效率事實"] | 許多 
+|===

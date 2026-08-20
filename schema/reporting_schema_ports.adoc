@@ -1,0 +1,462 @@
+---
+sidebar: sidebar 
+permalink: reporting_schema_ports.html 
+summary: Ports 資料倉儲的綱要表 
+keywords: dwh, data warehouse, schema, reporting, ports 
+---
+= 連接埠架構
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+來源：*dwh_ports* OData 端點 — Data Infrastructure Insights
+
+找到的表：*7* | 關聯：*4*
+
+
+
+[[key-relationships-between-tables]]
+== 表格間的關鍵關係
+
+
+
+[[portsfact]]
+=== 連接埠事實
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-connected_device_dimension["連線裝置維度"] | connectedDeviceTk | tk 
+
+
+| link:#entity-date_dimension["日期維度"] | dateTk | tk 
+
+
+| link:#entity-port_dimension["連接埠維度"] | portTk | tk 
+
+
+| link:#entity-switch_dimension["切換維度"] | switchTk | tk 
+|===
+
+
+[[tables-fields]]
+== 表格與欄位
+
+PK（主鍵） FK（外鍵） NOT NULL 必填字段
+
+
+
+[[cardinals]]
+=== 紅雀隊
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：cardinals
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| 數字 | Int32 | 是的 | 介於0到99之間的數字。 
+|===
+
+
+[[connecteddevicedimension]]
+=== 連線裝置維度
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：connected_device_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int32 | 是的 | 設備的 TK。 
+
+
+| 姓名 | 字串 | 是的 | 設備名稱。 
+
+
+| 製造商 | 字串 | 是的 | 設備製造商。 
+
+
+| 模型 | 字串 | 是的 | 設備型號。 
+
+
+| 類型 | 字串 | 是的 | 設備類型。 
+
+
+| 韌體 | 字串 | 是的 | 裝置上執行的韌體版本。 
+
+
+| id | Int64 | 是的 | 裝置的 ID 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該設備的最新行。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 連接埠事實 | link:#entity-ports_fact["連接埠事實"] | 許多 
+|===
+
+
+[[datedimension]]
+=== 日期維度
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：date_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 日期物件的 TK。 
+
+
+| fullDate | DateTimeOffset | 是的 | 日期物件的日期。 
+
+
+| dayInMonth | 位元組 | 是的 | 日期物件的月份中的日期。每月的第一天值為 1。 
+
+
+| dayInYear | Int32 | 是的 | 日期物件中某一年中的第幾天。一年中的第一天的值為 1。 
+
+
+| dateYear | Int32 | 是的 | 日期物件的年份。 
+
+
+| yearLabel | 字串 | 是的 | 年格式為字串 
+
+
+| monthNum | 位元組 | 是的 | 日期物件的月份。一月的值為 1。 
+
+
+| monthLabel | 字串 | 是的 | 月份格式為字串 
+
+
+| dayInWeekNum | 位元組 | 是的 | 日期物件的星期幾。星期日的值為 1。 
+
+
+| 四分之一 | 位元組 | 是的 | 日期物件的季度。第一季的值為 1。 
+
+
+| quarterLabel | 字串 | 是的 | 季度格式為字串 
+
+
+| dayInQuarter | Int32 | 是的 | 日期物件中季度內的日期。季度的第一天值為 1。 
+
+
+| repQuarter | 位元組 | 是的 | 表示該日期是否為該季度的第一個可用日期。 
+
+
+| repMonth | 位元組 | 是的 | 表示該日期是否為該月的第一個可用日期。 
+
+
+| repWeek | 位元組 | 是的 | 表示該日期是否為該週內的第一個可用日期。 
+
+
+| repDay | 位元組 | 是的 | 表示該日期是否為當天可用的第一個日期。 
+
+
+| repMonthOrLatest | 位元組 | 是的 | 指示此日期是當月代表日期還是最新日期。此標誌供按月代表資料處理的資料集市使用。唯一的區別在於，對於當前月份，它是最新日期。 
+
+
+| sspFlag | 位元組 | 是的 | 指示此日期是否用於儲存設備和儲存資源池資料集市。對於月份代表值以及組態中定義的最後天數，此值為真。 
+
+
+| 最新 | 字串 | 是的 | 指示該日期是否為表中可用的最後一個日期。 
+
+
+| 未來 | 字串 | 是的 | 指示該日期是未來日期（預測日期）還是實際日期。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 連接埠事實 | link:#entity-ports_fact["連接埠事實"] | 許多 
+|===
+
+
+[[portdimension]]
+=== 連接埠維度
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：port_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此連接埠列的 TK。 
+
+
+| wwn | 字串 | 是的 | 連接埠的 WWN。 
+
+
+| 姓名 | 字串 | 是的 | 連接埠名稱。 
+
+
+| gbicType | 字串 | 是的 | 連接埠使用的 GBIC （Gigabit Interface Converter）類型。 
+
+
+| 類型 | 字串 | 是的 | 連接埠類型，通常用於識別與其他裝置通訊所使用的協定，取自裝置本身：F-port、E-port 等等。 
+
+
+| 速度 | 字串 | 是的 | 連接埠速度，單位為 Gbps。 
+
+
+| isGenerated | 字串 | 是的 | 指示這是否為產生的 WWN（如果我們不知道真實的 WWN）。 
+
+
+| url | 字串 | 是的 | Insight Server 中此連接埠的 URL。 
+
+
+| id | Int64 | 是的 | dwh_inventory.switch_port 中連接埠的 GUID。 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該連接埠的最新行。 
+
+
+| dateTk | Int32 | 是的 | TK 表示連接埠行建立日期。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 連接埠事實 | link:#entity-ports_fact["連接埠事實"] | 許多 
+|===
+
+
+[[portsfact]]
+=== 連接埠事實
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：ports_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int32 | 是的 | 知道這件事。 
+
+
+| dateTk *[FK]* →link:#entity-date_dimension["日期維度"].tk | Int32 | 是的 | 日期 TK。 
+
+
+| switchTk *[FK]* →link:#entity-switch_dimension["切換維度"].tk | Int32 | 是的 | 包含該連接埠的交換器的 TK。 
+
+
+| connectedDeviceTk *[FK]* →link:#entity-connected_device_dimension["連線裝置維度"].tk | Int32 | 是的 | 連接到連接埠的裝置的 TK。 
+
+
+| portTk *[FK]* →link:#entity-port_dimension["連接埠維度"].tk | Int32 | 是的 | 連接埠的 TK。 
+
+
+| 網狀架構 | 字串 | 是的 | 連接埠設定為在其上運作的架構（或 VSAN）的名稱或 WWN。 
+
+
+| 速度 | 字串 | 是的 | 連接埠速度，單位為 Gbps。 
+
+
+| connectivityType | 字串 | 是的 | 連接設備的類型。 
+
+
+| 類型 | 字串 | 是的 | 連接埠類型，通常用於識別與其他裝置通訊所使用的協定，取自裝置本身：F-port、E-port 等等。 
+
+
+| 狀態 | 字串 | 是的 | 連接埠狀態。可能的值包括：OK、NOT_LICENSED、ERROR、INACTIVE 和 UNKNOWN。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 連線裝置維度 | link:#entity-connected_device_dimension["連線裝置維度"] | 一個 JOIN：connectedDeviceTk=link:#entity-connected_device_dimension["連線裝置維度"].tk 
+
+
+| 連接埠維度 | link:#entity-port_dimension["連接埠維度"] | 一個 JOIN：portTk=link:#entity-port_dimension["連接埠維度"].tk 
+
+
+| 日期維度 | link:#entity-date_dimension["日期維度"] | 一個 JOIN：dateTk=link:#entity-date_dimension["日期維度"].tk 
+
+
+| 切換維度 | link:#entity-switch_dimension["切換維度"] | 一個 JOIN：switchTk=link:#entity-switch_dimension["切換維度"].tk 
+|===
+
+
+[[portsfactcurrent]]
+=== 目前埠事實
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：ports_fact_current
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 知道這件事。 
+
+
+| dateTk | Int32 | 是的 | 日期 TK。 
+
+
+| switchTk | Int32 | 是的 | 包含該連接埠的交換器的 TK。 
+
+
+| connectedDeviceTk | Int32 | 是的 | 連接到連接埠的裝置的 TK。 
+
+
+| portTk | Int32 | 是的 | 連接埠的 TK。 
+
+
+| 網狀架構 | 字串 | 是的 | 連接埠設定為在其上運作的架構（或 VSAN）的名稱或 WWN。 
+
+
+| 速度 | 字串 | 是的 | 連接埠速度，單位為 Gbps。 
+
+
+| connectivityType | 字串 | 是的 | 連接設備的類型。 
+
+
+| 類型 | 字串 | 是的 | 連接埠類型，通常用於識別與其他裝置通訊所使用的協定，取自裝置本身：F-port、E-port 等等。 
+
+
+| 狀態 | 字串 | 是的 | 連接埠狀態。可能的值包括：OK、NOT_LICENSED、ERROR、INACTIVE 和 UNKNOWN。 
+|===
+
+
+[[switchdimension]]
+=== 切換維度
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：switch_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此交換器行的 TK。 
+
+
+| wwn | 字串 | 是的 | 交換器的 WWN。 
+
+
+| 姓名 | 字串 | 是的 | 交換器的名稱。 
+
+
+| 識別符 | 字串 | 是的 | 設備識別符。 
+
+
+| ip | 字串 | 是的 | 交換器的 IP 位址。 
+
+
+| 模型 | 字串 | 是的 | 交換器型號。 
+
+
+| 製造商 | 字串 | 是的 | 交換器製造商。 
+
+
+| 韌體 | 字串 | 是的 | 交換器上執行的韌體版本。 
+
+
+| serialNumber | 字串 | 是的 | 交換器的序號。 
+
+
+| 淨現值 | 字串 | 是的 | 指示這是否為 NPV 交換器。 
+
+
+| isGenerated | 字串 | 是的 | 指示此交換器是否不對應於實體設備。它用於模擬一對多連接埠連接。 
+
+
+| 類型 | 字串 | 是的 | 交換器類型。 
+
+
+| url | 字串 | 是的 | Insight Server 中此交換器的 URL。 
+
+
+| id | Int64 | 是的 | dwh_inventory.switch 中交換器的 GUID。 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該交換器的最新行。 
+
+
+| dateTk | Int32 | 是的 | 此交換器行建立日期對應的 TK。 
+
+
+| dataCenter | 字串 | 是的 | dataCenter 指派給 dwh_dimensions.switch_dimension 的註解值 
+
+
+| switchLevel | 字串 | 是的 | switchLevel 指派給 dwh_dimensions.switch_dimension 的註解值 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 連接埠事實 | link:#entity-ports_fact["連接埠事實"] | 許多 
+|===

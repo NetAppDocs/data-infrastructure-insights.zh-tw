@@ -19,4 +19,4 @@ keywords: dwh, data warehouse, schema, reporting
 
 NOTE: 報告功能可在Data Infrastructure Insights中使用link:concept_subscribing_to_cloud_insights.html["高級版"]。
 
-link:schema/reporting_schema_capacity.html["架構表 - 容量"^] link:schema/reporting_schema_capacity_efficiency.html["架構表 - 容量效率"^] link:schema/reporting_schema_fs_util.html["架構表 - 檔案系統使用率"^] link:schema/reporting_schema_inventory.html["架構表 - 庫存"^] link:schema/reporting_schema_performance.html["架構表 - 效能"^] link:schema/reporting_schema_ports.html["結構描述表 - 連接埠"^]
+link:reporting_schema_capacity.html["架構表 - 容量"] link:reporting_schema_capacity_efficiency.html["架構表 - 容量效率"] link:reporting_schema_fs_util.html["架構表 - 檔案系統使用率"] link:reporting_schema_inventory.html["架構表 - 庫存"] link:reporting_schema_performance.html["架構表 - 效能"] link:reporting_schema_ports.html["結構描述表 - 連接埠"]

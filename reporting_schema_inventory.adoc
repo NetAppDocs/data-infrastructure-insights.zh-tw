@@ -1,0 +1,7288 @@
+---
+sidebar: sidebar 
+permalink: reporting_schema_inventory.html 
+summary: 庫存資料倉儲的結構描述表 
+keywords: dwh, data warehouse, schema, reporting, inventory 
+---
+= 庫存結構描述
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+來源：*dwh_inventory* OData 端點 — Data Infrastructure Insights
+
+找到的表：*106* | 關聯：*171*
+
+
+
+[[key-relationships-between-tables]]
+== 表格間的關鍵關係
+
+
+
+[[acqdatasource]]
+=== acq_data_source
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-acq_acquisition_unit["擷取單元"] | acquisitionUnitId | id 
+|===
+
+
+[[autotieringpolicy]]
+=== auto_tiering_policy
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-storage["貯存"] | storageId | id 
+|===
+
+
+[[autotieringpolicyconstraint]]
+=== auto_tiering_policy_constraint
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-auto_tiering_policy["auto_tiering_policy"] | autoTieringPolicyId | id 
+
+
+| link:#entity-storage["貯存"] | storageId | id 
+|===
+
+
+[[backendlun]]
+=== backend_lun
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-storage["貯存"] | storageId | id 
+|===
+
+
+[[backendluntovolume]]
+=== backend_lun_to_volume
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-backend_lun["backend_lun"] | backendLunId | id 
+
+
+| link:#entity-storage["貯存"] | frontendStorageId | id 
+
+
+| link:#entity-volume["體積"] | backendVolumeId | id 
+|===
+
+
+[[backendpath]]
+=== backend_path
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-backend_lun["backend_lun"] | backendLunId | id 
+
+
+| link:#entity-storage["貯存"] | storageId | id 
+|===
+
+
+[[clusterswitch]]
+=== cluster_switch
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-storage["貯存"] | storageId | id 
+|===
+
+
+[[clusterswitchport]]
+=== 叢集交換器連接埠
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-cluster_switch["cluster_switch"] | clusterSwitchId | id 
+
+
+| link:#entity-storage["貯存"] | storageId | id 
+
+
+| link:#entity-storage_node["儲存設備節點"] | storageNodeId | id 
+|===
+
+
+[[computeresource]]
+=== 運算資源
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-host["主持人"] | hostId | id 
+
+
+| link:#entity-hv_virtual_machine["hv_virtual_machine"] | vmId | id 
+|===
+
+
+[[disk]]
+=== 磁碟
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-storage["貯存"] | storageId | id 
+|===
+
+
+[[diskgroup]]
+=== 磁碟組
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-storage["貯存"] | storageId | id 
+|===
+
+
+[[drinternalvolumereplica]]
+=== dr_internal_volume_replica
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-internal_volume["內部卷"] | sourceInternalVolumeId | id 
+
+
+| link:#entity-storage["貯存"] | targetStorageId | id 
+|===
+
+
+[[drqtreereplica]]
+=== dr_qtree_replica
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-qtree["配額樹"] | sourceQtreeId | id 
+
+
+| link:#entity-storage["貯存"] | targetStorageId | id 
+|===
+
+
+[[drvolumereplica]]
+=== dr_volume_replica
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-storage["貯存"] | targetStorageId | id 
+
+
+| link:#entity-volume["體積"] | sourceVolumeId | id 
+|===
+
+
+[[fcnameserverentry]]
+=== fc_name_server_entry
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-switch_port["交換器埠"] | connectedSwitchPortId | id 
+|===
+
+
+[[filesystem]]
+=== 檔案系統
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-compute_resource["運算資源"] | computeResourceId | id 
+
+
+| link:#entity-host["主持人"] | hostId | id 
+|===
+
+
+[[filesystemtovirtualdisk]]
+=== 檔案系統到虛擬磁碟
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-compute_resource["運算資源"] | computeResourceId | id 
+
+
+| link:#entity-file_system["檔案系統"] | fileSystemId | id 
+
+
+| link:#entity-hv_data_store["hv_data_store"] | dataStoreId | id 
+
+
+| link:#entity-hv_virtual_disk["hv_virtual_disk"] | virtualDiskId | id 
+|===
+
+
+[[filesystemtovolume]]
+=== file_system_to_volume
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-compute_resource["運算資源"] | computeResourceId | id 
+
+
+| link:#entity-file_system["檔案系統"] | fileSystemId | id 
+
+
+| link:#entity-storage["貯存"] | storageId | id 
+
+
+| link:#entity-volume["體積"] | volumeId | id 
+|===
+
+
+[[genericdeviceport]]
+=== 通用設備連接埠
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-generic_device["一般裝置"] | genericDeviceId | id 
+|===
+
+
+[[hostadapter]]
+=== 主機適配器
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-host["主持人"] | hostId | id 
+|===
+
+
+[[hostport]]
+=== host_port
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-host["主持人"] | hostId | id 
+
+
+| link:#entity-host_adapter["主機適配器"] | adapterId | id 
+|===
+
+
+[[hosttoapplication]]
+=== 主機到應用程式
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-application["應用程式"] | applicationId | id 
+
+
+| link:#entity-host["主持人"] | hostId | id 
+|===
+
+
+[[hvdatastoretointernalvolume]]
+=== hv_data_store_to_internal_volume
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-hv_data_store["hv_data_store"] | dataStoreId | id 
+
+
+| link:#entity-internal_volume["內部卷"] | internalVolumeId | id 
+
+
+| link:#entity-qtree["配額樹"] | qtreeId | id 
+
+
+| link:#entity-storage["貯存"] | storageId | id 
+|===
+
+
+[[hvdatastoretovolume]]
+=== hv_data_store_to_volume
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-hv_data_store["hv_data_store"] | dataStoreId | id 
+
+
+| link:#entity-qtree["配額樹"] | qtreeId | id 
+
+
+| link:#entity-storage["貯存"] | storageId | id 
+
+
+| link:#entity-volume["體積"] | volumeId | id 
+|===
+
+
+[[hvdatastoretonasshare]]
+=== hv_datastore_to_nas_share
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-hv_data_store["hv_data_store"] | dataStoreId | id 
+
+
+| link:#entity-hv_nas_share["hv_nas_share"] | nasShareId | id 
+|===
+
+
+[[hvhosttonasshare]]
+=== hv_host_to_nas_share
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-host["主持人"] | hostId | id 
+
+
+| link:#entity-hv_nas_share["hv_nas_share"] | nasShareId | id 
+|===
+
+
+[[hvlun]]
+=== hv_lun
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-host["主持人"] | hostId | id 
+
+
+| link:#entity-hv_data_store["hv_data_store"] | dataStoreId | id 
+|===
+
+
+[[hvluntovolume]]
+=== hv_lun_to_volume
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-host["主持人"] | hostId | id 
+
+
+| link:#entity-hv_lun["hv_lun"] | hvLunId | id 
+
+
+| link:#entity-storage["貯存"] | storageId | id 
+
+
+| link:#entity-volume["體積"] | volumeId | id 
+|===
+
+
+[[hvnasshare]]
+=== hv_nas_share
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-hv_data_store["hv_data_store"] | dataStoreId | id 
+|===
+
+
+[[hvnassharetoshare]]
+=== hv_nas_share_to_share
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-hv_nas_share["hv_nas_share"] | nasShareId | id 
+
+
+| link:#entity-nas_share["nas_share"] | shareId | id 
+
+
+| link:#entity-storage["貯存"] | storageId | id 
+|===
+
+
+[[hvpath]]
+=== hv_path
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-host["主持人"] | hostId | id 
+
+
+| link:#entity-hv_lun["hv_lun"] | lunId | id 
+|===
+
+
+[[hvserver]]
+=== hv_server
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-host["主持人"] | hostId | id 
+|===
+
+
+[[hvvirtualdisk]]
+=== hv_virtual_disk
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-hv_data_store["hv_data_store"] | dataStoreId | id 
+
+
+| link:#entity-hv_lun["hv_lun"] | lunId | id 
+|===
+
+
+[[hvvirtualdisktovolume]]
+=== hv_virtual_disk_to_volume
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-hv_virtual_disk["hv_virtual_disk"] | virtualDiskId | id 
+
+
+| link:#entity-qtree["配額樹"] | qtreeId | id 
+
+
+| link:#entity-storage["貯存"] | storageId | id 
+
+
+| link:#entity-volume["體積"] | volumeId | id 
+|===
+
+
+[[hvvirtualmachine]]
+=== hv_virtual_machine
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-host["主持人"] | hostId | id 
+
+
+| link:#entity-hv_data_store["hv_data_store"] | dataStoreId | id 
+|===
+
+
+[[hvvirtualmachinetodisk]]
+=== hv_virtual_machine_to_disk
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-hv_virtual_disk["hv_virtual_disk"] | virtualDiskId | id 
+
+
+| link:#entity-hv_virtual_machine["hv_virtual_machine"] | virtualMachineId | id 
+|===
+
+
+[[internalvolume]]
+=== 內部卷
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-storage["貯存"] | storageId | id 
+
+
+| link:#entity-storage_pool["儲存池"] | storagePoolId | id 
+|===
+
+
+[[internalvolumetoapplication]]
+=== 內部捲到應用程式
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-application["應用程式"] | applicationId | id 
+
+
+| link:#entity-internal_volume["內部卷"] | internalVolumeId | id 
+|===
+
+
+[[iscsilogical]]
+=== iscsi_logical
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-host["主持人"] | hostId | id 
+
+
+| link:#entity-storage["貯存"] | storageId | id 
+
+
+| link:#entity-volume["體積"] | volumeId | id 
+|===
+
+
+[[k8snamespace]]
+=== k8s_namespace
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-k8s_cluster["k8s_cluster"] | clusterId | id 
+|===
+
+
+[[k8snode]]
+=== k8s_node
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-hv_virtual_machine["hv_virtual_machine"] | vmId | id 
+
+
+| link:#entity-k8s_cluster["k8s_cluster"] | clusterId | id 
+|===
+
+
+[[k8spv]]
+=== k8s_pv
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-k8s_cluster["k8s_cluster"] | clusterId | id 
+|===
+
+
+[[k8spvc]]
+=== k8s_pvc
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-k8s_cluster["k8s_cluster"] | clusterId | id 
+
+
+| link:#entity-k8s_namespace["k8s_namespace"] | namespaceId | id 
+
+
+| link:#entity-k8s_pv["k8s_pv"] | pvId | id 
+|===
+
+
+[[k8sworkload]]
+=== k8s_workload
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-k8s_cluster["k8s_cluster"] | clusterId | id 
+
+
+| link:#entity-k8s_namespace["k8s_namespace"] | namespaceId | id 
+|===
+
+
+[[k8sworkloadtopvc]]
+=== k8s_workload_to_pvc
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-k8s_cluster["k8s_cluster"] | clusterId | id 
+
+
+| link:#entity-k8s_namespace["k8s_namespace"] | namespaceId | id 
+
+
+| link:#entity-k8s_pvc["k8s_pvc"] | pvcId | id 
+
+
+| link:#entity-k8s_workload["k8s_workload"] | workloadId | id 
+|===
+
+
+[[logical]]
+=== 邏輯
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-generic_device["一般裝置"] | genericDeviceId | id 
+
+
+| link:#entity-host["主持人"] | hostId | id 
+
+
+| link:#entity-storage["貯存"] | storageId | id 
+
+
+| link:#entity-tape["磁帶"] | tapeId | id 
+
+
+| link:#entity-volume["體積"] | volumeId | id 
+|===
+
+
+[[nascrlogical]]
+=== nas_cr_logical
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-compute_resource["運算資源"] | computeResourceId | id 
+
+
+| link:#entity-internal_volume["內部卷"] | internalVolumeId | id 
+
+
+| link:#entity-nas_share["nas_share"] | shareId | id 
+
+
+| link:#entity-storage["貯存"] | storageId | id 
+|===
+
+
+[[nasfileshare]]
+=== nas_file_share
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-internal_volume["內部卷"] | internalVolumeId | id 
+
+
+| link:#entity-qtree["配額樹"] | qtreeId | id 
+
+
+| link:#entity-storage["貯存"] | storageId | id 
+|===
+
+
+[[nasshare]]
+=== nas_share
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-nas_file_share["nas_file_share"] | fileShareId | id 
+
+
+| link:#entity-storage["貯存"] | storageId | id 
+|===
+
+
+[[nasshareinitiator]]
+=== nas_share_initiator
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-nas_share["nas_share"] | shareId | id 
+
+
+| link:#entity-storage["貯存"] | storageId | id 
+|===
+
+
+[[objecttoannotation]]
+=== object_to_annotation
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-annotation_value["註釋值"] | annotationValueId | id 
+|===
+
+
+[[physicalpath]]
+=== physical_path
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-generic_device["一般裝置"] | genericDeviceId | id 
+
+
+| link:#entity-host["主持人"] | hostId | id 
+
+
+| link:#entity-storage["貯存"] | storageId | id 
+
+
+| link:#entity-tape["磁帶"] | tapeId | id 
+
+
+| link:#entity-volume["體積"] | volumeId | id 
+|===
+
+
+[[qtree]]
+=== 配額樹
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-internal_volume["內部卷"] | internalVolumeId | id 
+
+
+| link:#entity-storage["貯存"] | storageId | id 
+|===
+
+
+[[qtreetoapplication]]
+=== qtree_to_application
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-application["應用程式"] | applicationId | id 
+
+
+| link:#entity-qtree["配額樹"] | qtreeId | id 
+|===
+
+
+[[quota]]
+=== 配額
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-internal_volume["內部卷"] | internalVolumeId | id 
+
+
+| link:#entity-qtree["配額樹"] | qtreeId | id 
+
+
+| link:#entity-storage["貯存"] | storageId | id 
+|===
+
+
+[[sharetoapplication]]
+=== 共享到應用程式
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-application["應用程式"] | applicationId | id 
+
+
+| link:#entity-nas_share["nas_share"] | shareId | id 
+|===
+
+
+[[storagecontroller]]
+=== 儲存控制器
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-storage["貯存"] | storageId | id 
+|===
+
+
+[[storagenode]]
+=== 儲存設備節點
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-storage["貯存"] | storageId | id 
+|===
+
+
+[[storagepool]]
+=== 儲存池
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-storage["貯存"] | storageId | id 
+|===
+
+
+[[storageport]]
+=== 儲存連接埠
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-storage["貯存"] | storageId | id 
+
+
+| link:#entity-storage_controller["儲存控制器"] | controllerId | id 
+|===
+
+
+[[storagetoapplication]]
+=== 儲存到應用程式
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-application["應用程式"] | applicationId | id 
+
+
+| link:#entity-storage["貯存"] | storageId | id 
+|===
+
+
+[[switch]]
+=== 交換器
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-fabric["網狀架構"] | fabricId | id 
+|===
+
+
+[[switchport]]
+=== 交換器埠
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-fabric["網狀架構"] | fabricId | id 
+
+
+| link:#entity-switch["交換器"] | switchId | id 
+
+
+| link:#entity-virtual_switch["虛擬交換器"] | virtualSwitchId | id 
+|===
+
+
+[[switchporttoapplication]]
+=== 交換器連接埠至應用程式
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-application["應用程式"] | applicationId | id 
+
+
+| link:#entity-switch_port["交換器埠"] | portId | id 
+|===
+
+
+[[switchtoapplication]]
+=== 切換到應用程式
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-application["應用程式"] | applicationId | id 
+
+
+| link:#entity-switch["交換器"] | switchId | id 
+|===
+
+
+[[tapecontroller]]
+=== 磁帶控制器
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-tape["磁帶"] | tapeId | id 
+|===
+
+
+[[tapeport]]
+=== 磁帶連接埠
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-tape["磁帶"] | tapeId | id 
+
+
+| link:#entity-tape_controller["磁帶控制器"] | controllerId | id 
+|===
+
+
+[[unknownlogical]]
+=== 未知邏輯
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-host["主持人"] | hostId | id 
+
+
+| link:#entity-storage["貯存"] | storageId | id 
+
+
+| link:#entity-volume["體積"] | volumeId | id 
+|===
+
+
+[[violation]]
+=== 違反
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-generic_device["一般裝置"] | genericDeviceId | id 
+
+
+| link:#entity-host["主持人"] | hostId | id 
+
+
+| link:#entity-storage["貯存"] | storageId | id 
+
+
+| link:#entity-tape["磁帶"] | tapeId | id 
+
+
+| link:#entity-volume["體積"] | volumeId | id 
+|===
+
+
+[[virtualswitch]]
+=== 虛擬交換器
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-fabric["網狀架構"] | fabricId | id 
+|===
+
+
+[[vmtoapplication]]
+=== vm_to_application
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-application["應用程式"] | applicationId | id 
+
+
+| link:#entity-hv_virtual_machine["hv_virtual_machine"] | vmId | id 
+|===
+
+
+[[vmwarehost]]
+=== vmware_host
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-hv_server["hv_server"] | hvServerId | id 
+|===
+
+
+[[volume]]
+=== 體積
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-auto_tiering_policy["auto_tiering_policy"] | autoTieringPolicyId | id 
+
+
+| link:#entity-internal_volume["內部卷"] | internalVolumeId | id 
+
+
+| link:#entity-qtree["配額樹"] | qtreeId | id 
+
+
+| link:#entity-storage["貯存"] | storageId | id 
+|===
+
+
+[[volumemap]]
+=== volume_map
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-storage["貯存"] | storageId | id 
+
+
+| link:#entity-volume["體積"] | volumeId | id 
+|===
+
+
+[[volumemask]]
+=== volume_mask
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-host["主持人"] | hostId | id 
+
+
+| link:#entity-storage["貯存"] | storageId | id 
+
+
+| link:#entity-volume["體積"] | volumeId | id 
+|===
+
+
+[[volumetoapplication]]
+=== 磁碟區至應用程式
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-application["應用程式"] | applicationId | id 
+
+
+| link:#entity-volume["體積"] | volumeId | id 
+|===
+
+
+[[zone]]
+=== 區域
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-fabric["網狀架構"] | fabricId | id 
+|===
+
+
+[[zonemember]]
+=== zone_member
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-fabric["網狀架構"] | fabricId | id 
+
+
+| link:#entity-zone["區域"] | zoneId | id 
+|===
+
+
+[[tables-fields]]
+== 表格與欄位
+
+PK（主鍵） FK（外鍵） NOT NULL 必填字段
+
+
+
+[[acqacquisitionunit]]
+=== 擷取單元
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：acq_acquisition_unit
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 採集單元的 GUID。 
+
+
+| 識別符 | 字串 | 是的 | 採集單元的識別碼。 
+
+
+| 姓名 | 字串 | 是的 | 收購單位名稱。 
+
+
+| ip | 字串 | 是的 | 採集單元的 IP 位址。 
+
+
+| siteName | 字串 | 是的 | 此採集單元所屬的 SANscreen 站台。 
+
+
+| leasePeriod | Int64 | 是的 | 收購單位的租用期間（以毫秒為單位）。 
+
+
+| nextLeaseRenewal | DateTimeOffset | 是的 | 收購單位的租約到期時間。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| acq_data_source | link:#entity-acq_data_source["acq_data_source"] | 許多 
+|===
+
+
+[[acqdatasource]]
+=== acq_data_source
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：acq_data_source
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 資料來源的 GUID。 
+
+
+| acquisitionUnitId *[FK]* →link:#entity-acq_acquisition_unit["擷取單元"].id | Int64 | 是的 | 此資料來源所屬的採集單元的 GUID。 
+
+
+| 姓名 | 字串 | 是的 | 資料來源名稱。 
+
+
+| 類型 | 字串 | 是的 | 資料來源類型。 
+
+
+| 廠商 | 字串 | 是的 | 資料來源廠商。 
+
+
+| 模型 | 字串 | 是的 | 資料來源模型。 
+
+
+| auditLastStatus | 字串 | 是的 | 資料來源的最新狀態報告。 
+
+
+| auditStatusDate | DateTimeOffset | 是的 | 狀態報告的時間。 
+
+
+| auditStatusSince | DateTimeOffset | 是的 | 此狀態報告開始的時間。 
+
+
+| auditStatusCount | Int32 | 是的 | 此狀態下的稽核條目數量。 
+
+
+| auditLastStatusMessage | 字串 | 是的 | 資料來源狀態訊息執行摘要。 
+
+
+| additionalDataSourceMessage | 字串 | 是的 | 資料來源的附加狀態訊息。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 擷取單元 | link:#entity-acq_acquisition_unit["擷取單元"] | 一個 JOIN：acquisitionUnitId=link:#entity-acq_acquisition_unit["擷取單元"].id 
+|===
+
+
+[[annotationvalue]]
+=== 註釋值
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：annotation_value
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 註釋的 GUID。 
+
+
+| annotationType | 字串 | 是的 | 系統類型或使用者自訂類型，例如分層、資料中心等。 
+
+
+| valueIdentifier | 字串 | 是的 | 註解的值。 
+
+
+| valueType | 字串 | 是的 | 註解值的資料類型。 
+
+
+| valueDate | DateTimeOffset | 是的 | 註釋值（日期格式）。 
+
+
+| enumSequence | Int32 | 是的 | 序號用於確定列舉值的順序。主要用於顯示目的。 
+
+
+| enumCost | 雙倍的 | 是的 | 與註解相關的選用成本。適用於 Tier 註解。 
+
+
+| ukHash | 字串 | 是的 |  
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| object_to_annotation | link:#entity-object_to_annotation["object_to_annotation"] | 許多 
+|===
+
+
+[[application]]
+=== 應用程式
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：應用程式
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 應用程式的 GUID。 
+
+
+| 姓名 | 字串 | 是的 | 應用程式名稱。 
+
+
+| 描述 | 字串 | 是的 | 應用程式描述。 
+
+
+| ignoreSharing | 位元組 | 是的 | 指示 SANscreen 是否針對此應用程式的主機發出共享違規警告。 
+
+
+| 優先順序 | 字串 | 是的 | 應用程式的優先順序。 
+
+
+| url | 字串 | 是的 | Insight Server 中此應用程式的 URL。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 交換器連接埠至應用程式 | link:#entity-switch_port_to_application["交換器連接埠至應用程式"] | 許多 
+
+
+| 內部捲到應用程式 | link:#entity-internal_volume_to_application["內部捲到應用程式"] | 許多 
+
+
+| 共享到應用程式 | link:#entity-share_to_application["共享到應用程式"] | 許多 
+
+
+| 儲存到應用程式 | link:#entity-storage_to_application["儲存到應用程式"] | 許多 
+
+
+| vm_to_application | link:#entity-vm_to_application["vm_to_application"] | 許多 
+
+
+| 磁碟區至應用程式 | link:#entity-volume_to_application["磁碟區至應用程式"] | 許多 
+
+
+| qtree_to_application | link:#entity-qtree_to_application["qtree_to_application"] | 許多 
+
+
+| 切換到應用程式 | link:#entity-switch_to_application["切換到應用程式"] | 許多 
+
+
+| 主機到應用程式 | link:#entity-host_to_application["主機到應用程式"] | 許多 
+|===
+
+
+[[autotieringpolicy]]
+=== auto_tiering_policy
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：auto_tiering_policy
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 自動分層原則的 GUID。 
+
+
+| storageId *[FK]* →link:#entity-storage["貯存"].id | Int64 | 是的 | 定義自動分層原則的儲存設備的 GUID。 
+
+
+| 識別符 | 字串 | 是的 | 自動分層原則的識別碼。 
+
+
+| 姓名 | 字串 | 是的 | 自動分層原則的名稱。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 貯存 | link:#entity-storage["貯存"] | 一個 JOIN：storageId=link:#entity-storage["貯存"].id 
+
+
+| 體積 | link:#entity-volume["體積"] | 許多 
+
+
+| auto_tiering_policy_constraint | link:#entity-auto_tiering_policy_constraint["auto_tiering_policy_constraint"] | 許多 
+|===
+
+
+[[autotieringpolicyconstraint]]
+=== auto_tiering_policy_constraint
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：auto_tiering_policy_constraint
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 自動分層原則約束的 GUID。 
+
+
+| autoTieringPolicyId *[FK]* →link:#entity-auto_tiering_policy["auto_tiering_policy"].id | Int64 | 是的 | 自動分層原則的 GUID。 
+
+
+| storageId *[FK]* →link:#entity-storage["貯存"].id | Int64 | 是的 | 定義自動分層原則的儲存設備的 GUID。 
+
+
+| vendorTier | 字串 | 是的 | 廠商特定的分層名稱。 
+
+
+| limitPercent | Int32 | 是的 | 此分層的 Volume 共享限制。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 貯存 | link:#entity-storage["貯存"] | 一個 JOIN：storageId=link:#entity-storage["貯存"].id 
+
+
+| auto_tiering_policy | link:#entity-auto_tiering_policy["auto_tiering_policy"] | 一個 JOIN：autoTieringPolicyId=link:#entity-auto_tiering_policy["auto_tiering_policy"].id 
+|===
+
+
+[[backendlun]]
+=== backend_lun
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：backend_lun
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 後端 LUN 的 GUID。 
+
+
+| storageId *[FK]* →link:#entity-storage["貯存"].id | Int64 | 是的 | 儲存陣列的 GUID。 
+
+
+| 姓名 | 字串 | 是的 | LUN 的名稱。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 貯存 | link:#entity-storage["貯存"] | 一個 JOIN：storageId=link:#entity-storage["貯存"].id 
+
+
+| backend_path | link:#entity-backend_path["backend_path"] | 許多 
+
+
+| backend_lun_to_volume | link:#entity-backend_lun_to_volume["backend_lun_to_volume"] | 許多 
+|===
+
+
+[[backendluntovolume]]
+=== backend_lun_to_volume
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：backend_lun_to_volume
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 後端路徑的 GUID。 
+
+
+| frontendStorageId *[FK]* →link:#entity-storage["貯存"].id | Int64 | 是的 | 前端儲存陣列的 GUID。 
+
+
+| backendLunId *[FK]* →link:#entity-backend_lun["backend_lun"].id | Int64 | 是的 | 前端陣列中後端 LUN 的 GUID。 
+
+
+| backendStorageId | Int64 | 是的 | 後端儲存陣列的 GUID。 
+
+
+| backendVolumeId *[FK]* →link:#entity-volume["體積"].id | Int64 | 是的 | 後端 Volume 的 GUID。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| backend_lun | link:#entity-backend_lun["backend_lun"] | 一個 JOIN：backendLunId=link:#entity-backend_lun["backend_lun"].id 
+
+
+| 貯存 | link:#entity-storage["貯存"] | 一個 JOIN：frontendStorageId=link:#entity-storage["貯存"].id 
+
+
+| 體積 | link:#entity-volume["體積"] | 一個 JOIN：backendVolumeId=link:#entity-volume["體積"].id 
+|===
+
+
+[[backendpath]]
+=== backend_path
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：backend_path
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 後端路徑的 GUID。 
+
+
+| backendLunId *[FK]* →link:#entity-backend_lun["backend_lun"].id | Int64 | 是的 | 後端 LUN 的 GUID。 
+
+
+| storageId *[FK]* →link:#entity-storage["貯存"].id | Int64 | 是的 | 儲存陣列的 GUID。 
+
+
+| LUN | 字串 | 是的 | 邏輯單元號。 
+
+
+| initiatorPortWwn | 字串 | 是的 | 前端儲存設備埠的 WWN。 
+
+
+| targetPortWwn | 字串 | 是的 | 後端儲存設備連接埠的 WWN。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 貯存 | link:#entity-storage["貯存"] | 一個 JOIN：storageId=link:#entity-storage["貯存"].id 
+
+
+| backend_lun | link:#entity-backend_lun["backend_lun"] | 一個 JOIN：backendLunId=link:#entity-backend_lun["backend_lun"].id 
+|===
+
+
+[[businessentity]]
+=== 業務實體
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：business_entity
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id | Int64 | 是的 | 註釋的 GUID。 
+
+
+| 全名 | 字串 | 是的 | 註解的值。 
+
+
+| 租戶 | 字串 | 是的 |  
+
+
+| lob | 字串 | 是的 |  
+
+
+| businessUnit | 字串 | 是的 |  
+
+
+| 專案 | 字串 | 是的 |  
+|===
+
+
+[[clusterswitch]]
+=== cluster_switch
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：cluster_switch
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 集群交換器的 ID 
+
+
+| 識別符 | 字串 | 是的 | 叢集交換器的識別碼 
+
+
+| storageId *[FK]* →link:#entity-storage["貯存"].id | Int64 | 是的 | 叢集交換器的儲存 ID 
+
+
+| 姓名 | 字串 | 是的 | 叢集交換器的名稱 
+
+
+| 地址 | 字串 | 是的 | 叢集交換器的位址 
+
+
+| serialNumber | 字串 | 是的 | 叢集交換器的序號 
+
+
+| 網路 | 字串 | 是的 | 叢集交換器的網路 
+
+
+| 版本 | 字串 | 是的 | 叢集交換器版本 
+
+
+| 模型 | 字串 | 是的 | 集群交換器模型 
+
+
+| 監控 | 字串 | 是的 | 這個叢集交換器是否受到監控？ 
+
+
+| monitoringEnabled | 字串 | 是的 | 叢集交換器是否啟用了監控功能？ 
+
+
+| monitoringReason | 字串 | 是的 | 監控叢集交換器的原因 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 貯存 | link:#entity-storage["貯存"] | 一個 JOIN：storageId=link:#entity-storage["貯存"].id 
+
+
+| 叢集交換器連接埠 | link:#entity-cluster_switch_port["叢集交換器連接埠"] | 許多 
+|===
+
+
+[[clusterswitchport]]
+=== 叢集交換器連接埠
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：cluster_switch_port
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 集群交換器連接埠的 ID 
+
+
+| 識別符 | 字串 | 是的 | 叢集交換器連接埠的識別碼 
+
+
+| clusterSwitchId *[FK]* →link:#entity-cluster_switch["cluster_switch"].id | Int64 | 是的 | 叢集交換器連接埠的叢集交換器 ID 
+
+
+| storageId *[FK]* →link:#entity-storage["貯存"].id | Int64 | 是的 | 叢集交換器連接埠的儲存 ID 
+
+
+| storageNodeId *[FK]* →link:#entity-storage_node["儲存設備節點"].id | Int64 | 是的 | 叢集交換器連接埠的儲存節點 ID 
+
+
+| 姓名 | 字串 | 是的 | 叢集交換器連接埠名稱 
+
+
+| duplexType | 字串 | 是的 | 叢集交換器連接埠的雙工類型 
+
+
+| storageNodePortName | 字串 | 是的 | 叢集交換器連接埠的節點連接埠名稱 
+
+
+| storageNodePortMtu | 字串 | 是的 | 叢集交換器連接埠節點連接埠的最大傳輸單元 
+
+
+| portIndex | 字串 | 是的 | 集群交換器連接埠索引 
+
+
+| isl | 字串 | 是的 | 叢集交換器連接埠的交換器間鏈路 
+
+
+| macAddress | 字串 | 是的 | 叢集交換器連接埠的 MAC 位址 
+
+
+| mtu | 字串 | 是的 | 叢集交換器連接埠的最大傳輸單元 
+
+
+| 數字 | 字串 | 是的 | 叢集交換器連接埠號 
+
+
+| 類型 | 字串 | 是的 | 叢集交換器連接埠類型 
+
+
+| 速度 | 字串 | 是的 | 叢集交換器連接埠的速度 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 貯存 | link:#entity-storage["貯存"] | 一個 JOIN：storageId=link:#entity-storage["貯存"].id 
+
+
+| cluster_switch | link:#entity-cluster_switch["cluster_switch"] | 一個 JOIN：clusterSwitchId=link:#entity-cluster_switch["cluster_switch"].id 
+
+
+| 儲存設備節點 | link:#entity-storage_node["儲存設備節點"] | 一個 JOIN：storageNodeId=link:#entity-storage_node["儲存設備節點"].id 
+|===
+
+
+[[computeresource]]
+=== 運算資源
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：運算資源
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 作業系統的 GUID 
+
+
+| hostId *[FK]* →link:#entity-host["主持人"].id | Int64 | 是的 | 主機 ID。 
+
+
+| vmId *[FK]* →link:#entity-hv_virtual_machine["hv_virtual_machine"].id | Int64 | 是的 | 虛擬機器 ID。 
+
+
+| 識別符 | 字串 | 是的 | 運算資源的識別碼 
+
+
+| 姓名 | 字串 | 是的 | 運算資源的名稱。 
+
+
+| 類型 | 字串 | 是的 | 資源類型。 
+
+
+| 領域 | 字串 | 是的 | 運算資源的領域。 
+
+
+| ip | 字串 | 是的 | 運算資源的 IP 位址清單，以逗號分隔。 
+
+
+| 作業系統 | 字串 | 是的 | 在運算資源上執行的作業系統。 
+
+
+| cpuCount | Int32 | 是的 | 運算資源的 CPU 數量。 
+
+
+| 記憶體 | Int32 | 是的 | 運算資源的記憶體容量。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| hv_virtual_machine | link:#entity-hv_virtual_machine["hv_virtual_machine"] | 一個 JOIN：vmId=link:#entity-hv_virtual_machine["hv_virtual_machine"].id 
+
+
+| 主持人 | link:#entity-host["主持人"] | 一個 JOIN：hostId=link:#entity-host["主持人"].id 
+
+
+| 檔案系統 | link:#entity-file_system["檔案系統"] | 許多 
+
+
+| nas_cr_logical | link:#entity-nas_cr_logical["nas_cr_logical"] | 許多 
+
+
+| 檔案系統到虛擬磁碟 | link:#entity-file_system_to_virtual_disk["檔案系統到虛擬磁碟"] | 許多 
+
+
+| file_system_to_volume | link:#entity-file_system_to_volume["file_system_to_volume"] | 許多 
+|===
+
+
+[[disk]]
+=== 磁碟
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：磁碟
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 磁碟的 GUID。 
+
+
+| storageId *[FK]* →link:#entity-storage["貯存"].id | Int64 | 是的 | 儲存陣列（檔案管理器）的 GUID。 
+
+
+| 識別符 | 字串 | 是的 | 磁碟的識別碼。用於唯一識別儲存設備中的磁碟。 
+
+
+| 姓名 | 字串 | 是的 | 磁碟名稱。 
+
+
+| 速度 | Int32 | 是的 | 磁碟速度。 
+
+
+| 容量（GB） | Int64 | 是的 | 磁碟容量（GB）。 
+
+
+| 位置 | 字串 | 是的 | 磁碟位置，即它安裝在哪裡。 
+
+
+| 角色 | 字串 | 是的 | 磁碟在儲存設備群組中的角色（例如 PARITY、DATA、SPARE）。 
+
+
+| 廠商 | 字串 | 是的 | 磁碟廠商（例如 NetApp、SEAGATE）。 
+
+
+| 模型 | 字串 | 是的 | 磁碟型號。 
+
+
+| 類型 | 字串 | 是的 | 磁碟類型（例如 SATA、FC）。 
+
+
+| diskGroup | 字串 | 是的 | 磁碟所屬磁碟群組的識別碼（例如 rg0、7）。 
+
+
+| 狀態 | 字串 | 是的 | 磁碟狀態（例如 NORMAL、FAILED）。 
+
+
+| serialNumber | 字串 | 是的 | 磁碟序號 
+
+
+| url | 字串 | 是的 | Insight Server 中此磁碟的 URL。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 貯存 | link:#entity-storage["貯存"] | 一個 JOIN：storageId=link:#entity-storage["貯存"].id 
+|===
+
+
+[[diskgroup]]
+=== 磁碟組
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：磁碟群組
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 磁碟群組的 GUID 
+
+
+| storageId *[FK]* →link:#entity-storage["貯存"].id | Int64 | 是的 | 儲存陣列的 GUID 
+
+
+| 姓名 | 字串 | 是的 | 磁碟群組名稱 
+
+
+| 識別符 | 字串 | 是的 | 磁碟群組識別碼 
+
+
+| vendorDiskGroupType | 字串 | 是的 | 磁碟群組的廠商類型 
+
+
+| diskType | 字串 | 是的 | 磁碟群組中的磁碟類型 
+
+
+| 狀態 | 字串 | 是的 | 磁碟群組狀態 
+
+
+| 備援 | 字串 | 是的 | 磁碟群組的備援 
+
+
+| isVirtual | 字串 | 是的 | 指示磁碟群組是否為虛擬。 
+
+
+| vendorTier | 字串 | 是的 | 磁碟群組的廠商分層 
+
+
+| 容量 MB | Int64 | 是的 | 磁碟群組的可用容量 
+
+
+| 已用容量 MB | Int64 | 是的 | 磁碟群組的已使用容量 
+
+
+| 實體磁碟容量 MB | Int64 | 是的 | 磁碟群組的實體容量 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 貯存 | link:#entity-storage["貯存"] | 一個 JOIN：storageId=link:#entity-storage["貯存"].id 
+|===
+
+
+[[diskgrouptodisk]]
+=== 磁碟群組到磁碟
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：disk_group_to_disk
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| storageId | Int64 | 是的 | 儲存陣列的 GUID。 
+
+
+| diskGroupId | Int64 | 是的 | 磁碟群組的 GUID。 
+
+
+| diskId | Int64 | 是的 | 磁碟的 GUID。 
+|===
+
+
+[[diskgrouptostoragepool]]
+=== 磁碟群組至儲存資源池
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：disk_group_to_storage_pool
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| storageId | Int64 | 是的 | 儲存陣列的 GUID。 
+
+
+| diskGroupId | Int64 | 是的 | 磁碟群組的 GUID。 
+
+
+| storagePoolId | Int64 | 是的 | 儲存資源池的 GUID。 
+|===
+
+
+[[drinternalvolumereplica]]
+=== dr_internal_volume_replica
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：dr_internal_volume_replica
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| sourceStorageId | Int64 | 是的 | 作為副本來源的儲存設備的 GUID。 
+
+
+| sourceInternalVolumeId *[FK]* →link:#entity-internal_volume["內部卷"].id | Int64 | 是的 | 作為副本來源的內部 Volume 的 GUID。 
+
+
+| targetStorageId *[FK]* →link:#entity-storage["貯存"].id | Int64 | 是的 | 作為副本目標的儲存設備的 GUID。 
+
+
+| targetInternalVolumeId *[PK]* | Int64 | 是的 | 作為副本目標的內部 Volume 的 GUID。 
+
+
+| 模式 | 字串 | 是的 | 副本的同步模式。可選值包括：同步、非同步、半同步、複製和未知。 
+
+
+| 技術 | 字串 | 是的 | 用於此複寫的技術。例如：SnapMirror 
+
+
+| dwhCalculated | 字串 | 是的 | 如果這是由 DWH 計算出的跨站點副本，則為 True。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 內部卷 | link:#entity-internal_volume["內部卷"] | 一個 JOIN：sourceInternalVolumeId=link:#entity-internal_volume["內部卷"].id 
+
+
+| 貯存 | link:#entity-storage["貯存"] | 一個 JOIN：targetStorageId=link:#entity-storage["貯存"].id 
+|===
+
+
+[[drqtreereplica]]
+=== dr_qtree_replica
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：dr_qtree_replica
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| sourceStorageId | Int64 | 是的 | 作為副本來源的儲存設備的 GUID。 
+
+
+| sourceQtreeId *[FK]* →link:#entity-qtree["配額樹"].id | Int64 | 是的 | 作為副本來源的 qtree 的 GUID。 
+
+
+| targetStorageId *[FK]* →link:#entity-storage["貯存"].id | Int64 | 是的 | 作為副本目標的儲存設備的 GUID。 
+
+
+| targetQtreeId *[PK]* | Int64 | 是的 | 作為副本目標的 qtree 的 GUID。 
+
+
+| 模式 | 字串 | 是的 | 副本的同步模式。可選值包括：同步、非同步、半同步、複製和未知。 
+
+
+| 技術 | 字串 | 是的 | 用於此複寫的技術。例如：SnapMirror 
+
+
+| dwhCalculated | 字串 | 是的 | 如果這是由 DWH 計算出的跨站點副本，則為 True。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 配額樹 | link:#entity-qtree["配額樹"] | 一個 JOIN：sourceQtreeId=link:#entity-qtree["配額樹"].id 
+
+
+| 貯存 | link:#entity-storage["貯存"] | 一個 JOIN：targetStorageId=link:#entity-storage["貯存"].id 
+|===
+
+
+[[drreplica]]
+=== dr_replica
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：dr_replica
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| sourceStorageId | Int64 | 是的 | 作為副本來源的儲存設備的 GUID。 
+
+
+| sourceVolumeId | Int64 | 是的 | 作為副本來源的 Volume 的 GUID。 
+
+
+| targetStorageId | Int64 | 是的 | 作為副本目標的儲存設備的 GUID。 
+
+
+| targetVolumeId | Int64 | 是的 | 作為副本目標的 Volume 的 GUID。 
+
+
+| 架構 | Int32 | 是的 | [deprecated] 複本所使用的架構數量。 
+
+
+| spf | 位元組 | 是的 | [deprecated] 指示副本是否有單點故障。 
+
+
+| sourcePorts | Int32 | 是的 | [deprecated] 副本使用的來源連接埠數。 
+
+
+| targetPorts | Int32 | 是的 | [deprecated] 副本使用的目標連接埠數。 
+
+
+| hopsCount | Int32 | 是的 | [deprecated] 此副本的交換器跳數。 
+
+
+| 同步 | 字串 | 是的 | 描述已設定複寫模式的列舉文字 
+|===
+
+
+[[drvolumereplica]]
+=== dr_volume_replica
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集合：dr_volume_replica
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| sourceStorageId | Int64 | 是的 | 作為副本來源的儲存設備的 GUID。 
+
+
+| sourceVolumeId *[PK]* | Int64 | 是的 | 作為副本來源的 Volume 的 GUID。 
+
+
+| targetStorageId *[FK]* →link:#entity-storage["貯存"].id | Int64 | 是的 | 作為副本目標的儲存設備的 GUID。 
+
+
+| targetVolumeId *[PK]* | Int64 | 是的 | 作為副本目標的 Volume 的 GUID。 
+
+
+| sourceVolumeGroupId | 字串 | 是的 | 來源 Volume 群組 ID 
+
+
+| sourceVolumeGroupName | 字串 | 是的 | 來源 Volume 群組名稱 
+
+
+| targetVolumeGroupId | 字串 | 是的 | 目標 Volume 群組 ID 
+
+
+| targetVolumeGroupName | 字串 | 是的 | 目標 Volume 群組名稱 
+
+
+| 架構 | Int32 | 是的 | [deprecated] 複本所使用的架構數量。 
+
+
+| spf | 位元組 | 是的 | [deprecated] 指示副本是否有單點故障。 
+
+
+| sourcePorts | Int32 | 是的 | [deprecated] 副本使用的來源連接埠數。 
+
+
+| targetPorts | Int32 | 是的 | [deprecated] 副本使用的目標連接埠數。 
+
+
+| hopsCount | Int32 | 是的 | [deprecated] 此副本的交換器跳數。 
+
+
+| 模式 | 字串 | 是的 | 描述已設定複寫模式的列舉文字 
+
+
+| modeRaw | 字串 | 是的 | 描述已設定複寫模式的文字 
+
+
+| 技術 | 字串 | 是的 | 描述所用複寫技術的文字 
+
+
+| 狀態 | 字串 | 是的 | 描述複寫動態狀態的文字 
+
+
+| stateRaw | 字串 | 是的 | 描述複寫動態狀態的列舉文字 
+
+
+| stateStartTime | DateTimeOffset | 是的 | 所報告狀態的已知開始時間 
+
+
+| stateSampleTime | DateTimeOffset | 是的 | 狀態的最後更新時間 
+
+
+| stateStartTimeCalculated | 字串 | 是的 | 沒錯，如果開始時間是由 Sanscreen 伺服器計算的。 
+
+
+| dwhCalculated | 字串 | 是的 | 如果這是由 DWH 計算出的跨站點副本，則為 True。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 體積 | link:#entity-volume["體積"] | 一個 JOIN：sourceVolumeId=link:#entity-volume["體積"].id 
+
+
+| 貯存 | link:#entity-storage["貯存"] | 一個 JOIN：targetStorageId=link:#entity-storage["貯存"].id 
+|===
+
+
+[[extendeddata]]
+=== extended_data
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：extended_data
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| objectId *[PK]* | Int64 | 是的 | 物件的 GUID。 
+
+
+| objectType *[PK]* | 字串 | 是的 | 物件的類型。 
+
+
+| fieldName *[PK]* | 字串 | 是的 | 擴充資料欄位的名稱。 
+
+
+| fieldValue | 字串 | 是的 | 此物件的擴充資料欄位的值。 
+|===
+
+
+[[fabric]]
+=== 網狀架構
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：架構
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 架構的 GUID。 
+
+
+| 識別符 | 字串 | 是的 | 架構識別碼。 
+
+
+| wwn | 字串 | 是的 | 架構的 WWN。 
+
+
+| 姓名 | 字串 | 是的 | 架構名稱。 
+
+
+| vsanEnabled | 字串 | 是的 | 指示該架構是否為 VSAN。 
+
+
+| vsanId | 字串 | 是的 | 如果此架構是 VSAN，則 VSAN 的識別碼。 
+
+
+| zoningEnabled | 字串 | 是的 | 如果為 true，則根據區域和區域成員表中的資料強制執行分區。否則，架構中不強制執行分區。 
+
+
+| url | 字串 | 是的 | Insight Server 中此架構的 URL。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 交換器埠 | link:#entity-switch_port["交換器埠"] | 許多 
+
+
+| 區域 | link:#entity-zone["區域"] | 許多 
+
+
+| 虛擬交換器 | link:#entity-virtual_switch["虛擬交換器"] | 許多 
+
+
+| zone_member | link:#entity-zone_member["zone_member"] | 許多 
+
+
+| 交換器 | link:#entity-switch["交換器"] | 許多 
+|===
+
+
+[[fcnameserverentry]]
+=== fc_name_server_entry
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：fc_name_server_entry
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | fc 名稱伺服器項目的 GUID。 
+
+
+| portId | Int64 | 是的 | 節點連接埠的 GUID。 
+
+
+| 類型 | 字串 | 是的 | 節點連接埠類型。（例如：HOST_PORT、STORAGE_PORT、TAPE_PORT、GENERIC_DEVICE_PORT） 
+
+
+| wwn | 字串 | 是的 | 節點連接埠的 WWN。 
+
+
+| connectedSwitchPortId *[FK]* →link:#entity-switch_port["交換器埠"].id | Int64 | 是的 | 已連接交換器連接埠的 GUID。 
+
+
+| connectedSwitchPortWwn | 字串 | 是的 | 所連接交換器連接埠的 WWN。 
+
+
+| physicalPortWwn | 字串 | 是的 | 實體連接埠的 WWN （例如，NPV 的 NP-Port）。如果節點連接埠直接連接到交換器連接埠，則與節點連接埠相同。 
+
+
+| fcId | 字串 | 是的 | 信號交換/登入後指派的 ID。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 交換器埠 | link:#entity-switch_port["交換器埠"] | 一個 JOIN：connectedSwitchPortId=link:#entity-switch_port["交換器埠"].id 
+|===
+
+
+[[filesystem]]
+=== 檔案系統
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：檔案系統
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 檔案系統的 GUID。 
+
+
+| computeResourceId *[FK]* →link:#entity-compute_resource["運算資源"].id | Int64 | 是的 | 運算資源的 GUID。 
+
+
+| hostId *[FK]* →link:#entity-host["主持人"].id | Int64 | 是的 | 主機的 GUID。 
+
+
+| 姓名 | 字串 | 是的 | 掛載點或磁碟機代號。自然鍵的一部分。 
+
+
+| 位置 | 字串 | 是的 | 指示資料儲存位置和存取方式。例如：本地、SAN、NAS。如果位置未知，則設定為 null。 
+
+
+| hardwareId | 字串 | 是的 | 主機特定識別符。如果未知，則設為 null。 
+
+
+| 類型 | 字串 | 是的 | 檔案系統類型。例如：NTFS、FAT、UFS、UDF、ZFS、ISO 9660、VXFS 等。如果未知，則設為 null。 
+
+
+| lastAgentReportTime | DateTimeOffset | 是的 | 上次代理程式收集檔案系統資訊時 
+
+
+| sizeMB | Int64 | 是的 | 檔案系統大小（以 MB 為單位）。 
+
+
+| 已用MB | Int64 | 是的 | 已使用但不可用的檔案系統容量。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 運算資源 | link:#entity-compute_resource["運算資源"] | 一個 JOIN：computeResourceId=link:#entity-compute_resource["運算資源"].id 
+
+
+| 主持人 | link:#entity-host["主持人"] | 一個 JOIN：hostId=link:#entity-host["主持人"].id 
+
+
+| 檔案系統到虛擬磁碟 | link:#entity-file_system_to_virtual_disk["檔案系統到虛擬磁碟"] | 許多 
+
+
+| file_system_to_volume | link:#entity-file_system_to_volume["file_system_to_volume"] | 許多 
+|===
+
+
+[[filesystemtovirtualdisk]]
+=== 檔案系統到虛擬磁碟
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：file_system_to_virtual_disk
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 檔案系統與 Volume 關係的 GUID。 
+
+
+| virtualDiskId *[FK]* →link:#entity-hv_virtual_disk["hv_virtual_disk"].id | Int64 | 是的 | 虛擬磁碟的 GUID。 
+
+
+| fileSystemId *[FK]* →link:#entity-file_system["檔案系統"].id | Int64 | 是的 | 檔案系統的 GUID。 
+
+
+| computeResourceId *[FK]* →link:#entity-compute_resource["運算資源"].id | Int64 | 是的 | 運算資源的 GUID。 
+
+
+| dataStoreId *[FK]* →link:#entity-hv_data_store["hv_data_store"].id | Int64 | 是的 | 資料儲存區的 GUID。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| hv_data_store | link:#entity-hv_data_store["hv_data_store"] | 一個 JOIN：dataStoreId=link:#entity-hv_data_store["hv_data_store"].id 
+
+
+| 運算資源 | link:#entity-compute_resource["運算資源"] | 一個 JOIN：computeResourceId=link:#entity-compute_resource["運算資源"].id 
+
+
+| 檔案系統 | link:#entity-file_system["檔案系統"] | 一個 JOIN：fileSystemId=link:#entity-file_system["檔案系統"].id 
+
+
+| hv_virtual_disk | link:#entity-hv_virtual_disk["hv_virtual_disk"] | 一個 JOIN：virtualDiskId=link:#entity-hv_virtual_disk["hv_virtual_disk"].id 
+|===
+
+
+[[filesystemtovolume]]
+=== file_system_to_volume
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：file_system_to_volume
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 檔案系統與 Volume 關係的 GUID。 
+
+
+| computeResourceId *[FK]* →link:#entity-compute_resource["運算資源"].id | Int64 | 是的 | 運算資源的 GUID。 
+
+
+| fileSystemId *[FK]* →link:#entity-file_system["檔案系統"].id | Int64 | 是的 | 檔案系統的 GUID。 
+
+
+| storageId *[FK]* →link:#entity-storage["貯存"].id | Int64 | 是的 | 儲存設備的 GUID。 
+
+
+| volumeId *[FK]* →link:#entity-volume["體積"].id | Int64 | 是的 | Volume 的 GUID。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 貯存 | link:#entity-storage["貯存"] | 一個 JOIN：storageId=link:#entity-storage["貯存"].id 
+
+
+| 運算資源 | link:#entity-compute_resource["運算資源"] | 一個 JOIN：computeResourceId=link:#entity-compute_resource["運算資源"].id 
+
+
+| 體積 | link:#entity-volume["體積"] | 一個 JOIN：volumeId=link:#entity-volume["體積"].id 
+
+
+| 檔案系統 | link:#entity-file_system["檔案系統"] | 一個 JOIN：fileSystemId=link:#entity-file_system["檔案系統"].id 
+|===
+
+
+[[genericdevice]]
+=== 一般裝置
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：generic_device
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 通用設備的 GUID。 
+
+
+| wwn | 字串 | 是的 | 通用設備的 WWN 
+
+
+| 識別符 | 字串 | 是的 | 設備識別符。 
+
+
+| 製造商 | 字串 | 是的 | 通用裝置的製造商。 
+
+
+| 模型 | 字串 | 是的 | 通用設備的型號。 
+
+
+| 韌體 | 字串 | 是的 | 通用設備的韌體版本。 
+
+
+| 驅動程式 | 字串 | 是的 | 通用設備的驅動程式。 
+
+
+| serialNumber | 字串 | 是的 | 通用設備的序號。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 通用設備連接埠 | link:#entity-generic_device_port["通用設備連接埠"] | 許多 
+
+
+| 違反 | link:#entity-violation["違反"] | 許多 
+
+
+| physical_path | link:#entity-physical_path["physical_path"] | 許多 
+
+
+| 邏輯 | link:#entity-logical["邏輯"] | 許多 
+|===
+
+
+[[genericdeviceport]]
+=== 通用設備連接埠
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：generic_device_port
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 連接埠的 GUID。 
+
+
+| genericDeviceId *[FK]* →link:#entity-generic_device["一般裝置"].id | Int64 | 是的 | 通用設備的 GUID。 
+
+
+| wwn | 字串 | 是的 | 連接埠的 WWN。 
+
+
+| 數字 | Int64 | 是的 | 刀鋒伺服器中連接埠的編號 
+
+
+| portId | 字串 | 是的 | 連接埠 ID。 
+
+
+| 姓名 | 字串 | 是的 | 連接埠名稱。 
+
+
+| 速度 | 字串 | 是的 | 連接埠速度，單位為 Gbps。 
+
+
+| url | 字串 | 是的 | Insight Server 中此連接埠的 URL。 
+
+
+| 作用中 | 字串 | 是的 | 如果連接埠未失效，則為真。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 一般裝置 | link:#entity-generic_device["一般裝置"] | 一個 JOIN：genericDeviceId=link:#entity-generic_device["一般裝置"].id 
+|===
+
+
+[[host]]
+=== 主持人
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：主機
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 主機的 GUID。 
+
+
+| 姓名 | 字串 | 是的 | 主機名稱。 
+
+
+| 識別符 | 字串 | 是的 | 設備識別符。 
+
+
+| ip | 字串 | 是的 | 主機的 IP 位址。 
+
+
+| 作業系統 | 字串 | 是的 | 主機上執行的作業系統。 
+
+
+| 模型 | 字串 | 是的 | 型號。 
+
+
+| 製造商 | 字串 | 是的 | 主機製造商。 
+
+
+| installedMemoryMB | 字串 | 是的 | 主機上可用的總記憶體容量，單位為 MB。 
+
+
+| 主機檔案系統可用 GB | 字串 | 是的 | 主機檔案系統中的可用儲存設備空間，以 GB 為單位。 
+
+
+| hostFsTotalGB | 字串 | 是的 | 主機檔案系統中的總儲存設備量，以 GB 為單位。 
+
+
+| hostFsUsedGB | 字串 | 是的 | 主機使用的檔案系統儲存設備大小，以 GB 為單位。 
+
+
+| cpuCount | 字串 | 是的 | 主機上執行的 CPU 數量。 
+
+
+| cpuSpeed | 字串 | 是的 | CPU 速度，單位為 MHz。 
+
+
+| nicCount | 字串 | 是的 | NIC 數量。 
+
+
+| nicSpeed | 字串 | 是的 | 網路卡速度，Mbs。 
+
+
+| url | 字串 | 是的 | Insight Server 中此主機的 URL。 
+
+
+| 作用中 | 字串 | 是的 | 指示主機目前是否作用中。 
+
+
+| dataCenter | 字串 | 是的 | # dataCenter 分配給主機的註解值 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| host_port | link:#entity-host_port["host_port"] | 許多 
+
+
+| hv_path | link:#entity-hv_path["hv_path"] | 許多 
+
+
+| volume_mask | link:#entity-volume_mask["volume_mask"] | 許多 
+
+
+| 主機適配器 | link:#entity-host_adapter["主機適配器"] | 許多 
+
+
+| 未知邏輯 | link:#entity-unknown_logical["未知邏輯"] | 許多 
+
+
+| 邏輯 | link:#entity-logical["邏輯"] | 許多 
+
+
+| 主機到應用程式 | link:#entity-host_to_application["主機到應用程式"] | 許多 
+
+
+| hv_host_to_nas_share | link:#entity-hv_host_to_nas_share["hv_host_to_nas_share"] | 許多 
+
+
+| 檔案系統 | link:#entity-file_system["檔案系統"] | 許多 
+
+
+| hv_lun | link:#entity-hv_lun["hv_lun"] | 許多 
+
+
+| 違反 | link:#entity-violation["違反"] | 許多 
+
+
+| iscsi_logical | link:#entity-iscsi_logical["iscsi_logical"] | 許多 
+
+
+| hv_lun_to_volume | link:#entity-hv_lun_to_volume["hv_lun_to_volume"] | 許多 
+
+
+| physical_path | link:#entity-physical_path["physical_path"] | 許多 
+
+
+| hv_server | link:#entity-hv_server["hv_server"] | 許多 
+
+
+| 運算資源 | link:#entity-compute_resource["運算資源"] | 許多 
+
+
+| hv_virtual_machine | link:#entity-hv_virtual_machine["hv_virtual_machine"] | 許多 
+|===
+
+
+[[hostadapter]]
+=== 主機適配器
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：host_adapter
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 主機介面卡的 GUID。 
+
+
+| hostId *[FK]* →link:#entity-host["主持人"].id | Int64 | 是的 | 此介面卡所在主機的 GUID。 
+
+
+| wwn | 字串 | 是的 | 主機介面卡的 WWN。 
+
+
+| 模型 | 字串 | 是的 | 主機介面卡的型號。 
+
+
+| 製造商 | 字串 | 是的 | 主機介面卡製造商。 
+
+
+| 驅動程式 | 字串 | 是的 | 管理主機介面卡存取的驅動程式名稱。 
+
+
+| 韌體 | 字串 | 是的 | 主機介面卡上執行的韌體版本。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 主持人 | link:#entity-host["主持人"] | 一個 JOIN：hostId=link:#entity-host["主持人"].id 
+
+
+| host_port | link:#entity-host_port["host_port"] | 許多 
+|===
+
+
+[[hostport]]
+=== host_port
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：host_port
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 主機連接埠的 GUID。 
+
+
+| adapterId *[FK]* →link:#entity-host_adapter["主機適配器"].id | Int64 | 是的 | 此主機連接埠所在的節點（介面卡）的 GUID。 
+
+
+| hostId *[FK]* →link:#entity-host["主持人"].id | Int64 | 是的 | 此主機連接埠所在主機的 GUID。 
+
+
+| wwn | 字串 | 是的 | 主機連接埠的 WWN。 
+
+
+| nodeWwn | 字串 | 是的 | 此連接埠所在節點（介面卡）的 WWN。 
+
+
+| portId | 字串 | 是的 | 連接埠 ID。 
+
+
+| 姓名 | 字串 | 是的 | 主機連接埠名稱。 
+
+
+| 速度 | 字串 | 是的 | 連接埠速度，單位為 Gbps。 
+
+
+| url | 字串 | 是的 | Insight Server 中此連接埠的 URL。 
+
+
+| 作用中 | 字串 | 是的 | 如果連接埠未失效，則為真。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 主機適配器 | link:#entity-host_adapter["主機適配器"] | 一個 JOIN：adapterId=link:#entity-host_adapter["主機適配器"].id 
+
+
+| 主持人 | link:#entity-host["主持人"] | 一個 JOIN：hostId=link:#entity-host["主持人"].id 
+|===
+
+
+[[hosttoapplication]]
+=== 主機到應用程式
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：host_to_application
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 主機與應用程式之間關係的 GUID。 
+
+
+| hostId *[FK]* →link:#entity-host["主持人"].id | Int64 | 是的 | 主機的 GUID。 
+
+
+| applicationId *[FK]* →link:#entity-application["應用程式"].id | Int64 | 是的 | 應用程式的 GUID。 
+
+
+| 繼承 | 字串 | 是的 | 此應用程式為繼承而來。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 應用程式 | link:#entity-application["應用程式"] | 一個 JOIN：applicationId=link:#entity-application["應用程式"].id 
+
+
+| 主持人 | link:#entity-host["主持人"] | 一個 JOIN：hostId=link:#entity-host["主持人"].id 
+|===
+
+
+[[hvdatastore]]
+=== hv_data_store
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：hv_data_store
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 資料儲存區的 GUID。 
+
+
+| naturalKey | 字串 | 是的 | 資料儲存區的自然識別碼。 
+
+
+| moid | 字串 | 是的 | 指派給 Virtual Center 資料儲存區的受管理物件 ID。 
+
+
+| 姓名 | 字串 | 是的 | 資料儲存名稱。 
+
+
+| 容量 MB | Int64 | 是的 | 資料儲存區的配置大小，單位為 MB。 
+
+
+| 已配置容量 MB | Int64 | 是的 | 為資料儲存區預留的儲存設備空間，以 MB 為單位。 
+
+
+| virtualCenterIp | 字串 | 是的 | 虛擬中心的 IP 位址。 
+
+
+| freeCapacityMB | Int64 | 是的 | [OBSOLETE] 資料儲存區中的可用容量，單位為 MB。 
+
+
+| 已用容量 MB | Int64 | 是的 | 資料儲存區實際使用的空間量，以 MB 為單位。 
+
+
+| url | 字串 | 是的 | Insight Server 中此資料儲存區的 URL。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| hv_nas_share | link:#entity-hv_nas_share["hv_nas_share"] | 許多 
+
+
+| hv_data_store_to_internal_volume | link:#entity-hv_data_store_to_internal_volume["hv_data_store_to_internal_volume"] | 許多 
+
+
+| hv_lun | link:#entity-hv_lun["hv_lun"] | 許多 
+
+
+| hv_datastore_to_nas_share | link:#entity-hv_datastore_to_nas_share["hv_datastore_to_nas_share"] | 許多 
+
+
+| hv_virtual_disk | link:#entity-hv_virtual_disk["hv_virtual_disk"] | 許多 
+
+
+| 檔案系統到虛擬磁碟 | link:#entity-file_system_to_virtual_disk["檔案系統到虛擬磁碟"] | 許多 
+
+
+| hv_data_store_to_volume | link:#entity-hv_data_store_to_volume["hv_data_store_to_volume"] | 許多 
+
+
+| hv_virtual_machine | link:#entity-hv_virtual_machine["hv_virtual_machine"] | 許多 
+|===
+
+
+[[hvdatastoretointernalvolume]]
+=== hv_data_store_to_internal_volume
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：hv_data_store_to_internal_volume
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| dataStoreId *[PK]* | Int64 | 是的 | 資料儲存區的 GUID。 
+
+
+| storageId *[FK]* →link:#entity-storage["貯存"].id | Int64 | 是的 | 儲存設備的 GUID。 
+
+
+| internalVolumeId *[PK]* | Int64 | 是的 | 內部 Volume 的 GUID。 
+
+
+| qtreeId *[FK]* →link:#entity-qtree["配額樹"].id | Int64 | 是的 | qtree 的 GUID。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| hv_data_store | link:#entity-hv_data_store["hv_data_store"] | 一個 JOIN：dataStoreId=link:#entity-hv_data_store["hv_data_store"].id 
+
+
+| 貯存 | link:#entity-storage["貯存"] | 一個 JOIN：storageId=link:#entity-storage["貯存"].id 
+
+
+| 內部卷 | link:#entity-internal_volume["內部卷"] | 一個 JOIN：internalVolumeId=link:#entity-internal_volume["內部卷"].id 
+
+
+| 配額樹 | link:#entity-qtree["配額樹"] | 一個 JOIN：qtreeId=link:#entity-qtree["配額樹"].id 
+|===
+
+
+[[hvdatastoretovolume]]
+=== hv_data_store_to_volume
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：hv_data_store_to_volume
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| dataStoreId *[PK]* | Int64 | 是的 | 資料儲存區的 GUID。 
+
+
+| storageId *[FK]* →link:#entity-storage["貯存"].id | Int64 | 是的 | 儲存設備的 GUID。 
+
+
+| qtreeId *[FK]* →link:#entity-qtree["配額樹"].id | Int64 | 是的 | qtree 的 GUID。 
+
+
+| volumeId *[PK]* | Int64 | 是的 | Volume 的 GUID。 
+
+
+| repVolume | 字串 | 是的 | 如果此 Volume 能夠代表資料儲存區中的所有 Volume，則為 True。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| hv_data_store | link:#entity-hv_data_store["hv_data_store"] | 一個 JOIN：dataStoreId=link:#entity-hv_data_store["hv_data_store"].id 
+
+
+| 貯存 | link:#entity-storage["貯存"] | 一個 JOIN：storageId=link:#entity-storage["貯存"].id 
+
+
+| 體積 | link:#entity-volume["體積"] | 一個 JOIN：volumeId=link:#entity-volume["體積"].id 
+
+
+| 配額樹 | link:#entity-qtree["配額樹"] | 一個 JOIN：qtreeId=link:#entity-qtree["配額樹"].id 
+|===
+
+
+[[hvdatastoretonasshare]]
+=== hv_datastore_to_nas_share
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：hv_datastore_to_nas_share
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 資料儲存區和 HV NAS 共享之間關係的 GUID。 
+
+
+| dataStoreId *[FK]* →link:#entity-hv_data_store["hv_data_store"].id | Int64 | 是的 | 資料儲存區的 GUID。 
+
+
+| nasShareId *[FK]* →link:#entity-hv_nas_share["hv_nas_share"].id | Int64 | 是的 | hv nas 共享的 GUID。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| hv_data_store | link:#entity-hv_data_store["hv_data_store"] | 一個 JOIN：dataStoreId=link:#entity-hv_data_store["hv_data_store"].id 
+
+
+| hv_nas_share | link:#entity-hv_nas_share["hv_nas_share"] | 一個 JOIN：nasShareId=link:#entity-hv_nas_share["hv_nas_share"].id 
+|===
+
+
+[[hvhosttonasshare]]
+=== hv_host_to_nas_share
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：hv_host_to_nas_share
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 主機與 NAS 共享之間關係的 GUID。 
+
+
+| hostId *[FK]* →link:#entity-host["主持人"].id | Int64 | 是的 | 主機的 GUID。 
+
+
+| nasShareId *[FK]* →link:#entity-hv_nas_share["hv_nas_share"].id | Int64 | 是的 | NAS 共享的 GUID （hv_nas_share）。 
+
+
+| readOnly | 位元組 | 是的 | 指示主機是否對 nas 共享具有唯讀存取。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| hv_nas_share | link:#entity-hv_nas_share["hv_nas_share"] | 一個 JOIN：nasShareId=link:#entity-hv_nas_share["hv_nas_share"].id 
+
+
+| 主持人 | link:#entity-host["主持人"] | 一個 JOIN：hostId=link:#entity-host["主持人"].id 
+|===
+
+
+[[hvlun]]
+=== hv_lun
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：hv_lun
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | lun 的 GUID。 
+
+
+| hostId *[FK]* →link:#entity-host["主持人"].id | Int64 | 是的 | 主機的 GUID。 
+
+
+| dataStoreId *[FK]* →link:#entity-hv_data_store["hv_data_store"].id | Int64 | 是的 | 使用此 LUN 的資料儲存區的 GUID。對於 RDM VMDK，此 GUID 設定為 NULL。 
+
+
+| naturalKey | 字串 | 是的 | LUN 的自然識別碼。 
+
+
+| 數字 | 字串 | 是的 | 邏輯單元號（lun）。 
+
+
+| tid | Int64 | 是的 | 目標 SCSI ID。 
+
+
+| 原則 | 字串 | 是的 | SAN 作用中路徑選擇原則（MRU、FIXED 或 RR）。 
+
+
+| diskName | 字串 | 是的 | LUN 的磁碟名稱。 
+
+
+| volumeUuid | 字串 | 是的 | Volume 的 UUID。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| hv_data_store | link:#entity-hv_data_store["hv_data_store"] | 一個 JOIN：dataStoreId=link:#entity-hv_data_store["hv_data_store"].id 
+
+
+| 主持人 | link:#entity-host["主持人"] | 一個 JOIN：hostId=link:#entity-host["主持人"].id 
+
+
+| hv_path | link:#entity-hv_path["hv_path"] | 許多 
+
+
+| hv_lun_to_volume | link:#entity-hv_lun_to_volume["hv_lun_to_volume"] | 許多 
+
+
+| hv_virtual_disk | link:#entity-hv_virtual_disk["hv_virtual_disk"] | 許多 
+|===
+
+
+[[hvluntovolume]]
+=== hv_lun_to_volume
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集合：hv_lun_to_volume
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | hv lun 與 Volume 之間關係的 GUID。 
+
+
+| hostId *[FK]* →link:#entity-host["主持人"].id | Int64 | 是的 | hv lun 所在主機的 GUID。 
+
+
+| hvLunId *[FK]* →link:#entity-hv_lun["hv_lun"].id | Int64 | 是的 | lun 的 GUID。 
+
+
+| storageId *[FK]* →link:#entity-storage["貯存"].id | Int64 | 是的 | Volume 所在的儲存陣列的 GUID。 
+
+
+| volumeId *[FK]* →link:#entity-volume["體積"].id | Int64 | 是的 | Volume 的 GUID。 
+
+
+| 類型 | 字串 | 是的 | Volume 存取技術類型。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 貯存 | link:#entity-storage["貯存"] | 一個 JOIN：storageId=link:#entity-storage["貯存"].id 
+
+
+| 體積 | link:#entity-volume["體積"] | 一個 JOIN：volumeId=link:#entity-volume["體積"].id 
+
+
+| hv_lun | link:#entity-hv_lun["hv_lun"] | 一個 JOIN：hvLunId=link:#entity-hv_lun["hv_lun"].id 
+
+
+| 主持人 | link:#entity-host["主持人"] | 一個 JOIN：hostId=link:#entity-host["主持人"].id 
+|===
+
+
+[[hvnasshare]]
+=== hv_nas_share
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：hv_nas_share
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | NAS 共享的 GUID。 
+
+
+| dataStoreId *[FK]* →link:#entity-hv_data_store["hv_data_store"].id | Int64 | 是的 | [已棄用] 資料儲存區的 GUID。 
+
+
+| naturalKey | 字串 | 是的 | NAS 共享的自然識別碼。 
+
+
+| filerName | 字串 | 是的 | NAS 共享的檔案管理器名稱。 
+
+
+| filerIp | 字串 | 是的 | NAS 共享的檔案管理器的 IP 位址。 
+
+
+| sharePath | 字串 | 是的 | 此共享指向的邏輯磁碟路徑。 
+
+
+| 容量 MB | Int32 | 是的 | 主機可見的共享容量，以 MB 為單位。 
+
+
+| 類型 | 字串 | 是的 | 用於 nas 共享的協定（例如，NFS 或 CIFS）。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| hv_data_store | link:#entity-hv_data_store["hv_data_store"] | 一個 JOIN：dataStoreId=link:#entity-hv_data_store["hv_data_store"].id 
+
+
+| hv_datastore_to_nas_share | link:#entity-hv_datastore_to_nas_share["hv_datastore_to_nas_share"] | 許多 
+
+
+| hv_nas_share_to_share | link:#entity-hv_nas_share_to_share["hv_nas_share_to_share"] | 許多 
+
+
+| hv_host_to_nas_share | link:#entity-hv_host_to_nas_share["hv_host_to_nas_share"] | 許多 
+|===
+
+
+[[hvnassharetoshare]]
+=== hv_nas_share_to_share
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：hv_nas_share_to_share
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | NAS 共享與共享之間關係的 GUID。 
+
+
+| nasShareId *[FK]* →link:#entity-hv_nas_share["hv_nas_share"].id | Int64 | 是的 | NAS 共享的 GUID。 
+
+
+| storageId *[FK]* →link:#entity-storage["貯存"].id | Int64 | 是的 | 共享所在的儲存陣列（檔案管理器）的 GUID。 
+
+
+| shareId *[FK]* →link:#entity-nas_share["nas_share"].id | Int64 | 是的 | 共享的 GUID。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 貯存 | link:#entity-storage["貯存"] | 一個 JOIN：storageId=link:#entity-storage["貯存"].id 
+
+
+| hv_nas_share | link:#entity-hv_nas_share["hv_nas_share"] | 一個 JOIN：nasShareId=link:#entity-hv_nas_share["hv_nas_share"].id 
+
+
+| nas_share | link:#entity-nas_share["nas_share"] | 一個 JOIN：shareId=link:#entity-nas_share["nas_share"].id 
+|===
+
+
+[[hvpath]]
+=== hv_path
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：hv_path
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 從主機到 LUN 的路徑的 GUID。 
+
+
+| lunId *[FK]* →link:#entity-hv_lun["hv_lun"].id | Int64 | 是的 | lun 的 GUID。 
+
+
+| hostId *[FK]* →link:#entity-host["主持人"].id | Int64 | 是的 | 主機的 GUID。 
+
+
+| hostPortWwpn | 字串 | 是的 | 路徑所用主機連接埠的 WWN。 
+
+
+| storagePortWwpn | 字串 | 是的 | 路徑所用儲存設備連接埠的 WWN。 
+
+
+| 類型 | 字串 | 是的 | 路徑類型（FC、ISCSI 或 UNKNOWN）。 
+
+
+| 作用中 | 位元組 | 是的 | 指示此路徑是否處於作用中。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| hv_lun | link:#entity-hv_lun["hv_lun"] | 一個 JOIN：lunId=link:#entity-hv_lun["hv_lun"].id 
+
+
+| 主持人 | link:#entity-host["主持人"] | 一個 JOIN：hostId=link:#entity-host["主持人"].id 
+|===
+
+
+[[hvserver]]
+=== hv_server
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：hv_server
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | ESX 伺服器的 GUID。 
+
+
+| hostId *[FK]* →link:#entity-host["主持人"].id | Int64 | 是的 | 主機的 GUID。 
+
+
+| naturalKey | 字串 | 是的 | ESX 伺服器的自然識別碼。 
+
+
+| moid | 字串 | 是的 | 指派給 Virtual Center 中伺服器的託管物件 ID。 
+
+
+| virtualCenterIp | 字串 | 是的 | 虛擬中心的 IP 位址。 
+
+
+| clusterName | 字串 | 是的 | 共用存取相同 SAN Volume 或 NAS 共享的主機叢集名稱，如果是獨立式主機則留空。 
+
+
+| dataCenterName | 字串 | 是的 | 資料中心名稱。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 主持人 | link:#entity-host["主持人"] | 一個 JOIN：hostId=link:#entity-host["主持人"].id 
+
+
+| vmware_host | link:#entity-vmware_host["vmware_host"] | 許多 
+|===
+
+
+[[hvvirtualdisk]]
+=== hv_virtual_disk
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：hv_virtual_disk
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 虛擬磁碟的 GUID。 
+
+
+| dataStoreId *[FK]* →link:#entity-hv_data_store["hv_data_store"].id | Int64 | 是的 | 虛擬磁碟資料儲存區的 GUID。 
+
+
+| lunId *[FK]* →link:#entity-hv_lun["hv_lun"].id | Int64 | 是的 | 僅限 RDM VMDK，與虛擬磁碟關聯的 LUN 的 GUID。 
+
+
+| naturalKey | 字串 | 是的 | 虛擬磁碟的自然識別碼。 
+
+
+| 姓名 | 字串 | 是的 | 虛擬磁碟的名稱。 
+
+
+| 類型 | 字串 | 是的 | 虛擬磁碟類型。 
+
+
+| 容量 MB | Int64 | 是的 | 虛擬磁碟容量，單位為 MB。 
+
+
+| 已用容量 MB | Int64 | 是的 | 設備報告的資料儲存消耗容量（以 MB 為單位）。 
+
+
+| 用於報告的已使用容量（MB） | Int64 | 是的 | 從資料儲存中消耗的容量，對於資源隨需配置的 VMDK，可能小於 capacityMB （以 MB 為單位）。 
+
+
+| url | 字串 | 是的 | Insight Server 中此虛擬磁碟的 URL。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| hv_data_store | link:#entity-hv_data_store["hv_data_store"] | 一個 JOIN：dataStoreId=link:#entity-hv_data_store["hv_data_store"].id 
+
+
+| hv_lun | link:#entity-hv_lun["hv_lun"] | 一個 JOIN：lunId=link:#entity-hv_lun["hv_lun"].id 
+
+
+| hv_virtual_disk_to_volume | link:#entity-hv_virtual_disk_to_volume["hv_virtual_disk_to_volume"] | 許多 
+
+
+| hv_virtual_machine_to_disk | link:#entity-hv_virtual_machine_to_disk["hv_virtual_machine_to_disk"] | 許多 
+
+
+| 檔案系統到虛擬磁碟 | link:#entity-file_system_to_virtual_disk["檔案系統到虛擬磁碟"] | 許多 
+|===
+
+
+[[hvvirtualdisktovolume]]
+=== hv_virtual_disk_to_volume
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集合：hv_virtual_disk_to_volume
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| virtualDiskId *[PK]* | Int64 | 是的 | 虛擬磁碟的 GUID。 
+
+
+| storageId *[FK]* →link:#entity-storage["貯存"].id | Int64 | 是的 | 儲存設備的 GUID。 
+
+
+| qtreeId *[FK]* →link:#entity-qtree["配額樹"].id | Int64 | 是的 | qtree 的 GUID。 
+
+
+| volumeId *[FK]* →link:#entity-volume["體積"].id | Int64 | 是的 | Volume 的 GUID。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 貯存 | link:#entity-storage["貯存"] | 一個 JOIN：storageId=link:#entity-storage["貯存"].id 
+
+
+| 體積 | link:#entity-volume["體積"] | 一個 JOIN：volumeId=link:#entity-volume["體積"].id 
+
+
+| 配額樹 | link:#entity-qtree["配額樹"] | 一個 JOIN：qtreeId=link:#entity-qtree["配額樹"].id 
+
+
+| hv_virtual_disk | link:#entity-hv_virtual_disk["hv_virtual_disk"] | 一個 JOIN：virtualDiskId=link:#entity-hv_virtual_disk["hv_virtual_disk"].id 
+|===
+
+
+[[hvvirtualmachine]]
+=== hv_virtual_machine
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：hv_virtual_machine
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 虛擬機器的 GUID。 
+
+
+| hostId *[FK]* →link:#entity-host["主持人"].id | Int64 | 是的 | 擁有該虛擬機器的主機的 GUID。 
+
+
+| moid | 字串 | 是的 | 指派給 Virtual Center 中虛擬機器的託管物件 ID。 
+
+
+| 姓名 | 字串 | 是的 | 虛擬機器的名稱。 
+
+
+| dnsName | 字串 | 是的 | 虛擬機器的完整網域名稱。 
+
+
+| ips | 字串 | 是的 | 虛擬機器的 IP 位址清單，以逗號分隔。 
+
+
+| powerState | 字串 | 是的 | 虛擬機器的電源狀態與客體作業系統的狀態組合 
+
+
+| powerStateChangeTime | DateTimeOffset | 是的 | 電源狀態變為目前值的時間。 
+
+
+| guestState | 字串 | 是的 | 虛擬機器的虛擬硬體與客體作業系統的綜合狀態。 
+
+
+| 作業系統 | 字串 | 是的 | 客體作業系統。 
+
+
+| 處理器 | Int32 | 是的 | 虛擬機器的處理器數量。 
+
+
+| 記憶體 | Int64 | 是的 | 虛擬機器的記憶體容量，單位為 MB。 
+
+
+| dataStoreId *[FK]* →link:#entity-hv_data_store["hv_data_store"].id | Int64 | 是的 | 虛擬機器用於儲存其中繼資料（日誌、Snapshot 快照技術、記憶體容量檔案等）的資料儲存的 GUID。 
+
+
+| naturalKey | 字串 | 是的 | 虛擬機器的自然識別碼。 
+
+
+| virtualCenterIp | 字串 | 是的 | 虛擬中心的 IP 位址。 
+
+
+| 已配置容量 MB | Int64 | 是的 | 分配給虛擬機器的儲存設備大小，單位為 MB。 
+
+
+| 已用容量 MB | Int64 | 是的 | 虛擬機器實際使用的空間量，單位為 MB。 
+
+
+| url | 字串 | 是的 | Insight Server 中此虛擬機器的 URL。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| hv_data_store | link:#entity-hv_data_store["hv_data_store"] | 一個 JOIN：dataStoreId=link:#entity-hv_data_store["hv_data_store"].id 
+
+
+| 主持人 | link:#entity-host["主持人"] | 一個 JOIN：hostId=link:#entity-host["主持人"].id 
+
+
+| vm_to_application | link:#entity-vm_to_application["vm_to_application"] | 許多 
+
+
+| hv_virtual_machine_to_disk | link:#entity-hv_virtual_machine_to_disk["hv_virtual_machine_to_disk"] | 許多 
+
+
+| k8s_node | link:#entity-k8s_node["k8s_node"] | 許多 
+
+
+| 運算資源 | link:#entity-compute_resource["運算資源"] | 許多 
+|===
+
+
+[[hvvirtualmachinetodisk]]
+=== hv_virtual_machine_to_disk
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：hv_virtual_machine_to_disk
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 虛擬機器與虛擬磁碟之間關係的 GUID。 
+
+
+| virtualMachineId *[FK]* →link:#entity-hv_virtual_machine["hv_virtual_machine"].id | Int64 | 是的 | 虛擬機器 ID 的 GUID。 
+
+
+| virtualDiskId *[FK]* →link:#entity-hv_virtual_disk["hv_virtual_disk"].id | Int64 | 是的 | 虛擬磁碟的 GUID。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| hv_virtual_machine | link:#entity-hv_virtual_machine["hv_virtual_machine"] | 一個 JOIN：virtualMachineId=link:#entity-hv_virtual_machine["hv_virtual_machine"].id 
+
+
+| hv_virtual_disk | link:#entity-hv_virtual_disk["hv_virtual_disk"] | 一個 JOIN：virtualDiskId=link:#entity-hv_virtual_disk["hv_virtual_disk"].id 
+|===
+
+
+[[internalvolume]]
+=== 內部卷
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：內部 Volume
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 內部 Volume 的 GUID。 
+
+
+| storagePoolId *[FK]* →link:#entity-storage_pool["儲存池"].id | Int64 | 是的 | 儲存資源池的 GUID。 
+
+
+| storageId *[FK]* →link:#entity-storage["貯存"].id | Int64 | 是的 | 儲存陣列（檔案管理器）的 GUID。 
+
+
+| 識別符 | 字串 | 是的 | 儲存設備內部 Volume 的唯一識別碼。 
+
+
+| 姓名 | 字串 | 是的 | 內部 Volume 的名稱。唯一識別儲存設備中的內部 Volume。 
+
+
+| 類型 | 字串 | 是的 | 內部 Volume 類型（例如 flexVol、傳統等）。 
+
+
+| thinProvisioningSupported | 字串 | 是的 | 此內部 Volume 是否支援對其上方的 Volume 階層進行資源隨需配置。 
+
+
+| thinProvisioned | 字串 | 是的 | 此內部 Volume 是否採用資源隨需配置。預設值為 false。 
+
+
+| spaceGuarantee | 字串 | 是的 | 空間保證原則 
+
+
+| dedupeEnabled | 字串 | 是的 | 內部 Volume 是否啟用重複資料刪除技術？預設值為 false。 
+
+
+| cloneSourceId | Int64 | 是的 | 如果此內部 Volume 是另一個內部 Volume 的 Clone，則為 Clone 的內部 Volume 的 ID。否則為 Null。 
+
+
+| snapshotCount | Int32 | 是的 | 內部 Volume 上的 Snapshot 快照技術數量。 
+
+
+| lastSnapshotTime | DateTimeOffset | 是的 | 上次 Snapshot 快照技術時間 
+
+
+| lastKnownAccessTime | DateTimeOffset | 是的 | 上次存取內部 Volume 的時間。 
+
+
+| 狀態 | 字串 | 是的 | 內部 Volume 的狀態（例如離線、線上……） 
+
+
+| virtualStorage | 字串 | 是的 | 指定VirtualStorage（例如vFiler） 
+
+
+| protectionType | 字串 | 是的 | 指定內部 Volume 的保護類型（例如 SnapMirror、SnapVault……）。 
+
+
+| flashPoolEligibility | 字串 | 是的 | 指示內部 Volume 是否可以使用快閃記憶體資源池。 
+
+
+| dedupeRatio | 雙倍的 | 是的 | 重複資料刪除技術壓縮比率。值介於 0 到 1 之間。 
+
+
+| 重複資料刪除節省空間 GB | Int64 | 是的 | 此內部 Volume 的重複資料刪除技術壓縮（以 GB 為單位）。 
+
+
+| totalAllocatedCapacityMB | Int64 | 是的 | 儲存陣列報告的內部 Volume 已分配容量（以 MB 為單位）。包含為 Snapshot 快照技術分配的容量。<br>等於：snapshotAllocatedCapacityMB + dataAllocatedCapacityMB + otherAllocatedCapacityMB 
+
+
+| totalUsedCapacityMB | Int64 | 是的 | 儲存資源池內部 Volume 消耗的容量。 
+
+
+| totalUsedCapacityFromDeviceMB | Int64 | 是的 | 儲存陣列報告的內部 Volume 已使用容量（以 MB 為單位）。包含 Snapshot 快照技術已用容量。<br>等於：snapshotUsedCapacityMB + dataUsedCapacityMB 
+
+
+| dataAllocatedCapacityMB | Int64 | 是的 | 儲存陣列所報告的內部 Volume 已分配容量（以 MB 為單位）。不包含為 Snapshot 快照技術所分配的容量。 
+
+
+| 已用資料容量 MB | Int64 | 是的 | 儲存陣列報告的內部 Volume 已使用容量（以 MB 為單位）。不包括 Snapshot 快照技術所用的容量。 
+
+
+| snapshotAllocatedCapacityMB | Int64 | 是的 | 為內部 Volume Snapshot 快照技術分配的容量（以 MB 為單位）。 
+
+
+| 快照已用容量 MB | Int64 | 是的 | 用於內部 Volume Snapshot 快照技術的容量（以 MB 為單位）。 
+
+
+| rawToUsableRatio | 雙倍的 | 是的 | 磁碟原始容量與內部 Volume 可用容量之比率。受 RAID 層級和其他例行成本的影響。 
+
+
+| otherUsedCapacityMB | Int64 | 是的 | 內部 Volume 的資料/Snapshot 快照技術已使用容量中未包含的額外例行成本。totalUsedCapacityMB = dataUsedCapacityMB + snapShotUsedCapacityMB + otherUsedCapacityMB。 
+
+
+| otherAllocatedCapacityMB | Int64 | 是的 | 內部 Volume 的資料/Snapshot 快照技術已分配容量中未包含的額外例行成本。totalAllocatedCapacityMB = dataAllocatedCapacityMB + snapShotAllocatedCapacityMB + otherAllocatedCapacityMB。 
+
+
+| 總複製已儲存容量 MB | Int64 | 是的 | Clone 內部 Volume 與其來源內部 Volume 共享的容量 
+
+
+| compressionEnabled | 字串 | 是的 | 內部 Volume 是否已啟用壓縮功能？ 
+
+
+| compressionRatio | 雙倍的 | 是的 | 壓縮節省比率。數值介於 0 和 1 之間。 
+
+
+| 壓縮節省 GB | Int64 | 是的 | 此內部 Volume 的壓縮量（以 GB 為單位）。 
+
+
+| compressionSavingsPercent | 雙倍的 | 是的 | 此內部 Volume 的壓縮（%）。 
+
+
+| uuid | 字串 | 是的 | 內部 Volume 的 UUID。 
+
+
+| url | 字串 | 是的 | Insight Server 中此內部 Volume 的 URL。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 貯存 | link:#entity-storage["貯存"] | 一個 JOIN：storageId=link:#entity-storage["貯存"].id 
+
+
+| 儲存池 | link:#entity-storage_pool["儲存池"] | 一個 JOIN：storagePoolId=link:#entity-storage_pool["儲存池"].id 
+
+
+| 體積 | link:#entity-volume["體積"] | 許多 
+
+
+| 配額樹 | link:#entity-qtree["配額樹"] | 許多 
+
+
+| dr_internal_volume_replica | link:#entity-dr_internal_volume_replica["dr_internal_volume_replica"] | 許多 
+
+
+| 內部捲到應用程式 | link:#entity-internal_volume_to_application["內部捲到應用程式"] | 許多 
+
+
+| nas_file_share | link:#entity-nas_file_share["nas_file_share"] | 許多 
+
+
+| hv_data_store_to_internal_volume | link:#entity-hv_data_store_to_internal_volume["hv_data_store_to_internal_volume"] | 許多 
+
+
+| 配額 | link:#entity-quota["配額"] | 許多 
+
+
+| nas_cr_logical | link:#entity-nas_cr_logical["nas_cr_logical"] | 許多 
+|===
+
+
+[[internalvolumetoapplication]]
+=== 內部捲到應用程式
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：internal_volume_to_application
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 內部 Volume 與應用程式之間關係的 GUID。 
+
+
+| applicationId *[FK]* →link:#entity-application["應用程式"].id | Int64 | 是的 | 應用程式的 GUID。 
+
+
+| internalVolumeId *[FK]* →link:#entity-internal_volume["內部卷"].id | Int64 | 是的 | 內部 Volume 的 GUID。 
+
+
+| 繼承 | 字串 | 是的 | 此應用程式為繼承而來。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 內部卷 | link:#entity-internal_volume["內部卷"] | 一個 JOIN：internalVolumeId=link:#entity-internal_volume["內部卷"].id 
+
+
+| 應用程式 | link:#entity-application["應用程式"] | 一個 JOIN：applicationId=link:#entity-application["應用程式"].id 
+|===
+
+
+[[iscsilogical]]
+=== iscsi_logical
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：iscsi_logical
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | iSCSI 邏輯路徑的 GUID。 
+
+
+| hostId *[FK]* →link:#entity-host["主持人"].id | Int64 | 是的 | iSCSI 邏輯路徑的啟動器主機的 GUID。 
+
+
+| storageId *[FK]* →link:#entity-storage["貯存"].id | Int64 | 是的 | iSCSI 邏輯路徑目標儲存設備的 GUID。 
+
+
+| volumeId *[FK]* →link:#entity-volume["體積"].id | Int64 | 是的 | iSCSI 邏輯路徑目標 Volume 的 GUID。 
+
+
+| numberOfSessions | Int32 | 是的 | 在 iSCSI 邏輯路徑中建立的工作階段數。 
+
+
+| numberOfConnections | Int32 | 是的 | iSCSI 邏輯路徑中建立的連線數。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 貯存 | link:#entity-storage["貯存"] | 一個 JOIN：storageId=link:#entity-storage["貯存"].id 
+
+
+| 體積 | link:#entity-volume["體積"] | 一個 JOIN：volumeId=link:#entity-volume["體積"].id 
+
+
+| 主持人 | link:#entity-host["主持人"] | 一個 JOIN：hostId=link:#entity-host["主持人"].id 
+|===
+
+
+[[k8scluster]]
+=== k8s_cluster
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：k8s_cluster
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | K8S 叢集的 ID 
+
+
+| 姓名 | 字串 | 是的 |  
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| k8s_namespace | link:#entity-k8s_namespace["k8s_namespace"] | 許多 
+
+
+| k8s_workload | link:#entity-k8s_workload["k8s_workload"] | 許多 
+
+
+| k8s_workload_to_pvc | link:#entity-k8s_workload_to_pvc["k8s_workload_to_pvc"] | 許多 
+
+
+| k8s_node | link:#entity-k8s_node["k8s_node"] | 許多 
+
+
+| k8s_pv | link:#entity-k8s_pv["k8s_pv"] | 許多 
+
+
+| k8s_pvc | link:#entity-k8s_pvc["k8s_pvc"] | 許多 
+|===
+
+
+[[k8slabel]]
+=== k8s_label
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：k8s_label
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| objectId *[PK]* | Int64 | 是的 | 物件的 GUID。 
+
+
+| objectType *[PK]* | 字串 | 是的 | 物件的類型。 
+
+
+| labelName *[PK]* | 字串 | 是的 | 標籤名稱。 
+
+
+| labelValue | 字串 | 是的 | 此物件的標籤值。 
+|===
+
+
+[[k8snamespace]]
+=== k8s_namespace
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：k8s_namespace
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | K8S 命名空間的 ID 
+
+
+| 識別符 | 字串 | 是的 | K8S 命名空間的識別符 
+
+
+| clusterId *[FK]* →link:#entity-k8s_cluster["k8s_cluster"].id | Int64 | 是的 | K8S 叢集的 ID 
+
+
+| 姓名 | 字串 | 是的 |  
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| k8s_cluster | link:#entity-k8s_cluster["k8s_cluster"] | 一個 JOIN：clusterId=link:#entity-k8s_cluster["k8s_cluster"].id 
+
+
+| k8s_workload | link:#entity-k8s_workload["k8s_workload"] | 許多 
+
+
+| k8s_workload_to_pvc | link:#entity-k8s_workload_to_pvc["k8s_workload_to_pvc"] | 許多 
+
+
+| k8s_pvc | link:#entity-k8s_pvc["k8s_pvc"] | 許多 
+|===
+
+
+[[k8snode]]
+=== k8s_node
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：k8s_node
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | K8S 節點的 ID 
+
+
+| 識別符 | 字串 | 是的 | K8S 節點的識別符 
+
+
+| clusterId *[FK]* →link:#entity-k8s_cluster["k8s_cluster"].id | Int64 | 是的 | K8S 叢集的 ID 
+
+
+| 姓名 | 字串 | 是的 | K8S 節點的名稱 
+
+
+| vmId *[FK]* →link:#entity-hv_virtual_machine["hv_virtual_machine"].id | Int64 | 是的 | 此節點所在虛擬機器的 ID 
+
+
+| internalIp | 字串 | 是的 | K8S 節點的內部 IP 
+
+
+| osImage | 字串 | 是的 | K8S 節點的作業系統映像 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| hv_virtual_machine | link:#entity-hv_virtual_machine["hv_virtual_machine"] | 一個 JOIN：vmId=link:#entity-hv_virtual_machine["hv_virtual_machine"].id 
+
+
+| k8s_cluster | link:#entity-k8s_cluster["k8s_cluster"] | 一個 JOIN：clusterId=link:#entity-k8s_cluster["k8s_cluster"].id 
+|===
+
+
+[[k8spv]]
+=== k8s_pv
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：k8s_pv
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | K8S 持久性 Volume 的 ID 
+
+
+| 識別符 | 字串 | 是的 | K8S 持久 Volume 的識別碼 
+
+
+| 姓名 | 字串 | 是的 | K8S 持久 Volume 的名稱 
+
+
+| objectId | Int64 | 是的 | 映射到此持久 Volume 的儲存設備物件的 ID 
+
+
+| objectType | 字串 | 是的 | 映射到此持久 Volume 的儲存設備物件類型 
+
+
+| clusterId *[FK]* →link:#entity-k8s_cluster["k8s_cluster"].id | Int64 | 是的 | K8S 叢集的 ID 
+
+
+| 階段 | 字串 | 是的 | K8S 持久 Volume 的階段（Bound 等） 
+
+
+| sizeBytes | Int64 | 是的 | K8S 持久 Volume 的大小（以位元組為單位） 
+
+
+| storageClass | 字串 | 是的 | K8S 持久性 Volume 的儲存類別 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| k8s_cluster | link:#entity-k8s_cluster["k8s_cluster"] | 一個 JOIN：clusterId=link:#entity-k8s_cluster["k8s_cluster"].id 
+
+
+| k8s_pvc | link:#entity-k8s_pvc["k8s_pvc"] | 許多 
+|===
+
+
+[[k8spvc]]
+=== k8s_pvc
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：k8s_pvc
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | K8S 持久性 Volume 聲明的 ID 
+
+
+| 識別符 | 字串 | 是的 | Kubernetes 持久 Volume 聲明的識別符 
+
+
+| 姓名 | 字串 | 是的 | Kubernetes 持久 Volume 請求的名稱 
+
+
+| pvId *[FK]* →link:#entity-k8s_pv["k8s_pv"].id | Int64 | 是的 | 與此聲明關聯的 K8S 持久 Volume 的識別碼 
+
+
+| clusterId *[FK]* →link:#entity-k8s_cluster["k8s_cluster"].id | Int64 | 是的 | K8S 叢集的 ID 
+
+
+| namespaceId *[FK]* →link:#entity-k8s_namespace["k8s_namespace"].id | Int64 | 是的 | K8S 命名空間的 ID 
+
+
+| 階段 | 字串 | 是的 | K8S 持續性 Volume 請求的階段（Bound 等） 
+
+
+| sizeBytes | Int64 | 是的 | K8S 持久 Volume 宣告的大小（以位元組為單位） 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| k8s_pv | link:#entity-k8s_pv["k8s_pv"] | 一個 JOIN：pvId=link:#entity-k8s_pv["k8s_pv"].id 
+
+
+| k8s_namespace | link:#entity-k8s_namespace["k8s_namespace"] | 一個 JOIN：namespaceId=link:#entity-k8s_namespace["k8s_namespace"].id 
+
+
+| k8s_cluster | link:#entity-k8s_cluster["k8s_cluster"] | 一個 JOIN：clusterId=link:#entity-k8s_cluster["k8s_cluster"].id 
+
+
+| k8s_workload_to_pvc | link:#entity-k8s_workload_to_pvc["k8s_workload_to_pvc"] | 許多 
+|===
+
+
+[[k8sworkload]]
+=== k8s_workload
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：k8s_workload
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | K8S 工作負載的 ID 
+
+
+| 識別符 | 字串 | 是的 | K8S 工作負載的識別符 
+
+
+| 姓名 | 字串 | 是的 | K8S 工作負載的名稱 
+
+
+| namespaceId *[FK]* →link:#entity-k8s_namespace["k8s_namespace"].id | Int64 | 是的 | K8S 命名空間的 ID 
+
+
+| clusterId *[FK]* →link:#entity-k8s_cluster["k8s_cluster"].id | Int64 | 是的 | K8S 叢集的 ID 
+
+
+| 類型 | 字串 | 是的 | 工作負載類型（Pod、StatefulSet 等） 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| k8s_namespace | link:#entity-k8s_namespace["k8s_namespace"] | 一個 JOIN：namespaceId=link:#entity-k8s_namespace["k8s_namespace"].id 
+
+
+| k8s_cluster | link:#entity-k8s_cluster["k8s_cluster"] | 一個 JOIN：clusterId=link:#entity-k8s_cluster["k8s_cluster"].id 
+
+
+| k8s_workload_to_pvc | link:#entity-k8s_workload_to_pvc["k8s_workload_to_pvc"] | 許多 
+|===
+
+
+[[k8sworkloadtopvc]]
+=== k8s_workload_to_pvc
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：k8s_workload_to_pvc
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| workloadId *[PK]* | Int64 | 是的 | K8S 工作負載的識別符 
+
+
+| pvcId *[PK]* | Int64 | 是的 | K8S 持久 Volume 的識別碼 
+
+
+| clusterId *[FK]* →link:#entity-k8s_cluster["k8s_cluster"].id | Int64 | 是的 | K8S 叢集的 ID 
+
+
+| namespaceId *[FK]* →link:#entity-k8s_namespace["k8s_namespace"].id | Int64 | 是的 | K8S 命名空間的 ID 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| k8s_workload | link:#entity-k8s_workload["k8s_workload"] | 一個 JOIN：workloadId=link:#entity-k8s_workload["k8s_workload"].id 
+
+
+| k8s_pvc | link:#entity-k8s_pvc["k8s_pvc"] | 一個 JOIN：pvcId=link:#entity-k8s_pvc["k8s_pvc"].id 
+
+
+| k8s_namespace | link:#entity-k8s_namespace["k8s_namespace"] | 一個 JOIN：namespaceId=link:#entity-k8s_namespace["k8s_namespace"].id 
+
+
+| k8s_cluster | link:#entity-k8s_cluster["k8s_cluster"] | 一個 JOIN：clusterId=link:#entity-k8s_cluster["k8s_cluster"].id 
+|===
+
+
+[[logical]]
+=== 邏輯
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：邏輯
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 邏輯路徑的 GUID。 
+
+
+| hostId *[FK]* →link:#entity-host["主持人"].id | Int64 | 是的 | 邏輯路徑的啟動器主機的 GUID - 對於來自通用裝置的路徑，設定為 null。 
+
+
+| genericDeviceId *[FK]* →link:#entity-generic_device["一般裝置"].id | Int64 | 是的 | 邏輯路徑啟動器的通用裝置 GUID——對於來自主機的路徑，此值設定為 null。 
+
+
+| storageId *[FK]* →link:#entity-storage["貯存"].id | Int64 | 是的 | 邏輯路徑目標儲存設備的 GUID - 對於磁帶路徑，設定為 null。 
+
+
+| tapeId *[FK]* →link:#entity-tape["磁帶"].id | Int64 | 是的 | 邏輯路徑的目標磁帶的 GUID - 對於儲存陣列的路徑，設定為 null。 
+
+
+| volumeId *[FK]* →link:#entity-volume["體積"].id | Int64 | 是的 | 邏輯路徑目標 Volume 的 GUID - 對於磁帶路徑，設定為 null。 
+
+
+| minHopNumber | Int32 | 是的 | 邏輯路徑上的最小交換器跳數。 
+
+
+| hopsToDisplay | 字串 | 是的 | 以逗號分隔的交換器躍點數列表，對應於此邏輯路徑的不同底層路徑。 
+
+
+| numberOfFabrics | Int32 | 是的 | 邏輯路徑所使用的 Fabric 數量。 
+
+
+| numberOfHostPorts | Int32 | 是的 | 邏輯路徑使用的主機連接埠數。 
+
+
+| numberOfStoragePorts | Int32 | 是的 | 邏輯路徑使用的儲存設備埠數。 
+
+
+| spf | 位元組 | 是的 | 指示邏輯路徑是否存在單點故障。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 貯存 | link:#entity-storage["貯存"] | 一個 JOIN：storageId=link:#entity-storage["貯存"].id 
+
+
+| 體積 | link:#entity-volume["體積"] | 一個 JOIN：volumeId=link:#entity-volume["體積"].id 
+
+
+| 磁帶 | link:#entity-tape["磁帶"] | 一個 JOIN：tapeId=link:#entity-tape["磁帶"].id 
+
+
+| 主持人 | link:#entity-host["主持人"] | 一個 JOIN：hostId=link:#entity-host["主持人"].id 
+
+
+| 一般裝置 | link:#entity-generic_device["一般裝置"] | 一個 JOIN：genericDeviceId=link:#entity-generic_device["一般裝置"].id 
+|===
+
+
+[[nascrlogical]]
+=== nas_cr_logical
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：nas_cr_logical
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | NAS 邏輯路徑的 GUID。 
+
+
+| computeResourceId *[FK]* →link:#entity-compute_resource["運算資源"].id | Int64 | 是的 | 存取檔案共享的主機的 GUID。 
+
+
+| storageId *[FK]* →link:#entity-storage["貯存"].id | Int64 | 是的 | 正在存取的儲存陣列（檔案管理器）的 GUID。 
+
+
+| internalVolumeId *[FK]* →link:#entity-internal_volume["內部卷"].id | Int64 | 是的 | 正在存取的內部 Volume 的 GUID。 
+
+
+| shareId *[FK]* →link:#entity-nas_share["nas_share"].id | Int64 | 是的 | 正在存取的共享的 GUID。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 貯存 | link:#entity-storage["貯存"] | 一個 JOIN：storageId=link:#entity-storage["貯存"].id 
+
+
+| 運算資源 | link:#entity-compute_resource["運算資源"] | 一個 JOIN：computeResourceId=link:#entity-compute_resource["運算資源"].id 
+
+
+| 內部卷 | link:#entity-internal_volume["內部卷"] | 一個 JOIN：internalVolumeId=link:#entity-internal_volume["內部卷"].id 
+
+
+| nas_share | link:#entity-nas_share["nas_share"] | 一個 JOIN：shareId=link:#entity-nas_share["nas_share"].id 
+|===
+
+
+[[nasfileshare]]
+=== nas_file_share
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：nas_file_share
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 檔案共享的 GUID。 
+
+
+| internalVolumeId *[FK]* →link:#entity-internal_volume["內部卷"].id | Int64 | 是的 | 定義此檔案共享的內部 Volume 的 GUID。 
+
+
+| storageId *[FK]* →link:#entity-storage["貯存"].id | Int64 | 是的 | 定義此共享的儲存陣列（檔案管理器）的 GUID。 
+
+
+| qtreeId *[FK]* →link:#entity-qtree["配額樹"].id | Int64 | 是的 | 定義此檔案共享的 qtree 的 GUID。 
+
+
+| 姓名 | 字串 | 是的 | 檔案共享名稱。 
+
+
+| 路徑 | 字串 | 是的 | 內部 Volume 中要共享的資料夾的完整路徑，以共享名稱結尾。 
+
+
+| 狀態 | 字串 | 是的 | 檔案共享的狀態（snapvaulted、snapmirrored、normal 或 readonly）。 
+
+
+| securityType | 字串 | 是的 | 檔案共享的安全類型（unix、ntfs 或 mixed）。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 貯存 | link:#entity-storage["貯存"] | 一個 JOIN：storageId=link:#entity-storage["貯存"].id 
+
+
+| 內部卷 | link:#entity-internal_volume["內部卷"] | 一個 JOIN：internalVolumeId=link:#entity-internal_volume["內部卷"].id 
+
+
+| 配額樹 | link:#entity-qtree["配額樹"] | 一個 JOIN：qtreeId=link:#entity-qtree["配額樹"].id 
+
+
+| nas_share | link:#entity-nas_share["nas_share"] | 許多 
+|===
+
+
+[[naslogical]]
+=== nas_logical
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：nas_logical
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id | Int64 | 是的 | NAS 邏輯路徑的 GUID。 
+
+
+| hostId | Int64 | 是的 | 主機 ID。 
+
+
+| storageId | Int64 | 是的 | 正在存取的儲存陣列（檔案管理器）的 GUID。 
+
+
+| shareId | Int64 | 是的 | 正在存取的共享的 GUID。 
+|===
+
+
+[[nasshare]]
+=== nas_share
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：nas_share
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 共享的 GUID。 
+
+
+| fileShareId *[FK]* →link:#entity-nas_file_share["nas_file_share"].id | Int64 | 是的 | 此共享關聯的檔案共享的 GUID。 
+
+
+| storageId *[FK]* →link:#entity-storage["貯存"].id | Int64 | 是的 | 定義此共享的儲存陣列（檔案管理器）的 GUID。 
+
+
+| 識別符 | 字串 | 是的 | 儲存設備中共享的識別碼。 
+
+
+| 姓名 | 字串 | 是的 | 共享名稱。 
+
+
+| 通訊協定 | 字串 | 是的 | 用於存取共享的協議，可以是：CIFS 或 NFS 之一。 
+
+
+| ipInterfaces | 字串 | 是的 | 共享所在儲存設備的所有 IP 位址。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 貯存 | link:#entity-storage["貯存"] | 一個 JOIN：storageId=link:#entity-storage["貯存"].id 
+
+
+| nas_file_share | link:#entity-nas_file_share["nas_file_share"] | 一個 JOIN：fileShareId=link:#entity-nas_file_share["nas_file_share"].id 
+
+
+| 共享到應用程式 | link:#entity-share_to_application["共享到應用程式"] | 許多 
+
+
+| nas_share_initiator | link:#entity-nas_share_initiator["nas_share_initiator"] | 許多 
+
+
+| hv_nas_share_to_share | link:#entity-hv_nas_share_to_share["hv_nas_share_to_share"] | 許多 
+
+
+| nas_cr_logical | link:#entity-nas_cr_logical["nas_cr_logical"] | 許多 
+|===
+
+
+[[nasshareinitiator]]
+=== nas_share_initiator
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：nas_share_initiator
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 共享啟動器的 GUID。 
+
+
+| shareId *[FK]* →link:#entity-nas_share["nas_share"].id | Int64 | 是的 | 與此 share_initiator 關聯的共享的 GUID。 
+
+
+| storageId *[FK]* →link:#entity-storage["貯存"].id | Int64 | 是的 | 定義此共享的儲存陣列（檔案管理器）的 GUID。 
+
+
+| 啟動器 | 字串 | 是的 | 允許存取共享的主機的 IP 位址或名稱子網路。 
+
+
+| 權限 | 字串 | 是的 | 讀取/寫入/執行，並命名。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 貯存 | link:#entity-storage["貯存"] | 一個 JOIN：storageId=link:#entity-storage["貯存"].id 
+
+
+| nas_share | link:#entity-nas_share["nas_share"] | 一個 JOIN：shareId=link:#entity-nas_share["nas_share"].id 
+|===
+
+
+[[objecttoannotation]]
+=== object_to_annotation
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集合：object_to_annotation
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| annotationValueId *[PK]* | Int64 | 是的 | 註解值的 GUID。 
+
+
+| objectId *[PK]* | Int64 | 是的 | 被註釋物件的 GUID。 
+
+
+| objectType *[PK]* | 字串 | 是的 | 已標註物件的類型。 
+
+
+| annotationType | 字串 | 是的 | 註解類型。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 註釋值 | link:#entity-annotation_value["註釋值"] | 一個 JOIN：annotationValueId=link:#entity-annotation_value["註釋值"].id 
+|===
+
+
+[[physicalpath]]
+=== physical_path
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：physical_path
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 實體路徑的 GUID。 
+
+
+| hostId *[FK]* →link:#entity-host["主持人"].id | Int64 | 是的 | 發起實體路徑的主機的 GUID。如果路徑來自通用設備，則此值為空。 
+
+
+| genericDeviceId *[FK]* →link:#entity-generic_device["一般裝置"].id | Int64 | 是的 | 發起實體路徑的通用設備的 GUID。如果路徑來自主機，則該值為空。 
+
+
+| storageId *[FK]* →link:#entity-storage["貯存"].id | Int64 | 是的 | 實體路徑目標儲存設備的 GUID。對於磁帶路徑，該值為空。 
+
+
+| tapeId *[FK]* →link:#entity-tape["磁帶"].id | Int64 | 是的 | 實體路徑目標磁帶的 GUID。對於通往儲存設備的路徑，該值為空。 
+
+
+| volumeId *[FK]* →link:#entity-volume["體積"].id | Int64 | 是的 | 物理路徑目標 Volume 的 GUID。 
+
+
+| hostPortWwn | 字串 | 是的 | 主機連接埠的 WWN。 
+
+
+| storagePortWwn | 字串 | 是的 | 儲存設備連接埠的WWN。 
+
+
+| LUN | 字串 | 是的 | 主機用於存取 Volume 的邏輯單元號碼 (LUN)。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 貯存 | link:#entity-storage["貯存"] | 一個 JOIN：storageId=link:#entity-storage["貯存"].id 
+
+
+| 體積 | link:#entity-volume["體積"] | 一個 JOIN：volumeId=link:#entity-volume["體積"].id 
+
+
+| 磁帶 | link:#entity-tape["磁帶"] | 一個 JOIN：tapeId=link:#entity-tape["磁帶"].id 
+
+
+| 主持人 | link:#entity-host["主持人"] | 一個 JOIN：hostId=link:#entity-host["主持人"].id 
+
+
+| 一般裝置 | link:#entity-generic_device["一般裝置"] | 一個 JOIN：genericDeviceId=link:#entity-generic_device["一般裝置"].id 
+|===
+
+
+[[portconnectivity]]
+=== 連接埠連接
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：port_connectivity
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 連接埠連接的 GUID。 
+
+
+| portId | Int64 | 是的 | 第一個連接埠的 GUID。 
+
+
+| 類型 | 字串 | 是的 | 第一個連接埠的類型。 
+
+
+| wwn | 字串 | 是的 | 第一個連接埠的 WWN。 
+
+
+| connectedId | Int64 | 是的 | 第二個連接埠的 GUID。 
+
+
+| connectedType | 字串 | 是的 | 第二個連接埠的類型。 
+
+
+| connectedWwn | 字串 | 是的 | 第二個連接埠的 WWN。 
+|===
+
+
+[[qtree]]
+=== 配額樹
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集合：qtree
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | qtree 的 GUID。 
+
+
+| internalVolumeId *[FK]* →link:#entity-internal_volume["內部卷"].id | Int64 | 是的 | qtree 所在的內部 Volume 的 GUID。 
+
+
+| storageId *[FK]* →link:#entity-storage["貯存"].id | Int64 | 是的 | 儲存陣列（檔案管理器）的 GUID。 
+
+
+| 識別符 | 字串 | 是的 | 儲存設備中 qtree 的唯一識別碼。 
+
+
+| 姓名 | 字串 | 是的 | qtree 的名稱。 
+
+
+| quotaHardCapacityLimitMB | Int64 | 是的 | 配額對此 qtree 所設定的磁碟空間限制。超出限制後，將無法寫入資料。 
+
+
+| quotaSoftCapacityLimitMB | Int64 | 是的 | 配額對此 qtree 所設定的磁碟空間限制。超出限制時，系統會發出警告，但仍可寫入資料。 
+
+
+| quotaUsedCapacityMB | Int64 | 是的 | 已使用的容量，用於配額中設定的硬性容量限制和軟性容量限制。 
+
+
+| 類型 | 字串 | 是的 | qtree 的類型。 
+
+
+| securityStyle | 字串 | 是的 | qtree 的安全風格。 
+
+
+| 狀態 | 字串 | 是的 | qtree 的狀態。 
+
+
+| oplocks | 字串 | 是的 | qtree 上是否啟用了 oplocks。 
+
+
+| url | 字串 | 是的 | Insight Server 中此 qtree 的 URL。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 貯存 | link:#entity-storage["貯存"] | 一個 JOIN：storageId=link:#entity-storage["貯存"].id 
+
+
+| 內部卷 | link:#entity-internal_volume["內部卷"] | 一個 JOIN：internalVolumeId=link:#entity-internal_volume["內部卷"].id 
+
+
+| 體積 | link:#entity-volume["體積"] | 許多 
+
+
+| nas_file_share | link:#entity-nas_file_share["nas_file_share"] | 許多 
+
+
+| hv_data_store_to_internal_volume | link:#entity-hv_data_store_to_internal_volume["hv_data_store_to_internal_volume"] | 許多 
+
+
+| dr_qtree_replica | link:#entity-dr_qtree_replica["dr_qtree_replica"] | 許多 
+
+
+| 配額 | link:#entity-quota["配額"] | 許多 
+
+
+| hv_virtual_disk_to_volume | link:#entity-hv_virtual_disk_to_volume["hv_virtual_disk_to_volume"] | 許多 
+
+
+| qtree_to_application | link:#entity-qtree_to_application["qtree_to_application"] | 許多 
+
+
+| hv_data_store_to_volume | link:#entity-hv_data_store_to_volume["hv_data_store_to_volume"] | 許多 
+|===
+
+
+[[qtreetoapplication]]
+=== qtree_to_application
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：qtree_to_application
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | qtree 與應用程式之間關係的 GUID。 
+
+
+| applicationId *[FK]* →link:#entity-application["應用程式"].id | Int64 | 是的 | 應用程式的 GUID。 
+
+
+| qtreeId *[FK]* →link:#entity-qtree["配額樹"].id | Int64 | 是的 | qtree 的 GUID。 
+
+
+| 繼承 | 字串 | 是的 | 此應用程式為繼承而來。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 應用程式 | link:#entity-application["應用程式"] | 一個 JOIN：applicationId=link:#entity-application["應用程式"].id 
+
+
+| 配額樹 | link:#entity-qtree["配額樹"] | 一個 JOIN：qtreeId=link:#entity-qtree["配額樹"].id 
+|===
+
+
+[[quota]]
+=== 配額
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：配額
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 配額的 GUID。 
+
+
+| internalVolumeId *[FK]* →link:#entity-internal_volume["內部卷"].id | Int64 | 是的 | 定義此配額的內部 Volume 的 GUID。 
+
+
+| storageId *[FK]* →link:#entity-storage["貯存"].id | Int64 | 是的 | 定義此配額的儲存陣列（檔案管理器）的 GUID。 
+
+
+| qtreeId *[FK]* →link:#entity-qtree["配額樹"].id | Int64 | 是的 | 定義此配額的 qtree 的 GUID。 
+
+
+| 識別符 | 字串 | 是的 | 配額的唯一識別碼。 
+
+
+| targetUser | 字串 | 是的 | 指定此配額適用的群組或使用者。 
+
+
+| 類型 | 字串 | 是的 | 指定此配額適用的目標類型（樹、群組或使用者）。 
+
+
+| hardFileLimit | Int64 | 是的 | 此配額對樹狀目錄、群組或使用者的檔案數量所施加的硬性限制。 
+
+
+| softFileLimit | Int64 | 是的 | 軟配額檔案限制，如果超出限制，則發出警告，而不是拒絕檔案建立請求。 
+
+
+| hardCapacityLimitMB | Int64 | 是的 | 此配額對樹狀結構、群組、使用者或類型所施加的硬碟磁碟空間限制（以 MB 為單位）。 
+
+
+| softCapacityLimitMB | Int64 | 是的 | 軟配額空間限制（以 MB 為單位），如果超過該限制，系統會發出警告而不是拒絕空間請求。 
+
+
+| thresholdMB | Int64 | 是的 | 磁碟空間使用量達到此點時（以 MB 為單位），系統會發出配額限制即將達到的警告。 
+
+
+| usedFiles | Int64 | 是的 | 此配額目標目前使用的檔案數。 
+
+
+| 已用容量 MB | Int64 | 是的 | 此配額目標目前使用的磁碟空間（以 MB 為單位）。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 貯存 | link:#entity-storage["貯存"] | 一個 JOIN：storageId=link:#entity-storage["貯存"].id 
+
+
+| 內部卷 | link:#entity-internal_volume["內部卷"] | 一個 JOIN：internalVolumeId=link:#entity-internal_volume["內部卷"].id 
+
+
+| 配額樹 | link:#entity-qtree["配額樹"] | 一個 JOIN：qtreeId=link:#entity-qtree["配額樹"].id 
+|===
+
+
+[[servicelevel]]
+=== 服務層級
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：service_level
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id | Int64 | 是的 | 註釋的 GUID。 
+
+
+| 姓名 | 字串 | 是的 | 註解的值。 
+
+
+| 順序 | Int32 | 是的 | 序號用於確定列舉值的順序。主要用於顯示目的。 
+
+
+| 成本 | 雙倍的 | 是的 | 與註解相關的選用成本。適用於 Tier 註解。 
+|===
+
+
+[[sharetoapplication]]
+=== 共享到應用程式
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：share_to_application
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 共享與應用程式之間關係的 GUID。 
+
+
+| applicationId *[FK]* →link:#entity-application["應用程式"].id | Int64 | 是的 | 應用程式的 GUID。 
+
+
+| shareId *[FK]* →link:#entity-nas_share["nas_share"].id | Int64 | 是的 | 共享的 GUID。 
+
+
+| 繼承 | 字串 | 是的 | 此應用程式為繼承而來。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 應用程式 | link:#entity-application["應用程式"] | 一個 JOIN：applicationId=link:#entity-application["應用程式"].id 
+
+
+| nas_share | link:#entity-nas_share["nas_share"] | 一個 JOIN：shareId=link:#entity-nas_share["nas_share"].id 
+|===
+
+
+[[storage]]
+=== 貯存
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：儲存設備
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 儲存陣列的 GUID。 
+
+
+| 姓名 | 字串 | 是的 | 儲存陣列的名稱。 
+
+
+| 識別符 | 字串 | 是的 | 設備識別符。 
+
+
+| ip | 字串 | 是的 | 儲存陣列的 IP 位址。 
+
+
+| 模型 | 字串 | 是的 | 儲存陣列的型號。 
+
+
+| 製造商 | 字串 | 是的 | 儲存陣列製造商。 
+
+
+| serialNumber | 字串 | 是的 | 儲存陣列的序號。 
+
+
+| microcodeVersion | 字串 | 是的 | 儲存陣列上執行的韌體版本。 
+
+
+| 原始容量 MB | Int64 | 是的 | 儲存陣列的實際原始磁碟容量（單位：MB）。 
+
+
+| 備用原始容量 MB | Int64 | 是的 | 儲存陣列中所有備用磁碟原始容量的總和（單位：MB）。 
+
+
+| 失敗原始容量 MB | Int64 | 是的 | 儲存陣列中所有故障原始容量的總和（單位：MB）。 
+
+
+| memoryMB | Int64 | 是的 | 陣列（檔案管理器）中安裝的記憶體容量大小，以 MB 為單位。 
+
+
+| cpuCount | Int32 | 是的 | 陣列（檔案管理器）中安裝的 CPU 數量。 
+
+
+| manageURL | 字串 | 是的 | 裝置管理軟體的 URL。 
+
+
+| 家庭 | 字串 | 是的 | 儲存設備系列名稱，如 Clariion、Symmetrix 等。 
+
+
+| isVirtual | 字串 | 是的 | 判斷陣列是否為虛擬化器。 
+
+
+| 叢集 | 字串 | 是的 | 判斷陣列是否為 NetApp C-Mode 叢集。 
+
+
+| url | 字串 | 是的 | Insight Server 中此儲存設備的 URL。 
+
+
+| lastAcquiredTime | DateTimeOffset | 是的 | 指定最後獲取的時間。 
+
+
+| 作用中 | 字串 | 是的 | 指示儲存陣列目前是否作用中。 
+
+
+| dataCenter | 字串 | 是的 | # dataCenter 分配給儲存設備的註釋值 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| dr_internal_volume_replica | link:#entity-dr_internal_volume_replica["dr_internal_volume_replica"] | 許多 
+
+
+| nas_share | link:#entity-nas_share["nas_share"] | 許多 
+
+
+| 儲存控制器 | link:#entity-storage_controller["儲存控制器"] | 許多 
+
+
+| nas_share_initiator | link:#entity-nas_share_initiator["nas_share_initiator"] | 許多 
+
+
+| nas_cr_logical | link:#entity-nas_cr_logical["nas_cr_logical"] | 許多 
+
+
+| 未知邏輯 | link:#entity-unknown_logical["未知邏輯"] | 許多 
+
+
+| volume_map | link:#entity-volume_map["volume_map"] | 許多 
+
+
+| file_system_to_volume | link:#entity-file_system_to_volume["file_system_to_volume"] | 許多 
+
+
+| 叢集交換器連接埠 | link:#entity-cluster_switch_port["叢集交換器連接埠"] | 許多 
+
+
+| backend_lun_to_volume | link:#entity-backend_lun_to_volume["backend_lun_to_volume"] | 許多 
+
+
+| 配額 | link:#entity-quota["配額"] | 許多 
+
+
+| iscsi_logical | link:#entity-iscsi_logical["iscsi_logical"] | 許多 
+
+
+| hv_lun_to_volume | link:#entity-hv_lun_to_volume["hv_lun_to_volume"] | 許多 
+
+
+| 儲存池 | link:#entity-storage_pool["儲存池"] | 許多 
+
+
+| hv_nas_share_to_share | link:#entity-hv_nas_share_to_share["hv_nas_share_to_share"] | 許多 
+
+
+| hv_data_store_to_volume | link:#entity-hv_data_store_to_volume["hv_data_store_to_volume"] | 許多 
+
+
+| 配額樹 | link:#entity-qtree["配額樹"] | 許多 
+
+
+| dr_qtree_replica | link:#entity-dr_qtree_replica["dr_qtree_replica"] | 許多 
+
+
+| cluster_switch | link:#entity-cluster_switch["cluster_switch"] | 許多 
+
+
+| volume_mask | link:#entity-volume_mask["volume_mask"] | 許多 
+
+
+| auto_tiering_policy | link:#entity-auto_tiering_policy["auto_tiering_policy"] | 許多 
+
+
+| auto_tiering_policy_constraint | link:#entity-auto_tiering_policy_constraint["auto_tiering_policy_constraint"] | 許多 
+
+
+| dr_volume_replica | link:#entity-dr_volume_replica["dr_volume_replica"] | 許多 
+
+
+| hv_virtual_disk_to_volume | link:#entity-hv_virtual_disk_to_volume["hv_virtual_disk_to_volume"] | 許多 
+
+
+| 邏輯 | link:#entity-logical["邏輯"] | 許多 
+
+
+| 體積 | link:#entity-volume["體積"] | 許多 
+
+
+| backend_path | link:#entity-backend_path["backend_path"] | 許多 
+
+
+| 磁碟 | link:#entity-disk["磁碟"] | 許多 
+
+
+| 內部卷 | link:#entity-internal_volume["內部卷"] | 許多 
+
+
+| nas_file_share | link:#entity-nas_file_share["nas_file_share"] | 許多 
+
+
+| hv_data_store_to_internal_volume | link:#entity-hv_data_store_to_internal_volume["hv_data_store_to_internal_volume"] | 許多 
+
+
+| 儲存到應用程式 | link:#entity-storage_to_application["儲存到應用程式"] | 許多 
+
+
+| backend_lun | link:#entity-backend_lun["backend_lun"] | 許多 
+
+
+| 違反 | link:#entity-violation["違反"] | 許多 
+
+
+| 儲存連接埠 | link:#entity-storage_port["儲存連接埠"] | 許多 
+
+
+| physical_path | link:#entity-physical_path["physical_path"] | 許多 
+
+
+| 磁碟組 | link:#entity-disk_group["磁碟組"] | 許多 
+
+
+| 儲存設備節點 | link:#entity-storage_node["儲存設備節點"] | 許多 
+|===
+
+
+[[storagecontroller]]
+=== 儲存控制器
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：storage_controller
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 儲存控制器的 GUID。 
+
+
+| storageId *[FK]* →link:#entity-storage["貯存"].id | Int64 | 是的 | 此控制器所在儲存設備的 GUID。 
+
+
+| wwn | 字串 | 是的 | 儲存控制器的 WWN （節點 wwn）。 
+
+
+| 模型 | 字串 | 是的 | 儲存控制器的型號。 
+
+
+| 製造商 | 字串 | 是的 | 儲存控制器製造商。 
+
+
+| 驅動程式 | 字串 | 是的 | 管理對儲存控制器存取的驅動程式名稱。 
+
+
+| 韌體 | 字串 | 是的 | 儲存控制器上執行的韌體版本。 
+
+
+| numberOfPorts | 字串 | 是的 | 儲存控制器上的連接埠數量。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 貯存 | link:#entity-storage["貯存"] | 一個 JOIN：storageId=link:#entity-storage["貯存"].id 
+
+
+| 儲存連接埠 | link:#entity-storage_port["儲存連接埠"] | 許多 
+|===
+
+
+[[storagenode]]
+=== 儲存設備節點
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：storage_node
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 儲存節點的 GUID 
+
+
+| storageId *[FK]* →link:#entity-storage["貯存"].id | Int64 | 是的 | 儲存陣列（檔案管理器）的 GUID。 
+
+
+| 姓名 | 字串 | 是的 | 儲存節點的名稱。 
+
+
+| 識別符 | 字串 | 是的 | 儲存節點的 UUID。 
+
+
+| 版本 | 字串 | 是的 | 儲存節點的版本。 
+
+
+| 模型 | 字串 | 是的 | 儲存節點的模型。 
+
+
+| serialNumber | 字串 | 是的 | serialNumber 儲存節點的序號。 
+
+
+| 狀態 | 字串 | 是的 | 儲存節點的狀態。 
+
+
+| partnerNodeId | Int64 | 是的 | 合作夥伴節點的 GUID。 
+
+
+| memorySizeMB | Int64 | 是的 | 該儲存節點的記憶體容量大小。 
+
+
+| cacheSizeMB | Int64 | 是的 | 此儲存節點的快取大小。 
+
+
+| numberOfProcessors | Int32 | 是的 | 此儲存節點的處理器數量 
+
+
+| url | 字串 | 是的 | Insight Server 中此儲存節點的 URL。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 貯存 | link:#entity-storage["貯存"] | 一個 JOIN：storageId=link:#entity-storage["貯存"].id 
+
+
+| 叢集交換器連接埠 | link:#entity-cluster_switch_port["叢集交換器連接埠"] | 許多 
+|===
+
+
+[[storagenodetointernalvolume]]
+=== 儲存節點至內部 Volume
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集（s）：storage_node_to_internal_volume
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| storageId | Int64 | 是的 | 儲存陣列的 GUID。 
+
+
+| storageNodeId | Int64 | 是的 | 儲存節點的 GUID。 
+
+
+| internalVolumeId | Int64 | 是的 | 內部 Volume 的 GUID。 
+|===
+
+
+[[storagenodetoport]]
+=== storage_node_to_port
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：storage_node_to_port
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| storageId | Int64 | 是的 | 儲存陣列的 GUID。 
+
+
+| storageNodeId | Int64 | 是的 | 儲存節點的 GUID。 
+
+
+| portId | Int64 | 是的 | 連接埠的 GUID。 
+|===
+
+
+[[storagenodetostoragepool]]
+=== 儲存節點到儲存資源池
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：storage_node_to_storage_pool
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| storageId | Int64 | 是的 | 儲存陣列的 GUID。 
+
+
+| storageNodeId | Int64 | 是的 | 儲存節點的 GUID。 
+
+
+| storagePoolId | Int64 | 是的 | 儲存資源池的 GUID。 
+|===
+
+
+[[storagenodetovolume]]
+=== 儲存節點到 Volume
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：storage_node_to_volume
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| storageId | Int64 | 是的 | 儲存陣列的 GUID。 
+
+
+| storageNodeId | Int64 | 是的 | 儲存節點的 GUID。 
+
+
+| volumeId | Int64 | 是的 | Volume 的 GUID。 
+|===
+
+
+[[storagepool]]
+=== 儲存池
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：儲存資源池
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 儲存資源池的 GUID。 
+
+
+| storageId *[FK]* →link:#entity-storage["貯存"].id | Int64 | 是的 | 儲存陣列（檔案管理器）的 GUID。 
+
+
+| 識別符 | 字串 | 是的 | 設備識別符。 
+
+
+| 類型 | 字串 | 是的 | 儲存資源池所描述的現實實體類型。 
+
+
+| 姓名 | 字串 | 是的 | 儲存資源池的名稱。 
+
+
+| thinProvisioningSupported | 字串 | 是的 | 此儲存資源池是否支援對其上的 Volume 階層進行資源隨需配置。預設值為 false。 
+
+
+| includeInDwhCapacity | 字串 | 是的 | 確定儲存資源池是否會出現在容量資料集市的儲存資源池維度中。預設值為 false。 
+
+
+| isVirtual | 字串 | 是的 | 表示儲存資源池由後端 LUN 組成。 
+
+
+| raidGroup | 字串 | 是的 | 指示儲存資源池是否為 raidGroup。 
+
+
+| vendorTier | 字串 | 是的 | 廠商特定的分層名稱。 
+
+
+| autoTiering | 字串 | 是的 | 指明此儲存資源池是否與其他儲存資源池進行自動分層。 
+
+
+| usesFlashPools | 字串 | 是的 | 指示此儲存資源池是否使用快閃記憶體池。 
+
+
+| 備援 | 字串 | 是的 | 儲存資源池的備援層級。 
+
+
+| 狀態 | 字串 | 是的 | 儲存資源池的狀態（例如離線、線上……）。 
+
+
+| snapshotAllocatedCapacityMB | Int64 | 是的 | 儲存資源池層級 Snapshot 快照技術所配置的容量（以 MB 為單位）。 
+
+
+| 快照已用容量 MB | Int64 | 是的 | 用於儲存資源池層級 Snapshot 快照技術的容量（以 MB 為單位）。 
+
+
+| dataAllocatedCapacityMB | Int64 | 是的 | 儲存陣列報告的儲存資源池分配容量（以 MB 為單位）。不包括為儲存資源池層級 Snapshot 快照技術指派的容量。 
+
+
+| 已用資料容量 MB | Int64 | 是的 | 儲存陣列報告的儲存資源池已使用容量（以 MB 為單位）。不包含儲存資源池層級 Snapshot 快照技術所使用的容量。 
+
+
+| totalAllocatedCapacityMB | Int64 | 是的 | 儲存陣列報告的儲存資源池已分配容量（以 MB 為單位）。包含為儲存資源池層級 Snapshot 快照技術指派的容量。<br>等於：snapshotAllocatedCapacityMB + dataAllocatedCapacityMB + otherAllocatedCapacityMB 
+
+
+| totalUsedCapacityMB | Int64 | 是的 | 儲存陣列報告的儲存資源池已使用容量（以 MB 為單位）。包含儲存資源池層級 Snapshot 快照技術所使用的容量。<br>等於：snapshotUsedCapacityMB + dataUsedCapacityMB + otherUsedCapacityMB 
+
+
+| rawToUsableRatio | 雙倍的 | 是的 | 儲存資源池中磁碟原始容量與可用容量的比率。受 RAID 層級和其他例行成本的影響。 
+
+
+| reservedCapacityMB | Int64 | 是的 | 未使用的儲存資源池容量，以 MB 為單位，預留給 Volume 使用。此容量包含在 dataAllocatedCapacityMB 容量中。 
+
+
+| otherUsedCapacityMB | Int64 | 是的 | 儲存資源池中未包含在資料/Snapshot 快照技術已使用容量中的額外例行成本。totalUsedCapacityMB = dataUsedCapacityMB + snapShotUsedCapacityMB + otherUsedCapacityMB。 
+
+
+| otherAllocatedCapacityMB | Int64 | 是的 | 儲存資源池的資料/Snapshot 快照技術已分配容量中未包含的額外例行成本。totalAllocatedCapacityMB = dataAllocatedCapacityMB + snapShotAllocatedCapacityMB + otherAllocatedCapacityMB。 
+
+
+| 實體磁碟容量 MB | Int64 | 是的 | 如果儲存資源池同時具有後端 LUN 和磁碟，則實體磁碟容量以 MB 為單位。 
+
+
+| softLimitCapacityMB | Int64 | 是的 | 資源隨需配置的容量限制（以 MB 為單位）。 
+
+
+| dedupeEnabled | 字串 | 是的 | 儲存資源池是否啟用了重複資料刪除功能。 
+
+
+| compressionEnabled | 字串 | 是的 | 儲存資源池是否已啟用壓縮。 
+
+
+| compactionEnabled | 字串 | 是的 | 儲存資源池是否啟用了資料精簡。 
+
+
+| dedupeRatio | 雙倍的 | 是的 | 重複資料刪除節省比率。取值範圍為 0 到 1。 
+
+
+| 重複資料刪除節省空間 GB | Int64 | 是的 | 此儲存資源池的重複資料刪除量（以 GB 為單位）。 
+
+
+| compressionRatio | 雙倍的 | 是的 | 壓縮節省比率。數值介於 0 和 1 之間。 
+
+
+| 壓縮節省 GB | Int64 | 是的 | 此儲存資源池的壓縮（以 GB 為單位）。 
+
+
+| compressionSavingsPercent | 雙倍的 | 是的 | 此儲存資源池的壓縮（%）。 
+
+
+| 壓縮節省空間 GB | Int64 | 是的 | 此儲存資源池的資料精簡（以 GB 為單位）。 
+
+
+| url | 字串 | 是的 | Insight Server 中此儲存資源池的 URL。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 貯存 | link:#entity-storage["貯存"] | 一個 JOIN：storageId=link:#entity-storage["貯存"].id 
+
+
+| 內部卷 | link:#entity-internal_volume["內部卷"] | 許多 
+|===
+
+
+[[storagepooltobackendlun]]
+=== storage_pool_to_backend_lun
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：storage_pool_to_backend_lun
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| storageId | Int64 | 是的 | 儲存陣列的 GUID。 
+
+
+| storagePoolId | Int64 | 是的 | 儲存資源池的 GUID。 
+
+
+| backendLunId | Int64 | 是的 | 後端 LUN 的 GUID。 
+|===
+
+
+[[storagepooltodisk]]
+=== 儲存資源池到磁碟
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：storage_pool_to_disk
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| storageId | Int64 | 是的 | 儲存陣列的 GUID。 
+
+
+| storagePoolId | Int64 | 是的 | 儲存資源池的 GUID。 
+
+
+| diskId | Int64 | 是的 | 磁碟的 GUID。 
+|===
+
+
+[[storageport]]
+=== 儲存連接埠
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：storage_port
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 儲存設備連接埠的 GUID。 
+
+
+| controllerId *[FK]* →link:#entity-storage_controller["儲存控制器"].id | Int64 | 是的 | 此連接埠所在控制器（節點）的 GUID。 
+
+
+| storageId *[FK]* →link:#entity-storage["貯存"].id | Int64 | 是的 | 此連接埠所在儲存陣列的 GUID。 
+
+
+| wwn | 字串 | 是的 | 連接埠的 WWN。 
+
+
+| nodeWwn | 字串 | 是的 | 該連接埠所在節點（控制器）的 WWN。 
+
+
+| portId | 字串 | 是的 | 連接埠 ID。 
+
+
+| 姓名 | 字串 | 是的 | 連接埠名稱。 
+
+
+| 速度 | 字串 | 是的 | 連接埠速度，單位為 Gbps。 
+
+
+| 控制器 | 字串 | 是的 | 此連接埠所在的控制器名稱。 
+
+
+| url | 字串 | 是的 | Insight Server 中此連接埠的 URL。 
+
+
+| 作用中 | 字串 | 是的 | 如果連接埠未失效，則為真。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 貯存 | link:#entity-storage["貯存"] | 一個 JOIN：storageId=link:#entity-storage["貯存"].id 
+
+
+| 儲存控制器 | link:#entity-storage_controller["儲存控制器"] | 一個 JOIN：controllerId=link:#entity-storage_controller["儲存控制器"].id 
+|===
+
+
+[[storagetoapplication]]
+=== 儲存到應用程式
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：storage_to_application
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 儲存設備和應用程式之間關係的 GUID。 
+
+
+| storageId *[FK]* →link:#entity-storage["貯存"].id | Int64 | 是的 | 儲存設備的 GUID。 
+
+
+| applicationId *[FK]* →link:#entity-application["應用程式"].id | Int64 | 是的 | 應用程式的 GUID。 
+
+
+| 繼承 | 字串 | 是的 | 此應用程式為繼承而來。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 貯存 | link:#entity-storage["貯存"] | 一個 JOIN：storageId=link:#entity-storage["貯存"].id 
+
+
+| 應用程式 | link:#entity-application["應用程式"] | 一個 JOIN：applicationId=link:#entity-application["應用程式"].id 
+|===
+
+
+[[switch]]
+=== 交換器
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：交換器
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 交換器的 GUID。 
+
+
+| fabricId *[FK]* →link:#entity-fabric["網狀架構"].id | Int64 | 是的 | 此交換器設定為在其上運作之架構的 GUID。 
+
+
+| 識別符 | 字串 | 是的 | 設備識別符。 
+
+
+| wwn | 字串 | 是的 | 交換器的 WWN。 
+
+
+| ip | 字串 | 是的 | 交換器的 IP 位址。 
+
+
+| 姓名 | 字串 | 是的 | 交換器的名稱。 
+
+
+| 製造商 | 字串 | 是的 | 交換器製造商 
+
+
+| 模型 | 字串 | 是的 | 交換器型號。 
+
+
+| 韌體 | 字串 | 是的 | 交換器上執行的韌體版本。 
+
+
+| domainId | 字串 | 是的 | 交換器的架構網域 ID。 
+
+
+| domainIdType | 字串 | 是的 | 域名 ID 類型。可選值為靜態 （0） 或首選 （1）。 
+
+
+| 優先順序 | 字串 | 是的 | 交換器的優先權。 
+
+
+| vsanEnabled | 字串 | 是的 | 指示交換器是否支援 VSAN。 
+
+
+| serialNumber | 字串 | 是的 | 交換器的序號。 
+
+
+| manageURL | 字串 | 是的 | 裝置管理軟體的 URL。 
+
+
+| sanRouteEnabled | 字串 | 是的 | 指示交換器是否支援跨 VSAN 路由 (IVR)。 
+
+
+| 淨現值 | 字串 | 是的 | 指示這是否為 NPV 交換器。 
+
+
+| isGenerated | 字串 | 是的 | 指示此交換器是否不對應於實體設備。它用於模擬一對多連接埠連接。 
+
+
+| 類型 | 字串 | 是的 | 交換器類型。 
+
+
+| url | 字串 | 是的 | Insight Server 中此交換器的 URL。 
+
+
+| lastAcquiredTime | DateTimeOffset | 是的 | 指定最後獲取的時間。 
+
+
+| 作用中 | 字串 | 是的 | 指示交換器是處於死機狀態還是作用中。 
+
+
+| dataCenter | 字串 | 是的 | # dataCenter 分配給交換器的註解值 
+
+
+| switchLevel | 字串 | 是的 | # switchLevel 分配給交換器的註解值 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 網狀架構 | link:#entity-fabric["網狀架構"] | 一個 JOIN：fabricId=link:#entity-fabric["網狀架構"].id 
+
+
+| 交換器埠 | link:#entity-switch_port["交換器埠"] | 許多 
+
+
+| 切換到應用程式 | link:#entity-switch_to_application["切換到應用程式"] | 許多 
+|===
+
+
+[[switchport]]
+=== 交換器埠
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：switch_port
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 連接埠的 GUID。 
+
+
+| switchId *[FK]* →link:#entity-switch["交換器"].id | Int64 | 是的 | 連接埠所在交換器的 GUID。 
+
+
+| fabricId *[FK]* →link:#entity-fabric["網狀架構"].id | Int64 | 是的 | 連接埠配置運作所依據的架構的 GUID。 
+
+
+| virtualSwitchId *[FK]* →link:#entity-virtual_switch["虛擬交換器"].id | Int64 | 是的 | 連接埠所在虛擬交換器的 GUID。如果不存在，則為 NULL。 
+
+
+| wwn | 字串 | 是的 | 連接埠的 WWN。 
+
+
+| 狀態 | 字串 | 是的 | 連接埠狀態。可能的值包括：OK、NOT_LICENSED、ERROR、INACTIVE 和 UNKNOWN。 
+
+
+| rawPortStatus | 字串 | 是的 | 連接埠狀態，取自設備本身。有關數值的解釋，請參閱設備文件。 
+
+
+| 類型 | 字串 | 是的 | 連接埠類型，通常用於識別與其他裝置通訊所使用的協定，取自裝置本身：F-port、E-port 等等。 
+
+
+| portPhysicalState | 字串 | 是的 | 連接埠的目前狀態，取自設備本身。有關數值的解釋，請參閱設備文件。 
+
+
+| 數字 | Int64 | 是的 | 刀鋒伺服器中連接埠的編號 
+
+
+| 刀鋒 | Int64 | 是的 | 包含交換器中的刀片編號。 
+
+
+| portId | 字串 | 是的 | 連接埠 ID。 
+
+
+| 姓名 | 字串 | 是的 | 連接埠名稱。 
+
+
+| 速度 | 字串 | 是的 | 連接埠速度，單位為 Gbps。 
+
+
+| fc4Protocol | 字串 | 是的 | FC4（應用程式層）通訊協定，顯示為下列值的任何子集/組合：BASIC_LINK、EXTEND_LINK、FCIP、SCSI_FCP、FC_SERVICES、FC_SW、SNMP、FABRIC_SERVICES、FABRIC、DIAG 和 VI。 
+
+
+| classOfService | 字串 | 是的 | FC 通訊協定的服務等級。 
+
+
+| gbicType | 字串 | 是的 | 連接埠使用的 GBIC （Gigabit Interface Converter）類型。 
+
+
+| url | 字串 | 是的 | Insight Server 中此連接埠的 URL。 
+
+
+| isGenerated | 字串 | 是的 | 指示這是否為產生的 WWN（如果我們不知道真實的 WWN）。 
+
+
+| 作用中 | 字串 | 是的 | 如果連接埠未失效，則為真。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 虛擬交換器 | link:#entity-virtual_switch["虛擬交換器"] | 一個 JOIN：virtualSwitchId=link:#entity-virtual_switch["虛擬交換器"].id 
+
+
+| 網狀架構 | link:#entity-fabric["網狀架構"] | 一個 JOIN：fabricId=link:#entity-fabric["網狀架構"].id 
+
+
+| 交換器 | link:#entity-switch["交換器"] | 一個 JOIN：switchId=link:#entity-switch["交換器"].id 
+
+
+| 交換器連接埠至應用程式 | link:#entity-switch_port_to_application["交換器連接埠至應用程式"] | 許多 
+
+
+| fc_name_server_entry | link:#entity-fc_name_server_entry["fc_name_server_entry"] | 許多 
+|===
+
+
+[[switchporttoapplication]]
+=== 交換器連接埠至應用程式
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集合：switch_port_to_application
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 連接埠與應用程式之間關係的 GUID。 
+
+
+| applicationId *[FK]* →link:#entity-application["應用程式"].id | Int64 | 是的 | 應用程式的 GUID。 
+
+
+| portId *[FK]* →link:#entity-switch_port["交換器埠"].id | Int64 | 是的 | 交換器連接埠的 GUID。 
+
+
+| 繼承 | 字串 | 是的 | 此應用程式為繼承而來。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 交換器埠 | link:#entity-switch_port["交換器埠"] | 一個 JOIN：portId=link:#entity-switch_port["交換器埠"].id 
+
+
+| 應用程式 | link:#entity-application["應用程式"] | 一個 JOIN：applicationId=link:#entity-application["應用程式"].id 
+|===
+
+
+[[switchtoapplication]]
+=== 切換到應用程式
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集合：switch_to_application
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 交換器和應用程式之間關係的 GUID。 
+
+
+| switchId *[FK]* →link:#entity-switch["交換器"].id | Int64 | 是的 | 交換器的 GUID。 
+
+
+| applicationId *[FK]* →link:#entity-application["應用程式"].id | Int64 | 是的 | 應用程式的 GUID。 
+
+
+| 繼承 | 字串 | 是的 | 此應用程式為繼承而來。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 交換器 | link:#entity-switch["交換器"] | 一個 JOIN：switchId=link:#entity-switch["交換器"].id 
+
+
+| 應用程式 | link:#entity-application["應用程式"] | 一個 JOIN：applicationId=link:#entity-application["應用程式"].id 
+|===
+
+
+[[tape]]
+=== 磁帶
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：磁帶
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 磁帶的 GUID。 
+
+
+| 姓名 | 字串 | 是的 | 磁帶名稱。 
+
+
+| 識別符 | 字串 | 是的 | 設備識別符。 
+
+
+| ip | 字串 | 是的 | 磁帶的 IP 位址。 
+
+
+| 製造商 | 字串 | 是的 | 磁帶製造商。 
+
+
+| serialNumber | 字串 | 是的 | 磁帶序號。 
+
+
+| 作用中 | 字串 | 是的 | 指示磁帶目前是否作用中。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 磁帶控制器 | link:#entity-tape_controller["磁帶控制器"] | 許多 
+
+
+| 違反 | link:#entity-violation["違反"] | 許多 
+
+
+| 磁帶連接埠 | link:#entity-tape_port["磁帶連接埠"] | 許多 
+
+
+| physical_path | link:#entity-physical_path["physical_path"] | 許多 
+
+
+| 邏輯 | link:#entity-logical["邏輯"] | 許多 
+|===
+
+
+[[tapecontroller]]
+=== 磁帶控制器
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：tape_controller
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 磁帶控制器的 GUID。 
+
+
+| tapeId *[FK]* →link:#entity-tape["磁帶"].id | Int64 | 是的 | 此控制器所在磁帶的 GUID。 
+
+
+| wwn | 字串 | 是的 | 控制器的 GUID。 
+
+
+| 模型 | 字串 | 是的 | 控制器的型號。 
+
+
+| 製造商 | 字串 | 是的 | 控制器製造商。 
+
+
+| 驅動程式 | 字串 | 是的 | 管理對控制器存取的驅動程式名稱。 
+
+
+| 韌體 | 字串 | 是的 | 控制器上執行的韌體版本。 
+
+
+| numberOfPorts | 字串 | 是的 | 控制器上的連接埠數量。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 磁帶 | link:#entity-tape["磁帶"] | 一個 JOIN：tapeId=link:#entity-tape["磁帶"].id 
+
+
+| 磁帶連接埠 | link:#entity-tape_port["磁帶連接埠"] | 許多 
+|===
+
+
+[[tapeport]]
+=== 磁帶連接埠
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：tape_port
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 磁帶連接埠的 GUID。 
+
+
+| controllerId *[FK]* →link:#entity-tape_controller["磁帶控制器"].id | Int64 | 是的 | 此連接埠所在控制器的 GUID。 
+
+
+| tapeId *[FK]* →link:#entity-tape["磁帶"].id | Int64 | 是的 | 此連接埠所在磁帶的 GUID。 
+
+
+| wwn | 字串 | 是的 | 連接埠的 WWN。 
+
+
+| nodeWwn | 字串 | 是的 | 該連接埠所在節點（控制器）的 WWN。 
+
+
+| portId | 字串 | 是的 | 連接埠 ID。 
+
+
+| 姓名 | 字串 | 是的 | 連接埠名稱。 
+
+
+| 速度 | 字串 | 是的 | 連接埠速度，單位為 Gbps。 
+
+
+| 控制器 | 字串 | 是的 | 此連接埠所在的控制器名稱。 
+
+
+| url | 字串 | 是的 | Insight Server 中此連接埠的 URL。 
+
+
+| 作用中 | 字串 | 是的 | 如果連接埠未失效，則為真。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 磁帶控制器 | link:#entity-tape_controller["磁帶控制器"] | 一個 JOIN：controllerId=link:#entity-tape_controller["磁帶控制器"].id 
+
+
+| 磁帶 | link:#entity-tape["磁帶"] | 一個 JOIN：tapeId=link:#entity-tape["磁帶"].id 
+|===
+
+
+[[tier]]
+=== 分層
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：分層
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id | Int64 | 是的 | 註釋的 GUID。 
+
+
+| 姓名 | 字串 | 是的 | 註解的值。 
+
+
+| 順序 | Int32 | 是的 | 序號用於確定列舉值的順序。主要用於顯示目的。 
+
+
+| 成本 | 雙倍的 | 是的 | 與註解相關的選用成本。適用於 Tier 註解。 
+|===
+
+
+[[unknownlogical]]
+=== 未知邏輯
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集: unknown_logical
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 類型未知的通用邏輯路徑的 GUID。 
+
+
+| hostId *[FK]* →link:#entity-host["主持人"].id | Int64 | 是的 | 未知類型的通用邏輯路徑的啟動器主機的 GUID。 
+
+
+| storageId *[FK]* →link:#entity-storage["貯存"].id | Int64 | 是的 | 未知類型的通用邏輯路徑的目標儲存設備的 GUID。 
+
+
+| volumeId *[FK]* →link:#entity-volume["體積"].id | Int64 | 是的 | 未知類型的通用邏輯路徑的目標 Volume 的 GUID。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 貯存 | link:#entity-storage["貯存"] | 一個 JOIN：storageId=link:#entity-storage["貯存"].id 
+
+
+| 體積 | link:#entity-volume["體積"] | 一個 JOIN：volumeId=link:#entity-volume["體積"].id 
+
+
+| 主持人 | link:#entity-host["主持人"] | 一個 JOIN：hostId=link:#entity-host["主持人"].id 
+|===
+
+
+[[violation]]
+=== 違反
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：違規
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 違規事件的 GUID。 
+
+
+| hostId *[FK]* →link:#entity-host["主持人"].id | Int64 | 是的 | 違規啟動器主機的 GUID - 對於來自通用裝置的違規，設定為 null。 
+
+
+| genericDeviceId *[FK]* →link:#entity-generic_device["一般裝置"].id | Int64 | 是的 | 違規行為啟動器的通用裝置 GUID - 對於來自主機的違規行為，此值設定為 null。 
+
+
+| storageId *[FK]* →link:#entity-storage["貯存"].id | Int64 | 是的 | 違規目標儲存設備的 GUID - 對於磁帶違規，設定為 null。 
+
+
+| tapeId *[FK]* →link:#entity-tape["磁帶"].id | Int64 | 是的 | 違規目標磁帶的 GUID - 對於儲存陣列的違規，設定為 null。 
+
+
+| volumeId *[FK]* →link:#entity-volume["體積"].id | Int64 | 是的 | 違規適用的 Volume 的 GUID - 對於磁帶路徑，設定為 null。 
+
+
+| volumeName | 字串 | 是的 | Volume 的名稱。即使存在路徑衝突且缺少 Volume，此資訊仍然可用。 
+
+
+| 類型 | 字串 | 是的 | 違規類型。 
+
+
+| technologyType | 字串 | 是的 | 違規的技術類型（FC、ISCSI、HV） 
+
+
+| 自從 | DateTimeOffset | 是的 | 違規行為開始的時間。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 貯存 | link:#entity-storage["貯存"] | 一個 JOIN：storageId=link:#entity-storage["貯存"].id 
+
+
+| 體積 | link:#entity-volume["體積"] | 一個 JOIN：volumeId=link:#entity-volume["體積"].id 
+
+
+| 磁帶 | link:#entity-tape["磁帶"] | 一個 JOIN：tapeId=link:#entity-tape["磁帶"].id 
+
+
+| 主持人 | link:#entity-host["主持人"] | 一個 JOIN：hostId=link:#entity-host["主持人"].id 
+
+
+| 一般裝置 | link:#entity-generic_device["一般裝置"] | 一個 JOIN：genericDeviceId=link:#entity-generic_device["一般裝置"].id 
+|===
+
+
+[[virtualswitch]]
+=== 虛擬交換器
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：virtual_switch
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 虛擬交換器的 GUID。 
+
+
+| fabricId *[FK]* →link:#entity-fabric["網狀架構"].id | Int64 | 是的 | 虛擬交換器所屬架構的 GUID。 
+
+
+| wwn | 字串 | 是的 | 虛擬交換器的 WWN。 
+
+
+| ip | 字串 | 是的 | 虛擬交換器的 IP 位址 
+
+
+| 姓名 | 字串 | 是的 | 虛擬交換器的名稱。 
+
+
+| domainId | 字串 | 是的 | 交換器的架構網域 ID。 
+
+
+| domainIdType | 字串 | 是的 | 域名 ID 類型。可選值為靜態 （0） 或首選 （1）。 
+
+
+| 優先順序 | 字串 | 是的 | 虛擬交換器的優先順序。 
+
+
+| switchRole | 字串 | 是的 | 虛擬交換器在架構合併事件中的角色。可能的值為 PRINCIPAL 和 SUBORDINATE。 
+
+
+| chassisWwn | 字串 | 是的 | 定義虛擬交換器的實體交換器的 WWN。 
+
+
+| 淨現值 | 字串 | 是的 | 指示這是否為 NPV 交換器。 
+
+
+| isGenerated | 字串 | 是的 | 指示此交換器是否不對應於實體設備。它用於模擬一對多連接埠連接。 
+
+
+| 類型 | 字串 | 是的 | 交換器類型。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 網狀架構 | link:#entity-fabric["網狀架構"] | 一個 JOIN：fabricId=link:#entity-fabric["網狀架構"].id 
+
+
+| 交換器埠 | link:#entity-switch_port["交換器埠"] | 許多 
+|===
+
+
+[[virtualtobackendvolume]]
+=== virtual_to_backend_volume
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集合：virtual_to_backend_volume
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| virtualVolumeId | Int64 | 是的 | Volume 的 GUID。 
+
+
+| backendVolumeId | Int64 | 是的 | 後端 Volume 的 GUID。 
+|===
+
+
+[[vmtoapplication]]
+=== vm_to_application
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：vm_to_application
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 虛擬機器與應用程式之間關係的 GUID。 
+
+
+| vmId *[FK]* →link:#entity-hv_virtual_machine["hv_virtual_machine"].id | Int64 | 是的 | 虛擬機器的 GUID。 
+
+
+| applicationId *[FK]* →link:#entity-application["應用程式"].id | Int64 | 是的 | 應用程式的 GUID。 
+
+
+| 繼承 | 字串 | 是的 | 此應用程式為繼承而來。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 應用程式 | link:#entity-application["應用程式"] | 一個 JOIN：applicationId=link:#entity-application["應用程式"].id 
+
+
+| hv_virtual_machine | link:#entity-hv_virtual_machine["hv_virtual_machine"] | 一個 JOIN：vmId=link:#entity-hv_virtual_machine["hv_virtual_machine"].id 
+|===
+
+
+[[vmwarehost]]
+=== vmware_host
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：vmware_host
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | VMware 主機的 ID 
+
+
+| 識別符 | 字串 | 是的 | VMware 主機的識別符 
+
+
+| hvServerId *[FK]* →link:#entity-hv_server["hv_server"].id | Int64 | 是的 | VMware 主機的 HV 伺服器 
+
+
+| 姓名 | 字串 | 是的 | VMware 主機名稱 
+
+
+| numCpuCores | Int64 | 是的 | VMware 主機的 CPU 核心數 
+
+
+| numCpuPackages | Int64 | 是的 | VMware 主機的 CPU 套件數量 
+
+
+| numCpuThreads | Int64 | 是的 | VMware 主機的 CPU 執行緒數 
+
+
+| numNodes | Int64 | 是的 | VMware 主機的節點數 
+
+
+| hyperThreadActive | 字串 | 是的 | 指示 VMware 主機上是否啟用超執行緒技術 
+
+
+| hyperThreadAvailable | 字串 | 是的 | 指示 VMware 主機上是否支援超執行緒技術 
+
+
+| hyperThreadConfig | 字串 | 是的 | 指示是否已在 VMware 主機上設定為啟用超執行緒。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| hv_server | link:#entity-hv_server["hv_server"] | 一個 JOIN：hvServerId=link:#entity-hv_server["hv_server"].id 
+|===
+
+
+[[volume]]
+=== 體積
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：Volume
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | Volume 的 GUID。 
+
+
+| storageId *[FK]* →link:#entity-storage["貯存"].id | Int64 | 是的 | 此 Volume 所在儲存設備的 GUID。 
+
+
+| internalVolumeId *[FK]* →link:#entity-internal_volume["內部卷"].id | Int64 | 是的 | 當 Volume 代表 NetApp LUN 時，為 LUN 所在內部 Volume 的 GUID。否則為 Null。 
+
+
+| qtreeId *[FK]* →link:#entity-qtree["配額樹"].id | Int64 | 是的 | 當 Volume 代表 NetApp LUN 時，為 LUN 所在 qtree 的 GUID。否則為 Null。 
+
+
+| 姓名 | 字串 | 是的 | Volume 的名稱。 
+
+
+| 標籤 | 字串 | 是的 | Volume 的標籤（執行摘要）。 
+
+
+| thinProvisioned | 字串 | 是的 | 該 Volume 是否採用精簡配置。 
+
+
+| 容量 MB | Int64 | 是的 | Volume 可用容量（主機或其他 SCSI 啟動器所看到的容量），單位為 MB。 
+
+
+| 已消耗容量 MB | Int64 | 是的 | 以 MB 為單位顯示正在消耗的容量。 
+
+
+| writtenCapacityMB | Int64 | 是的 | 以 MB 為單位顯示正在寫入的資料量。 
+
+
+| 原始容量 MB | Int64 | 是的 | Volume 實際使用的原始磁碟容量，單位為 MB。 
+
+
+| 類型 | 字串 | 是的 | 廠商特定的 Volume 類型（例如，SFS、BCV）。 
+
+
+| replicaSource | 字串 | 是的 | 指示此Volume是否為副本中的來源。 
+
+
+| replicaTarget | 字串 | 是的 | 指示此 Volume 是否為副本中的目標。 
+
+
+| 快照 | 字串 | 是的 | 指示此 Volume 是否為 Snapshot 快照技術 Volume。 
+
+
+| 磁柱 | Int32 | 是的 | Volume 內圓柱體的數量。 
+
+
+| diskGroup | 字串 | 是的 | 以逗號分隔的此 Volume 所用磁碟群組清單。 
+
+
+| isVirtual | 字串 | 是的 | 指示此 Volume 是否為虛擬 Volume （在虛擬儲存設備池中）。 
+
+
+| 中繼資料 | 字串 | 是的 | 指示此 Volume 是否為 Volume 群組中的元 Volume。 
+
+
+| virtualStorage | 字串 | 是的 | 包含該 Volume 的 vFiler 名稱（NetApp）。 
+
+
+| 頭 | 字串 | 是的 | 磁頭（NetApp），即 Volume 所在的磁頭。例如，在主動被動式組態中，作用中磁頭的名稱。 
+
+
+| protectionType | 字串 | 是的 | 指定 Volume 的保護類型（例如，BCV、R1、R2……） 
+
+
+| technologyType | 字串 | 是的 | 指定技術類型（FC/ISCSI/UNKNOWN）。 
+
+
+| autoTieringPolicyId *[FK]* →link:#entity-auto_tiering_policy["auto_tiering_policy"].id | Int64 | 是的 | 自動分層原則的 GUID 
+
+
+| autoTiering | 字串 | 是的 | 指示該 Volume 是否參與自動分層。 
+
+
+| uuid | 字串 | 是的 | Volume 的 UUID。 
+
+
+| isMainframe | 字串 | 是的 | 指示這是否為大型機 Volume 
+
+
+| lastKnownAccessTime | DateTimeOffset | 是的 | 指定 SANscreen 已知的最後一次存取 Volume 進行讀取或寫入的時間（如果時間不可用，則為 NULL）。 
+
+
+| url | 字串 | 是的 | Insight Server 中此 Volume 的 URL。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 貯存 | link:#entity-storage["貯存"] | 一個 JOIN：storageId=link:#entity-storage["貯存"].id 
+
+
+| 內部卷 | link:#entity-internal_volume["內部卷"] | 一個 JOIN：internalVolumeId=link:#entity-internal_volume["內部卷"].id 
+
+
+| auto_tiering_policy | link:#entity-auto_tiering_policy["auto_tiering_policy"] | 一個 JOIN：autoTieringPolicyId=link:#entity-auto_tiering_policy["auto_tiering_policy"].id 
+
+
+| 配額樹 | link:#entity-qtree["配額樹"] | 一個 JOIN：qtreeId=link:#entity-qtree["配額樹"].id 
+
+
+| volume_mask | link:#entity-volume_mask["volume_mask"] | 許多 
+
+
+| dr_volume_replica | link:#entity-dr_volume_replica["dr_volume_replica"] | 許多 
+
+
+| hv_virtual_disk_to_volume | link:#entity-hv_virtual_disk_to_volume["hv_virtual_disk_to_volume"] | 許多 
+
+
+| 未知邏輯 | link:#entity-unknown_logical["未知邏輯"] | 許多 
+
+
+| volume_map | link:#entity-volume_map["volume_map"] | 許多 
+
+
+| 邏輯 | link:#entity-logical["邏輯"] | 許多 
+
+
+| file_system_to_volume | link:#entity-file_system_to_volume["file_system_to_volume"] | 許多 
+
+
+| backend_lun_to_volume | link:#entity-backend_lun_to_volume["backend_lun_to_volume"] | 許多 
+
+
+| 違反 | link:#entity-violation["違反"] | 許多 
+
+
+| 磁碟區至應用程式 | link:#entity-volume_to_application["磁碟區至應用程式"] | 許多 
+
+
+| iscsi_logical | link:#entity-iscsi_logical["iscsi_logical"] | 許多 
+
+
+| hv_lun_to_volume | link:#entity-hv_lun_to_volume["hv_lun_to_volume"] | 許多 
+
+
+| physical_path | link:#entity-physical_path["physical_path"] | 許多 
+
+
+| hv_data_store_to_volume | link:#entity-hv_data_store_to_volume["hv_data_store_to_volume"] | 許多 
+|===
+
+
+[[volumeinstoragepool]]
+=== 儲存池中的 Volume
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：volume_in_storage_pool
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| storageId | Int64 | 是的 | 儲存陣列的 GUID。 
+
+
+| volumeId | Int64 | 是的 | Volume 的 GUID。 
+
+
+| storagePoolId | Int64 | 是的 | 儲存資源池的 GUID。 
+
+
+| volumeMembersCapacityMB | Int64 | 是的 | 構成 Volume 的儲存池中所有 Volume 成員的容量，以 MB 為單位。 
+
+
+| volumeMembersRawCapacityMB | Int64 | 是的 | 構成 Volume 的儲存池中所有 Volume 成員的原始容量，以 MB 為單位。 
+|===
+
+
+[[volumemap]]
+=== volume_map
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：volume_map
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | Volume 映射條目的 GUID。 
+
+
+| volumeId *[FK]* →link:#entity-volume["體積"].id | Int64 | 是的 | Volume 對應項目所參照之 Volume 的 GUID。 
+
+
+| storageId *[FK]* →link:#entity-storage["貯存"].id | Int64 | 是的 | 定義 Volume 映射條目的儲存設備的 GUID。 
+
+
+| protocolController | 字串 | 是的 | 定義 Volume 映射條目的協定控制器名稱。 
+
+
+| LUN | 字串 | 是的 | 用於存取此 Volume 的邏輯單元號碼 (LUN)。 
+
+
+| tid | Int32 | 是的 | 由 Volume 映射條目定義的目標 SCSI ID。 
+
+
+| storagePortWwn | 字串 | 是的 | 此 Volume 對應條目所指的儲存設備連接埠的 WWN。 
+
+
+| wwnSecurityValidity | 位元組 | 是的 | 指示存取該 Volume 是否需要額外的遮罩組態。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 貯存 | link:#entity-storage["貯存"] | 一個 JOIN：storageId=link:#entity-storage["貯存"].id 
+
+
+| 體積 | link:#entity-volume["體積"] | 一個 JOIN：volumeId=link:#entity-volume["體積"].id 
+|===
+
+
+[[volumemask]]
+=== volume_mask
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：volume_mask
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | Volume 遮罩條目的 GUID。 
+
+
+| volumeId *[FK]* →link:#entity-volume["體積"].id | Int64 | 是的 | Volume 遮罩項目所參照之 Volume 的 GUID。 
+
+
+| storageId *[FK]* →link:#entity-storage["貯存"].id | Int64 | 是的 | 定義 Volume 遮罩項目的儲存設備 GUID。 
+
+
+| protocolController | 字串 | 是的 | 定義 Volume 遮罩條目的協定控制器名稱。 
+
+
+| storagePortWwn | 字串 | 是的 | Volume 遮罩條目所指的儲存設備連接埠的 WWN。 
+
+
+| initiatorWwn | 字串 | 是的 | Volume 遮罩條目所指的啟動器連接埠的 WWN。 
+
+
+| hostId *[FK]* →link:#entity-host["主持人"].id | Int64 | 是的 | 此 Volume 遮罩條目的啟動器 WWN 所指主機的 GUID 
+
+
+| 類型 | 字串 | 是的 | Volume 存取技術類型。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 貯存 | link:#entity-storage["貯存"] | 一個 JOIN：storageId=link:#entity-storage["貯存"].id 
+
+
+| 體積 | link:#entity-volume["體積"] | 一個 JOIN：volumeId=link:#entity-volume["體積"].id 
+
+
+| 主持人 | link:#entity-host["主持人"] | 一個 JOIN：hostId=link:#entity-host["主持人"].id 
+|===
+
+
+[[volumetoapplication]]
+=== 磁碟區至應用程式
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集合：volume_to_application
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | Volume 與應用程式之間關係的 GUID。 
+
+
+| applicationId *[FK]* →link:#entity-application["應用程式"].id | Int64 | 是的 | 應用程式的 GUID。 
+
+
+| volumeId *[FK]* →link:#entity-volume["體積"].id | Int64 | 是的 | Volume 的 GUID。 
+
+
+| 繼承 | 字串 | 是的 | 此應用程式為繼承而來。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 體積 | link:#entity-volume["體積"] | 一個 JOIN：volumeId=link:#entity-volume["體積"].id 
+
+
+| 應用程式 | link:#entity-application["應用程式"] | 一個 JOIN：applicationId=link:#entity-application["應用程式"].id 
+|===
+
+
+[[zone]]
+=== 區域
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：分區
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | 區域的 GUID。 
+
+
+| fabricId *[FK]* →link:#entity-fabric["網狀架構"].id | Int64 | 是的 | 定義區域所在架構的 GUID。 
+
+
+| 姓名 | 字串 | 是的 | 區域名稱。自然索引鍵的一部分。 
+
+
+| fabricWwn | 字串 | 是的 | 定義分區所在架構的 WWN。 
+
+
+| configurationName | 字串 | 是的 | 包含此區域的作用中區域組態（集）的名稱。自然鍵的一部分。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 網狀架構 | link:#entity-fabric["網狀架構"] | 一個 JOIN：fabricId=link:#entity-fabric["網狀架構"].id 
+
+
+| zone_member | link:#entity-zone_member["zone_member"] | 許多 
+|===
+
+
+[[zonemember]]
+=== zone_member
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：zone_member
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| id *[PK]* | Int64 | 是的 | zone_member 的 GUID。 
+
+
+| zoneId *[FK]* →link:#entity-zone["區域"].id | Int64 | 是的 | 區域的 GUID。 
+
+
+| fabricId *[FK]* →link:#entity-fabric["網狀架構"].id | Int64 | 是的 | 定義區域所在架構的 GUID。 
+
+
+| 類型 | 字串 | 是的 | 成員分區類型。可以是 WWN （軟分區）或 SWITCH （硬分區）。 
+
+
+| wwn | 字串 | 是的 | 成員的 WWN。可以是交換器連接埠（如果 type=SWITCH）或設備的節點/連接埠（type=WWN）。 
+
+
+| zoneName | 字串 | 是的 | 區域名稱。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 網狀架構 | link:#entity-fabric["網狀架構"] | 一個 JOIN：fabricId=link:#entity-fabric["網狀架構"].id 
+
+
+| 區域 | link:#entity-zone["區域"] | 一個 JOIN：zoneId=link:#entity-zone["區域"].id 
+|===

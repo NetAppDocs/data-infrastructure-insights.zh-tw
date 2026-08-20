@@ -1,0 +1,3521 @@
+---
+sidebar: sidebar 
+permalink: reporting_schema_capacity.html 
+summary: 容量資料倉儲的模式表 
+keywords: dwh, data warehouse, schema, reporting, capacity 
+---
+= 容量架構
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+來源：*dwh_capacity* OData 端點 — Data Infrastructure Insights
+
+找到的表：*44* | 關聯：*92*
+
+
+
+[[key-relationships-between-tables]]
+== 表格間的關鍵關係
+
+
+
+[[chargebackfact]]
+=== 退款事實
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-application_dimension["應用程式維度"] | applicationTk | tk 
+
+
+| link:#entity-application_group_dimension["應用程式群組維度"] | applicationGroupTk | tk 
+
+
+| link:#entity-business_entity_dimension["business_entity_dimension"] | businessEntityTk | tk 
+
+
+| link:#entity-date_dimension["日期維度"] | dateTk | tk 
+
+
+| link:#entity-host_dimension["主機維度"] | hostTk | tk 
+
+
+| link:#entity-host_group_dimension["主機群組維度"] | hostGroupTk | tk 
+
+
+| link:#entity-internal_volume_dimension["內部體積尺寸"] | internalVolumeTk | tk 
+
+
+| link:#entity-k8s_namespace_dimension["k8s_namespace_dimension"] | k8sNamespaceTk | tk 
+
+
+| link:#entity-k8s_namespace_group_dimension["k8s_namespace_group_dimension"] | k8sNamespaceGroupTk | tk 
+
+
+| link:#entity-qtree_dimension["qtree_dimension"] | qtreeTk | tk 
+
+
+| link:#entity-service_level_dimension["服務等級維度"] | serviceLevelTk | tk 
+
+
+| link:#entity-storage_dimension["儲存空間_維度"] | storageTk | tk 
+
+
+| link:#entity-storage_pool_dimension["儲存池維度"] | storagePoolTk | tk 
+
+
+| link:#entity-tier_dimension["層級維度"] | tierTk | tk 
+|===
+
+
+[[diskgroupcapacityfact]]
+=== 磁碟群組容量事實
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-date_dimension["日期維度"] | dateTk | tk 
+
+
+| link:#entity-disk_group_dimension["磁碟群組維度"] | diskGroupTk | tk 
+
+
+| link:#entity-storage_dimension["儲存空間_維度"] | storageTk | tk 
+
+
+| link:#entity-storage_pool_dimension["儲存池維度"] | storagePoolTk | tk 
+|===
+
+
+[[diskgroupcapacityfuturefact]]
+=== 磁碟群組容量未來事實
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-date_dimension["日期維度"] | dateTk | tk 
+
+
+| link:#entity-disk_group_dimension["磁碟群組維度"] | diskGroupTk | tk 
+
+
+| link:#entity-storage_dimension["儲存空間_維度"] | storageTk | tk 
+
+
+| link:#entity-storage_pool_dimension["儲存池維度"] | storagePoolTk | tk 
+|===
+
+
+[[internalvolumecapacityfact]]
+=== 內部容量事實
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-application_dimension["應用程式維度"] | applicationTk | tk 
+
+
+| link:#entity-application_group_dimension["應用程式群組維度"] | applicationGroupTk | tk 
+
+
+| link:#entity-business_entity_dimension["business_entity_dimension"] | businessEntityTk | tk 
+
+
+| link:#entity-date_dimension["日期維度"] | dateTk | tk 
+
+
+| link:#entity-internal_volume_dimension["內部體積尺寸"] | internalVolumeTk | tk 
+
+
+| link:#entity-k8s_namespace_dimension["k8s_namespace_dimension"] | k8sNamespaceTk | tk 
+
+
+| link:#entity-k8s_namespace_group_dimension["k8s_namespace_group_dimension"] | k8sNamespaceGroupTk | tk 
+
+
+| link:#entity-service_level_dimension["服務等級維度"] | serviceLevelTk | tk 
+
+
+| link:#entity-storage_dimension["儲存空間_維度"] | storageTk | tk 
+
+
+| link:#entity-storage_pool_dimension["儲存池維度"] | storagePoolTk | tk 
+
+
+| link:#entity-tier_dimension["層級維度"] | tierTk | tk 
+|===
+
+
+[[k8spvccapacityfact]]
+=== k8s_pvc_capacity_fact
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-date_dimension["日期維度"] | dateTk | tk 
+
+
+| link:#entity-k8s_cluster_dimension["k8s_cluster_dimension"] | clusterTk | tk 
+
+
+| link:#entity-k8s_namespace_dimension["k8s_namespace_dimension"] | namespaceTk | tk 
+
+
+| link:#entity-k8s_pv_dimension["k8s_pv_dimension"] | pvTk | tk 
+
+
+| link:#entity-k8s_pvc_dimension["k8s_pvc_dimension"] | pvcTk | tk 
+|===
+
+
+[[qtreecapacityfact]]
+=== qtree_capacity_fact
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-application_dimension["應用程式維度"] | applicationTk | tk 
+
+
+| link:#entity-application_group_dimension["應用程式群組維度"] | applicationGroupTk | tk 
+
+
+| link:#entity-business_entity_dimension["business_entity_dimension"] | businessEntityTk | tk 
+
+
+| link:#entity-date_dimension["日期維度"] | dateTk | tk 
+
+
+| link:#entity-internal_volume_dimension["內部體積尺寸"] | internalVolumeTk | tk 
+
+
+| link:#entity-k8s_namespace_dimension["k8s_namespace_dimension"] | k8sNamespaceTk | tk 
+
+
+| link:#entity-k8s_namespace_group_dimension["k8s_namespace_group_dimension"] | k8sNamespaceGroupTk | tk 
+
+
+| link:#entity-qtree_dimension["qtree_dimension"] | qtreeTk | tk 
+
+
+| link:#entity-service_level_dimension["服務等級維度"] | serviceLevelTk | tk 
+
+
+| link:#entity-storage_dimension["儲存空間_維度"] | storageTk | tk 
+
+
+| link:#entity-storage_pool_dimension["儲存池維度"] | storagePoolTk | tk 
+
+
+| link:#entity-tier_dimension["層級維度"] | tierTk | tk 
+|===
+
+
+[[sptimetofill]]
+=== sp_time_to_fill
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-storage_and_storage_pool_capacity_fact["儲存和儲存池容量事實"] | saspFactTk | tk 
+|===
+
+
+[[storageandstoragepoolcapacityfact]]
+=== 儲存和儲存池容量事實
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-date_dimension["日期維度"] | dateTk | tk 
+
+
+| link:#entity-storage_dimension["儲存空間_維度"] | storageTk | tk 
+
+
+| link:#entity-storage_pool_dimension["儲存池維度"] | storagePoolTk | tk 
+
+
+| link:#entity-tier_dimension["層級維度"] | tierTk | tk 
+|===
+
+
+[[storageandstoragepoolcapacityfuturefact]]
+=== 儲存和儲存池容量未來事實
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-date_dimension["日期維度"] | dateTk | tk 
+
+
+| link:#entity-storage_dimension["儲存空間_維度"] | storageTk | tk 
+
+
+| link:#entity-storage_pool_dimension["儲存池維度"] | storagePoolTk | tk 
+
+
+| link:#entity-tier_dimension["層級維度"] | tierTk | tk 
+|===
+
+
+[[storagenodecapacityfact]]
+=== storage_node_capacity_fact
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-date_dimension["日期維度"] | dateTk | tk 
+
+
+| link:#entity-storage_dimension["儲存空間_維度"] | storageTk | tk 
+
+
+| link:#entity-storage_node_dimension["儲存節點維度"] | storageNodeTk | tk 
+
+
+| link:#entity-tier_dimension["層級維度"] | tierTk | tk 
+|===
+
+
+[[vmcapacityfact]]
+=== vm_capacity_fact
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-application_dimension["應用程式維度"] | applicationTk | tk 
+
+
+| link:#entity-application_group_dimension["應用程式群組維度"] | applicationGroupTk | tk 
+
+
+| link:#entity-business_entity_dimension["business_entity_dimension"] | businessEntityTk | tk 
+
+
+| link:#entity-capacity_type["容量類型"] | capacityType | 類型 
+
+
+| link:#entity-datastore_dimension["資料儲存維度"] | dataStoreTk | tk 
+
+
+| link:#entity-date_dimension["日期維度"] | dateTk | tk 
+
+
+| link:#entity-host_dimension["主機維度"] | hostTk | tk 
+
+
+| link:#entity-host_group_dimension["主機群組維度"] | hostGroupTk | tk 
+
+
+| link:#entity-internal_volume_dimension["內部體積尺寸"] | internalVolumeTk | tk 
+
+
+| link:#entity-k8s_node_dimension["k8s_node_dimension"] | k8sNodeTk | tk 
+
+
+| link:#entity-qtree_dimension["qtree_dimension"] | qtreeTk | tk 
+
+
+| link:#entity-service_level_dimension["服務等級維度"] | serviceLevelTk | tk 
+
+
+| link:#entity-storage_dimension["儲存空間_維度"] | storageTk | tk 
+
+
+| link:#entity-tier_dimension["層級維度"] | tierTk | tk 
+
+
+| link:#entity-vm_dimension["vm_dimension"] | vmTk | tk 
+|===
+
+
+[[volumefactcurrent]]
+=== 目前容量事實
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-chargeback_fact["退款事實"] | chargebackFactTk | tk 
+|===
+
+
+[[volumehistorycapacityfact]]
+=== volume_history_capacity_fact
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-chargeback_fact["退款事實"] | chargebackFactTk | tk 
+
+
+| link:#entity-date_dimension["日期維度"] | dateTk | tk 
+
+
+| link:#entity-host_dimension["主機維度"] | hostTk | tk 
+
+
+| link:#entity-host_group_dimension["主機群組維度"] | hostGroupTk | tk 
+
+
+| link:#entity-internal_volume_dimension["內部體積尺寸"] | internalVolumeTk | tk 
+
+
+| link:#entity-k8s_namespace_group_dimension["k8s_namespace_group_dimension"] | k8sNamespaceGroupTk | tk 
+
+
+| link:#entity-qtree_dimension["qtree_dimension"] | qtreeTk | tk 
+
+
+| link:#entity-service_level_dimension["服務等級維度"] | serviceLevelTk | tk 
+
+
+| link:#entity-storage_and_storage_pool_capacity_fact["儲存和儲存池容量事實"] | storageAndSpFactTk | tk 
+
+
+| link:#entity-storage_dimension["儲存空間_維度"] | storageTk | tk 
+
+
+| link:#entity-storage_pool_dimension["儲存池維度"] | storagePoolTk | tk 
+
+
+| link:#entity-tier_dimension["層級維度"] | tierTk | tk 
+
+
+| link:#entity-volume_dimension["volume_dimension"] | volumeTk | tk 
+|===
+
+
+[[tables-fields]]
+== 表格與欄位
+
+PK（主鍵） FK（外鍵） NOT NULL 必填字段
+
+
+
+[[applicationdimension]]
+=== 應用程式維度
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集合：application_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此應用程式行的 TK。 
+
+
+| 姓名 | 字串 | 是的 | 應用程式名稱。 
+
+
+| 描述 | 字串 | 是的 | 應用程式描述。 
+
+
+| 優先順序 | 字串 | 是的 | 應用程式的優先順序。 
+
+
+| url | 字串 | 是的 | Insight Server 中此應用程式的 URL。 
+
+
+| id | Int64 | 是的 | dwh_inventory.application 中應用程式的 GUID。 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該應用程式的最新行。 
+
+
+| dateTk | Int32 | 是的 | 此應用程式行建立日期對應的 TK。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 內部容量事實 | link:#entity-internal_volume_capacity_fact["內部容量事實"] | 許多 
+
+
+| 退款事實 | link:#entity-chargeback_fact["退款事實"] | 許多 
+
+
+| vm_capacity_fact | link:#entity-vm_capacity_fact["vm_capacity_fact"] | 許多 
+
+
+| qtree_capacity_fact | link:#entity-qtree_capacity_fact["qtree_capacity_fact"] | 許多 
+|===
+
+
+[[applicationgroupbridge]]
+=== 應用程式群組橋接
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：application_group_bridge
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| appGroupTk | Int32 | 是的 | 應用程式組的 TK。 
+
+
+| appTk | Int32 | 是的 | 應用程式的 TK。 
+
+
+| isRep | 字串 | 是的 | 指示此應用程式是否代表其應用程式群組。 
+|===
+
+
+[[applicationgroupdimension]]
+=== 應用程式群組維度
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集合：application_group_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 應用程式組的 TK。 
+
+
+| repApp | 字串 | 是的 | 代表該應用程式組的應用程式名稱。 
+
+
+| repAppTk | Int32 | 是的 | 代表應用程式群組的應用程式的 TK。 
+
+
+| 基數 | Int32 | 是的 | 應用程式組中的應用程式數量。 
+
+
+| dateTk | Int32 | 是的 | TK 表示應用程式群組列建立的日期。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 內部容量事實 | link:#entity-internal_volume_capacity_fact["內部容量事實"] | 許多 
+
+
+| 退款事實 | link:#entity-chargeback_fact["退款事實"] | 許多 
+
+
+| vm_capacity_fact | link:#entity-vm_capacity_fact["vm_capacity_fact"] | 許多 
+
+
+| qtree_capacity_fact | link:#entity-qtree_capacity_fact["qtree_capacity_fact"] | 許多 
+|===
+
+
+[[businessentitydimension]]
+=== business_entity_dimension
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：business_entity_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此企業實體行的 TK。 
+
+
+| 全名 | 字串 | 是的 | 企業實體名稱。 
+
+
+| 租戶 | 字串 | 是的 | 租戶名稱。 
+
+
+| lob | 字串 | 是的 | 業務流程名稱。 
+
+
+| businessUnit | 字串 | 是的 | 業務單位名稱。 
+
+
+| 專案 | 字串 | 是的 | 專案名稱。 
+
+
+| id | Int64 | 是的 | dwh_inventory.annotation_value 中企業實體的 GUID。 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該企業實體的最新行。 
+
+
+| dateTk | Int32 | 是的 | 建立此企業實體行的日期 TK。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 內部容量事實 | link:#entity-internal_volume_capacity_fact["內部容量事實"] | 許多 
+
+
+| 退款事實 | link:#entity-chargeback_fact["退款事實"] | 許多 
+
+
+| vm_capacity_fact | link:#entity-vm_capacity_fact["vm_capacity_fact"] | 許多 
+
+
+| qtree_capacity_fact | link:#entity-qtree_capacity_fact["qtree_capacity_fact"] | 許多 
+|===
+
+
+[[capacitytype]]
+=== 容量類型
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：capacity_type
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| 型別 *[PK]* | 字串 | 是的 |  
+
+
+| 已使用 | 字串 | 是的 | 表示主機和應用程式正在使用的容量。 
+
+
+| vmSpecific | 字串 | 是的 | vm_capacity_fact 中使用的類型。 
+
+
+| replicationSpecific | 字串 | 是的 | 用於保護/複寫容量的類型。 
+
+
+| 描述 | 字串 | 是的 | 此容量類型的說明。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| vm_capacity_fact | link:#entity-vm_capacity_fact["vm_capacity_fact"] | 許多 
+|===
+
+
+[[cardinals]]
+=== 紅雀隊
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：cardinals
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| 數字 | Int32 | 是的 | 介於0到99之間的數字。 
+|===
+
+
+[[chargebackfact]]
+=== 退款事實
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：chargeback_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int32 | 是的 | 知道這件事。 
+
+
+| dateTk *[FK]* →link:#entity-date_dimension["日期維度"].tk | Int32 | 是的 | 日期 TK。 
+
+
+| storageTk *[FK]* →link:#entity-storage_dimension["儲存空間_維度"].tk | Int32 | 是的 | 儲存容量所在的儲存設備的 TK。 
+
+
+| storagePoolTk *[FK]* →link:#entity-storage_pool_dimension["儲存池維度"].tk | Int32 | 是的 | 容量所在儲存資源池的 TK。 
+
+
+| internalVolumeTk *[FK]* →link:#entity-internal_volume_dimension["內部體積尺寸"].tk | Int32 | 是的 | 容量所在內部 Volume 的 TK。 
+
+
+| qtreeTk *[FK]* →link:#entity-qtree_dimension["qtree_dimension"].tk | Int32 | 是的 | 容量所在的 qtree 的 TK。 
+
+
+| hostTk *[FK]* →link:#entity-host_dimension["主機維度"].tk | Int32 | 是的 | 代表主機群組的主機的 TK。 
+
+
+| hostGroupTk *[FK]* →link:#entity-host_group_dimension["主機群組維度"].tk | Int32 | 是的 | 主機群組的 TK。 
+
+
+| applicationTk *[FK]* →link:#entity-application_dimension["應用程式維度"].tk | Int32 | 是的 | 應用程式的 TK。 
+
+
+| applicationGroupTk *[FK]* →link:#entity-application_group_dimension["應用程式群組維度"].tk | Int32 | 是的 | 應用程式組的 TK。 
+
+
+| tierTk *[FK]* →link:#entity-tier_dimension["層級維度"].tk | Int32 | 是的 | 該分層的 TK。 
+
+
+| serviceLevelTk *[FK]* →link:#entity-service_level_dimension["服務等級維度"].tk | Int32 | 是的 | 服務層級的 TK。 
+
+
+| businessUnit | 字串 | 是的 | 與 qtree 關聯的企業實體。 
+
+
+| businessEntityTk *[FK]* →link:#entity-business_entity_dimension["business_entity_dimension"].tk | Int32 | 是的 | 該企業實體的 TK。 
+
+
+| k8sNamespaceTk *[FK]* →link:#entity-k8s_namespace_dimension["k8s_namespace_dimension"].tk | Int32 | 是的 | k8s 命名空間的 TK。 
+
+
+| k8sNamespaceGroupTk *[FK]* →link:#entity-k8s_namespace_group_dimension["k8s_namespace_group_dimension"].tk | Int32 | 是的 | k8s 命名空間群組的 TK。 
+
+
+| protectionType | 字串 | 是的 | 指定保護類型。 
+
+
+| storageAccessType | 字串 | 是的 | 描述此容量的用途。SAN 用於 Volume 或包含 Volume 的 qtree/內部 Volume，OTHER 用於雲端儲存設備，NAS 用於其他用途。 
+
+
+| resourceName | 字串 | 是的 | 容量所在的資源名稱。當資源類型為 VOLUME 時，此資訊為 N/A。 
+
+
+| resourceType | 字串 | 是的 | 說明為取得此容量而彙總了哪些容量。 
+
+
+| mappedByVM | 字串 | 是的 | 指示此資源是否從虛擬機器對應而來 
+
+
+| virtualStorage | 字串 | 是的 | 指示此容量是否由後端儲存設備虛擬化 
+
+
+| 已配置容量 MB | Int64 | 是的 | 已佈建容量。 
+
+
+| 已用容量 MB | Int64 | 是的 | 已用容量。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 內部體積尺寸 | link:#entity-internal_volume_dimension["內部體積尺寸"] | 一個 JOIN：internalVolumeTk=link:#entity-internal_volume_dimension["內部體積尺寸"].tk 
+
+
+| 儲存空間_維度 | link:#entity-storage_dimension["儲存空間_維度"] | 一個 JOIN：storageTk=link:#entity-storage_dimension["儲存空間_維度"].tk 
+
+
+| business_entity_dimension | link:#entity-business_entity_dimension["business_entity_dimension"] | 一個 JOIN：businessEntityTk=link:#entity-business_entity_dimension["business_entity_dimension"].tk 
+
+
+| 主機群組維度 | link:#entity-host_group_dimension["主機群組維度"] | 一個 JOIN：hostGroupTk=link:#entity-host_group_dimension["主機群組維度"].tk 
+
+
+| k8s_namespace_group_dimension | link:#entity-k8s_namespace_group_dimension["k8s_namespace_group_dimension"] | one JOIN:k8sNamespaceGroupTk=link:#entity-k8s_namespace_group_dimension["k8s_namespace_group_dimension"].tk 
+
+
+| 應用程式群組維度 | link:#entity-application_group_dimension["應用程式群組維度"] | 一個 JOIN：applicationGroupTk=link:#entity-application_group_dimension["應用程式群組維度"].tk 
+
+
+| k8s_namespace_dimension | link:#entity-k8s_namespace_dimension["k8s_namespace_dimension"] | 一個 JOIN:k8sNamespaceTk=link:#entity-k8s_namespace_dimension["k8s_namespace_dimension"].tk 
+
+
+| 服務等級維度 | link:#entity-service_level_dimension["服務等級維度"] | 一個 JOIN：serviceLevelTk=link:#entity-service_level_dimension["服務等級維度"].tk 
+
+
+| 層級維度 | link:#entity-tier_dimension["層級維度"] | 一個 JOIN：tierTk=link:#entity-tier_dimension["層級維度"].tk 
+
+
+| 應用程式維度 | link:#entity-application_dimension["應用程式維度"] | 一個 JOIN：applicationTk=link:#entity-application_dimension["應用程式維度"].tk 
+
+
+| qtree_dimension | link:#entity-qtree_dimension["qtree_dimension"] | 一個 JOIN：qtreeTk=link:#entity-qtree_dimension["qtree_dimension"].tk 
+
+
+| 儲存池維度 | link:#entity-storage_pool_dimension["儲存池維度"] | 一個 JOIN：storagePoolTk=link:#entity-storage_pool_dimension["儲存池維度"].tk 
+
+
+| 主機維度 | link:#entity-host_dimension["主機維度"] | 一個 JOIN：hostTk=link:#entity-host_dimension["主機維度"].tk 
+
+
+| 日期維度 | link:#entity-date_dimension["日期維度"] | 一個 JOIN：dateTk=link:#entity-date_dimension["日期維度"].tk 
+
+
+| 目前容量事實 | link:#entity-volume_fact_current["目前容量事實"] | 許多 
+
+
+| volume_history_capacity_fact | link:#entity-volume_history_capacity_fact["volume_history_capacity_fact"] | 許多 
+|===
+
+
+[[datastoredimension]]
+=== 資料儲存維度
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：datastore_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此資料存放區列的 TK。 
+
+
+| naturalKey | 字串 | 是的 | 資料儲存的 OID。 
+
+
+| 姓名 | 字串 | 是的 | 資料儲存名稱。 
+
+
+| moid | 字串 | 是的 | 資料儲存的託管物件 ID。 
+
+
+| virtualCenterIp | 字串 | 是的 | 資料儲存虛擬中心的 IP 位址。 
+
+
+| url | 字串 | 是的 | Insight Server 中此資料儲存的 URL。 
+
+
+| id | Int64 | 是的 | dwh_inventory.hv_data_store 中資料儲存的 GUID 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該資料儲存中的最新行。 
+
+
+| dateTk | Int32 | 是的 | 建立此資料儲存行的日期 TK。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| vm_capacity_fact | link:#entity-vm_capacity_fact["vm_capacity_fact"] | 許多 
+|===
+
+
+[[datedimension]]
+=== 日期維度
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：date_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 日期物件的 TK。 
+
+
+| fullDate | DateTimeOffset | 是的 | 日期物件的日期。 
+
+
+| dayInMonth | 位元組 | 是的 | 日期物件的月份中的日期。每月的第一天值為 1。 
+
+
+| dayInYear | Int32 | 是的 | 日期物件中某一年中的第幾天。一年中的第一天的值為 1。 
+
+
+| dateYear | Int32 | 是的 | 日期物件的年份。 
+
+
+| yearLabel | 字串 | 是的 | 年格式為字串 
+
+
+| monthNum | 位元組 | 是的 | 日期物件的月份。一月的值為 1。 
+
+
+| monthLabel | 字串 | 是的 | 月份格式為字串 
+
+
+| dayInWeekNum | 位元組 | 是的 | 日期物件的星期幾。星期日的值為 1。 
+
+
+| 四分之一 | 位元組 | 是的 | 日期物件的季度。第一季的值為 1。 
+
+
+| quarterLabel | 字串 | 是的 | 季度格式為字串 
+
+
+| dayInQuarter | Int32 | 是的 | 日期物件中季度內的日期。季度的第一天值為 1。 
+
+
+| repQuarter | 位元組 | 是的 | 表示該日期是否為該季度的第一個可用日期。 
+
+
+| repMonth | 位元組 | 是的 | 表示該日期是否為該月的第一個可用日期。 
+
+
+| repWeek | 位元組 | 是的 | 表示該日期是否為該週內的第一個可用日期。 
+
+
+| repDay | 位元組 | 是的 | 表示該日期是否為當天可用的第一個日期。 
+
+
+| repMonthOrLatest | 位元組 | 是的 | 指示此日期是當月代表日期還是最新日期。此標誌供按月代表資料處理的資料集市使用。唯一的區別在於，對於當前月份，它是最新日期。 
+
+
+| sspFlag | 位元組 | 是的 | 指示此日期是否用於儲存設備和儲存資源池資料集市。對於月份代表值以及組態中定義的最後天數，此值為真。 
+
+
+| 最新 | 字串 | 是的 | 指示該日期是否為表中可用的最後一個日期。 
+
+
+| 未來 | 字串 | 是的 | 指示該日期是未來日期（預測日期）還是實際日期。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 內部容量事實 | link:#entity-internal_volume_capacity_fact["內部容量事實"] | 許多 
+
+
+| 退款事實 | link:#entity-chargeback_fact["退款事實"] | 許多 
+
+
+| 磁碟群組容量事實 | link:#entity-disk_group_capacity_fact["磁碟群組容量事實"] | 許多 
+
+
+| vm_capacity_fact | link:#entity-vm_capacity_fact["vm_capacity_fact"] | 許多 
+
+
+| 磁碟群組容量未來事實 | link:#entity-disk_group_capacity_future_fact["磁碟群組容量未來事實"] | 許多 
+
+
+| qtree_capacity_fact | link:#entity-qtree_capacity_fact["qtree_capacity_fact"] | 許多 
+
+
+| k8s_pvc_capacity_fact | link:#entity-k8s_pvc_capacity_fact["k8s_pvc_capacity_fact"] | 許多 
+
+
+| 儲存和儲存池容量事實 | link:#entity-storage_and_storage_pool_capacity_fact["儲存和儲存池容量事實"] | 許多 
+
+
+| volume_history_capacity_fact | link:#entity-volume_history_capacity_fact["volume_history_capacity_fact"] | 許多 
+
+
+| 儲存和儲存池容量未來事實 | link:#entity-storage_and_storage_pool_capacity_future_fact["儲存和儲存池容量未來事實"] | 許多 
+
+
+| storage_node_capacity_fact | link:#entity-storage_node_capacity_fact["storage_node_capacity_fact"] | 許多 
+|===
+
+
+[[diskgroupcapacityfact]]
+=== 磁碟群組容量事實
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：disk_group_capacity_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int32 | 是的 | 知道這件事。 
+
+
+| dateTk *[FK]* →link:#entity-date_dimension["日期維度"].tk | Int32 | 是的 | 日期 TK。 
+
+
+| storageTk *[FK]* →link:#entity-storage_dimension["儲存空間_維度"].tk | Int32 | 是的 | 磁碟群組所在儲存設備的 TK。 
+
+
+| storagePoolTk *[FK]* →link:#entity-storage_pool_dimension["儲存池維度"].tk | Int32 | 是的 | 磁碟群組所在的儲存資源池的 TK。 
+
+
+| diskGroupTk *[FK]* →link:#entity-disk_group_dimension["磁碟群組維度"].tk | Int32 | 是的 | 磁碟群組的 TK。 
+
+
+| 容量 MB | Int64 | 是的 | 磁碟群組的可用容量。 
+
+
+| 已用容量 MB | Int64 | 是的 | 磁碟群組的已使用容量。 
+
+
+| 實體磁碟容量 MB | Int64 | 是的 | 磁碟群組的實體容量。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 磁碟群組維度 | link:#entity-disk_group_dimension["磁碟群組維度"] | 一個 JOIN：diskGroupTk=link:#entity-disk_group_dimension["磁碟群組維度"].tk 
+
+
+| 儲存空間_維度 | link:#entity-storage_dimension["儲存空間_維度"] | 一個 JOIN：storageTk=link:#entity-storage_dimension["儲存空間_維度"].tk 
+
+
+| 儲存池維度 | link:#entity-storage_pool_dimension["儲存池維度"] | 一個 JOIN：storagePoolTk=link:#entity-storage_pool_dimension["儲存池維度"].tk 
+
+
+| 日期維度 | link:#entity-date_dimension["日期維度"] | 一個 JOIN：dateTk=link:#entity-date_dimension["日期維度"].tk 
+|===
+
+
+[[diskgroupcapacityfuturefact]]
+=== 磁碟群組容量未來事實
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：disk_group_capacity_future_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int32 | 是的 | 知道這件事。 
+
+
+| dateTk *[FK]* →link:#entity-date_dimension["日期維度"].tk | Int32 | 是的 | 日期維度的 TK。 
+
+
+| storageTk *[FK]* →link:#entity-storage_dimension["儲存空間_維度"].tk | Int32 | 是的 | 儲存容量所在的儲存設備的 TK。 
+
+
+| storagePoolTk *[FK]* →link:#entity-storage_pool_dimension["儲存池維度"].tk | Int32 | 是的 | 容量所在儲存資源池的 TK。 
+
+
+| diskGroupTk *[FK]* →link:#entity-disk_group_dimension["磁碟群組維度"].tk | Int32 | 是的 | 容量所在的磁碟群組的 TK。 
+
+
+| 容量 MB | Int64 | 是的 | 儲存陣列報告的磁碟群組可用容量（以 MB 為單位）。 
+
+
+| 已用容量 MB | Int64 | 是的 | 儲存陣列報告的磁碟群組已使用容量（以 MB 為單位）。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 磁碟群組維度 | link:#entity-disk_group_dimension["磁碟群組維度"] | 一個 JOIN：diskGroupTk=link:#entity-disk_group_dimension["磁碟群組維度"].tk 
+
+
+| 儲存空間_維度 | link:#entity-storage_dimension["儲存空間_維度"] | 一個 JOIN：storageTk=link:#entity-storage_dimension["儲存空間_維度"].tk 
+
+
+| 儲存池維度 | link:#entity-storage_pool_dimension["儲存池維度"] | 一個 JOIN：storagePoolTk=link:#entity-storage_pool_dimension["儲存池維度"].tk 
+
+
+| 日期維度 | link:#entity-date_dimension["日期維度"] | 一個 JOIN：dateTk=link:#entity-date_dimension["日期維度"].tk 
+|===
+
+
+[[diskgroupdimension]]
+=== 磁碟群組維度
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：disk_group_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此磁碟群組行的 TK。 
+
+
+| 姓名 | 字串 | 是的 | 磁碟群組名稱。 
+
+
+| 識別符 | 字串 | 是的 | 磁碟群組的識別碼。 
+
+
+| vendorDiskGroupType | 字串 | 是的 | 磁碟群組的供應商類型。 
+
+
+| diskType | 字串 | 是的 | 磁碟群組中的磁碟類型。 
+
+
+| 狀態 | 字串 | 是的 | 磁碟群組狀態。 
+
+
+| 備援 | 字串 | 是的 | 磁碟群組的冗餘。 
+
+
+| isVirtual | 字串 | 是的 | 指示磁碟群組是否為虛擬。 
+
+
+| vendorTier | 字串 | 是的 | 磁碟群組的供應商分層。 
+
+
+| id | Int64 | 是的 | dwh_inventory.disk_group 中磁碟群組的 GUID 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該磁碟群組的最新行。 
+
+
+| dateTk | Int32 | 是的 | 此磁碟群組行建立日期對應的 TK 值。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 磁碟群組容量事實 | link:#entity-disk_group_capacity_fact["磁碟群組容量事實"] | 許多 
+
+
+| 磁碟群組容量未來事實 | link:#entity-disk_group_capacity_future_fact["磁碟群組容量未來事實"] | 許多 
+|===
+
+
+[[hostdimension]]
+=== 主機維度
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：host_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此主機行的 TK。 
+
+
+| 姓名 | 字串 | 是的 | 主機名稱。 
+
+
+| 識別符 | 字串 | 是的 | 設備識別符。 
+
+
+| ip | 字串 | 是的 | 主機 IP 位址清單，以逗號分隔。 
+
+
+| 作業系統 | 字串 | 是的 | 主機上執行的作業系統。 
+
+
+| 模型 | 字串 | 是的 | 型號。 
+
+
+| 製造商 | 字串 | 是的 | 主機製造商。 
+
+
+| url | 字串 | 是的 | Insight Server 中此主機的 URL。 
+
+
+| id | Int64 | 是的 | dwh_inventory.host 中主機的 GUID。 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該主機的最新行。 
+
+
+| dateTk | Int32 | 是的 | 此主機行建立日期對應的 TK。 
+
+
+| dataCenter | 字串 | 是的 | dataCenter 指派給 dwh_dimensions.host_dimension 的註解值 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 退款事實 | link:#entity-chargeback_fact["退款事實"] | 許多 
+
+
+| vm_capacity_fact | link:#entity-vm_capacity_fact["vm_capacity_fact"] | 許多 
+
+
+| volume_history_capacity_fact | link:#entity-volume_history_capacity_fact["volume_history_capacity_fact"] | 許多 
+|===
+
+
+[[hostgroupbridge]]
+=== 主機群組橋接
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：host_group_bridge
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| hostGroupTk | Int32 | 是的 | 主機群組的 TK。 
+
+
+| hostTk | Int32 | 是的 | 主機的 TK。 
+
+
+| isRep | 字串 | 是的 | 指示此主機是否代表其主機群組。 
+|===
+
+
+[[hostgroupdimension]]
+=== 主機群組維度
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集合：host_group_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 主機群組的 TK。 
+
+
+| repHost | 字串 | 是的 | 代表主機群組的主機名稱。 
+
+
+| repHostTk | Int32 | 是的 | 代表主機群組的主機的 TK。 
+
+
+| 基數 | Int32 | 是的 | 主機群組中的主機數量。 
+
+
+| dateTk | Int32 | 是的 | 此主機群組列建立日期對應的 TK。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 退款事實 | link:#entity-chargeback_fact["退款事實"] | 許多 
+
+
+| vm_capacity_fact | link:#entity-vm_capacity_fact["vm_capacity_fact"] | 許多 
+
+
+| volume_history_capacity_fact | link:#entity-volume_history_capacity_fact["volume_history_capacity_fact"] | 許多 
+|===
+
+
+[[internalvolumecapacityfact]]
+=== 內部容量事實
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：internal\_volume\_capacity\_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int32 | 是的 | 知道這件事。 
+
+
+| dateTk *[FK]* →link:#entity-date_dimension["日期維度"].tk | Int32 | 是的 | 日期 TK。 
+
+
+| storageTk *[FK]* →link:#entity-storage_dimension["儲存空間_維度"].tk | Int32 | 是的 | 內部 Volume 所在儲存設備的 TK。 
+
+
+| storagePoolTk *[FK]* →link:#entity-storage_pool_dimension["儲存池維度"].tk | Int32 | 是的 | 內部 Volume 所在的儲存資源池的 TK。 
+
+
+| internalVolumeTk *[FK]* →link:#entity-internal_volume_dimension["內部體積尺寸"].tk | Int32 | 是的 | 內部 Volume 的 TK。 
+
+
+| virtualStorageTk | Int32 | 是的 | 如果這是虛擬內部 Volume，則為前端陣列的 TK 值。否則，該值為 N/A。 
+
+
+| tierTk *[FK]* →link:#entity-tier_dimension["層級維度"].tk | Int32 | 是的 | 該分層的 TK。 
+
+
+| applicationTk *[FK]* →link:#entity-application_dimension["應用程式維度"].tk | Int32 | 是的 | 應用程式的 TK。 
+
+
+| applicationGroupTk *[FK]* →link:#entity-application_group_dimension["應用程式群組維度"].tk | Int32 | 是的 | 應用程式組的 TK。 
+
+
+| serviceLevelTk *[FK]* →link:#entity-service_level_dimension["服務等級維度"].tk | Int32 | 是的 | 服務層級的 TK。 
+
+
+| businessUnit | 字串 | 是的 | 與內部 Volume 相關的業務單位。 
+
+
+| businessEntityTk *[FK]* →link:#entity-business_entity_dimension["business_entity_dimension"].tk | Int32 | 是的 | 該企業實體的 TK。 
+
+
+| k8sNamespaceTk *[FK]* →link:#entity-k8s_namespace_dimension["k8s_namespace_dimension"].tk | Int32 | 是的 | k8s 命名空間的 TK。 
+
+
+| k8sNamespaceGroupTk *[FK]* →link:#entity-k8s_namespace_group_dimension["k8s_namespace_group_dimension"].tk | Int32 | 是的 | k8s 命名空間群組的 TK。 
+
+
+| storageAccessType | 字串 | 是的 | 描述此內部 Volume 的使用方式。如果該 Volume 上有 Volume，則為 SAN；否則為 NAS。 
+
+
+| protectionType | 字串 | 是的 | 指定此內部 Volume 的保護類型，如果不是副本，則填寫 N/A。 
+
+
+| 已分配容量 MB | Int64 | 是的 | 內部 Volume 的總分配容量。 
+
+
+| 已消耗容量 MB | Int64 | 是的 | 此內部 Volume 所佔用的儲存資源池容量。 
+
+
+| 已用容量 MB | Int64 | 是的 | 此內部 Volume 的已使用總容量。 
+
+
+| 已用資料容量 MB | Int64 | 是的 | 此內部 Volume 已使用容量（不含快照）。 
+
+
+| 未使用容量 MB | Int64 | 是的 | 內部 Volume 可用於寫入資料的容量。 
+
+
+| snapshotAllocatedCapacityMB | Int64 | 是的 | 為此內部 Volume 上的快照所配置的容量。 
+
+
+| 快照已用容量 MB | Int64 | 是的 | 此內部 Volume 上的快照所使用的容量。 
+
+
+| 總複製已儲存容量 MB | Int64 | 是的 | Clone 內部 Volume 與其來源內部 Volume 共享的容量。 
+
+
+| dedupeRatio | 雙倍的 | 是的 | 此內部 Volume 的重複資料刪除技術壓縮比率。 
+
+
+| 重複資料刪除節省空間 GB | Int64 | 是的 | 此內部 Volume 的重複資料刪除技術壓縮（以 GB 為單位）。 
+
+
+| rawToUsableRatio | 雙倍的 | 是的 | 磁碟原始容量與內部 Volume 可用容量之比率。受 RAID 層級及其他開銷影響。 
+
+
+| snapshotCount | Int32 | 是的 | 此內部 Volume 上的快照數量。 
+
+
+| lastSnapshotTime | DateTimeOffset | 是的 | 上次快照的時間。 
+
+
+| compressionRatio | 雙倍的 | 是的 | 此內部 Volume 的壓縮比率。 
+
+
+| 壓縮節省 GB | Int64 | 是的 | 此內部 Volume 的壓縮量（以 GB 為單位）。 
+
+
+| compressionSavingsPercent | 雙倍的 | 是的 | 此內部 Volume 的壓縮（%）。 
+
+
+| objectStore 已用空間 GB | Int64 | 是的 | 物件存放區使用此內部 Volume 的空間（以 GB 為單位） 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 服務等級維度 | link:#entity-service_level_dimension["服務等級維度"] | 一個 JOIN：serviceLevelTk=link:#entity-service_level_dimension["服務等級維度"].tk 
+
+
+| 內部體積尺寸 | link:#entity-internal_volume_dimension["內部體積尺寸"] | 一個 JOIN：internalVolumeTk=link:#entity-internal_volume_dimension["內部體積尺寸"].tk 
+
+
+| 儲存空間_維度 | link:#entity-storage_dimension["儲存空間_維度"] | 一個 JOIN：storageTk=link:#entity-storage_dimension["儲存空間_維度"].tk 
+
+
+| 層級維度 | link:#entity-tier_dimension["層級維度"] | 一個 JOIN：tierTk=link:#entity-tier_dimension["層級維度"].tk 
+
+
+| business_entity_dimension | link:#entity-business_entity_dimension["business_entity_dimension"] | 一個 JOIN：businessEntityTk=link:#entity-business_entity_dimension["business_entity_dimension"].tk 
+
+
+| 應用程式維度 | link:#entity-application_dimension["應用程式維度"] | 一個 JOIN：applicationTk=link:#entity-application_dimension["應用程式維度"].tk 
+
+
+| 儲存池維度 | link:#entity-storage_pool_dimension["儲存池維度"] | 一個 JOIN：storagePoolTk=link:#entity-storage_pool_dimension["儲存池維度"].tk 
+
+
+| 日期維度 | link:#entity-date_dimension["日期維度"] | 一個 JOIN：dateTk=link:#entity-date_dimension["日期維度"].tk 
+
+
+| k8s_namespace_group_dimension | link:#entity-k8s_namespace_group_dimension["k8s_namespace_group_dimension"] | one JOIN:k8sNamespaceGroupTk=link:#entity-k8s_namespace_group_dimension["k8s_namespace_group_dimension"].tk 
+
+
+| 應用程式群組維度 | link:#entity-application_group_dimension["應用程式群組維度"] | 一個 JOIN：applicationGroupTk=link:#entity-application_group_dimension["應用程式群組維度"].tk 
+
+
+| k8s_namespace_dimension | link:#entity-k8s_namespace_dimension["k8s_namespace_dimension"] | 一個 JOIN:k8sNamespaceTk=link:#entity-k8s_namespace_dimension["k8s_namespace_dimension"].tk 
+|===
+
+
+[[internalvolumedimension]]
+=== 內部體積尺寸
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：internal_volume_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此內部 Volume 列的 TK。 
+
+
+| 姓名 | 字串 | 是的 | 內部 Volume 的名稱。 
+
+
+| 識別符 | 字串 | 是的 | 內部 Volume 的識別符。 
+
+
+| storagePoolIdentifier | 字串 | 是的 | 此內部 Volume 所在的儲存資源池識別碼。 
+
+
+| storageName | 字串 | 是的 | 此內部 Volume 所在的儲存設備名稱。 
+
+
+| storageIP | 字串 | 是的 | 此內部 Volume 所在的儲存設備的 IP 位址。 
+
+
+| 類型 | 字串 | 是的 | 內部 Volume 類型。 
+
+
+| virtualStorage | 字串 | 是的 | 指定VirtualStorage（例如vFiler） 
+
+
+| spaceGuarantee | 字串 | 是的 | 內部 Volume 空間保證。 
+
+
+| thinProvisioningSupported | 字串 | 是的 | 內部 Volume 是否支援資源隨需配置？ 
+
+
+| thinProvisioned | 字串 | 是的 | 內部 Volume 是否採用資源隨需配置。 
+
+
+| uuid | 字串 | 是的 | 內部 Volume 的 UUID。 
+
+
+| flexGroupIdentifier | 字串 | 是的 | FlexGroup 此內部 Volume 所屬的識別符。 
+
+
+| url | 字串 | 是的 | Insight Server 中此內部 Volume 的 URL。 
+
+
+| id | Int64 | 是的 | dwh_inventory.internal_volume 中內部 Volume 的 GUID 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該內部 Volume 的最新行。 
+
+
+| dateTk | Int32 | 是的 | 建立此內部 Volume 列的日期 TK。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 內部容量事實 | link:#entity-internal_volume_capacity_fact["內部容量事實"] | 許多 
+
+
+| 退款事實 | link:#entity-chargeback_fact["退款事實"] | 許多 
+
+
+| vm_capacity_fact | link:#entity-vm_capacity_fact["vm_capacity_fact"] | 許多 
+
+
+| qtree_capacity_fact | link:#entity-qtree_capacity_fact["qtree_capacity_fact"] | 許多 
+
+
+| volume_history_capacity_fact | link:#entity-volume_history_capacity_fact["volume_history_capacity_fact"] | 許多 
+|===
+
+
+[[k8sclusterdimension]]
+=== k8s_cluster_dimension
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：k8s_cluster_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此簇行的 TK。 
+
+
+| 識別符 | 字串 | 是的 | 叢集的唯一識別碼。 
+
+
+| 姓名 | 字串 | 是的 | 群集名稱。 
+
+
+| id | Int64 | 是的 | dwh_inventory.k8s_cluster 中叢集的 GUID 
+
+
+| 最新 | 字串 | 是的 | 指示此列是否為該叢集的最新列。 
+
+
+| dateTk | Int32 | 是的 | 建立此叢集行的日期 TK。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| k8s_pvc_capacity_fact | link:#entity-k8s_pvc_capacity_fact["k8s_pvc_capacity_fact"] | 許多 
+|===
+
+
+[[k8snamespacedimension]]
+=== k8s_namespace_dimension
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：k8s_namespace_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此命名空間行的 TK。 
+
+
+| 識別符 | 字串 | 是的 | 命名空間的唯一識別碼。 
+
+
+| 姓名 | 字串 | 是的 | 命名空間名稱。 
+
+
+| clusterName | 字串 | 是的 | 命名空間的叢集名稱。 
+
+
+| id | Int64 | 是的 | dwh_inventory.k8s_namespace 中命名空間的 GUID 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該命名空間中的最新行。 
+
+
+| dateTk | Int32 | 是的 | 此命名空間行建立日期對應的 TK。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 內部容量事實 | link:#entity-internal_volume_capacity_fact["內部容量事實"] | 許多 
+
+
+| 退款事實 | link:#entity-chargeback_fact["退款事實"] | 許多 
+
+
+| qtree_capacity_fact | link:#entity-qtree_capacity_fact["qtree_capacity_fact"] | 許多 
+
+
+| k8s_pvc_capacity_fact | link:#entity-k8s_pvc_capacity_fact["k8s_pvc_capacity_fact"] | 許多 
+|===
+
+
+[[k8snamespacegroupbridge]]
+=== k8s_namespace_group_bridge
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：k8s_namespace_group_bridge
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| k8sNamespaceGroupTk | Int32 | 是的 | k8s 命名空間群組的 TK。 
+
+
+| k8sNamespaceTk | Int32 | 是的 | k8s 命名空間的 TK。 
+
+
+| isRep | 字串 | 是的 | 指示此 k8s 命名空間是否代表其所屬的 k8s 命名空間群組。 
+|===
+
+
+[[k8snamespacegroupdimension]]
+=== k8s_namespace_group_dimension
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：k8s_namespace_group_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | k8s 命名空間群組的 TK。 
+
+
+| repK8sNamespace | 字串 | 是的 | 代表 k8s 命名空間群組的應用程式名稱。 
+
+
+| repK8sNamespaceTk | Int32 | 是的 | 代表該群組的 k8s 命名空間的 TK。 
+
+
+| 基數 | Int32 | 是的 | 應用程式群組中的 Kubernetes 命名空間數量。 
+
+
+| dateTk | Int32 | 是的 | k8s 命名空間群組行建立日期的 TK。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 內部容量事實 | link:#entity-internal_volume_capacity_fact["內部容量事實"] | 許多 
+
+
+| 退款事實 | link:#entity-chargeback_fact["退款事實"] | 許多 
+
+
+| qtree_capacity_fact | link:#entity-qtree_capacity_fact["qtree_capacity_fact"] | 許多 
+
+
+| volume_history_capacity_fact | link:#entity-volume_history_capacity_fact["volume_history_capacity_fact"] | 許多 
+|===
+
+
+[[k8snodedimension]]
+=== k8s_node_dimension
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：k8s_node_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此節點行的 TK。 
+
+
+| 識別符 | 字串 | 是的 | 節點的唯一識別碼。 
+
+
+| 姓名 | 字串 | 是的 | 節點名稱。 
+
+
+| clusterName | 字串 | 是的 | 節點的叢集名稱。 
+
+
+| internalIp | 字串 | 是的 | K8S 節點的內部 IP 
+
+
+| osImage | 字串 | 是的 | K8S 節點的作業系統映像 
+
+
+| id | Int64 | 是的 | dwh_inventory.k8s_node 中節點的 GUID 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該節點的最新行。 
+
+
+| dateTk | Int32 | 是的 | 此節點行建立日期對應的 TK 值。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| vm_capacity_fact | link:#entity-vm_capacity_fact["vm_capacity_fact"] | 許多 
+|===
+
+
+[[k8spvdimension]]
+=== k8s_pv_dimension
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：k8s_pv_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此 PV 行的 TK。 
+
+
+| 識別符 | 字串 | 是的 | pv 的唯一識別碼。 
+
+
+| 姓名 | 字串 | 是的 | PV 的名稱。 
+
+
+| clusterName | 字串 | 是的 | PV 的叢集名稱。 
+
+
+| 階段 | 字串 | 是的 | K8S 持久 Volume 的階段（Bound 等） 
+
+
+| pvcName | 字串 | 是的 | K8S 持久 Volume 所繫結的 PVC 名稱 
+
+
+| storageClass | 字串 | 是的 | K8S 持久性 Volume 的儲存設備類別名稱 
+
+
+| id | Int64 | 是的 | dwh_inventory.k8s_pv 中 PVC 的 GUID 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該 PV 的最新行。 
+
+
+| dateTk | Int32 | 是的 | 建立此 pv 行的日期 TK。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| k8s_pvc_capacity_fact | link:#entity-k8s_pvc_capacity_fact["k8s_pvc_capacity_fact"] | 許多 
+|===
+
+
+[[k8spvccapacityfact]]
+=== k8s_pvc_capacity_fact
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：k8s_pvc_capacity_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int32 | 是的 | 知道這件事。 
+
+
+| dateTk *[FK]* →link:#entity-date_dimension["日期維度"].tk | Int32 | 是的 | 日期維度的 TK。 
+
+
+| pvcTk *[FK]* →link:#entity-k8s_pvc_dimension["k8s_pvc_dimension"].tk | Int32 | 是的 | k8s pvc 的 TK。 
+
+
+| clusterTk *[FK]* →link:#entity-k8s_cluster_dimension["k8s_cluster_dimension"].tk | Int32 | 是的 | k8s 叢集的 TK。 
+
+
+| namespaceTk *[FK]* →link:#entity-k8s_namespace_dimension["k8s_namespace_dimension"].tk | Int32 | 是的 | k8s 命名空間的 TK。 
+
+
+| pvTk *[FK]* →link:#entity-k8s_pv_dimension["k8s_pv_dimension"].tk | Int32 | 是的 | k8s pv 的 TK。 
+
+
+| pvSizeBytes | 雙倍的 | 是的 | K8S 持久 Volume 的大小（以位元組為單位） 
+
+
+| pvcSizeBytes | 雙倍的 | 是的 | K8S 持久 Volume 宣告的大小（以位元組為單位） 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| k8s_pvc_dimension | link:#entity-k8s_pvc_dimension["k8s_pvc_dimension"] | 一個 JOIN：pvcTk=link:#entity-k8s_pvc_dimension["k8s_pvc_dimension"].tk 
+
+
+| k8s_cluster_dimension | link:#entity-k8s_cluster_dimension["k8s_cluster_dimension"] | 一個 JOIN：clusterTk=link:#entity-k8s_cluster_dimension["k8s_cluster_dimension"].tk 
+
+
+| k8s_namespace_dimension | link:#entity-k8s_namespace_dimension["k8s_namespace_dimension"] | 一個 JOIN：namespaceTk=link:#entity-k8s_namespace_dimension["k8s_namespace_dimension"].tk 
+
+
+| 日期維度 | link:#entity-date_dimension["日期維度"] | 一個 JOIN：dateTk=link:#entity-date_dimension["日期維度"].tk 
+
+
+| k8s_pv_dimension | link:#entity-k8s_pv_dimension["k8s_pv_dimension"] | 一個 JOIN：pvTk=link:#entity-k8s_pv_dimension["k8s_pv_dimension"].tk 
+|===
+
+
+[[k8spvcdimension]]
+=== k8s_pvc_dimension
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集合：k8s_pvc_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 該 PVC 排的 TK。 
+
+
+| 識別符 | 字串 | 是的 | PVC 的唯一識別碼。 
+
+
+| 姓名 | 字串 | 是的 | PVC 的名稱。 
+
+
+| clusterName | 字串 | 是的 | PVC 叢集名稱。 
+
+
+| namespaceName | 字串 | 是的 | PVC 的命名空間名稱。 
+
+
+| pvName | 字串 | 是的 | 與此 PVC 連結的 PV 名稱。 
+
+
+| 階段 | 字串 | 是的 | K8S 持續性 Volume 請求的階段（Bound 等） 
+
+
+| id | Int64 | 是的 | dwh_inventory.k8s_pvc 中 PVC 的 GUID 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該 PVC 的最新行。 
+
+
+| dateTk | Int32 | 是的 | 此 PVC 行建立日期對應的 TK。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| k8s_pvc_capacity_fact | link:#entity-k8s_pvc_capacity_fact["k8s_pvc_capacity_fact"] | 許多 
+|===
+
+
+[[k8sworkloaddimension]]
+=== k8s_workload_dimension
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：k8s_workload_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此工作負載行的 TK。 
+
+
+| 識別符 | 字串 | 是的 | 工作負載的唯一識別碼。 
+
+
+| 姓名 | 字串 | 是的 | 工作負載名稱。 
+
+
+| clusterName | 字串 | 是的 | 工作負載的叢集名稱。 
+
+
+| namespaceName | 字串 | 是的 | 工作負載的命名空間名稱。 
+
+
+| 類型 | 字串 | 是的 | 工作負載類型（Pod、StatefulSet 等） 
+
+
+| id | Int64 | 是的 | dwh_inventory.k8s_workload 中工作負載的 GUID 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該工作負載的最新行。 
+
+
+| dateTk | Int32 | 是的 | 此工作負載行建立日期對應的 TK。 
+|===
+
+
+[[qtreecapacityfact]]
+=== qtree_capacity_fact
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：qtree_capacity_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int32 | 是的 | 知道這件事。 
+
+
+| dateTk *[FK]* →link:#entity-date_dimension["日期維度"].tk | Int32 | 是的 | 日期 TK。 
+
+
+| storageTk *[FK]* →link:#entity-storage_dimension["儲存空間_維度"].tk | Int32 | 是的 | qtree 所在的儲存設備的 TK。 
+
+
+| storagePoolTk *[FK]* →link:#entity-storage_pool_dimension["儲存池維度"].tk | Int32 | 是的 | qtree 所在的儲存資源池的 TK。 
+
+
+| internalVolumeTk *[FK]* →link:#entity-internal_volume_dimension["內部體積尺寸"].tk | Int32 | 是的 | qtree 所在的內部 Volume 的 TK。 
+
+
+| qtreeTk *[FK]* →link:#entity-qtree_dimension["qtree_dimension"].tk | Int32 | 是的 | qtree 的 TK。 
+
+
+| virtualStorageTk | Int32 | 是的 | 如果此 qtree 位於虛擬內部 Volume 上，則為前端陣列的 TK。否則，該值為 N/A。 
+
+
+| tierTk *[FK]* →link:#entity-tier_dimension["層級維度"].tk | Int32 | 是的 | 該分層的 TK。 
+
+
+| serviceLevelTk *[FK]* →link:#entity-service_level_dimension["服務等級維度"].tk | Int32 | 是的 | 服務層級的 TK。 
+
+
+| applicationTk *[FK]* →link:#entity-application_dimension["應用程式維度"].tk | Int32 | 是的 | 應用程式的 TK。 
+
+
+| applicationGroupTk *[FK]* →link:#entity-application_group_dimension["應用程式群組維度"].tk | Int32 | 是的 | 應用程式組的 TK。 
+
+
+| businessUnit | 字串 | 是的 | 與 qtree 關聯的企業實體。 
+
+
+| businessEntityTk *[FK]* →link:#entity-business_entity_dimension["business_entity_dimension"].tk | Int32 | 是的 | 該企業實體的 TK。 
+
+
+| k8sNamespaceTk *[FK]* →link:#entity-k8s_namespace_dimension["k8s_namespace_dimension"].tk | Int32 | 是的 | k8s 命名空間的 TK。 
+
+
+| k8sNamespaceGroupTk *[FK]* →link:#entity-k8s_namespace_group_dimension["k8s_namespace_group_dimension"].tk | Int32 | 是的 | k8s 命名空間群組的 TK。 
+
+
+| storageAccessType | 字串 | 是的 | 描述此 qtree 的使用方式。如果其上存在 Volume，則為 SAN；否則為 NAS。 
+
+
+| protectionType | 字串 | 是的 | 指定此容量的保護類型，如果不是副本，則為 N/A。 
+
+
+| 硬限制容量 MB | Int64 | 是的 | 配額對此 qtree 所設定的磁碟空間限制。超出限制後，將無法寫入資料。 
+
+
+| softLimitCapacityMB | Int64 | 是的 | 配額對此 qtree 所設定的磁碟空間限制。超出限制時，系統會發出警告，但仍可寫入資料。 
+
+
+| 已用容量 MB | Int64 | 是的 | 已使用的容量，用於配額中設定的硬性容量限制和軟性容量限制。 
+
+
+| rawToUsableRatio | 雙倍的 | 是的 | 磁碟原始容量與 qtree 可用容量之比率。受 RAID 層級及其他開銷影響。 
+
+
+| missingQuotaLimits | 字串 | 是的 | 指示哪些硬限制和軟限制缺失，並以預設值進行初始化。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 內部體積尺寸 | link:#entity-internal_volume_dimension["內部體積尺寸"] | 一個 JOIN：internalVolumeTk=link:#entity-internal_volume_dimension["內部體積尺寸"].tk 
+
+
+| 儲存空間_維度 | link:#entity-storage_dimension["儲存空間_維度"] | 一個 JOIN：storageTk=link:#entity-storage_dimension["儲存空間_維度"].tk 
+
+
+| business_entity_dimension | link:#entity-business_entity_dimension["business_entity_dimension"] | 一個 JOIN：businessEntityTk=link:#entity-business_entity_dimension["business_entity_dimension"].tk 
+
+
+| k8s_namespace_group_dimension | link:#entity-k8s_namespace_group_dimension["k8s_namespace_group_dimension"] | one JOIN:k8sNamespaceGroupTk=link:#entity-k8s_namespace_group_dimension["k8s_namespace_group_dimension"].tk 
+
+
+| 應用程式群組維度 | link:#entity-application_group_dimension["應用程式群組維度"] | 一個 JOIN：applicationGroupTk=link:#entity-application_group_dimension["應用程式群組維度"].tk 
+
+
+| k8s_namespace_dimension | link:#entity-k8s_namespace_dimension["k8s_namespace_dimension"] | 一個 JOIN:k8sNamespaceTk=link:#entity-k8s_namespace_dimension["k8s_namespace_dimension"].tk 
+
+
+| 服務等級維度 | link:#entity-service_level_dimension["服務等級維度"] | 一個 JOIN：serviceLevelTk=link:#entity-service_level_dimension["服務等級維度"].tk 
+
+
+| 層級維度 | link:#entity-tier_dimension["層級維度"] | 一個 JOIN：tierTk=link:#entity-tier_dimension["層級維度"].tk 
+
+
+| 應用程式維度 | link:#entity-application_dimension["應用程式維度"] | 一個 JOIN：applicationTk=link:#entity-application_dimension["應用程式維度"].tk 
+
+
+| qtree_dimension | link:#entity-qtree_dimension["qtree_dimension"] | 一個 JOIN：qtreeTk=link:#entity-qtree_dimension["qtree_dimension"].tk 
+
+
+| 儲存池維度 | link:#entity-storage_pool_dimension["儲存池維度"] | 一個 JOIN：storagePoolTk=link:#entity-storage_pool_dimension["儲存池維度"].tk 
+
+
+| 日期維度 | link:#entity-date_dimension["日期維度"] | 一個 JOIN：dateTk=link:#entity-date_dimension["日期維度"].tk 
+|===
+
+
+[[qtreedimension]]
+=== qtree_dimension
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：qtree_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此 qtree 行的 TK。 
+
+
+| 姓名 | 字串 | 是的 | qtree 的名稱。 
+
+
+| 識別符 | 字串 | 是的 | qtree 的識別碼。 
+
+
+| storageIdentifier | 字串 | 是的 | 此 qtree 所在的儲存設備的識別碼。 
+
+
+| 類型 | 字串 | 是的 | Qtree 類型。 
+
+
+| url | 字串 | 是的 | Insight Server 中此 qtree 的 URL。 
+
+
+| id | Int64 | 是的 | dwh_inventory.qtree 中 qtree 的 GUID 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該 qtree 的最新行。 
+
+
+| dateTk | Int32 | 是的 | 建立此 qtree 行的日期對應的 TK。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 退款事實 | link:#entity-chargeback_fact["退款事實"] | 許多 
+
+
+| vm_capacity_fact | link:#entity-vm_capacity_fact["vm_capacity_fact"] | 許多 
+
+
+| qtree_capacity_fact | link:#entity-qtree_capacity_fact["qtree_capacity_fact"] | 許多 
+
+
+| volume_history_capacity_fact | link:#entity-volume_history_capacity_fact["volume_history_capacity_fact"] | 許多 
+|===
+
+
+[[serviceleveldimension]]
+=== 服務等級維度
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：service_level_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此服務層級行的 TK。 
+
+
+| 姓名 | 字串 | 是的 | 服務層級的識別名稱。 
+
+
+| 順序 | Int32 | 是的 | dwh_inventory.annotation_value 中定義的服務層級序號。 
+
+
+| 成本 | 雙倍的 | 是的 | 此服務層級相關的費用。 
+
+
+| id | Int64 | 是的 | dwh_inventory.annotation_value 中服務層級的 GUID。 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該服務層級的最新行。 
+
+
+| dateTk | Int32 | 是的 | 此服務層級行建立日期對應的 TK。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 內部容量事實 | link:#entity-internal_volume_capacity_fact["內部容量事實"] | 許多 
+
+
+| 退款事實 | link:#entity-chargeback_fact["退款事實"] | 許多 
+
+
+| vm_capacity_fact | link:#entity-vm_capacity_fact["vm_capacity_fact"] | 許多 
+
+
+| qtree_capacity_fact | link:#entity-qtree_capacity_fact["qtree_capacity_fact"] | 許多 
+
+
+| volume_history_capacity_fact | link:#entity-volume_history_capacity_fact["volume_history_capacity_fact"] | 許多 
+|===
+
+
+[[sptimetofill]]
+=== sp_time_to_fill
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：sp_time_to_fill
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| saspFactTk *[PK]* | Int32 | 是的 | 儲存設備和儲存資源池事實的 TK。 
+
+
+| daysToStoragePoolFull | Int32 | 是的 | UsedCapacity 達到容量所需的天數 
+
+
+| dateAtStoragePoolFull | DateTimeOffset | 是的 | UsedCapacity 等於容量的日期 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 儲存和儲存池容量事實 | link:#entity-storage_and_storage_pool_capacity_fact["儲存和儲存池容量事實"] | 一個 JOIN：saspFactTk=link:#entity-storage_and_storage_pool_capacity_fact["儲存和儲存池容量事實"].tk 
+|===
+
+
+[[storageandstoragepoolcapacityfact]]
+=== 儲存和儲存池容量事實
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：storage_and_storage_pool_capacity_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int32 | 是的 | 知道這件事。 
+
+
+| dateTk *[FK]* →link:#entity-date_dimension["日期維度"].tk | Int32 | 是的 | 日期維度的 TK。 
+
+
+| storagePoolTk *[FK]* →link:#entity-storage_pool_dimension["儲存池維度"].tk | Int32 | 是的 | 容量所在儲存資源池的 TK。 
+
+
+| storageTk *[FK]* →link:#entity-storage_dimension["儲存空間_維度"].tk | Int32 | 是的 | 儲存容量所在的儲存設備的 TK。 
+
+
+| tierTk *[FK]* →link:#entity-tier_dimension["層級維度"].tk | Int32 | 是的 | 該分層的 TK。 
+
+
+| 後端 | 字串 | 是的 | 當 StoragePool 為後端時為真 
+
+
+| isVirtual | 字串 | 是的 | 當 StoragePool 為虛擬時為 True 
+
+
+| 容量 MB | Int64 | 是的 | 儲存陣列報告的儲存資源池分配容量（以 MB 為單位）。 
+
+
+| 原始容量 MB | Int64 | 是的 | 容量 * rawToUsableRatio 
+
+
+| 已用容量 MB | Int64 | 是的 | 儲存陣列報告的儲存資源池已使用容量（以 MB 為單位）。 
+
+
+| 已用原始容量 MB | Int64 | 是的 | usedCapcacity * rawToUsableRatio 
+
+
+| 快照已用容量 MB | Int64 | 是的 | 用於儲存資源池層級快照的容量（以 MB 為單位） 
+
+
+| 快照已使用原始容量 MB | Int64 | 是的 | 快照已用容量（MB）* rawToUsableRatio 
+
+
+| softLimitCapacityMB | Int64 | 是的 | 儲存資源池資源隨需配置的容量限制（以 MB 為單位）。 
+
+
+| 未配置原始容量 MB | Int64 | 是的 | 儲存設備的未配置原始容量（包括故障磁碟、備援裝置和未使用的磁碟），單位為 MB。 
+
+
+| 備用原始容量 MB | Int64 | 是的 | 備援裝置磁碟的原始容量（以 MB 為單位）。 
+
+
+| 失敗原始容量 MB | Int64 | 是的 | 故障磁碟的原始容量（單位：MB）。 
+
+
+| volumeCapacityMB | Int64 | 是的 | 此儲存資源池所有 Volume 的已配置容量（以 MB 為單位）。 
+
+
+| 未使用的磁碟區容量 MB | Int64 | 是的 | 此儲存資源池未使用 Volume 的已配置容量（以 MB 為單位）。 
+
+
+| volumeConsumedCapacityMB | Int64 | 是的 | 此儲存資源池上 Volume 所佔用的實體容量（以 MB 為單位）。 
+
+
+| 已映射的磁碟區容量 MB | Int64 | 是的 | 此儲存資源池上已映射 Volume 的已配置容量（以 MB 為單位）。 
+
+
+| maskedVolumeCapacityMB | Int64 | 是的 | 此儲存資源池已配置的遮罩 Volume 容量（以 MB 為單位）。 
+
+
+| internalVolumeAllocatedCapacityMB | Int64 | 是的 | 此儲存資源池內部 Volume 的總分配容量（以 MB 為單位）。 
+
+
+| internalVolumeUsedCapacityMB | Int64 | 是的 | 此儲存資源池內部 Volume 已使用容量總計（以 MB 為單位）。 
+
+
+| internalVolumeConsumedCapacityMB | Int64 | 是的 | 此儲存資源池內部 Volume 所佔用的容量（以 MB 為單位）。 
+
+
+| dedupeRatio | 雙倍的 | 是的 | 此儲存資源池的重複資料刪除比率 
+
+
+| 重複資料刪除節省空間 GB | Int64 | 是的 | 此儲存資源池的重複資料刪除量（以 GB 為單位）。 
+
+
+| compressionRatio | 雙倍的 | 是的 | 此儲存資源池的壓縮比率 
+
+
+| 壓縮節省 GB | Int64 | 是的 | 此儲存資源池的壓縮（以 GB 為單位）。 
+
+
+| compressionSavingsPercent | 雙倍的 | 是的 | 此儲存資源池的壓縮（%）。 
+
+
+| compactionRatio | 雙倍的 | 是的 | 該儲存資源池的資料精簡比率 
+
+
+| 壓縮節省空間 GB | Int64 | 是的 | 此儲存資源池的資料精簡（以 GB 為單位）。 
+
+
+| objectStore 已用空間 GB | Int64 | 是的 | 物件存放區使用此儲存資源池的空間（以 GB 為單位） 
+
+
+| provisionedIops | Int64 | 是的 | 此儲存設備上已佈建的 IOPS。 
+
+
+| provisionedThroughput | Int64 | 是的 | 此儲存設備的配置處理量（MiB/s）。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 儲存空間_維度 | link:#entity-storage_dimension["儲存空間_維度"] | 一個 JOIN：storageTk=link:#entity-storage_dimension["儲存空間_維度"].tk 
+
+
+| 層級維度 | link:#entity-tier_dimension["層級維度"] | 一個 JOIN：tierTk=link:#entity-tier_dimension["層級維度"].tk 
+
+
+| 儲存池維度 | link:#entity-storage_pool_dimension["儲存池維度"] | 一個 JOIN：storagePoolTk=link:#entity-storage_pool_dimension["儲存池維度"].tk 
+
+
+| 日期維度 | link:#entity-date_dimension["日期維度"] | 一個 JOIN：dateTk=link:#entity-date_dimension["日期維度"].tk 
+
+
+| sp_time_to_fill | link:#entity-sp_time_to_fill["sp_time_to_fill"] | 許多 
+
+
+| volume_history_capacity_fact | link:#entity-volume_history_capacity_fact["volume_history_capacity_fact"] | 許多 
+|===
+
+
+[[storageandstoragepoolcapacityfuturefact]]
+=== 儲存和儲存池容量未來事實
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：storage_and_storage_pool_capacity_future_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int32 | 是的 | 知道這件事。 
+
+
+| dateTk *[FK]* →link:#entity-date_dimension["日期維度"].tk | Int32 | 是的 | 日期維度的 TK。 
+
+
+| storagePoolTk *[FK]* →link:#entity-storage_pool_dimension["儲存池維度"].tk | Int32 | 是的 | 容量所在儲存資源池的 TK。 
+
+
+| storageTk *[FK]* →link:#entity-storage_dimension["儲存空間_維度"].tk | Int32 | 是的 | 儲存容量所在的儲存設備的 TK。 
+
+
+| tierTk *[FK]* →link:#entity-tier_dimension["層級維度"].tk | Int32 | 是的 | 該分層的 TK。 
+
+
+| 後端 | 字串 | 是的 | 當 StoragePool 為後端時為真 
+
+
+| isVirtual | 字串 | 是的 | 當 StoragePool 為虛擬時為 True 
+
+
+| 容量 MB | Int64 | 是的 | 儲存陣列報告的儲存資源池分配容量（以 MB 為單位）。 
+
+
+| 原始容量 MB | Int64 | 是的 | 容量 * rawToUsableRatio 
+
+
+| 已用容量 MB | Int64 | 是的 | 儲存陣列報告的儲存資源池已使用容量（以 MB 為單位）。 
+
+
+| 已用原始容量 MB | Int64 | 是的 | usedCapacity * rawToUsableRatio 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 儲存空間_維度 | link:#entity-storage_dimension["儲存空間_維度"] | 一個 JOIN：storageTk=link:#entity-storage_dimension["儲存空間_維度"].tk 
+
+
+| 層級維度 | link:#entity-tier_dimension["層級維度"] | 一個 JOIN：tierTk=link:#entity-tier_dimension["層級維度"].tk 
+
+
+| 儲存池維度 | link:#entity-storage_pool_dimension["儲存池維度"] | 一個 JOIN：storagePoolTk=link:#entity-storage_pool_dimension["儲存池維度"].tk 
+
+
+| 日期維度 | link:#entity-date_dimension["日期維度"] | 一個 JOIN：dateTk=link:#entity-date_dimension["日期維度"].tk 
+|===
+
+
+[[storagedimension]]
+=== 儲存空間_維度
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：storage_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此儲存陣列行的 TK。 
+
+
+| 姓名 | 字串 | 是的 | 儲存陣列的名稱。 
+
+
+| 識別符 | 字串 | 是的 | 設備識別符。 
+
+
+| ip | 字串 | 是的 | 儲存陣列的 IP 位址。 
+
+
+| 模型 | 字串 | 是的 | 儲存陣列的型號。 
+
+
+| 製造商 | 字串 | 是的 | 儲存陣列製造商。 
+
+
+| serialNumber | 字串 | 是的 | 儲存陣列的序號。 
+
+
+| microcodeVersion | 字串 | 是的 | 儲存陣列上執行的韌體版本。 
+
+
+| 家庭 | 字串 | 是的 | 儲存陣列的系列名稱（例如 Clariion、Symmetrix 等）。 
+
+
+| url | 字串 | 是的 | Insight Server 中此儲存設備的 URL。 
+
+
+| id | Int64 | 是的 | dwh_inventory.storage 中儲存陣列的 GUID。 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該儲存設備的最新行。 
+
+
+| dateTk | Int32 | 是的 | 此儲存陣列行建立日期的 TK。 
+
+
+| dataCenter | 字串 | 是的 | dataCenter 指派給 dwh_dimensions.storage_dimension 的註解值 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 內部容量事實 | link:#entity-internal_volume_capacity_fact["內部容量事實"] | 許多 
+
+
+| 退款事實 | link:#entity-chargeback_fact["退款事實"] | 許多 
+
+
+| 磁碟群組容量事實 | link:#entity-disk_group_capacity_fact["磁碟群組容量事實"] | 許多 
+
+
+| vm_capacity_fact | link:#entity-vm_capacity_fact["vm_capacity_fact"] | 許多 
+
+
+| 磁碟群組容量未來事實 | link:#entity-disk_group_capacity_future_fact["磁碟群組容量未來事實"] | 許多 
+
+
+| qtree_capacity_fact | link:#entity-qtree_capacity_fact["qtree_capacity_fact"] | 許多 
+
+
+| 儲存和儲存池容量事實 | link:#entity-storage_and_storage_pool_capacity_fact["儲存和儲存池容量事實"] | 許多 
+
+
+| volume_history_capacity_fact | link:#entity-volume_history_capacity_fact["volume_history_capacity_fact"] | 許多 
+
+
+| 儲存和儲存池容量未來事實 | link:#entity-storage_and_storage_pool_capacity_future_fact["儲存和儲存池容量未來事實"] | 許多 
+
+
+| storage_node_capacity_fact | link:#entity-storage_node_capacity_fact["storage_node_capacity_fact"] | 許多 
+|===
+
+
+[[storagenodecapacityfact]]
+=== storage_node_capacity_fact
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：storage_node_capacity_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int32 | 是的 | 知道這件事。 
+
+
+| dateTk *[FK]* →link:#entity-date_dimension["日期維度"].tk | Int32 | 是的 | 日期 TK。 
+
+
+| storageTk *[FK]* →link:#entity-storage_dimension["儲存空間_維度"].tk | Int32 | 是的 | 磁碟群組所在儲存設備的 TK。 
+
+
+| storageNodeTk *[FK]* →link:#entity-storage_node_dimension["儲存節點維度"].tk | Int32 | 是的 | 儲存節點的 TK。 
+
+
+| tierTk *[FK]* →link:#entity-tier_dimension["層級維度"].tk | Int32 | 是的 | 該分層的 TK。 
+
+
+| totalNodeCapacityUtilizationMB | Int64 | 是的 | 總儲存節點空間（MB） 
+
+
+| 可用節點容量利用率 MB | Int64 | 是的 | 可用儲存節點空間（MB） 
+
+
+| 已用節點容量利用率 MB | Int64 | 是的 | 已用儲存節點空間（MB） 
+
+
+| 已用元資料節點容量使用率 MB | Int64 | 是的 | 已用儲存節點元資料空間（MB） 
+
+
+| 允許的 MetaData Node 容量使用量 MB | Int64 | 是的 | 允許的儲存節點元資料空間（MB） 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 儲存節點維度 | link:#entity-storage_node_dimension["儲存節點維度"] | 一個 JOIN：storageNodeTk=link:#entity-storage_node_dimension["儲存節點維度"].tk 
+
+
+| 儲存空間_維度 | link:#entity-storage_dimension["儲存空間_維度"] | 一個 JOIN：storageTk=link:#entity-storage_dimension["儲存空間_維度"].tk 
+
+
+| 層級維度 | link:#entity-tier_dimension["層級維度"] | 一個 JOIN：tierTk=link:#entity-tier_dimension["層級維度"].tk 
+
+
+| 日期維度 | link:#entity-date_dimension["日期維度"] | 一個 JOIN：dateTk=link:#entity-date_dimension["日期維度"].tk 
+|===
+
+
+[[storagenodedimension]]
+=== 儲存節點維度
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：storage_node_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此儲存節點行的 TK。 
+
+
+| 姓名 | 字串 | 是的 | 儲存節點的名稱。 
+
+
+| 識別符 | 字串 | 是的 | 儲存節點的識別碼。 
+
+
+| 版本 | 字串 | 是的 | 儲存節點的版本。 
+
+
+| 模型 | 字串 | 是的 | 儲存節點的型號。 
+
+
+| serialNumber | 字串 | 是的 | SerialNumber 為儲存節點的序號。 
+
+
+| siteName | 字串 | 是的 | 儲存節點的站台名稱。 
+
+
+| url | 字串 | 是的 | Insight Server 中此儲存節點的 URL。 
+
+
+| id | Int64 | 是的 | dwh_inventory.storage_node 中儲存節點的 GUID 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該儲存節點的最新行。 
+
+
+| dateTk | Int32 | 是的 | 此儲存節點行建立日期對應的 TK。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| storage_node_capacity_fact | link:#entity-storage_node_capacity_fact["storage_node_capacity_fact"] | 許多 
+|===
+
+
+[[storagepooldimension]]
+=== 儲存池維度
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：storage_pool_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此儲存資源池行的 TK。 
+
+
+| 識別符 | 字串 | 是的 | 設備識別符。 
+
+
+| 姓名 | 字串 | 是的 | 儲存資源池的名稱。 
+
+
+| storageName | 字串 | 是的 | 此儲存資源池所在的儲存設備名稱。 
+
+
+| storageIP | 字串 | 是的 | 此儲存資源池所在的儲存設備的 IP 位址。 
+
+
+| 類型 | 字串 | 是的 | 儲存資源池類型（例如，RAID、AGGREGATE 等）。 
+
+
+| 備援 | 字串 | 是的 | 儲存資源池備援。 
+
+
+| thinProvisioningSupported | 字串 | 是的 | 指示儲存資源池是否支援資源隨需配置。 
+
+
+| isVirtual | 字串 | 是的 | Virtual 表示這是陣列虛擬化中的前端儲存資源池。 
+
+
+| usesFlashPools | 字串 | 是的 | 指示此儲存資源池是否使用快閃記憶體池。 
+
+
+| url | 字串 | 是的 | Insight Server 中此儲存資源池的 URL。 
+
+
+| id | Int64 | 是的 | dwh_inventory.storage_pool 中儲存資源池的 GUID 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該儲存資源池的最新行。 
+
+
+| dateTk | Int32 | 是的 | 此儲存資源池行建立日期對應的 TK。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 內部容量事實 | link:#entity-internal_volume_capacity_fact["內部容量事實"] | 許多 
+
+
+| 退款事實 | link:#entity-chargeback_fact["退款事實"] | 許多 
+
+
+| 磁碟群組容量事實 | link:#entity-disk_group_capacity_fact["磁碟群組容量事實"] | 許多 
+
+
+| 磁碟群組容量未來事實 | link:#entity-disk_group_capacity_future_fact["磁碟群組容量未來事實"] | 許多 
+
+
+| qtree_capacity_fact | link:#entity-qtree_capacity_fact["qtree_capacity_fact"] | 許多 
+
+
+| 儲存和儲存池容量事實 | link:#entity-storage_and_storage_pool_capacity_fact["儲存和儲存池容量事實"] | 許多 
+
+
+| volume_history_capacity_fact | link:#entity-volume_history_capacity_fact["volume_history_capacity_fact"] | 許多 
+
+
+| 儲存和儲存池容量未來事實 | link:#entity-storage_and_storage_pool_capacity_future_fact["儲存和儲存池容量未來事實"] | 許多 
+|===
+
+
+[[tierdimension]]
+=== 層級維度
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：tier_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 本分層行的 TK。 
+
+
+| 姓名 | 字串 | 是的 | 分層的識別名稱。 
+
+
+| 順序 | Int32 | 是的 | dwh_inventory.annotation_value 中定義的分層序號。 
+
+
+| 成本 | 雙倍的 | 是的 | 此分層相關的費用。 
+
+
+| id | Int64 | 是的 | dwh_inventory.annotation_value 中分層的 GUID。 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該分層的最新行。 
+
+
+| dateTk | Int32 | 是的 | 此分層行建立日期對應的 TK。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 內部容量事實 | link:#entity-internal_volume_capacity_fact["內部容量事實"] | 許多 
+
+
+| 退款事實 | link:#entity-chargeback_fact["退款事實"] | 許多 
+
+
+| vm_capacity_fact | link:#entity-vm_capacity_fact["vm_capacity_fact"] | 許多 
+
+
+| qtree_capacity_fact | link:#entity-qtree_capacity_fact["qtree_capacity_fact"] | 許多 
+
+
+| 儲存和儲存池容量事實 | link:#entity-storage_and_storage_pool_capacity_fact["儲存和儲存池容量事實"] | 許多 
+
+
+| volume_history_capacity_fact | link:#entity-volume_history_capacity_fact["volume_history_capacity_fact"] | 許多 
+
+
+| 儲存和儲存池容量未來事實 | link:#entity-storage_and_storage_pool_capacity_future_fact["儲存和儲存池容量未來事實"] | 許多 
+
+
+| storage_node_capacity_fact | link:#entity-storage_node_capacity_fact["storage_node_capacity_fact"] | 許多 
+|===
+
+
+[[vmcapacityfact]]
+=== vm_capacity_fact
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：vm_capacity_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int32 | 是的 | 知道這件事。 
+
+
+| dateTk *[FK]* →link:#entity-date_dimension["日期維度"].tk | Int32 | 是的 | 日期 TK。 
+
+
+| hostTk *[FK]* →link:#entity-host_dimension["主機維度"].tk | Int32 | 是的 | 代表主機群組的主機的 TK。 
+
+
+| storageTk *[FK]* →link:#entity-storage_dimension["儲存空間_維度"].tk | Int32 | 是的 | 儲存容量所在的儲存設備的 TK。 
+
+
+| virtualStorageTk | Int32 | 是的 | 如果容量位於後端陣列上，則為前端陣列的 TK 值。否則，該值為 N/A。 
+
+
+| internalVolumeTk *[FK]* →link:#entity-internal_volume_dimension["內部體積尺寸"].tk | Int32 | 是的 | 容量所在內部 Volume 的 TK。 
+
+
+| qtreeTk *[FK]* →link:#entity-qtree_dimension["qtree_dimension"].tk | Int32 | 是的 | 容量所在的 qtree 的 TK。 
+
+
+| hostGroupTk *[FK]* →link:#entity-host_group_dimension["主機群組維度"].tk | Int32 | 是的 | 主機群組的 TK。 
+
+
+| applicationTk *[FK]* →link:#entity-application_dimension["應用程式維度"].tk | Int32 | 是的 | 代表應用程式群組的應用程式的 TK。 
+
+
+| applicationGroupTk *[FK]* →link:#entity-application_group_dimension["應用程式群組維度"].tk | Int32 | 是的 | 應用程式組的 TK。 
+
+
+| tierTk *[FK]* →link:#entity-tier_dimension["層級維度"].tk | Int32 | 是的 | 該分層的 TK。 
+
+
+| serviceLevelTk *[FK]* →link:#entity-service_level_dimension["服務等級維度"].tk | Int32 | 是的 | 服務層級的 TK。 
+
+
+| vmTk *[FK]* →link:#entity-vm_dimension["vm_dimension"].tk | Int32 | 是的 | 虛擬機器的 TK。 
+
+
+| dataStoreTk *[FK]* →link:#entity-datastore_dimension["資料儲存維度"].tk | Int32 | 是的 | 資料存放區的 TK。 
+
+
+| dataStoreName | 字串 | 是的 | 包含該容量的資料儲存庫名稱。 
+
+
+| dataStoreId | Int64 | 是的 | dwh_inventory.host 中資料存放區的 GUID - 當資料存放區從清單中移除時，設為 null。 
+
+
+| virtualCenterIp | 字串 | 是的 | 虛擬中心 IP 位址。 
+
+
+| businessUnit | 字串 | 是的 | 與容量相關的業務部門。 
+
+
+| businessEntityTk *[FK]* →link:#entity-business_entity_dimension["business_entity_dimension"].tk | Int32 | 是的 | 該企業實體的 TK。 
+
+
+| k8sNodeTk *[FK]* →link:#entity-k8s_node_dimension["k8s_node_dimension"].tk | Int32 | 是的 | k8s 節點的 TK。 
+
+
+| storageAccessType | 字串 | 是的 | 儲存設備存取類型。可選值為：NAS、SAN 或 UNKNOWN。 
+
+
+| capacityType *[FK]* →link:#entity-capacity_type["容量類型"].type | 字串 | 是的 | 識別容量的使用情況－資料存放區容量的每個位元在特定時間都恰好有一個用途。 
+
+
+| 實際 MB | Int64 | 是的 | 已使用的資料儲存容量（或 RDM 虛擬磁碟）。此測量值忽略了後端儲存設備中透過資源隨需配置和重複資料刪除技術所實現的節省。 
+
+
+| 已配置 MB | Int64 | 是的 | 分配給虛擬機器的容量。此計量單位包括 VMDK 檔案和其他虛擬機器相關檔案。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 內部體積尺寸 | link:#entity-internal_volume_dimension["內部體積尺寸"] | 一個 JOIN：internalVolumeTk=link:#entity-internal_volume_dimension["內部體積尺寸"].tk 
+
+
+| 儲存空間_維度 | link:#entity-storage_dimension["儲存空間_維度"] | 一個 JOIN：storageTk=link:#entity-storage_dimension["儲存空間_維度"].tk 
+
+
+| business_entity_dimension | link:#entity-business_entity_dimension["business_entity_dimension"] | 一個 JOIN：businessEntityTk=link:#entity-business_entity_dimension["business_entity_dimension"].tk 
+
+
+| k8s_node_dimension | link:#entity-k8s_node_dimension["k8s_node_dimension"] | 一個 JOIN:k8sNodeTk=link:#entity-k8s_node_dimension["k8s_node_dimension"].tk 
+
+
+| 主機群組維度 | link:#entity-host_group_dimension["主機群組維度"] | 一個 JOIN：hostGroupTk=link:#entity-host_group_dimension["主機群組維度"].tk 
+
+
+| vm_dimension | link:#entity-vm_dimension["vm_dimension"] | 一個 JOIN：vmTk=link:#entity-vm_dimension["vm_dimension"].tk 
+
+
+| 應用程式群組維度 | link:#entity-application_group_dimension["應用程式群組維度"] | 一個 JOIN：applicationGroupTk=link:#entity-application_group_dimension["應用程式群組維度"].tk 
+
+
+| 服務等級維度 | link:#entity-service_level_dimension["服務等級維度"] | 一個 JOIN：serviceLevelTk=link:#entity-service_level_dimension["服務等級維度"].tk 
+
+
+| 容量類型 | link:#entity-capacity_type["容量類型"] | 一個 JOIN：capacityType=link:#entity-capacity_type["容量類型"].type 
+
+
+| 層級維度 | link:#entity-tier_dimension["層級維度"] | 一個 JOIN：tierTk=link:#entity-tier_dimension["層級維度"].tk 
+
+
+| 應用程式維度 | link:#entity-application_dimension["應用程式維度"] | 一個 JOIN：applicationTk=link:#entity-application_dimension["應用程式維度"].tk 
+
+
+| 資料儲存維度 | link:#entity-datastore_dimension["資料儲存維度"] | 一個 JOIN：dataStoreTk=link:#entity-datastore_dimension["資料儲存維度"].tk 
+
+
+| qtree_dimension | link:#entity-qtree_dimension["qtree_dimension"] | 一個 JOIN：qtreeTk=link:#entity-qtree_dimension["qtree_dimension"].tk 
+
+
+| 主機維度 | link:#entity-host_dimension["主機維度"] | 一個 JOIN：hostTk=link:#entity-host_dimension["主機維度"].tk 
+
+
+| 日期維度 | link:#entity-date_dimension["日期維度"] | 一個 JOIN：dateTk=link:#entity-date_dimension["日期維度"].tk 
+|===
+
+
+[[vmdimension]]
+=== vm_dimension
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：vm_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此虛擬機器行的 TK。 
+
+
+| 姓名 | 字串 | 是的 | 虛擬機器的名稱。 
+
+
+| naturalKey | 字串 | 是的 | 虛擬機器的自然識別碼。 
+
+
+| 作業系統 | 字串 | 是的 | 客體作業系統。 
+
+
+| virtualCenterIp | 字串 | 是的 | 虛擬機器虛擬中心的 IP 位址。 
+
+
+| ips | 字串 | 是的 | 虛擬機器的 IP 位址清單，以逗號分隔。 
+
+
+| url | 字串 | 是的 | Insight Server 中此虛擬機器的 URL。 
+
+
+| id | Int64 | 是的 | dwh_inventory.hv_virtual_machine 中虛擬機器的 GUID 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該虛擬機器的最新行。 
+
+
+| dateTk | Int32 | 是的 | TK 表示建立此虛擬機器行的日期。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| vm_capacity_fact | link:#entity-vm_capacity_fact["vm_capacity_fact"] | 許多 
+|===
+
+
+[[volumecapacityfact]]
+=== Volume 容量事實
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：volume_capacity_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| volumeTk | Int32 | 是的 | Volume 所在位置的 TK。 
+
+
+| chargebackFactTk | Int32 | 是的 | TK 是計算 Volume 容量的退款事實列。 
+
+
+| storageAndSpFactTk | Int32 | 是的 | TK 儲存設備和儲存資源池容量事實行，其中計算 Volume 容量。 
+
+
+| hostTk | Int32 | 是的 | 代表主機群組的主機的 TK。 
+
+
+| storageTk | Int32 | 是的 | 儲存容量所在的儲存設備的 TK。 
+
+
+| hostGroupTk | Int32 | 是的 | 主機群組的 TK。 
+
+
+| tierTk | Int32 | 是的 | 該分層的 TK。 
+
+
+| serviceLevelTk | Int32 | 是的 | 服務層級的 TK。 
+
+
+| storagePoolTk | Int32 | 是的 | 容量所在儲存資源池的 TK。 
+
+
+| internalVolumeTk | Int32 | 是的 | 容量所在內部 Volume 的 TK。 
+
+
+| qtreeTk | Int32 | 是的 | 容量所在的 qtree 的 TK。 
+
+
+| k8sNamespaceTk | Int32 | 是的 | k8s 命名空間的 TK。 
+
+
+| k8sNamespaceGroupTk | Int32 | 是的 | k8s 命名空間群組的 TK。 
+
+
+| isVirtual | 字串 | 是的 | 指定此容量是否位於虛擬儲存資源池。 
+
+
+| isBackend | 字串 | 是的 | 指定此容量是否位於後端儲存資源池。 
+
+
+| protectionType | 字串 | 是的 | 指定此容量的保護類型，如果不是副本，則為 N/A。 
+
+
+| isAccessed | 字串 | 是的 | 指定主機是否存取此 Volume。 
+
+
+| isOrphaned | 字串 | 是的 | 指定此 Volume 是否已被遮罩，但沒有指向它的作用中路徑。 
+
+
+| isProtection | 字串 | 是的 | 指定此 Volume 是否用於複寫。 
+
+
+| isUnused | 字串 | 是的 | 指定此 Volume 是否不允許主機存取。 
+
+
+| 已配置容量 MB | Int64 | 是的 | Volume 的已佈建容量（以 MB 為單位）。 
+
+
+| 已存取容量 MB | Int64 | 是的 | 主機存取的 Volume 已配置容量（以 MB 為單位）。 
+
+
+| 孤立容量 MB | Int64 | 是的 | 已佈建的 Volume 容量（以 MB 為單位），這些 Volume 已被遮罩，但沒有指向它們的作用中路徑。 
+
+
+| 保護容量 MB | Int64 | 是的 | 用於複寫的 Volume 已佈建容量（以 MB 為單位）。 
+
+
+| 未使用容量 MB | Int64 | 是的 | 主機未存取的 Volume 已配置容量（以 MB 為單位）。 
+
+
+| daysSinceLastAccessed | Int32 | 是的 | 自上次對 Volume 進行讀取或寫入作業以來經過的天數。 
+|===
+
+
+[[volumedimension]]
+=== volume_dimension
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集合：volume_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 本 Volume 行的 TK。 
+
+
+| storageIdentifier | 字串 | 是的 | Volume 儲存設備的識別碼。 
+
+
+| 姓名 | 字串 | 是的 | Volume 的名稱。 
+
+
+| 標籤 | 字串 | 是的 | Volume 的標籤。 
+
+
+| thinProvisioned | 字串 | 是的 | Volume 是否為精簡佈建？ 
+
+
+| 類型 | 字串 | 是的 | Volume 類型。 
+
+
+| isVirtual | 字串 | 是的 | Volume 是虛擬 Volume 嗎？ 
+
+
+| 中繼資料 | 字串 | 是的 | Volume 是元 Volume 嗎？ 
+
+
+| 快照 | 字串 | 是的 | 指示此 Volume 是否為 Snapshot 快照技術 Volume。 
+
+
+| technologyType | 字串 | 是的 | 指定技術類型（FC/ISCSI/UNKNOWN）。 
+
+
+| uuid | 字串 | 是的 | Volume 的 UUID。 
+
+
+| isMainframe | 字串 | 是的 | 是否為大型機 Volume？ 
+
+
+| url | 字串 | 是的 | Insight Server 中此 Volume 的 URL。 
+
+
+| id | Int64 | 是的 | dwh_inventory.volume 中 Volume 的 GUID 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該 Volume 的最新行。 
+
+
+| dateTk | Int32 | 是的 | 建立此 Volume 行的日期對應的 TK。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| volume_history_capacity_fact | link:#entity-volume_history_capacity_fact["volume_history_capacity_fact"] | 許多 
+|===
+
+
+[[volumefactcurrent]]
+=== 目前容量事實
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集合：volume_fact_current
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| chargebackFactTk *[FK]* →link:#entity-chargeback_fact["退款事實"].tk | Int32 | 是的 | TK 是計算 Volume 容量的退款事實列。 
+
+
+| volumeId *[PK]* | Int64 | 是的 | 庫存中顯示的 Volume 的 GUID 
+
+
+| storageId | Int64 | 是的 | 此 Volume 所在儲存設備的 GUID，如清單所示 
+
+
+| volumeName | 字串 | 是的 | Volume 名稱 
+
+
+| volumeType | 字串 | 是的 | 廠商特定的 Volume 類型（例如，SFS、BCV）。 
+
+
+| thinProvisioned | 字串 | 是的 | 指示此Volume是否採用精簡配置。 
+
+
+| isVirtual | 字串 | 是的 | 指示此 Volume 是否為虛擬 Volume。 
+
+
+| 快照 | 字串 | 是的 | 指示此 Volume 是否為 Snapshot 快照技術 Volume。 
+
+
+| technologyType | 字串 | 是的 | 指定技術類型（FC/ISCSI/UNKNOWN）。 
+
+
+| 實體可用 MB | Int64 | 是的 | 從儲存設備中消耗的 Volume 可用容量，並在事實行中計數，單位為 MB。 
+
+
+| 實體原始 MB | Int64 | 是的 | 從儲存設備中消耗的 Volume 原始容量，並在事實列中計數，單位為 MB。 
+
+
+| 已配置可用 MB | Int64 | 是的 | 已佈建給事實列中統計的主機/使用者的 Volume 可用容量，以 MB 為單位。 
+
+
+| 已配置的原始 MB | Int64 | 是的 | 已佈建給事實列中統計的主機/使用者的 Volume 原始容量，以 MB 為單位。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 退款事實 | link:#entity-chargeback_fact["退款事實"] | 一個 JOIN：chargebackFactTk=link:#entity-chargeback_fact["退款事實"].tk 
+|===
+
+
+[[volumehistorycapacityfact]]
+=== volume_history_capacity_fact
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：volume_history_capacity_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int32 | 是的 | 知道這件事。 
+
+
+| dateTk *[PK]* | Int32 | 是的 | 日期 TK。 
+
+
+| volumeTk *[FK]* →link:#entity-volume_dimension["volume_dimension"].tk | Int32 | 是的 | Volume 所在位置的 TK。 
+
+
+| chargebackFactTk *[FK]* →link:#entity-chargeback_fact["退款事實"].tk | Int32 | 是的 | TK 是計算 Volume 容量的退款事實列。 
+
+
+| storageAndSpFactTk *[FK]* →link:#entity-storage_and_storage_pool_capacity_fact["儲存和儲存池容量事實"].tk | Int32 | 是的 | TK 儲存設備和儲存資源池容量事實行，其中計算 Volume 容量。 
+
+
+| hostTk *[FK]* →link:#entity-host_dimension["主機維度"].tk | Int32 | 是的 | 代表主機群組的主機的 TK。 
+
+
+| storageTk *[FK]* →link:#entity-storage_dimension["儲存空間_維度"].tk | Int32 | 是的 | 儲存容量所在的儲存設備的 TK。 
+
+
+| hostGroupTk *[FK]* →link:#entity-host_group_dimension["主機群組維度"].tk | Int32 | 是的 | 主機群組的 TK。 
+
+
+| tierTk *[FK]* →link:#entity-tier_dimension["層級維度"].tk | Int32 | 是的 | 該分層的 TK。 
+
+
+| serviceLevelTk *[FK]* →link:#entity-service_level_dimension["服務等級維度"].tk | Int32 | 是的 | 服務層級的 TK。 
+
+
+| storagePoolTk *[FK]* →link:#entity-storage_pool_dimension["儲存池維度"].tk | Int32 | 是的 | 容量所在儲存資源池的 TK。 
+
+
+| internalVolumeTk *[FK]* →link:#entity-internal_volume_dimension["內部體積尺寸"].tk | Int32 | 是的 | 容量所在內部 Volume 的 TK。 
+
+
+| qtreeTk *[FK]* →link:#entity-qtree_dimension["qtree_dimension"].tk | Int32 | 是的 | 容量所在的 qtree 的 TK。 
+
+
+| k8sNamespaceTk | Int32 | 是的 | k8s 命名空間的 TK。 
+
+
+| k8sNamespaceGroupTk *[FK]* →link:#entity-k8s_namespace_group_dimension["k8s_namespace_group_dimension"].tk | Int32 | 是的 | k8s 命名空間群組的 TK。 
+
+
+| isVirtual | 字串 | 是的 | 指定此容量是否位於虛擬儲存資源池。 
+
+
+| isBackend | 字串 | 是的 | 指定此容量是否位於後端儲存資源池。 
+
+
+| protectionType | 字串 | 是的 | 指定此容量的保護類型，如果不是副本，則為 N/A。 
+
+
+| isAccessed | 字串 | 是的 | 指定主機是否存取此 Volume。 
+
+
+| isOrphaned | 字串 | 是的 | 指定此 Volume 是否已被遮罩，但沒有指向它的作用中路徑。 
+
+
+| isProtection | 字串 | 是的 | 指定此 Volume 是否用於複寫。 
+
+
+| isUnused | 字串 | 是的 | 指定此 Volume 是否不允許主機存取。 
+
+
+| isMasked | 字串 | 是的 | 指定此 Volume 是否被屏蔽。 
+
+
+| isMapped | 字串 | 是的 | 指定此 Volume 是否已對應。 
+
+
+| 已配置容量 MB | Int64 | 是的 | Volume 的已佈建容量（以 MB 為單位）。 
+
+
+| 已存取容量 MB | Int64 | 是的 | 主機存取的 Volume 已配置容量（以 MB 為單位）。 
+
+
+| 孤立容量 MB | Int64 | 是的 | 已佈建的 Volume 容量（以 MB 為單位），這些 Volume 已被遮罩，但沒有指向它們的作用中路徑。 
+
+
+| 保護容量 MB | Int64 | 是的 | 用於複寫的 Volume 已佈建容量（以 MB 為單位）。 
+
+
+| 未使用容量 MB | Int64 | 是的 | 主機未存取的 Volume 已配置容量（以 MB 為單位）。 
+
+
+| 已消耗容量 MB | Int64 | 是的 | Volume 的已用容量（MB）。 
+
+
+| daysSinceLastAccessed | Int32 | 是的 | 自上次對 Volume 進行讀取或寫入作業以來經過的天數。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 退款事實 | link:#entity-chargeback_fact["退款事實"] | 一個 JOIN：chargebackFactTk=link:#entity-chargeback_fact["退款事實"].tk 
+
+
+| 內部體積尺寸 | link:#entity-internal_volume_dimension["內部體積尺寸"] | 一個 JOIN：internalVolumeTk=link:#entity-internal_volume_dimension["內部體積尺寸"].tk 
+
+
+| 儲存空間_維度 | link:#entity-storage_dimension["儲存空間_維度"] | 一個 JOIN：storageTk=link:#entity-storage_dimension["儲存空間_維度"].tk 
+
+
+| 儲存和儲存池容量事實 | link:#entity-storage_and_storage_pool_capacity_fact["儲存和儲存池容量事實"] | 一個 JOIN：storageAndSpFactTk=link:#entity-storage_and_storage_pool_capacity_fact["儲存和儲存池容量事實"].tk 
+
+
+| 主機群組維度 | link:#entity-host_group_dimension["主機群組維度"] | 一個 JOIN：hostGroupTk=link:#entity-host_group_dimension["主機群組維度"].tk 
+
+
+| k8s_namespace_group_dimension | link:#entity-k8s_namespace_group_dimension["k8s_namespace_group_dimension"] | one JOIN:k8sNamespaceGroupTk=link:#entity-k8s_namespace_group_dimension["k8s_namespace_group_dimension"].tk 
+
+
+| 服務等級維度 | link:#entity-service_level_dimension["服務等級維度"] | 一個 JOIN：serviceLevelTk=link:#entity-service_level_dimension["服務等級維度"].tk 
+
+
+| 層級維度 | link:#entity-tier_dimension["層級維度"] | 一個 JOIN：tierTk=link:#entity-tier_dimension["層級維度"].tk 
+
+
+| 儲存池維度 | link:#entity-storage_pool_dimension["儲存池維度"] | 一個 JOIN：storagePoolTk=link:#entity-storage_pool_dimension["儲存池維度"].tk 
+
+
+| qtree_dimension | link:#entity-qtree_dimension["qtree_dimension"] | 一個 JOIN：qtreeTk=link:#entity-qtree_dimension["qtree_dimension"].tk 
+
+
+| 主機維度 | link:#entity-host_dimension["主機維度"] | 一個 JOIN：hostTk=link:#entity-host_dimension["主機維度"].tk 
+
+
+| 日期維度 | link:#entity-date_dimension["日期維度"] | 一個 JOIN：dateTk=link:#entity-date_dimension["日期維度"].tk 
+
+
+| volume_dimension | link:#entity-volume_dimension["volume_dimension"] | 一個 JOIN：volumeTk=link:#entity-volume_dimension["volume_dimension"].tk 
+|===
+
+
+[[volumelastaccessedtime]]
+=== volume_last_accessed_time
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集合：volume_last_accessed_time
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| volumeId | Int64 | 是的 | Volume ID 
+
+
+| volumeName *[PK]* | 字串 | 是的 | 卷名 
+
+
+| storageIdentifier *[PK]* | 字串 | 是的 | 儲存識別碼 
+
+
+| lastAccessed | DateTimeOffset | 是的 | 上次存取該 Volume 的時間 
+|===

@@ -1,0 +1,571 @@
+---
+sidebar: sidebar 
+permalink: reporting_schema_fs_util.html 
+summary: 檔案系統利用率資料倉儲的結構描述表 
+keywords: dwh, data warehouse, schema, reporting, file system, fs util 
+---
+= 檔案系統使用率架構
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+來源：*dwh_fs_util* OData 端點 — Data Infrastructure Insights
+
+找到的表：*8* | 關聯：*7*
+
+
+
+[[key-relationships-between-tables]]
+== 表格間的關鍵關係
+
+
+
+[[fsutilfact]]
+=== fs_util_fact
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-compute_resource_dimension["運算資源維度"] | computeResourceTk | tk 
+
+
+| link:#entity-date_dimension["日期維度"] | dateTk | tk 
+
+
+| link:#entity-file_system_dimension["檔案系統維度"] | fsTk | tk 
+
+
+| link:#entity-host_dimension["主機維度"] | hostTk | tk 
+
+
+| link:#entity-storage_dimension["儲存空間_維度"] | storageTk | tk 
+
+
+| link:#entity-tier_dimension["層級維度"] | tierTk | tk 
+
+
+| link:#entity-vm_dimension["vm_dimension"] | vmTk | tk 
+|===
+
+
+[[tables-fields]]
+== 表格與欄位
+
+PK（主鍵） FK（外鍵） NOT NULL 必填字段
+
+
+
+[[computeresourcedimension]]
+=== 運算資源維度
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：compute_resource_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此運算資源行的 TK。 
+
+
+| 識別符 | 字串 | 是的 | 運算資源的自然識別碼。 
+
+
+| 姓名 | 字串 | 是的 | 運算資源的名稱。 
+
+
+| 類型 | 字串 | 是的 | 資源類型。 
+
+
+| 領域 | 字串 | 是的 | 運算資源的領域。 
+
+
+| ip | 字串 | 是的 | 運算資源的 IP 位址清單，以逗號分隔。 
+
+
+| 作業系統 | 字串 | 是的 | 在運算資源上執行的作業系統。 
+
+
+| id | Int64 | 是的 | dwh_inventory.compute_resource 中運算資源的 GUID 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該運算資源的最新行。 
+
+
+| dateTk | Int32 | 是的 | 此運算資源行建立日期對應的 TK。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| fs_util_fact | link:#entity-fs_util_fact["fs_util_fact"] | 許多 
+|===
+
+
+[[datedimension]]
+=== 日期維度
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：date_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 日期物件的 TK。 
+
+
+| fullDate | DateTimeOffset | 是的 | 日期物件的日期。 
+
+
+| dayInMonth | 位元組 | 是的 | 日期物件的月份中的日期。每月的第一天值為 1。 
+
+
+| dayInYear | Int32 | 是的 | 日期物件中某一年中的第幾天。一年中的第一天的值為 1。 
+
+
+| dateYear | Int32 | 是的 | 日期物件的年份。 
+
+
+| yearLabel | 字串 | 是的 | 年格式為字串 
+
+
+| monthNum | 位元組 | 是的 | 日期物件的月份。一月的值為 1。 
+
+
+| monthLabel | 字串 | 是的 | 月份格式為字串 
+
+
+| dayInWeekNum | 位元組 | 是的 | 日期物件的星期幾。星期日的值為 1。 
+
+
+| 四分之一 | 位元組 | 是的 | 日期物件的季度。第一季的值為 1。 
+
+
+| quarterLabel | 字串 | 是的 | 季度格式為字串 
+
+
+| dayInQuarter | Int32 | 是的 | 日期物件中季度內的日期。季度的第一天值為 1。 
+
+
+| repQuarter | 位元組 | 是的 | 表示該日期是否為該季度的第一個可用日期。 
+
+
+| repMonth | 位元組 | 是的 | 表示該日期是否為該月的第一個可用日期。 
+
+
+| repWeek | 位元組 | 是的 | 表示該日期是否為該週內的第一個可用日期。 
+
+
+| repDay | 位元組 | 是的 | 表示該日期是否為當天可用的第一個日期。 
+
+
+| repMonthOrLatest | 位元組 | 是的 | 指示此日期是當月代表日期還是最新日期。此標誌供按月代表資料處理的資料集市使用。唯一的區別在於，對於當前月份，它是最新日期。 
+
+
+| sspFlag | 位元組 | 是的 | 指示此日期是否用於儲存設備和儲存資源池資料集市。對於月份代表值以及組態中定義的最後天數，此值為真。 
+
+
+| 最新 | 字串 | 是的 | 指示該日期是否為表中可用的最後一個日期。 
+
+
+| 未來 | 字串 | 是的 | 指示該日期是未來日期（預測日期）還是實際日期。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| fs_util_fact | link:#entity-fs_util_fact["fs_util_fact"] | 許多 
+|===
+
+
+[[filesystemdimension]]
+=== 檔案系統維度
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：file_system_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 該次元的TK。 
+
+
+| computeResourceIdentifier | 字串 | 是的 | 運算資源的識別碼。自然鍵的一部分。 
+
+
+| 姓名 | 字串 | 是的 | 掛載點或磁碟機代號。自然鍵的一部分。 
+
+
+| 位置 | 字串 | 是的 | 指示資料儲存位置和存取方式。例如：本地、SAN、NAS。如果位置未知，則設定為 null。 
+
+
+| hardwareId | 字串 | 是的 | 主機特定識別符。如果未知，則設為 null。 
+
+
+| 類型 | 字串 | 是的 | 檔案系統類型。例如：NTFS、FAT、UFS、UDF、ZFS、ISO 9660、VXFS 等。如果未知，則設為 null。 
+
+
+| id | Int64 | 是的 | dwh_inventory.file_system 中檔案系統的 GUID。 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該檔案系統中的最新行。 
+
+
+| dateTk | Int32 | 是的 | 建立此檔案系統列的日期 TK。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| fs_util_fact | link:#entity-fs_util_fact["fs_util_fact"] | 許多 
+|===
+
+
+[[fsutilfact]]
+=== fs_util_fact
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：fs_util_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int32 | 是的 | 知道這件事。 
+
+
+| dateTk *[FK]* →link:#entity-date_dimension["日期維度"].tk | Int32 | 是的 | 日期 TK。 
+
+
+| hostTk *[FK]* →link:#entity-host_dimension["主機維度"].tk | Int32 | 是的 | 主機的 TK。 
+
+
+| vmTk *[FK]* →link:#entity-vm_dimension["vm_dimension"].tk | Int32 | 是的 | 虛擬機器的 TK。 
+
+
+| computeResourceTk *[FK]* →link:#entity-compute_resource_dimension["運算資源維度"].tk | Int32 | 是的 | computeResource 的 TK。 
+
+
+| fsTk *[FK]* →link:#entity-file_system_dimension["檔案系統維度"].tk | Int32 | 是的 | 檔案系統的 TK。 
+
+
+| storageTk *[FK]* →link:#entity-storage_dimension["儲存空間_維度"].tk | Int32 | 是的 | 儲存設備的 TK。 
+
+
+| tierTk *[FK]* →link:#entity-tier_dimension["層級維度"].tk | Int32 | 是的 | 該分層的 TK。 
+
+
+| sizeMB | Int64 | 是的 | 檔案系統大小（以 MB 為單位）。 
+
+
+| 已用MB | Int64 | 是的 | 已使用但不可用的檔案系統容量。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 檔案系統維度 | link:#entity-file_system_dimension["檔案系統維度"] | 一個 JOIN：fsTk=link:#entity-file_system_dimension["檔案系統維度"].tk 
+
+
+| 儲存空間_維度 | link:#entity-storage_dimension["儲存空間_維度"] | 一個 JOIN：storageTk=link:#entity-storage_dimension["儲存空間_維度"].tk 
+
+
+| 層級維度 | link:#entity-tier_dimension["層級維度"] | 一個 JOIN：tierTk=link:#entity-tier_dimension["層級維度"].tk 
+
+
+| 運算資源維度 | link:#entity-compute_resource_dimension["運算資源維度"] | 一個 JOIN：computeResourceTk=link:#entity-compute_resource_dimension["運算資源維度"].tk 
+
+
+| 主機維度 | link:#entity-host_dimension["主機維度"] | 一個 JOIN：hostTk=link:#entity-host_dimension["主機維度"].tk 
+
+
+| vm_dimension | link:#entity-vm_dimension["vm_dimension"] | 一個 JOIN：vmTk=link:#entity-vm_dimension["vm_dimension"].tk 
+
+
+| 日期維度 | link:#entity-date_dimension["日期維度"] | 一個 JOIN：dateTk=link:#entity-date_dimension["日期維度"].tk 
+|===
+
+
+[[hostdimension]]
+=== 主機維度
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：host_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此主機行的 TK。 
+
+
+| 姓名 | 字串 | 是的 | 主機名稱。 
+
+
+| 識別符 | 字串 | 是的 | 設備識別符。 
+
+
+| ip | 字串 | 是的 | 主機 IP 位址清單，以逗號分隔。 
+
+
+| 作業系統 | 字串 | 是的 | 主機上執行的作業系統。 
+
+
+| 模型 | 字串 | 是的 | 型號。 
+
+
+| 製造商 | 字串 | 是的 | 主機製造商。 
+
+
+| url | 字串 | 是的 | Insight Server 中此主機的 URL。 
+
+
+| id | Int64 | 是的 | dwh_inventory.host 中主機的 GUID。 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該主機的最新行。 
+
+
+| dateTk | Int32 | 是的 | 此主機行建立日期對應的 TK。 
+
+
+| dataCenter | 字串 | 是的 | dataCenter 指派給 dwh_dimensions.host_dimension 的註解值 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| fs_util_fact | link:#entity-fs_util_fact["fs_util_fact"] | 許多 
+|===
+
+
+[[storagedimension]]
+=== 儲存空間_維度
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：storage_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此儲存陣列行的 TK。 
+
+
+| 姓名 | 字串 | 是的 | 儲存陣列的名稱。 
+
+
+| 識別符 | 字串 | 是的 | 設備識別符。 
+
+
+| ip | 字串 | 是的 | 儲存陣列的 IP 位址。 
+
+
+| 模型 | 字串 | 是的 | 儲存陣列的型號。 
+
+
+| 製造商 | 字串 | 是的 | 儲存陣列製造商。 
+
+
+| serialNumber | 字串 | 是的 | 儲存陣列的序號。 
+
+
+| microcodeVersion | 字串 | 是的 | 儲存陣列上執行的韌體版本。 
+
+
+| 家庭 | 字串 | 是的 | 儲存陣列的系列名稱（例如 Clariion、Symmetrix 等）。 
+
+
+| url | 字串 | 是的 | Insight Server 中此儲存設備的 URL。 
+
+
+| id | Int64 | 是的 | dwh_inventory.storage 中儲存陣列的 GUID。 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該儲存設備的最新行。 
+
+
+| dateTk | Int32 | 是的 | 此儲存陣列行建立日期的 TK。 
+
+
+| dataCenter | 字串 | 是的 | dataCenter 指派給 dwh_dimensions.storage_dimension 的註解值 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| fs_util_fact | link:#entity-fs_util_fact["fs_util_fact"] | 許多 
+|===
+
+
+[[tierdimension]]
+=== 層級維度
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：tier_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 本分層行的 TK。 
+
+
+| 姓名 | 字串 | 是的 | 分層的識別名稱。 
+
+
+| 順序 | Int32 | 是的 | dwh_inventory.annotation_value 中定義的分層序號。 
+
+
+| 成本 | 雙倍的 | 是的 | 此分層相關的費用。 
+
+
+| id | Int64 | 是的 | dwh_inventory.annotation_value 中分層的 GUID。 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該分層的最新行。 
+
+
+| dateTk | Int32 | 是的 | 此分層行建立日期對應的 TK。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| fs_util_fact | link:#entity-fs_util_fact["fs_util_fact"] | 許多 
+|===
+
+
+[[vmdimension]]
+=== vm_dimension
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：vm_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此虛擬機器行的 TK。 
+
+
+| 姓名 | 字串 | 是的 | 虛擬機器的名稱。 
+
+
+| naturalKey | 字串 | 是的 | 虛擬機器的自然識別碼。 
+
+
+| 作業系統 | 字串 | 是的 | 客體作業系統。 
+
+
+| virtualCenterIp | 字串 | 是的 | 虛擬機器虛擬中心的 IP 位址。 
+
+
+| ips | 字串 | 是的 | 虛擬機器的 IP 位址清單，以逗號分隔。 
+
+
+| url | 字串 | 是的 | Insight Server 中此虛擬機器的 URL。 
+
+
+| id | Int64 | 是的 | dwh_inventory.hv_virtual_machine 中虛擬機器的 GUID 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該虛擬機器的最新行。 
+
+
+| dateTk | Int32 | 是的 | TK 表示建立此虛擬機器行的日期。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| fs_util_fact | link:#entity-fs_util_fact["fs_util_fact"] | 許多 
+|===

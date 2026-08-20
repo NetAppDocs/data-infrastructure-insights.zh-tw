@@ -1,0 +1,7352 @@
+---
+sidebar: sidebar 
+permalink: reporting_schema_performance.html 
+summary: 效能資料倉儲的模式表 
+keywords: dwh, data warehouse, schema, reporting, performance 
+---
+= Performance Schema
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+來源：*dwh_performance* OData 端點 — Data Infrastructure Insights
+
+找到的表：*74* | 關聯：*167*
+
+
+
+[[key-relationships-between-tables]]
+== 表格間的關鍵關係
+
+
+
+[[applicationvolumehourlyperformancefact]]
+=== application_volume_hourly_performance_fact
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-application_dimension["應用程式維度"] | applicationTk | tk 
+
+
+| link:#entity-application_group_dimension["應用程式群組維度"] | applicationGroupTk | tk 
+
+
+| link:#entity-business_entity_dimension["business_entity_dimension"] | businessEntityTk | tk 
+
+
+| link:#entity-date_dimension["日期維度"] | dateTk | tk 
+
+
+| link:#entity-service_level_dimension["服務等級維度"] | serviceLevelTk | tk 
+
+
+| link:#entity-tier_dimension["層級維度"] | tierTk | tk 
+
+
+| link:#entity-time_dimension["時間維度"] | timeTk | tk 
+|===
+
+
+[[diskdailyperformancefact]]
+=== disk_daily_performance_fact
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-date_dimension["日期維度"] | dateTk | tk 
+
+
+| link:#entity-disk_dimension["磁碟維度"] | diskTk | tk 
+
+
+| link:#entity-storage_dimension["儲存空間_維度"] | storageTk | tk 
+
+
+| link:#entity-storage_pool_dimension["儲存池維度"] | storagePoolTk | tk 
+|===
+
+
+[[diskhourlyperformancefact]]
+=== disk_hourly_performance_fact
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-date_dimension["日期維度"] | dateTk | tk 
+
+
+| link:#entity-disk_dimension["磁碟維度"] | diskTk | tk 
+
+
+| link:#entity-storage_dimension["儲存空間_維度"] | storageTk | tk 
+
+
+| link:#entity-storage_pool_dimension["儲存池維度"] | storagePoolTk | tk 
+
+
+| link:#entity-time_dimension["時間維度"] | timeTk | tk 
+|===
+
+
+[[hostvmdailyperformancefact]]
+=== host_vm_daily_performance_fact
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-date_dimension["日期維度"] | dateTk | tk 
+
+
+| link:#entity-host_dimension["主機維度"] | hostTk | tk 
+|===
+
+
+[[hostvmhourlyperformancefact]]
+=== host_vm_hourly_performance_fact
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-date_dimension["日期維度"] | dateTk | tk 
+
+
+| link:#entity-host_dimension["主機維度"] | hostTk | tk 
+
+
+| link:#entity-time_dimension["時間維度"] | timeTk | tk 
+|===
+
+
+[[hostvolumehourlyperformancefact]]
+=== host_volume_hourly_performance_fact
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-business_entity_dimension["business_entity_dimension"] | businessEntityTk | tk 
+
+
+| link:#entity-date_dimension["日期維度"] | dateTk | tk 
+
+
+| link:#entity-host_dimension["主機維度"] | hostTk | tk 
+
+
+| link:#entity-host_group_dimension["主機群組維度"] | hostGroupTk | tk 
+
+
+| link:#entity-service_level_dimension["服務等級維度"] | serviceLevelTk | tk 
+
+
+| link:#entity-tier_dimension["層級維度"] | tierTk | tk 
+
+
+| link:#entity-time_dimension["時間維度"] | timeTk | tk 
+|===
+
+
+[[internalvolumedailyperformancefact]]
+=== internal_volume_daily_performance_fact
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-application_dimension["應用程式維度"] | applicationTk | tk 
+
+
+| link:#entity-application_group_dimension["應用程式群組維度"] | applicationGroupTk | tk 
+
+
+| link:#entity-business_entity_dimension["business_entity_dimension"] | businessEntityTk | tk 
+
+
+| link:#entity-date_dimension["日期維度"] | dateTk | tk 
+
+
+| link:#entity-internal_volume_dimension["內部體積尺寸"] | internalVolumeTk | tk 
+
+
+| link:#entity-k8s_namespace_dimension["k8s_namespace_dimension"] | k8sNamespaceTk | tk 
+
+
+| link:#entity-k8s_namespace_group_dimension["k8s_namespace_group_dimension"] | k8sNamespaceGroupTk | tk 
+
+
+| link:#entity-service_level_dimension["服務等級維度"] | serviceLevelTk | tk 
+
+
+| link:#entity-storage_dimension["儲存空間_維度"] | storageTk | tk 
+
+
+| link:#entity-storage_node_dimension["儲存節點維度"] | storageNodeTk | tk 
+
+
+| link:#entity-storage_pool_dimension["儲存池維度"] | storagePoolTk | tk 
+
+
+| link:#entity-tier_dimension["層級維度"] | tierTk | tk 
+|===
+
+
+[[internalvolumehourlyperformancefact]]
+=== internal_volume_hourly_performance_fact
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-application_dimension["應用程式維度"] | applicationTk | tk 
+
+
+| link:#entity-application_group_dimension["應用程式群組維度"] | applicationGroupTk | tk 
+
+
+| link:#entity-business_entity_dimension["business_entity_dimension"] | businessEntityTk | tk 
+
+
+| link:#entity-date_dimension["日期維度"] | dateTk | tk 
+
+
+| link:#entity-internal_volume_dimension["內部體積尺寸"] | internalVolumeTk | tk 
+
+
+| link:#entity-k8s_namespace_dimension["k8s_namespace_dimension"] | k8sNamespaceTk | tk 
+
+
+| link:#entity-k8s_namespace_group_dimension["k8s_namespace_group_dimension"] | k8sNamespaceGroupTk | tk 
+
+
+| link:#entity-service_level_dimension["服務等級維度"] | serviceLevelTk | tk 
+
+
+| link:#entity-storage_dimension["儲存空間_維度"] | storageTk | tk 
+
+
+| link:#entity-storage_node_dimension["儲存節點維度"] | storageNodeTk | tk 
+
+
+| link:#entity-storage_pool_dimension["儲存池維度"] | storagePoolTk | tk 
+
+
+| link:#entity-tier_dimension["層級維度"] | tierTk | tk 
+
+
+| link:#entity-time_dimension["時間維度"] | timeTk | tk 
+|===
+
+
+[[qtreedailyperformancefact]]
+=== qtree_daily_performance_fact
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-application_dimension["應用程式維度"] | applicationTk | tk 
+
+
+| link:#entity-application_group_dimension["應用程式群組維度"] | applicationGroupTk | tk 
+
+
+| link:#entity-business_entity_dimension["business_entity_dimension"] | businessEntityTk | tk 
+
+
+| link:#entity-date_dimension["日期維度"] | dateTk | tk 
+
+
+| link:#entity-internal_volume_dimension["內部體積尺寸"] | internalVolumeTk | tk 
+
+
+| link:#entity-k8s_namespace_dimension["k8s_namespace_dimension"] | k8sNamespaceTk | tk 
+
+
+| link:#entity-k8s_namespace_group_dimension["k8s_namespace_group_dimension"] | k8sNamespaceGroupTk | tk 
+
+
+| link:#entity-qtree_dimension["qtree_dimension"] | qtreeTk | tk 
+
+
+| link:#entity-service_level_dimension["服務等級維度"] | serviceLevelTk | tk 
+
+
+| link:#entity-storage_dimension["儲存空間_維度"] | storageTk | tk 
+
+
+| link:#entity-storage_pool_dimension["儲存池維度"] | storagePoolTk | tk 
+
+
+| link:#entity-tier_dimension["層級維度"] | tierTk | tk 
+|===
+
+
+[[qtreehourlyperformancefact]]
+=== qtree_hourly_performance_fact
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-application_dimension["應用程式維度"] | applicationTk | tk 
+
+
+| link:#entity-application_group_dimension["應用程式群組維度"] | applicationGroupTk | tk 
+
+
+| link:#entity-business_entity_dimension["business_entity_dimension"] | businessEntityTk | tk 
+
+
+| link:#entity-date_dimension["日期維度"] | dateTk | tk 
+
+
+| link:#entity-internal_volume_dimension["內部體積尺寸"] | internalVolumeTk | tk 
+
+
+| link:#entity-k8s_namespace_dimension["k8s_namespace_dimension"] | k8sNamespaceTk | tk 
+
+
+| link:#entity-k8s_namespace_group_dimension["k8s_namespace_group_dimension"] | k8sNamespaceGroupTk | tk 
+
+
+| link:#entity-qtree_dimension["qtree_dimension"] | qtreeTk | tk 
+
+
+| link:#entity-service_level_dimension["服務等級維度"] | serviceLevelTk | tk 
+
+
+| link:#entity-storage_dimension["儲存空間_維度"] | storageTk | tk 
+
+
+| link:#entity-storage_pool_dimension["儲存池維度"] | storagePoolTk | tk 
+
+
+| link:#entity-tier_dimension["層級維度"] | tierTk | tk 
+
+
+| link:#entity-time_dimension["時間維度"] | timeTk | tk 
+|===
+
+
+[[storagenodedailyperformancefact]]
+=== 儲存節點每日效能數據
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-date_dimension["日期維度"] | dateTk | tk 
+
+
+| link:#entity-storage_dimension["儲存空間_維度"] | storageTk | tk 
+
+
+| link:#entity-storage_node_dimension["儲存節點維度"] | storageNodeTk | tk 
+
+
+| link:#entity-tier_dimension["層級維度"] | tierTk | tk 
+|===
+
+
+[[storagenodehourlyperformancefact]]
+=== 儲存節點每小時效能數據
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-date_dimension["日期維度"] | dateTk | tk 
+
+
+| link:#entity-storage_dimension["儲存空間_維度"] | storageTk | tk 
+
+
+| link:#entity-storage_node_dimension["儲存節點維度"] | storageNodeTk | tk 
+
+
+| link:#entity-tier_dimension["層級維度"] | tierTk | tk 
+
+
+| link:#entity-time_dimension["時間維度"] | timeTk | tk 
+|===
+
+
+[[switchperformanceforhosthourlyfact]]
+=== switch_performance_for_host_hourly_fact
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-application_dimension["應用程式維度"] | applicationTk | tk 
+
+
+| link:#entity-application_group_dimension["應用程式群組維度"] | applicationGroupTk | tk 
+
+
+| link:#entity-business_entity_dimension["business_entity_dimension"] | businessEntityTk | tk 
+
+
+| link:#entity-date_dimension["日期維度"] | dateTk | tk 
+
+
+| link:#entity-host_dimension["主機維度"] | hostTk | tk 
+
+
+| link:#entity-time_dimension["時間維度"] | timeTk | tk 
+|===
+
+
+[[switchperformanceforporthourlyfact]]
+=== switch_performance_for_port_hourly_fact
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-connected_device_dimension["連線裝置維度"] | connectedDeviceTk | tk 
+
+
+| link:#entity-date_dimension["日期維度"] | dateTk | tk 
+
+
+| link:#entity-fabric_dimension["架構維度"] | fabricTk | tk 
+
+
+| link:#entity-port_dimension["連接埠維度"] | portTk | tk 
+
+
+| link:#entity-switch_dimension["切換維度"] | switchTk | tk 
+
+
+| link:#entity-time_dimension["時間維度"] | timeTk | tk 
+|===
+
+
+[[switchperformanceforstoragehourlyfact]]
+=== switch_performance_for_storage_hourly_fact
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-date_dimension["日期維度"] | dateTk | tk 
+
+
+| link:#entity-storage_dimension["儲存空間_維度"] | storageTk | tk 
+
+
+| link:#entity-time_dimension["時間維度"] | timeTk | tk 
+|===
+
+
+[[switchperformancefortapehourlyfact]]
+=== switch_performance_for_tape_hourly_fact
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-date_dimension["日期維度"] | dateTk | tk 
+
+
+| link:#entity-tape_dimension["磁帶尺寸"] | tapeTk | tk 
+
+
+| link:#entity-time_dimension["時間維度"] | timeTk | tk 
+|===
+
+
+[[timedimension]]
+=== 時間維度
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-date_dimension["日期維度"] | dateTk | tk 
+|===
+
+
+[[vmdailyperformancefact]]
+=== vm_daily_performance_fact
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-application_dimension["應用程式維度"] | applicationTk | tk 
+
+
+| link:#entity-application_group_dimension["應用程式群組維度"] | applicationGroupTk | tk 
+
+
+| link:#entity-business_entity_dimension["business_entity_dimension"] | businessEntityTk | tk 
+
+
+| link:#entity-date_dimension["日期維度"] | dateTk | tk 
+
+
+| link:#entity-host_dimension["主機維度"] | hostTk | tk 
+
+
+| link:#entity-k8s_node_dimension["k8s_node_dimension"] | k8sNodeTk | tk 
+
+
+| link:#entity-vm_dimension["vm_dimension"] | vmTk | tk 
+|===
+
+
+[[vmhourlyperformancefact]]
+=== vm_hourly_performance_fact
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-application_dimension["應用程式維度"] | applicationTk | tk 
+
+
+| link:#entity-application_group_dimension["應用程式群組維度"] | applicationGroupTk | tk 
+
+
+| link:#entity-business_entity_dimension["business_entity_dimension"] | businessEntityTk | tk 
+
+
+| link:#entity-date_dimension["日期維度"] | dateTk | tk 
+
+
+| link:#entity-host_dimension["主機維度"] | hostTk | tk 
+
+
+| link:#entity-k8s_node_dimension["k8s_node_dimension"] | k8sNodeTk | tk 
+
+
+| link:#entity-time_dimension["時間維度"] | timeTk | tk 
+
+
+| link:#entity-vm_dimension["vm_dimension"] | vmTk | tk 
+|===
+
+
+[[vmdkdailyperformancefact]]
+=== vmdk_daily_performance_fact
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-datastore_dimension["資料儲存維度"] | dataStoreTk | tk 
+
+
+| link:#entity-date_dimension["日期維度"] | dateTk | tk 
+
+
+| link:#entity-host_dimension["主機維度"] | hostTk | tk 
+
+
+| link:#entity-service_level_dimension["服務等級維度"] | serviceLevelTk | tk 
+
+
+| link:#entity-storage_dimension["儲存空間_維度"] | storageTk | tk 
+
+
+| link:#entity-tier_dimension["層級維度"] | tierTk | tk 
+
+
+| link:#entity-vm_dimension["vm_dimension"] | vmTk | tk 
+
+
+| link:#entity-vmdk_dimension["vmdk_dimension"] | vmdkTk | tk 
+|===
+
+
+[[vmdkhourlyperformancefact]]
+=== vmdk_hourly_performance_fact
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-datastore_dimension["資料儲存維度"] | dataStoreTk | tk 
+
+
+| link:#entity-date_dimension["日期維度"] | dateTk | tk 
+
+
+| link:#entity-host_dimension["主機維度"] | hostTk | tk 
+
+
+| link:#entity-service_level_dimension["服務等級維度"] | serviceLevelTk | tk 
+
+
+| link:#entity-storage_dimension["儲存空間_維度"] | storageTk | tk 
+
+
+| link:#entity-tier_dimension["層級維度"] | tierTk | tk 
+
+
+| link:#entity-time_dimension["時間維度"] | timeTk | tk 
+
+
+| link:#entity-vm_dimension["vm_dimension"] | vmTk | tk 
+
+
+| link:#entity-vmdk_dimension["vmdk_dimension"] | vmdkTk | tk 
+|===
+
+
+[[volumedailyperformancefact]]
+=== volume_daily_performance_fact
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-application_dimension["應用程式維度"] | applicationTk | tk 
+
+
+| link:#entity-application_group_dimension["應用程式群組維度"] | applicationGroupTk | tk 
+
+
+| link:#entity-business_entity_dimension["business_entity_dimension"] | businessEntityTk | tk 
+
+
+| link:#entity-date_dimension["日期維度"] | dateTk | tk 
+
+
+| link:#entity-host_dimension["主機維度"] | hostTk | tk 
+
+
+| link:#entity-host_group_dimension["主機群組維度"] | hostGroupTk | tk 
+
+
+| link:#entity-k8s_namespace_dimension["k8s_namespace_dimension"] | k8sNamespaceTk | tk 
+
+
+| link:#entity-k8s_namespace_group_dimension["k8s_namespace_group_dimension"] | k8sNamespaceGroupTk | tk 
+
+
+| link:#entity-service_level_dimension["服務等級維度"] | serviceLevelTk | tk 
+
+
+| link:#entity-storage_dimension["儲存空間_維度"] | storageTk | tk 
+
+
+| link:#entity-storage_node_dimension["儲存節點維度"] | storageNodeTk | tk 
+
+
+| link:#entity-storage_pool_dimension["儲存池維度"] | storagePoolTk | tk 
+
+
+| link:#entity-tier_dimension["層級維度"] | tierTk | tk 
+
+
+| link:#entity-volume_dimension["volume_dimension"] | volumeTk | tk 
+|===
+
+
+[[volumehourlyperformancefact]]
+=== volume_hourly_performance_fact
+
+[cols="1,1,1"]
+|===
+| 引用（父）表 | FK 列 | 父主鍵 
+
+
+| link:#entity-application_dimension["應用程式維度"] | applicationTk | tk 
+
+
+| link:#entity-application_group_dimension["應用程式群組維度"] | applicationGroupTk | tk 
+
+
+| link:#entity-business_entity_dimension["business_entity_dimension"] | businessEntityTk | tk 
+
+
+| link:#entity-date_dimension["日期維度"] | dateTk | tk 
+
+
+| link:#entity-host_dimension["主機維度"] | hostTk | tk 
+
+
+| link:#entity-host_group_dimension["主機群組維度"] | hostGroupTk | tk 
+
+
+| link:#entity-k8s_namespace_dimension["k8s_namespace_dimension"] | k8sNamespaceTk | tk 
+
+
+| link:#entity-k8s_namespace_group_dimension["k8s_namespace_group_dimension"] | k8sNamespaceGroupTk | tk 
+
+
+| link:#entity-service_level_dimension["服務等級維度"] | serviceLevelTk | tk 
+
+
+| link:#entity-storage_dimension["儲存空間_維度"] | storageTk | tk 
+
+
+| link:#entity-storage_node_dimension["儲存節點維度"] | storageNodeTk | tk 
+
+
+| link:#entity-storage_pool_dimension["儲存池維度"] | storagePoolTk | tk 
+
+
+| link:#entity-tier_dimension["層級維度"] | tierTk | tk 
+
+
+| link:#entity-time_dimension["時間維度"] | timeTk | tk 
+
+
+| link:#entity-volume_dimension["volume_dimension"] | volumeTk | tk 
+|===
+
+
+[[tables-fields]]
+== 表格與欄位
+
+PK（主鍵） FK（外鍵） NOT NULL 必填字段
+
+
+
+[[applicationdimension]]
+=== 應用程式維度
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集合：application_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此應用程式行的 TK。 
+
+
+| 姓名 | 字串 | 是的 | 應用程式名稱。 
+
+
+| 描述 | 字串 | 是的 | 應用程式描述。 
+
+
+| 優先順序 | 字串 | 是的 | 應用程式的優先順序。 
+
+
+| url | 字串 | 是的 | Insight Server 中此應用程式的 URL。 
+
+
+| id | Int64 | 是的 | dwh_inventory.application 中應用程式的 GUID。 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該應用程式的最新行。 
+
+
+| dateTk | Int32 | 是的 | 此應用程式行建立日期對應的 TK。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| qtree_hourly_performance_fact | link:#entity-qtree_hourly_performance_fact["qtree_hourly_performance_fact"] | 許多 
+
+
+| volume_hourly_performance_fact | link:#entity-volume_hourly_performance_fact["volume_hourly_performance_fact"] | 許多 
+
+
+| application_volume_hourly_performance_fact | link:#entity-application_volume_hourly_performance_fact["application_volume_hourly_performance_fact"] | 許多 
+
+
+| qtree_daily_performance_fact | link:#entity-qtree_daily_performance_fact["qtree_daily_performance_fact"] | 許多 
+
+
+| vm_hourly_performance_fact | link:#entity-vm_hourly_performance_fact["vm_hourly_performance_fact"] | 許多 
+
+
+| internal_volume_daily_performance_fact | link:#entity-internal_volume_daily_performance_fact["internal_volume_daily_performance_fact"] | 許多 
+
+
+| internal_volume_hourly_performance_fact | link:#entity-internal_volume_hourly_performance_fact["internal_volume_hourly_performance_fact"] | 許多 
+
+
+| vm_daily_performance_fact | link:#entity-vm_daily_performance_fact["vm_daily_performance_fact"] | 許多 
+
+
+| switch_performance_for_host_hourly_fact | link:#entity-switch_performance_for_host_hourly_fact["switch_performance_for_host_hourly_fact"] | 許多 
+
+
+| volume_daily_performance_fact | link:#entity-volume_daily_performance_fact["volume_daily_performance_fact"] | 許多 
+|===
+
+
+[[applicationgroupbridge]]
+=== 應用程式群組橋接
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：application_group_bridge
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| appGroupTk | Int32 | 是的 | 應用程式組的 TK。 
+
+
+| appTk | Int32 | 是的 | 應用程式的 TK。 
+
+
+| isRep | 字串 | 是的 | 指示此應用程式是否代表其應用程式群組。 
+|===
+
+
+[[applicationgroupdimension]]
+=== 應用程式群組維度
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集合：application_group_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 應用程式組的 TK。 
+
+
+| repApp | 字串 | 是的 | 代表該應用程式組的應用程式名稱。 
+
+
+| repAppTk | Int32 | 是的 | 代表應用程式群組的應用程式的 TK。 
+
+
+| 基數 | Int32 | 是的 | 應用程式組中的應用程式數量。 
+
+
+| dateTk | Int32 | 是的 | TK 表示應用程式群組列建立的日期。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| qtree_hourly_performance_fact | link:#entity-qtree_hourly_performance_fact["qtree_hourly_performance_fact"] | 許多 
+
+
+| volume_hourly_performance_fact | link:#entity-volume_hourly_performance_fact["volume_hourly_performance_fact"] | 許多 
+
+
+| application_volume_hourly_performance_fact | link:#entity-application_volume_hourly_performance_fact["application_volume_hourly_performance_fact"] | 許多 
+
+
+| qtree_daily_performance_fact | link:#entity-qtree_daily_performance_fact["qtree_daily_performance_fact"] | 許多 
+
+
+| vm_hourly_performance_fact | link:#entity-vm_hourly_performance_fact["vm_hourly_performance_fact"] | 許多 
+
+
+| internal_volume_daily_performance_fact | link:#entity-internal_volume_daily_performance_fact["internal_volume_daily_performance_fact"] | 許多 
+
+
+| internal_volume_hourly_performance_fact | link:#entity-internal_volume_hourly_performance_fact["internal_volume_hourly_performance_fact"] | 許多 
+
+
+| vm_daily_performance_fact | link:#entity-vm_daily_performance_fact["vm_daily_performance_fact"] | 許多 
+
+
+| switch_performance_for_host_hourly_fact | link:#entity-switch_performance_for_host_hourly_fact["switch_performance_for_host_hourly_fact"] | 許多 
+
+
+| volume_daily_performance_fact | link:#entity-volume_daily_performance_fact["volume_daily_performance_fact"] | 許多 
+|===
+
+
+[[applicationvolumehourlyperformancefact]]
+=== application_volume_hourly_performance_fact
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：application_volume_hourly_performance_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int64 | 是的 | 知道這件事。 
+
+
+| timeTk *[FK]* →link:#entity-time_dimension["時間維度"].tk | Int32 | 是的 | 時間維度的TK。 
+
+
+| dateTk *[FK]* →link:#entity-date_dimension["日期維度"].tk | Int32 | 是的 | 日期維度的 TK。 
+
+
+| applicationTk *[FK]* →link:#entity-application_dimension["應用程式維度"].tk | Int32 | 是的 | 應用程式代表的 TK。 
+
+
+| applicationGroupTk *[FK]* →link:#entity-application_group_dimension["應用程式群組維度"].tk | Int32 | 是的 | 應用程式組的 TK。 
+
+
+| tierTk *[FK]* →link:#entity-tier_dimension["層級維度"].tk | Int32 | 是的 | 該分層的 TK。 
+
+
+| serviceLevelTk *[FK]* →link:#entity-service_level_dimension["服務等級維度"].tk | Int32 | 是的 | 服務層級的 TK。 
+
+
+| businessEntityTk *[FK]* →link:#entity-business_entity_dimension["business_entity_dimension"].tk | Int32 | 是的 | 該企業實體的 TK。 
+
+
+| readResponseTime | 雙倍的 | 是的 | 讀取回應時間。 
+
+
+| writeResponseTime | 雙倍的 | 是的 | 寫入回應時間 
+
+
+| totalResponseTime | 雙倍的 | 是的 | 總回應時間。 
+
+
+| totalResponseTimeMax | 雙倍的 | 是的 | 回應時間的最大值。 
+
+
+| readThroughput | 雙倍的 | 是的 | 平均讀取處理量。 
+
+
+| writeThroughput | 雙倍的 | 是的 | 平均寫入處理量。 
+
+
+| sumOfAveragesVolumeThroughput | 雙倍的 | 是的 | 與應用程式相關的所有每小時 Volume 樣本的 totalThroughput 總和。代表應用程式的平均使用量。 
+
+
+| maxOfMaxVolumeThroughput | 雙倍的 | 是的 | 與應用程式相關的所有 Volume 每小時樣本的最大 totalThroughputMax 處理量。代表應用程式最大使用量的最佳情況。 
+
+
+| sumOfMaxVolumeThroughput | 雙倍的 | 是的 | 與應用程式相關的所有 Volume 每小時樣本的 totalThroughputMax 總和。代表所有最大值同時發生時的最大使用量最壞情況。 
+
+
+| readIops | 雙倍的 | 是的 | 平均每秒讀取 I/O 次數。 
+
+
+| writeIops | 雙倍的 | 是的 | 平均每秒寫入 I/O 次數。 
+
+
+| sumOfAveragesVolumeIops | 雙倍的 | 是的 | 與應用程式相關的所有 Volume 每小時樣本的 totalIops 總和。代表該應用程式的平均使用量。 
+
+
+| maxOfMaxVolumeIops | 雙倍的 | 是的 | 與應用程式相關的所有 Volume 每小時樣本的最大 totalIopsMax。代表應用程式最大使用量的最佳情況。 
+
+
+| sumOfMaxVolumeIops | 雙倍的 | 是的 | 與應用程式相關的所有 Volume 每小時樣本的 totalIopsMax 總和。代表所有最大值同時發生時的最大使用量最壞情況。 
+
+
+| readCacheHitRatio | 雙倍的 | 是的 | 讀取快取命中率。 
+
+
+| writeCacheHitRatio | 雙倍的 | 是的 | 寫入快取命中率。 
+
+
+| totalCacheHitRatio | 雙倍的 | 是的 | 總快取命中率。 
+
+
+| totalCacheHitRatioMax | 雙倍的 | 是的 | 最大總快取命中率。 
+
+
+| writePending | Int64 | 是的 | 待寫入數量。 
+
+
+| readIoDensity | 雙倍的 | 是的 | 讀取 I/O 密度。 
+
+
+| writeIoDensity | 雙倍的 | 是的 | 寫入 I/O 密度。 
+
+
+| totalIoDensity | 雙倍的 | 是的 | 總 IO 密度。 
+
+
+| totalIoDensityMax | 雙倍的 | 是的 | 最大總 IO 密度。 
+
+
+| compressionSavingsPercent | 雙倍的 | 是的 | 壓縮節省率（%）。 
+
+
+| compressionSavingsSpace | 雙倍的 | 是的 | 壓縮節省空間。 
+
+
+| totalTimeToFull | 雙倍的 | 是的 | 達到滿格時間。 
+
+
+| confidenceIntervalTimeToFull | 雙倍的 | 是的 | 達到完全所需時間的信賴區間。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 服務等級維度 | link:#entity-service_level_dimension["服務等級維度"] | 一個 JOIN：serviceLevelTk=link:#entity-service_level_dimension["服務等級維度"].tk 
+
+
+| 層級維度 | link:#entity-tier_dimension["層級維度"] | 一個 JOIN：tierTk=link:#entity-tier_dimension["層級維度"].tk 
+
+
+| business_entity_dimension | link:#entity-business_entity_dimension["business_entity_dimension"] | 一個 JOIN：businessEntityTk=link:#entity-business_entity_dimension["business_entity_dimension"].tk 
+
+
+| 應用程式維度 | link:#entity-application_dimension["應用程式維度"] | 一個 JOIN：applicationTk=link:#entity-application_dimension["應用程式維度"].tk 
+
+
+| 時間維度 | link:#entity-time_dimension["時間維度"] | 一個 JOIN：timeTk=link:#entity-time_dimension["時間維度"].tk 
+
+
+| 日期維度 | link:#entity-date_dimension["日期維度"] | 一個 JOIN：dateTk=link:#entity-date_dimension["日期維度"].tk 
+
+
+| 應用程式群組維度 | link:#entity-application_group_dimension["應用程式群組維度"] | 一個 JOIN：applicationGroupTk=link:#entity-application_group_dimension["應用程式群組維度"].tk 
+|===
+
+
+[[businessentitydimension]]
+=== business_entity_dimension
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：business_entity_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此企業實體行的 TK。 
+
+
+| 全名 | 字串 | 是的 | 企業實體名稱。 
+
+
+| 租戶 | 字串 | 是的 | 租戶名稱。 
+
+
+| lob | 字串 | 是的 | 業務流程名稱。 
+
+
+| businessUnit | 字串 | 是的 | 業務單位名稱。 
+
+
+| 專案 | 字串 | 是的 | 專案名稱。 
+
+
+| id | Int64 | 是的 | dwh_inventory.annotation_value 中企業實體的 GUID。 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該企業實體的最新行。 
+
+
+| dateTk | Int32 | 是的 | 建立此企業實體行的日期 TK。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| qtree_hourly_performance_fact | link:#entity-qtree_hourly_performance_fact["qtree_hourly_performance_fact"] | 許多 
+
+
+| volume_hourly_performance_fact | link:#entity-volume_hourly_performance_fact["volume_hourly_performance_fact"] | 許多 
+
+
+| application_volume_hourly_performance_fact | link:#entity-application_volume_hourly_performance_fact["application_volume_hourly_performance_fact"] | 許多 
+
+
+| qtree_daily_performance_fact | link:#entity-qtree_daily_performance_fact["qtree_daily_performance_fact"] | 許多 
+
+
+| vm_hourly_performance_fact | link:#entity-vm_hourly_performance_fact["vm_hourly_performance_fact"] | 許多 
+
+
+| host_volume_hourly_performance_fact | link:#entity-host_volume_hourly_performance_fact["host_volume_hourly_performance_fact"] | 許多 
+
+
+| internal_volume_daily_performance_fact | link:#entity-internal_volume_daily_performance_fact["internal_volume_daily_performance_fact"] | 許多 
+
+
+| internal_volume_hourly_performance_fact | link:#entity-internal_volume_hourly_performance_fact["internal_volume_hourly_performance_fact"] | 許多 
+
+
+| vm_daily_performance_fact | link:#entity-vm_daily_performance_fact["vm_daily_performance_fact"] | 許多 
+
+
+| switch_performance_for_host_hourly_fact | link:#entity-switch_performance_for_host_hourly_fact["switch_performance_for_host_hourly_fact"] | 許多 
+
+
+| volume_daily_performance_fact | link:#entity-volume_daily_performance_fact["volume_daily_performance_fact"] | 許多 
+|===
+
+
+[[capacityvolumefactcurrent]]
+=== capacity_volume_fact_current
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：capacity_volume_fact_current
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| chargebackFactTk | Int32 | 是的 | TK 是計算 Volume 容量的退款事實列。 
+
+
+| volumeId | Int64 | 是的 | 庫存中顯示的 Volume 的 GUID 
+
+
+| storageId | Int64 | 是的 | 此 Volume 所在儲存設備的 GUID，如清單所示 
+
+
+| volumeName | 字串 | 是的 | Volume 名稱 
+
+
+| volumeType | 字串 | 是的 | 廠商特定的 Volume 類型（例如，SFS、BCV）。 
+
+
+| thinProvisioned | 字串 | 是的 | 指示此Volume是否採用精簡配置。 
+
+
+| isVirtual | 字串 | 是的 | 指示此 Volume 是否為虛擬 Volume。 
+
+
+| 快照 | 字串 | 是的 | 指示此 Volume 是否為 Snapshot 快照技術 Volume。 
+
+
+| technologyType | 字串 | 是的 | 指定技術類型（FC/ISCSI/UNKNOWN）。 
+
+
+| 實體可用 MB | Int64 | 是的 | 從儲存設備中消耗的 Volume 可用容量，並在事實行中計數，單位為 MB。 
+
+
+| 實體原始 MB | Int64 | 是的 | 從儲存設備中消耗的 Volume 原始容量，並在事實列中計數，單位為 MB。 
+
+
+| 已配置可用 MB | Int64 | 是的 | 已佈建給事實列中統計的主機/使用者的 Volume 可用容量，以 MB 為單位。 
+
+
+| 已配置的原始 MB | Int64 | 是的 | 已佈建給事實列中統計的主機/使用者的 Volume 原始容量，以 MB 為單位。 
+|===
+
+
+[[clusterswitchdimension]]
+=== cluster_switch_dimension
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：cluster_switch_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此叢集交換器列的 TK。 
+
+
+| 識別符 | 字串 | 是的 | 集群交換器的唯一識別碼。 
+
+
+| 姓名 | 字串 | 是的 | 集群交換器的名稱。 
+
+
+| 地址 | 字串 | 是的 | 叢集交換器的位址 
+
+
+| serialNumber | 字串 | 是的 | 叢集交換器的序號 
+
+
+| 網路 | 字串 | 是的 | 叢集交換器的網路 
+
+
+| 版本 | 字串 | 是的 | 叢集交換器版本 
+
+
+| 模型 | 字串 | 是的 | 集群交換器模型 
+
+
+| 監控 | 字串 | 是的 | 這個叢集交換器是否受到監控？ 
+
+
+| monitoringEnabled | 字串 | 是的 | 叢集交換器是否啟用了監控功能？ 
+
+
+| monitoringReason | 字串 | 是的 | 監控叢集交換器的原因 
+
+
+| id | Int64 | 是的 | dwh_inventory.cluster_switch 中節點的 GUID 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該叢集交換器的最新行。 
+
+
+| dateTk | Int32 | 是的 | 此叢集交換器行建立日期對應的 TK。 
+|===
+
+
+[[clusterswitchportdailymetricsfact]]
+=== cluster_switch_port_daily_metrics_fact
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：cluster_switch_port_daily_metrics_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int64 | 是的 | 知道這件事。 
+
+
+| dateTk | Int32 | 是的 | 日期維度的 TK。 
+
+
+| clusterSwitchPortTk | Int32 | 是的 | 節點的 TK。 
+
+
+| clusterSwitchTk | Int32 | 是的 | 叢集的 TK。 
+
+
+| storageTk | Int32 | 是的 | 已連接儲存節點的 TK。 
+
+
+| storageNodeTk | Int32 | 是的 | 連接儲存設備的 TK。 
+
+
+| receiveBytes | 雙倍的 | 是的 | 接收位元組。 
+
+
+| transmitBytes | 雙倍的 | 是的 | 傳輸位元組。 
+
+
+| totalBytes | 雙倍的 | 是的 | 總位元組數。 
+
+
+| receiveDiscards | 雙倍的 | 是的 | 接收丟棄。 
+
+
+| transmitDiscards | 雙倍的 | 是的 | 傳輸捨棄。 
+
+
+| totalDiscards | 雙倍的 | 是的 | 總丟棄數。 
+
+
+| receiveErrors | 雙倍的 | 是的 | 接收錯誤。 
+
+
+| transmitErrors | 雙倍的 | 是的 | 傳輸錯誤。 
+
+
+| totalErrors | 雙倍的 | 是的 | 錯誤總數。 
+
+
+| receivePackets | 雙倍的 | 是的 | 接收封包。 
+
+
+| transmitPackets | 雙倍的 | 是的 | 傳輸封包。 
+
+
+| totalPackets | 雙倍的 | 是的 | 總封包數。 
+
+
+| 時間戳 *[PK]* | Int64 | 是的 | 事實開始時間戳，用於分割區 
+|===
+
+
+[[clusterswitchportdimension]]
+=== 叢集交換器連接埠維度
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：cluster_switch_port_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此集群交換器連接埠行的 TK。 
+
+
+| 識別符 | 字串 | 是的 | 叢集交換器連接埠的唯一識別碼。 
+
+
+| 姓名 | 字串 | 是的 | 叢集交換器連接埠的名稱。 
+
+
+| duplexType | 字串 | 是的 | 叢集交換器連接埠的雙工類型 
+
+
+| storageNodePortName | 字串 | 是的 | 叢集交換器連接埠的節點連接埠名稱 
+
+
+| storageNodePortMtu | 字串 | 是的 | 叢集交換器連接埠節點連接埠的最大傳輸單元 
+
+
+| portIndex | 字串 | 是的 | 集群交換器連接埠索引 
+
+
+| isl | 字串 | 是的 | 叢集交換器連接埠的交換器間鏈路 
+
+
+| macAddress | 字串 | 是的 | 叢集交換器連接埠的 MAC 位址 
+
+
+| mtu | 字串 | 是的 | 叢集交換器連接埠的最大傳輸單元 
+
+
+| 數字 | 字串 | 是的 | 叢集交換器連接埠號 
+
+
+| 類型 | 字串 | 是的 | 叢集交換器連接埠類型 
+
+
+| 速度 | 字串 | 是的 | 叢集交換器連接埠的速度 
+
+
+| id | Int64 | 是的 | dwh_inventory.cluster_switch_port 中節點的 GUID 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該叢集交換器連接埠的最新行。 
+
+
+| dateTk | Int32 | 是的 | TK 表示建立此叢集交換器連接埠行的日期。 
+|===
+
+
+[[clusterswitchporthourlymetricsfact]]
+=== cluster_switch_port_hourly_metrics_fact
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：cluster_switch_port_hourly_metrics_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int64 | 是的 | 知道這件事。 
+
+
+| timeTk | Int32 | 是的 | 時間維度的TK。 
+
+
+| dateTk | Int32 | 是的 | 日期維度的 TK。 
+
+
+| clusterSwitchPortTk | Int32 | 是的 | 節點的 TK。 
+
+
+| clusterSwitchTk | Int32 | 是的 | 叢集的 TK。 
+
+
+| storageTk | Int32 | 是的 | 已連接儲存節點的 TK。 
+
+
+| storageNodeTk | Int32 | 是的 | 連接儲存設備的 TK。 
+
+
+| receiveBytes | 雙倍的 | 是的 | 接收位元組。 
+
+
+| transmitBytes | 雙倍的 | 是的 | 傳輸位元組。 
+
+
+| totalBytes | 雙倍的 | 是的 | 總位元組數。 
+
+
+| receiveDiscards | 雙倍的 | 是的 | 接收丟棄。 
+
+
+| transmitDiscards | 雙倍的 | 是的 | 傳輸捨棄。 
+
+
+| totalDiscards | 雙倍的 | 是的 | 總丟棄數。 
+
+
+| receiveErrors | 雙倍的 | 是的 | 接收錯誤。 
+
+
+| transmitErrors | 雙倍的 | 是的 | 傳輸錯誤。 
+
+
+| totalErrors | 雙倍的 | 是的 | 錯誤總數。 
+
+
+| receivePackets | 雙倍的 | 是的 | 接收封包。 
+
+
+| transmitPackets | 雙倍的 | 是的 | 傳輸封包。 
+
+
+| totalPackets | 雙倍的 | 是的 | 總封包數。 
+
+
+| 時間戳 *[PK]* | Int64 | 是的 | 事實開始時間戳，用於分割區 
+|===
+
+
+[[connecteddevicedimension]]
+=== 連線裝置維度
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：connected_device_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 該架構行的 TK。 
+
+
+| 識別符 | 字串 | 是的 | 設備識別符。 
+
+
+| 姓名 | 字串 | 是的 | 設備名稱。 
+
+
+| 製造商 | 字串 | 是的 | 設備製造商。 
+
+
+| 模型 | 字串 | 是的 | 設備製造商型號。 
+
+
+| 類型 | 字串 | 是的 | 設備類型。 
+
+
+| 韌體 | 字串 | 是的 | 裝置上執行的韌體版本。 
+
+
+| id | Int64 | 是的 | 裝置的 ID 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該設備的最新行。 
+
+
+| dateTk | Int32 | 是的 | TK 表示建立此連線設備行的日期。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| switch_performance_for_port_hourly_fact | link:#entity-switch_performance_for_port_hourly_fact["switch_performance_for_port_hourly_fact"] | 許多 
+|===
+
+
+[[datastoredimension]]
+=== 資料儲存維度
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：datastore_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此資料存放區列的 TK。 
+
+
+| naturalKey | 字串 | 是的 | 資料儲存的 OID。 
+
+
+| 姓名 | 字串 | 是的 | 資料儲存名稱。 
+
+
+| moid | 字串 | 是的 | 資料儲存的託管物件 ID。 
+
+
+| virtualCenterIp | 字串 | 是的 | 資料儲存虛擬中心的 IP 位址。 
+
+
+| url | 字串 | 是的 | Insight Server 中此資料儲存的 URL。 
+
+
+| id | Int64 | 是的 | dwh_inventory.hv_data_store 中資料儲存的 GUID 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該資料儲存中的最新行。 
+
+
+| dateTk | Int32 | 是的 | 建立此資料儲存行的日期 TK。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| vmdk_hourly_performance_fact | link:#entity-vmdk_hourly_performance_fact["vmdk_hourly_performance_fact"] | 許多 
+
+
+| vmdk_daily_performance_fact | link:#entity-vmdk_daily_performance_fact["vmdk_daily_performance_fact"] | 許多 
+|===
+
+
+[[datedimension]]
+=== 日期維度
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：date_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 日期物件的 TK。 
+
+
+| fullDate | DateTimeOffset | 是的 | 日期物件的日期。 
+
+
+| dayInMonth | 位元組 | 是的 | 日期物件的月份中的日期。每月的第一天值為 1。 
+
+
+| dayInYear | Int32 | 是的 | 日期物件中某一年中的第幾天。一年中的第一天的值為 1。 
+
+
+| dateYear | Int32 | 是的 | 日期物件的年份。 
+
+
+| yearLabel | 字串 | 是的 | 年格式為字串 
+
+
+| monthNum | 位元組 | 是的 | 日期物件的月份。一月的值為 1。 
+
+
+| monthLabel | 字串 | 是的 | 月份格式為字串 
+
+
+| dayInWeekNum | 位元組 | 是的 | 日期物件的星期幾。星期日的值為 1。 
+
+
+| 四分之一 | 位元組 | 是的 | 日期物件的季度。第一季的值為 1。 
+
+
+| quarterLabel | 字串 | 是的 | 季度格式為字串 
+
+
+| dayInQuarter | Int32 | 是的 | 日期物件中季度內的日期。季度的第一天值為 1。 
+
+
+| repQuarter | 位元組 | 是的 | 表示該日期是否為該季度的第一個可用日期。 
+
+
+| repMonth | 位元組 | 是的 | 表示該日期是否為該月的第一個可用日期。 
+
+
+| repWeek | 位元組 | 是的 | 表示該日期是否為該週內的第一個可用日期。 
+
+
+| repDay | 位元組 | 是的 | 表示該日期是否為當天可用的第一個日期。 
+
+
+| repMonthOrLatest | 位元組 | 是的 | 指示此日期是當月代表日期還是最新日期。此標誌供按月代表資料處理的資料集市使用。唯一的區別在於，對於當前月份，它是最新日期。 
+
+
+| sspFlag | 位元組 | 是的 | 指示此日期是否用於儲存設備和儲存資源池資料集市。對於月份代表值以及組態中定義的最後天數，此值為真。 
+
+
+| 最新 | 字串 | 是的 | 指示該日期是否為表中可用的最後一個日期。 
+
+
+| 未來 | 字串 | 是的 | 指示該日期是未來日期（預測日期）還是實際日期。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| host_vm_daily_performance_fact | link:#entity-host_vm_daily_performance_fact["host_vm_daily_performance_fact"] | 許多 
+
+
+| 時間維度 | link:#entity-time_dimension["時間維度"] | 許多 
+
+
+| vm_hourly_performance_fact | link:#entity-vm_hourly_performance_fact["vm_hourly_performance_fact"] | 許多 
+
+
+| switch_performance_for_port_hourly_fact | link:#entity-switch_performance_for_port_hourly_fact["switch_performance_for_port_hourly_fact"] | 許多 
+
+
+| host_volume_hourly_performance_fact | link:#entity-host_volume_hourly_performance_fact["host_volume_hourly_performance_fact"] | 許多 
+
+
+| internal_volume_daily_performance_fact | link:#entity-internal_volume_daily_performance_fact["internal_volume_daily_performance_fact"] | 許多 
+
+
+| vm_daily_performance_fact | link:#entity-vm_daily_performance_fact["vm_daily_performance_fact"] | 許多 
+
+
+| switch_performance_for_tape_hourly_fact | link:#entity-switch_performance_for_tape_hourly_fact["switch_performance_for_tape_hourly_fact"] | 許多 
+
+
+| switch_performance_for_host_hourly_fact | link:#entity-switch_performance_for_host_hourly_fact["switch_performance_for_host_hourly_fact"] | 許多 
+
+
+| switch_performance_for_storage_hourly_fact | link:#entity-switch_performance_for_storage_hourly_fact["switch_performance_for_storage_hourly_fact"] | 許多 
+
+
+| 儲存節點每小時效能數據 | link:#entity-storage_node_hourly_performance_fact["儲存節點每小時效能數據"] | 許多 
+
+
+| qtree_hourly_performance_fact | link:#entity-qtree_hourly_performance_fact["qtree_hourly_performance_fact"] | 許多 
+
+
+| vmdk_hourly_performance_fact | link:#entity-vmdk_hourly_performance_fact["vmdk_hourly_performance_fact"] | 許多 
+
+
+| volume_hourly_performance_fact | link:#entity-volume_hourly_performance_fact["volume_hourly_performance_fact"] | 許多 
+
+
+| application_volume_hourly_performance_fact | link:#entity-application_volume_hourly_performance_fact["application_volume_hourly_performance_fact"] | 許多 
+
+
+| qtree_daily_performance_fact | link:#entity-qtree_daily_performance_fact["qtree_daily_performance_fact"] | 許多 
+
+
+| 儲存節點每日效能數據 | link:#entity-storage_node_daily_performance_fact["儲存節點每日效能數據"] | 許多 
+
+
+| disk_hourly_performance_fact | link:#entity-disk_hourly_performance_fact["disk_hourly_performance_fact"] | 許多 
+
+
+| disk_daily_performance_fact | link:#entity-disk_daily_performance_fact["disk_daily_performance_fact"] | 許多 
+
+
+| internal_volume_hourly_performance_fact | link:#entity-internal_volume_hourly_performance_fact["internal_volume_hourly_performance_fact"] | 許多 
+
+
+| volume_daily_performance_fact | link:#entity-volume_daily_performance_fact["volume_daily_performance_fact"] | 許多 
+
+
+| vmdk_daily_performance_fact | link:#entity-vmdk_daily_performance_fact["vmdk_daily_performance_fact"] | 許多 
+
+
+| host_vm_hourly_performance_fact | link:#entity-host_vm_hourly_performance_fact["host_vm_hourly_performance_fact"] | 許多 
+|===
+
+
+[[diskdailyperformancefact]]
+=== disk_daily_performance_fact
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：disk_daily_performance_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int32 | 是的 | 知道這件事。 
+
+
+| dateTk *[FK]* →link:#entity-date_dimension["日期維度"].tk | Int32 | 是的 | 日期維度的 TK。 
+
+
+| diskTk *[FK]* →link:#entity-disk_dimension["磁碟維度"].tk | Int32 | 是的 | 磁碟的 TK 用於效能數據（如果找到）。 
+
+
+| storageTk *[FK]* →link:#entity-storage_dimension["儲存空間_維度"].tk | Int32 | 是的 | 用於儲存設備效能資料的 TK。 
+
+
+| storagePoolTk *[FK]* →link:#entity-storage_pool_dimension["儲存池維度"].tk | Int32 | 是的 | 用於效能指標的儲存資源池的 TK。 
+
+
+| readThroughput | 雙倍的 | 是的 | 平均讀取處理量。 
+
+
+| writeThroughput | 雙倍的 | 是的 | 平均寫入處理量。 
+
+
+| totalThroughput | 雙倍的 | 是的 | 總處理量平均值（讀取+寫入）。 
+
+
+| totalThroughputMax | 雙倍的 | 是的 | 最大總處理量。 
+
+
+| readIops | 雙倍的 | 是的 | 每秒讀取 I/O 次數。 
+
+
+| writeIops | 雙倍的 | 是的 | 每秒寫入 I/O 次數。 
+
+
+| totalIops | 雙倍的 | 是的 | 每秒總 I/O 平均值（讀取+寫入）。 
+
+
+| totalIopsMax | 雙倍的 | 是的 | 每秒最大 I/O 次數。 
+
+
+| readUtilization | 雙倍的 | 是的 | 讀取使用率（%）。 
+
+
+| writeUtilization | 雙倍的 | 是的 | 寫入使用率（%）。 
+
+
+| totalUtilization | 雙倍的 | 是的 | 總使用率（%）。 
+
+
+| totalUtilizationMax | 雙倍的 | 是的 | 最大使用率（%）。 
+
+
+| 已存取 | Int32 | 是的 | 是否存取了磁碟？ 
+
+
+| 時間戳 *[PK]* | Int64 | 是的 | 事實開始時間戳，用於分割區 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 儲存空間_維度 | link:#entity-storage_dimension["儲存空間_維度"] | 一個 JOIN：storageTk=link:#entity-storage_dimension["儲存空間_維度"].tk 
+
+
+| 儲存池維度 | link:#entity-storage_pool_dimension["儲存池維度"] | 一個 JOIN：storagePoolTk=link:#entity-storage_pool_dimension["儲存池維度"].tk 
+
+
+| 日期維度 | link:#entity-date_dimension["日期維度"] | 一個 JOIN：dateTk=link:#entity-date_dimension["日期維度"].tk 
+
+
+| 磁碟維度 | link:#entity-disk_dimension["磁碟維度"] | 一個 JOIN：diskTk=link:#entity-disk_dimension["磁碟維度"].tk 
+|===
+
+
+[[diskdimension]]
+=== 磁碟維度
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：disk_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此磁碟行的 TK。 
+
+
+| 識別符 | 字串 | 是的 | 磁碟識別碼。 
+
+
+| storageIdentifier | 字串 | 是的 | 磁碟儲存設備的識別碼。 
+
+
+| 姓名 | 字串 | 是的 | 磁碟名稱。 
+
+
+| 速度 | Int32 | 是的 | 磁碟速度。 
+
+
+| 位置 | 字串 | 是的 | 磁碟位置。 
+
+
+| 角色 | 字串 | 是的 | 磁碟在儲存設備群組中的角色（例如 PARITY、DATA、SPARE）。 
+
+
+| 廠商 | 字串 | 是的 | 磁碟廠商（例如 NetApp、SEAGATE）。 
+
+
+| 模型 | 字串 | 是的 | 磁碟型號。 
+
+
+| 類型 | 字串 | 是的 | 磁碟類型（例如 SATA、FC）。 
+
+
+| diskGroup | 字串 | 是的 | 磁碟所屬磁碟群組的識別碼（例如 rg0、7）。 
+
+
+| 狀態 | 字串 | 是的 | 磁碟狀態（例如 NORMAL、FAILED）。 
+
+
+| serialNumber | 字串 | 是的 | 磁碟序號 
+
+
+| url | 字串 | 是的 | Insight Server 中此磁碟的 URL。 
+
+
+| id | Int64 | 是的 | dwh_inventory.disk 中磁碟的 GUID 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該磁碟的最新行。 
+
+
+| dateTk | Int32 | 是的 | 建立此內部 Volume 列的日期 TK。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| disk_hourly_performance_fact | link:#entity-disk_hourly_performance_fact["disk_hourly_performance_fact"] | 許多 
+
+
+| disk_daily_performance_fact | link:#entity-disk_daily_performance_fact["disk_daily_performance_fact"] | 許多 
+|===
+
+
+[[diskhourlyperformancefact]]
+=== disk_hourly_performance_fact
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：disk_hourly_performance_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int64 | 是的 | 知道這件事。 
+
+
+| timeTk *[FK]* →link:#entity-time_dimension["時間維度"].tk | Int32 | 是的 | 時間維度的TK。 
+
+
+| dateTk *[FK]* →link:#entity-date_dimension["日期維度"].tk | Int32 | 是的 | 日期維度的 TK。 
+
+
+| diskTk *[FK]* →link:#entity-disk_dimension["磁碟維度"].tk | Int32 | 是的 | 磁碟的 TK 用於效能數據（如果找到）。 
+
+
+| storageTk *[FK]* →link:#entity-storage_dimension["儲存空間_維度"].tk | Int32 | 是的 | 用於儲存設備效能資料的 TK。 
+
+
+| storagePoolTk *[FK]* →link:#entity-storage_pool_dimension["儲存池維度"].tk | Int32 | 是的 | 用於效能指標的儲存資源池的 TK。 
+
+
+| readThroughput | 雙倍的 | 是的 | 平均讀取處理量。 
+
+
+| writeThroughput | 雙倍的 | 是的 | 平均寫入處理量。 
+
+
+| totalThroughput | 雙倍的 | 是的 | 總處理量平均值（讀取+寫入）。 
+
+
+| totalThroughputMax | 雙倍的 | 是的 | 最大總處理量。 
+
+
+| readIops | 雙倍的 | 是的 | 每秒讀取 I/O 次數。 
+
+
+| writeIops | 雙倍的 | 是的 | 每秒寫入 I/O 次數。 
+
+
+| totalIops | 雙倍的 | 是的 | 每秒總 I/O 平均值（讀取+寫入）。 
+
+
+| totalIopsMax | 雙倍的 | 是的 | 每秒最大 I/O 次數。 
+
+
+| readUtilization | 雙倍的 | 是的 | 讀取使用率（%）。 
+
+
+| writeUtilization | 雙倍的 | 是的 | 寫入使用率（%）。 
+
+
+| totalUtilization | 雙倍的 | 是的 | 總使用率（%）。 
+
+
+| totalUtilizationMax | 雙倍的 | 是的 | 最大使用率（%）。 
+
+
+| 已存取 | Int32 | 是的 | 是否存取了磁碟？ 
+
+
+| 時間戳 *[PK]* | Int64 | 是的 | 事實開始時間戳，用於分割區 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 儲存空間_維度 | link:#entity-storage_dimension["儲存空間_維度"] | 一個 JOIN：storageTk=link:#entity-storage_dimension["儲存空間_維度"].tk 
+
+
+| 時間維度 | link:#entity-time_dimension["時間維度"] | 一個 JOIN：timeTk=link:#entity-time_dimension["時間維度"].tk 
+
+
+| 儲存池維度 | link:#entity-storage_pool_dimension["儲存池維度"] | 一個 JOIN：storagePoolTk=link:#entity-storage_pool_dimension["儲存池維度"].tk 
+
+
+| 日期維度 | link:#entity-date_dimension["日期維度"] | 一個 JOIN：dateTk=link:#entity-date_dimension["日期維度"].tk 
+
+
+| 磁碟維度 | link:#entity-disk_dimension["磁碟維度"] | 一個 JOIN：diskTk=link:#entity-disk_dimension["磁碟維度"].tk 
+|===
+
+
+[[fabricdimension]]
+=== 架構維度
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：fabric_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 該架構行的 TK。 
+
+
+| 識別符 | 字串 | 是的 | 架構識別碼。 
+
+
+| wwn | 字串 | 是的 | 架構的 WWN。 
+
+
+| 姓名 | 字串 | 是的 | 架構名稱。 
+
+
+| vsanEnabled | 字串 | 是的 | 指示該架構是否為 VSAN。 
+
+
+| vsanId | 字串 | 是的 | 如果此架構是 VSAN，則 VSAN 的識別碼。 
+
+
+| zoningEnabled | 字串 | 是的 | 如果為 true，則根據區域和區域成員表中的資料強制執行分區。否則，架構中不強制執行分區。 
+
+
+| url | 字串 | 是的 | Insight Server 中此架構的 URL。 
+
+
+| id | Int64 | 是的 | dwh_inventory.fabric 中架構的 GUID 
+
+
+| 最新 | 字串 | 是的 | 指示這一行是否為該架構的最新一行。 
+
+
+| dateTk | Int32 | 是的 | TK 表示該架構行建立日期。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| switch_performance_for_port_hourly_fact | link:#entity-switch_performance_for_port_hourly_fact["switch_performance_for_port_hourly_fact"] | 許多 
+|===
+
+
+[[hostdimension]]
+=== 主機維度
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：host_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此主機行的 TK。 
+
+
+| 姓名 | 字串 | 是的 | 主機名稱。 
+
+
+| 識別符 | 字串 | 是的 | 設備識別符。 
+
+
+| ip | 字串 | 是的 | 主機 IP 位址清單，以逗號分隔。 
+
+
+| 作業系統 | 字串 | 是的 | 主機上執行的作業系統。 
+
+
+| 模型 | 字串 | 是的 | 型號。 
+
+
+| 製造商 | 字串 | 是的 | 主機製造商。 
+
+
+| url | 字串 | 是的 | Insight Server 中此主機的 URL。 
+
+
+| id | Int64 | 是的 | dwh_inventory.host 中主機的 GUID。 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該主機的最新行。 
+
+
+| dateTk | Int32 | 是的 | 此主機行建立日期對應的 TK。 
+
+
+| dataCenter | 字串 | 是的 | dataCenter 指派給 dwh_dimensions.host_dimension 的註解值 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| host_vm_daily_performance_fact | link:#entity-host_vm_daily_performance_fact["host_vm_daily_performance_fact"] | 許多 
+
+
+| vmdk_hourly_performance_fact | link:#entity-vmdk_hourly_performance_fact["vmdk_hourly_performance_fact"] | 許多 
+
+
+| volume_hourly_performance_fact | link:#entity-volume_hourly_performance_fact["volume_hourly_performance_fact"] | 許多 
+
+
+| vm_hourly_performance_fact | link:#entity-vm_hourly_performance_fact["vm_hourly_performance_fact"] | 許多 
+
+
+| host_volume_hourly_performance_fact | link:#entity-host_volume_hourly_performance_fact["host_volume_hourly_performance_fact"] | 許多 
+
+
+| vm_daily_performance_fact | link:#entity-vm_daily_performance_fact["vm_daily_performance_fact"] | 許多 
+
+
+| switch_performance_for_host_hourly_fact | link:#entity-switch_performance_for_host_hourly_fact["switch_performance_for_host_hourly_fact"] | 許多 
+
+
+| volume_daily_performance_fact | link:#entity-volume_daily_performance_fact["volume_daily_performance_fact"] | 許多 
+
+
+| vmdk_daily_performance_fact | link:#entity-vmdk_daily_performance_fact["vmdk_daily_performance_fact"] | 許多 
+
+
+| host_vm_hourly_performance_fact | link:#entity-host_vm_hourly_performance_fact["host_vm_hourly_performance_fact"] | 許多 
+|===
+
+
+[[hostgroupbridge]]
+=== 主機群組橋接
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：host_group_bridge
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| hostGroupTk | Int32 | 是的 | 主機群組的 TK。 
+
+
+| hostTk | Int32 | 是的 | 主機的 TK。 
+
+
+| isRep | 字串 | 是的 | 指示此主機是否代表其主機群組。 
+|===
+
+
+[[hostgroupdimension]]
+=== 主機群組維度
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集合：host_group_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 主機群組的 TK。 
+
+
+| repHost | 字串 | 是的 | 代表主機群組的主機名稱。 
+
+
+| repHostTk | Int32 | 是的 | 代表主機群組的主機的 TK。 
+
+
+| 基數 | Int32 | 是的 | 主機群組中的主機數量。 
+
+
+| dateTk | Int32 | 是的 | 此主機群組列建立日期對應的 TK。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| volume_hourly_performance_fact | link:#entity-volume_hourly_performance_fact["volume_hourly_performance_fact"] | 許多 
+
+
+| host_volume_hourly_performance_fact | link:#entity-host_volume_hourly_performance_fact["host_volume_hourly_performance_fact"] | 許多 
+
+
+| volume_daily_performance_fact | link:#entity-volume_daily_performance_fact["volume_daily_performance_fact"] | 許多 
+|===
+
+
+[[hostvmdailyperformancefact]]
+=== host_vm_daily_performance_fact
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：host_vm_daily_performance_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int32 | 是的 | 知道這件事。 
+
+
+| dateTk *[FK]* →link:#entity-date_dimension["日期維度"].tk | Int32 | 是的 | 日期維度的 TK。 
+
+
+| hostTk *[FK]* →link:#entity-host_dimension["主機維度"].tk | Int32 | 是的 | 主機的 TK。 
+
+
+| readIops | 雙倍的 | 是的 | 每秒讀取 I/O 次數。 
+
+
+| writeIops | 雙倍的 | 是的 | 每秒寫入 I/O 次數。 
+
+
+| totalIops | 雙倍的 | 是的 | 每秒總 I/O 平均值（讀取+寫入）。 
+
+
+| totalIopsMax | 雙倍的 | 是的 | 每秒最大 I/O 次數。 
+
+
+| readThroughput | 雙倍的 | 是的 | 平均讀取處理量。 
+
+
+| writeThroughput | 雙倍的 | 是的 | 平均寫入處理量。 
+
+
+| totalThroughput | 雙倍的 | 是的 | 總處理量平均值（讀取+寫入）。 
+
+
+| totalThroughputMax | 雙倍的 | 是的 | 最大總處理量。 
+
+
+| readResponseTime | 雙倍的 | 是的 | 讀取回應時間。 
+
+
+| writeResponseTime | 雙倍的 | 是的 | 寫入回應時間。 
+
+
+| totalResponseTime | 雙倍的 | 是的 | 總回應時間。 
+
+
+| totalResponseTimeMax | 雙倍的 | 是的 | 總最大回應時間。 
+
+
+| ipReceiveThroughput | 雙倍的 | 是的 | IP 接收吞吐量。 
+
+
+| ipTransmitThroughput | 雙倍的 | 是的 | IP 傳輸吞吐量。 
+
+
+| ipTotalThroughput | 雙倍的 | 是的 | IP 總吞吐量。 
+
+
+| ipTotalThroughputMax | 雙倍的 | 是的 | 最大 IP 總吞吐量。 
+
+
+| cpuUtilization | 雙倍的 | 是的 | CPU 使用率 (%) 
+
+
+| maxOfAvgCpuUtilization | 雙倍的 | 是的 | 最大 CPU 使用率 (%) 
+
+
+| memoryUtilization | 雙倍的 | 是的 | 記憶體使用率（%） 
+
+
+| maxOfAvgMemoryUtilization | 雙倍的 | 是的 | 最大記憶體容量使用率 (%) 
+
+
+| swapInRate | 雙倍的 | 是的 | Swap in 速率 
+
+
+| maxOfAvgSwapInRate | 雙倍的 | 是的 | 最大換入速率 
+
+
+| swapOutRate | 雙倍的 | 是的 | 交換率 
+
+
+| maxOfAvgSwapOutRate | 雙倍的 | 是的 | 最大換出率 
+
+
+| swapTotalRate | 雙倍的 | 是的 | 總交換率 
+
+
+| swapTotalRateMax | 雙倍的 | 是的 | 最大總交換率 
+
+
+| 時間戳 *[PK]* | Int64 | 是的 | 事實開始時間戳，用於分割區 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 主機維度 | link:#entity-host_dimension["主機維度"] | 一個 JOIN：hostTk=link:#entity-host_dimension["主機維度"].tk 
+
+
+| 日期維度 | link:#entity-date_dimension["日期維度"] | 一個 JOIN：dateTk=link:#entity-date_dimension["日期維度"].tk 
+|===
+
+
+[[hostvmhourlyperformancefact]]
+=== host_vm_hourly_performance_fact
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：host_vm_hourly_performance_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int64 | 是的 | 知道這件事。 
+
+
+| timeTk *[FK]* →link:#entity-time_dimension["時間維度"].tk | Int32 | 是的 | 時間維度的TK。 
+
+
+| dateTk *[FK]* →link:#entity-date_dimension["日期維度"].tk | Int32 | 是的 | 日期維度的 TK。 
+
+
+| hostTk *[FK]* →link:#entity-host_dimension["主機維度"].tk | Int32 | 是的 | 主機的 TK。 
+
+
+| readIops | 雙倍的 | 是的 | 每秒讀取 I/O 次數。 
+
+
+| writeIops | 雙倍的 | 是的 | 每秒寫入 I/O 次數。 
+
+
+| totalIops | 雙倍的 | 是的 | 每秒總 I/O 平均值（讀取+寫入）。 
+
+
+| totalIopsMax | 雙倍的 | 是的 | 每秒最大 I/O 次數。 
+
+
+| readThroughput | 雙倍的 | 是的 | 平均讀取處理量。 
+
+
+| writeThroughput | 雙倍的 | 是的 | 平均寫入處理量。 
+
+
+| totalThroughput | 雙倍的 | 是的 | 總處理量平均值（讀取+寫入）。 
+
+
+| totalThroughputMax | 雙倍的 | 是的 | 最大總處理量。 
+
+
+| readResponseTime | 雙倍的 | 是的 | 讀取回應時間。 
+
+
+| writeResponseTime | 雙倍的 | 是的 | 寫入回應時間。 
+
+
+| totalResponseTime | 雙倍的 | 是的 | 總回應時間。 
+
+
+| totalResponseTimeMax | 雙倍的 | 是的 | 總最大回應時間。 
+
+
+| ipReceiveThroughput | 雙倍的 | 是的 | IP 接收吞吐量。 
+
+
+| ipTransmitThroughput | 雙倍的 | 是的 | IP 傳輸吞吐量。 
+
+
+| ipTotalThroughput | 雙倍的 | 是的 | IP 總吞吐量。 
+
+
+| ipTotalThroughputMax | 雙倍的 | 是的 | 最大 IP 總吞吐量。 
+
+
+| cpuUtilization | 雙倍的 | 是的 | CPU 使用率 (%) 
+
+
+| memoryUtilization | 雙倍的 | 是的 | 記憶體使用率（%） 
+
+
+| swapInRate | 雙倍的 | 是的 | Swap in 速率 
+
+
+| swapOutRate | 雙倍的 | 是的 | 交換率 
+
+
+| swapTotalRate | 雙倍的 | 是的 | 總交換率 
+
+
+| swapTotalRateMax | 雙倍的 | 是的 | 最大總交換率 
+
+
+| 時間戳 *[PK]* | Int64 | 是的 | 事實開始時間戳，用於分割區 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 時間維度 | link:#entity-time_dimension["時間維度"] | 一個 JOIN：timeTk=link:#entity-time_dimension["時間維度"].tk 
+
+
+| 主機維度 | link:#entity-host_dimension["主機維度"] | 一個 JOIN：hostTk=link:#entity-host_dimension["主機維度"].tk 
+
+
+| 日期維度 | link:#entity-date_dimension["日期維度"] | 一個 JOIN：dateTk=link:#entity-date_dimension["日期維度"].tk 
+|===
+
+
+[[hostvolumehourlyperformancefact]]
+=== host_volume_hourly_performance_fact
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：host_volume_hourly_performance_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int64 | 是的 | 知道這件事。 
+
+
+| timeTk *[FK]* →link:#entity-time_dimension["時間維度"].tk | Int32 | 是的 | 時間維度的TK。 
+
+
+| dateTk *[FK]* →link:#entity-date_dimension["日期維度"].tk | Int32 | 是的 | 日期維度的 TK。 
+
+
+| hostTk *[FK]* →link:#entity-host_dimension["主機維度"].tk | Int32 | 是的 | 主機代表的 TK。 
+
+
+| hostGroupTk *[FK]* →link:#entity-host_group_dimension["主機群組維度"].tk | Int32 | 是的 | 主機群組的 TK。 
+
+
+| tierTk *[FK]* →link:#entity-tier_dimension["層級維度"].tk | Int32 | 是的 | 該分層的 TK。 
+
+
+| serviceLevelTk *[FK]* →link:#entity-service_level_dimension["服務等級維度"].tk | Int32 | 是的 | 服務層級的 TK。 
+
+
+| businessEntityTk *[FK]* →link:#entity-business_entity_dimension["business_entity_dimension"].tk | Int32 | 是的 | 該企業實體的 TK。 
+
+
+| readResponseTime | 雙倍的 | 是的 | 讀取回應時間。 
+
+
+| writeResponseTime | 雙倍的 | 是的 | 寫入回應時間 
+
+
+| totalResponseTime | 雙倍的 | 是的 | 總回應時間。 
+
+
+| totalResponseTimeMax | 雙倍的 | 是的 | 回應時間的最大值。 
+
+
+| readThroughput | 雙倍的 | 是的 | 平均讀取處理量。 
+
+
+| writeThroughput | 雙倍的 | 是的 | 平均寫入處理量。 
+
+
+| sumOfAveragesVolumeThroughput | 雙倍的 | 是的 | 與主機相關的所有每小時 Volume 樣本的 totalThroughput 總和。代表主機的平均使用率。 
+
+
+| maxOfMaxVolumeThroughput | 雙倍的 | 是的 | 與主機相關的所有每小時 Volume 樣本的最大 totalThroughputMax。代表主機最大使用量的最佳情況。 
+
+
+| sumOfMaxVolumeThroughput | 雙倍的 | 是的 | 與主機相關的所有每小時 Volume 樣本的 totalThroughputMax 總和。代表所有最大值同時出現時最大使用量的最壞情況。 
+
+
+| readIops | 雙倍的 | 是的 | 平均每秒讀取 I/O 次數。 
+
+
+| writeIops | 雙倍的 | 是的 | 平均每秒寫入 I/O 次數。 
+
+
+| sumOfAveragesVolumeIops | 雙倍的 | 是的 | 與主機相關的所有 Volume 每小時樣本的 totalIops 總和。代表主機的平均使用率。 
+
+
+| maxOfMaxVolumeIops | 雙倍的 | 是的 | 與主機相關的所有 Volume 每小時樣本的最大 totalIopsMax。代表主機最大使用量的最佳情況。 
+
+
+| sumOfMaxVolumeIops | 雙倍的 | 是的 | 與主機相關的所有 Volume 每小時樣本的 totalIopsMax 總和。代表所有最大值同時出現時最大使用量的最壞情況。 
+
+
+| readCacheHitRatio | 雙倍的 | 是的 | 讀取快取命中率。 
+
+
+| writeCacheHitRatio | 雙倍的 | 是的 | 寫入快取命中率。 
+
+
+| totalCacheHitRatio | 雙倍的 | 是的 | 總快取命中率。 
+
+
+| totalCacheHitRatioMax | 雙倍的 | 是的 | 最大總快取命中率。 
+
+
+| writePending | Int64 | 是的 | 待寫入數量。 
+
+
+| readIoDensity | 雙倍的 | 是的 | 讀取 I/O 密度。 
+
+
+| writeIoDensity | 雙倍的 | 是的 | 寫入 I/O 密度。 
+
+
+| totalIoDensity | 雙倍的 | 是的 | 總 IO 密度。 
+
+
+| totalIoDensityMax | 雙倍的 | 是的 | 最大總 IO 密度。 
+
+
+| compressionSavingsPercent | 雙倍的 | 是的 | 壓縮節省率（%）。 
+
+
+| compressionSavingsSpace | 雙倍的 | 是的 | 壓縮節省空間。 
+
+
+| totalTimeToFull | 雙倍的 | 是的 | 達到滿格時間。 
+
+
+| confidenceIntervalTimeToFull | 雙倍的 | 是的 | 達到完全所需時間的信賴區間。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 服務等級維度 | link:#entity-service_level_dimension["服務等級維度"] | 一個 JOIN：serviceLevelTk=link:#entity-service_level_dimension["服務等級維度"].tk 
+
+
+| 層級維度 | link:#entity-tier_dimension["層級維度"] | 一個 JOIN：tierTk=link:#entity-tier_dimension["層級維度"].tk 
+
+
+| business_entity_dimension | link:#entity-business_entity_dimension["business_entity_dimension"] | 一個 JOIN：businessEntityTk=link:#entity-business_entity_dimension["business_entity_dimension"].tk 
+
+
+| 時間維度 | link:#entity-time_dimension["時間維度"] | 一個 JOIN：timeTk=link:#entity-time_dimension["時間維度"].tk 
+
+
+| 主機群組維度 | link:#entity-host_group_dimension["主機群組維度"] | 一個 JOIN：hostGroupTk=link:#entity-host_group_dimension["主機群組維度"].tk 
+
+
+| 主機維度 | link:#entity-host_dimension["主機維度"] | 一個 JOIN：hostTk=link:#entity-host_dimension["主機維度"].tk 
+
+
+| 日期維度 | link:#entity-date_dimension["日期維度"] | 一個 JOIN：dateTk=link:#entity-date_dimension["日期維度"].tk 
+|===
+
+
+[[internalvolumedailyperformancefact]]
+=== internal_volume_daily_performance_fact
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集合：internal_volume_daily_performance_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int32 | 是的 | 知道這件事。 
+
+
+| dateTk *[FK]* →link:#entity-date_dimension["日期維度"].tk | Int32 | 是的 | 日期維度的 TK。 
+
+
+| internalVolumeTk *[FK]* →link:#entity-internal_volume_dimension["內部體積尺寸"].tk | Int32 | 是的 | TK 是效能數據的內部 Volume（如果找到）。 
+
+
+| storageTk *[FK]* →link:#entity-storage_dimension["儲存空間_維度"].tk | Int32 | 是的 | 用於儲存設備效能資料的 TK。 
+
+
+| virtualStorageTk | Int32 | 是的 | 如果容量位於後端陣列上，則為前端陣列的 TK 值。否則，該值為 N/A。 
+
+
+| storageNodeTk *[FK]* →link:#entity-storage_node_dimension["儲存節點維度"].tk | Int32 | 是的 | 儲存節點的 TK。 
+
+
+| storagePoolTk *[FK]* →link:#entity-storage_pool_dimension["儲存池維度"].tk | Int32 | 是的 | 儲存資源池的 TK 用於效能指標（如果找到）。 
+
+
+| applicationTk *[FK]* →link:#entity-application_dimension["應用程式維度"].tk | Int32 | 是的 | 應用程式代表的 TK。 
+
+
+| applicationGroupTk *[FK]* →link:#entity-application_group_dimension["應用程式群組維度"].tk | Int32 | 是的 | 應用程式組的 TK。 
+
+
+| tierTk *[FK]* →link:#entity-tier_dimension["層級維度"].tk | Int32 | 是的 | 該分層的 TK。 
+
+
+| serviceLevelTk *[FK]* →link:#entity-service_level_dimension["服務等級維度"].tk | Int32 | 是的 | 服務層級的 TK。 
+
+
+| businessEntityTk *[FK]* →link:#entity-business_entity_dimension["business_entity_dimension"].tk | Int32 | 是的 | 該企業實體的 TK。 
+
+
+| k8sNamespaceTk *[FK]* →link:#entity-k8s_namespace_dimension["k8s_namespace_dimension"].tk | Int32 | 是的 | k8s 命名空間的 TK。 
+
+
+| k8sNamespaceGroupTk *[FK]* →link:#entity-k8s_namespace_group_dimension["k8s_namespace_group_dimension"].tk | Int32 | 是的 | k8s 命名空間群組的 TK。 
+
+
+| readResponseTime | 雙倍的 | 是的 | 平均讀取回應時間。 
+
+
+| writeResponseTime | 雙倍的 | 是的 | 寫入平均回應時間。 
+
+
+| totalResponseTime | 雙倍的 | 是的 | 總回應時間平均值。 
+
+
+| totalResponseTimeMax | 雙倍的 | 是的 | 回應時間的最大值。 
+
+
+| readThroughput | 雙倍的 | 是的 | 平均讀取處理量。 
+
+
+| writeThroughput | 雙倍的 | 是的 | 平均寫入處理量。 
+
+
+| totalThroughput | 雙倍的 | 是的 | 總處理量平均值（讀取+寫入）。 
+
+
+| totalThroughputMax | 雙倍的 | 是的 | 最大總處理量。 
+
+
+| readIops | 雙倍的 | 是的 | 平均每秒讀取 I/O 次數。 
+
+
+| writeIops | 雙倍的 | 是的 | 平均每秒寫入 I/O 次數。 
+
+
+| totalIops | 雙倍的 | 是的 | 每秒總 I/O 平均值（讀取+寫入）。 
+
+
+| totalIopsMax | 雙倍的 | 是的 | 每秒最大 I/O 次數。 
+
+
+| writePending | Int64 | 是的 | 每日待處理寫入操作的最大數量。 
+
+
+| readIoDensity | 雙倍的 | 是的 | 讀取 I/O 密度。 
+
+
+| writeIoDensity | 雙倍的 | 是的 | 寫入 I/O 密度。 
+
+
+| totalIoDensity | 雙倍的 | 是的 | 總 IO 密度。 
+
+
+| totalIoDensityMax | 雙倍的 | 是的 | 最大總 IO 密度。 
+
+
+| objectCount | 雙倍的 | 是的 | 物件數量。 
+
+
+| filesystemCapacityPhysicalUsed | 雙倍的 | 是的 | 檔案系統實體已使用容量（GB）。 
+
+
+| filesystemCapacityPhysicalAvailable | 雙倍的 | 是的 | 檔案系統實體可用容量（GB）。 
+
+
+| filesystemCapacityLogicalUsed | 雙倍的 | 是的 | 檔案系統邏輯已使用容量（GB）。 
+
+
+| totalTimeToFull | 雙倍的 | 是的 | 達到滿格時間。 
+
+
+| confidenceIntervalTimeToFull | 雙倍的 | 是的 | 達到完全所需時間的信賴區間。 
+
+
+| 已存取 | Int32 | 是的 | 是否存取了內部 Volume？ 
+
+
+| 前端 | 字串 | 是的 | 內部 Volume 是前端嗎？ 
+
+
+| 後端 | 字串 | 是的 | 內部 Volume 後端？ 
+
+
+| 時間戳 *[PK]* | Int64 | 是的 | 事實開始時間戳，用於分割區 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 服務等級維度 | link:#entity-service_level_dimension["服務等級維度"] | 一個 JOIN：serviceLevelTk=link:#entity-service_level_dimension["服務等級維度"].tk 
+
+
+| 內部體積尺寸 | link:#entity-internal_volume_dimension["內部體積尺寸"] | 一個 JOIN：internalVolumeTk=link:#entity-internal_volume_dimension["內部體積尺寸"].tk 
+
+
+| 儲存節點維度 | link:#entity-storage_node_dimension["儲存節點維度"] | 一個 JOIN：storageNodeTk=link:#entity-storage_node_dimension["儲存節點維度"].tk 
+
+
+| 儲存空間_維度 | link:#entity-storage_dimension["儲存空間_維度"] | 一個 JOIN：storageTk=link:#entity-storage_dimension["儲存空間_維度"].tk 
+
+
+| 層級維度 | link:#entity-tier_dimension["層級維度"] | 一個 JOIN：tierTk=link:#entity-tier_dimension["層級維度"].tk 
+
+
+| business_entity_dimension | link:#entity-business_entity_dimension["business_entity_dimension"] | 一個 JOIN：businessEntityTk=link:#entity-business_entity_dimension["business_entity_dimension"].tk 
+
+
+| 應用程式維度 | link:#entity-application_dimension["應用程式維度"] | 一個 JOIN：applicationTk=link:#entity-application_dimension["應用程式維度"].tk 
+
+
+| 儲存池維度 | link:#entity-storage_pool_dimension["儲存池維度"] | 一個 JOIN：storagePoolTk=link:#entity-storage_pool_dimension["儲存池維度"].tk 
+
+
+| 日期維度 | link:#entity-date_dimension["日期維度"] | 一個 JOIN：dateTk=link:#entity-date_dimension["日期維度"].tk 
+
+
+| k8s_namespace_group_dimension | link:#entity-k8s_namespace_group_dimension["k8s_namespace_group_dimension"] | one JOIN:k8sNamespaceGroupTk=link:#entity-k8s_namespace_group_dimension["k8s_namespace_group_dimension"].tk 
+
+
+| 應用程式群組維度 | link:#entity-application_group_dimension["應用程式群組維度"] | 一個 JOIN：applicationGroupTk=link:#entity-application_group_dimension["應用程式群組維度"].tk 
+
+
+| k8s_namespace_dimension | link:#entity-k8s_namespace_dimension["k8s_namespace_dimension"] | 一個 JOIN:k8sNamespaceTk=link:#entity-k8s_namespace_dimension["k8s_namespace_dimension"].tk 
+|===
+
+
+[[internalvolumedimension]]
+=== 內部體積尺寸
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：internal_volume_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此內部 Volume 列的 TK。 
+
+
+| 姓名 | 字串 | 是的 | 內部 Volume 的名稱。 
+
+
+| 識別符 | 字串 | 是的 | 內部 Volume 的識別符。 
+
+
+| storagePoolIdentifier | 字串 | 是的 | 此內部 Volume 所在的儲存資源池識別碼。 
+
+
+| storageName | 字串 | 是的 | 此內部 Volume 所在的儲存設備名稱。 
+
+
+| storageIP | 字串 | 是的 | 此內部 Volume 所在的儲存設備的 IP 位址。 
+
+
+| 類型 | 字串 | 是的 | 內部 Volume 類型。 
+
+
+| virtualStorage | 字串 | 是的 | 指定VirtualStorage（例如vFiler） 
+
+
+| spaceGuarantee | 字串 | 是的 | 內部 Volume 空間保證。 
+
+
+| thinProvisioningSupported | 字串 | 是的 | 內部 Volume 是否支援資源隨需配置？ 
+
+
+| thinProvisioned | 字串 | 是的 | 內部 Volume 是否採用資源隨需配置。 
+
+
+| uuid | 字串 | 是的 | 內部 Volume 的 UUID。 
+
+
+| flexGroupIdentifier | 字串 | 是的 | FlexGroup 此內部 Volume 所屬的識別符。 
+
+
+| url | 字串 | 是的 | Insight Server 中此內部 Volume 的 URL。 
+
+
+| id | Int64 | 是的 | dwh_inventory.internal_volume 中內部 Volume 的 GUID 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該內部 Volume 的最新行。 
+
+
+| dateTk | Int32 | 是的 | 建立此內部 Volume 列的日期 TK。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| qtree_hourly_performance_fact | link:#entity-qtree_hourly_performance_fact["qtree_hourly_performance_fact"] | 許多 
+
+
+| qtree_daily_performance_fact | link:#entity-qtree_daily_performance_fact["qtree_daily_performance_fact"] | 許多 
+
+
+| internal_volume_daily_performance_fact | link:#entity-internal_volume_daily_performance_fact["internal_volume_daily_performance_fact"] | 許多 
+
+
+| internal_volume_hourly_performance_fact | link:#entity-internal_volume_hourly_performance_fact["internal_volume_hourly_performance_fact"] | 許多 
+|===
+
+
+[[internalvolumehourlyperformancefact]]
+=== internal_volume_hourly_performance_fact
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：internal_volume_hourly_performance_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int64 | 是的 | 知道這件事。 
+
+
+| timeTk *[FK]* →link:#entity-time_dimension["時間維度"].tk | Int32 | 是的 | 時間維度的TK。 
+
+
+| dateTk *[FK]* →link:#entity-date_dimension["日期維度"].tk | Int32 | 是的 | 日期維度的 TK。 
+
+
+| internalVolumeTk *[FK]* →link:#entity-internal_volume_dimension["內部體積尺寸"].tk | Int32 | 是的 | TK 是效能數據的內部 Volume（如果找到）。 
+
+
+| storageTk *[FK]* →link:#entity-storage_dimension["儲存空間_維度"].tk | Int32 | 是的 | 用於儲存設備效能資料的 TK。 
+
+
+| virtualStorageTk | Int32 | 是的 | 如果容量位於後端陣列上，則為前端陣列的 TK 值。否則，該值為 N/A。 
+
+
+| storageNodeTk *[FK]* →link:#entity-storage_node_dimension["儲存節點維度"].tk | Int32 | 是的 | 儲存節點的 TK。 
+
+
+| storagePoolTk *[FK]* →link:#entity-storage_pool_dimension["儲存池維度"].tk | Int32 | 是的 | 儲存資源池的 TK 用於效能指標（如果找到）。 
+
+
+| applicationTk *[FK]* →link:#entity-application_dimension["應用程式維度"].tk | Int32 | 是的 | 應用程式代表的 TK。 
+
+
+| applicationGroupTk *[FK]* →link:#entity-application_group_dimension["應用程式群組維度"].tk | Int32 | 是的 | 應用程式組的 TK。 
+
+
+| tierTk *[FK]* →link:#entity-tier_dimension["層級維度"].tk | Int32 | 是的 | 該分層的 TK。 
+
+
+| serviceLevelTk *[FK]* →link:#entity-service_level_dimension["服務等級維度"].tk | Int32 | 是的 | 服務層級的 TK。 
+
+
+| businessEntityTk *[FK]* →link:#entity-business_entity_dimension["business_entity_dimension"].tk | Int32 | 是的 | 該企業實體的 TK。 
+
+
+| k8sNamespaceTk *[FK]* →link:#entity-k8s_namespace_dimension["k8s_namespace_dimension"].tk | Int32 | 是的 | k8s 命名空間的 TK。 
+
+
+| k8sNamespaceGroupTk *[FK]* →link:#entity-k8s_namespace_group_dimension["k8s_namespace_group_dimension"].tk | Int32 | 是的 | k8s 命名空間群組的 TK。 
+
+
+| readResponseTime | 雙倍的 | 是的 | 讀取回應時間。 
+
+
+| writeResponseTime | 雙倍的 | 是的 | 寫入回應時間 
+
+
+| totalResponseTime | 雙倍的 | 是的 | 總回應時間。 
+
+
+| totalResponseTimeMax | 雙倍的 | 是的 | 回應時間的最大值。 
+
+
+| readThroughput | 雙倍的 | 是的 | 平均讀取處理量。 
+
+
+| writeThroughput | 雙倍的 | 是的 | 平均寫入處理量。 
+
+
+| totalThroughput | 雙倍的 | 是的 | 總處理量平均值（讀取+寫入）。 
+
+
+| totalThroughputMax | 雙倍的 | 是的 | 最大總處理量。 
+
+
+| readIops | 雙倍的 | 是的 | 每秒讀取 I/O 次數。 
+
+
+| writeIops | 雙倍的 | 是的 | 每秒寫入 I/O 次數。 
+
+
+| totalIops | 雙倍的 | 是的 | 每秒總 I/O 平均值（讀取+寫入）。 
+
+
+| totalIopsMax | 雙倍的 | 是的 | 每秒最大 I/O 次數。 
+
+
+| writePending | Int64 | 是的 | 待寫入數量。 
+
+
+| readIoDensity | 雙倍的 | 是的 | 讀取 I/O 密度。 
+
+
+| writeIoDensity | 雙倍的 | 是的 | 寫入 I/O 密度。 
+
+
+| totalIoDensity | 雙倍的 | 是的 | 總 IO 密度。 
+
+
+| totalIoDensityMax | 雙倍的 | 是的 | 最大總 IO 密度。 
+
+
+| objectCount | 雙倍的 | 是的 | 物件數量。 
+
+
+| filesystemCapacityPhysicalUsed | 雙倍的 | 是的 | 檔案系統實體已使用容量（GB）。 
+
+
+| filesystemCapacityPhysicalAvailable | 雙倍的 | 是的 | 檔案系統實體可用容量（GB）。 
+
+
+| filesystemCapacityLogicalUsed | 雙倍的 | 是的 | 檔案系統邏輯已使用容量（GB）。 
+
+
+| totalTimeToFull | 雙倍的 | 是的 | 達到滿格時間。 
+
+
+| confidenceIntervalTimeToFull | 雙倍的 | 是的 | 達到完全所需時間的信賴區間。 
+
+
+| 已存取 | Int32 | 是的 | 是否存取了內部 Volume？ 
+
+
+| 前端 | 字串 | 是的 | 內部 Volume 是前端嗎？ 
+
+
+| 後端 | 字串 | 是的 | 內部 Volume 後端？ 
+
+
+| 時間戳 *[PK]* | Int64 | 是的 | 事實開始時間戳，用於分割區 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 內部體積尺寸 | link:#entity-internal_volume_dimension["內部體積尺寸"] | 一個 JOIN：internalVolumeTk=link:#entity-internal_volume_dimension["內部體積尺寸"].tk 
+
+
+| 儲存節點維度 | link:#entity-storage_node_dimension["儲存節點維度"] | 一個 JOIN：storageNodeTk=link:#entity-storage_node_dimension["儲存節點維度"].tk 
+
+
+| 儲存空間_維度 | link:#entity-storage_dimension["儲存空間_維度"] | 一個 JOIN：storageTk=link:#entity-storage_dimension["儲存空間_維度"].tk 
+
+
+| business_entity_dimension | link:#entity-business_entity_dimension["business_entity_dimension"] | 一個 JOIN：businessEntityTk=link:#entity-business_entity_dimension["business_entity_dimension"].tk 
+
+
+| k8s_namespace_group_dimension | link:#entity-k8s_namespace_group_dimension["k8s_namespace_group_dimension"] | one JOIN:k8sNamespaceGroupTk=link:#entity-k8s_namespace_group_dimension["k8s_namespace_group_dimension"].tk 
+
+
+| 應用程式群組維度 | link:#entity-application_group_dimension["應用程式群組維度"] | 一個 JOIN：applicationGroupTk=link:#entity-application_group_dimension["應用程式群組維度"].tk 
+
+
+| k8s_namespace_dimension | link:#entity-k8s_namespace_dimension["k8s_namespace_dimension"] | 一個 JOIN:k8sNamespaceTk=link:#entity-k8s_namespace_dimension["k8s_namespace_dimension"].tk 
+
+
+| 服務等級維度 | link:#entity-service_level_dimension["服務等級維度"] | 一個 JOIN：serviceLevelTk=link:#entity-service_level_dimension["服務等級維度"].tk 
+
+
+| 層級維度 | link:#entity-tier_dimension["層級維度"] | 一個 JOIN：tierTk=link:#entity-tier_dimension["層級維度"].tk 
+
+
+| 應用程式維度 | link:#entity-application_dimension["應用程式維度"] | 一個 JOIN：applicationTk=link:#entity-application_dimension["應用程式維度"].tk 
+
+
+| 時間維度 | link:#entity-time_dimension["時間維度"] | 一個 JOIN：timeTk=link:#entity-time_dimension["時間維度"].tk 
+
+
+| 儲存池維度 | link:#entity-storage_pool_dimension["儲存池維度"] | 一個 JOIN：storagePoolTk=link:#entity-storage_pool_dimension["儲存池維度"].tk 
+
+
+| 日期維度 | link:#entity-date_dimension["日期維度"] | 一個 JOIN：dateTk=link:#entity-date_dimension["日期維度"].tk 
+|===
+
+
+[[k8sclusterdailymetricsfact]]
+=== k8s_cluster_daily_metrics_fact
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：k8s_cluster_daily_metrics_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int64 | 是的 | 知道這件事。 
+
+
+| dateTk | Int32 | 是的 | 日期維度的 TK。 
+
+
+| clusterTk | Int32 | 是的 | k8s 叢集的 TK。 
+
+
+| allocatableCpuSaturation | 雙倍的 | 是的 | 可分配 CPU 飽和度百分比。 
+
+
+| capacityCpuSaturation | 雙倍的 | 是的 | Capacity CPU 飽和度百分比。 
+
+
+| allocatableMemorySaturation | 雙倍的 | 是的 | 可分配記憶體容量飽和度百分比。 
+
+
+| capacityMemorySaturation | 雙倍的 | 是的 | 記憶體容量飽和度百分比。 
+
+
+| allocatableCpuCores | 雙倍的 | 是的 | 可分配的 CPU 核心。 
+
+
+| capacityCpuCores | 雙倍的 | 是的 | CPU 核心容量。 
+
+
+| usageCpuCores | 雙倍的 | 是的 | CPU 核心使用情況。 
+
+
+| requestsCpuCores | 雙倍的 | 是的 | 請求 CPU 核心數。 
+
+
+| limitsCpuCores | 雙倍的 | 是的 | 限制 CPU 核心數。 
+
+
+| allocatableMemoryBytes | 雙倍的 | 是的 | 可分配記憶體容量（以位元組為單位）。 
+
+
+| capacityMemoryBytes | 雙倍的 | 是的 | 記憶體容量（以位元組為單位）。 
+
+
+| limitsMemoryBytes | 雙倍的 | 是的 | 限制記憶體容量（以位元組為單位）。 
+
+
+| requestsMemoryBytes | 雙倍的 | 是的 | 請求的記憶體容量為位元組。 
+
+
+| usageMemoryBytes | 雙倍的 | 是的 | 記憶體使用量（位元組）。 
+
+
+| 時間戳 *[PK]* | Int64 | 是的 | 事實開始時間戳，用於分割區 
+|===
+
+
+[[k8sclusterdimension]]
+=== k8s_cluster_dimension
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：k8s_cluster_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此簇行的 TK。 
+
+
+| 識別符 | 字串 | 是的 | 叢集的唯一識別碼。 
+
+
+| 姓名 | 字串 | 是的 | 群集名稱。 
+
+
+| id | Int64 | 是的 | dwh_inventory.k8s_cluster 中叢集的 GUID 
+
+
+| 最新 | 字串 | 是的 | 指示此列是否為該叢集的最新列。 
+
+
+| dateTk | Int32 | 是的 | 建立此叢集行的日期 TK。 
+|===
+
+
+[[k8sclusterhourlymetricsfact]]
+=== k8s_cluster_hourly_metrics_fact
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：k8s_cluster_hourly_metrics_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int64 | 是的 | 知道這件事。 
+
+
+| timeTk | Int32 | 是的 | 時間維度的TK。 
+
+
+| dateTk | Int32 | 是的 | 日期維度的 TK。 
+
+
+| clusterTk | Int32 | 是的 | k8s 叢集的 TK。 
+
+
+| allocatableCpuSaturation | 雙倍的 | 是的 | 可分配 CPU 飽和度百分比。 
+
+
+| capacityCpuSaturation | 雙倍的 | 是的 | Capacity CPU 飽和度百分比。 
+
+
+| allocatableMemorySaturation | 雙倍的 | 是的 | 可分配記憶體容量飽和度百分比。 
+
+
+| capacityMemorySaturation | 雙倍的 | 是的 | 記憶體容量飽和度百分比。 
+
+
+| allocatableCpuCores | 雙倍的 | 是的 | 可分配的 CPU 核心。 
+
+
+| capacityCpuCores | 雙倍的 | 是的 | CPU 核心容量。 
+
+
+| usageCpuCores | 雙倍的 | 是的 | CPU 核心使用情況。 
+
+
+| requestsCpuCores | 雙倍的 | 是的 | 請求 CPU 核心數。 
+
+
+| limitsCpuCores | 雙倍的 | 是的 | 限制 CPU 核心數。 
+
+
+| allocatableMemoryBytes | 雙倍的 | 是的 | 可分配記憶體容量（以位元組為單位）。 
+
+
+| capacityMemoryBytes | 雙倍的 | 是的 | 記憶體容量（以位元組為單位）。 
+
+
+| limitsMemoryBytes | 雙倍的 | 是的 | 限制記憶體容量（以位元組為單位）。 
+
+
+| requestsMemoryBytes | 雙倍的 | 是的 | 請求的記憶體容量為位元組。 
+
+
+| usageMemoryBytes | 雙倍的 | 是的 | 記憶體使用量（位元組）。 
+
+
+| 時間戳 *[PK]* | Int64 | 是的 | 事實開始時間戳，用於分割區 
+|===
+
+
+[[k8snamespacedailymetricsfact]]
+=== k8s_namespace_daily_metrics_fact
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：k8s_namespace_daily_metrics_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int64 | 是的 | 知道這件事。 
+
+
+| dateTk | Int32 | 是的 | 日期維度的 TK。 
+
+
+| namespaceTk | Int32 | 是的 | k8s 命名空間的 TK。 
+
+
+| clusterTk | Int32 | 是的 | k8s 叢集的 TK。 
+
+
+| cpuHardLimit | 雙倍的 | 是的 | K8S namespace CPU 硬限制。 
+
+
+| cpuUsedLimit | 雙倍的 | 是的 | K8S 命名空間 CPU 使用限制。 
+
+
+| cpuHardRequest | 雙倍的 | 是的 | K8S 命名空間 CPU 硬請求。 
+
+
+| cpuUsedRequest | 雙倍的 | 是的 | K8S 命名空間 CPU 使用請求。 
+
+
+| memoryHardLimit | 雙倍的 | 是的 | K8S 命名空間記憶體硬限制。 
+
+
+| memoryUsedLimit | 雙倍的 | 是的 | K8S 命名空間記憶體容量使用限制。 
+
+
+| memoryHardRequest | 雙倍的 | 是的 | K8S 命名空間記憶體容量硬性請求。 
+
+
+| memoryUsedRequest | 雙倍的 | 是的 | K8S 命名空間記憶體容量使用請求。 
+
+
+| 時間戳 *[PK]* | Int64 | 是的 | 事實開始時間戳，用於分割區 
+|===
+
+
+[[k8snamespacedimension]]
+=== k8s_namespace_dimension
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：k8s_namespace_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此命名空間行的 TK。 
+
+
+| 識別符 | 字串 | 是的 | 命名空間的唯一識別碼。 
+
+
+| 姓名 | 字串 | 是的 | 命名空間名稱。 
+
+
+| clusterName | 字串 | 是的 | 命名空間的叢集名稱。 
+
+
+| id | Int64 | 是的 | dwh_inventory.k8s_namespace 中命名空間的 GUID 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該命名空間中的最新行。 
+
+
+| dateTk | Int32 | 是的 | 此命名空間行建立日期對應的 TK。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| qtree_hourly_performance_fact | link:#entity-qtree_hourly_performance_fact["qtree_hourly_performance_fact"] | 許多 
+
+
+| volume_hourly_performance_fact | link:#entity-volume_hourly_performance_fact["volume_hourly_performance_fact"] | 許多 
+
+
+| qtree_daily_performance_fact | link:#entity-qtree_daily_performance_fact["qtree_daily_performance_fact"] | 許多 
+
+
+| internal_volume_daily_performance_fact | link:#entity-internal_volume_daily_performance_fact["internal_volume_daily_performance_fact"] | 許多 
+
+
+| internal_volume_hourly_performance_fact | link:#entity-internal_volume_hourly_performance_fact["internal_volume_hourly_performance_fact"] | 許多 
+
+
+| volume_daily_performance_fact | link:#entity-volume_daily_performance_fact["volume_daily_performance_fact"] | 許多 
+|===
+
+
+[[k8snamespacegroupbridge]]
+=== k8s_namespace_group_bridge
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：k8s_namespace_group_bridge
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| k8sNamespaceGroupTk | Int32 | 是的 | k8s 命名空間群組的 TK。 
+
+
+| k8sNamespaceTk | Int32 | 是的 | k8s 命名空間的 TK。 
+
+
+| isRep | 字串 | 是的 | 指示此 k8s 命名空間是否代表其所屬的 k8s 命名空間群組。 
+|===
+
+
+[[k8snamespacegroupdimension]]
+=== k8s_namespace_group_dimension
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：k8s_namespace_group_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | k8s 命名空間群組的 TK。 
+
+
+| repK8sNamespace | 字串 | 是的 | 代表 k8s 命名空間群組的應用程式名稱。 
+
+
+| repK8sNamespaceTk | Int32 | 是的 | 代表該群組的 k8s 命名空間的 TK。 
+
+
+| 基數 | Int32 | 是的 | 應用程式群組中的 Kubernetes 命名空間數量。 
+
+
+| dateTk | Int32 | 是的 | k8s 命名空間群組行建立日期的 TK。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| qtree_hourly_performance_fact | link:#entity-qtree_hourly_performance_fact["qtree_hourly_performance_fact"] | 許多 
+
+
+| volume_hourly_performance_fact | link:#entity-volume_hourly_performance_fact["volume_hourly_performance_fact"] | 許多 
+
+
+| qtree_daily_performance_fact | link:#entity-qtree_daily_performance_fact["qtree_daily_performance_fact"] | 許多 
+
+
+| internal_volume_daily_performance_fact | link:#entity-internal_volume_daily_performance_fact["internal_volume_daily_performance_fact"] | 許多 
+
+
+| internal_volume_hourly_performance_fact | link:#entity-internal_volume_hourly_performance_fact["internal_volume_hourly_performance_fact"] | 許多 
+
+
+| volume_daily_performance_fact | link:#entity-volume_daily_performance_fact["volume_daily_performance_fact"] | 許多 
+|===
+
+
+[[k8snamespacehourlymetricsfact]]
+=== k8s_namespace_hourly_metrics_fact
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：k8s_namespace_hourly_metrics_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int64 | 是的 | 知道這件事。 
+
+
+| timeTk | Int32 | 是的 | 時間維度的TK。 
+
+
+| dateTk | Int32 | 是的 | 日期維度的 TK。 
+
+
+| namespaceTk | Int32 | 是的 | k8s 命名空間的 TK。 
+
+
+| clusterTk | Int32 | 是的 | k8s 叢集的 TK。 
+
+
+| cpuHardLimit | 雙倍的 | 是的 | K8S namespace CPU 硬限制。 
+
+
+| cpuUsedLimit | 雙倍的 | 是的 | K8S 命名空間 CPU 使用限制。 
+
+
+| cpuHardRequest | 雙倍的 | 是的 | K8S 命名空間 CPU 硬請求。 
+
+
+| cpuUsedRequest | 雙倍的 | 是的 | K8S 命名空間 CPU 使用請求。 
+
+
+| memoryHardLimit | 雙倍的 | 是的 | K8S 命名空間記憶體硬限制。 
+
+
+| memoryUsedLimit | 雙倍的 | 是的 | K8S 命名空間記憶體容量使用限制。 
+
+
+| memoryHardRequest | 雙倍的 | 是的 | K8S 命名空間記憶體容量硬性請求。 
+
+
+| memoryUsedRequest | 雙倍的 | 是的 | K8S 命名空間記憶體容量使用請求。 
+
+
+| 時間戳 *[PK]* | Int64 | 是的 | 事實開始時間戳，用於分割區 
+|===
+
+
+[[k8snodedailymetricsfact]]
+=== k8s_node_daily_metrics_fact
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：k8s_node_daily_metrics_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int64 | 是的 | 知道這件事。 
+
+
+| dateTk | Int32 | 是的 | 日期維度的 TK。 
+
+
+| nodeTk | Int32 | 是的 | k8s 節點的 TK。 
+
+
+| clusterTk | Int32 | 是的 | k8s 叢集的 TK。 
+
+
+| vmTk | Int32 | 是的 | 虛擬機器的 TK。 
+
+
+| allocatableCpuSaturation | 雙倍的 | 是的 | 可分配 CPU 飽和度百分比。 
+
+
+| capacityCpuSaturation | 雙倍的 | 是的 | Capacity CPU 飽和度百分比。 
+
+
+| allocatableMemorySaturation | 雙倍的 | 是的 | 可分配記憶體容量飽和度百分比。 
+
+
+| capacityMemorySaturation | 雙倍的 | 是的 | 記憶體容量飽和度百分比。 
+
+
+| allocatableMemoryBytes | 雙倍的 | 是的 | 可分配記憶體容量（以位元組為單位）。 
+
+
+| capacityMemoryBytes | 雙倍的 | 是的 | 記憶體容量（以位元組為單位）。 
+
+
+| memoryUsageBytes | 雙倍的 | 是的 | 記憶體容量使用量（位元組）。 
+
+
+| cpuUsageNanocores | 雙倍的 | 是的 | 奈米核心的 CPU 使用率。 
+
+
+| allocatableCpu | 雙倍的 | 是的 | Kube 節點狀態可分配 CPU。 
+
+
+| capacityCpu | 雙倍的 | 是的 | Kube 節點狀態容量 CPU。 
+
+
+| 時間戳 *[PK]* | Int64 | 是的 | 事實開始時間戳，用於分割區 
+|===
+
+
+[[k8snodedimension]]
+=== k8s_node_dimension
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：k8s_node_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此節點行的 TK。 
+
+
+| 識別符 | 字串 | 是的 | 節點的唯一識別碼。 
+
+
+| 姓名 | 字串 | 是的 | 節點名稱。 
+
+
+| clusterName | 字串 | 是的 | 節點的叢集名稱。 
+
+
+| internalIp | 字串 | 是的 | K8S 節點的內部 IP 
+
+
+| osImage | 字串 | 是的 | K8S 節點的作業系統映像 
+
+
+| id | Int64 | 是的 | dwh_inventory.k8s_node 中節點的 GUID 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該節點的最新行。 
+
+
+| dateTk | Int32 | 是的 | 此節點行建立日期對應的 TK 值。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| vm_hourly_performance_fact | link:#entity-vm_hourly_performance_fact["vm_hourly_performance_fact"] | 許多 
+
+
+| vm_daily_performance_fact | link:#entity-vm_daily_performance_fact["vm_daily_performance_fact"] | 許多 
+|===
+
+
+[[k8snodehourlymetricsfact]]
+=== k8s_node_hourly_metrics_fact
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：k8s_node_hourly_metrics_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int64 | 是的 | 知道這件事。 
+
+
+| timeTk | Int32 | 是的 | 時間維度的TK。 
+
+
+| dateTk | Int32 | 是的 | 日期維度的 TK。 
+
+
+| nodeTk | Int32 | 是的 | k8s 節點的 TK。 
+
+
+| clusterTk | Int32 | 是的 | k8s 叢集的 TK。 
+
+
+| vmTk | Int32 | 是的 | 虛擬機器的 TK。 
+
+
+| allocatableCpuSaturation | 雙倍的 | 是的 | 可分配 CPU 飽和度百分比。 
+
+
+| capacityCpuSaturation | 雙倍的 | 是的 | Capacity CPU 飽和度百分比。 
+
+
+| allocatableMemorySaturation | 雙倍的 | 是的 | 可分配記憶體容量飽和度百分比。 
+
+
+| capacityMemorySaturation | 雙倍的 | 是的 | 記憶體容量飽和度百分比。 
+
+
+| allocatableMemoryBytes | 雙倍的 | 是的 | 可分配記憶體容量（以位元組為單位）。 
+
+
+| capacityMemoryBytes | 雙倍的 | 是的 | 記憶體容量（以位元組為單位）。 
+
+
+| memoryUsageBytes | 雙倍的 | 是的 | 記憶體容量使用量（位元組）。 
+
+
+| cpuUsageNanocores | 雙倍的 | 是的 | 奈米核心的 CPU 使用率。 
+
+
+| allocatableCpu | 雙倍的 | 是的 | Kube 節點狀態可分配 CPU。 
+
+
+| capacityCpu | 雙倍的 | 是的 | Kube 節點狀態容量 CPU。 
+
+
+| 時間戳 *[PK]* | Int64 | 是的 | 事實開始時間戳，用於分割區 
+|===
+
+
+[[k8spvdimension]]
+=== k8s_pv_dimension
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：k8s_pv_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此 PV 行的 TK。 
+
+
+| 識別符 | 字串 | 是的 | pv 的唯一識別碼。 
+
+
+| 姓名 | 字串 | 是的 | PV 的名稱。 
+
+
+| clusterName | 字串 | 是的 | PV 的叢集名稱。 
+
+
+| 階段 | 字串 | 是的 | K8S 持久 Volume 的階段（Bound 等） 
+
+
+| pvcName | 字串 | 是的 | K8S 持久 Volume 所繫結的 PVC 名稱 
+
+
+| storageClass | 字串 | 是的 | K8S 持久性 Volume 的儲存設備類別名稱 
+
+
+| id | Int64 | 是的 | dwh_inventory.k8s_pv 中 PVC 的 GUID 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該 PV 的最新行。 
+
+
+| dateTk | Int32 | 是的 | 建立此 pv 行的日期 TK。 
+|===
+
+
+[[k8spvcdailymetricsfact]]
+=== k8s_pvc_daily_metrics_fact
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：k8s_pvc_daily_metrics_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int64 | 是的 | 知道這件事。 
+
+
+| dateTk | Int32 | 是的 | 日期維度的 TK。 
+
+
+| pvcTk | Int32 | 是的 | k8s pvc 的 TK。 
+
+
+| clusterTk | Int32 | 是的 | k8s 叢集的 TK。 
+
+
+| namespaceTk | Int32 | 是的 | k8s 命名空間的 TK。 
+
+
+| pvTk | Int32 | 是的 | k8s pv 的 TK。 
+
+
+| readIops | 雙倍的 | 是的 | K8S PVC 讀取 Iops。 
+
+
+| writeIops | 雙倍的 | 是的 | K8S PVC 寫入 IOPS。 
+
+
+| totalIops | 雙倍的 | 是的 | K8S pvc Total Iops。 
+
+
+| readThroughput | 雙倍的 | 是的 | K8S PVC 讀取吞吐量。 
+
+
+| writeThroughput | 雙倍的 | 是的 | K8S pvc Write Throughput。 
+
+
+| totalThroughput | 雙倍的 | 是的 | K8S pvc Total Throughput。 
+
+
+| readLatency | 雙倍的 | 是的 | K8S pvc 讀取延遲。 
+
+
+| writeLatency | 雙倍的 | 是的 | K8S pvc Write Latency。 
+
+
+| totalLatency | 雙倍的 | 是的 | K8S pvc Total Latency。 
+
+
+| 時間戳 *[PK]* | Int64 | 是的 | 事實開始時間戳，用於分割區 
+|===
+
+
+[[k8spvcdimension]]
+=== k8s_pvc_dimension
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集合：k8s_pvc_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 該 PVC 排的 TK。 
+
+
+| 識別符 | 字串 | 是的 | PVC 的唯一識別碼。 
+
+
+| 姓名 | 字串 | 是的 | PVC 的名稱。 
+
+
+| clusterName | 字串 | 是的 | PVC 叢集名稱。 
+
+
+| namespaceName | 字串 | 是的 | PVC 的命名空間名稱。 
+
+
+| pvName | 字串 | 是的 | 與此 PVC 連結的 PV 名稱。 
+
+
+| 階段 | 字串 | 是的 | K8S 持續性 Volume 請求的階段（Bound 等） 
+
+
+| id | Int64 | 是的 | dwh_inventory.k8s_pvc 中 PVC 的 GUID 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該 PVC 的最新行。 
+
+
+| dateTk | Int32 | 是的 | 此 PVC 行建立日期對應的 TK。 
+|===
+
+
+[[k8spvchourlymetricsfact]]
+=== k8s_pvc_hourly_metrics_fact
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：k8s_pvc_hourly_metrics_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int64 | 是的 | 知道這件事。 
+
+
+| timeTk | Int32 | 是的 | 時間維度的TK。 
+
+
+| dateTk | Int32 | 是的 | 日期維度的 TK。 
+
+
+| pvcTk | Int32 | 是的 | k8s pvc 的 TK。 
+
+
+| clusterTk | Int32 | 是的 | k8s 叢集的 TK。 
+
+
+| namespaceTk | Int32 | 是的 | k8s 命名空間的 TK。 
+
+
+| pvTk | Int32 | 是的 | k8s pv 的 TK。 
+
+
+| readIops | 雙倍的 | 是的 | K8S PVC 讀取 Iops。 
+
+
+| writeIops | 雙倍的 | 是的 | K8S PVC 寫入 IOPS。 
+
+
+| totalIops | 雙倍的 | 是的 | K8S pvc Total Iops。 
+
+
+| readThroughput | 雙倍的 | 是的 | K8S PVC 讀取吞吐量。 
+
+
+| writeThroughput | 雙倍的 | 是的 | K8S pvc Write Throughput。 
+
+
+| totalThroughput | 雙倍的 | 是的 | K8S pvc Total Throughput。 
+
+
+| readLatency | 雙倍的 | 是的 | K8S pvc 讀取延遲。 
+
+
+| writeLatency | 雙倍的 | 是的 | K8S pvc Write Latency。 
+
+
+| totalLatency | 雙倍的 | 是的 | K8S pvc Total Latency。 
+
+
+| 時間戳 *[PK]* | Int64 | 是的 | 事實開始時間戳，用於分割區 
+|===
+
+
+[[k8sworkloaddailymetricsfact]]
+=== k8s_workload_daily_metrics_fact
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：k8s_workload_daily_metrics_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int64 | 是的 | 知道這件事。 
+
+
+| dateTk | Int32 | 是的 | 日期維度的 TK。 
+
+
+| workloadTk | Int32 | 是的 | k8s 工作負載的 TK。 
+
+
+| clusterTk | Int32 | 是的 | k8s 叢集的 TK。 
+
+
+| namespaceTk | Int32 | 是的 | k8s 命名空間的 TK。 
+
+
+| usageCpuCores | 雙倍的 | 是的 | K8S 工作負載 CPU 使用量（核心數）。 
+
+
+| requestCpuCores | 雙倍的 | 是的 | K8S 工作負載請求 CPU（核心數）。 
+
+
+| limitCpuCores | 雙倍的 | 是的 | K8S 工作負載限制 CPU （核心數）。 
+
+
+| usageMemoryBytes | 雙倍的 | 是的 | K8S 工作負載記憶體容量使用量（位元組）。 
+
+
+| requestMemoryBytes | 雙倍的 | 是的 | K8S 工作負載請求記憶體容量（位元組）。 
+
+
+| limitMemoryBytes | 雙倍的 | 是的 | K8S 工作負載限制記憶體容量（位元組）。 
+
+
+| runningPodCount | Int32 | 是的 | K8S 工作負載：正在運作的副本數量。 
+
+
+| desiredPodCount | Int32 | 是的 | K8S 工作負載所需副本數。 
+
+
+| 時間戳 *[PK]* | Int64 | 是的 | 事實開始時間戳，用於分割區 
+|===
+
+
+[[k8sworkloaddimension]]
+=== k8s_workload_dimension
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：k8s_workload_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此工作負載行的 TK。 
+
+
+| 識別符 | 字串 | 是的 | 工作負載的唯一識別碼。 
+
+
+| 姓名 | 字串 | 是的 | 工作負載名稱。 
+
+
+| clusterName | 字串 | 是的 | 工作負載的叢集名稱。 
+
+
+| namespaceName | 字串 | 是的 | 工作負載的命名空間名稱。 
+
+
+| 類型 | 字串 | 是的 | 工作負載類型（Pod、StatefulSet 等） 
+
+
+| id | Int64 | 是的 | dwh_inventory.k8s_workload 中工作負載的 GUID 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該工作負載的最新行。 
+
+
+| dateTk | Int32 | 是的 | 此工作負載行建立日期對應的 TK。 
+|===
+
+
+[[k8sworkloadhourlymetricsfact]]
+=== k8s_workload_hourly_metrics_fact
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：k8s_workload_hourly_metrics_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int64 | 是的 | 知道這件事。 
+
+
+| timeTk | Int32 | 是的 | 時間維度的TK。 
+
+
+| dateTk | Int32 | 是的 | 日期維度的 TK。 
+
+
+| workloadTk | Int32 | 是的 | k8s 工作負載的 TK。 
+
+
+| clusterTk | Int32 | 是的 | k8s 叢集的 TK。 
+
+
+| namespaceTk | Int32 | 是的 | k8s 命名空間的 TK。 
+
+
+| usageCpuCores | 雙倍的 | 是的 | K8S 工作負載 CPU 使用量（核心數）。 
+
+
+| requestCpuCores | 雙倍的 | 是的 | K8S 工作負載請求 CPU（核心數）。 
+
+
+| limitCpuCores | 雙倍的 | 是的 | K8S 工作負載限制 CPU （核心數）。 
+
+
+| usageMemoryBytes | 雙倍的 | 是的 | K8S 工作負載記憶體容量使用量（位元組）。 
+
+
+| requestMemoryBytes | 雙倍的 | 是的 | K8S 工作負載請求記憶體容量（位元組）。 
+
+
+| limitMemoryBytes | 雙倍的 | 是的 | K8S 工作負載限制記憶體容量（位元組）。 
+
+
+| runningPodCount | Int32 | 是的 | K8S 工作負載：正在運作的副本數量。 
+
+
+| desiredPodCount | Int32 | 是的 | K8S 工作負載所需副本數。 
+
+
+| 時間戳 *[PK]* | Int64 | 是的 | 事實開始時間戳，用於分割區 
+|===
+
+
+[[portdimension]]
+=== 連接埠維度
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：port_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此連接埠列的 TK。 
+
+
+| wwn | 字串 | 是的 | 連接埠的 WWN。 
+
+
+| 姓名 | 字串 | 是的 | 連接埠名稱。 
+
+
+| gbicType | 字串 | 是的 | 連接埠使用的 GBIC （Gigabit Interface Converter）類型。 
+
+
+| 類型 | 字串 | 是的 | 連接埠類型，通常用於識別與其他裝置通訊所使用的協定，取自裝置本身：F-port、E-port 等等。 
+
+
+| 速度 | 字串 | 是的 | 連接埠速度，單位為 Gbps。 
+
+
+| isGenerated | 字串 | 是的 | 指示這是否為產生的 WWN（如果我們不知道真實的 WWN）。 
+
+
+| url | 字串 | 是的 | Insight Server 中此連接埠的 URL。 
+
+
+| id | Int64 | 是的 | dwh_inventory.switch_port 中連接埠的 GUID。 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該連接埠的最新行。 
+
+
+| dateTk | Int32 | 是的 | TK 表示連接埠行建立日期。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| switch_performance_for_port_hourly_fact | link:#entity-switch_performance_for_port_hourly_fact["switch_performance_for_port_hourly_fact"] | 許多 
+|===
+
+
+[[qtreedailyperformancefact]]
+=== qtree_daily_performance_fact
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：qtree_daily_performance_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int32 | 是的 | 知道這件事。 
+
+
+| dateTk *[FK]* →link:#entity-date_dimension["日期維度"].tk | Int32 | 是的 | 日期維度的 TK。 
+
+
+| qtreeTk *[FK]* →link:#entity-qtree_dimension["qtree_dimension"].tk | Int32 | 是的 | 效能計數器的 qtree 的 TK。 
+
+
+| storageTk *[FK]* →link:#entity-storage_dimension["儲存空間_維度"].tk | Int32 | 是的 | qtree 儲存設備的效能計數器的 TK。 
+
+
+| storagePoolTk *[FK]* →link:#entity-storage_pool_dimension["儲存池維度"].tk | Int32 | 是的 | qtree 儲存資源池效能計數器的 TK。 
+
+
+| internalVolumeTk *[FK]* →link:#entity-internal_volume_dimension["內部體積尺寸"].tk | Int32 | 是的 | qtree 內部 Volume 的效能計數器的 TK。 
+
+
+| virtualStorageTk | Int32 | 是的 | 如果此 qtree 位於虛擬內部 Volume 上，則為前端陣列的 TK。否則，該值為 N/A。 
+
+
+| tierTk *[FK]* →link:#entity-tier_dimension["層級維度"].tk | Int32 | 是的 | 該分層的 TK。 
+
+
+| serviceLevelTk *[FK]* →link:#entity-service_level_dimension["服務等級維度"].tk | Int32 | 是的 | 服務層級的 TK。 
+
+
+| applicationTk *[FK]* →link:#entity-application_dimension["應用程式維度"].tk | Int32 | 是的 | 應用程式的 TK。 
+
+
+| applicationGroupTk *[FK]* →link:#entity-application_group_dimension["應用程式群組維度"].tk | Int32 | 是的 | 應用程式組的 TK。 
+
+
+| businessEntityTk *[FK]* →link:#entity-business_entity_dimension["business_entity_dimension"].tk | Int32 | 是的 | 該企業實體的 TK。 
+
+
+| k8sNamespaceTk *[FK]* →link:#entity-k8s_namespace_dimension["k8s_namespace_dimension"].tk | Int32 | 是的 | k8s 命名空間的 TK。 
+
+
+| k8sNamespaceGroupTk *[FK]* →link:#entity-k8s_namespace_group_dimension["k8s_namespace_group_dimension"].tk | Int32 | 是的 | k8s 命名空間群組的 TK。 
+
+
+| totalIops | 雙倍的 | 是的 | 每秒總 I/O 平均值（讀取+寫入）。 
+
+
+| totalIopsMax | 雙倍的 | 是的 | 每秒最大 I/O 次數。 
+
+
+| 時間戳 *[PK]* | Int64 | 是的 | 事實開始時間戳，用於分割區 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 服務等級維度 | link:#entity-service_level_dimension["服務等級維度"] | 一個 JOIN：serviceLevelTk=link:#entity-service_level_dimension["服務等級維度"].tk 
+
+
+| 內部體積尺寸 | link:#entity-internal_volume_dimension["內部體積尺寸"] | 一個 JOIN：internalVolumeTk=link:#entity-internal_volume_dimension["內部體積尺寸"].tk 
+
+
+| 儲存空間_維度 | link:#entity-storage_dimension["儲存空間_維度"] | 一個 JOIN：storageTk=link:#entity-storage_dimension["儲存空間_維度"].tk 
+
+
+| 層級維度 | link:#entity-tier_dimension["層級維度"] | 一個 JOIN：tierTk=link:#entity-tier_dimension["層級維度"].tk 
+
+
+| business_entity_dimension | link:#entity-business_entity_dimension["business_entity_dimension"] | 一個 JOIN：businessEntityTk=link:#entity-business_entity_dimension["business_entity_dimension"].tk 
+
+
+| 應用程式維度 | link:#entity-application_dimension["應用程式維度"] | 一個 JOIN：applicationTk=link:#entity-application_dimension["應用程式維度"].tk 
+
+
+| qtree_dimension | link:#entity-qtree_dimension["qtree_dimension"] | 一個 JOIN：qtreeTk=link:#entity-qtree_dimension["qtree_dimension"].tk 
+
+
+| 儲存池維度 | link:#entity-storage_pool_dimension["儲存池維度"] | 一個 JOIN：storagePoolTk=link:#entity-storage_pool_dimension["儲存池維度"].tk 
+
+
+| 日期維度 | link:#entity-date_dimension["日期維度"] | 一個 JOIN：dateTk=link:#entity-date_dimension["日期維度"].tk 
+
+
+| k8s_namespace_group_dimension | link:#entity-k8s_namespace_group_dimension["k8s_namespace_group_dimension"] | one JOIN:k8sNamespaceGroupTk=link:#entity-k8s_namespace_group_dimension["k8s_namespace_group_dimension"].tk 
+
+
+| 應用程式群組維度 | link:#entity-application_group_dimension["應用程式群組維度"] | 一個 JOIN：applicationGroupTk=link:#entity-application_group_dimension["應用程式群組維度"].tk 
+
+
+| k8s_namespace_dimension | link:#entity-k8s_namespace_dimension["k8s_namespace_dimension"] | 一個 JOIN:k8sNamespaceTk=link:#entity-k8s_namespace_dimension["k8s_namespace_dimension"].tk 
+|===
+
+
+[[qtreedimension]]
+=== qtree_dimension
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：qtree_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此 qtree 行的 TK。 
+
+
+| 姓名 | 字串 | 是的 | qtree 的名稱。 
+
+
+| 識別符 | 字串 | 是的 | qtree 的識別碼。 
+
+
+| storageIdentifier | 字串 | 是的 | 此 qtree 所在的儲存設備的識別碼。 
+
+
+| 類型 | 字串 | 是的 | Qtree 類型。 
+
+
+| url | 字串 | 是的 | Insight Server 中此 qtree 的 URL。 
+
+
+| id | Int64 | 是的 | dwh_inventory.qtree 中 qtree 的 GUID 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該 qtree 的最新行。 
+
+
+| dateTk | Int32 | 是的 | 建立此 qtree 行的日期對應的 TK。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| qtree_hourly_performance_fact | link:#entity-qtree_hourly_performance_fact["qtree_hourly_performance_fact"] | 許多 
+
+
+| qtree_daily_performance_fact | link:#entity-qtree_daily_performance_fact["qtree_daily_performance_fact"] | 許多 
+|===
+
+
+[[qtreehourlyperformancefact]]
+=== qtree_hourly_performance_fact
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：qtree_hourly_performance_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int64 | 是的 | 知道這件事。 
+
+
+| timeTk *[FK]* →link:#entity-time_dimension["時間維度"].tk | Int32 | 是的 | 時間維度的TK。 
+
+
+| dateTk *[FK]* →link:#entity-date_dimension["日期維度"].tk | Int32 | 是的 | 日期維度的 TK。 
+
+
+| qtreeTk *[FK]* →link:#entity-qtree_dimension["qtree_dimension"].tk | Int32 | 是的 | 效能計數器的 qtree 的 TK。 
+
+
+| storageTk *[FK]* →link:#entity-storage_dimension["儲存空間_維度"].tk | Int32 | 是的 | qtree 儲存設備的效能計數器的 TK。 
+
+
+| storagePoolTk *[FK]* →link:#entity-storage_pool_dimension["儲存池維度"].tk | Int32 | 是的 | qtree 儲存資源池效能計數器的 TK。 
+
+
+| internalVolumeTk *[FK]* →link:#entity-internal_volume_dimension["內部體積尺寸"].tk | Int32 | 是的 | qtree 內部 Volume 的效能計數器的 TK。 
+
+
+| virtualStorageTk | Int32 | 是的 | 如果此 qtree 位於虛擬內部 Volume 上，則為前端陣列的 TK。否則，該值為 N/A。 
+
+
+| tierTk *[FK]* →link:#entity-tier_dimension["層級維度"].tk | Int32 | 是的 | 該分層的 TK。 
+
+
+| serviceLevelTk *[FK]* →link:#entity-service_level_dimension["服務等級維度"].tk | Int32 | 是的 | 服務層級的 TK。 
+
+
+| applicationTk *[FK]* →link:#entity-application_dimension["應用程式維度"].tk | Int32 | 是的 | 應用程式的 TK。 
+
+
+| applicationGroupTk *[FK]* →link:#entity-application_group_dimension["應用程式群組維度"].tk | Int32 | 是的 | 應用程式組的 TK。 
+
+
+| businessEntityTk *[FK]* →link:#entity-business_entity_dimension["business_entity_dimension"].tk | Int32 | 是的 | 該企業實體的 TK。 
+
+
+| k8sNamespaceTk *[FK]* →link:#entity-k8s_namespace_dimension["k8s_namespace_dimension"].tk | Int32 | 是的 | k8s 命名空間的 TK。 
+
+
+| k8sNamespaceGroupTk *[FK]* →link:#entity-k8s_namespace_group_dimension["k8s_namespace_group_dimension"].tk | Int32 | 是的 | k8s 命名空間群組的 TK。 
+
+
+| totalIops | 雙倍的 | 是的 | 每秒總 I/O 平均值（讀取+寫入）。 
+
+
+| totalIopsMax | 雙倍的 | 是的 | 每秒最大 I/O 次數。 
+
+
+| 時間戳 *[PK]* | Int64 | 是的 | 事實開始時間戳，用於分割區 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 內部體積尺寸 | link:#entity-internal_volume_dimension["內部體積尺寸"] | 一個 JOIN：internalVolumeTk=link:#entity-internal_volume_dimension["內部體積尺寸"].tk 
+
+
+| 儲存空間_維度 | link:#entity-storage_dimension["儲存空間_維度"] | 一個 JOIN：storageTk=link:#entity-storage_dimension["儲存空間_維度"].tk 
+
+
+| business_entity_dimension | link:#entity-business_entity_dimension["business_entity_dimension"] | 一個 JOIN：businessEntityTk=link:#entity-business_entity_dimension["business_entity_dimension"].tk 
+
+
+| k8s_namespace_group_dimension | link:#entity-k8s_namespace_group_dimension["k8s_namespace_group_dimension"] | one JOIN:k8sNamespaceGroupTk=link:#entity-k8s_namespace_group_dimension["k8s_namespace_group_dimension"].tk 
+
+
+| 應用程式群組維度 | link:#entity-application_group_dimension["應用程式群組維度"] | 一個 JOIN：applicationGroupTk=link:#entity-application_group_dimension["應用程式群組維度"].tk 
+
+
+| k8s_namespace_dimension | link:#entity-k8s_namespace_dimension["k8s_namespace_dimension"] | 一個 JOIN:k8sNamespaceTk=link:#entity-k8s_namespace_dimension["k8s_namespace_dimension"].tk 
+
+
+| 服務等級維度 | link:#entity-service_level_dimension["服務等級維度"] | 一個 JOIN：serviceLevelTk=link:#entity-service_level_dimension["服務等級維度"].tk 
+
+
+| 層級維度 | link:#entity-tier_dimension["層級維度"] | 一個 JOIN：tierTk=link:#entity-tier_dimension["層級維度"].tk 
+
+
+| 應用程式維度 | link:#entity-application_dimension["應用程式維度"] | 一個 JOIN：applicationTk=link:#entity-application_dimension["應用程式維度"].tk 
+
+
+| 時間維度 | link:#entity-time_dimension["時間維度"] | 一個 JOIN：timeTk=link:#entity-time_dimension["時間維度"].tk 
+
+
+| qtree_dimension | link:#entity-qtree_dimension["qtree_dimension"] | 一個 JOIN：qtreeTk=link:#entity-qtree_dimension["qtree_dimension"].tk 
+
+
+| 儲存池維度 | link:#entity-storage_pool_dimension["儲存池維度"] | 一個 JOIN：storagePoolTk=link:#entity-storage_pool_dimension["儲存池維度"].tk 
+
+
+| 日期維度 | link:#entity-date_dimension["日期維度"] | 一個 JOIN：dateTk=link:#entity-date_dimension["日期維度"].tk 
+|===
+
+
+[[serviceleveldimension]]
+=== 服務等級維度
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：service_level_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此服務層級行的 TK。 
+
+
+| 姓名 | 字串 | 是的 | 服務層級的識別名稱。 
+
+
+| 順序 | Int32 | 是的 | dwh_inventory.annotation_value 中定義的服務層級序號。 
+
+
+| 成本 | 雙倍的 | 是的 | 此服務層級相關的費用。 
+
+
+| id | Int64 | 是的 | dwh_inventory.annotation_value 中服務層級的 GUID。 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該服務層級的最新行。 
+
+
+| dateTk | Int32 | 是的 | 此服務層級行建立日期對應的 TK。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| qtree_hourly_performance_fact | link:#entity-qtree_hourly_performance_fact["qtree_hourly_performance_fact"] | 許多 
+
+
+| vmdk_hourly_performance_fact | link:#entity-vmdk_hourly_performance_fact["vmdk_hourly_performance_fact"] | 許多 
+
+
+| volume_hourly_performance_fact | link:#entity-volume_hourly_performance_fact["volume_hourly_performance_fact"] | 許多 
+
+
+| application_volume_hourly_performance_fact | link:#entity-application_volume_hourly_performance_fact["application_volume_hourly_performance_fact"] | 許多 
+
+
+| qtree_daily_performance_fact | link:#entity-qtree_daily_performance_fact["qtree_daily_performance_fact"] | 許多 
+
+
+| host_volume_hourly_performance_fact | link:#entity-host_volume_hourly_performance_fact["host_volume_hourly_performance_fact"] | 許多 
+
+
+| internal_volume_daily_performance_fact | link:#entity-internal_volume_daily_performance_fact["internal_volume_daily_performance_fact"] | 許多 
+
+
+| internal_volume_hourly_performance_fact | link:#entity-internal_volume_hourly_performance_fact["internal_volume_hourly_performance_fact"] | 許多 
+
+
+| volume_daily_performance_fact | link:#entity-volume_daily_performance_fact["volume_daily_performance_fact"] | 許多 
+
+
+| vmdk_daily_performance_fact | link:#entity-vmdk_daily_performance_fact["vmdk_daily_performance_fact"] | 許多 
+|===
+
+
+[[storagedimension]]
+=== 儲存空間_維度
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：storage_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此儲存陣列行的 TK。 
+
+
+| 姓名 | 字串 | 是的 | 儲存陣列的名稱。 
+
+
+| 識別符 | 字串 | 是的 | 設備識別符。 
+
+
+| ip | 字串 | 是的 | 儲存陣列的 IP 位址。 
+
+
+| 模型 | 字串 | 是的 | 儲存陣列的型號。 
+
+
+| 製造商 | 字串 | 是的 | 儲存陣列製造商。 
+
+
+| serialNumber | 字串 | 是的 | 儲存陣列的序號。 
+
+
+| microcodeVersion | 字串 | 是的 | 儲存陣列上執行的韌體版本。 
+
+
+| 家庭 | 字串 | 是的 | 儲存陣列的系列名稱（例如 Clariion、Symmetrix 等）。 
+
+
+| url | 字串 | 是的 | Insight Server 中此儲存設備的 URL。 
+
+
+| id | Int64 | 是的 | dwh_inventory.storage 中儲存陣列的 GUID。 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該儲存設備的最新行。 
+
+
+| dateTk | Int32 | 是的 | 此儲存陣列行建立日期的 TK。 
+
+
+| dataCenter | 字串 | 是的 | dataCenter 指派給 dwh_dimensions.storage_dimension 的註解值 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| internal_volume_daily_performance_fact | link:#entity-internal_volume_daily_performance_fact["internal_volume_daily_performance_fact"] | 許多 
+
+
+| switch_performance_for_storage_hourly_fact | link:#entity-switch_performance_for_storage_hourly_fact["switch_performance_for_storage_hourly_fact"] | 許多 
+
+
+| 儲存節點每小時效能數據 | link:#entity-storage_node_hourly_performance_fact["儲存節點每小時效能數據"] | 許多 
+
+
+| qtree_hourly_performance_fact | link:#entity-qtree_hourly_performance_fact["qtree_hourly_performance_fact"] | 許多 
+
+
+| vmdk_hourly_performance_fact | link:#entity-vmdk_hourly_performance_fact["vmdk_hourly_performance_fact"] | 許多 
+
+
+| volume_hourly_performance_fact | link:#entity-volume_hourly_performance_fact["volume_hourly_performance_fact"] | 許多 
+
+
+| qtree_daily_performance_fact | link:#entity-qtree_daily_performance_fact["qtree_daily_performance_fact"] | 許多 
+
+
+| 儲存節點每日效能數據 | link:#entity-storage_node_daily_performance_fact["儲存節點每日效能數據"] | 許多 
+
+
+| disk_hourly_performance_fact | link:#entity-disk_hourly_performance_fact["disk_hourly_performance_fact"] | 許多 
+
+
+| disk_daily_performance_fact | link:#entity-disk_daily_performance_fact["disk_daily_performance_fact"] | 許多 
+
+
+| internal_volume_hourly_performance_fact | link:#entity-internal_volume_hourly_performance_fact["internal_volume_hourly_performance_fact"] | 許多 
+
+
+| volume_daily_performance_fact | link:#entity-volume_daily_performance_fact["volume_daily_performance_fact"] | 許多 
+
+
+| vmdk_daily_performance_fact | link:#entity-vmdk_daily_performance_fact["vmdk_daily_performance_fact"] | 許多 
+|===
+
+
+[[storagenodedailyperformancefact]]
+=== 儲存節點每日效能數據
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：storage_node_daily_performance_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int32 | 是的 | 知道這件事。 
+
+
+| dateTk *[FK]* →link:#entity-date_dimension["日期維度"].tk | Int32 | 是的 | 日期維度的 TK。 
+
+
+| storageTk *[FK]* →link:#entity-storage_dimension["儲存空間_維度"].tk | Int32 | 是的 | 儲存設備的 TK。 
+
+
+| storageNodeTk *[FK]* →link:#entity-storage_node_dimension["儲存節點維度"].tk | Int32 | 是的 | 儲存節點的 TK。 
+
+
+| tierTk *[FK]* →link:#entity-tier_dimension["層級維度"].tk | Int32 | 是的 | 該分層的 TK。 
+
+
+| readResponseTime | 雙倍的 | 是的 | 讀取回應時間。 
+
+
+| writeResponseTime | 雙倍的 | 是的 | 寫入回應時間。 
+
+
+| totalResponseTime | 雙倍的 | 是的 | 總回應時間。 
+
+
+| totalResponseTimeMax | 雙倍的 | 是的 | 總最大回應時間。 
+
+
+| readThroughput | 雙倍的 | 是的 | 平均讀取處理量。 
+
+
+| writeThroughput | 雙倍的 | 是的 | 平均寫入處理量。 
+
+
+| totalThroughput | 雙倍的 | 是的 | 總處理量平均值（讀取+寫入）。 
+
+
+| totalThroughputMax | 雙倍的 | 是的 | 最大總處理量。 
+
+
+| readIops | 雙倍的 | 是的 | 每秒讀取 I/O 次數。 
+
+
+| writeIops | 雙倍的 | 是的 | 每秒寫入 I/O 次數。 
+
+
+| totalIops | 雙倍的 | 是的 | 每秒總 I/O 平均值（讀取+寫入）。 
+
+
+| totalIopsMax | 雙倍的 | 是的 | 每秒最大 I/O 次數。 
+
+
+| diskReadsReplaced | 雙倍的 | 是的 | 磁碟讀取已替換。 
+
+
+| cacheHitRatio | 雙倍的 | 是的 | 快取命中率。 
+
+
+| 使用率 | 雙倍的 | 是的 | 使用率（%） 
+
+
+| utilizationMax | 雙倍的 | 是的 | 最大使用率（%） 
+
+
+| readFileSystemIops | 雙倍的 | 是的 | 檔案系統讀取 IOPS 
+
+
+| writeFileSystemIops | 雙倍的 | 是的 | 檔案系統寫入 IOPS 
+
+
+| readFileSystemThroughput | 雙倍的 | 是的 | 檔案系統讀取吞吐量 
+
+
+| writeFileSystemThroughput | 雙倍的 | 是的 | 檔案系統寫入吞吐量 
+
+
+| portUtilization | 雙倍的 | 是的 | [Deprecated] 連接埠使用率（%） 
+
+
+| portErrors | Int64 | 是的 | [Deprecated] 連接埠錯誤。 
+
+
+| portTraffic | 雙倍的 | 是的 | [Deprecated] 連接埠流量。 
+
+
+| 已存取 | Int32 | 是的 | 是否存取儲存節點？ 
+
+
+| 時間戳 *[PK]* | Int64 | 是的 | 事實開始時間戳，用於分割區 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 儲存節點維度 | link:#entity-storage_node_dimension["儲存節點維度"] | 一個 JOIN：storageNodeTk=link:#entity-storage_node_dimension["儲存節點維度"].tk 
+
+
+| 儲存空間_維度 | link:#entity-storage_dimension["儲存空間_維度"] | 一個 JOIN：storageTk=link:#entity-storage_dimension["儲存空間_維度"].tk 
+
+
+| 層級維度 | link:#entity-tier_dimension["層級維度"] | 一個 JOIN：tierTk=link:#entity-tier_dimension["層級維度"].tk 
+
+
+| 日期維度 | link:#entity-date_dimension["日期維度"] | 一個 JOIN：dateTk=link:#entity-date_dimension["日期維度"].tk 
+|===
+
+
+[[storagenodedimension]]
+=== 儲存節點維度
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：storage_node_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此儲存節點行的 TK。 
+
+
+| 姓名 | 字串 | 是的 | 儲存節點的名稱。 
+
+
+| 識別符 | 字串 | 是的 | 儲存節點的識別碼。 
+
+
+| 版本 | 字串 | 是的 | 儲存節點的版本。 
+
+
+| 模型 | 字串 | 是的 | 儲存節點的型號。 
+
+
+| serialNumber | 字串 | 是的 | SerialNumber 為儲存節點的序號。 
+
+
+| siteName | 字串 | 是的 | 儲存節點的站台名稱。 
+
+
+| url | 字串 | 是的 | Insight Server 中此儲存節點的 URL。 
+
+
+| id | Int64 | 是的 | dwh_inventory.storage_node 中儲存節點的 GUID 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該儲存節點的最新行。 
+
+
+| dateTk | Int32 | 是的 | 此儲存節點行建立日期對應的 TK。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| volume_hourly_performance_fact | link:#entity-volume_hourly_performance_fact["volume_hourly_performance_fact"] | 許多 
+
+
+| 儲存節點每日效能數據 | link:#entity-storage_node_daily_performance_fact["儲存節點每日效能數據"] | 許多 
+
+
+| internal_volume_daily_performance_fact | link:#entity-internal_volume_daily_performance_fact["internal_volume_daily_performance_fact"] | 許多 
+
+
+| internal_volume_hourly_performance_fact | link:#entity-internal_volume_hourly_performance_fact["internal_volume_hourly_performance_fact"] | 許多 
+
+
+| volume_daily_performance_fact | link:#entity-volume_daily_performance_fact["volume_daily_performance_fact"] | 許多 
+
+
+| 儲存節點每小時效能數據 | link:#entity-storage_node_hourly_performance_fact["儲存節點每小時效能數據"] | 許多 
+|===
+
+
+[[storagenodehourlyperformancefact]]
+=== 儲存節點每小時效能數據
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：storage_node_hourly_performance_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int32 | 是的 | 知道這件事。 
+
+
+| timeTk *[FK]* →link:#entity-time_dimension["時間維度"].tk | Int32 | 是的 | 時間維度的TK。 
+
+
+| dateTk *[FK]* →link:#entity-date_dimension["日期維度"].tk | Int32 | 是的 | 日期維度的 TK。 
+
+
+| storageTk *[FK]* →link:#entity-storage_dimension["儲存空間_維度"].tk | Int32 | 是的 | 儲存設備的 TK。 
+
+
+| storageNodeTk *[FK]* →link:#entity-storage_node_dimension["儲存節點維度"].tk | Int32 | 是的 | 儲存節點的 TK。 
+
+
+| tierTk *[FK]* →link:#entity-tier_dimension["層級維度"].tk | Int32 | 是的 | 該分層的 TK。 
+
+
+| readResponseTime | 雙倍的 | 是的 | 讀取回應時間。 
+
+
+| writeResponseTime | 雙倍的 | 是的 | 寫入回應時間。 
+
+
+| totalResponseTime | 雙倍的 | 是的 | 總回應時間。 
+
+
+| totalResponseTimeMax | 雙倍的 | 是的 | 總最大回應時間。 
+
+
+| readThroughput | 雙倍的 | 是的 | 平均讀取處理量。 
+
+
+| writeThroughput | 雙倍的 | 是的 | 平均寫入處理量。 
+
+
+| totalThroughput | 雙倍的 | 是的 | 總處理量平均值（讀取+寫入）。 
+
+
+| totalThroughputMax | 雙倍的 | 是的 | 最大總處理量。 
+
+
+| readIops | 雙倍的 | 是的 | 每秒讀取 I/O 次數。 
+
+
+| writeIops | 雙倍的 | 是的 | 每秒寫入 I/O 次數。 
+
+
+| totalIops | 雙倍的 | 是的 | 每秒總 I/O 平均值（讀取+寫入）。 
+
+
+| totalIopsMax | 雙倍的 | 是的 | 每秒最大 I/O 次數。 
+
+
+| diskReadsReplaced | 雙倍的 | 是的 | 磁碟讀取已替換。 
+
+
+| cacheHitRatio | 雙倍的 | 是的 | 快取命中率。 
+
+
+| 使用率 | 雙倍的 | 是的 | 使用率（%） 
+
+
+| utilizationMax | 雙倍的 | 是的 | 最大使用率（%） 
+
+
+| readFileSystemIops | 雙倍的 | 是的 | 檔案系統讀取 IOPS 
+
+
+| writeFileSystemIops | 雙倍的 | 是的 | 檔案系統寫入 IOPS 
+
+
+| readFileSystemThroughput | 雙倍的 | 是的 | 檔案系統讀取吞吐量 
+
+
+| writeFileSystemThroughput | 雙倍的 | 是的 | 檔案系統寫入吞吐量 
+
+
+| portUtilization | 雙倍的 | 是的 | [Deprecated] 連接埠使用率（%） 
+
+
+| portErrors | Int64 | 是的 | [Deprecated] 連接埠錯誤。 
+
+
+| portTraffic | 雙倍的 | 是的 | [Deprecated] 連接埠流量。 
+
+
+| 已存取 | Int32 | 是的 | 是否存取儲存節點？ 
+
+
+| 時間戳 *[PK]* | Int64 | 是的 | 事實開始時間戳，用於分割區 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 儲存節點維度 | link:#entity-storage_node_dimension["儲存節點維度"] | 一個 JOIN：storageNodeTk=link:#entity-storage_node_dimension["儲存節點維度"].tk 
+
+
+| 儲存空間_維度 | link:#entity-storage_dimension["儲存空間_維度"] | 一個 JOIN：storageTk=link:#entity-storage_dimension["儲存空間_維度"].tk 
+
+
+| 層級維度 | link:#entity-tier_dimension["層級維度"] | 一個 JOIN：tierTk=link:#entity-tier_dimension["層級維度"].tk 
+
+
+| 時間維度 | link:#entity-time_dimension["時間維度"] | 一個 JOIN：timeTk=link:#entity-time_dimension["時間維度"].tk 
+
+
+| 日期維度 | link:#entity-date_dimension["日期維度"] | 一個 JOIN：dateTk=link:#entity-date_dimension["日期維度"].tk 
+|===
+
+
+[[storagepooldimension]]
+=== 儲存池維度
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：storage_pool_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此儲存資源池行的 TK。 
+
+
+| 識別符 | 字串 | 是的 | 設備識別符。 
+
+
+| 姓名 | 字串 | 是的 | 儲存資源池的名稱。 
+
+
+| storageName | 字串 | 是的 | 此儲存資源池所在的儲存設備名稱。 
+
+
+| storageIP | 字串 | 是的 | 此儲存資源池所在的儲存設備的 IP 位址。 
+
+
+| 類型 | 字串 | 是的 | 儲存資源池類型（例如，RAID、AGGREGATE 等）。 
+
+
+| 備援 | 字串 | 是的 | 儲存資源池備援。 
+
+
+| thinProvisioningSupported | 字串 | 是的 | 指示儲存資源池是否支援資源隨需配置。 
+
+
+| isVirtual | 字串 | 是的 | Virtual 表示這是陣列虛擬化中的前端儲存資源池。 
+
+
+| usesFlashPools | 字串 | 是的 | 指示此儲存資源池是否使用快閃記憶體池。 
+
+
+| url | 字串 | 是的 | Insight Server 中此儲存資源池的 URL。 
+
+
+| id | Int64 | 是的 | dwh_inventory.storage_pool 中儲存資源池的 GUID 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該儲存資源池的最新行。 
+
+
+| dateTk | Int32 | 是的 | 此儲存資源池行建立日期對應的 TK。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| qtree_hourly_performance_fact | link:#entity-qtree_hourly_performance_fact["qtree_hourly_performance_fact"] | 許多 
+
+
+| volume_hourly_performance_fact | link:#entity-volume_hourly_performance_fact["volume_hourly_performance_fact"] | 許多 
+
+
+| qtree_daily_performance_fact | link:#entity-qtree_daily_performance_fact["qtree_daily_performance_fact"] | 許多 
+
+
+| disk_hourly_performance_fact | link:#entity-disk_hourly_performance_fact["disk_hourly_performance_fact"] | 許多 
+
+
+| disk_daily_performance_fact | link:#entity-disk_daily_performance_fact["disk_daily_performance_fact"] | 許多 
+
+
+| internal_volume_daily_performance_fact | link:#entity-internal_volume_daily_performance_fact["internal_volume_daily_performance_fact"] | 許多 
+
+
+| internal_volume_hourly_performance_fact | link:#entity-internal_volume_hourly_performance_fact["internal_volume_hourly_performance_fact"] | 許多 
+
+
+| volume_daily_performance_fact | link:#entity-volume_daily_performance_fact["volume_daily_performance_fact"] | 許多 
+|===
+
+
+[[switchdimension]]
+=== 切換維度
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：switch_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此交換器行的 TK。 
+
+
+| wwn | 字串 | 是的 | 交換器的 WWN。 
+
+
+| 姓名 | 字串 | 是的 | 交換器的名稱。 
+
+
+| 識別符 | 字串 | 是的 | 設備識別符。 
+
+
+| ip | 字串 | 是的 | 交換器的 IP 位址。 
+
+
+| 模型 | 字串 | 是的 | 交換器型號。 
+
+
+| 製造商 | 字串 | 是的 | 交換器製造商。 
+
+
+| 韌體 | 字串 | 是的 | 交換器上執行的韌體版本。 
+
+
+| serialNumber | 字串 | 是的 | 交換器的序號。 
+
+
+| 淨現值 | 字串 | 是的 | 指示這是否為 NPV 交換器。 
+
+
+| isGenerated | 字串 | 是的 | 指示此交換器是否不對應於實體設備。它用於模擬一對多連接埠連接。 
+
+
+| 類型 | 字串 | 是的 | 交換器類型。 
+
+
+| url | 字串 | 是的 | Insight Server 中此交換器的 URL。 
+
+
+| id | Int64 | 是的 | dwh_inventory.switch 中交換器的 GUID。 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該交換器的最新行。 
+
+
+| dateTk | Int32 | 是的 | 此交換器行建立日期對應的 TK。 
+
+
+| dataCenter | 字串 | 是的 | dataCenter 指派給 dwh_dimensions.switch_dimension 的註解值 
+
+
+| switchLevel | 字串 | 是的 | switchLevel 指派給 dwh_dimensions.switch_dimension 的註解值 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| switch_performance_for_port_hourly_fact | link:#entity-switch_performance_for_port_hourly_fact["switch_performance_for_port_hourly_fact"] | 許多 
+|===
+
+
+[[switchperformanceforhosthourlyfact]]
+=== switch_performance_for_host_hourly_fact
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：switch_performance_for_host_hourly_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int64 | 是的 | 知道這件事。 
+
+
+| timeTk *[FK]* →link:#entity-time_dimension["時間維度"].tk | Int32 | 是的 | 時間維度的TK。 
+
+
+| dateTk *[FK]* →link:#entity-date_dimension["日期維度"].tk | Int32 | 是的 | 日期維度的 TK。 
+
+
+| hostTk *[FK]* →link:#entity-host_dimension["主機維度"].tk | Int32 | 是的 | 主機的 TK。 
+
+
+| applicationTk *[FK]* →link:#entity-application_dimension["應用程式維度"].tk | Int32 | 是的 | 主機代表性應用程式維度的 TK。 
+
+
+| applicationGroupTk *[FK]* →link:#entity-application_group_dimension["應用程式群組維度"].tk | Int32 | 是的 | 應用程式群組維度的 TK。 
+
+
+| businessEntityTk *[FK]* →link:#entity-business_entity_dimension["business_entity_dimension"].tk | Int32 | 是的 | 企業實體維度的 TK。 
+
+
+| rxTraffic | 雙倍的 | 是的 | 接收流量（MB） 
+
+
+| txTraffic | 雙倍的 | 是的 | 傳輸流量（MB） 
+
+
+| totalTraffic | 雙倍的 | 是的 | 總流量（MB） 
+
+
+| errorRateFlag | 字串 | 是的 | 錯誤率標誌 
+
+
+| crcErrorRateFlag | 字串 | 是的 | CRC 錯誤率旗標 
+
+
+| syncLossCount | Int64 | 是的 | 同步遺失計數 
+
+
+| signalLossCount | Int64 | 是的 | 訊號遺失計數 
+
+
+| class3DiscardCount | Int64 | 是的 | Class 3 捨棄計數 
+
+
+| frameTooShortCount | Int64 | 是的 | 訊框過短計數 
+
+
+| frameTooLongCount | Int64 | 是的 | 訊框過長計數 
+
+
+| bbCreditErrorCount | Int64 | 是的 | BB Credit 錯誤計數 
+
+
+| rx | 雙倍的 | 是的 | 接收使用率（%） 
+
+
+| tx | 雙倍的 | 是的 | 傳輸使用率 (%) 
+
+
+| rxMax | 雙倍的 | 是的 | 最大接收使用率 (%) 
+
+
+| txMax | 雙倍的 | 是的 | 最大傳輸使用率 (%) 
+
+
+| trafficUtilizationTotal | 雙倍的 | 是的 | 總流量使用率（%） 
+
+
+| trafficUtilizationTotalMax | 雙倍的 | 是的 | 最大總流量使用率（%） 
+
+
+| rxLinkResets | Int64 | 是的 | 接收連結重置 
+
+
+| txLinkResets | Int64 | 是的 | 傳輸連結重設 
+
+
+| balanceIndex | Int32 | 是的 | 主機連接埠平衡索引 
+
+
+| weightedBalanceIndex | Int32 | 是的 | 主機連接埠加權平衡索引 
+
+
+| portSpeed | Int32 | 是的 | 連接埠速度（fact） 
+
+
+| portCount | Int32 | 是的 | 事實的連接埠數量 
+
+
+| portErrorsLinkFailure | Int64 | 是的 | 連結故障計數 
+
+
+| bbCreditZeroRx | Int64 | 是的 | 接收 BBCredit 零 
+
+
+| bbCreditZeroTx | Int64 | 是的 | 傳輸 BBCredit 零 
+
+
+| bbCreditZeroMsTx | 雙倍的 | 是的 | [已棄用] 轉移 BBCredit 零毫秒 
+
+
+| bbCreditZeroTotal | Int64 | 是的 | BBCredit 總額為零 
+
+
+| trafficRateTx | 雙倍的 | 是的 | 傳輸流量速率 
+
+
+| trafficRateRx | 雙倍的 | 是的 | 接收流量速率 
+
+
+| trafficRateTotal | 雙倍的 | 是的 | 總流量速率 
+
+
+| trafficFrameRateTx | 雙倍的 | 是的 | 傳輸流量訊框速率 
+
+
+| trafficFrameRateRx | 雙倍的 | 是的 | 接收流量訊框速率 
+
+
+| trafficFrameRateTotal | 雙倍的 | 是的 | 總流量訊框速率 
+
+
+| trafficFrameSizeAvgTx | Int64 | 是的 | 傳輸流量訊框平均大小 
+
+
+| trafficFrameSizeAvgRx | Int64 | 是的 | 接收流量訊框平均大小 
+
+
+| portErrorsTimeoutDiscardTx | Int64 | 是的 | 傳輸逾時捨棄計數 
+
+
+| portErrorsCrc | Int64 | 是的 | CRC 錯誤計數 
+
+
+| portErrorsEncIn | Int64 | 是的 | 訊框內編碼錯誤 
+
+
+| portErrorsEncOut | Int64 | 是的 | 訊框外編碼錯誤 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| business_entity_dimension | link:#entity-business_entity_dimension["business_entity_dimension"] | 一個 JOIN：businessEntityTk=link:#entity-business_entity_dimension["business_entity_dimension"].tk 
+
+
+| 應用程式維度 | link:#entity-application_dimension["應用程式維度"] | 一個 JOIN：applicationTk=link:#entity-application_dimension["應用程式維度"].tk 
+
+
+| 時間維度 | link:#entity-time_dimension["時間維度"] | 一個 JOIN：timeTk=link:#entity-time_dimension["時間維度"].tk 
+
+
+| 主機維度 | link:#entity-host_dimension["主機維度"] | 一個 JOIN：hostTk=link:#entity-host_dimension["主機維度"].tk 
+
+
+| 日期維度 | link:#entity-date_dimension["日期維度"] | 一個 JOIN：dateTk=link:#entity-date_dimension["日期維度"].tk 
+
+
+| 應用程式群組維度 | link:#entity-application_group_dimension["應用程式群組維度"] | 一個 JOIN：applicationGroupTk=link:#entity-application_group_dimension["應用程式群組維度"].tk 
+|===
+
+
+[[switchperformanceforporthourlyfact]]
+=== switch_performance_for_port_hourly_fact
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：switch_performance_for_port_hourly_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int64 | 是的 | 知道這件事。 
+
+
+| timeTk *[FK]* →link:#entity-time_dimension["時間維度"].tk | Int32 | 是的 | 時間維度的TK。 
+
+
+| dateTk *[FK]* →link:#entity-date_dimension["日期維度"].tk | Int32 | 是的 | 日期維度的 TK。 
+
+
+| portTk *[FK]* →link:#entity-port_dimension["連接埠維度"].tk | Int32 | 是的 | 連接埠的 TK。 
+
+
+| switchTk *[FK]* →link:#entity-switch_dimension["切換維度"].tk | Int32 | 是的 | 交換器的 TK。 
+
+
+| fabricTk *[FK]* →link:#entity-fabric_dimension["架構維度"].tk | Int32 | 是的 | 架構的 TK。 
+
+
+| connectedDeviceTk *[FK]* →link:#entity-connected_device_dimension["連線裝置維度"].tk | Int32 | 是的 | 連接設備的 TK。 
+
+
+| connectivityType | 字串 | 是的 | 連接設備的類型。 
+
+
+| isl | 字串 | 是的 | 這個連接埠是 ISL 連接埠嗎？ 
+
+
+| rxTraffic | 雙倍的 | 是的 | 接收流量（MB） 
+
+
+| txTraffic | 雙倍的 | 是的 | 傳輸流量（MB） 
+
+
+| totalTraffic | 雙倍的 | 是的 | 總流量（MB） 
+
+
+| errorRateFlag | 字串 | 是的 | 錯誤率標誌 
+
+
+| crcErrorRateFlag | 字串 | 是的 | CRC 錯誤率旗標 
+
+
+| syncLossCount | Int64 | 是的 | 同步遺失計數 
+
+
+| signalLossCount | Int64 | 是的 | 訊號遺失計數 
+
+
+| class3DiscardCount | Int64 | 是的 | Class 3 捨棄計數 
+
+
+| frameTooShortCount | Int64 | 是的 | 訊框過短計數 
+
+
+| frameTooLongCount | Int64 | 是的 | 訊框過長計數 
+
+
+| bbCreditErrorCount | Int64 | 是的 | BB Credit 錯誤計數 
+
+
+| rx | 雙倍的 | 是的 | 接收使用率（%） 
+
+
+| tx | 雙倍的 | 是的 | 傳輸使用率 (%) 
+
+
+| rxMax | 雙倍的 | 是的 | 最大接收使用率 (%) 
+
+
+| txMax | 雙倍的 | 是的 | 最大傳輸使用率 (%) 
+
+
+| trafficUtilizationTotal | 雙倍的 | 是的 | 總流量使用率（%） 
+
+
+| trafficUtilizationTotalMax | 雙倍的 | 是的 | 最大總流量使用率（%） 
+
+
+| rxLinkResets | Int64 | 是的 | 接收連結重置 
+
+
+| txLinkResets | Int64 | 是的 | 傳輸連結重設 
+
+
+| portErrorsLinkFailure | Int64 | 是的 | 連結故障計數 
+
+
+| bbCreditZeroRx | Int64 | 是的 | 接收 BBCredit 零 
+
+
+| bbCreditZeroTx | Int64 | 是的 | 傳輸 BBCredit 零 
+
+
+| bbCreditZeroMsTx | 雙倍的 | 是的 | [已棄用] 轉移 BBCredit 零毫秒 
+
+
+| bbCreditZeroTotal | Int64 | 是的 | BBCredit 總額為零 
+
+
+| trafficRateTx | 雙倍的 | 是的 | 傳輸流量速率 
+
+
+| trafficRateRx | 雙倍的 | 是的 | 接收流量速率 
+
+
+| trafficRateTotal | 雙倍的 | 是的 | 總流量速率 
+
+
+| trafficFrameRateTx | 雙倍的 | 是的 | 傳輸流量訊框速率 
+
+
+| trafficFrameRateRx | 雙倍的 | 是的 | 接收流量訊框速率 
+
+
+| trafficFrameRateTotal | 雙倍的 | 是的 | 總流量訊框速率 
+
+
+| trafficFrameSizeAvgTx | Int64 | 是的 | 傳輸流量訊框平均大小 
+
+
+| trafficFrameSizeAvgRx | Int64 | 是的 | 接收流量訊框平均大小 
+
+
+| portErrorsTimeoutDiscardTx | Int64 | 是的 | 傳輸逾時捨棄計數 
+
+
+| portErrorsCrc | Int64 | 是的 | CRC 錯誤計數 
+
+
+| portErrorsEncIn | Int64 | 是的 | 訊框內編碼錯誤 
+
+
+| portErrorsEncOut | Int64 | 是的 | 訊框外編碼錯誤 
+
+
+| 時間戳 *[PK]* | Int64 | 是的 | 事實開始時間戳，用於分割區 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 連線裝置維度 | link:#entity-connected_device_dimension["連線裝置維度"] | 一個 JOIN：connectedDeviceTk=link:#entity-connected_device_dimension["連線裝置維度"].tk 
+
+
+| 架構維度 | link:#entity-fabric_dimension["架構維度"] | 一個 JOIN：fabricTk=link:#entity-fabric_dimension["架構維度"].tk 
+
+
+| 連接埠維度 | link:#entity-port_dimension["連接埠維度"] | 一個 JOIN：portTk=link:#entity-port_dimension["連接埠維度"].tk 
+
+
+| 時間維度 | link:#entity-time_dimension["時間維度"] | 一個 JOIN：timeTk=link:#entity-time_dimension["時間維度"].tk 
+
+
+| 日期維度 | link:#entity-date_dimension["日期維度"] | 一個 JOIN：dateTk=link:#entity-date_dimension["日期維度"].tk 
+
+
+| 切換維度 | link:#entity-switch_dimension["切換維度"] | 一個 JOIN：switchTk=link:#entity-switch_dimension["切換維度"].tk 
+|===
+
+
+[[switchperformanceforstoragehourlyfact]]
+=== switch_performance_for_storage_hourly_fact
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：switch_performance_for_storage_hourly_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int64 | 是的 | 知道這件事。 
+
+
+| timeTk *[FK]* →link:#entity-time_dimension["時間維度"].tk | Int32 | 是的 | 時間維度的TK。 
+
+
+| dateTk *[FK]* →link:#entity-date_dimension["日期維度"].tk | Int32 | 是的 | 日期維度的 TK。 
+
+
+| storageTk *[FK]* →link:#entity-storage_dimension["儲存空間_維度"].tk | Int32 | 是的 | 儲存設備的 TK。 
+
+
+| rxTraffic | 雙倍的 | 是的 | 接收流量（MB） 
+
+
+| txTraffic | 雙倍的 | 是的 | 傳輸流量（MB） 
+
+
+| totalTraffic | 雙倍的 | 是的 | 總流量（MB） 
+
+
+| errorRateFlag | 字串 | 是的 | 錯誤率標誌 
+
+
+| crcErrorRateFlag | 字串 | 是的 | CRC 錯誤率旗標 
+
+
+| syncLossCount | Int64 | 是的 | 同步遺失計數 
+
+
+| signalLossCount | Int64 | 是的 | 訊號遺失計數 
+
+
+| class3DiscardCount | Int64 | 是的 | Class 3 捨棄計數 
+
+
+| frameTooShortCount | Int64 | 是的 | 訊框過短計數 
+
+
+| frameTooLongCount | Int64 | 是的 | 訊框過長計數 
+
+
+| bbCreditErrorCount | Int64 | 是的 | BB Credit 錯誤計數 
+
+
+| rx | 雙倍的 | 是的 | 接收使用率（%） 
+
+
+| tx | 雙倍的 | 是的 | 傳輸使用率 (%) 
+
+
+| rxMax | 雙倍的 | 是的 | 最大接收使用率 (%) 
+
+
+| txMax | 雙倍的 | 是的 | 最大傳輸使用率 (%) 
+
+
+| trafficUtilizationTotal | 雙倍的 | 是的 | 總流量使用率（%） 
+
+
+| trafficUtilizationTotalMax | 雙倍的 | 是的 | 最大總流量使用率（%） 
+
+
+| rxLinkResets | Int64 | 是的 | 接收連結重置 
+
+
+| txLinkResets | Int64 | 是的 | 傳輸連結重設 
+
+
+| balanceIndex | Int32 | 是的 | 主機連接埠平衡索引 
+
+
+| weightedBalanceIndex | Int32 | 是的 | 主機連接埠加權平衡索引 
+
+
+| portSpeed | Int32 | 是的 | 連接埠速度（fact） 
+
+
+| portCount | Int32 | 是的 | 事實的連接埠數量 
+
+
+| portErrorsLinkFailure | Int64 | 是的 | 連結故障計數 
+
+
+| bbCreditZeroRx | Int64 | 是的 | 接收 BBCredit 零 
+
+
+| bbCreditZeroTx | Int64 | 是的 | 傳輸 BBCredit 零 
+
+
+| bbCreditZeroMsTx | 雙倍的 | 是的 | [已棄用] 轉移 BBCredit 零毫秒 
+
+
+| bbCreditZeroTotal | Int64 | 是的 | BBCredit 總額為零 
+
+
+| trafficRateTx | 雙倍的 | 是的 | 傳輸流量速率 
+
+
+| trafficRateRx | 雙倍的 | 是的 | 接收流量速率 
+
+
+| trafficRateTotal | 雙倍的 | 是的 | 總流量速率 
+
+
+| trafficFrameRateTx | 雙倍的 | 是的 | 傳輸流量訊框速率 
+
+
+| trafficFrameRateRx | 雙倍的 | 是的 | 接收流量訊框速率 
+
+
+| trafficFrameRateTotal | 雙倍的 | 是的 | 總流量訊框速率 
+
+
+| trafficFrameSizeAvgTx | Int64 | 是的 | 傳輸流量訊框平均大小 
+
+
+| trafficFrameSizeAvgRx | Int64 | 是的 | 接收流量訊框平均大小 
+
+
+| portErrorsTimeoutDiscardTx | Int64 | 是的 | 傳輸逾時捨棄計數 
+
+
+| portErrorsCrc | Int64 | 是的 | CRC 錯誤計數 
+
+
+| portErrorsEncIn | Int64 | 是的 | 訊框內編碼錯誤 
+
+
+| portErrorsEncOut | Int64 | 是的 | 訊框外編碼錯誤 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 儲存空間_維度 | link:#entity-storage_dimension["儲存空間_維度"] | 一個 JOIN：storageTk=link:#entity-storage_dimension["儲存空間_維度"].tk 
+
+
+| 時間維度 | link:#entity-time_dimension["時間維度"] | 一個 JOIN：timeTk=link:#entity-time_dimension["時間維度"].tk 
+
+
+| 日期維度 | link:#entity-date_dimension["日期維度"] | 一個 JOIN：dateTk=link:#entity-date_dimension["日期維度"].tk 
+|===
+
+
+[[switchperformancefortapehourlyfact]]
+=== switch_performance_for_tape_hourly_fact
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：switch_performance_for_tape_hourly_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int64 | 是的 | 知道這件事。 
+
+
+| timeTk *[FK]* →link:#entity-time_dimension["時間維度"].tk | Int32 | 是的 | 時間維度的TK。 
+
+
+| dateTk *[FK]* →link:#entity-date_dimension["日期維度"].tk | Int32 | 是的 | 日期維度的 TK。 
+
+
+| tapeTk *[FK]* →link:#entity-tape_dimension["磁帶尺寸"].tk | Int32 | 是的 | 磁帶的 TK。 
+
+
+| rxTraffic | 雙倍的 | 是的 | 接收流量（MB） 
+
+
+| txTraffic | 雙倍的 | 是的 | 傳輸流量（MB） 
+
+
+| totalTraffic | 雙倍的 | 是的 | 總流量（MB） 
+
+
+| errorRateFlag | 字串 | 是的 | 錯誤率標誌 
+
+
+| crcErrorRateFlag | 字串 | 是的 | CRC 錯誤率旗標 
+
+
+| syncLossCount | Int64 | 是的 | 同步遺失計數 
+
+
+| signalLossCount | Int64 | 是的 | 訊號遺失計數 
+
+
+| class3DiscardCount | Int64 | 是的 | Class 3 捨棄計數 
+
+
+| frameTooShortCount | Int64 | 是的 | 訊框過短計數 
+
+
+| frameTooLongCount | Int64 | 是的 | 訊框過長計數 
+
+
+| bbCreditErrorCount | Int64 | 是的 | BB Credit 錯誤計數 
+
+
+| rx | 雙倍的 | 是的 | 接收使用率（%） 
+
+
+| tx | 雙倍的 | 是的 | 傳輸使用率 (%) 
+
+
+| rxMax | 雙倍的 | 是的 | 最大接收使用率 (%) 
+
+
+| txMax | 雙倍的 | 是的 | 最大傳輸使用率 (%) 
+
+
+| trafficUtilizationTotal | 雙倍的 | 是的 | 總流量使用率（%） 
+
+
+| trafficUtilizationTotalMax | 雙倍的 | 是的 | 最大總流量使用率（%） 
+
+
+| rxLinkResets | Int64 | 是的 | 接收連結重置 
+
+
+| txLinkResets | Int64 | 是的 | 傳輸連結重設 
+
+
+| balanceIndex | Int32 | 是的 | 主機連接埠平衡索引 
+
+
+| weightedBalanceIndex | Int32 | 是的 | 主機連接埠加權平衡索引 
+
+
+| portSpeed | Int32 | 是的 | 連接埠速度（fact） 
+
+
+| portCount | Int32 | 是的 | 事實的連接埠數量 
+
+
+| portErrorsLinkFailure | Int64 | 是的 | 連結故障計數 
+
+
+| bbCreditZeroRx | Int64 | 是的 | 接收 BBCredit 零 
+
+
+| bbCreditZeroTx | Int64 | 是的 | 傳輸 BBCredit 零 
+
+
+| bbCreditZeroMsTx | 雙倍的 | 是的 | [已棄用] 轉移 BBCredit 零毫秒 
+
+
+| bbCreditZeroTotal | Int64 | 是的 | BBCredit 總額為零 
+
+
+| trafficRateTx | 雙倍的 | 是的 | 傳輸流量速率 
+
+
+| trafficRateRx | 雙倍的 | 是的 | 接收流量速率 
+
+
+| trafficRateTotal | 雙倍的 | 是的 | 總流量速率 
+
+
+| trafficFrameRateTx | 雙倍的 | 是的 | 傳輸流量訊框速率 
+
+
+| trafficFrameRateRx | 雙倍的 | 是的 | 接收流量訊框速率 
+
+
+| trafficFrameRateTotal | 雙倍的 | 是的 | 總流量訊框速率 
+
+
+| trafficFrameSizeAvgTx | Int64 | 是的 | 傳輸流量訊框平均大小 
+
+
+| trafficFrameSizeAvgRx | Int64 | 是的 | 接收流量訊框平均大小 
+
+
+| portErrorsTimeoutDiscardTx | Int64 | 是的 | 傳輸逾時捨棄計數 
+
+
+| portErrorsCrc | Int64 | 是的 | CRC 錯誤計數 
+
+
+| portErrorsEncIn | Int64 | 是的 | 訊框內編碼錯誤 
+
+
+| portErrorsEncOut | Int64 | 是的 | 訊框外編碼錯誤 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 時間維度 | link:#entity-time_dimension["時間維度"] | 一個 JOIN：timeTk=link:#entity-time_dimension["時間維度"].tk 
+
+
+| 日期維度 | link:#entity-date_dimension["日期維度"] | 一個 JOIN：dateTk=link:#entity-date_dimension["日期維度"].tk 
+
+
+| 磁帶尺寸 | link:#entity-tape_dimension["磁帶尺寸"] | 一個 JOIN：tapeTk=link:#entity-tape_dimension["磁帶尺寸"].tk 
+|===
+
+
+[[tapedimension]]
+=== 磁帶尺寸
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：tape_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 本行磁帶的 TK。 
+
+
+| 姓名 | 字串 | 是的 | 磁帶名稱。 
+
+
+| 識別符 | 字串 | 是的 | 設備識別符。 
+
+
+| ip | 字串 | 是的 | 磁帶的 IP 位址。 
+
+
+| 製造商 | 字串 | 是的 | 磁帶製造商。 
+
+
+| serialNumber | 字串 | 是的 | 磁帶序號。 
+
+
+| id | Int64 | 是的 | dwh_inventory.tape 中磁帶的 GUID。 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該磁帶的最新一行。 
+
+
+| dateTk | Int32 | 是的 | TK 表示建立此磁帶列的日期。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| switch_performance_for_tape_hourly_fact | link:#entity-switch_performance_for_tape_hourly_fact["switch_performance_for_tape_hourly_fact"] | 許多 
+|===
+
+
+[[tierdimension]]
+=== 層級維度
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：tier_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 本分層行的 TK。 
+
+
+| 姓名 | 字串 | 是的 | 分層的識別名稱。 
+
+
+| 順序 | Int32 | 是的 | dwh_inventory.annotation_value 中定義的分層序號。 
+
+
+| 成本 | 雙倍的 | 是的 | 此分層相關的費用。 
+
+
+| id | Int64 | 是的 | dwh_inventory.annotation_value 中分層的 GUID。 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該分層的最新行。 
+
+
+| dateTk | Int32 | 是的 | 此分層行建立日期對應的 TK。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| qtree_hourly_performance_fact | link:#entity-qtree_hourly_performance_fact["qtree_hourly_performance_fact"] | 許多 
+
+
+| vmdk_hourly_performance_fact | link:#entity-vmdk_hourly_performance_fact["vmdk_hourly_performance_fact"] | 許多 
+
+
+| volume_hourly_performance_fact | link:#entity-volume_hourly_performance_fact["volume_hourly_performance_fact"] | 許多 
+
+
+| application_volume_hourly_performance_fact | link:#entity-application_volume_hourly_performance_fact["application_volume_hourly_performance_fact"] | 許多 
+
+
+| qtree_daily_performance_fact | link:#entity-qtree_daily_performance_fact["qtree_daily_performance_fact"] | 許多 
+
+
+| 儲存節點每日效能數據 | link:#entity-storage_node_daily_performance_fact["儲存節點每日效能數據"] | 許多 
+
+
+| host_volume_hourly_performance_fact | link:#entity-host_volume_hourly_performance_fact["host_volume_hourly_performance_fact"] | 許多 
+
+
+| internal_volume_daily_performance_fact | link:#entity-internal_volume_daily_performance_fact["internal_volume_daily_performance_fact"] | 許多 
+
+
+| internal_volume_hourly_performance_fact | link:#entity-internal_volume_hourly_performance_fact["internal_volume_hourly_performance_fact"] | 許多 
+
+
+| volume_daily_performance_fact | link:#entity-volume_daily_performance_fact["volume_daily_performance_fact"] | 許多 
+
+
+| vmdk_daily_performance_fact | link:#entity-vmdk_daily_performance_fact["vmdk_daily_performance_fact"] | 許多 
+
+
+| 儲存節點每小時效能數據 | link:#entity-storage_node_hourly_performance_fact["儲存節點每小時效能數據"] | 許多 
+|===
+
+
+[[timedimension]]
+=== 時間維度
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：time_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int32 | 是的 | 時間維度的TK。 
+
+
+| hourDateTime | DateTimeOffset | 是的 | 此維度的完整日期 + 小時表示形式（分鐘和秒已清除） 
+
+
+| 小時 | 位元組 | 是的 | 一天中的小時，24 小時制 
+
+
+| 分鐘 | 位元組 | 是的 | 一小時中的分鐘 
+
+
+| 第二 | 位元組 | 是的 | 秒 
+
+
+| 微秒 | Int32 | 是的 | 每秒微秒數 
+
+
+| dateTk *[FK]* →link:#entity-date_dimension["日期維度"].tk | Int32 | 是的 | 相關日期維度日代表的 TK（如有） 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 日期維度 | link:#entity-date_dimension["日期維度"] | 一個 JOIN：dateTk=link:#entity-date_dimension["日期維度"].tk 
+
+
+| vm_hourly_performance_fact | link:#entity-vm_hourly_performance_fact["vm_hourly_performance_fact"] | 許多 
+
+
+| switch_performance_for_port_hourly_fact | link:#entity-switch_performance_for_port_hourly_fact["switch_performance_for_port_hourly_fact"] | 許多 
+
+
+| host_volume_hourly_performance_fact | link:#entity-host_volume_hourly_performance_fact["host_volume_hourly_performance_fact"] | 許多 
+
+
+| switch_performance_for_tape_hourly_fact | link:#entity-switch_performance_for_tape_hourly_fact["switch_performance_for_tape_hourly_fact"] | 許多 
+
+
+| switch_performance_for_host_hourly_fact | link:#entity-switch_performance_for_host_hourly_fact["switch_performance_for_host_hourly_fact"] | 許多 
+
+
+| switch_performance_for_storage_hourly_fact | link:#entity-switch_performance_for_storage_hourly_fact["switch_performance_for_storage_hourly_fact"] | 許多 
+
+
+| 儲存節點每小時效能數據 | link:#entity-storage_node_hourly_performance_fact["儲存節點每小時效能數據"] | 許多 
+
+
+| qtree_hourly_performance_fact | link:#entity-qtree_hourly_performance_fact["qtree_hourly_performance_fact"] | 許多 
+
+
+| vmdk_hourly_performance_fact | link:#entity-vmdk_hourly_performance_fact["vmdk_hourly_performance_fact"] | 許多 
+
+
+| volume_hourly_performance_fact | link:#entity-volume_hourly_performance_fact["volume_hourly_performance_fact"] | 許多 
+
+
+| application_volume_hourly_performance_fact | link:#entity-application_volume_hourly_performance_fact["application_volume_hourly_performance_fact"] | 許多 
+
+
+| disk_hourly_performance_fact | link:#entity-disk_hourly_performance_fact["disk_hourly_performance_fact"] | 許多 
+
+
+| internal_volume_hourly_performance_fact | link:#entity-internal_volume_hourly_performance_fact["internal_volume_hourly_performance_fact"] | 許多 
+
+
+| host_vm_hourly_performance_fact | link:#entity-host_vm_hourly_performance_fact["host_vm_hourly_performance_fact"] | 許多 
+|===
+
+
+[[vmdailyperformancefact]]
+=== vm_daily_performance_fact
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：vm_daily_performance_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int32 | 是的 | 知道這件事。 
+
+
+| dateTk *[FK]* →link:#entity-date_dimension["日期維度"].tk | Int32 | 是的 | 日期維度的 TK。 
+
+
+| hostTk *[FK]* →link:#entity-host_dimension["主機維度"].tk | Int32 | 是的 | 主機的 TK。 
+
+
+| vmTk *[FK]* →link:#entity-vm_dimension["vm_dimension"].tk | Int32 | 是的 | 虛擬機器的 TK。 
+
+
+| businessEntityTk *[FK]* →link:#entity-business_entity_dimension["business_entity_dimension"].tk | Int32 | 是的 | 該企業實體的 TK。 
+
+
+| applicationTk *[FK]* →link:#entity-application_dimension["應用程式維度"].tk | Int32 | 是的 | 應用程式代表的 TK。 
+
+
+| applicationGroupTk *[FK]* →link:#entity-application_group_dimension["應用程式群組維度"].tk | Int32 | 是的 | 應用程式組的 TK。 
+
+
+| k8sNodeTk *[FK]* →link:#entity-k8s_node_dimension["k8s_node_dimension"].tk | Int32 | 是的 | k8s 節點的 TK。 
+
+
+| readIops | 雙倍的 | 是的 | 每秒讀取 I/O 次數。 
+
+
+| writeIops | 雙倍的 | 是的 | 每秒寫入 I/O 次數。 
+
+
+| totalIops | 雙倍的 | 是的 | 每秒總 I/O 平均值（讀取+寫入）。 
+
+
+| totalIopsMax | 雙倍的 | 是的 | 每秒最大 I/O 次數。 
+
+
+| readThroughput | 雙倍的 | 是的 | 平均讀取處理量。 
+
+
+| writeThroughput | 雙倍的 | 是的 | 平均寫入處理量。 
+
+
+| totalThroughput | 雙倍的 | 是的 | 總處理量平均值（讀取+寫入）。 
+
+
+| totalThroughputMax | 雙倍的 | 是的 | 最大總處理量。 
+
+
+| readResponseTime | 雙倍的 | 是的 | 讀取回應時間。 
+
+
+| writeResponseTime | 雙倍的 | 是的 | 寫入回應時間。 
+
+
+| totalResponseTime | 雙倍的 | 是的 | 總回應時間。 
+
+
+| totalResponseTimeMax | 雙倍的 | 是的 | 總最大回應時間。 
+
+
+| ipReceiveThroughput | 雙倍的 | 是的 | IP 接收吞吐量。 
+
+
+| ipTransmitThroughput | 雙倍的 | 是的 | IP 傳輸吞吐量。 
+
+
+| ipTotalThroughput | 雙倍的 | 是的 | IP 總吞吐量。 
+
+
+| ipTotalThroughputMax | 雙倍的 | 是的 | 最大 IP 總吞吐量。 
+
+
+| cpuUtilization | 雙倍的 | 是的 | CPU 使用率 (%) 
+
+
+| maxOfAvgCpuUtilization | 雙倍的 | 是的 | [Deprecated] 最大 CPU 使用率 (%) 
+
+
+| maxOfMaxCpuUtilization | 雙倍的 | 是的 | 最大 CPU 使用率 (%) 
+
+
+| memoryUtilization | 雙倍的 | 是的 | 記憶體使用率（%） 
+
+
+| maxOfAvgMemoryUtilization | 雙倍的 | 是的 | [Deprecated] MAX Memory 使用率（%） 
+
+
+| maxOfMaxMemoryUtilization | 雙倍的 | 是的 | 最大記憶體容量使用率 (%) 
+
+
+| swapInRate | 雙倍的 | 是的 | Swap in 速率 
+
+
+| maxOfAvgSwapInRate | 雙倍的 | 是的 | 最大換入速率 
+
+
+| swapOutRate | 雙倍的 | 是的 | 交換率 
+
+
+| maxOfAvgSwapOutRate | 雙倍的 | 是的 | 最大換出率 
+
+
+| swapTotalRate | 雙倍的 | 是的 | 總交換率 
+
+
+| swapTotalRateMax | 雙倍的 | 是的 | 最大總交換率 
+
+
+| 處理器 | Int32 | 是的 | 虛擬機器的處理器數量。 
+
+
+| 記憶體 | Int64 | 是的 | 虛擬機器的記憶體容量，單位為 MB。 
+
+
+| cpuCoSchedulingDelayTimePercent | 雙倍的 | 是的 | CPU Co-Stop 時間 (%) 
+
+
+| cpuDemandToEntitlementPercent | 雙倍的 | 是的 | CPU Demand-To-Entitlement Ratio （%） 
+
+
+| cpuIdleTimePercent | 雙倍的 | 是的 | CPU 閒置時間 (%) 
+
+
+| waitingToBeScheduledTimePercent | 雙倍的 | 是的 | CPU 準備就緒時間 （%） 
+
+
+| cpuTotalWaitTimePercent | 雙倍的 | 是的 | CPU 等待時間 (%) 
+
+
+| 時間戳 *[PK]* | Int64 | 是的 | 事實開始時間戳，用於分割區 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| business_entity_dimension | link:#entity-business_entity_dimension["business_entity_dimension"] | 一個 JOIN：businessEntityTk=link:#entity-business_entity_dimension["business_entity_dimension"].tk 
+
+
+| k8s_node_dimension | link:#entity-k8s_node_dimension["k8s_node_dimension"] | 一個 JOIN:k8sNodeTk=link:#entity-k8s_node_dimension["k8s_node_dimension"].tk 
+
+
+| 應用程式維度 | link:#entity-application_dimension["應用程式維度"] | 一個 JOIN：applicationTk=link:#entity-application_dimension["應用程式維度"].tk 
+
+
+| 主機維度 | link:#entity-host_dimension["主機維度"] | 一個 JOIN：hostTk=link:#entity-host_dimension["主機維度"].tk 
+
+
+| vm_dimension | link:#entity-vm_dimension["vm_dimension"] | 一個 JOIN：vmTk=link:#entity-vm_dimension["vm_dimension"].tk 
+
+
+| 日期維度 | link:#entity-date_dimension["日期維度"] | 一個 JOIN：dateTk=link:#entity-date_dimension["日期維度"].tk 
+
+
+| 應用程式群組維度 | link:#entity-application_group_dimension["應用程式群組維度"] | 一個 JOIN：applicationGroupTk=link:#entity-application_group_dimension["應用程式群組維度"].tk 
+|===
+
+
+[[vmdimension]]
+=== vm_dimension
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：vm_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此虛擬機器行的 TK。 
+
+
+| 姓名 | 字串 | 是的 | 虛擬機器的名稱。 
+
+
+| naturalKey | 字串 | 是的 | 虛擬機器的自然識別碼。 
+
+
+| 作業系統 | 字串 | 是的 | 客體作業系統。 
+
+
+| virtualCenterIp | 字串 | 是的 | 虛擬機器虛擬中心的 IP 位址。 
+
+
+| ips | 字串 | 是的 | 虛擬機器的 IP 位址清單，以逗號分隔。 
+
+
+| url | 字串 | 是的 | Insight Server 中此虛擬機器的 URL。 
+
+
+| id | Int64 | 是的 | dwh_inventory.hv_virtual_machine 中虛擬機器的 GUID 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該虛擬機器的最新行。 
+
+
+| dateTk | Int32 | 是的 | TK 表示建立此虛擬機器行的日期。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| vmdk_hourly_performance_fact | link:#entity-vmdk_hourly_performance_fact["vmdk_hourly_performance_fact"] | 許多 
+
+
+| vm_hourly_performance_fact | link:#entity-vm_hourly_performance_fact["vm_hourly_performance_fact"] | 許多 
+
+
+| vm_daily_performance_fact | link:#entity-vm_daily_performance_fact["vm_daily_performance_fact"] | 許多 
+
+
+| vmdk_daily_performance_fact | link:#entity-vmdk_daily_performance_fact["vmdk_daily_performance_fact"] | 許多 
+|===
+
+
+[[vmhourlyperformancefact]]
+=== vm_hourly_performance_fact
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：vm_hourly_performance_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int64 | 是的 | 知道這件事。 
+
+
+| timeTk *[FK]* →link:#entity-time_dimension["時間維度"].tk | Int32 | 是的 | 時間維度的TK。 
+
+
+| dateTk *[FK]* →link:#entity-date_dimension["日期維度"].tk | Int32 | 是的 | 日期維度的 TK。 
+
+
+| hostTk *[FK]* →link:#entity-host_dimension["主機維度"].tk | Int32 | 是的 | 主機的 TK。 
+
+
+| vmTk *[FK]* →link:#entity-vm_dimension["vm_dimension"].tk | Int32 | 是的 | 虛擬機器的 TK。 
+
+
+| businessEntityTk *[FK]* →link:#entity-business_entity_dimension["business_entity_dimension"].tk | Int32 | 是的 | 該企業實體的 TK。 
+
+
+| applicationTk *[FK]* →link:#entity-application_dimension["應用程式維度"].tk | Int32 | 是的 | 應用程式代表的 TK。 
+
+
+| applicationGroupTk *[FK]* →link:#entity-application_group_dimension["應用程式群組維度"].tk | Int32 | 是的 | 應用程式組的 TK。 
+
+
+| k8sNodeTk *[FK]* →link:#entity-k8s_node_dimension["k8s_node_dimension"].tk | Int32 | 是的 | k8s 節點的 TK。 
+
+
+| readIops | 雙倍的 | 是的 | 每秒讀取 I/O 次數。 
+
+
+| writeIops | 雙倍的 | 是的 | 每秒寫入 I/O 次數。 
+
+
+| totalIops | 雙倍的 | 是的 | 每秒總 I/O 平均值（讀取+寫入）。 
+
+
+| totalIopsMax | 雙倍的 | 是的 | 每秒最大 I/O 次數。 
+
+
+| readThroughput | 雙倍的 | 是的 | 平均讀取處理量。 
+
+
+| writeThroughput | 雙倍的 | 是的 | 平均寫入處理量。 
+
+
+| totalThroughput | 雙倍的 | 是的 | 總處理量平均值（讀取+寫入）。 
+
+
+| totalThroughputMax | 雙倍的 | 是的 | 最大總處理量。 
+
+
+| readResponseTime | 雙倍的 | 是的 | 讀取回應時間。 
+
+
+| writeResponseTime | 雙倍的 | 是的 | 寫入回應時間。 
+
+
+| totalResponseTime | 雙倍的 | 是的 | 總回應時間。 
+
+
+| totalResponseTimeMax | 雙倍的 | 是的 | 總最大回應時間。 
+
+
+| ipReceiveThroughput | 雙倍的 | 是的 | IP 接收吞吐量。 
+
+
+| ipTransmitThroughput | 雙倍的 | 是的 | IP 傳輸吞吐量。 
+
+
+| ipTotalThroughput | 雙倍的 | 是的 | IP 總吞吐量。 
+
+
+| ipTotalThroughputMax | 雙倍的 | 是的 | 最大 IP 總吞吐量。 
+
+
+| cpuUtilization | 雙倍的 | 是的 | CPU 使用率 (%) 
+
+
+| memoryUtilization | 雙倍的 | 是的 | 記憶體使用率（%） 
+
+
+| cpuUtilizationMax | 雙倍的 | 是的 | 最大 CPU 使用率（%） 
+
+
+| memoryUtilizationMax | 雙倍的 | 是的 | 最大記憶體容量使用率（%） 
+
+
+| swapInRate | 雙倍的 | 是的 | Swap in 速率 
+
+
+| swapOutRate | 雙倍的 | 是的 | 交換率 
+
+
+| swapTotalRate | 雙倍的 | 是的 | 總交換率 
+
+
+| swapTotalRateMax | 雙倍的 | 是的 | 最大總交換率 
+
+
+| 處理器 | Int32 | 是的 | 虛擬機器的處理器數量。 
+
+
+| 記憶體 | Int64 | 是的 | 虛擬機器的記憶體容量，單位為 MB。 
+
+
+| cpuCoSchedulingDelayTimePercent | 雙倍的 | 是的 | CPU Co-Stop 時間 (%) 
+
+
+| cpuDemandToEntitlementPercent | 雙倍的 | 是的 | CPU Demand-To-Entitlement Ratio （%） 
+
+
+| cpuIdleTimePercent | 雙倍的 | 是的 | CPU 閒置時間 (%) 
+
+
+| waitingToBeScheduledTimePercent | 雙倍的 | 是的 | CPU 準備就緒時間 （%） 
+
+
+| cpuTotalWaitTimePercent | 雙倍的 | 是的 | CPU 等待時間 (%) 
+
+
+| 時間戳 *[PK]* | Int64 | 是的 | 事實開始時間戳，用於分割區 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| business_entity_dimension | link:#entity-business_entity_dimension["business_entity_dimension"] | 一個 JOIN：businessEntityTk=link:#entity-business_entity_dimension["business_entity_dimension"].tk 
+
+
+| k8s_node_dimension | link:#entity-k8s_node_dimension["k8s_node_dimension"] | 一個 JOIN:k8sNodeTk=link:#entity-k8s_node_dimension["k8s_node_dimension"].tk 
+
+
+| 應用程式維度 | link:#entity-application_dimension["應用程式維度"] | 一個 JOIN：applicationTk=link:#entity-application_dimension["應用程式維度"].tk 
+
+
+| 時間維度 | link:#entity-time_dimension["時間維度"] | 一個 JOIN：timeTk=link:#entity-time_dimension["時間維度"].tk 
+
+
+| 主機維度 | link:#entity-host_dimension["主機維度"] | 一個 JOIN：hostTk=link:#entity-host_dimension["主機維度"].tk 
+
+
+| vm_dimension | link:#entity-vm_dimension["vm_dimension"] | 一個 JOIN：vmTk=link:#entity-vm_dimension["vm_dimension"].tk 
+
+
+| 日期維度 | link:#entity-date_dimension["日期維度"] | 一個 JOIN：dateTk=link:#entity-date_dimension["日期維度"].tk 
+
+
+| 應用程式群組維度 | link:#entity-application_group_dimension["應用程式群組維度"] | 一個 JOIN：applicationGroupTk=link:#entity-application_group_dimension["應用程式群組維度"].tk 
+|===
+
+
+[[vmdkdailyperformancefact]]
+=== vmdk_daily_performance_fact
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：vmdk_daily_performance_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int32 | 是的 | 知道這件事。 
+
+
+| dateTk *[FK]* →link:#entity-date_dimension["日期維度"].tk | Int32 | 是的 | 日期維度的 TK。 
+
+
+| vmdkTk *[FK]* →link:#entity-vmdk_dimension["vmdk_dimension"].tk | Int32 | 是的 | 虛擬磁碟的 TK。 
+
+
+| dataStoreTk *[FK]* →link:#entity-datastore_dimension["資料儲存維度"].tk | Int32 | 是的 | 資料存放區的 TK。 
+
+
+| vmTk *[FK]* →link:#entity-vm_dimension["vm_dimension"].tk | Int32 | 是的 | 虛擬機器的 TK。 
+
+
+| hostTk *[FK]* →link:#entity-host_dimension["主機維度"].tk | Int32 | 是的 | 主機的 TK。 
+
+
+| tierTk *[FK]* →link:#entity-tier_dimension["層級維度"].tk | Int32 | 是的 | 該分層的 TK。 
+
+
+| serviceLevelTk *[FK]* →link:#entity-service_level_dimension["服務等級維度"].tk | Int32 | 是的 | 服務層級的 TK。 
+
+
+| storageTk *[FK]* →link:#entity-storage_dimension["儲存空間_維度"].tk | Int32 | 是的 | 儲存設備的 TK。 
+
+
+| readIops | 雙倍的 | 是的 | 每秒讀取 I/O 次數。 
+
+
+| writeIops | 雙倍的 | 是的 | 每秒寫入 I/O 次數。 
+
+
+| totalIops | 雙倍的 | 是的 | 每秒總 I/O 平均值（讀取+寫入）。 
+
+
+| totalIopsMax | 雙倍的 | 是的 | 每秒最大 I/O 次數。 
+
+
+| readThroughput | 雙倍的 | 是的 | 平均讀取處理量。 
+
+
+| writeThroughput | 雙倍的 | 是的 | 平均寫入處理量。 
+
+
+| totalThroughput | 雙倍的 | 是的 | 總處理量平均值（讀取+寫入）。 
+
+
+| totalThroughputMax | 雙倍的 | 是的 | 最大總處理量。 
+
+
+| readResponseTime | 雙倍的 | 是的 | 讀取回應時間。 
+
+
+| writeResponseTime | 雙倍的 | 是的 | 寫入回應時間。 
+
+
+| totalResponseTime | 雙倍的 | 是的 | 總回應時間。 
+
+
+| totalResponseTimeMax | 雙倍的 | 是的 | 總最大回應時間。 
+
+
+| 時間戳 *[PK]* | Int64 | 是的 | 事實開始時間戳，用於分割區 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 服務等級維度 | link:#entity-service_level_dimension["服務等級維度"] | 一個 JOIN：serviceLevelTk=link:#entity-service_level_dimension["服務等級維度"].tk 
+
+
+| 儲存空間_維度 | link:#entity-storage_dimension["儲存空間_維度"] | 一個 JOIN：storageTk=link:#entity-storage_dimension["儲存空間_維度"].tk 
+
+
+| 層級維度 | link:#entity-tier_dimension["層級維度"] | 一個 JOIN：tierTk=link:#entity-tier_dimension["層級維度"].tk 
+
+
+| 資料儲存維度 | link:#entity-datastore_dimension["資料儲存維度"] | 一個 JOIN：dataStoreTk=link:#entity-datastore_dimension["資料儲存維度"].tk 
+
+
+| 主機維度 | link:#entity-host_dimension["主機維度"] | 一個 JOIN：hostTk=link:#entity-host_dimension["主機維度"].tk 
+
+
+| vm_dimension | link:#entity-vm_dimension["vm_dimension"] | 一個 JOIN：vmTk=link:#entity-vm_dimension["vm_dimension"].tk 
+
+
+| vmdk_dimension | link:#entity-vmdk_dimension["vmdk_dimension"] | 一個 JOIN：vmdkTk=link:#entity-vmdk_dimension["vmdk_dimension"].tk 
+
+
+| 日期維度 | link:#entity-date_dimension["日期維度"] | 一個 JOIN：dateTk=link:#entity-date_dimension["日期維度"].tk 
+|===
+
+
+[[vmdkdimension]]
+=== vmdk_dimension
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集合：vmdk_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此虛擬磁碟行的 TK。 
+
+
+| naturalKey | 字串 | 是的 | 虛擬磁碟的 OID。 
+
+
+| 姓名 | 字串 | 是的 | 虛擬磁碟的名稱。 
+
+
+| 類型 | 字串 | 是的 | 虛擬磁碟類型。 
+
+
+| url | 字串 | 是的 | Insight Server 中此虛擬磁碟的 URL。 
+
+
+| id | Int64 | 是的 | dwh_inventory.hv_virtual_disk 中虛擬磁碟的 GUID 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該虛擬磁碟的最新行。 
+
+
+| dateTk | Int32 | 是的 | TK 表示建立此虛擬磁碟行的日期。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| vmdk_hourly_performance_fact | link:#entity-vmdk_hourly_performance_fact["vmdk_hourly_performance_fact"] | 許多 
+
+
+| vmdk_daily_performance_fact | link:#entity-vmdk_daily_performance_fact["vmdk_daily_performance_fact"] | 許多 
+|===
+
+
+[[vmdkhourlyperformancefact]]
+=== vmdk_hourly_performance_fact
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：vmdk_hourly_performance_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int64 | 是的 | 知道這件事。 
+
+
+| timeTk *[FK]* →link:#entity-time_dimension["時間維度"].tk | Int32 | 是的 | 時間維度的TK。 
+
+
+| dateTk *[FK]* →link:#entity-date_dimension["日期維度"].tk | Int32 | 是的 | 日期維度的 TK。 
+
+
+| vmdkTk *[FK]* →link:#entity-vmdk_dimension["vmdk_dimension"].tk | Int32 | 是的 | 虛擬磁碟的 TK。 
+
+
+| dataStoreTk *[FK]* →link:#entity-datastore_dimension["資料儲存維度"].tk | Int32 | 是的 | 資料存放區的 TK。 
+
+
+| vmTk *[FK]* →link:#entity-vm_dimension["vm_dimension"].tk | Int32 | 是的 | 虛擬機器的 TK。 
+
+
+| hostTk *[FK]* →link:#entity-host_dimension["主機維度"].tk | Int32 | 是的 | 主機的 TK。 
+
+
+| tierTk *[FK]* →link:#entity-tier_dimension["層級維度"].tk | Int32 | 是的 | 該分層的 TK。 
+
+
+| serviceLevelTk *[FK]* →link:#entity-service_level_dimension["服務等級維度"].tk | Int32 | 是的 | 服務層級的 TK。 
+
+
+| storageTk *[FK]* →link:#entity-storage_dimension["儲存空間_維度"].tk | Int32 | 是的 | 儲存設備的 TK。 
+
+
+| readIops | 雙倍的 | 是的 | 每秒讀取 I/O 次數。 
+
+
+| writeIops | 雙倍的 | 是的 | 每秒寫入 I/O 次數。 
+
+
+| totalIops | 雙倍的 | 是的 | 每秒總 I/O 平均值（讀取+寫入）。 
+
+
+| totalIopsMax | 雙倍的 | 是的 | 每秒最大 I/O 次數。 
+
+
+| readThroughput | 雙倍的 | 是的 | 平均讀取處理量。 
+
+
+| writeThroughput | 雙倍的 | 是的 | 平均寫入處理量。 
+
+
+| totalThroughput | 雙倍的 | 是的 | 總處理量平均值（讀取+寫入）。 
+
+
+| totalThroughputMax | 雙倍的 | 是的 | 最大總處理量。 
+
+
+| readResponseTime | 雙倍的 | 是的 | 讀取回應時間。 
+
+
+| writeResponseTime | 雙倍的 | 是的 | 寫入回應時間。 
+
+
+| totalResponseTime | 雙倍的 | 是的 | 總回應時間。 
+
+
+| totalResponseTimeMax | 雙倍的 | 是的 | 總最大回應時間。 
+
+
+| 時間戳 *[PK]* | Int64 | 是的 | 事實開始時間戳，用於分割區 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 服務等級維度 | link:#entity-service_level_dimension["服務等級維度"] | 一個 JOIN：serviceLevelTk=link:#entity-service_level_dimension["服務等級維度"].tk 
+
+
+| 儲存空間_維度 | link:#entity-storage_dimension["儲存空間_維度"] | 一個 JOIN：storageTk=link:#entity-storage_dimension["儲存空間_維度"].tk 
+
+
+| 層級維度 | link:#entity-tier_dimension["層級維度"] | 一個 JOIN：tierTk=link:#entity-tier_dimension["層級維度"].tk 
+
+
+| 時間維度 | link:#entity-time_dimension["時間維度"] | 一個 JOIN：timeTk=link:#entity-time_dimension["時間維度"].tk 
+
+
+| 資料儲存維度 | link:#entity-datastore_dimension["資料儲存維度"] | 一個 JOIN：dataStoreTk=link:#entity-datastore_dimension["資料儲存維度"].tk 
+
+
+| 主機維度 | link:#entity-host_dimension["主機維度"] | 一個 JOIN：hostTk=link:#entity-host_dimension["主機維度"].tk 
+
+
+| vm_dimension | link:#entity-vm_dimension["vm_dimension"] | 一個 JOIN：vmTk=link:#entity-vm_dimension["vm_dimension"].tk 
+
+
+| vmdk_dimension | link:#entity-vmdk_dimension["vmdk_dimension"] | 一個 JOIN：vmdkTk=link:#entity-vmdk_dimension["vmdk_dimension"].tk 
+
+
+| 日期維度 | link:#entity-date_dimension["日期維度"] | 一個 JOIN：dateTk=link:#entity-date_dimension["日期維度"].tk 
+|===
+
+
+[[vmwarehostdailymetricsfact]]
+=== vmware_host_daily_metrics_fact
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：vmware_host_daily_metrics_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int64 | 是的 | 知道這件事。 
+
+
+| dateTk | Int32 | 是的 | 日期維度的 TK。 
+
+
+| vmwareHostTk | Int32 | 是的 | VMware 主機維度的 TK。 
+
+
+| powerAvg | 雙倍的 | 是的 | 功率平均值 
+
+
+| powerCapAvg | 雙倍的 | 是的 | 功率容量平均值 
+
+
+| energyAvg | 雙倍的 | 是的 | 能量總和 
+
+
+| 時間戳 *[PK]* | Int64 | 是的 | 事實開始時間戳，用於分割區 
+|===
+
+
+[[vmwarehostdimension]]
+=== vmware_host_dimension
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：vmware_host_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 此 VMware 主機行的 TK。 
+
+
+| 識別符 | 字串 | 是的 | VMware 主機的唯一識別碼。 
+
+
+| 姓名 | 字串 | 是的 | VMware 主機名稱 
+
+
+| numCpuCores | Int64 | 是的 | VMware 主機的 CPU 核心數 
+
+
+| numCpuPackages | Int64 | 是的 | VMware 主機的 CPU 套件數量 
+
+
+| numCpuThreads | Int64 | 是的 | VMware 主機的 CPU 執行緒數 
+
+
+| numNodes | Int64 | 是的 | VMware 主機的節點數 
+
+
+| hyperThreadActive | 字串 | 是的 | 指示 VMware 主機上是否啟用超執行緒技術 
+
+
+| hyperThreadAvailable | 字串 | 是的 | 指示 VMware 主機上是否支援超執行緒技術 
+
+
+| hyperThreadConfig | 字串 | 是的 | 指示是否已在 VMware 主機上設定為啟用超執行緒。 
+
+
+| id | Int64 | 是的 | dwh_inventory.vmware_host 中主機的 GUID 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該 VMware 主機的最新行。 
+
+
+| dateTk | Int32 | 是的 | TK 表示建立此 VMware 主機列的日期。 
+|===
+
+
+[[vmwarehosthourlymetricsfact]]
+=== vmware_host_hourly_metrics_fact
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：vmware_host_hourly_metrics_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int64 | 是的 | 知道這件事。 
+
+
+| timeTk | Int32 | 是的 | 時間維度的TK。 
+
+
+| dateTk | Int32 | 是的 | 日期維度的 TK。 
+
+
+| vmwareHostTk | Int32 | 是的 | VMware 主機維度的 TK。 
+
+
+| powerAvg | 雙倍的 | 是的 | 功率平均值 
+
+
+| powerCapAvg | 雙倍的 | 是的 | 功率容量平均值 
+
+
+| energyAvg | 雙倍的 | 是的 | 能量總和 
+
+
+| 時間戳 *[PK]* | Int64 | 是的 | 事實開始時間戳，用於分割區 
+|===
+
+
+[[volumedailyperformancefact]]
+=== volume_daily_performance_fact
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：volume_daily_performance_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int32 | 是的 | 知道這件事。 
+
+
+| dateTk *[FK]* →link:#entity-date_dimension["日期維度"].tk | Int32 | 是的 | 日期維度的 TK。 
+
+
+| volumeTk *[FK]* →link:#entity-volume_dimension["volume_dimension"].tk | Int32 | 是的 | TK 是 Volume 的效能數據。 
+
+
+| storageTk *[FK]* →link:#entity-storage_dimension["儲存空間_維度"].tk | Int32 | 是的 | 用於儲存設備效能資料的 TK。 
+
+
+| virtualStorageTk | Int32 | 是的 | 如果容量位於後端陣列上，則為前端陣列的 TK 值。否則，該值為 N/A。 
+
+
+| storageNodeTk *[FK]* →link:#entity-storage_node_dimension["儲存節點維度"].tk | Int32 | 是的 | 儲存節點的 TK。 
+
+
+| storagePoolTk *[FK]* →link:#entity-storage_pool_dimension["儲存池維度"].tk | Int32 | 是的 | 用於效能指標的儲存資源池的 TK。 
+
+
+| applicationTk *[FK]* →link:#entity-application_dimension["應用程式維度"].tk | Int32 | 是的 | 應用程式代表的 TK。 
+
+
+| applicationGroupTk *[FK]* →link:#entity-application_group_dimension["應用程式群組維度"].tk | Int32 | 是的 | 應用程式組的 TK。 
+
+
+| hostTk *[FK]* →link:#entity-host_dimension["主機維度"].tk | Int32 | 是的 | 主機代表的 TK。 
+
+
+| hostGroupTk *[FK]* →link:#entity-host_group_dimension["主機群組維度"].tk | Int32 | 是的 | 主機群組的 TK。 
+
+
+| tierTk *[FK]* →link:#entity-tier_dimension["層級維度"].tk | Int32 | 是的 | 該分層的 TK。 
+
+
+| serviceLevelTk *[FK]* →link:#entity-service_level_dimension["服務等級維度"].tk | Int32 | 是的 | 服務層級的 TK。 
+
+
+| businessEntityTk *[FK]* →link:#entity-business_entity_dimension["business_entity_dimension"].tk | Int32 | 是的 | 該企業實體的 TK。 
+
+
+| k8sNamespaceTk *[FK]* →link:#entity-k8s_namespace_dimension["k8s_namespace_dimension"].tk | Int32 | 是的 | k8s 命名空間的 TK。 
+
+
+| k8sNamespaceGroupTk *[FK]* →link:#entity-k8s_namespace_group_dimension["k8s_namespace_group_dimension"].tk | Int32 | 是的 | k8s 命名空間群組的 TK。 
+
+
+| readResponseTime | 雙倍的 | 是的 | 平均讀取回應時間。 
+
+
+| writeResponseTime | 雙倍的 | 是的 | 寫入平均回應時間。 
+
+
+| totalResponseTime | 雙倍的 | 是的 | 平均回應時間的最大值。 
+
+
+| totalResponseTimeMax | 雙倍的 | 是的 | 回應時間的最大值。 
+
+
+| readThroughput | 雙倍的 | 是的 | 平均讀取處理量。 
+
+
+| writeThroughput | 雙倍的 | 是的 | 平均寫入處理量。 
+
+
+| totalThroughput | 雙倍的 | 是的 | 總處理量平均值（讀取+寫入）。 
+
+
+| totalThroughputMax | 雙倍的 | 是的 | 最大總處理量。 
+
+
+| readIops | 雙倍的 | 是的 | 平均每秒讀取 I/O 次數。 
+
+
+| writeIops | 雙倍的 | 是的 | 平均每秒寫入 I/O 次數。 
+
+
+| totalIops | 雙倍的 | 是的 | 每秒總 I/O 平均值（讀取+寫入）。 
+
+
+| totalIopsMax | 雙倍的 | 是的 | 每秒最大 I/O 次數。 
+
+
+| readCacheHitRatio | 雙倍的 | 是的 | 讀取快取命中率。 
+
+
+| writeCacheHitRatio | 雙倍的 | 是的 | 寫入快取命中率。 
+
+
+| totalCacheHitRatio | 雙倍的 | 是的 | 總快取命中率。 
+
+
+| totalCacheHitRatioMax | 雙倍的 | 是的 | 最大總快取命中率。 
+
+
+| writePending | Int64 | 是的 | 每日待處理寫入操作的最大數量。 
+
+
+| readIoDensity | 雙倍的 | 是的 | 讀取 I/O 密度。 
+
+
+| writeIoDensity | 雙倍的 | 是的 | 寫入 I/O 密度。 
+
+
+| totalIoDensity | 雙倍的 | 是的 | 總 IO 密度。 
+
+
+| totalIoDensityMax | 雙倍的 | 是的 | 最大總 IO 密度。 
+
+
+| compressionSavingsPercent | 雙倍的 | 是的 | 壓縮節省率（%）。 
+
+
+| compressionSavingsSpace | 雙倍的 | 是的 | 壓縮節省空間。 
+
+
+| totalTimeToFull | 雙倍的 | 是的 | 達到滿格時間。 
+
+
+| confidenceIntervalTimeToFull | 雙倍的 | 是的 | 達到完全所需時間的信賴區間。 
+
+
+| 已存取 | Int32 | 是的 | 是否已存取 Volume？ 
+
+
+| 前端 | 字串 | 是的 | Volume是前端嗎？ 
+
+
+| 後端 | 字串 | 是的 | 是 Volume 後端嗎？ 
+
+
+| 時間戳 *[PK]* | Int64 | 是的 | 事實開始時間戳，用於分割區 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 儲存節點維度 | link:#entity-storage_node_dimension["儲存節點維度"] | 一個 JOIN：storageNodeTk=link:#entity-storage_node_dimension["儲存節點維度"].tk 
+
+
+| 儲存空間_維度 | link:#entity-storage_dimension["儲存空間_維度"] | 一個 JOIN：storageTk=link:#entity-storage_dimension["儲存空間_維度"].tk 
+
+
+| business_entity_dimension | link:#entity-business_entity_dimension["business_entity_dimension"] | 一個 JOIN：businessEntityTk=link:#entity-business_entity_dimension["business_entity_dimension"].tk 
+
+
+| 主機群組維度 | link:#entity-host_group_dimension["主機群組維度"] | 一個 JOIN：hostGroupTk=link:#entity-host_group_dimension["主機群組維度"].tk 
+
+
+| k8s_namespace_group_dimension | link:#entity-k8s_namespace_group_dimension["k8s_namespace_group_dimension"] | one JOIN:k8sNamespaceGroupTk=link:#entity-k8s_namespace_group_dimension["k8s_namespace_group_dimension"].tk 
+
+
+| 應用程式群組維度 | link:#entity-application_group_dimension["應用程式群組維度"] | 一個 JOIN：applicationGroupTk=link:#entity-application_group_dimension["應用程式群組維度"].tk 
+
+
+| k8s_namespace_dimension | link:#entity-k8s_namespace_dimension["k8s_namespace_dimension"] | 一個 JOIN:k8sNamespaceTk=link:#entity-k8s_namespace_dimension["k8s_namespace_dimension"].tk 
+
+
+| 服務等級維度 | link:#entity-service_level_dimension["服務等級維度"] | 一個 JOIN：serviceLevelTk=link:#entity-service_level_dimension["服務等級維度"].tk 
+
+
+| 層級維度 | link:#entity-tier_dimension["層級維度"] | 一個 JOIN：tierTk=link:#entity-tier_dimension["層級維度"].tk 
+
+
+| 應用程式維度 | link:#entity-application_dimension["應用程式維度"] | 一個 JOIN：applicationTk=link:#entity-application_dimension["應用程式維度"].tk 
+
+
+| 儲存池維度 | link:#entity-storage_pool_dimension["儲存池維度"] | 一個 JOIN：storagePoolTk=link:#entity-storage_pool_dimension["儲存池維度"].tk 
+
+
+| 主機維度 | link:#entity-host_dimension["主機維度"] | 一個 JOIN：hostTk=link:#entity-host_dimension["主機維度"].tk 
+
+
+| 日期維度 | link:#entity-date_dimension["日期維度"] | 一個 JOIN：dateTk=link:#entity-date_dimension["日期維度"].tk 
+
+
+| volume_dimension | link:#entity-volume_dimension["volume_dimension"] | 一個 JOIN：volumeTk=link:#entity-volume_dimension["volume_dimension"].tk 
+|===
+
+
+[[volumedimension]]
+=== volume_dimension
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集合：volume_dimension
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk | Int32 | 是的 | 本 Volume 行的 TK。 
+
+
+| storageIdentifier | 字串 | 是的 | Volume 儲存設備的識別碼。 
+
+
+| 姓名 | 字串 | 是的 | Volume 的名稱。 
+
+
+| 標籤 | 字串 | 是的 | Volume 的標籤。 
+
+
+| thinProvisioned | 字串 | 是的 | Volume 是否為精簡佈建？ 
+
+
+| 類型 | 字串 | 是的 | Volume 類型。 
+
+
+| isVirtual | 字串 | 是的 | Volume 是虛擬 Volume 嗎？ 
+
+
+| 中繼資料 | 字串 | 是的 | Volume 是元 Volume 嗎？ 
+
+
+| 快照 | 字串 | 是的 | 指示此 Volume 是否為 Snapshot 快照技術 Volume。 
+
+
+| technologyType | 字串 | 是的 | 指定技術類型（FC/ISCSI/UNKNOWN）。 
+
+
+| uuid | 字串 | 是的 | Volume 的 UUID。 
+
+
+| isMainframe | 字串 | 是的 | 是否為大型機 Volume？ 
+
+
+| url | 字串 | 是的 | Insight Server 中此 Volume 的 URL。 
+
+
+| id | Int64 | 是的 | dwh_inventory.volume 中 Volume 的 GUID 
+
+
+| 最新 | 字串 | 是的 | 指示此行是否為該 Volume 的最新行。 
+
+
+| dateTk | Int32 | 是的 | 建立此 Volume 行的日期對應的 TK。 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| volume_hourly_performance_fact | link:#entity-volume_hourly_performance_fact["volume_hourly_performance_fact"] | 許多 
+
+
+| volume_daily_performance_fact | link:#entity-volume_daily_performance_fact["volume_daily_performance_fact"] | 許多 
+|===
+
+
+[[volumehourlyperformancefact]]
+=== volume_hourly_performance_fact
+
+
+
+[[top]]
+=== ↑ 回到頁首
+
+實體集：volume_hourly_performance_fact
+
+[cols="1,1,1,1"]
+|===
+| 場地 | 類型 | 可為 Null | 評論 
+
+
+| tk *[PK]* | Int64 | 是的 | 知道這件事。 
+
+
+| timeTk *[FK]* →link:#entity-time_dimension["時間維度"].tk | Int32 | 是的 | 時間維度的TK。 
+
+
+| dateTk *[FK]* →link:#entity-date_dimension["日期維度"].tk | Int32 | 是的 | 日期維度的 TK。 
+
+
+| volumeTk *[FK]* →link:#entity-volume_dimension["volume_dimension"].tk | Int32 | 是的 | TK 是 Volume 的效能數據。 
+
+
+| storageTk *[FK]* →link:#entity-storage_dimension["儲存空間_維度"].tk | Int32 | 是的 | 用於儲存設備效能資料的 TK。 
+
+
+| virtualStorageTk | Int32 | 是的 | 如果容量位於後端陣列上，則為前端陣列的 TK 值。否則，該值為 N/A。 
+
+
+| storageNodeTk *[FK]* →link:#entity-storage_node_dimension["儲存節點維度"].tk | Int32 | 是的 | 儲存節點的 TK。 
+
+
+| storagePoolTk *[FK]* →link:#entity-storage_pool_dimension["儲存池維度"].tk | Int32 | 是的 | 用於效能指標的儲存資源池的 TK。 
+
+
+| applicationTk *[FK]* →link:#entity-application_dimension["應用程式維度"].tk | Int32 | 是的 | 應用程式代表的 TK。 
+
+
+| applicationGroupTk *[FK]* →link:#entity-application_group_dimension["應用程式群組維度"].tk | Int32 | 是的 | 應用程式組的 TK。 
+
+
+| hostTk *[FK]* →link:#entity-host_dimension["主機維度"].tk | Int32 | 是的 | 主機代表的 TK。 
+
+
+| hostGroupTk *[FK]* →link:#entity-host_group_dimension["主機群組維度"].tk | Int32 | 是的 | 主機群組的 TK。 
+
+
+| tierTk *[FK]* →link:#entity-tier_dimension["層級維度"].tk | Int32 | 是的 | 該分層的 TK。 
+
+
+| serviceLevelTk *[FK]* →link:#entity-service_level_dimension["服務等級維度"].tk | Int32 | 是的 | 服務層級的 TK。 
+
+
+| businessEntityTk *[FK]* →link:#entity-business_entity_dimension["business_entity_dimension"].tk | Int32 | 是的 | 該企業實體的 TK。 
+
+
+| k8sNamespaceTk *[FK]* →link:#entity-k8s_namespace_dimension["k8s_namespace_dimension"].tk | Int32 | 是的 | k8s 命名空間的 TK。 
+
+
+| k8sNamespaceGroupTk *[FK]* →link:#entity-k8s_namespace_group_dimension["k8s_namespace_group_dimension"].tk | Int32 | 是的 | k8s 命名空間群組的 TK。 
+
+
+| readResponseTime | 雙倍的 | 是的 | 讀取回應時間。 
+
+
+| writeResponseTime | 雙倍的 | 是的 | 寫入回應時間 
+
+
+| totalResponseTime | 雙倍的 | 是的 | 總回應時間。 
+
+
+| totalResponseTimeMax | 雙倍的 | 是的 | 回應時間的最大值。 
+
+
+| readThroughput | 雙倍的 | 是的 | 平均讀取處理量。 
+
+
+| writeThroughput | 雙倍的 | 是的 | 平均寫入處理量。 
+
+
+| totalThroughput | 雙倍的 | 是的 | 總處理量平均值（讀取+寫入）。 
+
+
+| totalThroughputMax | 雙倍的 | 是的 | 最大總處理量。 
+
+
+| readIops | 雙倍的 | 是的 | 平均每秒讀取 I/O 次數。 
+
+
+| writeIops | 雙倍的 | 是的 | 平均每秒寫入 I/O 次數。 
+
+
+| totalIops | 雙倍的 | 是的 | 每秒總 I/O 平均值（讀取+寫入）。 
+
+
+| totalIopsMax | 雙倍的 | 是的 | 每秒最大 I/O 次數。 
+
+
+| readCacheHitRatio | 雙倍的 | 是的 | 讀取快取命中率。 
+
+
+| writeCacheHitRatio | 雙倍的 | 是的 | 寫入快取命中率。 
+
+
+| totalCacheHitRatio | 雙倍的 | 是的 | 總快取命中率。 
+
+
+| totalCacheHitRatioMax | 雙倍的 | 是的 | 最大總快取命中率。 
+
+
+| writePending | Int64 | 是的 | 待寫入數量。 
+
+
+| readIoDensity | 雙倍的 | 是的 | 讀取 I/O 密度。 
+
+
+| writeIoDensity | 雙倍的 | 是的 | 寫入 I/O 密度。 
+
+
+| totalIoDensity | 雙倍的 | 是的 | 總 IO 密度。 
+
+
+| totalIoDensityMax | 雙倍的 | 是的 | 最大總 IO 密度。 
+
+
+| compressionSavingsPercent | 雙倍的 | 是的 | 壓縮節省率（%）。 
+
+
+| compressionSavingsSpace | 雙倍的 | 是的 | 壓縮節省空間。 
+
+
+| totalTimeToFull | 雙倍的 | 是的 | 達到滿格時間。 
+
+
+| confidenceIntervalTimeToFull | 雙倍的 | 是的 | 達到完全所需時間的信賴區間。 
+
+
+| 已存取 | Int32 | 是的 | 是否已存取 Volume？ 
+
+
+| 前端 | 字串 | 是的 | Volume是前端嗎？ 
+
+
+| 後端 | 字串 | 是的 | 是 Volume 後端嗎？ 
+
+
+| 時間戳 *[PK]* | Int64 | 是的 | 事實開始時間戳，用於分割區 
+|===
+
+
+==== 導航屬性（連線）
+
+[cols="1,1,1"]
+|===
+| 導航屬性 | 相關實體 | 基數/連接 
+
+
+| 儲存節點維度 | link:#entity-storage_node_dimension["儲存節點維度"] | 一個 JOIN：storageNodeTk=link:#entity-storage_node_dimension["儲存節點維度"].tk 
+
+
+| 儲存空間_維度 | link:#entity-storage_dimension["儲存空間_維度"] | 一個 JOIN：storageTk=link:#entity-storage_dimension["儲存空間_維度"].tk 
+
+
+| business_entity_dimension | link:#entity-business_entity_dimension["business_entity_dimension"] | 一個 JOIN：businessEntityTk=link:#entity-business_entity_dimension["business_entity_dimension"].tk 
+
+
+| 主機群組維度 | link:#entity-host_group_dimension["主機群組維度"] | 一個 JOIN：hostGroupTk=link:#entity-host_group_dimension["主機群組維度"].tk 
+
+
+| k8s_namespace_group_dimension | link:#entity-k8s_namespace_group_dimension["k8s_namespace_group_dimension"] | one JOIN:k8sNamespaceGroupTk=link:#entity-k8s_namespace_group_dimension["k8s_namespace_group_dimension"].tk 
+
+
+| 應用程式群組維度 | link:#entity-application_group_dimension["應用程式群組維度"] | 一個 JOIN：applicationGroupTk=link:#entity-application_group_dimension["應用程式群組維度"].tk 
+
+
+| k8s_namespace_dimension | link:#entity-k8s_namespace_dimension["k8s_namespace_dimension"] | 一個 JOIN:k8sNamespaceTk=link:#entity-k8s_namespace_dimension["k8s_namespace_dimension"].tk 
+
+
+| 服務等級維度 | link:#entity-service_level_dimension["服務等級維度"] | 一個 JOIN：serviceLevelTk=link:#entity-service_level_dimension["服務等級維度"].tk 
+
+
+| 層級維度 | link:#entity-tier_dimension["層級維度"] | 一個 JOIN：tierTk=link:#entity-tier_dimension["層級維度"].tk 
+
+
+| 應用程式維度 | link:#entity-application_dimension["應用程式維度"] | 一個 JOIN：applicationTk=link:#entity-application_dimension["應用程式維度"].tk 
+
+
+| 時間維度 | link:#entity-time_dimension["時間維度"] | 一個 JOIN：timeTk=link:#entity-time_dimension["時間維度"].tk 
+
+
+| 儲存池維度 | link:#entity-storage_pool_dimension["儲存池維度"] | 一個 JOIN：storagePoolTk=link:#entity-storage_pool_dimension["儲存池維度"].tk 
+
+
+| 主機維度 | link:#entity-host_dimension["主機維度"] | 一個 JOIN：hostTk=link:#entity-host_dimension["主機維度"].tk 
+
+
+| 日期維度 | link:#entity-date_dimension["日期維度"] | 一個 JOIN：dateTk=link:#entity-date_dimension["日期維度"].tk 
+
+
+| volume_dimension | link:#entity-volume_dimension["volume_dimension"] | 一個 JOIN：volumeTk=link:#entity-volume_dimension["volume_dimension"].tk 
+|===
