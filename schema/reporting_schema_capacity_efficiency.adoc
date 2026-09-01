@@ -10,7 +10,7 @@ keywords: dwh, data warehouse, schema, reporting, capacity efficiency
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 資料來源：*dwh_capacity_efficiency* OData 端點 — Data Infrastructure Insights
