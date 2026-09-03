@@ -15153,4 +15153,21 @@
   <block id="99d4794c62d21c6728e26e05101b8882" category="list-text">VMware vCenter Server 9.1.0.0100.25417926</block>
   <block id="b45a2c4b5a41856d149eda48df72a60d" category="list-text">VMware vCenter Server 9.1.0.0200.25573614</block>
   <block id="d3f00c8b96a99c9baa77432cd9f1361c" category="list-text">VMware vCenter Server 9.1.0.0300.25629530</block>
+  <block id="e38a5e1defdd7273b8e80b04713ffb71" category="section-title">2026年9月</block>
+  <block id="a98677a246eab0b523b85299a331fdf0" category="section-title">AI Assistant 視覺化</block>
+  <block id="250d4304cd4e62c8276482ad498b2480" category="paragraph">將複雜資料即時轉化為圖形化洞察。只需讓 AI 助理建立儀表板，它就能以互動式圖表和表格的形式呈現結果，幫助您更快地識別趨勢並解決問題，而無需手動建立圖表。</block>
+  <block id="856b34d25fd5cc3c809fa9a4903b28c9" category="inline-image-macro">AI Assistant 視覺化</block>
+  <block id="fd478a561c17b02fc7176a6815bdb7b5" category="paragraph"><block ref="fd478a561c17b02fc7176a6815bdb7b5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="69e2dfb064efa13bd1fc00b0e930b08e" category="section-title">增強型虛擬機器分析器過濾</block>
+  <block id="7e3b063a499521d531e921d85b5ffe47" category="paragraph">VM Analyzer 檢視中的新切換功能可讓您隱藏沒有資料儲存區的已掛載磁碟區，提供更清晰的檢視，簡化 VM 疑難排解。</block>
+  <block id="e79d136b36c447d8657b22a6e13ba6c7" category="inline-image-macro">僅資料儲存檢視滑桿</block>
+  <block id="509d1d4de8b6cd47ea7d3ca1489eb431" category="paragraph"><block ref="509d1d4de8b6cd47ea7d3ca1489eb431" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="63856975c5ad6030b44d991d888c3682" category="section-title">UI 更新：使用者資料編輯模式</block>
+  <block id="b51653051c347f36230ff7a954a6adbe" category="paragraph">在確保資產資訊準確性的同時，降低意外變更的風險。註釋和屬性（即「User Data」）預設以唯讀模式顯示，因此您可以先審查詳細資訊，然後再決定何時進行編輯。</block>
+  <block id="ad67430b6aa6c2d55f6197c51eaf2f6b" category="paragraph">僅在需要時進行編輯。從側拉式面板中展開資產詳細資料，然後選擇鉛筆圖示。資產活動網頁會以編輯模式開啟，您可以在其中更新資訊，並在完成後選擇「儲存」。</block>
+  <block id="3475edeb098139e66dd7f554f459dbb7" category="paragraph">您也可以直接開啟資產活動網頁，然後選擇右上角的「編輯」。</block>
+  <block id="c33980d05b2deb568b7a508ae668206c" category="inline-image-macro">在側邊欄面板中編輯使用者資料 - 鉛筆圖示，寬度=400</block>
+  <block id="d05c002809e2eff8dbbef3f837ebccae" category="paragraph"><block ref="d05c002809e2eff8dbbef3f837ebccae" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0b67caee179a4206a762e287d0cc0b59" category="inline-image-macro">活動網頁編輯模式，寬度=200</block>
+  <block id="2676c87e0e32e08b02693582de233efc" category="paragraph"><block ref="2676c87e0e32e08b02693582de233efc" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
