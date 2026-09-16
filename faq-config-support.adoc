@@ -2,11 +2,15 @@
 sidebar: sidebar 
 permalink: faq-config-support.html 
 keywords: FAQ, Frequently asked questions, questions, configuration, 
-summary:  
+summary: 關於 Data Infrastructure Insights 組態、設備支援、環境影響、權限和資料收集功能的常見問題。 
 ---
 = 配置和支援的設備
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]

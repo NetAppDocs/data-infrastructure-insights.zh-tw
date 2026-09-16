@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept_dashboard_features.html 
-summary: 儀表板功能和概念。 
+summary: 掌握進階儀表板功能，包括小工具自訂、查詢篩選、變數組態、資料轉換和格式設定選項，以建立強大、靈活的視覺化效果。 
 keywords: dashboard, widget, custom, concepts, queries, variables, rollup, roll up, grouping, aggregate, aggregation, filter, axis, group by, expressions, timeseries, exact match, theme, visibility, formatting, conditional, hide, collapse, expand 
 ---
 = 儀表板功能
@@ -14,7 +14,7 @@ keywords: dashboard, widget, custom, concepts, queries, variables, rollup, roll 
 
 
 [role="lead"]
-儀表板和小部件為資料的顯示方式提供了極大的靈活性。以下概念可協助您充分利用自訂儀表板。
+利用進階功能和自訂選項，充分發揮儀表板的潛力。學習如何設定小部件查詢、應用資料轉換、使用變數進行動態篩選以及實作複雜的格式設置，從而創建高效且量身定制的可視化效果，滿足您的基礎架構監控需求。
 
 目錄：[]
 

@@ -14,7 +14,7 @@ keywords: support, knowledgebase, documentation, community, videos, help, contac
 
 
 [role="lead"]
-您可以透過選擇「幫助」>「支援」來存取Data Infrastructure Insights中可用的支援選項。
+Data Infrastructure Insights 提供全面的支援選項，包括自助服務資源、社群論壇、文件和技術支援。您可以透過選取 *Help > Support* 來存取這些支援資源，並考慮啟動您的支援權益，以便透過網路工單和電話支援解除鎖定完整的技術協助。
 
 image:SupportPageExample.png["支援頁面，width=600"]
 
@@ -115,11 +115,7 @@ NOTE: 您必須註冊才能<<activating-support-entitlement,啟動支援>>適用
 
 當您的問題已解決或您的支援工作階段結束時，您可以取消選取該核取方塊。
 
-您可以透過以下任何一種方式請求支援。您必須擁有有效的Data Infrastructure Insights訂閱才能使用這些支援選項：
-
-* link:https://www.netapp.com/us/contact-us/support.aspx["*電話*"]
-* link:https://mysupport.netapp.com/portal?_nfpb=true&_st=initialPage=true&_pageLabel=submitcase["*支援票*"]
-
+您可以前往 link:https://www.netapp.com/support-and-training/["NetApp 支援網站"] 申請支援。您必須擁有作用中的 Data Infrastructure Insights 訂閱。
 
 您也可以點擊「聯絡銷售」連結來要求銷售支援。
 

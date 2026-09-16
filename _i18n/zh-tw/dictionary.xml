@@ -789,9 +789,7 @@
   <block id="993b883ba6ed65dd9cd44e22a60f9896" category="cell">解決：</block>
   <block id="95524184da43a6b53391528cc33e5efd" category="cell">偵測到攻擊後 24 小時會收到電子郵件警報。在 UI 中，警報會在Data Infrastructure Insights工作負載安全收到電子郵件之前 24 小時顯示。</block>
   <block id="e82a63ea247ecd6c098c0cfc9ffdb493" category="cell">當ONTAP將「偵測到勒索軟體」事件傳送到Data Infrastructure Insights工作負載安全（即工作負載安全）時，就會發送電子郵件。此事件包含攻擊清單及其時間戳記。工作負載安全 UI 顯示第一個受到攻擊的檔案的警報時間戳。當一定數量的文件被編碼時， ONTAP會將「偵測到勒索軟體」事件傳送到Data Infrastructure Insights。因此，警報在 UI 中顯示的時間與電子郵件發送的時間之間可能會有差異。</block>
-  <block id="48e541ea8b327711fa60ab7bd3808d2b" category="summary">充分利用儀表板的最佳實踐</block>
   <block id="30d41b0aa6a845f67fdda29577dfc2e7" category="doc">儀表板和小部件的最佳實踐</block>
-  <block id="d012476aa8fdb87aabf9587f68381dc1" category="paragraph">幫助您充分利用儀表板和小部件的強大功能的提示和技巧。</block>
   <block id="d934b755bc4f16d28bfbe3aefa9c9927" category="section-title">找到正確的指標</block>
   <block id="da394a4a6384221c7a1e0ae64cf23d6c" category="paragraph">Data Infrastructure Insights使用有時因數據收集器而異的名稱來獲取計數器和指標。</block>
   <block id="bafc7a119d4f6fbf1cb4ea645eaee406" category="paragraph">在為儀表板小工具搜尋正確的指標或計數器時，請記住您想要的指標的名稱可能與您正在考慮的指標的名稱不同。雖然Data Infrastructure Insights中的下拉清單通常按字母順序排列，但有時某個術語可能不會出現在您認為應該出現的清單中。例如，「原始容量」和「已使用容量」等術語不會在大多數清單中一起出現。</block>
@@ -846,9 +844,7 @@
   <block id="e3e456f4f8ea96739847653aa1533e64" category="paragraph"><block ref="e3e456f4f8ea96739847653aa1533e64" category="inline-image-macro-rx" type="image"></block></block>
   <block id="40a0c0d52b54aeef4418a544a4783052" category="paragraph">您可以選擇讓圖表按 X 軸顯示前 N 個、按 Y 軸顯示前 N 個、按 X 軸顯示後 N 個或按 Y 軸顯示後 N 個。在我們的最後一個範例中，圖表顯示了總 IOPS 最高的前 100 個虛擬機器。如果我們將其更改為*Y 軸頂部*，圖表將再次顯示總延遲最高的前 100 個虛擬機器。</block>
   <block id="0cee28fb2244e1f493099dda51f52313" category="paragraph">請注意，在散佈圖中，您可以按一下某個點來深入到該資源的資產頁面。</block>
-  <block id="38ed7bc985f8fe26e5b34cecd650286e" category="summary">儀表板功能和概念。</block>
   <block id="24d256825c40c4686e0e7bfb247bf40d" category="doc">儀表板功能</block>
-  <block id="36e7daeea464991f71bc9f7d59abc06f" category="paragraph">儀表板和小部件為資料的顯示方式提供了極大的靈活性。以下概念可協助您充分利用自訂儀表板。</block>
   <block id="923fc210f74163c8b2f7b1b3b93f66d9" category="paragraph">目錄：[]</block>
   <block id="554c387b4cc54e5b15b7b9ce27d28df0" category="section-title">小部件命名</block>
   <block id="59f8ad2450d81d69bb7178de28870ace" category="paragraph">小部件會根據第一個小部件查詢所選的物件、指標或屬性自動命名。如果您也為小工具選擇了分組，則「分組依據」屬性將包含在自動命名（聚合方法和指標）中。</block>
@@ -1248,9 +1244,7 @@
   <block id="31187a5ee059290053d0f82340837242" category="inline-image-macro">異常邊界的設置，包括偵測演算法、季節性和敏感度</block>
   <block id="2ffe23ad54a8e26e74e3f37be728dbeb" category="paragraph"><block ref="2ffe23ad54a8e26e74e3f37be728dbeb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ef5c52fd00b778503c506ad346c37295" category="paragraph">請記住，只有當圖表設定為顯示單線時，您才可以查看預期邊界。如果您的分組依據設定或篩選器顯示多行，或者您為小工具設定了多個查詢，則顯示預期邊界的選項將被停用。</block>
-  <block id="f76c5114e30bafab7ce8af90f1b06ba4" category="summary">Data Infrastructure Insights中的儀表板概述。</block>
   <block id="36d33d9f788712f837a1b7b78bd38df7" category="doc">儀表板概述</block>
-  <block id="bec89705ab499dea383ff97a344267a6" category="paragraph">Data Infrastructure Insights為使用者提供了建立基礎設施資料操作視圖的靈活性，讓您可以使用各種小部件建立自訂儀表板，每個小工具都為顯示和繪製資料圖表提供了廣泛的靈活性。</block>
   <block id="4445b92d47c6064291aa06a6396a0733" category="admonition">這些部分中的範例僅用於解釋目的，並未涵蓋所有可能的情況。這裡的概念和步驟可用於建立您自己的儀表板，以突出顯示特定於您的特定需求的資料。</block>
   <block id="760d211d5ae560f52f862c13806f5865" category="section-title">建立儀表板</block>
   <block id="1da60b5bc1bcd40bbbacad066fdf2da8" category="paragraph">您可以在以下兩個位置之一建立新的儀表板：</block>
@@ -1529,9 +1523,7 @@
   <block id="de611c8e9567515efd9824b262d8d9e1" category="paragraph">為每個工作負載實施 QoS 策略以確保有足夠的可用資源，從而緩解儲存池的飽和度。這是一個長期的解決方案。</block>
   <block id="5d43336b0046b068224b4a4c606863ba" category="list-text">添加其他資源</block>
   <block id="31fa4ab3e19080703e914efb949bbced" category="paragraph">如果共享資源（例如儲存池）已達到 IOPS 飽和點，則向池中添加更多或更快的磁碟將確保有足夠的可用資源來緩解飽和度。</block>
-  <block id="661407737232b02ed42fdcaccc52a989" category="summary">您可以匯入建議的儀表板來幫助回答業務洞察問題。您也可以匯入先前匯出的自訂儀表板。</block>
   <block id="814e9312d5012962801c92801ada715a" category="doc">導入儀表板</block>
-  <block id="35642875ab84f7c01f7b4f8c5b7370eb" category="paragraph">Data Infrastructure Insights提供了許多推薦的儀表板，為您的數據提供業務洞察。每個儀表板都包含旨在幫助回答特定問題或解決與目前在租戶上收集的數據相關的特定問題的小部件。DII 還允許您匯出有用的儀表板並將其匯入到另一個租戶。</block>
   <block id="cfa4bbfe8fe25421b55d6bc77170da89" category="section-title">從儀表板庫導入</block>
   <block id="62a23650084673f5c844edf6588b4cbc" category="paragraph">若要從庫中匯入儀表板，請執行下列操作：</block>
   <block id="9eef967a7122bf9630405305617e4e10" category="list-text">選擇“可觀察性”&gt;“探索”&gt;“所有儀表板”*</block>
@@ -1567,7 +1559,6 @@
   <block id="b7624838ae3358523818a8ce1e7252cb" category="paragraph">您也可以使用<block ref="0909c8b5d270efe34a0d9a849c651330" category="inline-link-macro-rx"></block>在登陸頁面顯示資產相關資訊。</block>
   <block id="4b1a441cee8ab7a3e24907f03ffb3043" category="summary">介紹 Kubernetes 工作負載依賴關係和流程，並重點介紹網路和效能問題</block>
   <block id="8022a6c696c4f5ec847420e8ebe1de9e" category="doc">Kubernetes 網路效能監控與映射</block>
-  <block id="60a414e81fe118967fa6232e8eb9f5ed" category="paragraph">Kubernetes 網路效能監控和映射功能透過映射服務（也稱為工作負載）之間的依賴關係來簡化故障排除，並提供對網路效能延遲和異常的即時可見性，以便在效能問題影響使用者之前識別它們。此功能透過分析和審核 Kubernetes 流量來幫助組織降低整體成本。</block>
   <block id="d11c5cdc648931cebdccd4a555384487" category="paragraph">主要特點：• 工作負載圖顯示 Kubernetes 工作負載依賴關係和流程，並反白顯示網路和效能問題。  • 監控 Kubernetes pod、工作負載和節點之間的網路流量；識別流量和延遲問題的來源。  • 透過分析入口、出口、跨區域和跨區域網路流量來降低整體成本。</block>
   <block id="1cd9ce57b7c44af6c8a130743e74dd52" category="inline-image-macro">工作負載圖範例</block>
   <block id="7af846b3cedb6c2658e0a5a0470d77f4" category="paragraph"><block ref="7af846b3cedb6c2658e0a5a0470d77f4" category="inline-image-macro-rx" type="image"></block></block>
@@ -1860,7 +1851,6 @@
   <block id="4e4315d948ef3fd3aad9be88a442863d" category="paragraph"><block ref="4e4315d948ef3fd3aad9be88a442863d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="79bac41a8e857539d5a75dc7e93e17d8" category="summary">您可以查看知識庫文章、聯絡NetApp社群、觀看影片或開立票據以請求支援。</block>
   <block id="69ac5d78c7ecb4ab9a461a7400773ec3" category="doc">請求支持</block>
-  <block id="8305fef4b296f66634635a66ae1c297a" category="paragraph">您可以透過選擇「幫助」&gt;「支援」來存取Data Infrastructure Insights中可用的支援選項。</block>
   <block id="f407e820df29faa344002c82daa17ec2" category="inline-image-macro">支援頁面，width=600</block>
   <block id="b0baa05e4ca03a2c83cff1367375a3bf" category="paragraph"><block ref="b0baa05e4ca03a2c83cff1367375a3bf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e9d356ec51ae4d84881e70ea3c98b6dc" category="section-title">啟動支持權利</block>
@@ -1906,11 +1896,6 @@
   <block id="8e2e894a8f2d0c798eda10b04a6aae2c" category="inline-link-macro">雲端資料服務支援註冊</block>
   <block id="960807b3a38d77ca1916570b1732dda1" category="inline-xref">啟動支援</block>
   <block id="801ef9b405d4e49db3e3da2aa073e5f6" category="admonition">您必須註冊才能<block ref="5dae4a2b8da6e9eee160d72287b835e3" category="inline-xref-macro-rx"></block>適用於NetApp雲產品。要註冊，請訪問 NetApp 的<block ref="c5b01460a42d58b3ab6bc662dda87194" category="inline-link-macro-rx"></block>。</block>
-  <block id="26bf81182a5b7a20da27b311cdf97f3d" category="paragraph">您可以透過以下任何一種方式請求支援。您必須擁有有效的Data Infrastructure Insights訂閱才能使用這些支援選項：</block>
-  <block id="e145a699aa519b4431527a84030fe1fd" category="inline-link-macro">*電話*</block>
-  <block id="d509e88fe0d420e546f838c2bf3149e4" category="list-text"><block ref="d509e88fe0d420e546f838c2bf3149e4" category="inline-link-macro-rx"></block></block>
-  <block id="78ce7a1ba00884845ede733dc79b1141" category="inline-link-macro">*支援票*</block>
-  <block id="1ce9a43d63998783a781596de13b0965" category="list-text"><block ref="fa5b9c38e8e5b8e1f4e408b08ce16532" category="inline-link-macro-rx"></block></block>
   <block id="f55d23a57e602a67ed79cd2014d28415" category="paragraph">您也可以點擊「聯絡銷售」連結來要求銷售支援。</block>
   <block id="30a12dfd5908adfdb9f06395cb4b5c34" category="paragraph">您可以在服務中的「幫助」&gt;「支援」功能表中查看Data Infrastructure Insights序號。如果您在存取服務時遇到問題並且之前已向NetApp註冊序號，您也可以從NetApp支援網站查看Data Infrastructure Insights序號列表，如下所示：</block>
   <block id="290bf19e1ed3fabfc80a0ac6d77f6466" category="list-text">登入 mysupport.netapp.com</block>
@@ -3489,7 +3474,6 @@
   <block id="ef64e7e27fcc41880602820204326750" category="inline-image-macro">快照清除設定</block>
   <block id="58e92099c75821827b7a665f2931deb2" category="paragraph"><block ref="58e92099c75821827b7a665f2931deb2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b451cdd4206327fd0afecbb2df7b2bec" category="doc">關於儲存工作負載安全</block>
-  <block id="d91922a1bdba61ab374e14011d46cddf" category="paragraph">Data Infrastructure Insights儲存工作負載安全（以前稱為Cloud Secure）可協助您透過有關內部威脅的可操作情報來保護您的資料。它提供跨混合雲環境的所有公司資料存取的集中可視性和控制，以確保滿足安全性和合規性目標。</block>
   <block id="1729a56cfc89021478498fe0c89a843a" category="section-title">能見度</block>
   <block id="72afd90b781c569f0442e6e45c9f3193" category="paragraph">取得對使用者存取本機或雲端中儲存的關鍵公司資料的集中可見性和控制。</block>
   <block id="6bb784bfbef2792b99ae322d0ce648b6" category="paragraph">替換無法及時準確地提供資料存取和控制可見性的工具和手動流程。工作負載安全且獨特地在雲端和本地儲存系統上運行，為您提供惡意使用者行為的即時警報。</block>
@@ -3573,9 +3557,7 @@
   <block id="e8aaaf728a906b8e9d531bb2447c9cf2" category="cell">如果 _csuser_ 沒有執行 ssh 的權限，則可能會發生這種情況。  （確保叢集層級的連接，然後確保使用者可以執行 ssh）。 _csuser_ 角色需要這些權限。<block ref="3066b8235934d1594e54f7b043a73648" category="inline-link-rx"></block>對於具有群集憑證的 _csuser_，請從ONTAP命令列執行以下操作： security login role create -role csrole -cmddirname "vserver export-policy rule" -access all security login role create -role cole -cmcm firname - vi^cm none kkd -cmFiial f55 -cmi fir fFald -cmFirname -vvi nv "vserver cifs session" -access all security login role create -role csrole -cmddirname "vserver services access-check authentication translate" -access all security login role create -role csrole -cmirname"vserver_cmirname "vserver_cmirc​​c -Fat_cmircoat_Flu_cmirname"vserver_cmirname"vserver_cmirc​​c -Fat_cmirname s fat_cmirFvserver_cmdirFvserver_cmirc -Fat_cmirc -Fat_cmirname n_vv.並且使用叢集層級的管理員用戶，請確保管理員用戶具有ONTAP的 ssh 權限。</block>
   <block id="4550bd733b367bee1e03cd59abc31e8d" category="cell">我收到錯誤訊息 _SID 轉換失敗。 _ _原因：255：錯誤：命令失敗：未授權執行該命令錯誤：「access-check」不是可識別的命令_，而使用者應該被阻止。</block>
   <block id="f5ce9e1caf923fc5af4671571a0fa7de" category="cell">當 _csuser_ 沒有正確的權限時，就會發生這種情況。看<block ref="54b565a562b697bec979a5b58e397a1a" category="inline-link-macro-rx"></block>了解更多。應用權限後，建議重新啟動ONTAP資料收集器和使用者目錄資料收集器。所需的權限命令如下圖所示。  ---- 安全登入角色建立 -role csrole -cmddirname「vserver export-policy rule」-access all 安全登入角色建立 -role csrole -cmddirname 設定 -access all 安全登入角色建立 -role csrole -cmddirname「vserver accvsession 」服務安全登入角色建立 -role csrole -cmddirname「vserver accvsession)」服務-安全登入角色 - 安全性」 authentication translate”-access all 安全登入角色建立 -role csrole -cmddirname“vserver name-mapping”-access all ----</block>
-  <block id="18082cdb9388e2686e081dd6012e47b8" category="summary">您可以確定所建立的儀表板是公共的還是私有的。</block>
   <block id="cc5c681651d638257ae03658c963c7c6" category="doc">儀表板存取管理</block>
-  <block id="571ad98bb1054a211a5d3fa3a3240265" category="paragraph">Data Infrastructure Insights現在可以讓您更好地控制對您建立的儀表板的存取。您可以選擇誰可以修改您的圖表。您可以控制潛在敏感資訊的暴露。將儀表板保持為私有狀態可讓您完成視覺化工作，直到組織中的其他人可以使用它們為止。</block>
   <block id="505e6238dfdc62d1b4bbdf930fa887b8" category="inline-image-macro">儀表板共享選項，寬度=300</block>
   <block id="43b5d7a5affce9056fb3d7ec4b82fe17" category="paragraph"><block ref="43b5d7a5affce9056fb3d7ec4b82fe17" category="inline-image-macro-rx" type="image"></block></block>
   <block id="547a803d844f9925f62c57d49f10caf6" category="paragraph">預設情況下，當您建立新的儀表板時，此儀表板僅對您（建立者）可見。沒有其他使用者可以查看或修改儀表板。</block>
@@ -4208,11 +4190,8 @@
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">開源</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知文件提供有關NetApp軟體中使用的第三方版權和許可的資訊。</block>
-  <block id="65be717dc296d58230cdf6471cf551c6" category="summary">根據效能、容量、配置和組件警報透過統一評分來監控基礎設施健康狀況，以便主動解決問題。</block>
   <block id="48f51aa9a5737857bbd298bfb874281e" category="doc">監控基礎設施健康狀況</block>
-  <block id="9af3e29dc9d4dd7c03ed034e837cae19" category="paragraph">Data Infrastructure Insights提供全面的基礎設施健康監控，可追蹤儲存環境的效能、容量、配置和元件狀態。健康分數是根據這些類別的監控警報計算得出的，為您提供系統健康狀況的統一視圖並實現主動解決問題。</block>
   <block id="6021dbd64d31bad79679304f2df95f96" category="section-title">基礎設施健康儀表板</block>
-  <block id="90fee6011aeb14ebd1b3f6d5319de775" category="admonition">監控基礎設施健康狀況<block ref="312c0c6b46ba32b4b11ba8c9da5788ed" category="inline-link-macro-rx"></block>功能，並且可能會發生變化。</block>
   <block id="6d6ede202b061f87d3856c3a68a32733" category="paragraph">導航至*可觀察性&gt;分析*並選擇*基礎設施健康*。儀表板根據如下所述的監控警報類別和分數提供系統健康狀況的概述。在頂部設置過濾器以縮小調查範圍。</block>
   <block id="2fea58dd0f63d16cb2264053904f52cb" category="inline-image-macro">基礎設施健康概覽</block>
   <block id="de0fb65c9e3436d4f762f2f75c9c80b0" category="paragraph"><block ref="de0fb65c9e3436d4f762f2f75c9c80b0" category="inline-image-macro-rx" type="image"></block></block>
@@ -5578,13 +5557,10 @@
   <block id="89ec4e12f0fff9f1c5f297f7ac6e9a24" category="paragraph">XIV 容量（按陣列）報告顯示陣列的已使用容量和未使用容量。</block>
   <block id="0b4d8c251e2dfb1eead179c1134336fd" category="section-title">XIV 容量（按池）</block>
   <block id="dff813d382afd170b121f4a3001876f2" category="paragraph">XIV Capacity by Pool 報告顯示儲存池的已使用和未使用容量。</block>
-  <block id="1da2f66b50b1308792b663513a421880" category="summary">使用Data Infrastructure InsightsAPI 直接查詢報表資料庫。</block>
-  <block id="266675e88801512a731359823fa8e305" category="paragraph">Data Infrastructure Insights強大的 API 允許使用者直接查詢Data Infrastructure Insights Reporting 資料庫，而無需經過 Cognos Reporting 環境。</block>
   <block id="a34e29a0686800d882e09161ffc71235" category="admonition">本文檔涉及Data Infrastructure Insights報告功能，該功能在Data Infrastructure Insights高級版中提供。</block>
   <block id="2946f573e2e09deeeecdc2af8dba7379" category="section-title">奧達塔</block>
   <block id="ebb397c50a10a758892e24ffe755b4e4" category="inline-link-macro">OData v4</block>
   <block id="a755b355075d62b57c54f7a8a785c054" category="inline-link-macro">本教程</block>
-  <block id="ba7d10bf45b2219942c55c6b6ffbd3d4" category="paragraph">Data Infrastructure Insights報告 API 遵循<block ref="3174809a10586791538fc9a640526e27" category="inline-link-macro-rx"></block>（開放資料協定）標準用於查詢報告資料庫。如需了解更多信息或了解更多信息，請查看<block ref="e667935284fd58d7e65ea97109344a3b" category="inline-link-macro-rx"></block>在 OData 上。</block>
   <block id="6346ef36a30feacef7c837238fa5e2ce" category="paragraph">所有請求均以 url _\https://&lt; Data Infrastructure Insights URL&gt;/rest/v1/dwh-management/odata_ 開頭</block>
   <block id="125afb495c1f31ea312e38a98946b3a3" category="section-title">產生 APIKey</block>
   <block id="79077b8c217f63ad257dd00c00fd1223" category="inline-link-macro">Data Infrastructure InsightsAPI</block>
@@ -5752,9 +5728,7 @@
   <block id="9b32116d8eca48b62ed2e18d3ce0a898" category="paragraph"><block ref="9b32116d8eca48b62ed2e18d3ce0a898" category="inline-image-macro-rx" type="image"></block></block>
   <block id="735b6ed9b0069fd73dd0986ba5ad4bf2" category="section-title">成交量每日表現</block>
   <block id="5eb8a99093a69e48aa26443ea1c211ed" category="paragraph"><block ref="5eb8a99093a69e48aa26443ea1c211ed" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="cfbf1d79d6b8c6542bc0c846048611fc" category="summary">您可以使用儲存管理器儀表板來管理您的日常儲存服務。</block>
   <block id="662f8024f59fc1c2dd8a5286eea38232" category="doc">儲存管理器儀表板</block>
-  <block id="d74252d9dcf59266ed739f9e49821535" category="paragraph">儲存管理器儀表板為您提供了集中視覺化功能，使您能夠將一段時間內的資源使用情況與可接受範圍和前幾天的活動進行比較和對比。僅顯示儲存服務的關鍵效能指標，您就可以決定如何維護資料中心。</block>
   <block id="290612199861c31d1036b185b4e69b75" category="section-title">總結</block>
   <block id="0d04c76d344b77c4e10b41c28526be07" category="paragraph">從團隊內容中選擇*儲存管理器儀表板*會為您提供多份報告，提供有關您的流量和儲存的資訊。</block>
   <block id="bfc0aa4d9884a38d2f3079aa329eef54" category="inline-image-macro">儲存管理器儀表板選項</block>
@@ -5972,15 +5946,7 @@
   <block id="566a4c81478be8a9ccd7d6589cefe57c" category="list-text">歐洲、中東和非洲地區：eu-central-1</block>
   <block id="7b1afe899e5efa6ba9f4935be9f98d92" category="list-text">亞太地區：ap-southeast-2</block>
   <block id="18206c5add24b8898426959c811b779b" category="section-title">更多資訊</block>
-  <block id="4e85b536571f514e502457526a23655c" category="paragraph">您可以透過以下連結了解更多有關 NetApp 隱私和安全性的資訊：</block>
   <block id="f8740f1a33df1d51373d406115f7a351" category="inline-link-macro">信任中心</block>
-  <block id="1d3a47e64cfbeb6f43f26517be02a023" category="list-text"><block ref="1d3a47e64cfbeb6f43f26517be02a023" category="inline-link-macro-rx"></block></block>
-  <block id="286ecb4572a276871772bdbf167316f2" category="inline-link-macro">跨境資料傳輸</block>
-  <block id="e38fea3e33cc0a5f1866f4eb9682e240" category="list-text"><block ref="e38fea3e33cc0a5f1866f4eb9682e240" category="inline-link-macro-rx"></block></block>
-  <block id="f27a46645af620bac8278c39a9d657b8" category="inline-link-macro">回應第三方資料請求</block>
-  <block id="0e07493de1ccce1a68aff3dbd2cd6cac" category="list-text"><block ref="0e07493de1ccce1a68aff3dbd2cd6cac" category="inline-link-macro-rx"></block></block>
-  <block id="e87433704018842ba5eb9ad6c1a93e26" category="inline-link-macro">NetApp隱私原則</block>
-  <block id="e56b6ba842252c40995f764b4ae57614" category="list-text"><block ref="e56b6ba842252c40995f764b4ae57614" category="inline-link-macro-rx"></block></block>
   <block id="af7817cd5ef3e241d8e057c1322de5f0" category="doc">Data Infrastructure Insights安全</block>
   <block id="1ebba8b1fca558fbf0a70cf3439171fe" category="paragraph">產品和客戶資料安全對於NetApp至關重要。Data Infrastructure Insights在整個發布生命週期中遵循安全最佳實踐，以確保以最佳方式保護客戶資訊和資料的安全。</block>
   <block id="a2760670df3c85c0fae64e4eb92ee36e" category="section-title">安全概述</block>
@@ -6976,7 +6942,6 @@
   <block id="f15a825eae4d7211f1b9f849387b4133" category="paragraph">您指派的任何新應用程式都會覆寫該資產上從其他資產派生的任何應用程式。例如，磁碟區從主機繼承應用程序，當新應用程式分配給磁碟區時，新應用程式優先於派生的應用程式。</block>
   <block id="46152eb4e0d7febe5ed5ec5aa51b068f" category="admonition">對於具有大量相關資產的環境，將應用程式指派繼承到這些資產可能需要幾分鐘。如果您擁有許多相關資產，請留出更多時間進行繼承。</block>
   <block id="f64880272c45a077dc9152ab7dd2f24a" category="paragraph">將主機分配給應用程式後，您可以將剩餘資產分配給應用程式。若要存取應用程式的登入頁面，請點擊*管理&gt;應用程式*並選擇您建立的應用程式。</block>
-  <block id="91771bf0d5be307a250d706e57df1eb1" category="summary">建立監視器來對效能或庫存閾值以及指標或日誌條件發出警報。</block>
   <block id="3f5fb2a45a144339f9591a104342f79b" category="paragraph">監視器可讓您設定由「基礎設施」物件（例如儲存、VM、EC2 和連接埠）產生的指標的閾值，以及「整合」資料（例如為 Kubernetes、 ONTAP進階指標和 Telegraf 外掛程式收集的資料）。當超過警告等級或臨界等級閾值時，這些_metric_監視器會向您發出警報。</block>
   <block id="e730b9c349889018dc9deaccaa5a438b" category="paragraph">您也可以建立監視器，當偵測到指定的日誌事件時觸發警告、嚴重或資訊等級的警報。</block>
   <block id="b18c8095ec7b7cd0c63a4e28b715f6c1" category="inline-link-macro">系統定義的監視器</block>
@@ -7092,9 +7057,7 @@
   <block id="81620819ff61f392cb05937161de6a10" category="paragraph">查看<block ref="c48a3e56f23a81aaf8fad75ccfbc3d89" category="inline-link-macro-rx"></block>頁面，了解Data Infrastructure Insights中包含的監視器的描述。</block>
   <block id="b724fba8ffec757b004a0fd1f0662764" category="inline-link-macro">查看和關閉警報</block>
   <block id="24b2e6934ffdb3b416b798e02d2fca63" category="list-text"><block ref="24b2e6934ffdb3b416b798e02d2fca63" category="inline-link-macro-rx"></block></block>
-  <block id="44aaf5b3ab5109153ebcc76a7fecf773" category="summary">查詢可讓您快速輕鬆地識別感興趣的資產和指標。</block>
   <block id="e05de58f50b638dc3dd3798e60726367" category="doc">建立查詢</block>
-  <block id="db651011bf6874a28b1ab363b1db8322" category="paragraph">透過查詢，您可以在細微層級搜尋租用戶上的資產，從而可以篩選所需的資料並根據您的喜好對結果進行排序。</block>
   <block id="320781104b70f64381bb249c5a4608d5" category="paragraph">例如，您可以為_volumes_建立查詢，新增一個篩選器來尋找與所選磁碟區關聯的特定_storages_，新增另一個篩選器來尋找所選儲存體上的特定_annotation_（例如「Tier 1」），最後新增另一個篩選器來尋找所有_IOPS - 讀取（IO/s）_大於 25 的儲存。當顯示結果時，您可以按升序或降序對與查詢相關的資訊列進行排序。</block>
   <block id="4b6bbf6c69cf8c8e3487a46b14b2b975" category="paragraph">注意：當新增了獲取資產的新資料收集器，或進行了任何註釋或應用程式分配時，只有在對查詢進行索引後，您才能查詢這些新資產、註釋或應用程式。索引會依照定期排程的時間間隔或在某些事件（例如執行註解規則）期間發生。</block>
   <block id="896c3bf153eadc411489b6fa241a83de" category="list-title">建立查詢非常簡單：</block>
@@ -7326,9 +7289,7 @@
   <block id="65e164b1fa429ad3c8da14d927b960f7" category="list-text">為每個使用者選擇所需的角色。</block>
   <block id="811b5ad1e386d9637dbe52f536822854" category="paragraph">新增使用者時，只需選擇所需的角色（通​​常是使用者或訪客）。</block>
   <block id="1c823102aa56424a5f80a9b5c5c2fdff" category="paragraph">有關用戶帳戶和角色的更多信息，請參閱Data Infrastructure Insights<block ref="3bb7d59230d413058ffce58eae85db7e" category="inline-link-macro-rx"></block>文件.</block>
-  <block id="e6bfb980e30f4f6a39aeb1af52be14f3" category="summary">反白虛擬機器效能的儀表板範例。</block>
   <block id="287be892ac0a0d2502fdde816a5dab3a" category="doc">儀表板範例：虛擬機器效能</block>
-  <block id="cf24907d80b780a349784724d6dae76d" category="paragraph">當今的 IT 營運面臨許多挑戰。管理員需要用更少的資源做更多的事情，並且必須全面了解您的動態資料中心。在此範例中，我們將向您展示如何建立一個帶有小部件的儀表板，該儀表板可讓您深入了解租戶上的虛擬機器 (VM) 效能的操作。透過遵循此範例並建立小部件來滿足您自己的特定需求，您可以執行諸如可視化後端儲存效能與前端虛擬機器效能的比較，或查看 VM 延遲與 I/O 需求等操作。</block>
   <block id="b098e5ef56b37ff4069c2e7e6d9bf50c" category="paragraph">在這裡，我們將建立一個虛擬機器效能儀表板，其中包含以下內容：</block>
   <block id="958dea8f57f203ce12436da3e3a88704" category="list-text">列出虛擬機器名稱和效能資料的表格</block>
   <block id="96b3f9cc45a631167992dd29c24482af" category="list-text">虛擬機器延遲與儲存延遲的比較圖表</block>
@@ -9453,9 +9414,7 @@
   <block id="d40435902e9d2aff211851b4be9e2a25" category="paragraph">儀表板上的視窗小工具可以顯示圖例，也可以不顯示。</block>
   <block id="82908db5a2e57cb0c3c9c7daae713304" category="paragraph">顯示儀表板時，可以透過點擊小工具上的「*選項*」按鈕並在選單中選擇「*顯示圖例*」來開啟或關閉小工具中的圖例。</block>
   <block id="1ca8bb723c638279d7c5ddb2b353ea54" category="paragraph">當顯示圖例時，如果可以導覽至圖例指示的資產的登入頁面，則圖例將顯示為指向該資產頁面的連結。</block>
-  <block id="de8c15fa89e8678b9bf3103b3af983de" category="summary">如何將查詢結果匯出到 .csv 文件</block>
   <block id="d33a32a045d2f8fd982e5d3bf3425615" category="doc">將查詢結果匯出到 .CSV 文件</block>
-  <block id="a28f8ea31869026f095819f05219285b" category="paragraph">您可以將任何查詢的結果匯出到 .CSV 文件，這將允許您分析資料或將其匯入到另一個應用程式中。</block>
   <block id="cfd855569d59b48c5e78ad3ea5b91555" category="list-text">登入Data Infrastructure Insights。</block>
   <block id="6bf988d25784231143b4418f8b3276c3" category="list-text">按一下*查詢*並選擇*顯示所有查詢*。</block>
   <block id="7b0f16b1eaee6aaf03ec5ce23ac38204" category="paragraph">將顯示「查詢」頁面。</block>
@@ -9649,9 +9608,7 @@
   <block id="3cd59483bde57e839ca908da4280cde9" category="list-text">按一下查詢並選擇 Insight 應該用來套用註解規則的查詢：*「Aggregate0」*</block>
   <block id="b3e5b96fb95a6c5ae373e50472986766" category="list-text">點擊註解並選擇：“Root agg exclude”</block>
   <block id="e62dcc88e7504fa135502828cf3f3374" category="list-text">點擊“值”並輸入“True”</block>
-  <block id="e7136d23b0fd79f1bfd83b357b92d160" category="summary">修改或刪除查詢</block>
   <block id="e7c09d456b9277f7cac0ab083d8e5272" category="doc">修改或刪除查詢</block>
-  <block id="fa4f35372eb9fd2595c594ca6e718eb2" category="paragraph">當您想要變更所查詢資產的搜尋條件時，您可以變更與查詢關聯的條件。</block>
   <block id="5943bffb29d3b91de57cf4e3be5f6a9d" category="section-title">修改查詢</block>
   <block id="c7c073ee2f0a59d176e92eafa318ec83" category="list-text">點擊“*探索*”並選擇“*所有指標查詢*”。</block>
   <block id="8f06259b106aa0ac2dfa7cf7f9a06407" category="list-text">按一下查詢名稱</block>
@@ -9665,9 +9622,7 @@
   <block id="2ea63e16b4815182c4235ddc166bb650" category="paragraph">若要刪除查詢，請按一下“查詢”並選擇“顯示所有查詢”，然後執行下列其中一項操作：</block>
   <block id="bd0920c5ab9f4ec77e77b666354bb403" category="list-text">點擊查詢右側的「三個點」選單，然後點擊*刪除*。</block>
   <block id="543b57bee233b33b15c7e6238bf6cc26" category="list-text">按一下查詢名稱，然後從*儲存*下拉式選單中選擇*刪除*。</block>
-  <block id="4715797e850d7872546c22d0a379ca4f" category="summary">使用查詢為物件指派多個應用程式或註釋，或從物件中刪除多個應用程式或註釋。</block>
   <block id="de1cabd167f3864b78d24d3da683bd0c" category="doc">將多個應用程式指派給資產或從資產中刪除多個應用程式</block>
-  <block id="a4dc3c56fe7e26b25b470b6a7c15badc" category="paragraph">您可以分配多個<block ref="2a4b6454a635dd6d2517e4f81c46cc23" category="inline-link-macro-rx"></block>使用查詢從資產中新增或刪除多個應用程序，而不必手動分配或刪除它們。</block>
   <block id="9d0068916fee0d45d023af017221e708" category="admonition">您可以按照以下步驟新增或刪除<block ref="5ee10a6642913576d2747e5e8b69f77c" category="inline-link-macro-rx"></block>以同樣的方式。</block>
   <block id="930ebcf0e051fb5a1e36f9ff9248a750" category="paragraph">您必須已經建立了一個查詢來尋找您要編輯的所有資產。</block>
   <block id="faaaabae80472cad243639802e3d885e" category="list-text">點擊“*探索*”並選擇“*指標查詢*”。</block>
@@ -9682,9 +9637,7 @@
   <block id="565601d933cce2f1327c90a9769dd0e2" category="list-text">若要刪除已指派給資產的應用程序，請按一下“批次操作”並選擇“*刪除應用程式*”。</block>
   <block id="c7ddb198b304e6105825a061afe57109" category="list-text">選擇要刪除的一個或多個應用程式。</block>
   <block id="2c022c29b5e95da3740220bcbdc30296" category="paragraph">在批次新增操作中按一下「儲存」或在批次刪除操作中按一下「刪除」後，Data Infrastructure Insights會通知您該操作將需要一些時間。您可以忽略此訊息；操作將在背景繼續。</block>
-  <block id="99d301f4dec03fe00ee2e9cef05695d1" category="summary">您可以將表中的值複製到剪貼簿以供其他應用程式使用。</block>
   <block id="8b0cec3dd0c15262720b4713d8bcbf6e" category="doc">複製表值</block>
-  <block id="6d025f8133e95d3aec2e6c0cc1cc800e" category="paragraph">您可以將表中的值複製到剪貼簿以便在搜尋框或其他應用程式中使用。</block>
   <block id="8bfd1dd6e5bf41c1cf3d087c5a8a39ac" category="paragraph">您可以使用兩種方法將資料表或查詢結果中的值複製到剪貼簿。</block>
   <block id="3df8930abf404a7a5c226a916c674703" category="list-text">方法 1：用滑鼠反白顯示所需文本，複製它，然後將其貼上到搜尋欄位或其他應用程式中。</block>
   <block id="d23ac238ad6f9a71899add8581f00ac2" category="list-text">方法 2：對於單值字段，將滑鼠懸停在字段上，然後按一下出現的剪貼簿圖示。該值被複製到剪貼簿以供搜尋欄位或其他應用程式使用。</block>
@@ -9705,12 +9658,10 @@
   <block id="65ac9349c49d4dc9ceeb30daad295f0f" category="inline-image-macro">為ONTAP啟用進階計數器和 EMS 日誌收集</block>
   <block id="af5f3409a3cec43a03f959371f642cae" category="admonition">許多系統監視器預設處於_暫停_狀態。您可以透過選擇監視器的“_Resume_”選項來啟用系統監視器。確保在資料收集器中啟用了_進階計數器資料收集_和_啟用ONTAP EMS 日誌收集_。這些選項可以在ONTAP資料收集器的「進階配置」下找到：<block ref="c9fb5b808ac97b65ea1073e21fb359f9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a126bfb1fdb6bbbe10997dfc35ed2144" category="section-title">監視器描述</block>
-  <block id="aeb92e8c5a120fcbb9dbeee4d880039d" category="paragraph">系統定義的監視器由預先定義的指標和條件以及預設描述和糾正措施組成，這些都無法修改。您可以修改系統定義的監視器的通知收件者清單。若要查看指標、條件、描述和糾正措施，或修改收件者列表，請開啟系統定義的監視器群組並點擊清單中的監視器名稱。</block>
   <block id="81b15c5404e04e7a0285a18e2c702d75" category="paragraph">系統定義的監控組不能被修改或刪除。</block>
   <block id="cabbbf7fefe4319bf83cb8fc4f054cbb" category="paragraph">下列系統定義的監視器在註明的群組中可用。</block>
   <block id="8c3d5985ed501d011f08dd2f4a6a027f" category="list-text">* ONTAP基礎架構* 包含對ONTAP叢集中基礎架構相關問題的監視器。</block>
   <block id="2bd726cf12f9292e804f46bb3ca1133e" category="list-text">* ONTAP工作負載範例* 包含工作負載相關問題的監視器。</block>
-  <block id="141e31818558b2f9c106f51987380a29" category="list-text">兩個群組中的監視器預設為_暫停_狀態。</block>
   <block id="b69fb0739dff5542fa058e258ebc7fb7" category="paragraph">以下是Data Infrastructure Insights目前包含的系統監視器：</block>
   <block id="8ee82de7c36b7a2ab1b954c4886db271" category="section-title">指標監視器</block>
   <block id="007cc9547ae8884ad597cd92ba505422" category="cell">嚴重程度</block>
@@ -9757,10 +9708,6 @@
   <block id="6f020841b73e150f652a53c82807c34c" category="cell">使用者配額容量硬限制</block>
   <block id="40d0e4ba790ef451c9f414b7c6957241" category="cell">ONTAP可識別有權存取磁碟區、磁碟區內的檔案或目錄的 Unix 或 Windows 系統使用者。因此， ONTAP允許客戶為其 Linux 或 Windows 系統的使用者或使用者群組配置儲存容量。使用者或群組原則配額限制了使用者可以用於其自身資料的空間量。 ...此配額的硬限制允許在卷中使用的容量即將達到總容量配額時通知用戶。監控使用者或群組配額內儲存的資料量可確保使用者獲得不間斷的資料服務。</block>
   <block id="de3b3bcfd2e2f2d25d88ab1d94ea0b6a" category="cell">如果突破了關鍵閾值，請考慮立即採取以下措施以盡量減少服務中斷：1.增加使用者或群組配額的空間以適應成長。2.指示使用者或群組刪除不需要的資料以釋放空間。</block>
-  <block id="e89c167818c91da4b65948a699087631" category="cell">用戶配額容量軟限制</block>
-  <block id="8f67a8bb400abe088de311417097081b" category="cell">ONTAP可識別有權存取磁碟區、磁碟區內的檔案或目錄的 Unix 或 Windows 系統使用者。因此， ONTAP允許客戶為其 Linux 或 Windows 系統的使用者或使用者群組配置儲存容量。使用者或群組原則配額限制了使用者可以用於其自身資料的空間量…當磁碟區中使用的容量量達到總容量配額時，此配額的軟限制允許主動通知使用者。監控使用者或群組配額內儲存的資料量可確保使用者獲得不間斷的資料服務。</block>
-  <block id="c844a9c24a0b86ab717cc11f2fc5f586" category="cell">如果超出警告閾值，計劃立即採取以下措施：1.增加使用者或群組配額的空間以適應成長。2.刪除不需要的資料以釋放空間。</block>
-  <block id="99e0d62cd95722563a6ca27e3142cac5" category="cell">卷容量已滿</block>
   <block id="b4377e0135c3410c9594eae5882bfb8e" category="cell">卷的儲存容量對於儲存應用程式和客戶資料是必要的。 ONTAP磁碟區中儲存的資料越多，未來資料的可用儲存空間就越少。如果磁碟區內的資料儲存容量達到總儲存容量，可能會導致客戶因儲存容量不足而無法儲存資料。監控已使用儲存容量可確保資料服務的連續性。</block>
   <block id="0aa136d499777fb8ac19fce0abe27f95" category="cell">如果突破了關鍵閾值，請考慮立即採取以下措施以盡量減少服務中斷：1.增加卷的空間以適應增長。2.刪除不需要的資料以釋放空間。3.如果快照副本所佔用的空間超過快照保留空間，請刪除舊快照或啟用磁碟區快照自動刪除。 ....如果超過警告閾值，請計劃立即採取以下措施：1.增加體積的空間以適應成長2。如果快照副本所佔用的空間超過快照保留空間，請刪除舊快照或啟用磁碟區快照自動刪除。 ……</block>
   <block id="fbc825226ae4d8f31c0f222df5d96f7a" category="cell">卷 Inode 限制</block>
@@ -9791,8 +9738,6 @@
   <block id="6a330cc3d1dd1f4ba2997354a3f21845" category="cell">卷 Qtree 配額過量使用</block>
   <block id="fb7354d1ae8b5435bfa69884ef47da15" category="cell">卷 Qtree 配額過載指定卷宗被視為被 qtree 配額過載的百分比。已達到卷的 qtree 配額設定的閾值。監控卷 qtree 配額過量提交可確保使用者獲得不間斷的資料服務。</block>
   <block id="c7138a3f31fdad6a8a7bd85a7c38cf78" category="cell">如果突破了關鍵閾值，則應立即採取措施以盡量減少服務中斷：1.增加卷 2 的空間。刪除不需要的資料當超過警告閾值時，考慮增加卷的空間。</block>
-  <block id="e58c27818bf68b1f92513ad4f99972c4" category="inline-xref">回到頂部</block>
-  <block id="9bf2c4cb7192740e06519a5e67f22e59" category="paragraph"><block ref="5166de7f06aaa174e185aec47426a1b7" category="inline-xref-macro-rx"></block></block>
   <block id="9e3717c8a856a8fff78d3ed35be3524a" category="section-title">記錄監視器</block>
   <block id="b8de81d6f52d224f773817fe81217dad" category="cell">AWS 憑證未初始化</block>
   <block id="551b723eafd6a31d444fcb2f5920fbd3" category="cell">資訊</block>
@@ -9807,21 +9752,11 @@
   <block id="04b8993945a972c4f74f19996bef05cb" category="cell">FlexGroup完整組成部分</block>
   <block id="fe21120bc14577f268d4d2be20edc1f7" category="cell">FlexGroup磁碟區內的某個組成部分已滿，這可能會導致服務中斷。您仍然可以在FlexGroup磁碟區上建立或擴充檔案。但是，儲存在元件上的任何檔案都不能被修改。因此，當您嘗試在FlexGroup磁碟區上執行寫入操作時，可能會看到隨機的空間不足錯誤。</block>
   <block id="6378c8a48276593b5eda6665ea7da751" category="cell">建議您使用「volume modify -files +X」指令為FlexGroup磁碟區新增容量。 ……或者，從FlexGroup磁碟區中刪除檔案。然而，很難確定哪些文件已經落入選民手中。</block>
-  <block id="1c5e1ca65bf95c63d58c93315f4ae493" category="cell">Flexgroup 成分股已接近飽和</block>
-  <block id="66ccb0b236d70f106eac0f0966f5bea0" category="cell">FlexGroup磁碟區內的某個組成部分的空間幾乎用盡，這可能會導致服務中斷。可以建立和擴展文件。但是，如果組成部分空間不足，您可能無法附加或修改組成部分上的文件。</block>
-  <block id="efc0cb7afd23cf91b4ebc52c3e2d8ed6" category="cell">FlexGroup組成部分的 Inode 即將耗盡</block>
-  <block id="e8d1207b204af89970bbd6c3fcd0f62c" category="cell">FlexGroup磁碟區中的某個組成部分的 inode 幾乎用完了，這可能會導致服務中斷。該選民收到的創作請求比平均值少。這可能會影響FlexGroup磁碟區的整體效能，因為請求被路由到具有更多 inode 的組成部分。</block>
   <block id="93ec7808a5f104bb53817af485a82bf5" category="cell">FlexGroup組成 Inode</block>
   <block id="acb497ea0eac56962d6a2c8e5af21065" category="cell">FlexGroup磁碟區的組成部分的 inode 已用完，這可能會導致服務中斷。您不能在此組成部分上建立新文件。這可能會導致整個FlexGroup磁碟區中內容分佈不平衡。</block>
-  <block id="d4bd8d52d9f5248461eab65877c33cd4" category="cell">LUN 離線</block>
-  <block id="c879db7459104a5347aa882f8638ec4e" category="cell">當 LUN 手動離線時會發生此事件。</block>
-  <block id="03867f916783d279d2e18bebd13cd956" category="cell">使 LUN 重新連線。</block>
   <block id="7e2ea473b4d692f312fdafa6a4dab4d8" category="cell">主機風扇故障</block>
   <block id="4c67552ba7b4d309c44112ed962d575b" category="cell">一個或多個主機風扇發生故障。系統仍在運作……但是，如果這種情況持續太長時間，過熱可能會觸發自動關機。</block>
   <block id="76eeadb484fdebb878895dcc33f0b1f5" category="cell">重新安裝發生故障的風扇。如果錯誤仍然存在，請更換它們。</block>
-  <block id="1eb5bfc5bab8f3a50b9a8477412d8f19" category="cell">主機風扇處於警告狀態</block>
-  <block id="20b6be82c9564e602e5cc241f05c1273" category="cell">當一個或多個主機風扇處於警告狀態時，就會發生此事件。</block>
-  <block id="d102c04ae84b00d946f024f5a6fd34f0" category="cell">更換指示的風扇以避免過熱。</block>
   <block id="fb973d4258ae588d5d24c45dddfdf7ca" category="cell">NVRAM電池電量低</block>
   <block id="80aa548a305f2ad1cfe96a483ccf6490" category="cell">NVRAM電池容量嚴重不足。如果電池電量耗盡，可能會有資料遺失。 ....您的系統會產生並傳輸AutoSupport或「呼叫回家」訊息給NetApp技術支援和配置的目的地（如果已配置）。  AutoSupport訊息的成功傳遞顯著提高了問題的確定和解決能力。</block>
   <block id="b55fb260ebd70c6508eec1c9ce79cc2f" category="cell">執行下列操作：...使用「system node environment sensors show」指令查看電池的目前狀態、容量和充電狀態。 ...如果最近更換了電池或系統長時間未運行，請監控電池以驗證是否正常充電。 ....如果電池運行時間持續下降到臨界水平以下，且儲存系統自動關閉，請聯絡NetApp技術支援。</block>
@@ -9831,7 +9766,6 @@
   <block id="0b7a641d1d319fdb4c77401df9d2f87c" category="cell">服務處理器離線</block>
   <block id="5517421872e8cf9e3d4813a85cc4243a" category="cell">即使已採取所有SP恢復操作， ONTAP也不再接收來自服務處理器 (SP ) 的心跳。如果沒有SP ， ONTAP就無法監控硬體的健康狀況…系統將關閉以防止硬體損壞和資料遺失。設定緊急警報，以便在SP離線時立即收到通知。</block>
   <block id="8bb6ac5b315e8c5f7870d2b02622d4e1" category="cell">透過執行以下操作對系統進行電源循環：...將控制器從機箱中拉出。 ...將控制器推回。 ...重新打開控制器。 ...如果問題仍然存在，請更換控制器模組。</block>
-  <block id="07766d9fa14ba7d6b5cf8861de22d2b5" category="cell">擱架風扇故障</block>
   <block id="792b071d459d79421597bd9259dfd4c1" category="cell">指示的機架冷卻風扇或風扇模組發生故障。磁碟架中的磁碟可能無法獲得足夠的冷卻氣流，這可能會導致磁碟故障。</block>
   <block id="e9c5971b4f7f1ba13f5e003dd03554c9" category="cell">執行以下操作修正措施：...驗證風扇模組是否完全就位並固定。注意：某些磁碟架的電源模組中整合了風扇。 ...如果問題仍然存在，請更換風扇模組。 ...如果問題仍然存在，請聯絡NetApp技術支援尋求協助。</block>
   <block id="f96ea6956e87428787f316c02a3e369a" category="cell">由於主機風扇故障，系統無法運作</block>
@@ -9863,7 +9797,6 @@
   <block id="6bbc6be1e544c6641587b0fdf8d1cffe" category="cell">執行下列修正措施：…使用「storage aggregate object-store show-space」指令檢查每個FabricPool儲存層所使用的授權容量百分比。 …使用「volume snapshot delete」指令從分層策略為「snapshot」或「backup」的磁碟區中刪除 Snapshot 副本以清理空間。 …在叢集上安裝新許可證以增加許可容量。</block>
   <block id="330d541d831c0c8ca3957fb4856fbfbe" category="cell">FabricPool空間使用限制已達到</block>
   <block id="828d6635aab125bf04a3bee0c8763889" category="cell">來自容量許可提供者的物件儲存的叢集範圍FabricPool空間總使用量已達到許可限制。</block>
-  <block id="4c5698d5f23adf829fb938340349bc52" category="cell">聚合返回失敗</block>
   <block id="90ef3b1aa5a2888ebadddd69b5d4a207" category="cell">此事件發生在聚合遷移期間，作為儲存故障轉移 (SFO) 復原的一部分，此時目標節點無法到達物件儲存。</block>
   <block id="563de9bd8f4908a679631c394af6b45a" category="cell">執行下列糾正措施：...使用「network interface show」指令驗證叢集間 LIF 是否在線上且正常運作。 ...透過目標節點群集間 LIF 使用「ping」指令檢查與物件儲存伺服器的網路連線。  ...使用“aggregate object-store config show”命令驗證物件儲存的配置未更改，並且登入和連接資訊仍然準確。 ……或者，您可以透過為 giveback 命令的「require-partner-waiting」參數指定 false 來覆寫錯誤。 ...請聯絡NetApp技術支援以取得更多資訊或協助。</block>
   <block id="26997d5e5bb912bba50e3a785b892e17" category="cell">HA 互連中斷</block>
@@ -9896,13 +9829,10 @@
   <block id="174eaebe2f811ec526b3319ed5cd94b4" category="cell">NVMe 命名空間空間不足</block>
   <block id="6e3884381c11734fb36fc457ab836213" category="cell">由於空間不足導致寫入失敗，NVMe 命名空間已離線。</block>
   <block id="0435182b9ddbd0229c40b478ef141b40" category="cell">在磁碟區新增空間，然後使用「vserver nvme namespace modify」指令讓 NVMe 命名空間連線。</block>
-  <block id="d7a4b2066d2c4da4f3d6f49662d12570" category="cell">NVMe-oF 寬限期有效</block>
   <block id="9d2cb7cbb953a478326fe27e52285b93" category="cell">當使用 NVMe over Fabrics (NVMe-oF) 協定且授權的寬限期處於活動狀態時，此事件每天都會發生。許可證寬限期到期後，NVMe-oF 功能需要許可證。授權寬限期結束後，NVMe-oF 功能將會停用。</block>
   <block id="65312caab35004589d4b8d533ab5e233" category="cell">聯絡您的銷售代表以取得 NVMe-oF 許可證，並將其新增至叢集中，或從叢集中移除所有 NVMe-oF 設定實例。</block>
-  <block id="164be969f890fc7fa4da2230c1657b18" category="cell">NVMe-oF 寬限期已過</block>
   <block id="456afcff497af1aa5208c6956c56e81b" category="cell">NVMe over Fabrics (NVMe-oF) 授權寬限期已結束，NVMe-oF 功能已停用。</block>
   <block id="0c462b6a96423feb2ea0671d7b661539" category="cell">聯絡您的銷售代表以取得 NVMe-oF 許可證，並將其新增至群組。</block>
-  <block id="79b5e6aa571bc2e88eec585f40c44448" category="cell">NVMe-oF 寬限期開始</block>
   <block id="e524afebf6849768adb779a12a127949" category="cell">在升級到ONTAP 9.5 軟體期間偵測到 NVMe over Fabrics (NVMe-oF) 配置。許可證寬限期到期後，NVMe-oF 功能需要許可證。</block>
   <block id="21028ac85c66603bccdb5e36033eed7e" category="cell">物件儲存主機無法解析</block>
   <block id="ed8d632e2bfb1dcc2b90c037d417fdd6" category="cell">物件儲存伺服器主機名稱無法解析為 IP 位址。如果無法解析 IP 位址，物件儲存用戶端就無法與物件儲存伺服器通訊。因此，數據可能無法存取。</block>
@@ -9916,7 +9846,6 @@
   <block id="5d68db61b8ccb746a85eef15b994d95f" category="cell">READDIR 逾時</block>
   <block id="94d0326ee69d027aaf3d34c3aa17f8d8" category="cell">READDIR 檔案操作已超出允許在WAFL中運行的逾時時間。這可能是因為目錄非常大或稀疏。建議採取糾正措施。</block>
   <block id="f2550d10b13db66d28dfda36b7eaea84" category="cell">執行以下操作：...使用以下具有「diag」權限的 nodeshell CLI 命令來尋找特定於最近 READDIR 檔案操作已過期的目錄的資訊：wafl readdir notice show。 ....檢查目錄是否指示為稀疏：...如果目錄指示為稀疏，建議您將目錄的內容複製到新目錄以消除目錄檔案的稀疏性。  ....如果目錄未指示為稀疏且目錄很大，建議您透過減少目錄中的檔案條目數來減少目錄檔案的大小。</block>
-  <block id="935da7f818cfdec6c28d2e6f6ff9453f" category="cell">重新定位聚合失敗</block>
   <block id="e7dc75d0e3386bfcaad6722ce16d8cae" category="cell">當目標節點無法到達物件儲存時，在聚合重新定位期間會發生此事件。</block>
   <block id="6cdac1740d60a31fda46c61891fa1ad5" category="cell">執行下列糾正措施：...使用「network interface show」指令驗證叢集間 LIF 是否在線上且正常運作。 ...透過目標節點群集間 LIF 使用「ping」指令檢查與物件儲存伺服器的網路連線。  ...使用“aggregate object-store config show”命令驗證物件儲存的配置未更改，並且登入和連接資訊仍然準確。 ……或者，您可以使用重定位指令的「override-destination-checks」參數覆寫錯誤。 ...請聯絡NetApp技術支援以取得更多資訊或協助。</block>
   <block id="9773ab800993af6a5bc6195645c6c910" category="cell">陰影複製失敗</block>
@@ -9934,14 +9863,6 @@
   <block id="204c2306ca4f4bb7c09f85d28fdc95cb" category="cell">檢測到病毒</block>
   <block id="aa8582c4c58c34070341b5960e4edc7c" category="cell">Vscan 伺服器向儲存系統報告了一個錯誤。這通常表示發現了病毒。但是，Vscan 伺服器上的其他錯誤可能會導致此事件…客戶端對該檔案的存取被拒絕。  Vscan 伺服器可能會根據其設定和配置清理、隔離或刪除該檔案。</block>
   <block id="39a107762943f2a3b73c54078d50973e" category="cell">檢查「syslog」事件中報告的 Vscan 伺服器日誌，查看它是否能夠成功清理、隔離或刪除受感染的檔案。如果無法做到這一點，系統管理員可能必須手動刪除該檔案。</block>
-  <block id="0031016ba9d6e28ef548d4a2f95332e3" category="cell">卷離線</block>
-  <block id="5609b8e3a5a7d588b5e383ca4cbc5c57" category="cell">此訊息表示磁碟區已離線。</block>
-  <block id="e7536040ed5bedd31b479262b47500e3" category="cell">使磁碟區重新連線。</block>
-  <block id="d1c6b663baf98044c99cc6d564598639" category="cell">音量限制</block>
-  <block id="c8f1088c9457fdf2989240ba63ef79ec" category="cell">此事件表明靈活卷受到限制。</block>
-  <block id="083dfc3e7cc398a4bc31ef7290a24654" category="cell">儲存虛擬機器停止成功</block>
-  <block id="2863895a71d5cb9e33a098ac259eb334" category="cell">當「vserver stop」操作成功時會出現此訊息。</block>
-  <block id="b339435665ff601f5913edea4f10f768" category="cell">使用“vserver start”命令啟動儲存虛擬機器上的資料存取。</block>
   <block id="4dfd7227c51557eca5ad760f17b1e3b2" category="cell">節點恐慌</block>
   <block id="60b3e4bcb8a36a9f858c72d83a5d4291" category="cell">當發生恐慌時發出此事件</block>
   <block id="7d8b9fd3afbc24d3726d797e23715603" category="cell">聯絡NetApp客戶支援。</block>
@@ -10032,7 +9953,6 @@
   <block id="c941e3d6c35513ec6bad317f797958dd" category="cell">由於配置錯誤，無法調度該節點。</block>
   <block id="701714f5fbd36524d1a2977a95a150a5" category="cell">檢查 Kubernetes 事件日誌以了解設定失敗的原因。</block>
   <block id="278d01e5af56273bae1bb99a98b370cd" category="cell">批判的</block>
-  <block id="0e14c27d69d1477839d9efc8b0ad46f8" category="cell">持久卷回收失敗</block>
   <block id="8c8cbcc14840938903ba6a12977112a5" category="cell">該卷的自動回收失敗。</block>
   <block id="f6aad30681bba4322fc5af1af69cf8ef" category="cell">警告@&gt;0B</block>
   <block id="a01254b5fadca078ea74cbeb0e57fe0c" category="cell">容器 CPU 限制</block>
@@ -10063,7 +9983,6 @@
   <block id="e5e09bf52d280084c87d12264b756edd" category="cell">警告 @ &gt; 85 % 嚴重 @ &gt; 90 %</block>
   <block id="74ef7bdeeb51a483e58c7ded021952ed" category="cell">ResourceQuota CPU 限制即將超出</block>
   <block id="9b8e4b0bb0460afb26f3786cfd249927" category="cell">命名空間的 CPU 限制即將超出 ResourceQuota</block>
-  <block id="aa5d59f5b34fcd2e6570cb5b597748ae" category="cell">Pod 崩潰循環退避</block>
   <block id="2f6430566c6afc6ea2ca5b08f5bb7c01" category="cell">Pod 已崩潰並嘗試重新啟動多次。</block>
   <block id="3bdafc039774c767282dbe18d44c1c99" category="cell">嚴重@&gt;3</block>
   <block id="147f45a9ef97cc0341380f6f8a1d6e01" category="cell">節點 CPU 高</block>
@@ -10073,7 +9992,6 @@
   <block id="9d45c8691c30b49f5f9bb02bd9d560b0" category="cell">TCP RTT（往返時間）延遲高</block>
   <block id="d7fb4a35576851603f71e722e49b7694" category="cell">檢查網路壅塞▒識別消耗大量網路頻寬的工作負載。檢查 Pod CPU 使用率是否過高。檢查硬體網路效能。</block>
   <block id="5e8fb3d2a2c4c6e442f16a447b6ce44c" category="cell">警告 @ &gt; 150 毫秒 嚴重 @ &gt; 300 毫秒</block>
-  <block id="f51ad3a32d20f12a4aa62f7865c24b05" category="cell">作業失敗</block>
   <block id="62cc8941365780e844a7a1a3edfdae70" category="cell">由於節點崩潰或重新啟動、資源耗盡、作業逾時或 pod 調度失敗，作業未成功完成。</block>
   <block id="5ee1a3ccbcd9ac286dece4ebf73be882" category="cell">檢查 Kubernetes 事件日誌以了解失敗原因。</block>
   <block id="2ec669c0c57f515b14422f2029d0d00c" category="cell">警告@&gt;1</block>
@@ -10102,14 +10020,10 @@
   <block id="7a630b16f340cd744188cfe88ea277e0" category="cell">集群 CPU 飽和度高</block>
   <block id="ef9e90b0a74afb98891334eb9c2fec60" category="cell">集群可分配 CPU 飽和度高。群集 CPU 飽和度的計算方法是將 CPU 使用率總和除以所有 K8s 節點上可分配的 CPU 總和。</block>
   <block id="cc3da35abc04bdb599096c76784750c9" category="section-title">變更日誌監視器</block>
-  <block id="8f0ea9dc7dd1704f6e4e6e709dc84ec2" category="cell">發現內部卷</block>
   <block id="5391f9a882a54c787b206138ed6d28b0" category="cell">資訊</block>
   <block id="f42080c83d185f44a2df17faa40886d5" category="cell">當發現內部卷時會出現此訊息。</block>
-  <block id="2652a160c7449e6a9d9867ab77272655" category="cell">內部體積已修改</block>
   <block id="ff227a947c0e31eac1d84272a0a4148f" category="cell">當內部磁碟區被修改時會出現此訊息。</block>
-  <block id="27a24fe47191d9d8388895fa49370e30" category="cell">發現儲存節點</block>
   <block id="e93b9e33542d91144ab9a9642a3a26a9" category="cell">當發現儲存節點時會出現此訊息。</block>
-  <block id="cc6843bc6cd1e570e50f7263422a340b" category="cell">儲存節點已移除</block>
   <block id="754ddad2e9ef53ebffdea523a3044181" category="cell">當儲存節點被移除時會出現此訊息。</block>
   <block id="35dfb12aba09ddfaeaa55717279f3093" category="cell">已發現儲存池</block>
   <block id="ab23bc42353ab4c690e0aedd260bcf22" category="cell">發現儲存池時會出現此訊息。</block>
@@ -10118,50 +10032,13 @@
   <block id="cbe58c07baaa017f926c6594715fa74d" category="cell">儲存虛擬機器已修改</block>
   <block id="7177a13bcf2c1f14bff3599bdff189af" category="cell">當儲存虛擬機器被修改時會出現此訊息。</block>
   <block id="e1c87fa2897a7e209d3911ea7c640c39" category="section-title">數據收集監視器</block>
-  <block id="db8d9ccfe5ecea7583ec770b7ba8b68f" category="cell">採集單元關閉</block>
-  <block id="199af9ce8ab16e33e98a26add2f43fda" category="cell">Data Infrastructure Insights採集單元會定期重啟，作為升級的一部分來引入新功能。在典型環境中，這種情況每月發生一次或更少。警告警報指出，採集單元已關閉，隨後應立即發出決議，指出新重啟的採集單元已完成Data Infrastructure Insights的註冊。通常，從關機到註冊的周期需要 5 到 15 分鐘。</block>
-  <block id="c1e22147316e85ab61d0419eba630d75" category="cell">如果警報頻繁發生或持續時間超過 15 分鐘，請檢查託管採集單元的系統、網路以及將 AU 連接到網際網路的任何代理程式的運作情況。</block>
   <block id="98f0032b558f695572ee2c60e17e2d6d" category="cell">資料收集器的輪詢遇到了意外的失敗情況。</block>
   <block id="b76f1f2b697d772825753e542f17de1d" category="cell">請造訪Data Infrastructure Insights中的資料收集器頁面以了解更多情況。</block>
   <block id="85cbbe353849360cf65793354f09c95b" category="cell">此警報通常是由於資料收集器或目標系統的錯誤配置而引起的。重新審視配置以防止將來出現警報。這也可能是由於數據收集器收集了所有可能的數據，但檢索的數據並不完整。當資料收集過程中情況發生變化時，就會發生這種情況（例如，在資料收集過程中和擷取其資料之前刪除了資料收集開始時存在的虛擬機器）。</block>
   <block id="2745e86ed1540385bf34b3d3a304cd23" category="cell">檢查資料收集器或目標系統的配置。請注意，收集器警告監視器可以比其他監視器類型發送更多警報，因此建議不要設定警報收件人，除非您正在進行故障排除。</block>
-  <block id="15a43b8a93156e727b3b81dc25fd6d32" category="section-title">安全監視器</block>
   <block id="2a63f555989152ba866b43a1faacd680" category="cell">臨界點</block>
-  <block id="37a1ca329a6f5e5dca35632e49074596" category="cell">AutoSupport HTTPS 傳輸已停用</block>
   <block id="40692fef6f4ef30aa3b500774debd8f7" category="cell">警告@&lt;1</block>
-  <block id="5b4b99885d6c41f784d4353df3954f85" category="cell">AutoSupport支援 HTTPS、HTTP 和 SMTP 作為傳輸協定。由於AutoSupport訊息的敏感性， NetApp強烈建議使用 HTTPS 作為向NetApp支援發送AutoSupport訊息的預設傳輸協定。</block>
-  <block id="56e9eb9c60fd63630926841f5a7a0cf3" category="cell">若要將 HTTPS 設定為AutoSupport訊息的傳輸協議，請執行以下ONTAP命令：…system node autosupport modify -transport https</block>
-  <block id="52c2cd14f22482229a7521ff77cec6e8" category="cell">表示 SSH 正在使用不安全的密碼，例如以 *cbc 開頭的密碼。</block>
-  <block id="af4b3d60f3b2a1b2019c7e6584e05ac0" category="cell">若要刪除 CBC 密碼，請執行以下ONTAP指令：…security ssh remove -vserver &lt;admin vserver&gt; -ciphers aes256-cbc,aes192-cbc,aes128-cbc,3des-cbc</block>
-  <block id="7e7108ba14d9f82f42515d305f9e4773" category="cell">表示對於存取ONTAP系統的用戶，登入橫幅已被停用。顯示登入橫幅有助於建立對存取和使用系統的期望。</block>
-  <block id="9ef097ac170ba2d0a3dbaa80e948d24e" category="cell">若要設定叢集的登入橫幅，請執行下列ONTAP指令：…security login banner modify -vserver &lt;admin svm&gt; -message "Access restricted to authorized users"</block>
-  <block id="eff504a7000baa17798b249c97b6a046" category="cell">在複製資料以進行災難復原、快取或備份時，您必須在從一個ONTAP叢集到另一個 ONTAP 叢集透過網路傳輸資料期間保護該資料。必須在來源集群和目標集群上配置加密。</block>
-  <block id="a8b0d51ab1676479b0a39c0ed8b9b9c6" category="cell">若要在ONTAP 9.6 之前建立的叢集對等關係上啟用加密，必須將來源叢集和目標叢集升級到 9.6。然後使用「cluster peer modify」指令將來源叢集對等點和目標叢集對等點變更為使用叢集對等加密。 ....有關詳細信息，請參閱《NetApp ONTAP 9 安全強化指南》。</block>
-  <block id="144a851e30702c5c68b91e006bbc9af0" category="cell">警告@&gt;0</block>
-  <block id="ab15923d336c9df71683a27a3b88f21b" category="cell">NetApp建議使用 lock 指令鎖定（停用）任何不需要的預設管理員使用者（內建）帳戶。它們主要是預設帳戶，其密碼從未更新或更改過。</block>
-  <block id="83ded096d536b0a9f273f70c8d46ca18" category="cell">若要鎖定內建「管理員」帳戶，請執行下列ONTAP指令：…security login lock -username admin</block>
-  <block id="5218eaef8a5f3f66d2720b5e8156469d" category="cell">當啟用 FIPS 140-2 合規性時，TLSv1 和 SSLv3 將被停用，並且僅 TLSv1.1 和 TLSv1.2 保持啟用。啟用 FIPS 140-2 合規性時， ONTAP會阻止您啟用 TLSv1 和 SSLv3。</block>
-  <block id="96e4a7f4d19cdbf4e4dc1487d9e2089f" category="cell">若要在叢集上啟用 FIPS 140-2 合規性，請在進階權限模式下執行下列ONTAP指令：…security config modify -interface SSL -is-fips-enabled true</block>
-  <block id="3c84fa81b2128d2870573dd56fceedc3" category="cell">卸載系統日誌資訊對於將違規的範圍或影響限制在單一系統或解決方案中是必要的。因此， NetApp建議將系統日誌資訊安全地卸載到安全的儲存或保留位置。</block>
-  <block id="c7dc508bab528b876e8f8f56ed6c817f" category="cell">一旦創建了日誌轉發目標，其協定就無法變更。若要變更為加密協議，請使用下列ONTAP指令刪除並重新建立日誌轉送目標：…cluster log-forwarding create -destination &lt;destination ip&gt; -protocol tcp-encrypted</block>
-  <block id="b72f6d4281e334d8f1816c4c7b48a190" category="cell">NetApp強烈建議對ONTAP用戶帳戶密碼使用更安全的 SHA-512 雜湊函數。使用安全性較低的 MD5 雜湊函數的帳戶應遷移到 SHA-512 雜湊函數。</block>
-  <block id="b830e03eaaefb2ec43a4918402144e73" category="cell">NetApp強烈建議用戶更改密碼，將用戶帳戶移轉到更安全的 SHA-512 解決方案。 ...要使用 MD5 雜湊函數的密碼鎖定帳戶，請執行下列ONTAP指令：...security login lock -vserver * -username * -hash-function md5</block>
-  <block id="a4acaf21eebc7bf33475d1bda0f71fb4" category="cell">未配置 NTP 伺服器</block>
-  <block id="22c5be3ade73c0bbb31961b09d74c93e" category="cell">表示叢集沒有配置NTP伺服器。為了實現冗餘和最佳服務， NetApp建議您將至少三個 NTP 伺服器與叢集關聯。</block>
-  <block id="a3a5af2134056138bdb5aa2d608242c8" category="cell">若要將 NTP 伺服器與叢集關聯，請執行下列ONTAP指令：cluster time-service ntp server create -server &lt;ntp 伺服器主機名稱或 IP 位址&gt;</block>
-  <block id="5edad07c8412daab278c10b18e62e6da" category="cell">NTP 伺服器數量較少</block>
   <block id="adbc4b7c4cd23e8493bc55219426062f" category="cell">警告@&lt;3</block>
-  <block id="083193cf390aff889ab229381b57bb1b" category="cell">表示叢集配置的NTP伺服器少於3個。為了實現冗餘和最佳服務， NetApp建議您將至少三個 NTP 伺服器與叢集關聯。</block>
-  <block id="7b5eac97a56d3de62a762976408f1604" category="cell">若要將 NTP 伺服器與叢集關聯，請執行下列ONTAP指令：…cluster time-service ntp server create -server &lt;ntp 伺服器主機名稱或 IP 位址&gt;</block>
-  <block id="3f8b20f5d4c0ae31c0e785a64f88acf6" category="cell">遠端 Shell 不是建立對ONTAP解決方案的命令列存取的安全方法。應停用遠端 Shell 以實現安全的遠端存取。</block>
-  <block id="66b960fff3a2001089c50a4b5cba5aed" category="cell">NetApp建議使用安全外殼 (SSH) 進行安全遠端存取。 ...要在叢集上停用遠端外殼，請在進階權限模式下執行下列ONTAP命令：...安全協定修改 -application rsh- enabled false</block>
-  <block id="48b5db589e58fb639e7ee3a50e8a1bda" category="cell">表示已停用 SVM 的稽核日誌記錄。</block>
-  <block id="ff6cebe76939541117e856ec4b111c5c" category="cell">若要為虛擬伺服器設定稽核日誌，請執行下列ONTAP指令：…vserver audit enable -vserver &lt;svm&gt;</block>
-  <block id="caa40d84ac4615bac46decaa416d068f" category="cell">若要刪除 CBC 密碼，請執行以下ONTAP指令：…security ssh remove -vserver &lt;vserver&gt; -ciphers aes256-cbc,aes192-cbc,aes128-cbc,3des-cbc</block>
-  <block id="0c5f0b019f859e20c9cbd4eaf4fc9ff8" category="cell">表示對於存取系統上的 SVM 的用戶，登入橫幅已被停用。顯示登入橫幅有助於建立對存取和使用系統的期望。</block>
-  <block id="0b7726d8daf36aa49b06f7fdaf9721be" category="cell">若要設定叢集的登入橫幅，請執行下列ONTAP指令：…security login banner modify -vserver &lt;svm&gt; -message "Access restricted to authorized users"</block>
-  <block id="44335166ddb91bd1291079f3852a7eaf" category="cell">Telnet 不是建立ONTAP解決方案命令列存取的安全方法。應停用 Telnet 以實現安全的遠端存取。</block>
-  <block id="afb248522e19d4d05da83ae5f5e6a479" category="cell">NetApp建議使用安全外殼 (SSH) 進行安全遠端存取。若要在叢集上停用 Telnet，請在進階權限模式下執行下列ONTAP指令：…security protocol modify -application telnet -enabled false</block>
   <block id="a433675536fc11ef74a8e05a9afe38f9" category="section-title">資料保護監控器</block>
   <block id="8067f9dd56568eda9da771d5126fd283" category="cell">Lun 快照複製空間不足</block>
   <block id="c7e5b8e812dd23889ad718547a93510f" category="cell">（過濾器 contains_luns = 是）警告 @ &gt; 95%…嚴重 @ &gt; 100%</block>
@@ -10201,7 +10078,6 @@
   <block id="e27cdb180c7ac453d55cc5376d484e30" category="cell">執行下列糾正措施：使用「network interface show」指令驗證叢集間 LIF 是否在線上且正常運作。透過目標節點群集間 LIF 使用「ping」指令檢查與物件儲存伺服器的網路連線。使用「aggregate object-store config show」指令驗證物件儲存的設定是否未更改，以及登入和連線資訊是否仍然準確。或者，您可以使用重定位命令的「override-destination-checks」參數來覆寫錯誤。請聯絡NetApp技術支援以取得更多資訊或協助。</block>
   <block id="ba14a826a3059fa0dbf98ba39cdd538f" category="cell">CVO 影集複製失敗</block>
   <block id="5793b85483d6f4727031f8cd27c2a2f8" category="cell">使用事件訊息中提供的資訊檢查以下內容：是否啟用了卷影複製配置？是否安裝了適當的許可證？卷影複製作業在哪些共用上執行？股票名稱正確嗎？共享路徑是否存在？卷影副本集及其卷影副本的狀態為何？</block>
-  <block id="15e4f602af2b3fd276e8c1abb3e1d24c" category="cell">CVO 儲存虛擬機器停止成功</block>
   <block id="4df327f108f33e6c2500a7f538a648ad" category="cell">CVO 過多 CIFS 身份驗證</block>
   <block id="6da8b96955c7e59e295e11c0f211341a" category="cell">CVO 未分配磁碟</block>
   <block id="0e932fe140878dddad130030e4c54088" category="cell">執行下列糾正措施：使用「disk show -n」指令決定哪些磁碟未分配。使用“disk assign”指令將磁碟指派給系統。</block>
@@ -10209,8 +10085,6 @@
   <block id="daf241abd3ddf3fdcfcac4e97128f387" category="cell">執行以下糾正措施：確保在其中一個活動的 Vscan 掃描程序池中配置了提到的使用者名稱和 IP 位址。使用「vserver vscan scanner pool show-active」指令檢查目前處於活動狀態的掃描器池配置。</block>
   <block id="e57596d14b25baac52672fc309c8a58d" category="cell">檢測到 CVO 病毒</block>
   <block id="5431a7feb1f4bd20d2eb82e67431449e" category="cell">Vscan 伺服器向儲存系統報告了一個錯誤。這通常表示發現了病毒。但是，Vscan 伺服器上的其他錯誤也可能導致此事件。客戶端存取該文件被拒絕。  Vscan 伺服器可能會根據其設定和配置清理、隔離或刪除該檔案。</block>
-  <block id="4263cc2b53ae23f9cc6cf513a43b5e97" category="cell">CVO 卷離線</block>
-  <block id="28b914f56ac8ad6ac5c0eb77527d0023" category="cell">CVO 容量受限</block>
   <block id="eab883150545736105e8c88087257995" category="section-title">SnapMirror業務連續性 (SMBC) 調解器日誌監視器</block>
   <block id="e0828fd72232d137dafad759271fe0fb" category="cell">已新增ONTAP調解器</block>
   <block id="46f05e41dafc7ca3fdb415dafaeadb9f" category="cell">當ONTAP調解器成功加入到叢集時，會出現此訊息。</block>
@@ -10270,16 +10144,13 @@
   <block id="fa2aee1bf59ed6d5ebff3672ad78e52a" category="cell">MetroCluster合作夥伴無法透過對等網路存取</block>
   <block id="e6ec28e0e2e9208013c2e1058800db86" category="cell">與對等集群的連線已中斷。</block>
   <block id="05b8acf883dfe256f5f39ca4014b54e1" category="cell">1) 確保連接埠連接到正確的網路/交換器。  2) 確保集群間 LIF 與對等集群連接。 3) 使用指令「cluster peer ping」確保對等叢集已啟動並正在運作。如果對等叢集發生故障，請參閱《MetroCluster災難復原指南》。</block>
-  <block id="4dcdd54705c7f20f01f094ab656a606f" category="cell">MetroCluster內部交換器所有連結均關閉</block>
   <block id="dc1ca76dfb1a12b26b8ce316f73ee2a3" category="cell">儲存交換器上的所有交換器間連結 (ISL) 均已關閉。</block>
   <block id="e83ac7645eb0fb1a3121d41f1adf11f1" category="cell">1) 修復儲存交換器上的後端結構 ISL。  2) 確保合作夥伴交換器已啟動並且其 ISL 可運作。  3) 確保中間設備（如 xWDM 設備）正常運作。</block>
   <block id="f0fa6605991a363821e648872f19cb87" category="cell">MetroCluster節點到儲存堆疊 SAS 連結斷開</block>
   <block id="73b3e7056192ed906edba7d7ad84556e" category="cell">SAS 轉接器或其連接的纜線可能故障。</block>
   <block id="ca42f2db2956c3a6e8687e547b7dbe5b" category="cell">1.驗證 SAS 適配器是否在線上且正在運作。2.驗證實體電纜連接是否安全且正常運行，如有必要，請更換電纜。3.如果 SAS 轉接器連接到磁碟架，請確保 IOM 和磁碟已正確就位。</block>
-  <block id="fed1c67608dbad055a6c51bd844faeaf" category="cell">MetroClusterFC 啟動器鏈路斷開</block>
   <block id="f4d347eaffdab4f74c5bac9af605ee25" category="cell">FC 啟動器適配器故障。</block>
   <block id="763b81593b10cd91332e0da906323146" category="cell">1.確保 FC 啟動器連結未被竄改。2.使用指令「system node run -node local -command storage show adapter」驗證 FC 啟動器適配器的運作狀態。</block>
-  <block id="4a2ab00572700e82bc134c3cf18ddd3a" category="cell">FC-VI 互連鏈路中斷</block>
   <block id="007d6763a46a9f1013a702b54eb3e48a" category="cell">FC-VI連接埠上的實體連結處於離線狀態。</block>
   <block id="3c8a727a341f3e65ef21972bd2e00049" category="cell">1.確保 FC-VI 連結未被竄改。2.使用指令「metrocluster interconnect adapter show」驗證 FC-VI 適配器的物理狀態是否為「Up」。3.如果配置包含結構交換機，請確保它們正確佈線和配置。</block>
   <block id="49eb4f5d51469f3666ba8cef7c6482dd" category="cell">MetroCluster剩餘磁碟</block>
@@ -10302,9 +10173,6 @@
   <block id="bee46e725a4b2634d2b0af990cc98636" category="cell">1) 使用指令「storage switch show -cooling」檢查儲存交換器上溫度感測器的運作狀態。  2) 驗證開關是否在建議的溫度條件下運作。</block>
   <block id="beba9a3364681a5dd20427689e22618f" category="cell">MetroCluster交換器溫度異常</block>
   <block id="b028c784c093a8b250f028da81cd5ac3" category="cell">光纖交換器上的溫度感測器會報告溫度異常。</block>
-  <block id="0a5d3748314cee07227ff41a58fcb820" category="cell">服務處理器心跳遺失</block>
-  <block id="89e7dd1914bc7aa7ba651383b401c5a7" category="cell">當ONTAP未從服務處理器 (SP) 接收到預期的「心跳」訊號時，會出現此訊息。隨著此訊息，來自SP的日誌檔案也將被發送出去以供調試。  ONTAP將重置SP以嘗試恢復通訊。  SP重新啟動時將最多兩分鐘無法使用。</block>
-  <block id="2b93885e6e9208541e7be2c4b663ce47" category="cell">聯繫NetApp技術支援。</block>
   <block id="dfb150a2ee53ff74afcec025a2b94753" category="cell">服務處理器心跳停止</block>
   <block id="79a80b3a6c91f0ab618fa82137244bac" category="cell">當ONTAP不再接收來自服務處理器 (SP) 的心跳時，就會出現此訊息。根據硬體設計，系統可能會繼續提供數據，或決定關閉以防止數據遺失或硬體損壞。系統繼續提供數據，但由於SP可能無法運作，系統無法發送設備關閉、啟動錯誤或開放韌體 (OFW) 開機自我檢測 (POST) 錯誤的通知。如果您的系統已配置為這樣做，它會產生並傳輸AutoSupport （或「回撥」）訊息給NetApp技術支援和配置的目的地。成功傳遞AutoSupport訊息可顯著提高問題的確定和解決能力。</block>
   <block id="8a80e3e94ba0d624e0fb3ffcc89f4fc9" category="cell">如果系統已關閉，請嘗試硬電源循環：將控制器從底盤拉出，再推回，然後開啟系統電源。如果電源循環後問題仍然存在，或者有任何其他需要注意的情況，請聯絡NetApp技術支援。</block>
@@ -10345,7 +10213,6 @@
   <block id="5b54c3b04831265b1d859da4050ad35f" category="paragraph">可以從Data Infrastructure Insights中找到其他支援資訊<block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block>頁。</block>
   <block id="90c8925e0cc3bad3ddb84b5af67af65a" category="paragraph">如果您擁有有效的Data Infrastructure Insights訂閱，則可以使用以下支援選項：</block>
   <block id="0af89698bf5d1150026d4fcbbcf784a6" category="inline-link-macro">支援票</block>
-  <block id="b0441ab0b89b994706e83faa77bbe107" category="paragraph"><block ref="5924baf98227cb4c4a870a2369035bbd" category="inline-link-macro-rx"></block> <block ref="de1cde84399fb2a6056b099cf302293f" category="inline-link-macro-rx"></block></block>
   <block id="d51985e049703c2b8608d2bdcb0a3479" category="inline-link">Data Infrastructure Insights支援文檔</block>
   <block id="e7611d76087ecbbfabb3ffdc7d9b6c93" category="paragraph">有關詳細信息，請參閱<block ref="e02ff98dd704948b513a359b140be8d8" category="inline-link-rx"></block>。</block>
   <block id="8cc7620b98f53d4670d8d98f87e96bb6" category="summary">採集單元問題的故障排除提示。</block>
@@ -10482,11 +10349,8 @@
   <block id="72238c7fba52a89cb558ec81f9614e14" category="list-text">按一下要修改的資料收集器左側的複選框。</block>
   <block id="7160ed89dc0c3f9785f3ac5000cec931" category="list-text">在右側的選項選單中，按一下您想要執行的選項。</block>
   <block id="2b50467575ea0e31ee278faf3e0f67a9" category="paragraph">您選擇的操作在資料收集器上執行。當您選擇刪除資料收集器時，將顯示對話框，要求您確認該操作。</block>
-  <block id="7eb410d92e2a18ab21dc72d9c0d990b0" category="summary">查看已建立的查詢</block>
   <block id="0a1aca0ce8e56ded0adb600f66ec2de7" category="doc">查看查詢</block>
-  <block id="1fc205cf7c624c62075df4662909d53d" category="paragraph">您可以查看查詢來監控您的資產，並更改查詢顯示與您的資產相關的資料的方式。</block>
   <block id="dfd32f627ae209fae0647c664a4c742a" category="list-text">登入您的Data Infrastructure Insights租戶。</block>
-  <block id="312b02ceebedb57357854deed0127398" category="list-text">按一下*查詢*並選擇*顯示所有查詢*。您可以執行下列任一操作來變更查詢的顯示方式：</block>
   <block id="d4cc08b1b6376cdc52281fccf8a163b7" category="list-text">您可以在過濾框中輸入文字進行搜索，以顯示特定的查詢。</block>
   <block id="a0d1f1cd90b97eb951e193ad01d6679d" category="list-text">您可以透過點擊列標題中的箭頭將查詢表中列的排序順序變更為升序（向上箭頭）或降序（向下箭頭）。</block>
   <block id="fa2a3440e30dd958c3218bca7dd89b7f" category="list-text">若要調整列的大小，請將滑鼠懸停在列標題上，直到出現藍色條。將滑鼠放在欄上並向右或向左拖曳。</block>
@@ -11324,9 +11188,7 @@
   <block id="949cc8d1af819d8e6ec37390121bfa5f" category="section-title">啟用 ONTAP 自主勒索軟體防護（選用）：</block>
   <block id="67a5e480424bf6f9914a3b18393465e6" category="paragraph">安全儀表板可讓您即時了解目前的安全狀況，顯示硬體和軟體磁碟區加密、防檔案竄改狀態以及叢集身分驗證方法的圖表。安全標準根據<block ref="a1c84b5f46cbbd9a263e3a5732ed7485" category="inline-link-macro-rx"></block>中定義的建議進行評估。</block>
   <block id="7b46122c94da7a23999d34f71661a1c2" category="paragraph">選擇任何加密或防檔案竄改計數，以深入了解您的環境。</block>
-  <block id="07a15244af601ef7f53e10ad7cf2a65e" category="summary">查詢庫存資產和整合指標，以監控、疑難排解和分析整個基礎架構（包括儲存、運算和網路資源）的效能。</block>
   <block id="c1dac515d770b50607db68702d91b2dd" category="doc">查詢資產和指標</block>
-  <block id="c154de8d96ee3aafd9f63d6d8b3821af" category="paragraph">查詢基礎架構的實體和虛擬資產，以監控效能、排查問題並根據自訂條件（例如註釋）執行精細化搜尋。Data Infrastructure Insights 支援跨多種資產類型（從儲存陣列和主機到應用程式和虛擬機器）的查詢，並整合來自 Kubernetes、Docker 和 ONTAP Advanced Data 的指標，從而實現全面的可視性。</block>
   <block id="a4814d069f57e94e2edb62e919af014a" category="paragraph">請注意，自動為資產指派註釋的註釋規則需要與所有人共用的查詢。有關共用查詢的更多資訊，請參閱下文。</block>
   <block id="0ee1f19142dfe0c3765dfcf205abe414" category="paragraph">所有庫存（也稱為基礎架構）資產類型（儲存、交換器、VM、Application 等）均可用於查詢、儀表板小工具和自訂資產登入頁面。可用於篩選、表達式和顯示的欄位和計數器會因資產類型而異。</block>
   <block id="b4ca152efced4e02c83a7d308fb6c8f9" category="section-title">分享查詢</block>
@@ -12287,7 +12149,6 @@
   <block id="6a46079dd2d659655fc832470519e71a" category="paragraph">選擇使用者是在下次登入時看到該訊息，還是在每次後續登入時都看到該訊息。</block>
   <block id="1ef61a1b7e25b910ec7beca0741bd208" category="paragraph">請注意，使用者必須確認登入訊息才能將其關閉。關閉後，任何其他彈出視窗（例如「最新動態」更新、「服務條款」更新等）都會顯示。</block>
   <block id="38f64824b0d19083b9c439a8b4af41e4" category="admonition">在伺服器/虛擬機器上安裝代理程式後，Data Infrastructure Insights 除了從您設定的任何資料收集器收集指標外，還會從該系統收集指標。這些指標以「節點」指標的形式收集。</block>
-  <block id="7fa36585f976625a51b4f3be0f46f0b5" category="cell">如果您擁有自訂或私人 Docker 倉庫，但尚未配置 Kubernetes Monitoring Operator 以正確識別它，則可能會出現這些錯誤。<block ref="2d47cbc88497421e2fe69677ce7d4cef" category="inline-xref-macro-rx"></block>有關配置自訂/私有倉庫的資訊。</block>
   <block id="f02e4a9177c27a051b895699ea0110ce" category="inline-link-macro">LDAP 瀏覽器</block>
   <block id="d13806041219cf369ed889a6ff834216" category="inline-link-macro">Java LDAP Explorer</block>
   <block id="32b7ad0935b353d5c424244711c6c8cd" category="list-text">在任何可以連接到 LDAP 伺服器的 Windows 機器上安裝 <block ref="bdc822b7c7d5a07392a373c8455d25e9" category="inline-link-macro-rx"></block> 或 <block ref="21af31fb3fc4369ed8be68bf76e0e99a" category="inline-link-macro-rx"></block>。</block>
@@ -15173,4 +15034,120 @@
   <block id="d23e4282924871b1db7a3f3eb6eda8b8" category="paragraph">如果您發現您的 AU 在嘗試連線至 DII 時遭到封鎖，請嘗試將這些端點新增至您的 Proxy：</block>
   <block id="5d8be06cd693cc8e589d6313aebab4bf" category="inline-link-macro">主控台設定管理員</block>
   <block id="43770a02cdae19a089a9b34e2c93ce43" category="paragraph">您可能需要的特定 NetApp Console Proxy 端點列於 <block ref="bbcee94e258ef7cfd197d85f372a9f11" category="inline-link-macro-rx"></block> 文件中。</block>
+  <block id="360c3e2bdfb29611e7cb4e0809bc32e6" category="summary">瞭解尋找正確計量、有效篩選資產，以及設定小工具以建立強大且具洞察力之儀表板的最佳實務。</block>
+  <block id="3361178ead9ae6c3a174afb325ec54bd" category="paragraph">掌握儀表板建立技巧，運用獲證實的策略，發現合適的計量，有效篩選資產，並設定小工具以獲得最大程度的洞察。這些最佳實務可協助您建立更有效的儀表板，從而交付可操作的基礎架構智慧資訊。</block>
+  <block id="59164f52f355b323b962bffa988b27eb" category="summary">掌握進階儀表板功能，包括小工具自訂、查詢篩選、變數組態、資料轉換和格式設定選項，以建立強大、靈活的視覺化效果。</block>
+  <block id="bea93c02d181fd291a218278c1717fda" category="paragraph">利用進階功能和自訂選項，充分發揮儀表板的潛力。學習如何設定小部件查詢、應用資料轉換、使用變數進行動態篩選以及實作複雜的格式設置，從而創建高效且量身定制的可視化效果，滿足您的基礎架構監控需求。</block>
+  <block id="7cac2016b152581772b16a008ff30566" category="summary">使用靈活的小工具建立自訂儀表板，以視覺化基礎架構資料、監控效能趨勢，並建立針對您特定監控需求量身打造的作業檢視。</block>
+  <block id="d309e1424628d56e19aa8d8a9d81d90f" category="paragraph">建立自訂儀表板，交付您最需要的營運洞察。您可以從多種小工具類型（包括表格、圖表、儀表和繪圖）中進行選擇，以您想要的方式視覺化基礎架構資料，從而實現更好的決策和更有效的監控。</block>
+  <block id="591d8f5600329f62ec84fffa17e17ce1" category="summary">從圖庫匯入預先建置的儀表板，快速取得業務洞察；或匯入您匯出的自訂儀表板，以便在租戶之間共享組態。</block>
+  <block id="2c7ac9dd8d7362f5fe59ebcb27cd1be2" category="paragraph">您可以從圖庫存取預先建置的儀表板，快速深入了解您的基礎架構，或匯入您從其他租戶匯出的自訂儀表板。圖庫儀表板是針對您環境的資料收集器量身打造，旨在解答特定的業務問題，而匯出的儀表板則可讓您在多個租戶之間共享有用的組態。</block>
+  <block id="a4fd59f2baa5f0c1e51b3feed01dbd00" category="paragraph">Data Infrastructure Insights 為 Kubernetes 環境提供全面的網路效能監控和視覺化映射。獲得工作負載相依性、網路延遲和流量的即時可見度，以透過詳細的流量分析，主動式識別效能問題並最佳化成本。</block>
+  <block id="4c20a220f150682167ce674fb852744f" category="summary">查詢實體和虛擬化基礎架構資產以及整合計量，以監控效能、解決問題，並使用精細的搜尋條件建立您環境的目標檢視。</block>
+  <block id="6455e55cfb4d96f13420d6323f937903" category="paragraph">使用查詢以精細層級搜尋和分析您的基礎架構資產和計量。查詢實體和虛擬庫存資產、來自 Kubernetes 和 ONTAP 的整合資料，以及效能計量，以監控您的環境、疑難排解問題，並根據您的特定條件建立目標檢視。</block>
+  <block id="9be41d01c0e4296943b2981eb5d1e292" category="paragraph">Data Infrastructure Insights 提供全面的支援選項，包括自助服務資源、社群論壇、文件和技術支援。您可以透過選取 *Help &gt; Support* 來存取這些支援資源，並考慮啟動您的支援權益，以便透過網路工單和電話支援解除鎖定完整的技術協助。</block>
+  <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link-macro">NetApp 支援網站</block>
+  <block id="bfdeb0b1a501e277287d76f249de138e" category="paragraph">您可以前往 <block ref="eeb4544bea4a2953d42cc0bd7cbc394b" category="inline-link-macro-rx"></block> 申請支援。您必須擁有作用中的 Data Infrastructure Insights 訂閱。</block>
+  <block id="bf34b52f65c53866b4ec56b6f1714223" category="paragraph">Data Infrastructure Insights 儲存工作負載安全性（原 Cloud Secure）利用先進的內部威脅偵測和可操作的情報來保護您組織的資料。獲得跨混合雲環境所有企業資料存取的集中可見度與控制，同時透過即時監控與自動化回應功能，確保達成安全性與法規遵循目標。</block>
+  <block id="c7487c4e4534fe6c3464b603a644b500" category="summary">透過靈活的共享選項控制儀表板的可見度和存取，您可以將儀表板設為私人、與特定使用者共享，或使其在整個組織內可用。</block>
+  <block id="fe38a85740db115acf23f72798135dfd" category="paragraph">透過靈活的存取管理選項，控制誰可以檢視和修改您的儀表板。在開發過程中保持儀表板的私密性，然後透過可自訂的編輯或唯讀權限與特定使用者或整個組織共享，從而在保護敏感資訊的同時促進協同作業。</block>
+  <block id="f8fb89be068ab163a2891fc505a03646" category="summary">關於 Data Infrastructure Insights 組態、設備支援、環境影響、權限和資料收集功能的常見問題。</block>
+  <block id="9b036e8159b72a8f04cf9a3452597d92" category="summary">透過綜合監控，將效能、容量、組態和組件警報整合到可操作的健全狀況評分中，從而獲得儲存環境健全狀況的統一檢視。</block>
+  <block id="98d14e0c7232b67fa30cbdfc0ccdc94f" category="paragraph">Data Infrastructure Insights 透過追蹤效能、容量、組態和元件狀態來監控儲存環境的健全狀況。系統會根據這些類別的監控警示計算統一的健全狀況評分，提供系統健全狀況的清晰可見度，並實現主動式問題解決。</block>
+  <block id="92eb58147380e57ed0e9726e5914646a" category="summary">透過 API 直接存取報表資料庫，繞過 Cognos 實作自訂整合、自動報表和進階資料分析工作流程。</block>
+  <block id="27eebcb84b54165e408af0cba31f697e" category="paragraph">透過符合 OData v4 標準的 API 直接存取 Data Infrastructure Insights 報告資料庫，繞過 Cognos 介面以獲得更大的靈活度。這能為需要以程式設計方式存取其基礎架構資料的使用者，實現自訂整合、自動化報告工作流程與進階資料分析。</block>
+  <block id="c7005dd6d6baf2982e5d9ffcb829cb28" category="paragraph">Data Infrastructure Insights 報告 API 遵循 <block ref="3174809a10586791538fc9a640526e27" category="inline-link-macro-rx"></block> （Open Data Protocol）標準來查詢報告資料庫。若要深入瞭解，請查看 OData 上的 <block ref="e667935284fd58d7e65ea97109344a3b" category="inline-link-macro-rx"></block>。</block>
+  <block id="4caa1214bcf7947aa3b1944f2b627f8e" category="summary">透過有關容量使用率、效能趨勢和資源預測的綜合報告，存取集中式儲存管理洞察，以進行主動式資料中心管理。</block>
+  <block id="7617e0ee693b6e3d48a8d71a2e0aee6e" category="paragraph">儲存管理器儀表板透過全面的報告和視覺化功能，提供對儲存環境的集中式洞察。您可以監控容量使用率、追蹤效能趨勢，並將當前計量與可接受範圍進行比較，從而為資料中心維護和資源規劃做出明智的決策。</block>
+  <block id="566a0119aeca075a5a16257cf100e3a3" category="paragraph">您可以讀取更多關於 NetApp 的隱私與安全性的資訊，請造訪 * NetApp <block ref="696d614201d0fb092abe2954dcea54e5" category="inline-link-macro-rx"></block>。</block>
+  <block id="31c512270381a100a1d6ed5460e4382a" category="cell">如果您擁有自訂或私人 Docker 倉庫，但尚未配置 Kubernetes Monitoring Operator 以正確識別它，則可能會出現這些錯誤。<block ref="64c2e35c96e92fc99426098fae703fff" category="inline-xref-macro-rx"></block>有關配置自訂/私有倉庫的資訊。</block>
+  <block id="f554903b3d1b286e454f891763c81da9" category="list-text">_異常偵測_ 監控會在您的資料模式變更時發出警報</block>
+  <block id="9051434637cfa9e248de3baeb318a490" category="list-text">_Attribute_ 監控器會在物件的屬性發生變更時發出警報，例如將物件移至新的資料中心</block>
+  <block id="385b67ab6ca42f248cf191cad11f8590" category="section-title">屬性監控</block>
+  <block id="14f027f6cd5c2f1c17833aa6882d000c" category="paragraph">屬性監控器會在資產在資料中心之間移動、儲存資源池未加密或發生任何屬性修改時自動向您的團隊發出警報。這有助於維護組態基線，並確保在新部署或變更過程中不會出現任何疏漏。</block>
+  <block id="e3c72e67d753ce9f092e160bc745ccd6" category="paragraph">只需選擇物件類型，然後選擇要監控變更的屬性即可。</block>
+  <block id="94b5c603b94ad9953cbb1dee2b4cf954" category="summary">建立自訂查詢，以搜尋、篩選和分析您的基礎架構資產和計量，並可進行精細控制、靈活分組和自訂結果顯示。</block>
+  <block id="18c106fcc3adf5472ab98c7333036047" category="paragraph">建立強大的查詢，利用靈活的篩選、分組和排序功能，以精細的層級搜尋您的基礎架構資產。建立目標明確的搜尋，幫助您識別特定資產、分析效能計量，並以所需方式組織結果。</block>
+  <block id="140ffb892893627ffc9fe504721da885" category="summary">建立虛擬機器效能儀表板的逐步教學，其中包含用於比較 VM 和儲存設備計量的表格、圖表與小工具。</block>
+  <block id="ab07f57b30eb8bfa03c5353bf0016559" category="paragraph">透過本逐步教學課程，學習如何建立全面的虛擬機器效能儀表板。您將建立視覺化 VM 效能資料的小工具，比較後端儲存設備計量與前端 VM 效能，並分析 VM 延遲與 I/O 需求之間的關係，以獲得更佳的營運洞察。</block>
+  <block id="ff069b0a3c4d8c2f8a9816ed0e951337" category="summary">使用非同步處理將查詢結果、儀表板表格、活動網頁和其他資料匯出至 .CSV 檔案，以便進行外部分析、報告以及與其他應用程式整合。</block>
+  <block id="402a392b30b81bdfa286400172e0fc99" category="paragraph">將查詢、儀表板表格元件和活動網頁表格中的資料匯出為 .CSV 檔案，以便進行外部分析、報告以及與其他應用程式整合。非同步匯出程序可讓您在背景處理大型資料集的同時繼續工作。</block>
+  <block id="506effe79d088ec72f206c9cf4f7f9ca" category="summary">透過變更條件和欄來修改現有查詢，並提供靈活的儲存選項來更新、重新命名或建立新版本，以及在不再需要時刪除查詢的選項。</block>
+  <block id="8966db8d38f674ca3e6a673d94ec0ba0" category="paragraph">透過修改搜尋條件、新增或移除欄位，以及從靈活的儲存選項中進行選擇，來有效管理您的查詢。更新現有查詢、建立新版本或刪除不再需要的查詢，以保持查詢程式庫的井然有序和最新狀態。</block>
+  <block id="41e83d18322dbc5aaec1132a91237362" category="summary">使用以查詢為基礎的批次操作，有效地管理跨多個資產的應用程式和註釋，無需手冊、個別的資產組態即可分配或移除它們。</block>
+  <block id="03b78fe010c338397f7f3d3d5552158e" category="paragraph">透過使用查詢對應用程式和註解執行批次操作，簡化資產管理。無需手動逐一設定每個資產，即可在單一操作中有效率地跨資產群組指派或移除多個應用程式和註解。</block>
+  <block id="3fd3992b7814181d5cae4fccfbb115de" category="summary">使用文字選取或一鍵複製將表格值複製到剪貼簿，以便有效率地進行資料傳輸至搜尋欄位和外部應用程式。</block>
+  <block id="0beec3ed86f34c564a2f6cdac9dffe96" category="paragraph">透過將表格值直接複製到剪貼簿，簡化您的工作流程，以便在搜尋或外部應用程式中使用。您可以選擇手冊文字選取，或是針對具有資產連結的單一值欄位進行便利的一鍵複製。</block>
+  <block id="385c4d3dc67a15a19f56a119c562c877" category="summary">審查系統定義的監控，以了解計量、記錄、屬性和資料收集條件。</block>
+  <block id="4da647a72f089c854caa1635f4cd707d" category="paragraph">Data Infrastructure Insights 包含系統定義的計量、日誌、屬性和資料收集條件監控器。可用的系統監控器取決於您租戶中存在的資料收集器。因此，隨著資料收集器的新增或其組態的變更，Data Infrastructure Insights 中可用的監控器可能會發生變化。</block>
+  <block id="fbaaf41d1a467f87cb5015ab3f6670b9" category="paragraph">系統定義的監控器由預先定義的計量或屬性與條件，以及預設執行摘要和修正措施所組成，這些內容無法修改。您_可以_修改系統定義監控器的通知接收者清單。若要檢視計量或屬性、條件、執行摘要和修正措施，或修改接收者清單，請開啟系統定義的監控群組，然後按一下清單中的監控名稱。</block>
+  <block id="94a7feec744d5934cb5393c1a80098cb" category="list-text">*CVO Infrastructure* 和 *CVO Workload Examples* 包含 Cloud Volumes ONTAP 的對應監視器。</block>
+  <block id="77a7f7cf9e0ac7f6a7e0aac32103d597" category="list-text">不同監控的預設狀態有所不同。請參考下表，並在啟用通知前審查監控。</block>
+  <block id="769fced2b5a3129c69f11bd969250729" category="cell">ONTAP 磁碟區容量已滿</block>
+  <block id="15bdba2f70b788ec5d95d638ac4f39f2" category="cell">磁碟櫃風扇故障</block>
+  <block id="f5c981b9c914bdb991c7ddeb629ab22d" category="cell">儲存資源池歸還失敗</block>
+  <block id="296717e41f92fc3d5f59ae7fbd5899ca" category="cell">NVMe-oF 授權寬限期作用中</block>
+  <block id="70ca5c6482ee7c6c0c23593e229f0d48" category="cell">NVMe-oF 授權寬限期已過期</block>
+  <block id="26f823d1d9ca59c28581f624495f382d" category="cell">NVMe-oF 授權寬限期開始</block>
+  <block id="755353c7d5c0cfa9bced40370d1e5027" category="cell">儲存資源池遷移失敗</block>
+  <block id="ae9bdf5310b28f8592f7eb4497d4d467" category="cell">Kubernetes 持續性磁碟區回收失敗</block>
+  <block id="d48a02a28387c063ae4d2401607d0a97" category="cell">Kubernetes Pod 崩潰循環退避</block>
+  <block id="21c2be0338cc7660ab0c80fc36e87583" category="cell">Kubernetes 作業失敗</block>
+  <block id="2a11d3d9c8439be52c30f18a0c0471ce" category="cell">已探索磁碟區</block>
+  <block id="2791bee7fd296dbe3b15baa72d61e0d0" category="cell">磁碟區已修改</block>
+  <block id="0d815ca4e95c648c8c9ba04f60d37fa5" category="cell">已探索節點</block>
+  <block id="13f0435fb2e980b7bc2c3b6c259bdc5d" category="cell">節點已移除</block>
+  <block id="67bff7ce16ae81b8b1a154ee5e390528" category="section-title">屬性監控器</block>
+  <block id="8d4415e37facfc24ec62427ef73b5ca5" category="paragraph">屬性監控會評估針對物件所報告的組態屬性。與計量監控不同，它們不會將時間序列計量與數值臨界值進行比較。當報告的屬性符合不合規或無法使用的狀態時，下列每個條件都會產生 _警告_ 警報。</block>
+  <block id="e8c19c7a42ec878ea98808ecc703e56c" category="paragraph">先前的獨立式 ONTAP Essentials 安全性計量監控已被合併的 *ONTAP Cluster Misconfigured* 和 *ONTAP Storage Misconfigured* 屬性監控取代。對應的 CVO 監控對 Cloud Volumes ONTAP 套用相同的檢查。</block>
+  <block id="fcf0bb8f60a35474e0a8e560834f5790" category="section-title">ONTAP 屬性監視器</block>
+  <block id="f7ccd07b3345922f6b1db931d8cc767a" category="cell">預設狀態</block>
+  <block id="229eb04083e06f419f9ac494329f957d" category="cell">狀況</block>
+  <block id="7ef46d0c931651346a1d7e3258e3f511" category="cell">ONTAP 叢集設定錯誤</block>
+  <block id="32c3164a94bfcc777dde834487e62809" category="cell">ONTAP 基礎架構</block>
+  <block id="827b17567fbb2890c2069d12f0767ff9" category="cell">當偵測到下列 12 項安全性條件中的一或多項時發出警報：* 未設定 AutoSupport HTTPS * 已啟用 Web HTTP * SSH 未受保護 * 登入橫幅已停用 * 叢集對等通訊未加密 * 憑證發行者為自簽 * 已啟用預設本機系統管理員 * FIPS 已停用 * 記錄轉送未加密 * 已啟用 MD5 密碼雜湊 * 已啟用遠端 Shell（RSH） * 已啟用 Telnet</block>
+  <block id="8fd0239c9da66e982882d7e23d443cac" category="cell">審查警報中受影響的屬性。停用不安全的協定和密碼雜湊，確保 SSH 和對等通訊的安全，啟用必要的安全性控制，並根據貴組織的安全性原則替換自我簽署憑證。</block>
+  <block id="f597ad667263a61df5029ab2cbdae8e3" category="cell">ONTAP 儲存設備設定錯誤</block>
+  <block id="dd02c500bfffdae72301d0f84293b000" category="cell">當 ONTAP 儲存虛擬機器的稽核記錄已停用、SSH 不安全，或其登入橫幅已停用時發出警報。</block>
+  <block id="25626f0fda05b1f13b64af7bcf4feb5a" category="cell">啟用儲存虛擬機器稽核記錄、保護 SSH 安全，並設定適當的登入橫幅。</block>
+  <block id="4d8a0db671d9c980856b4874e82ca109" category="cell">ONTAP 叢集缺少備援裝置磁碟</block>
+  <block id="7c8fc6eb72f732285ac9ad185b2342c1" category="cell">當叢集報告備援裝置磁碟不足時發出警報。</block>
+  <block id="708e1f9e68570a06b2cf940950cb4696" category="cell">按節點審查備援裝置磁碟，並新增相容的備援裝置容量以維護資料保護。</block>
+  <block id="31f80eeb5a483dd97e15b21d8c5cbb94" category="cell">ONTAP 儲存服務無法使用</block>
+  <block id="5951ac71ce3e3a74d6315d409967bd7c" category="cell">ONTAP 工作負載範例</block>
+  <block id="26877856f1860027ed3144e6439bf887" category="cell">當 ONTAP 儲存虛擬機器上啟用的 FCP 或 iSCSI 服務無法使用時發出警報。</block>
+  <block id="46a31be06e4d3f54c2e4dbff7efdfc86" category="cell">驗證儲存虛擬機器、協定和資料 LIF 的狀態。審查最近的 ONTAP 健全狀況和事件訊息，並還原受影響的 SAN 服務。</block>
+  <block id="18648e905a497df4d67574485011574c" category="cell">ONTAP 節點設定錯誤</block>
+  <block id="e99180abf47a8b3a856e0bcb2656990a" category="cell">暫停</block>
+  <block id="eef53295c2d8dbc3c758579fb90efe8b" category="cell">當 ONTAP 節點上的 Cisco Discovery Protocol （CDP） 停用時發出警報。</block>
+  <block id="6027cb73281e7426a311f219c5df0c47" category="cell">驗證節點的 CDP 設定和網路連接埠狀態，然後在需要進行網路探索和拓撲監控的地方啟用 CDP。</block>
+  <block id="1ea5f19553751aa3c40a40815dca4cf9" category="section-title">Cloud Volumes ONTAP 屬性監控</block>
+  <block id="96cf64dffac9fa0ab1eedd0288df27ff" category="cell">CVO 叢集設定錯誤</block>
+  <block id="6a55fba9f7947c078f548fe31335bced" category="cell">CVO 基礎架構</block>
+  <block id="237a0e09d7467ce49d5c4853d03f37dc" category="cell">將 *ONTAP Cluster Misconfigured* 中所述的叢集安全性組態檢查套用至 Cloud Volumes ONTAP。</block>
+  <block id="7e318ce588b89f2edf330b8442d50c4a" category="cell">審查受影響的屬性，並修正回報的不安全或不符合法規遵循的叢集設定。</block>
+  <block id="5049ecd2984ab56c7d0a004343196fc6" category="cell">CVO 儲存設備設定錯誤</block>
+  <block id="1c2bd79ae20624a346e78a68bc223e69" category="cell">當 Cloud Volumes ONTAP 儲存 VM 的稽核記錄已停用、SSH 不安全或其登入橫幅被停用時發出警報。</block>
+  <block id="01c7962a17601fc2b8a0ab775bcfb02b" category="cell">CVO 節點設定錯誤</block>
+  <block id="00ce710c6411eb7b4d2a0bb4f27c43a0" category="cell">CVO 工作負載範例</block>
+  <block id="747205bf300c2d15f6fa11222ad3af79" category="cell">當 Cloud Volumes ONTAP 節點上的 CDP 停用時發出警報。</block>
+  <block id="d53a495e5e63fac954715333ef66f37e" category="cell">驗證節點的 CDP 和網路設定，然後視需要啟用 CDP。</block>
+  <block id="934d4d27877f2d2038c8d2281b0f3517" category="section-title">NTP 組態監控器</block>
+  <block id="e7d378f90fce82171d93a76f67ab11d0" category="paragraph">以下 NTP 監視器仍可作為 ONTAP 和 Cloud Volumes ONTAP 的獨立式系統定義監視器使用。</block>
+  <block id="419f3742e6de8e0ec4b22cce005e7630" category="cell">平台</block>
+  <block id="253b40ae359ba25b56231803430c4873" category="cell">ONTAP</block>
+  <block id="390cc464174e60f3f3ed71b9b71e7d42" category="cell">該叢集未設定任何 NTP 伺服器。為了實現備援和最佳服務，NetApp 建議至少將三個 NTP 伺服器與該叢集關聯。</block>
+  <block id="2025a1261ded8e1a3ba97346eae15a6c" category="cell">將 NTP 伺服器與叢集建立關聯，請使用<block ref="9f88c6f56fe590495515877ac522f789" prefix=" " category="inline-code"></block>。</block>
+  <block id="f68699e24cec33116be3d5736173dea6" category="cell">此叢集設定的 NTP 伺服器少於三個。</block>
+  <block id="ad4e8b41fab2260f4d764a156ac61060" category="cell">使用<block ref="9f88c6f56fe590495515877ac522f789" prefix=" " category="inline-code"></block>將其他 NTP 伺服器與叢集建立關聯。</block>
+  <block id="e1ca7bde74e667a35e1773ff902315de" category="cell">CVO 未配置 NTP 伺服器</block>
+  <block id="99be105995c1432d7ee18819af846062" category="cell">此叢集未配置 NTP 伺服器。</block>
+  <block id="ca889c8c720925f08a8acef1e374fd60" category="cell">CVO NTP 伺服器數量偏低</block>
+  <block id="7a6471cab127882545e3d25f82963df4" category="cell">MetroCluster 交換器間所有連結斷開</block>
+  <block id="dfea7fd89fb7e311c7654e80d3228164" category="cell">MetroCluster FC 啟動器連結中斷</block>
+  <block id="b5c80c6cca489dd4cb9ebfecd90dc471" category="cell">MetroCluster FC-VI 互連鏈路中斷</block>
+  <block id="0cdbe7f6c24e5642024dbf064cd1949d" category="paragraph"><block ref="d2933953df48fc71d353e0e203ca566f" category="inline-link-macro-rx"></block> <block ref="b887ae4e758496213d48180a2b0d3cf3" category="inline-link-macro-rx"></block></block>
+  <block id="479ff61f7565ededef051977562ac598" category="summary">檢視和管理已儲存的查詢，並提供可自訂的顯示選項，包括篩選、排序和欄排列，以便有效率地進行查詢組織和存取。</block>
+  <block id="305cab7c23a541c58dacb7e8fc2b8e38" category="paragraph">透過查詢介面存取和管理您已儲存的查詢，您可以在其中篩選、排序和自訂顯示，以便有效地組織和尋找資產監控和分析所需的查詢。</block>
+  <block id="475f19c6d481aef4461b760733bc4fea" category="list-text">點擊 *探索* 並選擇 *所有指標查詢*。您可以透過下列任一方式變更查詢的顯示方式：</block>
 </blocks>

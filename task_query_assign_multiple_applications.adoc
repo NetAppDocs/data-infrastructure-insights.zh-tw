@@ -1,16 +1,20 @@
 ---
 sidebar: sidebar 
 permalink: task_query_assign_multiple_applications.html 
-summary: 使用查詢為物件指派多個應用程式或註釋，或從物件中刪除多個應用程式或註釋。 
+summary: 使用以查詢為基礎的批次操作，有效地管理跨多個資產的應用程式和註釋，無需手冊、個別的資產組態即可分配或移除它們。 
 keywords: query, queries, application, annotation, multiple 
 ---
 = 將多個應用程式指派給資產或從資產中刪除多個應用程式
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]
-您可以分配多個link:task_create_application.html["應用程式"]使用查詢從資產中新增或刪除多個應用程序，而不必手動分配或刪除它們。
+透過使用查詢對應用程式和註解執行批次操作，簡化資產管理。無需手動逐一設定每個資產，即可在單一操作中有效率地跨資產群組指派或移除多個應用程式和註解。
 
 
 NOTE: 您可以按照以下步驟新增或刪除link:task_defining_annotations.html["註解"]以同樣的方式。

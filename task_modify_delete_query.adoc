@@ -1,16 +1,20 @@
 ---
 sidebar: sidebar 
 permalink: task_modify_delete_query.html 
-summary: 修改或刪除查詢 
+summary: 透過變更條件和欄來修改現有查詢，並提供靈活的儲存選項來更新、重新命名或建立新版本，以及在不再需要時刪除查詢的選項。 
 keywords: query, queries, modify, edit, delete, remove 
 ---
 = 修改或刪除查詢
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]
-當您想要變更所查詢資產的搜尋條件時，您可以變更與查詢關聯的條件。
+透過修改搜尋條件、新增或移除欄位，以及從靈活的儲存選項中進行選擇，來有效管理您的查詢。更新現有查詢、建立新版本或刪除不再需要的查詢，以保持查詢程式庫的井然有序和最新狀態。
 
 
 

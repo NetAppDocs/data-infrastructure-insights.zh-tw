@@ -1,16 +1,20 @@
 ---
 sidebar: sidebar 
 permalink: task_export_query_results.html 
-summary: 如何將查詢結果匯出到 .csv 文件 
+summary: 使用非同步處理將查詢結果、儀表板表格、活動網頁和其他資料匯出至 .CSV 檔案，以便進行外部分析、報告以及與其他應用程式整合。 
 keywords: query, queries, export, csv 
 ---
 = 將查詢結果匯出到 .CSV 文件
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]
-您可以將任何查詢的結果匯出到 .CSV 文件，這將允許您分析資料或將其匯入到另一個應用程式中。
+將查詢、儀表板表格元件和活動網頁表格中的資料匯出為 .CSV 檔案，以便進行外部分析、報告以及與其他應用程式整合。非同步匯出程序可讓您在背景處理大型資料集的同時繼續工作。
 
 .步驟
 . 登入Data Infrastructure Insights。

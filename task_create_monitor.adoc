@@ -49,6 +49,8 @@ image:Monitor_log_or_metric.png["選擇系統或日誌監視器"]
 +
 ** _Metric_ 監控與基礎設施或效能相關的觸發事件的警報
 ** _Log_ 監控與日誌相關的活動警報
+** _異常偵測_ 監控會在您的資料模式變更時發出警報
+** _Attribute_ 監控器會在物件的屬性發生變更時發出警報，例如將物件移至新的資料中心
 
 
 +
@@ -171,6 +173,17 @@ image:AnomalyDetectionMonitorMetricChoosing.png["用於異常檢測的指標過�
 
 
 image:AnomalyDetectionMonitorDefineConditions.png["定義觸發異常檢測的條件"]
+
+
+
+[[attribute-monitor]]
+=== 屬性監控
+
+屬性監控器會在資產在資料中心之間移動、儲存資源池未加密或發生任何屬性修改時自動向您的團隊發出警報。這有助於維護組態基線，並確保在新部署或變更過程中不會出現任何疏漏。
+
+image:attribute_monitor_in_list.png["屬性監視器已新增至監視器類型"]
+
+只需選擇物件類型，然後選擇要監控變更的屬性即可。
 
 
 

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reporting_querying_database.html 
-summary: 使用Data Infrastructure InsightsAPI 直接查詢報表資料庫。 
+summary: 透過 API 直接存取報表資料庫，繞過 Cognos 實作自訂整合、自動報表和進階資料分析工作流程。 
 keywords: reporting, cognos, data warehouse, dwh, API 
 ---
 = 透過 API 存取報告資料庫
@@ -14,7 +14,7 @@ keywords: reporting, cognos, data warehouse, dwh, API
 
 
 [role="lead"]
-Data Infrastructure Insights強大的 API 允許使用者直接查詢Data Infrastructure Insights Reporting 資料庫，而無需經過 Cognos Reporting 環境。
+透過符合 OData v4 標準的 API 直接存取 Data Infrastructure Insights 報告資料庫，繞過 Cognos 介面以獲得更大的靈活度。這能為需要以程式設計方式存取其基礎架構資料的使用者，實現自訂整合、自動化報告工作流程與進階資料分析。
 
 
 NOTE: 本文檔涉及Data Infrastructure Insights報告功能，該功能在Data Infrastructure Insights高級版中提供。
@@ -24,7 +24,7 @@ NOTE: 本文檔涉及Data Infrastructure Insights報告功能，該功能在Data
 [[odata]]
 == 奧達塔
 
-Data Infrastructure Insights報告 API 遵循link:https://www.odata.org/["OData v4"]（開放資料協定）標準用於查詢報告資料庫。如需了解更多信息或了解更多信息，請查看link:https://www.odata.org/getting-started/basic-tutorial/["本教程"]在 OData 上。
+Data Infrastructure Insights 報告 API 遵循 link:https://www.odata.org/["OData v4"] （Open Data Protocol）標準來查詢報告資料庫。若要深入瞭解，請查看 OData 上的 link:https://www.odata.org/getting-started/basic-tutorial/["本教程"]。
 
 所有請求均以 url _\https://< Data Infrastructure Insights URL>/rest/v1/dwh-management/odata_ 開頭
 

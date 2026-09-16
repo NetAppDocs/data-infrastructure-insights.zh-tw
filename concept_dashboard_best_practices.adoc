@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept_dashboard_best_practices.html 
-summary: 充分利用儀表板的最佳實踐 
+summary: 瞭解尋找正確計量、有效篩選資產，以及設定小工具以建立強大且具洞察力之儀表板的最佳實務。 
 keywords: dashboard, hints, tips, best practice, widgets, metrics, 
 ---
 = 儀表板和小部件的最佳實踐
@@ -14,7 +14,7 @@ keywords: dashboard, hints, tips, best practice, widgets, metrics,
 
 
 [role="lead"]
-幫助您充分利用儀表板和小部件的強大功能的提示和技巧。
+掌握儀表板建立技巧，運用獲證實的策略，發現合適的計量，有效篩選資產，並設定小工具以獲得最大程度的洞察。這些最佳實務可協助您建立更有效的儀表板，從而交付可操作的基礎架構智慧資訊。
 
 
 

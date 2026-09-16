@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: monitor_infrastructure_health.html 
 keywords: infra, infrastructure, health, monitor 
-summary: 根據效能、容量、配置和組件警報透過統一評分來監控基礎設施健康狀況，以便主動解決問題。 
+summary: 透過綜合監控，將效能、容量、組態和組件警報整合到可操作的健全狀況評分中，從而獲得儲存環境健全狀況的統一檢視。 
 ---
 = 監控基礎設施健康狀況
 :hardbreaks:
@@ -14,15 +14,12 @@ summary: 根據效能、容量、配置和組件警報透過統一評分來監�
 
 
 [role="lead"]
-Data Infrastructure Insights提供全面的基礎設施健康監控，可追蹤儲存環境的效能、容量、配置和元件狀態。健康分數是根據這些類別的監控警報計算得出的，為您提供系統健康狀況的統一視圖並實現主動解決問題。
+Data Infrastructure Insights 透過追蹤效能、容量、組態和元件狀態來監控儲存環境的健全狀況。系統會根據這些類別的監控警示計算統一的健全狀況評分，提供系統健全狀況的清晰可見度，並實現主動式問題解決。
 
 
 
 [[the-infrastructure-health-dashboard]]
 == 基礎設施健康儀表板
-
-
-NOTE: 監控基礎設施健康狀況link:concept_preview_features.html["預覽"]功能，並且可能會發生變化。
 
 導航至*可觀察性>分析*並選擇*基礎設施健康*。儀表板根據如下所述的監控警報類別和分數提供系統健康狀況的概述。在頂部設置過濾器以縮小調查範圍。
 

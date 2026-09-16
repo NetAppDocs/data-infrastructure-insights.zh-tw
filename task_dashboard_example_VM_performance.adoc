@@ -1,16 +1,20 @@
 ---
 sidebar: sidebar 
 permalink: task_dashboard_example_VM_performance.html 
-summary: 反白虛擬機器效能的儀表板範例。 
+summary: 建立虛擬機器效能儀表板的逐步教學，其中包含用於比較 VM 和儲存設備計量的表格、圖表與小工具。 
 keywords: dashboard, widget, custom, example, virtual machine, vm, performance 
 ---
 = 儀表板範例：虛擬機器效能
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]
-當今的 IT 營運面臨許多挑戰。管理員需要用更少的資源做更多的事情，並且必須全面了解您的動態資料中心。在此範例中，我們將向您展示如何建立一個帶有小部件的儀表板，該儀表板可讓您深入了解租戶上的虛擬機器 (VM) 效能的操作。透過遵循此範例並建立小部件來滿足您自己的特定需求，您可以執行諸如可視化後端儲存效能與前端虛擬機器效能的比較，或查看 VM 延遲與 I/O 需求等操作。
+透過本逐步教學課程，學習如何建立全面的虛擬機器效能儀表板。您將建立視覺化 VM 效能資料的小工具，比較後端儲存設備計量與前端 VM 效能，並分析 VM 延遲與 I/O 需求之間的關係，以獲得更佳的營運洞察。
 
 .關於此任務
 在這裡，我們將建立一個虛擬機器效能儀表板，其中包含以下內容：

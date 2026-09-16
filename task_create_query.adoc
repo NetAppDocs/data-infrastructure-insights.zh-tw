@@ -1,16 +1,20 @@
 ---
 sidebar: sidebar 
 permalink: task_create_query.html 
-summary: 查詢可讓您快速輕鬆地識別感興趣的資產和指標。 
+summary: 建立自訂查詢，以搜尋、篩選和分析您的基礎架構資產和計量，並可進行精細控制、靈活分組和自訂結果顯示。 
 keywords: query, queries 
 ---
 = 建立查詢
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]
-透過查詢，您可以在細微層級搜尋租用戶上的資產，從而可以篩選所需的資料並根據您的喜好對結果進行排序。
+建立強大的查詢，利用靈活的篩選、分組和排序功能，以精細的層級搜尋您的基礎架構資產。建立目標明確的搜尋，幫助您識別特定資產、分析效能計量，並以所需方式組織結果。
 
 例如，您可以為_volumes_建立查詢，新增一個篩選器來尋找與所選磁碟區關聯的特定_storages_，新增另一個篩選器來尋找所選儲存體上的特定_annotation_（例如「Tier 1」），最後新增另一個篩選器來尋找所有_IOPS - 讀取（IO/s）_大於 25 的儲存。當顯示結果時，您可以按升序或降序對與查詢相關的資訊列進行排序。
 

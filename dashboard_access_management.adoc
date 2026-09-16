@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: dashboard_access_management.html 
-summary: 您可以確定所建立的儀表板是公共的還是私有的。 
+summary: 透過靈活的共享選項控制儀表板的可見度和存取，您可以將儀表板設為私人、與特定使用者共享，或使其在整個組織內可用。 
 keywords: dashboard, public, shared, private 
 ---
 = 儀表板存取管理
@@ -14,7 +14,7 @@ keywords: dashboard, public, shared, private
 
 
 [role="lead"]
-Data Infrastructure Insights現在可以讓您更好地控制對您建立的儀表板的存取。您可以選擇誰可以修改您的圖表。您可以控制潛在敏感資訊的暴露。將儀表板保持為私有狀態可讓您完成視覺化工作，直到組織中的其他人可以使用它們為止。
+透過靈活的存取管理選項，控制誰可以檢視和修改您的儀表板。在開發過程中保持儀表板的私密性，然後透過可自訂的編輯或唯讀權限與特定使用者或整個組織共享，從而在保護敏感資訊的同時促進協同作業。
 
 image:Dashboard_Sharing_Options.png["儀表板共享選項，寬度=300"]
 

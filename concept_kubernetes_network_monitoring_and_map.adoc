@@ -7,10 +7,14 @@ summary: 介紹 Kubernetes 工作負載依賴關係和流程，並重點介紹�
 = Kubernetes 網路效能監控與映射
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]
-Kubernetes 網路效能監控和映射功能透過映射服務（也稱為工作負載）之間的依賴關係來簡化故障排除，並提供對網路效能延遲和異常的即時可見性，以便在效能問題影響使用者之前識別它們。此功能透過分析和審核 Kubernetes 流量來幫助組織降低整體成本。
+Data Infrastructure Insights 為 Kubernetes 環境提供全面的網路效能監控和視覺化映射。獲得工作負載相依性、網路延遲和流量的即時可見度，以透過詳細的流量分析，主動式識別效能問題並最佳化成本。
 
 主要特點：• 工作負載圖顯示 Kubernetes 工作負載依賴關係和流程，並反白顯示網路和效能問題。  • 監控 Kubernetes pod、工作負載和節點之間的網路流量；識別流量和延遲問題的來源。  • 透過分析入口、出口、跨區域和跨區域網路流量來降低整體成本。
 

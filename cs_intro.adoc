@@ -7,10 +7,14 @@ summary: 利用儲存工作負載安全功能的內部威脅檢測、跨混合�
 = 關於儲存工作負載安全
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]
-Data Infrastructure Insights儲存工作負載安全（以前稱為Cloud Secure）可協助您透過有關內部威脅的可操作情報來保護您的資料。它提供跨混合雲環境的所有公司資料存取的集中可視性和控制，以確保滿足安全性和合規性目標。
+Data Infrastructure Insights 儲存工作負載安全性（原 Cloud Secure）利用先進的內部威脅偵測和可操作的情報來保護您組織的資料。獲得跨混合雲環境所有企業資料存取的集中可見度與控制，同時透過即時監控與自動化回應功能，確保達成安全性與法規遵循目標。
 
 
 

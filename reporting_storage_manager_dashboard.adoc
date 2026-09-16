@@ -1,16 +1,20 @@
 ---
 sidebar: sidebar 
 permalink: reporting_storage_manager_dashboard.html 
-summary: 您可以使用儲存管理器儀表板來管理您的日常儲存服務。 
+summary: 透過有關容量使用率、效能趨勢和資源預測的綜合報告，存取集中式儲存管理洞察，以進行主動式資料中心管理。 
 keywords: reporting, cognos, data warehouse, dwh, smd, storage manager dashboard 
 ---
 = 儲存管理器儀表板
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]
-儲存管理器儀表板為您提供了集中視覺化功能，使您能夠將一段時間內的資源使用情況與可接受範圍和前幾天的活動進行比較和對比。僅顯示儲存服務的關鍵效能指標，您就可以決定如何維護資料中心。
+儲存管理器儀表板透過全面的報告和視覺化功能，提供對儲存環境的集中式洞察。您可以監控容量使用率、追蹤效能趨勢，並將當前計量與可接受範圍進行比較，從而為資料中心維護和資源規劃做出明智的決策。
 
 
 NOTE: 報告功能可在Data Infrastructure Insights中使用link:concept_subscribing_to_cloud_insights.html["高級版"]。

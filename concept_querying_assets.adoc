@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept_querying_assets.html 
-summary: 查詢庫存資產和整合指標，以監控、疑難排解和分析整個基礎架構（包括儲存、運算和網路資源）的效能。 
+summary: 查詢實體和虛擬化基礎架構資產以及整合計量，以監控效能、解決問題，並使用精細的搜尋條件建立您環境的目標檢視。 
 keywords: query, queries, Application, Datastore, Disk, Fabric, Generic Device, Host, Internal Volume, iSCSI, Network, Portal, Path, Port, Qtree, Quota, Share, Storage, Node, Pool, SVM, Switch, Tape, VMDK, Virtual Machine, VM, Volume, Zone, Member 
 ---
 = 查詢資產和指標
@@ -14,7 +14,7 @@ keywords: query, queries, Application, Datastore, Disk, Fabric, Generic Device, 
 
 
 [role="lead"]
-查詢基礎架構的實體和虛擬資產，以監控效能、排查問題並根據自訂條件（例如註釋）執行精細化搜尋。Data Infrastructure Insights 支援跨多種資產類型（從儲存陣列和主機到應用程式和虛擬機器）的查詢，並整合來自 Kubernetes、Docker 和 ONTAP Advanced Data 的指標，從而實現全面的可視性。
+使用查詢以精細層級搜尋和分析您的基礎架構資產和計量。查詢實體和虛擬庫存資產、來自 Kubernetes 和 ONTAP 的整合資料，以及效能計量，以監控您的環境、疑難排解問題，並根據您的特定條件建立目標檢視。
 
 請注意，自動為資產指派註釋的註釋規則需要與所有人共用的查詢。有關共用查詢的更多資訊，請參閱下文。
 

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept_dashboards_overview.html 
-summary: Data Infrastructure Insights中的儀表板概述。 
+summary: 使用靈活的小工具建立自訂儀表板，以視覺化基礎架構資料、監控效能趨勢，並建立針對您特定監控需求量身打造的作業檢視。 
 keywords: dashboard, widget, custom, view, data 
 ---
 = 儀表板概述
@@ -14,7 +14,7 @@ keywords: dashboard, widget, custom, view, data
 
 
 [role="lead"]
-Data Infrastructure Insights為使用者提供了建立基礎設施資料操作視圖的靈活性，讓您可以使用各種小部件建立自訂儀表板，每個小工具都為顯示和繪製資料圖表提供了廣泛的靈活性。
+建立自訂儀表板，交付您最需要的營運洞察。您可以從多種小工具類型（包括表格、圖表、儀表和繪圖）中進行選擇，以您想要的方式視覺化基礎架構資料，從而實現更好的決策和更有效的監控。
 
 
 IMPORTANT: 這些部分中的範例僅用於解釋目的，並未涵蓋所有可能的情況。這裡的概念和步驟可用於建立您自己的儀表板，以突出顯示特定於您的特定需求的資料。
