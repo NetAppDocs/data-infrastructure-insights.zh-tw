@@ -15170,4 +15170,7 @@
   <block id="d05c002809e2eff8dbbef3f837ebccae" category="paragraph"><block ref="d05c002809e2eff8dbbef3f837ebccae" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0b67caee179a4206a762e287d0cc0b59" category="inline-image-macro">活動網頁編輯模式，寬度=200</block>
   <block id="2676c87e0e32e08b02693582de233efc" category="paragraph"><block ref="2676c87e0e32e08b02693582de233efc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d23e4282924871b1db7a3f3eb6eda8b8" category="paragraph">如果您發現您的 AU 在嘗試連線至 DII 時遭到封鎖，請嘗試將這些端點新增至您的 Proxy：</block>
+  <block id="5d8be06cd693cc8e589d6313aebab4bf" category="inline-link-macro">主控台設定管理員</block>
+  <block id="43770a02cdae19a089a9b34e2c93ce43" category="paragraph">您可能需要的特定 NetApp Console Proxy 端點列於 <block ref="bbcee94e258ef7cfd197d85f372a9f11" category="inline-link-macro-rx"></block> 文件中。</block>
 </blocks>

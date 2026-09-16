@@ -7,6 +7,10 @@ summary: 在 Windows 和 Linux 上安裝、解除安裝、設定代理支援等�
 = 配置採集單元
 :hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]
@@ -89,7 +93,15 @@ image:NewLinuxAUInstall.png["Linux AU 說明"]
 
 NOTE: 使用星號 (*) 作為通配符很常見，但您的代理程式/防火牆配置可能使用不同的格式。檢查您的代理文件以確保您的環境中的通配符規範正確。
 
+如果您發現您的 AU 在嘗試連線至 DII 時遭到封鎖，請嘗試將這些端點新增至您的 Proxy：
+
+....
+api.bluexp.netapp.com
+netapp-cloud-account.auth0.com
+....
 有關代理配置的更多信息，請參閱NetApplink:https://kb.netapp.com/Cloud/ncds/nds/dii/dii_kbs/Where_is_the_proxy_information_saved_to_in_the_Cloud_Insights_Acquisition_Unit["知識庫"] 。
+
+您可能需要的特定 NetApp Console Proxy 端點列於 link:https://docs.netapp.com/us-en/console-setup-admin/reference-networking-saas-console-previous.html#update-endpoint-list["主控台設定管理員"] 文件中。
 
 
 
