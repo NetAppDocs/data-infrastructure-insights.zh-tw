@@ -288,6 +288,7 @@ agent:
 事件日誌
 
 * ci-fluent-bit
+* fe05143e1e28d056a7092a13c7ef1fda
 
 
 網路效能和地圖
@@ -461,6 +462,26 @@ The following checks were performed on each of these signatures:
 | 為什麼我看到兩個監控操作員 pod 正在運行，一個名為 netapp-ci-monitoring-operator-<pod>，另一個名為 monitoring-operator-<pod>？ | 自 2023 年 10 月 12 日起， Data Infrastructure Insights已重構了 Operator，以便更好地服務我們的用戶；為了完全採用這些更改，您必須<<uninstalling,刪除舊的操作員>>和<<installing-the-kubernetes-monitoring-operator,安裝新的>>。 
 
 
+| d91f7c56a5bd6c0e9735fe39d7d2d1a6  a| 
+0f21fa822dc46792cc163d7e77fe6c2c
+
+ `kubectl -n netapp-monitoring get pods |grep event-exporter |awk '{print $1}' |sed 's/event-exporter./event-exporter/'`
+9df5220f9f1e94f2849e58be10655af5
+
+....
+fluent-bit:
+...
+- name: event-exporter-ci
+  substitutions:
+  - key: LOG_FILE
+    values:
+    - /var/log/containers/netapp-ci-event-exporter*.log
+...
+....
+e832e916ac4edbd5ff4fc3ce13949058
+
+
+
 | 我看到 Kubernetes Monitoring Operator 部署的 pod 由於資源不足而崩潰。 | 參考 Kubernetes Monitoring Operatorlink:telegraf_agent_k8s_config_options.html["配置選項"]根據需要增加 CPU 和/或記憶體限制。 
 
 
@@ -468,6 +489,9 @@ The following checks were performed on each of these signatures:
 
 
 | 執行 Kubernetes Operator 升級後，netapp-ci-kube-state-metrics pod 無法啟動，拋出 ErrImagePull（無法拉取影像）。 | 嘗試手動重置 pod。 
+
+
+| 2bc94fccd24faa68b4153886af40ec57 | 6c71496a372f3b5c0cbc9e2eb84a5fd0 
 
 
 | Telegraf 因可鎖定記憶體不足而發出警告或崩潰。 | 嘗試增加底層作業系統/節點中 Telegraf 可鎖定記憶體的限制。如果無法增加限制，請修改 NKMO 代理程式配置並將 _unprotected_ 設為 _true_。這將指示 Telegraf 不要嘗試保留鎖定的記憶體頁面。雖然這可能會帶來安全風險，因為解密的秘密可能會被交換到磁碟，但它允許在無法保留鎖定記憶體的環境中執行。有關 _unprotected_ 配置選項的更多詳細信息，請參閱link:telegraf_agent_k8s_config_options.html["配置選項"]頁。 

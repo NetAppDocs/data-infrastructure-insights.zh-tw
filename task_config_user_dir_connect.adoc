@@ -18,17 +18,17 @@ summary: 設定工作負載安全性 Active Directory 使用者目錄收集器
 
 Workload Security 使用目錄資料來解析檔案存取活動中的身分。使用者目錄收集器不提供測試連線功能。
 
-image:config_ad_user_directory_image1.png["新增使用者目錄對話方塊，包含 Active Directory 和 LDAP 目錄伺服器選項。，標題=\"選擇使用者目錄類型\"，寬度=652，高度=211"]
+image:config_ad_user_directory_image1.png["新增使用者目錄對話方塊，包含 Active Directory 和 LDAP 目錄伺服器選項。,title=\"選擇使用者目錄類型\",width=652,height=211"]
 
 [cols="50%,50%"]
 |===
 | *選擇* | *在以下情況下使用* 
 
 
-| Active Directory | 使用者儲存在 Active Directory 中，監控的活動是 SMB；或 Unix 使用者儲存在 Active Directory 中，具有 uidNumber 值，並執行 NFS 活動。 
+| Active Directory | 使用者儲存在 Active Directory 中，監控的活動是 SMB；或 Unix 使用者儲存在 Active Directory 中並具有 uidNumber 值，且執行 NFS 活動。 
 
 
-| LDAP 目錄伺服器 | Unix 使用者主要儲存在 LDAP 目錄中，監控的活動為 NFS。 
+| LDAP 目錄伺服器 | Unix 使用者主要儲存在 LDAP 目錄中，監控活動透過 NFS 進行。 
 
 
 | 兩者 | 身分識別資訊分割在 Active Directory 和 LDAP 中。為每個權威目錄新增一個收集器，以便解析所有受監控的身分識別資訊。 
@@ -56,15 +56,15 @@ image:config_ad_user_directory_image1.png["新增使用者目錄對話方塊，�
 
 *1.*前往 Workload Security ++>++ 收集器 ++>++ 使用者目錄收集器，然後選擇 {plus} 使用者目錄收集器。
 
-*2.*選擇 Active Directory，然後選擇繼續。
+*2.*選擇 Active Directory，然後選擇「繼續」。
 
 *3.*完成下面描述的連線欄位和屬性對應。
 
-*4.*如果必須解析電腦或服務帳戶，請檢閱進階組態。
+*4.*如果必須解析電腦或服務帳戶，請審查進階組態。
 
 *5.*使用 AD Explorer 或 ldapsearch 驗證組態，然後選擇「儲存收集器」。
 
-image:config_ad_user_directory_image2.png["Active Directory 收集器表單顯示連線欄位、必要和選用的屬性對應，以及進階組態搜尋查詢。,title=\"Add Active Directory collector\",width=504,height=754"]
+image:config_ad_user_directory_image2.png["Active Directory 收集器表單顯示連線欄位、必要和選用的屬性對應，以及進階組態搜尋查詢。,title=\"新增 Active Directory 收集器\",width=504,height=754"]
 
 Active Directory 收集器欄位和預設屬性對應。
 
@@ -75,7 +75,7 @@ Active Directory 收集器欄位和預設屬性對應。
 
 [cols="34%,33%,33%"]
 |===
-| *欄位* | *要求* | *要輸入的內容* 
+| *欄位* | *要求* | *輸入內容* 
 
 
 | 名稱++*++ | 強制 | 唯一的收集器名稱。 
@@ -87,7 +87,7 @@ Active Directory 收集器欄位和預設屬性對應。
 | 伺服器 IP/網域名稱++*++ | 強制 | AD 伺服器 IP 位址或 FQDN。 
 
 
-| 樹系名稱++*++ | 強制 | DNS 網域（例如 hq.example.com）；DN（例如 DC=hq,DC=example,DC=com）；或僅需搜尋該範圍時，可使用較窄的 OU/CN DN。支援受信任的 AD 網域。 
+| 樹系名稱++*++ | 強制 | DNS 網域（例如 hq.example.com）；DN（例如 DC=hq,DC=example,DC=com）；或在僅應搜尋該範圍時，使用較窄的 OU/CN DN。支援受信任的 AD 網域。 
 
 
 | 連結 DN++*++ | 強制 | 允許搜尋該範圍的帳戶，例如 ws-reader@example.com。僅授予對應屬性所需的目錄讀取權限。 
@@ -96,7 +96,7 @@ Active Directory 收集器欄位和預設屬性對應。
 | 連結密碼++*++ | 強制 | Bind DN 帳戶的密碼。 
 
 
-| 協定 | 預設 | LDAP、LDAPS 或搭配 StartTLS 的 LDAP。請選擇伺服器使用的協定。 
+| 協定 | 預設 | LDAP、LDAPS 或搭配 StartTLS 的 LDAP。選擇您的伺服器所使用的協定。 
 
 
 | 連接埠++*++ | 強制 | 數字目錄連接埠；通常為 389 或 636。 
@@ -116,20 +116,20 @@ Active Directory 收集器欄位和預設屬性對應。
 | 顯示名稱++*++ | 姓名 | 總是 
 
 
-| SID++*++ | 物件標識符 | 一律；解析 SMB 安全性識別碼 
+| SID++*++ | 物件標識符 | 永遠；解析 SMB 安全性識別碼 
 
 
 | 使用者名稱++*++ | sAM帳戶名稱 | 總是 
 
 
-| UNIXID | uid 號 | 當需要解析儲存在 AD 中的 Unix 使用者的 NFS 活動時為必要 
+| UNIXID | uid 號 | 當需要解析儲存在 AD 中的 Unix 使用者的 NFS 活動時，需要此操作。 
 |===
 
 
 [[optional-attribute-mappings]]
 === 選用屬性對應
 
-僅對要匯入的設定檔資料選擇「包含選用屬性」。每個對應必須與實際的 AD 架構相符。空白或錯誤的對應不會阻止身分解析，但不會填入設定檔值。
+僅針對您要匯入的設定檔資料選取「包含選用屬性」。每個對應必須符合實際的 AD 架構。空白或不正確的對應不會阻止身分解析，但不會填入設定檔值。
 
 [cols="50%,50%"]
 |===
@@ -171,17 +171,17 @@ Active Directory 收集器欄位和預設屬性對應。
 
 [cols="100%"]
 |===
-| ({vbar}(objectClass=posixAccount)(&(objectCategory=person)(objectClass=user))) 
+| （{vbar}（objectClass=posixAccount）（&（objectCategory=person）（objectClass=user））） 
 |===
-不符合此篩選條件的電腦帳戶、代管服務帳戶或自訂服務帳戶物件將無法解析。在 AD Explorer 中檢查物件的 objectClass，然後僅針對所需的物件類型擴充查詢。例如：
+不符合此篩選條件的電腦帳戶、代管服務帳戶或自訂服務帳戶物件將無法解析。在 AD Explorer 中檢查該物件的 objectClass，然後僅針對所需的物件類型擴充查詢。例如：
 
 [cols="100%"]
 |===
-| ({vbar}(objectClass=posixAccount) + (&(objectCategory=person)(objectClass=user)) + (objectClass=computer) + (objectClass=msDS-ManagedServiceAccount) + (objectClass=msDS-GroupManagedServiceAccount)) 
+| （{vbar}（objectClass=posixAccount） + （&（objectCategory=person）（objectClass=user）） + （objectClass=computer） + （objectClass=msDS-ManagedServiceAccount） + （objectClass=msDS-GroupManagedServiceAccount）） 
 |===
 [cols="100%"]
 |===
-| *請勿在未檢查結果的情況下擴大查詢* 請確認每個新增的分支僅傳回 Workload Security 應該匯入的帳戶。擴大查詢可能會增加同步時間並匯入不需要的目錄物件。 
+| *請勿在未檢查結果的情況下擴大查詢* 確認每個新增的分支僅傳回 Workload Security 應匯入的帳戶。較廣泛的查詢可能會增加同步時間並匯入不需要的目錄物件。 
 |===
 
 
@@ -197,9 +197,9 @@ Active Directory 收集器欄位和預設屬性對應。
 [[use-ad-explorer]]
 === 使用 AD Explorer
 
-使用目標連結 DN 帳戶連線到 Active Directory 伺服器。驗證該帳戶是否可以瀏覽設定的樹系名稱或 OU，並讀取名稱、objectSid、sAMAccountName、uidNumber（如果使用）以及任何選用屬性。
+使用目標連結 DN 帳戶連線至 Active Directory 伺服器。驗證該帳戶是否可以瀏覽設定的樹系名稱或 OU，並讀取名稱、objectSid、sAMAccountName、uidNumber（如果使用），以及任何選用的屬性。
 
-https://learn.microsoft.com/en-us/sysinternals/downloads/adexplorer["［.underline"]#下載 Microsoft Sysinternals AD Explorer#］
+https://learn.microsoft.com/en-us/sysinternals/downloads/adexplorer["［.底線"]#下載 Microsoft Sysinternals AD Explorer#]
 
 
 
@@ -212,10 +212,10 @@ https://learn.microsoft.com/en-us/sysinternals/downloads/adexplorer["［.underli
 |===
 | ldapsearch -o ldif-wrap=no -LLL -x -H ldap://ad.example.com:389 -D "ws-reader@example.com" -W -b "DC=hq,DC=example,DC=com" '({vbar}(objectClass=posixAccount)(&(objectCategory=person)(objectClass=user)))' name objectSid sAMAccountName uidNumber 
 |===
-* 使用收集器將使用的確切帳戶和密碼連結成功。
+* 連結成功，使用的帳戶和密碼與收集器將使用的帳戶完全一致。
 * 搜尋結果傳回預期的人員、電腦或服務帳戶。
-* 每個必要的對應屬性皆存在，且在傳回的物件上具有值。
-* 代理程式對目錄伺服器具有相同的 DNS 解析和網路路徑。
+* 每個必要的對應屬性都存在，並且在傳回的物件上具有值。
+* 代理程式具有相同的 DNS 解析和前往目錄伺服器的網路路徑。
 
 
 
@@ -225,7 +225,7 @@ https://learn.microsoft.com/en-us/sysinternals/downloads/adexplorer["［.underli
 
 * Active Directory 同步在收集器啟動或重新啟動時開始。
 * 擁有大約 300,000 名使用者的目錄，同步大約需要 15 分鐘。
-* 使用者資料每 12 小時自動重新整理。
+* 使用者資料每 12 小時自動重新整理一次。
 * 如果目錄不可用，先前取得的使用者詳細資訊將保留，但直到連線恢復後才能取得新的或已變更的使用者。
 * 使用者資料保留 13 個月，期間不會重新整理。使用者目錄資料無法獨立於租戶刪除。
 
@@ -240,32 +240,32 @@ https://learn.microsoft.com/en-us/sysinternals/downloads/adexplorer["［.underli
 | *訊息或症狀* | *需要檢查的內容* 
 
 
-| 提供給 LDAP 伺服器的憑證無效。 | 請驗證連結 DN 和密碼。同時確認該帳戶可以搜尋設定的樹系名稱。 
+| 提供給 LDAP 伺服器的憑證無效。 | 請驗證連結 DN 和密碼。同時確認該帳戶可以搜尋已設定的樹系名稱。 
 
 
-| 未能取得與作為樹系名稱提供的 DN=…… 對應的物件。 | 請更正樹系名稱。請使用確切的網域、DN、OU 或其他支援的範圍。 
+| 未能取得與提供作為樹系名稱的 DN=…… 對應的物件。 | 更正樹系名稱。使用確切的網域、DN、OU 或其他支援的範圍。 
 
 
-| LDAP 連線建立失敗。 | 從代理程式驗證 AD 伺服器 IP/FQDN、DNS 解析、協定、連接埠和防火牆路徑。 
+| 無法建立 LDAP 連線。 | 從代理程式驗證 AD 伺服器 IP/FQDN、DNS 解析、協定、連接埠和防火牆路徑。 
 
 
-| 無法擷取 LDAP 使用者……連線為 null。 | 重新啟動收集器。如果再次發生，請從同等的網路位置使用 ldapsearch 驗證連線與搜尋。 
+| 無法擷取 LDAP 使用者……連線為空。 | 重新啟動收集器。如果再次發生，請從同等的網路位置使用 ldapsearch 驗證連線與搜尋。 
 
 
-| 收集器正在重試或報告 AGENT008。 | 驗證伺服器位址和樹系名稱；然後確認代理程式可以連線到目錄服務。 
+| 收集器正在重試或報告 AGENT008。 | 驗證伺服器位址和樹系名稱；然後確認代理程式可以連線至目錄服務。 
 
 
-| 使用者或選用屬性未顯示。 | 確認搜尋查詢包含該物件，且對應的屬性名稱與目錄架構相符（包括大小寫，若適用）。儲存以重新啟動並重新同步。 
+| 使用者或選用屬性未顯示。 | 確認搜尋查詢包含該物件，且對應的屬性名稱與目錄架構相符（適用時包括大小寫）。儲存以重新啟動並重新同步。 
 
 
 | AcceptSecurityContext 錯誤，資料 52e。 | 請驗證憑證和樹系名稱。在 Active Directory 中，資料 52e 表示憑證無效。 
 
 
-| ldap-port 的類型為 STRING 而非 NUMBER。 | 輸入一個數字連接埠值，例如 389 或 636。 
+| ldap-port 的類型為 STRING 而非 NUMBER。 | 輸入數字連接埠值，例如 389 或 636。 
 |===
 
 
 [[related-information]]
 == 相關資訊
 
-https://docs.netapp.com/us-en/data-infrastructure-insights/task_config_user_dir_connect.html["［.underline"]#目前 NetApp 文件頁#]
+https://docs.netapp.com/us-en/data-infrastructure-insights/task_config_user_dir_connect.html["［.底線"]#目前 NetApp 文件頁面#]
