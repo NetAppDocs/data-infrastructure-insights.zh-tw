@@ -1,0 +1,466 @@
+---
+sidebar: sidebar 
+permalink: mcp_tools_overview.html 
+summary: 'DII MCP 伺服器目前在九個網域中公開了 26 個唯讀產品工具。當連線的用戶端需要驗證時，可能會出現一個分隔的 `mcp_auth`輔助程式。' 
+keywords: MCP, DII, Data Infrastructure Insights, AI assistant 
+---
+= DII MCP 工具參考
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+DII MCP 伺服器目前在九個網域中公開了 26 個唯讀產品工具。當連線的用戶端需要進行驗證時，可能會出現一個分隔的 +mcp_auth+ 輔助程式。
+
+
+NOTE: DII MCP 是一項 link:concept_preview_features.html["預覽"] 功能，因此可能會發生變化。
+
+工具的可用度和結果取決於已驗證的租戶、已啟用的 DII 功能、已設定的收集器和使用者權限。
+
+
+
+[[query-conventions]]
+== 查詢約定
+
+* 在查詢動態欄位之前，先探索類型和中繼資料。
+* 使用中繼資料傳回的精確、區分大小寫的屬性和指標名稱。
+* 必要時使用 ISO-8601 時間戳記和 IANA 時區名稱。
+* 將查詢視窗保持在 30 天或更短。
+* 使用 `limit`和 `offset`進行物件和警報分頁。
+* 使用傳回的游標進行日誌事件分頁。
+* 請勿顯示完整的 webhook 端點位址。
+
+
+
+
+[[acquisition-units]]
+== 擷取單位
+
+
+
+[[list-acquisition-units]]
+=== 列出擷取單位
+
++AcquisitionUnitsService_getAcquisitionUnits+
+
+傳回所有採集單元及其連線狀態、報告新鮮度、作業系統、版本、IP 位址和指派的資料來源計數。
+
+範例：
+
+[]
+====
+列出擷取單元。摘要說明已連線、失敗及從未回報的單元，且不顯示 IP 位址或 UUID。
+
+====
+
+
+[[get-an-acquisition-unit]]
+=== 取得擷取單元
+
++AcquisitionUnitsService_getAcquisitionUnitByUuid+
+
+擷取單一擷取單元的完整詳細資訊。如果使用者提供名稱，請先列出擷取單元以解析其 UUID。
+
+必填輸入： `uuid`
+
+
+
+[[alerts]]
+== 警報
+
+
+
+[[get-alert-metadata]]
+=== 取得警報中繼資料
+
++AlertsService_getMetadata+
+
+傳回有效的警示欄位名稱和資料類型。請在查詢警示之前呼叫此項目。
+
+
+
+[[query-alerts]]
+=== 查詢警報
+
++AlertsService_queryForAlerts+
+
+查詢具有選定屬性、篩選器、排序、時間範圍和偏移分頁的作用中或非作用中警示。
+
+必要輸入：
+
+* `active`
+* `attributeNames`
+* `fromTime`
+* `toTime`
+* `timezone`
+
+
+可選輸入包括 `filter`、 `sortField`、 `sortAscending`、 `limit` 和 `offset`。 `limit` 為 1-500； `offset` 為 0-1000。將時間範圍保持在 30 天以內。
+
+範例：
+
+[]
+====
+檢索過去七天內的關鍵作用中儲存設備警報。傳回警報 ID、監控名稱、嚴重性、狀態和相關儲存設備名稱。
+
+====
+
+
+[[get-an-alert-by-name]]
+=== 按名稱取得提醒
+
++AlertsService_getAlertByName+
+
+使用 `AL-123456` 格式的警報 ID 擷取一則警報。
+
+必填輸入： `name`
+
+
+
+[[get-an-alert-by-uuid]]
+=== 透過 UUID 取得警報
+
++AlertsService_getAlertByUUID+
+
+使用其 UUID 擷取一個警報。
+
+必填輸入： `uuid`
+
+
+
+[[data-collectors]]
+== 資料收集器
+
+
+
+[[list-data-sources]]
+=== 列出資料來源
+
++CollectorService_getDataSources+
+
+列出已設定的收集器，包含名稱、狀態、廠商、機型、擷取單位、版本，以及上次成功擷取的時間。可選擇依 AU UUID 進行篩選。
+
+範例：
+
+[]
+====
+按狀態和廠商將已設定的資料來源分組。突顯故障與過期的成功擷取。
+
+====
+
+
+[[get-a-data-source]]
+=== 取得資料來源
+
++CollectorService_getDataSourceById+
+
+擷取一個收集器及其組態、收集套件狀態、輪詢活動、探索到的裝置、修補程式資訊和擷取單元內容。
+
+必填輸入： `id`
+
+將此工具用於輪詢間隔、設定的計量、收集設定或故障調查。
+
+
+
+[[list-supported-data-source-types]]
+=== 列出支援的資料來源類型
+
++CollectorService_getDataSourceTypes+
+
+列出 DII 收集器目錄支援的產品類型。這並非租戶中設定的收集器清單。
+
+
+
+[[logs]]
+== 紀錄
+
+
+
+[[list-log-types]]
+=== 列出日誌類型
+
++LogService_getLogTypes+
+
+列出租戶中目前可用的日誌類型。
+
+
+
+[[get-log-type-metadata]]
+=== 取得日誌類型中繼資料
+
++LogService_getLogTypeMetadata+
+
+傳回指定日誌類型的有效屬性。請在搜尋或分組事件之前呼叫此函數。
+
+必填輸入： `type`
+
+
+
+[[query-log-events]]
+=== 查詢日誌事件
+
++LogService_queryLogEvents+
+
+以時間戳記遞減順序傳回日誌事件。
+
+必要輸入：
+
+* `type`
+* `fromTime`
+* `toTime`
+* `timezone`
+
+
+選用輸入包括 `attributes`、 `filter`、 `limit`及 `cursor`。 `limit` 為 1-200。事件視窗不能超過 30 天。傳遞上一個回應的游標以擷取下一頁。
+
+
+
+[[count-log-events-over-time]]
+=== 統計一段時間內的日誌事件
+
++LogService_queryLogEventsCountHistogram+
+
+傳回固定大小的事件計數時間段。可以選擇性地依有效的分組屬性對每個時間段進行分組；分組結果會傳回前幾個區段以及一個 +__other__+ 區段。
+
+必要輸入：
+
+* `type`
+* `fromTime`
+* `toTime`
+* `timezone`
+
+
+選用輸入： `filter`， `groupBy`
+
+
+
+[[maintenance-windows]]
+== 維護所需時間
+
+
+
+[[list-maintenance-windows]]
+=== 列出維護所需時間
+
++MaintenanceWindowService_getMaintenanceWindows+
+
+列出作用中且未過期的警報抑制視窗。將  `includeExpired` 設定為  `true` 以包含已過期的視窗。
+
+成功的空回應表示不存在相符的維護所需時間。
+
+
+
+[[get-a-maintenance-window]]
+=== 取得維護所需時間
+
++MaintenanceWindowService_getMaintenanceWindowById+
+
+擷取一個維護所需時間。
+
+必填輸入： `id`
+
+
+
+[[monitors]]
+== 監視器
+
+
+
+[[list-monitors]]
+=== 列出監控
+
++MonitorsService_queryMonitors+
+
+列出 DII 監控。使用 `isSystem` 來僅傳回系統監控、排除系統監控或傳回所有監控。
+
+
+
+[[get-a-monitor]]
+=== 取得監控
+
++MonitorsService_getMonitorById+
+
+擷取一個監控，包括其執行摘要和修正指南（如有）。
+
+必填輸入： `id`
+
+
+
+[[notifications]]
+== 通知
+
+
+
+[[list-notification-rules]]
+=== 列出通知規則
+
++NotificationService_getNotificationRules+
+
+列出將相符的警報路由至通知目標的規則。成功的空回應表示不存在相符的規則。
+
+
+
+[[get-a-notification-rule]]
+=== 取得通知規則
+
++NotificationService_getNotificationRuleById+
+
+擷取一條路由規則。
+
+必填輸入： `id`
+
+
+
+[[list-webhook-targets]]
+=== 列出 webhook 目標
+
++NotificationService_getWebhooks+
+
+列出 Slack、Microsoft Teams、Discord、PagerDuty 和自訂 HTTP 整合的 webhook 目標中繼資料。可選擇按逗號分隔的引擎類型進行篩選。
+
+安全要求：完整的端點位址可能包含認證資料。應用程式和代理程式必須從顯示或轉送的結果中省略或遮蔽位址欄位。
+
+安全範例：
+
+[]
+====
+按引擎類型統計 webhook 目標數量，並僅列出目標名稱和狀態。不傳回端點位址。
+
+====
+
+
+[[objects-and-metrics]]
+== 物件和計量
+
+
+
+[[list-object-types]]
+=== 列出物件類型
+
++ObjectService_getObjectTypes+
+
+列出租戶中目前可用的物件類型。
+
+
+
+[[get-object-metadata]]
+=== 取得物件中繼資料
+
++ObjectService_getMetadataForObjectType+
+
+傳回一種物件類型的有效屬性、計量、類型和分組功能。
+
+必填輸入： `objectType`
+
+
+
+[[query-objects]]
+=== 查詢物件
+
++ObjectService_query+
+
+擷取物件、選定的屬性和選用的計量。參照計量的篩選器會套用至時間視窗集合體之前的原始值。
+
+必要輸入：
+
+* `objectType`
+* `attributeNames`
+
+
+選擇性輸入包括 `metricNames`、 `filter`、 `sortFieldName`、 `isSortAscending`、 `fromTime`、 `toTime`、 `aggregateFunctions`、 `limit`及 `offset`。
+
+支援的查詢集合體： `MAX`， `MIN`， `AVG`， `SUM`， `LAST`。 `limit` 為 1-500。如果省略時間範圍，則工具預設使用最近三個小時的時間視窗。
+
+
+
+[[group-objects]]
+=== 群組物件
+
++ObjectService_groupObjects+
+
+根據一個有效的可分組屬性對物件進行分組，並聚合選定的計量。篩選器在集合體之前應用於原始值。
+
+必要輸入：
+
+* `objectType`
+* `groupByAttribute`
+* `metricNames`
+
+
+可選輸入包括 `aggregateFunctions`、 `filter`、排序、時間範圍、 `limit`及 `offset`。
+
+支援的群組集合體： `MAX`， `MIN`， `AVG`， `SUM`， `FIRST`， `CHANGE`，+CHANGE_RATIO+。
+
+
+
+[[query-performance-time-series]]
+=== 查詢效能時間序列
+
++ObjectService_queryPerformanceMetricsForObjects+
+
+傳回一個計量及相符物件的分桶時間序列資料。
+
+必要輸入：
+
+* `objectType`
+* `metricName`
+* `fromTime`
+* `toTime`
+* `timezone`
+
+
+選用輸入包括 `filter`、 `aggregationFunction`、 `limit`和 `isSortAscending`。 `limit`控制傳回序列的數量，必須為 1-50。
+
+支援的 bucket 集合體： `MAX`、 `MIN`、 `AVG`、 `SUM`、 `FIRST`、 `CHANGE`、+CHANGE_RATIO+。
+
+
+
+[[kubernetes-collectors]]
+== Kubernetes 收集器
+
+
+
+[[list-kubernetes-collectors]]
+=== 列出 Kubernetes 收集器
+
++OperatorsManagement_getKubernetesCollectors+
+
+傳回叢集名稱、整體時效狀態、營運者版本、網路效能與地圖元件版本、變更分析元件版本，以及上次報告的時間戳記。
+
+範例：
+
+[]
+====
+識別過時的 Kubernetes 收集器，並總結哪些元件需要注意。
+
+====
+
+
+[[filter-operators]]
+== 過濾營運者
+
+告警、日誌和物件查詢支援巢狀條件：
+
+* `EQ`, `NE`
+* `GT`, `LT`, `GE`, `LE`
+* `WILDCARD`使用 `++*++`和 `?`
+* `EXISTS`
+* 巢狀 `and`、 `or`和 `not`
+
+
+連接的伺服器會根據中繼資料驗證欄位。如果查詢被拒絕，重新整理相關中繼資料並重建篩選器。
+
+
+
+[[related-documentation]]
+== 相關文件
+
+* link:mcp_overview.html["DII MCP 總覽"]
+* link:mcp_concepts.html["概念和資料模型"]
+* link:mcp_recipe_overview.html["操作規程"]
+* link:mcp_troubleshooting.html["故障排除"]
+

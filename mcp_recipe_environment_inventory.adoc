@@ -1,0 +1,136 @@
+---
+sidebar: sidebar 
+permalink: mcp_recipe_environment_inventory.html 
+summary: 使用此方法了解 DII 的擷取單元和設定組態的資料來源是否已成功連線、報告及收集。 
+keywords: MCP, DII, Data Infrastructure Insights, AI assistant 
+---
+= 庫存環境與收集健全狀況
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+使用此方法了解 DII 的擷取單元和設定組態的資料來源是否已成功連線、報告及收集。
+
+
+NOTE: DII MCP 是一項 link:concept_preview_features.html["預覽"] 功能，因此可能會發生變化。
+
+
+
+[[prerequisites]]
+== 先決條件
+
+* 存取擷取單元和收集器工具。
+* 選用的擷取單位或收集器名稱，以縮小調查範圍。
+
+
+
+
+[[tools-used]]
+== 使用的工具
+
+* +AcquisitionUnitsService_getAcquisitionUnits+
+* +AcquisitionUnitsService_getAcquisitionUnitByUuid+
+* +CollectorService_getDataSources+
+* +CollectorService_getDataSourceById+
+* +CollectorService_getDataSourceTypes+
+
+
+
+
+[[starter-prompt]]
+== 啟動提示
+
+[]
+====
+檢閱我的 DII 收集環境。依連線狀態和報告新鮮度總結擷取單元，然後依擷取狀態和廠商總結已設定組態的資料來源。反白顯示從未報告的擷取單元、未指派收集器的單元、故障的收集器，以及過時的成功擷取。請勿顯示 IP 位址、UUID 或憑證。
+
+====
+
+
+[[agent-workflow]]
+== 代理程式工作流程
+
+. 列出所有擷取單位。
+. 使用連線狀態和 `lastReported`對每個 AU 進行分類。
+. 每個 AU 分配的資料來源數量。
+. 列出所有已設定組態的資料來源。
+. 依狀態、廠商、型號和 AU 將收集器分組。
+. 確認：
++
+** 中斷連線或心跳失敗的 AU
+** 已連接的 AU 從未報告
+** 資料來源為零的 AU
+** 失敗的收集器
+** 無成功擷取的收集器
+** 最後一次擷取時間出乎意料地舊的成功收集器
+
+
+. 僅針對例外情況擷取完整的 AU 或收集器詳細資料。
+. 傳回按優先順序排序的總結，並明確說明所使用的新鮮度臨界值。
+
+
+
+
+[[interpretation]]
+== 解釋
+
+使用以下區別：
+
+* *已連線並正在報告：*該 AU 已連線並具有最新  `lastReported` 值。
+* *已連線但從未報告：* 連線存在，但未建立成功的遙測報告。
+* *心跳失敗：* 請調查 AU 主機、網路路徑和服務。
+* *收集器失敗：*檢查收集器的最近輪詢活動、套件狀態、組態和上次成功擷取。
+* *未指派收集器：*這可能是刻意的；在將其視為故障之前，請先進行驗證。
+
+
+支援的資料來源類型目錄描述了 DII 可以收集的產品。它並不證明這些產品已在租戶中設定。
+
+
+
+[[suggested-output]]
+== 建議輸出
+
+. 執行總結
+. 擷取單位狀態計數
+. 收集器狀態計數
+. 按營運影響排序的例外情況
+. 建議檢查
+. 資料限制
+
+
+
+
+[[limits-and-privacy]]
+== 限制和隱私
+
+* 避免傳回 AU UUID、IP 位址、私有主機名稱或收集器憑證。
+* 單憑狀態值無法確定資料的新鮮度。
+* 僅針對已命名的異常檢索詳細組態。
+
+
+
+
+[[follow-up-prompts]]
+== 後續提示
+
+[]
+====
+檢查名為 `example-array`的故障收集器。總結最近的輪詢活動和收集套件故障，且不顯示憑證或私人位址。
+
+====
+[]
+====
+哪些擷取單元在過去 30 分鐘內沒有回報，哪些收集器依賴它們？
+
+====
+[]
+====
+將已設定的收集器廠商與 DII 支援的資料來源類型目錄進行比較。
+
+====
+link:mcp_recipe_overview.html["返回配方"]

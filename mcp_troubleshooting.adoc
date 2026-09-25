@@ -1,0 +1,162 @@
+---
+sidebar: sidebar 
+permalink: mcp_troubleshooting.html 
+summary: MCP 伺服器連線問題、驗證錯誤、查詢拒絕和 API 速率限制的常見解決方案。 
+keywords: MCP, DII, Data Infrastructure Insights, AI assistant 
+---
+= DII MCP 故障排除
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+
+NOTE: DII MCP 是一項 link:concept_preview_features.html["預覽"] 功能，因此可能會發生變化。
+
+
+
+[[the-server-does-not-connect]]
+== 伺服器未連接
+
+查看：
+
+. 設定的 URL 與您的 DII 環境提供的端點相符。
+. 用戶端支援遠端 HTTP MCP 伺服器和所需的驗證流程。
+. 驗證成功完成。
+. 網路原則允許存取端點。
+. 已連線的身份可以存取 DII 租戶。
+
+
+變更用戶端組態後，請重新啟動或重新載入 MCP 伺服器。
+
+
+
+[[authentication-is-required]]
+== 需要驗證
+
+完成用戶端登入流程後，重試原始請求。如果使用了服務身份，請驗證其認證資料是否有效，以及是否透過已核准的金鑰機制儲存。
+
+請勿重複嘗試已確認的授權拒絕操作。請 DII 系統管理員審查使用者的租戶和資源權限。
+
+
+
+[[an-object-query-rejects-a-field]]
+== 物件查詢拒絕欄位
+
+物件屬性和計量因類型而異。
+
+. 呼叫 +ObjectService_getObjectTypes+。
+. 確認確切的物件類型。
+. 呼叫 +ObjectService_getMetadataForObjectType+。
+. 完全從中繼資料複製欄位名稱。
+. 請確認值類型和集合體函數是否相容。
+
+
+只有標記為可分組的屬性才能用於對物件進行分組。
+
+
+
+[[a-log-query-rejects-an-attribute]]
+== 日誌查詢拒絕屬性
+
+. 呼叫 +LogService_getLogTypes+。
+. 確認確切的日誌類型。
+. 呼叫 +LogService_getLogTypeMetadata+。
+. 僅使用該日誌類型傳回的屬性。
+
+
+日誌事件查詢使用基於遊標的分頁。傳遞上一頁回傳的遊標，而不是偏移量。
+
+
+
+[[an-alert-query-rejects-a-field]]
+== 警報查詢拒絕欄位
+
+在建構查詢之前立即呼叫 +AlertsService_getMetadata+。警示中繼資料可能很廣泛且與租戶相關；請使用確切的欄位名稱。
+
+
+
+[[the-time-range-is-invalid]]
+== 時間範圍無效
+
+* 確保 `fromTime`早於或等於 `toTime`。
+* 使用帶有偏移量或 `Z`的 ISO-8601 時間戳記。
+* 將請求的時間範圍保持在 30 天以內。
+* 將較長的調查分成連續的、不重疊的時間段，並總結結果。
+* 當工具需要時，請提供有效的 IANA 時區。
+
+
+如果執行階段強制執行比用戶端快取的工具執行摘要更嚴格，則執行階段強制執行具有權威性。
+
+
+
+[[a-query-returns-too-many-results]]
+== 查詢傳回的結果過多
+
+* 新增有效篩選條件。
+* 縮短時間範圍。
+* 依最相關的指標排序。
+* 降低結果上限。
+* 當不需要單一記錄時，可以使用分組或直方圖。
+* 只有在需要更多詳細資料時，才繼續使用 `offset`或記錄游標。
+
+
+
+
+[[a-successful-call-returns-no-rows]]
+== 成功的呼叫不會傳回任何列
+
+空的結果通常是有效的答案。這可能表示：
+
+* 沒有符合篩選條件的資源。
+* 在選定的時間範圍內未發生任何事件。
+* 未設定維護時段或通知規則。
+* 租戶的收集器未填入所選資料類型。
+
+
+除非有其他證據顯示存在收集問題，否則請勿將成功的空結果描述為遺失資料。
+
+
+
+[[an-acquisition-unit-is-connected-but-has-never-reported]]
+== 擷取單元已連線，但從未回報
+
+連線狀態和成功報告是分隔的。請檢查：
+
+* `lastReported`
+* 已分配資料來源計數
+* 資料來源獲取狀態
+* AU 主機連線功能和版本
+* 針對指定資料來源的輪詢活動
+
+
+
+
+[[a-collector-is-failed]]
+== 收集器故障
+
+針對受影響的收集器使用 +CollectorService_getDataSourceById+。檢閱最近的輪詢活動、作用中修補程式資訊、套件狀態、組態，以及上次成功擷取的時間。避免顯示憑證或私有組態值。
+
+
+
+[[webhook-results-include-complete-addresses]]
+== Webhook 結果包含完整地址
+
+請勿重複數值。僅摘要目標名稱、整合類型、數量和狀態。如果顯示或共享了機密資料，請遵循 link:mcp_security.html["安全和隱私"]。
+
+
+
+[[the-ai-assistant-selected-the-wrong-tool]]
+== 人工智慧助理選擇了錯誤的工具
+
+使用更明確的提示：
+
+[]
+====
+首先列出可用的物件類型。擷取所選類型的中繼資料。然後僅查詢有效欄位，並說明您使用了哪些 DII 工具。
+
+====
+對於常見的調查，請從 link:mcp_recipe_overview.html["操作配方"] 開始。

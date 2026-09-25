@@ -1,0 +1,92 @@
+---
+sidebar: sidebar 
+permalink: mcp_setup.html 
+summary: 使用本指南將相容 MCP 的 AI 用戶端連接到 DII。 
+keywords: MCP, DII, Data Infrastructure Insights, AI assistant 
+---
+= 設定 DII MCP 伺服器
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+使用本指南將相容 MCP 的 AI 用戶端連接到 DII。
+
+
+NOTE: DII MCP 是一項 link:concept_preview_features.html["預覽"] 功能，因此可能會發生變化。
+
+
+
+[[before-you-begin]]
+== 開始之前
+
+您需要：
+
+* 存取 DII 租戶。
+* 獲授權讀取您打算查詢之資源的 DII 使用者或服務身分。
+* 為您的 DII 環境提供的遠端 MCP 端點。
+* 支援遠端 HTTP 伺服器和貴組織身分驗證方法的 MCP 用戶端。
+
+
+範例使用 +<DII_HOST_URL>+ 作為預留位置。請勿將存取權杖貼入受原始碼控制的檔案中。例如，Cursor 使用的 URL 為：
+
+ https://<DII_HOST_URL>/api/v1/mcp
+請查看與您的連線相關的具體程式碼片段。
+
+
+
+[[configure-the-mcp-client]]
+== 設定 MCP 用戶端
+
+. 導覽至 管理 > API 存取，然後選擇「MCP 組態」標籤。
+. 選擇要設定的用戶端。
+. 提供有意義的名稱和到期時間，然後選取 _產生權杖_。
+. *複本程式碼片段* 您只能在此步驟中複本此內容。權杖隱藏在程式碼片段中，但會正確貼上至您的用戶端應用程式。
+. 在用戶端設定中，在「url」欄位中輸入正確的 DII 主機 URL。
+. 儲存組態。
+
+
+
+IMPORTANT: 請勿將 bearer token 放在 shell 歷史記錄、提示字元、螢幕截圖、專案檔案或來源控制中。
+
+
+
+[[verify-access]]
+== 驗證存取
+
+用戶端報告伺服器已連線後，即可開始發送以下請求：
+
+[]
+====
+列出我可用的 DII 物件類型。列出我可用的 DII 日誌類型。列出我的擷取單位，但不顯示 IP 位址或 UUID。
+
+====
+成功探索表示連線已建立，但這並不保證存取所有底層資源。租戶功能、收集器和權限決定了傳回哪些資料。
+
+
+
+[[credential-safety]]
+== 認證資料安全
+
+* 盡可能優先使用互動式 OAuth 或其他短期認證資料流程。
+* 對無人值守用戶端使用專用服務身分。
+* 請勿將權杖放在提示、螢幕截圖、範例、問題描述或來源控制中。
+* 請勿要求代理程式顯示完整的 webhook 位址。
+
+
+如需更多指導，請參閱link:mcp_security.html["安全和隱私"]。
+
+
+
+[[next-steps]]
+== 後續步驟
+
+* link:mcp_concepts.html["了解 DII 資料模型"]
+* link:mcp_tools_overview.html["瀏覽工具參考"]
+* link:mcp_recipe_environment_inventory.html["執行環境清單配方"]
+* link:mcp_troubleshooting.html["疑難排解連線與查詢錯誤"]
+

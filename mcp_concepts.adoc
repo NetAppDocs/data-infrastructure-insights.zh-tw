@@ -1,0 +1,161 @@
+---
+sidebar: sidebar 
+permalink: mcp_concepts.html 
+summary: 理解這些概念有助於人工智慧助理選擇合適的工具並建立有效的查詢。 
+keywords: MCP, DII, Data Infrastructure Insights, AI assistant 
+---
+= DII MCP 概念與資料模型
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+理解這些概念有助於人工智慧助理選擇合適的工具並建立有效的查詢。
+
+
+NOTE: DII MCP 是一項 link:concept_preview_features.html["預覽"] 功能，因此可能會發生變化。
+
+
+
+[[tenant-scope]]
+== 租戶範圍
+
+每個 DII MCP 請求都在已認證使用者的 DII 租戶及其權限範圍內執行。工具只能傳回存在於該租戶中且對該身分可見的資料。
+
+
+
+[[acquisition-units]]
+== 擷取單位
+
+擷取單元（AU）是遠端安裝的代理程式，會輪詢資料來源並將遙測資料報告給 DII。AU 記錄包含連線狀態、報告最新狀態、作業系統、版本，以及已指派資料來源的數量。
+
+連線和報告是不同的訊號。例如，AU 可以接受連線，但沒有成功的報告歷史記錄。同時評估狀態和 `lastReported`。
+
+
+
+[[data-sources]]
+== 資料來源
+
+資料來源（也稱為收集器）是與基礎架構系統（例如儲存陣列、交換器、Hypervisor 或雲端服務）的設定連線。
+
+使用清單操作來取得庫存和狀態資訊。當需要組態詳細資訊（例如收集包、輪詢間隔或最近活動）時，請擷取特定資料來源。
+
+支援的資料來源類型描述了更廣泛的 DII 收集器目錄。它們與目前租戶中設定的收集器並不相同。
+
+
+
+[[objects]]
+== 物件
+
+物件是正規化的基礎架構實體，例如儲存設備系統、集區、磁碟區、主機、虛擬機器、Kubernetes 工作負載和產品特定資源。
+
+物件類型是動態的。一律：
+
+. 列出物件類型。
+. 請選擇確切類型。
+. 擷取該類型的中繼資料。
+. 僅查詢由中繼資料宣告的屬性與計量。
+
+
+
+
+[[attributes-and-metrics]]
+=== 屬性和計量
+
+* *屬性*描述身分、組態、所有權、標籤或關係。
+* *計量*是隨時間變化的測量值，例如容量、延遲、處理量或使用率。
+* *可分組屬性*可以對彙總查詢進行分段。
+
+
+在套用請求的時間視窗集合體之前，會根據原始計量值評估計量篩選器。
+
+
+
+[[logs]]
+== 紀錄
+
+日誌類型代表事件串流，例如 ONTAP EMS、Kubernetes 事件、StorageGRID 事件、VMware 事件和 DII 平台事件。
+
+日誌查詢也是中繼資料優先：
+
+. 列出可用的日誌類型。
+. 擷取所選類型的中繼資料。
+. 僅請求有效屬性。
+. 搜尋事件或建立事件計數直方圖。
+
+
+
+
+[[monitors-and-alerts]]
+== 監控和警報
+
+監控定義了 DII 評估的條件。警報是針對一個或多個相關物件的特定監控結果。
+
+* 使用監控工具檢查意圖、狀態、物件類型和糾正指南。
+* 在查詢警報之前，請使用警報中繼資料。
+* 使用警報名稱（例如 `AL-123456`）或其 UUID 來擷取一個警報。
+
+
+警報狀態和嚴重程度是分隔的維度。在決定結果優先順序時，需要同時考慮這兩個因素。
+
+
+
+[[maintenance-windows]]
+== 維護所需時間
+
+維護所需時間會在定義的期間內抑制與表示式相符的警報。空白的成功結果表示不存在相符的維護所需時間；這並非遺失資料的證據。
+
+
+
+[[notification-rules-and-targets]]
+== 通知規則和目標
+
+通知規則會路由相符的警報。目標可包括 Slack、Microsoft Teams、PagerDuty 或自訂 HTTP 整合。
+
+Webhook 位址可能包含機密資料。進行報告時，只需請求目標名稱、引擎類型和狀態。切勿重製完整的位址。
+
+
+
+[[metadata-first-query-flow]]
+== 中繼資料優先查詢流程
+
+[source, text]
+----
+Discover types
+    → retrieve type metadata
+        → select valid attributes and metrics
+            → query a bounded time range
+                → paginate, group, or retrieve time series
+----
+
+
+[[filters]]
+== 過濾器
+
+DII 查詢工具支援條件和巢狀邏輯運算子：
+
+* 比較： `EQ`， `NE`， `GT`， `LT`， `GE`， `LE`
+* 模式匹配： `WILDCARD`
+* 存在： `EXISTS`
+* 邏輯： `and`， `or`， `not`
+
+
+請使用中繼資料中宣告的確切欄位名稱和相容的值類型。對於 `EXISTS`，如果連接的伺服器版本支援，則可省略比較值。
+
+
+
+[[time-ranges-and-pagination]]
+== 時間範圍和分頁
+
+* 使用具有顯式偏移量的 ISO-8601 時間戳記或 `Z`。
+* 在需要時提供 IANA 時區，例如 +America/New_York+ 或 `UTC`。
+* 除非工具說明了更小的限制，否則請將查詢時間範圍保持在 30 天或更短。
+* 物件和警報查詢通常使用 `limit`和 `offset`。
+* 日誌事件查詢使用傳回的游標來存取下一頁。
+
+
+如需錯誤與恢復步驟，請參閱link:mcp_troubleshooting.html["故障排除"]。

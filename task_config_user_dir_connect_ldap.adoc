@@ -14,86 +14,126 @@ summary: 設定工作負載安全 LDAP 使用者目錄收集器
 
 
 [role="lead"]
-您設定工作負載安全性以從 LDAP 目錄伺服器收集使用者屬性。
+Workload Security 使用目錄資料來解析檔案存取活動中的身分。使用者目錄收集器不提供測試連線功能。
 
-.開始之前
-* 您必須是Data Infrastructure Insights管理員或帳戶所有者才能執行此任務。
-* 您必須擁有託管 LDAP 目錄伺服器的伺服器的 IP 位址。
-* 在設定 LDAP 目錄連接器之前，必須先設定代理程式。
+*請先設定使用者目錄收集器，再設定 ONTAP SVM 資料收集器*
 
+image:config_ldap_directory_image1.png["新增使用者目錄對話方塊，包含 Active Directory 和 LDAP 目錄伺服器選項。，標題=\"選擇使用者目錄類型\"，寬度=652，高度=211"]
 
-.配置使用者目錄收集器的步驟
-. 在工作負載安全性選單中，按一下：*收集器 > 使用者目錄收集器 > + 使用者目錄收集器*，然後選擇*LDAP 目錄伺服器*
-+
-系統顯示新增使用者目錄畫面。
+[cols="50%,50%"]
+|===
+| *選擇* | *在以下情況下使用* 
 
 
+| Active Directory | 使用者儲存在 Active Directory 中，監控的活動是 SMB；或 Unix 使用者儲存在 Active Directory 中，具有 uidNumber 值，並執行 NFS 活動。 
 
-透過在下表中輸入所需資料來設定使用者目錄收集器：
 
-[cols="2*"]
+| LDAP 目錄伺服器 | Unix 使用者主要儲存在 LDAP 目錄中，監控的活動為 NFS。 
+
+
+| 兩者 | 身分識別資訊分割在 Active Directory 和 LDAP 中。為每個權威目錄新增一個收集器，以便解析所有受監控的身分識別資訊。 
+|===
+[cols="100%"]
+|===
+| *本頁介紹 LDAP 目錄伺服器* 使用此收集器收集 LDAP 中維護的 Unix 身份，並用於 NFS 存取。 
 |===
 
 
-| Name | 描述 
+[[before-you-begin]]
+== 開始之前
+
+* 以 Data Infrastructure Insights 管理員或帳戶擁有者身分登入。
+* 部署並連接可存取目錄伺服器的 Workload Security 代理程式。
+* 收集 LDAP 目錄伺服器 IP 位址或 FQDN、搜尋基準、連結 DN 和連結密碼。
+* 允許代理程式存取目錄服務。LDAP 或 StartTLS 的常用連接埠為 389，LDAPS 的常用連接埠為 636；請使用伺服器上設定的連接埠。
+* 使用能夠搜尋所需目錄範圍並讀取收集器中已對應的每個屬性的 Bind DN 帳戶。
 
 
-| Name | 使用者目錄的唯一名稱。例如 _GlobalLDAPCollector_ 
 
 
-| 代理人 | 從清單中選擇一個已配置的代理 
+[[add-the-ldap-directory-server-collector]]
+== 新增 LDAP 目錄伺服器收集器
+
+*1.*前往 Workload Security ++>++ 收集器 ++>++ 使用者目錄收集器，然後選擇 {plus} 使用者目錄收集器。
+
+*2.*選擇 LDAP 目錄伺服器，然後選擇繼續。
+
+*3.*完成下面描述的連線欄位和屬性對應。
+
+*4.*如果服務帳戶使用的物件類別未包含在預設搜尋中，請檢閱進階組態。
+
+*5.*使用 ldapsearch 或 LDAP 瀏覽器驗證組態，然後選擇「儲存收集器」。
+
+image:config_ldap_directory_image2.png["LDAP 目錄伺服器收集器表單，顯示連線欄位、必填和選用屬性對應以及進階組態搜尋查詢.,title=\"新增 LDAP 目錄伺服器收集器\",width=504,height=729"]
+
+LDAP 目錄伺服器收集器欄位和預設屬性對應。
 
 
-| 伺服器IP/域名 | 託管 LDAP 目錄伺服器的伺服器的 IP 位址或完全限定網域名稱 (FQDN) 
 
+[[connection-fields]]
+=== 連線欄位
 
-| 搜尋基礎 | LDAP 伺服器的搜尋基礎搜尋基礎允許以下兩種格式：_x.y.z_ => 直接域名，就像您在 SVM 上擁有的那樣。  [範例：hq.companyname.com] _DC=x,DC=y,DC=z_ => 相對可分辨名稱 [範例：DC=hq,DC= companyname,DC=com] 或您可以指定如下： _OU=engineering,DC=hq,DC= companyname=DC=com_ [按特定 name eng DC=netapp, DC=com_ [從 OU <engineering> 取得具有 <username> 的特定使用者] _CN=Acrobat Users,CN=Users,DC=hq,DC=companyname,DC=com,O= companyname,L=Boston,S=MA,C=US_ [取得該組織內使用者的所有 Acroanyname,L=Boston,S=MA,C=US_ [取得該組織內使用者的所有 Acroanyname, Bcroston,S=MA,C=US_ [取得該組織內使用者的所有 Acroanyname, Bcroston,S=MA,C=US_ [取得該組織內使用者的所有 Acroanyname, 4croston,S=MAs] 
-
-
-| 綁定 DN | 允許使用者搜尋目錄。例如：uid=ldapuser,cn=users,cn=accounts,dc=domain,dc=companyname,dc=com uid=john,cn=users,cn=accounts,dc=dorp,dc=company,dc=com 給使用者 john@dorp.company.com。 dorp.company.com 
-
-
-| --帳戶 | --用戶 
-
-
-| --約翰 | --安娜 
-
-
-| 綁定密碼 | 目錄伺服器密碼（即綁定 DN 中使用的使用者名稱的密碼） 
-
-
-| 協定 | ldap、ldaps、ldap-start-tls 
-
-
-| 連接埠 | 選擇連接埠 
+[cols="34%,33%,33%"]
 |===
-如果 LDAP 目錄伺服器中的預設屬性名稱已被修改，請輸入下列目錄伺服器所需的屬性。大多數情況下，這些屬性名稱在 LDAP 目錄伺服器中不會被修改，在這種情況下，您可以簡單地使用預設屬性名稱。
+| *欄位* | *要求* | *要輸入的內容* 
 
-[cols="2*"]
+
+| 名稱++*++ | 強制 | 唯一的收集器名稱。 
+
+
+| 代理人 | 強制 | 能夠存取此 LDAP 伺服器的連線代理程式。 
+
+
+| 伺服器 IP/網域名稱++*++ | 強制 | LDAP 伺服器 IP 位址或 FQDN。 
+
+
+| 搜尋基礎++*++ | 強制 | 包含要匯入之使用者的基本 DN，例如 cn=accounts,dc=example,dc=com。僅當搜尋應限制在該子樹時，才使用較窄的 OU/CN DN。 
+
+
+| 連結 DN++*++ | 強制 | 允許搜尋基底之帳戶的完整 DN，例如 uid=ws-reader,cn=users,cn=accounts,dc=example,dc=com。 
+
+
+| 連結密碼++*++ | 強制 | Bind DN 帳戶的密碼。 
+
+
+| 協定 | 預設 | LDAP、LDAPS 或搭配 StartTLS 的 LDAP。請選擇伺服器使用的協定。 
+
+
+| 連接埠++*++ | 強制 | 數字目錄連接埠；通常為 389 或 636。 
 |===
 
 
-| 屬性 | 目錄伺服器中的屬性名稱 
+[[mandatory-attribute-mappings]]
+=== 必填屬性對應
 
+標有星號的欄位必須具有有效的對應。除非您的 LDAP 架構使用不同的屬性名稱，否則請保留預設值。
 
-| 顯示名稱 | 姓名 
-
-
-| UNIXID | uid 號 
-
-
-| 使用者名稱 | uid 
+[cols="34%,33%,33%"]
 |===
-按一下「包括可選屬性」以新增下列任意屬性：
+| *Workload Security 欄位* | *預設 LDAP 屬性* | *目的* 
 
-[cols="2*"]
+
+| 顯示名稱++*++ | 姓名 | Workload Security 中顯示的名稱 
+
+
+| UNIXID++*++ | uid 號 | 解析 NFS 活動中的數字 Unix 使用者 ID 
+
+
+| 使用者名稱++*++ | uid | Unix 登入名稱或帳戶名稱 
 |===
 
 
-| 屬性 | 目錄伺服器中的屬性名稱 
+[[optional-attribute-mappings]]
+=== 選用屬性對應
+
+僅針對您要匯入的設定檔資料選取「包含選用屬性」。每個對應都必須與實際的 LDAP 結構描述相符，包含伺服器將其視為重要的大小寫。
+
+[cols="50%,50%"]
+|===
+| *設定檔值* | *預設 LDAP 屬性* 
 
 
-| 電子郵件 | 郵件 
+| 電子郵件 | 電子郵件地址 
 
 
 | 電話號碼 | 電話號碼 
@@ -102,10 +142,10 @@ summary: 設定工作負載安全 LDAP 使用者目錄收集器
 | 角色 | 標題 
 
 
+| 狀態 | st 
+
+
 | 國家 | 公司 
-
-
-| 狀態 | 狀態 
 
 
 | 部門 | 部門編號 
@@ -114,87 +154,106 @@ summary: 設定工作負載安全 LDAP 使用者目錄收集器
 | 照片 | 照片 
 
 
-| 經理DN | 主管 
+| 管理員 DN | 主管 
 
 
-| 團體 | 成員 
+| 團體 | memberof 
 |===
 
 
-[[testing-your-user-directory-collector-configuration]]
-== 測試您的使用者目錄收集器配置
+[[advanced-configuration-include-the-accounts-you-need]]
+== 進階組態：包含您需要的帳戶
 
-您可以使用下列步驟驗證 LDAP 使用者權限和屬性定義：
+搜尋查詢控制要匯入哪些 LDAP 物件。預設查詢包含常見的 Unix 和人員物件類別：
 
-* 使用下列指令驗證 Workload Security LDAP 使用者權限：
-+
- ldapsearch -D "uid=john ,cn=users,cn=accounts,dc=dorp,dc=company,dc=com" -W -x -LLL -o ldif-wrap=no -b "cn=accounts,dc=dorp,dc=company,dc=com" -H ldap://vmwipaapp08.dorp.company.com
-* 使用 LDAP Explorer 瀏覽 LDAP 資料庫、檢視物件屬性和特性、檢視權限、檢視物件的模式、執行可以儲存和重新執行的複雜搜尋。
-+
-** 在任何可以連接到 LDAP 伺服器的 Windows 機器上安裝 link:http://ldaptool.sourceforge.net/["LDAP 瀏覽器"] 或 link:http://jxplorer.org/["Java LDAP Explorer"]。
-** 使用 LDAP 目錄伺服器的使用者名稱/密碼連線到 LDAP 伺服器。
-
-
-
-
-image:CloudSecure_LDAPDialog.png["LDAP 連線"]
-
-
-
-[[troubleshooting-ldap-directory-collector-configuration-errors]]
-== 排除 LDAP 目錄收集器設定錯誤
-
-下表描述了收集器配置期間可能出現的已知問題和解決方法：
-
-[cols="2*"]
+[cols="100%"]
 |===
-| 問題： | 解決： 
-
-
-| 新增 LDAP 目錄連接器會導致「錯誤」狀態。錯誤提示「為 LDAP 伺服器提供的憑證無效」。 | 提供的綁定 DN、綁定密碼或搜尋基礎不正確。編輯並提供正確的資訊。 
-
-
-| 新增 LDAP 目錄連接器會導致「錯誤」狀態。錯誤提示：“無法取得與作為林名稱提供的 DN=DC=hq,DC=domainname,DC=com 對應的物件。” | 提供的搜尋基礎不正確。編輯並提供正確的森林名稱。 
-
-
-| 網域使用者的選用屬性未出現在工作負載安全使用者設定檔頁面中。 | 這可能是由於 CloudSecure 中新增的可選屬性名稱與 Active Directory 中的實際屬性名稱不符所造成的。字段區分大小寫。編輯並提供正確的可選屬性名稱。 
-
-
-| 資料收集器處於錯誤狀態，顯示「無法檢索 LDAP 使用者。失敗原因：無法連接到伺服器，連接為空” | 點選“重新啟動”按鈕重新啟動收集器。 
-
-
-| 新增 LDAP 目錄連接器會導致「錯誤」狀態。 | 確保您已為必填欄位（伺服器、林名稱、綁定 DN、綁定密碼）提供了有效值。確保綁定 DN 輸入始終為 uid=ldapuser,cn=users,cn=accounts,dc=domain,dc=companyname,dc=com。 
-
-
-| 新增 LDAP 目錄連接器會導致「重試」狀態。顯示錯誤“無法確定收集器的健康狀況，因此請重試” | 確保提供正確的伺服器 IP 和搜尋庫 //// 
-
-
-| 新增 LDAP 目錄時顯示下列錯誤：“無法在 2 次重試內確定收集器的健康狀況，請嘗試重新啟動收集器（錯誤代碼：AGENT008）” | 確保提供正確的伺服器 IP 和搜尋庫 
-
-
-| 新增 LDAP 目錄連接器會導致「重試」狀態。顯示錯誤“無法定義收集器的狀態，原因 Tcp 命令 [Connect(localhost:35012,None,List(),Some(,seconds),true)] 因 java.net.ConnectionException:Connection 被拒絕而失敗。” | 為 AD 伺服器提供的 IP 或 FQDN 不正確。編輯並提供正確的 IP 位址或 FQDN。  //// 
-
-
-| 新增 LDAP 目錄連接器會導致「錯誤」狀態。錯誤提示「無法建立 LDAP 連線」。 | 為 LDAP 伺服器提供的 IP 或 FQDN 不正確。編輯並提供正確的 IP 位址或 FQDN。或提供的連接埠值不正確。嘗試使用 LDAP 伺服器的預設連接埠值或正確的連接埠號碼。 
-
-
-| 新增 LDAP 目錄連接器會導致「錯誤」狀態。錯誤提示：「無法載入設定。原因：資料來源配置錯誤。具體原因：/connector/conf/application.conf: 70: ldap.ldap-port 的類型為 STRING 而非 NUMBER” | 提供的連接埠值不正確。嘗試使用 AD 伺服器的預設連接埠值或正確的連接埠號碼。 
-
-
-| 我從強制屬性開始，並且它起作用了。新增可選項後，可選屬性資料不會從 AD 中取得。 | 這可能是由於 CloudSecure 中新增的可選屬性與 Active Directory 中的實際屬性名稱不符所造成的。編輯並提供正確的強製或可選屬性名稱。 
-
-
-| 重新啟動收集器後，LDAP 同步何時發生？ | 收集器重新啟動後，LDAP 同步將立即發生。取得約30萬用戶的用戶資料大約需要15分鐘，並且每12小時自動刷新一次。 
-
-
-| 使用者資料從 LDAP 同步到 CloudSecure。數據何時會被刪除？ | 如果沒有刷新，用戶資料將保留13個月。如果租戶被刪除，那麼資料也將被刪除。 
-
-
-| LDAP 目錄連接器導致「錯誤」狀態。 「連接器處於錯誤狀態。服務名稱：usersLdap。失敗原因：無法檢索 LDAP 使用者。失敗原因：80090308：LdapErr：DSID-0C090453，註：AcceptSecurityContext 錯誤，資料 52e，v3839” | 提供的森林名稱不正確。請參閱上文，了解如何提供正確的森林名稱。 
-
-
-| 用戶資料頁面中未填寫電話號碼。 | 這很可能是由於 Active Directory 的屬性對映問題所造成的。1.編輯從 Active Directory 取得使用者資訊的特定 Active Directory 收集器。2.請注意，在選用屬性下，有一個欄位名稱「電話號碼」會對應到 Active Directory 屬性「telephonenumber」。4.現在，請使用上面描述的 Active Directory Explorer 工具瀏覽 LDAP 目錄伺服器並查看正確的屬性名稱。3.確保 LDAP 目錄中有一個名為「telephonenumber」的屬性，其中確實包含使用者的電話號碼。5.假設在 LDAP 目錄中它已被修改為「電話號碼」。6.然後編輯 CloudSecure 使用者目錄收集器。在可選屬性部分，將“telephonenumber”替換為“phonenumber”。7.儲存 Active Directory 收集器，收集器將重新啟動並取得使用者的電話號碼，並將其顯示在使用者個人資料頁面中。 
-
-
-| 如果在 Active Directory (AD) 伺服器上啟用了加密憑證 (SSL)，則 Workload Security User Directory Collector 無法連線到 AD 伺服器。 | 在設定使用者目錄收集器之前停用 AD 伺服器加密。一旦獲取用戶詳細信息，它將保留 13 個月。如果 AD 伺服器在取得使用者詳細資訊後斷開連接，則不會取得 AD 中新新增的使用者。若要再次取得使用者目錄收集器，需要連接到 AD。 
+| ({vbar}(objectClass=posixAccount)(objectClass=person)(objectClass=nsperson)) 
 |===
+使用另一個 objectClass 的電腦帳戶、裝置帳戶、應用程式身分識別或服務帳戶仍無法解析。請在 LDAP 瀏覽器中或使用 ldapsearch 檢查物件，然後僅針對所需的物件類型擴充查詢。例如：
+
+[cols="100%"]
+|===
+| (objectClass=posixAccount) + (objectClass=person) + (objectClass=nsperson) + (objectClass=device) + (objectClass=applicationProcess) + (objectClass=applicationEntity)) 
+|===
+[cols="100%"]
+|===
+| *您的 LDAP 架構是權威的* 物件類別和屬性名稱因目錄實作而異。請在儲存前確認物件的實際架構，並確保所有必要的對應都有值。請勿過度擴大查詢範圍。 
+|===
+
+
+[[validate-the-configuration]]
+== 驗證組態
+
+[cols="100%"]
+|===
+| *使用者目錄收集器無法使用測試連線* 在儲存收集器之前，請從具有等效存取的主機驗證網路存取、連結憑證、搜尋範圍、查詢結果和對應屬性。 
+|===
+
+
+[[use-ldapsearch]]
+=== 使用 ldapsearch
+
+使用預期的連結 DN 執行範圍搜尋。將範例替換為您的目錄值，並將收集器的搜尋查詢新增為 LDAP 過濾器。
+
+[cols="100%"]
+|===
+| ldapsearch -o ldif-wrap=no -LLL -x -H ldap://ldap.example.com:389 -D "uid=ws-reader,cn=users,cn=accounts,dc=example,dc=com" -W -b "cn=accounts,dc=example,dc=com" '({vbar}(objectClass=posixAccount)(objectClass=person)(objectClass=nsperson))' name uidNumber uid 
+|===
+* 使用收集器將使用的確切帳戶和密碼連結成功。
+* 搜尋結果傳回預期的人員、電腦或服務帳戶。
+* 每個必要的對應屬性皆存在，且在傳回的物件上具有值。
+* 代理程式對目錄伺服器具有相同的 DNS 解析和網路路徑。
+
+
+
+
+[[after-you-save]]
+== 儲存後
+
+* LDAP 同步在收集器啟動或重新啟動時開始。
+* 擁有大約 300,000 名使用者的目錄，同步大約需要 15 分鐘。
+* 使用者資料每 12 小時自動重新整理。
+* 如果目錄不可用，先前取得的使用者詳細資訊將保留，但直到連線恢復後才能取得新的或已變更的使用者。
+* 使用者資料保留 13 個月，期間不會重新整理。使用者目錄資料無法獨立於租戶刪除。
+
+
+
+
+[[troubleshooting]]
+== 故障排除
+
+[cols="50%,50%"]
+|===
+| *訊息或症狀* | *需要檢查的內容* 
+
+
+| 提供給 LDAP 伺服器的憑證無效。 | 驗證 Bind DN 和密碼。同時確認該帳戶可以搜尋設定的搜尋基礎。 
+
+
+| 未能取得與 DN=…… 對應的物件（作為搜尋基準）。 | 更正搜尋基準。請使用確切的網域、DN、OU 或其他受支援的範圍。 
+
+
+| LDAP 連線建立失敗。 | 從代理程式驗證 LDAP 伺服器 IP/FQDN、DNS 解析、協定、連接埠和防火牆路徑。 
+
+
+| 無法擷取 LDAP 使用者……連線為 null。 | 重新啟動收集器。如果再次發生，請從同等的網路位置使用 ldapsearch 驗證連線與搜尋。 
+
+
+| 收集器正在重試或報告 AGENT008。 | 驗證伺服器位址和搜尋基準；然後確認代理程式可以連線到目錄服務。 
+
+
+| 使用者或選用屬性未顯示。 | 確認搜尋查詢包含該物件，且對應的屬性名稱與目錄架構相符（包括大小寫，若適用）。儲存以重新啟動並重新同步。 
+
+
+| AcceptSecurityContext 錯誤，資料 52e。 | 請驗證憑證和搜尋基準。在 Active Directory 中，資料 52e 指示憑證無效。 
+
+
+| ldap-port 的類型為 STRING 而非 NUMBER。 | 輸入一個數字連接埠值，例如 389 或 636。 
+|===
+
+
+[[related-information]]
+== 相關資訊
+
+https://docs.netapp.com/us-en/data-infrastructure-insights/task_config_user_dir_connect_ldap.html["［.underline"]#目前 NetApp 文件頁#]

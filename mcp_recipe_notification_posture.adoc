@@ -1,0 +1,150 @@
+---
+sidebar: sidebar 
+permalink: mcp_recipe_notification_posture.html 
+summary: 使用此方法了解如何在不暴露 webhook 端點位址的情況下路由和抑制 DII 警報。 
+keywords: MCP, DII, Data Infrastructure Insights, AI assistant 
+---
+= 審查通知態勢
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+使用此方法了解如何在不暴露 webhook 端點位址的情況下路由和抑制 DII 警報。
+
+
+NOTE: DII MCP 是一項 link:concept_preview_features.html["預覽"] 功能，因此可能會發生變化。
+
+
+
+[[prerequisites]]
+== 先決條件
+
+* 存取通知和維護時段工具。
+* 可選的監控、資源或整合類型，用於縮小審查範圍。
+
+
+
+
+[[tools-used]]
+== 使用的工具
+
+* +NotificationService_getNotificationRules+
+* +NotificationService_getNotificationRuleById+
+* +NotificationService_getWebhooks+
+* +MaintenanceWindowService_getMaintenanceWindows+
+* +MaintenanceWindowService_getMaintenanceWindowById+
+* 選用：+MonitorsService_queryMonitors+
+
+
+
+
+[[starter-prompt]]
+== 啟動提示
+
+[]
+====
+審查 DII 通知狀態。匯總作用中和未啟動的通知規則、每項規則的監控或資源範圍、按整合類型劃分的 webhook 目標數量，以及目前的維護時段。僅傳回目標名稱、引擎類型和狀態，絕不傳回端點位址。
+
+====
+
+
+[[agent-workflow]]
+== 代理程式工作流程
+
+. 列出通知規則。
+. 將規則分類為作用中、非作用中、即將到期或永不到期。
+. 總結每條規則的表示式範圍：
++
+** 監控名稱或群組
+** 相關物件
+** 廣泛的萬用字元範圍
+
+
+. 僅當需要更多詳細資訊時才檢索特定規則。
+. 列出 webhook 目標，並立即從工作結果中丟棄位址欄位。
+. 按引擎類型和狀態將目標分組。
+. 列出作用中的維護時段。
+. 找出與重要資源重疊或持續時間異常長的抑制視窗。
+. （選用）將規則表示式與可用的監控進行比較。
+. 報告路由覆蓋範圍、廣泛規則、非作用中規則和抑制風險。
+
+
+
+
+[[security-requirement]]
+== 安全要求
+
+完整的 webhook 位址可以包含：
+
+* Slack 或 Teams 簽章路徑
+* PagerDuty 路由鍵
+* API 權杖
+* 獨特的工作流程簽章
+* 自訂整合憑證
+
+
+切勿顯示、引用、匯總、保留或轉送位址欄位。此工作流程也無需使用遮罩後綴。
+
+如果完整的端點出現在記錄或共享的工件中，請依照 link:mcp_security.html["安全和隱私"] 中的事件步驟進行操作。
+
+
+
+[[interpretation]]
+== 解釋
+
+* 非作用中的規則可能是刻意的；在建議移除之前，請確認所有權。
+* 過於寬泛的通配符表示式可能會產生通知雜訊或造成意外路由。
+* 目標狀態可能為空或未知；請勿將其報告為已啟用。
+* 成功的空維護視窗結果表示不存在符合的視窗。
+* 即使在技術上是作用中且有效的，長期存在的視窗也可能掩蓋真正的問題。
+
+
+
+
+[[suggested-output]]
+== 建議輸出
+
+. 按狀態的規則計數
+. 規則範圍和目的地類型
+. 依引擎的目標計數
+. 作用中維護時段
+. 廣泛、非作用中或模糊的組態
+. 安全性和資料品質注意事項
+
+
+
+
+[[limits-and-privacy]]
+== 限制和隱私
+
+* 請勿傳回位址、權杖、UUID 或私有資源識別碼。
+* 此工作流程會審查組態，但不測試訊息傳遞。
+* 目前工具無法建立、更新、停用或刪除規則和目標。
+
+
+
+
+[[follow-up-prompts]]
+== 後續提示
+
+[]
+====
+哪些作用中通知規則具有廣泛的萬用字元表示式，它們可以符合哪些監控群組？
+
+====
+[]
+====
+列出目前和即將進行的維護時段，並說明它們會抑制哪些警報範圍。
+
+====
+[]
+====
+依整合類型統計通知目標數量，並識別狀態未知的目標。不顯示地址。
+
+====
+link:mcp_recipe_overview.html["返回配方"]

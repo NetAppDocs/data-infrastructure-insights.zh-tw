@@ -1,0 +1,138 @@
+---
+sidebar: sidebar 
+permalink: mcp_recipe_kubernetes_collector_currency.html 
+summary: 使用此方法可以識別 DII 營運者或集合元件已過時、停用或陳舊的 Kubernetes 叢集。 
+keywords: MCP, DII, Data Infrastructure Insights, AI assistant 
+---
+= 檢查 Kubernetes 收集器最新狀態
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+使用此方法可以識別 DII 營運者或集合元件已過時、停用或陳舊的 Kubernetes 叢集。
+
+
+NOTE: DII MCP 是一項 link:concept_preview_features.html["預覽"] 功能，因此可能會發生變化。
+
+
+
+[[prerequisites]]
+== 先決條件
+
+* Kubernetes 收集已在 DII 租戶中設定。
+* 存取 Kubernetes 收集器資訊。
+
+
+
+
+[[tools-used]]
+== 使用的工具
+
+* +OperatorsManagement_getKubernetesCollectors+
+* 選用：+AcquisitionUnitsService_getAcquisitionUnits+
+* 選用：+CollectorService_getDataSources+
+
+
+
+
+[[starter-prompt]]
+== 啟動提示
+
+[]
+====
+檢閱 DII Kubernetes 收集器的時效性。依整體狀態將叢集分組，識別過時或已停用的營運者與元件，並標記過時的最後報告時間戳記。請勿顯示內部位址或 UUID。
+
+====
+
+
+[[agent-workflow]]
+== 代理程式工作流程
+
+. 列出 Kubernetes 收集器。
+. 將每個叢集標準化為：
++
+** 最新
+** 過時
+** 已停用
+** 未知
+
+
+. 比較：
++
+** 營運者版本
+** 網路效能與地圖元件版本
+** 變更分析元件版本
+
+
+. 將最後報告的時間戳記轉換為請求的時區。
+. 標記未在約定的新鮮度臨界值內報告的叢集。
+. 將 `N/A`與過時的版本區分開來：
++
+** `N/A` 可能表示該元件未安裝、未啟用或不適用。
+
+
+. 如果報告已過時，請檢查相關的擷取單位和收集器狀態（如有）。
+. 傳回一份按優先順序排序的升級和調查清單。
+
+
+
+
+[[interpretation]]
+== 解釋
+
+* *已過時：*至少有一個已安裝的元件版本低於 DII 預期版本。
+* *已停用：*收集作業已被有意或在管理上停用。
+* *過時的報告：*版本資料可能無法反映叢集的目前狀態。
+* *N/A：* 需要上下文；請勿自動將其歸類為故障。
+
+
+此工具會報告版本和狀態。它不執行升級。
+
+
+
+[[suggested-output]]
+== 建議輸出
+
+. 依狀態區分的叢集計數
+. 依報告新鮮度排名的過時叢集
+. 元件級版本差異
+. 已停用或不可用的元件
+. 建議的驗證步驟
+
+
+
+
+[[limits-and-privacy]]
+== 限制和隱私
+
+* 叢集名稱可能包含敏感資訊；分享結果時請使用經核准的處理方式。
+* 不要僅憑版本號新舊程度來推斷是否有漏洞風險。
+* 在此唯讀工作流程之外驗證升級相容性與程序。
+
+
+
+
+[[follow-up-prompts]]
+== 後續提示
+
+[]
+====
+哪些群集的營運者已過期且在過去一小時內未上報資料？
+
+====
+[]
+====
+將具有過時變更分析元件的叢集與無法使用該元件的叢集分開。
+
+====
+[]
+====
+對於過時的叢集，請檢查相關的 DII 收集基礎架構是否運作正常。
+
+====
+link:mcp_recipe_overview.html["返回配方"]

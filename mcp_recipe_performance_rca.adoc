@@ -1,0 +1,163 @@
+---
+sidebar: sidebar 
+permalink: mcp_recipe_performance_rca.html 
+summary: 使用此方法，透過關聯效能計量、警報和平台日誌，調查運行緩慢的 Volume、資料儲存、虛擬機器、Kubernetes 工作負載或其他 DII 物件。 
+keywords: MCP, DII, Data Infrastructure Insights, AI assistant 
+---
+= 疑難排解效能
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+使用此方法，透過關聯效能計量、警報和平台日誌，調查運行緩慢的 Volume、資料儲存、虛擬機器、Kubernetes 工作負載或其他 DII 物件。
+
+
+NOTE: DII MCP 是一項 link:concept_preview_features.html["預覽"] 功能，因此可能會發生變化。
+
+
+
+[[prerequisites]]
+== 先決條件
+
+* 受影響的資源名稱和大致事件發生時間。
+* 時間範圍為 30 天或更短。
+* 可能時的比較期間或已知的健康基準。
+
+
+
+
+[[tools-used]]
+== 使用的工具
+
+* +ObjectService_getObjectTypes+
+* +ObjectService_getMetadataForObjectType+
+* +ObjectService_query+
+* +ObjectService_queryPerformanceMetricsForObjects+
+* +ObjectService_groupObjects+
+* +AlertsService_getMetadata+
+* +AlertsService_queryForAlerts+
+* +LogService_getLogTypes+
+* +LogService_getLogTypeMetadata+
+* +LogService_queryLogEvents+
+
+
+
+
+[[starter-prompt]]
+== 啟動提示
+
+[]
+====
+調查 UTC 時間 09:00 至 11:00 期間 Volume `example-volume` 緩慢的原因。確定正確的物件類型和有效計量，比較事件視窗期間的延遲、IOPS 和處理量，檢查相關的作用中警報和平台日誌，並與正常時期進行比較。分隔證據和假設，並確定下一步需要進行的測量。
+
+====
+
+
+[[agent-workflow]]
+== 代理程式工作流程
+
+. 將資源解析為精確的物件類型與身分。
+. 擷取該物件類型的中繼資料。
+. 識別有效的延遲、作業、處理量、使用率和容量計量。
+. 查詢目前物件屬性以確定其位置和關係。
+. 擷取以下時間序列：
++
+** 事件視窗
+** 類似的健全狀況時段
+
+
+. 使各計量的時間戳記和集合體函數保持一致。
+. 擷取與資源、包含系統、主機、節點或儲存資源池相關的警報。
+. 選擇相關的日誌串流，擷取中繼資料，並在計量變化前後的狹窄區間內進行搜尋。
+. 檢驗合理的假設：
++
+** 需求激增
+** 資源飽和
+** 儲存設備或架構錯誤
+** 容量壓力
+** 主機或虛擬機器爭用
+** 收集缺口
+
+
+. 報告最受支持的解釋和尚未解決的其他可能性。
+
+
+
+
+[[evidence-standards]]
+== 證據標準
+
+標籤發現：
+
+* *觀察到：*由工具直接回傳。
+* *相關：*獨立訊號在同一時間間隔內發生變化。
+* *推論：*一種尚未獲證實的合理解釋。
+* *未知：*無法取得所需的證據。
+
+
+相關性並不等於因果關係。除非機制已確定，否則同時發出的警報應視為佐證，而非確鑿證據。
+
+
+
+[[metric-guidance]]
+== 計量指引
+
+* 將 `AVG`用於整體行為，但當短暫的峰值很重要時，請檢查 `MAX`。
+* 僅將 `SUM`用於加性計量。
+* 如果中繼資料支援，請對計數器或成長使用  `CHANGE` 或 +CHANGE_RATIO+。
+* 避免比較具有不同桶邊界或單位的序列。
+* 篩選條件會在時間段集合體之前套用。
+
+
+
+
+[[suggested-output]]
+== 建議輸出
+
+. 事件範圍和時間軸
+. 計量證據
+. 警報和日誌證據
+. 健全狀況期間比較
+. 最可能的解釋
+. 其他假設
+. 信心和缺失的證據
+. 建議下次檢查
+
+
+
+
+[[limits-and-privacy]]
+== 限制和隱私
+
+* 時間序列視窗不能超過 30 天。
+* 效能工具傳回的序列數量有限；在提高限制之前，請先縮小篩選範圍。
+* 省略對診斷沒有幫助的敏感原始日誌欄位。
+* 未經正常操作控制驗證，請勿提出具破壞性的補救措施。
+
+
+
+
+[[follow-up-prompts]]
+== 後續提示
+
+[]
+====
+將事件發生期間的最大延遲和平均延遲與前一天正常情況下同一小時的延遲進行比較。
+
+====
+[]
+====
+按主機或儲存資源池對相關工作負載進行分組，並確定效能下降是隔離的還是共享的。
+
+====
+[]
+====
+在首次延遲增加後的 15 分鐘內顯示平台事件。
+
+====
+link:mcp_recipe_overview.html["返回配方"]

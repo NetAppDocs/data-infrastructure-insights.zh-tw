@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: task_add_collector_svm.html 
-keywords: data collector, ONTAP, NetApp, SVM, cloud ontap, firewall 
-summary: 新增工作負載安全資料收集器 
+keywords: data collector, ONTAP, NetApp, SVM, cloud ontap, firewall, Workload Security 
+summary: 設定與疑難排解 Workload Security 的 ONTAP SVM 資料收集器。 
 ---
 = 配置ONTAP SVM 資料收集器
 :hardbreaks:
@@ -14,163 +14,219 @@ summary: 新增工作負載安全資料收集器
 
 
 [role="lead"]
-ONTAP SVM 資料收集器使工作負載安全能夠監控NetApp ONTAP儲存虛擬機器 (SVM) 上的檔案和使用者存取活動。本指南將引導您完成 SVM 資料收集器的設定和管理，以便為您的ONTAP環境提供全面的安全監控。
+ONTAP SVM 資料收集器可讓 Workload Security 監控 NetApp ONTAP 儲存虛擬機器（SVM）上的檔案和使用者存取活動。收集器透過 HTTPS 連線至 ONTAP 以設定 FPolicy；然後 ONTAP 會連線回 Workload Security Agent 以串流檔案和使用者存取事件。本指南涵蓋支援的版本、先決條件、連線方法、權限、「測試連線」預先檢查、組態欄位、特定功能的設定，以及常見問題與其解決方法。
+
+[quote]
+____
+*建議做法：* 為了獲得最快、最可靠的設定，請使用叢集憑證透過叢集管理 IP {plus} SVM 名稱連線，並在儲存前執行測試連線。這個單一做法可避免大多數的收集器設定問題。
+
+____
+
+
+
+[[supported-versions-and-platforms]]
+== 支援的版本和平台
+
+[cols="50%,50%"]
+|===
+| *項目* | *支援* 
+
+
+| ONTAP（最低要求） | ONTAP 9.2 及更新版本。為獲得最佳效能，請使用 ONTAP 9.13.1 以後的版本。 
+
+
+| 中小企業 | SMB 3.1 及更早版本。 
+
+
+| NFS | 最高支援 NFS 4.1（NFS 4.1 需要 ONTAP 9.15 或更高版本）。 
+
+
+| FlexGroup | ONTAP 9.4 及更新版本。 
+
+
+| FlexCache（NFS） | ONTAP 9.7 及更高版本。 
+
+
+| FlexCache（SMB） | ONTAP 9.14.1 及更新版本。 
+
+
+| ONTAP Select | 已支援。 
+
+
+| SVM 類型 / 子類型 | 僅限資料 SVM（無至極磁碟區）。支援的子類型：default、sync++_++source、sync++_++destination。根據設計，DP-destination SVM 會略過稽核。 
+
+
+| data-fpolicy-client 服務原則 | ONTAP 9.8 及更高版本需要此項設定（請參閱服務原則）。早期版本無需設定。 
+
+
+| 功能版本下限 | 存取被拒絕：9.13.0{plus} • 自主勒索軟體防護（ARP）事件：9.11.1{plus} • 持久性儲存：9.14.1{plus} • Protobuf 事件格式：9.15{plus} 
+|===
+[quote]
+____
+*Important:* ONTAP 9.8 及更新版本需要 data-fpolicy-client 服務原則。在較早版本中無需設定。
+
+____
 
 
 
 [[before-you-begin]]
 == 開始之前
 
-* 此數據收集器支援以下功能：
-+
-** Data ONTAP 9.2 及更高版本。為了獲得最佳效能，請使用高於 9.13.1 的Data ONTAP版本。
-** SMB 協定版本 3.1 及更早版本。
-** NFS 版本最高可達 NFS 4.1（請注意， ONTAP 9.15 或更高版本支援 NFS 4.1）。
-** ONTAP 9.4 及更高版本支援 Flexgroup
-** ONTAP 9.7 及更高版本的 NFS 支援FlexCache 。
-** ONTAP 9.14.1 及更高版本的 SMB 支援FlexCache 。
-** 支援ONTAP Select
-
-
-* 僅支援資料類型 SVM。不支援具有無限磁碟區的 SVM。
-* SVM 有幾種子類型。其中，僅支援_default_、_sync_source_和_sync_destination_。
-* 一名特務link:task_cs_add_agent.html["必須配置"]然後才可以配置資料收集器。
-* 確保您具有正確配置的使用者目錄連接器，否則事件將在「活動取證」頁面中顯示編碼的使用者名稱而不是使用者的實際名稱（儲存在 Active Directory 中）。
-* ONTAP持久性儲存從 9.14.1 版本開始支援。
-* 為了獲得最佳效能，您應該將 FPolicy 伺服器配置為與儲存系統位於相同子網路。
-
-
-[[fpolicy-best-practices]]
-* 有關工作負載安全性原則配置的全面最佳實務和建議，請參閱link:https://kb.netapp.com/on-prem/ontap/da/NAS/NAS-KBs/DII_Storage_Workload_Security__Fpolicy_Best_Practice_and_Recommendations["知識庫文章：FPolicy最佳實踐"^]。
-* 您必須使用以下兩種方法之一新增 SVM：
-+
-** 透過使用叢集 IP、SVM 名稱以及叢集管理使用者名稱和密碼。  *_這是推薦的方法。 _*
-+
-*** SVM 名稱必須與ONTAP中顯示的完全一致，並且區分大小寫。
-
-
-** 使用 SVM Vserver 管理 IP、使用者名稱和密碼
-** 如果您無法或不願意使用完整的管理員叢集/SVM 管理使用者名稱和密碼，您可以建立一個具有較低權限的自訂用戶，如<<a-note-about-permissions,“關於權限的說明”>>下面的部分。可以為 SVM 或叢集存取權建立此自訂使用者。
-+
-*** 您也可以使用具有至少 csrole 權限的角色的 AD 用戶，如下面的「關於權限的說明」部分所述。另請參閱link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.pow-adm-auth-rbac%2FGUID-0DB65B04-71DB-43F4-9A0F-850C93C4896C.html["ONTAP 文件"]。
+* 必須先安裝並連線代理程式，然後才能執行「測試連線」或新增資料收集器。請參閱「部署 Workload Security 代理程式」與「代理程式需求」。
+* 為每個其使用者會存取受監控 SVM 的網域設定使用者目錄收集器。測試連線不適用於使用者目錄收集器；若沒有收集器，活動取證將顯示 SID 而非使用者名稱。
+* 為代理程式保留所需的 FPolicy 回呼連接埠。測試連線僅測試其分配的有效連接埠，而不是整個保留範圍。同時確保每個 SVM 資料 LIF 都能路由到代理程式；代理程式 IP 結果會選擇一個本機位址，但不會測試路由。
+* 對於 SVM，只能在一個 Workload Security 環境中設定一個收集器。測試連線不會偵測到其他環境中的複製收集器。
 
 
 
 
-* 透過執行以下命令確保為 SVM 設定了正確的應用程式：
-+
- clustershell:> security login show -vserver <vservername> -user-or-group-name <username>
+[[network-requirements]]
+== 網路需求
+
+[cols="34%,33%,33%"]
+|===
+| *路徑* | *連接埠* | *目的* 
 
 
-範例輸出：image:cs_svm_sample_output.png["SVM 命令輸出範例"]
-
-* 確保 SVM 已配置 CIFS 伺服器：clustershell:> `vserver cifs show`
-+
-系統傳回 Vserver 名稱、CIFS 伺服器名稱和其他欄位。
-
-* 為 SVM vsadmin 使用者設定密碼。如果使用自訂用戶或叢集管理員用戶，請跳過此步驟。 clustershell:> `security login password -username vsadmin -vserver svmname`
-* 解鎖 SVM vsadmin 使用者以進行外部存取。如果使用自訂用戶或叢集管理員用戶，請跳過此步驟。 clustershell:> `security login unlock -username vsadmin -vserver svmname`
-* 確保資料 LIF 的防火牆策略設定為“mgmt”（而不是“資料”）。如果使用專用管理生命週期來新增 SVM，請跳過此步驟。 clustershell:> `network interface modify -lif <SVM_data_LIF_name> -firewall-policy mgmt`
-* 啟用防火牆後，您必須定義例外值以允許使用Data ONTAP資料收集器的連接埠的 TCP 流量。
-+
-看link:concept_cs_agent_requirements.html["代理要求"]取得配置資訊。這適用於本地代理和安裝在雲端的代理。
-
-* 當在 AWS EC2 執行個體中安裝代理程式以監控 Cloud ONTAP SVM 時，代理程式和儲存必須位於同一個 VPC 中。如果它們位於不同的 VPC 中，則 VPC 之間必須有有效的路由。
+| 代理程式 → ONTAP （叢集或 SVM 管理 IP） | TCP 443 | 透過 HTTPS 使用 REST/ONTAPI 設定 FPolicy。 
 
 
+| ONTAP SVM 資料 LIFs → 代理 | TCP 35000–55000 | FPolicy 檔案/使用者存取事件（ONTAP 回呼至代理程式）。 
 
 
-[[test-connectivity-for-data-collectors]]
-== 測試資料收集器的連通性
-
-測試連線功能（於 2025 年 3 月推出）旨在協助最終用戶在Data Infrastructure Insights(DII) 工作負載安全性中設定資料收集器時識別故障的具體原因。這使得用戶能夠自行修正與網路通訊或缺失角色相關的問題。
-
-此功能將幫助用戶在設定資料收集器之前確定所有與網路相關的檢查是否已到位。此外，它還會根據ONTAP版本、角色以及在ONTAP中分配給他們的權限，告知使用者可以存取的功能。
+| ONTAP 叢集管理 IP → 代理 | TCP 35000–55000 | EMS 事件（例如 ARP），當使用這些功能時。 
 
 
-NOTE: 使用者目錄收集器不支援測試連接
+| 代理程式 → ONTAP 叢集管理 | SSH 22 | CIFS/SMB 使用者封鎖（叢集憑證）。 
+|===
+您無需開啟整個 35000–55000 範圍。每個 SVM 最多使用 4 個連接埠（每個啟用的協定 2 個 — NFS 和 CIFS/SMB）；為滿載的 Agent（50 個收集器）保留約 200 個連接埠。朝 Agent 開啟範圍，包括 Agent 主機本身的任何防火牆。
+
+[quote]
+____
+*注意：*啟用防火牆後，請為收集器使用的連接埠定義例外。當代理程式在 AWS 中執行以監控 Cloud ONTAP SVM 時，代理程式和儲存設備必須位於相同 VPC 中，或者 VPC 之間必須存在有效的路由。
+
+____
 
 
 
-[[prerequisites-for-connection-testing]]
-=== 連接測試的先決條件
+[[choose-a-connection-method]]
+== 選擇連線方式
 
-* 此功能要完全發揮作用，需要集群級憑證。
-* SVM 模式不支援功能存取檢查。
-* 如果您使用叢集管理憑證，則不需要新的權限。
-* 如果您使用自訂使用者（例如，_csuser_），請為您想要使用的功能提供強制權限和特定功能權限。
+新增 SVM 可透過以下兩種方法之一實現。強烈建議使用叢集 IP {plus} SVM 名稱。
 
-
-image:ws_test_connection_button.png["工作負載安全測試連線按鈕"]
-
-請務必查看<<a-note-about-permissions,權限>>下面的部分也是如此。
+[cols="25%,25%,25%,25%"]
+|===
+| *方法* | *憑證* | *您將獲得什麼* | *備註* 
 
 
-
-[[test-the-connection]]
-=== 測試連接
-
-使用者可以前往新增/編輯收集器頁面，輸入叢集層級詳細資料（在叢集模式下）或 SVM 層級詳細資料（在 SVM 模式下），然後按一下 *測試連線* 按鈕。然後，工作負載安全性將處理該請求並顯示適當的成功或失敗訊息。
-
-image:ws_test_connection_success_example.png["工作負載安全性「測試連線」成功訊息"]
+| 叢集管理 IP {plus} SVM 名稱（建議） | Cluster-admin、csuser 或具有 csrole 等效角色的 AD 使用者 | 完整功能，包括測試連線功能 / RBAC 檢查和基於 EMS 的功能（ARP）。 | SVM 名稱必須與 ONTAP 完全相符（區分大小寫）。 
 
 
+| SVM 管理 IP | vsadmin、csuser 或具有 csrole 等效角色的 AD 使用者 | 核心稽核。測試連線無法在 SVM 模式下執行功能/RBAC 檢查（SVM 帳戶缺少執行這些檢查的權限）。 | 使用專用的 SVM 管理 LIF，或將資料 LIF 防火牆原則設定為 mgmt（如下）。 
+|===
+[quote]
+____
+*常見陷阱：*當您使用 vsadmin 透過 SVM IP 連線，且 LIF 具有結合的資料 {plus} 管理角色時，ping 成功但 SSH 失敗。建立僅供 SVM 管理用的 LIF，或將資料 LIF 的防火牆原則設定為 mgmt。
 
-[[things-to-note-for-ontap-multi-admin-verify-mav]]
-== ONTAP 多重管理員驗證 (MAV) 注意事項
-
-某些功能（例如建立和刪除快照或使用者封鎖（SMB））可能無法運作，這取決於您的 ONTAP 版本中新增的 MAV 命令。
-
-請依照下列步驟為 MAV 指令新增排除項，以便 Workload Security 能夠建立或刪除快照並封鎖使用者。
-
-允許建立和刪除快照的命令：
-
-....
-multi-admin-verify rule modify -operation "volume snapshot create" -query "-snapshot !*cloudsecure_*"
-multi-admin-verify rule modify -operation "volume snapshot delete" -query "-snapshot !*cloudsecure_*"
-....
-允許使用者封鎖的命令：
-
- multi-admin-verify rule delete -operation set
-
-
-[[prerequisites-for-user-access-blocking]]
-== 使用者存取阻止的先決條件
-
-請記住以下幾點link:cs_restrict_user_access.html["使用者存取阻止"]：
-
-此功能需要集群級憑證才能運作。
-
-如果您使用叢集管理憑證，則不需要新的權限。
-
-如果您使用自訂使用者（例如 _csuser_）並賦予該使用者權限，請依照link:cs_restrict_user_access.html["使用者存取阻止"]授予 Workload Security 阻止使用者的權限。
+____
 
 
 
-[[a-note-about-permissions]]
-== 關於權限的說明
+[[if-you-use-svm-management-ip]]
+=== 如果您使用 SVM 管理 IP
+
+_建議使用叢集管理 IP {plus} SVM 名稱。如果必須使用 SVM 模式，請在測試連線之前完成此設定_
+
+*設定並解除鎖定 vsadmin 密碼以供外部存取：*
+
+[listing]
+----
+security login password -username vsadmin -vserver ++<++svmname++>++
+
+security login unlock -username vsadmin -vserver ++<++svmname++>++
+----
+*使用專用的 SVM 管理 LIF。如果沒有可用的，請將資料 LIF 防火牆原則設定為 mgmt:*
+
+[listing]
+----
+network interface modify -lif ++<++SVM++_++data++_++LIF++_++name++>++ -firewall-policy mgmt
+----
+.SVM 登入輸出範例。
+image:ontap-svm-login-output.png["範例 SVM 登入輸出,title=\"範例 SVM 登入輸出\",width=646,height=164"]
+
+[quote]
+____
+*Important:* SVM 模式無法執行功能和 RBAC 檢查。盡可能使用叢集管理 IP {plus} SVM 名稱。
+
+____
 
 
 
-[[permissions-when-adding-via-cluster-management-ip]]
-=== 透過*群集管理 IP*新增時的權限：
+[[permissions-rbac]]
+== 權限（RBAC）
 
-如果您無法使用叢集管理員用戶允許工作負載安全地存取ONTAP SVM 資料收集器，則可以建立名為「csuser」的新用戶，並使用以下命令所示的角色。設定工作負載安全資料收集器以使用叢集管理 IP 時，請使用使用者名稱「csuser」和密碼「csuser」。
+測試連線將使用在收集器表單中輸入的 ONTAP 帳戶執行。執行之前，請使用叢集管理員憑證或建立具有以下所需權限的 csuser/csrole。如果沒有這些權限，測試連線將無法驗證或設定 FPolicy 和所選功能。
 
-注意：您可以建立一個角色來用於自訂使用者的所有功能權限。如果存在現有用戶，則首先使用以下命令刪除現有用戶和角色：
+*按功能的最低權限*
 
-....
-security login delete -user-or-group-name csuser -application *
-security login role delete -role csrole -cmddirname *
-security login rest-role delete -role csrestrole -api *
-security login rest-role delete -role arwrole -api *
-....
-若要建立新用戶，請使用叢集管理管理員使用者名稱/密碼登入ONTAP ，然後在ONTAP伺服器上執行下列命令：
+[cols="34%,33%,33%"]
+|===
+| *功能* | *所需權限* | *ONTAP 樓層* 
 
- security login role create -role csrole -cmddirname DEFAULT -access readonly
-....
+
+| FPolicy（所有部署都需要） | vserver fpolicy: all | 任何支援的 
+
+
+| 管理員捷徑 | 角色 DEFAULT：唯讀（叢集）— 滿足讀取檢查；fpolicy 仍需要所有 | — 
+
+
+| 快照 | Volume 快照：全部（盡可能限定範圍為 cloudsecure++_*++） | 任何 
+
+
+| 基於 EMS 的監控 | 事件目錄、事件篩選器、事件通知、事件通知目的地、安全性憑證：全部 | 任何 
+
+
+| ONTAP 存取被拒絕 | REST 存取 {plus} vserver fpolicy 事件 | 9.13.0{plus} 
+
+
+| 自主勒索軟體防護（ARP）事件 | 安全性反勒索 Volume {plus} Volume：唯讀/全部 | 9.11.1{plus} 
+
+
+| 持久性儲存 | vserver fpolicy: all {plus} job show: readonly （或 all） | 9.14.1{plus} 
+
+
+| Protobuf 事件格式 | vserver fpolicy: all | 9.15{plus} 
+
+
+| 使用者存取封鎖（SMB 和 NFS） | SSH（應用程式 ssh {plus} 連接埠 22）{plus} set: all，以及 vserver export-policy rule、vserver cifs session、vserver services access-check authentication translate、vserver name-mapping：all。僅限叢集憑證。 | 任何 
+|===
+[quote]
+____
+*常見陷阱：*對於基於 AD 的 ONTAP 帳戶，請直接將角色授予使用者。如果角色僅在群組層級分配，則權限探測無法讀取該角色，且「測試連線」會報告「此 Active Directory 使用者的角色指派在群組層級而非使用者層級」。
+
+____
+
+
+
+[[create-csuser-via-cluster-management-ip]]
+=== 透過叢集管理 IP 建立 csuser
+
+如果需要先替換現有的 csuser/csrole：
+
+[listing]
+----
+security login delete -user-or-group-name csuser -application ++*++
+security login role delete -role csrole -cmddirname ++*++
+security login rest-role delete -role csrestrole -api ++*++
+security login rest-role delete -role arwrole -api ++*++
+----
+建立角色和使用者（以叢集管理員身分執行）：
+
+[listing]
+----
+security login role create -role csrole -cmddirname DEFAULT -access readonly
 security login role create -role csrole -cmddirname "vserver fpolicy" -access all
-security login role create -role csrole -cmddirname "volume snapshot" -access all -query "-snapshot cloudsecure_*"
+security login role create -role csrole -cmddirname "volume snapshot" -access all -query "-snapshot cloudsecure++_*++"
 security login role create -role csrole -cmddirname "event catalog" -access all
 security login role create -role csrole -cmddirname "event filter" -access all
 security login role create -role csrole -cmddirname "event notification destination" -access all
@@ -180,254 +236,335 @@ security login role create -role csrole -cmddirname "cluster application-record"
 security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole
 security login create -user-or-group-name csuser -application ssh -authmethod password -role csrole
 security login create -user-or-group-name csuser -application http -authmethod password -role csrole
-....
+----
 
 
-[[permissions-when-adding-via-vserver-management-ip]]
-=== 透過 *Vserver 管理 IP* 新增時的權限：
+[[create-csuser-via-svm-vserver-management-ip]]
+=== 透過 SVM（Vserver）管理 IP 建立 csuser
 
-如果您無法使用叢集管理員用戶允許工作負載安全地存取ONTAP SVM 資料收集器，則可以建立名為「csuser」的新用戶，並使用以下命令所示的角色。設定工作負載安全資料收集器以使用 Vserver 管理 IP 時，請使用使用者名稱「csuser」和密碼「csuser」。
+如果需要先替換現有的 csuser/csrole：
 
-注意：您可以建立一個角色來用於自訂使用者的所有功能權限。如果存在現有用戶，則首先使用以下命令刪除現有用戶和角色：
+[listing]
+----
+security login delete -user-or-group-name csuser -application ++*++ -vserver ++<++vservername++>++
+security login role delete -role csrole -cmddirname ++*++ -vserver ++<++vservername++>++
+security login rest-role delete -role csrestrole -api ++*++ -vserver ++<++vservername++>++
+----
+建立角色和使用者（在執行前替換 ++<++vservername++>++）：
 
-....
-security login delete -user-or-group-name csuser -application * -vserver <vservername>
-security login role delete -role csrole -cmddirname * -vserver <vservername>
-security login rest-role delete -role csrestrole -api * -vserver <vservername>
-....
-若要建立新用戶，請使用叢集管理管理員使用者名稱/密碼登入ONTAP ，然後在ONTAP伺服器上執行下列命令。為方便起見，請將這些命令複製到文字編輯器，然後將 <vservername> 替換為您的 Vserver 名稱，然後在ONTAP上執行這些命令：
+[listing]
+----
+security login role create -vserver ++<++vservername++>++ -role csrole -cmddirname DEFAULT -access none
+security login role create -vserver ++<++vservername++>++ -role csrole -cmddirname "network interface" -access readonly
+security login role create -vserver ++<++vservername++>++ -role csrole -cmddirname version -access readonly
+security login role create -vserver ++<++vservername++>++ -role csrole -cmddirname volume -access readonly
+security login role create -vserver ++<++vservername++>++ -role csrole -cmddirname vserver -access readonly
+security login role create -vserver ++<++vservername++>++ -role csrole -cmddirname "vserver fpolicy" -access all
+security login role create -vserver ++<++vservername++>++ -role csrole -cmddirname "volume snapshot" -access all
+security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole -vserver ++<++vservername++>++
+security login create -user-or-group-name csuser -application http -authmethod password -role csrole -vserver ++<++vservername++>++
+----
 
- security login role create -vserver <vservername> -role csrole -cmddirname DEFAULT -access none
-....
-security login role create -vserver <vservername> -role csrole -cmddirname "network interface" -access readonly
-security login role create -vserver <vservername> -role csrole -cmddirname version -access readonly
-security login role create -vserver <vservername> -role csrole -cmddirname volume -access readonly
-security login role create -vserver <vservername> -role csrole -cmddirname vserver -access readonly
-....
-....
-security login role create -vserver <vservername> -role csrole -cmddirname "vserver fpolicy" -access all
-security login role create -vserver <vservername> -role csrole -cmddirname "volume snapshot" -access all
-....
-....
-security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole -vserver <vservername>
-security login create -user-or-group-name csuser -application http -authmethod password -role csrole -vserver <vservername>
-....
+
+[[feature-specific-permissions]]
+=== 特定功能權限
+
+*持久儲存（圖中所示為叢集模式；新增 -vserver ++<++vservername++>++ 可啟用 SVM 模式）：*
+
+[listing]
+----
+security login role create -role csrole -cmddirname "vserver fpolicy" -access all
+security login role create -role csrole -cmddirname "job show" -access readonly
+----
+*Protobuf（顯示叢集模式；新增 -vserver ++<++vservername++>++ 以用於 SVM 模式）：*
+
+[listing]
+----
+security login role create -role csrole -cmddirname "vserver fpolicy" -access all
+----
+對於「存取被拒絕」和 ARP，叢集管理員憑證無需額外權限。對於自訂使用者，請新增上述功能表中的權限。請參閱 ONTAP 「存取被拒絕」和 ONTAP 「自主勒索軟體防護」整合指南。
+
+
+
+[[configure-and-test-the-data-collector]]
+== 設定並測試資料收集器
+
+. 以管理員或帳戶擁有者身分登入 Data Infrastructure Insights。
+. 選擇 Workload Security ++>++ 收集器 ++>++ &#43;資料收集器。
+. 將滑鼠懸停在 NetApp SVM 圖塊上，然後按一下 &#43;監控。
+. 請輸入下列欄位。暫時不要儲存收集器。
+
+
+[cols="50%,50%"]
+|===
+| *欄位* | *描述* 
+
+
+| Name | 資料收集器的唯一名稱。 
+
+
+| 代理人 | 選擇已設定、已連線的代理程式。 
+
+
+| 透過管理 IP 連接以進行 | 選擇叢集 IP（建議）或 SVM 管理 IP。 
+
+
+| 叢集/SVM 管理 IP 位址 | 根據您的選擇，叢集或 SVM 的管理 IP。 
+
+
+| SVM 名稱 | SVM 名稱（透過叢集 IP 連線時必需）。必須與 ONTAP 完全匹配（區分大小寫）。 
+
+
+| 使用者名稱 | 叢集 IP：cluster-admin、csuser 或具有等效 csrole 角色的 AD 使用者。SVM IP：vsadmin、csuser 或具有等效 csrole 角色的 AD 使用者。 
+
+
+| 密碼 | 上述帳戶的密碼。 
+
+
+| 篩選股份/交易量 | 選擇在事件收集中包含或排除特定的共享/Volume。 
+
+
+| 要包含/排除的共享名稱 | 以逗號分隔的完整共享名稱（不含引號）。如果清單過長，請以 Volume 而非共享篩選。 
+
+
+| 要包含/排除的 Volume 名稱 | 以逗號分隔的完整 Volume 名稱（不含引號）。 
+
+
+| 監控資料夾訪問 | 啟用一般資料夾存取事件。即使沒有此選項，也會擷取資料夾建立/重新命名/刪除。啟用會增加事件 Volume。 
+
+
+| 設定ONTAP發送緩衝區大小 | 調整 FPolicy 傳送緩衝區。對於 9.8p7 之前的 ONTAP，如果存在效能問題，可進行此調整以改善 ONTAP 效能。如果未顯示此選項，請聯絡 NetApp 支援。 
+|===
+[quote]
+____
+*Important:* 預設排除的檔案副檔名：根據設計，Workload Security 會將 FPolicy 範圍設定為排除 ini 和 DS++_++Store 副檔名。這些檔案的事件會在 ONTAP 上被過濾，不會到達 Workload Security，因此不會出現在 Activity Forensics 中。這與客戶可設定的警示排除項分隔。這是預期行為；無法在 UI 中設定對這些副檔名的稽核。
+
+____
+
+
+
+[[run-test-connection-before-saving]]
+=== 儲存前請執行連線測試
+
+「測試連線」功能（2025 年 3 月推出）會在您建立收集器之前驗證連線性、憑證、資料 LIF、FPolicy 回呼以及每個功能的 RBAC，以便您可以自行修正網路和權限問題。在新增/編輯收集器頁面上，輸入詳細資訊並按一下「測試連線」。
+
+image:ws-test-connection-button.png["測試連線按鈕,title=\"測試連線按鈕\",width=433,height=54"]
+
+.輸入收集器詳細資料後，請使用「測試連線」。
+image:ws-test-connection-success.png["測試連線成功結果,title=\"測試連線成功結果\",width=937,height=298"]
+
+成功的測試連線結果範例。
+
+*透過叢集管理 IP {plus} SVM 名稱搭配叢集憑證來執行，以獲得完整覆蓋範圍。*
+
+[cols="34%,33%,33%"]
+|===
+| *查看* | *它證實了什麼* | *如果失敗* 
+
+
+| Https | 代理程式可以透過 TCP 443 連接埠連接到 ONTAP 管理。 | 檢查 IP/模式和 443 防火牆。 
+
+
+| ONTAP 版本 | 憑證有效；版本和功能符合要求。 | 檢查憑證/RBAC 和 ONTAP 版本。 
+
+
+| 資料 LIFs | 存在一個可用的資料 LIF，具有 data-fpolicy-client（9.8{plus}），且狀態為 up。 | 將 data-fpolicy-client 新增至服務原則（請參閱服務原則）。 
+
+
+| 代理 IP | 代理程式擁有與 SVM 資料 LIF 屬於相同 IPv4 或 IPv6 位址族的作用中本機位址。它無法證明路由。 | 確保代理程式具有合格的本機位址。如果 Fpolicy 伺服器稍後發生故障，請驗證從每個 SVM 資料 LIF 到代理程式的路由。 
+
+
+| Fpolicy 伺服器 | ONTAP 可以回撥給代理程式，並在即時連接埠上完成 FPolicy 信號交換。 | 向 Agent 開啟 35000–55000；驗證一個 SVM 一個收集器。 
+
+
+| 功能 | 按功能 RBAC 和 ONTAP 版本資格（僅限叢集模式）。 | 授予缺少的權限（請參閱權限）。 
+|===
+[quote]
+____
+Important*：限制：測試連線僅測試 35000–55000 連接埠的子集（請保持完整的保留範圍開啟）。Agent IP 結果會選擇與資料 LIF 屬於相同 IPv4 或 IPv6 系列的作用中本機位址；它不會測試從每個資料 LIF 到 Agent 的路由。測試連線也不會產生或驗證真實的檔案事件流程。由於 SVM 帳戶缺少所需的權限，因此功能/RBAC 檢查不會在 SVM 模式下執行，且測試連線不適用於使用者目錄收集器。
+
+____
+
+*當所有四項網路檢查都通過後，審查您計劃使用的每個功能的功能結果，然後儲存擷取器。*
+
+[quote]
+____
+*Important:* 連線測試成功取決於四項網路檢查結果。功能測試結果僅供參考，因此「成功」並不意味著每個選用功能都已獲得所需的基於角色的存取控制（RBAC）。請在啟用這些功能之前，先修正失敗的功能檢查。
+
+____
+
+
+
+[[if-the-data-lifs-check-fails]]
+== 如果 Data Lifs 檢查失敗
+
+在測試連線之前，請勿手動驗證資料 LIF。如果資料 LIF 結果失敗，請使用下列指令修正服務原則。從 ONTAP 9.8 及更新版本開始，至少一個運作中的 SVM 資料 LIF 必須包含 data-fpolicy-client 以及 data-nfs 和/或 data-cifs：
+
+[listing]
+----
+net int service-policy create -policy only++_++data++_++fpolicy -vserver ++<++svm++>++ ++\++ \
+-allowed-addresses 0.0.0.0/0 -services data-cifs,data-nfs,data,-core,data-fpolicy-client
+----
+驗證 LIF：
+
+[listing]
+----
+network interface show -vserver ++<++svm++>++ -fields service-policy,status-admin,status-oper
+----
+在 ONTAP 9.8 之前的版本中，不需要設定 data-fpolicy-client；帶有角色資料（up）並承載 NFS 和/或 CIFS 的 LIF 就足夠了。
+
+
+
+[[feature-setup]]
+== 功能設定
+
+
+
+[[multi-admin-verify-mav]]
+=== 多重管理員驗證（MAV）
+
+如果啟用了 MAV，它可能會區塊 Workload Security 用於快照和使用者封鎖的命令。新增排除項：
+
+[listing]
+----
+multi-admin-verify rule modify -operation "volume snapshot create" -query "-snapshot !++*++cloudsecure++_*++"
+multi-admin-verify rule modify -operation "volume snapshot delete" -query "-snapshot !++*++cloudsecure++_*++"
+multi-admin-verify rule delete -operation set # allow user blocking
+----
+
+
+[[user-access-blocking-smb-nfs]]
+=== *使用者存取封鎖（SMB & NFS）*
+
+* 需要叢集層級憑證（SMB 會封鎖使用者；NFS 會封鎖主機 IP）。使用 cluster-admin 則無需額外權限 —— 只需確保可透過 SSH（連接埠 22）連線至叢集管理即可。
+* 使用自訂使用者（csuser），授予以下叢集層級權限，確保使用者可以透過 SSH 連線，然後重新啟動 ONTAP 和使用者目錄收集器。
+
+
+[listing]
+----
+security login role create -role csrole -cmddirname "vserver export-policy rule" -access all
+security login role create -role csrole -cmddirname set -access all
+security login role create -role csrole -cmddirname "vserver cifs session" -access all
+security login role create -role csrole -cmddirname "vserver services access-check authentication translate" -access all
+security login role create -role csrole -cmddirname "vserver name-mapping" -access all
+----
+
+
+[[persistent-store]]
+=== 持久性儲存
+
+ONTAP 9.14.1 及更高版本支援此功能。在新增/編輯頁面上選取該核取方塊即可啟用此功能，並提供 Volume 名稱（必填）。不同版本的行為可能有所不同：
+
+* *ONTAP 9.14.1：*自行建立 Volume（建議 16 GB）並輸入其名稱。
+* *ONTAP 9.15.1：* 收集器會自動使用您提供的名稱建立一個 16 GB 的 Volume。
+
+
+需要 vserver fpolicy: all 以及 job show: readonly（請參閱特定功能權限）。
+
 
 
 [[protobuf-mode]]
-=== Protobuf模式
+=== Protobuf 模式
 
-當在收集器的「進階配置」設定中啟用此選項時，工作負載安全性將在 protobuf 模式下配置 FPolicy 引擎。  ONTAP 9.15 及更高版本支援 Protobuf 模式。
-
-關於此功能的更多詳細信息，請參閱link:https://docs.netapp.com/us-en/ontap/nas-audit/steps-setup-fpolicy-config-concept.html["ONTAP 文件"]。
-
-protobuf 需要特定的權限（其中一些或全部可能已經存在）：
-
-集群模式：
-
- security login role create -role csrole -cmddirname "vserver fpolicy" -access all
-虛擬伺服器模式：
-
- security login role create -vserver <vservername> -role csrole -cmddirname "vserver fpolicy" -access all
-
-
-[[permissions-for-ontap-autonomous-ransomware-protection-and-ontap-access-denied]]
-=== ONTAP自主勒索軟體防護和ONTAP存取的權限被拒絕
-
-如果您使用叢集管理憑證，則不需要新的權限。
-
-如果您使用具有指定權限的自訂使用者（例如 _csuser_），請依照下列步驟授予 Workload Security 從ONTAP收集 ARP 相關資訊的權限。
-
-欲了解更多信息，請閱讀link:concept_ws_integration_with_ontap_access_denied.html["與ONTAP整合存取被拒絕"]
-
-和link:concept_cs_integration_with_ontap_arp.html["與ONTAP自主勒索軟體防護集成"]
-
-
-
-[[configure-the-data-collector]]
-== 配置資料收集器
-
-.設定步驟
-. 以管理員或帳戶擁有者的身分登入您的Data Infrastructure Insights環境。
-. 按一下“*工作負載安全性>收集器>+資料收集器*”
-+
-系統顯示可用的資料收集器。
-
-. 將滑鼠懸停在 * NetApp SVM 圖塊上，然後按一下 *+Monitor*。
-+
-系統顯示ONTAP SVM 設定頁面。為每個欄位輸入所需的資料。
-
-
-
-[cols="2*"]
-|===
-
-
-| 場地 | 描述 
-
-
-| Name | 資料收集器的唯一名稱 
-
-
-| 代理人 | 從清單中選擇一個已配置的代理程式。 
-
-
-| 透過管理 IP 連線： | 選擇叢集 IP 或 SVM 管理 IP 
-
-
-| 叢集/SVM 管理 IP 位址 | 叢集或 SVM 的 IP 位址，取決於您上面的選擇。 
-
-
-| SVM 名稱 | SVM 的名稱（透過 Cluster IP 連線時需要此欄位） 
-
-
-| 使用者名稱 | 用於存取 SVM/叢集的使用者名稱透過叢集 IP 新增時，選項為：1.集群管理員 2。  'csuser' 3. AD 使用者俱有與 csuser 類似的角色。透過 SVM IP 新增時，選項為：4. vsadmin 5.  'csuser' 6.  AD 使用者名稱具有與 csuser 類似的角色。 
-
-
-| 密碼 | 上述使用者名稱的密碼 
-
-
-| 篩選股份/交易量 | 選擇是否在事件收集中包含或排除股票/交易量 
-
-
-| 輸入要排除/包含的完整共享名稱 | 以逗號分隔的共享列表，用於從事件收集中排除或包含（視情況而定） 
-
-
-| 輸入要排除/包含的完整磁碟區名稱 | 以逗號分隔的捲列表，用於從事件收集中排除或包含（視情況而定） 
-
-
-| 監控資料夾訪問 | 選取後，啟用資料夾存取監控事件。請注意，即使未選擇此選項，資料夾的建立/重新命名和刪除也會受到監控。啟用此功能將增加監控的事件數量。 
-
-
-| 設定ONTAP發送緩衝區大小 | 設定ONTAP Fpolicy 發送緩衝區大小。如果使用 9.8p7 之前的ONTAP版本並發現效能問題，則可以變更ONTAP發送緩衝區大小以提高ONTAP效能。如果您沒有看到此選項並希望探索它，請聯絡NetApp支援。 
-|===
-.完成後
-* 在已安裝的資料收集器頁面中，使用每個收集器右側的選項功能表來編輯資料收集器。您可以重新啟動資料收集器或編輯資料收集器配置屬性。
-
+在進階組態中啟用時，Workload Security 會將 FPolicy 引擎設定為 protobuf 模式。自 ONTAP 9.15 起支援。需要 vserver fpolicy: all。如需詳細資料，請參閱 ONTAP 文件。
 
 
 
 [[recommended-configuration-for-metrocluster]]
-== MetroCluster的推薦配置
+== MetroCluster 的建議組態
 
-以下是針對MetroCluster的建議：
-
-. 連接兩個資料收集器，一個連接到來源 SVM，另一個連接到目標 SVM。
-. 資料收集器應透過_集群 IP_ 連接。
-. 在任何時間點，目前「正在運行」的 SVM 的資料收集器將顯示為「正在運行」。目前「停止」的 SVM 資料收集器將顯示為「已停止」。
-. 每當發生切換時，資料收集器的狀態將從_Running_變為_Stopped，反之亦然。
-. 資料收集器從_停止_狀態轉變為_運行_狀態最多需要兩分鐘。
+* 設定兩個收集器：一個用於來源 SVM，一個用於目的地 SVM。
+* 透過叢集 IP 連接兩者。
+* 任何時候，作用中 SVM 的收集器都會顯示「執行中」，而備用 SVM 的收集器則顯示「已停止」。
+* 切換時，狀態會互換；過渡最多需要兩分鐘。
 
 
+[quote]
+____
+*注意：* 備用端上已停止的 MetroCluster 收集器是預期現象，並非錯誤。僅當作用中端未運作時才進行調查。
 
-
-[[service-policy]]
-== 服務政策
-
-如果使用ONTAP *9.9.1 版或更新版本* 的服務策略，為了連接到資料來源收集器，需要 _data-fpolicy-client_ 服務以及資料服務 _data-nfs_ 和/或 _data-cifs_。
-
-範例：
-
-....
-Testcluster-1:*> net int service-policy create -policy only_data_fpolicy -allowed-addresses 0.0.0.0/0 -vserver aniket_svm
--services data-cifs,data-nfs,data,-core,data-fpolicy-client
-(network interface service-policy create)
-....
-在ONTAP 9.9.1 之前的版本中，無需設定 _data-fpolicy-client_ 。
+____
 
 
 
-[[play-pause-data-collector]]
-== 播放-暫停數據收集器
+[[pause-and-resume-a-collector]]
+== 暫停與繼續收集器
 
-如果資料收集器處於_運行_狀態，您可以暫停收集。打開收集器的“三個點”選單並選擇暫停。當收集器暫停時，不會從ONTAP收集任何數據，也不會從收集器向ONTAP發送任何數據。這意味著沒有 Fpolicy 事件會從ONTAP流向資料收集器，再從那裡流向Data Infrastructure Insights。
+暫停和恢復適用於資料收集器，而非代理程式。您可以從 UI（收集器 ++>++ 該收集器 ++>++ 選項選單）或從 API 執行它們。
 
-請注意，如果在收集器暫停時在ONTAP上建立任何新磁碟區等，則工作負載安全性將不會收集數據，並且這些磁碟區等將不會反映在儀表板或表格中。
+暫停正在運作的收集器會從 ONTAP 中移除 FPolicy 組態。暫停期間，不會有事件流動，也不會有任何資料雙向發送。
 
-
-NOTE: 如果收集器有限制用戶，則無法暫停收集器。在暫停收集器之前恢復使用者存取權限。
-
-請記住以下幾點：
-
-* 快照清除不會按照暫停收集器上配置的設定進行。
-* EMS 事件（例如 ONTAP ARP）將不會在暫停的收集器上處理。這意味著如果 ONTAP 識別出檔案竄改攻擊，Data Infrastructure Insights Workload Security 將無法取得該事件。
-* 對於已暫停的收集器，將不會發送健康通知電子郵件。
-* 暫停的收集器不支援手動或自動操作（例如快照或使用者封鎖）。
-* 當代理程式或收集器升級、代理 VM 重新啟動/重新啟動或代理服務重新啟動時，暫停的收集器將保持_暫停_狀態。
-* 如果資料收集器處於_Error_狀態，則收集器無法變更為_Paused_狀態。只有當收集器的狀態為「正在運作」時，「暫停」按鈕才會啟用。
-* 如果代理程式斷開連接，則收集器無法變更為_Paused_狀態。收集器將進入_停止_狀態並且暫停按鈕將被停用。
+* 暫停期間建立的新 Volume，要等到您恢復後才會被納入。
+* Snapshot 快照技術清除不會在已暫停的收集器上運作。
+* 暫停期間不會處理 EMS 事件（例如 ONTAP ARP）——可能會錯過檔案竄改事件。
+* 不會針對暫停的收集器傳送健全狀況通知電子郵件。
+* 暫停期間不支援手動或自動操作（Snapshot 快照技術、使用者封鎖）。
+* 暫停的收集器在代理程式/收集器升級和代理程式重新啟動/重新開機後仍保持暫停狀態。
+* 處於錯誤狀態的收集器無法暫停；只有在運作狀態下才能啟用暫停功能。
+* 如果代理程式中斷連線，收集器會停止，且暫停功能會被停用。
 
 
+*何時使用暫停功能*
+
+* 使用 Pause 功能進行長時間的 ONTAP 端維護，例如計劃內的 ONTAP 升級或 SVM 停電，以便在儲存設備不可用時乾淨地移除 FPolicy 組態。
+* 維護完成後立即恢復。資料採集器暫停期間發生的活動不會被採集。
+* 請勿使用「暫停」來控制代理程式或收集器升級的時間。請改為固定和取消固定代理程式（請參閱部署 Workload Security 代理程式）。
 
 
-[[persistent-store]]
-== 持久性儲存
+[quote]
+____
+*注意：*當收集器有受限（封鎖）的使用者時，無法暫停。請先恢復使用者存取。
 
-ONTAP 9.14.1 及更高版本支援持久性儲存。請注意，磁碟區名稱說明從ONTAP 9.14 到 9.15 有所不同。
-
-可以透過選取收集器編輯/新增頁面中的複選框來啟用持久性儲存。勾選方塊後，將顯示一個用於接受磁碟區名稱的文字欄位。磁碟區名稱是啟用持久性儲存的必填欄位。
-
-* 對於ONTAP 9.14.1，您必須在啟用該功能之前建立卷，並在「卷宗名稱」欄位中提供相同的名稱。建議的磁碟區大小為 16GB。
-* 對於ONTAP 9.15.1，收集器將使用「磁碟區名稱」欄位中提供的名稱自動建立大小為 16 GB 的磁碟區。
-
-
-持久性儲存需要特定權限（其中一些或全部可能已經存在）：
-
-集群模式：
-
-....
-security login role create -role csrole -cmddirname "vserver fpolicy" -access all
-security login role create -role csrole -cmddirname "job show" -access readonly
-....
-虛擬伺服器模式：
-
-....
-security login role create -vserver <vservername> -role csrole -cmddirname "vserver fpolicy" -access all
-security login role create -vserver <vservername> -role csrole -cmddirname "job show" -access readonly
-....
-
-
-[[migrate-collectors]]
-== 遷移收集器
-
-您可以輕鬆地將工作負載安全收集器從一個代理遷移到另一個代理，從而實現跨代理的收集器的有效負載平衡。
+____
 
 
 
-[[prerequisites]]
-=== 先決條件
+[[migrate-a-collector-to-another-agent]]
+== 將收集器移轉到另一個代理程式
 
-* 來源代理必須處於_連線_狀態。
-* 要遷移的收集器必須處於_running_狀態。
+您可以將收集器在代理程式之間移動，以平衡負載。
+
+* 來源代理程式必須已連線；收集器必須正在執行。
+* 資料和使用者目錄收集器均受支援；手動代管的租用戶不受支援。
+* 編輯收集器，選擇目的地代理程式，然後按一下「儲存收集器」。編輯頁面上的組態變更在成功移轉後仍會保留。
 
 
-筆記：
+image:ws-agent-selector.png["用於移轉收集器的代理程式選擇器,title=\"用於移轉收集器的代理程式選擇器\",width=957,height=304"]
 
-* 資料和使用者目錄收集器均支援遷移。
-* 不支援手動管理的租戶遷移收集器。
+選擇另一個代理程式來移轉收集器。
+
+
+
+[[best-practices-for-data-collectors]]
+== 資料收集器的最佳實務
+
+* 在儲存收集器之前執行「測試連線」，並解決所有失敗的檢查。大多數的收集器錯誤都是「測試連線」所偵測到未滿足的先決條件。
+* 透過叢集管理 IP 使用 SVM 名稱和叢集憑證進行連線。SVM 模式無法執行功能和 RBAC 檢查。
+* 每個 SVM 僅設定一個收集器，且僅限在一個 Workload Security 環境中。第二個收集器將取代第一個收集器的 FPolicy 目的地。
+* 在第一個 ONTAP SVM 收集器之前或同時，為每個有使用者存取受監控 SVM 的網域設定使用者目錄收集器，以便活動顯示使用者名稱而非 SID。
+* 請輸入完整的共享和 Volume 名稱，無需加引號。如果清單過長，請按 Volume 篩選，而不是按共享篩選。
+* 只有在需要一般資料夾存取事件時才啟用監視資料夾存取，因為它會增加事件 Volume。
+* 將託管代理程式保持在容量範圍內 — 最多 50 個收集器，每秒事件數上限為 20,000 個 — 並使用 Event Rate Checker 針對峰值事件速率進行規模調整。
+* 對於 MetroCluster，請為來源 SVM 設定一個收集器，並為目的地 SVM 設定一個收集器，兩者皆透過叢集 IP 連接。
+* 僅在需要進行長時間 ONTAP 端維護時才使用暫停功能。若要控制升級時間，請固定和取消固定代理程式（請參閱部署 Workload Security 代理程式）。
+* 為了獲得最佳的 FPolicy 效能，請將代理程式放置在靠近儲存網路的位置，並盡量減少網路延遲。
 
 
 
 
-[[migrate-collector]]
-=== 遷移收集器
+[[if-the-collector-reports-an-error-after-saving]]
+== 如果收集器在儲存後報告錯誤
 
-若要遷移收集器，請依照下列步驟操作：
+連線測試涵蓋設定時的連線能力、憑證、資料 LIF、已指派連接埠上的回呼連線、選擇 SMB 時的 CIFS 伺服器檢查，以及在叢集模式下的功能存取。測試成功後，請勿手動重複這些檢查。
 
-. 前往“編輯收藏家”頁面。
-. 從代理下拉選單中選擇目標代理。
-. 點選「儲存收集器」按鈕。
-
-
-工作負載安全性將處理該請求。遷移成功後，使用者將被重定向到收藏家清單頁面。如果失敗，編輯頁面上將顯示相應的訊息。
-
-注意：當收集器成功移轉到目標代理程式時，「編輯收集器」頁面上先前所做的任何設定變更都會保留應用程式。
-
-image:ws_migrate_collector_to_another_agent.png["透過選擇另一個代理來遷移收集器"]
+如果收集器稍後進入錯誤或降級狀態，請開啟「狀態」 ++>++ 「更多詳細資料」，並遵循「疑難排解 ONTAP SVM 資料收集器」。執行階段條件（例如複製收集器、事件速率過載、暫停的收集器、持久性儲存放置、 MetroCluster 轉換、遺失活動和身分解析）不在儲存前測試連線工作流程的範圍內。
 
 
 
-[[troubleshooting]]
-== 故障排除
+[[after-you-finish]]
+== 完成後
 
-查看link:troubleshooting_collector_svm.html["SVM 收集器故障排除"]頁面以取得故障排除提示。
+* 在「已安裝資料收集器」頁面上，使用選項功能表編輯或重新啟動收集器。
+* 確認收集器達到 Running 狀態，且在真實用戶端 I/O 之後，事件出現在 Workload Security ++>++ Activity Forensics 中。
+* 驗證使用者名稱是否解析（不是 SID）；如果無法解析，請檢查 User Directory Collector。
+

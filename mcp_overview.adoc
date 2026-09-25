@@ -1,0 +1,108 @@
+---
+sidebar: sidebar 
+permalink: mcp_overview.html 
+summary: 將 AI 助理連接到 Data Infrastructure Insights（DII），以便它們可以使用自然語言調查基礎架構清單、遙測、警報和收集健全狀況。 
+keywords: MCP, DII, Data Infrastructure Insights, AI assistant 
+---
+= DII MCP 伺服器
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+將 AI 助理/代理程式連接至 Data Infrastructure Insights （DII），以便它們可以使用自然語言調查基礎架構清單、遙測、警報和收集健全狀況。
+
+
+NOTE: DII MCP 是一項 link:concept_preview_features.html["預覽"] 功能，因此可能會發生變化。
+
+DII MCP 伺服器實作了模型上下文協定（MCP），並向受支援的 AI 用戶端公開租戶範圍的工具。目前的產品工具集為*唯讀*：它會擷取和分析 DII 資料，但不會修改基礎架構或 DII 資源。
+
+
+
+[[what-you-can-investigate]]
+== 您可以調查的內容
+
+* *基礎架構清單：*儲存設備、虛擬化、Kubernetes、ONTAP、Azure NetApp Files、StorageGRID 及相關資源。
+* *效能與容量：*物件計量、分組集合體和時間序列行為。
+* *日誌和事件：*探索日誌類型、搜尋事件並建立事件計數直方圖。
+* *警報：*檢查作用中警報、監控定義、嚴重性和修正指引。
+* *收集健全狀況：*審查擷取單元、資料來源、支援的收集器類型和 Kubernetes 收集器版本。
+* *通知機制：*檢查維護視窗、通知規則和 webhook 目標類型。
+
+
+
+
+[[choose-an-entry-point]]
+== 選擇進入點
+
+
+
+[[connect-an-ai-client]]
+=== 連接 AI 用戶端
+
+請遵循 link:mcp_setup.html["設定 DII MCP 伺服器"] 以用於 Cursor、Claude Code、VS Code、Codex 或其他 MCP 相容用戶端。
+
+
+
+[[browse-available-tools]]
+=== 瀏覽可用工具
+
+使用 link:mcp_tools_overview.html["工具參考"] 來了解所有目前的工具、所需的探索呼叫、查詢限制和面向使用者的名稱。
+
+
+
+[[start-with-an-operational-workflow]]
+=== 從操作工作流程開始
+
+當您已經知道所需的結果時，請使用 link:mcp_recipe_overview.html["配方"]：
+
+* 庫存收集健全狀況
+* 評估儲存設備健全狀況
+* 識別容量風險
+* 檢查 Kubernetes 收集器最新狀態
+* 疑難排解效能
+* 審查通知態勢
+
+
+
+
+[[how-dii-mcp-queries-work]]
+== DII MCP 查詢的工作原理
+
+許多 DII 資源具有動態結構描述。可靠的調查遵循探索優先的順序：
+
+. 列出可用的物件或日誌類型。
+. 擷取所選類型的中繼資料。
+. 僅使用該中繼資料中的有效屬性和計量。
+. 查詢限定的時間範圍。
+. 使用篩選、分組、排序或分頁等方式最佳化結果。
+
+
+如需詳細資訊，請參閱 link:mcp_concepts.html["概念和資料模型"]。
+
+
+
+[[important-limitations]]
+== 重要限制
+
+* 目前所有產品工具均為唯讀。
+* 物件、效能和日誌查詢會強制使用有限的時間視窗。除非工具頁面明確記載較小的限制，否則請使用 30 天或更短的時間視窗。
+* 查詢欄位必須與所選資源類型傳回的中繼資料相符。
+* 大量結果會進行分頁或限制數量。
+* 工具的可用度和傳回的資料取決於租戶的收集器、已啟用的功能和使用者權限。
+* 請勿要求或複製完整的 webhook 端點位址。請參閱link:mcp_security.html["安全和隱私"]。
+
+
+
+
+[[next-steps]]
+== 後續步驟
+
+. link:mcp_setup.html["連結您的用戶端"]。
+. 請嘗試 link:mcp_recipe_environment_inventory.html["環境清單配方"]。
+. 如果查詢被拒絕或傳回意外結果，請審查link:mcp_troubleshooting.html["故障排除"]。
+

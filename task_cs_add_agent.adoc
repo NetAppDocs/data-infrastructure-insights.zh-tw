@@ -14,175 +14,256 @@ summary: 部署工作負載安全代理程式來監控使用者活動、偵測�
 
 
 [role="lead"]
-工作負載安全代理程式對於監控使用者活動和偵測儲存基礎架構中潛在的安全威脅至關重要。本指南提供逐步安裝說明、代理管理最佳實務（包括暫停/恢復和固定/取消固定功能）以及部署後設定要求。在開始之前，請確保您的代理伺服器符合以下條件： link:concept_cs_agent_requirements.html["系統需求"]。
+Workload Security 代理程式監控使用者活動並偵測儲存基礎架構中潛力的安全性威脅。本指南涵蓋安裝代理程式、開啟所需的網路連接埠、管理暫停/繼續和釘選/取消釘選行為，以及部署後驗證代理程式。在開始之前，請確保代理程式主機符合「Workload Security 代理程式需求」中的要求。
 
 
 
 [[before-you-begin]]
 == 開始之前
 
-* 安裝、執行腳本和解除安裝都需要 sudo 權限。
-* 安裝代理程式時，會在機器上建立本機使用者_cssys_和本機群組_cssys_。如果權限設定不允許建立本機用戶，而是需要 Active Directory，則必須在 Active Directory 伺服器中建立使用者名為 _cssys_ 的使用者。
-* 您可以閱讀有關Data Infrastructure Insights安全性的文章link:security_overview.html["這裡"]。
+* 確認代理程式主機符合 Workload Security Agent Requirements 中的系統、套件和網路需求（4 個 CPU 核心、16 GB RAM、/opt/netapp 至少有 35 GB 可用空間、支援的 Linux 經銷、unzip / zip / sshpass、靜態 IP、NTP）。
+* 安裝、執行指令碼和解除安裝都需要 sudo 權限。
+* 安裝過程中，會在電腦上建立本機使用者 cssys 和本機群組 cssys。如果原則不允許建立本機使用者，而是要求使用 Active Directory，請在安裝前在 Active Directory 中建立使用者名稱為 cssys 的使用者。
+* 一個代理程式最多支援 50 個資料收集器（所有類型加起來，例如 Active Directory、LDAP 和 ONTAP SVM 收集器），每秒事件處理量上限約 20,000 起。在單一代理程式上部署多個收集器之前，請使用 Event Rate Checker 規劃容量。
+* 如果代理程式將使用 Proxy 存取 SaaS，請準備好 Proxy 主機、連接埠和憑證。您可以在安裝中的步驟 4 設定 Proxy。
 
 
 
 
-[[best-practices]]
-== 最佳實踐
-
-在配置工作負載安全代理之前，請記住以下事項。
-
-[cols="1,3"]
-|===
-
-
-| 暫停和恢復 | 暫停：從ONTAP移除 fpolicies。通常用於客戶執行可能需要大量時間的長時間維護活動，例如代理虛擬機器重新啟動或儲存更換。恢復：將 fpolicies 重新加入到ONTAP。 
-
-
-| 別針和拔針 | Unpin 會立即取得最新版本（如果可用），並升級代理程式和收集器。在此升級過程中，fpolicies 將斷開連接並重新連接。此功能專為希望控制自動升級時間的客戶而設計。請見下文<<pinning-an-agent-at-the-current-version,插針/拔針說明>>。 
-
-
-| 推薦方法 | 對於大型配置，建議使用引腳和引腳斷開操作，而不是暫停集電極。使用固定和取消固定功能時，無需暫停和恢復。客戶可以保留其代理商和收款員，並在收到有關新版本的電子郵件通知後，有 30 天的時間逐個選擇性地升級代理商。這種方法最大限度地減少了對 fpolicies 的延遲影響，並提供了對升級過程的更大控制。 
-|===
-
-
-[[steps-to-install-agent]]
-== 安裝代理的步驟
+[[steps-to-install-an-agent]]
+== 安裝代理程式的步驟
 
 . 以管理員或帳戶擁有者的身分登入您的工作負載安全環境。
-. 選擇*收藏家>代理商>+代理商*
-+
-系統顯示「新增代理」頁面：
-
-+
-image::Add-agent-1.png[新增工作負載安全代理]
-
-. 驗證代理伺服器是否符合最低系統要求。
-. 若要驗證代理伺服器是否正在執行支援的 Linux 版本，請按一下_支援的版本 (i)_。
-. 如果您的網路使用代理伺服器，請按照代理程式部分中的說明設定代理伺服器詳細資訊。
-+
-image:CloudSecureAgentWithProxy_Instructions.png["使用代理安裝代理注意事項"]
-
-. 按一下「複製到剪貼簿」圖示以複製安裝命令。
-. 在終端機視窗中執行安裝命令。
-. 安裝成功完成後系統顯示以下訊息：
-+
-image::new-agent-detect.png[代理安裝成功訊息]
+. 選取收集器 ++>++ 代理程式 ++>++ &#43;代理程式。系統會顯示「新增代理程式」頁面。
 
 
+.新增代理程式頁面，其中 Proxy 伺服器設定和安裝程式碼片段已擴充。
+image:ws_deploy_agents_image6.png["新增代理程式頁面顯示代理程式伺服器要求、Proxy 伺服器設定步驟和安裝程式碼片段,title=\"新增代理程式頁面顯示代理程式伺服器要求、Proxy 伺服器設定步驟和安裝程式碼片段\",width=609,height=532"]
 
-.完成後
-. 您需要配置一個link:task_config_user_dir_connect.html["使用者目錄收集器"]。
-. 您需要配置一個或多個資料收集器。
+. 在代理程式伺服器需求面板中，按一下支援的 Linux 版本（i）和最低伺服器需求（i），以確認主機作業系統受到支援且大小適當。
 
+
+.最低伺服器需求：4 個 CPU 核心、16 GB RAM、35 GB 可用磁碟空間。
+image:ws_deploy_agents_image8.png["最低伺服器要求提示訊息顯示 4 個 CPU 核心、16 GB RAM 和 35 GB 可用磁碟空間,title=\"最低伺服器要求提示訊息顯示 4 個 CPU 核心、16 GB RAM 和 35 GB 可用磁碟空間\",width=336,height=172"]
+
+. 如果您的網路使用 Proxy 伺服器，請擴充選用：Proxy 伺服器設定 ++>++ 顯示指示，然後按一下複製 Proxy 伺服器設定。在代理程式主機上，在終端機中執行複製的命令，並將 USER、PASSWORD、PROXY++_++SERVER 和 PORT 取代為您自己的值：
+
+
+[quote]
+____
+export https++_++proxy='USER:PASSWORD@PROXY++_++SERVER:PORT'
+
+_請在執行安裝程式程式碼片段的相同終端機中執行此命令，以便安裝程式能夠繼承 Proxy 設定。_
+
+____
+
+. 點選「複製安裝程式程式碼片段」。此程式碼片段包含一個唯一金鑰，有效期為 2 小時，且僅適用於一個代理程式，因此請立即執行，切勿將其用於第二個代理程式。若要先查看程式碼片段，請點選「顯示安裝程式程式碼片段」。
+. 在代理程式主機上，開啟終端機，貼上安裝命令，並執行它。建議使用您擁有的空工作目錄（例如 mkdir cloudsecure && cd cloudsecure），以免在安裝期間執行 chmod 時因檔案屬於其他使用者而失敗。
+. 安裝成功完成後，安裝程式會顯示成功訊息，代理程式服務隨即啟動。返回瀏覽器並點擊「完成設定」以完成新增代理程式。安裝成功後將顯示「偵測到新代理程式」。
+
+
+
+
+[[after-you-finish]]
+=== 完成後
+
+* 確認代理程式在 Workload Security ++>++ 收集器 ++>++ 代理程式上顯示為「已連線」。
+* 在代理程式主機上開啟 FPolicy/EMS 回呼連接埠（請參閱下方的網路組態）。
+* 為每個使用者存取受監控 SVM 的網域設定使用者目錄收集器（Active Directory 或 LDAP）－理想情況下，應在設定第一個 ONTAP SVM 收集器之前或同時設定。否則，活動取證功能可能會顯示 SID 而不是使用者名稱。使用者目錄收集器不支援測試連線功能。
+* 設定一個或多個 ONTAP SVM 資料收集器。建議使用叢集管理 IP &#43; SVM 名稱與叢集憑證，並在儲存前執行「測試連線」，以確保網路和 RBAC 檢查通過。
+* 維持在代理程式容量範圍內：每個代理程式最多 50 個收集器；使用 Event Rate Checker 針對尖峰事件速率調整規模。
+
+
+
+
+[[change-the-proxy-after-installation]]
+=== 安裝完成後更改 Proxy
+
+如果在安裝代理程式後 Proxy 發生更改，請更新代理程式組態並重新啟動服務。
+
+. 切換到組態目錄：cd /opt/netapp/cloudsecure/conf
+. 編輯 agent.properties 並設定 AGENT++_++PROXY++_++HOST、AGENT++_++PROXY++_++PORT，如有需要，請設定 AGENT++_++PROXY++_++USER 和 AGENT++_++PROXY++_++PASSWORD。
+. 重新啟動代理程式：sudo systemctl restart cloudsecure-agent.service
+
+
+如果代理程式位於 SSL 檢查後方（例如 Zscaler），請停用 ++*++.cloudinsights.netapp.com 和區域 agentlogin 主機的 SSL 檢查。當中間憑證重新簽署 SaaS 端點時，Workload Security 將無法正常運作。
 
 
 
 [[network-configuration]]
-== 網路設定
+== 網路組態
 
-在本機系統上執行下列命令以開啟工作負載安全性將使用的連接埠。如果對連接埠範圍有安全性問題，則可以使用較小的連接埠範圍，例如 _35000:35100_。每個 SVM 使用兩個連接埠。
+開啟 ONTAP 用於向代理程式傳送 FPolicy（和 EMS）事件的 TCP 連接埠。您不需要開啟整個 35000–55000 範圍。根據此代理程式上的收集器來調整保留數量：每個 SVM 最多使用 4 個連接埠（每個啟用的協定 2 個 — NFS 和 CIFS/SMB）。對於滿載的代理程式（50 個收集器），請在 35000–55000 範圍內保留約 200 個連接埠。如有需要，請增加保留數量。
 
-.步驟
-. `sudo firewall-cmd --permanent --zone=public --add-port=35000-55000/tcp`
-. `sudo firewall-cmd --reload`
+開啟指向代理程式主機的連接埠範圍，包括任何本機防火牆。同時確保 SVM 資料 LIF 可以存取代理程式以處理 FPolicy 事件，並且（如果您使用基於 EMS 的功能，例如 ARP）叢集管理 IP 可以透過相同的保留連接埠存取代理程式。有關完整的網路內和雲端出口表，請參閱「Workload Security 代理程式要求」。
 
+*範例 — firewalld（永久）：*
 
-根據您的平台執行以下步驟：
+[quote]
+____
+sudo firewall-cmd --permanent --zone=public --add-port=35000-55000/tcp
 
-CentOS 7.x / RHEL 7.x：
+sudo firewall-cmd --reload
 
-. `sudo iptables-save | grep 35000`
+____
 
+*驗證規則：*
 
-範例輸出：
+在使用 firewalld 的系統上（例如 RHEL / CentOS 8{plus}）：
 
- -A IN_public_allow -p tcp -m tcp --dport 35000:55000 -m conntrack -ctstate NEW,UNTRACKED -j ACCEPT
-CentOS 8.x / RHEL 8.x：
+[quote]
+____
+sudo firewall-cmd --zone=public --list-ports ++|++ grep 35000
 
-. `sudo firewall-cmd --zone=public --list-ports | grep 35000`（適用於 CentOS 8）
+____
 
+_範例輸出：35000-55000/tcp_
 
-範例輸出：
+在使用 iptables 的系統上（例如較舊的 RHEL / CentOS 7.x）：
 
- 35000-55000/tcp
+[quote]
+____
+sudo iptables-save ++|++ grep 35000
 
+____
 
-[[pinning-an-agent-at-the-current-version]]
-== 將代理程式“固定”在目前版本
+_範例輸出：_
 
-預設情況下，Data Infrastructure Insights工作負載安全性會自動更新代理程式。一些客戶可能希望暫停自動更新，這將使代理商保持其當前版本，直到發生以下情況之一：
+[quote]
+____
+-A IN++_++public++_++allow -p tcp -m tcp --dport 35000:55000 -m conntrack -ctstate NEW,UNTRACKED -j ACCEPT
 
-* 客戶恢復自動代理更新。
-* 30天過去了。請注意，30 天從最近一次代理更新之日開始，而不是從代理暫停之日開始。
+____
 
-
-在每種情況下，代理程式都會在下一次工作負載安全刷新時更新。
-
-若要暫停或恢復自動代理更新，請使用 _cloudsecure_config.agents_ API：
-
-image:ws_pin_agent_apis.png["用於固定和取消固定代理程式的 cloudsecure 代理程式 API"]
-
-請注意，暫停或恢復操作可能需要最多五分鐘才能生效。
-
-您可以在「*工作負載安全性 > 收集器*」頁面的「*代理*」標籤中查看目前代理程式版本。
-
-image:ws_agent_version.png["代理表中顯示的 WS 代理程式版本"]
+_測試連線（在 ONTAP SVM 收集器頁面上）僅驗證此範圍內的部分連接埠。請在代理程式上保持完整的保留集開啟。_
 
 
 
-[[troubleshooting-agent-errors]]
-== 代理錯誤故障排除
+[[post-install-verification]]
+== 安裝後驗證
 
-下表描述了已知問題及其解決方法。
+安裝成功後，請在代理程式主機和 UI 中確認以下內容：
 
-[cols="2*"]
+* *UI 狀態：* Collectors ++>++ Agents 顯示 Agent 已連線（而非 NOT++_++CONNECTED）。
+* *服務：* sudo systemctl status cloudsecure-agent.service 報告作用中（執行中）。
+* *使用者:* id cssys 和 groups cssys 成功（本機 cssys 使用者/群組存在，或 AD cssys 帳戶可用）。
+* *磁碟路徑：* /opt/netapp 位於 cssys 可以存取的本機磁碟上（不是本機使用者無法使用的 NFS 裝載）。
+* *連接埠：* 保留的 35000–55000 子集對代理程式開啟傳入（如上所示，可透過 firewall-cmd 或 iptables 檢查）。
+* *SaaS 路徑：* 傳出 TCP 443 到您所在區域的 ++*++.cloudinsights.netapp.com 和 agentlogin 端點成功（無 SSL 檢查重新寫入）。
+
+
+如果在應用程式日誌存在之前代理程式啟動失敗，請檢查 journalctl -u cloudsecure-agent.service — 早期引導錯誤會記錄到服務日誌，而不是 agent.log。
+
+
+
+[[control-agent-upgrades-pin-and-unpin]]
+== 控制代理程式升級：固定和取消固定
+
+預設情況下，Workload Security 會自動更新代理程式。鎖定代理程式會暫停這些自動更新，因此代理程式及其託管的收集器將保持在目前版本。
+
+'''
+*注意：* _「固定」和「取消固定」適用於代理程式，且僅可透過 API 使用。「暫停」和「繼續」是收集器控制 — 它們不適用於代理程式 — 您可以從 UI 或 API 執行它們。請參閱設定 ONTAP SVM 資料收集器。_ ___
+
+[cols="34%,33%,33%"]
 |===
-| 問題： | 解決： 
+| 控制 | 如何執行 | 它的作用 
 
 
-| 代理程式安裝無法建立 /opt/netapp/cloudsecure/agent/logs/agent.log 資料夾，且 install.log 檔案未提供相關資訊。 | 此錯誤發生在代理引導期間。該錯誤未記錄在日誌檔案中，因為它發生在記錄器初始化之前。錯誤被重定向到標準輸出，並可使用以下方式在服務日誌中查看 `journalctl -u cloudsecure-agent.service`命令。此命令可用於進一步解決問題。 est 
+| 釘選  a| 
+僅限 cloudsecure++_++config.agents API。
+
+使用者介面中未提供此選項。
+| 暫停自動更新。代理程式及其託管的收集器將維持在目前版本。 
 
 
-| 代理安裝失敗，並顯示「不支援此 Linux 發行版」。退出安裝」。 | 當您嘗試在不支援的系統上安裝代理程式時會出現此錯誤。看link:concept_cs_agent_requirements.html["代理要求"] 。 
+| 取消固定  a| 
+僅限 cloudsecure++_++config.agents API。
 
-
-| 代理安裝失敗，錯誤為：“-bash：unzip：未找到命令” | 安裝unzip然後再次執行安裝命令。如果機器上安裝了 Yum，請嘗試「yum install unzip」來安裝解壓縮軟體。之後，從代理安裝 UI 重新複製命令並將其貼上到 CLI 中以再次執行安裝。 
-
-
-| 代理程式已安裝並正在運行。然而代理卻突然停止了。 | 透過 SSH 連接到代理機器。透過以下方式檢查代理服務的狀態 `sudo systemctl status cloudsecure-agent.service`。1.檢查日誌是否顯示訊息「無法啟動工作負載安全守護程序服務」。2.檢查代理機器中是否存在 cssys 使用者。以root權限逐一執行以下指令，並檢查cssys使用者和群組是否存在。
-`sudo id cssys`
-`sudo groups cssys`3.如果不存在，則集中監控策略可能已刪除 cssys 使用者。4.透過執行以下命令手動建立 cssys 使用者和群組。
-`sudo useradd cssys`
-`sudo groupadd cssys`5.然後透過執行以下命令重新啟動代理服務：
-`sudo systemctl restart cloudsecure-agent.service` 6.如果仍然無法運行，請檢查其他故障排除選項。 
-
-
-| 無法為代理程式新增超過 50 個資料收集器。 | 一個代理只能增加 50 個資料收集器。這可以是所有收集器類型的組合，例如 Active Directory、SVM 和其他收集器。 
-
-
-| UI 顯示代理程式處於 NOT_CONNECTED 狀態。 | 重新啟動代理程式的步驟。1.透過 SSH 連接到代理機器。2.然後透過執行以下命令重新啟動代理服務：
-`sudo systemctl restart cloudsecure-agent.service` 3.透過以下方式檢查代理服務的狀態 `sudo systemctl status cloudsecure-agent.service`。4.代理應進入 CONNECTED 狀態。 
-
-
-| 代理 VM 位於 Zscaler 代理程式後面，且代理安裝失敗。由於 Zscaler 代理程式的 SSL 檢查，工作負載安全性憑證以 Zscaler CA 簽署的形式呈現，因此代理程式不信任該通訊。 | 停用 Zscaler 代理程式中 *.cloudinsights.netapp.com url 的 SSL 檢查。如果 Zscaler 進行 SSL 檢查並替換證書，工作負載安全將無法運作。 
-
-
-| 安裝代理程式時，解壓縮後安裝在掛起。 | “chmod 755 -Rf”指令失敗。當代理安裝指令由非 root sudo 使用者執行，且工作目錄中有屬於另一個使用者的文件，且這些文件的權限無法變更時，指令將會失敗。由於 chmod 指令失敗，其餘安裝無法執行。1.建立一個名為「cloudsecure」的新目錄。2.轉到該目錄。3.複製並貼上完整的「token=… … ./cloudsecure-agent-install.sh」安裝指令並按下回車鍵。4.安裝應該可以繼續。 
-
-
-| 如果代理程式仍然無法連線到 Saas，請向NetApp支援部門提交案例。提供Data Infrastructure Insights序號以開啟案例，並按照說明將日誌附加到案例中。 | 將日誌附加到案例：1.使用 root 權限執行以下腳本並共用輸出檔案（cloudsecure-agent-symptoms.zip）。 a. /opt/netapp/cloudsecure/agent/bin/cloudsecure-agent-symptom-collector.sh 2.使用 root 權限逐一執行以下命令並共用輸出。 a. id cssys b. groups cssys c. cat /etc/os-release 
-
-
-| cloudsecure-agent-symptom-collector.sh 腳本失敗並出現下列錯誤。  [root@machine tmp]# /opt/netapp/cloudsecure/agent/bin/cloudsecure-agent-symptom-collector.sh 收集服務日誌 收集應用程式日誌 收集代理程式設定 拍攝服務狀態快照 拍攝代理目錄結構快照……………….  ………………….  /opt/netapp/cloudsecure/agent/bin/cloudsecure-agent-symptom-collector.sh：第 52 行：zip：未找到指令錯誤：無法建立 /tmp/cloudsecure-agent-symptoms.zip | Zip 工具未安裝..透過執行指令“yum install zip”安裝zip工具。然後再次運行cloudsecure-agent-symptom-collector.sh。 
-
-
-| 代理安裝因 useradd 而失敗：無法建立目錄 /home/cssys | 如果由於缺乏權限而無法在 /home 下建立使用者的登入目錄，則可能會發生此錯誤。解決方法是建立 cssys 使用者並使用以下命令手動新增其登入目錄：_sudo useradd user_name -m -d HOME_DIR_ -m：如果不存在，則建立使用者的主目錄。 -d ：使用 HOME_DIR 作為使用者登入目錄的值來建立新使用者。例如，_sudo useradd cssys -m -d /cssys_，新增使用者 _cssys_ 並在根目錄下建立其登入目錄。 
-
-
-| 安裝後代理未運行。  _Systemctl status cloudsecure-agent.service_ 顯示以下內容：[root@demo ~]# systemctl status cloudsecure-agent.service agent.service – 工作負載安全代理守護程序服務已載入：已載入（/usr/lib/systemd/system/cloudsecure-agent. 啟用2021 年 8 月 3 日星期二 21:12:26 PDT 起；2 秒前 進程：25889 ExecStart=/bin/bash /opt/netapp/cloudsecure/agent/bin/cloudsecure-agent（代碼=exited status=126） 主21:12:26 demo systemd[1]：cloudsecure-agent.service：主進程已退出，代碼=exited，狀態=126/n/a 8 月 3 日 21:12:26 demo systemd[1]：單元 cloudsecure-agent.service 進入失敗狀態。  8 月 3 日 21:12:26 demo systemd[1]: cloudsecure-agent.service 失敗。 | 這可能會失敗，因為_cssys_使用者可能沒有安裝權限。如果 /opt/netapp 是 NFS 掛載，且 _cssys_ 使用者無權存取此資料夾，則安裝將失敗。 _cssys_ 是由 Workload Security 安裝程式建立的本機用戶，可能沒有權限存取已安裝的共用。您可以嘗試使用 _cssys_ 使用者存取 /opt/netapp/cloudsecure/agent/bin/cloudsecure-agent 來檢查這一點。如果傳回“權限被拒絕”，則表示不存在安裝權限。不要安裝在已安裝的資料夾中，而是安裝在機器本機的目錄中。 
-
-
-| 代理最初透過代理伺服器連接，並且代理程式是在代理安裝期間設定的。現在代理伺服器已經改變。如何更改代理的代理配置？ | 您可以編輯 agent.properties 來新增代理詳細資訊。請遵循以下步驟：1.變更為包含屬性檔案的資料夾：cd /opt/netapp/cloudsecure/conf 2.使用您喜歡的文字編輯器，開啟_agent.properties_檔案進行編輯。3.新增或修改下列一行：AGENT_PROXY_HOST=scspa1950329001.vm.netapp.com AGENT_PROXY_PORT=80 AGENT_PROXY_USER=pxuser AGENT_PROXY_PASSWORD=pass1234 4.儲存文件。5.重新啟動代理程式：sudo systemctl restart cloudsecure-agent.service 
+使用者介面中未提供此選項。
+| 恢復自動更新。代理程式會取得最新可用版本，並升級自身及其收集器。 
 |===
+當發生下列任一情況時，已釘選的代理程式將恢復自動更新：
+
+* 您取消釘選代理程式。
+* 30 天已過。這 30 天的期限是從最近一次 Agent 更新之日開始計算，而不是從您固定 Agent 之日開始計算。
+
+
+無論哪種情況，代理程式都會在滿足條件後的下一次 Workload Security 重新整理時進行更新。釘選或取消釘選要求最多需要五分鐘才能生效。
+
+若要固定或取消固定代理程式，請使用 cloudsecure++_++config.agents API。您可以在 Workload Security ++>++ Collectors ++>++ Agents 中檢視目前代理程式版本。
+
+image:ws_deploy_agents_image3.png["代理程式固定和取消固定 API,title=\"代理程式固定和取消固定 API\",width=609,height=225"]
+
+.在 cloudsecure++_++config.agents 類別中固定和取消固定 API。
+image:ws_deploy_agents_image4.png["代理程式版本,title=\"代理程式版本\",width=609,height=97"]
+
+代理程式版本顯示在「代理程式」索引標籤上。
+
+
+
+[[pin-and-unpin-one-agent-at-a-time]]
+=== 一次固定和取消固定一個代理程式
+
+租戶層級也支援固定和取消固定。如果在租戶層級取消固定，租戶中的所有代理程式都會自動立即升級。
+
+請改用代理程式層級的鎖定和取消鎖定操作。代理程式層級的控制更加精細：只有您取消鎖定的代理程式才會接收升級，因此新版本的影響範圍僅限於該代理程式及其託管的收集器。
+
+[cols="34%,33%,33%"]
+|===
+| 範圍 | 釘選 | 取消固定 
+
+
+| 租戶中的所有代理程式 | POST /v1/cloudsecure/agents/configuration | DELETE /v1/cloudsecure/agents/configuration 
+
+
+| 單一代理程式（建議）  a| 
+POST /v1/cloudsecure/agents/
+
+++{++agentId}/組態
+ a| 
+DELETE /v1/cloudsecure/agents/
+
+++{++agentId}/組態
+
+|===
+*建議方法*
+
+. 將您想要保留的代理程式鎖定在目前版本。
+. 取消固定一個代理程式並讓它升級。
+. 確認代理程式恢復為「已連線」狀態，並且其收集器恢復為「執行中」狀態。
+. 分批取消固定剩餘的代理程式，以便意外問題只會影響您環境的一部分。
+
+
+
+
+[[best-practices-for-agents]]
+== 代理程式最佳實務
+
+這些操作規範適用於代理程式。有關收集器操作規範（包括何時暫停收集器），請參閱「設定 ONTAP SVM 資料收集器」。
+
+* 使用固定和取消固定來控制代理程式何時升級。您不需要為了升級控制而暫停收集器。
+* 在代理程式層級而不是租戶層級進行固定和取消固定，以便一次升級只影響一個代理程式及其收集器。
+* 請勿計畫無限期保持固定。固定的代理程式會在最近一次更新後 30 天自動更新。
+* 保持代理程式容量限制：每個代理程式最多 50 個收集器（所有類型加起來），每秒事件處理量上限為 20,000 個。大約 10 個收集器適合 4 個 CPU 核心和 16 GB 記憶體；大約 20 個收集器適合 4 個 CPU 核心和 32 GB 記憶體。
+* 在新增收集器之前，請使用 Event Rate Checker 根據峰值事件速率調整代理程式的大小，並將收集器移轉到另一個代理程式，而不是使單一代理程式過載。
+* 將收集器分佈在各個代理程式上，這樣維護一個代理程式就不會停止對所有 SVM 的監控。
+* 為代理程式主機提供靜態 IP 位址，並使用 NTP 使其時鐘與 ONTAP 保持同步。
+* 保持預留的 FPolicy 回呼連接埠對代理程式開啟，包括在主機防火牆中（請參閱網路組態）。
+
+
+
+
+[[troubleshooting]]
+== 故障排除
+
+對於代理程式安裝和連線失敗（不支援的作業系統、缺少 unzip/zip、cssys 權限問題、NOT++_++CONNECTED、Proxy 變更、symptom-collector 失敗），請參閱 ONTAP SVM 資料收集器疑難排解 — 代理程式安裝與健全狀況小節，以及 Workload Security 代理程式需求。
+
+若要收集支援部門所需的診斷套裝組合（以根目錄身分執行）：
+
+[quote]
+____
+sudo /opt/netapp/cloudsecure/agent/bin/cloudsecure-agent-symptom-collector.sh -o /tmp
+
+____
+
+將 cloudsecure-agent-symptoms.zip 檔案（或 /tmp 目錄下建立的 zip 檔案）連同您的 Data Infrastructure Insights 序號一起附加到案例中。請確保在執行症狀收集器之前，已在代理程式主機上安裝了該 zip 套件。

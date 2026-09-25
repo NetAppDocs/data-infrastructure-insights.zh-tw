@@ -14,17 +14,38 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network, Cl
 
 
 [role="lead"]
-在滿足最低作業系統、CPU、記憶體和磁碟空間要求的專用伺服器上部署 Workload Security Agent，以確保最佳的監控和威脅偵測效能。本指南詳細說明了link:task_cs_add_agent.html["安裝 Workload Security Agent"]前所需的硬體和網路要求，包括支援的 Linux 發行版、網路連接規則和系統容量規劃指南。
+在滿足最低作業系統、CPU、記憶體容量和磁碟空間要求的專用伺服器上部署 Workload Security 代理程式，以確保最佳的監控和威脅偵測效能。本指南詳細說明了 link:task_cs_add_agent.html["安裝 Workload Security Agent"] 之前所需的硬體和網路要求，包括支援的 Linux 經銷、網路連線規則和系統規模指南。
 
-[cols="36,60"]
+
+
+[[system-requirements]]
+== 系統需求
+
+[cols="50%,50%"]
 |===
-| 成分 | Linux 需求 
+| *元件* | *Linux 要求* 
 
 
-| 作業系統 | 執行下列任一授權版本的電腦：* AlmaLinux 9.4（64 位元）至 9.5（64 位元）、10（64 位元），包括 SELinux* CentOS Stream 9（64 位元）* Debian 11（64 位元）、12（64 位元），包括 SEL 8.10（64 位元）、9.1（64 位元）至 9.6（64 位元），包括 SELinux* Red Hat Enterprise Linux 8.10（64 位元）、9.1（64 位元）至 9.6（64 位元）、10（64 位元），包括 SELinux* Rock 15 SP4（64 位元）至 15 SP6（64 位元），包括 SELinux * Ubuntu 20.04 LTS（64 位元）、22.04 LTS（64 位元）、24.04 LTS（64 位元） 此電腦不應執行其他應用程式級軟體。建議使用專用伺服器。 
+| 作業系統  a| 
+產品中列出的任何 64 位元 Linux 經銷，包括啟用 SELinux 的系統。
+
+若要查看目前支援的經銷和版本清單，請在 Workload Security 中依序選擇 Collectors ++>++ 代理程式 ++>++ {plus}代理程式，然後按一下 Linux Versions Supported （i）。此清單由產品產生，始終保持最新。
+
+安裝程式也會驗證主機：在不受支援的經銷上，它會停止並顯示「此 linux 經銷不受支援。正在退出安裝」。
+
+這部電腦不應執行任何其他應用程式層級的軟體。建議使用專用伺服器。
 
 
-| 命令 | 安裝需要“unzip”。此外，安裝、執行腳本和卸載都需要「sudo su –」命令。 
+
+| 命令 / 套件  a| 
+代理程式主機上需要具備以下條件：
+
+* 解壓縮 — 代理程式安裝
+* zip — 診斷套裝組合（cloudsecure-agent-symptom-collector.sh）
+* sshpass — 事件速率檢查器（svm++_++event++_++rate++_++checker.sh）
+* sudo su – — 安裝、執行指令碼與解除安裝
+
+
 
 
 | 中央處理器 | 4 個 CPU 核心 
@@ -33,94 +54,136 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network, Cl
 | 記憶 | 16 GB 內存 
 
 
-| 可用磁碟空間 | 磁碟空間應按以下方式分配：/opt/netapp 36 GB（建立檔案系統後至少有 35 GB 的可用空間）注意：建議分配一些額外的磁碟空間以允許建立檔案系統。確保檔案系統中至少有 35 GB 的可用空間。如果 /opt 是從 NAS 儲存掛載的資料夾，請確保本機使用者可以存取該資料夾。如果本機使用者沒有存取此資料夾的權限，代理程式或資料收集器可能無法安裝。請參閱link:task_cs_add_agent.html#troubleshooting-agent-errors["故障排除"]部分了解更多詳情。 
+| 可用磁碟空間  a| 
+依下列方式分配磁碟空間：
+
+/opt/netapp — 36 GB（檔案系統建立後至少需要 35 GB 可用空間）
+
+注意：請分配一些額外的磁碟空間用於建立檔案系統；確保檔案系統中至少有 35 GB 的可用空間。如果 /opt 掛載自 NAS 儲存設備，請確保本機使用者能存取該資料夾，否則代理程式或資料收集器可能無法安裝。
 
 
-| 網路 | 100 Mbps 到 1 Gbps 乙太網路連接、靜態 IP 位址、與所有設備的 IP 連接以及工作負載安全實例所需的連接埠（80 或 443）。 
+
+| 時間同步 | 使用 NTP 或 SNTP 同步 ONTAP 系統和代理程式主機上的時間。ONTAP 和代理程式之間的時鐘偏差會破壞事件關聯、健全狀況檢查和疑難排解。 
+
+
+| 網路 | 100 Mbps 至 1 Gbps 乙太網路連線、靜態 IP 位址、與所有受監控裝置的 IP 連線，以及到 Workload Security 執行個體的必要連接埠（80 或 443）。 
 |===
-請注意：工作負載安全代理程式可以與Data Infrastructure Insights獲取單元和/或代理程式安裝在同一台機器上。但是，最佳做法是將它們安裝在單獨的機器上。如果將它們安裝在同一台機器上，請按如下所示指派磁碟空間：
+Workload Security 代理程式可以與 Data Infrastructure Insights 擷取單元和/或代理程式安裝在同一部機器上；但是，最佳實務做法是將它們安裝在分隔的機器上。如果安裝在同一部機器上，請如下所示分配磁碟空間：
 
+[cols="50%,50%"]
 |===
+| *可用磁碟空間* | *分配* 
 
 
-| 可用磁碟空間 | 50-55 GB 對於 Linux，應以以下方式分配磁碟空間：/opt/netapp 25-30 GB /var/log/netapp 25 GB 
+| 50–55 GB（合併安裝） | 對於 Linux，分配如下：/opt/netapp 25–30 GB；/var/log/netapp 25 GB 
 |===
-
-
-[[additional-recommendations]]
-== 其他建議
-
-* 強烈建議使用*網路時間協定 (NTP)* 或*簡單網路時間協定 (SNTP)* 同步ONTAP系統和代理機器上的時間。
-
-
 
 
 [[cloud-network-access-rules]]
 == 雲端網路存取規則
 
-對於*美國*的工作負載安全環境：
+*適用於美國境內的 Workload Security 環境：*
 
-[cols="5*"]
+[cols="20%,20%,20%,20%,20%"]
 |===
-| 協定 | 港口 | 來源 | 目的地 | 描述 
+| *協定* | *連接埠* | *來源* | *目的地* | *描述* 
 
 
-| TCP | 443 | 工作負載安全代理 | <網站名稱>.cs01.cloudinsights.netapp.com <網站名稱>.c01.cloudinsights.netapp.com <網站名稱>.c02.cloudinsights.netapp.com | 存取Data Infrastructure Insights 
+| TCP | 443 | 工作負載安全代理  a| 
+++<++site++_++name++>++.cs01.cloudinsights.netapp.com
+
+++<++site++_++name++>++.c01.cloudinsights.netapp.com
+
+++<++site++_++name++>++.c02.cloudinsights.netapp.com
+| 存取Data Infrastructure Insights 
 
 
 | TCP | 443 | 工作負載安全代理 | agentlogin.cs01.cloudinsights.netapp.com | 存取身份驗證服務 
 |===
-對於*基於歐洲的*工作負載安全環境：
+*針對位於歐洲的 Workload Security 環境：*
 
-[cols="5*"]
+[cols="20%,20%,20%,20%,20%"]
 |===
-| 協定 | 港口 | 來源 | 目的地 | 描述 
+| *協定* | *連接埠* | *來源* | *目的地* | *描述* 
 
 
-| TCP | 443 | 工作負載安全代理 | <網站名稱>.cs01-eu-1.cloudinsights.netapp.com <網站名稱>.c01-eu-1.cloudinsights.netapp.com <網站名稱>.c02-eu-1.cloudinsights.netapp.com | 存取Data Infrastructure Insights 
+| TCP | 443 | 工作負載安全代理  a| 
+++<++site++_++name++>++.cs01-eu-1.cloudinsights.netapp.com
+
+++<++site++_++name++>++.c01-eu-1.cloudinsights.netapp.com
+
+++<++site++_++name++>++.c02-eu-1.cloudinsights.netapp.com
+| 存取Data Infrastructure Insights 
 
 
 | TCP | 443 | 工作負載安全代理 | agentlogin.cs01-eu-1.cloudinsights.netapp.com | 存取身份驗證服務 
 |===
-對於*基於亞太地區*的工作負載安全環境：
+*針對亞太地區的 Workload Security 環境：*
 
-[cols="5*"]
+[cols="20%,20%,20%,20%,20%"]
 |===
-| 協定 | 港口 | 來源 | 目的地 | 描述 
+| *協定* | *連接埠* | *來源* | *目的地* | *描述* 
 
 
-| TCP | 443 | 工作負載安全代理 | <網站名稱>.cs01-ap-1.cloudinsights.netapp.com <網站名稱>.c01-ap-1.cloudinsights.netapp.com <網站名稱>.c02-ap-1.cloudinsights.netapp.com | 存取Data Infrastructure Insights 
+| TCP | 443 | 工作負載安全代理  a| 
+++<++site++_++name++>++.cs01-ap-1.cloudinsights.netapp.com
+
+++<++site++_++name++>++.c01-ap-1.cloudinsights.netapp.com
+
+++<++site++_++name++>++.c02-ap-1.cloudinsights.netapp.com
+| 存取Data Infrastructure Insights 
 
 
 | TCP | 443 | 工作負載安全代理 | agentlogin.cs01-ap-1.cloudinsights.netapp.com | 存取身份驗證服務 
 |===
+_如果代理程式位於 SSL 檢查之後（例如 Zscaler），請停用 ++*++.cloudinsights.netapp.com 和區域 agentlogin 主機的 SSL 檢查。當中間憑證重新簽署 SaaS 端點時，Workload Security 無法正常運作。_
+
 
 
 [[in-network-rules]]
 == 網路內規則
 
-[cols="5*"]
+[cols="20%,20%,20%,20%,20%"]
 |===
-| 協定 | 港口 | 來源 | 目的地 | 描述 
+| *協定* | *連接埠* | *來源* | *目的地* | *描述* 
 
 
-| TCP | 389（LDAP） 636（LDAP/啟動-tls） | 工作負載安全代理 | LDAP 伺服器 URL | 連線到 LDAP 
+| TCP  a| 
+389（LDAP）
+
+636 （LDAPS / start-tls）
+| 工作負載安全代理 | LDAP 伺服器 URL | 連線至 LDAP。支援 SSL（LDAPS/start-tls）；接受伺服器提供的憑證。 
 
 
-| TCP | 443 | 工作負載安全代理 | 叢集或 SVM 管理 IP 位址（取決於 SVM 收集器配置） | API 與ONTAP進行通信 
+| TCP | 443 | 工作負載安全代理 | 叢集或 SVM 管理 IP 位址（取決於 SVM 收集器組態） | 與 ONTAP 進行 API 通訊。 
 
 
-| TCP | 35000 - 55000 | SVM 資料 LIF IP 位址 | 工作負載安全代理 | ONTAP與工作負載安全代理之間針對 Fpolicy 事件的通訊。必須向工作負載安全代理程式開啟這些端口，以便ONTAP向其發送事件，包括工作負載安全代理本身上的任何防火牆（如果存在）。請注意，您不需要保留所有這些端口，但為此保留的端口必須在此範圍內。建議先預留約 100 個端口，然後根據需要增加。 
+| TCP | 35000–55000 | SVM 資料 LIF IP 位址 | 工作負載安全代理 | 從 ONTAP 到代理程式的 FPolicy 事件通訊。請向代理程式開放這些連接埠（包括代理程式本身的任何防火牆），以便 ONTAP 可以傳送檔案/使用者存取事件。 
 
 
-| TCP | 35000-55000 | 叢集管理IP | 工作負載安全代理 | 從ONTAP叢集管理 IP 到工作負載安全代理程式的通信，用於 *EMS 事件*。必須向工作負載安全代理程式開啟這些端口，以便ONTAP向其發送 *EMS 事件*，包括工作負載安全代理本身上的任何防火牆（如果存在）。請注意，您不需要保留所有這些端口，但為此保留的端口必須在此範圍內。建議先預留約 100 個端口，然後根據需要增加。 
+| TCP | 35000–55000 | 叢集管理 IP | 工作負載安全代理 | 從 ONTAP 叢集管理 IP 到 EMS 事件代理程式的通訊（例如，反勒索軟體 / ARP）。向代理程式開啟這些連接埠（包括代理程式本身的任何防火牆）。 
 
 
 | SSH | 22 | 工作負載安全代理 | 叢集管理 | 需要 CIFS/SMB 使用者阻止。 
 |===
+*關於 FPolicy/EMS 連接埠範圍*
+
+您無需開啟整個 35000–55000/tcp 範圍。根據代理程式上的收集器數量來決定保留數量：每個 SVM 最多使用 4 個連接埠（每個啟用的協定 2 個 — NFS 和 CIFS/SMB）。對於滿載的代理程式（50 個收集器），請在此範圍內保留約 200 個連接埠，並視需要增加。以上兩行針對不同的流量使用相同的範圍：SVM 資料 LIF → 代理程式會傳輸 FPolicy 檔案/使用者活動事件，而叢集管理 IP → 代理程式會傳輸 EMS 事件（例如 ARP）。如果您使用相對應的功能，請開啟這兩條路徑。
+
+在新增收集器之前執行「測試連線」時，它只會驗證此範圍內的部分活動連接埠。請在代理程式防火牆以及 ONTAP 和代理程式之間的任何網路路徑上，保持完整的保留範圍開啟。
+
 
 
 [[system-sizing]]
 == 系統規模
 
-查看link:concept_cs_event_rate_checker.html["事件發生率檢查器"]有關尺寸的資訊的文件。
+一個代理程式最多支援 50 個資料收集器（所有類型加起來），每秒事件數上限約 20,000 個。
+
+針對專用代理程式主機的典型指導原則：
+
+* *4 CPU / 16 GB RAM —* 大約 10 個收集器
+* *4 CPU / 32 GB RAM —* 約 20 個收集器
+* 當接近 50 個收集器或 20,000 個事件/秒的限制時，*透過額外的代理程式擴展規模*
+
+
+在新增收集器之前，請使用 Event Rate Checker（svm++_++event++_++rate++_++checker.sh）測量峰值事件速率。有關完整的規模方法，請參閱 Event Rate Checker 文件。
