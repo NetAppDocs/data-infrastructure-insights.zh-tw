@@ -6323,7 +6323,6 @@
   <block id="67efe5df179f0f50a5a5e82fd46a07fc" category="list-text">ci-ksm</block>
   <block id="217b41d0f229477b95c3b46b9905e8a6" category="list-text">西電訊報</block>
   <block id="7357e4ce1b613c72370aa11b8881c327" category="list-text">ci-fluent-bit</block>
-  <block id="fe05143e1e28d056a7092a13c7ef1fda" category="list-text">ci-kubernetes-事件導出器</block>
   <block id="ae233b4bee0ed9f611ffe211f5804e00" category="section-title">容忍度和污點</block>
   <block id="6aae913b976c156306d8a5cbbbc06ad5" category="inline-link-macro">在_AgentConfiguration_中</block>
   <block id="d6f0c62217650cf8ede1bd5e1e862b5a" category="paragraph">_netapp-ci-telegraf-ds_、_netapp-ci-fluent-bit-ds_ 和 _netapp-ci-net-observer-l4-ds_ DaemonSet 必須在叢集中的每個節點上安排一個 pod，以便正確收集所有節點上的資料。操作員已配置為容忍一些眾所周知的*污點*。如果您在節點上配置了任何自訂污點，從而阻止 Pod 在每個節點上運行，則可以為這些污點建立 *容忍度*<block ref="dc90f93af5ccf5020646213d9b7d2c3d" category="inline-link-macro-rx"></block> 。如果您已將自訂污點套用至叢集中的所有節點，則您也必須向操作員部署新增必要的容忍度，以允許調度和執行操作員 pod。</block>
@@ -6379,12 +6378,6 @@
   <block id="1c1bebc9155c93bfe8263d7dd59e4d97" category="inline-xref">刪除舊的操作員</block>
   <block id="3aadd91c93bca2d335851fd692f310be" category="inline-xref">安裝新的</block>
   <block id="c3a998877066e09c478b4163a26933ab" category="cell">自 2023 年 10 月 12 日起， Data Infrastructure Insights已重構了 Operator，以便更好地服務我們的用戶；為了完全採用這些更改，您必須<block ref="860504374016936ed59489a365e20672" category="inline-xref-macro-rx"></block>和<block ref="26142c5a68eb5609ee139db77de754bb" category="inline-xref-macro-rx"></block>。</block>
-  <block id="d91f7c56a5bd6c0e9735fe39d7d2d1a6" category="cell">我的 kubernetes 事件意外停止向Data Infrastructure Insights回報。</block>
-  <block id="0f21fa822dc46792cc163d7e77fe6c2c" category="paragraph">檢索事件導出器 pod 的名稱：</block>
-  <block id="9df5220f9f1e94f2849e58be10655af5" category="paragraph">它應該是“netapp-ci-event-exporter”或“event-exporter”。接下來編輯監控代理<block ref="254deec50834604297ddd3caab0d8ce7" prefix=" " category="inline-code"></block>，並設定 LOG_FILE 的值以反映上一個步驟中找到的適當的事件導出器 pod 名稱。更具體地說，LOG_FILE 應該設定為“/var/log/containers/netapp-ci-event-exporter.log”或“/var/log/containers/event-exporter*.log”</block>
-  <block id="fe98497efedbe156ecc4b953aea77e07" category="inline-xref">解除安裝</block>
-  <block id="7b4d917229221f1292dd0dc7b693cccf" category="inline-xref">重新安裝</block>
-  <block id="e832e916ac4edbd5ff4fc3ce13949058" category="paragraph">或者，也可以<block ref="eb03b2f692ebf826fa07016cc9fa15a6" category="inline-xref-macro-rx"></block>和<block ref="f33f6e060928000e7af3fed4c4e6c6a0" category="inline-xref-macro-rx"></block>代理人。</block>
   <block id="cacd73b257654b42f59477320860f203" category="cell">我看到 Kubernetes Monitoring Operator 部署的 pod 由於資源不足而崩潰。</block>
   <block id="1bf4c34fd6e2ff1bf1741953bce0f5e1" category="cell">參考 Kubernetes Monitoring Operator<block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>根據需要增加 CPU 和/或記憶體限制。</block>
   <block id="d30a0cd77a13a9c540651e05cf93b85c" category="cell">缺少影像或配置無效導致 netapp-ci-kube-state-metrics pod 無法啟動或準備就緒。現在 StatefulSet 卡住了，配置更改沒有應用到 netapp-ci-kube-state-metrics pod。</block>
@@ -6392,8 +6385,6 @@
   <block id="24842c3920322c32befcba0bfb6c67b4" category="cell">StatefulSet 位於<block ref="01cb4c066842f659530df33ef9ef5308" category="inline-link-macro-rx"></block>狀態。修復所有配置問題後，反彈 netapp-ci-kube-state-metrics pod。</block>
   <block id="ab53b155d3f5f63613ea9034aaafadbd" category="cell">執行 Kubernetes Operator 升級後，netapp-ci-kube-state-metrics pod 無法啟動，拋出 ErrImagePull（無法拉取影像）。</block>
   <block id="da4a57ccdb996916b48d63fa3e08bb40" category="cell">嘗試手動重置 pod。</block>
-  <block id="2bc94fccd24faa68b4153886af40ec57" category="cell">在日誌分析下，我的 Kubernetes 叢集中觀察到「事件因超過 maxEventAgeSeconds 而被丟棄」訊息。</block>
-  <block id="6c71496a372f3b5c0cbc9e2eb84a5fd0" category="cell">修改 Operator _agentconfiguration_，將 _event-exporter-maxEventAgeSeconds_（即增加到 60s）、_event-exporter-kubeQPS_（即增加到 100）和 _event-exporter-kubeBurst_（即增加到 500）增加。有關這些配置選項的更多詳細信息，請參閱<block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>頁。</block>
   <block id="7438b4e926a47d987228924d394e21fc" category="cell">Telegraf 因可鎖定記憶體不足而發出警告或崩潰。</block>
   <block id="9953ac1176fec4ceef2b233ecd286c7b" category="cell">嘗試增加底層作業系統/節點中 Telegraf 可鎖定記憶體的限制。如果無法增加限制，請修改 NKMO 代理程式配置並將 _unprotected_ 設為 _true_。這將指示 Telegraf 不要嘗試保留鎖定的記憶體頁面。雖然這可能會帶來安全風險，因為解密的秘密可能會被交換到磁碟，但它允許在無法保留鎖定記憶體的環境中執行。有關 _unprotected_ 配置選項的更多詳細信息，請參閱<block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>頁。</block>
   <block id="d2402cb2e8bc53d6f0ea3a592a927071" category="cell">我看到來自 Telegraf 的類似以下內容的警告訊息：_W！  [inputs.diskio] 無法收集「vdc」的磁碟名稱：讀取 /dev/vdc 時發生錯誤：沒有此檔案或目錄_</block>
@@ -16302,4 +16293,6 @@
   <block id="6ce78279e85ae6fe9f97051d8bc3c13e" category="sidebar">通知態勢</block>
   <block id="b349cdb464a16150566e060380a1b77f" category="sidebar">效能根本原因分析</block>
   <block id="aa70f40c4ba41bbc875ee1b79a091d75" category="sidebar">儲存健康狀況</block>
+  <block id="a82c02e71992fe00dd9609cb03521444" category="cell">在 DII 中，FlexGroups 的容量數值為 "0"。成分沒有問題，但 FlexGroup 未顯示所有成分的總容量。</block>
+  <block id="237b4a7247d444dc79495ddb037a4600" category="cell">這是有意為之。大多數容量計量都是在 FlexGroup 的組成部分上報告，而非在父 FlexGroup 上。如果在兩者上報告相同的容量，就會造成重複計算。優先使用組成部分層級的報告方式，既能支援關鍵使用案例，又能避免該重複資料。若要在查詢、儀表板或監控中報告 FlexGroup 的容量，請使用組成部分對其父 FlexGroup 的參考。依據該參考將組成部分分組，並彙總其容量值。</block>
 </blocks>
