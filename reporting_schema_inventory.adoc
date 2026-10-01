@@ -13,6 +13,9 @@ keywords: dwh, data warehouse, schema, reporting, inventory
 :imagesdir: ./media/
 
 
+[role="lead"]
+庫存模式包含全面的資產和物件資料，包括儲存設備系統、主機、應用程式和註釋。這是資料倉儲中最大的模式，也是資產管理和基礎架構可見度的基礎。
+
 來源：*dwh_inventory* OData 端點 — Data Infrastructure Insights
 
 找到的表：*106* | 關聯：*171*

@@ -13,6 +13,9 @@ keywords: dwh, data warehouse, schema, reporting, ports
 :imagesdir: ./media/
 
 
+[role="lead"]
+Ports 架構包含網路連接埠和交換器資料，包括連接埠連接性、狀態以及與連接設備的關係。使用此架構可以分析儲存基礎架構中的網路拓撲和架構健全狀況。
+
 來源：*dwh_ports* OData 端點 — Data Infrastructure Insights
 
 找到的表：*7* | 關聯：*4*

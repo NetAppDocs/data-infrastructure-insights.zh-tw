@@ -36,9 +36,9 @@ image:ai_assistant-column_graph.png["AI Assistant 視覺化"]
 [[enhanced-vm-analyzer-filtering]]
 === 增強型虛擬機器分析器過濾
 
-VM Analyzer 檢視中的新切換功能可讓您隱藏沒有資料儲存區的已掛載磁碟區，提供更清晰的檢視，簡化 VM 疑難排解。
+VM Analyzer 檢視中的新切換按鈕可讓您隱藏沒有資料存放區的已掛載磁碟區，提供更清晰的檢視，以簡化 VM 疑難排解。
 
-image:vm_analyzer_datastore_only_view.png["僅資料儲存檢視滑桿"]
+image:vm_analyzer_datastore_only_view.png["VM Analyzer 顯示隱藏沒有資料儲存的已掛載磁碟區的切換開關"]
 
 
 
@@ -51,9 +51,9 @@ image:vm_analyzer_datastore_only_view.png["僅資料儲存檢視滑桿"]
 
 您也可以直接開啟資產活動網頁，然後選擇右上角的「編輯」。
 
-image:UserDataEdit-Slideout.png["在側邊欄面板中編輯使用者資料 - 鉛筆圖示，寬度=400"]
+image:user_data_edit_slideout.png["資產詳情側滑視窗顯示處於唯讀模式的使用者資料，並提供用於進入編輯模式的鉛筆圖示，寬度=400"]
 
-image:UserDataEdit-LP.png["活動網頁編輯模式，寬度=200"]
+image:user_data_edit_lp.png["資產活動網頁，使用者資料已開啟並處於編輯模式，準備好儲存變更，width=200"]
 
 '''
 
