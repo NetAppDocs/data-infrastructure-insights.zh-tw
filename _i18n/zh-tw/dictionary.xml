@@ -15418,7 +15418,6 @@
   <block id="3a3a5cd068731551120f43f37950768b" category="cell">ONTAP Select</block>
   <block id="d4ae205eb2c457ac736944368ed76f4e" category="cell">已支援。</block>
   <block id="cbd8ba58ffce3ba619b32d06c59ccf43" category="cell">SVM 類型 / 子類型</block>
-  <block id="add9fe580da121a40e7d835cf08a489d" category="cell">僅限資料 SVM（無至極磁碟區）。支援的子類型：default、sync++_++source、sync++_++destination。根據設計，DP-destination SVM 會略過稽核。</block>
   <block id="8e7c7f420aaad9ac4efadf78cd539fce" category="cell">data-fpolicy-client 服務原則</block>
   <block id="ca144cead5527bd3ee58c0c2db2295be" category="cell">ONTAP 9.8 及更高版本需要此項設定（請參閱服務原則）。早期版本無需設定。</block>
   <block id="e2eabe65d493701bc6060114e99b0c9e" category="cell">功能版本下限</block>
@@ -15480,7 +15479,6 @@
   <block id="a0802df16c945d0e95fc47b41df0b506" category="cell">角色 DEFAULT：唯讀（叢集）— 滿足讀取檢查；fpolicy 仍需要所有</block>
   <block id="26aeabd0c99c77002e55825fbcd435af" category="cell">—</block>
   <block id="9147e5e61a7b9260dec09f3a6eb3e5be" category="cell">快照</block>
-  <block id="689b820747aa6a4d860f2786eb806378" category="cell">Volume 快照：全部（盡可能限定範圍為 cloudsecure++_*++）</block>
   <block id="ed36a1ef76a59ee3f15180e0441188ad" category="cell">任何</block>
   <block id="dd19eb6af7604080f6211a3670f8e075" category="cell">基於 EMS 的監控</block>
   <block id="c3e82a027d34cb4bbb340016c09d0785" category="cell">事件目錄、事件篩選器、事件通知、事件通知目的地、安全性憑證：全部</block>
@@ -15501,14 +15499,10 @@
   <block id="8e2de964cfdee8590e6b6154525b5d93" category="paragraph">如果需要先替換現有的 csuser/csrole：</block>
   <block id="f672a9771502c29126a3c35f4914cb76" category="paragraph">建立角色和使用者（以叢集管理員身分執行）：</block>
   <block id="bc72c6230f93afcba183ab1fa3f21642" category="section-title">透過 SVM（Vserver）管理 IP 建立 csuser</block>
-  <block id="a0f6fb0a8302b109f912737c2869ae71" category="paragraph">建立角色和使用者（在執行前替換 ++&lt;++vservername++&gt;++）：</block>
   <block id="9a57480d777872dcea7adf10743a9952" category="section-title">特定功能權限</block>
-  <block id="28c033259ae71cab82483e5eb721e1c5" category="paragraph">*持久儲存（圖中所示為叢集模式；新增 -vserver ++&lt;++vservername++&gt;++ 可啟用 SVM 模式）：*</block>
-  <block id="8de1a3a6bc3dbbbe06d26a1bcaf978d0" category="paragraph">*Protobuf（顯示叢集模式；新增 -vserver ++&lt;++vservername++&gt;++ 以用於 SVM 模式）：*</block>
   <block id="bc758e282c37d2d9a0517a93eece5907" category="paragraph">對於「存取被拒絕」和 ARP，叢集管理員憑證無需額外權限。對於自訂使用者，請新增上述功能表中的權限。請參閱 ONTAP 「存取被拒絕」和 ONTAP 「自主勒索軟體防護」整合指南。</block>
   <block id="e7d9ce3a5da364f2958195e14ff8fe63" category="section-title">設定並測試資料收集器</block>
   <block id="8e74db1aff0722071bb47c173993c43f" category="list-text">以管理員或帳戶擁有者身分登入 Data Infrastructure Insights。</block>
-  <block id="58322ab2ae3213de6b39a5124b6c922f" category="list-text">選擇 Workload Security ++&gt;++ 收集器 ++&gt;++ &amp;#43;資料收集器。</block>
   <block id="1c8e1403d69deb6fe2ab09b0987817d3" category="list-text">將滑鼠懸停在 NetApp SVM 圖塊上，然後按一下 &amp;#43;監控。</block>
   <block id="ca6dbdd28f74169fa4b6bdc7ea68f856" category="list-text">請輸入下列欄位。暫時不要儲存收集器。</block>
   <block id="7eea9d7817ee2e4f6a3b32e32e073cbd" category="cell">*欄位*</block>
@@ -15527,7 +15521,6 @@
   <block id="91e39cbc92e5415e5f78c8806b7a24cb" category="cell">以逗號分隔的完整 Volume 名稱（不含引號）。</block>
   <block id="b09191377f9b6b951d60b2bd6174e871" category="cell">啟用一般資料夾存取事件。即使沒有此選項，也會擷取資料夾建立/重新命名/刪除。啟用會增加事件 Volume。</block>
   <block id="26ab4dcb28c140ed3030981362b24276" category="cell">調整 FPolicy 傳送緩衝區。對於 9.8p7 之前的 ONTAP，如果存在效能問題，可進行此調整以改善 ONTAP 效能。如果未顯示此選項，請聯絡 NetApp 支援。</block>
-  <block id="c421bfa9e5f3f2069af785152ca7a7ab" category="paragraph">*Important:* 預設排除的檔案副檔名：根據設計，Workload Security 會將 FPolicy 範圍設定為排除 ini 和 DS++_++Store 副檔名。這些檔案的事件會在 ONTAP 上被過濾，不會到達 Workload Security，因此不會出現在 Activity Forensics 中。這與客戶可設定的警示排除項分隔。這是預期行為；無法在 UI 中設定對這些副檔名的稽核。</block>
   <block id="4382509b287cd683101bff64820824d5" category="section-title">儲存前請執行連線測試</block>
   <block id="193a78920391ccef7cc87f529c239fcc" category="paragraph">「測試連線」功能（2025 年 3 月推出）會在您建立收集器之前驗證連線性、憑證、資料 LIF、FPolicy 回呼以及每個功能的 RBAC，以便您可以自行修正網路和權限問題。在新增/編輯收集器頁面上，輸入詳細資訊並按一下「測試連線」。</block>
   <block id="92b414da7b32cefb75be6566fce55d1b" category="inline-image-macro">測試連線按鈕,title="測試連線按鈕",width=433,height=54</block>
@@ -15584,7 +15577,6 @@
   <block id="4f4a1b4c3c6037326a4858faf590909b" category="list-text">切換時，狀態會互換；過渡最多需要兩分鐘。</block>
   <block id="db4210231f9102ae9bf9a4de573d89ce" category="paragraph">*注意：* 備用端上已停止的 MetroCluster 收集器是預期現象，並非錯誤。僅當作用中端未運作時才進行調查。</block>
   <block id="5ecd3700f40aa2ecc41a5566d5bb457a" category="section-title">暫停與繼續收集器</block>
-  <block id="2900a29dbf701a91de01303efc97eac8" category="paragraph">暫停和恢復適用於資料收集器，而非代理程式。您可以從 UI（收集器 ++&gt;++ 該收集器 ++&gt;++ 選項選單）或從 API 執行它們。</block>
   <block id="1cd63011ecef087e6725de251947e701" category="paragraph">暫停正在運作的收集器會從 ONTAP 中移除 FPolicy 組態。暫停期間，不會有事件流動，也不會有任何資料雙向發送。</block>
   <block id="3070fc72c1e826111ddbc25d614547d8" category="list-text">暫停期間建立的新 Volume，要等到您恢復後才會被納入。</block>
   <block id="687ecad589a53ce9917f7a1297ae2d5a" category="list-text">Snapshot 快照技術清除不會在已暫停的收集器上運作。</block>
@@ -15620,9 +15612,7 @@
   <block id="209a869a1a80f43872e859a94b46d639" category="list-text">為了獲得最佳的 FPolicy 效能，請將代理程式放置在靠近儲存網路的位置，並盡量減少網路延遲。</block>
   <block id="1d73eacdaf8c8824c5acb1c2966f4c07" category="section-title">如果收集器在儲存後報告錯誤</block>
   <block id="c959971e1357197b467c89aa8f789725" category="paragraph">連線測試涵蓋設定時的連線能力、憑證、資料 LIF、已指派連接埠上的回呼連線、選擇 SMB 時的 CIFS 伺服器檢查，以及在叢集模式下的功能存取。測試成功後，請勿手動重複這些檢查。</block>
-  <block id="8939329780680219f89b75f98718d19d" category="paragraph">如果收集器稍後進入錯誤或降級狀態，請開啟「狀態」 ++&gt;++ 「更多詳細資料」，並遵循「疑難排解 ONTAP SVM 資料收集器」。執行階段條件（例如複製收集器、事件速率過載、暫停的收集器、持久性儲存放置、 MetroCluster 轉換、遺失活動和身分解析）不在儲存前測試連線工作流程的範圍內。</block>
   <block id="87c6ee99d11a193762ea2b98b8f6ab57" category="list-text">在「已安裝資料收集器」頁面上，使用選項功能表編輯或重新啟動收集器。</block>
-  <block id="ecfa6237a8a218fc5c797ee0578679c7" category="list-text">確認收集器達到 Running 狀態，且在真實用戶端 I/O 之後，事件出現在 Workload Security ++&gt;++ Activity Forensics 中。</block>
   <block id="e18aef600b2d8504f1e47650de009e83" category="list-text">驗證使用者名稱是否解析（不是 SID）；如果無法解析，請檢查 User Directory Collector。</block>
   <block id="0d66c633187e88b2e22907cdb3336aee" category="paragraph">在設定 ONTAP SVM 資料收集器之前，先設定使用者目錄收集器。</block>
   <block id="bbfc5ca7682ab84e651eb864c318dd85" category="paragraph">Workload Security 使用目錄資料來解析檔案存取活動中的身分。使用者目錄收集器不提供測試連線功能。</block>
@@ -16301,4 +16291,14 @@
   <block id="b2200689dae4036b4813579eff31d56c" category="paragraph">庫存模式包含全面的資產和物件資料，包括儲存設備系統、主機、應用程式和註釋。這是資料倉儲中最大的模式，也是資產管理和基礎架構可見度的基礎。</block>
   <block id="d9a7965bf43985ef0fc40616a6785117" category="paragraph">效能架構提供儲存設備、主機、磁碟區和應用程式的 I/O、延遲、處理量和其他效能指標的時間序列計量。使用此架構可以分析效能趨勢、識別瓶頸並最佳化工作負載配置。</block>
   <block id="18b7f15f593dc47ea50fd485e859a539" category="paragraph">Ports 架構包含網路連接埠和交換器資料，包括連接埠連接性、狀態以及與連接設備的關係。使用此架構可以分析儲存基礎架構中的網路拓撲和架構健全狀況。</block>
+  <block id="1bccf90180c31adab404747497809cea" category="cell">僅限資料 SVM（無至極 Volume）。支援的子類型：default、sync_source、sync_destination。根據設計，稽核時會跳過 DP-destination SVM。</block>
+  <block id="aadaea56453502b49c3bb1d83460b925" category="cell">Volume 快照：全部（盡可能限定在 cloudsecure_* 範圍內）</block>
+  <block id="7f1025af379bb72826214683cac22df7" category="paragraph">建立角色和使用者（執行前請替換 &lt;vservername&gt;）：</block>
+  <block id="adf604179202ac8d7549519f9ce15c55" category="paragraph">*持久性儲存（圖中所示為叢集模式；新增 -vserver &lt;vservername&gt; 以用於 SVM 模式）：*</block>
+  <block id="2ad63734d5ea88b691fcec8abfa334e6" category="paragraph">*Protobuf（顯示叢集模式；新增 -vserver &lt;vservername&gt; 以用於 SVM 模式）：*</block>
+  <block id="03a48f775ff6c08509430c660d47baaa" category="list-text">選擇工作負載安全性 &gt; 收集器 &gt; &amp;#43;資料收集器。</block>
+  <block id="d78aa3ef141641a0a1fc5a86295f9836" category="paragraph">*Important:* 預設排除的檔案副檔名：根據設計，Workload Security 會將 FPolicy 範圍設定為排除 ini 和 DS_Store 副檔名。這些檔案的事件會在 ONTAP 上被過濾，不會到達 Workload Security，因此不會出現在 Activity Forensics 中。這與客戶可設定的警示排除項分隔。這是預期行為；無法在 UI 中設定對這些副檔名的稽核。</block>
+  <block id="24dda3b59a8373ca61cb08f3e04c9cce" category="paragraph">暫停和恢復操作適用於資料收集器，而非 Agent。您可以透過使用者介面（「收集器」&gt;「收集器」&gt;「選項」功能表）或 API 來執行這些操作。</block>
+  <block id="77b5c5ee27c770993c6041b7b3f0105c" category="paragraph">如果收集器之後進入錯誤或降級狀態，請開啟「狀態」 &gt; 「更多詳細資料」，並按照 ONTAP SVM 資料收集器故障排除進行操作。執行時間條件（例如複製收集器、事件速率過載、暫停的收集器、Persistent Store 放置、MetroCluster 轉換、缺少活動和身分解析）不在預先儲存測試連線工作流程的範圍內。</block>
+  <block id="954c32784463d0103797201c7694bdf9" category="list-text">確認收集器達到 Running 狀態，且在實際用戶端 I/O 之後，事件出現在 Workload Security &gt; 活動取證中。</block>
 </blocks>
