@@ -13,6 +13,9 @@ keywords: dwh, data warehouse, schema, reporting, file system, fs util
 :imagesdir: ./media/
 
 
+[role="lead"]
+檔案系統使用率模式追蹤跨檔案系統、主機和運算資源的儲存設備消耗和使用模式。使用此模式可以識別容量熱點並最佳化檔案系統層級的儲存設備分配。
+
 來源：*dwh_fs_util* OData 端點 — Data Infrastructure Insights
 
 找到的表：*8* | 關聯：*7*

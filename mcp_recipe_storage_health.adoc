@@ -1,0 +1,148 @@
+---
+sidebar: sidebar 
+permalink: mcp_recipe_storage_health.html 
+summary: 使用此方法，透過結合作用中警報、監控意圖、修正指導、相關平台日誌和物件上下文，確定儲存設備問題的優先順序。 
+keywords: MCP, DII, Data Infrastructure Insights, AI assistant 
+---
+= 評估儲存設備健全狀況
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+使用此方法，透過結合作用中警報、監控意圖、修正指導、相關平台日誌和物件上下文，確定儲存設備問題的優先順序。
+
+
+NOTE: DII MCP 是一項 link:concept_preview_features.html["預覽"] 功能，因此可能會發生變化。
+
+
+
+[[prerequisites]]
+== 先決條件
+
+* 時間範圍為 30 天或更短。
+* 選用的儲存系統、叢集、資源池或 Volume 範圍。
+* 可存取警報、監控、日誌和物件工具。
+
+
+
+
+[[tools-used]]
+== 使用的工具
+
+* +AlertsService_getMetadata+
+* +AlertsService_queryForAlerts+
+* +AlertsService_getAlertByName+
+* +MonitorsService_getMonitorById+
+* +LogService_getLogTypes+
+* +LogService_getLogTypeMetadata+
+* +LogService_queryLogEvents+
+* +ObjectService_getObjectTypes+
+* +ObjectService_getMetadataForObjectType+
+* +ObjectService_query+
+
+
+
+
+[[starter-prompt]]
+== 啟動提示
+
+[]
+====
+評估過去 24 小時的儲存設備健全狀況。識別儲存設備系統、節點、資源池與 Volume 的關鍵與警告作用中警報。對於影響最大的警報，解釋監控狀況與修正指引，然後檢查觸發時間前後相關的 EMS 或儲存設備平台日誌。分隔已確認的證據與可能的原因。
+
+====
+
+
+[[agent-workflow]]
+== 代理程式工作流程
+
+. 取得警報中繼資料。
+. 識別嚴重性、狀態、監控、相關物件和觸發時間的有效欄位。
+. 在要求的視窗中查詢作用中的儲存設備相關警報。
+. 使用以下方式排名警示：
++
+** 嚴重程度
+** 受影響的物件類型
+** 受影響物件的數量
+** 近期與重複發生
+** 可用性、資料保護、效能或容量影響
+
+
+. 擷取最高優先權警報的完整詳細資訊。
+. 擷取其監控定義與修正指南。
+. 列出日誌類型，並選擇與每個警報相關的平台原生串流，例如 ONTAP EMS 或 StorageGRID 事件。
+. 擷取日誌中繼資料，然後查詢警報前後較短的區間。
+. 擷取確認目前狀態所需的物件屬性或計量。
+. 產生一份包含證據、可能原因、影響和下次檢查的健全狀況總結。
+
+
+
+
+[[interpretation]]
+== 解釋
+
+不要將單一訊號視為完整的健全狀況評估：
+
+* *警報*顯示偵測到的情況。
+* *監控*說明偵測規則和預期的修正行動。
+* *日誌*提供平台原生事件情境。
+* *物件和計量* 顯示目前庫存或測量狀態。
+
+
+即使底層條件變化，作用中的警報仍可保持開啟。盡可能使用最新的物件和計量資料。
+
+
+
+[[suggested-output]]
+== 建議輸出
+
+針對每個優先順序問題：
+
+* 受影響的資源
+* 嚴重程度和警報狀態
+* 觸發時間
+* 監控和狀態
+* 佐證日誌或計量
+* 已證實的證據
+* 可能的原因，被標記為推斷
+* 修正指引
+* 信心和缺失的證據
+
+
+
+
+[[limits-and-privacy]]
+== 限制和隱私
+
+* 將警報與記錄視窗保持在 30 天以下。
+* 使用較窄的日誌視窗來減少無關事件。
+* 省略不必要的 UUID、位址、註解和原始酬載。
+* 修正指引僅供參考；請根據相關產品文件和變更流程驗證命令。
+
+
+
+
+[[follow-up-prompts]]
+== 後續提示
+
+[]
+====
+對於警報 `AL-123456`，顯示觸發前後 30 分鐘內的監控指引和相關的 EMS 事件。
+
+====
+[]
+====
+依受影響的系統和影響區域對作用中儲存設備警報進行分組。哪個系統需要優先注意？為什麼？
+
+====
+[]
+====
+檢查目前物件計量是否仍支援最高優先級警報。
+
+====
+link:mcp_recipe_overview.html["返回配方"]

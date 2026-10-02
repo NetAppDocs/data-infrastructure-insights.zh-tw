@@ -13,6 +13,9 @@ keywords: dwh, data warehouse, schema, reporting, performance
 :imagesdir: ./media/
 
 
+[role="lead"]
+效能架構提供儲存設備、主機、磁碟區和應用程式的 I/O、延遲、處理量和其他效能指標的時間序列計量。使用此架構可以分析效能趨勢、識別瓶頸並最佳化工作負載配置。
+
 來源：*dwh_performance* OData 端點 — Data Infrastructure Insights
 
 找到的表：*74* | 關聯：*167*

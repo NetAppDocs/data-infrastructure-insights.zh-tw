@@ -1,0 +1,82 @@
+---
+sidebar: sidebar 
+permalink: mcp_recipe_overview.html 
+summary: 配方將多個唯讀的 DII 工具組合成可重複的基礎架構工作流程。您可以將它們作為起點，並將虛構的資源名稱替換為您租戶中的值。 
+keywords: MCP, DII, Data Infrastructure Insights, AI assistant 
+---
+= DII MCP 操作配方
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+配方將多個唯讀的 DII 工具組合成可重複的基礎架構工作流程。您可以將它們作為起點，並將虛構的資源名稱替換為您租戶中的值。
+
+
+NOTE: DII MCP 是一項 link:concept_preview_features.html["預覽"] 功能，因此可能會發生變化。
+
+
+
+[[choose-a-workflow]]
+== 選擇工作流程
+
+|===
+| 目標 | 配方 | 主要 DII 表面 
+
+
+| 驗證收集範圍和新鮮度 | link:mcp_recipe_environment_inventory.html["庫存環境與收集健全狀況"] | 擷取單元、資料來源 
+
+
+| 優先處理作用中的基礎架構問題 | link:mcp_recipe_storage_health.html["評估儲存設備健全狀況"] | 警報、監控、日誌、物件 
+
+
+| 尋找接近容量壓力的集區 | link:mcp_recipe_capacity_risk.html["識別容量風險"] | 物件中繼資料、分組、時間序列 
+
+
+| 檢查 Kubernetes 收集元件版本 | link:mcp_recipe_kubernetes_collector_currency.html["檢查 Kubernetes 收集器最新狀態"] | Kubernetes 收集器 
+
+
+| 調查 Volume 或工作負載緩慢的原因 | link:mcp_recipe_performance_rca.html["疑難排解效能"] | 物件計量、警報、日誌 
+
+
+| 安全地審查路由和抑制 | link:mcp_recipe_notification_posture.html["審查通知態勢"] | 規則、目標、維護時段 
+|===
+
+
+[[standard-investigation-pattern]]
+== 標準調查模式
+
+. 釐清資源範圍和時間範圍。
+. 探索可用的類型。
+. 使用動態欄位前，請先檢索中繼資料。
+. 查詢限定時間視窗。
+. 關聯獨立訊號。
+. 區分觀察到的事實和推論。
+. 報告局限性及建議的後續措施。
+
+
+
+
+[[safety]]
+== 安全
+
+* 這些配方使用唯讀工具。
+* 將時間窗口控制在 30 天或更短。
+* 省略憑證、私有位址、UUID、原始 webhook 端點和不必要的日誌負載。
+* 確認 MCP 工作流程以外的高影響力營運行動。
+
+
+
+
+[[related-documentation]]
+== 相關文件
+
+* link:mcp_overview.html["DII MCP 總覽"]
+* link:mcp_concepts.html["概念和資料模型"]
+* link:mcp_tools_overview.html["工具參考"]
+* link:mcp_security.html["安全和隱私"]
+

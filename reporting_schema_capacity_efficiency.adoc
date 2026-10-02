@@ -13,6 +13,9 @@ keywords: dwh, data warehouse, schema, reporting, capacity efficiency
 :imagesdir: ./media/
 
 
+[role="lead"]
+容量效率結構描述提供儲存效率的計量，包括資料減量比率和最佳化機會。使用此結構描述來監控和分析重複資料刪除和壓縮等儲存設備技術的有效性。
+
 資料來源：*dwh_capacity_efficiency* OData 端點 — Data Infrastructure Insights
 
 找到的表：*3* | 關聯：*2*

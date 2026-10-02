@@ -13,6 +13,9 @@ keywords: dwh, data warehouse, schema, reporting, capacity
 :imagesdir: ./media/
 
 
+[role="lead"]
+容量結構描述包含與基礎架構中儲存容量、使用率和配置相關的表格和計量。使用此結構描述可以分析容量趨勢、預測未來需求並最佳化資源分配。
+
 來源：*dwh_capacity* OData 端點 — Data Infrastructure Insights
 
 找到的表：*44* | 關聯：*92*

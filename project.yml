@@ -52,7 +52,41 @@ sidebar:
     - title: 安全管理工具
       url: "/security_admin_tool.html"
   - title: AI 助理
-    url: "/ai_for_dii_overview.html"
+    entries:
+    - title: AI 助理概述
+      url: "/ai_for_dii_overview.html"
+    - title: DII MCP
+      entries:
+      - title: DII MCP 概述
+        url: "/mcp_overview.html"
+      - title: DII MCP 伺服器
+        url: "/mcp_overview.html"
+      - title: 概念
+        url: "/mcp_concepts.html"
+      - title: 設定
+        url: "/mcp_setup.html"
+      - title: 安全
+        url: "/mcp_security.html"
+      - title: 故障排除
+        url: "/mcp_troubleshooting.html"
+      - title: 工具
+        url: "/mcp_tools_overview.html"
+      - title: 使用案例
+        entries:
+        - title: 用例概述
+          url: "/mcp_recipe_overview.html"
+        - title: 容量風險分析
+          url: "/mcp_recipe_capacity_risk.html"
+        - title: 環境清單
+          url: "/mcp_recipe_environment_inventory.html"
+        - title: Kubernetes 收集器時效性
+          url: "/mcp_recipe_kubernetes_collector_currency.html"
+        - title: 通知態勢
+          url: "/mcp_recipe_notification_posture.html"
+        - title: 效能根本原因分析
+          url: "/mcp_recipe_performance_rca.html"
+        - title: 儲存健康狀況
+          url: "/mcp_recipe_storage_health.html"
   - title: 資料收集器列表
     url: "/data_collector_list.html"
   - title: 訂閱Data Infrastructure Insights
