@@ -15320,8 +15320,6 @@
   <block id="afd0c3c4cdf600c241e6062de7efc38d" category="list-text">如果使用 SVM IP 和 vsadmin，請使用僅管理功能的 LIF。同時具有資料和管理角色的 LIF 可以回應 ping 請求，但管理存取仍然會失敗。</block>
   <block id="9410d3dd17bd3b4647e1b70d1d1e6745" category="list-text">對於選用功能，請授予功能測試報告的權限，然後再次執行連線測試。</block>
   <block id="052cdb9ec1abf182e678dbe78454c893" category="paragraph">*涵蓋的確切錯誤*</block>
-  <block id="e9a0103a0775b98e2814bd92d2a62dda" category="list-text">無法判斷 ++[++host++]++ 的 ONTAP 類型。原因：連線至儲存系統時發生錯誤：主機無法連線</block>
-  <block id="035aadd245a74b453daf0d268eee41c9" category="list-text">++[++IP++]++ 被辨識為叢集/節點，無法在此模式下新增</block>
   <block id="9266ab3354c0bb9a2d4706509e093c35" category="list-text">在 SVM 上未找到有效的資料介面……</block>
   <block id="8bc4b2d3427ec80982ffc645e4e2e663" category="list-text">缺少權限：vserver fpolicy</block>
   <block id="633ff01f97949aad10c07c3050299b8f" category="list-text">此 Active Directory 使用者的角色指派是在群組層級而不是使用者層級進行</block>
@@ -15350,7 +15348,6 @@
   <block id="5d3f323b7708802c99d3b55d34c784e6" category="list-text">SVM 上的 fpolicy 設定失敗……使用者未授權</block>
   <block id="085ae3f401d2a02104ded446925f5fa7" category="list-text">沒有可用的有效序號來啟用 fpolicy 原則</block>
   <block id="60acbda9b6d8687d4f8ee9a8df323d0a" category="list-text">設定持續儲存失敗……目前無法提供彙總的效能資訊</block>
-  <block id="37f4c8d9b3bc335487b57648a25e1c45" category="list-text">cloudsecure++_++ FPolicy 原則已啟用，收集器保持運作狀態。</block>
   <block id="42250c9902d77a942ca166de080c8e73" category="section-title">*代理容量或收集器健全狀況*</block>
   <block id="aa8e789605cb94bb5e2b9cad3e988d48" category="list-text">重新輸入收集器密碼：開啟編輯，輸入密碼，然後儲存。</block>
   <block id="e5b427e63010950b710856ccba203384" category="list-text">檢查代理程式的 CPU 和記憶體容量剩餘空間以及託管收集器的數量。</block>
@@ -15378,8 +15375,6 @@
   <block id="9d5558de49864a5aaf09bbc466325f62" category="list-text">確認用戶端協定已啟用，並且對於 SMB，確認 SVM 具有 CIFS 伺服器。</block>
   <block id="78e4147d2fcb665330522205434cc942" category="list-text">審查包含和排除的共享與 Volume。請使用完整名稱，無需加引號。</block>
   <block id="de8dab0414b0315e30cded2b46a453aa" category="list-text">當需要一般資料夾存取事件時，請啟用「監控資料夾存取」。未啟用此選項時，系統會收集資料夾的建立、重新命名和刪除事件。</block>
-  <block id="4759d60f794302252cb46abffa2003de" category="list-text">如果僅缺少 .ini 和 .DS++_++Store 活動，則無需執行任何行動；這些副檔名已從 FPolicy 事件收集中排除。</block>
-  <block id="8c22f9462036f0dd20c80fc189249549" category="list-text">如果仍然沒有活動，請使用進階診斷來驗證 cloudsecure++_++ 原則和 ONTAP FPolicy 事件日誌。</block>
   <block id="d347513df0e13aad5feb241cbab4bdfc" category="list-text">新的用戶端操作會出現在 Activity Forensics 中，並包含預期的協定、共享、路徑和使用者資訊。</block>
   <block id="f8acf423c23d41fcdb70a66757da8e59" category="section-title">*活動顯示 SID 而非使用者名稱*</block>
   <block id="3787b0669929b027268b3b24a4fe3c62" category="paragraph">ONTAP 稽核功能正常；身分解析是分隔的問題。</block>
@@ -15406,7 +15401,6 @@
   <block id="6b922742b49720893c54e6b1e398b6cc" category="list-text">確認收集器正在執行中，且未暫停。</block>
   <block id="1e784234b40a4ed8a4c8884e71201bba" category="list-text">對於使用者封鎖，請使用叢集層級的憑證。自訂使用者還需要在 TCP 22 上擁有 SSH 存取，並具備文件中記載的封鎖權限。</block>
   <block id="78c3532ecef5ab1659ad612cc4c53bd2" category="list-text">確認自訂使用者擁有所需的 Snapshot 快照技術權限。</block>
-  <block id="d57fd269eade28c34db56bbb026b8383" category="list-text">如果啟用了 ONTAP 多管理員驗證，請新增 cloudsecure++_++ Snapshot 快照技術的已記錄排除項目，以及使用者封鎖所使用的設定作業。</block>
   <block id="ed39e8caebd174407031fe2936738028" category="list-text">在叢集模式下執行測試連線，並審查 Snapshot 快照技術和使用者封鎖功能的結果。</block>
   <block id="3eeafc54af73f87800ed2ce617a3f8b7" category="list-text">Workload Security 可以建立和刪除其快照，並且可以封鎖和還原使用者存取。</block>
   <block id="0aa7337be8ed8a5fc38708f43902ba4b" category="section-title">*預期行為 — 無需採取任何行動*</block>
@@ -15419,7 +15413,6 @@
   <block id="f06cf56d9192258142217bc7534ffa29" category="cell">降級列出沒有本機資料 LIF 的節點</block>
   <block id="523eaf1144fe5e0cc0ce6ccf0aa0fdbc" category="cell">ONTAP 無法從本地不為 SVM 提供服務的節點建立 FPolicy 通路。</block>
   <block id="86f505c2b43c4bab68db6b2721e92825" category="cell">所列出的節點具有運作中的 SVM 資料 LIF。</block>
-  <block id="0c024c9786b0a130ef9f2209b5b4eef7" category="cell">沒有 .ini 或 .DS++_++Store 的事件</block>
   <block id="d2b54416d881f7bd67a08215cba775e7" category="cell">這些副檔名會從 FPolicy 範圍中排除。</block>
   <block id="5eac15c2b8b9fc80cd9b41574c1acf1a" category="cell">其他預期的檔案活動也遺失。</block>
   <block id="4f46848b0dbf0fd386dde599cb8868ce" category="cell">短暫的初始化、停止或降級狀態</block>
@@ -15437,13 +15430,10 @@
   <block id="0be76c87d632cbbfa4e3922e4adcc907" category="cell">*證據*</block>
   <block id="eef4b2f23f3a025cf83eab51354896eb" category="cell">*位置或命令*</block>
   <block id="609b6fe2bd0fb9e30ab6cb0642ad9815" category="cell">收集器日誌</block>
-  <block id="4b5f755dff50d04d0ef018545e6f1842" category="paragraph">/opt/netapp/cloudsecure/data-collectors/++&lt;++collector-uuid++&gt;++/logs/dsc.log</block>
   <block id="4e236688e06bc3fc103e6f1c01f16cf0" category="paragraph">包含所有收集器活動，包括錯誤。請使用此日誌來調查收集器問題。</block>
   <block id="ceb60f8be137b22ec9c994e3859fc9d3" category="cell">代理程式日誌</block>
   <block id="8ea61ce76dc83026cf34e9ad16a24974" category="cell">/opt/netapp/cloudsecure/agent/logs/agent.log</block>
   <block id="b775cc33ad81bc8796a92737fbe1fef0" category="cell">代理程式安裝和升級</block>
-  <block id="4fb306285a138205d2951fdac023a9ab" category="paragraph">/opt/netapp/cloudsecure/agent/logs/cloudsecure++_++agent++_++install.log</block>
-  <block id="92e3160f317eea05bbcd97704c2e390e" category="paragraph">/opt/netapp/cloudsecure/agent/logs/cloudsecure++_++agent++_++upgrade.log</block>
   <block id="49ab5aaeb16e40d2787f6cc6532c99a3" category="cell">測試連線</block>
   <block id="837a3cd2b56827ebcf5b9a67fba50b92" category="cell">/opt/netapp/cloudsecure/test-connection/logs/</block>
   <block id="655ba6865da50cb3947405fa07a09371" category="cell">代理程式服務</block>
@@ -15452,7 +15442,6 @@
   <block id="566c4a298f7b5a7e738daecdc8429aa7" category="paragraph">*注意：* 收集器日誌目錄也可能包含 error.log 檔案，但它並非通用錯誤日誌。只有當收集器因組態無效而無法啟動時才會寫入該檔案，代理程式會在收集器狀態中報告該原因後將其移除。該檔案通常不存在或為空，因此請使用 dsc.log 檔案。</block>
   <block id="1f19c695deb1ea2cfc7730a695c1da0d" category="section-title">*驗證 ONTAP FPolicy 狀態*</block>
   <block id="ed6326945366f78c6138656fa831567e" category="paragraph">在適當的 ONTAP 管理環境中執行這些命令：</block>
-  <block id="7f5bdaa89a1d8cc7785d87c89e903aef" category="paragraph">尋找以 cloudsecure++_++ 為前綴的 Workload Security 原則。此原則應已啟用，並且每個資料服務節點都應顯示已連接的外部引擎。當通路中斷連線時，保留事件原因和節點名稱。</block>
   <block id="10e79af04432e7c04ea6e975d6340b34" category="section-title">*驗證每條網路路徑*</block>
   <block id="e71a4b7488a97c0e5d8b3ab3efe619e4" category="cell">*方向*</block>
   <block id="139a0086c51a356d51b9adbdd2abcd41" category="cell">代理程式 → 叢集或 SVM 管理 IP</block>
@@ -15481,7 +15470,6 @@
   <block id="9319f07e493af8a26e0543b0ed658b50" category="list-text">在 ONTAP 上啟動相關資料 LIF 和代理程式 IP 的封包追蹤。</block>
   <block id="456fd97b69d8c1f180393a803e319725" category="list-text">嘗試測試連線或重新啟動收集器。</block>
   <block id="e9b6af72f3ca122d88bd922fd574735b" category="list-text">等待故障，然後停止追蹤。</block>
-  <block id="5bff9b997a211d5666ffda85aad32c5f" category="list-text">從<block ref="8257c599cb4030b99e5758145816d417" category="inline-link-rx"></block>檢索追蹤資訊。</block>
   <block id="4c48ff6a88114f32654d41d561b9f2e7" category="list-text">檢查 ONTAP 是否向代理程式回呼連接埠傳送 SYN 封包。如果沒有收到 SYN 封包，則表示 ONTAP 端路徑或原則有問題。如果收到 SYN 封包但信號交換未完成，則表示 ONTAP 和代理程式之間有防火牆或路由問題。</block>
   <block id="13bae038f53424549e687573baa305f9" category="paragraph">*注意：*封包追蹤可能包含網路資訊。請根據您的資料處理要求進行處理。</block>
   <block id="e5a6d800b320650499428b863e2fea63" category="section-title">*診斷複製的 SVM 收集器*</block>
@@ -15491,7 +15479,6 @@
   <block id="fb40f0a3377da0677df294df514ce170" category="list-text">保留一個收集器並移除重複項目。</block>
   <block id="83ec7b975b509497443f363336b2878a" category="list-text">重新啟動保留的收集器，並確認其 FPolicy 通路保持連線。</block>
   <block id="952e188cbe99d625d6ae54372872a42c" category="section-title">*清理已確認未使用的 FPolicy 物件*</block>
-  <block id="e4920097354c598ef6752b5bc14cee04" category="paragraph">*注意：*請勿刪除作用中收集器的 cloudsecure++_++ 物件。收集器擁有並更新這些物件。</block>
   <block id="4a1659c2394e857673030dacc385655d" category="paragraph">列出 FPolicy 組態並找出已確認未使用的物件：</block>
   <block id="e95c6549d2974824b4453d611bbdfe4e" category="paragraph">對於未使用的原則，請依相依性順序移除其物件：</block>
   <block id="a656df570b8da2747fb3faad17385d76" category="paragraph">清除序列槽或衝突物件後，重新啟動 Workload Security 收集器。</block>
@@ -15506,12 +15493,10 @@
   <block id="4850e98bb8a39839a6bb92e01777cbcf" category="cell">幾分鐘後重試。如果行動仍然失敗，重新啟動 cloudsecure-agent.service 服務，並記錄確切的行動和原因。</block>
   <block id="16be73a2b9210092fc8fe6820b245503" category="cell">AGENT009</block>
   <block id="a9d00c660fbf0bc3f42c37f8cf43f676" category="cell">確認所選代理程式和環境中仍然存在收集器，並且同時發生的刪除或移轉沒有將其移除。</block>
-  <block id="91c26bc5047d4ec1362dbf32c0f86a5e" category="cell">代理程式未連接</block>
   <block id="4a0da87311c8e8744d432fb03ee3b1d8" category="cell">檢查 systemctl 和 journalctl、TCP 443 上的 SaaS 出口、Proxy 組態、SSL 檢查以及 cssys 帳戶。</block>
   <block id="0345935c483ab0eaa99d31263cc2f72e" category="paragraph">使用事件速率檢查器來確定代理程式的大小。請勿僅依賴收集器數量；事件 Volume 和已啟用的功能都會影響負載。</block>
   <block id="6ea9628ebc17179ccc4454528a3ab14d" category="section-title">*基本檢查後調查無活動*</block>
   <block id="688373a52a32242a1525ed2568c00aad" category="list-text">執行 event log show -source fpolicy 並保留任何錯誤。</block>
-  <block id="779bdc55b359ee63c911efcfcc0e8688" category="list-text">執行 fpolicy show 並確認已啟用 cloudsecure++_++ 原則。</block>
   <block id="39124cfeb8730bd8fe9d1be3bb163565" category="list-text">確認收集器中已啟用產生用戶端操作的協定，並且 SVM 上已允許該協定。</block>
   <block id="57ca85a860df4ace6caa7e08fa8f33e5" category="list-text">確認共享或 Volume 並未排除。</block>
   <block id="802fcf9cbb96d250f3575d08755fa373" category="list-text">確認操作發生時收集器未暫停。</block>
@@ -15531,12 +15516,10 @@
   <block id="079a9de08ebe445d6180d268b0db4f7b" category="paragraph">驗證伺服器名稱、連接埠、連結 DN、密碼、樹系或搜尋基準，以及讀取存取。更正後重新啟動目錄收集器，以要求新的同步。</block>
   <block id="2f0f47626d0bec33bd993cee56586690" category="section-title">*多管理員驗證檢查*</block>
   <block id="0f478b151a9500cf69f64fb647b097cb" category="paragraph">Multi-Admin Verify 可以區塊用於快照和使用者封鎖的 ONTAP 命令。在變更規則之前，請先檢閱現有規則。已記錄的 Workload Security 排除項目如下：</block>
-  <block id="bf3cb288a9b88a2fc95a1063d9e6d11e" category="paragraph">multi-admin-verify rule modify -operation "volume snapshot create" -query "-snapshot !++*++cloudsecure++_*++" + multi-admin-verify rule modify -operation "volume snapshot delete" -query "-snapshot !++*++cloudsecure++_*++" + multi-admin-verify rule delete -operation set</block>
   <block id="444f280bbd2d0cce542fd9d8aba0671d" category="paragraph">*注意：* 刪除已設定的規則會變更該作業的 Multi-Admin Verify 保護。請與您的 ONTAP 安全性系統管理員審核此變更。</block>
   <block id="76ee106a6ea5ef6d8e735d293787d3db" category="section-title">*聯絡 NetApp 支援*</block>
   <block id="0e97d92ce4baab6ec2b2a655cf4a3812" category="paragraph">如果在執行指示的檢查後錯誤仍然存在， ONTAP 報告節點當機，或在重新整理收集器資料後容量仍然不正確，請聯絡支援人員。</block>
   <block id="3b250ab7948f1e0ddee4a50c56e89018" category="paragraph">*包括*</block>
-  <block id="23d31771696a63dc720a7a7a2f14889a" category="list-text">來自狀態 ++&gt;++ 更多詳細資料的完整訊息，以及故障時間。</block>
   <block id="653175e9b87d13e599ea4371e94298a3" category="list-text">測試連線結果，包括已跳過的檢查。</block>
   <block id="61423e0605b0cbdcf8f0bebd958e94f1" category="list-text">代理程式與收集器版本及其目前狀態。</block>
   <block id="4850584f0032dfb26d5d8c2ffb395fb4" category="list-text">ONTAP 版本、叢集和 SVM 名稱、連線模式以及最近的拓撲變更。</block>
@@ -15545,10 +15528,7 @@
   <block id="0c9d71e2f36e202f52a80a1e18d84631" category="list-text">當回呼路徑無法解釋時的封包追蹤。</block>
   <block id="a6fa4aea2a61c78e74a437025bfc4121" category="list-text">效能方面：延遲和 IOPS 時間線以及事件速率時間線。</block>
   <block id="2f5a98a7fe17728f8b6f19bb7dde8ff4" category="list-text">容量方面：訂閱前後的使用情況以及每個收集器報告的原始容量。</block>
-  <block id="7db2da5d72ca4cfd4dc3591cdb8b5f7a" category="paragraph">使用 Data Infrastructure Insights 中的「說明 ++&gt;++ 支援」來開啟案例。</block>
   <block id="5eb14926e2b0223f53564d7659171c1c" category="admonition">您可能還會注意到，FlexGroups 的容量數字可能顯示為 "0"，而組成部分則顯示數值。在 DII 中，FlexGroups 本身會將大多數容量計量歸零，而組成部分則包含這些計量。問題在於重複計算 - 如果兩個實體都報告完整的容量計量，DII 將報告相同的容量兩次（一次在 FlexGroup 上，一次在組成部分上）。優先採用組成部分層級的報告方式，既能支援關鍵使用案例，又能避免這種重複資料。</block>
-  <block id="4613ec50b199e8fe1a45e8365d1126ed" category="paragraph">+ 在這種情況下，若要在查詢、儀表板或監控中報告 FlexGroup 的容量，請使用組成成員對其父 FlexGroup 的參考。然後，您可以依據該參考將組成成員分組，並彙總其容量值。</block>
-  <block id="77064528bd054f741f0468e85617bf35" category="paragraph">+ DII 會有意將 FlexGroup 父容量設為零；ONTAP 本身仍會報告容量。這適用於容量/效率計量，而非效能計量。建議依群組 ID 對成員進行分組，因為群組名稱可能並非全域唯一。</block>
   <block id="296cadc668db601a7fa80621086c9468" category="paragraph">VM Analyzer 檢視中的新切換按鈕可讓您隱藏沒有資料存放區的已掛載磁碟區，提供更清晰的檢視，以簡化 VM 疑難排解。</block>
   <block id="b6bf3aac3b33a207b8b6bbe0fc935a91" category="inline-image-macro">VM Analyzer 顯示隱藏沒有資料儲存的已掛載磁碟區的切換開關</block>
   <block id="6915ad7aa1643475defe5f685b410352" category="paragraph"><block ref="6915ad7aa1643475defe5f685b410352" category="inline-image-macro-rx" type="image"></block></block>
@@ -16290,4 +16270,24 @@
   <block id="6ce78279e85ae6fe9f97051d8bc3c13e" category="sidebar">通知態勢</block>
   <block id="b349cdb464a16150566e060380a1b77f" category="sidebar">效能根本原因分析</block>
   <block id="aa70f40c4ba41bbc875ee1b79a091d75" category="sidebar">儲存健康狀況</block>
+  <block id="b0b97f3348cdc669199b59397d5cfda9" category="paragraph">在這種情況下，若要在查詢、儀表板或監控中報告 FlexGroup 的容量，請使用成分對其父 FlexGroup 的參考。然後，您可以依據該參考將成分分組，並彙總其容量值。</block>
+  <block id="df0226880b0292bb3e39fbb512638c4a" category="paragraph">DII 會刻意將 FlexGroup 父的容量設為零；ONTAP 本身仍會報告容量。這適用於容量/效率計量，不適用於效能計量。建議依群組 ID 對組成成員進行分組，因為群組名稱可能並非全域唯一。</block>
+  <block id="11c755b8329995c080a4059e4bf242e6" category="list-text">無法確定 ［主機］ 的 ONTAP 類型。原因：與儲存系統連線錯誤：主機無法連線</block>
+  <block id="f02b1b5ed10b4dbe05da2a063a182088" category="list-text">［IP］ 被識別為叢集/節點，無法在此模式下新增</block>
+  <block id="3d00f3f42cac2e414eee4dcb9d0d9483" category="list-text">cloudsecure_ FPolicy 原則已啟用，收集器保持運作狀態。</block>
+  <block id="293c08cd401f87c15336eaf417d06e57" category="list-text">如果僅缺少 .ini 和 .DS_Store 活動，則無需執行任何行動；這些副檔名已從 FPolicy 事件收集中排除。</block>
+  <block id="8fa18ab7a18929f7f0879be2fb8b3054" category="list-text">如果仍然沒有活動，請使用進階診斷來驗證 cloudsecure_ 原則和 ONTAP FPolicy 事件日誌。</block>
+  <block id="1c65b961301c2b223a8bf45311f05dd4" category="list-text">如果啟用了 ONTAP 多管理員驗證，請新增 cloudsecure_ 快照的已記錄排除項目以及使用者封鎖使用的 set 操作。</block>
+  <block id="76778495a87770e10d3bc7b730dc736b" category="cell">沒有 .ini 或 .DS_Store 的事件</block>
+  <block id="60869d1abd3ecf7441cbb614b23131a0" category="paragraph">/opt/netapp/cloudsecure/data-collectors/{lt}collector-uuid{gt}/logs/dsc.log</block>
+  <block id="48e5b137f1782a0dff6b1d690fd29c78" category="paragraph">/opt/netapp/cloudsecure/agent/logs/cloudsecure_agent_install.log</block>
+  <block id="2bf9ae67b6a7c5df6ba0e09cf1dc81fe" category="paragraph">/opt/netapp/cloudsecure/agent/logs/cloudsecure_agent_upgrade.log</block>
+  <block id="0d3dee47dc809f7fc5a86fb82b4caf0e" category="paragraph">尋找以 cloudsecure_ 為前綴的 Workload Security 原則。此原則應已啟用，並且每個資料服務節點都應顯示已連接的外部引擎。當通路中斷連線時，保留事件原因和節點名稱。</block>
+  <block id="b9a0a25a4fe58508d1c1bb635a53d91d" category="list-text">從<block ref="8024a7e052cfeb7e469f12b11909df83" category="inline-link-rx"></block>檢索追蹤資訊。</block>
+  <block id="2dfc455baa46eb666025dbc7b414efa9" category="paragraph">*注意：*請勿刪除作用中收集器的 cloudsecure_ 物件。收集器擁有並更新這些物件。</block>
+  <block id="42afc33a95a008fa50b39816238d5ae4" category="cell">代理程式 NOT_CONNECTED</block>
+  <block id="ebad25052221f4ee537e35e4f5dbaad7" category="list-text">執行 fpolicy show 並確認已啟用 cloudsecure_ 原則。</block>
+  <block id="d822a0d21d568ecd22e518ef5dc10ebb" category="paragraph">multi-admin-verify rule modify -operation "volume snapshot create" -query "-snapshot !\*cloudsecure\_*" + multi-admin-verify rule modify -operation "volume snapshot delete" -query "-snapshot !\*cloudsecure\_*" + multi-admin-verify rule delete -operation set</block>
+  <block id="4ff2cea234868624331b11228fa5ab0d" category="list-text">來自「狀態」&gt;「更多詳細資料」的完整訊息，以及故障時間。</block>
+  <block id="9277538c12d62b57cf00dc1681c9a5af" category="paragraph">在 Data Infrastructure Insights 中使用「說明」&gt;「支援」來開啟案例。</block>
 </blocks>
