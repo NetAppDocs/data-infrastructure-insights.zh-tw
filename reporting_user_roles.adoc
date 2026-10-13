@@ -76,6 +76,28 @@ keywords: reporting, cognos, data warehouse, dwh, users, roles, user roles
 |===
 
 
+[[reporting-administration]]
+== 報告管理
+
+先前的報表管理控制台已不再可用。請使用「管理」進行報表管理。
+
+. 在 Data Infrastructure Insights 中，開啟 *報告*。
+. 選擇 *選單 > 管理*。
+
+
+在「管理」中，報表系統管理員可以設定報表，並處理目前、過去和即將進行的報表活動。
+
+若要開啟已完成活動的執行詳細資料：
+
+. 選擇 *選單 > 管理 > 活動 > 過去*。
+. 在活動中，開啟三點選單。
+. 選擇 *執行詳細資料*。
+
+
+如需詳細資訊，請參閱此處link:https://kb.netapp.com/Cloud/ncds/nds/dii/dii_kbs/IBM_Cognos_Administration_Console_Does_Not_Load_for_DII_Reporting_Scheduled_Reports["知識庫文章"^]。
+
+
+
 [[setting-reporting-cognos-email-preferences]]
 == 設定報表（Cognos）電子郵件首選項
 
