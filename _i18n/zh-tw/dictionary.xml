@@ -4920,125 +4920,6 @@
   <block id="096fbdc80c146b3b29d148259155197a" category="cell">部分保留（包含在資料分配容量中）</block>
   <block id="502de0ca02b6a1c74a8a9c374793c768" category="cell">NetApp ONTAP API</block>
   <block id="9faca164fbcd544d1981957d0b4e8fef" category="section-title">NetApp叢集Data ONTAP 8.1.1+</block>
-  <block id="ac52b448fcf26ad499c2c41a2601dc65" category="list-text">8.2.3P5</block>
-  <block id="7f6d7477b871f0a19275773c1c15168e" category="list-text">8.3.2P12</block>
-  <block id="e6bcb21e01e3e3a224056a0468abf062" category="list-text">9.0.0</block>
-  <block id="59b93972f991b05ddd1ab2cbae738e25" category="list-text">9.1.0P17</block>
-  <block id="57b505e669d8da86ce4611f97ae083aa" category="list-text">9.1.0P19</block>
-  <block id="132143b8dd56e68ffe05202c5ab765cf" category="list-text">9.1.0P3</block>
-  <block id="69b18625fddab3afc6d2b0e68e6f847a" category="list-text">9.10.0</block>
-  <block id="ea2aca94e5b174a1b84f2c3891379526" category="list-text">9.10.1</block>
-  <block id="8d677b1d3a87d6b3089fe06edd24c352" category="list-text">9.10.1P10</block>
-  <block id="e24ccd897a7c57cb41393e1b27dd1256" category="list-text">9.10.1P12</block>
-  <block id="a62ba812a1863b0a1692c694d7e68754" category="list-text">9.10.1P13</block>
-  <block id="737f6809aca9b9ba8ca2d27b64666da7" category="list-text">9.10.1P15</block>
-  <block id="704c90b59b1428c48a64ff3918255729" category="list-text">9.10.1P17</block>
-  <block id="9a9f0bc12d4f0fe6ed287df4278b232a" category="list-text">9.10.1P20</block>
-  <block id="9bb1209510bec1faff0c34fa27b53e7d" category="list-text">9.10.1P4</block>
-  <block id="981f8497cb3a13567c56a02275ae278c" category="list-text">9.10.1P6</block>
-  <block id="3313c043c770f5983152fca903ddfa9e" category="list-text">9.11.0P1</block>
-  <block id="11efa46f237387b311e6ed482756ac49" category="list-text">9.11.1</block>
-  <block id="6f929815b53af214fb85050d7018c423" category="list-text">9.11.1P10</block>
-  <block id="b41617fd1250d9261ddab03ca21e9065" category="list-text">9.11.1P11</block>
-  <block id="d33e7070b2d0ef6e5b8427d86ad0027d" category="list-text">9.11.1P12</block>
-  <block id="036e283d0d2b7a693c7e3ed39559e515" category="list-text">9.11.1P13</block>
-  <block id="7c73abc11a766e9f1a7bd854711126c7" category="list-text">9.11.1P14</block>
-  <block id="11feb9d1934471047d55be3bee3d4c15" category="list-text">9.11.1P15</block>
-  <block id="3fef604abf9bfb85352fc53ab4ac372b" category="list-text">9.11.1P17</block>
-  <block id="25a85f9bfa72732aba2a23f9cd8d02c3" category="list-text">9.11.1P18</block>
-  <block id="0f5149edb354d9c08e4380c0309f7c52" category="list-text">9.11.1P3</block>
-  <block id="8d1f182e019b35276cad314db59d6b1c" category="list-text">9.11.1P5</block>
-  <block id="6a0fb4ccd9df37a4928d666f900fc111" category="list-text">9.11.1P7</block>
-  <block id="ee297c3ee4d46f935bc45d0d064be8f4" category="list-text">9.11.1P8</block>
-  <block id="eba1f3287bdc33dfa25c084b5e15a4c5" category="list-text">9.12.1</block>
-  <block id="b5c4301816e6af2bf88c788518733eb7" category="list-text">9.12.1P1</block>
-  <block id="8f54fbf368765fd506959c0f94135922" category="list-text">9.12.1P10</block>
-  <block id="ad5b5a69bd60c175f9dd593030d700a1" category="list-text">9.12.1P11</block>
-  <block id="c96b0341b44c93c9a7abaafc0a1b4ab6" category="list-text">9.12.1P12</block>
-  <block id="b05999232b6c5728adf7436bda2b8585" category="list-text">9.12.1P13</block>
-  <block id="bb641d243ab9ef7280e6782196167a4f" category="list-text">9.12.1P14</block>
-  <block id="b1a640b1889193f6f2b9d7a9280988aa" category="list-text">9.12.1P15</block>
-  <block id="0d8f4e150eb54d04e8e2a32013b60362" category="list-text">9.12.1P16</block>
-  <block id="e63a3bacf93364ee052610727cd42325" category="list-text">9.12.1P17</block>
-  <block id="d97a5d8fe03cae92f98f0cec538e910d" category="list-text">9.12.1P2</block>
-  <block id="c73a557aa730a12e572f4ab3fe734b08" category="list-text">9.12.1P3</block>
-  <block id="777ca4c4a95cd4253cb2b2a86e409d1b" category="list-text">9.12.1P4</block>
-  <block id="8c4ad99d9c23f352182987171c423d82" category="list-text">9.12.1P5</block>
-  <block id="5c234a2fe676cd0e25275a447a969117" category="list-text">9.12.1P6</block>
-  <block id="b551afc25bf830c2cdde148fdaeb7166" category="list-text">9.12.1P7</block>
-  <block id="fa8e116399dd8e9e0f40d321b3b2c626" category="list-text">9.12.1P9</block>
-  <block id="e6b411af64f8108d8230e8dc4d5ed17e" category="list-text">9.13.0</block>
-  <block id="57a3061930625af99195891e9e561fb2" category="list-text">9.13.1</block>
-  <block id="2f80ef71ea9a00e5d42923e64e7d5ac7" category="list-text">9.13.1P1</block>
-  <block id="e86f9685903c9ff75aac2ae98870e5e5" category="list-text">9.13.1P10</block>
-  <block id="be444e472e3c933af6efba360dd4f691" category="list-text">9.13.1P11</block>
-  <block id="58568d7e61802b4a55cbd5234ec36382" category="list-text">9.13.1P12</block>
-  <block id="cd71e6c234c4a2e01cda37d1a04210c6" category="list-text">9.13.1P13</block>
-  <block id="9eaecbf2c8fa86e89407dd024d0822bf" category="list-text">9.13.1P14</block>
-  <block id="9e97339e893d28b4ce9b9e8534afa4fe" category="list-text">9.13.1P2</block>
-  <block id="058fea268fe4ff434cd63b064d436552" category="list-text">9.13.1P3</block>
-  <block id="5d67910c66f0f0d959d85af2ce315fd7" category="list-text">9.13.1P4</block>
-  <block id="dc3658b89e9d1f671e582fcb34064829" category="list-text">9.13.1P6</block>
-  <block id="8876979456078ff24a3861e4ac3f0463" category="list-text">9.13.1P7</block>
-  <block id="c5a3d05981c37443e351ae5acd51f600" category="list-text">9.13.1P8</block>
-  <block id="99bac8dc2f5f3c64dc40c55b1d79eee3" category="list-text">9.13.1P9</block>
-  <block id="f316f0dfd566f9d842d2d368b7e3ecbb" category="list-text">9.14.0</block>
-  <block id="11637422d89649ea21b77621765c7f67" category="list-text">9.14.0P1</block>
-  <block id="d544ab02530940d46c43ea00a73d59d3" category="list-text">9.14.1</block>
-  <block id="c8e98c25218474051c9b7d78bbd1756a" category="list-text">9.14.1P1</block>
-  <block id="db30672368fecad9e4ad702ef78d5f00" category="list-text">9.14.1P10</block>
-  <block id="640e89a9659b039c4a70b0b0e0b13f51" category="list-text">9.14.1P11</block>
-  <block id="4836f579e5c0a9b0dd955105f4c1169d" category="list-text">9.14.1P2</block>
-  <block id="f53f40ff6c0298696c48a7f032661dbe" category="list-text">9.14.1P4</block>
-  <block id="8685aaacfa775a83b2992c99363aa9d7" category="list-text">9.14.1P5</block>
-  <block id="585c0ac58e17531cf085a7375c4bf3f3" category="list-text">9.14.1P6</block>
-  <block id="ddf16af06aacb7571f11eeb9253a626b" category="list-text">9.14.1P7</block>
-  <block id="ebbe4cbae17517c84e54eba083c8da4b" category="list-text">9.14.1P8</block>
-  <block id="f8a8cd0923816d5b6d78f88100eeeb74" category="list-text">9.14.1P9</block>
-  <block id="d9df468f7ec059062fe27406e7e15237" category="list-text">9.15.0P1</block>
-  <block id="120ae360daecd24b580b71f9f2766bbc" category="list-text">9.15.1</block>
-  <block id="7e6de2949243520c036f5350934865c4" category="list-text">9.15.1P2</block>
-  <block id="1a6c927dff2b4164c21b2d570f87ed5c" category="list-text">9.15.1P3</block>
-  <block id="3ae7aab793c87e0b1a5e3f0cfef0a98c" category="list-text">9.15.1P4</block>
-  <block id="38aeea65c787a586230870fa9ed96a89" category="list-text">9.15.1P5</block>
-  <block id="7cc66ab8fef0327ed61711d8cd9c0e91" category="list-text">9.15.1P6</block>
-  <block id="a94def7bd8645fffeb7856a0b730acfb" category="list-text">9.15.1P7</block>
-  <block id="fd43304224fcabc307d59c5ec05b2dec" category="list-text">9.15.1P8</block>
-  <block id="0bd0e673df4c14cae45a11fac30c530b" category="list-text">9.16.1</block>
-  <block id="5329b0514f6808bed8f7ea91aa5dfffe" category="list-text">9.16.1P1</block>
-  <block id="81e76ca235a16e1d875f94529d326de0" category="list-text">9.17.1</block>
-  <block id="aa416989385117e4941b76a0feb61454" category="list-text">9.4.0P2</block>
-  <block id="fc3b3aeb7b9a0349080eb2a8056b06be" category="list-text">9.5.0P16</block>
-  <block id="c6650bd6c1264529980b15b6f6858c2c" category="list-text">9.5.0P18</block>
-  <block id="d4103820187fbaa7bf45929257204980" category="list-text">9.5.0P2</block>
-  <block id="1f8d42e0fff6d4a28bdb09d8a03ab38f" category="list-text">9.5.0P6</block>
-  <block id="19cebe5385e4ca57a6759cba667e6395" category="list-text">9.5.0P7</block>
-  <block id="1883e1795fd9ea9566a0feff4163cd3f" category="list-text">9.6.0</block>
-  <block id="8ad562be237927689859edb2fa26a888" category="list-text">9.6.0P11</block>
-  <block id="c728acd00d1930d7cf2a501ae9c259f8" category="list-text">9.6.0P2</block>
-  <block id="6f29ba609fca1ca40416002aa7940f21" category="list-text">9.7.0P12</block>
-  <block id="530e000df82674e65165e93870e5e186" category="list-text">9.7.0P17</block>
-  <block id="37c8d112fb8f69f48ed8b73efc7d5f73" category="list-text">9.7.0P19</block>
-  <block id="a78b33080e764901e9faf784ddf9ecea" category="list-text">9.7.0P20</block>
-  <block id="bb3a6f9af518c7ef2c681739cb573ad5" category="list-text">9.7.0P21</block>
-  <block id="224d85c6ecfbc4a4211d04c14ef96048" category="list-text">9.7.0P22</block>
-  <block id="777c3659ca9e529a26a02eb0633afe51" category="list-text">9.7.0P23</block>
-  <block id="e93d9e5e64344ee2543584ed25b6331b" category="list-text">9.7.0P6</block>
-  <block id="deb8a9119a167f8fa049b82613624fbc" category="list-text">9.8.0P10</block>
-  <block id="7ee70a01ba786af9b59d982223ac71f5" category="list-text">9.8.0P11</block>
-  <block id="85c61f496ad4ea3c959fecea506ac58e" category="list-text">9.8.0P12</block>
-  <block id="7f9b4710e7cd1de83b1d2aacebadcc53" category="list-text">9.8.0P14</block>
-  <block id="39c57774aedb11c80726096f7c63d910" category="list-text">9.8.0P18</block>
-  <block id="dd3d25b38b8b95f473e3ad04b84983b7" category="list-text">9.8.0P19</block>
-  <block id="934ec1fd507192161f3173dd691bb427" category="list-text">9.8.0P20</block>
-  <block id="af01ee56d931e6c39a2ee294d28069a6" category="list-text">9.8.0P21</block>
-  <block id="54f39adb1d10d8b403c0e469a333821d" category="list-text">9.8.0P4</block>
-  <block id="0040df68d204b4266db9420b2bd9165c" category="list-text">9.8.0P8</block>
-  <block id="5ccc1d7c927ab6348c87a26b1d4df138" category="list-text">9.8.0P9</block>
-  <block id="90809ad2cbea0a3a241fb130454dbcb2" category="list-text">9.9.1P15</block>
-  <block id="ce9e267a734b42ebaa2ced5f747133b7" category="list-text">9.9.1P16</block>
-  <block id="d4960421bee21c61ebf8d27b38d6080a" category="list-text">9.9.1P20</block>
-  <block id="5c5ab1439f6ac62d53efee3758d3c999" category="list-text">9.9.1P7</block>
   <block id="6dd181b66104328be632f9193563f2a1" category="cell">FlashPool資格</block>
   <block id="3730a8f51f1477ec133a27a39eb1038f" category="cell">內部卷是否可以參與混合緩存</block>
   <block id="41790c6e5a05b27da6f3e809724f8c38" category="cell">已啟用壓縮節省</block>
@@ -5079,9 +4960,7 @@
   <block id="5d05535e5a364899dddfdcefa556fdd4" category="paragraph">本資料擷取器支援的型號及版本：韌體版本：</block>
   <block id="4bad3d6271e78d79dec31845300a2241" category="cell">Rubrik 儲存 REST API</block>
   <block id="a8b910290e6b27951c8130d057487cd0" category="cell">VAST 資料儲存 API</block>
-  <block id="ee295f6adf0fba3513382450efd2d056" category="section-title">NetApp HCI虛擬中心</block>
   <block id="ce5943085be2807e54b4f1aa33007948" category="list-text">VMware vCenter Server 6.7.0 內部版本-10244857</block>
-  <block id="1ccce22a4188acff0051ba4528a6c800" category="list-text">VMware vCenter Server 7.0.3 內部版本-20395099</block>
   <block id="2c10282d2a9ce8be1576d7af8091d09e" category="cell">Web 服務</block>
   <block id="51359e8b51c63b87d50cb1bab73380e2" category="cell">政策</block>
   <block id="584f8eaacb1a0c605080be390dd2c14a" category="cell">卷 Uuid</block>
@@ -5101,7 +4980,6 @@
   <block id="d80f29266c5582ddf8d319d2781753c7" category="list-text">VMware vCenter Server 5.5.0 內部版本-9911218</block>
   <block id="1282e3716b60599413610132093318a7" category="list-text">VMware vCenter Server 6.5.0 內部版本-10964411</block>
   <block id="6f2b468a118315047707aa5e882d3dc1" category="list-text">VMware vCenter Server 6.5.0 內部版本-22499743</block>
-  <block id="7116d45ae01a53de848fb31f789a1302" category="list-text">VMware vCenter Server 6.7.0 內部版本-14070654</block>
   <block id="f80756feac72b853aae0528ff6166381" category="list-text">VMware vCenter Server 6.7.0 內部版本-17137327</block>
   <block id="1f4d95178a913185d195cf51c4b1fb4d" category="list-text">VMware vCenter Server 6.7.0 內部版本-19299595</block>
   <block id="9a9b6e91c28c2770ae65b840a2abb66e" category="list-text">VMware vCenter Server 6.7.0 內部版本-19832280</block>
@@ -5125,7 +5003,6 @@
   <block id="ae99c7b67f8d89f77963b4ea4bd03b98" category="list-text">VMware vCenter Server 8.0.1 內部版本-22368047</block>
   <block id="f4f140c8240b1118ea5972cdcb8c4bb7" category="list-text">VMware vCenter Server 8.0.2 內部版本-22617221</block>
   <block id="227125526019d3c42f592ac68badb583" category="list-text">VMware vCenter Server 8.0.2 內部版本-23504390</block>
-  <block id="ad3f5dc223e3dedcdbadf8c3de542841" category="list-text">VMware vCenter Server 8.0.2 內部版本-23929136</block>
   <block id="9918751be82cfd4ffdb1b36d47195f11" category="list-text">VMware vCenter Server 8.0.2 內部版本-24321653</block>
   <block id="cf4af5823bd57e760c4b4d3820c2ee06" category="list-text">VMware vCenter Server 8.0.3 內部版本-24022515</block>
   <block id="1c21a303d962b5c2aaa6a1cf83f62414" category="list-text">VMware vCenter Server 8.0.3 內部版本-24262322</block>
@@ -14297,73 +14174,32 @@
   <block id="9d39b8a0cdce2d4fee7ab6e8ec25770e" category="paragraph">實體集：ports_fact_current</block>
   <block id="e9d7397e9772df2e11071d57657f4b22" category="section-title">AFX</block>
   <block id="d4331cd9e39151e477172d02f8ccdf48" category="cell">AFX-1K</block>
-  <block id="54a63cd9237b350abe6ed7dbb2990970" category="cell">NetApp Release 9.19.1: Sat Jul 18 20:33:10 UTC 2026 NetApp Release 9.19.1RC1: Sat May 02 12:38:22 UTC 2026</block>
   <block id="ab69745fc6bee158026c6790c0715c2e" category="cell">NetApp AFX API</block>
   <block id="5d0e51cb0416ef69ebfeae71d8919035" category="cell">ASA-A1K ASA-A20 ASA-A30 ASA-A50 ASA-A70 ASA-A90 ASA-C30</block>
-  <block id="4d1d2cf7d294b7c45ef6750ef1f950c4" category="cell">NetApp 版本 9.16.1P10：2025 年 11 月 27 日星期四 17:12:10 UTC NetApp 版本 9.16.1P11：2026 年 1 月 15 日星期四 11:21:38 UTC NetApp 版本 9.16.1P3：2025 年 4 月 24 日星期四 02:50:10 UTC NetApp 版本 9.16.1P6：2025 年 7 月 16 日星期三 03:10:07 UTC NetApp 版本 9.16.1P7：2025 年 8 月 21 日星期四 10:29:10 UTC NetApp 版本 9.16.1P8：2025 年 10 月 4 日星期六 03:23:15 UTC NetApp 版本 9.17.1P10：2026 年 7 月 21 日星期二 21:51:01 UTC NetApp 版本 9.17.1P1：2025 年 10 月 4 日星期六 06:37:53 UTC NetApp 版本 9.17.1P2：2025 年 11 月 7 日星期五 09:39:01 UTC NetApp 版本 9.17.1P3：2025 年 12 月 7 日星期日 04:46:28 UTC NetApp 版本 9.17.1P4：2026 年 1 月 15 日星期四 22:33:51 UTC NetApp 版本 9.17.1P5：2026 年 2 月 18 日星期三 10:54:36 UTC NetApp 版本 9.17.1P6：2026 年 3 月 25 日星期三 15:38:10 UTC NetApp 版本 9.17.1P7：2026 年 4 月 20 日星期一 13:57:24 UTC NetApp 版本 9.17.1P9：2026 年 6 月 24 日星期三 13:09:36 UTC NetApp 版本 9.18.1P3：2026 年 5 月 7 日星期四 19:01:14 UTC NetApp 版本 9.18.1P4：2026 年 6 月 4 日星期四 11:38:00 UTC NetApp 版本 9.18.1P5：2026 年 7 月 9 日星期四 23:05:16 UTC</block>
-  <block id="4d7c750a34f68dfbf63ceeff2fab416a" category="cell">205.5 Brocade 300E Brocade 32Gb Fibre Channel SAN 交換器模組，適用於 HPE Synergy Brocade 4024 嵌入式 Brocade 4900 Brocade 5000 Brocade 5300 Brocade 5480 嵌入式 Brocade 6505 Brocade 6510 Brocade 6520 Brocade 6547 嵌入式 Brocade 6548 Brocade 6558 Brocade 7800 Brocade 7810 擴展交換器 Brocade 7840 Brocade 7850 擴展交換器 Brocade DCX Brocade DCX-4S 骨幹網 Brocade DCX8510-4 Brocade DCX8510-8 Brocade G610 Brocade G620 Brocade G630 Brocade G710 Brocade G720 Brocade G730 Brocade G820 Brocade M6505 Brocade X6-4 Brocade X6-8 Brocade X7-4 Brocade X7-8</block>
-  <block id="4e6fcf831a4c1ffb673ce4d6d247b54a" category="cell">v10.0.0a v10.0.0a1 v6.2.2b v6.2.2f v6.2.2f9 v6.3.1a v6.3.2b v6.4.1a v6.4.1b v6.4.3 v6.4.3c v6.4.3d v6.4.3f3 v6.4.3h v7.0.0c v7.0.1b v7.0.2a v7.0.2b1 v7.0.2c v7.1.0b v7.1.1 v7.1.1c v7.2.0d v7.2.1 v7.2.1c1 v7.2.1g v7.3.1c v7.3.1d v7.4.0a v7.4.1d v7.4.1e v7.4.2 v7.4.2a v7.4.2a4 v7.4.2c v7.4.2d v7.4.2f v7.4.2g v7.4.2h v7.4.2j1 v8.0.2c v8.0.2d v8.1.2a v8.1.2d v8.1.2f v8.1.2g v8.2.0 v8.2.0a v8.2.0b v8.2.1a v8.2.1c v8.2.2a v8.2.2b v8.2.2d v8.2.3 v8.2.3a v8.2.3a1 v8.2.3a_cvr_855776_01 v8.2.3b v8.2.3c v8.2.3c1 v8.2.3d v8.2.3e v8.2.3e1 v8.2.3e2 v8.2.3f v9.0.1a v9.0.1b v9.0.1c v9.0.1d v9.1.1 v9.1.1a v9.1.1b v9.1.1b_lw v9.1.1c v9.1.1d v9.1.1d2 v9.1.1d2_lw v9.1.1d7 v9.2.0a v9.2.0b v9.2.0b1 v9.2.0b1_lw v9.2.0c3 v9.2.0c4 v9.2.0c5 v9.2.1a v9.2.1a1 v9.2.1b v9.2.1c v9.2.1c2 v9.2.1c3 v9.2.2 v9.2.2a v9.2.2b v9.2.2c v9.2.2c1</block>
-  <block id="76d41e28ef1bb411e030eccfcf137234" category="cell">202.0 203.0 Brocade 6505 Brocade 6510 Brocade 6520 Brocade 6558 Brocade 7810 擴充交換器 Brocade 7840 Brocade 7850 擴充交換器 Brocade DCX8510-4 Brocade DCX8510-8 Brocade G610 Brocade G620 Brocade G630 Brocade G710 Brocade G720 Brocade G730 Brocade G820 Brocade X6-4 Brocade X6-8 Brocade X7-4 Brocade X7-8 Brocade X8-8</block>
-  <block id="c9db6d6ba1d3eb394e1afe3e48f78056" category="cell">v10.0.0a v10.0.0a1 v10.0.0a1_cvr_881241_01 v10.0.0a_cvr_875417_01 v8.2.2d v8.2.3 v8.2.3b v8.2.3c v8.2.3d v8.2.3e v8.2.3e2 v8.2.3f v9.0.0b v9.0.1c v9.0.1e1 v9.1.1a v9.1.1b v9.1.1c v9.1.1d v9.1.1d2 v9.1.1d7 v9.2.0a v9.2.0b v9.2.0b1 v9.2.0c1 v9.2.0c1_lw v9.2.0c3 v9.2.0c3_lw v9.2.0c5 v9.2.1 v9.2.1a v9.2.1b v9.2.1c v9.2.1c2 v9.2.1c3 v9.2.2 v9.2.2a v9.2.2b v9.2.2c v9.2.2c1 v9.2.2c1_lw v9.2.2c_lw</block>
-  <block id="5e1e895fa17a3b72b6c0ee8fcdd3492d" category="cell">8977-T48 8978-E04 8978-E08 8978-E16 DS-C9124-K9 DS-C9132T-K9 DS-C9148-16P-K9 DS-C9148-32P-K9 DS-C9148-48P-K9 DS-C9148S-K9 DS-C9148T-K9 DS-C9148V-K9 DS-C9220I-K9 DS-C9250I-K9 DS-C9396S-K9 DS-C9396T-K9 DS-C9396V-K9 DS-C9506 DS-C9509 DS-C9513 DS-C9706 DS-C9710 DS-C9718 DS-HP-8GFC-K9 DS-HP-FC-K9 UCS-FI-6248UP UCS-FI-6296UP UCS-FI-6332-16UP UCS-FI-6454 UCS-FI-6536</block>
-  <block id="9ee0d87a5565349a2c4cbf5cd504b01b" category="cell">3.3(1c) 5.0(1a) 5.0(3)N2(4.13i) 5.0(3)N2(4.21j) 5.0(3)N2(4.21k) 5.0(3)N2(4.22c) 5.0(3)N2(4.23f) 5.0(3)N2(4.23g) 5.0(3)N2(4.34a) 5.0(3)N2(4.36d) 5.0(4b) 5.0(8) 5.2(2d) 5.2(8a) 5.2(8b) 5.2(8c) 5.2(8d) 5.2(8g) 5.2(8h) 5.2(8i) 6.2(11) 6.2(11b) 6.2(11c) 6.2(13) 6.2(13a) 6.2(17) 6.2(19) 6.2(21) 6.2(25) 6.2(29) 6.2(31) 6.2(33) 6.2(5a) 6.2(9) 6.2(9a) 6.2(9b) 7.3(0)DY(1) 8.1(1) 8.3(1) 8.3(2) 8.4(1) 8.4(1a) 8.4(2a) 8.4(2b) 8.4(2c) 8.4(2d) 8.4(2e) 8.4(2f) 8.5(1) 9.2(1) 9.2(1a) 9.2(2) 9.3(1) 9.3(2) 9.3(2a) 9.3(5)I42(1k) 9.3(5)I42(3f) 9.3(5)I42(3j) 9.3(5)I43(4b) 9.3(5)I43(6b) 9.4(1) 9.4(1a) 9.4(2a) 9.4(3) 9.4(3a) 9.4(3b) 9.4(4) 9.4(5)</block>
-  <block id="f972a292bc64544d9f24c8483325065f" category="cell">C4000 計算節點 C4600 C5036 C5066 C5212S C5218 C6025 C6035 C6055 C6208S PXG1 虛擬 ROBO</block>
-  <block id="a6327f139882ae215be491881bd0f108" category="cell">6.8.2_u1_release-20240509_a5da4644 7.1.2_u2_release-20240925_66722648 7.1.2_u4_release-20250529_205b971c 7.3.2_release-20260123_529553a9</block>
-  <block id="0e9e7e88ba5d52af2c735efadd00117a" category="cell">A200 A2000 A300 A3000 A310 F200 F210 F710 F800 F900 F910 H400 H500 H5600 H600 H700 H7000 H710 NL410 SIMULATOR X210</block>
-  <block id="9e1d477cc5932e57158dfeb0cec40c75" category="cell">9.10.1.2 9.10.1.3 9.10.1.4 9.10.1.5 9.10.1.6 9.10.1.7 9.11.0.0 9.12.0.1 9.13.0.0 9.13.0.1 9.13.1.0 9.2.1.13 9.2.1.8 9.4.0.12 9.4.0.14 9.4.0.17 9.4.0.6 9.5.0.6 9.5.0.8 9.5.1.1 9.7.1.13 9.7.1.2 9.7.1.4 9.7.1.5 9.7.1.6 9.7.1.7 9.7.1.8 v8.0.0.6 v8.0.0.7</block>
-  <block id="b5001e3e8866d15badf95fe611378087" category="cell">A200 F800 H400 H500 H5600 H700 NL400 NL410 S210 Traceback (most recent call last): X200 X400 X410 sudo python</block>
-  <block id="48c014e499b34b38e12696998edc654f" category="cell">9.10.1.2 9.10.1.4 9.2.1.13 9.5.0.3 9.5.0.6 9.8.0.2 v7.2.0.5 v7.2.1.3 v7.2.1.6 v8.0.0.6 v8.0.0.7 v8.0.1.1 v8.1.2.0</block>
-  <block id="0cac2eda2e57241d4dfeefa849d853a9" category="cell">V10.0.0.2 V10.0.0.5 V10.0.1.5 V10.1.0.1 V10.1.0.5 V10.1.0.6 V10.1.0.8 V10.2.0.1 V10.2.0.12 V10.2.0.14 V10.2.0.2 V10.2.0.9 V10.3.0.1 V10.3.0.5 V10.3.0.7 V10.4.0.1 V10.4.0.11 V10.4.0.5 V9.2.3.11 V9.2.3.20 V9.2.3.22 V9.2.4.1 V9.2.4.11 V9.2.4.12 V9.2.4.15 V9.2.4.17 V9.2.4.18 V9.2.4.19 V9.2.4.20 V9.2.4.22 V9.2.4.9</block>
   <block id="ba2ea19bda3eab50209c38fe751f14b1" category="cell">PowerMax_2000 PowerMax_2500 PowerMax_8000 PowerMax_8500 VMAX100K VMAX200K VMAX250F VMAX400K VMAX450F</block>
-  <block id="9b99b6d2beb45360a722dfc3b9ef6a5f" category="cell">5977.1131.1131 build 615 5977.1151.1151 build 60 build 60 5978.711.711 build 416 5978.711.711 build 436 build 436 5978.711.711 build 484 5978.711.711 build 484 build 484 5978.714.711 build 49 5978.714.714 build 101 build 101 5978.714.714 build 117 5978.714.714 build 117 build 117 5978.714.714 build 137 5978.714.714 build 137 build 137 5978.714.714 build 145 5978.714.714 build 145 build 145 5978.714.714 build 147 build 147 5978.714.714 build 149 build 149 5978.714.714 build 184 5978.714.714 build 184 build 184 5978.714.714 build 185 build 185 5978.714.714 build 236 5978.714.714 build 252 5978.714.714 build 252 build 252 5978.714.714 build 49 5978.714.714 build 49 build 49 5978.714.714 build 79 build 79 5978.720.720 build 1 5978.720.720 build 17 5978.720.720 build 27 5978.720.720 build 27 build 27 5978.720.720 build 32 build 32 5978.720.720 build 33 5978.720.720 build 33 build 33 5978.720.720 build 38 build 38 5978.720.720 build 56 5978.720.720 build 56 build 56 5978.720.720 build 6 5978.720.720 build 77 build 77 6079.225.0 build 216 build 216 6079.275.0 build 221 build 221 6079.275.0 build 250 build 250 6079.275.0 build 292 build 292 6079.275.0 build 396 build 396 6079.280.0 build 37 build 37 6079.280.0 build 53 build 53 6079.325.0 build 216 build 216 6079.325.0 build 231 build 231 6079.325.0 build 244 build 244 6079.325.0 build 253 build 253 6079.325.0 build 275 build 275 6079.325.0 build 84 build 84</block>
-  <block id="2b3211df74d3e640f6708f2ca7d310a9" category="cell">NSX VG8 VNX5200 VNX5300</block>
-  <block id="139c174b5959febf60574d1af22116d1" category="cell">5.5.38-1 7.1.76-4 7.1.79-8 8.1.9-155</block>
   <block id="dada13c6c2c5f17e1355eb2c9ecfa348" category="cell">7.32 7.33</block>
-  <block id="96d4da386e56ba17e700187d044f1fb3" category="cell">VNX5100 VNX5200 VNX5300 VNX5400 VNX5500 VNX5600 VNX5700 VNX7600</block>
-  <block id="cb6cd39fdb969f4f545f40033d69b924" category="cell">05.32.000.5.218 05.32.000.5.219 05.32.000.5.221 05.32.000.5.225 05.32.000.5.249 05.33.009.5.155 05.33.009.5.184 05.33.009.5.186 05.33.009.5.231 05.33.021.5.256 05.33.021.5.266</block>
   <block id="e1132ac8ff61e9ae39cb15314e8f421a" category="cell">DD VE DD2500 DD3300 DD6300 DD6400 DD6410 DD6900 DD9300 DD9400 DD9410 DD9800 DD9900 DD9910</block>
-  <block id="0bca51f6fb84fd6cbbe30453602d0410" category="cell">6.2.1.30-663869 7.10.1.15-1078832 7.10.1.60-1161253 7.10.1.80-1198417 7.13.1.20-1148611 7.13.1.25-1161300 7.13.1.40-1186473 7.13.1.80-1246402 7.7.5.25-1078970 8.3.0.15-1161254 8.3.1.0-1175411 8.3.1.10-1194895 8.3.1.20-1208918 8.3.1.30-1226406 8.3.1.40-1247360 8.4.0.0-1175068 8.6.1.20-1246795</block>
-  <block id="5bdc230cb8e87f9d64f38b690ab4a18d" category="cell">3.7.0.0 3.8.0.2 3.8.1.1 3.8.1.3 3.8.1.4 3.8.1.6 3.9.0.0 4.1.0.2 4.1.0.3 4.2.0.0</block>
   <block id="7fb47f451ed0124cf00b22826c921edc" category="cell">PowerStore 1000T PowerStore 1200T PowerStore 3000T PowerStore 3200T PowerStore 5000T PowerStore 500T PowerStore 5200Q PowerStore 5200T PowerStore 7000T PowerStore 9000T PowerStore 9200T</block>
-  <block id="71b755c923ee9f68fc12121f315dc663" category="cell">3.2.0.1 3.6.1.1 3.6.1.2 4.0.0.1 4.0.1.3 4.1.0.0 4.1.0.1 4.1.0.2 4.1.0.3 4.1.0.4 4.1.0.5 4.3.1.0 4.3.1.1 5.0.0.1</block>
   <block id="87d3be788308380688b1a9ec71cf1c8f" category="cell">5.1.SP4.P5(h.138)</block>
-  <block id="6461ed4f126267a41c5a3629b4a3227e" category="cell">V10.0.0.0 V10.2.0.0 V10.2.0.2 V10.3.0.0 V10.3.0.1 V9.1.0.6 V9.2.3.0 V9.2.3.1 V9.2.3.6 V9.2.4.11 V9.2.4.13 V9.2.4.14 V9.2.4.3 V9.2.4.6 V9.2.4.7 V9.2.4.8 V9.2.4.9 不可用</block>
-  <block id="6306d8209faff05cdfe24c36bca89ccb" category="cell">PowerMax_2000 PowerMax_8000 VMAX-1 VMAX100K VMAX10K VMAX250F VMAX400K VMAX450F VMAX950F</block>
-  <block id="2fc3de1800263457eb7e5201731c1b92" category="cell">5876.286.194(16F40000) build 115 5876.309.196(16F40000) build 162 5876.309.196(16F40000) build 94 5977.1151.1151(17590000) build 60 5978.711.711(175A0000) build 448 5978.711.711(175A0000) build 484 5978.714.714(175A0000) build 101 5978.714.714(175A0000) build 117 5978.714.714(175A0000) build 137 5978.714.714(175A0000) build 145 5978.714.714(175A0000) build 147 5978.714.714(175A0000) build 149 5978.714.714(175A0000) build 184 5978.714.714(175A0000) build 185 5978.714.714(175A0000) build 236 5978.714.714(175A0000) build 252 5978.714.714(175A0000) build 49 5978.714.714(175A0000) build 53 5978.720.720(175A0000) build 1 5978.720.720(175A0000) build 27 5978.720.720(175A0000) build 38 5978.720.720(175A0000) build 56 5978.720.720(175A0000) build 6</block>
   <block id="5945d000f75db6fee03bad97a20ae4c9" category="cell">VNX5200 VNX5300 VNX5400 VNX5500 VNX5600 VNX5700 VNX5800 VNX8000</block>
   <block id="6c038d12d79a7fe5e7c7e0c39f264b92" category="cell">05.32.000.5.216 05.32.000.5.249 05.33.021.5.266 7.1.76-4 7.1.79-8 7.1.83-2 8.1.21-266 8.1.9-184</block>
-  <block id="e0c01dad09817e8053eb48ecb7e366b6" category="cell">Unity 300 Unity 300F Unity 350F Unity 380F Unity 400 Unity 450F Unity 480 Unity 480F Unity 550F Unity 600 Unity 650F Unity 680 Unity 880 Unity 880F UnityVSA</block>
-  <block id="5975ebfa6ecf318ac0dbfc8a5ea771c0" category="cell">4.1.2.9257522 5.1.1.0.5.005 5.1.2.0.5.007 5.2.1.0.5.013 5.3.0.0.5.120 5.3.1.0.5.008 5.4.0.0.5.094 5.4.1.0.5.006 5.5.0.0.5.259 5.5.2.0.5.014 5.5.4.0.5.037</block>
   <block id="3c06173e0f6bdb1217400a28f304635a" category="cell">VPLEX mn-216</block>
-  <block id="1e33f64d9e734f9b241df7ba505bfa95" category="cell">6.2.0.03.00.02 6.2.0.04.00.07 6.2.0.06.00.07 6.2.0.07.00.02 6.2.1.0.0.519 6.2.1.1.0.78 6.2.2.0.1.3 9.1.0.0.0</block>
   <block id="22dc6cb505c9b68cc519f67757357b2f" category="cell">6.2.1 6.3.2 6.3.3 6.4.2</block>
   <block id="6d13ed99e4cb4775f401361417b0f0f6" category="cell">1 Bricks &amp; 24TB 1 Bricks &amp; 26TB 1 Bricks &amp; 31TB 1 Bricks &amp; 41TB 1 Bricks &amp; 6TB 1 Bricks &amp; 8TB 1X10TB 2 Bricks &amp; 83TB 6X20TB</block>
   <block id="a0325ef6fdb48b93e348a31cb2dcbb66" category="cell">4.0.27-1 4.0.31-11 6.3.3-8_X2 6.4.2-13_X2</block>
   <block id="6755455d4b017941c77ac47ecc006c5f" category="section-title">Google Cloud NetApp Volumes</block>
-  <block id="e5956e2cec90a889c8bdeeb7884a382c" category="cell">10.0.1.4 9.7.2.27 9.7.3.14</block>
   <block id="c109b6d350ebceeae33a54682f7a25e1" category="cell">3090-G2 G600 G800 HNAS 4080 HNAS 4100 N800</block>
   <block id="cdd4ae7e90d6830470c971617403c58e" category="cell">13.7.6233.01 14.7.7623.07 15.1.8030.05</block>
   <block id="c407a8511f31e145acb0ec692bbd9904" category="cell">7.6.1 8.7.1</block>
   <block id="48147aeb7b53f67c1a365a6f9cd7d446" category="cell">DF850MH P9500 XP24000 XP8</block>
-  <block id="b3ce9a08cb965e98b2731bb0c38ffa78" category="cell">0983/A-H 0984/B-H 0986/A-H DKC:60-08-22 DKC:70-06-43 DKC:90-09-25 DKC:90-09-28 SVP:60-08-21/00 SVP:70-06-30/00 SVP:90-09-25/00 SVP:90-09-28/00</block>
-  <block id="a8190778ae3731e95a2a29abb5107300" category="cell">VSP 5100 VSP 5200 VSP 5200H VSP 5500 VSP 5600 VSP 5600H VSP E1090 VSP E1090H VSP E590 VSP E590H VSP E790 VSP F1500 VSP F370 VSP F700 VSP F900 VSP G1000 VSP G350 VSP G700 VSP G800 VSP One B26 VSP One B28 XP8</block>
-  <block id="e6bebde8753f0aa2922ca11738b45aed" category="cell">80-06-86-00/00:01-76-03/03 80-06-96-00/00:01-76-03/03 83-05-51-60/00:01-76-03/03 88-08-10-60/00:01-76-03/03 88-08-12-60/00:01-57-03/00 88-08-12-60/00:01-76-03/03 88-08-13-60/01:01-76-03/03 88-08-15-21/00:01-76-03/03 88-08-16-21/10:01-76-03/03 88-08-19-60/00:01-76-03/03 88-08-20-60/00:01-76-03/03 90-09-24-00/01:01-76-03/03 90-09-24:01.65.05 90-09-24:01.72.00 90-09-26-00/00:01-76-03/03 90-09-27-00/01:01-76-03/03 90-09-28-00/00:01-65-03/05 90-09-28-00/00:01-76-03/03 90-09-30-00/00:01-65-03/05 90-09-30-00/00:01-76-03/03 90-09-30-00/00:01-87-03/03 90-09-30-00/00:01-88-03/03 90-09-31-00/20:01-76-03/03 90-09-31-00/20:01-88-03/03 93-07-22-40/00:01-76-03/03 93-07-25-40/00:01-76-03/03 93-07-29-40/00:01-76-03/03 93-07-29-80/00:01-65-03/05 93-07-29-80/00:01-76-03/03 93-07-29-80/00:01-87-03/03 A3-04-21-40/00:01-88-03/03 A3-04-22-40/00:01-76-03/03 A3-04-22-40/00:01-88-03/03 A3-04-23-40/01:01-88-03/03 null:null</block>
   <block id="13127c8ab94ac9e2efa4ea823714da43" category="cell">HPE Alletra 9080 HPE Alletra Storage MP HPE_3PAR 20450 HPE_3PAR 20800_R2 HPE_3PAR 7200c HPE_3PAR 7440c HPE_3PAR 7450c HPE_3PAR 8200 HPE_3PAR 8400 HPE_3PAR 8440 HPE_3PAR 8450 HPE_3PAR 9450 HPE_3PAR A630 HPE_3PAR A650 HPE_3PAR A670 HPE_3PAR C650 HP_3PAR 7200 HP_3PAR 7200c HP_3PAR 7400 HP_3PAR 7400c HP_3PAR 8200 InServ T400 InServ V400</block>
-  <block id="4ba484cc14d84976051d43b40ab12a4c" category="cell">10.4.20 發布類型：標準支援版本 10.5.50 發布類型：標準支援版本 10.5.55 發布類型：標準支援版本 10.5.64 發布類型：限量可用性版本 3.1.2 (MU3) P16 3.1.3 (MU1) P07 3.2.1 (MU3) P17 3.2.2 (MU4) P51 3.2.2 (MU4) P56 3.2.2 (MU6) 3.2.2 (MU6) P99 3.3.1 (MU2) P30 3.3.1 (MU2) P32 3.3.1 (MU3) P50 3.3.1 (MU5) P126 3.3.1 (MU5) P132 3.3.2 (MU1) P08 3.3.2 (MU1) P10 4.4.1 發布類型：標準支援版本 4.5.15 發布類型：延伸支援版本 4.5.3 發布類型：延伸支援版本 4.5.8 發布類型：延伸支援版本 4.6.1 發布類型：延伸支援版本 4.6.20 發布類型：延伸支援版本 4.6.21 發布類型：限量可用性版本 4.6.5 發布類型：延伸支援版本 9.6.20 發布類型：延伸支援版本 P09 P10 P102 P103 P106 P107 P109 P111 P112 P113 P114 P115 P118 P119 P120 P122 P125 P126 P127 P128 P129 P131 P132 P133 P135 P136 P137 P138 P139 P140 P141 P142 P145 P146 P148 P149 P15 P150 P151 P153 P154 P155 P156 P157 P160 P161 P162 P164 P165 P166 P167 P168 P170 P172 P173 P175 P177 P18 P180 P185 P19 P20 P23 P25 P27 P28 P29 P30 P32 P34 P37 P38 P40 P45 P48 P49 P50 P51 P52 P56 P58 P59 P60 P61 P72 P74 P76 P77 P78 P84 P85 P90 P91 P92 P93 P94 P96 P97 P98</block>
   <block id="ea4efa348ad30c6c76726d4ff6991fe0" category="cell">5030 6030 AF40 AF60 AF80 CS300 CS3000 HF20H HF40 HF60</block>
   <block id="64393f8238585276533903f10c60c050" category="cell">5.0.8.0-677726-opt 5.2.1.1100-1027043-opt 6.1.2.502-1057650-opt 6.1.2.700-1069734-opt 6.1.2.800-1084673-opt 6.1.3.300-1084694-opt</block>
-  <block id="cf5666d16b4a4711f0c9ce03ae92a332" category="cell">5310 V5 5500 V3 5500 V5 5800 V3 6800 V3 Dorado 18000 V6 NVMe Dorado 5000 V3 Dorado 6000 V3 Dorado 6000 V6 NVMe</block>
-  <block id="52a54fdbd25114a2e94e37704c5ad172" category="cell">V300R002C10 V300R006C50 V500R007C61 V500R007C71 Kunpeng V600R005C26 V600R005C27 V600R005C50</block>
   <block id="577cc7633c98be0b6e1e53c9423d1e82" category="cell">2107-951 2107-961 2107-994 2107-996 2107-A05</block>
   <block id="e0605a7cb552123743826ae43bcd50ec" category="cell">7.10.11.87 7.6.31.4250 7.7.51.1400 7.9.33.132 7.9.44.37 7.9.44.59</block>
-  <block id="6fb0371991aee49ebdf3b315829dab52" category="cell">2072-24F 2072-24G 2072-2H4 2072-2N4 2072-324 2072-3N4 2076-12F 2076-24F 2076-24G 2076-524 2076-624 2076-724 2076-824 2076-AF6 2076-AFF 2078-12C 2078-12E 2078-12F 2078-224 2078-24C 2078-24E 2078-24F 2078-324 2078-AF3 4657-924 4657-92G 4662-12G 4662-24G 4662-6H2 4662-7H2 4666-AH8 4666-UH8 4680-24H 4680-3P2 4680-3P4 4680-92H 4983-AH8 5075-A30 5078-A40 9848-AF7 9848-AF8 9848-AG8 9848-UG8 SVC</block>
-  <block id="b7cbf7bc31513b92d0ba4067b68ce148" category="cell">7.7.1.8 7.8.1.10 7.8.1.11 7.8.1.12 7.8.1.14 7.8.1.5 7.8.1.8 8.1.3.5 8.2.1.8 8.3.1.5 8.3.1.7 8.4.0.11 8.4.0.15 8.4.0.9 8.4.2.0 8.5.0.11 8.5.0.12 8.5.0.13 8.5.0.14 8.5.0.15 8.5.0.16 8.5.0.17 8.5.0.5 8.5.0.6 8.5.0.7 8.5.0.8 8.5.0.9 8.6.0.10 8.6.0.11 8.6.0.2 8.6.0.3 8.6.0.4 8.6.0.5 8.6.0.6 8.6.0.7 8.6.0.9 8.7.0.0 8.7.0.10 8.7.0.11 8.7.0.13 8.7.0.4 8.7.0.5 8.7.0.6 8.7.0.7 8.7.0.8 8.7.0.9 8.7.3.3 9.1.0.4 9.1.0.5 9.1.0.6 9.1.0.7 9.1.2.1 9.1.3.0 9.1.3.1</block>
   <block id="a0e9676f1d8f50805937ae8694f3e506" category="cell">F24STX F4416T F6306</block>
   <block id="4f7d8c57838578c0d0b6728343767e8d" category="cell">8.1.10.250 8.4.6.30 8.5.3.30</block>
   <block id="38a5777d2aaca4d9102a019c09e0009c" category="cell">2025-09-01</block>
-  <block id="86f18280042d54c062f2a83b195ec73c" category="cell">ONTAPI 版本=1.17 ONTAPI 版本=1.19 ONTAPI 版本=1.21 ONTAPI 版本=1.9</block>
-  <block id="168b90fe34aaf0aecbfe8925a7d9e142" category="cell">FAS2040 FAS2220 FAS2240-2 FAS2552 FAS3140 FAS3250 FAS3270 FAS8040</block>
-  <block id="9482b64ff238ee057ed86ba6f86bd220" category="cell">7.3.2P3 8.1.1 7-Mode 8.1.4P9D18 7-Mode 8.2.3P2 7-Mode 8.2.4P4 7-Mode 8.2.4P5 7-Mode 8.2.5P4 7-Mode 8.2.5P5 7-Mode</block>
   <block id="4d27a7d349acda58b88c525cdb6c0878" category="list-text">AFF-A30</block>
   <block id="576d57c9f7f5a8d9e0aa695f7a61f35f" category="list-text">AFF-A50</block>
   <block id="a09df5714f5fceb574d6ae61eb07cc1a" category="list-text">AFF-C30</block>
@@ -14371,103 +14207,25 @@
   <block id="7d473c4381c8fd42a32bdaf28e9b5547" category="list-text">DG5200</block>
   <block id="d85e5cacacd757755e3d09416d2a8bf8" category="list-text">FAS50</block>
   <block id="017db3debbf4b1ed577798b78fd96b66" category="list-text">FAS70</block>
-  <block id="65f04c8a07e1545b01a25bc1fc57fb6d" category="list-text">9.11.1P19</block>
-  <block id="3bec01eb97d7f03f38a8ad2b3e3b7d4f" category="list-text">9.11.1P20</block>
-  <block id="4d2bd7027e2c623b821c76980aeec5d0" category="list-text">9.12.1P18</block>
-  <block id="8ee566a3cb003514f06ba5ffa79b4384" category="list-text">9.12.1P19</block>
-  <block id="8a3fc5f698d48697f9281b1e1b4da490" category="list-text">9.12.1P20</block>
-  <block id="4312d329f840b0f83ee86910edac45b5" category="list-text">9.13.1P16</block>
-  <block id="5d02ff701c00edce2f05023b0a48f8c9" category="list-text">9.13.1P17</block>
-  <block id="ebf8dd2eb2f195d990f56b22b7144ca6" category="list-text">9.13.1P18</block>
-  <block id="8fce71b77f0131d153a071e0a1b67407" category="list-text">9.13.1P19</block>
-  <block id="cfa3bcb0c829316a51503f657fc3b69f" category="list-text">9.13.1P20</block>
-  <block id="7192607fb666caf9c99e1ba90427decf" category="list-text">9.14.1P12</block>
-  <block id="a9a5593e96643d91509e8237d9f3fd32" category="list-text">9.14.1P13</block>
-  <block id="60240b1e9325e658b0be67f3750e170f" category="list-text">9.14.1P14</block>
-  <block id="0c07e78206dba80dc82006ba344396ab" category="list-text">9.14.1P15</block>
-  <block id="ddd9cec06e33534483b7c8a7a0446f06" category="list-text">9.14.1P16</block>
-  <block id="902948383a99180d8f7a7c5dfbd811fb" category="list-text">9.14.1P17</block>
-  <block id="7f981db9a5d2eb4496df9fd5f13efb48" category="list-text">9.15.1P10</block>
-  <block id="253937993750c31df61ac2f660cb5734" category="list-text">9.15.1P11</block>
-  <block id="6fbab29159485039e1b0c4c800361ba5" category="list-text">9.15.1P12</block>
-  <block id="62246b79cc3758998ab284be42361373" category="list-text">9.15.1P13</block>
-  <block id="78410ab77d0c14a0f0cdccdefaedd86e" category="list-text">9.15.1P14</block>
-  <block id="62b3be33a017d1917c86da079fdb54af" category="list-text">9.15.1P15</block>
-  <block id="a0fc37fbf0e864b77267905c002a6002" category="list-text">9.15.1P16</block>
-  <block id="a4a5ef3c32f4cef894c80a49bb8d25ed" category="list-text">9.15.1P17</block>
-  <block id="8ac763fa65e38628b60e766a564f79f7" category="list-text">9.15.1P19</block>
-  <block id="f988a7199a133d8a2dc08da4dd863c4c" category="list-text">9.16.1P10</block>
-  <block id="66d06f6046c53782ff48923abbbbaae9" category="list-text">9.16.1P11</block>
-  <block id="c876d4ad64605942d626a046df8b80e0" category="list-text">9.16.1P11D1</block>
-  <block id="db622bedd4f0b0c8669a2db144fbc83b" category="list-text">9.16.1P12</block>
-  <block id="ebcaa618f9878cc9699adfbb9a3996e7" category="list-text">9.16.1P12D1</block>
-  <block id="5fe5ca8af846147d6526f4fad5e9fbe5" category="list-text">9.16.1P13</block>
-  <block id="93cee9103313681025a4839684deb63c" category="list-text">9.16.1P14</block>
-  <block id="5027882d4c531f1a741f1424ed799dea" category="list-text">9.16.1P2</block>
-  <block id="81c17a77245430a0a8045d953bd1d8f3" category="list-text">9.16.1P3</block>
-  <block id="912c69036af7c884db42d45fefc0c160" category="list-text">9.16.1P4</block>
-  <block id="eb68580422cc5d2daef317f9c4647b85" category="list-text">9.16.1P5</block>
-  <block id="92864a8bbc657e7561a845762d5644e2" category="list-text">9.16.1P6</block>
-  <block id="36981d1d5a93faa8b3dff0753d003aae" category="list-text">9.16.1P7</block>
-  <block id="1a424bde34b889bfeb0f15973e19239e" category="list-text">9.16.1P8</block>
-  <block id="ab4d7048483c1f7ee1d29b9d10b676e3" category="list-text">9.16.1P9</block>
-  <block id="3d5cec4f883cfb2a826e56905457ee43" category="list-text">9.17.1P1</block>
-  <block id="5568110ce3cf801cb4ef2933b7d9e3fe" category="list-text">9.17.1P10</block>
-  <block id="35825356085e4b80b1268ad01a6bff2b" category="list-text">9.17.1P2</block>
-  <block id="d42117751aa8172642814fe7b6e3ba9b" category="list-text">9.17.1P3</block>
-  <block id="08376433cdfb564d969154bca8b5bc45" category="list-text">9.17.1P4</block>
-  <block id="755c06c549d066430c031896e84b142b" category="list-text">9.17.1P5</block>
-  <block id="e6d6ba3ef23ebdc0eb13bba762210b44" category="list-text">9.17.1P6</block>
-  <block id="a29e3fccf3d7e5d7b1f08b72bf1c1aab" category="list-text">9.17.1P6D2</block>
-  <block id="50d74e6a653fd266bf70f23e8572efae" category="list-text">9.17.1P7</block>
-  <block id="25420a60bd5319680a16344318d6b767" category="list-text">9.17.1P8</block>
-  <block id="82d11841b98094f36945888771ac71d4" category="list-text">9.17.1P9</block>
-  <block id="34990c3d25631954a8d320c3b887702d" category="list-text">9.18.1</block>
-  <block id="9cc35044b2ea11888ec06ef1ae89ebfd" category="list-text">9.18.1D4</block>
-  <block id="78d4bdeb01a6e733247fad221fa4e0ec" category="list-text">9.18.1P1</block>
-  <block id="f0c5ea23ccb5c2b73d85c72db31210c1" category="list-text">9.18.1P2</block>
-  <block id="ff21b494fef6c42dfaa25ebd491fee06" category="list-text">9.18.1P3</block>
-  <block id="ce9dcdfeec1af73bc2ef178c15baf44e" category="list-text">9.18.1P4</block>
-  <block id="832e55702894dbb72ab77574f62de27a" category="list-text">9.18.1P5</block>
-  <block id="bc85d145c23a65ed9707c8724d3dd49f" category="list-text">9.18.1P6</block>
-  <block id="aaf58e5a5445d876b8f7b0fe22b5afbf" category="list-text">9.19.1</block>
-  <block id="3fe0a55b554daaaf0d692891af417c55" category="list-text">9.19.1X30</block>
-  <block id="f43220269653469f7af4b6f7d77bab49" category="list-text">9.19.1X39</block>
-  <block id="039198979187890cd952b36cab5f0adc" category="list-text">9.19.1X42</block>
-  <block id="866d258f42bd4aa512f976c7fb1943e8" category="list-text">9.19.1X43</block>
-  <block id="55bc98a84638adb55446bfa6c351f67b" category="list-text">9.9.1P8</block>
   <block id="2f26beefbac97c08996ac268aa98fbeb" category="cell">2700 2702 2704 2800B 2804 2806 3000 4000 5486 5488 5600 5700 5700B 7999</block>
-  <block id="392a9a8f154381dcaafe517c47dec327" category="cell">08.40.60.01 08.80.00.00 58.90.55.79 68.90.0.44 7.84.46.0 8.20.16.0 8.20.27.0 8.20.30.0 8.25.14.0 8.25.6.0 8.25.9.0 8.30.20.0 8.40.10.1 8.40.20.0 8.40.40.0 8.40.50.0 8.40.60.1 8.40.60.2 8.42.20.0 8.50.0.4 8.51.0.0 8.52.0.0 8.52.0.1 8.53.0.4 8.62.0.2 8.63.0.2 8.70.0.2 8.70.0.3 8.71.2.0 8.71.3.0 8.72.0.0 8.72.1.0 8.73.0.0 8.74.2.0 8.74.3.0 8.75.0.1 8.75.1.0 8.80.0.0 8.80.1.0 8.81.0.2 8.81.0.3 8.81.1.0 8.81.2.0 8.81.3.0 8.81.7.0 8.90.0.0 8.90.12.0 8.90.15.0 8.90.2.0 8.90.6.0 8.90.9.0 82.0.56.24 82.0.57.37 82.10.59.53 88.81.54.43 92.0.13.0 92.0.16.0 92.0.19.0 92.10.0.0 92.10.4.0 98.81.9.0 98.90.10.0 98.90.28.0 98.90.33.0 98.90.52.0 98.90.56.0 98.90.57.0 98.90.9.0</block>
   <block id="b1f259465ec4d17f0251ab6117636f4c" category="cell">2800B 2806 3000 4000 5700 EF570</block>
-  <block id="0b8e3451eb5e53008c028cc87f84601d" category="cell">08.52.00.01 08.53.00.04 08.53.00.09 08.62.00.02 08.70.00.03 08.71.02.00 08.71.03.00 08.72.00.00 08.72.01.00 08.73.00.00 08.74.02.00 08.74.03.00 08.75.00.01 08.75.01.00 08.80.00.00 08.81.00.02 08.81.00.03 08.81.01.00 08.81.02.00 08.81.03.00 08.81.07.00 08.90.02.00 08.90.04.00 08.90.06.00 08.90.09.00 08.90.12.00 08.90.15.00 58.90.55.79 82.00.56.24 82.00.57.37 82.10.59.53 88.81.54.43 92.00.13.00 92.00.19.00 92.10.00.00 92.10.04.00 98.81.09.00 98.90.09.00 98.90.33.00 98.90.52.00 98.90.56.00 98.90.57.00</block>
-  <block id="f9fcc8e5ab2b11cbf9fd01cebb6388e6" category="cell">AFF-A150 AFF-A1K AFF-A20 AFF-A220 AFF-A250 AFF-A30 AFF-A300 AFF-A400 AFF-A50 AFF-A70 AFF-A700 AFF-A800 AFF-A90 AFF-A900 AFF-C250 AFF-C30 AFF-C400 AFF-C60 AFF-C80 AFF-C800 ASA-A250 ASA-A800 ASA-A900 ASA-C250 ASA-C800 CDvM200 FAS2720 FAS2750 FAS2820 FAS50 FAS500f FAS70 FAS8200 FAS8300 FAS8700 FAS90 FAS9000 FAS9500 FASDvM300 SIMBOX</block>
-  <block id="7b8ab8281f6ad53bd42e990e440acc75" category="cell">NetApp Release 9.14.1P10：2024 年 11 月 28 日星期四 12:32:16 UTC NetApp Release 9.14.1P12：2025 年 3 月 25 日星期二 23:16:26 UTC NetApp Release 9.14.1P14：2025 年 8 月 24 日星期日 04:57:05 UTC NetApp Release 9.14.1P1：2024 年 2 月 15 日星期四 00:45:21 UTC NetApp Release 9.14.1P6：2024 年 6 月 18 日星期二 16:11:44 UTC NetApp Release 9.15.1：2024 年 7 月 4 日星期四 07:17:54 UTC NetApp Release 9.15.1P10：2025 年 4 月 17 日星期四 14:04:43 UTC NetApp Release 9.15.1P11：2025 年 5 月 21 日星期三 22:53:05 UTC NetApp Release 9.15.1P13：2025 年 7 月 15 日星期二 14:07:45 UTC NetApp Release 9.15.1P14：2025 年 8 月 5 日星期二 15:53:54 UTC NetApp Release 9.15.1P15：2025 年 10 月 5 日星期日 06:25:31 UTC NetApp Release 9.15.1P16：2025 年 11 月 29 日星期六 23:46:11 UTC NetApp Release 9.15.1P17：2026 年 2 月 10 日星期二 12:35:50 UTC NetApp Release 9.15.1P19：2026 年 5 月 9 日星期六 17:13:04 UTC NetApp Release 9.15.1P3：2024 年 9 月 25 日星期三 22:33:44 UTC NetApp Release 9.15.1P4：2024 年 10 月 27 日星期日 20:15:53 UTC NetApp Release 9.15.1P6：2024 年 12 月 4 日星期三 01:42:39 UTC NetApp Release 9.15.1P7：2025 年 1 月 18 日星期六 21:34:02 UTC NetApp Release 9.15.1P8：2025 年 3 月 7 日星期五 22:41:00 UTC NetApp Release 9.16.1：2025 年 1 月 18 日星期六 19:31:15 UTC NetApp Release 9.16.1P10：2025 年 11 月 27 日星期四 17:12:10 UTC NetApp Release 9.16.1P11：2026 年 1 月 15 日星期四 11:21:38 UTC NetApp Release 9.16.1P12：2026 年 3 月 11 日星期三 12:37:44 UTC NetApp Release 9.16.1P12D1：2026 年 5 月 15 日星期五 20:58:40 UTC NetApp Release 9.16.1P13：2026 年 5 月 8 日星期五 03:41:42 UTC NetApp Release 9.16.1P14：2026 年 7 月 9 日星期四 16:46:59 UTC NetApp Release 9.16.1P2：2025 年 3 月 19 日星期三 10:28:11 UTC NetApp Release 9.16.1P3：2025 年 4 月 24 日星期四 02:50:10 UTC NetApp Release 9.16.1P4：2025 年 5 月 27 日星期二 23:22:56 UTC NetApp Release 9.16.1P5：2025 年 6 月 21 日星期六 02:06:33 UTC NetApp Release 9.16.1P6：2025 年 7 月 16 日星期三 03:10:07 UTC NetApp Release 9.16.1P7：2025 年 8 月 21 日星期四 10:29:10 UTC NetApp Release 9.16.1P8：2025 年 10 月 4 日星期六 03:23:15 UTC NetApp Release 9.16.1P9：2025 年 11 月 7 日星期五 08:49:09 UTC NetApp Release 9.17.1：2025 年 9 月 5 日星期五 00:50:54 UTC NetApp Release 9.17.1P10：2026 年 7 月 21 日星期二 21:51:01 UTC NetApp Release 9.17.1P2：2025 年 11 月 7 日星期五 09:39:01 UTC NetApp Release 9.17.1P3：2025 年 12 月 7 日星期日 04:46:28 UTC NetApp Release 9.17.1P4：2026 年 1 月 15 日星期四 22:33:51 UTC NetApp Release 9.17.1P5：2026 年 2 月 18 日星期三 10:54:36 UTC NetApp Release 9.17.1P6：2026 年 3 月 25 日星期三 15:38:10 UTC NetApp Release 9.17.1P7：2026 年 4 月 20 日星期一 13:57:24 UTC NetApp Release 9.17.1P8：2026 年 5 月 17 日星期日 22:59:03 UTC NetApp Release 9.17.1P9：2026 年 6 月 24 日星期三 13:09:36 UTC NetApp Release 9.17.1RC1：2025 年 7 月 18 日星期五 12:39:11 UTC NetApp Release 9.18.1：2026 年 1 月 29 日星期四 07:43:55 UTC NetApp Release 9.18.1P1：2026 年 3 月 5 日星期四 07:06:39 UTC NetApp Release 9.18.1P2：2026 年 3 月 29 日星期日 12:49:32 UTC NetApp Release 9.18.1P3：2026 年 5 月 7 日星期四 19:01:14 UTC NetApp Release 9.18.1P4：2026 年 6 月 4 日星期四 11:38:00 UTC NetApp Release 9.18.1P5：2026 年 7 月 9 日星期四 23:05:16 UTC NetApp Release 9.19.1：2026 年 7 月 18 日星期六 20:33:10 UTC NetApp Release 9.19.1：2026 年 7 月 16 日星期四 06:07:43 UTC NetApp Release 9.19.1RC1D2：2026 年 5 月 30 日星期六 08:35:20 UTC NetApp Release 9.19.1X30：2026 年 6 月 9 日星期二 10:08:09 UTC NetApp Release 9.19.1X39：2026 年 7 月 9 日星期四 22:50:24 UTC NetApp Release 9.19.1X42：2026 年 7 月 14 日星期二 08:11:23 UTC NetApp Release 9.19.1X43：2026 年 7 月 18 日星期六 20:33:10 UTC NetApp Release Cloudstream__9.16.1：2025 年 1 月 18 日星期六 14:32:15 UTC NetApp Release Cloudstream__9.16.1：2025 年 10 月 19 日星期日 07:41:54 UTC NetApp Release Electricjellyfish__9.17.1：2025 年 10 月 24 日星期五 06:23:44 UTC NetApp Release Electricjellyfish__9.17.1：2025 年 10 月 4 日星期六 01:37:59 UTC NetApp Release Kingsue__9.20.1：2026 年 5 月 27 日星期三 07:06:53 UTC</block>
   <block id="360f80c70429df2827a1c9a94eab328f" category="cell">H410S-2 H610S-4 SF19210 SF9605 H410S-0 H410S-2 H610S-1 H610S-2 H610S-4 SF19210 SF38410 SF4805</block>
   <block id="4f2e5475db9e595ea0a09ae50e18952e" category="cell">11.7.0.76 12.3.0.958 12.3.1.103 12.3.1.165 12.3.2.3 12.5.0.897 12.7.0.380</block>
   <block id="7c7d1609191c37f460a60a78d44836a6" category="cell">3.4 3.5 4.0 4.1 4.2 4.3</block>
-  <block id="76f039d6798310796c105cfa0159f637" category="cell">11.6.0.7 11.7.0.14 11.7.0.4 11.7.0.6 11.7.0.8 11.8.0.11 11.8.0.12 11.8.0.13 11.8.0.14 11.8.0.15 11.8.0.3 11.8.0.5 11.8.0.7 11.8.0.8 11.9.0 11.9.0.11 11.9.0.12 11.9.0.13 11.9.0.14 11.9.0.3 11.9.0.6 11.9.0.7 11.9.0.9 12.0.0 12.0.0.1 12.0.0.3 12.0.0.4 12.0.0.6 12.0.0.7 12.1.0 12.2.0</block>
   <block id="166d41f89ad5ba34b4731f5967372905" category="cell">Cisco UCS C240-M7SN NX-3060-G6 NX-8150-G8 XC750-24 CORE XF3070</block>
   <block id="d81ea1bb4bd47b27c92956a098024958" category="cell">6.10.1 6.5.5.7 6.5.6.6 7.0.1.6 7.3.1.9</block>
   <block id="1be24885d51490cb31f1d4717414ac61" category="section-title">Oracle Linux Virtualization Manager (REST)</block>
   <block id="040cfb58919a4371c6bbf3f3bd1760ea" category="cell">oVirt REST API v4</block>
   <block id="3d7b1ddde5ff07b7549c9059e0afc537" category="cell">Sun Storage 7000 Sun ZFS Storage 7120 Sun ZFS Storage 7330 Sun ZFS Storage 7350 Sun ZFS Storage 7370 Sun ZFS Storage 7390 Sun ZFS Storage 7420</block>
-  <block id="5a05cf018b9648ce6546306f93b9b598" category="cell">1-1.1 1-1.2 1-1.3 1-1.34 1-1.4 1-2.68.5603.1 1-2.92.5919.1 2013.06.05.7.24 2013.06.05.7.29 2013.06.05.8.0 2013.06.05.8.44 2013.06.05.8.50 2013.06.05.8.56 2013.06.05.8.6 2013.06.05.8.65 2013.06.05.8.68 2013.06.05.8.72 2013.06.05.8.74 2013.06.05.8.76 2013.06.05.8.83 2013.06.05.8.85 2013.06.05.8.86 2013.06.05.8.87 2013.06.05.8.89 2013.06.05.8.90 2013.06.05.8.91 2013.06.05.8.92 2026.04.20.8.93 2026.04.20.8.94</block>
-  <block id="91ded0962cfa804d4a4e0ff191a09dfb" category="cell">DFSC1 DFSC2 FA-C40R3 FA-C50R4 FA-C60R3 FA-C70R4 FA-C90R4 FA-X20R2 FA-X20R3 FA-X20R4 FA-X20R5 FA-X50R2 FA-X50R3 FA-X50R4 FA-X50R5 FA-X70R3 FA-X70R4 FA-X70R5 FA-X90R2 FA-X90R3 FA-X90R4 FA-X90R5 FA-XL130 FA-XL130R5 FA-XL170 FA-XL170R5 FA-m20r2 FA-m50r2 FA-x70</block>
-  <block id="600d4cd3c96092006672c100b764dad6" category="cell">6.1.14 6.1.17 6.10.3 6.10.4 6.10.6 6.3.10 6.3.14 6.3.21 6.5.10 6.5.11 6.5.12 6.5.12.post3 6.5.13 6.5.2 6.5.3 6.5.4 6.5.7 6.5.8 6.5.9 6.7.2 6.7.3 6.7.4 6.7.6 6.7.7 6.7.8 6.9.2 6.9.3 6.9.4 6.9.5 6.9.6 6.9.7</block>
   <block id="37298605c3c0346db6e40e72245b8400" category="cell">FlashBlade FlashBlade//S200 FlashBlade//S200R2 FlashBlade//S500</block>
-  <block id="a747c27aa47e5382e1991d9d3ca16db2" category="cell">Purity//FB 3.3.3 Purity//FB 4.3.11 Purity//FB 4.3.14 Purity//FB 4.3.5 Purity//FB 4.5.11 Purity//FB 4.5.14 Purity//FB 4.5.17 Purity//FB 4.6.6 Purity//FB 4.6.7 Purity//FB 4.7.10 Purity//FB 4.7.11</block>
   <block id="e063a088c93051e2da27a6a6a0ba0132" category="list-text">6.0.3-p16-13857</block>
   <block id="5f1d0950220c51742862d3cedeea4a32" category="list-text">9.3.3-p4-29749</block>
-  <block id="6cc1fda07aa3b2b8e2d44e2af5eb3ff2" category="list-text">9.4.2-p3-31101</block>
-  <block id="87a8e43c182c0ab7c9b1ef5898da8d0d" category="list-text">9.4.3-31180</block>
   <block id="04b4399a4ece42ceac2c10b8e0e1b79a" category="list-text">9.4.3-p1-31252</block>
   <block id="ebadd83bd23d1ec1a7e6b610050978d9" category="list-text">9.4.3-p4-31485</block>
   <block id="860ec91cbd7dd5dab4ee771be0ae7362" category="list-text">9.5.1-p2-36376</block>
   <block id="059447a72e9572cf1bd31b606ede7409" category="list-text">9.5.1-p2-36376_HP72dc853</block>
   <block id="38ef1fd0c809b18b42f4846c8cd00b9b" category="list-text">9.5.2-36527</block>
   <block id="bd3929efbd48582ebd9c8694a1c1529f" category="cell">VAST Data</block>
-  <block id="1ba94509459318418c00c70fcc9748fb" category="cell">組建版本：release-5.3.3-hf5-2058254 組建版本：release-5.3.3-hf7-2198162 組建版本：release-5.3.3-sp3-2009124 組建版本：release-5.4.3-sp2-hf24-2483981 系統版本：5.3.3.0.10090135699003918747 系統版本：5.3.3.1.3876442573258902143 系統版本：5.4.3.1.1891089545684643723</block>
-  <block id="7f24020c902a55e7566a38898e59365f" category="list-text">VMware vCenter Server 8.0.2 build-24721900</block>
   <block id="3485bb9a2195636e4149912bf6a89bda" category="list-text">VMware vCenter Server 8.0.3 build-25413364</block>
   <block id="511267dd334ed8fde93b681500300102" category="list-text">VMware ESXi 6.5.0 build-14990892</block>
   <block id="0252ce16dd9e787a0af0c8491dbc0346" category="list-text">VMware vCenter Server 6.5.0 build-14020092</block>
@@ -16300,4 +16058,323 @@
   <block id="151bb4dbf64e2b3fe12dc4b50a276810" category="list-text">在活動中，開啟三點選單。</block>
   <block id="2bdb567b68e888c0bd681c966627b9d5" category="list-text">選擇 *執行詳細資料*。</block>
   <block id="04b3e949af7d6de572fc2375a3dd80b8" category="paragraph">如需詳細資訊，請參閱此處<block ref="e796b480a0964a566b0ed92c3ef65e64" category="inline-link-macro-rx"></block>。</block>
+  <block id="4f41e1d7e38f82ff583405b31eddd514" category="cell">NetApp 版本 9.19.1：2026 年 7 月 18 日星期六 20:33:10 UTC NetApp 版本 9.19.1P2：2026 年 8 月 19 日星期三 19:38:56 UTC NetApp 版本 9.19.1RC1：2026 年 5 月 2 日星期六 12:38:22 UTC</block>
+  <block id="db3be478515fc6a540d9eed8a590440f" category="cell">NetApp 版本 9.16.1P10：2025 年 11 月 27 日星期四 17:12:10 UTC NetApp 版本 9.16.1P11：2026 年 1 月 15 日星期四 11:21:38 UTC NetApp 版本 9.16.1P3：2025 年 4 月 24 日星期四 02:50:10 UTC NetApp 版本 9.16.1P6：2025 年 7 月 16 日星期三 03:10:07 UTC NetApp 版本 9.16.1P7：2025 年 8 月 21 日星期四 10:29:10 UTC NetApp 版本 9.16.1P8：2025 年 10 月 4 日星期六 03:23:15 UTC NetApp 版本 9.17.1P10：2026 年 7 月 21 日星期二 21:51:01 UTC NetApp 版本 9.17.1P1：2025 年 10 月 4 日星期六 06:37:53 UTC NetApp 版本 9.17.1P2：2025 年 11 月 7 日星期五 09:39:01 UTC NetApp 版本 9.17.1P3：2025 年 12 月 7 日星期日 04:46:28 UTC NetApp 版本 9.17.1P4：2026 年 1 月 15 日星期四 22:33:51 UTC NetApp 版本 9.17.1P5：2026 年 2 月 18 日星期三 10:54:36 UTC NetApp 版本 9.17.1P6：2026 年 3 月 25 日星期三 15:38:10 UTC NetApp 版本 9.17.1P7：2026 年 4 月 20 日星期一 13:57:24 UTC NetApp 版本 9.17.1P9：2026 年 6 月 24 日星期三 13:09:36 UTC NetApp 版本 9.18.1P4：2026 年 6 月 4 日星期四 11:38:00 UTC NetApp 版本 9.18.1P5：2026 年 7 月 9 日星期四 23:05:16 UTC NetApp 版本 9.18.1P7：2026 年 9 月 3 日星期四 20:55:20 UTC NetApp 版本 9.19.1P2：2026 年 8 月 19 日星期三 19:38:56 UTC</block>
+  <block id="fbd3f2531c02ca74b7ca2505658b03eb" category="cell">Brocade 300E Brocade 32Gb Fibre Channel SAN 交換器模組（適用於 HPE Synergy） Brocade 4024 嵌入式 Brocade 4900 Brocade 5000 Brocade 5300 Brocade 5480 嵌入式 Brocade 6505 Brocade 6510 Brocade 6520 Brocade 6547 嵌入式 Brocade 6548 Brocade 6558 Brocade 7800 Brocade 7810 擴展交換器 Brocade 7840 Brocade 7850 擴展交換器 Brocade DCX Brocade DCX-4S 骨幹 Brocade DCX8510-4 Brocade DCX8510-8 Brocade G610 Brocade G620 Brocade G630 Brocade G710 Brocade G720 Brocade G730 Brocade G820 Brocade M6505 Brocade X6-4 Brocade X6-8 Brocade X7-4 Brocade X7-8</block>
+  <block id="ae150907682cc7fe34eef457fd046881" category="cell">v10.0.0a1 v6.2.2b v6.2.2f v6.2.2f9 v6.3.1a v6.3.2b v6.4.1a v6.4.1b v6.4.3 v6.4.3c v6.4.3d v6.4.3f3 v6.4.3h v7.0.0c v7.0.1b v7.0.2a v7.0.2b1 v7.0.2c v7.1.0b v7.1.1 v7.2.0d v7.2.1 v7.2.1c1 v7.2.1g v7.3.1d v7.4.0a v7.4.1d v7.4.2 v7.4.2a v7.4.2a4 v7.4.2c v7.4.2f v7.4.2g v7.4.2h v7.4.2j1 v8.0.2c v8.0.2d v8.1.2a v8.1.2d v8.1.2g v8.2.0 v8.2.0a v8.2.1a v8.2.1c v8.2.2a v8.2.2b v8.2.2d v8.2.3 v8.2.3a v8.2.3a1 v8.2.3a_cvr_855776_01 v8.2.3b v8.2.3c v8.2.3c1 v8.2.3d v8.2.3e v8.2.3e1 v8.2.3e2 v8.2.3f v9.0.1a v9.0.1b v9.0.1c v9.0.1d v9.1.1 v9.1.1b v9.1.1b_lw v9.1.1c v9.1.1d v9.1.1d2 v9.1.1d2_lw v9.1.1d7 v9.2.0a v9.2.0b v9.2.0b1 v9.2.0b1_lw v9.2.0c3 v9.2.0c4 v9.2.0c5 v9.2.1a v9.2.1a1 v9.2.1b v9.2.1c v9.2.1c2 v9.2.1c3 v9.2.2 v9.2.2a v9.2.2b v9.2.2c v9.2.2c1 v9.2.2c1_cvr_866435_01 v9.2.2d</block>
+  <block id="c26067dc417f41b1d330537c344e5aea" category="cell">202.0 Brocade 6505 Brocade 6510 Brocade 6520 Brocade 6558 Brocade 7840 Brocade 7850 擴充交換器 Brocade DCX8510-4 Brocade DCX8510-8 Brocade G610 Brocade G620 Brocade G630 Brocade G720 Brocade G730 Brocade G820 Brocade X6-4 Brocade X6-8 Brocade X7-4 Brocade X7-8 Brocade X8-8</block>
+  <block id="a102e46b48b67b281864ce4cd97d2f4d" category="cell">v10.0.0a v10.0.0a1 v10.0.0a1_cvr_881241_01 v10.0.0a_cvr_875417_01 v8.2.2d v8.2.3b v8.2.3c v8.2.3d v8.2.3e v8.2.3e2 v8.2.3f v9.0.0b v9.0.1c v9.0.1e1 v9.1.1a v9.1.1b v9.1.1c v9.1.1d v9.1.1d2 v9.1.1d7 v9.2.0a v9.2.0b v9.2.0b1 v9.2.0c1 v9.2.0c1_lw v9.2.0c3 v9.2.0c3_lw v9.2.0c5 v9.2.1 v9.2.1a v9.2.1b v9.2.1c v9.2.1c2 v9.2.1c3 v9.2.2 v9.2.2a v9.2.2b v9.2.2c v9.2.2c1 v9.2.2c1_lw v9.2.2c_lw v9.2.2d</block>
+  <block id="b2773e81aaa8d25eef8ebc0a023c1561" category="cell">8977-T48 8978-E04 8978-E08 8978-E16 DS-C9132T-K9 DS-C9148-16P-K9 DS-C9148-32P-K9 DS-C9148-48P-K9 DS-C9148S-K9 DS-C9148T-K9 DS-C9148V-K9 DS-C9220I-K9 DS-C9250I-K9 DS-C9396S-K9 DS-C9396T-K9 DS-C9396V-K9 DS-C9509 DS-C9513 DS-C9706 DS-C9710 DS-C9718 DS-HP-8GFC-K9 DS-HP-FC-K9 UCS-FI-6248UP UCS-FI-6296UP UCS-FI-6332-16UP UCS-FI-6454 UCS-FI-6536</block>
+  <block id="71be55c58ee71b68ee2830315b4d326c" category="cell">5.0(1a) 5.0(3)N2(4.13i) 5.0(3)N2(4.21j) 5.0(3)N2(4.21k) 5.0(3)N2(4.22c) 5.0(3)N2(4.23g) 5.0(3)N2(4.34a) 5.0(3)N2(4.36d) 5.0(4b) 5.2(2d) 5.2(8a) 5.2(8b) 5.2(8c) 5.2(8d) 5.2(8h) 5.2(8i) 6.2(11) 6.2(11b) 6.2(13) 6.2(13a) 6.2(17) 6.2(19) 6.2(21) 6.2(25) 6.2(29) 6.2(31) 6.2(33) 6.2(5a) 6.2(9) 6.2(9a) 7.3(0)DY(1) 8.1(1) 8.3(1) 8.3(2) 8.4(1) 8.4(1a) 8.4(2a) 8.4(2b) 8.4(2c) 8.4(2d) 8.4(2e) 8.4(2f) 8.5(1) 9.2(1) 9.2(1a) 9.2(2) 9.3(1) 9.3(2) 9.3(2a) 9.3(5)I42(1k) 9.3(5)I42(3f) 9.3(5)I42(3j) 9.3(5)I43(4b) 9.3(5)I43(6b) 9.4(1) 9.4(1a) 9.4(2a) 9.4(3) 9.4(3a) 9.4(3b) 9.4(4) 9.4(5)</block>
+  <block id="ad282f44202eebea7a16d22ab701d04c" category="cell">C4000 計算節點 C4600 C5036 C5066 C5212S C5218 C6025 C6035 C6055 C6208S CX8405 PXG1 虛擬 ROBO</block>
+  <block id="7c3084e08be302f8f8c078293a92d7b4" category="cell">6.8.2_u1_release-20240509_a5da4644 7.1.2_u2_release-20240925_66722648 7.1.2_u4_release-20250529_205b971c 7.3.2_release-20260123_529553a9 7.4.1_release-20260723_91509e0b</block>
+  <block id="d6f8eba85f25948622b4663a39171624" category="cell">A200 A2000 A300 A3000 A310 F200 F210 F710 F800 F900 F910 H400 H500 H5600 H600 H700 H7000 H710 NL410 X210</block>
+  <block id="1f681639e5be3297414ff2479e641a00" category="cell">9.10.1.2 9.10.1.3 9.10.1.4 9.10.1.5 9.10.1.6 9.10.1.7 9.10.1.8 9.12.0.1 9.13.0.0 9.13.0.1 9.13.1.0 9.13.1.1 9.14.0.1 9.2.1.13 9.2.1.8 9.4.0.12 9.4.0.6 9.5.0.6 9.5.0.8 9.7.1.13 9.7.1.16 9.7.1.2 9.7.1.4 9.7.1.5 9.7.1.6 9.7.1.7 v8.0.0.6 v8.0.0.7</block>
+  <block id="e7161cf0db4c489415956627bdcbf4c2" category="cell">A200 F800 H500 H5600 H700 NL400 NL410 S210 X200 X400 X410</block>
+  <block id="cc9c7c4698b864725ad5ecd28d5328ff" category="cell">9.10.1.2 9.10.1.4 9.2.1.13 9.8.0.2 v7.2.1.6 v8.0.0.6 v8.0.0.7 v8.0.1.1 v8.1.2.0</block>
+  <block id="c8e02338d1292218c47e907d564d9b20" category="cell">V10.0.0.2 V10.0.0.5 V10.0.1.5 V10.1.0.1 V10.1.0.5 V10.1.0.6 V10.1.0.8 V10.2.0.1 V10.2.0.12 V10.2.0.14 V10.2.0.9 V10.3.0.1 V10.3.0.5 V10.3.0.7 V10.3.0.9 V10.4.0.1 V10.4.0.11 V10.4.0.5 V9.2.3.11 V9.2.4.12 V9.2.4.15 V9.2.4.17 V9.2.4.18 V9.2.4.19 V9.2.4.20 V9.2.4.22 V9.2.4.9</block>
+  <block id="0e242cae680145a9a74d100644327c86" category="cell">5977.1131.1131 版本 615 5977.1151.1151 版本 60 版本 60 5978.711.711 版本 436 版本 436 5978.711.711 版本 484 版本 484 5978.714.714 版本 101 版本 101 5978.714.714 版本 117 版本 117 5978.714.714 版本 137 5978.714.714 版本 137 版本 137 5978.714.714 版本 145 5978.714.714 版本 145 版本 145 5978.714.714 版本 147 版本 147 5978.714.714 版本 149 版本 149 5978.714.714 版本 184 5978.714.714 版本 184 版本 184 5978.714.714 版本 185 版本 185 5978.714.714 版本 252 5978.714.714 版本 252 版本 252 5978.714.714 版本 79 版本 79 5978.720.720 版本 1 5978.720.720 版本 17 5978.720.720 版本 27 5978.720.720 版本 27 版本 27 5978.720.720 版本 32 版本 32 5978.720.720 版本 33 5978.720.720 版本 33 版本 33 5978.720.720 版本 38 版本 38 5978.720.720 版本 56 5978.720.720 版本 56 版本 56 5978.720.720 版本 6 5978.720.720 版本 69 版本 69 5978.720.720 版本 77 版本 77 5978.720.720 版本 79 6079.225.0 版本 216 版本 216 6079.275.0 版本 221 版本 221 6079.275.0 版本 250 版本 250 6079.275.0 版本 292 版本 292 6079.275.0 版本 396 版本 396 6079.280.0 版本 37 版本 37 6079.280.0 版本 53 版本 53 6079.325.0 版本 216 版本 216 6079.325.0 版本 231 版本 231 6079.325.0 版本 244 版本 244 6079.325.0 版本 253 版本 253 6079.325.0 版本 275 版本 275 6079.325.0 版本 310 版本 310 6079.325.0 版本 324 版本 324 6079.325.0 版本 84 版本 84</block>
+  <block id="a5549402739a23a71d8643778260f660" category="cell">VG8 VNX5200 VNX5300</block>
+  <block id="d7841ef2d1ae321eeba6b4c854098c86" category="cell">7.1.76-4 7.1.79-8 8.1.9-155</block>
+  <block id="bbf408648ceb68e4563d29c468532f33" category="cell">VNX5100 VNX5200 VNX5300 VNX5400 VNX5500 VNX5600 VNX7600</block>
+  <block id="2e6d4ae3cb287230bad78fdcc0998d30" category="cell">05.32.000.5.218 05.32.000.5.219 05.32.000.5.221 05.32.000.5.249 05.33.009.5.155 05.33.009.5.184 05.33.009.5.231 05.33.021.5.256 05.33.021.5.266</block>
+  <block id="6fcdca50ceda1420c53a7d75e07bd560" category="cell">6.2.1.30-663869 7.10.1.15-1078832 7.10.1.60-1161253 7.10.1.80-1198417 7.13.1.20-1148611 7.13.1.40-1186473 7.13.1.80-1246402 7.7.5.25-1078970 8.3.0.15-1161254 8.3.1.0-1175411 8.3.1.10-1194895 8.3.1.20-1208918 8.3.1.30-1226406 8.3.1.40-1247360 8.3.1.45-1261709 8.3.1.50-1268129 8.4.0.0-1175068 8.6.1.20-1246795</block>
+  <block id="0ba2a2572b37698cfb0b2f9af837efc1" category="cell">3.7.0.0 3.8.0.2 3.8.1.1 3.8.1.3 3.8.1.4 3.8.1.6 3.9.0.0 4.1.0.2 4.1.0.3 4.1.0.4 4.2.0.0</block>
+  <block id="9ffb56ddea6d7092cfdb4fd7677f4ef1" category="cell">3.2.0.1 3.6.1.1 4.0.1.3 4.1.0.0 4.1.0.1 4.1.0.2 4.1.0.3 4.1.0.4 4.1.0.5 4.3.1.0 4.3.1.1 4.3.1.2 5.0.0.1 5.0.0.2</block>
+  <block id="33d604c934e3aff2954614be6c447f79" category="section-title">EMC ScaleIO 與 PowerFlex REST</block>
+  <block id="af4f7a2cf09048574e5c6e1559820139" category="cell">R3_5.1201.101 R3_6.1000.134</block>
+  <block id="1cb3a4910aebba077a5922621afe7466" category="cell">主機 IP</block>
+  <block id="ef2bf1c7f778e627ac9f8b235393cefc" category="cell">EMC ScaleIO 與 PowerFlex REST API</block>
+  <block id="962a04efc9e8dea6130a585f5d54a104" category="cell">V10.0.0.0 V10.2.0.0 V10.2.0.2 V10.3.0.0 V10.3.0.1 V9.1.0.6 V9.2.3.0 V9.2.3.1 V9.2.3.6 V9.2.4.13 V9.2.4.14 V9.2.4.15 V9.2.4.3 V9.2.4.6 V9.2.4.7 V9.2.4.8 V9.2.4.9 不可用</block>
+  <block id="cc0ae5f84c6cb61500f9926e278e8e0d" category="cell">PowerMax_2000 PowerMax_8000 VMAX-1 VMAX100K VMAX250F VMAX400K VMAX450F VMAX950F</block>
+  <block id="4de82187582c4e31ab1dc7f8c58aa942" category="cell">5876.286.194(16F40000) 版本 115 5876.309.196(16F40000) 版本 94 5977.1151.1151(17590000) 版本 60 5978.711.711(175A0000) 版本 448 5978.714.714(175A0000) 版本 117 5978.714.714(175A0000) 版本 137 5978.714.714(175A0000) 版本 145 5978.714.714(175A0000) 版本 147 5978.714.714(175A0000) 版本 185 5978.714.714(175A0000) 版本 252 5978.714.714(175A0000) 版本 49 5978.714.714(175A0000) 版本 53 5978.720.720(175A0000) 版本 1 5978.720.720(175A0000) 版本 27 5978.720.720(175A0000) 版本 38 5978.720.720(175A0000) 版本 56 5978.720.720(175A0000) 版本 6 5978.720.720(175A0000) 版本 75</block>
+  <block id="df86ba1c6b6c2713f87b07ea24be688e" category="cell">Unity 300 Unity 300F Unity 350F Unity 380F Unity 400 Unity 450F Unity 480 Unity 480F Unity 550F Unity 600 Unity 650F Unity 680 Unity 880 Unity 880F</block>
+  <block id="a0fe41f1a0da1d8fe527902213563fcc" category="cell">4.1.2.9257522 5.1.2.0.5.007 5.3.0.0.5.120 5.3.1.0.5.008 5.4.0.0.5.094 5.4.1.0.5.006 5.5.0.0.5.259 5.5.2.0.5.014 5.5.3.0.5.057 5.5.4.0.5.037</block>
+  <block id="25cb38755739a2fbae3c3dabbc6358e6" category="cell">6.2.0.03.00.02 6.2.0.07.00.02 6.2.1.0.0.519 6.2.1.1.0.78 6.2.2.0.1.3 9.1.0.0.0</block>
+  <block id="8f92d6909bc860a08874aeda811da437" category="cell">10.0.1.4 10.1.0.100 9.7.2.27 9.7.3.14</block>
+  <block id="eb83b564c778373d3922af30d199713c" category="cell">0983/A-H 0984/B-H 0986/A-H DKC:60-08-22 DKC:70-06-43 DKC:90-09-28 SVP:60-08-21/00 SVP:70-06-30/00 SVP:90-09-28/00</block>
+  <block id="eac439352b24aed4d081072d313e4072" category="cell">VSP 5100 VSP 5200 VSP 5200H VSP 5500 VSP 5600 VSP 5600H VSP E1090 VSP E1090H VSP E590 VSP E590H VSP E790 VSP F1500 VSP F370 VSP F700 VSP F900 VSP G1000 VSP G350 VSP G800 VSP One B26 VSP One B28 VSP One B85 XP8</block>
+  <block id="d785556c2638b50692b8d8e006bb47fa" category="cell">80-06-86-00/00:01-76-03/03 80-06-96-00/00:01-76-03/03 80-06-96-00/00:01-88-03/03 83-05-51-60/00:01-76-03/03 83-05-51-60/00:01-88-03/03 88-08-10-60/00:01-76-03/03 88-08-12-60/00:01-76-03/03 88-08-13-60/01:01-76-03/03 88-08-16-21/10:01-76-03/03 88-08-19-60/00:01-76-03/03 88-08-19-60/00:01-88-03/03 88-08-20-60/00:01-76-03/03 88-08-21-60/00:01-76-03/03 88-08-21-60/00:01-88-03/03 90-09-24-00/01:01-76-03/03 90-09-24:01.72.00 90-09-26-00/00:01-76-03/03 90-09-27-00/01:01-76-03/03 90-09-28-00/00:01-65-03/05 90-09-28-00/00:01-76-03/03 90-09-30-00/00:01-76-03/03 90-09-30-00/00:01-87-03/03 90-09-30-00/00:01-88-03/03 90-09-31-00/20:01-76-03/03 90-09-31-00/20:01-88-03/03 90-09-32-00/00:01-76-03/03 90-09-32-00/00:01-87-03/03 93-07-22-40/00:01-76-03/03 93-07-29-40/00:01-76-03/03 93-07-29-80/00:01-76-03/03 93-07-29-80/00:01-87-03/03 93-07-30-40/20:01-76-03/03 93-07-30-40/20:01-88-03/03 93-07-30-80/20:01-76-03/03 93-07-30-80/20:01-88-03/03 93-07-31-80/00:01-87-03/03 A0-05-43-00/00:01-88-03/03 A3-04-21-40/00:01-88-03/03 A3-04-22-40/00:01-76-03/03 A3-04-22-40/00:01-88-03/03 A3-04-23-40/01:01-88-03/03 A3-05-22-40/00:01-88-03/03 null:null</block>
+  <block id="a889de5ab5832d463d9f700d117baa2b" category="cell">10.4.20 發行類型：標準支援版本 10.5.50 發行類型：標準支援版本 10.5.55 發行類型：標準支援版本 10.5.64 發行類型：有限可用性版本 3.1.2 （MU3） P16 3.1.3 （MU1） P07 3.2.1 （MU3） P17 3.2.2 （MU4） P51 3.2.2 （MU4） P56 3.2.2 （MU6） 3.2.2 （MU6） P99 3.3.1 （MU2） P30 3.3.1 （MU2） P32 3.3.1 （MU3） P50 3.3.1 （MU5） P126 3.3.1 （MU5） P132 3.3.2 （MU1） P08 3.3.2 （MU1） P10 4.4.1 發行類型：標準支援版本 4.5.15 發行類型：延伸支援版本 4.5.3 發行類型：延伸支援版本 4.5.8 發行類型：延伸支援版本 4.6.1 發行類型：延伸支援版本 4.6.20 發行類型：延伸支援版本 4.6.21 發行類型：有限可用性版本 4.6.5 發行類型：延伸支援版本 9.6.20 發行類型：延伸支援版本 P09 P10 P102 P106 P107 P109 P111 P112 P113 P114 P115 P118 P119 P120 P122 P125 P126 P127 P128 P129 P131 P132 P133 P135 P136 P137 P138 P139 P140 P141 P142 P145 P146 P148 P149 P15 P150 P151 P153 P154 P155 P156 P157 P160 P161 P162 P164 P165 P166 P167 P168 P170 P172 P173 P175 P177 P18 P180 P185 P19 P20 P23 P25 P27 P28 P29 P30 P32 P34 P37 P38 P40 P45 P48 P49 P50 P51 P52 P56 P58 P59 P61 P72 P74 P76 P77 P84 P85 P90 P91 P92 P93 P94 P96 P97 P98</block>
+  <block id="f3c12da767141dbbf54e88400875227d" category="cell">5310 V5 5500 V3 5500 V5 5800 V3 6800 V3 6800 V5 Dorado 18000 V6 NVMe Dorado 5000 V3 Dorado 6000 V3 Dorado 6000 V6 NVMe</block>
+  <block id="1e5aa2aadce2b3be1f8f97c084024ee3" category="cell">V300R001C01 V300R001C21 V300R002C10 V300R006C50 V500R007C10 V500R007C61 V500R007C71 Kunpeng V600R005C26 V600R005C27 V600R005C50</block>
+  <block id="593e89e560d43a1eadda21b3941cf678" category="cell">2072-24F 2072-24G 2072-2H4 2072-2N4 2072-324 2072-3N4 2076-12F 2076-24F 2076-24G 2076-524 2076-624 2076-724 2076-824 2076-AF6 2076-AFF 2078-12C 2078-12E 2078-12F 2078-224 2078-24C 2078-24E 2078-24F 2078-324 2078-AF3 4657-924 4657-92G 4662-12G 4662-6H2 4662-7H2 4666-AH8 4666-UH8 4680-24H 4680-3P2 4680-3P4 4680-92H 4983-AH8 5075-A30 5078-A40 5127-A20 9848-AF8 9848-AG8 9848-UG8 SVC</block>
+  <block id="697b5e4a8309c1b89da8920c125f5e70" category="cell">7.7.1.8 7.8.1.10 7.8.1.11 7.8.1.12 7.8.1.5 8.1.3.5 8.2.1.8 8.3.1.5 8.4.0.11 8.4.0.15 8.4.0.9 8.5.0.11 8.5.0.12 8.5.0.13 8.5.0.14 8.5.0.16 8.5.0.17 8.5.0.18 8.5.0.5 8.5.0.7 8.5.0.8 8.5.0.9 8.6.0.10 8.6.0.11 8.6.0.2 8.6.0.3 8.6.0.4 8.6.0.5 8.6.0.6 8.6.0.9 8.7.0.0 8.7.0.10 8.7.0.11 8.7.0.13 8.7.0.4 8.7.0.5 8.7.0.6 8.7.0.7 8.7.0.8 8.7.0.9 8.7.3.3 9.1.0.4 9.1.0.5 9.1.0.6 9.1.0.7 9.1.2.1 9.1.3.0 9.1.3.1 9.1.3.2</block>
+  <block id="80252fded15c1c7eeef09400011b5f10" category="cell">ONTAPI 版本=1.17 ONTAPI 版本=1.19 ONTAPI 版本=1.21</block>
+  <block id="1f86956518c236f4426b7ca2f8bbbc87" category="cell">FAS2040 FAS2220 FAS2240-2 FAS2552 FAS3250 FAS3270 FAS8040</block>
+  <block id="d2ef5775227b7992c0bea92feb8e9257" category="cell">8.1.1 7-Mode 8.1.4P9D18 7-Mode 8.2.3P2 7-Mode 8.2.4P4 7-Mode 8.2.4P5 7-Mode 8.2.5P4 7-Mode 8.2.5P5 7-Mode</block>
+  <block id="feaf916d175a7055c51025f45eb18410" category="list-text">8.2.3P5 叢集式 Data ONTAP</block>
+  <block id="b3e6e9a94bd30dba35c7fc7476ff01c0" category="list-text">8.3.2P12 叢集式 Data ONTAP</block>
+  <block id="dd3986e1338365243018df585c7a3547" category="list-text">9.0.0 叢集式 Data ONTAP</block>
+  <block id="5cdf8f9e38fb93d7e29db681f747b0fb" category="list-text">9.1.0P17 叢集式 Data ONTAP</block>
+  <block id="028a86682c8617e11878cb3cba8573c9" category="list-text">9.1.0P19 叢集式 Data ONTAP</block>
+  <block id="b91fff141813ed0d4804d7e3a9ee146b" category="list-text">9.1.0P3 叢集式 Data ONTAP</block>
+  <block id="0c46afe446634ffde7cf0eee720cc859" category="list-text">9.10.0 叢集式 Data ONTAP</block>
+  <block id="e2a771d42a67f1e8155af579162ec5bd" category="list-text">9.10.1 叢集式 Data ONTAP</block>
+  <block id="16d5686662c10fea5c225c046adb6e22" category="list-text">9.10.1P10 叢集式 Data ONTAP</block>
+  <block id="0532145d06f4bbfbb048b3db95420942" category="list-text">9.10.1P12 叢集式 Data ONTAP</block>
+  <block id="8075309415b1f57f60105e5c2e075090" category="list-text">9.10.1P13 叢集式 Data ONTAP</block>
+  <block id="8d81ace0b9dedec299323d620c61671f" category="list-text">9.10.1P14 叢集式 Data ONTAP</block>
+  <block id="d4f1a807626dd5ca673bdeaa4312c803" category="list-text">9.10.1P17 叢集式 Data ONTAP</block>
+  <block id="b1aadda7a1a915d099ebdc6d4cb34409" category="list-text">9.10.1P20 叢集式 Data ONTAP</block>
+  <block id="1e2bcfe401ad0d6c278834ef3a5e97a0" category="list-text">9.10.1P4 叢集式 Data ONTAP</block>
+  <block id="e6745aa73a096bc747656bfabf558a5e" category="list-text">9.11.1 叢集式 Data ONTAP</block>
+  <block id="7c5161714a41d8606a89b4d3aa95dcd9" category="list-text">9.11.1P10 叢集式 Data ONTAP</block>
+  <block id="890a6a02ee4607b013e89f5a28dc3c0c" category="list-text">9.11.1P11 叢集式 Data ONTAP</block>
+  <block id="0d38353fad550264cf2bc2a4e6130a88" category="list-text">9.11.1P12 叢集式 Data ONTAP</block>
+  <block id="c2da6a1095e08bb33254f26f55552b9a" category="list-text">9.11.1P13 叢集式 Data ONTAP</block>
+  <block id="95936f7621365749b2e1429e474366b5" category="list-text">9.11.1P14 叢集式 Data ONTAP</block>
+  <block id="8dafede7335efc253eaaff242fbdad80" category="list-text">9.11.1P15 叢集式 Data ONTAP</block>
+  <block id="1df9a737fbe700258405b02099d51c50" category="list-text">9.11.1P17 叢集式 Data ONTAP</block>
+  <block id="f3e8a0dd3bfa40da2e4c94480490b8e6" category="list-text">9.11.1P18 叢集式 Data ONTAP</block>
+  <block id="20cb36e9ab7239390095fedfacddc632" category="list-text">9.11.1P19 叢集式 Data ONTAP</block>
+  <block id="da052b2a1cf39d9528d7f3e9b3bae500" category="list-text">9.11.1P20 叢集式 Data ONTAP</block>
+  <block id="0b5cd5173080fe818733e109b5538c91" category="list-text">9.11.1P3 叢集式 Data ONTAP</block>
+  <block id="3b35a02247664ae5149033ddaacf31f6" category="list-text">9.11.1P5 叢集式 Data ONTAP</block>
+  <block id="cea33937c161fb85046bd6a758050115" category="list-text">9.11.1P7 叢集式 Data ONTAP</block>
+  <block id="bbe133767e2d69e870e04a7f536de06b" category="list-text">9.11.1P8 叢集式 Data ONTAP</block>
+  <block id="9cb1d13546dfc0e89e8b130345f8a797" category="list-text">9.12.1 叢集式 Data ONTAP</block>
+  <block id="e35e2e774af82255017b3c432f9a3a3f" category="list-text">9.12.1P1 叢集式 Data ONTAP</block>
+  <block id="49569e696dcc9fd92949f6570afa7e71" category="list-text">9.12.1P10 叢集式 Data ONTAP</block>
+  <block id="26fa542a5adb6ce49f4bb3574ef5540f" category="list-text">9.12.1P11 叢集式 Data ONTAP</block>
+  <block id="f8a372211b592ab844fb6f4d1e6d0bc4" category="list-text">9.12.1P12 叢集式 Data ONTAP</block>
+  <block id="8988cff507036b0e141e69538e82285b" category="list-text">9.12.1P13 叢集式 Data ONTAP</block>
+  <block id="92d21bf172f74e41e16c21f4f6310045" category="list-text">9.12.1P14 叢集式 Data ONTAP</block>
+  <block id="9e81f9eda0d8bf8749b652fab0426ff8" category="list-text">9.12.1P15 叢集式 Data ONTAP</block>
+  <block id="52cb71a8e4aabe2445b81690dd5fbb7e" category="list-text">9.12.1P16 叢集式 Data ONTAP</block>
+  <block id="d76f6062e307daafa7144ebfb89bd1c8" category="list-text">9.12.1P17 叢集式 Data ONTAP</block>
+  <block id="1abd77f7a2d41f84fa4332e2cc1e2ef6" category="list-text">9.12.1P18 叢集式 Data ONTAP</block>
+  <block id="f4fc5290cdffd41ef91d3624a1f42224" category="list-text">9.12.1P19 叢集式 Data ONTAP</block>
+  <block id="62fd6e5fb6681f9717ff3f070eba300c" category="list-text">9.12.1P2 叢集式 Data ONTAP</block>
+  <block id="2d3b16c4cae2ea47e120b5189f5c2ca0" category="list-text">9.12.1P20 叢集式 Data ONTAP</block>
+  <block id="7a496284002a065c5cffe48c9e811a80" category="list-text">9.12.1P3 叢集式 Data ONTAP</block>
+  <block id="1ac3eedce318e4cf73b42e923b1ffc4a" category="list-text">9.12.1P4 叢集式 Data ONTAP</block>
+  <block id="62e5bbad7511f1cf2a9a39afd08ddcad" category="list-text">9.12.1P5 叢集式 Data ONTAP</block>
+  <block id="cd82515076fb4fc7833e61c5b49a3b1d" category="list-text">9.12.1P6 叢集式 Data ONTAP</block>
+  <block id="8c5fbde963d1dd0e47c8a0eccf03fa5a" category="list-text">9.12.1P7 叢集式 Data ONTAP</block>
+  <block id="d1a17d52fb5ed7755a060356e34ac052" category="list-text">9.12.1P9 叢集式 Data ONTAP</block>
+  <block id="f2466f10ee57036193d2965664860476" category="list-text">9.13.0 叢集式 Data ONTAP</block>
+  <block id="36ef4d9b04ec77a15808300f988d2f06" category="list-text">9.13.1 叢集式 Data ONTAP</block>
+  <block id="d8db09ba1d9601d8b6467a4447b9f472" category="list-text">9.13.1P1 叢集式 Data ONTAP</block>
+  <block id="e152613102525a513a0af54bb9d3d0bf" category="list-text">9.13.1P10 叢集式 Data ONTAP</block>
+  <block id="6e6d67d1c5da93de3720fc9266647241" category="list-text">9.13.1P11 叢集式 Data ONTAP</block>
+  <block id="b18426b515d522e3e6ba11c1ef735da8" category="list-text">9.13.1P12 叢集式 Data ONTAP</block>
+  <block id="3dadbe945cd575b5d0ddf77b931653a2" category="list-text">9.13.1P13 叢集式 Data ONTAP</block>
+  <block id="cfc6926d65cfc0f66af495b2db5140ff" category="list-text">9.13.1P14 叢集式 Data ONTAP</block>
+  <block id="04369959360d80933eb53012b9c49035" category="list-text">9.13.1P16 叢集式 Data ONTAP</block>
+  <block id="33ac3e9949010b2524a004f47da50032" category="list-text">9.13.1P17 叢集式 Data ONTAP</block>
+  <block id="29bd155af5db184449e5685b17c77719" category="list-text">9.13.1P18 叢集式 Data ONTAP</block>
+  <block id="4cb024dca7a87de34fc213224c418a68" category="list-text">9.13.1P19 叢集式 Data ONTAP</block>
+  <block id="c8a968026ed8530a5ef3009ed3dd32e0" category="list-text">9.13.1P2 叢集式 Data ONTAP</block>
+  <block id="902b72acc90d400c3a67454ddabff076" category="list-text">9.13.1P20 叢集式 Data ONTAP</block>
+  <block id="7f481a87ea302eebaf28c5d80bc8f137" category="list-text">9.13.1P21 叢集式 Data ONTAP</block>
+  <block id="9c9944bc46d6967e85234344a4aceca4" category="list-text">9.13.1P3 叢集式 Data ONTAP</block>
+  <block id="4e9fd5ef0ac79dc00c02ca54d9e06ec6" category="list-text">9.13.1P4 叢集式 Data ONTAP</block>
+  <block id="b2baa7d99588682624d1eee256729636" category="list-text">9.13.1P6 叢集式 Data ONTAP</block>
+  <block id="8d0e2efee0041b087351e2be74028c14" category="list-text">9.13.1P7 叢集式 Data ONTAP</block>
+  <block id="6bfd527dca666f4d6b27b6bf3e59ae0d" category="list-text">9.13.1P8 叢集式 Data ONTAP</block>
+  <block id="f440abc0f497dfd30d454bea2028b972" category="list-text">9.13.1P9 叢集式 Data ONTAP</block>
+  <block id="3c4cdd7afaf2d63acfbe0027d5b0d4f5" category="list-text">9.14.0 叢集式 Data ONTAP</block>
+  <block id="c57a74f4d6921c27cc2d66211484c9ea" category="list-text">9.14.0P1 叢集式 Data ONTAP</block>
+  <block id="ad1013aabdcd524a7b56eb487a33682f" category="list-text">9.14.1 叢集式 Data ONTAP</block>
+  <block id="85d73ed7c6a84c3ae5dfc28ff95e040f" category="list-text">9.14.1P1 叢集式 Data ONTAP</block>
+  <block id="a77ec1c82d5602aa3086a7b2385bd016" category="list-text">9.14.1P10 叢集式 Data ONTAP</block>
+  <block id="24fd3ee93336e55515ab2a7b8e30fa30" category="list-text">9.14.1P11 叢集式 Data ONTAP</block>
+  <block id="1d2e4b4d672b305b4ae01d00167107ed" category="list-text">9.14.1P12 叢集式 Data ONTAP</block>
+  <block id="87562193fa16e52e7a7b9db570d6ed12" category="list-text">9.14.1P13 叢集式 Data ONTAP</block>
+  <block id="f78d24cd27d4efafbfcfee09df470739" category="list-text">9.14.1P14 叢集式 Data ONTAP</block>
+  <block id="a3d513d52372c1201a8c45fdc593d335" category="list-text">9.14.1P15 叢集式 Data ONTAP</block>
+  <block id="dd367877aa3b0147a441278a7f5b019f" category="list-text">9.14.1P16 叢集式 Data ONTAP</block>
+  <block id="e1a420c36be86215a14cf9f5e36aceec" category="list-text">9.14.1P17 叢集式 Data ONTAP</block>
+  <block id="878d3be820c28c3b353e4ba89f26f903" category="list-text">9.14.1P18 叢集式 Data ONTAP</block>
+  <block id="ac2f173bff4791056aa269cce52c28aa" category="list-text">9.14.1P2 叢集式 Data ONTAP</block>
+  <block id="0ba6868e634bc8efe50f3d92a2999b47" category="list-text">9.14.1P4 叢集式 Data ONTAP</block>
+  <block id="03ed9f14689b039cbbd195520e150c5f" category="list-text">9.14.1P5 叢集式 Data ONTAP</block>
+  <block id="b6bf8cd749cfa4cd0cae5421be1e0b12" category="list-text">9.14.1P6 叢集式 Data ONTAP</block>
+  <block id="8227a69443f8402539c1d4490a4ff955" category="list-text">9.14.1P7 叢集式 Data ONTAP</block>
+  <block id="2c29b4d227f341cf2b7990ee205f799d" category="list-text">9.14.1P8 叢集式 Data ONTAP</block>
+  <block id="9acd7709bf7c8da92fb306f92a2df6e1" category="list-text">9.14.1P9 叢集式 Data ONTAP</block>
+  <block id="94720b3a1973b172fc09adf91d1bf571" category="list-text">9.15.0P1 叢集式 Data ONTAP</block>
+  <block id="bf07592c55cb3a858c86bb627e827f58" category="list-text">9.15.1 叢集式 Data ONTAP</block>
+  <block id="625745723508724f1ce07458e5fed67e" category="list-text">9.15.1P10 叢集式 Data ONTAP</block>
+  <block id="7b67942e85a655b4b4199515534280fd" category="list-text">9.15.1P11 叢集式 Data ONTAP</block>
+  <block id="e556115133f2836b554b3feafd28d858" category="list-text">9.15.1P12 叢集式 Data ONTAP</block>
+  <block id="14e6721a1132a26e878cb5b358dd50d6" category="list-text">9.15.1P13 叢集式 Data ONTAP</block>
+  <block id="120b38ff053c2979cfc0bc52f49bc508" category="list-text">9.15.1P14 叢集式 Data ONTAP</block>
+  <block id="04c238ef1e671e1b03dc128d148cf2fd" category="list-text">9.15.1P15 叢集式 Data ONTAP</block>
+  <block id="12d7063dc78ee26d3a0d12d5d2f61c60" category="list-text">9.15.1P16 叢集式 Data ONTAP</block>
+  <block id="6e5b5b03ed7e8ef151d8e6d4beb21b35" category="list-text">9.15.1P17 叢集式 Data ONTAP</block>
+  <block id="bfa571734e64eb82f10950f9cd946b1c" category="list-text">9.15.1P19 叢集式 Data ONTAP</block>
+  <block id="e24b137f2e6bddbfc489a79564fc707c" category="list-text">9.15.1P2 叢集式 Data ONTAP</block>
+  <block id="8902e56e80b5bedd3e26f35f9fa691cb" category="list-text">9.15.1P20 叢集式 Data ONTAP</block>
+  <block id="e068fff5e2e5fd0a1410d7d0c2da1e45" category="list-text">9.15.1P3 叢集式 Data ONTAP</block>
+  <block id="dc8eb5a4d431bc4e5ca9349529faed12" category="list-text">9.15.1P4 叢集式 Data ONTAP</block>
+  <block id="9a5f16f4a4562dbae4bdbb1cf898c523" category="list-text">9.15.1P5 叢集式 Data ONTAP</block>
+  <block id="cc7922831a538f5f67bb56304c97abe9" category="list-text">9.15.1P6 叢集式 Data ONTAP</block>
+  <block id="b6a8891abf32fa568699150df90830d0" category="list-text">9.15.1P7 叢集式 Data ONTAP</block>
+  <block id="4f74047d1fdf802afdba83f046f53336" category="list-text">9.15.1P8 叢集式 Data ONTAP</block>
+  <block id="e37ef120c05d127567e3d012ed74dc67" category="list-text">9.16.1 叢集式 Data ONTAP</block>
+  <block id="5d0f15b54a448372cb67be94dcd2a1a2" category="list-text">9.16.1P1 叢集式 Data ONTAP</block>
+  <block id="8401693c84cd078de810f459eecd9253" category="list-text">9.16.1P10 叢集式 Data ONTAP</block>
+  <block id="a04f3eac9f042891a5829a5e1e63acaa" category="list-text">9.16.1P11 叢集式 Data ONTAP</block>
+  <block id="fd114088a33276c8cda8e53b152652cd" category="list-text">9.16.1P12 叢集式 Data ONTAP</block>
+  <block id="43e99f5ab7c39d3293fbb21f9e96153a" category="list-text">9.16.1P13 叢集式 Data ONTAP</block>
+  <block id="884e4d601e1a2d49fd07af42bdf83c33" category="list-text">9.16.1P14 叢集式 Data ONTAP</block>
+  <block id="5de70b86db55c756a4084ed604315c2c" category="list-text">9.16.1P15 叢集式 Data ONTAP</block>
+  <block id="d6961c43304d98fe69c687849112bbcd" category="list-text">9.16.1P2 叢集式 Data ONTAP</block>
+  <block id="bbeba7de5cbd2f03d92defc8291e1f6f" category="list-text">9.16.1P3 叢集式 Data ONTAP</block>
+  <block id="8684c5db379e52d5824909fbbbcc1b77" category="list-text">9.16.1P4 叢集式 Data ONTAP</block>
+  <block id="50d0dcf3ad70b97c903578e8f6fba46a" category="list-text">9.16.1P5 叢集式 Data ONTAP</block>
+  <block id="1a07ff661ef7ef6d660d4145be0dad82" category="list-text">9.16.1P6 叢集式 Data ONTAP</block>
+  <block id="ff94f8baac4f2333b8a3e4a6d741e828" category="list-text">9.16.1P7 叢集式 Data ONTAP</block>
+  <block id="047372bd83f5eba41582c60570870291" category="list-text">9.16.1P8 叢集式 Data ONTAP</block>
+  <block id="90b7732af63ce672f3bd5f3533965d31" category="list-text">9.16.1P9 叢集式 Data ONTAP</block>
+  <block id="caf0fd84b1fcfb65334ed09bcb55e3be" category="list-text">9.17.1 叢集式 Data ONTAP</block>
+  <block id="636caa763cdf3eeb029cda388d8333cc" category="list-text">9.17.1P1 叢集式 Data ONTAP</block>
+  <block id="a3ad7388c4beb44f16d745c52530aa1d" category="list-text">9.17.1P10 叢集式 Data ONTAP</block>
+  <block id="3ff0ce2da333bd4429ee3e47ea573c43" category="list-text">9.17.1P11 叢集式 Data ONTAP</block>
+  <block id="c405b7e439bdaa74c04d43dd82e347a6" category="list-text">9.17.1P2 叢集式 Data ONTAP</block>
+  <block id="1a5d8c806ca99639dcc77908b1864859" category="list-text">9.17.1P3 叢集式 Data ONTAP</block>
+  <block id="03fd2dc199339bf03a9f4e7204a3c5e2" category="list-text">9.17.1P4 叢集式 Data ONTAP</block>
+  <block id="f9b974ae7b2a425c4c82be6e159324d1" category="list-text">9.17.1P5 叢集式 Data ONTAP</block>
+  <block id="d2f52c8e59724ea7eaebe6e7e0d4cd7d" category="list-text">9.17.1P6 叢集式 Data ONTAP</block>
+  <block id="713a49248e16fcbbc4da44ba10430a3b" category="list-text">9.17.1P6D2 叢集式 Data ONTAP</block>
+  <block id="ff5a277aafdca468151fd6154d0fbce3" category="list-text">9.17.1P7 叢集式 Data ONTAP</block>
+  <block id="b70172e74550091ef05231641469031b" category="list-text">9.17.1P8 叢集式 Data ONTAP</block>
+  <block id="916b2538e1080ba232a296a6c3215b78" category="list-text">9.17.1P9 叢集式 Data ONTAP</block>
+  <block id="d614e2de47f48676473bc9b8d2ef4068" category="list-text">9.18.1 叢集式 Data ONTAP</block>
+  <block id="331746747986181e41fceb6cd38a2592" category="list-text">9.18.1P1 叢集式 Data ONTAP</block>
+  <block id="3dd914240ca49003ea1b214158baf5ec" category="list-text">9.18.1P2 叢集式 Data ONTAP</block>
+  <block id="8f574b3b209cbda2ef4ed9159b1f88de" category="list-text">9.18.1P3 叢集式 Data ONTAP</block>
+  <block id="1cf6db292fc4585380c15df027b29f09" category="list-text">9.18.1P4 叢集式 Data ONTAP</block>
+  <block id="d0dd019a76f3efeb5a17e493862c7c96" category="list-text">9.18.1P5 叢集式 Data ONTAP</block>
+  <block id="cf649b9942a0f4d9cd9d9304ba4bf7ac" category="list-text">9.18.1P6 叢集式 Data ONTAP</block>
+  <block id="a0187649ea08ef385c1a135d2992af4a" category="list-text">9.18.1P7 叢集式 Data ONTAP</block>
+  <block id="d351014eb90d07b446ee013ca8e32bef" category="list-text">9.19.1 叢集式 Data ONTAP</block>
+  <block id="86a96804150b370f0e0bfc1cee4dde26" category="list-text">9.19.1P2 叢集式 Data ONTAP</block>
+  <block id="24e3c25a874d9ef30f85005d0085de55" category="list-text">9.19.1P3 叢集式 Data ONTAP</block>
+  <block id="e24afec1864e25165ac87ce567b91c0f" category="list-text">9.19.1X39 叢集式 Data ONTAP</block>
+  <block id="1ce9a820a7d3583403d9e2d7aeff159a" category="list-text">9.19.1X42 叢集式 Data ONTAP</block>
+  <block id="1cb0d382166edaf0305ce23796727265" category="list-text">9.19.1X43 叢集式 Data ONTAP</block>
+  <block id="da5cd3363900c611e8df150ba569752f" category="list-text">9.20.1 叢集式 Data ONTAP</block>
+  <block id="a81177995fffaf4d3c74ca2d64210351" category="list-text">9.4.0P2 叢集式 Data ONTAP</block>
+  <block id="bd16f17e687c38063ce4583445a3b3c5" category="list-text">9.5.0P16 叢集式 Data ONTAP</block>
+  <block id="91b478140ad312f9428d34cbde3854b0" category="list-text">9.5.0P18 叢集式 Data ONTAP</block>
+  <block id="b8a5cf5f26bcc0cd7ad6a32a8b30f509" category="list-text">9.5.0P2 叢集式 Data ONTAP</block>
+  <block id="85f5460777bfa3866e47d384932af8f3" category="list-text">9.5.0P7 叢集式 Data ONTAP</block>
+  <block id="055c81116ca810eebf914740600475f1" category="list-text">9.6.0 叢集式 Data ONTAP</block>
+  <block id="70948e888f0282db5b527b9dd7f6abaf" category="list-text">9.6.0P11 叢集式 Data ONTAP</block>
+  <block id="700dc73124c5d941358a83e6904c0a2f" category="list-text">9.6.0P2 叢集式 Data ONTAP</block>
+  <block id="b92eb5012c521796529d89350b28f589" category="list-text">9.7.0P12 叢集式 Data ONTAP</block>
+  <block id="66db8589ef4dce3847674bdf2396b248" category="list-text">9.7.0P17 叢集式 Data ONTAP</block>
+  <block id="5159aa94466de0dd6803ef3c74a3f4de" category="list-text">9.7.0P19 叢集式 Data ON</block>
+  <block id="822d8b4e8a3b272b08f663c2867bc523" category="list-text">9.7.0P20 叢集式 Data ONTAP</block>
+  <block id="84036c85a823bd73a3a046f897647a05" category="list-text">9.7.0P21 叢集式 Data ONTAP</block>
+  <block id="b9c44f7c6a8ade497fcf672a84bfbd15" category="list-text">9.7.0P22 叢集式 Data ONTAP</block>
+  <block id="9b6977df9b21487e1ba7674e100922cb" category="list-text">9.7.0P23 叢集式 Data ONTAP</block>
+  <block id="bfc097c04752208142005a8048ab1f51" category="list-text">9.7.0P6 叢集式 Data ONTAP</block>
+  <block id="4a2862a1ba4555d1df545b43d2d5fb18" category="list-text">9.8.0P10 叢集式 Data ONTAP</block>
+  <block id="5b60444bec91f058904619adcc2e7fb8" category="list-text">9.8.0P11 叢集式 Data ONTAP</block>
+  <block id="7c60fec10d3e3b1b53e359da924ce181" category="list-text">9.8.0P12 叢集式 Data ONTAP</block>
+  <block id="4a8de8a7b485af40cf05705c590a969a" category="list-text">9.8.0P14 叢集式 Data ONTAP</block>
+  <block id="8b39a9d4ce2750e4060c8ab62710f969" category="list-text">9.8.0P18 叢集式 Data ONTAP</block>
+  <block id="2d5bc4b72d5ba3e3aa179c3d5ade5cad" category="list-text">9.8.0P19 叢集式 Data ONTAP</block>
+  <block id="7c8e151ef61eadeb4d767705ad4c1b6d" category="list-text">9.8.0P20 叢集式 Data ONTAP</block>
+  <block id="8cf2420d915b2fc6c644d95f86c92166" category="list-text">9.8.0P21 叢集式 Data ONTAP</block>
+  <block id="c7195c6e514b3267fe532b6f40adaae8" category="list-text">9.8.0P4 叢集式 Data ONTAP</block>
+  <block id="da1192878251633fd612c67779eb110e" category="list-text">9.8.0P8 叢集式 Data ONTAP</block>
+  <block id="412eceeed5999ccc8d4ca272cf671faa" category="list-text">9.8.0P9 叢集式 Data ONTAP</block>
+  <block id="7030f1738548d84535b79ead5a072967" category="list-text">9.9.1P15 叢集式 Data ONTAP</block>
+  <block id="e6b27abf0287f11b05eee992bb2c7c0d" category="list-text">9.9.1P16 叢集式 Data ONTAP</block>
+  <block id="80db26f4af109e5f15306e5fed763804" category="list-text">9.9.1P20 叢集式 Data ONTAP</block>
+  <block id="1e7e53d0946a67cd6cfdedd3e9016705" category="list-text">9.9.1P7 叢集式 Data ONTAP</block>
+  <block id="999a72684daf6e7c3c97990e2807a4bb" category="list-text">9.9.1P8 叢集式 Data ONTAP</block>
+  <block id="3aa35a4c5b5e3b05c22666aee0f96903" category="cell">08.40.60.01 08.80.00.00 2.10.1.0 58.90.55.79 7.84.46.0 8.20.16.0 8.20.27.0 8.20.30.0 8.25.14.0 8.25.6.0 8.25.9.0 8.30.20.0 8.40.10.1 8.40.20.0 8.40.40.0 8.40.50.0 8.40.60.1 8.40.60.2 8.42.20.0 8.51.0.0 8.52.0.0 8.52.0.1 8.53.0.4 8.62.0.2 8.63.0.2 8.70.0.2 8.70.0.3 8.71.2.0 8.71.3.0 8.72.0.0 8.72.1.0 8.73.0.0 8.74.2.0 8.74.3.0 8.75.0.1 8.75.1.0 8.80.0.0 8.80.1.0 8.81.0.2 8.81.0.3 8.81.1.0 8.81.2.0 8.81.3.0 8.81.7.0 8.90.0.0 8.90.12.0 8.90.15.0 8.90.2.0 8.90.6.0 8.90.9.0 82.0.56.24 82.0.57.37 82.10.59.53 88.81.54.43 92.0.13.0 92.0.16.0 92.0.19.0 92.10.0.0 92.10.4.0 98.81.9.0 98.90.10.0 98.90.28.0 98.90.33.0 98.90.56.0 98.90.57.0 98.90.9.0</block>
+  <block id="4f4a4c9bf265d0a4434d6b28d2bb1450" category="cell">02.10.01.00 08.52.00.01 08.53.00.04 08.53.00.09 08.62.00.02 08.70.00.03 08.71.02.00 08.71.03.00 08.72.00.00 08.72.01.00 08.73.00.00 08.74.02.00 08.74.03.00 08.75.00.01 08.75.01.00 08.80.00.00 08.81.00.02 08.81.00.03 08.81.01.00 08.81.02.00 08.81.03.00 08.81.07.00 08.90.02.00 08.90.04.00 08.90.06.00 08.90.09.00 08.90.12.00 08.90.15.00 58.90.55.79 82.00.56.24 82.00.57.37 82.10.59.53 88.81.54.43 92.00.13.00 92.00.19.00 92.10.00.00 92.10.04.00 98.81.09.00 98.90.09.00 98.90.33.00 98.90.56.00 98.90.57.00</block>
+  <block id="62376f656994f49b8e525c82dc1c299b" category="cell">AFF-A150 AFF-A1K AFF-A20 AFF-A220 AFF-A250 AFF-A30 AFF-A300 AFF-A400 AFF-A50 AFF-A70 AFF-A700 AFF-A800 AFF-A90 AFF-A900 AFF-C190 AFF-C250 AFF-C30 AFF-C400 AFF-C60 AFF-C80 AFF-C800 ASA-A250 ASA-A800 ASA-A900 ASA-C250 ASA-C800 CDvM200 FAS2720 FAS2750 FAS2820 FAS50 FAS500f FAS70 FAS8200 FAS8300 FAS8700 FAS90 FAS9000 FAS9500 FASDvM300 SIMBOX</block>
+  <block id="851951ec8aafc5b6103bcc711e5b146d" category="list-text">NetApp Release 9.14.1P10：2024 年 11 月 28 日星期四 12:32:16 UTC</block>
+  <block id="54fa78d577565bb7cda27164b572dd3b" category="list-text">NetApp 版本 9.14.1P12：2025 年 3 月 25 日星期二 23:16:26 UTC</block>
+  <block id="bfccf3caedd283b8f658a93f7fa2fb19" category="list-text">NetApp 版本 9.14.1P14：2025 年 8 月 24 日星期日 04:57:05 UTC</block>
+  <block id="c4b1caf1883df9f205cef4582c354690" category="list-text">NetApp Release 9.14.1P1：2024 年 2 月 15 日星期四 00:45:21 UTC</block>
+  <block id="763ea5732f2f3933c4fb2ecd5d146ae7" category="list-text">NetApp Release 9.14.1P6：2024 年 6 月 18 日星期二 16:11:44 UTC</block>
+  <block id="b23ddb05a280f23e34aa8bc9db958832" category="list-text">NetApp Release 9.15.1：Thu Jul 04 07:17:54 UTC 2024</block>
+  <block id="7d4173d9a646e3a01d2a78cb3a6f384b" category="list-text">NetApp Release 9.15.1P10：2025 年 4 月 17 日星期四 14:04:43 UTC</block>
+  <block id="fcd12f42151db287e58dddaf0852d8ec" category="list-text">NetApp 版本 9.15.1P11：2025 年 5 月 21 日星期三 22:53:05 UTC</block>
+  <block id="c9f8c6d821758a526a1c05909c1696f3" category="list-text">NetApp 版本 9.15.1P12：2025 年 6 月 20 日星期五 16:04:19 UTC</block>
+  <block id="0c1bb3547e2124bcd0a4782dcdc8d22e" category="list-text">NetApp Release 9.15.1P13：2025 年 7 月 15 日星期二 14:07:45 UTC</block>
+  <block id="c558d79d38151efc975fd5e393efb7f5" category="list-text">NetApp Release 9.15.1P14：2025 年 8 月 05 日星期二 15:53:54 UTC</block>
+  <block id="732a47ff9f6c2ae1f61edbdbe88bc745" category="list-text">NetApp Release 9.15.1P15：Sun Oct 05 06:25:31 UTC 2025</block>
+  <block id="577a37e965dea433b00953d71e0dfed1" category="list-text">NetApp 版本 9.15.1P16：2025 年 11 月 29 日星期六 23:46:11 UTC</block>
+  <block id="1f9efa5050558b99e49dda6c65484627" category="list-text">NetApp 版本 9.15.1P17：2026 年 2 月 10 日星期二 12:35:50 UTC</block>
+  <block id="3eea8a2b454bafaf678616d76947f901" category="list-text">NetApp Release 9.15.1P19：2026 年 5 月 09 日星期六 17:13:04 UTC</block>
+  <block id="e1f6d6c9a70e18d1181123bb1eae1595" category="list-text">NetApp Release 9.15.1P20:Thu Aug 20 10:17:54 UTC 2026</block>
+  <block id="890e63edd85c4a38218c6efface6cbb6" category="list-text">NetApp Release 9.15.1P3：2024 年 9 月 25 日星期三 22:33:44 UTC</block>
+  <block id="044b7433a1228a752cbd499d365c6aaa" category="list-text">NetApp Release 9.15.1P6：2024 年 12 月 4 日星期三 01:42:39 UTC</block>
+  <block id="0edc31b0fa1e5b1f2ec2ccba0ca2e97e" category="list-text">NetApp Release 9.15.1P7：2025 年 1 月 18 日星期六 21:34:02 UTC</block>
+  <block id="57c2cabf51ccabbb80957e4b919e8d97" category="list-text">NetApp 版本 9.15.1P8：2025 年 3 月 7 日星期五 22:41:00 UTC</block>
+  <block id="7fdbd16e1ff751fad04600d723d8011d" category="list-text">NetApp Release 9.16.1：2025 年 1 月 18 日星期六 19:31:15 UTC</block>
+  <block id="631a601da62f1ebd3c43f59a8ad0fa2b" category="list-text">NetApp Release 9.16.1P10：2025 年 11 月 27 日星期四 17:12:10 UTC</block>
+  <block id="b9d7527ecbea1924b95ca5f14abfa82e" category="list-text">NetApp 版本 9.16.1P11：2026 年 1 月 15 日星期四 11:21:38 UTC</block>
+  <block id="24e18595d3223819fdd6fd81dfa82dcb" category="list-text">NetApp 版本 9.16.1P12：2026 年 3 月 11 日星期三 12:37:44 UTC</block>
+  <block id="2b4d6bf5af44f041a650bd58ea4e96ac" category="list-text">NetApp 版本 9.16.1P12D1：2026 年 5 月 15 日星期五 20:58:40 UTC</block>
+  <block id="f531499b064799c396d7feebd2cc00d8" category="list-text">NetApp 版本 9.16.1P13：2026 年 5 月 8 日星期五 03:41:42 UTC</block>
+  <block id="6696059adb24dece852dec8a6448e212" category="list-text">NetApp 版本 9.16.1P14：2026 年 7 月 9 日星期四 16:46:59 UTC</block>
+  <block id="c656ce96819e7a84b1ff123a31afa975" category="list-text">NetApp 版本 9.16.1P15：2026 年 8 月 14 日星期五 04:40:34 UTC</block>
+  <block id="88021ecf50f7541d3d24492a191e471b" category="list-text">NetApp Release 9.16.1P1：2025 年 2 月 14 日星期五 03:53:50 UTC</block>
+  <block id="cd6835b4a63934433353d5133969de2e" category="list-text">NetApp 版本 9.16.1P2：2025 年 3 月 19 日星期三 10:28:11 UTC</block>
+  <block id="c301ef67b7ee4cc59a715182e20ba9ca" category="list-text">NetApp Release 9.16.1P3：2025 年 4 月 24 日星期四 02:50:10 UTC</block>
+  <block id="ce997ab5dc63e6e8349d4c40b36dbb46" category="list-text">NetApp 版本 9.16.1P4：2025 年 5 月 27 日星期二 23:22:56 UTC</block>
+  <block id="aa8b72e466e1243b861fd1afebb9ed5b" category="list-text">NetApp 版本 9.16.1P5：2025 年 6 月 21 日星期六 02:06:33 UTC</block>
+  <block id="a728b7db3411455ef755d281473156ea" category="list-text">NetApp 版本 9.16.1P6：2025 年 7 月 16 日星期三 03:10:07 UTC</block>
+  <block id="f5e1e1a7064aa130233d5d17408e04b6" category="list-text">NetApp Release 9.16.1P7:Thu Aug 21 10:29:10 UTC 2025</block>
+  <block id="c1a482b6576ac260d57d8e2727656a5c" category="list-text">NetApp 版本 9.16.1P8：2025 年 10 月 4 日星期六 03:23:15 UTC</block>
+  <block id="80b601721cd4236df88425f71e51c535" category="list-text">NetApp 版本 9.16.1P9：2025 年 11 月 7 日星期五 08:49:09 UTC</block>
+  <block id="4d03d8e4ad38adb663badc36fb7c8d90" category="list-text">NetApp 版本 9.17.1：2025 年 9 月 5 日星期五 00:50:54 UTC</block>
+  <block id="09e697eb3d82e1848c0245b02e7fd0ce" category="list-text">NetApp Release 9.17.1P10：2026 年 7 月 21 日星期二 21:51:01 UTC</block>
+  <block id="df5754856af05ece72a53592819faddd" category="list-text">NetApp Release 9.17.1P11:Thu Aug 20 00:43:57 UTC 2026</block>
+  <block id="4dc145fee00cea9096cc3a5cc79fc3dd" category="list-text">NetApp 版本 9.17.1P11D2：2026 年 9 月 14 日星期一 21:18:54 UTC</block>
+  <block id="480c8979a709376ee88843aa00165869" category="list-text">NetApp 版本 9.17.1P1：2025 年 10 月 4 日星期六 06:37:53 UTC</block>
+  <block id="0aba98204d49d930d3a070b0b8a8f664" category="list-text">NetApp 版本 9.17.1P2：2025 年 11 月 7 日星期五 09:39:01 UTC</block>
+  <block id="fd8101b46f6daf489d98af7e9e4f0f0c" category="list-text">NetApp 版本 9.17.1P3：2025 年 12 月 07 日星期日 04:46:28 UTC</block>
+  <block id="bcae19f46734b1ca4106c5af1a05da40" category="list-text">NetApp 版本 9.17.1P4：2026 年 1 月 15 日星期四 22:33:51 UTC</block>
+  <block id="6b16c37080f05afd27009c655638467d" category="list-text">NetApp 版本 9.17.1P5：2026 年 2 月 18 日星期三 10:54:36 UTC</block>
+  <block id="3167738328cc6287c060567f34857447" category="list-text">NetApp 版本 9.17.1P6：2026 年 3 月 25 日星期三 15:38:10 UTC</block>
+  <block id="c4c7ab3878c2961a5bcec6d37b24ba50" category="list-text">NetApp 版本 9.17.1P7：2026 年 4 月 20 日星期一 13:57:24 UTC</block>
+  <block id="b17dac8d2c861510897cafa8eb0f9172" category="list-text">NetApp 版本 9.17.1P8：2026 年 5 月 17 日星期日 22:59:03 UTC</block>
+  <block id="9861ca3e2f407e97ad620acdcc35193e" category="list-text">NetApp 版本 9.17.1P9：2026 年 6 月 24 日星期三 13:09:36 UTC</block>
+  <block id="cfe413f1cad9ad286930e5e42c125af4" category="list-text">NetApp 版本 9.17.1RC1：UTC 2025 年 7 月 18 日星期五 12:39:11</block>
+  <block id="90e862e8aa0c8d3a769fe7a76289f036" category="list-text">NetApp 版本 9.18.1：2026 年 1 月 29 日星期四 07:43:55 UTC</block>
+  <block id="9c2dd17fb64ac48d0d958d7ce605d03e" category="list-text">NetApp 版本 9.18.1P1：2026 年 3 月 5 日星期四 07:06:39 UTC</block>
+  <block id="e9f574e5b12afa11db87989f12faffe0" category="list-text">NetApp 版本 9.18.1P2：2026 年 3 月 29 日星期日 12:49:32 UTC</block>
+  <block id="c5e86ccbb2798e91eb740c6fa30f5181" category="list-text">NetApp 版本 9.18.1P3：2026 年 5 月 7 日星期四 19:01:14 UTC</block>
+  <block id="d1451eb681e4dc5d572dd054dd39a6d9" category="list-text">NetApp 版本 9.18.1P4：2026 年 6 月 4 日星期四 11:38:00 UTC</block>
+  <block id="d774d9daccc2ce755a776ee62b4b153a" category="list-text">NetApp 版本 9.18.1P5：2026 年 7 月 9 日星期四 23:05:16 UTC</block>
+  <block id="08e526f044d479f1fee83cf1e065228d" category="list-text">NetApp 版本 9.18.1P6：2026 年 8 月 7 日星期五 23:43:59 UTC</block>
+  <block id="7c1996a64e8fc2fbda614c6140f96938" category="list-text">NetApp 版本 9.18.1P7：2026 年 9 月 3 日星期四 20:55:20 UTC</block>
+  <block id="b9ebc9c7abca85952c5c6620d3f4c6ad" category="list-text">NetApp 版本 9.19.1：2026 年 7 月 18 日星期六 20:33:10 UTC</block>
+  <block id="f542f9ffbf0e9120aa51dd10449de8ef" category="list-text">NetApp Release 9.19.1：Thu Jul 16 06:07:43 UTC 2026</block>
+  <block id="595cb7b3ab9ba930d1cb55865bb604b0" category="list-text">NetApp 版本 9.19.1P2：2026 年 8 月 19 日星期三 19:38:56 UTC</block>
+  <block id="321976b74cf538b7f328bb785f949d08" category="list-text">NetApp Release 9.19.1RC1D2：2026 年 5 月 30 日星期六 08:35:20 UTC</block>
+  <block id="fc8599f7d0717b962ffad28ed05aa58e" category="list-text">NetApp 版本 9.19.1X39：2026 年 7 月 9 日星期四 22:50:24 UTC</block>
+  <block id="94553b4bb029107972f142017e7a7551" category="list-text">NetApp Release 9.19.1X42：2026 年 7 月 14 日星期二 08:11:23 UTC</block>
+  <block id="59fdb47b8f336d5fb0be054ab94a44c4" category="list-text">NetApp 版本 9.19.1X43：2026 年 7 月 18 日星期六 20:33:10 UTC</block>
+  <block id="8c05a74e496ec836a53ecca9b5ee2b11" category="list-text">NetApp 版本 9.20.1RC1X11：2026 年 9 月 28 日星期一 13:47:02 UTC</block>
+  <block id="9b25a5e81cf27e89f5d8149cabe76e0f" category="list-text">NetApp Release 9.20.1RC1X9：2026 年 9 月 16 日星期三 13:58:14 UTC</block>
+  <block id="662f588c43415413dff62c46dbedeb3d" category="list-text">NetApp Release Cloudstream__9.16.1：Sat Jan 18 14:32:15 UTC 2025</block>
+  <block id="8b30a5be907b1772c5bd80d0765dd12d" category="list-text">NetApp Cloudstream__9.16.1 版本發布：2025 年 10 月 19 日星期日 07:41:54 UTC</block>
+  <block id="d3a30b2c30c6ab8794142539bb46886f" category="list-text">NetApp 版本 Kingsue__9.20.1：UTC 2026 年 5 月 27 日星期三 07:06:53</block>
+  <block id="909825c163272905a4c35c24fc13e4a2" category="list-text">NetApp 版本 Tropicallightning__9.18.1：2026 年 8 月 7 日星期五 20:52:40 UTC</block>
+  <block id="d6abf0ee67edd2e387651daf981a889d" category="list-text">NetApp 發佈 Wookeyjack__9.21.1：2026 年 9 月 21 日星期一 06:55:54 UTC</block>
+  <block id="1b606fbc314ff3379fd8952bafde77ee" category="cell">11.6.0.7 11.7.0.14 11.7.0.4 11.7.0.6 11.7.0.8 11.8.0.11 11.8.0.12 11.8.0.13 11.8.0.14 11.8.0.15 11.8.0.3 11.8.0.5 11.8.0.7 11.8.0.8 11.9.0 11.9.0.11 11.9.0.12 11.9.0.13 11.9.0.14 11.9.0.3 11.9.0.6 11.9.0.7 11.9.0.9 12.0.0 12.0.0.3 12.0.0.4 12.0.0.6 12.0.0.7 12.0.0.8 12.0.0.9 12.1.0 12.2.0</block>
+  <block id="21e85806d8fe1f95249b2ed5d5d33438" category="cell">1-1.1 1-1.2 1-1.3 1-1.34 1-1.4 1-2.68.5603.1 1-2.92.5919.1 2013.06.05.7.24 2013.06.05.7.29 2013.06.05.8.0 2013.06.05.8.44 2013.06.05.8.50 2013.06.05.8.56 2013.06.05.8.6 2013.06.05.8.65 2013.06.05.8.68 2013.06.05.8.72 2013.06.05.8.74 2013.06.05.8.76 2013.06.05.8.83 2013.06.05.8.86 2013.06.05.8.87 2013.06.05.8.89 2013.06.05.8.90 2013.06.05.8.91 2013.06.05.8.92 2026.04.20.8.93 2026.04.20.8.94</block>
+  <block id="d47841b8da725886d5a00caa87b3d037" category="cell">DFSC1 DFSC2 FA-C40R3 FA-C50R4 FA-C60R3 FA-C70R4 FA-C90R4 FA-X20R2 FA-X20R3 FA-X20R4 FA-X20R5 FA-X50R2 FA-X50R3 FA-X50R4 FA-X50R5 FA-X70R3 FA-X70R4 FA-X70R5 FA-X90R2 FA-X90R3 FA-X90R4 FA-X90R5 FA-XL130 FA-XL130R5 FA-XL170 FA-XL170R5 FA-m20 FA-m20r2</block>
+  <block id="9e6150ca9f26eee387c175630384e578" category="cell">6.1.14 6.10.3 6.10.4 6.10.6 6.10.7 6.3.10 6.3.14 6.3.17 6.3.21 6.5.10 6.5.11 6.5.12 6.5.12.post3 6.5.13 6.5.3 6.5.7 6.5.8 6.5.9 6.7.3 6.7.4 6.7.6 6.7.7 6.7.8 6.9.1 6.9.2 6.9.3 6.9.4 6.9.5 6.9.6 6.9.7 6.9.8</block>
+  <block id="ef1dc208795081365f1ce2b823d6d862" category="cell">Purity//FB 4.3.11 Purity//FB 4.3.5 Purity//FB 4.5.11 Purity//FB 4.5.14 Purity//FB 4.5.17 Purity//FB 4.6.6 Purity//FB 4.6.7 Purity//FB 4.7.10 Purity//FB 4.7.11 Purity//FB 4.7.12</block>
+  <block id="41ee4e496e917b19ec3bbd059a7820e3" category="list-text">9.6.0-p1-33410</block>
+  <block id="3ffc88cf076b05dff682cc21c0d48cb6" category="list-text">9.6.0-p2-33501</block>
+  <block id="f9ccac3c793d0da3ab15594630d743dc" category="list-text">9.6.1-p1-33607</block>
+  <block id="f85e1bf683b0c0a71237570397bff3fc" category="cell">建置版本：release-5.3.3-hf5-2058254 建置版本：release-5.3.3-hf7-2198162 建置版本：release-5.3.3-sp3-2009124 建置版本：release-5.4.3-sp2-hf24-2483981 建置版本：release-5.4.3-sp4-hf21-2650650 建置版本：release-5.4.6-hf6-2650431 建置版本：release-5.4.6-sp1-2679416 系統版本：5.3.3.0.10090135699003918747 系統版本：5.3.3.1.3876442573258902143 系統版本：5.4.3.1.1891089545684643723 系統版本：5.4.3.1.7633800423310192645 系統版本：5.4.6.0.15923970655878004698 系統版本：5.4.6.0.17320657730101426841</block>
+  <block id="29d6760c8109878b93ec1d5bf8ab3a30" category="list-text">VMware vCenter Server 7.0.3 build-25606036</block>
+  <block id="fad3f6e3f80f98a31883341fd5774aba" category="list-text">VMware vCenter Server 8.0.2 build-25624321</block>
+  <block id="97e11a43e514869a622798371764811e" category="list-text">VMware vCenter Server 9.1.1.0.25712839</block>
 </blocks>
